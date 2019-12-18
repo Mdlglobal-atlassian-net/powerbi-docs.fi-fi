@@ -9,12 +9,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9588f13a857dc105dce3b3577df7c3b06df027ed
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 6c8b62cf798d2fbbd09dab0603d216448d04487c
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699241"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000131"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-bw-using-gx64krb5"></a>Kerberoksen käyttäminen kertakirjautumista (SSO) varten SAP BW:ssä gx64krb5:n avulla
 
@@ -197,6 +197,8 @@ Jos kohtaat jonkin seuraavista ongelmista, toimi seuraavasti määrittääksesi 
       ![CPIC-jäljitys](media/service-gateway-sso-kerberos/cpic-tracing.png)
 
     c. Yritä toistaa ongelma ja varmista, että **CPIC\_TRACE\_DIR** sisältää jäljitystiedostoja. 
+    
+    d. Selvitä estämisen syy tarkastelemalla jäljitystiedostojen sisältöä. Saatat esimerkiksi huomata, että gx64krb5. dll-tiedosto ei latautunut oikein tai että SSO-yhteysyrityksen käynnisti jokin muu Active Directory ‑käyttäjä kuin mitä odotit.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

@@ -9,149 +9,160 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 0b5677e7f3acab464f8d9e4c293ed1df9d0bdd0f
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 9078aaebd49705833d3ad5a15497ab0c2d69a1c3
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74102153"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999717"
 ---
 # <a name="frequently-asked-questions-about-power-bi-visuals"></a>Usein kysyttyjä kysymyksiä – Power BI:n visualisoinnit
 
-## <a name="organizational-visuals"></a>Organisaation visualisoinnit
+## <a name="organizational-power-bi-visuals"></a>Organisaation Power BI -visualisoinnit
 
-Hallintaportaalissa voit hallita organisaatiosi Power BI:n visualisointeja.
+Hallintaportaalissa voi hallita organisaation Power BI:n visualisointeja.
 
-### <a name="how-can-the-admin-manage-the-organizational-power-bi-visuals"></a>Miten järjestelmänvalvoja voi hallita organisaation Power BI -visualisointeja?
+### <a name="how-can-the-admin-manage-organizational-power-bi-visuals"></a>Miten järjestelmänvalvoja voi hallita organisaation Power BI -visualisointeja?
 
-Hallintaportaalin Organisaation visualisoinnit -välilehdessä järjestelmänvalvoja voi nähdä ja [hallita kaikkia organisaation Power BI -visualisointeja](../service-admin-portal.md#organizational-visuals), kuten lisätä, poistaa ja ottaa käyttöön tai pois käytöstä.
-Visualisointeja ei enää tarvitse jakaa sähköpostitse tai jakamalla kansioita. Kun organisaation visualisoinnit on otettu käyttöön organisaation säilössä, organisaation käyttäjät voivat helposti löytää ne ja tuoda ne raportteihinsa suoraan Power BI Desktopista tai Power BI -palvelusta. Organisaation visualisoinnit löytyvät sisäisen säilön *OMA ORGANISAATIO* -välilehdestä Power BI Desktopissa ja Power BI -palvelussa. Kun järjestelmänvalvoja lataa organisaation mukautetun visualisoinnin uuden version, kaikki organisaatiossa saavat saman päivitetyn version. Raporttien tekijöiden ei tarvitse poistaa visualisointeja raporteistaan saadakseen niiden uudet versiot, sillä kaikki niitä käyttävät raportit päivitetään automaattisesti. Päivitysmenetelmä muistuttaa Marketplacen visualisointeja.
+Hallintaportaalin *Organisaation visualisoinnit* -välilehdessä järjestelmänvalvoja voi nähdä ja [hallita kaikkia organisaation Power BI -visualisointeja](../service-admin-portal.md#organizational-visuals). Hallitseminen sisältää Power BI ‑visualisointien lisäämisen ja poistamisen sekä niiden käyttöön ottamisen ja käytöstä poistamisen.
 
-### <a name="if-an-admin-uploads-a-custom-visual-from-the-public-marketplace-to-the-organization-store-is-it-automatically-updated-once-a-vendor-updates-the-visual-in-the-public-marketplace"></a>Jos järjestelmänvalvoja lataa mukautetun visualisoinnin julkisesta Marketplacesta organisaation sisäiseen säilöön, päivittyykö se automaattisesti, kun toimittaja päivittää visualisoinnin julkisessa Marketplacessa?
+Organisaation käyttäjät voivat helposti löytää Power BI ‑visualisointeja ja tuoda niitä raportteihinsa suoraan Power BI Desktopista tai ‑palvelusta.
 
-Ei. Julkisesta Marketplacesta peräisin olevia visualisointeja ei päivitetä automaattisesti.
-Järjestelmänvalvojan vastuulla on päivittää organisaation visualisointien versiot.
+Kun järjestelmänvalvoja lataa järjestelmään organisaation Power BI ‑visualisoinnista uuden version, kaikki organisaatiossa saavat saman päivitetyn version. Kaikki päivitettyä Power BI ‑visualisointia käyttävät raportit päivittyvät automaattisesti.
 
-### <a name="is-there-a-way-to-disable-the-organizational-store"></a>Voiko organisaation säilön poistaa käytöstä?
+Käyttäjät voivat löytää organisaation Power BI ‑visualisoinnit Power BI Desktopin ja Power BI ‑palvelun sisäisestä organisaatiosäilöstä välilehdeltä *OMA ORGANISAATIO*. 
 
-Ei. Käyttäjät näkevät aina Oma organisaatio -välilehden Power BI Desktopissa ja Power BI -palvelussa. Järjestelmänvalvoja voi poistaa tai poistaa käytöstä organisaation visualisointeja hallintaportaalissa, jolloin organisaation säilö on tyhjä.
+### <a name="if-an-admin-uploads-a-power-bi-visual-from-the-public-marketplace-to-the-organization-store-is-it-automatically-updated-once-a-vendor-updates-the-visual-in-the-public-marketplace"></a>Jos järjestelmänvalvoja lataa Power BI ‑visualisoinnin julkisesta Marketplacesta organisaation sisäiseen säilöön, päivittyykö se automaattisesti, kun toimittaja päivittää visualisoinnin julkisessa Marketplacessa?
+
+Ei. Julkisesta Marketplacesta peräisin olevia visualisointeja ei päivitetä automaattisesti. On järjestelmänvalvojan vastuulla päivittää organisaation Power BI ‑visualisointien versiot.
+
+### <a name="is-there-a-way-to-disable-the-organization-store"></a>Voiko organisaation säilön poistaa käytöstä?
+
+Ei. Käyttäjät näkevät aina *OMA ORGANISAATIO* ‑välilehden Power BI Desktopissa ja Power BI -palvelussa. Jos järjestelmänvalvoja poistaa tai poistaa käytöstä kaikki organisaation Power BI ‑visualisoinnit hallintaportaalin kautta, organisaation säilö näkyy tyhjänä.
   
-### <a name="if-the-administrator-disables-power-bi-visuals-from-the-admin-portal-tenant-settings-do-users-still-have-access-to-the-organizational-visuals"></a>Jos järjestelmänvalvoja poistaa Power BI -visualisoinnit käytöstä hallintaportaalissa (vuokraajan asetuksissa), voivatko käyttäjät edelleen käyttää organisaation visualisointeja?
+### <a name="if-the-admin-disables-power-bi-visuals-from-the-admin-portal-tenant-settings-do-users-still-have-access-to-the-organizational-power-bi-visuals"></a>Jos järjestelmänvalvoja poistaa Power BI ‑visualisoinnit käytöstä hallintaportaalissa (vuokraajan asetuksissa), voivatko käyttäjät käyttää edelleen organisaation Power BI ‑visualisointeja?
 
-Kyllä. Jos järjestelmänvalvoja poistaa Power BI -visualisoinnit käytöstä hallintaportaalissa, se ei vaikuta organisaation säilöön. Joissakin organisaatioissa Power BI -visualisoinnit on poistettu käytöstä ja käytössä ovat vain valikoidut visualisoinnit, jotka järjestelmänvalvoja on tuonut ja ladannut organisaation säilöön. Power BI -visualisointien poistamista käytöstä hallintaportaalissa ei tueta Power BI Desktopissa. Desktop-käyttäjät voivat edelleen lisätä ja käyttää Power BI -visualisointeja raporteissaan julkisesta Marketplacesta. Nämä Power BI -visualisoinnit lakkaavat kuitenkin hahmontumasta, kun niitä julkaistaan Power BI -palvelussa. Julkaisemisen yrittäminen tuottaa myös virheen. Kun käytät Power BI -palvelua, et voi tuoda Power BI -visualisointeja julkisesta Marketplacesta. Vain organisaation säilössä olevia visualisointeja voi tuoda, koska Power BI -palvelussa käytetään hallintaportaalin Power BI -visualisointen asetuksia.
+Kyllä. Jos järjestelmänvalvoja poistaa Power BI -visualisoinnit käytöstä hallintaportaalissa, se ei vaikuta organisaation säilöön.
 
-### <a name="why-does-the-organizational-store-and-organizational-visuals-make-a-great-enterprise-solution"></a>Miksi organisaation säilö ja organisaation visualisoinnit muodostavat toimivan yritysratkaisun?
+Joissakin organisaatioissa Power BI -visualisoinnit on poistettu käytöstä ja käytössä ovat vain valikoidut visualisoinnit, jotka Power BI:n järjestelmänvalvoja on tuonut ja ladannut organisaation säilöön.
 
-* Jokainen saa saman version, jota hallitsee Power BI -järjestelmänvalvoja. Kun järjestelmänvalvoja päivittää visualisoinnin version hallintaportaalissa, kaikki organisaation käyttäjät saavat automaattisesti päivitetyn version.
+Power BI -visualisointien poistamista käytöstä hallintaportaalissa ei tueta Power BI Desktopissa. Desktop-käyttäjät voivat edelleen lisätä ja käyttää Power BI -visualisointeja raporteissaan julkisesta Marketplacesta. Nämä Power BI -visualisoinnit lakkaavat kuitenkin hahmontumasta, kun niitä julkaistaan Power BI -palvelussa. Julkaisemisen yrittäminen tuottaa myös virheen. 
 
-* Visualisointitiedostoja ei enää tarvitse jakaa sähköpostitse tai kansioita jakamalla. Kaikki kirjautuneet jäsenet näkevät saman jaetun sijainnin.
+Kun Power BI ‑visualisointiasetus pakotetaan hallintaportaalista, Power BI -palvelun käyttäjät eivät voi tuoda Power BI -visualisointeja julkisesta Marketplacesta. Silloin visualisointeja voi tuoda vain organisaation säilöstä.
 
-* Tietoturva ja tuettavuus parantuvat, kun organisaation visualisointien uudet versiot päivitetään automaattisesti kaikkiin raportteihin Marketplacen visualisointien tapaan.
+### <a name="what-are-the-advantages-of-power-bi-visuals-in-the-organizational-store"></a>Mitä etua on Power BI ‑visualisoinneista, jotka ovat organisaation säilössä?
 
-* Organisaation käyttäjien on oltava kirjautuneena, jotta he voivat tarkastella ja käyttää organisaation visualisointeja, mikä muodostaa yhden elementin organisaation suojauksessa.
+* Kaikki saavat visualisoinnista saman version, jota Power BI:n järjestelmänvalvoja hallitsee. Kun järjestelmänvalvoja päivittää visualisoinnin version hallintaportaalissa, kaikki organisaation käyttäjät saavat automaattisesti päivitetyn version.
+
+* Visualisointitiedostoja ei tarvitse jakaa sähköpostitse tai kansioita jakamalla. Organisaation säilön tarjoukset näkyvät kaikille jäsenille, jotka ovat kirjautuneet sisään.
+
+* Tietoturva ja tuettavuus parantuvat, kun organisaation Power BI ‑visualisointien uudet versiot päivittyvät automaattisesti kaikkiin raportteihin.
 
 * Järjestelmänvalvojat voivat hallita, mitä Power BI -visualisointeja organisaatiossa on käytettävissä.
 
-* Järjestelmänvalvojat voivat hallintaportaalissa ottaa visualisointeja käyttöön tai poistaa niitä käytöstä testausta varten. Nämä visualisoinnit on sallittu vain organisaation jäsenille, mikä helpottaa tietoturvan valvontaa.
+* Järjestelmänvalvojat voivat hallintaportaalissa ottaa visualisointeja käyttöön tai poistaa niitä käytöstä testausta varten.
 
 ## <a name="certified-power-bi-visuals"></a>Sertifioidut Power BI -visualisoinnit
 
 ### <a name="what-are-certified-power-bi-visuals"></a>Mitä sertifioidut Power BI -visualisoinnit ovat?
 
-Sertifioidut Power BI -visualisoinnit ovat [Marketplacen](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) visualisointeja, jotka täyttävät Power BI -tiimin [määrittämät](power-bi-custom-visuals-certified.md) tietyt koodi- ja testausvaatimukset.  Suoritettavat testit on suunniteltu varmistamaan, ettei visualisointi käytä ulkoisia palveluita tai resursseja. Microsoft ei kuitenkaan ole kolmannen osapuolen Power BI -visualisointien tekijä, ja se kehottaa asiakkaita ottamaan yhteyttä suoraan tekijään visualisoinnin toiminnan varmistamiseksi.
+Sertifioidut Power BI ‑visualisoinnit ovat Power BI ‑visualisointeja, jotka täyttävät tietyt [vaatimukset](power-bi-custom-visuals-certified.md) ja jotka Microsoft on sertifioinut.
+
+[Marketplacessa](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) sertifioiduissa Power BI ‑visualisoinneissa näkyy keltainen sertifiointimerkki.
+
+Microsoft ei kuitenkaan ole kolmannen osapuolen Power BI ‑visualisointien tekijä. Kehotamme asiakkaita ottamaan yhteyttä suoraan tekijään kolmannen osapuolen visualisointien toiminnan varmistamiseksi.
 
 ### <a name="what-tests-are-done-during-the-certification-process"></a>Millaisia testejä sertifiointiprosessin aikana tehdään?
 
-Sertifiointiprosessin aikana tehdään muun muassa seuraavat testit: Koodin arviointeja, staattisen koodin analysointi, tietojen vuotaminen, tietojen sumea testaus, penetraatiotesti, sivustojen välisiin komentosarjoihin pääsemisen testaus, haitallisten tietojen lisääminen, syötteiden tarkistus ja toiminnallinen testaus.
+Sertifiointiprosessin aikana tehdään muun muassa seuraavat testit: 
+* Koodin arviointeja
+* Staattinen koodianalyysi
+* Tietojen vuoto
+* Tietojen sumea testaus
+* Penetraatiotestaus
+* Sivustojen välisiin komentosarjoihin pääsemisen testaus
+* Haitallisten tietojen lisääminen
+* Syötteiden tarkistus
+* Toiminnallinen testaus
  
-### <a name="do-you-certify-visuals-every-submission"></a>Sertifioidaanko visualisoinnit jokaisella lähetyskerralla?
+### <a name="are-certified-power-bi-visual-checked-again-with-every-new-submission-upgrade"></a>Tarkistetaanko sertifioidut Power BI ‑visualisoinnit uudelleen jokaisen uuden lähetyksen (päivityksen) yhteydessä?
 
 Kyllä. Aina kun sertifioidusta visualisoinnista lähetetään Marketplaceen uusi versio, visualisoinnin versiopäivitykselle tehdään samat sertifiointitarkistukset.
 
-Huomautus kehittäjille: jos lähetät sertifioidusta visualisoinnista versiopäivityksen, sinun ei tarvitse lähettää siitä erillistä sähköpostiviestiä, kuten [ensimmäisen sertifiointipyynnön yhteydessä.](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified#process-for-submitting-a-custom-visual-for-certification) Versiopäivitysten sertifiointi tapahtuu automaattisesti, ja hylkäykseen johtaneista rikkomuksista lähetetään sähköpostitse ilmoitus, jossa kerrotaan korjaustarpeet. 
+Version päivitykset sertifioidaan automaattisesti. Jos jokin rikkomus aiheuttaa päivityksen hylkäämisen, kehittäjälle lähetetään sähköpostiviesti, jossa kerrotaan, mitä on korjattava.
 
-### <a name="is-it-possible-that-a-certified-visual-stops-being-certified-with-a-new-update"></a>Onko mahdollista, että sertifioitu visualisointi lakkaa olemasta sertifioitu uuden päivityksen myötä?
+### <a name="can-a-certified-power-bi-visual-stop-lose-its-certification-after-a-new-update"></a>Voiko sertifioitu Power BI ‑visualisointi menettää sertifiointinsa uuden päivityksen myötä?
 
-Ei, se ei ole mahdollista. Visualisoinnin sertifiointia ei voida purkaa uuden päivityksen perusteella. Sen sijaan päivitys voidaan hylätä.
+Ei, se ei ole mahdollista. Sertifioitu visualisointi ei voi menettää sertifiointiaan uuden päivityksen myötä. Sen sijaan päivitys voidaan hylätä.
  
-### <a name="do-i-need-to-share-my-code-in-public-repository-if-i-am-submitting-to-the-certification-process"></a>Jos lähetän työni sertifioitavaksi, onko minun jaettava koodini julkiseen säilöön?
+### <a name="do-i-need-to-share-my-code-in-a-public-repository-if-im-certifying-my-power-bi-visual"></a>Onko minun jaettava koodini julkiseen säilöön saadakseni Power BI ‑visualisointini sertifioitua?
 
-Ei, sinun ei tarvitse jakaa koodiasi julkisesti. Sinun on kuitenkin annettava meille lukuoikeudet visualisoinnin koodin tarkistamista varten, esimerkiksi yksityiseen säilöön GitHubissa.
+Ei, sinun ei tarvitse jakaa koodiasi julkisesti.
+
+Anna vain lukuoikeudet Power BI ‑visualisoinnin koodin tarkistamiseen. Voit esimerkiksi käyttää yksityistä säilöä GitHubissa.
  
-### <a name="do-we-have-to-publishhttpsdocsmicrosoftcompower-bideveloperoffice-store-the-visual-in-the-marketplacehttpsappsourcemicrosoftcommarketplaceappspage1productpower-bi-visuals-to-certify-it"></a>Edellyttääkö sertifioinnin saaminen, että visualisointi on [julkaistava](https://docs.microsoft.com/power-bi/developer/office-store) [Marketplacessa](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals)?
+### <a name="does-a-certified-power-bi-visual-have-to-be-in-the-marketplace"></a>Onko sertifioidun Power BI ‑visualisoinnin oltava Marketplacessa?
 
-Kyllä. Visualisoinnin julkaiseminen ensin Marketplacessa on pakollinen vaatimus sertifioinnin saamiseksi.
-Jos haluat, että mukautettu visualisointisi sertifioidaan, sen täytyy olla palvelimillamme. Emme voi sertifioida yksityisiä visualisointeja.
+Kyllä. Yksityisiä visualisointeja ei sertifioida.
  
 ### <a name="how-long-does-it-take-to-certify-my-visual"></a>Miten kauan visualisoinnin sertifiointi kestää?
 
-Jos kyseessä on versiopäivitys, sertifiointiin saattaa kulua jopa kolme viikkoa. Uusien lähetysten (ensimmäistä kertaa sertifioitavien) sertifiointi saattaa kestää jopa neljä viikkoa. 
+Uuden Power BI ‑visualisoinnin (sertifioidaan ensimmäistä kertaa) sertifiointi voi kestää enintään neljä viikkoa. 
 
-### <a name="does-the-certification-process-ensure-that-no-data-leakage-occurs"></a>Takaako sertifiointiprosessi, ettei tietovuotoja voi tapahtua?
+Power BI ‑visualisoinnin päivitetyn version sertifiointi voi kestää enintään kolme viikkoa. 
 
-Suoritettavat testit on suunniteltu varmistamaan, ettei visualisointi käytä ulkoisia palveluita tai resursseja. Microsoft ei kuitenkaan ole kolmannen osapuolen Power BI -visualisointien tekijä, ja se kehottaa asiakkaita ottamaan yhteyttä suoraan tekijään visualisoinnin toiminnan varmistamiseksi.
+### <a name="does-the-certification-process-ensure-that-there-is-no-data-leakage"></a>Takaako sertifiointiprosessi, ettei tietovuotoja voi tapahtua?
+
+Suoritettavat testit on suunniteltu varmistamaan, ettei visualisointi käytä ulkoisia palveluita tai resursseja. 
+
+Microsoft ei ole kolmannen osapuolen Power BI ‑visualisointien tekijä. Kehotamme asiakkaita ottamaan yhteyttä suoraan tekijään Power BI ‑visualisointien toiminnan varmistamiseksi.
  
 ### <a name="are-uncertified-power-bi-visuals-safe-to-use"></a>Onko sertifioimattomien Power BI -visualisointien käyttö turvallista?
 
 Power BI -visualisointien sertifioimattomuus ei välttämättä tarkoita, etteivät visualisoinnit olisi turvallisia käyttää.
+
 Jotkin visualisoinnit eivät ole sertifioituja, koska ne eivät täytä yhtä tai useampaa [sertifiointivaatimusta](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Tällaisia ovat esimerkiksi karttavisualisoinnit, jotka muodostavat yhteyden ulkoisiin palveluihin, tai visualisoinnit, jotka hyödyntävät kaupallisia kirjastoja.
  
 ## <a name="visuals-with-additional-purchases"></a>Lisäostoja sisältävät visualisoinnit
 
 ### <a name="what-is-a-visual-with-additional-purchases"></a>Mikä on lisäostoja sisältävä visualisointi?
 
-Lisäostoja sisältävä visualisointi vastaa sovelluskohtaisia ostoja (IAP) Marketplacessa. Nämä apuohjelmat on merkitty hintatunnisteella**Lisäosto saatetaan vaatia**.
+Lisäostoja sisältävä visualisointi vastaa sovelluskohtaisia ostoja (IAP). Nämä apuohjelmat on merkitty hintatunnisteella **Lisäosto saatetaan vaatia**.
 
-Power BI -IAP-visualisoinnit ovat maksuttomia ja ladattavia Power BI -visualisointeja. Niiden lataaminen Marketplacesta ei maksa mitään. IAP-visualisoinnit tarjoavat mahdollisuuden sovelluskohtaisiin ostoihin, joilla saa käyttöön lisäominaisuuksia.  
+Power BI:n IAP-visualisoinnit ovat ilmaisia, ladattavia Power BI ‑visualisointeja. Käyttäjät eivät maksa mitään tällaisten Power BI ‑visualisointien lataamisesta Marketplacesta.
 
-### <a name="whats-the-benefit-to-developers"></a>Mitä etua niistä on kehittäjille?
-
-Power BI -IAP-visualisoinnit ovat AppSourcessa lukuisten päivittäisten kävijöiden löydettävissä, jolloin ne tuovat arvokasta liikennettä. Ne myös parantavat kehittämiesi Power BI -IAP-visualisointien tunnettuutta – ja tekevät tunnetuksi sinua kehittäjänä.
-
-Jos olet hallinnut näitä visualisointeja tähän asti sivustosi kautta, voit nyt lähettää ne AppSourceen. Se parantaa niiden löydettävyyttä ja näkyvyyttä Power BI -yhteisössä.
-
-AppSourcessa voit saada IAP-visualisoinneista suoraa palautetta niitä käyttäviltä asiakkailtasi arvostelujen ja kaupan luokitusjärjestelmän kautta.  
-
-Kun AppSourcen vahvistustiimi on hyväksynyt IAP-visualisoinnin, voit lähettää sen myös sertifiointiin. Se on valinnainen prosessi.  
-
-Kun Power BI -IAP-visualisointi on sertifioitu, sen voi viedä PowerPointiin ja näyttää sähköposteissa, joita käyttäjät saavat tilatessaan raporttisivuja. Täten lähettämällä Power BI -IAP-visualisointeja Marketplaceen voit saada niitä sertifioiduiksi, minkä lisäksi ne voivat tukea joukkoa lisäominaisuuksia.  
-
-### <a name="do-iap-visuals-need-to-be-certified"></a>Onko IPA-visualisoinnit pakko sertifioida?
-
-Sertifiointiprosessi on valinnainen. Kehittäjä päättää itse, haluaako hän sertifioida Power BI -IAP-visualisointejaan. Sama pätee maksuttomiin visualisointeihin.
+IAP-visualisoinnit tarjoavat mahdollisuuden sovelluskohtaisiin ostoihin, joilla saa käyttöön lisäominaisuuksia.  
 
 ### <a name="what-is-changing-in-the-submission-process"></a>Miten lähetysprosessi muuttuu?
 
-Power BI -IAP-visualisointien lähettäminen Marketplaceen noudattaa samaa prosessia kuin maksuttomien visualisointien. Se tapahtuu myyjän koontinäytön kautta.  Lähetysprosessin ainoa muutos on, että kehittäjän on myyjän koontinäytössä lisättävä kehittäjän huomautuksiin seuraava merkintä: ”Visual with in-app purchase” (Sovelluskohtaisia ostoja sisältävä visualisointi). Sinun on myös annettava käyttöoikeusavain tai -tunnus, jos maksulliset tai lisäominaisuudet on vahvistettava.  
+Power BI:n IAP-visualisointien lähettäminen Marketplaceen noudattaa samaa prosessia kuin maksuttomien Power BI ‑visualisointien lähettäminen. Voit lähettää Power BI ‑visualisoinnin sertifioitavaksi [kumppanikeskuksen](https://docs.microsoft.com/partner-center/) kautta.
 
-Myyjän koontinäytössä ei ole uutta vaihtoehtoa. Jos IAP-visualisointisi on *maksuton sovellusten sisäisten ostojen kanssa*, se on lähetettävä *maksuttomana*.
 
-Kerro lisäksi käyttäjille kaupan pitkässä kuvauksessa, mitkä ominaisuudet ovat maksuttomia ja mitkä edellyttävät lisäostoja toimiakseen.  
+Kun olet rekisteröimässä Power BI ‑visualisointia, siirry *Tuotteen asennus* ‑välilehdelle ja valitse *Tuotteeni edellyttää palvelun ostamista* ‑valintaruutu.
 
-### <a name="what-should-i-do-beforesubmittingmy-iap-custom-visual"></a>Mitä pitäisi tehdä ennen mukautetun IAP-visualisoinnin lähettämistä?
+### <a name="what-should-i-do-beforesubmittingmy-iap-power-bi-visual"></a>Mitä pitäisi tehdä ennen Power BI:n IAP-visualisoinnin lähettämistä?
 
-Jos olet tekemässä mukautettua IAP-visualisointia tai sinulla jo on sellainen, varmista, että se täyttää ohjeet.  
+Jos olet tekemässä Power BI:n IAP-visualisointia, varmista, että se noudattaa [ohjeita](guidelines-powerbi-visuals.md).  
 
-Jos siinä on logo, varmista, että se on ohjeiden mukainen (väri, paikka, koko ja toiminnon käynnistäminen).
+> [!NOTE]
+> Maksuttomissa Power BI ‑visualisoinneissa, joihin on lisätty IAP-ominaisuus, on säilytettävä samat ilmaiset ominaisuudet, joita on aiemmin tarjottu. Voit lisätä valinnaisia maksullisia lisäominaisuuksia aiempien maksuttomien ominaisuuksien lisäksi. Suosittelemme, että lähetät Power BI:n IAP-visualisoinnin, jossa on lisäominaisuuksia, uutena Power BI ‑visualisointina sen sijaan, että päivittäisit vanhan maksuttoman visualisoinnin.
 
-Ohjeista löydät tietoa myös parhaista käytännöistä.  
-> [!Note]
-> Kaikki maksuttomat visualisoinnit säilyttävät ne samat maksuttomat ominaisuudet, jotka olivat aiemmin tarjolla. Voit lisätä valinnaisia maksullisia lisäominaisuuksia aiempien maksuttomien ominaisuuksien lisäksi. Suosittelemme lähettämään sovelluskohtaisten tuotteiden visualisoinnit lisäominaisuuksien kanssa uusina visualisointeina sen sijaan, että päivittäisit vanhat, maksuttomat visualisoinnit.
+### <a name="do-iap-power-bi-visuals-need-to-be-certified"></a>Onko Power BI:n IAP-visualisoinnit pakko sertifioida?
 
-### <a name="can-i-get-my-iap-custom-visual-certified"></a>Miten saan mukautetun IAP-visualisointini sertifioitua?
+[Sertifiointi](power-bi-custom-visuals-certified.md) on valinnainen prosessi. Kehittäjä päättää itse, haluaako hän sertifioida Power BI:n IAP-visualisointejaan.
 
-Samalla tavalla kuin maksuttoman visualisoinnin.  Kun AppSource-tiimi on hyväksynyt mukautetun IAP-visualisointisi, voit lähettää sen sertifioitavaksi.
+### <a name="can-i-get-my-iap-power-bi-visual-certified"></a>Voinko saada Power BI:n IAP-visualisointini sertifioitua?
 
-Visualisoinnin sertifioiminen edellyttää, että se täyttää sertifioinnin edellytykset. Se ei esimerkiksi voi käyttää ulkoisia palveluja käyttöoikeuksien vahvistamiseen.
+Kyllä. Kun AppSource-tiimi on hyväksynyt tekemäsi Power BI:n IAP-visualisoinnin, voit lähettää Power BI ‑visualisoinnin [sertifioitavaksi](power-bi-custom-visuals-certified.md).
 
-Muista, että sertifioiminen on valinnainen prosessi. Päätät itse, haluatko sertifioida IAP-visualisointisi.
+Sertifioiminen on valinnainen prosessi. Päätät itse, haluatko sertifioida IAP-visualisointisi.
 
 ## <a name="additional-questions"></a>Lisäkysymyksiä
 
 ### <a name="how-to-get-support"></a>Miten saan tukea?
 
-Power -visualisointien tukitiimille voit lähettää kysymyksiä ja kommentteja:  *pbicvsupport@microsoft.com*  .  
+Power BI -visualisointien tukitiimille voit lähettää kysymyksiä ja kommentteja osoitteeseen pbicvsupport@microsoft.com.  
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Lisätietoja on kohdassa [Power BI:n Power BI -visualisointien vianmääritys](power-bi-custom-visuals-troubleshoot.md).
+Lisätietoja on kohdassa [Power BI -visualisointien vianmääritys](power-bi-custom-visuals-troubleshoot.md).

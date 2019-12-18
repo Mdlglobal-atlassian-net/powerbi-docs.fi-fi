@@ -7,19 +7,19 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/18/2019
 ms.author: mohaali
-ms.openlocfilehash: d1ae995c3e98befe776ac091a0312e281e97022e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64a6294ca30901c61928eca068ab4ebbb3d39638
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875341"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958513"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Q&A:n lingvistisen rakenteen muokkaaminen ja muotoilujen lisääminen Power BI Desktopissa 
 Yleisien lauseiden ja luonnollisen kielen käyttäminen tiedoista esitettävissä kysymyksissä on tehokasta. Vielä tehokkaampaa on, kun tietosi vastaavat sinulle. Kun esität Power BI Q&A:lle kysymyksen, se pyrkii parhaansa mukaan vastaamaan oikein. Voit parantaa vastauksia saadaksesi vielä paremman hyödyn Q&A:sta. Yksi tapa on muokata lingvististä rakennetta. 
 
-Kaikki alkaa yrityksesi tiedoista.  Mitä parempi tietomalli on, sitä helpompi käyttäjien on saada laadukkaita vastauksia. Yksi tapa parantaa mallia on lisätä lingvistinen rakenne, joka määrittelee ja luokittelee terminologian ja taulukoiden ja sarakkeiden nimien välisen suhteen tietojoukossasi. Lingvistisiä rakenteita hallitaan Power BI Desktopissa. 
+Kaikki alkaa yrityksesi tiedoista.  Mitä parempi tietomalli on, sitä helpompi käyttäjien on saada laadukkaita vastauksia. Yksi tapa parantaa mallia on lisätä lingvistinen rakenne, joka määrittelee ja luokittelee terminologian ja taulukoiden ja sarakkeiden nimien välisen suhteen tietojoukossasi. Lingvistisiä rakenteita hallitaan Power BI Desktopissa. 
 
-Q&A:ssa on kaksi puolta.  Ensimmäinen puoli on valmistelu tai *mallinnus*.  Toinen puoli on kysymysten esittäminen ja tietojen tutkiminen tai *käyttö*. Joissakin yrityksissä *tietomallintajiksi* tai IT-järjestelmänvalvojiksi kutsutut työntekijät saattavat koota ja luoda tietojoukkoja ja julkaista niitä Power BI:ssä.  Toiset työntekijät taas voivat ”käyttää” tietoja verkossa.  Muissa yrityksissä nämä roolit on voitu yhdistää. 
+Q&A:ssa on kaksi puolta.  Ensimmäinen puoli on valmistelu tai *mallinnus*.  Toinen puoli on kysymysten esittäminen ja tietojen tutkiminen tai *käyttö*. Joissakin yrityksissä *tietomallintajiksi* tai IT-järjestelmänvalvojiksi kutsutut työntekijät saattavat koota ja luoda tietojoukkoja ja julkaista niitä Power BI:ssä.  Toiset työntekijät taas voivat ”käyttää” tietoja verkossa.  Muissa yrityksissä nämä roolit on voitu yhdistää. 
 
 Tämä artikkeli koskee tietojen mallintajia, jotka optimoivat tietojoukkoja tarjotakseen parhaan mahdollisen Q&A-tuloksen. 
 

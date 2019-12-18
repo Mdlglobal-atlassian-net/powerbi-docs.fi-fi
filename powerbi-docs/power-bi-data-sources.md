@@ -8,16 +8,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/22/2019
 ms.author: kfollis
-ms.openlocfilehash: a45cfb20907c96995adf8618cd6dd8ff32194bea
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: be7f95b2bbbd6e5e6314c7fd57869a30c176746c
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699724"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958490"
 ---
 # <a name="power-bi-data-sources"></a>Power BI -tietolähteet
 
-Seuraavassa taulukossa luetellaan Power BI:n tukemat tietolähteet ja annetaan tietoja DirectQuerysta ja paikallisesta tietoyhdyskäytävästä.
+Seuraavassa taulukossa esitetään Power BI:n tukemat tietolähteet tietojoukoille ja annetaan tietoja DirectQuerysta ja paikallisesta tietoyhdyskäytävästä. Lisätietoja tietovoista on kohdassa [Yhteyden muodostaminen Power BI -tietovoiden tietolähteisiin](service-dataflows-data-sources.md).
 
 | Tietolähde | Muodosta Desktopista | Muodosta yhteys ja päivitä palvelusta | DirectQuery/live-yhteys | Yhdyskäytävä (tuettu) | Yhdyskäytävä (pakollinen) |
 |---|---|---|---|---|---|---|---|
@@ -95,7 +95,7 @@ Seuraavassa taulukossa luetellaan Power BI:n tukemat tietolähteet ja annetaan t
 | Planview Enterprise One – CTM | Kyllä | Kyllä | Ei | Ei | Ei |
 | Planview Enterprise One – PRM | Kyllä | Kyllä | Ei | Ei | Ei |
 | Planview Projectplace | Kyllä | Kyllä | Ei | Ei | Ei |
-| PostgreSQL | Kyllä | Kyllä | Ei | Kyllä | Kyllä |
+| PostgreSQL | Kyllä | Kyllä | Kyllä | Kyllä | Kyllä |
 | Power BI -tietovuot | Kyllä | Kyllä | Ei | Ei | Ei |
 | Power BI -tietojoukot | Kyllä | Kyllä | Kyllä | Ei | Ei |
 | Power Platform -tietovuot | Kyllä | Kyllä | Ei | Ei | Ei |

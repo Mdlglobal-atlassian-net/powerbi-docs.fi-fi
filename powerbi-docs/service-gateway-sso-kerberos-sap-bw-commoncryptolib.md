@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2019
+ms.date: 12/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6c098a187b7f0d0d4828500cd6c5995a7c82ab42
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 02c8ac991fbf84051ae795ef4a80f2b3dc07a1ce
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74697631"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000177"
 ---
 # <a name="use-kerberos-single-sign-on-for-sso-to-sap-bw-using-commoncryptolib-sapcryptodll"></a>Käytä Kerberos-SSO-kertakirjautumista SAP BW:hen CommonCryptoLibin (sapcrypto. dll) avulla
 
@@ -89,7 +89,7 @@ Tässä artikkelissa kerrotaan, miten voit määrittää SAP BW -tietolähteesi 
 
 ## <a name="troubleshooting"></a>Vianmääritys
 
-Jos et pysty päivittämään raporttia Power BI -palvelussa, voit käyttää ongelman diagnosoinnissa yhdyskäytävän jäljitystä, CPIC-jäljitystä ja CommonCryptoLib-jäljitystä. Koska CPIC-jäljitys ja CommonCryptoLib ovat SAP-tuotteita, Microsoft ei tarjoa niille tukea. Active Directory -käyttäjien kohdalla, joille myönnetään BW-kertakirjautumisoikeus, jotkin Active Directory -määritykset saattavat edellyttää, että käyttäjät ovat Järjestelmänvalvojat-ryhmän jäseniä koneessa, johon yhdyskäytävä on asennettu.
+Jos et pysty päivittämään raporttia Power BI -palvelussa, voit käyttää ongelman diagnosoinnissa yhdyskäytävän jäljitystä, CPIC-jäljitystä ja CommonCryptoLib-jäljitystä. Koska CPIC-jäljitys ja CommonCryptoLib ovat SAP-tuotteita, Microsoft ei tarjoa niille tukea.
 
 ### <a name="gateway-logs"></a>Yhdyskäytävän lokit
 
@@ -109,7 +109,49 @@ Jos et pysty päivittämään raporttia Power BI -palvelussa, voit käyttää on
 
    ![CPIC-jäljitys](media/service-gateway-sso-kerberos/cpic-tracing.png)
 
- 3. Yritä toistaa ongelma ja varmista, että **CPIC\_TRACE\_DIR** sisältää jäljitystiedostoja.
+3. Yritä toistaa ongelma ja varmista, että **CPIC\_TRACE\_DIR** sisältää jäljitystiedostoja.
+ 
+    CPIC-jäljitys voi diagnosoida ylemmän tason ongelmia, kuten sapcrypto.dll-kirjaston latausvirheen. Tässä on esimerkkikatkelma CPIC-jäljitystiedostosta, jossa on ilmennyt .dll-latausvirhe:
+
+    ```
+    [Thr 7228] *** ERROR => DlLoadLib()==DLENOACCESS - LoadLibrary("C:\Users\test\Desktop\sapcrypto.dll")
+    Error 5 = "Access is denied." [dlnt.c       255]
+    ```
+
+    Jos kohtaat tällaisen virheen, vaikka olet määrittänyt [edellisessä kohdassa](#configure-sap-bw-to-enable-sso-using-commoncryptolib) kuvatulla tavalla sapcrypto.dll- ja sapcrypto.ini-tiedostoille luku- ja suoritusoikeudet, kokeile määrittää samat luku- ja suoritusoikeudet myös tiedostot sisältävälle kansiolle.
+
+    Jos et edelleenkään pysty lataamaan .dll-tiedostoa, kokeile ottaa [tiedoston valvonta käyttöön](/windows/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder). Valvontalokien tarkastelu Windowsin Tapahtumienvalvonnassa voi auttaa selvittämään, miksi tiedoston lataaminen epäonnistuu. Etsi virhekirjaus, jonka on tuottanut kyseessä olevaksi Active Directory ‑käyttäjäksi tekeytynyt tili. Esimerkiksi käyttäjäksi `MYDOMAIN\mytestuser` tekeytyneen tilin virhe voisi näyttää valvontalokissa seuraavankaltaiselta:
+
+    ```
+    A handle to an object was requested.
+
+    Subject:
+        Security ID:        MYDOMAIN\mytestuser
+        Account Name:       mytestuser
+        Account Domain:     MYDOMAIN
+        Logon ID:       0xCF23A8
+
+    Object:
+        Object Server:      Security
+        Object Type:        File
+        Object Name:        <path information>\sapcrypto.dll
+        Handle ID:      0x0
+        Resource Attributes:    -
+
+    Process Information:
+        Process ID:     0x2b4c
+        Process Name:       C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe
+
+    Access Request Information:
+        Transaction ID:     {00000000-0000-0000-0000-000000000000}
+        Accesses:       ReadAttributes
+                
+    Access Reasons:     ReadAttributes: Not granted
+                
+    Access Mask:        0x80
+    Privileges Used for Access Check:   -
+    Restricted SID Count:   0
+    ```
 
 ### <a name="commoncryptolib-tracing"></a>CommonCryptoLib-jäljitys 
 

@@ -1,5 +1,5 @@
 ---
-title: Power BI:n Power BI -visualisointien kehittämisen vianmääritys
+title: Power BI -visualisointien kehittämisen vianmääritys
 description: Tässä artikkelissa käsitellään joitain yleisiä ongelmia, joita saattaa ilmetä mukautetun Power BI -visualisoinnin kehittämisen tai luomisen aikana.
 author: KesemSharabi
 ms.author: kesharab
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.topic: troubleshooting
 ms.subservice: powerbi-custom-visuals
 ms.date: 11/06/2018
-ms.openlocfilehash: e28df5035e057d485a8122853f6ae88327e3045f
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: c2680a5818488a7822f38b8286a3e5a1782a487a
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74127747"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999763"
 ---
-# <a name="troubleshoot-power-bi-power-bi-visuals"></a>Power BI:n Power BI -visualisointien vianmääritys
+# <a name="troubleshoot-power-bi-visuals"></a>Power BI -visualisointien vianmääritys
 
 ## <a name="debug"></a>Virheenkorjaus
 
@@ -42,4 +42,4 @@ Power -visualisointien tukitiimille voit lähettää kysymyksiä ja kommentteja:
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Lisätietoja on kohdassa [Usein kysyttyjä kysymyksiä – Power BI:n Power BI -visualisoinnit](power-bi-custom-visuals-faq.md#organizational-visuals).
+Lisätietoja on kohdassa [Usein kysyttyjä kysymyksiä – Power BI -visualisoinnit](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals).

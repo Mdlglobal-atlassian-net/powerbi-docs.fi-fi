@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e68d886564552d1b1cb2dc9e7c018c65a5cca039
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 1d176941f04bdaf06c9cdeda65271769098268fb
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265200"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999809"
 ---
 # <a name="visuals-in-power-bi"></a>Visualisoinnit Power BI:ssä
 
@@ -168,11 +168,11 @@ Sinulla on kaksi vaihtoehtoa Power BI -visualisointien lataamiseen ja tuomiseen:
 
 ## <a name="troubleshoot"></a>Vianmääritys
 
-Vianmääritysohjeet löytyvät kohdasta [Power BI:n Power BI -visualisointien vianmääritys](power-bi-custom-visuals-troubleshoot.md).
+Vianmääritysohjeet löytyvät kohdasta [Power BI -visualisointien vianmääritys](power-bi-custom-visuals-troubleshoot.md).
 
 ## <a name="faq"></a>Usein kysytyt kysymykset
 
-Saat lisätietoja ja vastauksia kysymyksiisi [Power BI:n Power BI -visualisointien usein kysytyistä kysymyksistä](power-bi-custom-visuals-faq.md#organizational-visuals).
+Saat lisätietoja ja vastauksia kysymyksiisi [Power BI -visualisointien usein kysytyistä kysymyksistä](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

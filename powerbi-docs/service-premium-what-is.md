@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 9434aa717ad10791e75366cf23ef8ece567389ea
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 37107c1092b12a8efc230718c624f104aa31520f
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699126"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958559"
 ---
 # <a name="what-is-power-bi-premium"></a>Mikä on Power BI Premium?
 
@@ -29,16 +29,17 @@ Power BI Premium tarjoaa organisaatiollesi varatut ja parannetut resurssit Power
 > * Tietojen sijainnin tuki alueen mukaan (Multi-Geo)
 > * Jaa tietoja kenen kanssa tahansa ilman käyttäjäkohtaisen käyttöoikeuden ostoa
 
-Tässä artikkelissa esitellään Power BI Premiumin tärkeimmät ominaisuudet. Tarvittaessa annetaan linkkejä tarkempia tietoja sisältäviin artikkeleihin.
+Tässä artikkelissa esitellään Power BI Premiumin tärkeimmät ominaisuudet. Tarvittaessa annetaan linkkejä tarkempia tietoja sisältäviin artikkeleihin. Lisätietoja Power BI Prosta ja Power BI Premiumista on [Power BI:n hinnoittelusivulla](https://powerbi.microsoft.com/pricing/) kohdassa _Power BI:n ominaisuuksien vertailu_.
 
 ## <a name="subscriptions-and-licensing"></a>Tilaukset ja lisenssit
 
 Power BI Premium on vuokraajatason Office 365: n tilaus, joka on saatavilla kahdesta SKU- eli varastointiyksikköperheestä:
 
-- **EM**-SKU:t (EM1 EM3) upottamiseen, vaatii vuosisitoumuksen, laskutetaan kuukausittain. EM1- ja EM2-varastointiyksiköt ovat käytettävissä vain volyymikäyttöoikeuspalvelupakettien kautta. Niitä ei voi ostaa suoraan.
 - **P**-varastointiyksiköt (P1–P3) upottamiseen yritysominaisuudet, vaatii kuukausi- tai vuosisitoumuksen, laskutetaan kuukausittain ja sisältää oikeuden asentaa paikallinen Power BI -raporttipalvelin.
 
-Vaihtoehtoisesti voi ostaa **Azure Power BI Embedded** -paketin, jossa on yksi **A**-varastointiyksikköperhe (A1–A6) vain upotusta ja kapasiteettitestausta varten. Kaikki SKU:t toimittavat näennäisytimen kapasiteettien luomiseen, mutta EM-varastointiyksiköt on rajoitettu pienempimuotoista upotusta varten. EM1-, EM2-, A1- ja A2-varastointiyksiköitä, joissa on alle neljä näennäisydintä, eivät toimi varatussa infrastruktuurissa.
+- **EM**-varastointiyksiköt (EM1–EM3) _organisaatiotason_ upottamiseen, vaatii vuosisitoumuksen, laskutetaan kuukausittain. EM1- ja EM2-varastointiyksiköt ovat käytettävissä vain volyymikäyttöoikeuspalvelupakettien kautta. Niitä ei voi ostaa suoraan.
+
+Sen sijaan voit hankkia ne ostamalla **Power BI Embedded** ‑tilauksen Azuresta. On olemassa yksi **A**-varastointiyksikkötuoteperhe (A1–A6), joka ei vaadi sitoutumista ja joka laskutetaan tunneittain. Sitä käytetään tuotettaessa tuotemerkittömiä (white label) Power BI ‑sovelluksia, portaaleja ja verkkosivustoja sekä P- ja EM-kapasiteettien testaamisessa. Kaikki SKU:t toimittavat näennäisytimen kapasiteettien luomiseen, mutta EM-varastointiyksiköt on rajoitettu pienempimuotoista upotusta varten. EM1-, EM2-, A1- ja A2-varastointiyksiköitä, joissa on alle neljä näennäisydintä, eivät toimi varatussa infrastruktuurissa.
 
 Vaikka tässä artikkelissa keskitytään P-varastointiyksiköihin, kuvatut asiat koskevat suurelta osin myös A-varastointiyksikköjä. Verrattuna premium-pakettien varastointiyksiköihin Azuren SKU:t eivät vaadi aikasitoumusta ja ne laskutetaan tunneittain. Ne toimittavat täyden joustavuuden, joka mahdollistaa skaalauksen kumpaankin suuntaan, keskeyttämisen, uudelleen jatkamisen ja poistamisen. 
 
@@ -50,7 +51,11 @@ Järjestelmänvalvojat ostavat Power BI Premium -tilaukset Microsoft 365 -hallin
 
 ## <a name="dedicated-capacities"></a>Varatut kapasiteetit
 
-Power BI Premium tarjoaa sinulle *varatut kapasiteetit*. Toisin kuin jaettu kapasiteetti, jossa kuormitukset suoritetaan muiden asiakkaiden kanssa jaetuissa laskennallisissa resursseissa, varattu kapasiteetti on tarkoitettu organisaation yksinoikeudelliseen käyttöön. Se on eristetty varatuilla laskennallisilla resursseilla, jotka tarjoavat luotettavan ja tasalaatuisen suorituskyvyn isännöidylle sisällölle. 
+Power BI Premium tarjoaa sinulle *varatut kapasiteetit*. Toisin kuin jaettu kapasiteetti, jossa kuormitukset suoritetaan muiden asiakkaiden kanssa jaetuissa laskennallisissa resursseissa, varattu kapasiteetti on tarkoitettu organisaation yksinoikeudelliseen käyttöön. Se on eristetty varatuilla laskennallisilla resursseilla, jotka tarjoavat luotettavan ja tasalaatuisen suorituskyvyn isännöidylle sisällölle. Huomaa, että seuraavat resurssit on tallennettu jaettuun kapasiteettiin eikä varattuun kapasiteettiisi:
+
+* Excel-työkirjat (ellei tietoja tuoda ensin Power BI Desktopiin)
+* [Push-tietojoukot](/rest/api/power-bi/pushdatasets)
+* [Virtautettavat tietojoukot](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 
 Työtilat sijaitsevat kapasiteeteissa. Kullakin Power BI -käyttäjällä on henkilökohtainen työtila, jota kutsutaan **omaksi työtilaksi**. Yhteistyön mahdollistamiseksi voidaan luoda lisää työtiloja, joita kutsutaan **työtiloiksi**. Työtilat, mukaan lukien henkilökohtaiset työtilat, luodaan oletusarvoisesti jaetussa kapasiteetissa. Kun sinulla on Premium-kapasiteetteja, sekä omat työtilat että työtilat voidaan määrittää Premium-kapasiteetteihin.
 
@@ -77,6 +82,9 @@ Kunkin Premium-SKU:n (ja yhtä suuren A-SKU:n) resurssit ja rajoitukset on kuvat
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
 | | | | | | | |
+
+> [!NOTE]
+> Yhden suuremman varastointiyksikön (esimerkiksi yhden P2-varastointiyksikön) käyttö voi olla suositeltavampaa kuin useiden pienempien varastointiyksiköiden yhdistäminen (esim. kaksi P1-varastointiyksikköä). P2-varastointiyksiköllä voit esimerkiksi käyttää suurempia malleja ja saavuttaa paremman rinnakkaisuuden.
 
 ### <a name="capacity-workloads"></a>Kapasiteetin kuormitukset
 
@@ -235,5 +243,3 @@ Lisätietoja on artikkelissa [Tietojoukkoihin yhdistäminen asiakassovelluksilla
 > [Premium-kapasiteettien hallinta](service-premium-capacity-manage.md)
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-
-||||||

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2019
+ms.date: 12/03/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4ce5eab22538b7abdded2759a4a072fd500575ea
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 889fbce483f839147677789c73d826fa23542731
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699218"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000108"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Kerberos-pohjaisen kertakirjautumisen määrittäminen Power BI -palvelusta paikallisiin tietolähteisiin
 
@@ -66,6 +66,22 @@ Selvitä ensin, onko yhdyskäytävän palvelutilinä käytetylle toimialuetilill
    ```setspn -a gateway/MyGatewayMachine Contoso\GatewaySvc```
 
    Voit määrittää palvelun päänimen myös MMC-konsolin **Active Directory-käyttäjät ja -tietokoneet** -laajennuksen avulla.
+   
+### <a name="add-gateway-service-account-to-windows-authorization-and-access-group-if-required"></a>Lisää tarvittaessa yhdyskäytäväpalvelun tili Windows-valtuutustietoihin ja käyttöoikeusryhmään
+
+Joissakin tilanteissa yhdyskäytäväpalvelun tili on lisättävä Windows-valtuutustietoihin ja käyttöoikeusryhmään. Tällaisia tilanteita ovat Active Directory ‑ympäristön suojauksen rajoitus tai yhdyskäytäväpalvelun tilin sekä käyttäjätilien, joiksi yhdyskäytävä tekeytyy, sijaitseminen eri toimialueilla tai toimialuepuuryhmissä toisiinsa nähden. Voit myös lisätä yhdyskäytäväpalvelun tilin Windows-valtuutustietoihin ja käyttöoikeusryhmään tilanteissa, joissa toimialueessa tai toimialuepuuryhmässä ei ole rajoitusta, mutta se ei ole pakollista.
+
+Lisätietoja on kohdassa [Windows-valtuutustiedot ja käyttöoikeusryhmä](/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-winauthaccess).
+
+Tee määritysvaihe loppuun seuraavien ohjeiden mukaisesti jokaisen toimialueen osalta, joka sisältää Active Directory ‑käyttäjiä, joiksi haluat yhdyskäytäväpalvelun tilin voivan tekeytyä:
+1. Kirjaudu sisään tietokoneelle, jonka toimialue on oikea, ja käynnistä Active Directory ‑käyttäjät ja ‑tietokoneet ‑MMC-laajennus.
+2. Etsi oikea ryhmä **Windows-valtuutustiedoista ja käyttöoikeusryhmästä**, jotka löytyvät yleensä **Builtin**-säilöstä.
+3. Kaksoisnapsauta ryhmää ja napsauta **Jäsenet**-välilehteä.
+4. Valitse **Lisää** ja vaihda toimialueen sijainniksi toimialue, jolla yhdyskäytäväpalvelun tili sijaitsee.
+5. Kirjoita yhdyskäytäväpalvelun tilin nimi ja tarkista, että yhdyskäytäväpalvelun tili on käytettävissä, valitsemalla **Tarkista nimet**.
+6. Valitse **OK**.
+7. Valitse **Käytä**.
+8. Käynnistä yhdyskäytäväpalvelu uudelleen.
 
 ### <a name="decide-on-the-type-of-kerberos-constrained-delegation-to-use"></a>Käytettävän rajoitetun Kerberos-delegoinnin tyypin päättäminen
 

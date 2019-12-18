@@ -9,16 +9,16 @@ ms.topic: quickstart
 ms.date: 10/29/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: ebaf32bbf84dcbb8efd8516fd0a1ab01011f2d63
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 55cdfad221aef276c790e98de83dd844bc13aafe
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698482"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958675"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Power BI Pro -käyttöoikeuksien hankinta ja määritys
 
-Power BI Pro on yksilöllinen käyttöoikeus, jonka avulla käyttäjät voivat lukea ja käsitellä raportteja sekä koontinäyttöjä, joita muut käyttäjät ovat julkaisseet Power BI -palvelussa, sekä jakaa sisältöä ja tehdä yhteistyötä muiden Power BI Pro -käyttäjien kanssa. Vain käyttäjät, joilla on Power BI Pro -käyttöoikeus, voivat julkaista tai jakaa sisältöä muiden käyttäjien kanssa tai käyttää muiden käyttäjien luomaa sisältöä, ellei kyseistä sisältöä isännöidä Power BI Premium -ominaisuudessa. Jos haluat lisätietoja, katso kohta [Power BI:n ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md).
+Power BI Pro on yksilöllinen käyttöoikeus, jonka avulla käyttäjät voivat lukea ja käsitellä raportteja sekä koontinäyttöjä, joita muut käyttäjät ovat julkaisseet Power BI -palvelussa, sekä jakaa sisältöä ja tehdä yhteistyötä muiden Power BI Pro -käyttäjien kanssa. Vain käyttäjät, joilla on Power BI Pro -käyttöoikeus, voivat julkaista tai jakaa sisältöä muiden käyttäjien kanssa tai käyttää muiden käyttäjien luomaa sisältöä, ellei kyseistä sisältöä isännöidä Power BI Premium -ominaisuudessa. Lisätietoja on [Power BI:n hinnoittelusivulla](https://powerbi.microsoft.com/pricing/) kohdassa _Power BI:n ominaisuuksien vertailu_.
 
 ## <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Power BI Pro -käyttöoikeuksien hankinta ja määritys
 
