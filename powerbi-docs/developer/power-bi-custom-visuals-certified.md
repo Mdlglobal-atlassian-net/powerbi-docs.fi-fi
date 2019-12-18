@@ -1,5 +1,5 @@
 ---
-title: Sertifioidut Power BI:n Power BI -visualisoinnit
+title: Sertifioidut Power BI -visualisoinnit
 description: Mukautetun visualisoinnin sertifioinnin edellytykset ja lähettämisprosessi. Lisäksi luettelo jo sertifioiduista Power BI -visualisoinneista.
 author: KesemSharabi
 ms.author: kesharab
@@ -8,92 +8,94 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 05/9/2019
-ms.openlocfilehash: 373d57b871953f1afe02212ff0a1bbdb633cac4d
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.date: 12/02/2019
+ms.openlocfilehash: 0a39496ade27cd45fae116eea92ef4b472e04582
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565245"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999740"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Sertifioinnin hankkiminen Power BI -visualisoinnille
 
-## <a name="what-are-_certified_-power-bi-visuals"></a>Mitä **_sertifioidut_** Power BI -visualisoinnit ovat?
+Sertifioidut Power BI -visualisoinnit ovat *Marketplacen* visualisointeja, jotka täyttävät tietyt *Power BI -tiimin* testaamat ja hyväksymät *koodivaatimukset*. Testit on suunniteltu varmistamaan, ettei visualisointi käytä ulkoisia palveluita tai resursseja.
 
-Sertifioidut Power BI -visualisoinnit ovat **Marketplacen** visualisointeja, jotka täyttävät tietyt **Power BI -tiimin** testaamat ja hyväksymät **koodivaatimukset**. Kun mukautettu visualisointi on sertifioitu, se tarjoaa lisää ominaisuuksia. Voit esimerkiksi [viedä sisältöä PowerPointiin](../consumer/end-user-powerpoint.md) ja näyttää visualisoinnin [raporttisivujen tilaamisen](../consumer/end-user-subscribe.md) yhteydessä lähetettävissä sähköposteissa.
+Sertifioituja Power BI -visualisointeja ja [tavallisia Power BI -visualisointeja](power-bi-custom-visuals.md) käytetään samalla tavalla. Niitä voidaan lisätä [Power BI Desktopiin](../desktop-what-is-desktop.md) ja [Power BI -palveluun](../power-bi-service-overview.md), ja niitä voidaan tarkastella [Power BI:n mobiiliversiossa](../consumer/mobile/mobile-apps-for-mobile-devices.md) ja [Power BI Embeddedissä](embedding.md).
 
-**Sertifioituja Power BI -visualisointeja** käytetään samoin kun [tavallisia Power BI -visualisointeja](power-bi-custom-visuals.md). Sertifioituja Power BI -visualisointeja voidaan lisätä **Power BI -palveluun** ja **Power BI Desktop -raporttiin**, ja niitä voidaan tarkastella **Power BI:n mobiiliversiossa** ja **Power BI Embeddedissä**.
+Sertifiointiprosessi on valinnainen prosessi. Kehittäjät voivat itse päättää, haluavatko he sertifioida Marketplacessa olevan Power BI -visualisointinsa. Kun Power BI -visualisointi on sertifioitu, se tarjoaa lisää ominaisuuksia. Voit esimerkiksi [viedä sisältöä PowerPointiin](../consumer/end-user-powerpoint.md) tai näyttää visualisoinnin [raporttisivujen tilaamisen](../consumer/end-user-subscribe.md) yhteydessä lähetettävissä sähköposteissa.
 
-Suoritettavat testit on suunniteltu varmistamaan, ettei visualisointi käytä ulkoisia palveluita tai resursseja. **Microsoft** *ei* ole kolmannen osapuolen Power BI -visualisointien tekijä, ja se kehottaa asiakkaita ottamaan yhteyttä suoraan tekijään visualisoinnin toiminnan varmistamiseksi.
+Power BI -visualisointien sertifioimattomuus ei välttämättä tarkoita, etteivät visualisoinnit olisi turvallisia käyttää. Jotkin visualisoinnit eivät ole sertifioituja, koska ne eivät täytä yhtä tai useampaa [sertifiointivaatimusta](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Tällaisia ovat esimerkiksi karttavisualisoinnit, jotka muodostavat yhteyden ulkoisiin palveluihin, tai visualisoinnit, jotka hyödyntävät kaupallisia kirjastoja.
 
-Sertifiointiprosessi on vapaaehtoinen, ja kehittäjät voivat itse päättää, haluavatko he sertifioida Marketplacessa olevan visualisointinsa.  
+Jos olet web-kehittäjä, joka on kiinnostunut omien Power BI -visualisointien luomisesta ja niiden lisäämisestä  [Microsoft AppSourceen](https://appsource.microsoft.com), aloita  [Power BI -visualisoinnin kehittäminen](visuals/custom-visual-develop-tutorial.md) -opetusohjelmasta.
 
-**Sertifioimattomat Power BI -visualisoinnit** eivät välttämättä ole turvallisia käyttää. Jotkin visualisoinnit eivät ole sertifioituja, koska ne eivät täytä yhtä tai useampaa [sertifiointivaatimusta](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Tällaisia ovat esimerkiksi karttavisualisoinnit, jotka muodostavat yhteyden ulkoisiin palveluihin, tai visualisoinnit, jotka hyödyntävät kaupallisia kirjastoja.
+> [!NOTE]
+> **Microsoft** *ei* ole kolmannen osapuolen Power BI -visualisointien tekijä. Kehotamme asiakkaita ottamaan suoraan yhteyttä kolmannen osapuolen visualisoinnin tekijään visualisoinnin toiminnan varmistamiseksi.
 
-Oletko web-kehittäjä ja halukas luomaan omia visualisointeja ja lisäämään niitä  **[Microsoft AppSourceen](https://appsource.microsoft.com)** ? Katso ohjeet kohdasta  **[Power BI:n mukautetun visualisoinnin kehittäminen](visuals/custom-visual-develop-tutorial.md)** .
+> [!IMPORTANT]
+> Microsoft saattaa poistaa Power BI -visualisoinnin [sertifioitujen luettelosta](#list-of-power-bi-visuals-that-have-been-certified) oman harkintansa mukaan.
 
-## <a name="removal-of-power-bi-certified-power-bi-visuals"></a>Sertifioitujen Power BI -visualisointien poistaminen
+## <a name="certification-requirements"></a>Sertifioinnin edellytykset
 
-Microsoft saattaa poistaa visualisoinnin [sertifioitujen luettelosta](#list-of-power-bi-visuals-that-have-been-certified) oman harkintansa mukaan.
-
-## <a name="getting-a-custom-visualcertified"></a>Mukautetun visualisoinnin sertifioinnin hankkiminen
-
-### <a name="certification-requirements"></a>Sertifioinnin edellytykset
-
-Mukautetun visualisoinnin [sertifiointi](#get-a-power-bi-visual-certified) edellyttää, että se täyttää seuraavat vaatimukset:  
-
-* Microsoft AppSourcen hyväksyntä. Mukautetun visualisoinnin on oltava [Marketplacessa](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
-* Mukautettu visualisointi on kirjoitettu **Versioned-ohjelmointirajapinnan versiolla 2.5** tai uudemmalla versiolla.
-* Power BI -tiimi voi tarkastella koodisäilöä (esimerkiksi lähdekoodia (JavaScript tai TypeScript) ihmisen luettavissa olevassa muodossa GitHubin kautta).
-
-    >[!Note]
-    > Sinun ei tarvitse jakaa koodia Githubissa julkisesti.
-* Koodisäilön vaatimukset:
-   * Pitää sisältää seuraavat tiedostot:
-      * .gitignore
-      * capabilities.json
-      * pbiviz.json
-      * package.json
-      * package-lock.json
-      * tsconfig.json
-   * Ei saa sisältää node_modules-kansiota (lisää node_modules .gitingere-tiedostoon)
-   * **npm install** -komento ei saa palauttaa mitään virheitä.
-   * **npm audit** -komento ei saa palauttaa varoituksia, joilla on korkea tai kohtalainen taso.
-   * **pbiviz package** -komento ei saa palauttaa mitään virheitä.
-   * Pitää sisältää [TSlint Microsoftilta](https://www.npmjs.com/package/tslint-microsoft-contrib) ilman ohitettua määritystä, eikä tämä komento saa palauttaa mitään lint-virheitä.
-   * Mukautetun visualisoinnin kootun paketin on vastattava lähetettyä pakettia (molempien tiedostojen md5-hajautusarvon on oltava sama).
-* Lähdekoodi vaatimukset:
-   * Visualisoinnin on tuettava [Tapahtumien hahmontaminen -ohjelmointirajapintaa](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
-   * Varmista, että mitään satunnaisia/dynaamisia koodeja ei suoriteta (huono: eval(), epäluotettava käyttö settimeout(), requestAnimationFrame(), setinterval(jokin toiminto käyttäjän syötteellä), käyttäjän syötteen/tietojen suorittaminen).
-   * Varmista, että DOM-objektia manipuloidaan luotettavasti (huono: innerHTML, D3.html(<jokin käyttäjän/tietojen syöte>), käytä sanitaatiota käyttäjän syötteessä/tiedoissa, ennen kuin lisäät sen DOM-objektiin.
-   * Varmista, että selainkonsolissa ei ole JavaScript-virheitä/-poikkeuksia syötetiedoille. Käyttäjät saattavat käyttää visualisointiasi odottamattomien tietojen eri alueella, joten visualisointi ei saa epäonnistua. Voit käyttää [tätä malliraporttia](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) testitietojoukkona.
-
-* Jos capabilities.json-tiedoston ominaisuuksia muutetaan, varmista, että ne eivät riko olemassa olevan käyttäjän raportteja.
-
-* Varmista, että visualisointi noudattaa [Power BI:n visualisointien ohjeita](./guidelines-powerbi-visuals.md). **Vesileimoja ei sallita**.
-
-* Visualisointi käyttää vain julkisia, tarkasteltavissa olevia OSS-komponentteja (Julkiset JS-kirjastot tai TypeScript. Lähdekoodi on tarkistettavissa eikä sisällä tunnettuja haavoittuvaisuuksia). Kaupallisia komponentteja käyttäviä mukautettuja visualisointeja ei voi vahvistaa.
-
-* Visualisointi ei käytä ulkoisia palveluita tai resursseja. Power BI:stä ei esimerkiksi lähde HTTP/S- tai WebSocket-pyyntöjä palveluihin. 
+Jos haluat hankkia Power BI -visualisoinnille [sertifioinnin](#get-a-power-bi-visual-certified), varmista, että Power BI -visualisointi on tässä osiossa lueteltujen vaatimusten mukainen. 
 
 > [!TIP]
 > Suosittelemme, että esitarkistat koodisi ennen sen lähettämistä käyttämällä EsLint-tarkistusohjelmaa oletusarvoisella suojaussääntöjoukolla.
 
-## <a name="process-for-submitting-a-custom-visual-for-certification"></a>Mukautetun visualisoinnin sertifioitavaksi lähettämisen prosessi
+* Microsoftin myyjän koontinäytön tai kumppanikeskuksen hyväksymä. Power BI -visualisoinnin on oltava [Marketplacessa](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
+* Power BI -visualisointi on kirjoitettu *ohjelmointirajapinnan versiolla 2.5* tai uudemmalla versiolla.
+* Power BI -tiimi voi tarkastella koodisäilöä. Esimerkiksi lähdekoodin (JavaScript tai TypeScript) luettavissa oleva muoto on käytettävissä GitHubin kautta.
 
-Jos haluat lähettää mukautetun visualisoinnin sertifiointia varten, toimi seuraavasti:
+    >[!NOTE]
+    > Sinun ei tarvitse jakaa koodia Githubissa julkisesti.
 
-1. Lähetä sähköpostia Power BI:n Power BI -visualisointien tukitiimille (pbicvsupport@microsoft.com). Sisällytä viestiin seuraavat tiedot:
-    * Otsikko: Visualisoinnin sertifiointipyyntö
-    * Linkki GitHub-säilöön, joka isännöi ihmisen luettavaa lähdekoodia
-    * [Vaatimuksien noudattaminen](#certification-requirements)
-    * Kooditarkastuksen läpäiseminen
+* Koodisäilön vaatimukset:
+  * Pitää sisältää seuraavat tiedostot:
+    * .gitignore
+    * capabilities.json
+    * pbiviz.json
+    * package.json
+    * package-lock.json
+    * tsconfig.json
+  * Ei saa sisältää *node_modules*-kansiota (lisää *node_modules* .gitingore*-tiedostoon).
+  * *npm install* -komento ei saa palauttaa mitään virheitä.
+  * *npm audit* -komento ei saa palauttaa varoituksia, joilla on korkea tai kohtalainen taso.
+  * *pbiviz package* -komento ei saa palauttaa mitään virheitä.
+  * Pitää sisältää [TSlint Microsoftilta](https://www.npmjs.com/package/tslint-microsoft-contrib) ilman ohitettua määritystä. Tämä komento ei saa palauttaa mitään lint-virheitä.
+   * Power BI -visualisoinnin kootun paketin on vastattava lähetettyä pakettia (molempien tiedostojen md5-hajautusarvon on oltava sama).
+* Lähdekoodi vaatimukset:
+   * Power BI -visualisoinnin on tuettava [Tapahtumien hahmontaminen -ohjelmointirajapintaa](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
+   * Varmista, että mitään satunnaisia/dynaamisia koodeja ei suoriteta (huono: eval(), epäluotettava käyttö settimeout(), requestAnimationFrame(), setinterval(jokin toiminto käyttäjän syötteellä), käyttäjän syötteen/tietojen suorittaminen).
+   * Varmista, että DOM-objektia manipuloidaan luotettavasti (huono: innerHTML, D3.html(<jokin käyttäjän/tietojen syöte>), käytä sanitaatiota käyttäjän syötteessä/tiedoissa, ennen kuin lisäät sen DOM-objektiin.
+   * Varmista, että selainkonsolissa ei ole JavaScript-virheitä tai -poikkeuksia syötetiedoille. Käyttäjät saattavat käyttää Power BI -visualisointiasi odottamattomien tietojen eri alueella, joten visualisointi ei saa epäonnistua. Voit käyttää tätä [malliraporttia](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) testitietojoukkona.
 
-2. Microsoftin Power BI -visualisointien tiimi ilmoittaa, kun mukautettu visualisointi on joko sertifioitu ja lisätty [sertifioitujen luetteloon](#list-of-power-bi-visuals-that-have-been-certified) tai hylätty, jolloin mukana toimitetaan raportti korjattavista ongelmista. On kehittäjän vastuulla pitää yllä avointa viestiyhteyttä Microsoftin kanssa ja päivittää tarvittaessa omat sertifioidut visualisointinsa.
+* Jos *capabilities.json*-tiedoston ominaisuuksia muutetaan, varmista, että ne eivät riko olemassa olevan käyttäjän raportteja.
+
+* Varmista, että Power BI -visualisointi noudattaa [Power BI -visualisointien ohjeita](./guidelines-powerbi-visuals.md).
+    
+* Koodisi voi käyttää vain julkisia, tarkasteltavissa olevia OSS-komponentteja, kuten julkisia JavaScript- tai TypeScript-kirjastoja. Lähdekoodin on oltava tarkasteltavissa eikä se saa sisältää tunnettuja haavoittuvuuksia. Kaupallisia komponentteja käyttäviä mukautettuja visualisointeja ei voi vahvistaa.
+
+* Power BI -visualisoinnissa ei saa käyttää ulkoisia palveluita tai resursseja. Power BI:stä ei esimerkiksi lähde HTTP/S- tai WebSocket-pyyntöjä palveluihin. 
+
+## <a name="submitting-a-power-bi-visual-for-certification"></a>Power BI -visualisoinnin lähettäminen sertifioitavaksi
+
+Voit pyytää, että Power BI -tiimi sertifioi Power BI -visualisointisi kumppanikeskuksen kautta.
+
+>[!TIP]
+>Power BI:n sertifiointiprosessi saattaa kestää jonkin aikaa. Jos olet luomassa uutta Power BI -visualisointia, suosittelemme sinua julkaisemaan Power BI -visualisointisi kumppanikeskuksen kautta, ennen kuin pyydät Power BI -sertifiointia. Näin varmistat sen, ettei visualisointisi julkaiseminen viivästy.
+
+Power BI -sertifioinnin pyytäminen:
+
+1. Kirjaudu sisään kumppanikeskukseen.
+2. Valitse **Yleiskatsaus-sivulla**Power BI -visualisointi, ja siirry **Tuotteen asennus** -sivulle.
+3. Valitse **Pyydä Power BI -sertifiointia** -valintaruutu.
+4. Anna **Tarkista ja julkaise** -sivun **Sertifiointia koskevat huomautukset** -tekstiruutuun linkki lähdekoodiin ja sen käyttämiseen tarvittavat tunnistetiedot.
+
+>[!NOTE]
+> Jos Power BI -visualisoinnin lähettämisprosessi on kesken ja sinun on käytettävä [myyjän koontinäyttöä](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (vanhaa hallintatyökalua), katso ohjeet kohdasta [Myyjän koontinäytön sertifioinnin lähettämisprosessi](seller-dashboard.md#seller-dashboard-certification-submission-process).
 
 ## <a name="list-of-power-bi-visuals-that-have-been-certified"></a>Luettelo Power BI -visualisoinneista, jotka on sertifioitu
 
-| Linkki AppSourceen | Linkki videoon |
+| Linkki | Video |
 | --- | --- |
 | [3AG Systems - palkkikaavio, jossa on suhteellinen varianssi](https://appsource.microsoft.com/en/product/power-bi-visuals/WA104381912) | |
 | [3AG Systems – pylväskaavio, jossa on suhteellinen varianssi](https://appsource.microsoft.com/product/power-bi-visuals/WA104381803) | |

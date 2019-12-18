@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
-ms.openlocfilehash: 10e7ab035f17715bba858fc3b055c5bf47af1331
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 6bf7610a010a72248a3d2fdd96718eea513a68da
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565605"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000085"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Power BI -visualisointien ohjeet
 Ennen kuin [julkaiset](https://docs.microsoft.com/power-bi/developer/office-store) Power BI -visualisoinnin Microsoft AppSourcessa muiden käytettäväksi, varmista, että noudatat ohjeita, jotta käyttäjäsi saavat erinomaisen käyttökokemuksen.
@@ -50,7 +50,12 @@ Ponnahdusikkunan avulla voit selittää, miten käyttöoikeus ostetaan, jos osto
 
 ### <a name="submission-process"></a>Lähettämisprosessi
 
-Kehittäjät lataavat ostoja sisältävät Power BI -visualisointinsa Microsoft AppSourceen myyjien koontinäytön kautta aivan samoin kuin maksuttomien visualisointien kohdalla. Kehittäjien tulee ilmoittaa Power BI -visualisointinsa sisältämistä sovelluskohtaisia ostoja edellyttävistä ominaisuuksista kirjoittamalla myyjän koontinäytön muistiinpanokohtaan ”Visual with in-app purchase” (Sovelluskohtaisia ostoja sisältävä visualisointi). Lisäksi kehittäjien tulee antaa käyttöoikeusavain tai -tunnus, jotta vahvistustiimi voi vahvistaa sovelluskohtaisia ostoja edellyttävät ominaisuudet. Kun Power BI -visualisointi on vahvistettu ja hyväksytty, Microsoft AppSourcessa ilmoitetaan sovelluskohtaisia ostoja sisältävän Power BI -visualisoinnin hinnoitteluvaihtoehtojen kohdalla, että käyttö saattaa edellyttää lisäostoja.
+Noudata [lähettämisprosessia](office-store.md#submitting-to-appsource) ja siirry *Tuotteen asennus* ‑välilehdelle ja valitse *Tuotteeni edellyttää palvelun ostamista* ‑valintaruutu.
+
+Kun Power BI -visualisointi on vahvistettu ja hyväksytty, Microsoft AppSourcessa ilmoitetaan sovelluskohtaisia ostoja sisältävän Power BI -visualisoinnin hinnoitteluvaihtoehtojen kohdalla, että käyttö saattaa edellyttää lisäostoja.
+
+>[!NOTE]
+>Jos Power BI -visualisointisi on jo lähetetty [myyjän koontinäytön](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) kautta ja haluat lisätä siihen sovelluskohtaisia ostoja edellyttävän ominaisuuden, sinun on kirjoitettava myyjän koontinäytön huomautuksiin ”Visual with in-app purchase” (Sovelluskohtaisia ostoja sisältävä visualisointi). Lisäksi sinun tulee antaa käyttöoikeusavain tai -tunnus, jotta vahvistustiimi voi vahvistaa sovelluskohtaisia ostoja edellyttävät ominaisuudet.
 
 ## <a name="context-menu"></a>Pikavalikko
 Pikavalikko on hiiren kakkospainikkeella avautuva valikko, joka tulee näkyviin, kun hiiren osoitin on visualisoinnin päällä.

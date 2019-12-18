@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 125cb684cae6263d335ad959bb17d1e5c84f5f72
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d949978d431a219845ed93b59eb52439c9d7f0c0
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73855893"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958628"
 ---
 # <a name="analyze-in-excel"></a>Analysoi Excelissä
 Joskus saatat haluta tarkastella ja käsitellä Power BI:ssä olevaa tietojoukkoa Excelillä. **Analysoi Excelissä** -toiminnon avulla voit tehdä niin ja käyttää pivot-taulukko-, kaavio- ja osittajaominaisuuksia Excelissä Power BI:ssä olevan tietojoukon perusteella.
@@ -27,7 +27,7 @@ Joskus saatat haluta tarkastella ja käsitellä Power BI:ssä olevaa tietojoukko
 
 * Excelin pivot-taulukot eivät tue numeeristen kenttien koostamista vetämällä ja pudottamalla. Power BI -tietojoukossasi *on oltava ennalta määritetyt mittarit*.
 * Joissakin organisaatioissa voi olla ryhmäkäytäntösääntöjä, jotka estävät vaadittujen **Analysoi Excelissä** -päivitysten asentamisen Exceliin. Jos et pysty asentamaan päivityksiä, ota yhteyttä järjestelmänvalvojaan.
-* **Analysoi Excelissä** -toiminto edellyttää, että tietojoukko on Power BI Premiumissa tai että käyttäjällä on Power BI Pro -käyttöoikeus. Saat lisätietoja toimintojen eroista käyttöoikeuksien välillä artikkelista [Power BI:n ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md). 
+* **Analysoi Excelissä** -toiminto edellyttää, että tietojoukko on Power BI Premiumissa tai että käyttäjällä on Power BI Pro -käyttöoikeus. Jos haluat lisätietoja käyttöoikeustyyppien toimintojen eroista, katso _Power BI:n ominaisuuksien vertailu_ -osa [Power BI:n hinnoittelusta](https://powerbi.microsoft.com/pricing/).
 * Käyttäjät voivat muodostaa yhteyden tietojoukkoihin Analysoi Excelissä -toiminnon kautta, jos heillä on pohjana olevan tietojoukon lukuoikeus.  Käyttäjällä voi olla tämä usealla eri tavalla. Hän voi esimerkiksi olla tietojoukon sisältävän työtilan jäsen, hänelle on voitu jakaa tietojoukkoa käyttävä raportti tai koontinäyttö tai hänellä voi olla tietojoukon sisältävän sovelluksen käyttöoikeus.
 * **Analysoi Excelissä** on Power BI -palvelun toiminto. Se ei ole käytettävissä Power BI -raporttipalvelimella tai Power BI Embeddedissä. 
 * **Analysoi Excelissä** on tuettu vain koneissa, joissa on käytössä Microsoft Windows.
@@ -49,7 +49,7 @@ Valitse Power BI:ssä raportin tai tietojoukon vieressä oleva kolmen pisteen va
 ![](media/service-analyze-in-excel/power-bi-analyze-menu.png)
 
 ### <a name="install-excel-updates"></a>Excel-päivitysten asentaminen
-Kun käytät **Analysoi Excelissä** -toimintoa ensimmäistä kertaa, sinun on asennettava päivityksiä Excel-kirjastoihin. Sinua pyydetään lataamaan ja suorittamaan Excel-päivitykset (tämä käynnistää Windows-asennusohjelmapaketin *SQL_AS_OLEDDB.msi* asennuksen). Paketti asentaa **SQL Server 2016 RC0:n Microsoft AS OLE DB -palvelun (esiversio)** .
+Kun käytät **Analysoi Excelissä** -toimintoa ensimmäistä kertaa, sinun on asennettava päivityksiä Excel-kirjastoihin. Sinua pyydetään lataamaan ja suorittamaan Excel-päivitykset (tämä käynnistää Windows-asennusohjelmapaketin *SQL_AS_OLEDDB.msi* asennuksen). Paketti asentaa **SQL Server 2016 RC0:n Microsoft AS OLE DB -palvelun (esiversio)**.
 
 > [!NOTE]
 > Muista valita **Älä näytä tätä uudelleen** **Asenna Excel-päivitykset** -valintaikkunassa. Sinun tarvitsee asentaa päivitys vain kerran.

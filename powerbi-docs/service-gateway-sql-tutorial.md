@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: 0ab5831cb1cf4af28a56711475b7ba6a5683b5d5
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 100417202fca148be0e2e976ce0cd84167c803d9
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699310"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958428"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Tietojen päivittäminen paikallisesta SQL Server -tietokannasta
 
@@ -50,6 +50,10 @@ Seuraavien ohjeiden avulla voit luoda Power BI -perusraportin AdventureWorksDW-m
 
     ![SQL Server -tietokanta](./media/service-gateway-sql-tutorial/sql-server-database.png)
 
+    Tässä opetusohjelmassa ei käytetä **lisäasetuksia**, mutta huomioi, että voit määrittää SQL-lausekkeen ja muita asetuksia, kuten [SQL Serverin vikasietoisuuden](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server) käytön.
+
+    ![SQL Serverin lisäasetukset](media/service-gateway-sql-tutorial/sql-server-advanced-options.png)
+
 3. Vahvista **tunnistetietosi** ja valitse sitten **Yhdistä**.
 
     > [!NOTE]
@@ -69,7 +73,7 @@ Seuraavien ohjeiden avulla voit luoda Power BI -perusraportin AdventureWorksDW-m
 
     ![Kentät-ruutu](./media/service-gateway-sql-tutorial/fields-pane.png)
 
-5. Vedä **päättymispäivämäärä** **raporttitason suodattimiin**. Valitse sitten **perussuodatuksen** kohdasta vain **(Tyhjä)** -valintaruutu.
+5. Vedä **päättymispäivämäärä** **raporttitason suodattimiin**. Valitse sitten **perussuodatuksen** kohdasta vain **(Tyhjä)**-valintaruutu.
 
     ![Raporttitason suodattimet](./media/service-gateway-sql-tutorial/report-level-filters.png)
 
@@ -130,7 +134,7 @@ Yhdistit Power BI Desktopissa suoraan paikalliseen SQL Server -tietokantaan, mut
 
 Nyt kun olet yhdistänyt Power BI -tietojoukon SQL Server -tietokantaan paikallisesti tietoyhdyskäytävän kautta, määritä päivitysaikataulu näiden ohjeiden mukaisesti. Tietojoukon säännöllinen päivittäminen auttaa varmistamaan, että raporttisi ja koontinäyttösi sisältävät uusimmat tiedot.
 
-1. Avaa siirtymisruudusta **Oma työtila** \> **Tietojoukot**. Valitse kolme pistettä ( **. . .** ) **AdventureWorksProducts**-tietojoukon kohdalla ja valitse sitten **Ajoita päivitys**.
+1. Avaa siirtymisruudusta **Oma työtila** \> **Tietojoukot**. Valitse kolme pistettä (**. . .**) **AdventureWorksProducts**-tietojoukon kohdalla ja valitse sitten **Ajoita päivitys**.
 
     > [!NOTE]
     > Muista valita kolme pistettä **AdventureWorksProducts**-tietojoukon kohdalta, ei samannimisen raportin kohdalta. **AdventureWorksProducts**-raportin pikavalikko ei sisällä **Ajoita päivitys** -toimintoa.
@@ -164,7 +168,7 @@ Toimi sitten näiden ohjeiden mukaisesti, jotta päivitetyt tiedot lähetetään
 
 1. Valitse Power BI -palvelun siirtymisruudusta **Oma työtila** ja laajenna se.
 
-2. Valitse **Tietojoukot**-kohdassa kolme pistettä **(. . .** ) **AdventureWorksProducts**-tietojoukon kohdalla ja valitse sitten **Päivitä nyt**.
+2. Valitse **Tietojoukot**-kohdassa kolme pistettä **(. . .**) **AdventureWorksProducts**-tietojoukon kohdalla ja valitse sitten **Päivitä nyt**.
 
     ![Päivitä nyt](./media/service-gateway-sql-tutorial/refresh-now.png)
 

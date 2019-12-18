@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e5374397dc9b89df7b7cbd86cfca5a44631b94e4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ef8e874c1f1a47d65845b87dccd441746651a68b
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876478"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999786"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Muodosta yhteys Microsoft Graph Security -ohjelmointirajapintaan Power BI Desktopissa
 
@@ -40,7 +40,7 @@ Azure AD -vuokraajan järjestelmänvalvoja voi antaa suostumuksensa liittimen k�
 
 * Vastaus pyyntöön, jonka logiikkasovellus lähettää ensimmäisen suorituskerran aikana [sovelluksen suostumuskäyttökokemuksen](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience) kautta
    
-Käyttäjätilin, jolla kirjaudutaan Microsoft Graph Security -liittimeen, on oltava suojauksenlukijan rajoitetun järjestelmänvalvojan rooliryhmän jäsen Azure AD:ssa (joko *suojauksen lukija* tai *suojauksen järjestelmänvalvoja*). Katso [Azure AD -roolien määrittäminen käyttäjille](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
+Käyttäjätilin, jolla kirjaudutaan Microsoft Graph Security -liittimeen, roolin on oltava Azure AD:n suojauksen lukija, **jos** käyttäjällä ei ole *suojauksen järjestelmänvalvojan* roolia. Katso [Azure AD -roolien määrittäminen käyttäjille](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
 
 ## <a name="using-the-microsoft-graph-security-connector"></a>Microsoft Graph Security -liittimen käyttäminen
 
@@ -48,7 +48,7 @@ Käytä liitintä seuraavasti:
 
 1. Valitse **Nouda tiedot** > **Lisää** Power BI Desktopin **Aloitus**-valintanauhasta.
 2. Valitse vasemmalla olevan ikkunan luokkien luettelosta **Online-palvelut**.
-3. Valitse **Microsoft Graph Security (beeta)** .
+3. Valitse **Microsoft Graph Security (beeta)**.
 
     ![Nouda tiedot -valintaikkuna](media/desktop-connect-graph-security/GetData.PNG)
     

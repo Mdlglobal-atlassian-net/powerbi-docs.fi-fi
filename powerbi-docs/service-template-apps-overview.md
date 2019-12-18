@@ -1,19 +1,19 @@
 ---
 title: Mitä Power BI -mallisovellukset ovat?
 description: Tämä artikkeli on Power BI -mallisovellusten ohjelman yleiskatsaus. Opi kehittämään Power BI -sovelluksia, niin että koodausta tarvitaan vain vähän tai ei ollenkaan, ja ota sovellukset käyttöön keille tahansa Power BI -asiakkaille.
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/24/2019
-ms.author: tebercov
-ms.openlocfilehash: 4b4e32f787d2d262d604ff0745f8c028e9fff949
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/08/2019
+ms.author: painbar
+ms.openlocfilehash: f519665c78f8c96452091edb84ae9a40f9dc01ba
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871333"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999995"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Mitä Power BI -mallisovellukset ovat?
 
@@ -23,7 +23,16 @@ Mallisovellukset korvaavat nykyiset palvelun sisältöpaketit. Power BI -kumppan
 
 Voit kehittää mallisovelluksia, joiden avulla asiakkaasi voivat yhdistää ja alustaa tiedot omiin tileihinsä. Toimialueen asiantuntijoina he voivat avata tietojen lukituksen siten, että ne ovat helposti heidän yrityskäyttäjiensä käytettävissä.  
 
-Lähetä mallisovelluksesi pilvikumppaniportaaliin. Sovellukset ovat sitten julkisesti saatavilla Power BI -sovellusvalikoimassa (app.powerbi.com/getdata/services) ja Microsoft AppSourcessa (appsource.microsoft.com). Tässä on korkean tason katsaus julkisen mallisovelluksen luomistoimintoon.  
+Lähetä mallisovelluksesi pilvikumppaniportaaliin. Sen jälkeen sovellukset tulevat julkisesti saataville [Power BI -sovellusten Marketplaceen](https://app.powerbi.com/getdata/services) ja [Microsoft AppSourceen](https://appsource.microsoft.com/?product=power-bi). Tässä on korkean tason katsaus julkisen mallisovelluksen luomistoimintoon.
+
+## <a name="power-bi-apps-marketplace"></a>Power BI -sovellusten Marketplace
+
+Power BI -mallisovellusten ansiosta Power BI Pro- ja Power BI Premium -käyttäjät saavat heti merkityksellisiä tietoja valmiiksi pakattujen koontinäyttöjen ja raporttien kautta, jotka voidaan yhdistää reaaliaikaisiin tietolähteisiin. Monet Power BI -sovellukset ovat jo saatavilla [Power BI -sovellusten Marketplacessa](https://app.powerbi.com/getdata/services).
+
+|  |
+|     :---:      |
+| [![Foo](./media/service-template-apps-overview/project-web.png)](https://app.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3) [![Foo](./media/service-template-apps-overview/azure-backup.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-azurebackup.pbi-azurebackup-template) [![Foo](./media/service-template-apps-overview/dynamics-sales.png)](https://app.powerbi.com/groups/me/getapps/services/microsoftdynsmb.businesscentral_sales) [![Foo](./media/service-template-apps-overview/forms-pro.png)](https://app.powerbi.com/groups/me/getapps/services/msfp.formsprocustomersatisfaction) |
+|  |
 
 ## <a name="process"></a>Prosessi
 Mallisovelluksen yleinen kehittämis- ja lähettämisprosessi koostuu useista vaiheista. Jotkin vaiheet voivat koostua useammasta kuin yhdestä samanaikaisesta toiminnosta.
@@ -48,20 +57,21 @@ Tässä ovat ylätason vaiheet.
 
 1. [Tarkista edellytykset](#requirements) ja varmista, että täytät ne. 
 
-1. Luo raportti Power BI Desktopissa. Käytä parametreja, niin että voit tallentaa raportin tiedostona, jota muut voivat käyttää. 
+2. Luo raportti Power BI Desktopissa. Käytä parametreja, niin että voit tallentaa raportin tiedostona, jota muut voivat käyttää. 
 
-1. Luo mallisovellukselle työtila Power BI -palvelun vuokraajassasi (app.powerbi.com). 
+3. Luo mallisovellukselle työtila Power BI -palvelun vuokraajassasi (app.powerbi.com). 
 
-1. Tuo .pbix-tiedosto ja lisää sovellukseesi sisältöä, kuten koontinäyttö. 
+4. Tuo .pbix-tiedosto ja lisää sovellukseesi sisältöä, kuten koontinäyttö. 
 
-1. Luo testipaketti, niin että voit itse testata mallisovellusta organisaatiossasi. 
+5. Luo testipaketti, niin että voit itse testata mallisovellusta organisaatiossasi. 
 
-1. Ylennä testisovellus esituotantoon, niin että voit lähettää sovelluksen vahvistettavaksi AppSourcessa sekä testata oman vuokraajasi ulkopuolella. 
+6. Ylennä testisovellus esituotantoon, niin että voit lähettää sovelluksen vahvistettavaksi AppSourcessa sekä testata oman vuokraajasi ulkopuolella. 
 
-1. Lähetä sisältö Cloud Partner Platformiin julkaistavaksi. 
+7. Lähetä sisältö Cloud Partner Platformiin julkaistavaksi. 
 
-1. Määritä tarjouksesi käyttöönottotilaksi “Live” AppSourcessa ja siirrä sovelluksesi tuotantoon Power BI:ssä.
-2. Voit nyt alkaa kehittää samassa työtilassa seuraavaa versiota esituotannossa. 
+8. Määritä tarjouksesi käyttöönottotilaksi “Live” AppSourcessa ja siirrä sovelluksesi tuotantoon Power BI:ssä.
+
+9. Voit nyt alkaa kehittää samassa työtilassa seuraavaa versiota esituotannossa. 
 
 ## <a name="requirements"></a>Vaatimukset
 
@@ -80,6 +90,19 @@ Jotta voit julkaista mallisovelluksen Power BI -palveluun ja AppSourceen, sinun 
 - Ota käyttöön tietojen mukauttaminen; tue esimerkiksi mukautettua yhteyttä ja asennusohjelman määrittämiä parametreja.
 
 Lisää ehdotuksia on artikkelissa [Vihjeitä mallisovellusten luomiseen Power BI:ssä](service-template-apps-tips.md).
+
+## <a name="known-limitations"></a>Tunnetut rajoitukset
+
+| Ominaisuus | Tunnettu rajoitus |
+|---------|---------|
+|Sisältö:  Tietojoukot   | Tarkalleen yhden tietojoukon tulee olla käytössä. Vain Power BI Desktopissa luodut tietojoukot (.pbix-tiedostot) sallitaan. <br>Ei tueta: Tietojoukkoja, jotka ovat peräisin muista mallisovelluksista, työtilojen välisiä tietojoukkoja, sivuttuja raportteja (.rdl-tiedostot), Excel-työkirjoja |
+|Sisältö: Koontinäytöt | Reaaliaikaisia ruutuja ei sallita (toisin sanoen push-ilmoituksia tai tietojoukkojen suoratoistoa ei tueta) |
+|Sisältö: Tietovuot | Ei tueta: Tietovuot |
+|Tiedostojen sisällöt | Vain PBIX-tiedostot sallitaan. <br>Ei tueta: .rdl-tiedostot (sivutetut raportit), Excel-työkirjat   |
+| Tietolähteet | Pilvipohjaista ajoitettua tietojen päivittämistä tukevat tietolähteet sallitaan. <br>Ei tueta: <li> DirectQuery</li><li>Reaaliaikaiset yhteydet (Azure AS ei käy)</li> <li>Paikalliset tietolähteet (henkilökohtaiset yhdyskäytävät ja yritysyhdyskäytävät eivät ole tuettuja)</li> <li>Reaaliaikainen (push-tietojoukkoa ei tueta)</li> <li>Yhdistelmämallit</li></ul> |
+| Tietojoukko: työtilojen välinen | Työtilojen välisiä tietojoukkoja ei sallita  |
+| Kyselyparametrit | Ei tueta: Tyyppiä ”Any” tai ”Binary” olevat parametrit estävät tietojoukon päivitystoiminnon |
+| Mukautetut visualisoinnit | Vain julkisesti käytettävissä olevia mukautettuja visualisointeja tuetaan. [Organisaation mukautettuja visualisointeja](developer/power-bi-custom-visuals-organization.md) ei tueta. |
 
 ## <a name="support"></a>Tuki
 Saat tukea kehityksen aikana osoitteesta [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Valvomme ja hallinnoimme tätä sivustoa aktiivisesti. Asiakastapaukset ohjataan nopeasti oikealle tiimille.
