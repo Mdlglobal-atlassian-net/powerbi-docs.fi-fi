@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: fa9c07be31f5110f44c2f200bbde249c95abe9ed
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 656f7e532702cef8c38af96e8c9df49ffc36734a
+ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74009823"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75304354"
 ---
 # <a name="power-bi-security-whitepaper"></a>Power BI:n suojausraportti
 
@@ -33,7 +33,7 @@ ms.locfileid: "74009823"
 
 **Power BI** on Microsoftin online-ohjelmistopalvelu (_SaaS_ eli Software as a Service, ”ohjelmisto palveluna”), jonka avulla voit nopeasti ja helposti luoda omatoimisia liiketoimintatietojen koontinäyttöjä, raportteja, tietojoukkoja ja visualisointeja. Power BI:n avulla voit muodostaa yhteyden moniin eri tietolähteisiin, yhdistää ja muotoilla tietoja kyseisistä yhteyksistä sekä luoda sitten raportteja ja koontinäyttöjä, jotka voidaan jakaa muiden kanssa.
 
-Power BI-palveluun liittyvät [Microsoftin verkkopalvelujen ehdot](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) ja [Microsoftin yritystason tietosuojalausunto](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Tietojenkäsittelyn sijainti on Microsoftin verkkopalvelujen ehtojen kohdassa Tietojen siirrot ja sijaintipaikka. Yhteensopivuuden lisätietojen osalta [Microsoft Trust Center](https://www.microsoft.com/trustcenter) on ensisijainen resurssi Power BI:tä varten. Power BI -ryhmä tekee kovasti töitä saadakseen asiakkaidensa käyttöön uusimmat innovaatiot ja parhaan tuottavuuden. Power BI on tällä hetkellä [Office 365-yhteensopivuus kehyksen](https://go.microsoft.com/fwlink/p/?LinkID=618494)tasolla D.
+Power BI-palveluun liittyvät [Microsoftin verkkopalvelujen ehdot](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) ja [Microsoftin yritystason tietosuojalausunto](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Tietojenkäsittelyn sijainti on Microsoftin verkkopalvelujen ehtojen kohdassa Tietojen siirrot ja sijaintipaikka. Yhteensopivuuden lisätietojen osalta [Microsoft Trust Center](https://www.microsoft.com/trustcenter) on ensisijainen resurssi Power BI:tä varten. Power BI -ryhmä tekee kovasti töitä saadakseen asiakkaidensa käyttöön uusimmat innovaatiot ja parhaan tuottavuuden. Power BI on tällä hetkellä [Office 365-yhteensopivuus kehyksen](https://download.microsoft.com/download/1/4/3/1434ABAB-B8E9-412D-8C3A-187B5FCB7A2F/Compliance%20Framework%20document.pdf)tasolla D.
 
 Tässä artikkelissa kuvataan Power BI -suojausta kertomalla Power BI -arkkitehtuurista sekä selitetään, miten käyttäjät todennetaan Power BI -palvelussa ja miten tietoyhteydet muodostetaan. Lisäksi kuvataan, kuinka Power BI tallentaa ja siirtää tietoja palvelussa. Viimeisessä osiossa käsitellään tietoturvaan liittyviä kysymyksiä ja myös vastataan niihin.
 
@@ -192,7 +192,7 @@ Kun tietoja säilytetään levossa, Power BI -palvelu tallentaa tietojoukot, rap
   - Asiakkaan infrastruktuurin paikallisessa tietoyhdyskäytävässä – paikallisten tietolähteiden osalta
   - Tietojen siirto -roolissa – pilvipohjaisten tietolähteiden osalta
 
-Windowsin Azure Blob -säilön salaamiseen käytetty sisällön salausavain (Content Encryption Key, CEK) on sattumanvaraisesti muodostettu 256-bittinen avain. Algoritmi, jonka avulla CEK salaa sisällön, on AES\_CBC\_256.
+Microsoft Azure BLOB-säilön salaamiseen käytetty sisällön salaus avain (CEK) on satunnaisesti muodostettu 256-bittinen avain. Algoritmi, jonka avulla CEK salaa sisällön, on AES\_CBC\_256.
 
 CEK:n salaamiseen seuraavaksi käytetty avaimen salausavain (Key Encryption Key, KEK) on ennalta määritetty 256-bittinen avain. Algoritmi, jonka avulla KEK salaa CEK:n, on A256KW.
 
@@ -318,7 +318,7 @@ Jokainen käyttäjä muodostaa yhteyden kunkin tieto lähteen kirjautumistunnuks
 
 Kun käyttäjä jakaa kyselyitä, koontinäyttöjä, raportteja tai mitä tahansa visualisointeja, kyseisten tietojen ja visualisointien käyttöoikeus määräytyy sen mukaan, tukevatko taustalla olevat tietolähteet roolitason suojausta (RLS).
 
-Jos taustalla oleva tietolähde kykenee **Power BI:n roolitason suojaukseen (RLS)** , Power BI -palvelu käyttää kyseisen roolitason suojausta ja käyttäjät, joiden tunnistetiedot eivät riitä pohjana olevien tietojen käsittelyyn (esimerkiksi koontinäytössä, raportissa tai muussa tieto-artefaktissa käytetty kysely), eivät näe sellaisia tietoja, joihin käyttäjän oikeudet eivät riitä. Jos käyttäjän oikeudet pohjana oleviin tietoihin poikkeavat siitä käyttäjästä, joka on luonut koontinäytön tai raportin, visualisoinnit ja muut artefaktit näyttävät vain sellaisia tietoja, joihin käyttäjällä on oikeudet.
+Jos taustalla oleva tietolähde kykenee **Power BI:n roolitason suojaukseen (RLS)**, Power BI -palvelu käyttää kyseisen roolitason suojausta ja käyttäjät, joiden tunnistetiedot eivät riitä pohjana olevien tietojen käsittelyyn (esimerkiksi koontinäytössä, raportissa tai muussa tieto-artefaktissa käytetty kysely), eivät näe sellaisia tietoja, joihin käyttäjän oikeudet eivät riitä. Jos käyttäjän oikeudet pohjana oleviin tietoihin poikkeavat siitä käyttäjästä, joka on luonut koontinäytön tai raportin, visualisoinnit ja muut artefaktit näyttävät vain sellaisia tietoja, joihin käyttäjällä on oikeudet.
 
 Jos tietolähde **ei** käytä roolitason suojausta, Power BI -kirjautumistunnuksia käytetään pohjana olevaan tietolähteeseen, tai jos yhteyden aikana on annettu muut tunnistetiedot, käytetään kyseisiä annettuja tunnistetietoja. Kun käyttäjä lataa Power BI -palveluun tietoja muusta kuin RLS-tietolähteestä, tiedot tallennetaan Power BI:hin niin kuin tämän asiakirjan **Tietojen tallentaminen ja siirtäminen** -osassa kuvataan. Jos kyseessä on muu kuin RLS-tietolähde ja tietoja jaetaan muiden käyttäjien kanssa (esimerkiksi koontinäytössä tai raportissa) tai tiedot päivitetään, tietojen käsittelyyn tai näyttämiseen käytetään alkuperäisiä tunnistetietoja.
 
@@ -372,13 +372,13 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 **Kuinka käyttäjät muodostavat yhteyden tietolähteisiin ja pääsevät käyttämään tietolähteitä Power BI:tä käyttäessään?**
 
-* **Power BI tunniste tiedot ja toimi alueen tunniste tiedot:** Käyttäjät Kirjautu maan sisään Power BI Sähkö posti osoitteella; Kun käyttäjä yrittää muodostaa yhteyden tieto resurssiin, Power BI välittää Power BI kirjautumissähköpostiosoitteen tunniste tietoina. Jos kyseessä on toimialueeseen yhdistetty resurssi (joko paikallinen tai pilvipohjainen), hakemistopalvelu määrittää kirjautumissähköpostiosoitetta vastaavan _käyttäjän ensisijaisen nimen_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)), joka määrittää, riittävätkö tunnistetiedot sallimaan käytön. Jos organisaatio käyttää Power BI:hin kirjautumiseen työpohjaisia sähköpostiosoitteita (samaa sähköpostia, jolla organisaatiossa kirjaudutaan työresursseihin, esimerkiksi _david@contoso.com_ ), yhdistäminen voi tapahtua saumattomasti; jos organisaatio käyttää muita kuin työpohjaisia sähköpostiosoitteita (esimerkiksi _david@contoso.onmicrosoft.com_ ), hakemistojen yhdistäminen on suoritettava, jotta Power BI -sisäänkirjautumistiedoilla voidaan sallia paikallisten resurssien käyttöoikeus.
+* **Power BI tunniste tiedot ja toimi alueen tunniste tiedot:** Käyttäjät Kirjautu maan sisään Power BI Sähkö posti osoitteella; Kun käyttäjä yrittää muodostaa yhteyden tieto resurssiin, Power BI välittää Power BI kirjautumissähköpostiosoitteen tunniste tietoina. Jos kyseessä on toimialueeseen yhdistetty resurssi (joko paikallinen tai pilvipohjainen), hakemistopalvelu määrittää kirjautumissähköpostiosoitetta vastaavan _käyttäjän ensisijaisen nimen_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)), joka määrittää, riittävätkö tunnistetiedot sallimaan käytön. Jos organisaatio käyttää Power BI:hin kirjautumiseen työpohjaisia sähköpostiosoitteita (samaa sähköpostia, jolla organisaatiossa kirjaudutaan työresursseihin, esimerkiksi _david@contoso.com_), yhdistäminen voi tapahtua saumattomasti; jos organisaatio käyttää muita kuin työpohjaisia sähköpostiosoitteita (esimerkiksi _david@contoso.onmicrosoft.com_), hakemistojen yhdistäminen on suoritettava, jotta Power BI -sisäänkirjautumistiedoilla voidaan sallia paikallisten resurssien käyttöoikeus.
 
 * **SQL Server Analysis Services ja Power BI:** Organisaation, joka käyttää paikallista SQL Server Analysis Services, Power BI tarjoaa Power BI paikallisen tietoyhdyskäytävän (joka on **yhdyskäytävä**, johon viitataan edellisissä osissa).  Power BI:n paikallinen tietoyhdyskäytävä voi toteuttaa tietolähteissä roolitason suojauksen (RLS). Jos haluat lisätietoja RLS-suojauksesta, katso tämän asiakirjan aiempi osio **Käyttäjien todentaminen tietolähteissä**. Lisä tietoja yhdyskäytävien käyttämisestä on kohdassa [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md).
 
   Organisaatiot voivat myös käyttää Kerberosta **kertakirjautumiseen** (SSO) ja muodostaa saumattoman yhteyden Power BI:stä paikallisiin tietolähteisiin, joita voivat olla esimerkiksi SQL Server, SAP HANA ja Teradata. Katso lisätietoja ja määritysvaatimukset artikkelista [ **Käytä Kerberosta kertakirjautumiseen Power BI:stä paikallisiin tietolähteisiin**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
-* **Muut kuin toimi alue yhteydet**: tieto yhteyksille, jotka eivät ole toimi alueeseen yhdistettyjä ja jotka eivät voi olla rooli tason suojausta (RLS), käyttäjän on annettava tunniste tiedot yhteys jakson aikana, joka Power BI sitten välittää tieto lähteeseen yhteys. Jos käyttöoikeudet riittävät, tiedot ladataan tietolähteestä Power BI -palveluun.
+* **Muut kuin toimi alue yhteydet**: tieto yhteyksille, jotka eivät ole toimi alue liitoksia ja jotka eivät ole kykeneviä rooli tason suoja ukseen (RLS), käyttäjän on annettava tunniste tiedot yhteys jakson aikana, joka Power BI sitten välittää yhteyden tieto lähteeseen. Jos käyttöoikeudet riittävät, tiedot ladataan tietolähteestä Power BI -palveluun.
 
 **Miten tietoja siirretään Power BI:hin?**
 
@@ -436,7 +436,7 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 * Kuten aiemmin todettiin, Power BI käyttää **Azure Content Delivery Networkia** (CDN) tarpeellisen staattisen sisällön ja tiedostojen jakamiseen käyttäjille aluekohtaisten asetusten perusteella. Tarkemmin sanottuna Power BI -palvelu käyttää useita **CDN**-kohteita, jotta se saa tehokkaasti jaettua tarpeellisen staattisen sisällön ja tiedostot käyttäjille julkisen Internetin kautta. Näitä staattisia tiedostoja ovat tuotelataukset (kuten **Power BI Desktop**, **paikallinen tietoyhdyskäytävä** tai riippumattomien palveluntarjoajien Power BI -sovellukset), selaimen määritystiedostot, joilla alustetaan ja muodostetaan myöhempiä yhteyksiä Power BI -palvelulle, sekä alkuperäinen turvallinen Power BI -kirjautumissivu.
 
-  Ensimmäisen Power BI-palveluyhteyden aikana toimitettujen tietojen perusteella käyttäjän selain muodostaa yhteyden määritettyyn Azure-**sisältöverkkoon** (tai joidenkin tiedostojen yhteydessä **WFE**:hen) ja lataa kokoelman määritettyjä yleisiä tiedostoja, joiden avulla selain voi olla vuorovaikutuksessa Power BI -palvelun kanssa. Selaimen sivu sisältää AAD-tunnuksen, istunnon tiedot, istuntoon liittyvän **Back-End**-klusterin sijainnin sekä joukon tiedostoja, jotka on ladattu Azure **CDN**- ja **WFE** - klusterista Power BI -palvelun selainistunnon ajaksi.
+  Ensimmäisen Power BI-palveluyhteyden aikana toimitettujen tietojen perusteella käyttäjän selain muodostaa yhteyden määritettyyn Azure-**sisältöverkkoon** (tai joidenkin tiedostojen yhteydessä **WFE**:hen) ja lataa kokoelman määritettyjä yleisiä tiedostoja, joiden avulla selain voi olla vuorovaikutuksessa Power BI -palvelun kanssa. Selaimen sivu sisältää AAD-tunnuksen, istunnon tiedot, istuntoon liittyvän **Back-End**-klusterin sijainnin sekä joukon tiedostoja, jotka on ladattu Azure **CDN**- ja **WFE **- klusterista Power BI -palvelun selainistunnon ajaksi.
 
 **Suorittaako Microsoft mukautettujen visualisointien suhteen minkäänlaista mukautetun visualisointikoodin arviointia suojauksen tai tietoturvan kannalta, ennen kuin kohteita julkaistaan Valikoimaan?**
 
