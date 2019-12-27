@@ -83,8 +83,22 @@
               href: visuals/event-service.md
             - name: Lajittelu
               href: visuals/sort-options.md
-            - name: Vuorovaikutteisuuden apuohjelmat
-              href: visuals/utils-interactivity-selections.md
+            - name: Lokalisointi
+              href: visuals/localization.md
+            - name: Power BI Visual -apuohjelmat
+              items:
+                - name: Vuorovaikutteisuuden apuohjelmat
+                  href: visuals/utils-interactivity-selections.md
+                - name: Muotoilun apuohjelmat
+                  href: visuals/utils-formatting.md
+                - name: Kaavioapuohjelmat
+                  href: visuals/utils-chart.md
+                - name: SVG-apuohjelmat
+                  href: visuals/utils-svg.md
+                - name: Tyyppiapuohjelmat
+                  href: visuals/utils-type.md
+                - name: Tietonäkymäapuohjelmat
+                  href: visuals/utils-dataview.md
         - name: Resurssit
           items:
             - name: Kehityskeskus

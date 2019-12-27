@@ -142,6 +142,8 @@
       items:
         - name: Mitä mobiilisovellukset ovat?
           href: mobile/mobile-apps-for-mobile-devices.md
+        - name: Aloitussivun esittely
+          href: mobile/mobile-apps-home-page.md
     - name: Pika-aloitus
       items:
         - name: Tutustu raporttinäkymiin ja raportteihin
@@ -198,7 +200,7 @@
               href: mobile/mobile-apps-qr-code.md
             - name: Merkintöjen tekeminen ja jakaminen mobiilisovelluksissa
               href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-            - name: Viivakoodin lukeminen iPhone-sovelluksella
+            - name: Viivakoodin lukeminen Power BI -mobiilisovelluksesta
               href: mobile/mobile-apps-scan-barcode-iphone.md
             - name: Määrittäminen mobiililaitteiden hallinnan avulla
               href: mobile/mobile-app-configuration.md

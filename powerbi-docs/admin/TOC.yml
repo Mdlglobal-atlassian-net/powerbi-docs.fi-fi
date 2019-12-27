@@ -7,6 +7,10 @@
       items:
         - name: 'Mitä on Power BI:n hallinta?'
           href: ../service-admin-administering-power-bi-in-your-organization.md
+        - name: Missä vuokraajani sijaitsee?
+          href: ../service-admin-where-is-my-tenant-located.md
+        - name: Siirtyminen saksalaisille Go Local -alueille
+          href: service-admin-migrate-data-germany.md
     - name: Käsitteet
       expanded: true
       items:
@@ -30,8 +34,6 @@
               href: ../service-admin-syndication-partner.md
         - name: Hallintaportaalin käyttö
           href: ../service-admin-portal.md
-        - name: Missä vuokraajani sijaitsee?
-          href: ../service-admin-where-is-my-tenant-located.md
         - name: Kirjautuneiden käyttäjien etsiminen
           href: ../service-admin-access-usage.md
         - name: Valvonta

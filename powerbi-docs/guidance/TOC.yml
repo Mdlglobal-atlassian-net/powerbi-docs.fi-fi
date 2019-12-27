@@ -40,6 +40,8 @@
           href: report-drillthrough.md
         - name: Automaattisen päivämäärän/ajan ohjeet Power BI Desktopissa
           href: auto-date-time.md
+        - name: Monta-moneen-suhteen ohjeet
+          href: relationships-many-to-many.md
     - name: Raportit
       items:
         - name: Raporttien yleiskatsaus
