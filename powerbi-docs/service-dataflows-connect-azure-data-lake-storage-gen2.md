@@ -6,17 +6,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 12/16/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: c48ae0913d0096546c23d22d3e4596fdb21aef82
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c3f703bfe2685166ce575b37c053b2a9603a799f
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872726"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223872"
 ---
-# <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Yhdistä Azure Data Lake Storage Gen2 tietovuon tallennukseen (esikatselu)
+# <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Azure Data Lake Storage Gen2:n yhdistäminen tietovuon tallentamiseksi
 
 Power BI:n työtilat voidaan määrittää tallentamaan tietovuot organisaatiosi Azure Data Lake Storage Gen2 -tilille. Tässä artikkelissa kuvataan yleisiä vaiheita tämän tekemiseksi sekä annetaan samalla ohjeita ja parhaita käytäntöjä. Työtilojen määrittämisessä on joitakin etuja tietovuon määritelmien ja tietotiedostojen tallentamiseksi Data Lakeen, kuten seuraavat:
 
@@ -104,7 +104,7 @@ Jotta voit myöntää käyttöoikeudet tiedostojärjestelmään, sinun on sovell
 
 Etsi vuokraajan sovelluksia seuraavasti:
 
-1. Valitse [Azure-portaalissa](https://portal.azure.com/) **Azure Active Directory** siirtymisruudusta.
+1. Valitse [Azure-portaalissa](https://portal.azure.com/)**Azure Active Directory** siirtymisruudusta.
 2. Valitse Azure **Active Directory** -ruudussa **Yrityssovellukset**.
 3. Valitse avattavasta **Sovellustyyppi**-valikosta **Kaikki sovellukset** ja valitse sitten **Käytä**. Esiin tulee seuraavan kuvan kaltainen vuokraajan sovellusten malli.
 

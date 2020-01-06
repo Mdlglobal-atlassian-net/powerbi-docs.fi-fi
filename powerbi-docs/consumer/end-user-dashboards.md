@@ -10,10 +10,10 @@ ms.date: 09/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: a4fbf56a796a30c2d8a718411e3363238a9c2bb2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73851851"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Koontinäytöt Power BI -palvelun kuluttajille
@@ -48,7 +48,7 @@ Raportit sekoitetaan usein koontinäyttöihin, koska nekin ovat pohjia, jotka ov
 | --- | --- | --- |
 | Sivut |Yksi sivu |Yksi tai useampi sivu |
 | Tietolähteet |Yksi tai useampi raportti ja yksi tai useampi tietojoukko koontinäyttöä kohden |Yksi tietojoukko raporttia kohden |
-| Suodatus |Ei voi suodattaa tai jakaa sektoreihin |Monta eri tapaa suodattaa, korostaa ja jakaa sektoreihin |
+| suodatusta |Ei voi suodattaa tai jakaa sektoreihin |Monta eri tapaa suodattaa, korostaa ja jakaa sektoreihin |
 | Hälytysten asettaminen |Voit luoda hälytyksiä lähetettäväksi sähköpostina, kun tietyt ehdot täyttyvät |Ei |
 | Esittelyssä |Voit määrittää jonkin koontinäytön ”esittelyssä” olevaksi koontinäytöksi |Esittelyssä olevaa raporttia ei voida luoda |
 | Pohjana olevat tietojoukkojen taulukot ja kentät ovat näkyvissä |Ei. Voit viedä tietoja, mutta etänäe taulukoita ja kenttiä itse koontinäytössä. |Kyllä. Tietojoukon taulukot ja kentät ja arvot ovat näkyvissä. |

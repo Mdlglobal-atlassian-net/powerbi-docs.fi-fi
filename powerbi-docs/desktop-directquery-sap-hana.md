@@ -10,10 +10,10 @@ ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 8d5923c111debb14aab46977d42f3357837d9399
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73878311"
 ---
 # <a name="directquery-and-sap-hana"></a>DirectQuery ja SAP HANA
@@ -110,7 +110,7 @@ Kaikkien edellä mainittujen seikkojen ja toimintojen johdosta sinun täytyy huo
 
 * **Nouda tiedot** -toiminnossa ja **kyselyeditorissa** tulee sisällyttää mukaan vain ne sarakkeet, joita tarvitaan tarvittavien tietojen noutamiseen, koska tulos on kysely ja koska tämän kyselyn täytyy olla sellainen kysely, jonka voi lähettää SAP HANAan. Jos valitset esimerkiksi kymmeniä sarakkeita, koska ajattelet, että tarvitset niitä ehkä myöhemmissä visualisoinneissa, tässä tapauksessa DirectQueryssa yksinkertainenkin visualisointi tarkoittaa sitä, että alivalinnassa käytetty koostekysely sisältää nämä kymmenet sarakkeet. Yleensä tämä tarkoittaa heikkoa tehokkuutta kyselylle.
   
-Tarkastellaan esimerkkiä. Seuraavassa esimerkissä valitaan viisi saraketta (**CalendarQuarter**, **Color**, **LastName**, **ProductLine**, **SalesOrderNumber**) **Nouda tiedot** -valintaikkunassa sekä mittari *OrderQuantity*. Tämä merkitsee sitä, että kun luot myöhemmin yksinkertaisen visualisoinnin, joka sisältää Min OrderQuantity -määrän, saat tulokseksi seuraavan SQL-kyselyn SAP HANAan. Harmaana näkyvä osio on alivalinta, joka sisältää kyselyn **Nouda tiedot** -toiminnosta  /  **kyselyeditorista**. Jos tämä alivalinta tuottaa suuren kardinaliteettituloksen, SAP HANA antaa tuloksia todennäköisesti hitaasti.  
+Tarkastellaan esimerkkiä. Seuraavassa esimerkissä valitaan viisi saraketta (**CalendarQuarter**, **Color**, **LastName**, **ProductLine**, **SalesOrderNumber**) **Nouda tiedot** -valintaikkunassa sekä mittari *OrderQuantity*. Tämä merkitsee sitä, että kun luot myöhemmin yksinkertaisen visualisoinnin, joka sisältää Min OrderQuantity -määrän, saat tulokseksi seuraavan SQL-kyselyn SAP HANAan. Harmaana näkyvä osio on alivalinta, joka sisältää kyselyn **Nouda tiedot** -toiminnosta  / **kyselyeditorista**. Jos tämä alivalinta tuottaa suuren kardinaliteettituloksen, SAP HANA antaa tuloksia todennäköisesti hitaasti.  
 
 ![](media/desktop-directquery-sap-hana/directquery-sap-hana_03.png)
 
@@ -148,5 +148,5 @@ Saat lisätietoja DirectQuerystä seuraavista resursseista:
 * [DirectQuery Power BI:ssä](desktop-directquery-about.md)
 * [DirectQueryn tukemat tietolähteet](desktop-directquery-data-sources.md)
 * [DirectQuery ja SAP BW](desktop-directquery-sap-bw.md)
-* [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md)
+* [On-premises data gateway (Paikallinen tietoyhdyskäytävä)](service-gateway-onprem.md)
 

@@ -10,10 +10,10 @@ ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
 ms.openlocfilehash: 96a006f60e08d35ef6bbe13a2033d866814ec5b2
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74697539"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Mikä paikallinen tietoyhdyskäytävä on?
@@ -30,11 +30,11 @@ Lisätietoja yhdyskäytävän toiminnasta on artikkelissa [Paikallisen tietoyhdy
 
 ## <a name="types-of-gateways"></a>Yhdyskäytävien tyypit
 
-Yhdyskäytäviä on kahta tyyppiä, joita kumpaakin käytetään eri skenaarioissa:
+Yhdyskäytäviä on kahta tyyppiä, joita käytetään eri skenaarioissa:
 
 * **Paikallisen tietoyhdyskäytävän** avulla useat käyttäjät voivat muodostaa yhteyden useisiin paikallisiin tietolähteisiin. Voit käyttää paikallista tietoyhdyskäytävää kaikissa tuetuissa palveluissa yhdellä yhdyskäytävän asennuksella. Tämä yhdyskäytävä sopii hyvin monimutkaisiin tilanteisiin, joissa useat käyttäjät käyttävät useita tietolähteitä.
 
-* **Paikallisen tietoyhdyskäytävän (henkilökohtainen tila)** avulla yksi käyttäjä voi muodostaa yhteyden tietolähteisiin, eikä tietoyhdyskäytävää voi jakaa muiden kanssa. Paikallista tietoyhdyskäytävää (henkilökohtainen tila) voidaan käyttää vain Power BI:n kanssa. Tämä yhdyskäytävä sopii hyvin tilanteisiin, joissa sinä olet ainoa raporttien luoja eikä sinun tarvitse jakaa tietolähteitä muiden kanssa.
+* **Paikallisen tietoyhdyskäytävän (henkilökohtainen tila)** avulla yksi käyttäjä voi muodostaa yhteyden tietolähteisiin, eikä tietoyhdyskäytävää voi jakaa muiden kanssa. Paikallista tietoyhdyskäytävää (henkilökohtainen tila) voidaan käyttää vain Power BI:n kanssa. Tämä yhdyskäytävä sopii hyvin tilanteisiin, joissa olet ainoa raporttien luoja eikä sinun tarvitse jakaa tietolähteitä muiden kanssa.
 
 ## <a name="use-a-gateway"></a>Yhdyskäytävän käyttäminen
 

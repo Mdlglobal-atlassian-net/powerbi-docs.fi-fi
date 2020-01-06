@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
 ms.openlocfilehash: 4db1f887c1dd889a06c02643a0270cc24ab9c45f
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74311498"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports-preview"></a>Rivitason suojauksen toteuttaminen upotetuissa sivutetuissa raporteissa (esikatselu)
@@ -26,7 +26,7 @@ Tämä ominaisuus tarjoaa turvallisen tavan näyttää tietojen alijoukko niin, 
 
 ## <a name="configuring-a-parameter-to-filter-the-dataset"></a>Parametrin määrittäminen tietojoukon suodattamiseksi
 
-Kun otat rivitason suojauksen käyttöön Power BI -sivutetulle raportille, sinun on määritettävä [parametri](../report-builder-parameters.md) **UserID**-määritteelle. Tämä parametri rajoittaa tietojoukosta vedettyjä tietoja ennen raportin upottamista.
+Kun otat rivitason suojauksen käyttöön Power BI -sivutetulle raportille, sinun on määritettävä [parametri](../report-builder-parameters.md)**UserID**-määritteelle. Tämä parametri rajoittaa tietojoukosta vedettyjä tietoja ennen raportin upottamista.
 
 Kun olet määrittänyt parametrin **UserID:lle**, käytä [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)-ohjelmointirajapintaa upotetun suojaustunnuksen saamiseksi.
 
@@ -80,7 +80,7 @@ Voit käyttää **UserId**-tunnusta *suodattimena* tai *kyselynä* tietolähteen
 
 Kun upotat sivutetun raportin asiakkaitasi varten, [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup) -ohjelmointirajapintaa käytetään upotustunnuksen muodostamiseen. Tämän tunnuksen avulla voidaan myös suodattaa joitakin tietoja, jotka on vedetty ulos sivutetun raportin kautta.
 
-Jos haluat paljastaa vain osan tiedoista, määritä `username` kenttään tiedot, jotka haluat näyttää. Jos esimerkiksi sivutetussa raportissa, jossa on väriparametri, syötät *vihreä* `username`-kenttään, upotustunnus rajoittaa upotetut tiedot näyttämään vain tiedot, joissa on *vihreä*-arvo värisarakkeessa.
+Jos haluat paljastaa vain osan tiedoista, määritä `username` kenttään tiedot, jotka haluat näyttää. Jos esimerkiksi sivutetussa raportissa, jossa on väriparametri, syötät *vihreä*`username`-kenttään, upotustunnus rajoittaa upotetut tiedot näyttämään vain tiedot, joissa on *vihreä*-arvo värisarakkeessa.
 
 ```JSON
 {

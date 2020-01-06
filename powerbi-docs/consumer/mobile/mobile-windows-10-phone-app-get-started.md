@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 08/09/2019
 ms.author: mshenhav
 ms.openlocfilehash: b2bfe6157653459c2d7b60b85c9f7e8a3e465e23
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73879062"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Windows 10:n Power BI -mobiilisovelluksen käytön aloittaminen
@@ -25,7 +25,7 @@ Voit [luoda koontinäyttöjä ja raportteja Power BI -palvelussa](../../service-
 Sitten voit käyttää koontinäyttöjä ja raportteja, tutkia tietoja ja jakaa niitä – kaikki voidaan tehdä Windows 10:n Power BI -mobiilisovelluksesta käsin.
 
 ## <a name="first-things-first"></a>Aloitetaan tärkeimmästä
-* [**Hanki Windows 10:n Power BI -mobiilisovellus**  ](https://go.microsoft.com/fwlink/?LinkID=526478) Windows Storesta.
+* [**Hanki Windows 10:n Power BI -mobiilisovellus** ](https://go.microsoft.com/fwlink/?LinkID=526478) Windows Storesta.
   
   Laitteen käyttöjärjestelmän on oltava Windows 10. Sovellusta voidaan käyttää laitteissa, joissa on vähintään 3 gigatavua RAM-muistia ja 8 gigatavua tallennustilaa.
    

@@ -8,26 +8,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 44da3a20c203bfc50be08b0ed91efa6dfd998204
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.openlocfilehash: 73b439b870a4f931c2db680c0067a6ea2fdf54ff
+ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882767"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548574"
 ---
 # <a name="power-bi-webinars"></a>Power BI -verkkoseminaarit
 
 Rekisteröidy tuleviin reaaliaikaisiin verkkoseminaareihin tai katso nauhoitettuja seminaareja.
 
 ## <a name="upcoming-webinars"></a>Tulevat verkkoseminaarit
-
-**Analytics Azure-virtuaalitapahtumassa: Nopeuta merkityksellisten tietojen saamista Azure Synapse Analyticsin avulla**
-<br>Gayle Sheppard ja John Macintyre
-<br>[Rekisteröidy nyt](https://info.microsoft.com/WW-Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-Registration.html?ocid=AID2482920_QSG_373413)
-
-**Yhdeksän massadatan tulevaisuutta muovaavaa trendiä**
-<br>– Vijay Gopalakrishnan
-<br>[Rekisteröidy ja katso joulukuun 18. päivä](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
 
 **Kolme tapaa, joilla tekoäly muuttaa BI:tä**
 <br>Justyna Lucznik
@@ -39,6 +31,10 @@ Rekisteröidy tuleviin reaaliaikaisiin verkkoseminaareihin tai katso nauhoitettu
 
 Aloita näistä suosituista verkkoseminaareista
 
+**Analytics Azure-virtuaalitapahtumassa: Nopeuta merkityksellisten tietojen saamista Azure Synapse Analyticsin avulla**
+<br>Gayle Sheppard ja John Macintyre
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-On-Demand-Registration.html)
+
 **Miten Microsoft muuttaa liiketoimintatietojen suojausta**
 <br>Anton Fritz ja Adi Regev
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
@@ -46,6 +42,10 @@ Aloita näistä suosituista verkkoseminaareista
 **Power BI sekä modernin ja yritys-BI:n tulevaisuus**
 <br>pitäjät: Arun Ulag ja Amir Netz
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html?LCID=EN-US)
+
+**Yhdeksän massadatan tulevaisuutta muovaavaa trendiä**
+<br>– Vijay Gopalakrishnan
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
 
 **Power BI:n käytön aloittaminen**
 <br>tekijä: Miguel Martinez
@@ -244,7 +244,7 @@ Katso tallennetut istuntoja milloin tahansa
 <br>tekijä: Kirkland Barrett
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-29-BIATMIcrosoft274828_01Registration-ForminBody.html?Is=Website)
 
-## <a name="see-also"></a>Katso myös
+## <a name="see-also"></a>Muuta aiheeseen liittyvää
 
 - [Power BI:n tekniset raportit](whitepapers.md)
 
@@ -256,4 +256,4 @@ Katso tallennetut istuntoja milloin tahansa
 
 - Tilaa Microsoftin [YouTube-kanava](https://www.youtube.com/mspowerbi)
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

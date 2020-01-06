@@ -8,10 +8,10 @@ ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
 ms.openlocfilehash: 362c765fb5e739563b8d21eaed53304eddce8acc
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74265719"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Power BI Embedded -palvelun diagnostiikan kirjaus Azuressa
@@ -130,7 +130,7 @@ Engine (Moduuli) -luokka ohjeistaa resurssin kirjaamaan seuraavat tapahtumat, ja
 | SessionType | Käyttäjä | Istuntotyyppi (toiminnon aiheuttanut entiteetti). |
 | ProgressTotal | 0 | Edistyminen yhteensä. |
 | IntegerData | 0 | Kokonaislukutiedot. |
-| Severity | 0 | Poikkeuksen vakavuus. |
+| Vakavuus | 0 | Poikkeuksen vakavuus. |
 | Onnistui | 1 | 1 = onnistuminen. 0 = epäonnistuminen (esimerkiksi 1 tarkoittaa käyttöoikeustarkistuksen onnistumista ja 0 epäonnistumista). |
 | Virhe | 0 | Määritetyn tapahtuman virheen numero. |
 | ConnectionID | 3 | Yksilöivä yhteystunnus. |
@@ -176,7 +176,7 @@ Valitse **EventClass\_s** tai jokin tapahtumien nimistä, niin Log Analytics jat
 
 Muista tarkistaa [Log Analytics](https://docs.microsoft.com/azure/log-analytics/), jonka kautta pääset tutkimaan verkkosivustoa, jossa on kerättyihin tietoihin liittyvät parannellut kysely-, raporttinäkymä- ja ilmoitusmahdollisuudet.
 
-### <a name="queries"></a>kyselyt
+### <a name="queries"></a>Kyselyt
 
 Käytettävissä on satoja kyselyitä. Seuraavassa on muutamia, joiden avulla pääset alkuun. Lisätietoja uudesta Log Search -kyselykielestä on artikkelissa [Understanding log searches in Log Analytics (Lokihaut Log Analytics -toiminnossa)](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-search).
 

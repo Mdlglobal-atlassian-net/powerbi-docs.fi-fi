@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: f44e8b44157f62b6b80e16b18a2c80d11e43eb77
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74265317"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Koodikatkelmia sisällön siirtämiseen Power BI Workspace Collectionista
@@ -233,10 +233,10 @@ Tässä katkelmassa oletetaan, että push-tietojoukko on jo SaaS-ympäristön si
 [Upottaminen Power BI:n avulla](embedding.md)  
 [Miten Power BI Embedded -työtilakokoelman sisältö siirretään Power BI -palveluun](migrate-from-powerbi-embedded.md)  
 [Power BI:n koontinäyttöjen, raporttien ja ruutujen upottaminen](embedding-content.md)  
-[Power BI Premium – mikä se on?](../service-premium-what-is.md)  
+[Mikä on Power BI Premium?](../service-premium-what-is.md)  
 [JavaScript API Git -säilö](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git -säilö](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript-upotuksen näyte](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

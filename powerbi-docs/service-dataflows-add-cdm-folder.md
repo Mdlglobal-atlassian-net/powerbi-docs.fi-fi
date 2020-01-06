@@ -10,10 +10,10 @@ ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 5b6b8658e4480173c32a591c2fc763a238cfd13a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73872705"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Lisää CDM-kansio Power BI:hin tietovuona (esikatselu)
@@ -24,7 +24,7 @@ Voit lisätä Power BI:ssä organisaation Azure Data Lake Storage Gen2:en tallen
 
 Tietovoiden luomiseen CDM-kansioista on muutamia vaatimuksia, kuten seuraavassa luettelossa kuvataan:
 
-* Tietovoiden luominen CDM-kansioista on käytettävissä *vain* [uudessa työtilakokemuksessa](service-create-the-new-workspaces.md). 
+* Tietovoiden luominen CDM-kansioista on käytettävissä *vain*[uudessa työtilakokemuksessa](service-create-the-new-workspaces.md). 
 * CDM-kansion lisääminen Power BI:hin edellyttää, että kansion lisäävällä käyttäjällä on [CDM-kansion ja sen tiedostojen käyttöoikeus](https://go.microsoft.com/fwlink/?linkid=2029121).
 * Sinulla on oltava luku- ja käyttöoikeudet kaikkiin CDM-kansiossa oleviin tiedostoihin ja kansioihin, jotta ne voi lisätä Power BI:hin.
 
@@ -67,7 +67,7 @@ Power BI Desktop:
 
 Muita harkittavia seikkoja on seuraavassa luettelossa:
 
-* Tietovoiden luominen CDM-kansioista on käytettävissä *vain* [uudessa työtilakokemuksessa](service-create-the-new-workspaces.md)
+* Tietovoiden luominen CDM-kansioista on käytettävissä *vain*[uudessa työtilakokemuksessa](service-create-the-new-workspaces.md)
 * Linkitetyt entiteetit eivät ole käytettävissä CDM-kansioista luodulle tietovuolle
 
 

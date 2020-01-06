@@ -1,19 +1,19 @@
 ---
 title: Power BI -sisällön tarkasteleminen ulkopuolisena vieraskäyttäjänä (Azure AD B2B)
 description: Power BI -mobiilisovellusten avulla voit tarkastella sisältöä, joka on jaettu kanssasi ulkoisesta organisaatiosta.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/27/2019
-ms.author: mshenhav
-ms.openlocfilehash: f0db77a69bd8845b9448b7c15fedea7663683ec0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/09/2019
+ms.author: painbar
+ms.openlocfilehash: c5e1e0b90f24a81940edab46633f49df41d25fdc
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879335"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219852"
 ---
 # <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Kanssasi ulkoisesta organisaatiosta jaetun Power BI -sisällön tarkasteleminen
 
@@ -30,18 +30,18 @@ Koskee seuraavia:
 
 **Tarvitset ensin ulkoisesta organisaatiosta henkilön, joka jakaa kohteen kanssasi.** Kun joku [jakaa kohteen kanssasi](../../service-share-dashboards.md), joko samasta organisaatiosta tai ulkoisesta organisaatiosta, saat sähköpostiviestin, jossa on linkki kyseiseen jaettuun kohteeseen. Kun avaat linkin mobiililaitteessasi, Power BI -mobiilisovellus avautuu. Jos sovellus tunnistaa, että kohde on jaettu ulkoisesta organisaatiosta, sovellus muodostaa yhteyden kyseiseen organisaatioon käyttäjätietojesi avulla. Sovellus lataa sitten kaikki kohteet, jotka on jaettu kanssasi kyseisestä organisaatiosta.
 
-![Power BI avaa jaetun kohteen sähköpostista ](./media/mobile-apps-b2b/mobile-b2b-open-item-email.png)
+![Power BI avaa jaetun kohteen sähköpostista ](./media/mobile-apps-b2b/mobile-b2b-open-item-email-new.png)
 
 > [!NOTE]
 > Jos tämä on ensimmäinen kohde, joka on jaettu kanssasi ulkoisena vieraskäyttäjänä, sinun on lunastettava kutsu selaimessa. Et voi lunastaa kutsua Power BI -sovelluksessa.
 
 Kun olet yhteydessä ulkoiseen organisaatioon, sovelluksessa näkyy musta ylätunniste. Tämä ylätunniste ilmaisee, että et ole muodostanut yhteyttä kotiorganisaatioosi. Jos haluat muodostaa yhteyden takaisin kotiorganisaatioosi, poistu vierastilasta.
 
-![Power BI:n vieraskäyttäjän otsikko](./media/mobile-apps-b2b/mobile-b2b-exit-home.png)
+![Power BI:n vieraskäyttäjän otsikko](./media/mobile-apps-b2b/mobile-b2b-exit-home-new.png)
 
 Vaikka sinulla on oltava Power BI:n artefaktin linkki ulkoiseen organisaatioon yhdistämistä varten, voit käyttää kaikkia kanssasi jaettuja kohteita (ei vain sähköpostista avaamaasi kohdetta) sovelluksen siirtymisen jälkeen. Jos haluat nähdä kaikki kohteet, joita voit käyttää ulkoisessa organisaatiossa, siirry sovellusvalikkoon ja valitse **Jaettu kanssani**. **Sovellukset**-kohdasta löydät sovelluksia, joita voit myös käyttää.
 
-![Power BI -sovellusvalikko vieraana ulkoisena käyttäjänä](./media/mobile-apps-b2b/mobile-b2b-menu.png)
+![Power BI -sovellusvalikko vieraana ulkoisena käyttäjänä](./media/mobile-apps-b2b/mobile-b2b-menu-new.png)
 
 ## <a name="limitations"></a>Rajoitukset
 

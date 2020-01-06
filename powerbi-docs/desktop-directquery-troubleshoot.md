@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
 ms.openlocfilehash: 623a0bbd187a997003ce7b82cc76d5c4fbe9ce44
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73868061"
 ---
 # <a name="directquery-model-troubleshooting-in-power-bi-desktop"></a>Power BI Desktopin DirectQuery-mallin vianmääritys
@@ -36,7 +36,7 @@ Power BI Desktop kirjaa oletusarvoisesti tietyn istunnon tapahtuman jäljitystie
 Joissain DirectQuery-lähteissä tämä loki sisältää kaikki taustatietolähteeseen lähetetyt kyselyt (muita DirectQuery-lähteitä voidaan tukea tulevaisuudessa). Lokeihin kyselyitä kirjaavat lähteet ovat seuraavat:
 
 - SQL Server
-- Azure SQL -tietokanta
+- Azuren SQL-tietokanta
 - Azure SQL Data warehouse
 - Oracle
 - Teradata

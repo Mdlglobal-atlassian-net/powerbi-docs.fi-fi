@@ -11,10 +11,10 @@ ms.custom: ''
 ms.date: 08/10/2017
 LocalizationGroup: Data from databases
 ms.openlocfilehash: 00b7c98236f37505fbb0ddec81a45b65bf3e3ee6
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73871179"
 ---
 # <a name="sql-server-analysis-services-live-data-in-power-bi"></a>SQL Server Analysis Servicesin reaaliaikaiset tiedot Power BI:ssä
@@ -36,7 +36,7 @@ Power BI:ssä on käytössä kaksi tapaa muodostaa reaaliaikainen yhteys SQL Ser
 
    ![Muodosta yhteys Nouda tiedot 1:een](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_1.png)
 
-3. Valitse **SQL Server Analysis Services**  >  **Yhdistä**.
+3. Valitse **SQL Server Analysis Services** > **Yhdistä**.
 
    ![Muodosta yhteys Nouda tiedot 2:een](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
 
@@ -58,8 +58,8 @@ Jos kiinnität visualisointeja raportista koontinäyttöön, kiinnitetyt ruudut 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md)  
+* [On-premises data gateway (Paikallinen tietoyhdyskäytävä)](service-gateway-onprem.md)  
 * [Analysis Services -tietolähteiden hallinta](service-gateway-enterprise-manage-ssas.md)  
 * [Paikallisen tietoyhdyskäytävän vianmääritys](service-gateway-onprem-tshoot.md)  
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

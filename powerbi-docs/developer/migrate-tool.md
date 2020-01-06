@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.openlocfilehash: 01f79bfaae13b60d3c63abd8f7fc801998075ee6
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74265277"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Power BI Embedded -siirtotyökalu
@@ -26,7 +26,7 @@ Voit siirtää sisältösi työtilakokoelmista Power BI -palveluun rinnakkain ny
 * Lähetettyjä tietojoukkoja ei voi ladata palvelusta, ja ne on luotava uudelleen Power BI REST -ohjelmointirajapinnoille Power BI -palvelua varten.
 * Ennen 26. marraskuuta 2016 tuotuja PBIX-tiedostoja ei voi ladata palvelusta.
 
-## <a name="download"></a>Lataa palvelusta
+## <a name="download"></a>Lataa
 
 Voit ladata siirtotyökalunäytteen [GitHubista](https://github.com/Microsoft/powerbi-migration-sample). Voit ladata palvelusta joko säilön zipin tai kloonata sen paikallisesti. Kun se on ladattu palvelusta, voit avata *powerbi-migration-sample.sln*-näytteen Visual Studiossa siirtotyökalun luomiseksi ja suorittamiseksi.
 
@@ -122,7 +122,7 @@ Raportit-osiossa on luettelo saatavilla olevista raporteista. Se ilmaisee, voida
 
 Ilmoitat **Kohderakenne**-kohdassa, mistä palvelusta kohteet ladataan ja miten ne ladataan palveluun.
 
-#### <a name="download-plan"></a>Lataa suunnitelma palvelusta
+#### <a name="download-plan"></a>Lataa suunnitelma
 
 Polku luodaan automaattisesti puolestasi. Voit halutessasi muuttaa tätä polkua. Jos muutat polkua, sinun on valittava **Päivitä polut**.
 
@@ -277,4 +277,4 @@ Katso lisätietoja artikkelista [Miten Power BI Embedded -työtilakokoelman sis�
 [JavaScript-upotuksen näyte](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

@@ -12,10 +12,10 @@ ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 9e202d22c2ff42a29eb28a8ee154b09f18097d04
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73862273"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Tarkastele aiheeseen liittyvää sisältöä Power BI -palvelussa
@@ -75,5 +75,5 @@ Täältä voit tehdä suoria toimintoja aiheeseen liittyvään sisältöön. Val
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Power BI -palvelun käytön aloittaminen](../service-get-started.md)
-* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

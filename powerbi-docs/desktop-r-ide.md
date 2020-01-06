@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: db4b6d4915e97aaee65806b0bca7801bf4ce951e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4440db5888eeeab638eab4ea3819107d37bdbdbd
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876221"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223459"
 ---
 # <a name="use-an-external-r-ide-with-power-bi"></a>Ulkoisen R IDE:n käyttö Power BI:n kanssa
 Voit käyttää ulkoista integroitua R-kehitysympäristöä **Power BI Desktopin** avulla ja luoda ja tarkentaa R-komentosarjoja ja käyttää kyseisiä komentosarjoja Power BI:ssä.
@@ -31,7 +31,7 @@ Aiemmin sinun täytyi käyttää **Power BI Desktopin** R-komentosarjaeditoria R
 Jos haluat käyttää tätä ominaisuutta, sinun on asennettava **integroitu R-kehitysympäristö** paikalliseen tietokoneeseesi. **Power BI Desktop** ei sisällä, ota käyttöön tai asenna R-moduulia, joten sinun on asennettava **R** erikseen paikalliseen tietokoneeseesi. Voit valita seuraavista vaihtoehdoista, mitä integroitua R-kehitysympäristöä käytät:
 
 * Voit asentaa integroidun R-suosikkikehitysympäristösi, joista monet ovat saatavilla maksutta esimerkiksi [Revolution Open -lataussivulta](https://mran.revolutionanalytics.com/download/) ja [CRAN-säilöstä](https://cran.r-project.org/bin/windows/base/).
-* **Power BI Desktop** tukee myös [R Studiota](https://www.rstudio.com/) ja **Visual Studio 2015:tä** [*R Tools for Visual Studion*](https://beta.visualstudio.com/vs/rtvs/) -editorien kanssa.
+* **Power BI Desktop** tukee myös [R Studiota](https://www.rstudio.com/) ja **Visual Studio 2015:tä**[*R Tools for Visual Studion*](/visualstudio/rtvs) -editorien kanssa.
 * Voit myös asentaa muun integroidun R-kehitysympäristön ja saada **Power BI Desktopin** käynnistämään kyseinen **integroitu R-kehitysympäristö** tekemällä jokin seuraavista:
   
   * Voit liittää **. R**-tiedostoihin ulkoisen integroidun kehitysympäristön, jonka haluat **Power BI Desktopin** käynnistävän.

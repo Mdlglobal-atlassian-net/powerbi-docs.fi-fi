@@ -10,10 +10,10 @@ ms.date: 08/10/2017
 ms.author: sarinas
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 0a7268c041976a3cab3316c91470c1378a3685f5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73871676"
 ---
 # <a name="how-to-refresh-your-xero-content-pack-credentials-if-refresh-failed"></a>Xero-sisältöpaketin tunnistetietojen päivitys, jos päivitys epäonnistuu
@@ -49,5 +49,5 @@ Jos sinulla on edelleen päivitysongelmia, älä epäröi ottaa yhteyttä osoitt
 Lue lisää Power BI:n Xero-sisältöpaketista [Xero-sisältöpaketin ohjesivulta](service-connect-to-xero.md).
 
 ### <a name="next-steps"></a>Seuraavat vaiheet
-* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

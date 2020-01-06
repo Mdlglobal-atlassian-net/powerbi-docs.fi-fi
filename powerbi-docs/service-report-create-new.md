@@ -10,10 +10,10 @@ ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: c3f30206a01dce9cf9fd3ce0600b46b401df2b1f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73871760"
 ---
 # <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Raportin luominen Power BI -palvelussa tuomalla tietojoukko
@@ -52,10 +52,10 @@ Tämä raporttien luontimenetelmä alkaa tietojoukosta ja tyhjästä raporttipoh
 ## <a name="add-a-radial-gauge-to-the-report"></a>Viisarimittarin lisääminen raporttiin
 Nyt kun tietojoukkomme on tuotu, aloitetaan vastaamaan kysymyksiin.  Markkinointipäällikkö (CMO) haluaa tietää, miten lähellä tämän vuoden myyntitavoitteitamme olemme. Mittari on [hyvä valinta visualisoimaan](visuals/power-bi-report-visualizations.md) tämän tyyppisten tietojen näyttämistä.
 
-1. Valitse Kentät-ruudussa **Myynti**  >  **Tämän vuoden myynti** > **Arvo**.
+1. Valitse Kentät-ruudussa **Myynti** > **Tämän vuoden myynti** > **Arvo**.
    
     ![pylväskaavio raporttieditorissa](media/service-report-create-new/power-bi-report-step1.png)
-2. Voit muuntaa visualisoinnin mittariksi valitsemalla mittarin mallin ![mittarin kuvakkeesta](media/service-report-create-new/powerbi-gauge-icon.png) **Visualisoinnit**-ruudussa.
+2. Voit muuntaa visualisoinnin mittariksi valitsemalla mittarin mallin ![mittarin kuvakkeesta](media/service-report-create-new/powerbi-gauge-icon.png)**Visualisoinnit**-ruudussa.
    
     ![Mittarin visualisointi raporttieditorissa](media/service-report-create-new/power-bi-report-step2.png)
 3. Vedä **Myynti** > **Tämän vuoden myynti** > **Tavoite** kohtaan **Tavoitearvo**. Näyttää siltä, että olemme hyvin lähellä tavoitteitamme.
@@ -69,11 +69,11 @@ Nyt kun tietojoukkomme on tuotu, aloitetaan vastaamaan kysymyksiin.  Markkinoint
 CMO haluaa esittää meille joitakin lisäkysymyksiä vastattavaksi. Hän haluaa tietää, miten tämän vuoden myynti vertautuu viime vuoteen. Ja hän haluaa nähdä havainnot alueittain.
 
 1. Tehdään ensin tilaa pohjalle. Valitse mittari ja siirrä se oikeaan yläkulmaan. Tartu ja vedä jotain kulmaa ja pienennä sitä.
-2. Poista mittarin valinta. Valitse Kentät-ruudussa **Myynti** > **Tämän vuoden myynti** > **Arvo** ja valitse **Myynti**  >  **Viime vuoden myynti**.
+2. Poista mittarin valinta. Valitse Kentät-ruudussa **Myynti** > **Tämän vuoden myynti** > **Arvo** ja valitse **Myynti** > **Viime vuoden myynti**.
    
     ![raporttieditori ja mittari sekä palkkikaavio](media/service-report-create-new/power-bi-report-step4.png)
-3. Voit muuntaa visualisoinnin aluekaavioksi valitsemalla Aluekaavion malli ![mittarin kuvakkeesta](media/service-report-create-new/power-bi-areachart-icon.png) **Visualisoinnit**-ruudussa.
-4. Valitse **Aika**  >  **Jakso** ja lisää se **Akseli**-kohtaan.
+3. Voit muuntaa visualisoinnin aluekaavioksi valitsemalla Aluekaavion malli ![mittarin kuvakkeesta](media/service-report-create-new/power-bi-areachart-icon.png)**Visualisoinnit**-ruudussa.
+4. Valitse **Aika** > **Jakso** ja lisää se **Akseli**-kohtaan.
    
     ![raporttieditori ja aluekaavio aktiivisena](media/service-report-create-new/power-bi-report-step5.png)
 5. Voit lajitella visualisoinnin ajanjakson mukaan valitsemalla kolme pistettä ja valitsemalla **Lajitteluperuste**.
@@ -92,5 +92,5 @@ Jatka tietojen tarkastelemista ja visualisointien lisäämistä. Kun olet löyt�
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * Lue, miten [kiinnittää visualisointeja raporttinäkymään](service-dashboard-pin-tile-from-report.md)   
-* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

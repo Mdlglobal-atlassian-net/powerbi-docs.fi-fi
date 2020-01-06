@@ -8,10 +8,10 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.openlocfilehash: 829724fb96b0122bc3bd2b346d8102947b0921f7
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74311548"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Power BI -työtilakokoelman sisällön siirtäminen Power BI Embedded -palveluun
@@ -200,11 +200,11 @@ Sinun on vielä tehtävä Azuressa joitakin puhdistustoimia.
 [Power BI ‑työtilakokoelman siirtotyökalu](migrate-tool.md)  
 [Koodikatkelmia sisällön siirtämiseen Power BI ‑työtilakokoelmasta](migrate-code-snippets.md)  
 [Power BI:n koontinäyttöjen, raporttien ja ruutujen upottaminen](embedding-content.md)  
-[Power BI Premium – mikä se on?](../service-premium-what-is.md)  
+[Mikä on Power BI Premium?](../service-premium-what-is.md)  
 [JavaScript API Git -säilö](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git -säilö](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript-upotuksen näyte](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Työtilakokoelman analyysitoimintojen kapasiteetin suunnittelun tekninen raportti](https://aka.ms/pbiewhitepaper)  
 [Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

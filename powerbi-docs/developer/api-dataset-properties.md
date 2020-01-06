@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
 ms.openlocfilehash: 9d0ab5bcffe3b0267b3e07a684c2c7c9bd0fd316
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74265816"
 ---
 # <a name="dataset-properties"></a>Tietojoukon ominaisuudet
@@ -27,7 +27,7 @@ Nykyinen tietojoukkojen ohjelmointirajapinnan v1 sallii tietojoukkoja luotavan v
 Nimi  |Tyyppi  |Kuvaus  |Vain luku  |Pakollinen
 ---------|---------|---------|---------|---------
 tunnus     |  GUID-tunnus       | Järjestelmän laajuinen yksilöllinen tunnus tietojoukolle.        | Tosi        | Epätosi        
-nimi     | Merkkijono        | Käyttäjän määrittämä tietojoukon nimi.        | Epätosi        | Tosi        
+name     | Merkkijono        | Käyttäjän määrittämä tietojoukon nimi.        | Epätosi        | Tosi        
 taulukot     | Table[]        | Taulukkokokoelma.        |  Epätosi       | Epätosi        
 suhteet     | Relationship[]        | Taulukkojen välisten suhteiden kokoelma.        | Epätosi        |  Epätosi  
 defaultMode     | Merkkijono        | Määrittää, onko tietojoukkoon työnnetty tai virtautettu tai sekä työnnetty että virtautettu arvot ”Push” ja ”Streaming”.         | Epätosi        |  Epätosi
@@ -36,7 +36,7 @@ defaultMode     | Merkkijono        | Määrittää, onko tietojoukkoon työnnet
 
 Nimi  |Tyyppi  |Kuvaus  |Vain luku  |Pakollinen
 ---------|---------|---------|---------|---------
-nimi     | Merkkijono        |  Käyttäjän määrittämä taulukon nimi. Sitä käytetään myös taulun tunnuksena.       | Epätosi        |  Tosi       
+name     | Merkkijono        |  Käyttäjän määrittämä taulukon nimi. Sitä käytetään myös taulun tunnuksena.       | Epätosi        |  Tosi       
 sarakkeet     |  sarake[]       |  Sarakekokoelma.       | Epätosi        |  Tosi       
 mittarit     | mittari[]        |  Mittarikokoelma.       | Epätosi        |  Epätosi       
 isHidden     | Totuusarvo        | Jos arvo on tosi, taulukko on piilotettu asiakastyökaluilta.        | Epätosi        | Epätosi        
@@ -45,7 +45,7 @@ isHidden     | Totuusarvo        | Jos arvo on tosi, taulukko on piilotettu asia
 
 Nimi  |Tyyppi  |Kuvaus  |Vain luku  |Pakollinen
 ---------|---------|---------|---------|---------
-nimi     |  Merkkijono        | Käyttäjän määrittämä sarakkeen nimi.        |  Epätosi       | Tosi       
+name     |  Merkkijono        | Käyttäjän määrittämä sarakkeen nimi.        |  Epätosi       | Tosi       
 dataType     |  Merkkijono       |  Tuetut [EDM-tietotyypit](https://msdn.microsoft.com/library/ee382832.aspx) ja rajoitukset. Katso [Tietotyypin rajoitukset](#DataTypeRestrictions).      |  Epätosi       | Tosi        
 formatString     | Merkkijono        | Merkkijono, joka kuvaa, miten arvoa olisi muotoiltava, kun se näytetään. Lisätietoja merkkijonon muotoilemisesta on artikkelissa [Merkkijonon sisällön muotoileminen](https://msdn.microsoft.com/library/ms146084.aspx).      | Epätosi        | Epätosi        
 sortByColumn    | Merkkijono        |   Sarakkeen merkkijonon nimi samassa taulukossa, jota käytetään nykyisen sarakkeen järjestämiseen.     | Epätosi        | Epätosi       
@@ -57,7 +57,7 @@ summarizeBy     | Merkkijono        |  Sarakkeen oletusarvoinen koostemenetelmä
 
 Nimi  |Tyyppi  |Kuvaus  |Vain luku  |Pakollinen
 ---------|---------|---------|---------|---------
-nimi     | Merkkijono        |  Käyttäjän määrittämä mittarin nimi.       |  Epätosi       | Tosi        
+name     | Merkkijono        |  Käyttäjän määrittämä mittarin nimi.       |  Epätosi       | Tosi        
 lauseke     | Merkkijono        | Kelvollinen DAX-lauseke.        | Epätosi        |  Tosi       
 formatString     | Merkkijono        |  Merkkijono, joka kuvaa, miten arvoa olisi muotoiltava, kun se näytetään. Lisätietoja merkkijonon muotoilemisesta on artikkelissa [Merkkijonon sisällön muotoileminen](https://msdn.microsoft.com/library/ms146084.aspx).       | Epätosi        | Epätosi        
 isHidden     | Merkkijono        |  Jos arvo on tosi, taulukko on piilotettu asiakastyökaluilta.       |  Epätosi       | Epätosi       
@@ -66,7 +66,7 @@ isHidden     | Merkkijono        |  Jos arvo on tosi, taulukko on piilotettu asi
 
 Nimi  |Tyyppi  |Kuvaus  |Vain luku  |Pakollinen 
 ---------|---------|---------|---------|---------
-nimi     | Merkkijono        | Käyttäjän määrittämä suhteen nimi. Sitä käytetään myös suhteen tunnuksena.        | Epätosi       | Tosi        
+name     | Merkkijono        | Käyttäjän määrittämä suhteen nimi. Sitä käytetään myös suhteen tunnuksena.        | Epätosi       | Tosi        
 crossFilteringBehavior     | Merkkijono        |    Yhteyden suodatussuunta: OneDirection (oletus), BothDirections, Automatic       | Epätosi        | Epätosi        
 fromTable     | Merkkijono        | Viiteavaintaulukon nimi.        | Epätosi        | Tosi         
 fromColumn    | Merkkijono        | Viiteavainsarakkeen nimi.        | Epätosi        | Tosi         

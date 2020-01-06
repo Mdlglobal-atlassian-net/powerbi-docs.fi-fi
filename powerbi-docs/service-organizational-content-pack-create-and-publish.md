@@ -10,10 +10,10 @@ ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 25b63db2d77e84fb3fc1a3e844ceb46ef1a9bd82
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73872001"
 ---
 # <a name="tutorial-create-and-publish-a-power-bi-organizational-content-pack"></a>Opetusohjelma: Organisaation sisältöpaketin luominen ja julkaiseminen Power BI:ssä
@@ -31,7 +31,7 @@ Organisaation sisältöpaketin luominen edellyttää [Power BI Pro -tiliä](http
 
 Kuvittele olevasi Release Manager Contosossa ja valmistaudut uuden tuotteen julkaisun varten.  Olet luonut koontinäytön ja raportit, jotka haluat jakaa. Muut käynnistämistä hallitsevat työntekijät voivat havaita ne hyödyllisiksi. Haluat saada tavan pakata raporttinäkymän ja raportit ratkaisuna työtovereidesi käyttöön.
 
-Haluatko seurata mukana? Siirry [Power BI -palvelussa](https://powerbi.com) **omaan työtilaan**. Siirry sitten kohtaan **Nouda tiedot** > **Näytteet** > **Mahdollisuusanalyysimalli**  > **Yhteydet** ja hanki oma kopio.
+Haluatko seurata mukana? Siirry [Power BI -palvelussa](https://powerbi.com)**omaan työtilaan**. Siirry sitten kohtaan **Nouda tiedot** > **Näytteet** > **Mahdollisuusanalyysimalli**  > **Yhteydet** ja hanki oma kopio.
 
 1. Valitse siirtymisruudussa **Työtilat** > **Omat työtilat**.
 
@@ -99,4 +99,4 @@ Haluatko seurata mukana? Siirry [Power BI -palvelussa](https://powerbi.com) **om
 
 * [Mikä on OneDrive for Business?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
 
-* Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
