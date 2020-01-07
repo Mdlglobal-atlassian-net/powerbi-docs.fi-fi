@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: bfc1572e31269182e9ca63efbbf6934b90f84b66
-ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
+ms.openlocfilehash: 723cc7b2767f6a5ee4394bca74e507fc688b3af8
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478631"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223655"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Power BI Desktopin DirectQuery-mallin ohjeet
 
@@ -87,7 +87,7 @@ DirectQuery-malli voidaan optimoida monella tavalla, kuten seuraavassa luettelos
 
     **Yhteyksien enimmäismäärä tietolähdettä kohden** -arvon lisääminen varmistaa sen, että taustalla olevaan tietolähteeseen voidaan lähettää enemmän kyselyjä (korkeintaan määritetty enimmäismäärä). Tästä on hyötyä, kun yhdellä sivulla on lukuisia visualisointeja tai useat käyttäjät käsittelevät raporttia samanaikaisesti. Kun yhteyksien enimmäismäärä on saavutettu, muut kyselyt  laitetaan jonoon, kunnes yhteys on saatavilla. Tämän rajan nostaminen lisää taustalla olevan tietolähteen kuormitusta, joten asetus ei välttämättä paranna yleistä suorituskykyä.
     
-    Kun malli julkaistaan Power BI:hin, pohjana olevaan tietolähteeseen lähetettyjen samanaikaisten kyselyiden enimmäismäärä riippuu myös ympäristöstä. Eri ympäristöt (kuten Power BI, Power BI Premium tai Power BI -raporttipalvelin) voivat kukin määrätä erilaisia siirtorajoitteita. Saat lisätietoja Power BI Premium -kapasiteetin resurssien rajoituksista lukemalla artikkelin [Power BI Premium -kapasiteettien käyttöönotto ja hallinta](https://docs.microsoft.com/power-bi/whitepaper-powerbi-premium-deployment#premium-capacities).
+    Kun malli julkaistaan Power BI:hin, pohjana olevaan tietolähteeseen lähetettyjen samanaikaisten kyselyiden enimmäismäärä riippuu myös ympäristöstä. Eri ympäristöt (kuten Power BI, Power BI Premium tai Power BI -raporttipalvelin) voivat kukin määrätä erilaisia siirtorajoitteita. Saat lisätietoja Power BI Premium -kapasiteetin resurssien rajoituksista lukemalla artikkelin [Power BI Premium -kapasiteettien käyttöönotto ja hallinta](https://docs.microsoft.com/power-bi/whitepaper-powerbi-premium-deployment).
 
 ## <a name="optimize-report-designs"></a>Raportin mallien optimoiminen
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/03/2019
-ms.openlocfilehash: 9ce761d09e2db4fbbc2e56d461f5272041edfbfe
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3680344c3449c80064b818f7ab2a5b48020fba4b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870091"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220604"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Yhdistäminen Power BI -raporttipalvelimeen ja SSRS-palvelimeen OAuthia käyttämällä
 
@@ -244,7 +244,7 @@ Voit ottaa käyttöön monimenetelmäisen todentamisen lisäsuojauksen ottamisek
 
 Voit määrittää [Fiddlerin](https://www.telerik.com/fiddler) toimimaan mobiililaitteiden välityspalvelimena nähdäksesi, kuinka pitkälle pyyntö etenee. Jotta voisit ottaa käyttöön Fiddler-välityspalvelimen puhelimelle, sinun on määritettävä [CertMaker for iOS and Android](https://www.telerik.com/fiddler/add-ons) ‑lisäosa tietokoneessa, jossa Fiddler toimii. Fiddler-lisäosa on Telerikiltä.
 
-Jos sisäänkirjautuminen toimii Fiddleria käytettäessä, kyseessä voi olla WAP-sovellukseen tai ADFS-palvelimeen liittyvä varmenneongelma. Voit käyttää [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) -työkalua tai vastaavaa työkalua sen varmistamiseen, että varmenteet ovat kelvollisia.
+Jos sisäänkirjautuminen toimii Fiddleria käytettäessä, kyseessä voi olla WAP-sovellukseen tai ADFS-palvelimeen liittyvä varmenneongelma. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
@@ -255,4 +255,4 @@ Jos sisäänkirjautuminen toimii Fiddleria käytettäessä, kyseessä voi olla W
 [Web Application Proxy Windows Server 2016:ssa](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server)  
 [Sovellusten julkaiseminen käyttäen AD FS -esitodennusta](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app)  
 [AD FS 2016:n ja Azure MFA:n määrittäminen](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa)  
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

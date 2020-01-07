@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: 7edfe46173b1d9b2537c5fd980b245af09fd1f53
-ms.sourcegitcommit: 57ec4d51744b89bd695e6c62184c21342f2eae83
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74178274"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Rekisteröi Yhdysvaltain valtionhallinnon organisaatio Power BI -palveluun
@@ -40,7 +40,7 @@ Jos organisaatiosi on uusi **Office Government -pilvipalvelun** asiakas, toimi s
 > Portaalin järjestelmänvalvojan tulisi suorittaa nämä vaiheet.
 >
 
-1. Siirry kohteeseen [https://products.office.com/government/office-365-web-services-for-government](https://products.office.com/government/office-365-web-services-for-government).
+1. Siirry osoitteeseen [https://products.office.com/government/office-365-web-services-for-government](https://products.office.com/government/office-365-web-services-for-government).
 
 >[!NOTE]
 >Jos et halua tällä hetkellä rekisteröityä Office Government -pilvipalveluun, ota yhteyttä myyntiedustajaasi.

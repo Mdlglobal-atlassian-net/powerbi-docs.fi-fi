@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 12/17/2019
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: d949978d431a219845ed93b59eb52439c9d7f0c0
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.openlocfilehash: f72d29e7f5bc7f93abd43f4c14cf0e53ef18f8d3
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74958628"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223743"
 ---
 # <a name="analyze-in-excel"></a>Analysoi Excelissä
 Joskus saatat haluta tarkastella ja käsitellä Power BI:ssä olevaa tietojoukkoa Excelillä. **Analysoi Excelissä** -toiminnon avulla voit tehdä niin ja käyttää pivot-taulukko-, kaavio- ja osittajaominaisuuksia Excelissä Power BI:ssä olevan tietojoukon perusteella.
@@ -49,7 +49,7 @@ Valitse Power BI:ssä raportin tai tietojoukon vieressä oleva kolmen pisteen va
 ![](media/service-analyze-in-excel/power-bi-analyze-menu.png)
 
 ### <a name="install-excel-updates"></a>Excel-päivitysten asentaminen
-Kun käytät **Analysoi Excelissä** -toimintoa ensimmäistä kertaa, sinun on asennettava päivityksiä Excel-kirjastoihin. Sinua pyydetään lataamaan ja suorittamaan Excel-päivitykset (tämä käynnistää Windows-asennusohjelmapaketin *SQL_AS_OLEDDB.msi* asennuksen). Paketti asentaa **SQL Server 2016 RC0:n Microsoft AS OLE DB -palvelun (esiversio)**.
+Kun käytät **Analysoi Excelissä** -toimintoa ensimmäistä kertaa, sinun on asennettava päivityksiä Excel-kirjastoihin. Sinua pyydetään lataamaan ja suorittamaan Excel-päivitykset (tämä käynnistää Windows-asennusohjelmapaketin *SQL_AS_OLEDDB.msi* asennuksen). Paketti asentaa **SQL Server 2016 RC0:n Microsoft AS OLE DB -palvelun (esiversio)** .
 
 > [!NOTE]
 > Muista valita **Älä näytä tätä uudelleen** **Asenna Excel-päivitykset** -valintaikkunassa. Sinun tarvitsee asentaa päivitys vain kerran.
@@ -92,10 +92,10 @@ Nyt kun Excel on avattu ja sinulla on tyhjä pivot-taulukko, voit tehdä kaikenl
 > 
 > 
 
-## <a name="save"></a>Tallentaminen
+## <a name="save"></a>Tallenna
 Voit tallentaa tämän työkirjaan yhdistetyn Power BI -tietojoukon samalla tavalla kuin minkä tahansa muun työkirjan. Et voi kuitenkaan julkaista tai tuoda työkirjaa takaisin Power BI:hin, koska voit julkaista tai tuoda Power BI:hin vain työkirjoja, joiden taulukot sisältävät tietoja tai joissa on tietomalli. Koska uudella työkirjalla on yhteys Power BI:n tietojoukkoon, sen julkaiseminen tai tuominen Power BI:hin kiertäisi kehää.
 
-## <a name="share"></a>Jakaminen
+## <a name="share"></a>Jaa
 Kun työkirja on tallennettu, voit jakaa sen muiden Power BI -käyttäjien kanssa organisaatiossasi.
 
 Kun käyttäjä, jonka kanssa olet jakanut työkirjan, avaa työkirjan, hän näkee pivot-taulukot ja tiedot sellaisina kuin ne näkyivät työkirjan viimeisen tallennuksen yhteydessä, joten kyseessä ei välttämättä ole tietojen uusin versio. Saadakseen uusimmat tiedot käyttäjien on käytettävä **Tiedot**-valintanauhan **Päivitä**-painiketta. Koska työkirja on yhdistetty Power BI:n tietojoukkoon, työkirjaa päivittävien käyttäjien on kirjauduttava Power BI:hin ja asennettava Excel-päivitykset, kun he yrittävät päivittää ensimmäistä kertaa tällä tavalla.
@@ -104,3 +104,11 @@ Koska käyttäjien on päivitettävä tietojoukko, eikä ulkoisten yhteyksien p�
 
 ## <a name="troubleshooting"></a>Vianmääritys
 Analysoi Excelissä -toiminto voi ajoittain antaa odottamattomia tuloksia tai toimia odottamattomalla tavalla. [Tämä sivu sisältää ratkaisuja yleisiin ongelmiin käytettäessä Analysoi Excelissä -toimintoa](desktop-troubleshooting-analyze-in-excel.md)
+
+## <a name="next-steps"></a>Seuraavat vaiheet
+
+Voit olla kiinnostunut myös seuraavista artikkeleista:
+
+* [Raporttien välillä porautumisen käyttäminen Power BI Desktopissa](desktop-cross-report-drill-through.md)
+* [Osittajien käyttäminen Power BI Desktopissa](visuals/power-bi-visualization-slicers.md)
+

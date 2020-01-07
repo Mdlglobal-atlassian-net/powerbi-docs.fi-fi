@@ -11,10 +11,10 @@ ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: 39b95708b95144ba77a3b33b8ee15f913ae7ca2b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73879007"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Power BI Desktopin ja Power BI -palvelun vertailu
@@ -50,7 +50,7 @@ Tässä videossa näytetään Power BI Desktopin raporttieditori.
 ### <a name="collaborating"></a>Yhteistyö
 
 
-Kun olet luonut raportit, voit tallentaa ne *työtilaan*  **Power BI -palvelussa**, jossa sinä ja työtoverisi teette yhteistyötä. Voit luoda *koontinäyttöjä* näiden raporttien päälle. Voit sitten jakaa kyseiset koontinäytöt ja raportit raporttien käyttäjille organisaation sisä- ja ulkopuolella. Raportin käyttäjät voivat tarkastella niitä Power BI -palvelun *lukunäkymässä*, ei muokkausnäkymässä. He eivät voi käyttää kaikkia ominaisuuksia, jotka ovat saatavilla raportin tekijöille.  Voit myös jakaa tietojoukkosi ja antaa muiden luoda omia raportteja niistä. Lue lisää [yhteistyöstä Power BI -palvelussa](../service-new-workspaces.md).
+Kun olet luonut raportit, voit tallentaa ne *työtilaan***Power BI -palvelussa**, jossa sinä ja työtoverisi teette yhteistyötä. Voit luoda *koontinäyttöjä* näiden raporttien päälle. Voit sitten jakaa kyseiset koontinäytöt ja raportit raporttien käyttäjille organisaation sisä- ja ulkopuolella. Raportin käyttäjät voivat tarkastella niitä Power BI -palvelun *lukunäkymässä*, ei muokkausnäkymässä. He eivät voi käyttää kaikkia ominaisuuksia, jotka ovat saatavilla raportin tekijöille.  Voit myös jakaa tietojoukkosi ja antaa muiden luoda omia raportteja niistä. Lue lisää [yhteistyöstä Power BI -palvelussa](../service-new-workspaces.md).
 
 ### <a name="self-service-data-prep-with-dataflows"></a>Omatoiminen tietojen valmisteleminen tietovoiden avulla
 

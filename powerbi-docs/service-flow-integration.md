@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 738ae599e116beaf5ff80098e4965ee3ed958b04
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: e9c6185506d1992a46ee14ff1eafe0c37d9f65c1
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699678"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223774"
 ---
 # <a name="power-automate-and-power-bi"></a>Power Automate ja Power BI
 
-[Power Automate](https://flow.microsoft.com/documentation/getting-started) on työnkulun automatisoimiseen tarkoitettu SaaS-palvelu, joka toimii yhä useamman yrityskäyttäjän luottaman sovelluksen ja SaaS-palveluiden kanssa. Työnkulun avulla voit automatisoida tehtäviä integroimalla suosikkisovelluksesi ja -palvelusi, (Power BI mukaan lukien) saadaksesi ilmoituksia, synkronoidaksesi tiedostoja, kerätäksesi tietoja ja paljon muuta. Toistuvista tehtävistä tulee helppoja työnkulun automatisoinnin ansiosta.
+[Power Automate](https://docs.microsoft.com/power-automate/getting-started) on työnkulun automatisoimiseen tarkoitettu SaaS-palvelu, joka toimii yhä useamman yrityskäyttäjän luottaman sovelluksen ja SaaS-palveluiden kanssa. Työnkulun avulla voit automatisoida tehtäviä integroimalla suosikkisovelluksesi ja -palvelusi, (Power BI mukaan lukien) saadaksesi ilmoituksia, synkronoidaksesi tiedostoja, kerätäksesi tietoja ja paljon muuta. Toistuvista tehtävistä tulee helppoja työnkulun automatisoinnin ansiosta.
 
-[Aloita Flow’n käyttö nyt.](https://flow.microsoft.com/documentation/getting-started)
+[Aloita Flow’n käyttö nyt.](https://docs.microsoft.com/power-automate/getting-started)
 
 Katso, miten Sirui luo työnkulun, joka lähettää yksityiskohtaisen sähköpostin kollegoille, kun Power BI -ilmoitus käynnistyy. Kokeile sitten itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita.
 
@@ -107,9 +107,9 @@ Seuraavaksi luomme yksinkertaisen työnkulun alusta alkaen, joka käynnistyy Pow
     ![Flow käynnistää Outlook-ilmoituksen](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Power Automaten käytön aloittaminen](https://flow.microsoft.com/documentation/getting-started/)
+* [Power Automaten käytön aloittaminen](https://docs.microsoft.com/power-automate/getting-started/)
 * [Määritä Power BI -palvelun tietoilmoitukset ](service-set-data-alerts.md)
 * [Määritä tietoilmoitukset iPhonellasi](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Määritä tietoilmoitukset Power BI Windows 10 -mobiilisovelluksella](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* Ilmenikö muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

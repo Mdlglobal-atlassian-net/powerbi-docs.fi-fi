@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 12/17/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: daf4f2c4aaa010516f90cae54c1e8b6784fb0f64
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 78632db52ae197a1643dcf1f2831e140568bc6fe
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879713"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223427"
 ---
 # <a name="sort-by-column-in-power-bi-desktop"></a>Sarakkeen perusteella lajittelu Power BI Desktopissa
 Voit muuttaa visualisoinnin ulkoasua **Power BI Desktopissa** ja **Power BI -palvelussa** lajittelemalla sen eri tietokenttien mukaan. Muuttamalla visualisoinnin lajittelua voit korostaa välitettäviä tietoja ja varmistaa, että visualisointi kuvastaa tätä trendiä (tai tietoa).
@@ -100,4 +100,11 @@ Kun siirrymme takaisin valikkoon ja valitsemme **Myyntimäärät**-sarakkeen uud
 ![Lajittelun oletusjärjestys](media/desktop-sort-by-column/sortbycolumn_7.png)
 
 Visualisointien monipuolisten lajitteluvaihtoehtojen avulla voit luoda juuri haluamasi kaavion tai esityksen.
+
+## <a name="next-steps"></a>Seuraavat vaiheet
+
+Voit olla kiinnostunut myös seuraavista artikkeleista:
+
+* [Raporttien välillä porautumisen käyttäminen Power BI Desktopissa](desktop-cross-report-drill-through.md)
+* [Osittajien käyttäminen Power BI Desktopissa](visuals/power-bi-visualization-slicers.md)
 
