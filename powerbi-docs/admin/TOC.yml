@@ -36,7 +36,7 @@
           href: ../service-admin-portal.md
         - name: Kirjautuneiden käyttäjien etsiminen
           href: ../service-admin-access-usage.md
-        - name: Valvonta
+        - name: Seuraa käyttäjien toimia
           href: ../service-admin-auditing.md
         - name: Seuraa palvelun kuntoa
           href: ../service-admin-health.md
