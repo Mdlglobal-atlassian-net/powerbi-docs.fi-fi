@@ -28,6 +28,8 @@
           href: dax-countrows.md
         - name: Vältä tyhjien arvojen muuntamista arvoiksi
           href: dax-avoid-converting-blank.md
+        - name: Sarake- ja mittaviittaukset
+          href: dax-column-measure-references.md
         - name: Tietovoiden parhaat käytännöt
           href: ../service-dataflows-best-practices.md
         - name: Power BI Desktopin DirectQuery-mallin ohjeet
@@ -42,6 +44,8 @@
           href: auto-date-time.md
         - name: Monta-moneen-suhteen ohjeet
           href: relationships-many-to-many.md
+        - name: Poista Power Query -taustalataus käytöstä
+          href: power-query-background-refresh.md
     - name: Raportit
       items:
         - name: Raporttien yleiskatsaus

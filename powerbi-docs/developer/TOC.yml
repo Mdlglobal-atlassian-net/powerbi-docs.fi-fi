@@ -15,8 +15,6 @@
               href: power-bi-custom-visuals.md
         - name: Opetusohjelmat
           items:
-            - name: Visualisointikonsepti
-              href: visuals/power-bi-visuals-concept.md
             - name: Power BI -visualisoinnin kehittäminen
               href: visuals/custom-visual-develop-tutorial.md
             - name: Muotoiluasetusten lisääminen
@@ -25,6 +23,10 @@
               href: visuals/unit-tests-introduction.md
         - name: Käsitteet
           items:
+            - name: Power BI -visualisoinnin projektirakenne
+              href: visuals/visual-project-structure.md
+            - name: Visualisointikonsepti
+              href: visuals/power-bi-visuals-concept.md
             - name: 'Organisaatioiden visualisoinnit Power BI:ssä'
               href: power-bi-custom-visuals-organization.md
             - name: Power BI -visualisointien ohjeet
@@ -63,6 +65,8 @@
               href: visuals/bookmarks-support.md
             - name: Pikavalikon tuen lisäminen
               href: visuals/context-menu.md
+            - name: Lisää alaspäin porautumisen tuki
+              href: visuals/drill-down-support.md
             - name: Tietojen korostaminen visualisoinneissa
               href: visuals/highlight.md
             - name: Suuren kontrastin tilan tuen lisääminen
