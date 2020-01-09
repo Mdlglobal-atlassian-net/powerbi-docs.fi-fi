@@ -903,8 +903,6 @@
           href: report-builder-data.md
         - name: Tuetut tietolähteet
           href: paginated-reports-data-sources.md
-        - name: 'Käytä Power BI:n jaettuja tietojoukkoja'
-          href: report-builder-shared-datasets.md
         - name: Suunnitteluvinkkejä
           href: report-builder-design-tips.md
         - name: 'Taulukot, matriisit, luettelot'
@@ -929,6 +927,8 @@
           href: paginated-reports-embedded-data-source.md
         - name: Upotetun tietojoukon luominen
           href: paginated-reports-create-embedded-dataset.md
+        - name: Luo raportti jaetulla Power BI-tietojoukolla
+          href: report-builder-shared-datasets.md
         - name: Parametrien luominen
           href: paginated-reports-parameters.md
         - name: Raporttiparametrin välittäminen URL-osoitteessa
@@ -989,6 +989,8 @@
       items:
         - name: Power BI Desktopin asentaminen
           href: report-server/install-powerbi-desktop.md
+        - name: Report Builderin asentaminen
+          href: report-server/install-report-builder.md
         - name: Raporttipalvelimen perusteet
           items:
             - name: Power BI -raportin luominen raporttipalvelimeen
