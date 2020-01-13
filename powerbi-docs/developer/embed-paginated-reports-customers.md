@@ -10,10 +10,10 @@ ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 11/04/2019
 ms.openlocfilehash: 1493f628ce822afa020e300ff7428da059fcc65d
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74311439"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Opetusohjelma: Power BI:n sivutetun raportin upottaminen sovellukseen asiakkaitasi varten (esikatselu)
@@ -203,9 +203,9 @@ Lisää **tenant**-kohtaan Azure-vuokraajatunnuksesi. Voit hakea nämä tiedot [
 
 Vaikka Power BI:n sivutettu raportti upotetaan [Power BI REST -ohjelmointirajapintojen](https://docs.microsoft.com/rest/api/power-bi/) avulla, tässä artikkelissa kuvatut esimerkkikoodit on luotu **.NET SDK:n** avulla.
 
-Kun upotat Power BI:n sivutettuja raportteja asiakkaitasi varten sovelluksesi sisällä, sinulla on oltava **Azure AD** [-palvelun päänimi](embed-service-principal.md) ja sinun on hankittava [Azure AD -käyttöoikeustietue](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) Power BI -sovelluksellesi, ennen kuin voit tehdä kutsuja [Power BI:n REST API -ohjelmointirajapinnoille](https://docs.microsoft.com/rest/api/power-bi/).
+Kun upotat Power BI:n sivutettuja raportteja asiakkaitasi varten sovelluksesi sisään, sinulla on oltava **Azure AD** [-palvelun päänimi](embed-service-principal.md) ja sinun on hankittava [Azure AD -käyttöoikeustietue](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) Power BI -sovelluksellesi, ennen kuin voit tehdä kutsuja [Power BI:n REST API -ohjelmointirajapinnoille](https://docs.microsoft.com/rest/api/power-bi/).
 
-Jotta voit luoda Power BI -asiakasohjelman **käyttöoikeustietueen** avulla, luo Power BI -asiakasohjelmaobjekti, joka mahdollistaa vuorovaikutuksen [Power BI REST -ohjelmointirajapintojen](https://docs.microsoft.com/rest/api/power-bi/) kanssa. Power BI -asiakasohjelmaobjekti luodaan sijoittamalla **käyttöoikeustietue** ***Microsoft.Rest.TokenCredentials***-objektiin.
+Jotta voit luoda Power BI -asiakasohjelman **käyttöoikeustietueen** avulla, luo Power BI -asiakasohjelmaobjekti, joka mahdollistaa vuorovaikutuksen [Power BI REST -ohjelmointirajapintojen](https://docs.microsoft.com/rest/api/power-bi/) kanssa. Power BI -asiakasohjelmaobjekti luodaan sijoittamalla **käyttöoikeustietue*****Microsoft.Rest.TokenCredentials***-objektiin.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;

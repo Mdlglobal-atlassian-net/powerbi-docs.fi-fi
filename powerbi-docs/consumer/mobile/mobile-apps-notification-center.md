@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: mshenhav
-ms.openlocfilehash: 22988b08209865e9f1f2c583a30aa40e48c249bc
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7b0a8b1f8b77ba1ee636bc92bb230b7c51e2935b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879254"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219358"
 ---
 # <a name="get-notifications-in-the-power-bi-mobile-apps"></a>Power BI -mobiilisovellusten ilmoitusten vastaanottaminen
 Koskee seuraavia:
@@ -34,27 +34,23 @@ Ilmoitukset tuovat Power BI -käyttökokemukseen liittyvät tiedot suoraan sinul
    
    ![Ilmoituspalkki](./media/mobile-apps-notification-center/power-bi-mobile-notification-banner.png)
    
-   Tai iPadissa:
-   
-   ![Ilmoitukset](./media/mobile-apps-notification-center/power-bi-ipad-notifications.png)
-   
+
    Voit myös [muuttaa sitä, miten Power BI ilmoittaa](mobile-apps-notification-center.md#change-or-turn-off-notifications-on-your-mobile-device).
-2. Jos olet saanut ilmoituksia, kun kirjaudut sisään Power BI:hin mobiililaitteessasi, näet keltaisen pisteen yleisessä siirtymispainikkeessa ![Ilmoitukset-piste](./media/mobile-apps-notification-center/power-bi-android-menu-notifications-icon.png) (Android) tai **Ilmoitukset**-kuvakkeessa. 
-   
-   ![Ilmoitukset-piste](./media/mobile-apps-notification-center/power-bi-windows-10-notifications.png)
-3. Valitse Ilmoitukset-kuvake ![Ilmoitukset-kuvake](./media/mobile-apps-notification-center/power-bi-windows-10-notification-icon.png) (Windows 10).
+2. Jos olet saanut ilmoituksia, kun kirjaudut sisään Power BI:hin mobiililaitteessasi, näet keltaisen pisteen ilmoituskellokuvakkeessa ![ilmoituskello](./media/mobile-apps-notification-center/powerbi-alert-tile-notification-icon.png) (iOS ja Android) tai yleisessä siirtymispainikkeessa ![Ilmoitukset-piste](./media/mobile-apps-notification-center/power-bi-iphone-alert-global-nav-button.png) (Windows 10 -laitteet). 
+
+3. Jos haluat tarkastella ilmoituksia ilmoituskeskuksessa, napauta ilmoituskelloa ![ilmoituskello](./media/mobile-apps-notification-center/powerbi-alert-tile-notification-icon.png) (iOS ja Android) tai ilmoituskeskuksen kuvaketta ![Ilmoitukset-kuvake](./media/mobile-apps-notification-center/power-bi-windows-10-notification-icon.png) (Windows 10 -laitteet).
    
     Ilmoitukset näkyvät uusin ylimpänä ja lukemattomat viestit korostettuina. Ilmoituksia säilytetään 90 päivää, ellei 100 kappaleen enimmäisrajaa saavuteta tai jos et poista niitä jo aiemmin.
    
    ![iOS:n Ilmoitukset-luettelo](./media/mobile-apps-notification-center/power-bi-iphone-notifications-list.png)
-4. Jos haluat hylätä ilmoituksen, napauta ja pidä sitä painettuna ja valitse **Hylkää**.
+4. Jos haluat hylätä ilmoituksen iOS- ja Android-laitteissa, napauta, pidä painettuna ja sipaise. Napsauta Windows 10 -laitteissa hiiren kakkospainikkeella ja valitse **Hylkää**.
 
 ## <a name="change-or-turn-off-notifications-on-your-mobile-device"></a>Ilmoitusten muuttaminen tai poistaminen käytöstä mobiililaitteessa
 Voit myös muuttaa sitä, miten Power BI ilmoittaa.
 
 1. Valitse iOS-laitteessa **Asetukset** > **Ilmoitukset**. 
    
-    Valitse Android-puhelimessa **Ilmoitusasetukset**.
+    Valitse Android-puhelimessa **Asetukset** > **Ilmoitukset**.
    
     Valitse Windows-laitteessa **Asetukset**, **Järjestelmä** > **Ilmoitukset ja toiminnot**.
 2. Valitse sovellusten luettelossa **Power BI**. 

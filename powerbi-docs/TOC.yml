@@ -31,21 +31,21 @@
           href: sample-datasets.md
         - name: Mallipakettien tuominen ja avaaminen
           href: sample-tutorial-connect-to-the-samples.md
-        - name: 'Aloita esittely: Asiakkaan tuottavuuden malli'
+        - name: Asiakkaan tuottavuuden malli
           href: sample-customer-profitability.md
-        - name: 'Aloita esittely: IT-kulutusanalyysimalli'
+        - name: IT-kulutusanalyysimalli
           href: sample-it-spend.md
-        - name: 'Aloita esittely: Henkilöstöhallintomalli'
+        - name: Henkilöstöhallintomalli
           href: sample-human-resources.md
-        - name: 'Aloita esittely: Mahdollisuusanalyysimalli'
+        - name: Mahdollisuusanalyysimalli
           href: sample-opportunity-analysis.md
-        - name: 'Aloita esittely: Hankinta-analyysimalli'
+        - name: Hankinta-analyysimalli
           href: sample-procurement.md
-        - name: 'Aloita esittely: Jälleenmyyntianalyysimalli'
+        - name: Jälleenmyyntianalyysimalli
           href: sample-retail-analysis.md
-        - name: 'Aloita esittely: Myynti- ja markkinointimalli'
+        - name: Myynti- ja markkinointimalli
           href: sample-sales-and-marketing.md
-        - name: 'Aloita esittely: Toimittajan laatuanalyysimalli'
+        - name: Toimittajan laatuanalyysimalli
           href: sample-supplier-quality.md
         - name: Talousmalli-työkirjan lataaminen
           href: sample-financial-download.md
@@ -57,7 +57,7 @@
           href: desktop-relationships-understand.md
         - name: Raportin visualisointien ryhmittely
           href: desktop-grouping-visuals.md
-        - name: Mallien käyttö
+        - name: Raporttimallien luominen
           href: desktop-templates.md
         - name: Mallinnusnäkymän käyttö
           href: desktop-modeling-view.md
@@ -65,15 +65,15 @@
           href: desktop-aggregations.md
         - name: Yhdistelmämallien käyttäminen
           href: desktop-composite-models.md
-        - name: Moni-moneen-yhteyksien käyttäminen
+        - name: Monta-moneen-suhteiden käyttö
           href: desktop-many-to-many-relationships.md
         - name: Tallennustilan hallinta
           href: desktop-storage-mode.md
-        - name: Kaksisuuntaisen ristiinsuodatuksen käyttö
+        - name: Kaksisuuntaisen ristiinsuodatuksen käyttöönotto
           href: desktop-bidirectional-filtering.md
         - name: 'Tietoja DirectQueryn käytöstä Power BI:ssä'
           href: desktop-directquery-about.md
-        - name: DirectQueryn tukemat Power BI -tietolähteet
+        - name: Power BI -tietolähteet
           href: power-bi-data-sources.md
         - name: Power BI -tietolähde-edellytykset
           href: desktop-data-source-prerequisites.md
@@ -93,7 +93,7 @@
           href: desktop-create-and-manage-relationships.md
         - name: Tietonäkymän käyttö
           href: desktop-data-view.md
-        - name: Kyselyiden käyttö
+        - name: Tietoja kyselyeditorista
           href: desktop-query-overview.md
         - name: DAX-perusteiden käyttö
           href: desktop-quickstart-learn-dax-basics.md
@@ -101,9 +101,9 @@
           href: desktop-relationship-view.md
         - name: Raporttinäkymän käyttö
           href: desktop-report-view.md
-        - name: Useisiin tietolähteisiin yhdistäminen
+        - name: Muodosta yhteys tietolähteisiin.
           href: desktop-connect-to-data.md
-        - name: Tietojoukkojen julkaiseminen
+        - name: Tietojoukkojen ja raporttien julkaiseminen
           href: desktop-upload-desktop-files.md
         - name: Visualisointien lisääminen Power BI -raporttiin (osa 1)
           href: visuals/power-bi-report-add-visualizations-i.md
@@ -113,23 +113,25 @@
           href: visuals/power-bi-visualization-customize-title-background-and-legend.md
         - name: 'Power BI:n Näytä kohteet, joilla ei ole tietoja -ominaisuus'
           href: desktop-show-items-no-data.md
-        - name: Automaattisen päivämäärän/ajan käyttäminen
+        - name: Automaattisen päivämäärän/ajan käyttö
           href: desktop-auto-date-time.md
         - name: Tietoihin yhdistäminen
           items:
             - name: Muodosta yhteys tietolähteisiin.
               href: desktop-data-sources.md
+            - name: Raportin luominen SharePoint-luettelosta
+              href: desktop-sharepoint-online-list.md
             - name: Yhdistä LinkedIn Sales Navigatoriin
               href: desktop-connect-linkedin-sales-navigator.md
             - name: Tietojen tuominen verkkosivulta esimerkkejä antamalla
               href: desktop-connect-to-web-by-example.md
             - name: Tietojoukkoihin yhdistäminen Power BI -palvelussa
               href: desktop-report-lifecycle-datasets.md
-            - name: Excel-työkirjan tuominen
+            - name: Excel-työkirjojen tuonti
               href: desktop-import-excel-workbooks.md
             - name: Tietoihin yhdistäminen Power BI Desktopin yleisillä liittymillä
               href: desktop-connect-using-generic-interfaces.md
-            - name: PDF-tiedostoon yhdistäminen
+            - name: PDF-tiedostoihin yhdistäminen
               href: desktop-connect-pdf.md
             - name: Muodosta yhteys Adobe Analyticsiin
               href: desktop-connect-adobe-analytics.md
@@ -153,43 +155,43 @@
               href: service-r-packages-support.md
             - name: Tietojen antaminen suoraan Power BI Desktopiin
               href: desktop-enter-data-directly-into-desktop.md
-            - name: Excel-työkirjaan yhdistäminen
+            - name: Excel-työkirjoihin yhdistäminen
               href: desktop-connect-excel.md
-            - name: Monidimensiomalleihin yhdistäminen
+            - name: SSAS-monidimensiomalleihin yhdistäminen
               href: desktop-ssas-multidimensional.md
-            - name: CSV-tiedostoon yhdistäminen
+            - name: CSV-tiedostoihin yhdistäminen
               href: desktop-connect-csv.md
             - name: Google BigQuery -tietokantaan yhdistäminen
               href: desktop-connect-bigquery.md
             - name: Impala-tietokantaan yhdistäminen
               href: desktop-connect-impala.md
-            - name: OData-syötteeseen yhdistäminen
+            - name: OData-syötteisiin yhdistäminen
               href: desktop-connect-odata.md
             - name: Yhteyden muodostaminen Amazon Redshift-tietokantaan
               href: desktop-connect-redshift.md
-            - name: Verkkosivuun yhdistäminen
+            - name: Verkkosivuihin yhdistäminen
               href: desktop-connect-to-web.md
             - name: Snowflake Computing -varastoon yhdistäminen
               href: desktop-connect-snowflake.md
-            - name: Azure Cost Management -tietoihin yhdistäminen
+            - name: Visualisointien luominen Azure Cost Management -liittimellä
               href: desktop-connect-azure-cost-management.md
             - name: Azure Consumption Insights -tietoihin yhdistäminen
               href: desktop-connect-azure-consumption-insights.md
-            - name: 'SAP HANA:n käyttäminen'
+            - name: SAP HANA -tietokantoihin yhdistäminen
               href: desktop-sap-hana.md
             - name: Ota SAP HANAn salaus käyttöön
               href: desktop-sap-hana-encryption.md
-            - name: Analysis Servicesin taulukkomuotoisten tietojen käyttäminen
+            - name: Analysis Servicesin taulukkomuotoisiin tietoihin yhdistäminen
               href: desktop-analysis-services-tabular-data.md
-            - name: DirectQueryn käyttäminen
+            - name: Tietolähteisiin yhdistäminen DirectQueryn avulla
               href: desktop-use-directquery.md
-            - name: Yhdistäminen DirectQueryyn ja SAP Business Warehouseen (BW)
+            - name: SAP Business Warehouseen yhdistäminen DirectQueryn avulla
               href: desktop-directquery-sap-bw.md
-            - name: 'Yhdistäminen DirectQueryyn ja SAP HANA:an'
+            - name: SAP HANA -tietolähteisiin yhdistäminen DirectQueryn avulla
               href: desktop-directquery-sap-hana.md
             - name: Oleta viite-eheys -ominaisuuden käyttäminen
               href: desktop-assume-referential-integrity.md
-            - name: SAP Business Warehouse -liittimen käyttäminen
+            - name: SAP BW -tietojen käyttö SAP BW -yhdistimen avulla
               href: desktop-sap-bw-connector.md
             - name: OneDrive for Business -linkkien käyttäminen
               href: desktop-use-onedrive-business-links.md
@@ -197,7 +199,7 @@
               href: service-facebook-connector.md
             - name: 'Ulkopuolinen palvelu: Google Analytics -liittimen käyttäminen'
               href: service-google-analytics-connector.md
-            - name: 'Project Online: tietoihin yhdistäminen Power BI Desktopilla'
+            - name: Project Online -tietoihin yhdistäminen Power BI Desktopilla
               href: desktop-project-online-connect-to-data.md
         - name: Tietojen muuntaminen ja muotoilu
           items:
@@ -209,37 +211,37 @@
           items:
             - name: Tietoluokkien määrittäminen Power BI Desktopissa
               href: desktop-data-categorization.md
-            - name: Viivakoodikentän merkitseminen tunnisteella Power BI -mobiilisovelluksilla
+            - name: 'Viivakoodikenttien merkitseminen mobiilisovelluksia varten Power BI:ssä'
               href: desktop-mobile-barcodes.md
-            - name: Maantieteellisten suodattimien määrittäminen Power BI -mobiilisovelluksilla
+            - name: 'Maantieteellisten suodattimien määrittäminen Power BI:ssä mobiilisovelluksille'
               href: desktop-mobile-geofiltering.md
-            - name: Laskettujen sarakkeiden käyttäminen
+            - name: Laskettujen sarakkeiden luominen
               href: desktop-calculated-columns.md
-            - name: Laskettujen taulukoiden käyttäminen
+            - name: Laskettujen taulukkojen luominen
               href: desktop-calculated-tables.md
-            - name: Mittareiden käyttäminen
+            - name: Tietoanalyysin mittareiden luominen
               href: desktop-measures.md
             - name: Suorituskykyilmaisimien tuominen ja näyttäminen
               href: desktop-import-and-display-kpis.md
         - name: Raporttien luominen
           items:
-            - name: Automaattisen sivun päivityksen käyttäminen (esiversio)
+            - name: Automaattisen sivun päivityksen käyttöönotto (esiversio)
               href: desktop-automatic-page-refresh.md
-            - name: Suorituskyvyn analysoinnin käyttäminen
+            - name: Raporttielementtien tutkiminen suorituskyvyn analysoinnilla
               href: desktop-performance-analyzer.md
             - name: Visuaalisten elementtien lisääminen raportteihin
               href: desktop-visual-elements-for-reports.md
-            - name: Luo raporttisivuihin perustuvia työkaluvihjeitä
+            - name: Visualisointien parantaminen raportin työkaluvihjeitä lisäämällä
               href: desktop-tooltips.md
             - name: Raporttien vieminen PDF-tiedostoihin
               href: desktop-export-to-pdf.md
-            - name: Analytiikka-ruudun käyttäminen
+            - name: Tietoja Analytiikka-ruudun käyttämisestä
               href: desktop-analytics-pane.md
             - name: Visualisointien muutosten selittäminen merkityksellisillä tiedoilla (esiversio)
               href: desktop-insights.md
-            - name: Kaavioiden jakaumien erojen paikantaminen merkityksellisten tietojen avulla (esiversio)
+            - name: Jakaumien vaihtelun selittäminen merkityksellisillä tiedoilla (esiversio)
               href: desktop-insights-find-where-different.md
-            - name: Merkityksellisten tietojen jakaminen kirjanmerkeillä
+            - name: Kirjanmerkkien luominen merkityksellisten tietojen tallentamista ja jakamista varten
               href: desktop-bookmarks.md
             - name: Raporttiteemojen käyttö
               href: desktop-report-themes.md
@@ -247,9 +249,9 @@
               href: power-bi-report-filter-types.md
             - name: Suodattimien käyttö Power BI -raporteissa
               href: power-bi-report-filter.md
-            - name: Yleiset laskutoimitukset pikamittareilla
+            - name: Pikamittareiden luominen yleisiin laskutoimituksiin
               href: desktop-quick-measures.md
-            - name: Muuttujien visualisointi Entä jos -parametrien avulla
+            - name: Muuttujien visualisointi Entä jos -parametreja luomalla ja käyttämällä
               href: desktop-what-if.md
             - name: Porautumistoiminnon käyttäminen
               href: desktop-drillthrough.md
@@ -259,7 +261,7 @@
               href: desktop-grouping-and-binning.md
             - name: 'Power BI -visualisointien luominen R:n avulla'
               href: desktop-r-visuals.md
-            - name: 'R:ää hyödyntävien mukautettujen visualisointien käyttö'
+            - name: 'R:ää hyödyntävien mukautettujen visualisointien lataaminen ja käyttö'
               href: desktop-r-powered-custom-visuals.md
             - name: Ruudukoiden ja ruudukkoon kohdistamisen käyttö
               href: desktop-gridlines-snap-to-grid.md
@@ -277,7 +279,7 @@
               href: desktop-slicer-filter-date-range.md
             - name: Kooltaan muokattavan osittajan luominen
               href: power-bi-slicer-filter-responsive.md
-            - name: Rivitason suojauksen käyttö
+            - name: Tietojen käytön rajoittaminen rivitason suojauksen avulla
               href: desktop-rls.md
             - name: Työkaluvihjeiden mukauttaminen
               href: desktop-custom-tooltips.md
@@ -287,9 +289,9 @@
               href: service-add-hyperlink-to-text-box.md
             - name: Hyperlinkkien lisääminen taulukkoon
               href: power-bi-hyperlinks-in-tables.md
-            - name: Näytä kuvat taulukoissa
+            - name: 'Kuvien näyttäminen taulukoissa, matriiseissa ja osittajissa'
               href: power-bi-images-tables.md
-            - name: Mukautettujen muotoilumerkkijonojen käyttö
+            - name: Mukautettujen muotoilumerkkijonojen näyttäminen
               href: desktop-custom-format-strings.md
             - name: Taulukon ehdollisen muotoilun käyttäminen
               href: desktop-conditional-table-formatting.md
@@ -297,7 +299,7 @@
               href: desktop-conditional-format-visual-titles.md
             - name: Lajitteleminen sarakkeen mukaan
               href: desktop-sort-by-column.md
-            - name: Raporttien optimointi Power BI -mobiilisovelluksille
+            - name: Mobiilisovellusten raporttien optimointi
               href: desktop-create-phone-report.md
             - name: Näytä tiedot- ja Näytä tietueet -toimintojen käyttö
               href: desktop-see-data-see-records.md
@@ -309,9 +311,9 @@
               href: visuals/power-bi-report-visualizations.md
             - name: Visualisointien muokkaaminen Power BI -raporteissa
               href: visuals/power-bi-report-change-visualization-type.md
-            - name: Tietoja arvopisterajoista visualisointityypin mukaan
+            - name: Arvopisterajojen ja strategioiden käyttö visualisointityypin mukaan
               href: visuals/power-bi-data-points.md
-            - name: Visualisoinnin lähdetietojen näyttäminen
+            - name: Visualisoinnin pohjana olevien tietojen näyttäminen
               href: visuals/service-reports-show-data.md
             - name: Värimuotoilun ja akseliominaisuuksien käytön aloittaminen
               href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
@@ -331,7 +333,7 @@
               href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
             - name: ArcGIS-karttojen käsittely Power BI -visualisoinneissa
               href: visuals/power-bi-visualizations-arcgis.md
-            - name: ArcGIS Maps for Power BI -visualisointien luominen
+            - name: ArcGIS-karttojen luominen Power BI -visualisoinneille
               href: visuals/power-bi-visualization-arcgis.md
             - name: Perusaluekaavioiden luominen ja käyttäminen
               href: visuals/power-bi-visualization-basic-area-chart.md
@@ -339,7 +341,7 @@
               href: visuals/power-bi-visualization-card.md
             - name: Yhdistelmäkaavioiden luominen ja käyttäminen
               href: visuals/power-bi-visualization-combo-chart.md
-            - name: Hajotuspuun visualisointien käyttäminen (esiversio)
+            - name: Hajotuspuun visualisointien luominen ja käyttäminen (esiversio)
               href: visuals/power-bi-visualization-decomposition-tree.md
             - name: Rengaskaavioiden luominen ja käyttäminen
               href: visuals/power-bi-visualization-doughnut-charts.md
@@ -347,17 +349,17 @@
               href: visuals/power-bi-visualization-filled-maps-choropleths.md
             - name: Suppilokaavioiden luominen ja käyttäminen
               href: visuals/power-bi-visualization-funnel-charts.md
-            - name: Tärkeiden vaikuttajien visualisointien käyttäminen
+            - name: Tärkeiden vaikuttajien visualisointien luominen ja käyttäminen
               href: visuals/power-bi-visualization-influencers.md
-            - name: Tietoja suuren tiheyden viivaotannasta
+            - name: Suuren tiheyden viivaotanta
               href: desktop-high-density-sampling.md
             - name: Suorituskykyilmaisinvisualisointien luominen ja käyttäminen
               href: visuals/power-bi-visualization-kpi.md
-            - name: Matriisivisualisointien käyttäminen
+            - name: Matriisivisualisointien luominen ja käyttäminen
               href: visuals/desktop-matrix-visual.md
             - name: Tietoja Power BI Q&A -visualisoinneista
               href: visuals/power-bi-visualization-q-and-a.md
-            - name: R-visualisointien käyttäminen
+            - name: R-visualisointien luominen ja käyttäminen
               href: visuals/service-r-visuals.md
             - name: Viisarimittarikaavioiden luominen ja käyttäminen
               href: visuals/power-bi-visualization-radial-gauge-charts.md
@@ -403,17 +405,17 @@
               href: desktop-directquery-troubleshoot.md
     - name: Viittaus
       items:
-        - name: Power BI Desktopin tietotyyppien ymmärtäminen
+        - name: Tietotyypit Power BI Desktopissa
           href: desktop-data-types.md
-        - name: Päivitetyn valintanauhan käyttäminen (esiversio)
+        - name: Päivitetty valintanauha (esiversio)
           href: desktop-ribbon.md
-        - name: Kaavaeditorin pikanäppäimien käyttäminen
+        - name: Kaavaeditorin pikanäppäimet
           href: desktop-formula-editor.md
-        - name: Yksityisyystasojen määrittäminen
+        - name: Yksityisyystasot
           href: desktop-privacy-levels.md
-        - name: Tietojen liittimien laajennettavuudesta
+        - name: Liittimen laajennettavuus
           href: desktop-connector-extensibility.md
-        - name: Tietoja luotetuista ulkopuolisista liittimistä
+        - name: Luotetut kolmansien osapuolten liittimet
           href: desktop-trusted-third-party-connectors.md
     - name: Resurssit
       items:
@@ -421,21 +423,21 @@
           href: desktop-videos.md
         - name: Power BI Desktopin päivitysarkisto
           href: desktop-latest-update-archive.md
-        - name: Power BI Desktopin tietosuoja
+        - name: Power BI Desktopin Send a Smile -tietosuojatiedot
           href: desktop-send-smile-privacy-statement.md
-        - name: Power BI Desktopin kirjautumislomakkeen halinta
+        - name: 'Järjestelmänvalvojat: Power BI Desktopin kirjautumislomakkeen halinta'
           href: desktop-admin-sign-in-form.md
         - name: Helppokäyttötoiminnot
           items:
             - name: 'Tietoja Power BI:n helppokäyttötoiminnoista'
               href: desktop-accessibility-overview.md
-            - name: Tietoja Power BI -raporttien helppokäyttöisistä siirtymistoiminnoista
+            - name: Helppokäyttöisten Power BI -raporttien suunnittelu
               href: desktop-accessibility-creating-reports.md
-            - name: Power BI -raporttien helppokäyttötoimintojen ymmärtäminen
-              href: desktop-accessibility-consuming-tools.md
-            - name: Power BI -raporttien luominen helppokäyttötoiminnoilla
+            - name: Power BI -raporttien luominen helppokäyttötoimintojen työkalujen avulla
               href: desktop-accessibility-creating-tools.md
-            - name: Power BI Desktopin pikanäppäimien käyttäminen
+            - name: Power BI -raporttien käyttäminen helppokäyttötoimintojen avulla
+              href: desktop-accessibility-consuming-tools.md
+            - name: Pikanäppäimet Power BI Desktopissa
               href: desktop-accessibility-keyboard-shortcuts.md
 - name: Power BI -palvelu
   items:

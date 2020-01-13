@@ -10,10 +10,10 @@ ms.date: 04/19/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: f759992c42cc589d21ed51d5d63775bf54518c3f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73869122"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Suhteiden luominen ja hallinta Power BI Desktopissa
@@ -208,7 +208,7 @@ Kardinaliteetti on automaattisesti yksi yhteen (1:1) ja ristisuodatus on Molemma
 | **Projekti** | **Prioriteetti** | **Budjettiallokointi** | **Allokointipvm** |
 |:--- | --- | ---:| ---:|
 | Sininen |A |40 000 |1\.12.2012 |
-| Punainen |B |100 000 |1\.12.2012 |
+| Punainen |B |100 000 |1\.12.2012 |
 | Vihreä |C |50 000 |1\.12.2012 |
 | Keltainen |C |<br /> |<br /> |
 | Purppura |B |<br /> |<br /> |
@@ -233,7 +233,7 @@ Mutta oletetaan, että tiedät tietojen muuttuvan seuraavan kerran, kun päivit�
 | **Projekti** | **Prioriteetti** | **Budjettiallokointi** | **Allokointipvm** |
 | --- | --- | ---:| ---:|
 | Sininen |A |40 000 |1\.12.2012 |
-| Punainen |B |100 000 |1\.12.2012 |
+| Punainen |B |100 000 |1\.12.2012 |
 | Vihreä |C |50 000 |1\.12.2012 |
 | Keltainen |C |<br /> |<br /> |
 | Purppura |B |<br /> |<br /> |

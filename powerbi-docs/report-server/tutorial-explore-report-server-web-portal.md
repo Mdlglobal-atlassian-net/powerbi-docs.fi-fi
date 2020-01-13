@@ -9,10 +9,10 @@ ms.topic: tutorial
 ms.date: 05/06/2019
 ms.author: maggies
 ms.openlocfilehash: 312b86f9e0c0dda0c9c943520c74286e0458acef
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73859242"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Opetusohjelma: Power BI -raporttipalvelimen verkkoportaaliin tutustuminen näennäiskoneella
@@ -99,7 +99,7 @@ Kun näennäiskone avautuu, näet työpöydällä seuraavat kohteet.
 
 ![Power BI -raporttipalvelimen näennäiskone käynnistyy](media/tutorial-explore-report-server-web-portal/power-bi-report-server-vm-5-numbers.png)
 
-|Luku  |Merkitys  |
+|luku  |Merkitys  |
 |---------|---------|
 |![Numero 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Power BI -malliraportit (.PBIX) |
 |![Numero 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Linkki Power BI -raporttipalvelimen ohjeisiin |
@@ -111,7 +111,7 @@ Kaksoisnapsauta **Raporttipalvelimen verkkoportaali** -kuvaketta. `https://local
 
 ![Power BI -raporttipalvelimen verkkoportaali](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
 
-|Luku  |Merkitys  |
+|luku  |Merkitys  |
 |---------|---------|
 |![Numero 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Verkkoportaalissa luodut suorituskykyilmaisimet |
 |![Numero 2](media/tutorial-explore-report-server-web-portal/number-2.png) |  Power BI -malliraportit (.PBIX)  |
@@ -244,7 +244,7 @@ Voit tarkastella ja käsitellä Excel-työkirjoja Excel Onlinessa Power BI -rapo
 
 1. Palaa verkkoportaaliin valitsemalla **Selaa**.
 
-## <a name="clean-up-resources"></a>Resurssien tyhjentäminen
+## <a name="clean-up-resources"></a>Puhdista resurssit
 
 Opetusohjelma on nyt valmis. Poista vielä resurssiryhmä, näennäiskone ja kaikki niihin liittyvät resurssit. 
 

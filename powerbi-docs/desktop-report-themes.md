@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 12/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c97316b0509f7d243befa5cfe5310aa0f5826335
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4fdcfd4d7684cef3e6b703709b2739ebbff1badd
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880003"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223521"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Raporttiteemojen käyttäminen Power BI Desktopissa
 **Raporttiteemojen** avulla voit soveltaa rakennemuutoksia koko raporttiin, esimerkiksi käyttää yrityksen värejä, muuttaa kuvakejoukkoja tai ottaa käyttöön visualisointien uuden oletusarvoisen muotoilun. Kun otat käyttöön **raporttiteeman**, kaikissa raporttisi visualisoinneissa ja muotoiluissa käytetään valitun teeman värejä. Muutamia poikkeuksia on, ja ne kuvataan jäljempänä tässä artikkelissa.
@@ -23,10 +23,10 @@ ms.locfileid: "73880003"
 
 Kun otat käyttöön mukautetun **raporttiteeman**, tarvitset perusrakennetta käyttävän JSON-tiedoston. Voit tuoda tämän JSON-tiedoston Power BI Desktopiin ja ottaa sen käyttöön raportissasi.
 
-Voit myös mukauttaa ja yhdenmukaistaa lähes kaikki **Muotoilu**-ruudussa olevat elementit teeman JSON-tiedoston kautta. Tavoitteena on antaa käyttäjille täydet mahdollisuudet hallita omien raporttiensa ulkoasua yksityiskohtaisesti.
+Voit myös mukauttaa ja yhdenmukaistaa lähes kaikki **Muotoilu**-ruudussa olevat elementit joko tekemällä mukauttamisen suoraan Power BI Desktopista tai vaihtoehtoisesti teeman JSON-tiedoston kautta. Tavoitteena on antaa käyttäjille täydet mahdollisuudet hallita omien raporttiensa ulkoasua yksityiskohtaisesti.
 
 ## <a name="how-report-themes-work"></a>Raporttiteemojen toiminta
-Jos haluat käyttää raporttiteemaa Power BI Desktop -raportissa, valitse jokin käytettävissä olevista valmiista raporttiteemoista tai tuo mukautettu teema.
+Jos haluat käyttää raporttiteemaa Power BI Desktop -raportissa, valitse jokin käytettävissä olevista valmiista raporttiteemoista tai luo/tuo mukautettu teema.
 
 | Valmis raporttiteema | Oletusvärien järjestys    |
 |------ |---------- |
@@ -70,7 +70,48 @@ Kun teematiedosto on ladattu, Power BI Desktop ilmoittaa asiasta sinulle.
 
 ![Teeman tuominen onnistui](media/desktop-report-themes/report-themes_5.png)
 
-Nyt kun olemme tuoneet teematiedoston, voimme tutustua JSON-tiedoston rakenteeseen.
+Teemoja voi mukauttaa Power BI Desktopissa kahdella eri tavalla. Tarkastellaan niitä erikseen.
+
+
+## <a name="customize-report-themes-preview"></a>Raporttiteemojen mukauttaminen (esiversio)
+
+**Power BI Desktopin** joulukuun 2019 julkaisuversiosta lähtien raporttiteemoja voi mukauttaa kahdella eri tavalla:
+
+* Teeman luominen ja mukauttaminen Power BI Desktopissa (esiversio)
+* Mukautetun raporttiteeman JSON-tiedoston luominen ja mukauttaminen
+
+Jos haluat mukauttaa teeman suoraan Power BI Desktopissa, valitse ensin **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja valitse sitten seuraavan kuvan esittämällä tavalla **Esiversio-ominaisuudet**-osiosta valintaruutu **Mukauta nykyistä teemaa**.
+
+![Mukautettujen teemojen käyttöönotto](media/desktop-report-themes/report-themes_5a.png)
+
+Saatat saada kehotteen käynnistää Power BI Desktop uudelleen, jotta esiversiotoiminto voidaan ottaa käyttöön.
+
+Uudelleenkäynnistyksen jälkeen voit aloittaa nykyisen teeman mukauttamisen valitsemalla **Aloitus**-valintanauhan ja valitsemalla siitä **Vaihda teemaa > Mukauta nykyistä teemaa**. Näytölle avautuu valintaikkuna useista eri tavoista, joilla voit mukauttaa aiemmin luotua teemaa.
+
+![Teeman mukauttaminen](media/desktop-report-themes/report-themes_5b.png)
+
+Jos pidät jostakin aiemmin luodusta teemasta ja haluat tehdä siihen joitakin muutoksia, voit valita aiemmin luodun teeman ja valita sitten valintaikkunasta **Mukauta nykyistä teemaa** seuraavassa kuvassa esitetyllä tavalla. 
+
+![Mukauta nykyistä teemaa](media/desktop-report-themes/report-themes_5c.png)
+
+> [!NOTE]
+> Edellisessä kuvassa näkyy käytössä uusi valintanauha, joka on tällä hetkellä saatavilla esiversiona. Voit ottaa käyttöön uuden valintanauhan esiversion valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja valitsemalla sitten **Esiversio-ominaisuudet**-osiosta **Uuden valintanauhan esiversio**.
+
+Mukautettavissa olevat teeman asetukset löytyvät seuraavista luokista, jotka näkyvät teeman mukauttamisen valintaikkunassa:
+
+* Teeman nimi (voit nimetä mukauttamasi teeman) ja erilaiset väriasetukset (teeman värit, asennearvojen värit, poikkeavat värit ja paljon muuta)
+* Tekstiasetukset, mukaan lukien fonttiperhe, ‑koko ja ‑väri sekä akseleiden nimet, värit, kortit ja suorituskykyilmaisimet sekä välilehtien nimet
+* Visualisointien elementit, kuten tausta, reuna, ylätunniste ja työkaluvihjeet
+* Sivuelementit, kuten tausta ja taustakuva
+* Suodatinruudun asetukset, mukaan lukien taustan väri, läpinäkyvyys, fontin ja kuvakkeen väri, koko, suodatinkortit ja paljon muuta
+
+Kun olet tehnyt haluamasi muutokset ja valinnut **Käytä ja tallenna**, teema tallennetaan, minkä jälkeen sitä voidaan käyttää nykyisessä raportissa tai viedä ulos sovelluksesta. 
+
+Nykyisen teeman mukauttaminen tällä tavalla voi tehdä teemojen mukauttamisesta helppoa, nopeaa ja visuaalista. Jotkin rajatut muutokset edellyttävät kuitenkin teeman JSON-tiedoston muokkaamista seuraavassa osiossa kuvatulla tavalla.
+
+> [!TIP]
+> Voit mukauttaa useimpia teeman elementtejä käyttämällä **Mukauta nykyistä teemaa** ‑valintaikkunan visualisointielementtejä, minkä jälkeen voit viedä JSON-tiedoston ulos sovelluksesta ja tehdä hienovaraisia muutoksia manuaalisesti (muokkaamalla JSON-tiedostoa itseään). Sen jälkeen voit nimetä uudelleen tämän säätämäsi JSON-tiedoston, tuoda sen takaisin sovellukseen ja saada näin käyttöön kaikki haluamasi muutokset.
+
 
 ## <a name="structure-of-a-report-theme-json-file"></a>Raporttiteeman JSON-tiedoston rakenne
  Edellisessä osiossa valittu JSON-perustiedosto (*St Patricks Day.json* -tiedosto) näyttää editorissa avattuna seuraavalta:
@@ -398,7 +439,7 @@ Tämän osion taulukoissa määritetään visualisointien nimet (*visualName*), 
 | slicer |
 | stackedAreaChart |
 | tableEx |
-| treemap |
+| puukartta |
 | waterfallChart |
 
 Seuraavassa taulukossa määritetään *cardName*-arvot. Jokaisen solun ensimmäinen arvo on JSON-tiedoston termi. Toinen arvo on kortin nimi **Power BI Desktop** -käyttöliittymässä.

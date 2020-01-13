@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/18/2017
-ms.author: mshenhav
-ms.openlocfilehash: c843a3ef8ddfde591dec27ea523cb73857d1a289
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/11/2019
+ms.author: painbar
+ms.openlocfilehash: 7668df00d63fc1bdb8bb0e113fa9ad7e0f029147
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870105"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221373"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Tietoilmoitusten määrittäminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -62,7 +62,8 @@ Voit hallita yksittäisiä ilmoituksia mobiililaitteessasi tai [hallita kaikkia 
 
 1. Koontinäytössä napauta numero- tai mittariruutua, jossa on ilmoitus.  
    
-   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual.png)
+   ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-card-visual_has_alert.png)
+
 2. Napauta kellokuvaketta ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-has-alert-icon.png).  
 3. Muokkaa ilmoitusta napauttamalla sen nimeä, poista sähköposti-ilmoitukset käytöstä napauttamalla liukusäädintä tai poista ilmoitus napauttamalla roskakoria.
    
@@ -148,10 +149,12 @@ Tietolähteet määritetään usein päivittymään päivittäin, vaikka jotkin 
 2. Jos olet määrittänyt ilmoitukset lähettämään sinulle sähköpostia, Saapuneet-kansiossasi näkyy jotain seuraavanlaista.
    
    ![](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alerts-email.png)
-3. Power BI lisää viestin **ilmoituskeskukseesi** ja lisää uuden ilmoituksen kuvakkeen kyseiseen ruutuun ![](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png).
-4. Napauttamalla yleistä siirtymispainiketta ![](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) voit [avata oman **ilmoituskeskuksesi** ](mobile-apps-notification-center.md) ja nähdä ilmoituksen tiedot.
+3. Power BI lisää sanoman [ilmoituskeskukseesi](mobile-apps-notification-center.md) ja lisää keltaisen pisteen kellokuvakkeeseen ![kellokuvake](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) otsikkoriville (iOS ja Android) tai yleiseen siirtymispainikkeeseen ![yleinen siirtymispainike](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) (Windows 10 -laitteet).
+
+
+4. Napauttamalla kellokuvaketta ![kellokuvake](media/mobile-set-data-alerts-in-the-mobile-apps/powerbi-alert-tile-notification-icon.png) tai yleistä siirtymispainiketta ![yleinen siirtymispainike](./media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-alert-global-nav-button.png) voit [avata **ilmoituskeskuksesi**](mobile-apps-notification-center.md) ja nähdä ilmoituksen tiedot.
    
-     ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-notifications.png) 
+     
 
 > [!NOTE]
 > Ilmoitukset toimivat vain tiedoissa, joita päivitetään. Kun tiedot päivitetään, Power BI tarkistaa, onko tiedoille määritetty ilmoitus. Jos tiedot saavuttavat ilmoituksen raja-arvon, aktivoidaan ilmoitus.
@@ -167,5 +170,5 @@ Tietolähteet määritetään usein päivittymään päivittäin, vaikka jotkin 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Power BI -palvelun ilmoitusten hallinta](../../service-set-data-alerts.md)
 * [Power BI -mobiilisovelluksen ilmoituskeskus](mobile-apps-notification-center.md)
-* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

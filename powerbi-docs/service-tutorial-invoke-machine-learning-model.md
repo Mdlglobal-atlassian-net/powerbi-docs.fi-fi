@@ -1,6 +1,6 @@
 ---
-title: 'Opetusohjelma: Automaattianalyysistudion mallin käynnistys Power BI:ssä (esikatselu)'
-description: Tässä opetusohjelmassa käynnistetään automaattianalyysistudion malli Power BI:ssä.
+title: 'Opetusohjelma: Automaattianalyysipalveluiden studion (perinteisen) mallin käynnistäminen Power BI:ssä (esikatselu)'
+description: Tässä opetusohjelmassa käynnistetään automaattianalyysistudion (perinteinen) malli Power BI:ssä.
 author: davidiseminger
 ms.reviewer: SarinaJoan
 ms.service: powerbi
@@ -10,16 +10,16 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3cbe715bc3cff9d2afeefe7c82847f104f4d0835
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3a7d4fa73caa718cec905d8f511ae94b077f7e2b
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876978"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75224233"
 ---
-# <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Opetusohjelma: Automaattianalyysistudion mallin käynnistys Power BI:ssä (esikatselu)
+# <a name="tutorial-invoke-a-machine-learning-studio-classic-model-in-power-bi-preview"></a>Opetusohjelma: Automaattianalyysipalveluiden studion (perinteisen) mallin käynnistäminen Power BI:ssä (esikatselu)
 
-Tässä opetusohjelmassa käymme läpi merkityksellisten tietojen sisällyttämisen **Azuren automaattianalyysistudio** -mallista Power BI:hin. Opetusohjelma sisältää ohjeita siitä, miten Power BI -käyttäjälle myönnetään käyttöoikeus Azuren automaattianalyysipalveluiden malliin, kuinka tietovirta luodaan ja kuinka Azuren automaattianalyysipalveluiden mallin merkityksellisiä tietoja käytetään omassa tietovuossa. Opetusohjelmassa on myös viite Azuren automaattianalyysipalveluiden mallin luonnin pikaoppaaseen, jos sinulla ei vielä ole mallia.
+Tässä opetusohjelmassa käymme läpi merkityksellisten tietojen sisällyttämisen **Azuren automaattianalyysistudio (perinteinen)** -mallista Power BI:hin. Opetusohjelma sisältää ohjeita siitä, miten Power BI -käyttäjälle myönnetään käyttöoikeus Azuren automaattianalyysipalveluiden malliin, kuinka tietovirta luodaan ja kuinka Azuren automaattianalyysipalveluiden mallin merkityksellisiä tietoja käytetään omassa tietovuossa. Opetusohjelmassa on myös viite Azuren automaattianalyysipalveluiden mallin luonnin pikaoppaaseen, jos sinulla ei vielä ole mallia.
 
 Opetusohjelmassa on seuraavat vaiheet:
 
@@ -31,15 +31,15 @@ Opetusohjelmassa on seuraavat vaiheet:
 
 ## <a name="create-and-publish-an-azure-ml-model"></a>Azuren automaattianalyysipalveluiden mallin luominen ja julkaiseminen
 
-Noudata ohjeita kohdassa [Ohjeiden vaihe 1: Luo automaattianalyysistudion työtila](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) -kohdan ohjeita ja luo **Automaattianalyysipalvelut**-työtila.
+Noudata ohjeita kohdassa [Ohjeiden vaihe 1: Luo automaattianalyysistudion (perinteinen) työtila](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) -kohdan ohjeita ja luo **Automaattianalyysipalvelut**-työtila.
 
-Voit käyttää näitä vaiheita minkä tahansa valmiin Azuren automaattianalyysipalveluiden mallin tai tietojoukon kanssa. Jos sinulla ei ole julkaistua mallia, voit luoda mallin hetkessä katsomalla ohjeet [Luo ensimmäinen datatiedekokeilu Azuren automaattianalyysistudiossa](https://docs.microsoft.com/azure/machine-learning/studio/create-experiment) -artikkelista, jossa määritetään Azuren automaattianalyysipalveluiden malli autojen hintaennusteita varten.
+Voit käyttää näitä vaiheita minkä tahansa valmiin Azuren automaattianalyysipalveluiden mallin tai tietojoukon kanssa. Jos sinulla ei ole julkaistua mallia, voit luoda mallin hetkessä katsomalla ohjeet [Luo ensimmäinen datatiedekokeilu Azuren automaattianalyysistudiossa (perinteinen)](https://docs.microsoft.com/azure/machine-learning/studio/create-experiment) -artikkelista, jossa määritetään Azuren automaattianalyysipalveluiden malli autojen hintaennusteita varten.
 
-Noudata artikkelissa [Azuren Automaattianalyysistudio -verkkopalvelun käyttöönotto](https://docs.microsoft.com/azure/machine-learning/studio/publish-a-machine-learning-web-service) olevia ohjeita ja julkaise Azuren Automaattianalyysistudio -malli verkkopalveluna.
+Noudata artikkelissa [Azuren Automaattianalyysistudio (perinteinen) -verkkopalvelun käyttöönotto](https://docs.microsoft.com/azure/machine-learning/studio/tutorial-part3-credit-risk-deploy) olevia ohjeita ja julkaise Azuren Automaattianalyysistudio -malli verkkopalveluna.
 
 ## <a name="grant-a-power-bi-user-access"></a>Käyttöoikeuden myöntäminen Power BI -käyttäjälle
 
-Jotta voisit käsitellä Azuren Automaattianalyysistudio-mallia Power BI:stä käsin, tarvitset **luku**oikeuden Azure-tilaukseen ja -resurssiryhmään sekä **luku**oikeuden Azuren Automaattianalyysistudio -verkkopalveluun Automaattianalyysistudio-malleja varten.  Azuren automaattianalyysipalveluiden mallia varten tarvitset **luku**oikeuden Automaattianalyysipalvelu-työtilaan.
+Jotta voisit käsitellä Azuren Automaattianalyysistudio-mallia Power BI:stä käsin, tarvitset **luku**oikeuden Azure-pakettiin ja -resurssiryhmään sekä **luku**oikeuden Azuren Automaattianalyysistudio (perinteinen) -verkkopalveluun Automaattianalyysistudio (perinteinen) -malleja varten.  Azuren automaattianalyysipalveluiden mallia varten tarvitset **luku**oikeuden Automaattianalyysipalvelut-työtilaan.
 
 Seuraavissa vaiheissa oletetaan, että olet sen Azure-tilauksen ja -resurssiryhmän rinnakkaisjärjestelmänvalvoja, johon malli on julkaistu.
 
@@ -53,17 +53,17 @@ Valitse Azure-tilaus, jota käytit mallin julkaisemiseen, ja valitse sitten **K�
 
 Toista sitten yllä olevat vaiheet ja myönnä Power BI -käyttäjälle **Osallistuja**-roolin käyttöoikeudet siihen Automaattianalyysipalvelujen verkkopalveluun, jossa Azuren automaattianalyysimalli on otettu käyttöön.
 
-## <a name="create-a-dataflow"></a>Tietovirran luominen
+## <a name="create-a-dataflow"></a>Tietovuon luominen
 
 ### <a name="get-data-for-creating-the-dataflow"></a>Tietojen noutaminen tietovirran luomista varten
 
 Kirjaudu sisään Power BI -palveluun käyttämällä niitä käyttäjän tunnistetietoja, joille edellisessä vaiheessa myönsit Azuren automaattianalyysipalveluiden mallin käyttöoikeuden.
 
-Tässä vaiheessa oletetaan, että tiedot, joita haluat käyttää Azuren automaattianalyysipalveluiden mallissa, ovat CSV-muodossa.  Jos olet luonut mallin automaattianalyysistudiossa käyttämällä **kokeellista autojen hinnoittelua**, tietojoukko on jaettu seuraavassa linkissä:
+Tässä vaiheessa oletetaan, että tiedot, joita haluat käyttää Azuren automaattianalyysipalveluiden mallissa, ovat CSV-muodossa.  Jos olet luonut mallin automaattianalyysistudiossa (perinteinen) käyttämällä **kokeellista autojen hinnoittelua**, tietojoukko on jaettu seuraavassa linkissä:
 
-* [Azuren automaattianalyysistudion esimerkkimalli](https://github.com/santoshc1/PowerBI-AI-samples/blob/master/Tutorial_MLStudio_model_integration/Automobile%20price%20data%20_Raw_.csv)
+* [Azuren automaattianalyysistudion (perinteinen) esimerkkimalli](https://github.com/santoshc1/PowerBI-AI-samples/blob/master/Tutorial_MLStudio_model_integration/Automobile%20price%20data%20_Raw_.csv)
 
-### <a name="create-a-dataflow"></a>Tietovirran luominen
+### <a name="create-a-dataflow"></a>Tietovuon luominen
 
 Jotta voit luoda entiteetit tietovirrassa, kirjaudu sisään Power BI -palveluun ja siirry varatun kapasiteettisi työtilaan, jossa AI-esikatselu on käytössä.
 
@@ -167,13 +167,13 @@ Tulokseksi saadussa *Pisteytetyt otsikot (Scored Labels)* -sarakkeessa on hinta-
 
 Kun tallennat tietovuon, Azuren automaattianalyysipalveluiden malli käynnistetään automaattisesti, kun tietovuohon päivitetään entiteettitaulukon uusia tai päivitettyjä rivejä.
 
-## <a name="clean-up-resources"></a>Resurssien tyhjentäminen
+## <a name="clean-up-resources"></a>Puhdista resurssit
 
 Jos et enää tarvitse tässä artikkelissa luotuja Azure-resursseja, poista niitä, jotta ne eivät aiheuta kustannuksia.  Voit poistaa myös luomasi tietovuot, jos et enää tarvitse niitä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Tässä opetusohjelmassa olet luonut yksinkertaisen kokeilun käyttämällä Azuren automaattianalyysistudiota käyttämällä yksinkertaista tietojoukkoa ja seuraavia vaiheita:
+Tässä opetusohjelmassa olet luonut yksinkertaisen kokeilun käyttämällä Azuren automaattianalyysistudiota (perinteinen) käyttämällä yksinkertaista tietojoukkoa ja seuraavia vaiheita:
 
 - Azuren automaattianalyysipalveluiden mallin luominen ja julkaiseminen
 - Mallin käyttöoikeuksien myöntäminen Power BI -käyttäjälle

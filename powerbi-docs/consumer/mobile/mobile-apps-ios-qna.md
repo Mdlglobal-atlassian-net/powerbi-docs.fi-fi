@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: mshenhav
-ms.openlocfilehash: 34fe1af53a62c5198cc30625d840321c414be8f7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6feba420e5bdc25651176be67e6f86f1dafc9ef6
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879372"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219558"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Q&A:n virtuaalinen analyytikko iOS-sovelluksissa - Power BI
 
@@ -33,53 +33,16 @@ Jos et ole rekisteröitynyt Power BI:hin, [rekisteröidy ilmaiseen kokeiluversio
 
 ## <a name="prerequisites"></a>Edellytykset
 
-### <a name="install-the-power-bi-for-ios-app"></a>Power BI:n iOS-sovelluksen asentaminen
-[Lataa iOS-sovellus](https://go.microsoft.com/fwlink/?LinkId=522062 "Lataa iPhone-sovellus") Apple App Storesta iPhoneen, iPadiin tai iPod Touchiin.
-
+* **Power BI:n iOS-sovelluksen asentaminen**: [Lataa iOS-sovellus](https://go.microsoft.com/fwlink/?LinkId=522062) iPhone- tai iPad -laitteeseesi.
 Seuraavat versiot tukevat Power BI:n iOS-sovellusta:
-- iPad, jossa on iOS 10 tai uudempi.
-- iPhone 5 tai uudempi, jossa on iOS 10 tai uudempi. 
-- iPod Touch, jossa on iOS 10 tai uudempi.
+    * iPad, jossa on iOS 11 tai uudempi
+    * iPhone 5 tai uudempi, jossa on iOS 11 tai uudempi.
+* **Lataa Jälleenmyyntianalyysi- ja Mahdollisuusanalyysimallit**: Tämän pikaoppaan ensimmäinen vaihe on Jälleenmyyntianalyysi- ja Mahdollisuusanalyysimallien lataaminen Power BI -palvelussa. [Aloita tutustumalla mallin](./mobile-apps-download-samples.md) lataamiseen Power BI -tiliisi. Muista valita Jälleenmyyntianalyysimalli ja Mahdollisuusanalyysimalli.
 
-### <a name="download-samples"></a>Lataa mallit
-Ensimmäinen vaihe on jälleenmyyjän analyysin ja mahdollisuuden analyysin näytteiden lataaminen Power BI -palvelussa.
-
-**Jälleenmyyntianalyysimallin hankkiminen**
-
-1. Avaa Power BI -palvelu (app.powerbi.com) ja kirjaudu sisään.
-
-2. Valitse siirtymisruudussa **Työtilat**, **Oma työtila**.
-
-3. Valitse vasemmassa alakulmassa **Nouda tiedot**.
-   
-    ![](media/mobile-apps-ios-qna/power-bi-get-data.png)
-
-3. Valitse Nouda tiedot -sivulla **Mallit**-kuvake.
-   
-   ![](media/mobile-apps-ios-qna/power-bi-samples-icon.png)
-
-4. Valitse **Jälleenmyyntianalyysimalli**.
- 
-    ![Jälleenmyyntianalyysimalli](./media/mobile-apps-ios-qna/power-bi-rs.png)
- 
-8. Valitse **Muodosta yhteys**.  
-  
-   ![Jälleenmyyntianalyysimalli](./media/mobile-apps-ios-qna/retail16.png)
-   
-5. Power BI tuo sisältöpaketin ja lisää uuden koontinäytön, raportin ja tietojoukon senhetkiseen työtilaasi.
-   
-   ![Jälleenmyyntianalyysimalli](./media/mobile-apps-ios-qna/power-bi-service-retail-sample.png)
-
-**Mahdollisuusanalyysimallin hankkiminen**
-
-- Käy läpi samat vaiheet kuin jälleenmyyntianalyysimallin kohdalla, mutta valitse vaiheessa 4 **Mahdollisuusanalyysimalli**.
-
-    ![Jälleenmyyntianalyysimalli](./media/mobile-apps-ios-qna/power-bi-oa.png)
-  
-Nyt voit siirtyä tarkastelemaan malleja iOS-laitteessa.
+Kun olet täyttänyt tarvittavat edellytykset, voit kokeilla Q&A:n virtuaalista analyytikkoa.
 
 ## <a name="try-asking-questions-on-your-iphone-or-ipad"></a>Kokeile esittää kysymyksiä iPhonella tai iPadilla
-1. Napauta iPhone- tai iPad-laitteessa yleistä siirtymispainiketta ![Yleinen siirtymispainike](./media/mobile-apps-ios-qna/power-bi-iphone-global-nav-button.png) > **Työtilat** > **Oma työtila** ja avaa Jälleenmyyntianalyysimalli-koontinäyttö.
+1. Napauta iPhonen tai iPadin alareunan siirtymispalkissa Työtilat-painiketta ![Työtilat-painike](./media/mobile-apps-ios-qna/power-bi-iphone-workspaces-button.png), siirry Omaan työtilaan ja avaa Jälleenmyyntianalyysimalli-koontinäyttö.
 
 2. Napauta Q&A:n virtuaalinen analyytikko -kuvaketta ![Q&A:n virtuaalinen analyytikko -kuvake](././media/mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png) sivun alareunan toimintovalikosta (iPadissa sivun yläosassa).
      Q&A:n virtuaalinen analyytikko antaa joitain ehdotuksia, joilla pääset alkuun.
@@ -143,4 +106,4 @@ Voit parantaa sinun ja asiakkaiden Q&A:n virtuaalisen analyytikon tietojoukossa 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Q&A Power BI -palvelussa](../end-user-q-and-a.md)
-* Onko sinulla kysymyksiä? Tutustu [Power BI -yhteisön Mobiilisovellukset-osaan](https://go.microsoft.com/fwlink/?linkid=839277)
+* Onko sinulla kysyttävää? Tutustu [Power BI -yhteisön Mobiilisovellukset-osaan](https://go.microsoft.com/fwlink/?linkid=839277)

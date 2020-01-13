@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 49615e1b6c205d9b894df0bcca7ef4979f153ba7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f5fa262c01767ba934a10300e321796845d47c5f
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872113"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75223802"
 ---
 # <a name="automated-machine-learning-in-power-bi"></a>Automaattianalyysipalvelut Power BI:ssä
 
@@ -32,7 +32,7 @@ Power BI:n automaattianalyysipalveluiden avulla tietoanalyytikot voivat käyttä
 
 Automaattianalyysipalvelut tukee tietovoiden **binaariennuste**-, **luokitus**- ja **regressiomallien** luomista. Nämä ovat valvottavien koneoppimistekniikoiden tyyppejä, mikä tarkoittaa sitä, että ne oppivat aiempien havaintojen tunnetuista tuloksista muiden havaintojen tulosten ennustamiseksi. Automaattianalyysipalvelumallin harjoittamiseen käytettävä syötteiden tietojoukko on joukko tietueita, jotka **on merkitty** tunnetuilla tuloksilla.
 
-Power BI:n automaattianalyysipalvelut integroi [automatisoidun koneoppimisen](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) [Azuren automaattianalyysipalvelusta](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) koneoppimismallien luomista varten. Voit kuitenkin käyttää automaattianalyysipalveluita Power BI:ssä ilman Azure-tilausta. Power BI -palvelu hallitsee täysin koneoppimismallien harjoittamista ja isännöintiä.
+Power BI:n automaattianalyysipalvelut integroi [automaattianalyysipalvelut](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) [Azuren automaattianalyysipalveluista](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) automaattianalyysipalvelumallien luomista varten. Voit kuitenkin käyttää automaattianalyysipalveluita Power BI:ssä ilman Azure-tilausta. Power BI -palvelu hallitsee täysin koneoppimismallien harjoittamista ja isännöintiä.
 
 Kun koneoppimismallia on harjoitettu, automaattianalyysipalvelut luo automaattisesti Power BI -raportin, jossa selitetään koneoppimismallisi todennäköinen suorituskyky. Automaattianalyysipalvelut korostaa selitettävyyttä korostamalla syötteesi tärkeimmät vaikuttajat, jotka vaikuttavat mallisi palauttamiin ennusteisiin. Raportti sisältää myös mallin keskeiset arvot.
 
@@ -282,7 +282,7 @@ Tässä artikkelissa annettiin yleiskuva tietovoiden automaattianalyysipalveluis
 
 - [Opetusohjelma: Koneoppimismallin luominen Power BI:ssä ](service-tutorial-build-machine-learning-model.md)
 - [Opetusohjelma: Kognitiivisten palvelujen käyttö Power BI:ssä](service-tutorial-use-cognitive-services.md)
-- [Opetusohjelma: Automaattianalyysistudion mallin käynnistys Power BI:ssä (esikatselu)](service-tutorial-invoke-machine-learning-model.md)
+- [Opetusohjelma: Automaattianalyysipalveluiden studion (perinteisen) mallin käynnistäminen Power BI:ssä (esikatselu)](service-tutorial-invoke-machine-learning-model.md)
 - [Kognitiiviset palvelut Power BI:ssä](service-cognitive-services.md)
 - [Automaattianalyysipalveluiden integrointi Power BI:ssä](service-machine-learning-integration.md)
 

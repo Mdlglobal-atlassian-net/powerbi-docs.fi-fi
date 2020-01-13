@@ -11,10 +11,10 @@ ms.date: 10/29/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 359d36e3becb58386aeaca66f12670bd463644d1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73871087"
 ---
 # <a name="arcgis-maps-in-power-bi-desktop"></a>ArcGIS-kartat Power BI Desktopissa
@@ -112,7 +112,7 @@ Olet luonut ensimmäisen ArcGIS Map for Power BI -kartan. Tarkennetaan ja muotoi
    
 
 > [!TIP]
-> **Esri** tarjoaa [monipuolisia ](https://go.microsoft.com/fwlink/?LinkID=828772) **ArcGIS Maps for Power BI**:n ominaisuuksia koskevia ohjeita.
+> **Esri** tarjoaa [monipuolisia ](https://go.microsoft.com/fwlink/?LinkID=828772)**ArcGIS Maps for Power BI**:n ominaisuuksia koskevia ohjeita.
 
 
 ### <a name="base-maps"></a>Pohjakartat
@@ -135,7 +135,7 @@ Voit valita neljästä kartan teemasta. Power BI valitsee automaattisesti joko *
 ![Esimerkki Esrin karttateemasta](media/power-bi-visualization-arcgis/power-bi-esri-map-theme-new.png)
 
 <table>
-<tr><th>teema</th><th>Kuvaus</th>
+<tr><th>Teema</th><th>Kuvaus</th>
 <tr>
 <td>Vain sijainti</td>
 <td>Piirtää arvopisteet tai täytetyt rajat kartalle Sijainti-säilöön lisäämäsi kentän perusteella.</td>
@@ -246,7 +246,7 @@ Jokaisella työkalulla on yksilöivä rooli, jonka avulla voit valita tiedot:
 <br/>
 
 ## <a name="getting-help"></a>Ohjeiden hakeminen
-**Esri** tarjoaa [monipuolisia ](https://go.microsoft.com/fwlink/?LinkID=828772) **ArcGIS Maps for Power BI**:n ominaisuuksia koskevia ohjeita.
+**Esri** tarjoaa [monipuolisia ](https://go.microsoft.com/fwlink/?LinkID=828772)**ArcGIS Maps for Power BI**:n ominaisuuksia koskevia ohjeita.
 
 Voit esittää kysymyksiä, hakea ajantasaisimpia tietoja, ilmoittaa ongelmista ja hakea vastauksia [**ArcGIS Maps for Power BI**:tä käsittelevästä Power BI -yhteisökeskustelusta](https://go.microsoft.com/fwlink/?LinkID=828771).
 
@@ -359,5 +359,5 @@ Et vielä. Kun [äänestät tätä ideaa](https://ideas.powerbi.com/forums/26520
 
 [Blogimerkintä, jossa ilmoitetaan ArcGIS Maps for Power BI:n saatavuudesta](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 
-Ilmenikö muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

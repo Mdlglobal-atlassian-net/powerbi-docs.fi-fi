@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 11/21/2018
-ms.openlocfilehash: 4d7f02d9f78eee4cf287e0bb83acb93a7b1b0355
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: f1a1bfc161fe163a4c4680dbcc90e6ad28b80a90
+ms.sourcegitcommit: 0da17de80c9651f9f4474d1abb1bdaaade8808fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696849"
+ms.lasthandoff: 12/27/2019
+ms.locfileid: "75498495"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>Opetusohjelma: Muotoiluasetusten lisääminen Power BI -visualisointiin
 
@@ -124,10 +124,12 @@ Voit lisätä mukautettuja ominaisuuksia, joiden avulla voit määrittää ympyr
 
 8. Tuo **visual.ts**-tiedostossa
 
-    luokka `VisualSettings`
+    tuo `VisualSettings`, `VisualObjectInstanceEnumeration` ja `EnumerateVisualObjectInstancesOptions`:
 
     ```typescript
     import { VisualSettings } from "./settings";
+    import VisualObjectInstanceEnumeration = powerbi.VisualObjectInstanceEnumeration;
+    import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
     ```
 
     ja lisää seuraava ominaisuus **Visual**-luokkaan:
@@ -218,23 +220,34 @@ Anna mukautetun visualisointiprojektin ominaisuusarvot, päivitä kuvaketiedosto
 
     *Näyttää muotoillun mittariarvon ympyrän sisällä*
 
-5. Voit halutessasi kirjoittaa omat tietosi **author**-objektiin.
+5. Täytä visualisoinnille kohdat **supportUrl** ja **gitHubUrl**.
 
-6. Tallenna **pbiviz.json**-tiedosto.
+    Esimerkki:
 
-7. Huomaa, että asiakirja määrittää polun kuvakkeeseen **assets**-objektissa. Kuvake on kuva, joka näkyy **_Visualisoinnit_** -ruudussa. Sen on oltava **PNG**-tiedosto, jonka koko on *20 × 20 kuvapistettä*.
+    ```json
+    {
+        "supportUrl": "https://community.powerbi.com",
+        "gitHubUrl": "https://github.com/microsoft/PowerBI-visuals-circlecard"
+    }
+    ```
 
-8. Kopioi Windowsin Resurssienhallinnassa icon.png-tiedosto ja korvaa sillä assets-kansiossa oleva oletustiedosto.
+6. Anna omat tietosi **author**-objektiin.
 
-9. Laajenna assets-kansio Visual Studio Coden resurssienhallintaruudussa ja valitse icon.png-tiedosto.
+7. Tallenna **pbiviz.json**-tiedosto.
 
-10. Tarkista kuvake.
+8. Huomaa, että asiakirja määrittää polun kuvakkeeseen **assets**-objektissa. Kuvake on kuva, joka näkyy **_Visualisoinnit_** -ruudussa. Sen on oltava **PNG**-tiedosto, jonka koko on *20 × 20 kuvapistettä*.
+
+9. Kopioi Windowsin Resurssienhallinnassa icon.png-tiedosto ja korvaa sillä assets-kansiossa oleva oletustiedosto.
+
+10. Laajenna assets-kansio Visual Studio Coden resurssienhallintaruudussa ja valitse icon.png-tiedosto.
+
+11. Tarkista kuvake.
 
     ![Visualisointiruudun kuva](media/custom-visual-develop-tutorial-format-options/viz-pane-image.png)
 
-11. Varmista Visual Studio Codessa, että kaikki tiedostot on tallennettu.
+12. Varmista Visual Studio Codessa, että kaikki tiedostot on tallennettu.
 
-12. Pakkaa mukautettu visualisointi PowerShellissä seuraavalla komennolla.
+13. Pakkaa mukautettu visualisointi PowerShellissä seuraavalla komennolla.
 
     ```powershell
     pbiviz package

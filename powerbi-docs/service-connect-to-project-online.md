@@ -10,10 +10,10 @@ ms.date: 07/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 32d731c354d848809d336392ef51f667b14427d8
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74565695"
 ---
 # <a name="connect-to-project-web-app-with-power-bi"></a>Yhteyden muodostaminen Project Web Appiin Power BI:llä
@@ -44,7 +44,7 @@ Muodosta yhteys Power BI:n [Project Web App -mallisovellukseen](https://appsourc
 7. Kirjoita yhdistettävän Project Web Appin (PWA) URL-osoite **Project Web Appin URL-osoite** -tekstiruutuun.  Huomaa, että se poiketa esimerkistä, jos käytössäsi on mukautettu toimialue. Valitse **PWA-sivuston kieli** -tekstiruutu ja kirjoita numero, joka vastaa PWA-sivuston kieltä. Kirjoita numero ”1” englannille, ”2” ranskalle, ”3” saksalle, ”4” portugalille (Brasilia), ”5” portugalille (Portugali) ja ”6” espanjalle. 
    
    ![Yhteyden muodostaminen Microsoft Project Onlineen](media/service-connect-to-project-online/params.png)
-8. Valitse todennusmenetelmäksi **oAuth2**\>**Kirjaudu sisään**. Anna pyydettäessä Project Web Appin tunnistetietosi ja noudata todennusprosessia.
+8. Valitse todennusmenetelmäksi **oAuth2** \> **Kirjaudu sisään**. Anna pyydettäessä Project Web Appin tunnistetietosi ja noudata todennusprosessia.
 
     > [!NOTE]
     > Sinulla on oltava yhdistettävässä Project Web Appissa portfolion tarkastelijan, portfolion ylläpitäjän tai järjestelmänvalvojan oikeudet.

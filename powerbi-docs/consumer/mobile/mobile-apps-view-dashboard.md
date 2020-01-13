@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: 1a3450ba4a31679c9e2e4ad844ef1058ebfdf4ee
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d35d54308f778033f508549bfd52e9d61ef2a949
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870659"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75218334"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Raporttinäkymien ja raporttien tarkastelu Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -119,7 +119,7 @@ Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja s
 
 1. Napauttamalla raporttinäkymässä pystysuuntaista **Enemmän vaihtoehtoja** (...) -painiketta nimen vieressä voit kutsua työtoverin, päivittää tai hakea tietoja raporttinäkymästä:
    
-   ![Kolme pistettä -valikko](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
+   ![Ellipsivalikko](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 2. Katso kaikki [raporttinäkymän ruudut](mobile-tiles-in-the-mobile-apps.md) sipaisemalla ylös- ja alaspäin. 
 3. Siirry raporttinäkymien aloitussivulle napauttamalla raporttinäkymän nimeä, jolloin navigointipolku avautuu. Valitse sitten **Oma työtila**.   
 
@@ -131,11 +131,11 @@ Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja s
    
    ![Raporttinäkymän aloitusnäkymä](./media/mobile-apps-view-dashboard/power-bi-android-tablet-dashboard-home.png)
    
-   * Keltaiset tähdet ![Suosikkitähti](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) näyttävät, mitkä raporttinäkymät ovat suosikkeja. 
+   * Keltaiset tähdet ![Suosikkitähti](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) näyttää, mitkä raporttinäkymät ovat suosikkeja. 
    * Kunkin raporttinäkymän nimen (tässä tapauksessa "MBI") alapuolella oleva merkintä ![Tietojen luokitus](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) kertoo, miten kunkin raporttinäkymän tiedot on luokiteltu. Lue lisää [tietojen luokittelusta Power BI:ssä](../../service-data-classification.md).
 3. Napauttamalla raporttinäkymässä pystysuuntaista **Enemmän vaihtoehtoja** (...) -painiketta nimen vieressä voit kutsua työtoverin, päivittää tai hakea tietoja raporttinäkymästä:
    
-   ![Kolme pistettä -valikko](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
+   ![Ellipsivalikko](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 4. Katso kaikki [raporttinäkymän ruudut](mobile-tiles-in-the-mobile-apps.md) sipaisemalla ylös- ja alaspäin. 
    
    Voit lähentää ja loitontaa raporttinäkymän eri alueita nipistämällä ja siirtyä näkymässä panoroimalla. Voit edelleen avata ruudun tarkastelutilassa ja käsitellä tietojasi [napauttamalla ruutua](mobile-tiles-in-the-mobile-apps.md).

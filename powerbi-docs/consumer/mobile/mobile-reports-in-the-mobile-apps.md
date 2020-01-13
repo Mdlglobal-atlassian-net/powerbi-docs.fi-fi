@@ -1,19 +1,19 @@
 ---
 title: Raporttien tutkiminen Power BI -mobiilisovelluksissa
 description: Lue lisätietoja raporttien tarkastelemisesta ja käsittelemisestä Power BI -mobiilisovelluksissa puhelimella tai tabletilla. Voit luoda raportteja Power BI -palvelussa tai Power BI Desktopissa ja käsitellä niitä sitten mobiilisovelluksissa.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/09/2019
-ms.author: mshenhav
-ms.openlocfilehash: d4b9a9aeda00dd7f16690d1e92336f5b63adf1da
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/16/2019
+ms.author: painbar
+ms.openlocfilehash: bb54a4e403f2cc12800d0c97e44308f7ad5c5f65
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869757"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220710"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Raporttien tutkiminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -96,29 +96,43 @@ Raportin alatunnisteessa on toimintoja, joita voi käyttää nykyisellä raportt
 ![Raportin alatunniste](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
 Seuraavia toimintoja voi suorittaa alatunnisteen kautta:
-- Palauta raporttisuodatin ja ristiinkorostusvalinnat takaisin alkuperäiseen tilaan.
-- Avaa keskusteluruutu, jos haluat tarkastella kommentteja tai lisätä raporttiin kommentteja.
-- Voit tarkastella tai muokata raportissa käytettävää suodatinta avaamalla suodatusruudun.
-- Voit luetella raportin sivut. Sivun nimen napauttaminen lataa ja näyttää kyseisen sivun.
+* Palauta raporttisuodatin ja ristiinkorostusvalinnat takaisin alkuperäiseen tilaan.
+* Avaa keskusteluruutu, jos haluat tarkastella kommentteja tai lisätä raporttiin kommentteja.
+* Voit tarkastella tai muokata raportissa käytettävää suodatinta avaamalla suodatusruudun.
+* Voit luetella raportin sivut. Sivun nimen napauttaminen lataa ja näyttää kyseisen sivun.
 Voit liikkua raporttisivujen välillä liikkuminen pyyhkäisemällä näytön reunasta keskelle.
-- Näytä kaikki raportin toiminnot.
+* Näytä kaikki raportin toiminnot.
 
 #### <a name="all-report-actions"></a>Kaikki raportin toiminnot
 Kun napautat **Enemmän vaihtoehtoja** (...) raportin alatunnisteessa, näet kaikki toiminnot, jotka voit suorittaa raportissa:
 
 
-![Kaikki raportin toiminnot](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
+![Kaikki raportin toiminnot](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-all-actions.png)
 
 Osa toiminnoista voi olla poissa käytöstä, koska ne ovat riippuvaisia tietyistä raportin ominaisuuksista.
 Esimerkki:
+
+**Kirjanmerkit**-toiminto on käytettävissä vain, jos raportissa on määritetty [kirjanmerkkejä](mobile-reports-in-the-mobile-apps.md#bookmarks). Sekä henkilökohtaiset kirjanmerkit, joita voit määrittää Power BI -palvelussa, että raportin luojan määrittämät kirjanmerkit, näytetään. Jos jokin kirjanmerkeistä on määritetty oletuskirjanmerkiksi, raportti avautuu kyseiseen näkymään, kun se latautuu.
+
+**Lisää merkintöjä ja jaa** saattaa olla pois käytöstä, jos organisaatiossasi on [Intune-suojauskäytäntö](https://docs.microsoft.com/intune/app-protection-policies), joka estää jakamisen Power BI -mobiilisovelluksesta.
+
+**Kutsu** on käytössä vain, jos sinulla on oikeus jakaa raportti muiden kanssa. Sinulla on oikeus vain, jos olet raportin omistaja tai jos omistaja on antanut sinulle uudelleenjakamisoikeuden.
 
 **Suodatus nykyisen sijainnin mukaan** on käytössä, jos raportin tekijä on luokitellut raportin maantieteellisten tietojen mukaan. Lue lisätietoja [maantieteellisten tietojen tunnistamisesta raportissa](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
 
 **Raportin suodatus lukemalla viivakoodi** on käytössä vain, jos raportin tietojoukko on merkitty **viivakoodiksi**. Lue lisätietoja [viivakoodien merkitsemisestä Power BI Desktopissa](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes).
 
-**Kutsu** on käytössä vain, jos sinulla on oikeus jakaa raportti muiden kanssa. Sinulla on oikeus vain, jos olet raportin omistaja tai jos omistaja on antanut sinulle uudelleenjakamisoikeuden.
+### <a name="bookmarks"></a>Kirjanmerkit
 
-**Lisää merkintöjä ja jaa** saattaa olla pois käytöstä, jos organisaatiossasi on [Intune-suojauskäytäntö](https://docs.microsoft.com/intune/app-protection-policies), joka estää jakamisen Power BI -mobiilisovelluksesta.
+Power BI -mobiilisovellus tukee sekä raportin luojan määrittämiä raporttikirjanmerkkejä että henkilökohtaisia kirjanmerkkejä, joita voit määrittää Power BI -palvelussa. Löydät Kirjanmerkit-valikon kohdasta **Lisää vaihtoehtoja** (...) [raportin Toiminnot työkaluriviltä](mobile-reports-in-the-mobile-apps.md#all-report-actions).
+
+![Kirjanmerkki-valikko](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
+
+Kun raportin kirjanmerkkinäkymä on avoinna, kirjanmerkin nimi näkyy raportin yläreunassa.
+
+![kirjanmerkkinäkymä](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
+
+[Lue lisää kirjanmerkeistä Power BI -palvelussa](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Puhelimelle optimoitujen Power BI -raporttien tarkasteleminen ja käyttäminen](mobile-apps-view-phone-report.md)

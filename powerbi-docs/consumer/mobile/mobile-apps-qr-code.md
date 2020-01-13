@@ -1,19 +1,19 @@
 ---
 title: Power BI:n QR-koodin lukeminen mobiililaitteella
 description: Power BI:n QR-koodien avulla voit yhdistää mitä tahansa todellisesta maailmasta suoraan siihen liittyviin BI-tietoihin iPhone- ja Android-laitteissa toimivissa Power BI ‑mobiilisovelluksissa.
-author: KesemSharabi
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/13/2018
-ms.author: mshenhav
-ms.openlocfilehash: ba810bf416a913ddb41ab02c0afe7373e5c107f7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/02/2019
+ms.author: painbar
+ms.openlocfilehash: d28596aae776d9a0087895cae38fc2e8848297b6
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879201"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75218931"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Power BI:n QR-koodin lukeminen mobiililaitteella
 Koskee seuraavia:
@@ -34,33 +34,38 @@ Jos työtoverisi ei ole jakanut koontinäyttöä tai raporttia sinulle, voit pyy
 > Voit myös [lukea raportin QR-koodin Power BI ja tehostettu todellisuus -sovelluksessa](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
 
 ## <a name="scan-a-power-bi-qr-code-on-your-iphone-with-the-power-bi-scanner"></a>Power BI:n QR-koodin lukeminen iPhonella Power BI ‑viivakoodinlukijan avulla
-1. Avaa Power BI -mobiilisovelluksen vasemmasta yläkulmasta yleinen siirtymisvalikko ![](media/mobile-apps-qr-code/power-bi-iphone-global-nav-button.png). 
-2. Vieritä alaspäin kohtaan **skanneri** ja valitse se. 
-   
-    ![](media/mobile-apps-qr-code/power-bi-iphone-scanner-menu.png)
-3. Jos kamerasi ei ole käytössä, sinun on sallittava Power BI -sovellukselle kameran käyttö. Kyseessä on yhden kerran suoritettava hyväksyntä. 
-4. Osoita viivakoodinlukija kohti Power BI:n QR-koodia. 
+
+1. Napauta siirtymispalkissa **Lisää vaihtoehtoja** (...) ja napauta sitten **Skanneri**.
+
+    ![](media/mobile-apps-qr-code/power-bi-scanner.png)
+
+2. Jos kamerasi ei ole käytössä, sinun on sallittava Power BI -sovellukselle kameran käyttö. Kyseessä on yhden kerran suoritettava hyväksyntä. 
+ 
+3. Osoita viivakoodinlukija kohti Power BI:n QR-koodia. 
    
     ![](media/mobile-apps-qr-code/power-bi-align-qr-code.png)
-5. Kameran näkymään ilmestyy ruutu tai raportti.
+4. Kameran näkymään ilmestyy ruutu tai raportti.
    
     ![](media/mobile-apps-qr-code/power-bi-ios-qr-ar-scanner.png)
-6. Voit joko avata ruudun tai raportin tarkastelutilassa napauttamalla sitä tai palata takaisin viivakoodinlukijaan.
+
+5. Voit joko avata ruudun tai raportin tarkastelutilassa napauttamalla sitä tai palata takaisin viivakoodinlukijaan.
 
 ### <a name="scan-a-qr-code-from-an-external-scanner-on-your-iphone"></a>QR-koodin lukeminen iPhonella ulkoisen viivakoodinlukijan avulla
 1. Avaa mikä tahansa puhelimeen asennettu viivakoodinlukija ja osoita se kohti haluttua Power BI:n QR-koodia, niin pääset välittömästi siirtymään ruutuun tai raporttiin. 
 2. Jos puhelimeesi ei ole asennettu Power BI ‑sovellusta, sinut ohjataan [Apple App Storeen, josta voit ladata sen](https://go.microsoft.com/fwlink/?LinkId=522062) iPhoneen.
 
 ## <a name="scan-a-power-bi-qr-code-on-your-android-device-with-the-power-bi-scanner"></a>Power BI:n QR-koodin lukeminen Android-laitteella Power BI:n viivakoodinlukijan avulla
-1. Valitse Power BI ‑mobiilisovelluksen vasemmasta yläkulmasta yleinen siirtymispainike ![](media/mobile-apps-qr-code/power-bi-android-global-nav-icon.png). 
-2. Vieritä alaspäin kohtaan **QR-lukija** ja valitse se.
-   
-    ![](media/mobile-apps-qr-code/power-bi-android-scanner-menu.png)
-3. Jos kamerasi ei ole käytössä, sinun on sallittava Power BI -sovellukselle kameran käyttö. Kyseessä on yhden kerran suoritettava hyväksyntä. 
-4. Osoita viivakoodinlukija kohti Power BI:n QR-koodia. 
+
+1. Napauta siirtymispalkissa **Lisää vaihtoehtoja** (...) ja napauta sitten **Skanneri**.
+
+    ![](media/mobile-apps-qr-code/power-bi-scanner.png)
+
+2. Jos kamerasi ei ole käytössä, sinun on sallittava Power BI -sovellukselle kameran käyttö. Kyseessä on yhden kerran suoritettava hyväksyntä. 
+
+3. Osoita viivakoodinlukija kohti Power BI:n QR-koodia. 
    
     ![](media/mobile-apps-qr-code/pbi_iph_qrscan.png)
-5. Ruutua tai raportti avautuu automaattisesti Power BI:ssä.
+4. Ruutua tai raportti avautuu automaattisesti Power BI:ssä.
    
     ![](media/mobile-apps-qr-code/power-bi-android-tile.png)
 

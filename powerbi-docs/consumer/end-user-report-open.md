@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2018
+ms.date: 12/14/2019
 ms.author: mihart
-ms.openlocfilehash: b22da2df92c0cc7130c7a5ebf69e2284c12ffef4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a4b8dd876cfaca3fa4ad91bf5b4d94aa5b4be311
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861956"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75217998"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Raportin näyttäminen Power BI -palvelussa *kuluttajille*
 
@@ -29,10 +29,10 @@ Raportin voi avata monella eri tavalla ja näytämme nyt niistä kaksi, avaamise
 ## <a name="open-a-report-from-power-bi-home"></a>Raportin avaaminen Power BI -aloitussivulta
 Avataan raportti, joka on jaettu suoraan sinulle, ja avataan sen jälkeen raportti, joka on jaettu sovelluksen osana.
 
-   ![Aloitussivu](./media/end-user-report-open/power-bi-home-canvas.png)
+   ![Etusivu](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Sinulle jaetun raportin avaaminen
-Power BI *‑suunnittelijat* voivat jakaa yksittäisen raportin suoraan sinulle sähköpostiviestissä olevan linkin kautta tai lisäämällä sen automaattisesti. Näin jaettu sisältö näkyy **Jaettu kanssani** -säilössä siirtymisruudussa ja aloitussivun **Jaettu kanssani** -osassa.
+Power BI -*suunnittelijat* voivat jakaa yksittäisen raportin suoraan sinulle sähköpostiviestissä olevan linkin kautta tai lisäämällä sen automaattisesti Power BI -sisältöön. Näin jaetut raportit näkyvät **Jaettu kanssani** -säilössä siirtymisruudussa ja aloitussivun **Jaettu kanssani** -osassa.
 
 1. Avaa Power BI -palvelu (app.powerbi.com).
 
@@ -40,7 +40,7 @@ Power BI *‑suunnittelijat* voivat jakaa yksittäisen raportin suoraan sinulle 
 
    ![Aloitussivu](./media/end-user-report-open/power-bi-select-home-new.png)
    
-3. Vieritä alaspäin, kunnes näet **Jaettu kanssani** -kohdan. Etsi raporttikuvake ![raporttikuvake](./media/end-user-report-open/power-bi-report-icon.png). Tässä näyttökuvassa on yksi koontinäyttö ja yksi raportti, jonka nimi on *Myynti- ja markkinointimalli*. 
+3. Vieritä alaspäin, kunnes näet **Jaettu kanssani** -kohdan. Etsi raporttikuvake ![raporttikuvake](./media/end-user-report-open/power-bi-report-icon.png). Tässä näyttökuvassa on yksi koontinäyttö ja yksi raportti. Raportin nimi on *Myynti- ja markkinointimalli*. 
    
    ![aloitussivun Jaettu kanssani -osa](./media/end-user-report-open/power-bi-shared-new.png)
 
@@ -64,8 +64,10 @@ Power BI *‑suunnittelijat* voivat jakaa yksittäisen raportin suoraan sinulle 
 
    ![sovita sivulle](./media/end-user-report-open/power-bi-actual.png)
 
+Voit käsitellä raporttia monella tavalla, jotta voit löytää merkityksellisiä tietoja ja tehdä liiketoimintaa koskevia päätöksiä.  Vasemmalla olevan sisällysluettelon avulla voit lukea muita artikkeleja, jotka koskevat Power BI -raportteja. 
+
 ### <a name="open-a-report-that-is-part-of-an-app"></a>Sovelluksen osana jaetun raportin avaaminen
-Jos olet saanut sovelluksia työtovereilta tai AppSourcesta, kyseiset sovellukset ovat käytettävissä aloitussivulla ja **Sovellukset**-säilössä siirtymisruudussa. [Sovellus](end-user-apps.md) on koontinäyttöjen ja raporttien nippu.
+Jos olet saanut sovelluksia työtovereilta tai AppSourcesta, kyseiset sovellukset ovat käytettävissä aloitussivulla ja **Sovellukset**-säilössä siirtymisruudussa. [Sovellus](end-user-apps.md) on kokoelma koontinäyttöjä ja raportteja, jotka Power BI -*suunnittelija* on niputtanut yhteen puolestasi.
 
 ### <a name="prerequisites"></a>Edellytykset
 Lataa Myynti ja markkinointi ‑sovellus, jotta voit seurata ohjeita.
@@ -78,19 +80,19 @@ Voit avata sovelluksen sovellussäilöstä tai etusivulta.
 
 7. Vieritä alaspäin, kunnes näet **Omat sovellukset** -kohdan.
 
-   ![Aloitussivu](./media/end-user-report-open/power-bi-app.png)
+   ![Etusivu](./media/end-user-report-open/power-bi-app.png)
 
-8. Valitse Myynti ja markkinointi ‑sovellus ja avaa se. Sovelluksen *suunnitteluohjelman* asetusten mukaan sovellus avaa joko koontinäytön tai raportin. Tämä sovellus avautuu koontinäyttöön.  
+8. Avaa uusi *Myynti ja markkinointi* -sovelluksesi valitsemalla se. Sovelluksen *suunnitteluohjelman* asetusten mukaan sovellus avaa joko koontinäytön tai raportin. Tämä sovellus avautuu koontinäyttöön.  
 
 
 ## <a name="open-a-report-from-a-dashboard"></a>Raportin avaaminen koontinäytöstä
 Raportit voidaan avata koontinäytöstä. Useimmat koontinäyttö[ruudut](end-user-tiles.md) on *kiinnitetty* raporteista. Ruudun valitseminen avaa raportin, jota on käytetty ruudun luomiseen. 
 
-1. Valitse raporttinäkymästä ruutu. Tässä esimerkissä olemme valinneet Yksiköitä yhteensä vuoden alusta -pylväskaavioruudun.
+1. Valitse raporttinäkymästä ruutu. Tässä esimerkissä olemme valinneet *Yksiköitä yhteensä vuoden alusta* -pylväskaavioruudun.
 
     ![koontinäyttö, jossa on ruutu valittuna](./media/end-user-report-open/power-bi-dashboard.png)
 
-2.  Ruutuun liittyvä raportti avautuu. Huomaa, että olemme Vuoden alusta -luokan sivulla. Tämä raporttisivu sisältää koontinäytöstä valitun pylväskaavion.
+2.  Ruutuun liittyvä raportti avautuu. Huomaa, että olemme *Vuoden alusta* -luokan sivulla. Tämä raporttisivu sisältää koontinäytöstä valitun pylväskaavion.
 
     ![raportti avoinna lukunäkymässä](./media/end-user-report-open/power-bi-report-tabs.png)
 
@@ -100,7 +102,7 @@ Raportit voidaan avata koontinäytöstä. Useimmat koontinäyttö[ruudut](end-us
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Muita tapoja avata raportti
 Kun pääset sinuiksi Power BI -palvelun kanssa, löydät itsellesi sopivimmat työnkulut. Tässä on vielä muita tapoja raporttien käyttämiseen:
-- Valitsemalla siirtymisruudusta **Suosikit** ja **Viimeisimmät**    
+- Valitsemalla siirtymisruudusta [Suosikit](end-user-favorite.md) ja [Viimeisimmät](end-user-recent.md)    
 - Käyttämällä [Näytä aiheeseen liittyvät](end-user-related.md) -toimintoa    
 - Sähköpostiviestistä, jonka joku on [jakanut kanssasi](../service-share-reports.md), tai kun [määrität ilmoituksen](end-user-alerts.md)    
 - [Ilmoituskeskuksen](end-user-notification-center.md) kautta    

@@ -1,19 +1,19 @@
 ---
 title: Viivakoodin lukeminen Power BI -mobiilisovelluksesta
 description: Voit skannata viivakoodeja todellisessa maailmassa ja siirtyä suoraan suodatettuihin BI-tietoihin Power BI -mobiilisovelluksessa.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/13/2017
-ms.author: mshenhav
-ms.openlocfilehash: bbc787203293fc6c9075400abf674345710faaed
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/02/2019
+ms.author: painbar
+ms.openlocfilehash: ee3cfec0c735ad52f9a036e75f61c1ab0400567b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879166"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75217804"
 ---
 # <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Viivakoodin lukeminen laitteella Power BI -mobiilisovelluksesta
 Voit skannata viivakoodeja todellisessa maailmassa ja siirtyä suoraan suodatettuihin BI-tietoihin Power BI -mobiilisovelluksessa.
@@ -32,14 +32,12 @@ Työtoverisi on saattanut esimerkiksi [merkitä viivakoodikentän raporttiin Pow
 Kun luet tuotteen viivakoodin laitteen Power BI -sovelluksen skannerilla, näet raportin (tai raporttien luettelon) kyseisellä viivakoodilla. Voit avata raportin kyseiseen viivakoodiin suodatettuna.
 
 ## <a name="scan-a-barcode-with-the-power-bi-scanner"></a>Viivakoodin skannaaminen Power BI -skannerilla
-1. Avaa Power BI-mobiilisovelluksen pääsiirtymisvalikko ![](media/mobile-apps-scan-barcode-iphone/pbi_iph_navmenu.png) vasemmasta yläkulmasta. 
-2. Vieritä alaspäin **Skanneri**-kohtaan ja valitse se. 
-   
+1. Napauta siirtymispalkissa **Lisää vaihtoehtoja** (...) ja napauta sitten **Skanneri**.
+
     ![](media/mobile-apps-scan-barcode-iphone/power-bi-scanner.png)
-3. Jos kamerasi ei ole käytössä, sinun on sallittava Power BI -sovellukselle kameran käyttö. Tämä on yhden kerran suoritettava hyväksyntä. 
-4. Osoita skannerilla tuotteen viivakoodia. 
-   
-    Näet luettelon kyseiseen viivakoodiin liittyvistä raporteista.
+
+2. Jos kamerasi ei ole käytössä, sinun on sallittava Power BI -sovellukselle kameran käyttö. Tämä on yhden kerran suoritettava hyväksyntä. 
+4. Osoita skannerilla tuotteen viivakoodia. Näkyviin tulee luettelo kyseiseen viivakoodiin liittyvistä raporteista.
 5. Napauta raportin nimeä avataksesi sen laitteessasi. Raportti suodattuu automaattisesti kyseisen viivakoodin mukaan.
 
 ## <a name="filter-by-other-barcodes-while-in-a-report"></a>Suodattaminen muiden viivakoodien perusteella raportissa

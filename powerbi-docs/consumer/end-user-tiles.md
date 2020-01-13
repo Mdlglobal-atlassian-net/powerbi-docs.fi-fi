@@ -10,10 +10,10 @@ ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 92c473b5df6c21509ba32e41d88dd43c265fa3a0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73861426"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Koontinäyttöruudut Power BI:ssä
@@ -53,15 +53,15 @@ Tarvitsetko apua Power BI:n rakenneosien kanssa?  Katso [Power BI - peruskäsitt
    
    * [avata raportin, jolla tämä ruutu on luotu ](end-user-reports.md) ![raporttikuvake](./media/end-user-tiles/chart-icon.jpg)  
    
-   * [avata Q&A-kysymyksen, jolla tämä ruutu on luotu](end-user-reports.md) ![Q&A-kuvake](./media/end-user-tiles/qna-icon.png)  
+   * [avata Q&A-kysymyksen, jolla tämä ruutu on luotu ](end-user-reports.md) ![Q&A-kuvake](./media/end-user-tiles/qna-icon.png)  
    
 
    * [avata työkirjan, jolla tämä ruutu on luotu ](end-user-reports.md) ![laskentataulukkokuvake](./media/end-user-tiles/power-bi-open-worksheet.png)  
-   * [tarkastella ruutua tarkastelutilassa ](end-user-focus.md)![kohdistuskuvake](./media/end-user-tiles/fullscreen-icon.jpg)  
+   * [tarkastella ruutua tarkastelutilassa ](end-user-focus.md) ![kohdistuskuvake](./media/end-user-tiles/fullscreen-icon.jpg)  
    * [tarkastella merkityksellisiä tietoja ](end-user-insights.md) ![merkityksellisiä tietoja -kuvake](./media/end-user-tiles/power-bi-insights.png)
-   * [lisätä kommentin ja aloittaa keskustelun](end-user-comment.md)  ![kommenttikuvake](./media/end-user-tiles/comment-icons.png)
-   * [hallita koontinäytön ruudun ilmoituksia](end-user-alerts.md)  ![ilmoituskuvake](./media/end-user-tiles/power-bi-alert-icon.png)
-   * [avata tiedot Excelissä](end-user-export.md)  ![vientikuvake](./media/end-user-tiles/power-bi-export-icon.png)
+   * [lisätä kommentin ja aloittaa keskustelun](end-user-comment.md) ![kommenttikuvake](./media/end-user-tiles/comment-icons.png)
+   * [hallita koontinäytön ruudun ilmoituksia](end-user-alerts.md) ![ilmoituskuvake](./media/end-user-tiles/power-bi-alert-icon.png)
+   * [avata tiedot Excelissä](end-user-export.md) ![vientikuvake](./media/end-user-tiles/power-bi-export-icon.png)
 
 
 3. Jos haluat sulkea toimintovalikon, valitse kankaan tyhjä alue.

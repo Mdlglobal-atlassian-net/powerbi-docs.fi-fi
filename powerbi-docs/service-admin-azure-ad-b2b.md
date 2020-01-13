@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: c126b073ac80a470733d7d8dd2638da28a06b265
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.openlocfilehash: 22328ddd6be697f658301516d05971cdcee0d260
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882836"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223904"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla
 
-Power BI on integroitu Azure Active Directory Business-to-Businessiin (Azure AD B2B), jotta Power BI -sisältöä voidaan jakaa turvallisesti organisaation ulkopuolisille vieraskäyttäjille säilyttäen samalla sisäisten tietojen hallinta.  
+Power BI on integroitu Azure Active Directory Business-to-Businessiin (Azure AD B2B), jotta Power BI -sisältöä voidaan jakaa turvallisesti organisaation ulkopuolisille vieraskäyttäjille säilyttäen samalla sisäisten tietojen hallinta. Lisäksi voit myös sallia organisaation ulkopuolisten vieraskäyttäjien muokata ja hallita organisaatiosi sisäistä sisältöä.
 
-Lisäksi voit myös sallia organisaation ulkopuolisten vieraskäyttäjien muokata ja hallita organisaatiosi sisäistä sisältöä.
+Tässä artikkelissa annetaan perustiedot Azure AD B2B:stä Power BI:ssä. Lisätietoja saat kohdasta [Power BI ‑sisällön jakaminen ulkoisille vieraskäyttäjille Azure Active Directory B2B:n avulla](whitepaper-azure-b2b-power-bi.md).
 
 ## <a name="enable-access"></a>Käytön salliminen
 
@@ -44,7 +44,7 @@ Käytä suunniteltua kutsua, jos tiedät, keitä haluat kutsua. Voit lähettää
 
 Näitä ohjeita noudattamalla voit lähettää kutsuja Azure-portaalissa.
 
-1. Valitse [Azure-portaalissa](https://portal.azure.com) **Azure Active Directory**.
+1. Valitse [Azure-portaalissa](https://portal.azure.com)**Azure Active Directory**.
 
 1. Valitse **Hallinta**-kohdassa **Käyttäjät** > **Kaikki käyttäjät** > **Uusi vieraskäyttäjä**.
 
@@ -88,7 +88,7 @@ Työtilan määrittäminen [Power BI Premium -kapasiteettiin](service-premium-wh
 
 ### <a name="assign-a-power-bi-pro-license-to-guest-user"></a>Määritä Power BI Pro -käyttöoikeus vieraskäyttäjälle
 
-Power BI Pro -käyttöoikeuden määrittäminen vuokraajan vieraskäyttäjälle sallii kyseisen vieraskäyttäjän tarkastella sisältöä.
+Power BI Pro -käyttöoikeuden määrittäminen vuokraajan vieraskäyttäjälle sallii kyseisen vieraskäyttäjän tarkastella sisältöä. Lisätietoja käyttöoikeuksien määrittämisestä on artikkelissa [Käyttöoikeuksien määrittäminen käyttäjille käyttöoikeussivulta](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Ennen kuin määrität Pro-käyttöoikeuksia vieraskäyttäjille, ota yhteyttä Microsoft-tiliedustajaan varmistaaksesi, että se noudattaa Microsoft-sopimuksesi ehtoja.
 
 ![Kaavio vieraskäyttäjän käyttökokemuksesta, Pro-käyttöoikeuden määrittäminen vuokraajasta.](media/service-admin-azure-ad-b2b/license-approach-2.png)
 
@@ -98,7 +98,7 @@ Vieraskäyttäjällä on jo vuokraajan Power BI Pro -käyttöoikeus.
 
 ![Kaavio vieraskäyttäjän käyttökokemuksesta, oman käyttöoikeuden käyttäminen.](media/service-admin-azure-ad-b2b/license-approach-3.png)
 
-## <a name="guest-users-who-can-edit-and-manage-content"></a>Vieraskäyttäjät, jotka voivat muokata ja hallita sisältöä 
+## <a name="guest-users-who-can-edit-and-manage-content"></a>Vieraskäyttäjät, jotka voivat muokata ja hallita sisältöä
 
 Kun käytät [Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) -ominaisuutta, erikseen määritetyt vieraskäyttäjät saavat käyttää organisaatiosi Power BI:tä. He voivat nähdä kaiken heille sallitun sisällön. He voivat käyttää aloitussivua, selata työtiloja, asentaa sovelluksia, nähdä nimensä käyttöoikeusluettelossa, ja lisätä sisältöä työtiloihin. He voivat luoda ja hallinnoida järjestelmänvalvojina uutta käyttökokemusta käyttäviä työtiloja. Käyttöön liittyy joitakin rajoituksia. Rajoitukset mainitaan Huomioitavat asiat ja rajoitukset -luettelossa.
  

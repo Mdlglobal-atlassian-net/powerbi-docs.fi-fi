@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a1f6adfcf471fa6805e0a99c4b8789ba9eb7cf58
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: c2985f0281274adcdbde737c0f3b00688a401df7
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74016660"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221271"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop-preview"></a>Tekoälyn merkityksellisten tietojen käyttö Power BI Desktopissa (esiversio)
 
@@ -149,7 +149,7 @@ Ota huomioon seuraavat seikat ja rajoitukset Tekstianalyysin käytön aikana:
 
 ## <a name="using-azure-ml"></a>Azuren automaattianalyysipalveluiden käyttö
 
-Useat organisaatiot käyttävät **automaattianalyysin** malleja saadakseen parempia merkityksellisiä tietoja ja ennusteita liiketoiminnastaan. Voit visualisoida ja käynnistää merkityksellisiä tietoja näistä malleista raporteissa, koontinäytöissä ja muita analyyseissa, mikä helpottaa merkityksellisten tietojen välittämistä niille yrityskäyttäjille, jotka tarvitsevat niitä eniten. Power BI:n avulla voi helposti sisällyttää Azuren automaattianalyysipalvelussa isännöityjen mallien merkityksellisiä tietoja käyttämällä yksinkertaisia osoita ja napsauta -liikkeitä.
+Useat organisaatiot käyttävät **automaattianalyysin** malleja saadakseen parempia merkityksellisiä tietoja ja ennusteita liiketoiminnastaan. Voit visualisoida ja käynnistää merkityksellisiä tietoja näistä malleista raporteissa, koontinäytöissä ja muita analyyseissa, mikä helpottaa merkityksellisten tietojen välittämistä niille yrityskäyttäjille, jotka tarvitsevat niitä eniten. Power BI:hin voi helposti sisällyttää Azuren automaattianalyysipalveluissa isännöityjen mallien merkityksellisiä tietoja yksinkertaisilla osoita ja napsauta -liikkeillä.
 
 Jotta tätä ominaisuutta voisi käyttää, datatieteilijän tulee vain myöntää Azuren automaattianalyysipalveluiden mallille käyttöoikeus BI-analyytikkoon Azure-portaalin kautta. Kunkin istunnon aluksi Power Query sitten löytää kaikki Azuren automaattianalyysipalveluiden mallit, joihin käyttäjällä on käyttöoikeus, ja paljastaa ne dynaamisina Power Query -funktioina. Käyttäjä voi käynnistää kyseiset funktiot käyttämällä niitä Power Query -editorin valintanauhasta tai käynnistämällä suoraan M-funktion. Lisäksi Power BI käsittelee käyttöoikeuspyynnöt automaattisesti erissä suorituskyvyn parantamiseksi, kun se käynnistää Azuren automaattianalyysipalveluiden mallin rivijoukolle.
 
@@ -166,8 +166,8 @@ Lisätietoja Azuren automaattianalyysipalveluista on seuraavissa artikkeleissa:
 
 Jotta käyttäjä voisi käsitellä Azuren automaattianalyysipalveluiden mallia Power BI:stä, hänellä on oltava Azure-tilauksen **luku**-oikeudet. Lisäksi hänellä on oltava seuraavat:
 
-- Automaattianalyysistudion malleille **luku**-oikeus automaattianalyysistudion verkkopalveluun
-- Automaattianalyysipalvelun malleille **luku**-oikeus automaattianalyysipalvelun työtilaan
+- Automaattianalyysistudion (perinteinen) malleille **luku**-oikeus automaattianalyysistudion (perinteinen) verkkopalveluun
+- Automaattianalyysipalveluiden malleille **luku**-oikeus automaattianalyysipalveluiden työtilaan
 
 Tässä osiossa kuvataan, kuinka Power BI -käyttäjälle myönnetään käyttöoikeus Azuren automaattianalyysipalveluissa isännöityyn malliin, niin että käyttäjä voi käsitellä mallia Power Query -funktiona. Lisätietoja on artikkelissa [Käyttöoikeuksien hallinta RBAC:n ja Azure-portaalin avulla](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
 
@@ -177,11 +177,11 @@ Tässä osiossa kuvataan, kuinka Power BI -käyttäjälle myönnetään käyttö
 4. Valitse **Käyttöoikeuksien valvonta (IAM)** ja valitse sitten **Lisää**-painike.
 5. Valitse rooliksi **Lukija**. Valitse Power BI -käyttäjä, jolle haluat myöntää Azuren automaattianalyysipalveluiden käyttöoikeuden.
 6. Valitse **Tallenna**.
-7. Toista vaiheet kolmesta kuuteen ja myönnä käyttäjälle **Lukija**-käyttöoikeus tiettyyn Automaattianalyysistudion verkkopalveluun *tai* Automaattianalyysipalvelun työtilaan, joka isännöi mallia.
+7. Toista vaiheet kolmesta kuuteen ja myönnä käyttäjälle **Lukija**-käyttöoikeus tiettyyn Automaattianalyysistudion (perinteinen) verkkopalveluun *tai* Automaattianalyysipalveluiden työtilaan, joka isännöi mallia.
 
-### <a name="schema-discovery-for-machine-learning-service-models"></a>Rakenteen etsiminen Automaattianalyysipalveluiden malleille
+### <a name="schema-discovery-for-machine-learning-models"></a>Rakenteen etsiminen Automaattianalyysipalveluiden malleille
 
-Datatieteilijät käyttävät ensisijaisesti Pythonia, kun he kehittävät (ja jopa ottavat käyttöön) koneoppimismalleja Automaattianalyysipalveluihin. Toisin kuin automaattianalyysistudion yhteydessä, joka auttaa automatisoimaan skeematiedoston luonnin mallia varten, automaattianalyysipalvelun tapauksessa datatieteilijän tulee erikseen luoda rakennetiedosto Pythonia käyttämällä.
+Datatieteilijät käyttävät ensisijaisesti Pythonia kehittäessään ja jopa ottaessaan käyttöön koneoppimismalleja automaattianalyysipalveluihin. Toisin kuin automaattianalyysistudiossa (perinteinen), joka auttaa automatisoimaan skeematiedoston luonnin mallia varten, automaattianalyysipalveluiden tapauksessa datatieteilijän tulee erikseen luoda rakennetiedosto Pythonia käyttämällä.
 
 Tämä skeematiedosto on sisällytettävä käyttöön otettuun automaattianalyysipalvelumallien verkkopalveluun. Jos haluat luoda verkkopalvelun rakenteen automaattisesti, sinun on lisättävä esimerkki syöteestä/tulosteesta käyttöönotetun mallin käynnistyskomentosarjaan. Lue dokumentaation [Mallien käyttöönotto Azuren koneoppimispalvelulla alakohta (Valinnainen) Automaattinen Swagger-skeeman luominen](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where#optional-automatic-schema-generation). Linkki sisältää esimerkkikäynnistyskomentosarjan, jossa on lausekkeet skeeman luontia varten.
 
@@ -190,7 +190,7 @@ Tarkkaan ottaen käynnistyskomentosarjan _@input\_schema_- ja _@output\_schema_-
 Näitä ohjeita, jotka koskevat skeeman luontia käynnistyskomentosarjaa päivittämällä, tulee soveltaa malleihin, jotka on luotu käyttämällä Azuren automaattianalyysipalvelujen SDK:ta käyttäviä automaattianalyysipalvelujen kokeita.
 
 > [!NOTE]
-> Mallit, jotka on luotu Azuren automaattianalyysipalvelun käyttöliittymää käyttämällä, eivät tällä hetkellä tue skeemojen luomista. Tuki lisätään myöhemmissä versioissa.
+> Mallit, jotka on luotu Azuren automaattianalyysipalveluiden käyttöliittymää käyttämällä, eivät tällä hetkellä tue skeemojen luomista. Tuki lisätään myöhemmissä versioissa.
 > 
 ### <a name="invoking-an-azure-ml-model-in-power-query"></a>Azuren automaattianalyysipalveluiden mallin käynnistäminen Power Queryssä
 
@@ -202,7 +202,7 @@ Kaikki Azuren automaattianalyysipalveluiden mallit, joihin sinulla on käyttöoi
 
 Jos haluat käynnistää Azuren automaattianalyysipalveluiden mallin, voit määrittää avattavassa luettelossa minkä tahansa valitun entiteetin sarakkeista syötteeksi. Voit myös määrittää syötteenä käytettävän vakioarvon käyttämällä syötevalintaikkunan vasemmalla puolella olevaa sarakekuvaketta.
 
-![Azure-automaattianalyysi](media/desktop-ai-insights/ai-insights-07.png)
+![Azure-koneoppiminen](media/desktop-ai-insights/ai-insights-07.png)
 
 Valitse **OK**, niin voit tarkastella Azuren automaattianalyysipalveluiden mallin tulostetta entiteettitaulukon uutena sarakkeena. Näet myös mallin kutsun kyselyyn käytettynä vaiheena.
 
@@ -220,7 +220,7 @@ Seuraavat seikat ja rajoitukset koskevat Azuren automaattianalyysipalveluita Pow
 
 Tässä artikkelissa annettiin yleiskuva siitä, miten automaattianalyysit integroidaan Power BI Desktopiin. Myös seuraavat artikkelit voivat olla kiinnostavia ja hyödyllisiä.
 
-- [Opetusohjelma: Azuren koneoppimisstudion käynnistäminen Power BI:ssä](service-tutorial-invoke-machine-learning-model.md)
+- [Opetusohjelma: Automaattianalyysistudion (perinteisen) mallin käynnistäminen Power BI:ssä](service-tutorial-invoke-machine-learning-model.md)
 - [Opetusohjelma: Kognitiivisten palvelujen käyttö Power BI:ssä](service-tutorial-use-cognitive-services.md)
 - [Kognitiiviset palvelut Power BI:ssä](service-cognitive-services.md)
 - [Automaattianalyysipalveluiden integrointi Power BI:ssä](service-machine-learning-integration.md)

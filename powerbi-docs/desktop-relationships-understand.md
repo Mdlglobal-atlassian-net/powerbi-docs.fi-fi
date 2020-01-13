@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 8562d0fd5acee2f18576f0a6b6f2e3d613354f92
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 0029d275e5180c29e8653f549d8450014362b59b
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74009627"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75304236"
 ---
 # <a name="model-relationships-in-power-bi-desktop"></a>Mallien suhteet Power BI Desktopissa
 
@@ -73,7 +73,7 @@ Kun määrität Yksi moneen- tai Monta yhteen -yhteyden, valitset sen, joka vast
 
 **Yksi yhteen** -yhteys tarkoittaa, että molemmat sarakkeet sisältävät yksilöllisiä arvoja. Tämä kardinaliteettityyppi ei ole yleinen, eikä se luultavasti ole optimaalinen mallin rakenne, koska tallennetaan tarpeetonta tietoa.<!-- For guidance on using this cardinality type, see the [One-to-one relationship guidance](guidance/relationships-one-to-one) article.-->
 
-**Monta moneen** -yhteys tarkoittaa, että molemmat sarakkeet voivat sisältää saman arvon useampia kertoja. Tätä kardinaliteettityyppiä käytetään harvoin. Siitä on yleensä hyötyä silloin, kun suunnitellaan monimutkaisia mallivaatimuksia.<!-- For guidance on using this cardinality type, see the [Many-to-many relationship guidance](guidance/relationships-many-to-many) article.-->
+**Monta moneen** -yhteys tarkoittaa, että molemmat sarakkeet voivat sisältää saman arvon useampia kertoja. Tätä kardinaliteettityyppiä käytetään harvoin. Siitä on yleensä hyötyä silloin, kun suunnitellaan monimutkaisia mallivaatimuksia. Ohjeita tämän kardinaliteettityypin käyttämisestä on kohdassa [Monta-moneen-suhteen ohjeet](guidance/relationships-many-to-many.md).
 
 > [!NOTE]
 > Monta moneen -kardinaliteettityyppiä ei nykyisellään tueta malleilla, joita kehitetään Power BI -raporttipalvelinta varten.
@@ -226,4 +226,5 @@ Seuraavassa luettelossa yhteyksien suodattimenlevityskyky on järjestyksessä no
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 - [Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä](guidance/star-schema.md)
+- [Monta-moneen-suhteen ohjeet](guidance/relationships-many-to-many.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

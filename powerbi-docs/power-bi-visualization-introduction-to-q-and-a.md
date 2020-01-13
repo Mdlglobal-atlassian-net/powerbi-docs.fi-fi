@@ -10,10 +10,10 @@ ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 817ce82b94817530854d85c7dbcca17a313fc438
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73874450"
 ---
 # <a name="create-a-visual-with-power-bi-qa"></a>Visualisoinnin luominen Power BI:n Q&A:n avulla
@@ -28,7 +28,7 @@ Esimerkkien seuraaminen edellyttää, että käytössäsi on raportti, jota voit
 
 Miten tämä viivakaavio luodaan käyttämällä Q&A:ta?
 
-1. Valitse Power BI -työtilassa **Nouda tiedot** \> **Mallit** \> **Jälleenmyyntianalyysimalli**  >   **Yhdistä**.
+1. Valitse Power BI -työtilassa **Nouda tiedot** \> **Mallit** \> **Jälleenmyyntianalyysimalli** >  **Yhdistä**.
 
 1. Avaa Jälleenmyyntianalyysimalli-koonti näyttö, siirrä sijoita kohdistin Q&A-ruutuun ja **esitä tietojasi koskeva kysymys**.
 
@@ -73,5 +73,5 @@ Miten tämä viivakaavio luodaan käyttämällä Q&A:ta?
 - [Q&A kuluttajille](consumer/end-user-q-and-a.md)
 - [Tietojen muokkaaminen toimimaan hyvin Power BI:n Q&A-toiminnon kanssa](service-prepare-data-for-q-and-a.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

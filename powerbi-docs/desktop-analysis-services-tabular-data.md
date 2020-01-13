@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6ee7405b7c3d542dd824c70c17459c7078b3f0e1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f7af1c584802181cab68f6ce2fc4823ec7078354
+ms.sourcegitcommit: 331ebf6bcb4a5cdbdc82e81a538144a00ec935d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878836"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "75523023"
 ---
 # <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Analysis Servicesin taulukkomuotoisten tietojen käyttäminen Power BI Desktopissa
 Power BI Desktopissa on kaksi tapaa muodostaa yhteys SQL Server Analysis Servicesin taulukkomalleihin ja hakea niistä tietoja: Tutustu käyttämällä reaaliaikaista yhteyttä tai Valitse kohteet ja tuo Power BI Desktopiin.
@@ -76,6 +76,12 @@ Jos valitset valitse kohteet ja nouda tiedot, tuot taulukkomallin tiedot suoraan
 **Kysymys:** Näen siirtymistoiminnossa mallin ja perspektiivin. Mikä niiden ero on?
 
 **Vastaus**: Perspektiivi on taulukkomallin tietty näkymä. Se voi sisältää vain valittuja taulukoita, sarakkeita tai mittareita tietoanalyysin tarpeiden mukaan. Taulukkomalli sisältää aina vähintään yhden perspektiivin, johon voi sisältyä mitä tahansa mallissa. Jos et ole varma, mitä sinun pitäisi valita, ota yhteys järjestelmänvalvojaan.
+
+**Kysymys:** Onko Analysis Servicesissä ominaisuuksia, jotka muuttavat Power BI:n toimintaa?
+
+**Vastaus**: Kyllä. Taulukkomuotoisen mallin käyttämien ominaisuuksien mukaan Power BI Desktopin käyttökokemus voi muuttua. Esimerkkejä ovat muun muassa seuraavat:
+* Mittarit saattavat näkyä mallissa ryhmiteltyinä yhteen kenttäluettelon yläosassa sen sijaan, että ne näkyisivät taulukoissa sarakkeiden rinnalla. Ei hätää! Voit edelleen käyttää niitä tavalliseen tapaan; ne vain löytyvät helpommin näin.
+* Jos taulukkomuotoisessa mallissa on määritettynä laskentaryhmiä, voit käyttää niitä vain yhdessä mallin mittareiden kanssa. Et voi käyttää niitä luomiesi implisiittisten mittareiden kanssa lisäämällä visualisointiin numerokenttiä. Mallilla voi myös olla **DiscourageImplicitMeasures**-lippu asetettuna manuaalisesti. Se vaikuttaa samalla tavalla. Lisätietoja on kohdassa [Laskentaryhmät Analysis Servicesissä](https://docs.microsoft.com/analysis-services/tabular-models/calculation-groups#benefits)
 
 ## <a name="to-change-the-server-name-after-initial-connection"></a>Voit muuttaa palvelimen nimen ensiyhteyden jälkeen
 Kun olet luonut Power BI Desktop -tiedoston ja tutustunut reaaliaikaiseen yhteyteen, saatat joissakin tapauksissa haluta vaihtaa yhteyden toiseen palvelimeen. Jos olet esimerkiksi luonut Power BI Desktop -tiedoston muodostaessasi yhteyden kehityspalvelimeen ja ennen Power BI -palveluun julkaisemista, haluatkin vaihtaa yhteyden tuotantopalvelimeen.

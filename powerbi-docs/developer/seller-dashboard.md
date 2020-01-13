@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 12/03/2019
-ms.openlocfilehash: 12ecde787bb268190f9b94a2db5992d5840080ac
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.openlocfilehash: 73a6a3d16ae2515af41a3232a37579e18876f38b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75002531"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223677"
 ---
 # <a name="submit-a-power-bi-visual-to-appsource-using-seller-dashboard"></a>Power BI -visualisoinnin lähettäminen AppSourceen myyjän koontinäytön kautta
 
@@ -51,7 +51,7 @@ Sinun täytyy lähettää **pbiviz**- ja **pbix**-tiedoston sisältävä sähkö
    * *Testaushuomautukset:* voit halutessasi antaa tässä ohjeita Microsoftin testaajille.
    * *Sovelluksesi kutsuu, tukee, sisältää tai käyttää salausta*: jätä tämä kohta valitsematta.
    * *Tarjoa tämä apuohjelma käytettäväksi iPadin Office-apuohjelmaluettelossa*: jätä tämä kohta valitsematta.
-7. Lataa visualisointisi logo valitsemalla **sovelluksen logon** kohdasta **+**. Valitse sitten kuvatiedosto Avaa tiedosto -valintaikkunassa. Kuvaketiedoston täytyy olla .png-, .jpg-, .jpeg- tai .gif-tiedosto. Sen on oltava tarkalleen 300 × 300 kuvapistettä (leveys × korkeus). Suurin sallittu tiedostokoko on 512 kt.
+7. Lataa visualisointisi logo valitsemalla **sovelluksen logon** kohdasta **+** . Valitse sitten kuvatiedosto Avaa tiedosto -valintaikkunassa. Kuvaketiedoston täytyy olla .png-, .jpg-, .jpeg- tai .gif-tiedosto. Sen on oltava tarkalleen 300 × 300 kuvapistettä (leveys × korkeus). Suurin sallittu tiedostokoko on 512 kt.
 
     ![Sovelluksen logo](media/office-store/powerbi-custom-visual-app-logo.png)
 
@@ -103,7 +103,7 @@ Noudata tämän osion ohjeita, kun lähetät Power BI -visualisoinnin sertifioit
     * [Vaatimuksien noudattaminen](power-bi-custom-visuals-certified.md#certification-requirements)
     * Kooditarkastuksen läpäiseminen
 
-2. Microsoftin Power BI -visualisointien tiimi ilmoittaa, kun Power BI -visualisointi on joko sertifioitu ja lisätty [sertifioitujen luetteloon](power-bi-custom-visuals-certified.md#list-of-power-bi-visuals-that-have-been-certified) tai hylätty, jolloin mukana toimitetaan raportti korjattavista ongelmista. On kehittäjän vastuulla pitää yllä avointa viestiyhteyttä Microsoftin kanssa ja päivittää tarvittaessa omat sertifioidut visualisointinsa.
+2. Microsoftin Power BI ‑visualisointien tiimi ilmoittaa, kun Power BI ‑visualisointi on joko sertifioitu ja lisätty [sertifioitujen Power BI ‑visualisointien luetteloon](power-bi-custom-visuals-certified.md#certified-power-bi-visuals) tai hylätty, jolloin mukana toimitetaan raportti korjattavista ongelmista. On kehittäjän vastuulla pitää yllä avointa viestiyhteyttä Microsoftin kanssa ja päivittää tarvittaessa omat sertifioidut visualisointinsa.
 
 ## <a name="tracking-submission-status-and-usage"></a>Lähetyksen tilan ja käytön seuraaminen
 

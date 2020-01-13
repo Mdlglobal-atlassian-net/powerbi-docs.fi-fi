@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
-ms.openlocfilehash: 8afa43cf9d49286a1ec04f7f60aa4a4c4ca7fd16
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: fac23cf5814513c488a3403be420a2273992bae5
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831192"
+ms.lasthandoff: 01/04/2020
+ms.locfileid: "75657163"
 ---
 # <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Sivutettujen raporttien parametrien luominen Power BI -palvelussa
 
@@ -61,7 +61,12 @@ Seuraavassa kuvassa näkyy Power BI:n raportin muodostimen Suunnittelunäkymä, 
     -   Valitsemalla **Sisäinen** voit piilottaa parametrin ja estää sen muokkauksen raporttipalvelimella raportin julkaisun jälkeen. Raporttiparametria voidaan tämän jälkeen tarkastella vain raportin määrityksessä. Sinun on määritettävä asetukselle oletusarvo tai sallittava parametrille nolla-arvo.  
   
 9. Valitse **OK**. 
-  
+
+## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
+
+- Jos tietolähteenäsi on Power BI -tietojoukko tai Analysis Services -malli, voit välittää enintään 1 000 parametriarvoa yhdessä pyynnössä DAX-rajoitusten takia. 
+
+ 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 Katso [Sivutettujen raporttien parametrien tarkastelu](consumer/paginated-reports-view-parameters.md) -artikkelista, miltä parametrit näyttävät Power BI -palvelussa.

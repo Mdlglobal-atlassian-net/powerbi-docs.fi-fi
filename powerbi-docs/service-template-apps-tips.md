@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: 04b50882c28bf561e628e9f02dff6c147233d260
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: a9f589a5e840e95e349ec303b42b30568820e8b3
+ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099736"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622449"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Vihjeitä mallisovellusten kehittämiseen Power BI:ssä
 
@@ -29,7 +29,7 @@ Nämä voivat olla tuttuja nykyisten Power BI -ominaisuuksien kautta. Kun luot m
 
 <a name="queries"></a>
 
-## <a name="queries"></a>kyselyt
+## <a name="queries"></a>Kyselyt
 Power BI Desktopissa luotuja kyselyitä käytetään mallisovelluksissa tietolähteen yhdistämiseen ja tietojen tuomiseen. Näitä kyselyjä tarvitaan yhtenäisen rakenteen palauttamiseen, ja niitä tuetaan tietojen ajoitetussa päivityksessä (DirectQuery-kyselyitä ei tueta).
 
 ### <a name="connect-to-your-api"></a>Ohjelmointirajapintaan yhdistäminen
@@ -69,7 +69,7 @@ Hyvin määritelty tietomalli takaa, että asiakkaasi voivat käyttää mallisov
 > [!NOTE]
 > Tee suurin osa perusmallintamisesta (kirjoitus, sarakkeiden nimet) [kyselyissä](#queries).
 
-### <a name="qa"></a>Kysymykset ja vastaukset
+### <a name="qa"></a>Q&A
 Mallintaminen vaikuttaa myös siihen, kuinka hyvin kysymykset ja vastaukset tarjoavat tuloksia asiakkaillesi. Muista lisätä usein käytettyihin sarakkeisiin synonyymeja ja varmista, että olet nimennyt sarakkeet oikein [kyselyissä](#queries).
 
 ### <a name="additional-data-model-tips"></a>Lisävihjeitä tietomalleista
@@ -124,14 +124,14 @@ Suosittelemme hankkimaan laadukkaita mallitietoja ennen sovelluksen luomista. Va
 Mallisovellukset voidaan julkaista AppSourcessa. Noudata seuraavia ohjeita ennen sovelluksen lähettämistä AppSourceen:
 
 * Varmista, että luot mallisovelluksen käyttämällä mielenkiintoisia mallitietoja, jotka auttavat asentajaa ymmärtämään sovelluksen toimintoja (tyhjää raporttia ja koontinäyttöä ei hyväksytä).
-Mallisovellukset tukevat mallitietoja vain sovelluksissa, joten varmista, että tarkistat staattisen sovelluksen valintaruudun. [Lue lisää](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+Mallisovellukset tukevat mallitietoja vain sovelluksissa, joten varmista, että tarkistat staattisen sovelluksen valintaruudun. [Lisätietoja](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Ohjeista validointitiimiä ja kerro, mitä tunnistetietoja ja parametreja vaaditaan tietoihin yhdistämiseen.
-* Sovelluksen on sisällettävä sovelluskuvake Power BI:ssä ja CPP-tarjouksessa. [Lue lisää](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Määritetty aloitussivu. [Lue lisää](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Sovelluksen on sisällettävä sovelluskuvake Power BI:ssä ja CPP-tarjouksessa. [Lisätietoja](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Määritetty aloitussivu. [Lisätietoja](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Muista noudattaa [Power BI:n sovelluksen tarjouksen](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) ohjeita.
 * Jos koontinäyttö on osa sovellustasi, varmista, että se ei ole tyhjä.
 * Asenna sovellus sovelluslinkin avulla ennen sen lähettämistä, ja varmista, että voit yhdistää tietojoukon ja sovelluskokemuksen suunnitelmien mukaan.
-* Varmista ennen bpix-tiedoston lataamista mallityötilaan, ettet lataa mitään tarpeettomia yhteyksiä.
+* Varmista ennen pbix-tiedoston lataamista mallityötilaan, ettet lataa mitään tarpeettomia yhteyksiä.
 * Noudata Power BI:n [parhaita suunnittelukäytäntöjä raporteille ja visualisoinneille](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices), jotta vaikutat optimaalisesti käyttäjiisi ja saat hyväksynnän jakelulle.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: cd252572c3080f300592b52ddc0f25cefcf7f084
-ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
+ms.openlocfilehash: ec0f98dfe56b6d2a6efe038622541f9f19d3899d
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478667"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75223398"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Rivitason suojaus Power BI Embeddedissä
 
@@ -129,6 +129,9 @@ Nyt kun kaikki osat on koottu yhteen ja henkilö kirjautuu sovellukseesi tarkast
 Rivitason suojausta voi käyttää paikallisilla palvelimilla reaaliaikaisten Analysis Services -yhteyksien avulla. Kun käytät tämäntyyppistä yhteyttä, sinun tulee tuntea muutama käsite.
 
 Käyttäjänimi-ominaisuuden on vastattava Windows-käyttäjää, jolla on käyttöoikeudet Analysis Services -palvelimella.
+
+>[!NOTE]
+> Kun palvelun päänimeä käytetään [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview) ‑tietolähteen avulla, palvelun päänimellä on itsellään oltava käyttöoikeudet Azure Analysis Services ‑esiintymään. Tähän ei riitä käyttöoikeusryhmä, joka sisältää palvelun päänimen.
 
 ### <a name="on-premises-data-gateway-configuration"></a>Paikallisen tietoyhdyskäytävän määritys
 

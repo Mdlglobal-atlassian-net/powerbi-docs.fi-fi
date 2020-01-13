@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 04/02/2019
-ms.openlocfilehash: 85b21d95cb992449d3b7a910c619d049237fc9d8
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.date: 12/12/2019
+ms.openlocfilehash: e27789ca28d86a53b7d8340b3d766a73a04645cb
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311089"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223426"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseen asiakkaille
 
@@ -226,9 +226,9 @@ Lisää **tenant**-kohtaan Azure-vuokraajatunnuksesi. Voit hakea nämä tiedot [
 
 Vaikka sisältöä upotetaan [Power BI REST -ohjelmointirajapintojen](https://docs.microsoft.com/rest/api/power-bi/) avulla, tässä artikkelissa kuvatut esimerkkikoodit on luotu **.NET SDK:n** avulla.
 
-Jos haluat upottaa sovellukseen sisältöä asiakkaillesi, tarvitset päätilillesi **käyttöoikeustietueen** tai [palvelun päänimen](embed-service-principal.md) **Azure AD:stä**. Sinun täytyy hankkia [Azure AD -käyttöoikeustietue](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) Power BI-sovelluksellesi, ennen kuin voit kutsua [Power BI REST -ohjelmointirajapintoja](https://docs.microsoft.com/rest/api/power-bi/).
+Jos haluat upottaa sovellukseen sisältöä asiakkaillesi, tarvitset päätilillesi **käyttöoikeustietueen** tai [palvelun päänimen](embed-service-principal.md)**Azure AD:stä**. Sinun täytyy hankkia [Azure AD -käyttöoikeustietue](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) Power BI-sovelluksellesi, ennen kuin voit kutsua [Power BI REST -ohjelmointirajapintoja](https://docs.microsoft.com/rest/api/power-bi/).
 
-Jotta voit luoda Power BI -asiakasohjelman **käyttöoikeustietueen** avulla, sinun on luotava Power BI -asiakasohjelmaobjekti, joka mahdollistaa vuorovaikutuksen [Power BI REST -ohjelmointirajapintojen](https://docs.microsoft.com/rest/api/power-bi/) kanssa. Power BI -asiakasohjelmaobjekti luodaan sijoittamalla **käyttöoikeustietue** ***Microsoft.Rest.TokenCredentials***-objektiin.
+Jotta voit luoda Power BI -asiakasohjelman **käyttöoikeustietueen** avulla, sinun on luotava Power BI -asiakasohjelmaobjekti, joka mahdollistaa vuorovaikutuksen [Power BI REST -ohjelmointirajapintojen](https://docs.microsoft.com/rest/api/power-bi/) kanssa. Power BI -asiakasohjelmaobjekti luodaan sijoittamalla **käyttöoikeustietue*****Microsoft.Rest.TokenCredentials***-objektiin.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -418,7 +418,7 @@ Alla olevassa taulukossa kuvataan kunkin SKU:n resurssit ja rajoitukset. Jos hal
 
 | Kapasiteetin solmut | V-ytimiä yhteensä | Taustan v-ytimet | RAM (GB) | Edustan v-ytimet | DirectQuery/live-yhteys (sekunnissa) | Mallin uudelleen latauksen parallelisointi |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0.5 | 2.5 | 0.5 | 3.75 | 1 |
+| EM1/A1 | 1 | 0,5 | 2.5 | 0,5 | 3.75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
@@ -435,6 +435,8 @@ Lisätietoja on ohjeaiheessa [Upotetun analytiikan kapasiteetin suunnittelun tek
 ### <a name="assign-a-workspace-to-a-dedicated-capacity"></a>Määritä työtila varattuun kapasiteettiin
 
 Kun olet luonut varatun kapasiteetin, voit määrittää työtilan kyseiselle varatulle kapasiteetille.
+
+Kaikki työtilat, jotka sisältävät upotettuun sisältöön (mukaan lukien tietojoukot, raportit ja koontinäytöt) liittyviä Power BI -resursseja, on määritettävä varattuihin kapasiteetteihin. Jos esimerkiksi upotettu raportti ja siihen sidottu tietojoukko sijaitsevat eri työtiloissa, molemmat työtilat on määritettävä varattuun kapasiteettiin.
 
 Jos haluat määrittää varatun kapasiteetin työtilalle [palvelun päänimellä](embed-service-principal.md), käytä [Power BI REST -ohjelmointirajapintaa](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). Kun käytät Power BI REST -ohjelmointirajapintoja, muista käyttää [palvelun päänimen objektitunnusta](embed-service-principal.md#how-to-get-the-service-principal-object-id).
 

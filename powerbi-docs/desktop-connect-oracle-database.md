@@ -6,62 +6,62 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 11/20/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7c91095cf321fed56a0cb1c3c6bd1113f380a524
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c2290963db54f150eed8176c2820c59f8f138666
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878499"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223273"
 ---
 # <a name="connect-to-an-oracle-database"></a>Oracle-tietokantaan yhdistäminen
-Yhteyden muodostaminen Oracle-tietokantaan **Power BI Desktopilla** edellyttää, että tietokoneessa on asennettuna Power BI Desktop ja oikea Oracle-asiakasohjelmisto. Oracle-asiakasohjelmiston versio (**32-bittinen** vai **64-bittinen**) määräytyy tietokoneeseen asennetun Power BI Desktop -version mukaan.
+Yhteyden muodostaminen Oracle-tietokantaan Power BI Desktopilla edellyttää, että tietokoneessa on asennettuna Power BI Desktop ja oikea Oracle-asiakasohjelmisto. Käytettävä Oracle-asiakasohjelmisto määräytyy asennetun Power BI Desktop ‑version mukaan: se on joko 32- tai 64-bittinen.
 
-**Tuetut versiot**: Oracle 9 ja sitä uudemmat versiot sekä Oracle-asiakasohjelmisto 8.1.7 ja sitä uudemmat versiot.
+Tuetut Oracle-versiot: 
+- Oracle 9 ja uudemmat
+- Oracle-asiakasohjelmisto 8.1.7 ja uudemmat
 
 ## <a name="determining-which-version-of-power-bi-desktop-is-installed"></a>Asennettuna olevan Power BI Desktop -version selvittäminen
-Voit selvittää asennettuna olevan Power BI Desktop -version valitsemalla **Tiedosto > Ohje > Tietoja** ja tarkistamalla sitten **Versio:** -rivin tiedot. Seuraavassa kuvassa asennettuna on Power BI Desktopin 64-bittinen versio:
+Voit selvittää, kumpi Power BI Desktop -versio sinulla on asennettuna, valitsemalla **Tiedosto** > **Ohje** > **Tietoja** ja tarkistamalla sitten tiedot **Versio**-riviltä. Seuraavassa kuvassa asennettuna on Power BI Desktopin 64-bittinen versio:
 
-![](media/desktop-connect-oracle-database/connect-oracle-database_1.png)
+![Power BI Desktop ‑versio](media/desktop-connect-oracle-database/connect-oracle-database_1.png)
 
 ## <a name="installing-the-oracle-client"></a>Oracle-asiakasohjelman asentaminen
-**32-bittiset** Power BI Desktop -versiot: Lataa **32-bittinen** Oracle-asiakasohjelma seuraavasta linkistä ja asenna se tietokoneeseen:
+- Jos sinulla on Power BI Desktopin 32-bittinen versio, [lataa ja asenna Oraclen 32-bittinen asiakasohjelma](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html).
 
-* [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
-
-**64-bittiset** Power BI Desktop -versiot: Lataa **64-bittinen** Oracle-asiakasohjelma seuraavasta linkistä ja asenna se tietokoneeseen:
-
-* [64-bit ODAC 12c Release 4 (12.1.0.2.4) for Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
+- Jos sinulla on Power BI Desktopin 64-bittinen versio, [lataa ja asenna Oraclen 64-bittinen asiakasohjelma](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html).
 
 ## <a name="connect-to-an-oracle-database"></a>Oracle-tietokantaan yhdistäminen
-Kun tietokoneessa on asennettuna vastaava Oracle-asiakasohjelman ohjain, voit muodostaa yhteyden Oracle-tietokantaan. Voit muodostaa yhteyden seuraavasti:
+Asennettuasi tietokoneeseen Oracle-asiakasohjelmaa vastaavan ohjaimen, voit muodostaa yhteyden Oracle-tietokantaan. Voit muodostaa yhteyden seuraavasti:
 
-1. Valitse Nouda tiedot -ikkunasta **Tietokanta > Oracle Database**.
+1. Valitse **Aloitus**-välilehdeltä **Nouda tiedot**. 
+
+2. Valitse näytölle avautuvasta **Nouda tiedot**-ikkunasta tarvittaessa vaihtoehto **Lisää** ja valitse sitten **Tietokanta** > **Oracle-tietokanta** ja **Yhdistä**.
    
-   ![](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
-2. Kirjoita avautuvaan **Oracle Database** -valintaikkunaan palvelimen nimi ja valitse **Muodosta yhteys**. Jos SID-tunnus vaaditaan, voit määrittää sen muodossa: *PalvelimenNimi/SID*, jossa SID on tietokannan yksilöivä nimi. Jos *PalvelimenNimi/SID*-muoto ei toimi, kokeile *PalvelimenNimi/PalvelunNimi*-muotoa, jossa PalvelunNimi on yhteyden muodostuksessa käytetty alias.
+   ![Yhteyden muodostaminen Oracle-tietokantaan](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
+2. Kirjoita avautuvaan **Oracle-tietokanta**-valintaikkunaan **Palvelin**-kohtaan palvelimen nimi ja valitse **OK**. Jos SID-tunnus vaaditaan, määritä se käyttämällä muotoa *PalvelimenNimi/SID*, jossa *SID* on tietokannan yksilöivä nimi. Jos *PalvelimenNimi/SID*-muoto ei toimi, kokeile *PalvelimenNimi/PalvelunNimi*-muotoa, jossa *PalvelunNimi* on yhteyden muodostuksessa käyttämäsi alias.
 
 
-   ![](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
+   ![Oracle-palvelimen nimen antaminen](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
 
    > [!TIP]
-   > Jos sinulla ilmenee tässä vaiheessa vaikeuksia yhteyden muodostamisessa, kokeile käyttää Palvelimen nimi ‑kentässä seuraavaa muotoa: (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=isäntänimi)(PORT=portin_nro))(CONNECT_DATA=(SERVICE_NAME=palvelun_nimi)))
+   > Jos sinulla ilmenee tässä vaiheessa vaikeuksia yhteyden muodostamisessa, kokeile käyttää **Palvelin**-kentässä seuraavaa muotoa: *(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=isäntänimi)(PORT=portin_nro))(CONNECT_DATA=(SERVICE_NAME=palvelun_nimi)))*
    
-3. Jos haluat tuoda tietoja alkuperäisen tietokantakyselyn avulla, voit kirjoittaa kyselyn **SQL-lause**-ruutuun, jonka saa näkyviin laajentamalla **Oracle Database** -valintaikkunan **Lisäasetukset**-osion.
+3. Jos haluat tuoda tietoja alkuperäisen tietokantakyselyn avulla, kirjoita kysely **SQL-lause**-ruutuun, jonka saa näkyviin laajentamalla **Oracle-tietokanta**-valintaikkunan **Lisäasetukset**-osion.
    
-   ![](media/desktop-connect-oracle-database/connect-oracle-database_4.png)
-4. Kun olet kirjoittanut Oracle-tietokannan tiedot Oracle Database -valintaikkunaan (myös valinnaiset tiedot, kuten SID-tunnuksen tai alkuperäisen tietokantakyselyn), muodosta yhteys valitsemalla **OK**.
+   ![Lisäasetukset-osion laajentaminen](media/desktop-connect-oracle-database/connect-oracle-database_4.png)
+4. Kun olet kirjoittanut Oracle-tietokannan tiedot **Oracle-tietokanta**-valintaikkunaan (myös valinnaiset tiedot, kuten SID-tunnuksen tai alkuperäisen tietokantakyselyn), muodosta yhteys valitsemalla **OK**.
 5. Jos Oracle-tietokanta edellyttää tietokannan käyttäjän tunnistetietoja, kirjoita kyseiset tiedot valintaikkunaan pyydettäessä.
 
 
 ## <a name="troubleshooting"></a>Vianmääritys
 
-Jos olet ladannut Power BI Desktopin Microsoft Storesta, et ehkä pysty muodostamaan yhteyttä Oracle-tietokantoihin Oracle-ohjainongelman vuoksi. Jos kohtaat tämän ongelman, saat virheviestin: Objektiviittausta ei ole määritetty. Voit korjata ongelman toimimalla jommallakummalla seuraavista tavoista:
+Jos olet ladannut Power BI Desktopin Microsoft Storesta, et ehkä pysty muodostamaan yhteyttä Oracle-tietokantoihin Oracle-ohjainongelman vuoksi. Jos kohtaat tämän ongelman, saat virheviestin: *Objektiviittausta ei ole määritetty.* Voit korjata ongelman jommallakummalla seuraavista tavoista:
 
-* Lataa Power BI Desktop kohteesta https://powerbi.microsoft.com/desktop.
+* Lataa Power BI Desktop [Latauskeskuksesta](https://www.microsoft.com/download/details.aspx?id=58494) Microsoft Storen sijaan.
 
-* Jos haluat käyttää Microsoft Store -versiota, kopioi paikallisessa tietokoneessa oraons.dll kohteesta _12.X.X\client_X_ kohteeseen _12.X.X\client_X\bin_. X vastaa versio- ja hakemistonumeroita.
+* Jos haluat käyttää Microsoft Store -versiota, kopioi paikallisessa tietokoneessa oraons.dll kohteesta _12.X.X\client_X_ kohteeseen _12.X.X\client_X\bin_, jossa _X_ tarkoittaa version ja hakemiston numeroa.
 
-Jos näet Power BI Gatewayssä virhesanoman *Objektiviittausta ei ole määritetty*, kun muodostat yhteyttä Oracle-tietokantaan, saatat pystyä ratkaisemaan ongelman noudattamalla [Tietolähteen hallinta – Oracle](service-gateway-onprem-manage-oracle.md) -artikkelin ohjeita.
+Jos näet Power BI Gatewayssä virhesanoman *Objektiviittausta ei ole määritetty*, kun muodostat yhteyttä Oracle-tietokantaan, noudata [Tietolähteen hallinta – Oracle](service-gateway-onprem-manage-oracle.md) -artikkelin ohjeita.

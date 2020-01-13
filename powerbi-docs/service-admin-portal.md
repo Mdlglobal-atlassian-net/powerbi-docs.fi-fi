@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 4776e458c778b6bd482106660ab9b8cd978699e5
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.openlocfilehash: 99d57b734e42913db20e8a414c3216ed66334fa8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882893"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75224173"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -125,7 +125,7 @@ Voit hallita Power BI -käyttäjiä, -ryhmiä ja -järjestelmänvalvojia Microso
 
 ## <a name="audit-logs"></a>Valvontalokit
 
-Voit hallita Power BI -valvontalokeja Office 365:n tietoturva- ja yhteensopivuuskeskuksessa. **Valvontalokit**-välilehdessä on linkki vuokraajasi tietoturva- ja yhteensopivuuskeskukseen. [Lue lisää](service-admin-auditing.md)
+Voit hallita Power BI -valvontalokeja Office 365:n tietoturva- ja yhteensopivuuskeskuksessa. **Valvontalokit**-välilehdessä on linkki vuokraajasi tietoturva- ja yhteensopivuuskeskukseen. [Lisätietoja](service-admin-auditing.md)
 
 Jotta voit käyttää valvontalokeja, varmista, että [**Valvontalokien luominen sisäisen toiminnan valvonnan ja vaatimustenmukaisuuden tarpeisiin**](#create-audit-logs-for-internal-activity-auditing-and-compliance) -asetus on käytössä.
 
@@ -168,9 +168,9 @@ Seuraavissa osioissa luodaan yleiskatsaus vuokraaja-asetusten eri tyyppeihin.
 
 Organisaation käyttäjät voivat siirtyä sisäisiin ohje- ja tukiresursseihin Power BI:n ohjevalikosta. Tarkemmin sanottuna nämä parametrit muuttavat Lue-, Yhteisö- ja Hanki apua -valikkokohtien toimintaa.
 
-    ![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+Kun määrität URL-osoitteen käyttöoikeuspyyntöjä varten, voit mukauttaa **Päivitä tili** -painikkeen URL-kohdeosoitetta. Käyttäjät, joilla ei ole Power BI Pro -käyttöoikeutta, näkevät tämän painikkeen **Päivitä Power BI Pro** -valintaikkunassa ja **Hallitse henkilökohtaista tallennustilaa** -sivulla. Lisäksi Power BI ei enää näytä **Kokeile Prota ilmaiseksi** -painiketta tässä valintaikkunassa tai tallennussivulla. Näin varmistat, että Power BI ohjaa käyttäjäsi luotettavasti organisaatiosi määrittämien prosessien kautta käyttöoikeuksien hallintaratkaisun läpi.
 
-Määrittämällä käyttöoikeuspyynnöille URL-osoitteen mukautat **Päivitä tili** -painikkeen URL-kohdeosoitteen, jonka käyttäjä, jolla ei ole Power BI Pro -käyttöoikeutta, voi löytää **Päivitä Power BI Pro** -valintaikkunasta sekä **Hallitse henkilökohtaista tallennustilaa** -sivulta. Power BI ei enää tarjoa **Kokeile Prota ilmaiseksi**-painiketta tässä valintaikkunassa tai tallennussivulla. Näin varmistetaan, että Power BI ohjaa käyttäjäsi luotettavasti organisaatiosi käyttöoikeuksien hallintaratkaisun määrittämien prosessien läpi.
+![Lukuun ottamatta -asetus otettu käyttöön](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
 
 ### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>Ota vastaan sähköposti-ilmoituksia palvelukatkoista tai -tapauksista
 
@@ -200,7 +200,7 @@ Seuraavassa kuvassa näet esiin tulevan ilmoituksen, kun jaat ulkoiselle käytt�
 
 ### <a name="publish-to-web"></a>Julkaise verkkoon
 
-Organisaation käyttäjät voivat julkaista raportteja verkossa. [Lue lisää](service-publish-to-web.md)
+Organisaation käyttäjät voivat julkaista raportteja verkossa. [Lisätietoja](service-publish-to-web.md)
 
 Seuraavassa kuvassa näkyy raportin **Tiedosto**-valikko, kun **Julkaise verkkoon** -asetus on käytössä.
 
@@ -215,9 +215,9 @@ Käyttäjät näkevät käyttöliittymässä eri asetuksia sen mukaan, mikä hei
 |**Upotuskoodit** hallintaportaalissa|Tila ilmaisee jotain seuraavista:<br>* Aktiivinen<br>* Ei tuettu<br>* Estetty|Tilana näytetään **Ei käytössä**|Tila ilmaisee jotain seuraavista:<br>* Aktiivinen<br>* Ei tuettu<br>* Estetty<br><br>Jos käyttäjälle ei ole annettu oikeuksia vuokraaja-asetuksissa, tilana näytetään **Loukannut**.|
 |Aiemmin luodut julkaistut raportit|Kaikki käytössä|Kaikki poissa käytöstä|Raportit näytetään jatkossakin kaikille.|
 
-### <a name="export-data"></a>Tietojen vieminen
+### <a name="export-data"></a>Vie tiedot
 
-Organisaation käyttäjät voivat viedä tietoja ruudusta tai visualisoinnista. [Lue lisää](visuals/power-bi-visualization-export-data.md)
+Organisaation käyttäjät voivat viedä tietoja ruudusta tai visualisoinnista. [Lisätietoja](visuals/power-bi-visualization-export-data.md)
 
 Seuraavassa kuvassa näkyy tietojen vieminen ruudusta.
 
@@ -228,7 +228,7 @@ Seuraavassa kuvassa näkyy tietojen vieminen ruudusta.
 
 ### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Vie raportit PowerPoint-esityksinä tai PDF-tiedostoina
 
-Organisaation käyttäjät voivat viedä Power BI -raportteja PowerPoint-tiedostoina tai PDF-tiedostoina. [Lue lisää](consumer/end-user-powerpoint.md)
+Organisaation käyttäjät voivat viedä Power BI -raportteja PowerPoint-tiedostoina tai PDF-tiedostoina. [Lisätietoja](consumer/end-user-powerpoint.md)
 
 Seuraavassa kuvassa näkyy raportin **Tiedosto**-valikko, kun **Vie raportit PowerPoint-esityksinä tai PDF-tiedostoina** -asetus on käytössä.
 
@@ -236,7 +236,7 @@ Seuraavassa kuvassa näkyy raportin **Tiedosto**-valikko, kun **Vie raportit Pow
 
 ### <a name="print-dashboards-and-reports"></a>Tulosta raporttinäkymiä ja raportteja
 
-Organisaation käyttäjät voivat tulostaa koontinäyttöjä ja raportteja. [Lue lisää](consumer/end-user-print.md)
+Organisaation käyttäjät voivat tulostaa koontinäyttöjä ja raportteja. [Lisätietoja](consumer/end-user-print.md)
 
 Seuraavassa kuvassa näkyy koontinäytön tulostaminen.
 
@@ -247,7 +247,7 @@ Seuraavassa kuvassa näkyy raportin **Tiedosto**-valikko, kun **Tulosta koontin�
 ![Raportin tulostaminen](media/service-admin-portal/powerbi-admin-print-report.png)
 
 ### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa
-Azure Active Directoryn B2B-vieraskäyttäjät voivat muokata ja hallita sisältöä organisaatiossa. [Lue lisää](service-admin-azure-ad-b2b.md)
+Azure Active Directoryn B2B-vieraskäyttäjät voivat muokata ja hallita sisältöä organisaatiossa. [Lisätietoja](service-admin-azure-ad-b2b.md)
 
 Seuraava kuva näyttää asetuksen Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa.
 
@@ -283,14 +283,14 @@ Raporttien luojat voivat jakaa sovelluksia suoraan käyttäjien kanssa ilman ase
 
 ### <a name="use-analyze-in-excel-with-on-premises-datasets"></a>Analysoi Excelissä -toiminnon käyttäminen paikallisten tietojoukkojen kanssa
 
-Organisaation käyttäjät voivat käyttää paikallisia Power BI -tietojoukkoja Excelillä. [Lue lisää](service-analyze-in-excel.md)
+Organisaation käyttäjät voivat käyttää paikallisia Power BI -tietojoukkoja Excelillä. [Lisätietoja](service-analyze-in-excel.md)
 
 > [!NOTE]
 > Jos poistat **Vie tiedot** -toiminnon käytöstä, estät käyttäjiä käyttämästä myös **Analysoi Excelissä** -toimintoa.
 
 ### <a name="use-arcgis-maps-for-power-bi"></a>ArcGIS Maps for Power BI:n käyttäminen
 
-Organisaation käyttäjät voivat käyttää Esrin tarjoamaa ArcGIS Maps for Power BI -visualisointia. [Lue lisää](visuals/power-bi-visualization-arcgis.md)
+Organisaation käyttäjät voivat käyttää Esrin tarjoamaa ArcGIS Maps for Power BI -visualisointia. [Lisätietoja](visuals/power-bi-visualization-arcgis.md)
 
 ### <a name="use-global-search-for-power-bi-preview"></a>Power BI:n yleisen haun käyttäminen (esikatselu)
 
@@ -300,7 +300,7 @@ Organisaation käyttäjät voivat käyttää Azure-hausta riippuvaisia ulkoisia 
 
 ### <a name="add-and-use-custom-visuals"></a>Lisää ja käytä mukautettuja visualisointeja
 
-Organisaation käyttäjät voivat käyttää mukautettuja visualisointeja ja jakaa niitä. [Lue lisää](developer/power-bi-custom-visuals.md)
+Organisaation käyttäjät voivat käyttää mukautettuja visualisointeja ja jakaa niitä. [Lisätietoja](developer/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > Tämä asetus voidaan ulottaa koskemaan koko organisaatiota tai rajoittaa määrättyihin ryhmiin.
@@ -349,7 +349,7 @@ Arvo 0 (desimaalimuotoinen) poistaa käytöstä sertifioimattomat mukautetut vis
 
 ### <a name="interact-with-and-share-r-visuals"></a>Tee toimia R-visualisointien kanssa ja jaa niitä
 
-Organisaation käyttäjät voivat käyttää R-komentosarjoilla luotuja visualisointeja ja jakaa niitä. [Lue lisää](visuals/service-r-visuals.md)
+Organisaation käyttäjät voivat käyttää R-komentosarjoilla luotuja visualisointeja ja jakaa niitä. [Lisätietoja](visuals/service-r-visuals.md)
 
 > [!NOTE]
 > Tämä asetus koskee koko organisaatiota, joten sitä ei rajoittaa ryhmien avulla.
@@ -358,7 +358,7 @@ Organisaation käyttäjät voivat käyttää R-komentosarjoilla luotuja visualis
 
 ### <a name="create-audit-logs-for-internal-activity-auditing-and-compliance"></a>Valvontalokien luominen sisäisen toiminnan valvonnan ja vaatimustenmukaisuuden tarpeisiin
 
-Organisaation käyttäjät voivat valvoa muiden käyttäjien Power BI:ssä tekemiä toimia. [Lue lisää](service-admin-auditing.md)
+Organisaation käyttäjät voivat valvoa muiden käyttäjien Power BI:ssä tekemiä toimia. [Lisätietoja](service-admin-auditing.md)
 
 Tämän asetuksen täytyy olla käytössä, jotta valvontalokiin kirjataan merkintöjä. Valvonnan käyttöönoton ja valvontatietojen tarkastelumahdollisuuden välillä voi olla jopa 48 tunnin viive. Jos et näe tietoja välittömästi, tarkista valvontalokit myöhemmin. Jos haet oikeuksia hallintalokien tarkasteluun, samanlainen viive voi esiintyä, ennen kuin oikeudet on myönnetty.
 
@@ -367,11 +367,11 @@ Tämän asetuksen täytyy olla käytössä, jotta valvontalokiin kirjataan merki
 
 ### <a name="usage-metrics-for-content-creators"></a>Käyttötiedot sisällöntekijöille
 
-Organisaation käyttäjät voivat tarkastella luomiensa koontinäyttöjen ja raporttien käyttötietoja. [Lue lisää](service-usage-metrics.md)
+Organisaation käyttäjät voivat tarkastella luomiensa koontinäyttöjen ja raporttien käyttötietoja. [Lisätietoja](service-usage-metrics.md)
 
 ### <a name="per-user-data-in-usage-metrics-for-content-creators"></a>Käyttäjäkohtaiset tiedot sisällöntekijöille tarkoitetuissa käyttötiedoissa
 
-Sisällöntekijöille tarkoitetut käyttötiedot paljastavat sisällön käyttäjien näyttönimet ja sähköpostiosoitteet. [Lue lisää](service-usage-metrics.md)
+Sisällöntekijöille tarkoitetut käyttötiedot paljastavat sisällön käyttäjien näyttönimet ja sähköpostiosoitteet. [Lisätietoja](service-usage-metrics.md)
 
 Oletusarvoisesti käyttäjäkohtaiset tiedot on otettu käyttöön käyttötiedoille ja sisällöntekijän tilitiedot sisältyvät tietoraporttiin. Jos et halua kerätä näitä tietoja kaikille käyttäjille, voit poistaa ominaisuuden käytöstä määritetyille käyttöoikeusryhmille tai koko organisaatiolle. Tilitiedot näkyvät sitten raportissa pois jätetyille käyttäjille *nimettöminä*.
 
@@ -379,7 +379,7 @@ Oletusarvoisesti käyttäjäkohtaiset tiedot on otettu käyttöön käyttötiedo
 
 ### <a name="data-classification-for-dashboards"></a>Koontinäyttöjen tietojen luokittelu
 
-Organisaation käyttäjät voivat merkitä koontinäyttöjä luokituksilla, jotka ilmaisevat koontinäyttöjen suojaustasoja. [Lue lisää](service-data-classification.md)
+Organisaation käyttäjät voivat merkitä koontinäyttöjä luokituksilla, jotka ilmaisevat koontinäyttöjen suojaustasoja. [Lisätietoja](service-data-classification.md)
 
 > [!NOTE]
 > Tämä asetus koskee koko organisaatiota, joten sitä ei rajoittaa ryhmien avulla.
@@ -388,11 +388,11 @@ Organisaation käyttäjät voivat merkitä koontinäyttöjä luokituksilla, jotk
 
 ### <a name="embed-content-in-apps"></a>Sisällön upottaminen sovelluksiin
 
-Organisaation käyttäjät voivat upottaa Power BI -koontinäyttöjä ja -raportteja SaaS-sovelluksiin (palveluina tarjottaviin sovelluksiin). Jos poistat tämän asetuksen käytöstä, käyttäjät eivät näe REST-ohjelmointirajapintoja, joilla he voivat upottaa Power BI -sisältöä sovelluksiin. [Lue lisää](developer/embedding.md)
+Organisaation käyttäjät voivat upottaa Power BI -koontinäyttöjä ja -raportteja SaaS-sovelluksiin (palveluina tarjottaviin sovelluksiin). Jos poistat tämän asetuksen käytöstä, käyttäjät eivät näe REST-ohjelmointirajapintoja, joilla he voivat upottaa Power BI -sisältöä sovelluksiin. [Lisätietoja](developer/embedding.md)
 
 ### <a name="allow-service-principals-to-use-power-bi-apis"></a>Salli palvelun päänimien käyttää Power BI -ohjelmointirajapintoja
 
-Azure Active Directoryyn (Azure AD) rekisteröidyt verkkosovellukset käyttävät määritettyä palvelun päänimeä Power BI -ohjelmointirajapintojen käyttöön ilman sisäänkirjautunutta käyttäjää. Jotta sovellus voi käyttää todennustyyppinä palvelun päänimeä, sen palvelun päänimen on sisällyttävä sallittuun käyttöoikeusryhmään. [Lue lisää](developer/embed-service-principal.md)
+Azure Active Directoryyn (Azure AD) rekisteröidyt verkkosovellukset käyttävät määritettyä palvelun päänimeä Power BI -ohjelmointirajapintojen käyttöön ilman sisäänkirjautunutta käyttäjää. Jotta sovellus voi käyttää todennustyyppinä palvelun päänimeä, sen palvelun päänimen on sisällyttävä sallittuun käyttöoikeusryhmään. [Lisätietoja](developer/embed-service-principal.md)
 
 > [!NOTE]
 > Palvelun päänimet perivät käyttöoikeudet kaikkiin Power BI -vuokraaja-asetuksiin käyttöoikeusryhmästään. Jos haluat rajoittaa käyttöoikeuksia, luo erillinen käyttöoikeusryhmä palvelun päänimille ja lisää se asianmukaisten käyttöön otettujen Power BI -asetusten Lukuun ottamatta tiettyjä käyttöoikeusryhmiä -luetteloon.
@@ -420,7 +420,7 @@ Organisaation käyttäjät voivat luoda mallisovellusten työtiloja. Ohjausobjek
 
 ### <a name="install-template-apps-listed-on-appsource"></a>Asenna AppSourcessa luetellut mallisovellukset
 
-Organisaation käyttäjät voivat ladata ja asentaa mallisovelluksia mallin **vain** [AppSourcesta](https://appsource.microsoft.com). Ohjausobjekti, jonka avulla tietyt käyttäjät tai käyttöoikeusryhmät voivat asentaa mallisovelluksia AppSourcesta.
+Organisaation käyttäjät voivat ladata ja asentaa mallisovelluksia mallin **vain**[AppSourcesta](https://appsource.microsoft.com). Ohjausobjekti, jonka avulla tietyt käyttäjät tai käyttöoikeusryhmät voivat asentaa mallisovelluksia AppSourcesta.
 
 ![Power BI -hallintaportaali, Asenna mallisovelluksia -asetus](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-appsource.png)
 
@@ -440,19 +440,19 @@ Ohjausobjekti, jonka avulla organisaation käyttäjät voivat ladata ja asentaa 
 
 ### <a name="power-bi-embedded"></a>Power BI Embedded
 
-**Power BI Embedded** -välilehden avulla voit tarkastella Power BI Embedded (A-varastointiyksikkö) -kapasiteetteja, jotka olet ostanut asiakkaalle. Koska voit ostaa A-varastointiyksikköjä vain Azuresta, voit [hallita Azuren upotettuja kapasiteetteja](developer/azure-pbie-create-capacity.md) **Azure-portaalista**.
+**Power BI Embedded** -välilehden avulla voit tarkastella Power BI Embedded (A-varastointiyksikkö) -kapasiteetteja, jotka olet ostanut asiakkaalle. Koska voit ostaa A-varastointiyksikköjä vain Azuresta, voit [hallita Azuren upotettuja kapasiteetteja](developer/azure-pbie-create-capacity.md)**Azure-portaalista**.
 
 Lisätietoja siitä, miten voit hallita Power BI Embedded (A-varastointiyksikkö) -asetuksia, on artikkelissa [Mikä on Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
 
 ## <a name="embed-codes"></a>Upotuskoodit
 
-Järjestelmänvalvojana voit tarkastella vuokraajatilillesi luotuja upotuskoodeja. Voit myös kumota tai poista koodeja. [Lue lisää](service-publish-to-web.md)
+Järjestelmänvalvojana voit tarkastella vuokraajatilillesi luotuja upotuskoodeja. Voit myös kumota tai poista koodeja. [Lisätietoja](service-publish-to-web.md)
 
 ![Upotuskoodit Power BI -hallintaportaalissa](media/service-admin-portal/embed-codes.png)
 
  ## <a name="organizational-visuals">Organisaation visualisoinnit.</a> 
 
-**Organisaation visualisoinnit** -välilehden avulla voit ottaa käyttöön ja hallita organisaatiosi mukautettuja visualisointeja. Organisaation visualisointien avulla voit helposti käyttää omia visualisointeja organisaatiossa, ja raporttien tekijät voivat sitten hakea ja tuoda niitä raportteihinsa Power BI Desktopista. [Lue lisää](developer/power-bi-custom-visuals-organization.md)
+**Organisaation visualisoinnit** -välilehden avulla voit ottaa käyttöön ja hallita organisaatiosi mukautettuja visualisointeja. Organisaation visualisointien avulla voit helposti käyttää omia visualisointeja organisaatiossa, ja raporttien tekijät voivat sitten hakea ja tuoda niitä raportteihinsa Power BI Desktopista. [Lisätietoja](developer/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > Mukautettu visualisointi voi sisältää koodia, jolla on tietoturva- tai tietosuojariskejä. Varmista siis, että luotat mukautetun visualisoinnin tekijään ja lähteeseen, ennen kuin otat sen käyttöön organisaation säilössä.

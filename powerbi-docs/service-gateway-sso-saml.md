@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
 ms.openlocfilehash: bbb0584843f79445c4e5cca073f9c4b953d346aa
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74699356"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-sso-from-power-bi-to-on-premises-data-sources"></a>Security Assertion Markup Languagen (SAML) käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin
@@ -68,7 +68,7 @@ Seuraavissa vaiheissa kuvataan, miten voit muodostaa luottamussuhteen HANA-palve
 
 Luo uusi SAML-tunnistetietopalvelu tuomalla IdP-varmenne HANA Studioon:
 
-1. Napsauta SAP HANA Studiossa SAP HANA -palvelimesi nimeä hiiren kakkospainikkeella ja siirry kohtaan **Tietoturva** &gt; **Avaa tietoturvakonsoli** &gt; **SAML-tunnistetietopalvelu** &gt; **OpenSSL-salauskirjasto**.
+1. Napsauta SAP HANA Studiossa SAP HANA ‑palvelimesi nimeä hiiren kakkospainikkeella ja siirry kohtaan **Tietoturva** &gt; **Avaa tietoturvakonsoli** &gt; **SAML-tunnistetietopalvelu** &gt; **OpenSSL-salauskirjasto**.
 
     ![Tunnistetietopalvelut](media/service-gateway-sso-saml/identity-providers.png)
 
@@ -122,7 +122,7 @@ Nyt kun olet määrittänyt yhdyskäytävän varmenteen ja käyttäjätiedot, mu
 
     1. Valitse **Varmenteet** &gt; **Lisää** ja valitse sitten **Tietokonetili** &gt; **Seuraava**.
 
-    1. Valitse **Paikallinen tietokone** &gt; **Valmis** &gt; **OK**.
+    1. Valitse **Paikallinen tietokone** &gt; **valmis** &gt; **OK**.
 
     1. Laajenna **Varmenteet** &gt; **Henkilökohtainen** &gt; **Varmenteet** ja etsi haluamasi varmenne.
 

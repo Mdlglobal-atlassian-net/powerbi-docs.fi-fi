@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: dced3d2bfe844e857556386fb208395faab3fd8b
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 57819765b156baac2a86b8144e86770a0117adfd
+ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698965"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548595"
 ---
 # <a name="what-is-power-bi-administration"></a>Mitä on Power BI:n hallinta?
 
@@ -61,7 +61,7 @@ Järjestelmänvalvojat suorittavat monia tehtäviä, jotka tukevat Power BI -vuo
 | Sisäisten käytäntöjen, lakien ja säädösten noudattamisen varmistaminen | <ul><li>Yritystietojen luokittelun hallinta<br><li>Sisällön julkaisemisen ja jakamisen käytäntöjen valvonnan tukeminen</ul>|
 | Power BI -resurssien hallinta |<ul><li>Työtilojen hallinta<br><li>Mukautettujen visualisointien julkaiseminen<br><li>Power BI:n muihin sovelluksiin upottamiseen käytettyjen koodien vahvistaminen|
 | Vuokraajan käyttäjien auttaminen ja tukeminen |<ul><li>Tietojen käytön ja muiden ongelmien vianmääritys</ul>|
-| Muut tehtävät |<ul><li>Power BI Desktopin käyttöönotto, esim. System Center Configuration Managerin avulla<br><li>Power BI -mobiilisovelluksen käyttöönoton hallinta Intunella<br><li>Tietosuojan ja tietoturvan hallinta, kuten lähdetietojen suojauksen hallinta</ul>|
+| Muut tehtävät |<ul><li>Power BI Desktopin käyttöönotto, esim. Microsoft Endpoint Configuration Managerin avulla<br><li>Power BI -mobiilisovelluksen käyttöönoton hallinta Intunella<br><li>Tietosuojan ja tietoturvan hallinta, kuten lähdetietojen suojauksen hallinta</ul>|
 
 ## <a name="administrative-tools"></a>Hallintatyökalut
 

@@ -1,19 +1,19 @@
 ---
 title: Tietojen tarkastelu offline-tilassa Power BI -mobiilisovelluksissa
 description: 'Lue tietoja siitä, miksi tietoja kannattaa tarkastella Power BI -mobiilisovelluksessa mobiiliselaimen sijaan: voit tarkastella tietojasi myös silloin, kun et ole yhteydessä verkkoon.'
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/27/2018
-ms.author: mshenhav
-ms.openlocfilehash: 09a4595b461f69cfa02b4cc0ca3c96b1eb917ef8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/09/2019
+ms.author: painbar
+ms.openlocfilehash: 2974f257509d88a469f981bbdecf8cdca47c8e9e
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870608"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219069"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Tietojen tarkastelu offline-tilassa Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -34,9 +34,9 @@ Kun olet offline-tilassa, voit käyttää ja käsitellä koontinäyttöjä, joit
 Sinulla on myös vain luku -oikeudet Power BI -raportteihin, joita olet käyttänyt aiemmin mobiilisovelluksessa. Voit nähdä koko raportin, mutta et voi suodattaa, ristiinsuodattaa tai lajitella sitä taikka käyttää siihen osittajia.
 
 ## <a name="background-data-refresh"></a>Taustatietojen päivitys
-Taustapäivitys päivittää suosikkeihin lisäämäsi koontinäytöt sekä koontinäytöt ja raportit, joita olet tarkastellut edellisten kahden viikon aikana, Power BI -palvelussa olevilla tiedoilla (ei tietolähteen tiedoilla). Jos olet yhteydessä Wi-Fi-verkkoon, taustapäivitys päivittyy 2 tunnin välein. Jos olet 3G-verkossa, Power BI päivittää sisällön 24 tunnin välein.
+Taustapäivitys päivittää suosikkeihin lisäämäsi koontinäytöt sekä koontinäytöt ja raportit, joita olet tarkastellut edellisten kahden viikon aikana, Power BI -palvelussa olevilla tiedoilla (ei tietolähteen tiedoilla). Jos olet yhteydessä Wi-Fi-verkkoon, taustatiedot päivitetään kahden tunnin välein. Jos olet 3G-verkossa, Power BI päivittää sisällön 24 tunnin välein.
 
-Voit poistaa taustapäivityksen käytöstä esimerkiksi verkon käytön välttämiseksi. Tarkista laitteesi asetukset.
+Voit poistaa taustapäivityksen käytöstä, jos haluat esimerkiksi välttää verkon käyttöä. Tarkista laitteesi asetukset.
 
 > [!NOTE]
 > Jos käytät Power BI -mobiilisovellusta iOS-laitteessa ja organisaatiosi on määrittänyt Microsoft Intunen mobiilisovellusten hallinnan, tietojen päivittäminen taustalla on poistettu käytöstä. Kun avaat sovelluksen seuraavan kerran, Power BI päivittää tiedot verkossa olevasta Power BI -palvelusta.
@@ -65,4 +65,3 @@ Palaute auttaa meitä päättämään, mitä toimintoja otamme käyttöön tulev
 * Seuraa käyttäjää @MSPowerBI Twitterissä
 * Liity keskusteluun [Power BI -yhteisössä](https://community.powerbi.com/)
 * [Mikä on Power BI?](../../fundamentals/power-bi-overview.md)
-

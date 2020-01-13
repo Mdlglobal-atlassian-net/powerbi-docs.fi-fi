@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/10/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 3965a21ff2ab53fd46667658f7cfa21fa4a3b916
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cf927e94726f33e8d88c25c6d09f6f0ca2226e05
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73855591"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75224138"
 ---
 # <a name="cognitive-services-in-power-bi"></a>Kognitiiviset palvelut Power BI:ssä 
 
@@ -94,7 +94,7 @@ Tämä funktio edellyttää syötteeksi kuvan URL-osoitetta tai abase-64-kenttä
 
 Tässä artikkelissa on yleiskatsaus kognitiivisten palvelujen käytöstä Power BI -palvelun kanssa. Myös seuraavat artikkelit voivat olla kiinnostavia ja hyödyllisiä. 
 
-* [Opetusohjelma: Azuren koneoppimisstudion käynnistäminen Power BI:ssä](service-tutorial-invoke-machine-learning-model.md)
+* [Opetusohjelma: Automaattianalyysipalveluiden studion (perinteisen) mallin käynnistäminen Power BI:ssä](service-tutorial-invoke-machine-learning-model.md)
 * [Automaattianalyysipalveluiden integrointi Power BI:ssä](service-machine-learning-integration.md)
 * [Opetusohjelma: Kognitiivisten palvelujen käyttö Power BI:ssä](service-tutorial-use-cognitive-services.md)
 

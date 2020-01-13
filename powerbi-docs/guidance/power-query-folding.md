@@ -1,119 +1,56 @@
 ---
-title: Kyselyn lähteeseen delegoinnin tärkeys
-description: Tutustu Power Query -kyselyn lähteeseen delegoinnin merkitykseen ja mahdollistamiseen
+title: Ohjeet kyselyn delegointiin lähteeseen Power BI Desktopissa
+description: Ohjeet Power Query -kyselyn delegointiin lähteeseen Power BI Desktopissa.
 author: peter-myers
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/24/2019
+ms.date: 11/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 01c3d7ac00ec4aa50373e36e1732d4eda55b280c
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: e8123bba9f68305e1944dbfb280b5255e4fb9b48
+ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410806"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622150"
 ---
-# <a name="the-importance-of-query-folding"></a>Kyselyn lähteeseen delegoinnin tärkeys
+# <a name="query-folding-guidance-in-power-bi-desktop"></a>Ohjeet kyselyn delegointiin lähteeseen Power BI Desktopissa
 
-Tämä artikkeli on suunnattu tietomallintajille, jotka kehittävät malleja Power BI Desktopissa. Siinä kuvataan, mitä kyselyn lähteeseen delegointi on ja miksi se on tärkeää. Siinä kuvataan myös tietolähteet ja muunnokset, jotka saattavat suorittaa kyselyn lähteeseen delegoinnin, sekä se, miten voit selvittää, että Power Query -kyselysi voidaan delegoida lähteeseen joko kokonaan tai osittain. Lisäksi se tarjoaa ohjeita parhaisiin käytäntöihin, jotka koskevat sitä, milloin ja miten kyselyn delegointi lähteeseen on mahdollista.
+Tämä artikkeli on suunnattu tietomallintajille, jotka kehittävät malleja Power BI Desktopissa. Se tarjoaa ohjeet parhaisiin käytäntöihin, jotka koskevat sitä, milloin ja miten Power Query -kysely voidaan delegoida lähteeseen.
 
-Kyselyn delegointi lähteeseen on Power Query -kyselyn kyky luoda yksittäinen kyselylauseke lähdetietojen noutamista ja muuntamista varten. Power Queryn koostemoduuli pyrkii suorittamaan kyselyn delegoinnin lähteeseen mahdollisuuksien mukaan, koska sen seurauksena on tehokkain polku Power BI -mallitaulukon ja sen pohjana olevan tietolähteen yhdistämiseen.
+_Kyselyn delegointi lähteeseen_ on Power Query -kyselyn kyky luoda yksittäinen kyselylauseke lähdetietojen noutamista ja muuntamista varten. Katso lisätietoja kohdasta [Power Query -kyselyn delegointi lähteeseen](/power-query/power-query-folding).
 
-Kyselyn delegointi lähteeseen on tärkeä käsite tietojen mallinnuksessa monesta syytä:
+## <a name="guidance"></a>Opas
 
-- **Tuontimallitaulukot:** Tuontimallitaulukoiden tietojen päivitys tapahtuu tehokkaasti resurssien käytön ja päivityksen keston suhteen
-- **DirectQueryn ja kaksoistallennustilan taulukot:** Kunkin DirectQueryn ja kaksoistallennustilan taulukon on perustuttava Power Query -kyselyyn, joka voidaan delegoida lähteeseen
-- **Lisäävä päivitys:** Lisäävä tietojen päivitys on tehokasta resurssien käytön ja päivityksen keston kannalta. Itse asiassa lisäävä päivityksen määritysikkuna varoittaa sinua, jos se määrittää, että taulukon kyselyn delegointi lähteeseen ei ole mahdollista. Jos delegointia ei voida tehdä, lisäävän päivityksen tavoite on epäonnistunut. Koostemoduuli vaaditaan sitten noutamaan kaikki lähderivit ja käyttämään suodattimia lisäävien muutosten määritykseen.
+Ohjeet kyselyn delegointiin lähteeseen riippuvat mallitilasta.
 
-Kyselyn delegointi lähteeseen voi tapahtua koko Power Query -kyselylle tai sen vaiheiden alijoukolle. Kun kyselyn delegointi lähteeseen ei onnistu – joko osittain tai kokonaan – Power BI:n Power Query -koostemoduulin on kompensoitava epäonnistuminen käsittelemällä tietojen muunnokset itse. Tämä saattaa edellyttää lähdekyselyjen tulosten noutamista, mikä vaatii erittäin paljon resursseja ja on hidasta suurten tietojoukkojen ollessa kyseessä.
+Power Query -kyselyn on onnistuttava kyselyn delegoinnissa lähteeseen **DirectQueryn** tai **kaksois**tallennustilan taulukossa.
 
-Suosittelemme, että tietojen mallintajat pyrkivät tehokkuuteen tuontimallin suunnittelussa varmistamalla, että kyselyn delegointi lähteeseen toteutuu aina, kun se on mahdollista.
+**Tuonti**taulukossa voi olla mahdollista delegoida kysely lähteeseen. Kun kyseessä on relaatiolähteeseen perustuva kysely ja jos yksittäinen SELECT-lause voidaan muodostaa, saavutat _parhaan tietojen päivityksen suorituskyvyn_ varmistamalla, että kyselyn delegointi lähteeseen onnistuu. Jos muunnosten käsittelyyn tarvitaan yhä Power Queryn koostemoduuli, sinun on pyrittävä minimoimaan sen tekemä työ erityisesti suurten tietojoukkojen kohdalla.
 
-## <a name="sources-that-support-query-folding"></a>Lähteet, jotka tukevat kyselyn delegointia lähteeseen
+Seuraavassa luettelossa annetaan tarkat ohjeet.
 
-Useimmat tietolähteet, joissa on kyselykieli, tukevat kyselyn delegointia lähteeseen. Näitä tietolähteitä voivat olla esimerkiksi relaatiotietokannat, OData-syötteet (mukaan lukien SharePoint-luettelot), Exchange ja Active Directory. Kuitenkin tietolähteet, kuten tietuetiedostot, blob-objektit ja verkko, eivät yleensä tue sitä.
+- **Delegoi mahdollisimman suuri osa käsittelystä tietolähteeseen**: Kun Power Query -kyselyn kaikkia vaiheita ei voida delegoida lähteeseen, selvitä vaihe, joka estää kyselyn delegoimisen lähteeseen. Jos se on mahdollista, siirrä tätä seuraavat vaiheet aiempaan kohtaan järjestyksessä, jotta ne voidaan ottaa mukaan kyselyn lähteeseen delegointiin. Ota huomioon, että Power Queryn koostemoduuli voi olla niin älykäs, että se järjestää kyselyvaiheet uudelleen, kun se luo lähdekyselyn.
 
-## <a name="transformations-that-can-achieve-query-folding"></a>Muunnokset, jotka voivat suorittaa kyselyn delegoinnin lähteeseen
+    Jos kyseessä on relaatiotietolähde, jonka kyselyiden delegoinnin lähteeseen estävä vaihe voidaan suorittaa yksittäisellä SELECT-lauseella tai tallennetun toimintosarjan menettelylogiikan puitteissa, harkitse alkuperäisen SQL-kyselyn käyttämistä seuraavassa kuvatulla tavalla.
 
-Relaatiotietolähteen muunnokset, joiden kyselyt voidaan delegoida lähteeseen, voidaan kirjoittaa yksittäisenä SELECT-lauseena. SELECT-lause voidaan muodostaa sopivalla WHERE-, GROUP BY- ja JOIN-lauseella. Se voi sisältää myös sarakelausekkeita (laskutoimituksia), jotka käyttävät SQL-tietokantojen tukemia yleisiä sisäisiä funktioita.
+- **Käytä alkuperäistä SQL-kyselyä**: Kun Power Query -kysely noutaa tietoja relaatiolähteestä, joissakin lähteissä on mahdollista käyttää alkuperäistä SQL-kyselyä. Kysely voi itse asiassa olla mikä tahansa kelvollinen lauseke, mukaan lukien tallennetun toimintosarjan suorittaminen. Jos lauseke tuottaa useita tulosjoukkoja, vain ensimmäinen palautetaan. Parametrit voidaan esitellä lausekkeessa, ja suosittelemme käyttämään [Value.NativeQuery](/powerquery-m/value-nativequery) -M-funktiota. Tämä funktio on suunniteltu parametriarvojen turvalliseen ja kätevään hyväksymiseen. On tärkeää ymmärtää, että Power Queryn koostemoduuli ei voi delegoida seuraavia kyselyvaiheita lähteeseen, joten sinun on sisällytettävä kaikki – tai yhtä paljon – muunnoslogiikkaa alkuperäiseen kyselylausekkeeseen.
 
-Seuraavassa luettelossa kuvataan muunnokset, joiden kysely voidaan yleisesti ottaen delegoida lähteeseen.
+    Kun käytät alkuperäisiä SQL-kyselyjä, kannattaa muistaa kaksi tärkeää seikkaa:
 
-- Sarakkeiden poistaminen
-- Sarakkeiden nimeäminen uudelleen (SELECT-sarakealiaset)
-- Rivien suodattaminen staattisilla arvoilla tai Power Query -parametreilla (WHERE-lauseen predikaatit)
-- Ryhmittely ja yhteenveto (GROUP BY -lause)
-- Tietuesarakkeiden laajentaminen (lähteen viiteavainsarakkeet) kahden lähdetaulukon liittämiseksi (JOIN-lause)
-- Saman lähteeseen perustuvien lähteeseen delegoitavien kyselyiden ei-sumea yhdistäminen (JOIN-lause)
-- Samaan lähteeseen perustuvien lähteeseen delegoitavien kyselyiden yhdistäminen(UNION ALL -operaattori)
-- Mukautettujen sarakkeiden lisääminen _yksinkertaisella logiikka_ (SELECT-sarakelausekkeet). Yksinkertainen logiikka viittaa mutkattomiin toimintoihin. Näihin kuuluvat mahdollisesti M-funktiot, esimerkiksi matemaattiset tai tekstinkäsittelyfunktiot, joilla on vastaavat funktiot SQL-tietolähteessä. Esimerkiksi seuraava lauseke palauttaa **OrderDate**-sarakearvon vuosiosan (ja palauttaa numeerisen arvon).
-
-    ```powerquery-m
-    Date.Year([OrderDate])
-    ```
-
-- Pivotointi ja pivotoinnin poistaminen (PIVOT- ja UNPIVOT-operaattorit)
-
-## <a name="transformations-that-prevent-query-folding"></a>Muunnokset, jotka estävät kyselyn delegoinnin lähteeseen
-
-Seuraavassa luettelossa kuvataan muunnokset, joiden estävät yleisesti ottaen kyselyn delegoinnin lähteeseen. Tämän ei ole tarkoitus olla tyhjentävä luettelo.
-
-- Eri lähteisiin perustuvien kyselyiden yhdistäminen
-- Eri lähteisiin perustuvien kyselyiden liittäminen
-- Mukautettujen sarakkeiden lisääminen _monimutkaisella logiikalla_. Monimutkainen logiikka viittaa sellaisten M-funktioiden käyttöön, joilla ei ole vastaavia funktioita tietolähteessä. Esimerkiksi seuraava lauseke muotoilee **OrderDate**-sarakearvon (ja palauttaa tekstiarvon).
-
-    ```powerquery-m
-    Date.ToText([OrderDate], "yyyy")
-    ```
-
-- Hakemistosarakkeiden lisääminen
-- Sarakkeen tietotyypin muuttaminen
-
-Kun Power Query -kysely sisältää useita tietolähteitä, tietolähteen tietosuojatasojen yhteensopimattomuus voi estää kyselyiden delegoimisen lähteeseen. Lisätietoja on artikkelissa [Power BI Desktopin yksityisyystasot](../desktop-privacy-levels.md).
-
-## <a name="determine-when-a-query-can-be-folded"></a>Selvitä, milloin kysely voidaan delegoida lähteeseen
-
-Power Query -editori-ikkunassa on mahdollista selvittää, milloin Power Query -kysely voidaan delegoida lähteeseen. Napsauta **Kyselyasetukset**-ruudussa hiiren kakkospainikkeella viimeistä käytössä olevaa vaihetta. Jos **Näytä alkuperäinen kysely** -asetus on käytössä (ei harmaana), kysely voidaan delegoida lähteeseen.
-
-![Esimerkki selvityksestä, jossa Power Queryn on mahdollista delegoida kysely lähteeseen](media/power-query-folding/query-folding-example.png)
-
-Jos haluat tarkastella lähteeseen delegoitua kyselyä, siirry eteenpäin ja valitse **Näytä alkuperäinen kysely** -vaihtoehto. Näyttöön tulee alkuperäinen kysely, jota Power Query käyttää lähdetietojen kanssa.
-
-![Esimerkki alkuperäisestä kyselystä](media/power-query-folding/native-query-example.png)
-
-Jos **Näytä alkuperäinen kysely** -asetus ei ole käytössä (harmaa), tämä on merkki siitä, että kaikkia kyselyvaiheita ei voi delegoida lähteeseen. Se voi kuitenkin tarkoittaa, että vaiheiden alijoukko voidaan edelleen delegoida lähteeseen. Jos siirryt taaksepäin edellisestä vaiheesta, voit tarkistaa kunkin vaiheen nähdäksesi tuleeko **Näytä alkuperäinen kysely** -asetus käyttöön. Kun näin käy, olet selvittänyt, missä kohtaa vaihejärjestyksessä kyselyn delegointi lähteeseen ei ole enää mahdollista.
-
-![Esimerkki selvityksestä, jossa Power Queryn ei ole mahdollista delegoida kyselyä lähteeseen](media/power-query-folding/query-folding-not-example.png)
-
-## <a name="best-practice-guidance"></a>Ohjeet parhaisiin käytäntöihin
-
-Lyhyesti sanottuna Power Query -kyselyn on onnistuttava kyselyn delegoinnissa lähteeseen DirectQueryn tai kaksoistallennustilan taulukossa. Kun kyseessä on relaatiolähteeseen perustuva tuontitaulukko ja kun yksittäinen SELECT-lause voidaan muodostaa, _paras tietojen päivityksen suorituskyky_ saavutetaan varmistamalla, että kyselyn delegointi lähteeseen onnistuu. Jos muunnosten käsittelyyn tarvitaan yhä koostemoduuli, sinun on pyrittävä minimoimaan sen tekemä työ erityisesti suurten tietojoukkojen kohdalla.
-
-Seuraavassa luettelossa annetaan parhaita käytäntöjä koskevia ohjeita.
-
-- **Delegoi mahdollisimman suuri osa käsittelystä tietolähteeseen:** Kun Power Query -kyselyn kaikkia vaiheita ei voida delegoida lähteeseen, selvitä vaihe, joka estää kyselyn delegoimisen lähteeseen. Jos se on mahdollista, siirrä tätä seuraavat vaiheet aiempaan kohtaan järjestyksessä, jotta ne voidaan ottaa mukaan kyselyn lähteeseen delegointiin. Power Queryn koostemoduuli voi olla niin älykäs, että se järjestää kyselyvaiheet uudelleen, kun se luo lähdekyselyn.
-
-Jos kyseessä on relaatiotietolähde, jonka kyselyiden delegoinnin lähteeseen estävä vaihe voidaan suorittaa yksittäisellä SELECT-lauseella tai tallennetun toimintosarjan menettelylogiikan puitteissa, harkitse alkuperäisen kyselylausekkeen käyttämistä seuraavassa kuvatulla tavalla.
-
-- **Käytä alkuperäistä SQL-kyselyä:** Kun Power Query -kysely noutaa tietoja relaatiolähteestä, on mahdollista käyttää alkuperäistä SQL-kyselyä. Kysely voi itse asiassa olla mikä tahansa kelvollinen lauseke, mukaan lukien tallennetun toimintosarjan suorittaminen. Jos lauseke tuottaa useita tulosjoukkoja, vain ensimmäinen palautetaan. Parametrit voidaan esitellä lausekkeessa, ja suosittelemme käyttämään [Value.NativeQuery](/powerquery-m/value-nativequery) -M-funktiota parametriarvojen turvalliseen ja kätevään hyväksymiseen. On tärkeää ymmärtää, että Power Query -koostemoduuli ei voi delegoida seuraavia kyselyvaiheita lähteeseen, joten on tärkeää sisällyttää kaikki (tai yhtä paljon) muunnoslogiikka alkuperäiseen kyselylausekkeeseen.
-
-    Kun käytät alkuperäisiä SQL-kyselyitä, kannattaa muistaa kaksi tärkeää seikkaa:
-
-    - DirectQuery-mallitaulukossa kyselyn on oltava SELECT-lauseke, eikä se voi käyttää yleisiä taulukkolausekkeita (CTE) tai tallennettua toimintosarjaa
-    - Lisäävä päivitys ei voi hyödyntää alkuperäistä SQL-kyselyä, joten se pakottaisi Power Queryn koostemoduulin noutamaan kaikki lähderivit ja käyttämään suodattimia määrittääkseen lisääviä muutoksia
+    - DirectQuery-mallitaulukossa kyselyn on oltava SELECT-lauseke, eikä se voi käyttää yleisiä taulukkolausekkeita (CTE) tai tallennettua toimintosarjaa.
+    - Lisäävä päivitys ei voi käyttää alkuperäistä SQL-kyselyä. Se pakottaisi Power Queryn koostemoduulin noutamaan kaikki lähderivit ja käyttämään sen jälkeen suodattimia lisäävien muutosten määritykseen.
 
     > [!IMPORTANT]
-    > Alkuperäinen kysely voi mahdollisesti tehdä muutakin kuin hakea tietoja. Mikä tahansa kelvollinen lauseke voidaan suorittaa (ja mahdollisesti useita kertoja), mukaan lukien lauseke, joka muokkaa tai poistaa tietoja. On tärkeää ottaa käyttöön vähimpien oikeuksien periaate, jolla varmistetaan, että tilillä, jota käytetään tietokannan käyttämiseen, on ainoastaan vaadittujen tietojen lukuoikeus.
+    > Alkuperäinen SQL-kysely voi mahdollisesti tehdä muutakin kuin hakea tietoja. Mikä tahansa kelvollinen lauseke voidaan suorittaa (ja mahdollisesti useita kertoja), mukaan lukien lauseke, joka muokkaa tai poistaa tietoja. On tärkeää ottaa käyttöön vähimpien oikeuksien periaate, jolla varmistetaan, että tilillä, jota käytetään tietokannan käyttämiseen, on ainoastaan vaadittujen tietojen lukuoikeus.
 
-- **Valmistele ja muunna lähteen tietoja:** Jos huomaat, että joitakin Power Query -kyselyn vaiheita ei voida delegoida lähteeseen, saatat pystyä käyttämään tietolähteessä muunnoksia. Tämä voidaan toteuttaa kirjoittamalla tietokantanäkymä, joka muuntaa lähdetiedot loogisesti, tai valmistelemalla ja muodostamalla tiedot fyysisesti, ennen kuin Power BI kyselee niitä. Relaatiotietovarasto on erinomainen esimerkki valmistelluista tiedoista, jotka koostuvat tavallisesti ennalta integroiduista organisaatiotietojen lähteistä.
+- **Valmistele ja muunna lähteen tietoja**: Kun huomaat, että joitakin Power Query -kyselyn vaiheita ei voida delegoida lähteeseen, saatat pystyä käyttämään tietolähteessä muunnoksia. Muunnokset voidaan toteuttaa kirjoittamalla tietokantanäkymä, joka muuntaa lähdetiedot loogisesti. Vaihtoehtoisesti tiedot voidaan valmistella ja muodostaa fyysisesti, ennen kuin Power BI kyselee niitä. Relaatiotietovarasto on erinomainen esimerkki valmistelluista tiedoista, jotka koostuvat tavallisesti ennalta integroiduista organisaatiotietojen lähteistä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Lisätietoja kyselyn delegoinnista lähteeseen ja siihen liittyvistä artikkeleista saat seuraavista lähteistä:
+Saat lisätietoja tästä artikkelista tutustumalla seuraaviin resursseihin:
 
-- [Yhdistelmämallien käyttäminen Power BI Desktopissa](../desktop-composite-models.md)
+- Power Query [-kyselyn delegointi lähteeseen](/power-query/power-query-folding) -artikkeli
 - [Lisäävää päivitys Power BI Premiumissa](../service-premium-incremental-refresh.md)
-- [Kyselyn lähteeseen delegoinnin käyttöönotto Table.View’tä käyttämällä](/power-query/handlingqueryfolding)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

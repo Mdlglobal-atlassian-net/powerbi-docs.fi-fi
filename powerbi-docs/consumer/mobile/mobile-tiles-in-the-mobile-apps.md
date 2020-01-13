@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 570276b8af2862d6aab6dc806cb0c627be8ff157
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b400f429ef1e65a40caea717ab18bc06300f9d76
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870045"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221163"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Tutustu ruutuihin Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -41,10 +41,13 @@ Power BI -mobiilisovelluksissa avaat ruutuja tarkastelutilassa ja olet vuorovaik
    
    ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-pie.png)
 3. Kartassa napauttaa **Keskitä kartta** -kuvaketta ![](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) kartan keskittämiseksi tämänhetkiseen sijaintiisi.
-   
-     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
-4. Napauttaa jaa-kuvaketta ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-share-icon.png) [huomautuksen lisäämiseksi ruutuun ja sen jakamiseksi](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) muiden kanssa.
+
+   ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
+
+4. Napauttaa kynäkuvaketta ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png), jos haluat [merkitä ruudun](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual), ja napauttaa sitten Jaa-kuvaketta ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-share-icon.png), jos haluat [jakaa sen muille](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual).
+
 5. [Lisätä ruutuun ilmoituksen](mobile-set-data-alerts-in-the-mobile-apps.md). Jos arvot jäävät tavoitteiden ylä- tai alapuolelle, Power BI ilmoittaa tästä sinulle.
+
 6. Joskus koontinäytön tekijä on lisännyt linkin ruutuun. Jos näin on, siinä on tarkastelutilassa linkkikuvake ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png):
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-tile-link.png)
@@ -68,7 +71,7 @@ Power BI -mobiilisovelluksissa avaat ruutuja tarkastelutilassa ja olet vuorovaik
     Tarkastelutilassa voit:
    
    * Napauttaa kaaviota siirtääksesi palkkia viiva-, palkki-, pylväs- tai kuplakaaviossa, jotta voit tarkastella visualisoinnin tietyn pisteen arvoja.  
-   * Napauttaa Jaa tilannevedos -kuvaketta ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) [huomautuksen lisäämiseksi ruutuun ja sen jakamiseksi](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) muiden kanssa.
+   * Napauttaa kynäkuvaketta ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png), jos haluat [merkitä ruudun](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual), ja napauttaa sitten Jaa tilannevedos -kuvaketta ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png), jos haluat [jakaa sen](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual) muille.
    * Napauttaa Avaa raportti -kuvaketta ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png)[tarkastellaksesi raporttia](mobile-reports-in-the-mobile-apps.md) mobiilisovelluksessa.
 3. Joskus koontinäytön tekijä on lisännyt linkin ruutuun. Jos näin on, napauttaessasi pystysuuntaisia kolmea pistettä ( **...** ) näkyy **Avaa linkki** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png):
    
@@ -89,10 +92,10 @@ Power BI -mobiilisovelluksissa avaat ruutuja tarkastelutilassa ja olet vuorovaik
    
     [Jakaa tilannevedoksen ruudusta](mobile-windows-10-phone-app-get-started.md).
    
-    Napauttaa **Avaa raportti** ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png)[tarkastellaksesi pohjana olevaa raporttia](mobile-reports-in-the-mobile-apps.md).
+    Napauttaa **Avaa raportti**![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png), jos haluat [tarkastella pohjana olevaa raporttia](mobile-reports-in-the-mobile-apps.md).
    
     [Avata linkin](../../service-dashboard-edit-tile.md#hyperlink), jos siinä on linkki. Linkit voivat johtaa Power BI -koontinäyttöihin tai ulkoiseen URL-osoitteeseen.
-3. Napauttaa **Laajenna ruutu**![](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-focus-mode-icon.png). Se avautuu tarkastelutilassa, jossa on helpompi tarkastella ja tutkia ruudun tietoja. Tässä tilassa voit:
+3. Napauttaa **Laajenna ruutu** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-focus-mode-icon.png). Se avautuu tarkastelutilassa, jossa on helpompi tarkastella ja tutkia ruudun tietoja. Tässä tilassa voit:
    
    Pyörittää ympyräkaaviota, niin saat sektorin arvot näkyviin ympyrän yläreunaan.  
    
@@ -115,7 +118,7 @@ Power BI -mobiilisovelluksissa avaat ruutuja tarkastelutilassa ja olet vuorovaik
    
    ![](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-center-map.png)
    
-   Napauttaa Jaa tilannevedos -kuvaketta ![](./media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_shareicon.png) [ruudun jakamiseksi](mobile-windows-10-phone-app-get-started.md) muiden kanssa.   
+   Napauttaa Jaa tilannevedos -kuvaketta ![](./media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_shareicon.png)[ruudun jakamiseksi](mobile-windows-10-phone-app-get-started.md) muiden kanssa.   
    
    Napauttaa Avaa raportti -kuvaketta ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png)[tarkastellaksesi raporttia](mobile-reports-in-the-mobile-apps.md), johon ruutu pohjautuu. 
 4. Sulkea ruudun ja palata koontinäyttöön napauttamalla taaksepäin osoittavaa nuolta tai takaisin-painiketta.

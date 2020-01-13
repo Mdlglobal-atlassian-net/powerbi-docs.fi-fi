@@ -2,19 +2,18 @@
 title: Sanasto Power BI -kuluttajille
 description: Power BI esittelee monia uusia termejä ja uusia käyttöjä tutuille termeille. Sanaston avulla voit tutustua paremmin Power BI:n terminologiaan.
 services: power-bi
-ms.custom: seodec18
 author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 12/18/2019
 ms.author: mihart
-ms.openlocfilehash: 8c7a0463e8a521482a1aab6a53ae9656585a7849
-ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
+ms.openlocfilehash: 046f35613e5fe748e93389fbe10a77af08f449e3
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548549"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75303918"
 ---
 # <a name="glossary-for-power-bi-service"></a>Power BI -palvelun sanasto
 Power BI -palvelussa saattaa olla ennestään tuntematonta tai sekavalta vaikuttavaa terminologiaa. Sanasto on hyvä paikka termien hakuun, joten se on hyvä lisätä suosikkeihin. Toinen hyvä resurssi lisätietojen saamiseen Power BI -palvelun muodostavista rakenneosista ovat [peruskäsitteet](end-user-basic-concepts.md). Peruskäsitteet tarjoavat korkean tason yleiskatsauksen Power BI:n *osiin* ja niiden yhteyksiin.
@@ -76,7 +75,9 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **content view (sisältönäkymä)**
 
-**cross filter, cross highlight (ristisuodatus, ristiinkorostus)**
+**ristiinsuodatus** Tämä koskee visualisointitoimia. Ristiinsuodatus poistaa tiedot, joita ei käytetä. Esimerkiksi **Valvonta**-vaihtoehdon valitseminen rengaskaaviosta ristiinsuodattaa viivakaavion. Viivakaavio näyttää nyt vain arvopisteet, jotka koskevat Valvonta-segmenttiä.
+
+**ristiinkorostus** Tämä koskee visualisointitoimia. Ristiinkorostus säilyttää kaikki alkuperäiset arvopisteet, mutta himmentää osan, joka ei koske valintaasi. Esimerkiksi **Valvonta**-vaihtoehdon valitseminen rengaskaaviosta ristiinkorostaa pylväskaavion. Pylväskaavio himmentää kaikki tiedot, jotka eivät koske Valvonta-segmenttiä, ja korostaa kaikki tiedot, jotka koskevat Valvonta-segmenttiä.
 
 **custom visual (mukautettu visualisointi)** Yhteisön ja Microsoftin luomat visualisoinnit. Ne voidaan ladata Office-kaupasta käytettäväksi Power BI -raporteissa.
 
@@ -310,6 +311,8 @@ Power BI -raporttinäkymät sisältävät raporttiruutuja.
 **value, values (arvo, arvot)** Numeeriset tiedot visualisointia varten.
 
 **visual, visualization (visualisointi)** Kaavio. Visualisointeja ovat esimerkiksi palkkikaavio, puukartta, rengaskaavio ja kartta.
+
+**Visuaalinen vuorovaikutus** Yksi Power BI:n mahtavista ominaisuuksista on se, että kaikki raporttisivun visualisoinnit on yhdistetty toisiinsa. Jos valitset jonkin visualisoinnin arvopisteen, myös sivun kaikki muut kyseisen tiedon sisältävät visualisoinnit muuttuvat valinnan perusteella.
 
 **Visualizations pane (Visualisoinnit-ruutu)** Nimi niille visualisoinnin malleille, jotka lähetetään Power BI Desktopin ja Power BI -palvelun jaetussa raporttipohjassa. Sisältää pieniä malleja, joita kutsutaan myös kuvakkeiksi, kullekin alkuperäiselle visualisointityypille.  
 

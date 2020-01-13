@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2bb44498b6123eadffe86c7eb9bfb93bb0db5e14
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 23d66994e88204f56ee937a4f7887225e48a5e2f
+ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876421"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75304272"
 ---
 # <a name="connect-to-snowflake-in-power-bi-desktop"></a>Snowflakeen yhdistäminen Power BI Desktopissa
 Voit muodostaa Power BI Desktopissa yhteyden **Snowflake Computing** -varastoon ja käyttää sen tietoja samaan tapaan kuin muita tietolähteitä käytetään Power BI Desktopissa. 
@@ -42,11 +42,16 @@ Kirjoita käyttäjänimesi ja salasanasi pyydettäessä.
 > 
 > 
 
-Kun yhteyden muodostaminen onnistuu, näytölle avautuu **Siirtymistoiminto**-ikkuna, jossa näet palvelimella käytettävissä olevat tiedot. Voit valita ikkunasta yhden tai useita elementtejä tuotavaksi **Power BI Desktopiin**.
+Jos haluat käyttää Microsoft-tilin vaihtoehtoa, pyydä Snowflake-järjestelmänvalvojaasi ottamaan yhteyttä Snowflakeen, jotta saat tietoa liittymisestä tämän ominaisuuden yksityiseen esikatseluun.
 
-![](media/desktop-connect-snowflake/connect_snowflake_5.png)
+![Microsoft-tilin todennustyyppi Snowflake-liittimessä.](media/desktop-connect-snowflake/connect-snowflake-6.png)
 
-Voit myös **ladata** valitun taulukon, joka tuo koko taulukon **Power BI Desktopiin**, tai voit **muokata** kyselyä, joka avautuu **kyselyeditoriin**, jolloin voit suodattaa ja tarkentaa tietojoukkoa, jota haluat käyttää, ja ladata tarkennetun tietojoukon **Power BI Desktopiin**.
+
+Kun yhteyden muodostaminen onnistuu, näyttöön avautuu **Siirtymistoiminto**-ikkuna, jossa näet palvelimella käytettävissä olevat tiedot. Voit valita ikkunasta yhden tai useita elementtejä tuotavaksi **Power BI Desktopiin**.
+
+![ODBC-virhe 28000 aiheuttaa yhteysvirheen.](media/desktop-connect-snowflake/connect_snowflake_5.png)
+
+Voit **ladata** valitun taulukon, jolloin koko taulukko tuodaan **Power BI Desktopiin**, tai voit **muokata** kyselyä, joka avautuu **kyselyeditoriin**. Näin voit suodattaa ja tarkentaa käytettävää tietojoukkoa ja ladata sitten tarkennetun tietojoukon **Power BI Desktopiin**.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Power BI Desktopin avulla voit muodostaa yhteyden hyvin monenlaisiin tietoihin. Lisätietoja näistä tietolähteistä saat seuraavista resursseista:

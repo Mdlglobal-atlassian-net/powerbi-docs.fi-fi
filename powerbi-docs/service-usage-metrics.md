@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 9aa2e11dd2068cae118336268c5c55ead1e25b8b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73871223"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Power BI:n koontinäyttöjen ja raporttien käyttötietojen valvonta
@@ -43,7 +43,7 @@ Voit hakea käyttötietoraportteja vain Power BI-palvelussa. Jos kuitenkin talle
 ## <a name="view-a-usage-metrics-report"></a>Käyttötietoraportin tarkasteleminen
 
 1. Aloita työtilasta, joka sisältää koontinäytön tai raportin.
-2. Valitse joko työtilan sisältöluettelosta tai itse koontinäytöstä tai raportista **Käyttötiedot**-kuvake ![käyttötietokuvake](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png).
+2. Valitse joko työtilan sisältöluettelosta tai itse koontinäytöstä tai raportista **Käyttötiedot**-kuvake  ![käyttötietokuvake](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png).
 
     ![Koontinäytöt-välilehti](media/service-usage-metrics/power-bi-run-usage-metrics-report.png)
 
@@ -83,7 +83,7 @@ Jos haluat syventyä raportin tietoihin tai luoda omia raporttejasi pohjana olev
 
 ## <a name="which-metrics-are-reported"></a>Mitkä tiedot raportoidaan?
 
-| Tieto | Koontinäyttö | Raportti | Kuvaus |
+| Arvo | Koontinäyttö | Raportti | Kuvaus |
 | --- | --- | --- | --- |
 | Jakelutavan osittaja |kyllä |kyllä |Millä tavalla käyttäjä pääsi käyttämään sisältöä? Mahdollisia tapoja on kolme: käyttäjä voi käyttää koontinäyttöä tai raporttia [työtilan](consumer/end-user-experience.md) jäsenenä, vastaanottamalla sisällön itselleen [jaettuna](service-share-dashboards.md) tai asentamalla sisältöpaketin tai sovelluksen.  Huomaa, että sovelluksen kautta tulleet näyttökerrat lasketaan sisältöpaketiksi. |
 | Ympäristöosittaja |kyllä |kyllä |Käytettiinkö koontinäyttöä tai raporttia Power BI -palvelun (powerbi.com) vai mobiililaitteen kautta? Mobiililaitteisiin sisältyvät kaikki iOS-, Android- ja Windows-sovellukset. |

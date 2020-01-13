@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 232d311e876a5fe01eb6c8091eb7a83669592cbf
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 70ecd56f2823e608aa62deb4a5033f53272d3382
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879092"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220987"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Koontinäytön tai raportin jakaminen Power BI -mobiilisovelluksista
 Koskee seuraavia:
@@ -26,125 +26,78 @@ Koskee seuraavia:
 
 iOS-ja Android-laitteiden Power BI -mobiilisovelluksista voit [jakaa kenelle tahansa tilannevedoksen ruudusta, raportista tai visualisoinnista ja lisätä merkintöjä niihin](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md). 
 
-## <a name="share-from-your-iphone"></a>Jakaminen iPhonesta
-1. Napauta koontinäytön tai raportin alaosassa olevasta Toiminnot-palkista **Jaa**-kuvaketta ![Jaa-kuvake](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-share-dashboard-icon.png).
+## <a name="share-from-your-iphone-or-ipad"></a>Jakaminen iPhonesta tai iPadista
+
+1. Voit jakaa koontinäytön tai raportin joko koontinäytöstä tai raportista itsestään tai koontinäytön tai raportin aloitussivulta:
+    *  Napauta koontinäytössä tai raportissa **Jaa**-kuvaketta ![kutsu-kuvake](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png) koontinäytön tai raportin alaosan Toiminnot-palkissa.
+    *  Napauta koontinäytön tai raportin aloitussivulla **Tiedot**-kuvaketta ![Lisätietoja](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-more-info-icon.png) koontinäytön tai raportin nimen vieressä ja napauta sitten näyttöön tulevassa Tiedot-välilehdessä **Jaa**-kuvaketta ![Kutsu-kuvake](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png).
+2. Kirjoita nimet toisistaan pilkuilla erotettuina ja haluamasi viesti kutsusi mukaan. Jos haluat sallia uudelleenjakamisen, jätä **Salli vastaanottajien jakaa uudelleen** valituksi. Uudelleenjakamisen ansiosta työtoverisi voivat lähettää sähköpostikutsun edelleen muille organisaatiossa, joko verkossa tai mobiilisovellusten kautta.
+3. Napauta **Lähetä** oikeassa yläkulmassa.
    
-   ![iPhonen Jaa-kuvake](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-dashboard-invite.png)
-2. Kirjoita nimet toisistaan pilkuilla erotettuina ja haluamasi viesti kutsusi mukaan.
-3. Jos haluat sallia uudelleenjakamisen, jätä **Salli vastaanottajien jakaa uudelleen** valituksi.
+   Vastaanottajat saavat sähköpostikutsun, jossa on suora linkki koontinäyttöön tai raporttiin. Kutsu vanhenee kuukauden kuluttua. Kun käyttäjä avaa sen Power BI -palvelussa tai Power BI -mobiilisovelluksessa, se lisätään käyttäjän Power BI -tilin **Jaettu kanssani** -osaan. Jaettu kanssani -osion käyttäminen:
    
-   Uudelleenjakamisen ansiosta työtoverisi voivat lähettää sähköpostikutsun edelleen muille organisaatiossa, joko verkossa tai mobiilisovellusten kautta.
-5. Napauta **Lähetä** oikeassa yläkulmassa.
-   
-   Vastaanottajat saavat sähköpostikutsun, jossa on suora linkki koontinäyttöön tai raporttiin. Kutsu vanhenee kuukauden kuluttua. Kun käyttäjä avaa sen selaimessa tai Power BI -mobiilisovelluksessa, se lisätään käyttäjän Power BI -tilin **Jaettu kanssani** -osaan.
-   
-   ![Jaettu kanssani](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   * Napauta Power BI -mobiilisovelluksen siirtymispalkissa **Lisää vaihtoehtoja** (...) ja valitse ![Jaettu kanssani](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Jaettu kanssani**.
+   * Valitse Power BI -palvelussa ![Jaettu kanssani](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Jaettu kanssani** vasemmassa siirtymisruudussa.
    
    Lue lisää [muistiinpanoja jakamisesta työtovereiden kanssa](../../service-share-dashboards.md).
 
-### <a name="unshare-from-your-iphone"></a>Jaon poistaminen iPhonesta
+### <a name="unshare-from-your-iphone-or-ipad"></a>Jakamisen poistaminen iPhonessa tai iPadissa
 Voit poistaa jakamisen vain, jos olet omistaja.
 
-1. Napauta koontinäytön tai raportin alaosassa olevasta Toiminnot-palkista **Jaa**-kuvaketta ![Jaa-kuvake](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-share-dashboard-icon.png).
-2. Napauta **Kutsu työtoveri**.
-   
-   Näet luettelon työtovereista, joiden kanssa olet jakanut tämän koontinäytön tai raportin, jossa ovat nämä lauseet:
-   
-   * **Voi tarkastella**: he voivat tarkastella, mutta eivät jakaa.
-   * **Voi tarkastella ja kutsua**: he voivat tarkastella ja jakaa muiden työtovereiden kanssa.
-1. Napauta **Muokkaa**.
-   
-    ![Muokkaa-kuvake](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-edit-invite-dashboard.png)
-4. Jaon poistamiseksi on napautettava nimen vieressä olevaa punaista ympyrää ja napautettava sitten **Poista**.
+1. Napauta koontinäytön tai raportin alaosassa olevasta Toiminnot-palkista **Jaa**-kuvaketta ![Jaa-kuvake](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png).
+2. Napauta **Jaettu**. Näet luettelon työtovereista, joiden kanssa olet jakanut tämän koontinäytön tai raportin.
 
-## <a name="share-from-your-ipad"></a>Jakaminen iPadista
-1. Napauta **Jaa**-kuvaketta ![Jaa-kuvake](././media/mobile-share-dashboard-from-the-mobile-apps/pbi_ipad_shareiconblk.png) -kuvake koontinäytön tai raportin oikeassa yläkulmassa.
-2. Kirjoita sähköpostiosoitteet ja haluamasi viesti kutsusi mukaan.
-3. Jos haluat sallia uudelleenjakamisen, jätä **Salli vastaanottajien jakaa uudelleen** valituksi.
-   
-   Uudelleenjakamisen ansiosta työtoverisi voivat lähettää sähköpostikutsun edelleen muille organisaatiossa, joko verkossa tai mobiilisovellusten kautta. 
+3. Napauta **Lisää vaihtoehtoja** (...) sen henkilön nimen vierestä, jonka kanssa haluat poistaa jakamisen, ja valitse, poistetaanko vain jaetun koontinäytön käyttöoikeus, vai myös kaiken sen käyttämän pohjana olevan sisällön käyttöoikeus.
 
-4. Napauta **Lähetä** oikeassa yläkulmassa.
-   
-   Vastaanottajat saavat sähköpostikutsun, jossa on suora linkki koontinäyttöön tai raporttiin. Kutsu vanhenee kuukauden kuluttua. Kun käyttäjä avaa sen selaimessa tai Power BI -mobiilisovelluksessa, se lisätään käyttäjän Power BI -tilin **Jaettu kanssani** -osaan
-   
-   ![Jaettu kanssani](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
-   
-   Lue lisää [muistiinpanoja jakamisesta työtovereiden kanssa](../../service-share-dashboards.md).
 
-### <a name="unshare-from-your-ipad"></a>Jaon poistaminen iPadista
-Voit poistaa jakamisen vain, jos olet omistaja.
-
-1. Napauta **Jaa**-kuvaketta ![Jaa-kuvake](././media/mobile-share-dashboard-from-the-mobile-apps/pbi_ipad_shareiconblk.png) koontinäytön tai raportin oikeassa yläkulmassa.
-   
-   Näet luettelon työtovereista, joiden kanssa olet jakanut tämän koontinäytön tai raportin, jossa ovat nämä lauseet:
-   
-   * **Voi tarkastella**: he voivat tarkastella, mutta eivät jakaa.
-   * **Voi tarkastella ja kutsua**: he voivat tarkastella ja jakaa muiden työtovereiden kanssa.
-2. Napauta **Muokkaa**.
-3. Jaon poistamiseksi on napautettava nimen vieressä olevaa punaista ympyrää ja napautettava sitten **Poista**.
 
 ## <a name="share-from-your-android-device"></a>Jakaminen Android-laitteesta
-1. Valitse koontinäyttöjen tai raporttien kotisivulla **Enemmän vaihtoehtoja** (...) ja napauta **Kutsu työtoveri**.
+1. Voit jakaa koontinäytön tai raportin joko koontinäytöstä tai raportista itsestään tai koontinäytön tai raportin aloitussivulta:
+    *  Napauta koontinäytössä tai raportissa **Lisää vaihto ehtoja** (...) koontinäytön tai raportin yläreunassa ja valitse **Kutsu työtoveri**.
+    *  Napauta koontinäytön tai raportin aloitussivulla **Lisää vaihtoehtoja** (...) koontinäytön tai raportin nimen vieressä, ja napauta sitten näyttöön tulevassa Tiedot-välilehdessä **Jaa**-kuvaketta ![Kutsu-kuvake](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png).
+ 
+2. Kirjoita sähköpostiosoitteet ja haluamasi viesti koontinäyttökutsusi mukaan. Muussa tapauksessa Power BI lähettää oletusarvoisen viestin. Jos haluat sallia uudelleenjakamisen, jätä **Salli vastaanottajien jakaa tämä koontinäyttö** valituksi. Uudelleenjakamisen ansiosta työtoverisi voivat lähettää sähköpostikutsun edelleen muille organisaatiossa, joko selaimen tai mobiilisovellusten kautta.
    
-   ![Kutsu työtoveri](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-tablet-share-dashboard.png)
-2. Tai napauta Kutsu-kuvaketta koontinäytössä tai raportissa ![Kutsu-kuvake](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png).
+3. Napauta **Lähetä**-kuvaketta ![Lähetä-kuvake](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-send-icon.png) oikeassa yläkulmassa sähköpostin lähettämiseksi.
+   
+    Vastaanottajat saavat sähköpostikutsun, jossa on suora linkki koontinäyttöön tai raporttiin. Kutsu vanhenee kuukauden kuluttua. Kun käyttäjä avaa sen Power BI -palvelussa tai Power BI -mobiilisovelluksessa, se lisätään käyttäjän Power BI -tilin **Jaettu kanssani** -osaan. Jaettu kanssani -osion käyttäminen:
+   * Napauta Power BI -mobiilisovelluksen siirtymispalkissa **Lisää vaihtoehtoja** (...) ja valitse ![Jaettu kanssani](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Jaettu kanssani**.
+   * Valitse Power BI -palvelussa ![Jaettu kanssani](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Jaettu kanssani** vasemmassa siirtymisruudussa.
+   
+   Lue lisää [muistiinpanoja jakamisesta työtovereiden kanssa](../../service-share-dashboards.md).
 
-    Jos olet koontinäytön omistaja, näet luettelon työtovereista, joiden kanssa olet jakanut tämän koontinäytön tai raportin, jossa ovat nämä merkinnät:
-
-    -   **Voi tarkastella**: he voivat tarkastella, mutta eivät jakaa.
-    -   **Voi tarkastella ja jakaa edelleen**: he voivat tarkastella ja jakaa muiden työtovereiden kanssa.
-
-1. Kirjoita sähköpostiosoitteet ja haluamasi viesti koontinäyttökutsusi mukaan. Muussa tapauksessa Power BI lähettää oletusarvoisen viestin.
-2. Jos haluat sallia uudelleenjakamisen, jätä **Salli vastaanottajien jakaa tämä koontinäyttö** valituksi.
-   
-   Uudelleenjakamisen ansiosta työtoverisi voivat lähettää sähköpostikutsun edelleen muille organisaatiossa, joko selaimen tai mobiilisovellusten kautta.
-   
-1. Napauta **Lähetä**-kuvaketta ![Lähetä-kuvake](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_andr_sendplane.png) oikeassa yläkulmassa sähköpostin lähettämiseksi.
-   
-   Vastaanottajat saavat sähköpostikutsun, jossa on suora linkki koontinäyttöön. Kutsu vanhenee kuukauden kuluttua. Kun käyttäjä avaa sen selaimessa tai Power BI -mobiilisovelluksessa, se lisätään käyttäjän Power BI -tilin **Jaettu kanssani** -osaan
-   
-   ![Jaettu kanssani](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-shared-with-me-left-nav.png)
-   
-   Lue lisää [muistiinpanoja koontinäyttöjen jakamisesta työtovereiden kanssa](../../service-share-dashboards.md).
 
 ### <a name="unshare-from-your-android-device"></a>Jaon poistaminen Android-laitteesta
 Voit poistaa jakamisen vain, jos olet omistaja.
 
-1. Napauta Kutsu-kuvaketta koontinäytön tai raportin oikeassa yläkulmassa ![Kutsu-kuvake](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png). 
-   
-   Näet luettelon työtovereista, joiden kanssa olet jakanut tämän koontinäytön tai raportin.
-2. Voit lopettaa jakamisen työtoverin kanssa napauttamalla **X** nimen vieressä \> **Poista**.
+1. Voit poistaa koontinäytön tai raportin jakamisen koontinäytöstä tai raportista itsestään tai koontinäytön tai raportin aloitussivulta:
+    *  Napauta koontinäytössä tai raportissa **Lisää vaihtoehtoja** (...) koontinäytön tai raportin yläreunassa ja valitse **Kutsu työtoveri**.
+    *  Napauta koontinäytön tai raportin aloitussivulla **Lisää vaihtoehtoja** (...) koontinäytön tai raportin nimen vieressä, ja napauta sitten näyttöön tulevassa Tiedot-välilehdessä **Jaa**-kuvaketta ![Kutsu-kuvake](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png).
+
+2. Avautuvan **Lisää henkilöitä** -sivun alaosassa näkyy luettelo työtovereistasi, joiden kanssa olet jakanut tämän koontinäytön tai raportin. Napauta sen työtoverin nimeä, jonka kanssa haluat poistaa jakamisen.
+3. Napauta näyttöön tulevalla **Kenellä on käyttöoikeudet** -sivulla **Poista**-kuvaketta ![Poista-kuvake](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-remove-icon.png) ja valitse, poistetaanko vain jaetun koontinäytön käyttöoikeus, vai myös kaiken sen käyttämän pohjana olevan sisällön käyttöoikeus.
 
 ## <a name="share-from-your-windows-10-device"></a>Jakaminen Windows 10 -laitteesta
-1. Napauta Kutsu-kuvaketta koontinäytössä tai raportissa ![Kutsu-kuvake](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_andr_inviteicon.png).
+
+1. Voit jakaa koontinäytön tai raportin koontinäytöstä tai raportista tai koontinäytön tai raportin aloitussivulta:
+    * Napauta koontinäytössä tai raportissa **Jaa**-kuvaketta ![Kutsu-kuvake](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png).
+    * Napsauta koontinäytön tai raportin kotisivulla hiiren kakkospainiketta tai pidä painiketta painettuna ja valitse **Kutsu**.
    
-   Tai napsauta koontinäyttöjen tai raporttien kotisivulla hiiren kakkospainiketta ja pidä se painettuna ja napauta **Kutsu**.
+   Jos olet koontinäytön omistaja, näkyviin tulee luettelo työtovereista, joiden kanssa olet jakanut tämän koontinäytön tai raportin.
+
+2. Kirjoita sähköpostiosoitteet ja haluamasi viesti kutsusi mukaan. Muussa tapauksessa Power BI lähettää oletusarvoisen viestin. Jos haluat sallia uudelleenjakamisen, jätä **Salli vastaanottajien jakaa tämä koontinäyttö** valituksi. Uudelleenjakamisen ansiosta työtoverisi voivat jakaa muiden kanssa organisaatiossa, joko selaimen tai mobiilisovellusten kautta.
    
-   ![Kutsu](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10_sharedash.png)
+3. Napauta **Lähetä**-kuvaketta ![Lähetä-kuvake](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png).
    
-   Jos olet koontinäytön omistaja, näet luettelon työtovereista, joiden kanssa olet jakanut tämän koontinäytön, jossa ovat nämä merkinnät:
+    Vastaanottajat saavat sähköpostikutsun, jossa on suora linkki koontinäyttöön tai raporttiin. Kutsu vanhenee kuukauden kuluttua. Kun käyttäjä avaa sen Power BI -palvelussa tai Power BI -mobiilisovelluksessa, se lisätään käyttäjän Power BI -tilin **Jaettu kanssani** -osaan. Jaettu kanssani -osion käyttäminen:
    
-   **Voi tarkastella**: he voivat tarkastella, mutta eivät jakaa.
-   
-   **Voi tarkastella ja jakaa edelleen**: he voivat tarkastella ja jakaa muiden työtovereiden kanssa.
-2. Kirjoita sähköpostiosoitteet ja haluamasi viesti kutsusi mukaan. Muussa tapauksessa Power BI lähettää oletusarvoisen viestin.
-   
-   ![Kutsu-valintaikkuna](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-windows-10-share-dashboard.png)
-3. Jos haluat sallia uudelleenjakamisen, jätä **Salli vastaanottajien jakaa uudelleen** valituksi.
-   
-   Uudelleenjakamisen ansiosta työtoverisi voivat jakaa muiden kanssa organisaatiossa, joko selaimen tai mobiilisovellusten kautta.
-   
-1. Napauta **Lähetä**-kuvaketta ![Lähetä-kuvake](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png).
-   
-   Vastaanottajat saavat sähköpostikutsun, jossa on suora linkki koontinäyttöön tai raporttiin. Kutsu vanhenee kuukauden kuluttua. Kun käyttäjä avaa sen selaimessa tai Power BI -mobiilisovelluksessa, se lisätään käyttäjän Power BI -tilin **Jaettu kanssani** -osaan
-   
-   ![Jaettu kanssani](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   * Napauta Power BI -mobiilisovelluksen siirtymispalkissa **Lisää vaihtoehtoja** (...) ja valitse ![Jaettu kanssani](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Jaettu kanssani**.
+   * Valitse Power BI -palvelussa ![Jaettu kanssani](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Jaettu kanssani** vasemmassa siirtymisruudussa.
    
    Lue lisää [muistiinpanoja jakamisesta työtovereiden kanssa](../../service-share-dashboards.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Jaa tilannevedos ruudusta, raportista tai visualisoinnista ja lisää niihin merkintöjä mobiilisovelluksissa](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
 * [Jaa koontinäyttö tai raportti Power BI:ssä](../../service-share-dashboards.md)
-* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

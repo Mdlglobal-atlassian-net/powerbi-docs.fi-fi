@@ -6,15 +6,15 @@ ms.reviewer: mohammad ali
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/22/2019
+ms.date: 12/18/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 051803b3d9708289f37271afc02b7802fb52b50e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 5dd924f066b6382ed895d81ed0ada5d913c040e6
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73862652"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75218166"
 ---
 # <a name="qa-for-power-bi-consumers"></a>Q&A Power BI -**kuluttajille**
 
@@ -67,28 +67,30 @@ Esimerkki:
 
 Kun olet tutustunut tietoihin, suuntaa takaisin koontinäyttöön ja aseta kohdistin kysymysruutuun. Q&A-näyttö avautuu.
 
-![Q&A-näyttö](media/end-user-q-and-a/power-bi-screen.png) 
+![Q&A-näyttö](media/end-user-q-and-a/power-bi-suggested.png) 
 
 Jo ennen kuin alat kirjoittaa, Q&A näyttää uuden näytön ehdotuksilla, jotka voivat olla avuksi kysymyksen muodostamisessa. Näet lauseet ja kysymykset, jotka sisältävät pohjana olevien tietojoukkojen taulukoiden nimet, ja saatat jopa nähdä tietojoukon omistajan luomat *suositellut* kysymykset.
 
 Voit valita näistä minkä tahansa niiden lisäämiseksi kysymysruutuun ja sitten tarkentaa niitä tietyn vastauksen löytämiseksi. 
 
-Q&A käyttää myös kehotteita, automaattista täydennystä ja visuaalisia vihjeitä, kun tarvitset apua kysymysten muodostamisessa. 
+![Q&A-näyttö](media/end-user-q-and-a/power-bi-result.png) 
+
+Power BI käyttää myös ominaisuuksia, kuten kehotteita, automaattista täydennystä ja visuaalisia vihjeitä, kun tarvitset apua kysymysten muodostamisessa. Power BI tarjoaa ohjeita koontinäyttöjen ja raporttien Q&A:ssa sekä Q&A-visualisoinneissa. Käsittelemme näitä ominaisuuksia yksityiskohtaisesti alla olevassa osiossa [Q&A-visualisoinnin luominen kirjoittamalla luonnollisen kielen kysely](#create-a-qa-visual-by-typing-a-natural-language-query)
 
 <!-- ![video](../visuals/media/end-user-q-and-a/qna4.gif) -->
 
 
-## <a name="the-qa-visual"></a>Q&A-visualisointi
+## <a name="the-qa-visual-in-power-bi-reports"></a>Q&A-visualisointi Power BI -raporteissa
 
-Q&A-visualisoinnin avulla voit esittää kysymyksiä käyttämällä luonnollista kieltä ja saada vastauksia visualisoinnin muodossa. Q&A-visualisointi käyttäytyy kuin mikä tahansa muu visualisointi, joten se voidaan ristiinsuodattaa/ristiinkorostaa ja se tukee myös kirjanmerkkejä ja kommentteja. 
+Q&A-visualisoinnin avulla voit esittää kysymyksiä käyttämällä luonnollista kieltä ja saada vastauksia visualisoinnin muodossa. Q&A-visualisointi käyttäytyy kuin mikä tahansa muu raportin visualisointi, joten se voidaan ristiinsuodattaa/ristiinkorostaa ja se tukee myös kirjanmerkkejä ja kommentteja. 
 
 Q&A-visualisoinnin tunnistaa sen yläosassa olevasta kysymysruudusta. Siihen voit kirjoittaa kysymyksiä luonnollisella kielellä. Q&A-visualisointia voidaan käyttää toistuvasti tietoihisi liittyvien kysymysten esittämiseen. Kun poistut raportista, Q&A-visualisointi palautuu oletusarvoonsa. 
 
 ![Näyttökuva oletusarvoisestaQ&A-visualisoinnista](media/end-user-q-and-a/power-bi-q-and-a-default.png)
 
 
-## <a name="use-the-qa-visual"></a>Q&A-visualisoinnin käyttö
-Jos haluat käyttää Q&A-visualisointia, valitse jokin ehdotetuista kysymyksistä tai kirjoita oma luonnollisen kielen kysymys. 
+## <a name="use-qa"></a>Q&A:n käyttäminen 
+Jos haluat käyttää Q&A:ta koontinäytössä tai Q&A-visualisointia raportissa, valitse jokin ehdotetuista kysymyksistä tai kirjoita oma luonnollisen kielen kysymys. 
 
 ### <a name="create-a-qa-visual-by-using-a-suggested-question"></a>Luo Q&A-visualisointi käyttämällä ehdotettua kysymystä
 
@@ -105,26 +107,45 @@ Voit kuitenkin määrittää Power BI:n käyttämään tiettyä visualisointityy
 
 Jos et ole varma, minkä tyyppisiä kysymyksiä haluat esittää tai mitä termejä haluat käyttää, laajenna **Näytä kaikki ehdotukset** tai selaa muita raportin visualisointeja. Näin voit tutustua tietojoukon ehtoihin ja sisältöön.
 
-1. Kirjoita kysymyksesi Q&A-kenttään käyttäen luonnollista kieltä. Power BI:n automaattinen täydennys, ehdotukset ja palaute auttavat kysymyksen kirjoittamisessa.
+1. Kirjoita kysymyksesi Q&A-kenttään käyttäen luonnollista kieltä. Power BI:n automaattinen täydennys, visuaaliset elementit ja palaute auttavat kysymyksen kirjoittamisessa.
 
-    - Punaista alleviivausta käytetään sanoille, joita Power BI ei tunnista. Power BI auttaa sinua määrittämään nämä sanat aina, kun se on mahdollista. Jos näet oikean määritelmän, valitse se avattavasta valikosta.  
+    **Automaattinen täydennys** – kun kirjoitat kysymyksesi, Power BI:n Q&A näyttää oleellisia ja tilannekohtaisia tuloksia, joiden avulla voit nopeasti parantaa tuottavuuttasi käyttäen luonnollista kieltä. Saat kirjoittaessasi välittömästi palautetta ja tuloksia. Kokemus on samankaltainen kuin hakukoneeseen kirjoittaminen.
 
-        ![Punainen alleviivattu termi Q&A-kysymysruudussa](media/end-user-q-and-a/power-bi-q-and-a-red.png)
+    Tässä esimerkissä haluamme käyttää viimeistä ehdotusta. 
 
-    - Jos mikään määrityksistä ei ole oikein, kokeile toista termiä tai valitse punainen alleviivattu sana ja pyydä raportin omistajaa lisäämään sana.
+    ![Q&A sinisellä alleviivatulla sanalla](media/end-user-q-and-a/power-bi-autocomplete.png)
 
-        ![Kysymyksen kirjoittaminen Q&A-ruutuun](media/end-user-q-and-a/power-bi-q-and-a-owner.png)
+    **Punainen/sininen alleviivaus** – alleviivattujen sanojen avulla Power BI Q&A näyttää, mitä sanoja Power BI tunnisti tai ei tunnistanut. Yhtenäinen sininen alleviivaus osoittaa, että Power BI tunnisti sanan. Alla olevassa esimerkissä näkyy, että Q&A on tunnistanut sanan **myymälä**.
 
-    - Kun kirjoitat kysymystä lisää, Power BI ilmoittaa, ettei se ymmärrä kysymystä, ja yrittää auttaa. Alla olevassa esimerkissä Power BI kysyy "Tarkoititko..." ja ehdottaa eri tapaa esittää kysymys käyttämällä tietojoukkosi terminologiaa. 
+    ![Q&A, jossa on ehdotuksia sisältävä avattava valikko kysymyksen täydentämistä varten](media/end-user-q-and-a/power-bi-blue.png)
 
-        ![Q&A-visualisointi tarjoaa ehdotettuja korjauksia](media/end-user-q-and-a/power-bi-q-and-a-did-you-mean.png)
+    Valitse sinisellä alleviivattu sana ehdotettuja kysymyksiä sisältävän avattavan luettelon näyttämiseksi. 
 
-2. Kun olet valinnut Power BI:n korjauksen, tulokset näytetään viivakaaviona. 
+    ![Avattava luettelo, joka sisältää Voit myös kokeilla seuraavaa -ehdotuksia](media/end-user-q-and-a/power-bi-try.png)
+
+
+    Usein Q&A:han kirjoittamasi sana merkitään punaisella alleviivauksella. Punaisella alleviivauksella voidaan ilmaista kahta eri ongelmatilannetta. Ensimmäinen ongelmatyyppi on alhainen luotettavuus. Jos kirjoitat epämääräisen tai moniselitteisen sanan, kenttä alleviivataan punaisella. Esimerkki tästä on sana Sijainti. Useat kentät voivat sisältää sanan Sijainti, joten järjestelmä kehottaa sinua valitsemaan tarkoittamasi kentän lisäämällä punaisen alleviivauksen. Tässä esimerkissä Power BI kehottaa valitsemaan kentän, jota haluat käyttää kohteessa VanArsdel.
+    
+    ![Punainen alleviivattu termi Q&A-kysymysruudussa](media/end-user-q-and-a/power-bi-q-and-a-red.png)
+    
+    Toinen esimerkki alhaisesta luotettavuudesta on, jos kirjoitat sanan "alue", mutta sarake, jota se vastaa, on nimeltään "piirikunta". Power BI:n Q&A tunnistaa sanoja, jotka tarkoittavat samaa asiaa, Bing- ja Office-integraatioiden ansiosta. Q&A alleviivaa sanan punaisella, jotta tiedät, että se ei ole suora vastaavuus.
+
+    ![Q&A muotoilee kysymyksen uudelleen synonyymin avulla](media/end-user-q-and-a/power-bi-red.png)
+
+    Toinen ongelmatyyppi on, kun Q&A ei tunnista sanaa lainkaan. Esimerkiksi jos käytät sanaa "maantiede", vaikka sitä ei löydy mistään tiedoista. Sana löytyy englanninkielisestä sanastosta, mutta Q&A merkitsee sen punaisella alleviivauksella. Power BI Q&A ei voi luoda visualisointia ja ehdottaa, että pyydät raportin suunnittelijaa lisäämään termin.
+
+    ![Q&A antamassa ehdotusta, että pyydät suunnittelijaa lisäämään sanan maantiede](media/end-user-q-and-a/power-bi-geography.png)
+
+    **Ehdotukset** – kun kirjoitat kysymystä lisää, Power BI ilmoittaa, ettei se ymmärrä kysymystä, ja yrittää auttaa. Alla olevassa esimerkissä Power BI kysyy "Tarkoititko..." ja ehdottaa eri tapaa esittää kysymys käyttämällä tietojoukkosi terminologiaa. 
+
+    ![Q&A-visualisointi tarjoaa ehdotettuja korjauksia](media/end-user-q-and-a/power-bi-q-and-a-did-you-mean.png)
+
+    Kun olet valinnut Power BI:n korjauksen, tulokset näytetään viivakaaviona. 
 
     ![Q&A-visualisoinnin tulokset viivakaaviona](media/end-user-q-and-a/power-bi-q-and-a-line.png)
 
 
-3. Voit kuitenkin muuttaa viivankaavion toiseksi visualisointityypiksi.  
+    Voit kuitenkin muuttaa viivankaavion toiseksi visualisointityypiksi.  
 
     ![Q&A-visualisointi, jossa kysymykseen on lisätty "pylväskaaviona"](media/end-user-q-and-a/power-bi-q-and-a-specify-type.png)
 

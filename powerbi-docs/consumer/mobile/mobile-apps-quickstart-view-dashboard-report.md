@@ -1,22 +1,22 @@
 ---
 title: 'Pika-aloitus: Raporttinäkymien ja raporttien tarkastelu mobiilisovelluksissa'
 description: Tässä pikaoppaassa kerrotaan raporttinäkymien ja raporttien tarkastelusta Power BI -mobiilisovelluksissa.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 04/18/2019
-ms.author: mshenhav
-ms.openlocfilehash: 9af245b51fa2520dca1ccca535ec44f14360a54c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 11/25/2019
+ms.author: painbar
+ms.openlocfilehash: 8703bfa60116b7e60f1e6bec931b0f6183f7dd31
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879267"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75218560"
 ---
-# <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Pika-aloitus: Raporttinäkymien ja raporttien tarkastelu Power BI -mobiilisovelluksissa
-Tässä pikaoppaassa esitellään esimerkki raporttinäkymästä ja raportista Android-puhelimen Power BI -mobiilisovelluksessa. Voit seurata myös muilla mobiilisovelluksilla. 
+# <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Pikaopas: Raporttinäkymien ja raporttien tarkastelu Power BI -mobiilisovelluksissa
+Tässä pikaoppaassa on esitellään Power BI -mobiilisovellus nopeasti ja tutustutaan mallikoontinäyttöön ja raporttiin. Tässä käytetään esimerkkinä iOS:n Power BI -sovellusta, mutta voit helposti seurata esittelyä muissakin laitteissa.
 
 Koskee seuraavia:
 
@@ -24,133 +24,91 @@ Koskee seuraavia:
 |:--- |:--- |:--- |:--- |
 | iPhone | iPad | Android- | Windows 10 |
 
-Raporttinäkymät ovat portaali yrityksesi elinkaareen ja prosesseihin. Raporttinäkymä on yleisnäkymä, jossa voit seurata yrityksen nykyistä tilaa yhdessä paikassa. Raportti on vuorovaikutteinen näkymä tiedoistasi, joka sisältää eri havaintoja ja merkityksellisiä tietoja esittäviä visualisointeja. 
+Raporttinäkymä on portaali yrityksesi elinkaareen ja prosesseihin. Se on yleisnäkymä, jossa voit seurata yrityksen nykyistä tilaa yhdessä paikassa. Raportti on vuorovaikutteinen näkymä tiedoistasi, joka sisältää eri havaintoja ja merkityksellisiä tietoja esittäviä visualisointeja. 
 
 ![Raportti vaakatilassa](././media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report.png)
 
 ## <a name="prerequisites"></a>Edellytykset
 
-### <a name="sign-up-for-power-bi"></a>Rekisteröidy Power BI:hin
-Jos et ole rekisteröitynyt Power BI:hin, [rekisteröidy ilmaiseen kokeiluversioon](https://app.powerbi.com/signupredirect?pbi_source=web) ennen aloittamista.
+* **Rekisteröidy Power BI:hin**: Jos et ole rekisteröitynyt Power BI:hin, [rekisteröidy ilmaiseen kokeiluversioon](https://app.powerbi.com/signupredirect?pbi_source=web) ennen aloittamista.
+* **Asenna Power BI -sovellus iOS-laitteeseesi**: Lataa Power BI -mobiilisovellus** [App Storesta](https://apps.apple.com/app/microsoft-power-bi/id929738808) (iOS) tai [Google Playstä](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409) (Android).
+* **Lataa Jälleenmyyntianalyysimalli**: Tämän pikaoppaan ensimmäisessä vaiheessa ladataan Jälleenmyyntianalyysimalli Power BI -palvelussa. [Aloita tutustumalla mallin](./mobile-apps-download-samples.md) lataamiseen Power BI -tiliisi. Valitse Jälleenmyyntianalyysimalli.
 
-### <a name="install-the-power-bi-for-android-app"></a>Power BI:n Android-sovelluksen asentaminen
-[Lataa Power BI for Android -sovellus](https://go.microsoft.com/fwlink/?LinkID=544867) Google Play -kaupasta.
+Kun olet täyttänyt tarvittavat edellytykset ja ladannut Jälleenmyyntianalyysimallin Power BI tiliisi, voit aloittaa tämän nopean esittelyn.
 
-Power BI toimii Android-laitteilla, joissa on käytössä Android 5.0 -käyttöjärjestelmä tai uudempi versio. Jos haluat tarkistaa laitteesi, siirry kohtaan **Asetukset** > **Tietoa laitteesta** > **Android -versio**.
-
-### <a name="download-the-retail-analysis-sample"></a>Hae Jälleenmyyntianalyysimalli
-Pikaoppaan ensimmäisessä vaiheessa ladataan jälleenmyyntianalyysimalli Power BI -palvelussa.
-
-1. Avaa Power BI -palvelu (app.powerbi.com) selaimessasi ja kirjaudu sisään.
-
-1. Avaa siirtymisruutu napsauttamalla yleistä siirtymiskuvaketta.
-
-    ![yleinen siirtymiskuvake](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-global-nav-icon.png)
-
-2. Valitse siirtymisruudussa **Työtilat** > **Oma työtila**.
-
-    ![Oma työtila](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-my-workspace.png)
-
-3. Valitse vasemmassa alakulmassa **Nouda tiedot**.
-   
-    ![Nouda tiedot](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-get-data.png)
-
-3. Valitse Nouda tiedot -sivulla **Mallit**-kuvake.
-   
-   ![Mallit-kuvake](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-samples-icon.png)
-
-4. Valitse **Jälleenmyyntianalyysimalli**.
+## <a name="view-a-dashboard-on-your-mobile-device"></a>Selaa raporttinäkymää mobiililaitteesta
+1. Avaa Power BI -sovellus laitteessasi ja kirjaudu sisään samoilla Power BI -tilisi tunnistetiedoilla, joita käytit selaimen Power BI-palvelussa.
  
-    ![Jälleenmyyntianalyysimalli](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-rs.png)
- 
-8. Valitse **Muodosta yhteys**.  
-  
-   ![Jälleenmyyntianalyysimalli - Yhdistä](./media/mobile-apps-quickstart-view-dashboard-report/retail16.png)
+1. Napsauta seuraavaksi **Työtilat**-kuvaketta ![työtilat-kuvake](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-iphone-workspaces-button.png), valitse **Omat työtilat** ja avaa sitten Jälleenmyyntianalyysimalli napsauttamalla sitä.
+
+    ![Raporttinäkymät Omassa työtilassa](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-dashboard.png)
    
-5. Power BI tuo mallin sekä lisää uuden koontinäytön, raportin ja tietojoukon omaan työtilaasi.
-   
-   ![Jälleenmyyntianalyysimallin raporttinäkymä](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-service-opportunity-sample.png)
+    Power BI -koontinäytöt näyttävät hieman erilaisilta mobiililaitteessasi kuin Power BI -palvelussa. Kaikki ruudut näkyvät saman levyisinä, ja ne on järjestetty peräkkäin ylhäältä alaspäin.
 
-Nyt voit siirtyä tarkastelemaan mallia Android-laitteessa.
+5. Napauta tähtikuvaketta ![Suosikkitähtikuvake](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-favorite-icon.png) otsikkorivillä, jos haluat tehdä tästä suosikkiraporttinäkymän. Kun teet näkymästä suosikin mobiilisovelluksessa, siitä tulee suosikki myös Power BI -palvelussa ja päinvastoin.
 
-## <a name="view-a-dashboard-on-your-android-device"></a>Selaa raporttinäkymää Android-laitteesta
-1. Avaa Power BI -sovellus Android-laitteessa ja kirjaudu sisään Power BI -tilisi tunnistetiedoilla, samoilla joita käytit selaimen Power BI-palvelussa.
-
-1.  Napauta yleistä siirtymispainiketta ![Yleinen siirtymispainike](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-iphone-global-nav-button.png).
-
-2.  Napauta**Työtilat** > **Oma työtila**
-
-    ![Oma työtila](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-workspaces.png)
-
-3. Siirry takaisin Jälleenmyyntianalyysimallin raporttinäkymään avataksesi sen.
- 
-    ![Raporttinäkymät Omassa työtilassa](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-open-retail.png)
-   
-    Raporttinäkymän nimen alapuolella oleva merkintä (tässä esimerkissä kirjain ”C”) kertoo miten kunkin raporttinäkymän tiedot on luokiteltu. Lue lisää [tietojen luokittelusta Power BI:ssä](../../service-data-classification.md).
-
-    Power BI -raporttinäkymät näyttävät hiukan erilaisilta Android-puhelimessasi. Kaikki ruudut näkyvät saman levyisinä, ja ne on järjestetty peräkkäin ylhäältä alaspäin.
-
-4. Napauta tähtikuvaketta ![Suosikkitähtikuvake](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-favorite-icon.png) otsikkorivillä tehdäksesi tästä suosikkiraporttinäkymän.
-
-    Kun teet näkymästä suosikin mobiilisovelluksessa, se on suosikki myös Power BI -palvelussa ja päinvastoin.
-
-4. Selaa alaspäin ja napauta viivakaaviota ”Tämän vuoden myynti, Viime vuoden myynti”.
+6. Selaa alaspäin ja napauta viivakaaviota ”Tämän vuoden myynti, Viime vuoden myynti”.
 
     ![Napauta ruutua siirtyäksesi tarkastelutilaan](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-tile-fave.png)
 
     Tämä avaa tarkastelutilan.
 
-7. Napauta tarkastelutilassa kaavion kohtaa Apr. Näet huhtikuun arvot esitettynä kaavion yläosassa.
+7. Napauta tarkastelutilassa kaavion kohtaa **Apr**. Huhtikuun arvot näkyvät kaavion yläreunassa.
 
     ![Ruutu tarkastelutilassa](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tile-focus.png)
 
-8. Napauta Raporttikuvaketta ![Raporttikuvake](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report-icon.png) oikeassa yläkulmassa. Tähän ruutuun liittyvä raportti avautuu vaakatilassa.
+8. Napauta Raporttikuvaketta ![Raporttikuvake](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report-icon.png) näytön alareunassa (Android-laitteissa tämä voi olla näytön yläreunassa). Tähän ruutuun liittyvä raportti avautuu vaakatilassa.
 
     ![Raportti vaakatilassa](././media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report.png)
 
-9. Napauta keltaista ”040 - Juniors” -kuplaa kuplakaaviossa. Huomaat sen korostavan liittyvät arvot muissa visualisoinneissa. 
+9. Napauta keltaista ”040 - Juniors” -kuplaa kuplakaaviossa. Huomaa, miten se korostaa liittyvät arvot muissa visualisoinneissa. 
 
     ![Korosta arvoja raportilla](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-cross-highlight.png)
 
-10. Sipaise ylöspäin nähdäksesi työkalurivin näytön alaosassa ja napauta kynäkuvaketta.
+10. Tuo työkalurivi näkyviin näytön alareunaan sipaisemalla ylöspäin, ja napauta **Lisää vaihtoehtoja (...)** .
 
     ![Napauta kynäkuvaketta](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-pencil.png)
 
-11. Napauta Lisää huomautus -työkalurivin hymiökuvaketta ja lisää raporttisivullesi hymiöitä.
+
+11. Vieritä luetteloa alapäin ja valitse **Lisää huomautus**.
+
+    ![Napauta kynäkuvaketta](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-pencil2.png)
+
+12. Napauta Huomautus-työkalurivillä hymiökasvokuvaketta ja napauta sitten raporttisivua, johon haluat lisätä hymiökasvoja.
  
     ![Huomautusten lisääminen sivulle](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-annotate.png)
 
-12. Napauta **Jaa** oikeassa yläkulmassa.
+13. Napauta seuraavaksi **Jaa** oikeassa yläkulmassa.
 
-1. Täytä sähköpostiosoitteet ja lisää halutessasi viesti.  
+14. Valitse tapa, jolla haluat jakaa raportin.  
 
     ![Uudet sähköpostiviestit tilannevedoksella ja linkillä](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-send-snapshot.png)
 
     Voit jakaa tämän tilannevedoksen kenen kanssa tahansa organisaatiosi sisällä tai ulkopuolella. Jos vastaanottaja on organisaatiossasi ja hänellä on oma Power BI -tili, hän voi myös avata Jälleenmyyntianalyysimallin raportin.
 
-## <a name="clean-up-resources"></a>Resurssien tyhjentäminen
+## <a name="clean-up-resources"></a>Puhdista resurssit
 
-Kun olet suorittanut pikaoppaan, voit halutessasi poistaa Jälleenmyyntianalyysimallin raporttinäkymän, raportin ja tietojoukon.
+Kun olet suorittanut tämän pikaoppaan, voit halutessasi poistaa Jälleenmyyntianalyysimallin raporttinäkymän, raportin ja tietojoukon.
 
-1. Avaa Power BI -palvelu (app.powerbi.com) ja kirjaudu sisään.
+1. Avaa Power BI -palvelu ([Power BI -palvelu](https://app.powerbi.com)) ja kirjaudu sisään.
 
-2. Valitse siirtymisruudussa **Työtilat** > **Oma työtila**.
+2. Valitse siirtymisruudussa **Oma työtila**.
 
-    Keltainen tähti kertoo, että kyse on suosikista.
-
-3. Valitse **Koontinäytöt**-välilehdessä Jälleenmyyntianalyysimallin raporttinäkymän vieressä oleva **Poista**-roskakorikuvake.
+3. Valitse Koontinäytöt-välilehti ja napsauta sitten roskakoria.
 
     ![Valitse Poista-roskakorikuvake](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-delete-retail.png)
 
-4. Siirry **Raportit**-välilehdelle ja toimi samoin Jälleenmyyntianalyysiraportin kohdalla.
+    Napsauta seuraavaksi Raportit-välilehteä ja toimi samoin.
 
-5. Siirry **Tietojoukot**-välilehdelle ja tee sama Jälleenmyyntianalyysin tietojoukolle.
+4. Valitse seuraavaksi Tietojoukot-välilehdessä **Lisää vaihtoehtoja** (...) ja valitse **Poista**. 
 
+
+    ![Valitse Poista tietojoukot](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-delete-retail-datasets.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Tässä pikaoppaassa kerrottiin raporttinäkymien ja raporttien tarkastelusta Android-laitteellasi. Lue lisää Power BI -palvelun käyttämisestä. 
+Tässä pikaoppaassa kerrottiin raporttinäkymien ja raporttien tarkastelusta mobiililaitteellasi. Lue lisää Power BI -palvelun käyttämisestä. 
 
 > [!div class="nextstepaction"]
-> [Pika-aloitus: Power BI -palvelussa liikkuminen](../end-user-experience.md)
+> [Pikaopas: Power BI -palvelussa liikkuminen](../end-user-experience.md)
 

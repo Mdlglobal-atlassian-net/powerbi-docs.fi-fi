@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 18062c770b93bcd1295026d841f923a81c11d84f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7aa0fb1c8707c18e583d0de6bbd602ef43291146
+ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851250"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548492"
 ---
 # <a name="using-microsoft-cloud-app-security-controls-in-power-bi-preview"></a>Microsoft Cloud App Securityn hallinnan käyttäminen Power BI:ssä (esikatselu)
 
@@ -52,7 +52,7 @@ Microsoft Cloud App Security käyttää käänteistä välityspalvelinarkkitehtu
 Istuntokäytäntöjen määrittämisprosessi on kuvattu tarkasti [Istuntokäytännöt](https://docs.microsoft.com/cloud-app-security/session-policy-aad)-artikkelissa. 
 
 ### <a name="set-anomaly-detection-policies-to-monitor-pbi-activities-recommended"></a>Poikkeamien tunnistamiskäytäntöjen määritys PBI-toimintojen seurantaa varten (suositus)
-Voit määrittää erikseen kohdennettavia Power BI:n poikkeamien tunnistuskäytäntöjä, jotka koskevat vain niitä käyttäjiä ja ryhmiä, jotka haluat sisällyttää käytäntöön tai jättää pois käytännöstä. [Lue lisää](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#scope-anomaly-detection-policies).
+Voit määrittää erikseen kohdennettavia Power BI:n poikkeamien tunnistuskäytäntöjä, jotka koskevat vain niitä käyttäjiä ja ryhmiä, jotka haluat sisällyttää käytäntöön tai jättää pois käytännöstä. [Lisätietoja](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#scope-anomaly-detection-policies).
 
 Cloud App Securityssa on myös kaksi erillistä, sisäistä tunnistusta Power BI:lle. [Lisätietoja on tämän asiakirjan myöhemmässä osiossa](#built-in-microsoft-cloud-app-security-detections-for-power-bi).
 
@@ -70,17 +70,18 @@ Microsoft Cloud App Security -tunnistuksien avulla järjestelmänvalvojat voivat
 
 * **Raporttien joukkojako** – havaitsee, kun käyttäjä jakaa useita eri raportteja yksittäisessä istunnossa.
 
-Näiden tunnistusten asetukset määritetään Cloud App Security -portaalissa. [Lue lisää](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#unusual-activities-by-user). 
+Näiden tunnistusten asetukset määritetään Cloud App Security -portaalissa. [Lisätietoja](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#unusual-activities-by-user). 
 
 ## <a name="power-bi-admin-role-in-microsoft-cloud-app-security"></a>Power BI:n järjestelmänvalvojan rooli Microsoft Cloud App Securityssa
 
 Power BI -järjestelmänvalvojille luodaan uusi rooli, kun Microsoft Cloud App Securitya käytetään Power BI:n kanssa. Kun kirjaudut sisään [Cloud App Security -portaaliin](https://portal.cloudappsecurity.com/) Power BI -järjestelmänvalvojana, sinulla on rajoitettu pääsy Power BI:n kannalta merkityksellisiin tietoihin, hälytyksiin, riskialttiisiin käyttäjiin, toimintalokeihin ja muihin tietoihin.
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset 
-Cloud App Securityn käyttäminen Power BI:n avulla on suunniteltu suojaamaan organisaatiosi sisältöä ja tietoja sekä tunnistuksia, jotka valvovat käyttäjien istuntoja ja niiden toimintaa. Kun käytät Cloud App Securitya Power BI:n kanssa, sinun kannattaa pitää mielessäsi muutama rajoitus:
+Cloud App Securityn käyttäminen Power BI:n avulla on suunniteltu suojaamaan organisaatiosi sisältöä ja tietoja sekä tunnistuksia, jotka valvovat käyttäjien istuntoja ja niiden toimintaa. Kun käytät Cloud App Securitya Power BI:n kanssa, sinun kannattaa huomioida muutamat seikat ja rajoitukset:
 
 * Microsoft Cloud App Security voi toimia vain Excel-, PowerPoint- ja PDF-tiedostoissa.
 * Jos haluat käyttää luottamuksellisuustunnisteiden ominaisuuksia Power BI:n istuntokäytännöissä, sinulla on oltava Azure Information Protection Premium P1- tai Premium P2 -käyttöoikeus. Microsoft Azure Information Protectionin voi ostaa joko erillisenä tuotteena tai jonkin Microsoftin käyttöoikeuspaketin kautta. Lisätietoja on artikkelissa [Azure Information Protectionin hinnoittelu](https://azure.microsoft.com/pricing/details/information-protection/). Lisäksi luottamuksellisuustunnisteiden on oltava käytössä Power BI -resursseissasi.
+* Istunnon hallinta on käytettävissä kaikkien käyttöjärjestelmien kaikkien pääkäyttöympäristöjen kaikissa selaimissa. Suosituksemme ovat Internet Explorer 11, Microsoft Edge (uusin), Google Chrome (uusin), Mozilla Firefox (uusin) tai Apple Safari (uusin). Power BI:n julkisia ohjelmointirajapintakutsuja ja muita ei-selainpohjaisia istuntoja ei tueta osana Microsoft Cloud App Securityn istunnon hallintaa. [Katso lisätietoja](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad#supported-apps-and-clients).
 
 > [!CAUTION]
 > * Microsoft Cloud App Securityn *Sisällön tarkastus* -käytäntö ei ole tällä hetkellä käytettävissä Power BI:ssä, kun Excel-tiedoston käytäntö on käytössä, joten älä määritä tätä käytäntöä Power BI:hin.
@@ -106,7 +107,7 @@ Luo istuntokäytäntö näyttöön tulevassa ikkunassa. Numeroiduissa vaiheissa 
 
   1. Valitse avattavasta **Käytäntömalli**-valikosta *Ei mallia*.
   2. Anna istuntokäytännöllesi asianmukainen nimi **Käytännön nimi** -ruutuun.
-  3. Valitse **istuntosäätimen tyypiksi** *Ohjaustiedosto ladattu (DLP:n kanssa)* .
+  3. Valitse **istuntosäätimen tyypiksi***Ohjaustiedosto ladattu (DLP:n kanssa)* .
 
       Valitse **Aktiviteetin lähde** -osiolle tarvittavat estokäytännöt. Suosittelemme estämään hallitsemattomat ja yhteensopimattomat laitteet. Valitse latausten esto, kun istunto on Power BI:ssä.
 
@@ -115,7 +116,7 @@ Luo istuntokäytäntö näyttöön tulevassa ikkunassa. Numeroiduissa vaiheissa 
         Kun vierität alaspäin, näet enemmän vaihtoehtoja. Vaihtoehdot näkyvät seuraavassa kuvassa lisäesimerkkien kera. 
 
   4. Valitse *luottamuksellisuustunnisteeksi* *Erittäin luottamuksellinen* tai parhaiten organisaatiollesi sopiva vaihtoehto.
-  5. Muuta **tarkastusmenetelmäksi** *Ei mikään*.
+  5. Muuta **tarkastusmenetelmäksi***Ei mikään*.
   6. Valitse **Estä**-asetus, joka sopii tarpeisiisi.
   7. Varmista, että luot tällaista toimintoa varten hälytyksen.
 

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 12/10/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 6e64ab2730b73339d6d22ba356cce6e644af52c5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 48efc58c7428961b70fb31a96f404139a75a1ac3
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861859"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75217862"
 ---
 # <a name="change-the-display-of-a-report-page"></a>Raportin sivun näyttökoon muuttaminen
 
@@ -52,6 +52,26 @@ Ihmiset lukevat raportteja useilla eri laitteilla, joissa on erikokoisia näytt�
     ![raportti näytetään näkyy koko näytössä](media/end-user-report-view/power-bi-full-screen.png)
 
 Kun poistut raportista, **näkymäasetuksia** ei tallenneta, vaan ne palautetaan oletuksiin. Jos haluat tallentaa näitä asetuksia, käytä [kirjanmerkkejä](end-user-bookmarks.md).
+
+## <a name="use-your-browser-to-change-page-display"></a>Vaihda sivunäyttöä selaimesi avulla
+
+Selaimen zoomaussäätimet lisäävät ja vähentävät käytettävissä olevaa sivualuetta. Zoomauksen pienentäminen laajentaa käytettävissä olevaa sivualuetta ja päinvastoin. 
+
+![lyhyt video, jossa näytetään selaimen zoomaussäätimet](media/end-user-report-view/power-bi-zoom.png)
+
+Koko selaimen koon muuttaminen on toinen tapa muuttaa raportin näyttökokoa. 
+
+![lyhyt video, jossa näytetään selaimen koon muuttaminen](media/end-user-report-view/power-bi-resize-browser.gif)
+
+## <a name="zoom-in-on-a-visual"></a>Lähennä visualisointia
+Joskus visualisoinnin yksityiskohtia on vaikea nähdä. Voit suurentaa visualisoinnin näyttöä. Lisätietoja on kohdassa [Tarkastelutila ja koko näytön tila](end-user-focus.md)
+
+### <a name="a-visual-in-focus-mode"></a>Visualisointi *tarkastelutilassa*
+
+![Näyttökuva tarkastelutilassa avoimena olevasta visualisoinnista.](media/end-user-report-view/power-bi-focus.png)
+
+### <a name="a-visual-in-full-screen-mode"></a>Visualisointi *koko näytön tilassa*
+![Näyttökuva koko näytön tilassa avoimena olevasta visualisoinnista.](media/end-user-report-view/power-bi-full-screen.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

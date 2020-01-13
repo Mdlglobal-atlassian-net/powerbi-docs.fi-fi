@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: b7256a04ccdca107ef0cd8e24af8b3170a3d68cc
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 95cf62057cdea001a438f4555aa3384c54efe4b5
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74834720"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75221938"
 ---
 # <a name="extending-visuals-with-report-page-tooltips"></a>Visualisointien laajentaminen raporttisivun työkaluvihjeiden avulla
 
@@ -65,11 +65,11 @@ Visuaaliset otsikot voidaan määrittää näyttämään sivun työkaluvihjeet v
 
 Kiinnostavaa kyllä, painikkeet, kuvat, teksti ruudut ja muodot voivat myös paljastaa visuaalisen otsikkosivun työkaluvihjeen.
 
-Seuraavassa esimerkissä näytetään, mitä tapahtuu, kun raportin käyttäjä siirtää kohdistimen visualisointiotsikon kohdalle.
+Seuraavassa esimerkissä näytetään, mitä tapahtuu, kun raportin käyttäjä siirtää kohdistimen [visualisointiotsikon](../desktop-visual-elements-for-reports.md) kohdalle.
 
 ![Raportin käyttäjä on pitänyt osoittimen visualisointiotsikon kuvakkeen (kysymysmerkkikuvake) päällä. Esiin on tullut runsaasti muotoiltu työkaluvihje.](media/report-page-tooltips/suggestion-add-help.png)
 
-Sivun työkaluvihje on näkyvissä. Se esittelee RTF-muotoista tekstiä, joka kuvaa visualisoinnin näyttämät mittarit. Työkaluvihje sisältää myös muodon (viivan).
+Sivun työkaluvihje on näkyvissä. Se näyttää RTF-muotoista tekstiä neljässä tekstiruudussa ja muodon (viivan). Sivun työkaluvihje välittää ohjeet kuvailemalla kutakin visualisoinnissa näkyvää lyhennettä.
 
 ## <a name="recommendations"></a>Suositukset
 
@@ -87,5 +87,6 @@ Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resurssei
 
 - [Power BI Desktopissa luotuihin raporttisivuihin perustuvien työkaluvihjeiden luominen](../desktop-tooltips.md)
 - [Työkaluvihjeiden mukautus Power BI Desktopissa](../desktop-custom-tooltips.md)
+- [Power BI -raporttien parantaminen visuaalisia elementtejä käyttämällä](../desktop-visual-elements-for-reports.md)
 - Kaveri kuutiossa -video: [Power BI -raporttisivun työkaluvihje – näin voit luoda sellaisen Power BI Desktopissa](https://www.youtube.com/watch?v=URTA7JZsAtw)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

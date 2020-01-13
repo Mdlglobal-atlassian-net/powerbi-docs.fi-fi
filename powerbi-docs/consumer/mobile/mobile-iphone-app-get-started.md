@@ -1,22 +1,22 @@
 ---
 title: iOS:n Power BI -mobiilisovelluksen käytön aloittaminen
 description: Lue, miten iOS:n Microsoft Power BI -mobiilisovellus tuo Power BI:n taskuusi, jotta pääset työtietoihisi mobiilisti paikallisesti ja pilvipalvelussa.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/27/2018
-ms.author: mshenhav
-ms.openlocfilehash: dd43df2a01175657b39c1e3dcebe5ae6a9433e42
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/08/2019
+ms.author: painbar
+ms.openlocfilehash: e3bfdf7fd53e71a4582a1f3e3ba08f55f2e9a290
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870199"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220323"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>iOS-laitteiden Power BI -mobiilisovelluksen käytön aloittaminen
-Microsoft Power BI for iOS -sovellus iPhonella, iPadilla tai iPod Touchilla tarjoaa BI-mobiilikäyttökokemuksen Power BI:lle, Power BI -raporttipalvelimelle ja Reporting Services -palveluille. Voit tarkastella ja käsitellä yrityksen koontinäyttöjä paikallisesti ja pilvipalvelussa missä tahansa, live-tilassa kosketusnäytöllisessä mobiilikäytössä. Tarkastele tietoja koontinäytöissä ja jaa sähköpostitse tai tekstiviestillä työtovereiden kanssa. Pysy ajan tasalla kaikkein ajantasaisimmilla tiedoilla [Apple Watchin](mobile-apple-watch.md) avulla.  
+Microsoft Power BI for iOS -sovellus iPhonessa tai iPadissa tarjoaa BI-mobiilikäyttökokemuksen Power BI:lle, Power BI -raporttipalvelimelle ja Reporting Services -palveluille. Voit tarkastella ja käsitellä yrityksen koontinäyttöjä paikallisesti ja pilvipalvelussa missä tahansa, live-tilassa kosketusnäytöllisessä mobiilikäytössä. Tarkastele tietoja koontinäytöissä ja jaa sähköpostitse tai tekstiviestillä työtovereiden kanssa. Pysy ajan tasalla kaikkein ajantasaisimmilla tiedoilla [Apple Watchin](mobile-apple-watch.md) avulla.  
 
 ![Power BI -mobiilisovellus iPhonessa tai iPadissa](./media/mobile-iphone-app-get-started/pbi_ipad_iphonedevices.png)
 
@@ -30,7 +30,7 @@ Voit iOS:n Power BI -mobiilisovelluksessa käsitellä koontinäyttöjä ja rapor
 Katso [Power BI -mobiilisovellusten uudet ominaisuudet](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="download-the-app"></a>Lataa sovellus
-[Lataa iOS-sovellus](https://go.microsoft.com/fwlink/?LinkId=522062 "Lataa iOS-sovellus") Apple-sovelluskaupasta iPhonelle, iPadille tai iPod Touchille.
+[Lataa iOS-sovellus](https://go.microsoft.com/fwlink/?LinkId=522062 "Lataa iOS-sovellus") Apple App Storesta iPhoneen tai iPadiin.
 
 Voit käyttää Power BI for iOS -sovellusta iOS 11:llä ja tätä uudemmilla käyttöjärjestelmillä. 
 
@@ -41,57 +41,32 @@ Jos et ole jo rekisteröitynyt, siirry osoitteeseen [powerbi.com](https://powerb
 ## <a name="get-started-with-the-power-bi-app"></a>Power BI -sovelluksen käytön aloittaminen
 1. Avaa Power BI -sovellus iOS-laitteessasi.
 2. Jos haluat tarkastella Power BI -koontinäyttöjä, napauta **Power BI**.  
-   Voit tarkastella Reporting Services -mobiiliraportteja ja suorituskykyilmaisimia napauttamalla **SQL Server Reporting Services**.
+   Voit tarkastella Reporting Services -mobiiliraportteja ja suorituskykyilmaisimia napauttamalla **Raporttipalvelin**.
    
    ![Kirjaudu Power BI -mobiilisovellukseen](./media/mobile-iphone-app-get-started/power-bi-connect-to-login.png)
    
-   Kun olet sovelluksessa, napauta yleistä siirtymispainiketta ![Yleinen siirtymispainike](./././media/mobile-iphone-app-get-started/power-bi-iphone-global-nav-button.png) voit siirtyä näiden kahden välillä vasemmassa yläkulmassa. 
+   Kun olet sovelluksessa, voit vaihtaa näiden kahden välillä napauttamalla tilin profiilikuvaa näytön vasemmassa yläkulmassa. 
 
 ## <a name="try-the-power-bi-and-reporting-services-samples"></a>Kokeile Power BI- ja Reporting Services -malleja
-Voit kokeilla Power BI- ja Reporting Services -malleja jopa ilman rekisteröitymistä. Kun olet ladannut sovelluksen, voit tarkastella malleja tai aloittaa sovelluksen käytön. Voit siirtyä takaisin malleihin milloin tahansa yleiseltä siirtymissivulta.
+Voit tarkastella ja kokeilla Power BI- ja Reporting Services -malleja jopa ilman rekisteröitymistä.
 
-### <a name="power-bi-samples"></a>Power BI -mallit
-Voit tarkastella ja käsitellä Power BI -koontinäytön malleja, mutta on muutamia asioita, joita et voi niille tehdä. Et voi avata koontinäyttöjen taustalla olevia raportteja, jakaa malleja muiden kanssa tai tehdä niistä suosikkejasi.
+Voit käyttää malleja valitsemalla siirtymispalkissa **Lisää asetuksia** (...) ja valitsemalla **Mallit**.
 
-1. Napauta yleistä siirtymispainiketta ![Yleinen siirtymispainike](./././media/mobile-iphone-app-get-started/power-bi-iphone-global-nav-button.png) vasemmassa yläkulmassa.
-2. Napauta oikeassa yläkulmassa näkyvää ![hammaspyöräkuvaketta](././media/mobile-iphone-app-get-started/power-bi-ios-gear-icon.png) ja napauta **Power BI -mallit**.
-3. Valitse rooli ja tutustu tämän roolin mallikoontinäyttöön.  
-   
+Power BI -mallien jälkeen tulee useita raporttipalvelimen malleja.
+
    ![Power BI -mobiilimallit](./media/mobile-iphone-app-get-started/power-bi-iphone-powerbi-samples.png)
    
    > [!NOTE]
-   > Kaikki ominaisuudet eivät ole käytettävissä malleissa. Et esimerkiksi voi tarkastella malliraportteja koontinäytön taustalla. 
+   > Kaikki ominaisuudet eivät ole käytettävissä malleissa. Et voi esimerkiksi tarkastella koontinäyttöjen taustalla olevia malliraportteja, et voi jakaa malleja muiden kanssa etkä voi tehdä niistä suosikkeja. 
    > 
-   > 
-
-### <a name="reporting-services-mobile-report-samples"></a>Reporting Services -mobiiliraportin mallit
-1. Napauta yleistä siirtymispainiketta ![Yleinen siirtymispainike](./././media/mobile-iphone-app-get-started/power-bi-iphone-global-nav-button.png) vasemmassa yläkulmassa.
-2. Napauta oikeassa yläkulmassa näkyvää ![hammaspyöräkuvaketta](././media/mobile-iphone-app-get-started/power-bi-ios-gear-icon.png) ja napauta **Reporting Services -mallit**.
-3. Avaa joko vähittäismyyntiraporttien tai myyntiraporttien kansio niiden suorituskykymittareiden ja mobiiliraporttien katselemiseksi.
-   
-   ![Reporting Services -mallit Power BI-mobiilisovelluksessa](./media/mobile-iphone-app-get-started/power-bi-reporting-services-samples.png)
+   >
 
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Sisällön etsiminen Power BI -mobiilisovelluksissa
-Koontinäytöt ja raportit tallennetaan eri paikkoihin Power BI -mobiilisovelluksissa riippuen siitä, mistä ne ovat peräisin. Lue [sisällön etsimisestä mobiilisovelluksissa](mobile-apps-quickstart-view-dashboard-report.md). Lisäksi voit aina hakea kaikkea, mitä sinulla on Power BI -mobiilisovelluksissa. 
 
-![Siirtymisruutu](./media/mobile-iphone-app-get-started/power-bi-iphone-left-nav.png)
+Napauta otsikon suurennuslasia ja aloita Power BI -sisällön hakeminen.
 
-Lue lisää [sisällön etsimisestä mobiilisovelluksissa](mobile-apps-quickstart-view-dashboard-report.md).
-
-## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>Suosikkikoontinäyttöjen, suorituskykyilmaisimien ja raporttien tarkastelu
-Näet mobiilisovellusten Suosikit-sivulta kaikki Power BI -suosikkikoontinäyttösi yhdessä Power BI -raporttipalvelimen ja Reporting Services -suorituskykyilmaisinten ja raporttien kanssa. Kun teet koontinäytöstä *suosikin* Power BI -mobiilisovelluksessa, voit käyttää sitä kaikista laitteistasi käsin, kuten selaimesi Power BI -palvelusta. 
-
-* Napauta **Suosikit**.
-  
-   ![Suosikit siirtymisruudussa](./media/mobile-iphone-app-get-started/power-bi-iphone-favorites-nav.png)
-  
-   Näet kaikki suosikkisi yhdessä tällä sivulla:
-  
-   ![Suosikit-sivu](./media/mobile-iphone-app-get-started/power-bi-iphone-faves-report-server-number-callouts.png)
-  
-  1. Koontinäytöt Power BI -palvelussa
-  2. Suorituskykyilmaisimet Power BI -raporttipalvelimella
-  3. Power BI -raportit Power BI-raporttipalvelimella
+## <a name="view-your-favorite-dashboards-and-reports"></a>Suosikkikoontinäyttöjen ja -raporttien tarkastelu
+Tarkastele Suosikit-sivuasi valitsemalla siirtymispalkissa **Suosikit** (![](./media/mobile-iphone-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)). 
 
 Lue lisää [suosikeista Power BI -mobiilisovelluksissa](mobile-apps-favorites.md).
 

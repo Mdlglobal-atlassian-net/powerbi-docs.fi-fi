@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/29/2019
+ms.date: 12/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 934f045e2546893c48211729402a773b4bbe2aa0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 044952c6ce5e3b1550067f9d288f8eab02b868bb
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696757"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223725"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Suuret mallit Power BI Premiumissa (esikatselu)
 
@@ -94,7 +94,7 @@ Ota huomioon poiston vaikutukset suuriin malleihin. Huolimatta siitä, että tie
 
 ## <a name="checking-dataset-size"></a>Tietojoukon koon tarkistus
 
-Kun historiatiedot on ladattu, voit käyttää [SSMS-](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) [XMLA-päätepistettä](service-premium-connect-tools.md), jotta voit tarkistaa arvioidun tietojoukon koon Mallin ominaisuudet -ikkunassa.
+Kun historiatiedot on ladattu, voit käyttää [SSMS-](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms)[XMLA-päätepistettä](service-premium-connect-tools.md), jotta voit tarkistaa arvioidun tietojoukon koon Mallin ominaisuudet -ikkunassa.
 
 ![Arvioitu tietojoukon koko](media/service-premium-large-models/estimated-dataset-size.png)
 
@@ -118,23 +118,4 @@ Muista seuraavat rajoitukset, kun käytät suuria malleja:
 - **Multi-Geo -tuki**: Premium-tiedostojen käytössä olevat tietojoukot eivät toimi kapasiteeteissa, joissa myös [Multi-Geo](service-admin-premium-multi-geo.md) on käytössä.
 
 - **Lataa Power BI Desktop**: Jos tietojoukko on tallennettu Premium-tiedostoihin, [lataus .pbix-](service-export-to-pbix.md) tiedostoina epäonnistuu.
-- **Tuetut alueet**: Seuraavat alueet tukevat suuria malleja.
-  - Itä-Australia
-  - Kaakkois-Australia
-  - Keski-Yhdysvallat
-  - Itä-Aasia
-  - Itäinen Yhdysvallat
-  - Itäinen Yhdysvallat 2
-  - Japani, itä
-  - Japani, länsi
-  - Korea, keskinen
-  - Korea, eteläinen
-  - Yhdysvaltojen pohjoinen keskiosa
-  - Pohjois-Eurooppa
-  - Yhdysvaltojen eteläinen keskiosa
-  - Kaakkois-Aasia
-  - Yhdistynyt kuningaskunta, etelä
-  - Yhdistynyt kuningaskunta, länsi
-  - Länsi-Eurooppa
-  - Länsi-Yhdysvallat
-  - Länsi-Yhdysvallat 2
+- **Tuetut alueet**: Suuria malleja tuetaan kaikilla Azure-alueilla, jotka tukevat Premium-tiedostosäilöä. Lisätietoja saat [tuotteiden alueellisen saatavuuden](https://azure.microsoft.com/global-infrastructure/services/?products=storage) sivulta.

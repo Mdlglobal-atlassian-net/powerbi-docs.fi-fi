@@ -1,345 +1,348 @@
 ---
 title: Power BI Desktopin käytön aloittaminen
-description: Power BI Desktopin käytön aloittaminen
+description: Power BI Desktopin käytön aloittaminen.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 12/09/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e533313e20c4e1f994c2ae3d1e552170aef2cbd2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b32eee568ba560e95899cf0965a11f3bb037aed6
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73868007"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75222451"
 ---
-# <a name="getting-started-with-power-bi-desktop"></a>Power BI Desktopin käytön aloittaminen
-Tervetuloa **Power BI Desktopin aloitusoppaaseen**. Tässä lyhyessä esittelyssä kerrotaan, miten Power BI Desktop toimii ja mitä sillä voi tehdä, ja autetaan sinua rakentamaan tehokkaita tietomalleja ja upeita raportteja, jotka vahvistavat liiketoimintatietojasi. 
+# <a name="get-started-with-power-bi-desktop"></a>Power BI Desktopin käytön aloittaminen
+Tervetuloa Power BI Desktopin aloitusoppaaseen. Tässä esittelyssä kerrotaan, miten Power BI Desktop toimii, mitä sillä voi tehdä ja miten voit luoda luotettavia tietomalleja ja hienoja raportteja liiketoimintatietojen kehittämiseksi.
 
-Katsotko mieluummin lukemisen sijaan? Voit myös [tutustua aloitusvideoomme](desktop-videos.md). Jos haluat seurata videota vastaavilla mallitiedoilla, voit [ladata tämän Excel-mallityökirjan](https://go.microsoft.com/fwlink/?LinkID=521962).
+Saat lyhyen yleiskatsauksen Power BI Desktopin toiminnoista ja tutustumalla tämän oppaan näyttöihin vain muutamassa minuutissa. Jos haluat kattavamman käsityksen, voit lukea jokaisen osan, noudattaa vaiheita ja lopuksi julkaista itse luomasi Power BI Desktop -tiedoston [Power BI -palveluun](https://app.powerbi.com/) ja jakaa sen muiden kanssa.
 
-![](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
+![Power BI Desktop -raportti](media/desktop-getting-started/hero.png)
 
-Power BI Desktopin avulla voit luoda kyselykokoelmia, tietoyhteyksiä ja raportteja, jotka on helppo jakaa muiden kanssa. Power BI Desktopissa yhdistyvät Microsoftin taatut tekniikat – tehokas kyselyohjelma, tietomallinnus ja visualisoinnit – ja se toimii saumattomasti [**Power BI -palvelun**](https://app.powerbi.com/) verkkoversion kanssa.
-
-Yhdessä **Power BI Desktop** (jossa analyytikot ym. voivat luoda tehokkaita tietoyhteyksiä, malleja ja raportteja) ja [**Power BI -palvelu**](https://preview.powerbi.com/) (jossa Power BI Desktopin raportit voidaan jakaa, jotta käyttäjät voivat tarkastella ja ja käyttää niitä) tarjoavat uusia merkityksellisiä tietoja, jotka on helpompi mallintaa, rakentaa, jakaa ja laajentaa.
-
-Tietoanalyytikot tulevat huomaamaan, että Power BI Desktop on tehokas, joustava ja erittäin helppo työkalu käyttää, mallintaa tietoja, rakentaa tehokkaita tietomalleja ja luoda hyvin jäsenneltyjä raportteja.
-
-## <a name="how-to-use-this-guide"></a>Tämän oppaan käyttäminen
-Voit käyttää tätä opasta muutamalla eri tavalla – voit selailla sitä nopeasti tai lukea läpi jokaisen osan, jolloin saat vahvan käsityksen siitä, miten Power BI Desktop toimii.
-
-Jos sinulla on kiire, voit silmäillä oppaan läpi muutamassa minuutissa ja silti saada hyvän kuvan siitä, miten Power BI Desktop toimii ja miten sitä käytetään. Suurin osa tästä oppaasta koostuu näytöistä, jotka kertovat, miten Power BI Desktop toimii.
-
-Jos haluat kattavamman käsityksen, voit lukea jokaisen osan, noudattaa vaiheita ja lopuksi julkaista itse luomasi Power BI Desktop -tiedoston **Power BI** -palveluun ja jakaa sen muiden kanssa.
-
->[!NOTE]
->**Power BI:stä** on myös erillinen erikoisversio, [**Power BI -raporttipalvelin**](report-server/get-started.md), joka on tarkoitettu asiakkaille, joiden tietoja ja raportteja on säilytettävä paikallisesti. **Power BI Desktopista** on myös saatavilla erillinen erikoisversio, **Power BI Desktop Power BI -raporttipalvelimelle**, joka toimii ainoastaan Power BI:n raporttipalvelinversion kanssa. Tämä artikkeli käsittelee **Power BI Desktopin** perusversiota.
-
+Voit myös katsoa [Power BI Desktopin käytön aloittaminen](https://www.youtube.com/watch?v=Qgam9M8I0xA) -videon ja ladata [Talousmallin](https://go.microsoft.com/fwlink/?LinkID=521962) Excel-työkirjan, jota voit seurata samaan aikaan videon kanssa.
 
 ## <a name="how-power-bi-desktop-works"></a>Näin Power BI Desktop toimii
-Power BI Desktopin avulla voit *yhdistää tietoihin* (yleensä useita tietolähteitä), *muotoilla niitä* (kyselyillä, jotka luovat oivaltavia ja vakuuttavia tietomalleja) ja käyttää mallia *raporttien luomiseen* (muut voivat hyödyntää, käyttää pohjana ja jakaa raportteja).
+Power BI Desktopin avulla voit tehdä seuraavia toimia:
+1. Voit yhdistää tietoihin, mukaan lukien useisiin tietolähteisiin.
+1. Voit muotoilla tietoja kyselyillä, joilla voidaan luodaan oivaltavia ja vaikuttavia tietomalleja.
+1. Voit luoda visualisointeja ja raportteja tietomallien avulla. 
+1. Voit jakaa raportin tiedostoja muiden kanssa, jolloin he voivat hyödyntää ja jakaa niitä itse. Voit jakaa Power BI Desktopin *.pbix*-tiedostoja, kuten mitä tahansa muitakin tiedostoja, mutta tehokkain tapa on ladata ne [Power BI -palveluun](https://preview.powerbi.com/). 
 
-Kun olet suorittanut vaiheet eli yhdistämisen, muotoilun ja raportoinnin, voit tallentaa työsi Power BI Desktopin .pbix-tiedostomuodossa. Power BI Desktop -tiedostoja voi jakaa minkä tahansa muun tiedoston tapaan, mutta paras tapa on ladata (jakaa) ne [**Power BI -palveluun**](https://preview.powerbi.com/). 
+Power BI Desktop integroi Microsoftin taattujen kyselyohjelma-, tietomallinnus-ja visualisointitekniikoiden kanssa. Tietoanalyytikot ja muut voivat luoda kyselykokoelmia, tietoyhteyksiä, malleja ja raportteja ja jakaa ne helposti muiden kanssa. Power BI Desktopin ja Power BI -palvelun yhdistelmällä merkityksellisiä tietoja on helpompi mallintaa, luoda, jakaa ja laajentaa.
 
 Power BI Desktop keskittää, yksinkertaistaa, tehostaa ja nopeuttaa muutoin hajaantunutta, irrallista ja hankalaa liiketoimintatietojen säilöjen ja raporttien suunnittelu- ja luontiprosessia.
+Oletko valmis kokeilemaan? Aloitetaan.
 
-Oletko valmis kokeilemaan? Aloitetaanpa.
-
-
+> [!NOTE]
+> Power BI:stä on myös erillinen erikoisversio, [Power BI -raporttipalvelin](report-server/get-started.md), joka on tarkoitettu paikallisesti säilytettäville tiedoille ja raporteille. Power BI -raporttipalvelin käyttää Power BI Desktopista erillistä erikoisversiota, jonka nimi on Power BI Desktop Power BI -raporttipalvelimelle ja joka toimii ainoastaan Power BI:n raporttipalvelinversion kanssa. Tämä artikkeli käsittelee Power BI Desktopin perusversiota.
 
 ## <a name="install-and-run-power-bi-desktop"></a>Power BI Desktopin asentaminen ja suorittaminen
-Voit ladata Power BI Desktopin **Power BI** -palvelusta valitsemalla **ratas**kuvakkeen ja sitten **Power BI Desktop**.
+Voit ladata Power BI Desktopin siirtymällä [Power BI Desktopin lataussivulle](https://powerbi.microsoft.com/desktop) ja valitsemalla **Lataa ilmaiseksi**. Voit tarkastella latausasetuksia valitsemalla [Näytä lataus- tai kieliasetukset](https://www.microsoft.com/download/details.aspx?id=58494). 
 
-![](media/desktop-getting-started/gsg_download.png)
+Voit myös ladata Power BI Desktopin Power BI ‑palvelusta. Valitse yläreunan valikkoriviltä **Lataa**-kuvake ja valitse sitten **Power BI Desktop**.
 
-Power BI Desktop asennetaan sovelluksena, jonka voit suorittaa työpöydältäsi.
+![Power BI Desktopin lataaminen Power BI ‑palvelusta](media/desktop-getting-started/gsg_download.png)
 
-![](media/desktop-getting-started/designer_gsg_install.png)
+Valitse Microsoft Store -sivulla **Nouda** ja asenna Power BI Desktop tietokoneeseesi noudattamalla kehotteita. Käynnistä Power BI Desktop Windowsin **aloitusvalikosta** tai Windowsin tehtäväpalkin kuvakkeesta.
 
-Kun käynnistät Power BI Desktopin, näyttöön avautuu *Tervetuloa*-näyttö.
+Kun Power BI Desktop käynnistyy ensimmäistä kertaa, näkyviin tulee **tervetulonäyttö**.
 
-![](media/desktop-getting-started/designer_gsg_startsplashscreen.png)
+**Tervetulonäytössä** voit **noutaa tietoja**, tarkastella **viimeaikaisia lähteitä**, avata viimeaikaisia raportteja, **avata muita raportteja** tai valita muita linkkejä. Voit myös valita, näytetäänkö **tervetulonäyttö** aina käynnistyksen yhteydessä. Sulje **tervetulonäyttö** valitsemalla Sulje-kuvake.
 
-Voit **noutaa tiedot**, katsoa **viimeaikaiset lähteet** tai **avata muita** **raportteja** suoraan *Tervetuloa*-näytössä (vasemmanpuoleisen ruudun linkeistä). Jos suljet näytön (valitse **x** ikkunan oikeassa yläkulmassa), Power BI Desktopin **Raportti**-näkymä avautuu.
+![Power BI Desktopin tervetulonäyttö](media/desktop-getting-started/designer_gsg_startsplashscreen.png)
 
-![](media/desktop-getting-started/designer_gsg_blankreport.png)
+Power BI Desktopin vasemmassa reunassa on kolmen Power BI Desktop -näkymän kuvakkeet: ylhäältä alaspäin ne ovat **Raportti**, **Tiedot** ja **Suhteet**. Nykyinen näkymä ilmaistaan vasemmalla olevan keltaisen palkin avulla, ja voit vaihtaa näkymää valitsemalla minkä tahansa kuvakkeen. 
 
-Power BI Desktopissa on kolme näkymää: **Raportti**-, **Tiedot**- ja **Suhteet**-näkymät. Power BI Desktop sisältää myös **kyselyeditorin**, joka avautuu erilliseen ikkunaan. **Kyselyeditorissa** voit laatia kyselyjä, muuntaa tietoja, ladata sitten tarkennetun tietomallin Power BI Desktopiin ja luoda raportteja.
+![Kolme Power BI Desktop -näkymän kuvaketta](media/desktop-getting-started/designer_gsg_viewtypes.png)
 
-Power BI Desktopin vasemmassa reunassa on kolme näkymäkuvaketta, jotka näkyvät seuraavassa ruudussa: ylhäältä alaspäin ne ovat **Raportti**, **Tiedot** ja **Suhteet**. Keltainen palkki vasemmalla on merkki parhaillaan käytössä olevasta näkymästä. Tässä tapauksessa **Raportti**-näkymä on käytössä. Voit vaihtaa näkymää valitsemalla minkä tahansa kolmesta kuvakkeesta.
+**Raporttinäkymä** on oletusnäkymä. 
 
-![](media/desktop-getting-started/designer_gsg_viewtypes.png)
+![Power BI Desktopin Raporttinäkymä](media/desktop-getting-started/designer_gsg_blankreport.png)
 
-Kun Power BI Desktop on asennettu, voit muodostaa yhteyden tietoihin, muotoilla niitä ja luoda raportteja (yleensä juuri tässä järjestyksessä). Seuraavissa osissa esittelemme jokaisen vaiheen erikseen.
+Power BI Desktop sisältää myös **Power Query -editorin**, joka avautuu erilliseen ikkunaan. **Power Query -editorissa** voit laatia kyselyjä, muuntaa tietoja, ladata sitten tarkennetun tietomallin Power BI Desktopiin ja luoda raportteja.
 
 ## <a name="connect-to-data"></a>Tietoihin yhdistäminen
-Kun Power BI Desktop on asennettu, olet valmis muodostamaan yhteyden alati laajenevaan tietomaailmaan. Kyselyikkunassa on käytettävissä *kaikenlaisia* tietolähteitä. Seuraavassa kuvassa näytetään, miten voit yhdistää tietoihin, valitsemalla **Aloitus**-valintanauhan ja sitten **Nouda tiedot \> Lisää**.
+Kun Power BI Desktop on asennettu, olet valmis muodostamaan yhteyden alati laajenevaan tietomaailmaan. Jos haluat tarkastella useita käytettävissä olevia tietolähdetyyppejä, valitse **Nouda tiedot** > **Lisää** Power BI Desktopin **Aloitus**-välilehdessä ja selaa **Nouda tiedot** -ikkunassa **kaikkien** tietolähteiden luetteloa. Tässä pikaesittelyssä yhdistät muutamaan eri **verkko**tietolähteeseen.
 
- ![](media/desktop-getting-started/getdatavidsmall.gif)
+![Valitse Verkkotietolähde Nouda tiedot -kohdassa ](media/desktop-getting-started/getdataweb.png)
 
-Tätä pikaesittelyä varten yhdistämme muutamaan eri **verkko**tietolähteeseen.
+Kuvittele, että olet tietoanalyytikko, joka työskentelee aurinkolasien jälleenmyyjälle. Haluat auttaa asiakastasi kohdistamaan myynnin sellaisille alueille, joilla aurinko paistaa eniten. Bankrate.comin [parhaimmista ja huonoimmista osavaltioista eläkkeelle jäämiseen](https://www.bankrate.com/retirement/best-and-worst-states-for-retirement/) kertovalla sivulla on kiinnostavia tietoja tästä asiasta.
 
-Kuvittele olevasi jäämässä eläkkeelle; haluat elää paikassa, jossa paistaa aurinko ja jossa on suotuisampi verotus ja hyvä terveydenhuolto. Tai ehkä olet tietoanalyytikko ja haluat auttaa näillä tiedoilla asiakkaitasi. Saatat esimerkiksi haluta auttaa aurinkolasien jälleenmyyjääsi kohdistamaan myynti sellaisille alueille, joilla aurinko paistaa eniten.
+Valitse Power BI Desktopin **Aloitus**-välilehdessä **Nouda tiedot** > **Verkko**, jos haluat muodostaa yhteyden verkkotietolähteeseen. 
 
-Joka tapauksessa seuraava verkkoresurssi sisältää kiinnostavaa tietoa näistä ja muista aiheista:
+![Verkkotietolähteen valitseminen](media/desktop-getting-started/gsg_syw_2.png)
 
-[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+Liitä **Verkosta**-valintaikkunassa osoite *https:\//www.bankrate.com/retirement/best-and-worst-states-for-retirement/* **URL**-kenttään ja valitse **OK**. 
 
-Valitse **Nouda tiedot \> Verkko**  ja liitä osoite.
+![Liitä verkko-osoite Verkosta-valintaikkunaan](media/desktop-getting-started/gettingstarted_8.png)
 
- ![](media/desktop-getting-started/gettingstarted_8.png)
+Pyydettäessä valitse **Käytä WWW-sisältöä** -näytössä **Yhdistä** anonyymin käytön mahdollistamiseksi. 
 
-Kun valitset **OK**, Power BI Desktopin **Kysely**-toiminto käynnistyy. Kysely muodostaa yhteyden verkkoresurssiin, ja **Siirtymistoiminnon** ikkuna palauttaa verkkosivulta löydetyn sisällön. Tässä tapauksessa se löysi taulukon (*Table 0*) ja yleisen verkkoasiakirjan. Meitä kiinnostaa taulukko, joten valitsemme sen luettelosta. **Siirtymistoiminnon** ikkuna näyttää esikatselun.
+Power BI Desktopin kyselytoiminto alkaa toimia ja muodostaa yhteyden verkkoresurssiin. **Siirtymistoiminto**-ikkuna palauttaa verkkosivulta löytyneet tiedot, eli tässä tapauksessa taulukon, jonka nimi on **Parhaat ja huonoimmat osavaltiot eläkkeelle jäämiseen**, sekä asiakirjan. Sinua kiinnostaa taulukko, joten valitset sen luettelosta.
 
- ![](media/desktop-getting-started/datasources_fromnavigatordialog.png)
+Tässä vaiheessa voit valita **Lataa**, jos haluat ladata6 taulukon, tai **Muunna tiedot**, jos haluat tehdä muutoksia taulukkoon ennen sen lataamista.
 
-Tässä vaiheessa voimme muokata kyselyä ennen taulukon lataamista valitsemalla ikkunan alareunassa **Muokkaa** tai voimme ladata taulukon.
+![Taulukon esikatselu verkkosivulta](media/desktop-getting-started/datasources_fromnavigatordialog.png)
 
-Kun valitsemme **Muokkaa**, kyselyeditori käynnistyy ja tyypillinen taulukkonäkymä näytetään. **Kyselyasetukset**-ruutu avautuu (jos ei, valitse valintanauhassa **Näytä** ja avaa **Kyselyasetukset**-ruutu valitsemalla **Näytä \> kyselyasetukset**). Se näyttää tältä.
+Kun valitset **Muunna tiedot**, Power Query -editori käynnistyy ja näyttää edustavan näkymän taulukosta. **Kyselyasetukset**-ruutu on oikealla puolella, tai voit aina tuoda sen näkyviin valitsemalla **Kyselyasetukset** Power Query -editorin **Näytä**-välilehdessä. 
 
- ![](media/desktop-getting-started/designer_gsg_editquery.png)
+![Power Query -editori Kyselyasetukset näkyvissä](media/desktop-getting-started/designer_gsg_editquery.png)
 
 Lisätietoa tietoihin yhdistämisestä on ohjeartikkelissa [Tietoihin yhdistäminen Power BI Desktopissa](desktop-connect-to-data.md).
 
-> [!NOTE]
-> Tässä artikkelissa mainitut taulukkotiedot saattavat muuttua ajan myötä. Näin ollen suoritettavat toimenpiteet saattavat erota seuraavaksi mainittavista. Sinun on siis oltava luova toimenpiteiden ja tulosten suhteen, mutta sehän vain tekee oppimisesta hauskempaa. 
-
-Seuraavassa osassa muokkaamme tietoja tarpeittemme mukaan. Yhdistettyjen tietojen muokkaamista kutsutaan tietojen *muotoilemiseksi*.
-
-## <a name="shape-and-combine-data"></a>Tietojen muotoileminen ja yhdistäminen
-Nyt kun tietolähde on yhdistetty, meidän on muokattava tietoja tarpeittemme mukaan. Joskus muokkaaminen tarkoittaa tietojen *muuntamista*, kuten sarakkeiden tai taulukoiden nimeämistä uudelleen, tekstin muuntamista numeroiksi, rivien poistamista, ensimmäisen rivin määrittämistä otsikoiksi ja niin edelleen.
-
-Power BI Desktopin kyselyeditorissa käytetään runsaasti hiiren kakkospainikkeella avattavien valikoiden toimintoja sekä valintanauhan toimintoja. Useimmat toiminnot, jotka ovat valittavissa **Muunna**-valintanauhassa, ovat käytettävissä myös napsauttamalla kohdetta (esimerkiksi saraketta) hiiren kakkospainikkeella ja valitsemalla sitten toiminto näyttöön avautuvasta valikosta.
-
 ## <a name="shape-data"></a>Tietojen muotoileminen
-Kun muotoilet tietoja **kyselyeditorissa**, annat vaiheittaiset ohjeet (jotka **kyselyeditori** toteuttaa puolestasi) tietojen muokkaamiseksi, kun **kyselyeditori** lataa ja näyttää tiedot. Tämä ei vaikuta alkuperäiseen tietolähteeseen, sillä vain tätä tietonäkymää muokataan eli *muotoillaan*.
+Nyt kun tietolähde on yhdistetty, voit muokata tietoja tarpeidesi mukaan. Jos haluat *muotoilla* tietoja, anna Power Query -editorille vaiheittaiset ohjeet tietojen muokkaamiseen niiden lataamisen ja esittämisen aikana. Muotoilu ei vaikuta alkuperäiseen tietolähteeseen, ainoastaan tähän tiettyyn näkymään tiedoista. 
 
-Määrittämäsi vaiheet (esimerkiksi taulukon nimeäminen uudelleen, tietotyypin muuntaminen tai sarakkeiden poistaminen) kirjataan **kyselyeditoriin**. Nämä vaiheet suoritetaan sitten aina, kun kysely muodostaa yhteyden tietolähteeseen, jotta tiedot muotoillaan aina määrittämälläsi tavalla. Tämä prosessi suoritetaan aina, kun käytät Power BI Desktopin kyselyä tai kun joku käyttää jaettua kyselyäsi esimerkiksi **Power BI** -palvelussa. Vaiheet kirjataan järjestyksessä **Kyselyasetukset**-ruudun **Käytössä olevat vaiheet** -kohtaan.
+> [!NOTE]
+> Tässä oppaassa käytetyt taulukkotiedot saattavat muuttua ajan kuluessa. Näin ollen suoritettavat toimenpiteet saattavat vaihdella. Sinun on siis oltava luova toimenpiteiden ja tulosten suhteen, mutta sehän vain tekee oppimisesta hauskempaa. 
 
-Seuraavasta kuvasta näet **Kyselyasetukset**-ruudun kyselylle, jota on muotoiltu. Käymme läpi kaikki nämä vaiheet seuraavissa kappaleissa.
+Muotoilu voi tarkoittaa tietojen *muuttamista*, kuten sarakkeiden tai taulukoiden nimeämistä uudelleen, rivien tai sarakkeiden poistamista tai tietotyyppien muuttamista. Power Query -editori tallentaa nämä vaiheet järjestyksessä **Käytössä olevat vaiheet** -kohdassa **Kyselyasetukset**-ruudussa. Aina, kun tämä kysely muodostaa yhteyden tietolähteeseen, nämä vaiheet suoritetaan, joten tiedot muotoillaan aina määrittämälläsi tavalla. Tämä prosessi suoritetaan, kun käytät Power BI Desktopin kyselyä tai kun joku käyttää jaettua kyselyäsi esimerkiksi Power BI -palvelussa. 
 
- ![](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
+Huomaa, että **Käytössä olevat vaiheet** **kyselyasetuksissa** sisältävät jo muutamia vaiheita. Voit valita kunkin vaiheen, jotta näet sen vaikutuksen Power Query -editorissa. Määritit ensin verkkolähteen, minkä jälkeen esikatselit taulukkoa **Siirtymistoiminto**-ikkunassa. Kolmannessa vaiheessa **Muutettu tyyppi** Power BI tunnisti kokonaislukutiedot niiden tuonnin aikana ja muutti automaattisesti alkuperäisen verkon **Teksti**-*tietotyypin* **kokonaisluvuiksi**. 
 
-Palataan eläketietoihin, jotka löysimme yhdistämämme verkkotietolähteen kautta, ja muotoillaan ne tarpeittemme mukaan.
+![Kyselyasetukset-ruutu ja kolme käytössä olevaa vaihetta](media/desktop-getting-started/designer_gsg_appliedsteps_changedtype.png)
 
-Ensinnäkin useimmat luokitukset tuotiin **kyselyeditoriin** kokonaislukuina, mutta eivät kaikki (yksi sarake sisälsi tekstiä ja numeroita, joten sitä ei muunnettu automaattisesti). Tietojen on oltava numeroita. Voit vaihtaa tietotyypin helposti napsauttamalla vain hiiren kakkospainikkeella sarakkeen otsikkoa ja valitsemalla **Muuta tyyppi \> Kokonaisluku**. Jos haluamme valita useita sarakkeita, valitsemme ensimmäisen sarakkeen, painamme **VAIHTO**-näppäimen pohjaan, valitsemme vierekkäisiä sarakkeita ja vaihdamme sitten kaikki valitut sarakkeet napsauttamalla hiiren kakkospainikkeella jotain valittua sarakeotsikkoa. Voit valita muita kuin vierekkäisiä sarakkeita myös **CTRL**-painikkeella.
+Jos sinun on muutettava tietotyyppiä, valitse muutettava sarake tai sarakkeet. Valitse useita vierekkäisiä sarakkeita pitämällä **vaihto**näppäintä painettuna, tai paina **Ctrl**-näppäintä, jos haluat valita muita kuin vierekkäisiä sarakkeita. Napsauta hiiren kakkospainikkeella sarakeotsikkoa, valitse **Muuta tyyppiä** ja valitse uusi tietotyyppi valikosta, tai valitse avattava luettelo **Tietotyyppi**-kohdan vieressä **Aloitus**-välilehden **Muunna**-ryhmässä ja valitse uusi tietotyyppi.
 
- ![](media/desktop-getting-started/designer_gsg_changedatatype.png)
+![Vaihda tietotyyppiä](media/desktop-getting-started/designer_gsg_changedatatype.png)
 
-Voit myös muuttaa tai *muuntaa* nämä sarakkeet tekstistä otsikoksi **Muunna**-valintanauhan avulla. Tässä on **Muunna**-valintanauha, jossa on **Tietotyyppi**-painikkeeseen osoittava nuoli. Tällä painikkeella voit muuntaa tietotyypin toiseksi.
+> [!NOTE]
+> Power BI Desktopin Power Query -editori käyttää käytettävissä olevien tehtävien valintanauhaa tai hiiren kakkospainikkeen valikkoa. Useimmat tehtävät, jotka ovat valittavissa valintanauhan **Aloitus**- tai **Muunna**-välilehdessä, ovat käytettävissä myös napsauttamalla kohdetta hiiren kakkospainikkeella ja valitsemalla sitten toiminto näyttöön avautuvasta valikosta.
 
- ![](media/desktop-getting-started/shapecombine-changetype-b.png)
+Voit nyt ottaa käyttöön tietoihin tekemäsi muutokset ja muunnokset ja tarkastella niitä **Käytössä olevat vaiheet** -kohdassa. 
 
-Huomaa, että **Kyselyasetukset**-kohdan **Käytössä olevat vaiheet** kuvastavat tehtyjä muutoksia. Jos haluan poistaa vaiheen muotoiluprosessista, valitsen haluamani vaiheen vasemmalta puolelta **X**.
+Esimerkiksi aurinkolasien myynnissä sinua kiinnostaa eniten sääsijoitus, joten päätät lajitella taulukon **Sää**-sarakkeen mukaan **yleisen sijan** sijaan. Napsauta **Sää-** otsikon vieressä olevaa avattavan valikon nuolta ja valitse **Lajittele nousevaan järjestykseen**. Tiedot näytetään nyt lajiteltuina sääsijoituksen mukaan, ja vaihe **Lajiteltu rivit** näkyy **Käytössä olevat vaiheet** -kohdassa. 
 
- ![](media/desktop-getting-started/designer_gsg_appliedsteps_changedtype.png)
+![Lajittele rivit nousevaan järjestykseen](media/desktop-getting-started/shapecombine-changetype-b.png)
 
-Meidän on vielä tehtävä pari muuta muutosta, jotta kyselystä tulee sellainen kuin haluamme:
+Et ole kovin kiinnostunut aurinkolasien myynnistä osavaltioissa, joissa on huonoin sää, joten päätät poistaa ne taulukosta. Valitse **Aloitus**-välilehden **Vähennä rivejä** -ryhmässä **Poista rivit** > **Poista alimmat rivit**. Kirjoita **Poista alimmat rivit** -valintaikkunaan *10* ja valitse sitten **OK**. 
 
-* *Poistetaan ensimmäinen sarake* – emme tarvitse sitä, sillä se sisältää vain ylimääräisiä rivejä, joissa sanotaan ”Katso, miten osavaltiosi sijoittuu eläkeasioissa”, joka on verkkopohjaisen taulukon artefakti.
+![Poista alimmat rivit](media/desktop-getting-started/pbi_gsg_getdata3.png)
 
-<!-- -->
+Alimmat 10 huonoimman sään riviä poistetaan taulukosta, ja vaihe **Poistettu alimmat rivit** näkyy **Käytössä olevat vaiheet** -kohdassa.
 
-* *Korjataan muutama virhe* – verkkosivulla yhdessä sarakkeessa oli sekaisin tekstiä ja numeroita (jotkin osavaltiot liitetty yhteen luokkaan). Se toimii hyvin sivustossa, mutta ei meidän tietoanalyysissamme. Tämä on helppo korjata (tässä tapauksessa) ja osoittaa **kyselyeditorin** ja sen **käytössä olevien vaiheiden** joitakin hienoja ominaisuuksia ja toimintoja.
+Päätät, että et tarvitse kaikkia taulukon tietoja, ja poistat **Edullisuus**-, **Rikollisuus**-, **Kulttuuri**- ja **Hyvinvointi**-sarakkeet. Valitse kunkin sarakkeen otsikko, jonka haluat poistaa. Valitse useita vierekkäisiä sarakkeita pitämällä **vaihto**näppäintä painettuna, tai paina **Ctrl**-näppäintä, jos haluat valita muita kuin vierekkäisiä sarakkeita. 
 
-<!-- -->
+Valitse sitten **Aloitus**-välilehden **Sarakkeiden hallinta** -ryhmässä **Poista sarakkeet**. Voit myös napsauttaa hiiren kakkospainikkeella yhtä valituista sarakeotsikoista ja valita **Poista sarakkeet** valikosta. Valitut sarakkeet poistetaan, ja vaihe **Poistetut sarakkeet** näkyy **Käytössä olevat vaiheet** -kohdassa.
 
-* *Vaihdetaan taulukon nimi* – **Table 0** ei ole hyödyllinen kuvaus, mutta nimen vaihtaminen on helppoa.
+![Poista sarakkeet](media/desktop-getting-started/pbi_gsg_getdata3a.png)
 
-Jokainen näistä vaiheista esitellään ohjeartikkelissa **[Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)** . Tutustu vapaasti kyseiseen sivuun tai jatka tämän oppaan seuraamista ja katso seuraavat vaiheet. Seuraavassa osassa jatketaan siitä, kun edellä mainitut muutokset on otettu käyttöön.
+Itse asiassa **Edullisuus** voisi sittenkin olla merkityksellinen aurinkolasien myynnin kannalta. Haluaisit saada kyseisen sarakkeen takaisin. Voit helposti kumota **Käytössä olevat vaiheet** -ruudun viimeisen vaiheen valitsemalla vaiheen vieressä olevan **X**-poistokuvakkeen. Suorita nyt vaihe uudelleen valitsemalla vain ne sarakkeet, jotka haluat poistaa. Joustavuuden lisäämiseksi voit poistaa kunkin sarakkeen erillisenä vaiheena. 
+
+Voit napsauttaa mitä tahansa **Käytössä olevat vaiheet** -kohdan ruutua hiiren kakkospainikkeella ja poistaa sen, nimetä sen uudelleen, siirtää sitä järjestyksessä ylös- tai alaspäin tai lisätä tai poistaa vaiheita sen jälkeen. Välivaiheissa Power BI Desktop varoittaa, jos muutos voi vaikuttaa myöhempiin vaiheisiin ja keskeyttää kyselyn.  
+
+![Muokkaa käytössä olevia vaiheita](media/desktop-getting-started/designer_gsg_install.png)
+
+Jos et esimerkiksi enää halua lajitella taulukkoa **sään** mukaan, voit yrittää poistaa **Lajiteltu rivit** -vaiheen. Power BI Desktop varoittaa, että tämän vaiheen poistaminen saattaa aiheuttaa kyselyn keskeyttämisen. Olet poistanut viimeiset 10 riviä suoritettuasi lajittelun sään mukaan, joten jos poistat lajittelun, eri rivit poistetaan. Näkyviin tulee myös varoitus, jos valitset **Lajiteltu rivit** -vaiheen ja yrität siinä kohtaa lisätä uuden välivaiheen.  
+
+![Poista vaihe -varoitus](media/desktop-getting-started/deletestepwarning.png)
+
+Lopuksi muutat taulukon otsikon viittaamaan aurinkolasien myyntiin eläkkeelle siirtymisen sijaan. **Ominaisuudet**-kohdassa **Kyselyasetukset**-ruudussa korvaa vanha otsikko nimellä *Parhaat osavaltiot aurinkolasien myyntiin*.
+
+Muotoiltujen tietojen valmis kysely näyttää seuraavalta:
+
+![Valmis kysely](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
+
+Lisätietoa tietojen muotoilemisesta on ohjeartikkelissa [Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md).
 
 ## <a name="combine-data"></a>Tietojen yhdistäminen
-Nämä tiedot eri osavaltioista ovat mielenkiintoisia. Niistä on myös hyötyä muidenkin analyysien ja kyselyiden luomisessa. Tässä on kuitenkin yksi ongelma: suurin osa saatavilla olevista tiedoista käyttää kaksikirjaimisia osavaltiolyhenteitä, ei osavaltioiden koko nimiä. Meidän täytyy siis yhdistää osavaltioiden nimet ja niiden lyhenteet.
+Tiedot eri osavaltioista ovat mielenkiintoisia. Niistä on myös hyötyä muidenkin analyysien ja kyselyiden luomisessa. Tässä on kuitenkin yksi ongelma: suurin osa saatavilla olevista tiedoista käyttää kaksikirjaimisia osavaltiolyhenteitä, ei osavaltioiden koko nimiä. Osavaltioiden nimet ja niiden lyhenteet täytyy siis yhdistää, jotta voit käyttää tietoja.
 
-Meillä on kuitenkin onnea, sillä eräs toinen julkinen tietolähde tekee juuri tämän, mutta sen tiedot vaativat suhteellisen paljon muotoilua, ennen kuin voimme yhdistää ne tähän eläköitymistaulukkoomme. Tässä on osavaltiolyhenteiden verkkoresurssi:
+Sinulla on onnea. Toinen julkinen tietolähde tekee juuri näin, mutta tietoja pitää muotoilla melko paljon, ennen kuin voit *yhdistää* ne aurinkolasitaulukkoosi.
 
-<https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
+Jos haluat tuoda osavaltiolyhenteiden tiedot Power Query -editoriin, valitse **Uusi lähde** > **Verkko** valintanauhan **Uusi kysely** -ryhmässä **Aloitus**-välilehdessä. 
 
-Valitaan **kyselyeditorin** **Aloitus**-valintanauhasta **Nouda tiedot \> Verkko** ja kirjoitetaan osoite ja valitaan **OK**. Sen jälkeen **Siirtymistoiminnon** ikkuna näyttää verkkosivulta löydetyn sisällön.
+![Uusi lähde](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
 
- ![](media/desktop-getting-started/designer_gsg_usstateabbreviationsnavigator.png)
+Kirjoita **Verkosta**-valintaruutuun osavaltiolyhenteiden sivuston URL-osoite: *https:\//en.wikipedia.org/wiki/List_of_U.S._state_abbreviations*.
 
-Valitse **Taulukko[muokkaa]** , koska se sisältää haluamamme tiedot. Niitä täytyy kuitenkin muotoilla melko paljon, ennen kuin voimme yhdistää taulukon tiedot. Jokainen näistä vaiheista esitellään ohjeartikkelissa **[Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)** . Yhteenveto mainituista vaiheista on seuraava:
+Valitse **Siirtymistoiminto**-ikkunassa taulukko **Yhdysvaltojen osavaltioiden, liittovaltion alueen ja muiden alueiden koodit ja lyhenteet** ja valitse sitten **OK**. Taulukko avautuu Power Query -editorissa.
 
-Valitaan **Muokkaa** ja sitten:
+Poista kaikki sarakkeet lukuun ottamatta sarakkeita **Alueen nimi ja tila**, **Alueen nimi ja tila2** ja **ANSI**. Jos haluat säilyttää vain nämä sarakkeet, pidä **Ctrl**-painiketta painettuna ja valitse sarakkeet. Napsauta sitten jotakin sarakeotsikkoa hiiren kakkospainikkeella ja valitse **Poista muut sarakkeet** tai valitse **Aloitus**-välilehden **Sarakkeiden hallinta** -kohdassa **Poista muut sarakkeet**. 
 
-* *Poistetaan kaksi ylintä riviä* – ne ovat seurausta tavasta, jolla verkkosivun taulukko on luotu, emmekä tarvitse niitä.
+Napsauta **Alueen nimi ja tila2** -sarakkeen otsikon vieressä olevaa nuolta ja valitse **Suodattimet** > **Yhtä suuri kuin**. **Suodata rivit** -valintaikkunassa avaa **Kirjoita tai valitse arvo** -kenttä **Yhtä suuri kuin** -kohdan vieressä ja valitse **Osavaltio**. 
 
-<!-- -->
+Valitse **Tai** ja valitse toisen **Yhtä suuri kuin** -kentän vieressä **Osavaltio ("liittovaltio")** . Valitse **OK**. 
 
-* *Poistetaan alimmat 26 riviä* – ne ovat kaikki alueita, joita meidän ei tarvitse sisällyttää.
+![Rivien suodattaminen](media/desktop-getting-started/filterrows.png)
 
-<!-- -->
-* *Poissuljetaan Washington DC* – eläköitymistilastojen taulukko ei sisällä Washington DC:tä, joten suljemme sen pois luettelostamme.
+Kun ylimääräiset arvot, kuten **Liittovaltion alue** ja **saari**, on poistettu, käytössäsi on nyt luettelo 50 osavaltiosta ja niiden virallisista kaksikirjaimisista lyhenteistä. Voit nimetä sarakkeet uudelleen järkevämmiksi, esimerkiksi nimillä **Osavaltion nimi**, **Tila** ja **Lyhenne**, napsauttamalla sarakeotsikoita hiiren kakkospainikkeella ja valitsemalla **Nimeä uudelleen**.
 
-<!-- -->
+Huomioi, että kaikki nämä vaiheet tallennetaan **Käytössä olevat vaiheet** -kohdassa **Kyselyasetukset**-ruudussa.
 
-* *Poistetaan muutamat tarpeettomat sarakkeet* – meidän täytyy yhdistää vain osavaltio sen viralliseen kaksikirjaimiseen lyhenteeseen, joten voimme poistaa muut sarakkeet.
+Muotoiltu taulukko näyttää nyt tältä:
 
-<!-- -->
+![Muotoiltu osavaltiokoodien taulukko](media/desktop-getting-started/statecodes.png)
 
-* *Käytetään ensimmäistä riviä otsikkona* – koska poistimme kolme ylintä riviä, nykyinen ylin rivi on haluamamme otsikkorivi.
+Muuta taulukon otsikoksi *Osavaltiokoodit* **Ominaisuudet**-kentässä **kyselyasetuksissa**. 
 
-    >[!NOTE]
-    >Tämä on hyvä hetki huomauttaa, että **kyselyeditorissa** käytössä olevien vaiheiden *järjestys* on tärkeä. Se voi myös vaikuttaa tietojen muotoiluun. On tärkeää huomioida se, miten yksi vaihe voi vaikuttaa toiseen myöhempään vaiheeseen. Jos poistat vaiheen **käytössä olevista vaiheista**, myöhemmät vaiheet eivät ehkä toimi niin kuin alun perin tarkoitit, koska vaiheen poistaminen kyselyn vaihejärjestyksestä vaikuttaa muihin vaiheisiin.
+**Osavaltiokoodit**-taulukon muotoilun jälkeen voit *yhdistää* nämä kaksi taulukkoa. Koska nyt käytössäsi olevat taulukot ovat tiedoissa käyttämiesi kyselyjen tuloksia, niitä kutsutaan myös *kyselyiksi*. Kyselyitä voi yhdistää kahdella tavalla: *yhdistämällä* tai *loppuun liittämällä*. 
 
-* *Nimetään sarakkeet ja itse taulukko uudelleen* – tuttuun tapaan sarakkeen voi nimetä uudelleen muutamalla eri tavalla, ja voit valita itsellesi mieluisimman tavan.
+Jos sinulla on sarake tai sarakkeita, jonka tai jotka haluat lisätä toiseen kyselyyn, *yhdistä* kyselyt. Jos sinulla on lisärivejä tietoja, jotka haluat lisätä olemassa olevaan kyselyyn, *liitä ne kyselyn loppuun*.
 
-Nyt kun olemme muotoilleet *StateCodes*-taulukon, voimme yhdistää nämä kaksi taulukkoa (tai kyselyä) yhdeksi. Koska taulukot, jotka meillä nyt ovat, ovat tulos kyselyistä, jotka suoritimme tiedoille, niitä kutsutaan usein *kyselyiksi*.
+Tässä tapauksessa sinun kannattaa *yhdistää* **Osavaltiokoodit**-kysely **Parhaat osavaltiot aurinkolaseille** -kyselyyn. Jos haluat yhdistää kyselyt, vaihda **Parhaat osavaltiot aurinkolaseille** -kyselyyn valitsemalla se Power Query -editorin vasemmassa reunassa olevassa **Kyselyt**-ruudussa. Valitse sitten **Yhdistä kyselyt** **Yhdistä**-ryhmässä valintanauhan **Aloitus**-välilehdessä.
 
-Kyselyitä voi yhdistää kahdella tavalla: *yhdistämällä* tai *loppuun liittämällä*.
+Avaa **Yhdistä**-ikkunassa kenttä valitaksesi **Osavaltiokoodit** muista käytettävissä olevista kyselyistä. Valitse kustakin taulukosta vastaava sarake, tässä tapauksessa **Osavaltio** **Parhaat osavaltiot aurinkolaseille** -kyselystä ja **Osavaltion nimi** **Osavaltiokoodit**-kyselystä. 
 
-Jos sinulla on sarake tai sarakkeita, jonka tai jotka haluat lisätä toiseen kyselyyn, **yhdistä** kyselyt. Jos sinulla on lisärivejä tietoja, jotka haluat lisätä olemassa olevaan kyselyyn, **liitä ne kyselyn loppuun**.
+Jos näkyviin tulee **Yksityisyystasot**-valintaikkuna, valitse **Ohita tämän tiedoston yksityisyystasotarkistukset** ja valitse sitten **Tallenna**. Valitse **OK**. 
 
-Tässä tapauksessa haluamme yhdistää kyselyt. Aloitetaan valitsemalla kysely, *johon* haluamme yhdistää toisen kyselyn, ja valitaan sen jälkeen valintanauhan **Aloitus**-välilehdessä **Yhdistä kyselyt**.
+![Yhdistä kyselyt](media/desktop-getting-started/shapecombine_merge.png)
 
- ![](media/desktop-getting-started/shapecombine_mergequeries.png)
+Uusi sarake nimeltä **Osavaltiokoodit** näkyy **Parhaat osavaltiot aurinkolasien myyntiin** -taulukon oikealla puolella. Se sisältää Osavaltiokoodi-kyselyn, jonka yhdistit Parhaat osavaltiot aurinkolasien myyntiin -kyselyyn. Kaikki yhdistetyn taulukon sarakkeet tiivistetään **Osavaltiokoodit**-sarakkeeseen. Voit *laajentaa* yhdistetyn taulukon ja sisällyttää vain haluamasi sarakkeet. 
 
-Seuraavaksi näyttöön avautuu **Yhdistä**-ikkuna, jossa kysytään, minkä taulukon haluamme yhdistää valittuun taulukkoon ja pyydetään myös määrittämään yhdistämisen vastaavat sarakkeet. Valitse *RetirementStats*-taulukosta (kysely) *State*-sarake ja valitse sitten *StateCodes*-kysely (tämä on tässä tapauksessa helppoa, koska muita kyselyitä on vain yksi, mutta kun yhdistettynä on useita tietolähteitä, valittavissa olevia kyselyitä on paljon). Kun valitsemme oikeat vastaavat sarakkeet (*State*-sarake *RetirementStats*-taulukosta ja *State Name* -sarake *StateCodes*-taulukosta), **Yhdistä**-ikkuna näyttää seuraavanlaiselta. Myös **OK**-painike on käytettävissä.
+![Yhdistetty kyselysarake](media/desktop-getting-started/mergedquery.png)
 
- ![](media/desktop-getting-started/shapecombine_merge.png)
+Jos haluat laajentaa yhdistetyn taulukon ja valita sisällytettävät sarakkeet, valitse sarakeotsikossa **Laajenna**-kuvake. Valitse **Laajenna**-valintaikkunassa vain **Lyhenne**-sarake. Poista kohdan **Käytä alkuperäisen sarakkeen nimeä etuliitteenä** valinta ja valitse sitten **OK**. 
 
-Kyselyn loppuun luodaan **NewColumn**, joka sisältää sen taulukon (kyselyn) sisällön, joka yhdistettiin olemassa olevaan kyselyyn. Kaikki yhdistetyn kyselyn sarakkeet tiivistetään **NewColumn**-sarakkeeseen, mutta voit **laajentaa** taulukon ja sisällyttää haluamasi sarakkeet. Jos haluat laajentaa yhdistetyn taulukon ja valita sisällytettävät sarakkeet, valitse laajennuskuvake (![](media/desktop-getting-started/gettingstarted_29_expandicon.png)). Näyttöön avautuu **Laajenna**-ikkuna.
+![Valitse laajennettu sarake yhdistetystä taulukosta](media/desktop-getting-started/shapecombine_mergeexpand.png)
 
- ![](media/desktop-getting-started/shapecombine_mergeexpand.png)
+> [!NOTE]
+> Voit testata eri keinoja **Osavaltiokoodit**-taulukon tuomiseksi. Voit kokeilla eri tapoja. Jos et pidä tuloksista, poista kyseinen vaihe **Kyselyasetukset**-ruudun **käytössä olevien vaiheiden** luettelosta. Voit siis kokeilla eri tapoja vapaasti niin monta kertaa kuin haluat, kunnes saat laajennusprosessista haluamasi kaltaisen.
 
-Tässä tapauksessa haluamme vain *State Code* -sarakkeen, joten valitsemme sen ja sitten **OK**. Poistamme **Käytä alkuperäisen sarakkeen nimeä etuliitteenä** -valintaruudun valinnan, koska emme tarvitse tai halua sitä. Jos jätämme tämän valituksi, yhdistetyn sarakkeen nimi olisi *NewColumn.State Code* (alkuperäisen sarakkeen nimi eli *NewColumn*, sitten piste ja kyselyyn tuodun sarakkeen nimi).
+Tarkempia tietoja tietojen muotoilun ja yhdistämisen vaiheista on ohjeartikkelissa [Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md).
 
->[!NOTE]
->Haluatko kokeilla eri tapoja tuoda tämä *NewColumn*-taulukko? Voit kokeilla eri tapoja. Jos et pidä tuloksista, poista kyseinen vaihe **Kyselyasetukset**-ruudun **käytössä olevien vaiheiden** luettelosta. Tämä palauttaa kyselysi tilaan, jossa se oli ennen tätä **laajennusvaihetta**. Voit siis kokeilla eri tapoja vapaasti niin monta kertaa kuin haluat, kunnes saat laajennusprosessista haluamasi kaltaisen.
+Nyt sinulla on yksi kyselytaulukko, joka yhdistää kaksi tietolähdettä, jotka kummatkin on muotoiltu tarpeidesi mukaisesti. Tämän kyselyn pohjalta voit luoda paljon muitakin kiinnostavia tietoyhteyksiä, esimerkiksi demografisista tiedoista, varallisuustasoista tai virkistysmahdollisuuksista osavaltioissa.
 
-Nyt meillä on yksi kysely (taulukko), joka yhdistää kaksi tietolähdettä, jotka kummatkin on muotoiltu tarpeidemme mukaisesti. Tämän kyselyn pohjalta voit luoda paljon muitakin kiinnostavia tietoyhteyksiä, esimerkiksi asumiskuluista, demografisista tiedoista tai työmahdollisuuksista missä tahansa osavaltiossa.
+![Muotoillut ja yhdistetyt kyselyt](media/desktop-getting-started/mergedcolumn.png)
 
-Tarkempia tietoja kustakin tietojen muotoilun ja yhdistämisen vaiheesta on ohjeartikkelissa [Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md).
+Nyt sinulla on riittävästi tietoja kiinnostavan raportin luomiseen Power BI Desktopissa. Koska tämä on välivaihe, ota muutokset käyttöön **Power Query -editorissa** ja lataa ne Power BI Desktopiin valitsemalla **Sulje ja ota käyttöön** valintanauhan **Aloitus**-välilehdessä. Voit myös valita vain **Ota käyttöön**, jos haluat pitää kyselyn avoimena Power Query -editorissa Power BI Desktopia käyttäessäsi. 
 
-Nyt meillä on riittävästi tietoja muutaman kiinnostavan raportin luomiseen Power BI Desktopissa. Koska olemme saavuttaneet välivaiheen, tallennetaan tämä Power BI Desktop -tiedosto nimellä **Power BI Desktopin käytön aloittaminen**. Ota muutokset käyttöön **kyselyeditorissa** ja lataa ne Power BI Desktopiin valitsemalla **Aloitus**-valintanauhassa **Sulje ja ota käyttöön**.
+![Sulje ja ota muutokset käyttöön](media/desktop-getting-started/shapecombine_closeandapply.png)
 
-![](media/desktop-getting-started/shapecombine_closeandapply.png)
+Voit tehdä taulukkoon lisää muutoksia sen jälkeen, kun se on ladattu Power BI Desktopiin, ja ladata mallin uudelleen, jotta tekemäsi muutokset otetaan käyttöön. Jos haluat avata uudelleen **Power Query -editorin** Power BI Desktopista, valitse **Muokkaa kyselyitä** Power BI Desktopin valintanauhan **Aloitus**-välilehdessä. 
 
 ## <a name="build-reports"></a>Raporttien luominen
-Lisää muutoksia voi tehdä sen jälkeen, kun taulukko on ladattu, ja voit ottaa käyttöön tekemäsi muutokset lataamalla mallin uudelleen. Toistaiseksi tämä kuitenkin kelpaa. Raportin luominen aloitetaan Power BI Desktopin **Raportti**-näkymässä.
+Voit luoda visualisointeja ja raportteja Power BI Desktopin **Raportti**-näkymässä. **Raportti**-näkymässä on kuusi pääaluetta:
 
-**Raportti**-näkymässä on viisi pääaluetta:
+![Power BI Desktopin Raporttinäkymä](media/desktop-getting-started/designer_gsg_reportview.png)
 
-1. Valintanauha sisältää raportteihin ja visualisointeihin liittyvät yleisimmät tehtävät.
-2. **Raportti**-näkymä eli kangas on paikka, jossa visualisointeja luodaan ja järjestellään.
-3. Alaosassa olevalla **Sivut**-välilehtialueella voit valita tai lisätä raporttisivun.
-4. **Visualisoinnit**-ruudussa voit esimerkiksi muuttaa visualisointeja, mukauttaa värejä tai akseleita, käyttää suodattimia ja siirtää kenttiä.
-5. **Kentät**-ruudussa olevia kyselyelementtejä ja suodattimia voi vetää **Raportti**-näkymään tai **Visualisoinnit**-ruudun **Suodattimet**-alueelle.
-   
-   ![](media/desktop-getting-started/designer_gsg_reportview.png)
+1. Yläosan valintanauha sisältää raportteihin ja visualisointeihin liittyvät yleisimmät tehtävät.
+2. Keskiosan pohja on paikka, jossa visualisointeja luodaan ja järjestellään.
+3. Alaosassa olevalla Sivut-välilehtialueella voit valita tai lisätä raporttisivuja.
+4. **Suodattimet**-ruudussa voit suodattaa tietojen visualisointeja.
+5. **Visualisoinnit**-ruudussa voit lisätä, muuttaa tai mukauttaa visualisointeja ja käyttää porautumista.
+6. **Kentät**-ruudussa näkyvät kyselyiden käytettävissä olevat kentät. Voit luoda tai muokata visualisointeja vetämällä näitä kenttiä pohjaan, **Suodattimet**-ruutuun tai **Visualisoinnit**-ruutuun.
 
-**Visualisoinnit**- ja **Kentät**-ruudut voi kutistaa valitsemalla reunassa olevan pienen nuolen, jolloin **Raportti**-näkymään jää enemmän tilaa näyttävien visualisointien luomiselle. Visualisointeja muokatessasi näet myös ylös ja alas osoittavat nuolet, joilla osion voi laajentaa tai kutistaa.
+Voit laajentaa ja kutistaa **Suodattimet**-, **Visualisoinnit**- ja **Kentät**-ruutuja valitsemalla ruutujen yläosassa olevat nuolet. Ruutujen kutistaminen tuo enemmän tilaa pohjaan hienojen visualisointien luomiseen. 
 
- ![](media/desktop-getting-started/designer_gsg_collapsepanes.png)
+![Laajenna tai kutista ruutuja](media/desktop-getting-started/designer_gsg_collapsepanes.png)
 
-Aloita visualisoinnin luominen vetämällä kenttä **Kentät**-luettelosta **Raportti**-näkymään. Tässä tapauksessa voimme vetää *State*-kentän *RetirementStats*-luettelosta ja katsoa, mitä tapahtuu.
+Voit luoda yksinkertaisen visualisoinnin valitsemalla minkä tahansa kentän Kentät-luettelosta tai vetämällä kentän **Kentät**-luettelosta pohjaan. Voit esimerkiksi vetää **Osavaltio**-kentän **Parhaat osavaltiot aurinkolasien myyntiin** -taulukosta pohjaan ja katsoa, mitä tapahtuu.
 
- ![](media/desktop-getting-started/designer_gsg_reportfirstdrag.png)
+![Luo karttavisualisointi vetämällä Osavaltio-kenttää](media/desktop-getting-started/designer_gsg_reportfirstdrag.png)
 
-Vaikuttavaa, eikö totta? Power BI Desktop loi automaattisesti karttapohjaisen visualisoinnin, koska se tunnisti, että *State*-kenttä sisälsi maantieteellistä sijaintia kuvaavia tietoja.
+Vaikuttavaa, eikö totta? Power BI Desktop tunnisti, että **Osavaltio**-kenttä sisälsi maantieteellistä sijaintia kuvaavia tietoja, ja loi automaattisesti karttapohjaisen visualisoinnin. Visualisoinnissa on näkyvissä arvopisteitä tietomallisi 40 osavaltiolle. 
 
-Huomaa, että **Visualisoinnit**-ruudussa voi valita erityyppisiä visualisointeja ja niiden kuvakkeiden alapuolisella alueella ottaa käyttöön selitteen tai muokata visualisointia muulla tavalla raahaamalla kenttiä eri alueille.
+**Visualisoinnit**-ruudussa on näkyvissä tietoja visualisoinnista, ja voit muokata niitä. 
 
- ![](media/desktop-getting-started/designer_gsg_visualizationtypes.png)
+![Visualisointi-ruutu](media/desktop-getting-started/designer_gsg_visualizationtypes.png)
 
-Hypätään hiukan eteenpäin ja katsotaan, miltä **Raportti**-näkymä näyttää muutamien visualisointien ja uusien raporttisivujen lisäämisen jälkeen. Lisätietoja raporteista on ohjeartikkelissa [Raportti-näkymä Power BI Desktopissa](desktop-report-view.md).
+1. Kuvakkeissa näkyy luodun visualisoinnin tyyppi. Voit muuttaa valitun visualisoinnin tyyppiä valitsemalla eri kuvakkeen, tai voit luoda uuden visualisoinnin valitsemalla kuvakkeen ilman, että visualisointi on valittuna. 
+2. **Visualisointi**-ruudun **Kentät**-asetuksen avulla voit vetää tietokenttiä ruudun **Selite**- ja muihin kenttiin. 
+3. **Muotoile**-asetuksen avulla voit käyttää visualisoinneissa muotoiluja ja muita ohjausobjekteja. 
 
-Ensimmäinen raporttisivu antaa yleiskuvan tiedoista *yleisen sijoittumisen* perusteella. Kun valitsemme yhden visualisoinneista, **Kentät ja suodattimet** -ruudussa näkyy valitut kentät ja visualisoinnin rakenne (mitä kenttiä on käytetty **Jaettu akseli**-, **Sarakkeen arvot**-, ja **Riviarvot**-tietoihin).
+**Kentät**- ja **Muotoile**-alueilla käytettävissä olevat asetukset riippuvat visualisoinnin ja tietojen tyypistä.
 
- ![](media/desktop-getting-started/designer_gsg_report1.png)
+Haluat, että karttavisualisoinnissa näkyy vain 10 parasta osavaltiota sään perusteella. Jos haluat näyttää vain 10 parasta osavaltiota, vie **Suodattimet**-ruudussa hiiren osoitin **Osavaltio on (kaikki)** -kohdan päälle ja laajenna näkyviin tulevaa nuolta. **Suodatintyyppi**-kohdassa avaa luettelo ja valitse **Ylimmät N**. Valitse **Näytä kohteet** -kohdassa **Alimmat**, koska haluat näyttää kohteet, joilla on pienin numeroarvo, ja kirjoita seuraavaan kenttään *10*.
 
-Tässä raportissa on kuusi **sivua**, joista jokainen visualisoi tietojemme tiettyjä elementtejä.
+Vedä **Sää**-kenttä **Kentät**-ruudusta **Arvon mukaan** -kenttään ja valitse **Käytä suodatinta**. 
 
-1. Yllä näkyvä ensimmäinen sivu näyttää kaikki osavaltiot *yleisen sijoittumisen* perusteella.
-2. Toisella sivulla keskitytään kärkikymmenikössä oleviin osavaltioihin *yleisen sijoittumisen* perusteella.
-3. Kolmannella sivulla on visualisoitu kymmenen parhaan osavaltion elinkustannukset (ja niihin liittyvät tiedot).
-4. Neljännellä sivulla sää on keskipisteessä: sivulle on suodatettu 15 aurinkoisinta osavaltiota.
-5. Viidennellä sivulla on kaavio ja visualisointi yhteisön hyvinvoinnista 15 parhaassa osavaltiossa.
-6. Viimeisellä sivulla on visualisoitu kymmenen ensimmäisen (ja myös viimeisen) osavaltion rikollisuustilastot.
+![10 parhaan sääsuodatin](media/desktop-getting-started/gsg_share5.png)
 
-Elinkustannuksiin keskittyvä raporttisivu näyttää tältä.
+Karttavisualisoinnissa on nyt näkyvissä vain 10 parasta osavaltiota sään perusteella. 
 
- ![](media/desktop-getting-started/designer_gsg_report2costofliving.png)
+Voit nimetä visualisoinnin otsikon uudelleen valitsemalla **Muotoile**-kuvakkeen **Visualisointi**-ruudussa, valitsemalla **Otsikko** ja kirjoittamalla *10 parasta osavaltiota sään perusteella* **Otsikkoteksti**-kohtaan. 
 
-Voit luoda erilaisia kiinnostavia raportteja ja visualisointeja.
+![Muuta otsikkoa](media/desktop-getting-started/designer_gsg_report1.png)
+
+Jos haluat lisätä visualisoinnin, joka sisältää 10 parasta osavaltiota sään perusteella sekä niiden sijoitukset välillä 1–10, valitse pohjassa tyhjä alue ja valitse sitten **Visualisointi**-ruudussa **Pylväskaavio**-kuvake. Valitse **Kentät**-ruudussa **Osavaltio** ja **Sää**. Pylväskaaviossa näkyvät kyselyn 40 osavaltiota luokiteltuina suurimmasta pienimpään numeroarvoon eli huonoimmasta säästä parhaimpaan. 
+
+![Pylväskaavion visualisointi](media/desktop-getting-started/gsg_share7.png)
+
+Jos haluat vaihtaa sijoitusten järjestystä niin, että numero 1 näkyy ensimmäisenä, valitse **Lisää asetuksia** -kohdan kolme pistettä visualisoinnin oikeassa yläkulmassa ja valitse **Lajittele nousevaan järjestykseen** valikosta. 
+
+![Lajittele nousevaan järjestykseen](media/desktop-getting-started/shapecombine_mergequeries.png)
+
+Jos haluat rajata taulukon 10 parhaaseen osavaltioon, käytä samaa Alimmat 10 -suodatinta kuin karttavisualisoinneissakin. 
+
+Nimeä visualisointi uudelleen samalla tavalla kuin karttavisualisoinninkin kohdalla. Lisäksi **Visualisointi**-ruudun **Muotoile**-osiossa voit muuttaa kohtaa **Y-akseli** > **Akselin otsikko** ja antaa **Sää**-otsikolle uuden nimen *Sääsijoitus* visualisoinnin selkeyttämiseksi. Aseta sen jälkeen **Y-akselin** valitsin **Off**-asentoon ja **Arvopisteiden otsikot** -valitsin **On**-asentoon. 
+
+Kymmenen parasta osavaltiota sään perusteella ja niiden sijoitukset näkyvät nyt järjestyksessä. 
+
+![Valmis pylväskaavio](media/desktop-getting-started/shapecombine_changetype.png)
+
+Voit tehdä samankaltaisia tai muita visualisointeja **Edullisuus**- ja **Yleinen sija** -kentille, tai voit yhdistää useita kenttiä yhdeksi visualisoinniksi. Voit luoda erilaisia kiinnostavia raportteja ja visualisointeja. Näissä **Taulukko**- ja **Viiva- ja yhdistelmäpylväskaavio** -visualisoinneissa näkyy 10 parasta osavaltiota sään perusteella sekä niiden edullisuus ja yleinen sija:
+
+![Taulukko- ja Viiva- ja yhdistelmäpylväskaavio -visualisoinnit](media/desktop-getting-started/designer_gsg_report2costofliving.png)
+
+Voit näyttää erilaisia visualisointeja eri raporttisivuilla. Voit lisätä uuden sivun valitsemalla **+** -symbolin aiemmin luotujen sivujen vieressä Sivut-palkissa tai valitsemalla **Lisää** > **Uusi sivu** valintanauhan **Aloitus**-välilehdessä. Jos haluat nimetä sivun uudelleen, kaksoisnapsauta sivun nimeä Sivut-palkissa tai napsauta sitä hiiren kakkospainikkeella ja valitse **Nimeä sivu uudelleen** ja kirjoita sitten uusi nimi. Jos haluat siirtyä raportin eri sivulle, valitse sivu Sivut-palkista. 
+
+![Sivut-palkki](media/desktop-getting-started/pages.png)
+
+Voit lisätä raporttisivuihin tekstiruutuja, kuvia ja painikkeita **Aloitus**-välilehden **Lisää**-ryhmästä. Voit määrittää visualisoinneille muotoiluasetuksia valitsemalla visualisoinnin ja valitsemalla sitten **Muotoile**-kuvakkeen **Visualisoinnit**-ruudussa. Voit määrittää sivujen kokoa, taustoja ja muita tietoja valitsemalla **Muotoile**-kuvakkeen ilman visualisoinnin valitsemista.
+
+Kun sivujen ja visualisointien luominen on valmis, valitse **Tiedosto** > **Tallenna** ja tallenna raportti. 
+
+![Valmis Power BI Desktop -raporttisivu](media/desktop-getting-started/finished-report.png)
+
+Lisätietoja raporteista on ohjeartikkelissa [Raportti-näkymä Power BI Desktopissa](desktop-report-view.md).
 
 ## <a name="share-your-work"></a>Töiden jakaminen
-Nyt kun meillä on Power BI Desktop -raportti, joka on lähes valmis, voimme jakaa sen muiden kanssa **Power BI** -palvelussa. Power BI Desktopissa työt voi jakaa muutamalla eri tavalla. Voit julkaista ne **Power BI** -palveluun, ladata .pbix-tiedoston suoraan Power BI -palvelusta tai tallentaa .pbix-tiedoston ja lähettää sen tavallisen tiedoston tapaan.
+Nyt kun käytössäsi on Power BI Desktop -raportti, voit jakaa sen muiden kanssa. Voit jakaa työsi muutamalla eri tavalla. Voit jakaa raportin *.pbix*-tiedoston muiden tiedostojen tapaan, voit ladata *.pbix*-tiedoston Power BI -palvelusta tai voit julkaista suoraan Power BI Desktopista Power BI -palveluun. Sinulla on oltava Power BI -tili, jotta voit julkaista tai lähettää raportteja Power BI -palveluun. 
 
-Katsotaan ensin, miten julkaisu Power BI Desktopista suoraan **Power BI** -palveluun tapahtuu. Valitse **Aloitus**-valintanauhassa **Julkaise**.
+Jos haluat julkaista **Power BI** -palveluun Power BI Desktopista, valitse valintanauhan **Aloitus**-välilehdessä **Julkaise**.
 
-![](media/desktop-getting-started/gsg_syw_1.png)
+![Valitse Julkaise](media/desktop-getting-started/gsg_syw_1.png)
 
-Sinua saatetaan pyytää kirjautumaan sisään Power BI:hin.
+Sinua saatetaan pyytää kirjautumaan sisään Power BI:hin tai valitsemaan kohde.
 
-![](media/desktop-getting-started/gsg_syw_2.png)
+Kun julkaisuprosessi on valmis, näet seuraavan valintaikkunan:
 
-Kun olet kirjautunut sisään ja julkaisuprosessi on valmis, näet seuraavan valintaikkunan.
+![Power BI Julkaiseminen onnistui](media/desktop-getting-started/gsg_syw_3.png)
 
-![](media/desktop-getting-started/gsg_syw_3.png)
+Kun valitset linkin raportin avaamiseksi Power BI:ssä, raportti avautuu Power BI -sivustollasi kohdassa **Oma työtila** > **Raportit**. 
 
-Kun kirjaudut Power BI:hin, näet juuri lataamasi Power BI Desktop -tiedoston palvelun **Raporttinäkymät**-, **Raportit**- ja **Tietojoukot**-osissa.
+Toinen tapa jakaa työsi on ladata se **Power BI** -palvelun kautta. Avaa Power BI selaimessa osoitteessa *https:\//app.powerbi.com*. Aloita Power BI Desktop -raportin latausprosessi valitsemalla Power BI:n **aloitussivun** vasemmassa alareunassa **Nouda tiedot**.
 
-Toinen tapa jakaa työsi on ladata se **Power BI** -palvelun kautta. Seuraava linkki avaa **Power BI** -palvelun selaimeen:
+![Valitse Nouda tiedot Power BI:n aloitussivulla](media/desktop-getting-started/pbi_gsg_getdata1.png)
 
-`https://app.powerbi.com`
+Valitse seuraavalla sivulla **Nouda** **Tiedostot**-osiossa.
 
-Aloita Power BI Desktop -raportin latausprosessi valitsemalla **Nouda tiedot**.
+![Hae tiedostot](media/desktop-getting-started/pbi_gsg_getdata2.png)
 
- ![](media/desktop-getting-started/pbi_gsg_getdata1.png)
+Valitse seuraavalla sivulla **Paikallinen tiedosto**. Etsi ja valitse Power BI Desktopin *.pbix*-tiedosto ja valitse **Avaa**. 
 
-Näkyviin tulee **Nouda tiedot** -sivu, jolla voit valita, mistä tiedot haetaan. Tässä tapauksessa valitsemme **Tiedostot**-ruudussa **Hae**.
+Tiedoston tuonnin jälkeen voit nähdä sen luettelossa kohdassa **Oma työtila** > **Raportit** Power BI -palvelun vasemmanpuoleisessa ruudussa.
 
-![](media/desktop-getting-started/pbi_gsg_getdata2.png)
+![Power BI Desktop -tiedosto tuotuna Power BI:hin](media/desktop-getting-started/pbi_gsg_getdata4.png)
 
-**Tiedostot**-näkymä avautuu. Tässä tapauksessa valitsemme **Paikallinen tiedosto**.
+Kun valitset tiedoston, raportin ensimmäinen sivu tulee näkyviin. Voit valita eri sivuja raportin vasemmalla puolella olevista välilehdistä. 
 
-![](media/desktop-getting-started/pbi_gsg_getdata3.png)
+Voit tehdä raporttiin muutoksia **Power BI** -palvelussa valitsemalla raporttipohjan yläosassa **Lisää asetuksia** > **Muokkaa**. Tallenna muutoksesi valitsemalla **Tallenna kopio**.
 
-Kun tiedosto valitaan, Power BI lataa sen palveluun.
+![Muokkaa raporttia ja Tallenna kopio](media/desktop-getting-started/gsg_share4.png)
 
-![](media/desktop-getting-started/pbi_gsg_getdata3a.png)
+**Power BI** -palvelussa voit luoda raportistasi erilaisia kiinnostavia visualisointeja, jotka voit kiinnittää *koontinäyttöön*. Lisätietoja **Power BI** -palvelun koontinäytöistä on artikkelissa [Vinkkejä laadukkaiden koontinäyttöjen suunnitteluun](service-dashboards-design-tips.md). Lisätietoja raporttinäkymien luomisesta, jakamisesta ja muokkaamisesta on kohdassa [Raporttinäkymän jakaminen](service-share-dashboards.md).
 
-Kun tiedosto on ladattu, voit valita sen Power BI -palvelun vasemmassa ruudussa olevasta **Raportit**-kohdasta.
+Voit jakaa raportin tai koontinäytön valitsemalla **Jaa** avoimen raportti- tai koontinäyttösivun yläosassa tai valitsemalla **Jaa**-kuvakkeen raportin tai koontinäytön nimen vieressä **Oma työtila** > **Raportit**- tai **Oma työtila** > **Koontinäytöt** -luetteloissa.
 
-![](media/desktop-getting-started/pbi_gsg_getdata4.png)
+Täydennä **Jaa raportti**- tai **Jaa koontinäyttö** -näyttö, jos haluat lähettää sähköpostiviestin tai saada linkin raportin tai koontinäytön jakamiseen muiden kanssa. 
 
-**Power BI** -palvelu näyttää raportin ensimmäisen sivun. Sivun alaosassa voit valita minkä tahansa välilehden, jolloin raportin kyseinen sivu avataan.
+![Jaa raportti](media/desktop-getting-started/gsg_share6.png)
 
- ![](media/desktop-getting-started/gsg_share4.png)
-
-Voit tehdä raporttiin muutoksia **Power BI** -palvelussa valitsemalla raporttipohjan yläosassa **Muokkaa raporttia**.
-
-Tallenna raporttisi valitsemalla palvelussa **Tiedosto \> Tallenna nimellä**. **Power BI** -palvelussa voit luoda raportistasi erilaisia kiinnostavia visualisointeja, jotka voit kiinnittää *raporttinäkymään*. Lisätietoja **Power BI** -palvelun<strong>[ raporttinäkymistä on raporttinäkymien suunnittelua koskevassa artikkelissa](service-dashboards-design-tips.md)</strong>.
-
- ![](media/desktop-getting-started/gsg_share5.png)
-
-Kun raportti on tallennettu, valitse pääsivulla **Jaa**-kuvake.
-
- ![](media/desktop-getting-started/gsg_share6.png)
-
-Tätä kautta voit lähettää sähköpostiviestin niille työtovereille, joiden kanssa haluat jakaa raporttinäkymän.
-
- ![](media/desktop-getting-started/gsg_share7.png)
-
-Lisätietoja raporttinäkymien luomisesta, jakamisesta ja muokkaamisesta on kohdassa [Raporttinäkymän jakaminen](service-share-dashboards.md).
-
-Power BI Desktopin ja Power BI -palvelun avulla voi tehdä erilaisia vakuuttavia tietoihin pohjautuvia koosteita ja visualisointeja. Katso lisätietoja seuraavasta osasta.
-
-## <a name="diagnostics"></a>Diagnostiikka
-
-Power BI Desktop tukee diagnostiikkaporttiin yhdistämistä. Diagnostiikkaportti sallii yhteydenmuodostuksen muilla työkaluilla ja sen avulla voidaan suorittaa jäljityksiä vianmääritystä varten. *Muutosten tekemistä malliin ei tueta! Malliin tehdyt muutokset saattavat johtaa vioittumiseen ja tietojen menettämiseen.*
+Power BI Desktopin ja Power BI -palvelun avulla voi tehdä monenlaisia vakuuttavia tietoihin pohjautuvia koosteita ja visualisointeja. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Voit tehdä kaikenlaista Power BI Desktopilla. Saat lisätietoja sen toiminnoista seuraavista resursseista:
+Power BI Desktop tukee diagnostiikkaporttiin yhdistämistä. Diagnostiikkaportti sallii yhteydenmuodostuksen muilla työkaluilla, ja sen avulla voidaan suorittaa jäljityksiä vianmääritystä varten. Diagnostiikkaporttia käytettäessä *muutosten tekemistä malliin ei tueta. Malliin tehdyt muutokset saattavat johtaa vioittumiseen ja tietojen menettämiseen.*
 
-* [Power BI Desktopin kyselyiden yleiskatsaus](desktop-query-overview.md)
+Lisää tietoja Power BI Desktopin monista toiminnoista on seuraavissa resursseissa:
+
+* [Kyselyn yleiskatsaus Power BI Desktopissa](desktop-query-overview.md)
 * [Power BI Desktopin tietolähteet](desktop-data-sources.md)
 * [Tietoihin yhdistäminen Power BI Desktopissa](desktop-connect-to-data.md)
-* [Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)
+* [Opetusohjelma: Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)
 * [Yleiset kyselytehtävät Power BI Desktopissa](desktop-common-query-tasks.md)   

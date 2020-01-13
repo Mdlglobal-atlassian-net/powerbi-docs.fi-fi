@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 88a49af62a26b64d8b913b6df03c82841f31a489
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: 0f24675d4185efd7524d9e8c453c919d64e0364a
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410967"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75222134"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktopin tietolähteet
 
@@ -29,9 +29,7 @@ Valitsemalla **Lisää...** **Yleisimmät**-valikossa saat **Nouda tiedot** -ikk
 ![Nouda tiedot -painike](media/desktop-data-sources/data-sources-02.png)
 
 > [!NOTE]
-> Power BI -tiimi laajentaa jatkuvasti **Power BI Desktopin** ja **Power BI -palvelun** käytettävissä olevia tietolähteitä. Näet näin ollen usein keskeneräisten tietolähteiden varhaisia versioita, joissa on merkintä *beeta* tai *esikatselu*. Tietolähteen, jolla on merkintä *beeta* tai *esikatselu*, tuki ja toiminnallisuus ovat rajoitettua, eikä sitä tulisi käyttää tuotantoympäristössä. 
-
-> Lisäksi mikään *Beeta-* tai *Esikatselu*-merkinnällä varustettu **Power BI Desktop** -sisältö ei ehkä ole käytettävissä **Power BI -palvelussa** tai muissa Microsoftin palveluissa ennen kuin tietolähde on yleisesti saatavana (GA).
+> Power BI -tiimi laajentaa jatkuvasti **Power BI Desktopin** ja **Power BI -palvelun** käytettävissä olevia tietolähteitä. Näet näin ollen usein keskeneräisten tietolähteiden varhaisia versioita, joissa on merkintä *beeta* tai *esikatselu*. Tietolähteen, jolla on merkintä *beeta* tai *esikatselu*, tuki ja toiminnallisuus ovat rajoitettua, eikä sitä tulisi käyttää tuotantoympäristössä. Lisäksi mikään *Beeta-* tai *Esikatselu*-merkinnällä varustettu **Power BI Desktop** -sisältö ei ehkä ole käytettävissä **Power BI -palvelussa** tai muissa Microsoftin palveluissa ennen kuin tietolähde on yleisesti saatavana (GA).
 
 ## <a name="data-sources"></a>Tietolähteet
 Kaikki tietotyypit on järjestelty seuraaviin luokkiin:
@@ -82,7 +80,7 @@ Seuraavassa kuvassa näkyy **Tiedosto**-luokan **Nouda tiedot** -ikkuna.
 * Vertica
 * Snowflake
 * Essbase
-* AtScale-kuutiot (beeta)
+* AtScale-kuutiot
 * BI-liitin
 * Dremio
 * Exasol
@@ -104,7 +102,7 @@ Seuraavassa kuvassa näkyy **Tietokanta**-luokan **Nouda tiedot** -ikkuna.
 * Power BI -tietojoukot
 * Power BI -tietovuot
 * Common Data Service
-* Power Platform -tietovuo (beeta)
+* Power Platform -tietovuot
 
 Seuraavassa kuvassa näkyy **Power Platform** -luokan **Nouda tiedot** -ikkuna.
 
@@ -112,19 +110,20 @@ Seuraavassa kuvassa näkyy **Power Platform** -luokan **Nouda tiedot** -ikkuna.
 
 **Azure**-luokka tarjoaa seuraavat tietoyhteydet:
 
-* Azure SQL -tietokanta
+* Azuren SQL-tietokanta
 * Azure SQL Data Warehouse
 * Azure Analysis Services -tietokanta
-* Azure Blob -säilö
+* Azure-blob-objektitallennus
 * Azure-taulukkotallennus
 * Azure Cosmos DB
-* Azure Data Lake Storage Gen2 (beeta)
+* Azure Data Lake Storage Gen2
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
 * Azure Data Explorer (Kusto)
-* Azure Cost Management (beeta)
+* Azure Cost Management
+* Azure Time Series Insights (beeta)
 
 Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 

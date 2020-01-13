@@ -11,10 +11,10 @@ ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Administration
 ms.openlocfilehash: f8e7240b34e20a3d18443cadb5265c5d0d870790
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73873650"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Tallennustilan hallinta Power BI -työtiloissa
@@ -63,7 +63,7 @@ Katso, miten paljon tallennustilaa käytät Power BI -tililläsi ja hallitse til
 Pidä mielessä, että sinulla tai jollain muulla voi olla raportteja ja raporttinäkymiä tietojoukon perusteella. Jos poistat tietojoukon, kyseiset raportit ja raporttinäkymät eivät enää toimi.
 
 ## <a name="manage-your-workspace"></a>Työtilan hallinta
-1. Valitse **Työtilojen** \> vieressä olevalla nuolella työtilan nimi.
+1. Valitse kohdan **Työtilat** \> vieressä olevalla nuolella työtilan nimi.
    
     ![Valitse työtila](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
 2. Valitse rataskuvake ![rataskuvake](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) oikeasta yläkulmasta \> **Ryhmän tallennustilan hallinta**.

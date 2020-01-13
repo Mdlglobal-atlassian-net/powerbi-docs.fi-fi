@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 195be0766e135dcccc2124a998fb5a32e8703d5b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: fe91de89e7eec601c516895089e3dcc03eff14ea
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875007"
+ms.lasthandoff: 01/04/2020
+ms.locfileid: "75657209"
 ---
 # <a name="embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Power BI -raporttipalvelimen raportin upottaminen iFramella SharePoint-palvelimessa
 
@@ -25,6 +25,7 @@ Tässä artikkelissa opit upottamaan Power BI -raporttipalvelimen raportin iFram
 * [Power BI -raporttipalvelin](https://powerbi.microsoft.com/report-server/) asennettuna ja määritettynä.
 * [Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)](install-powerbi-desktop.md) asennettuna.
 * [SharePoint](https://docs.microsoft.com/sharepoint/install/install)-ympäristö asennettuna ja määritettynä.
+* Internet Explorer 11 -selainta tuetaan vain, kun käytössä on SharePoint Online.  Voit käyttää muita tuettuja selaimia kummassa tahansa skenaariossa.
 
 ## <a name="create-the-power-bi-report-url"></a>Luo Power BI -raportin URL-osoite
 

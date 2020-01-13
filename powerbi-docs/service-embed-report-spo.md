@@ -1,21 +1,21 @@
 ---
 title: Upota raportin verkko-osa SharePoint Onlinessa
 description: Power BI:n uuden, SharePoint Onlineen tarkoitetun raportin verkko-osan avulla voit helposti upottaa vuorovaikutteisia Power BI -raportteja SharePoint Onlinen sivuille.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 05/16/2019
-ms.openlocfilehash: e44ea4174545715a689b4f4370516cbbab4a593b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/18/2019
+ms.openlocfilehash: d1ac9238e361a0889e52838eb0b3c3889c1cccf7
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881896"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75221708"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Upota raportin verkko-osa SharePoint Onlinessa
 
@@ -29,6 +29,7 @@ Kun käytät uutta **Upota SharePoint Onlinessa** -asetusta, upotetut raportit o
 
 * Tarvitset Power BI Pro -käyttöoikeuden tai [Power BI Premium -kapasiteetin (EM tai P SKU)](service-premium-what-is.md) ja Power BI -käyttöoikeuden.
 * Power BI -verkko-osa SharePoint Onlineen edellyttää [moderneja sivuja](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
+* Upotetun raportin käyttäminen edellyttää, että käyttäjät kirjautuvat sisään Power BI -palveluun ja aktivoivat Power BI -käyttöoikeutensa.
 
 ## <a name="embed-your-report"></a>Upota raportti
 Jos haluat upottaa raporttisi SharePoint Onlineen, sinun täytyy hankkia raportin URL-osoite ja käyttää sitä SharePoint Online Power BI -verkko-osan kanssa.

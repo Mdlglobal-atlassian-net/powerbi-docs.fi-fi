@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/29/2019
-ms.openlocfilehash: 3791e9cdfd44c62e6f9e9b79f5345d6d2476b0db
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.date: 12/12/2019
+ms.openlocfilehash: dec23aaa4fd54761c62507b8c7a5a36c45c75afd
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74264199"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75223364"
 ---
 # <a name="service-principal-with-power-bi"></a>Palvelun päänimi ja Power BI
 
@@ -53,7 +53,7 @@ Voit käyttää palvelun päänimeä vain, jos Power BI -artefaktisi ja resurssi
 
 Todentaminen palvelun päänimellä ja tavallisella päätilillä (Power BI Pro -käyttöoikeus) eroavat toisistaan. Alla olevaan taulukkoon on koottu joitain merkittävimpiä eroja.
 
-| funktiota | Pääkäyttäjätili <br> (Power BI Pro -käyttöoikeus) | Palvelun päänimi <br> (sovellustunnus) |
+| Funktio | Pääkäyttäjätili <br> (Power BI Pro -käyttöoikeus) | Palvelun päänimi <br> (sovellustunnus) |
 |------------------------------------------------------|---------------------|-------------------|
 | Voi kirjautua Power BI -palveluun  | Kyllä | Ei |
 | Käytössä Power BI -hallintaportaalissa | Ei | Kyllä |
@@ -150,7 +150,7 @@ Ohjeet palvelun päänimen objektitunnuksen hakemiseen Azure-portaalista annetaa
 
    ![Hallittu sovellus paikallisessa hakemistossa](media/embed-service-principal/managed-application-in-local-directory.png)
 
-    > [!Note]
+    > [!NOTE]
     > Yllä olevassa kuvassa oleva objektitunnus ei ole se tunnus, jota käytetään palvelun päänimen kanssa.
 
 3. Näet objektitunnuksen valitsemalla **Ominaisuudet**.
@@ -174,6 +174,7 @@ Alla on esimerkkikomentosarja, jolla voit hakea palvelun päänimen objektitunnu
 * [Organisaatiosi upotetut sovellukset](embed-sample-for-your-organization.md) eivät voi käyttää palvelun päänimeä.
 * [Tietovoiden](../service-dataflows-overview.md) hallintaa ei tueta.
 * Palvelun päänimi ei tällä hetkellä tue mitään järjestelmänvalvojien ohjelmointirajapintoja.
+* Kun palvelun päänimeä käytetään [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview) -tietolähteen avulla, palvelun päänimellä on itsellään oltava käyttöoikeudet Azure Analysis Services -esiintymään. Tähän ei riitä käyttöoikeusryhmä, joka sisältää palvelun päänimen.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

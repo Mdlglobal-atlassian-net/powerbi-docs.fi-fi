@@ -1,19 +1,19 @@
 ---
 title: Paikallisten raporttien ja suorituskykyilmaisimien tarkastelu Power BI -mobiilisovelluksissa
 description: Power BI -mobiilisovellukset tarjoavat reaaliaikaisen, kosketuskäyttöisten mobiiliyhteyden paikan päällä oleviin yritystietoihisi SQL Server Reporting Services -palvelussa ja Power BI -raporttipalvelimessa.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/13/2018
-ms.author: mshenhav
-ms.openlocfilehash: 50d44b99d8efea848588ab4c460a469ef6dc780b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/05/2019
+ms.author: painbar
+ms.openlocfilehash: 6020a6cb72be4e8d7be0485c7787fefc097e679d
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879458"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220041"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Paikallisten raporttipalvelinten raporttien ja suorituskykyilmaisimien tarkastelu Power BI -mobiilisovelluksissa
 
@@ -40,8 +40,9 @@ Sitten voit Power BI -mobiilisovelluksissa yhdistää jopa viisi raporttipalveli
 ## <a name="explore-samples-in-the-mobile-apps-without-a-server-connection"></a>Näytteisiin tutustuminen mobiilisovelluksissa ilman palvelinyhteyttä
 Vaikka sinulla ei olisikaan pääsyä Reporting Services -verkkoportaaliin, voit tutustua Reporting Services -mobiiliraporttien ja suorituskykyilmaisinten ominaisuuksiin. 
 
-1. Napauta yleistä siirtymispainiketta ![Yleinen siirtymispainike](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-global-nav-button.png) vasemmassa yläkulmassa, napauta sitten oikeassa yläkulmassa näkyvää hammaspyöräkuvaketta ![Hammaspyöräkuvake](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-settings-icon.png).
-2. Napauta **Reporting Services -malleja**, jonka jälkeen voit siirtyä käsittelemään suorituskykyilmaisinmalleja ja mobiiliraportteja.
+1. Napauta profiilikuvaasi vasemmassa yläkulmassa ja valitse sitten **Asetukset** ulosliukuvassa Tilit-paneelissa.
+
+2. Napauta avautuvalla Asetukset-sivulla **Reporting Services -malleja**, jonka jälkeen voit siirtyä käsittelemään suorituskykyilmaisinmalleja ja mobiiliraportteja.
    
    ![Reporting Services -mallit](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-ssrs-samples.png)
 
@@ -53,18 +54,17 @@ Voit myös katsella paikallisia Power BI -raportteja, Reporting Services -mobiil
    
    ![Kirjautuminen sisään raporttipalvelimeen](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-connect-to-rs-login.png)
    
-   Jos olet jo kirjautunut sisään Power BI -sovellukseen, napauta yleistä siirtymispainiketta ![Yleinen siirtymispainike](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-global-nav-button.png), napauta sitten hammaspyöräkuvaketta ![Hammaspyöräkuvake](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-settings-icon.png) oikeassa yläkulmassa.
-3. Napauta **Yhdistä palvelimeen**.
+   Jos olet jo kirjautunut sisään Power BI-sovellukseen, napauta profiilikuvaasi vasemmassa yläkulmassa ja valitse sitten **Asetukset** ulosliukuvassa Tilit-paneelissa.
+3. Valitse avautuvalla Asetukset-sivulla **Yhdistä palvelimeen**.
    
     ![Yhdistä palvelimeen](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-android-server-sign-in.png)
 
-     Mobiilisovellus tarvitsee yhteyden palvelimeen jollakin tavalla. Se voidaan tehdä muutamia tavoilla:
+    Mobiilisovellus tarvitsee yhteyden palvelimeen jollakin tavalla. Se voidaan tehdä muutamia tavoilla:
+     * Samassa verkossa oleminen tai VPN:n käyttäminen on helpoin tapa.
+     * Verkkosovelluksen välityspalvelinta voidaan käyttää yhteyden muodostamiseksi organisaation ulkopuolelle. Katso lisätietoja ohjeaiheesta [Reporting Servicesiin yhdistäminen OAuth-todennuksen avulla](mobile-oauth-ssrs.md).
+     * Avaa yhteys (portti) palomuurissa.
 
-    - Samassa verkossa oleminen tai VPN:n käyttäminen on helpoin tapa.
-    - Verkkosovelluksen välityspalvelinta voidaan käyttää yhteyden muodostamiseksi organisaation ulkopuolelle. Katso lisätietoja ohjeaiheesta [Reporting Servicesiin yhdistäminen OAuth-todennuksen avulla](mobile-oauth-ssrs.md). 
-    - Avaa yhteys (portti) palomuurissa.
-
-1. Kirjoita palvelimen osoite ja käyttäjänimesi ja salasanasi. Käytä tätä muotoilua palvelimen osoitteessa:
+4. Täytä palvelimen osoite ja anna palvelimelle kutsumanimi, jos haluat. Käytä tätä muotoilua palvelimen osoitteessa:
    
      `https://<servername>/reports`
    
@@ -75,14 +75,14 @@ Voit myös katsella paikallisia Power BI -raportteja, Reporting Services -mobiil
    Lisää **http** tai **https** yhteysmerkkijonon eteen.
    
     ![Yhdistä palvelimeen -valintaikkuna](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-connect-to-server-dialog.png)
-5. (Valinnainen) **Lisäasetukset**-kohdassa voit halutessasi antaa palvelimelle kutsumanimen.
-6. Nyt näet palvelimen siirtymisruudussa, joka tässä esimerkissä on nimeltään power bi -raporttipalvelin.
+5. Kun olet kirjoittanut palvelimen osoitteen ja valinnaisen kutsumanimen, valitse **Yhdistä** ja anna sitten käyttäjänimi ja salasana pyydettäessä.
+6. Nyt näet palvelimen Tilit-ruudussa – tässä esimerkissä sitä kutsutaan työpalvelimeksi.
    
    ![Raporttipalvelin siirtymisruudussa](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-left-nav-report-server.png)
 
-## <a name="connect-to-an-on-premises-report-server-in-ios"></a>Yhteyden muodostaminen paikalliseen raporttipalvelimeen iOS-laitteessa
+## <a name="connect-to-an-on-premises-report-server-in-ios-or-android"></a>Yhteyden muodostaminen paikalliseen raporttipalvelimeen iOS- tai Android-laitteessa
 
-Jos tarkastelet Power BI:tä iOS-mobiilisovelluksessa, IT-järjestelmänvalvojasi on saattanut määrittää sovelluksen määrityskäytännön. Tässä tapauksessa yhteyden muodostaminen raporttipalvelimeen on helppoa eikä sinun tarvitse antaa niin paljon tietoja muodostaessasi yhteyden raporttipalvelimeen. 
+Jos tarkastelet Power BI:tä iOS- tai Android-mobiilisovelluksessa, IT-järjestelmänvalvojasi on saattanut määrittää sovelluksen määrityskäytännön. Tässä tapauksessa yhteyden muodostaminen raporttipalvelimeen on helppoa eikä sinun tarvitse antaa niin paljon tietoja muodostaessasi yhteyden raporttipalvelimeen. 
 
 1. Näyttöön tulee sanoma, jossa ilmoitetaan mobiilisovelluksen olevan määritetty raporttipalvelimen kanssa. Napauta **Kirjaudu sisään**.
 
@@ -94,7 +94,7 @@ Jos tarkastelet Power BI:tä iOS-mobiilisovelluksessa, IT-järjestelmänvalvojas
 
 3. Kirjoita salasana todennusta varten ja napauta sitten **Kirjaudu sisään**. 
 
-    ![Raporttipalvelimen tiedot täytettynä](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-address.png)
+    ![Raporttipalvelimen tiedot esitäytettynä](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-address.png)
 
 Nyt voit tarkastella ja käsitellä raporttipalvelimeen tallennettuja suorituskykyilmaisimia ja Power BI -raportteja.
 
@@ -117,7 +117,7 @@ Power BI -raportit, Reporting Services -mobiiliraportit ja suorituskykyilmaisime
 ## <a name="view-your-favorite-kpis-and-reports"></a>Suosikkisuorituskykyilmaisinten ja -raporttien tarkastelu
 Voit merkitä suorituskykyilmaisimia ja raportteja suosikeiksi verkkoportaalissa ja tarkastella niitä yhdessä kätevässä kansiossa mobiililaitteessasi Power BI -suosikkikoontinäyttöjesi kera.
 
-* Napauta **Suosikit**.
+* Valitse **Suosikit** siirtymispalkissa.
   
    ![Suosikit siirtymisruudussa](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png)
   
@@ -126,8 +126,8 @@ Voit merkitä suorituskykyilmaisimia ja raportteja suosikeiksi verkkoportaalissa
    ![Power BI -raportteja ja koontinäyttö Suosikit-sivulla](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-favorites.png)
 
 ## <a name="remove-a-connection-to-a-report-server"></a>Yhteyden poistaminen raporttipalvelimeen
-1. Napauta siirtymisruudun alareunassa **Asetukset**.
-2. Napauta palvelimen nimeä, johon et halua olla yhteydessä.
+1. Avaa Tilit-ruutu ja valitse **Asetukset**.
+2. Napauta sen palvelimen nimeä, johon et halua olla yhteydessä.
 3. Napauta **Poista palvelin**.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

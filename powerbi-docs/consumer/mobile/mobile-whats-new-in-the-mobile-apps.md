@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/12/2019
+ms.date: 12/16/2019
 ms.author: painbar
-ms.openlocfilehash: c188f2b00447ff9f97059e81e7945f67e3170c6d
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 44fcfdbaa51b85b191ff1452c66daee7da0360f8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74010027"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75220513"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -21,6 +21,20 @@ Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 * [Power BI -tiimin mobiilisovelluksia käsittelevä blogi](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Power BI Desktopin uudet ominaisuudet](../../desktop-latest-update.md)  
 * [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)  
+
+## <a name="november-2019"></a>Marraskuu 2019
+
+### <a name="power-bi-apps-new-look-is-now-on-by-default"></a>Power BI -sovelluksen uusi ulkoasu on nyt käytössä oletusarvoisesti
+ 
+Nyt kun avaat sovelluksen, uusi ulkoasu- ja siirtymispalkit otetaan automaattisesti käyttöön, mikä yksinkertaistaa sisällön etsimistä ja avaamista. Lähde liikkeelle sovelluksen [aloitussivulta](mobile-apps-home-page.md) – saat nopeasti käyttöösi tärkeimmät sisällöt sekä [toimintasyötteen](mobile-apps-home-page.md#activity-feed), joka pitää sinut ajan tasalla näyttämällä kaikki tuoreimmat hälytykset ja ilmoitukset.
+
+### <a name="see-all-your-latest-power-bi-activity"></a>Näet kaiken uusimman Power BI -toiminnan
+ 
+Toimintasyötteen avulla voit seurata reaaliaikaisesti, mitä Power BI ‑sisällöissä tapahtuu. Siirry vain sovelluksen aloitussivulle ja avaa Tehtävä-välilehti, niin näet kaikki uusimmat ilmoitukset, hälytykset, kommentit, @mentions ja paljon muuta. [Lisätietoja](mobile-apps-home-page.md#activity-feed).
+
+### <a name="use-bookmarks-in-your-reports"></a>Käytä kirjanmerkkejä raporteissasi
+
+Power BI ‑mobiilisovellus tukee nyt Power BI:ssä luotuja kirjanmerkkejä. Kun avaat sovelluksen, voit hyödyntää sekä raportin tekijän luomia kirjanmerkkejä että itse luomiasi henkilökohtaisia kirjanmerkkejä. [Lisätietoja](mobile-reports-in-the-mobile-apps.md#bookmarks).
 
 ## <a name="october-2019"></a>Lokakuu 2019
 
@@ -105,7 +119,7 @@ Integroimme AAD:n [uuden sovellusten suojaukseen perustuvan ehdollisen käyttöo
 
 ### <a name="device-protection-ios"></a>Laitteen suojaus (iOS)
 
-Käyttäjät voivat suojata Power BI:n laitteen sisäisen suojauksen (kasvojentunnistus, kosketustunnistus tunnuskoodi) avulla. Käyttäjä voi hallita tätä ominaisuutta sovelluksen asetuksista. Myös järjestelmänvalvojat voivat hallita sitä Intunen ja muiden MDM-työkalujen avulla. [Lue lisää](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-ios-native-secure-access).
+Käyttäjät voivat suojata Power BI:n laitteen sisäisen suojauksen (kasvojentunnistus, kosketustunnistus tunnuskoodi) avulla. Käyttäjä voi hallita tätä ominaisuutta sovelluksen asetuksista. Myös järjestelmänvalvojat voivat hallita sitä Intunen ja muiden MDM-työkalujen avulla. [Lisätietoja](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-ios-native-secure-access).
 
 ### <a name="one-page-report-slideshow-windows"></a>Yhden sivun raporttidiaesitys (Windows)
 
@@ -469,7 +483,7 @@ Lue [tammikuun 2017 mobiilisovellusten blogin ominaisuusyhteenveto](https://powe
 #### <a name="ios"></a>iOS
 **SSRS-todennus Active Directory -liittoutumispalveluiden (ADFS) avulla – esikatselu** Voit nyt kirjautua sisään paikallisiin SQL Server Reporting Services -palvelimiin mobiililaitteella käyttäen organisaation tiliä. Lue lisää [OAuthin käyttämisestä yhteyden muodostamisessa SSRS-palvelimiin](mobile-oauth-ssrs.md).
 
-#### <a name="android"></a>Android
+#### <a name="android"></a>Android-
 **SSRS-todennus Active Directory -liittoutumispalveluiden (ADFS) avulla – esikatselu** Voit nyt kirjautua sisään paikallisiin SQL Server Reporting Services -palvelimiin mobiililaitteella käyttäen organisaation tiliä. Lue lisää [OAuthin käyttämisestä yhteyden muodostamisessa SSRS-palvelimiin](mobile-oauth-ssrs.md).
 
 **Uudet ja parannetut ominaisuudet: Lisää merkintöjä ja jaa merkityksellistä tietoa nopeasti** Jakamisen ja merkintöjen lisäämisen kaikki ominaisuudet toimivat nyt Android-laitteissa. Parannetun valikon avulla on helpompi ja nopeampi lisätä merkintöjä ja jakaa merkityksellistä tietoa. Voit myös jakaa merkintöjä sisältävän raportin tai tiedot suoraan Power BI -sovelluksesta.
@@ -503,7 +517,7 @@ Jos kuvaruudulla on koontinäytön omistajan määrittämä mukautettu URL-osoit
 
 Voit nyt päivittää Apple Watch -tiedot suoraan Watch-sovelluksesta. Päivitä tiedot painamalla koontinäytön indeksisivua pitkään. (Power BI -mobiilisovelluksen on oltava käynnissä taustalla iPhonessa, jotta tämä toimii.)
 
-#### <a name="android"></a>Android
+#### <a name="android"></a>Android-
 **Mukautettu URL-osoite kuvaruudussa**
 
 Jos kuvaruudulla on koontinäytön omistajan määrittämä mukautettu URL-osoite, siirryt nyt ruutua napauttaessasi suoraan kyseiseen URL-osoitteeseen avaamatta ruutua tarkastelutilassa. Lisäksi valmiiksi määritettyjä mukautettuja URL-osoitteita sisältävät koontinäytön ruudut voivat ohjata lukijat sovelluksessa suoraan raportteihin.
@@ -520,7 +534,7 @@ Lue [marraskuun 2016 Power BI -mobiilisovellusten ominaisuusyhteenveto](https://
 #### <a name="android-devices"></a>Android-laitteet
 **Esikatselu: Intunen mobiilisovellusten hallinta** Power BI:n Microsoft Intune Mobile Application Manager (MAM) -tuki on nyt esikatseltavissa Power BI Pron käyttäjille Android-laitteissa. 
 
-**Suosikit** Merkitse suosikkikoontinäyttösi tunnisteella Android-laitteessa ja näet kaikki omat [suosikkeihin lisäämäsi Power BI -koontinäyttösi sekä Reporting Services -mobiiliraporttisi ja suorituskykyilmaisimet](mobile-android-app-get-started.md#view-your-favorite-dashboards-kpis-and-reports) yhdessä paikassa. 
+**Suosikit** Merkitse suosikkikoontinäyttösi tunnisteella Android-laitteessa ja näet kaikki omat [suosikkeihin lisäämäsi Power BI -koontinäyttösi sekä Reporting Services -mobiiliraporttisi ja suorituskykyilmaisimet](mobile-android-app-get-started.md#view-your-favorite-dashboards-and-reports) yhdessä paikassa. 
 
 #### <a name="ios-devices"></a>iOS-laitteet
 **Linkit** Ruutujen ja visualisointien URL-osoitteet ovat nyt napsautettavia ja ne avautuvat selaimessa.
@@ -678,7 +692,7 @@ Lue [Power BI -mobiilisovellusten blogi maaliskuulle 2016](https://powerbi.micro
 
 **Bing- ja R-ruudut** Avaa Bing- ja R-ruudut tarkastelutilassa.
 
-**Enemmän reaaliaikaisia ruutuja aloitusnäytössä** [Kiinnitä suorituskykyilmaisimia ja rivikortteja aloitusnäyttösi tapahtumaruutuun](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) reaaliaikaisina ruutuina, jotta näet kaikki tärkeät mittarisi yhdellä silmäyksellä.
+**Enemmän reaaliaikaisia ruutuja aloitusnäytössä** [Kiinnitä suorituskykyilmaisimia ja rivikortteja aloitusnäyttöösi](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) reaaliaikaisina ruutuina, jotta näet kaikki tärkeät mittarisi yhdellä silmäyksellä.
 
 **Zoomaa nipistämällä** Tarkastele koontinäyttöjä entistä yksityiskohtaisemmin käyttämällä tabletissasi zoomaamista nipistämällä.
 
@@ -687,7 +701,7 @@ Lue [Power BI -mobiilisovellusten blogi maaliskuulle 2016](https://powerbi.micro
 **Raporttivalikoima** Avaa raporttisi suoraan raporttivalikoimasta.
 
 ### <a name="february-2016"></a>Helmikuu 2016
-#### <a name="android"></a>Android
+#### <a name="android"></a>Android-
 Tarkastele koontinäyttöjä [vaakasuunnassa Android-puhelimissa](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone). 
 
 #### <a name="power-bi-app-for-windows-10-devices"></a>Power BI -sovellus Windows 10 -laitteille

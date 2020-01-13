@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: bdf35d04a5b4dc7000a9ada0afcb23d882d17780
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e9b34d79a70207e175c873a88ec4d5dfe5417747
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871240"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75224224"
 ---
 # <a name="tutorial-use-cognitive-services-in-power-bi"></a>Opetusohjelma: Kognitiivisten palveluiden käyttäminen Power BI:ssä
 
@@ -52,7 +52,7 @@ Tietovuo-valintaikkunassa näkyvät uuden tietovuon luomiseen liittyvät asetuks
 
 ![Tietovuon luominen](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_02.png)
 
-Liitä URL-kenttään tämä URL-osoite: [ https://pbiaitutorials.blob.core.windows.net/textanalytics/FabrikamComments.csv ](https://pbiaitutorials.blob.core.windows.net/textanalytics/FabrikamComments.csv) ja valitse **Seuraava**.
+Liitä URL-kenttään tämä URL-osoite: [https://pbiaitutorials.blob.core.windows.net/textanalytics/FabrikamComments.csv](https://pbiaitutorials.blob.core.windows.net/textanalytics/FabrikamComments.csv) ja valitse **Seuraava**.
 
 ![Tietovuon luominen](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_03.png)
 
@@ -166,7 +166,7 @@ Funktio palauttaa tietueen sekä niin, että tunnisteet ovat .csv-tiedostossa, e
 
 Valitse **Valmis** ja tallenna tietovuo. Kun olet päivittänyt tietovirran, voit muodostaa siihen yhteyden Power BI Desktopista käyttäen Tietovuot-liittimiä. (Ohjeet ovat tämän asiakirjan sivulla 5).
 
-## <a name="clean-up-resources"></a>Resurssien tyhjentäminen
+## <a name="clean-up-resources"></a>Puhdista resurssit
 
 Kun kyselyä ei enää tarvita, poista se napsauttamalla kyselyn nimeä hiiren kakkospainikkeella Power Query -editorissa ja valitsemalla **Poista**.
 
@@ -180,6 +180,6 @@ Tässä opetusohjelmassa käytit asenteen pisteytys- ja kuvien merkitseminen -fu
 
 Voit olla kiinnostunut myös seuraavista artikkeleista.
 
-* [Opetusohjelma: Automaattianalyysistudion mallin käynnistys Power BI:ssä (esikatselu)](service-tutorial-invoke-machine-learning-model.md)
+* [Opetusohjelma: Automaattianalyysipalveluiden studion (perinteisen) mallin käynnistäminen Power BI:ssä (esikatselu)](service-tutorial-invoke-machine-learning-model.md)
 * [Azuren automaattianalyysipalveluiden integroiminen Power BI:hin (esikatselu)](service-machine-learning-integration.md)
 * [Kognitiiviset palvelut Power BI:ssä (esikatselu)](service-cognitive-services.md)
