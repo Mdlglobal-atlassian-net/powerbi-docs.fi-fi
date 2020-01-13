@@ -9,14 +9,15 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b553d9341723c9b44abce57a384d4c7ba76e00a2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: eaf2e7fed056653f2ee44e25b493e6b5e170a8dd
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73868990"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761452"
 ---
-# <a name="connect-to-data-using-generic-interfaces-in-power-bi-desktop"></a>Tietoihin yhdistäminen yleisten liittymien avulla Power BI Desktopissa
+# <a name="connect-to-data-by-using-power-bi-desktop-generic-interfaces"></a>Tietoihin yhdistäminen Power BI Desktopin yleisillä liittymillä 
+
 Voit muodostaa yhteyden moniin eri tietolähteisiin **Power BI Desktopissa** käyttämällä valmiita uusia tietoyhteyksiä, jotka ovat väliltä **Access-tietokannat** ja **Zendesk**-resurssit, kuten **Nouda tiedot** -ikkunassa on esitetty. Voit myös muodostaa yhteyden *muihin* tietolähteisiin laajentaaksesi yhteysvaihtoehtoja, käyttämällä yleisiä liittymiä (kuten **ODBC** tai **REST API**) **Power BI Desktopissa**.
 
 ![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_1.png)

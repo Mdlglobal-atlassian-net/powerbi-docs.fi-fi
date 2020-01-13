@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2019
-ms.openlocfilehash: ef1608f35b1d038322e1c2aa5a6a3e41f47f8d02
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 01/03/2020
+ms.openlocfilehash: 204e1cdb83c02582e6181cf6addcbfdf8355054d
+ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73873968"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691444"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Power BI -raporttipalvelimen tuen aikajana
 
@@ -30,13 +30,13 @@ Tämän tukikäytännön ansiosta voimme tarjota asiakkaillemme uusia innovaatio
 
 | **Versio** | **Julkaisupäivä** | **Tuen päättymispäivä** |
 | --- | --- | --- |
-| Kesäkuu 2017 |12. kesäkuuta 2017 |Tuki lopetettu |
+| Kesä 2017 |12. kesäkuuta 2017 |Tuki lopetettu |
 | Lokakuu 2017 |31. lokakuuta 2017 | Tuki lopetettu |
 | Maaliskuu 2018 | 19. maaliskuuta 2018 | Tuki lopetettu |
 | Elokuu 2018 | 15. elokuuta 2018 | Tuki lopetettu |
 | Tammikuu 2019 | 23. tammikuuta 2019 | 23. tammikuuta 2020 |
 | Toukokuu 2019 | 22. toukokuuta 2019 | 22. toukokuuta 2020 |
-| Syyskuu 2019 | Syyskuu 2020 | Syyskuu 2021 
+| Syyskuu 2019 | Syyskuu 2019 | Syyskuu 2020 
 
 Lataa Power BI -raporttipalvelin ja Power BI -raporttipalvelimelle optimoitu Power BI Desktop tutustumalla ohjeaiheeseen [Paikallinen raportointi Power BI -raporttipalvelimella](https://powerbi.microsoft.com/report-server/).
 

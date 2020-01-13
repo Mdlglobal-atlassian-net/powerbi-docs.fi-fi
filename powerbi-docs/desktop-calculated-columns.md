@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 10c6f9f512c1b8c837842247d9dc928e8e065451
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4178dd37acf12efbe8dd00baed4f6b72ab549841
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876623"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762044"
 ---
-# <a name="using-calculated-columns-in-power-bi-desktop"></a>Laskettujen sarakkeiden käyttäminen Power BI Desktopissa
+# <a name="create-calculated-columns-in-power-bi-desktop"></a>Laskettujen sarakkeiden luominen Power BI Desktopissa
 Laskettujen sarakkeiden avulla voit lisätä uutta tietoa taulukkoon, joka on jo mallissasi. Sen sijaan, että hakisit ja lataisit arvoja uuteen sarakkeeseen tietolähteestä, luot Data Analysis Expressions (DAX) -kaavan, joka määrittää sarakkeen arvot. Power BI Desktopissa lasketut sarakkeet luodaan käyttämällä raporttinäkymän Uusi sarake -toimintoa.
 
 Toisin kuin mukautetut sarakkeet, jotka on luotu osana kyselyä käyttämällä kyselyeditorin toimintoa Lisää mukautettu sarake, raporttinäkymässä tai tietonäkymässä luodut lasketut sarakkeet perustuvat tietoihin, jotka olet jo ladannut malliin. Saatat esimerkiksi päättää liittää yhteen arvoja kahdessa erillisessä mutta toisiinsa liittyvässä taulukossa olevista kahdesta eri sarakkeesta, tehdä lisäyksen tai poimia alimerkkijonoja.

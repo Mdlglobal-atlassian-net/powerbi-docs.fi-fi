@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 73b439b870a4f931c2db680c0067a6ea2fdf54ff
-ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
+ms.openlocfilehash: e3154e5a143de63300e7f5dc87cec518188a3442
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548574"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75837582"
 ---
 # <a name="power-bi-webinars"></a>Power BI -verkkoseminaarit
 
@@ -21,9 +21,7 @@ Rekisteröidy tuleviin reaaliaikaisiin verkkoseminaareihin tai katso nauhoitettu
 
 ## <a name="upcoming-webinars"></a>Tulevat verkkoseminaarit
 
-**Kolme tapaa, joilla tekoäly muuttaa BI:tä**
-<br>Justyna Lucznik
-<br>[Rekisteröidy ja katso tammikuun 8. päivä](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI.html?lcid=EN-US&ocid=mkto_eml_EM581230A1LA1)
+Mitään verkkoseminaaria ei ole vielä ajoitettu. Palaa pian takaisin tarkistamaan muut tulevat tapahtumat.
 
 >[Tulevia Power BI -yhteisön verkkoseminaareja](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -38,6 +36,10 @@ Aloita näistä suosituista verkkoseminaareista
 **Miten Microsoft muuttaa liiketoimintatietojen suojausta**
 <br>Anton Fritz ja Adi Regev
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
+
+**Kolme tapaa, joilla tekoäly muuttaa BI:tä**
+<br>Justyna Lucznik
+<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI.html?lcid=EN-US&ocid=mkto_eml_EM581230A1LA1)
 
 **Power BI sekä modernin ja yritys-BI:n tulevaisuus**
 <br>pitäjät: Arun Ulag ja Amir Netz

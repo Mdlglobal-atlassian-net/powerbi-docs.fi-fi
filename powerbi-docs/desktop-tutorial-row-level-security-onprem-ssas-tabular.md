@@ -10,16 +10,16 @@ ms.topic: tutorial
 ms.date: 05/28/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 64a7cc62f319162b653742be776a9aa9549f8659
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.openlocfilehash: 09e4a9cc3e6a5c16f23532f0a4589fdcb1906549
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74311447"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759516"
 ---
-# <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynaaminen rivitason suojaus Analysis Servicen taulukkomallissa
+# <a name="implement-row-level-security-in-an-analysis-services-tabular-model"></a>Rivitason suojauksen käyttöönotto Analysis Servicen taulukkomallissa
 
-Tässä opetusohjelmassa näytetään esimerkkitietojoukon avulla, miten voit toteuttaa [ **rivitason suojauksen**](service-admin-rls.md) **Analysis Services -taulukkomallissa** ja käyttää sitä Power BI -raportissa. 
+Tässä opetusohjelmassa näytetään esimerkkitietojoukon avulla, miten voit toteuttaa [**rivitason suojauksen**](service-admin-rls.md)**Analysis Services -taulukkomallissa** ja käyttää sitä Power BI -raportissa. 
 
 * Luo uusi suojaustaulukko [**AdventureworksDW2012**-tietokannassa](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
 * Kokoa taulukkomalli tarvittavilla fakta- ja dimensiotaulukoilla
@@ -54,7 +54,7 @@ Nämä ohjeet edellyttävät **AdventureworksDW2012**-relaatiotietokannan käytt
    
    Näet kyseiset käyttäjät myös myöhemmissä tehtävissä.
 
-4. Tee seuraavaksi *sisäliitos* **DimSalesTerritory**-taulukon kanssa. Taulukon avulla näet käyttäjän alueeseen liittyvät tiedot. Tämä SQL-koodi tekee *sisäliitoksen*. Kuvasta ilmenee, miltä taulukko tulee näyttämään.
+4. Tee seuraavaksi *sisäliitos***DimSalesTerritory**-taulukon kanssa. Taulukon avulla näet käyttäjän alueeseen liittyvät tiedot. Tämä SQL-koodi tekee *sisäliitoksen*. Kuvasta ilmenee, miltä taulukko tulee näyttämään.
    
        select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeID, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryID] = b.[SalesTerritoryKey]
    
