@@ -48,6 +48,10 @@
           href: relationships-many-to-many.md
         - name: Poista Power Query -taustalataus käytöstä
           href: power-query-background-refresh.md
+        - name: 'Milloin sivutettuja raportteja kannattaa käyttää Power BI:ssä'
+          href: report-paginated-or-power-bi.md
+        - name: 'SQL Server Reporting Services -raporttien siirtäminen Power BI:hin'
+          href: migrate-ssrs-reports-to-power-bi.md
     - name: Raportit
       items:
         - name: Raporttien yleiskatsaus
