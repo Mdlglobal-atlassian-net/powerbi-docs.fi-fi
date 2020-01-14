@@ -709,6 +709,8 @@
               href: service-dataflows-overview.md
             - name: Tietovoiden luominen ja käyttäminen
               href: service-dataflows-create-use.md
+            - name: Parannetun käsittelymoduulin käyttäminen tietovoiden kanssa
+              href: service-dataflows-enhanced-compute-engine.md
             - name: Lasketut entiteetit ja Power BI Premium
               href: service-dataflows-computed-entities-premium.md
             - name: Yhteyden muodostaminen tietovoita sisältäviin tietolähteisiin
@@ -801,6 +803,8 @@
               items:
                 - name: Sovelluksia sisältäviin palveluihin yhdistäminen
                   href: service-connect-to-services.md
+                - name: Azure-hiililaskuri
+                  href: service-connect-to-azure-carbon-calculator.md
                 - name: GitHub
                   href: service-connect-to-github.md
                 - name: Office365Mon
