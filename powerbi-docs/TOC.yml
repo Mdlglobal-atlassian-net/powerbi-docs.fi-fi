@@ -871,6 +871,8 @@
           href: service-admin-premium-workloads.md
         - name: Kapasiteettien valvonta sovelluksen avulla
           href: service-admin-premium-monitor-capacity.md
+        - name: Premium-kuormituksen mittareiden valvonta
+          href: service-premium-metrics-app.md
         - name: Kapasiteettien valvonta hallintaportaalissa
           href: service-admin-premium-monitor-portal.md
         - name: Lisäävän päivityksen määrittäminen
