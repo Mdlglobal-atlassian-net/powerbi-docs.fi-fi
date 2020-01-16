@@ -10,12 +10,12 @@ ms.date: 09/25/2019
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 99d57b734e42913db20e8a414c3216ed66334fa8
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: de745777a5ad6da1149328d9df92be9ecccfc181
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75224173"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885295"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -25,7 +25,7 @@ Hallintaportaalin kaikkia toimintoja voivat käyttää kaikki Office 365:n yleis
 
 ## <a name="how-to-get-to-the-admin-portal"></a>Hallintaportaaliin siirtyminen
 
-Tililläsi täytyy olla **yleisen järjestelmänvalvojan** oikeudet Office 365:ssä tai Azure Active Directoryssa tai Power BI -palvelun järjestelmänvalvojan oikeudet, jotta voit käyttää Power BI -hallintaportaalia. Jos haluat lisätietoja Power BI -palvelun järjestelmänvalvojan roolista, lue ohjeartikkeli [Power BI -järjestelmänvalvojaroolin kuvaus](service-admin-role.md). Voit siirtyä Power BI -hallintaportaaliin alla annettujen ohjeiden mukaisesti.
+Tililläsi täytyy olla **yleisen järjestelmänvalvojan** oikeudet Office 365:ssä tai Azure Active Directoryssa (Azure AD) tai Power BI -palvelun järjestelmänvalvojan oikeudet, jotta voit käyttää Power BI -hallintaportaalia. Jos haluat lisätietoja Power BI -palvelun järjestelmänvalvojan roolista, lue ohjeartikkeli [Power BI -järjestelmänvalvojaroolin kuvaus](service-admin-role.md). Voit siirtyä Power BI -hallintaportaaliin alla annettujen ohjeiden mukaisesti.
 
 1. Napsauta asetusten hammasrataskuvaketta Power BI -palvelun oikeassa yläkulmassa.
 
@@ -190,13 +190,16 @@ Voit hallintaportaalissa myös hallita sitä, keillä käyttäjillä on oikeus j
 
 ### <a name="share-content-with-external-users"></a>Jaa sisältöä ulkoisten käyttäjien kanssa
 
-Organisaation käyttäjät voivat jakaa koontinäkymiä organisaation ulkopuolisten käyttäjien kanssa. Lue lisätietoja [jakamisesta ulkoisesti](service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
+Organisaation käyttäjät voivat jakaa koontinäkymiä, raportteja ja sovelluksia organisaation ulkopuolisten käyttäjien kanssa. Lue lisätietoja [jakamisesta ulkoisesti](service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
 
 ![Ulkoiset käyttäjät -asetus](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
 Seuraavassa kuvassa näet esiin tulevan ilmoituksen, kun jaat ulkoiselle käyttäjälle.
 
 ![Jaa ulkoisen käyttäjän kanssa](media/service-admin-portal/powerbi-admin-sharing-external.png)  
+
+> [!IMPORTANT]
+> Tämä asetus määrittää, voivatko Power BI -käyttäjät kutsua ulkoisia käyttäjiä Azure Active Directory B2B (Azure AD B2B) -vieraskäyttäjiksi organisaatiossasi Power BI:n kautta. Kun asetus on käytössä, käyttäjät, joilla on vieraskutsujan rooli Azure AD:ssä, voivat lisätä ulkoisia sähköpostiosoitteita jakaessaan raportteja, koontinäyttöjä ja Power BI -sovelluksia. Ulkoinen vastaanottaja kutsutaan liittymään organisaatioosi Azure AD B2B -vieraskäyttäjänä. Huomaa, että jos tämä asetus poistetaan käytöstä, organisaatioon aiemmin Azure AD B2B -vieraskäyttäjiksi lisätyt ulkoiset käyttäjät näkyvät edelleen henkilöiden valitsimen käyttöliittymissä Power BI:ssä ja heille voidaan antaa käyttöoikeudet eri kohteisiin, työtiloihin ja sovelluksiin.
 
 ### <a name="publish-to-web"></a>Julkaise verkkoon
 
@@ -247,14 +250,14 @@ Seuraavassa kuvassa näkyy raportin **Tiedosto**-valikko, kun **Tulosta koontin�
 ![Raportin tulostaminen](media/service-admin-portal/powerbi-admin-print-report.png)
 
 ### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa
-Azure Active Directoryn B2B-vieraskäyttäjät voivat muokata ja hallita sisältöä organisaatiossa. [Lisätietoja](service-admin-azure-ad-b2b.md)
+
+Azure AD B2B -vieraskäyttäjät voivat muokata ja hallita sisältöä organisaatiossa. [Lisätietoja](service-admin-azure-ad-b2b.md)
 
 Seuraava kuva näyttää asetuksen Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa.
 
 ![Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
 
-> [!IMPORTANT]
-> Kun lisäät ulkoisen käyttäjän Azure AD -vuokraajaan (joko manuaalisesti tai jakamalla raportin kyseisen käyttäjän kanssa), kyseinen käyttäjätili on nyt löydettävissä sisäiseksi tiliksi. Sisäinen käyttäjä voi jakaa muita asioita ulkoisen käyttäjän kanssa, vaikka sisäisellä tilillä ei olisi ulkoisia jakamisoikeuksia.
+Voit hallintaportaalissa myös hallita sitä, keillä käyttäjillä on oikeus kutsua ulkoisia käyttäjiä organisaatioon. Lisätietoja on artikkelissa [Jaa sisältöä ulkoisten käyttäjien kanssa](#export-and-sharing-settings).
 
 ### <a name="email-subscriptions"></a>Sähköpostitilaukset
 Organisaatiosi käyttäjät voivat luoda sähköpostitilauksia. Lue lisää [tilauksista](service-report-subscribe.md).
@@ -508,7 +511,7 @@ Jos haluat päivittää visualisoinnin organisaation säilöstä, valitse ratask
 
 Varmista, että visualisoinnin tunnus pysyy samana. Uusi tiedosto korvaa aiemman tiedoston kaikissa organisaation raporteissa. Jos visualisoinnin uusi versio rikkoo minkä tahansa sen aiemman version käyttö- tai tietorakenteen, älä korvaa aiempaa versiota. Lue sen sijaan visualisoinnista uusi versio, joka luetellaan erikseen. Voit esimerkiksi lisätä uuden luetteloidun visualisoinnin nimeen versionumeron (versio X.X). Näin käyttäjät tietävät, että kyseessä on saman visualisoinnin päivitetty versio, ja voivat välttää olemassa olevien raporttien toimintojen virheet sekä ongelmat. Varmista taas, että visualisoinnin tunnus pysyy samana. Kun käyttäjä sitten seuraavan kerran siirtyy organisaatioon säilöön Power BI Desktopista, hän voi tuoda uuden version. Tässä yhteydessä häneltä kysytään, haluaako hän korvata raportissa olevan nykyisen version.
 
-Saat lisätietoja [organisaation mukautettujen visualisointien usein kysytyistä kysymyksistä](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-visuals).
+Saat lisätietoja [organisaation mukautettujen visualisointien usein kysytyistä kysymyksistä](/power-bi/developer/power-bi-custom-visuals-faq#organizational-power-bi-visuals).
 
 ## <a name="dataflowStorage">Tietovuon tallennustila (esikatselu)</a>
 

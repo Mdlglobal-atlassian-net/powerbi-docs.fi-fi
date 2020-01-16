@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f7af1c584802181cab68f6ce2fc4823ec7078354
-ms.sourcegitcommit: 331ebf6bcb4a5cdbdc82e81a538144a00ec935d4
+ms.openlocfilehash: 7ce20b8b6dc382cdafe61bde3e9305197fd33ea6
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75523023"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762067"
 ---
-# <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Analysis Servicesin taulukkomuotoisten tietojen käyttäminen Power BI Desktopissa
+# <a name="connect-to-analysis-services-tabular-data-in-power-bi-desktop"></a>Analysis Servicesin taulukkomuotoisiin tietoihin yhdistäminen Power BI Desktopissa
 Power BI Desktopissa on kaksi tapaa muodostaa yhteys SQL Server Analysis Servicesin taulukkomalleihin ja hakea niistä tietoja: Tutustu käyttämällä reaaliaikaista yhteyttä tai Valitse kohteet ja tuo Power BI Desktopiin.
 
 Menetelmien kuvailu on alla.

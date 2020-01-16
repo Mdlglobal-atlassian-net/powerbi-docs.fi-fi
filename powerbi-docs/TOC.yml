@@ -803,10 +803,10 @@
               items:
                 - name: Sovelluksia sisältäviin palveluihin yhdistäminen
                   href: service-connect-to-services.md
-                - name: Azure-hiililaskuri
-                  href: service-connect-to-azure-carbon-calculator.md
                 - name: GitHub
                   href: service-connect-to-github.md
+                - name: Microsoftin kestävyyslaskin
+                  href: service-connect-to-microsoft-sustainability-calculator.md
                 - name: Office365Mon
                   href: service-connect-to-office365mon.md
                 - name: Project Online
@@ -887,7 +887,7 @@
           href: service-admin-premium-restart.md
         - name: Tietojoukkoihin yhdistäminen asiakassovelluksilla ja -työkaluilla
           href: service-premium-connect-tools.md
-- name: 'Power BI:n sivutetun raportin muodostin'
+- name: 'Power BI:n raportin muodostin'
   items:
     - name: Yleiskatsaus
       items:

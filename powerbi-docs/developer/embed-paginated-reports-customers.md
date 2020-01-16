@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 11/04/2019
-ms.openlocfilehash: 1493f628ce822afa020e300ff7428da059fcc65d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/04/2019
+ms.openlocfilehash: 48aae2391ead5ded0860364ce5942d7bd725c2d9
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74311439"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731239"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Opetusohjelma: Power BI:n sivutetun raportin upottaminen sovellukseen asiakkaitasi varten (esikatselu)
 
@@ -271,6 +271,12 @@ Voit JavaScriptin avulla ladata sivutetun raportin verkkosivun jako-elementtiin.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Tässä opetusohjelmassa olet oppinut, miten voit upottaa Power BI:n sivutettuja raportteja sovellukseen asiakkaillesi. Voit myös yrittää upottaa Power BI -sisältöä organisaatiollesi.
+Tässä opetusohjelmassa olet oppinut, miten voit upottaa Power BI:n sivutettuja raportteja sovellukseen asiakkaillesi. Voit myös yrittää upottaa Power BI -sisältöä asiakkaillesi tai organisaatiollesi.
+
+> [!div class="nextstepaction"]
+>[Asiakkaille tarkoitetun sisällön upottaminen](embed-sample-for-customers.md)
+
+> [!div class="nextstepaction"]
+>[Organisaatiollesi tarkoitetun sisällön upottaminen](embed-sample-for-your-organization.md)
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 75b3c370e6b17c5a5a4937da6db989f814a0ebd9
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: ab98463f6dc1defd9ee3f2a97b322fefbe582779
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75221984"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761038"
 ---
-# <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Viimeisimmän Power BI Desktop -päivityksen uudet ominaisuudet
+# <a name="whats-new-in-power-bi-desktop"></a>Power BI Desktopin uudet ominaisuudet ja toiminnot
 
 
 ## <a name="december-2019-update-2765678661"></a>Joulukuun 2019 päivitys (2.76.5678.661)
@@ -42,8 +42,8 @@ Seuraavat päivitykset olivat uutta Power BI Desktopissa tässä kuussa:
 
 
 ### <a name="reporting"></a>Raportointi
-* Teemojen päivitykset (esikatselu) [[video]](https://youtu.be/eCEwgZsVUOs?t=10)  [[artikkeli]](desktop-report-themes.md#customize-report-themes-preview)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#customizeTheme) 
-* Vie nykyinen teema (esikatselu) [[video]](https://youtu.be/eCEwgZsVUOs?t=242)  [[artikkeli]](desktop-report-themes.md#customize-report-themes-preview)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#exportTheme) 
+* Mukauta nykyinen teema (esikatselu) [[video]](https://youtu.be/eCEwgZsVUOs?t=10)  [[artikkeli]](desktop-report-themes.md#create-and-customize-a-theme-in-power-bi-desktop-preview)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#customizeTheme) 
+* Vie nykyinen teema (esikatselu) [[video]](https://youtu.be/eCEwgZsVUOs?t=242)  [[artikkeli]](desktop-report-themes.md#export-report-themes-preview)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#exportTheme) 
 * Taulukon sarakkeen tai matriisin arvon määrittäminen mukautetuksi URL-osoitteeksi [[video]](https://youtu.be/eCEwgZsVUOs?t=277)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#customURL) 
 * Suorituskykyilmaisimen visualisoinnin muotoilun asetukset [[video]](https://youtu.be/eCEwgZsVUOs?t=354)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#KPI) 
 * Uusi hajontapuumuotoilu [[video]](https://youtu.be/eCEwgZsVUOs?t=442)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#decomp) 

@@ -6,131 +6,140 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4fdcfd4d7684cef3e6b703709b2739ebbff1badd
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: c111b04847cba56781b1dd77f899d456ad5f4162
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223521"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731418"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Raporttiteemojen käyttäminen Power BI Desktopissa
-**Raporttiteemojen** avulla voit soveltaa rakennemuutoksia koko raporttiin, esimerkiksi käyttää yrityksen värejä, muuttaa kuvakejoukkoja tai ottaa käyttöön visualisointien uuden oletusarvoisen muotoilun. Kun otat käyttöön **raporttiteeman**, kaikissa raporttisi visualisoinneissa ja muotoiluissa käytetään valitun teeman värejä. Muutamia poikkeuksia on, ja ne kuvataan jäljempänä tässä artikkelissa.
+Power BI Desktopin *raporttiteemojen* avulla voit soveltaa rakennemuutoksia koko raporttiin, esimerkiksi käyttää yrityksen värejä, muuttaa kuvakejoukkoja tai ottaa käyttöön visualisointien uuden oletusarvoisen muotoilun. Kun otat käyttöön raporttiteeman, kaikissa raporttisi visualisoinneissa ja muotoiluissa käytetään valitun teeman värejä. Muutamia poikkeuksia on, ja ne kuvataan jäljempänä tässä artikkelissa.
 
 ![Raporttiteemat](media/desktop-report-themes/report-themes-1a.png)
 
-Kun otat käyttöön mukautetun **raporttiteeman**, tarvitset perusrakennetta käyttävän JSON-tiedoston. Voit tuoda tämän JSON-tiedoston Power BI Desktopiin ja ottaa sen käyttöön raportissasi.
+Raporttiteemoja on kahdenlaisia – valmiita raporttiteemoja ja mukautettuja raporttiteematiedostoja:
 
-Voit myös mukauttaa ja yhdenmukaistaa lähes kaikki **Muotoilu**-ruudussa olevat elementit joko tekemällä mukauttamisen suoraan Power BI Desktopista tai vaihtoehtoisesti teeman JSON-tiedoston kautta. Tavoitteena on antaa käyttäjille täydet mahdollisuudet hallita omien raporttiensa ulkoasua yksityiskohtaisesti.
+- Valmiissa raporttiteemoissa on erilaisia esimääritettyjä värimalleja, jotka asennetaan Power BI Desktopin kanssa. Voit valita valmiita raporttiteemoja suoraan Power BI Desktopin valikosta. 
+
+- Mukautetut raporttiteematiedostot ovat raporttiteemoja, jotka luodaan niiden perusrakenteen määrittävissä JSON-tiedostoissa. Voit ottaa mukautetun raporttiteeman käyttöön tuomalla sen JSON-tiedoston Power BI Desktopiin ja ottamalla sen käyttöön raportissasi.
+
+Voit mukauttaa ja yhdenmukaistaa lähes kaikki **Visualisoinnit**-ruudun **Muotoile**-osiossa olevat elementit joko tekemällä mukauttamisen suoraan Power BI Desktopista tai vaihtoehtoisesti raporttiteeman JSON-tiedoston kautta. Tavoitteena on antaa käyttäjille täydet mahdollisuudet hallita omien raporttiensa ulkoasua yksityiskohtaisesti.
 
 ## <a name="how-report-themes-work"></a>Raporttiteemojen toiminta
-Jos haluat käyttää raporttiteemaa Power BI Desktop -raportissa, valitse jokin käytettävissä olevista valmiista raporttiteemoista tai luo/tuo mukautettu teema.
+Jos haluat käyttää raporttiteemaa Power BI Desktop -raportissa, valitse jokin käytettävissä olevista valmiista raporttiteemoista tai luo/tuo mukautettu teematiedosto.
+
+### <a name="built-in-report-themes"></a>Valmiit raporttiteemat
+
+Valitse käytettävissä olevista valmiista raporttiteemoista seuraavasti: 
+
+1. Valitse **Vaihda teemaa** **Aloitus**-valintanauhassa. 
+
+   ![Valitse raporttiteema](media/desktop-report-themes/report-themes-2a.png)
+
+2. Valitse avattavasta valikosta jokin valittavana olevista teemoista.
+
+   Raporttiteema on nyt käytössä raportissa.
+
+Seuraavassa taulukossa on näkyvissä käytettävissä olevat valmiit raporttiteemat.
 
 | Valmis raporttiteema | Oletusvärien järjestys    |
 |------ |---------- |
-| Oletus   | ![oletus](media/desktop-report-themes/report-themes-color-scheme-default.png)|
-| Highrise  | ![highrise](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
-| Johtaja     | ![johtaja](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
-| Rajaseutu  | ![rajaseutu](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
-| Innovatiivinen    | ![innovatiivinen](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
-| Kukoistus     | ![kukoistus](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
-| Vuorovesi | ![vuorovesi](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
-| Lämpötila   | ![lämpötila](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
-| Aurinko | ![aurinko](media/desktop-report-themes/report-themes-color-scheme-solar.png)|
-| Poikkeava     | ![poikkeava](media/desktop-report-themes/report-themes-color-scheme-divergent.png)|
-| Myrsky     | ![myrsky](media/desktop-report-themes/report-themes-color-scheme-storm.png)|
-| Perinteinen   | ![perinteinen](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
-| Kaupungin puisto     | ![kaupungin puisto](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
-| Luokkahuone     | ![luokkahuone](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
-| Turvallinen värisokeille   | ![turvallinen värisokeille](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
-| Sähköinen  | ![sähköinen](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
-| Suuri kontrasti     | ![suuri kontrasti](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
-| Auringonlasku    | ![auringonlasku](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
-| Hämy  | ![hämy](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
+| Oletus   | ![Oletus](media/desktop-report-themes/report-themes-color-scheme-default.png)|
+| Highrise  | ![Highrise](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
+| Johtaja     | ![Johtaja](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
+| Rajaseutu  | ![Rajaseutu](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
+| Innovoi  | ![Innovoi](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
+| Kukoistus     | ![Kukoistus](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
+| Vuorovesi | ![Vuorovesi](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
+| Lämpötila   | ![Lämpötila](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
+| Aurinko | ![Aurinko](media/desktop-report-themes/report-themes-color-scheme-solar.png)|
+| Poikkeava     | ![Poikkeava](media/desktop-report-themes/report-themes-color-scheme-divergent.png)|
+| Myrsky     | ![Myrsky](media/desktop-report-themes/report-themes-color-scheme-storm.png)|
+| Perinteinen   | ![Perinteinen](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
+| Kaupungin puisto     | ![Kaupungin puisto](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
+| Luokkahuone     | ![Luokkahuone](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
+| Turvallinen värisokeille   | ![Turvallinen värisokeille](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
+| Sähköinen  | ![Sähköinen](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
+| Suuri kontrasti     | ![Suuri kontrasti](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
+| Auringonlasku    | ![Auringonlasku](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
+| Hämy  | ![Hämy](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
 
-Jos haluat valita käytettävissä olevista valmiista raporttiteemoista, napsauta **Aloitus**-valintanauhan **Vaihda teemaa** -painiketta ja valitse sitten jokin teemoista avattavasta valikosta.
+### <a name="import-custom-report-theme-files"></a>Mukautettujen raporttiteematiedostojen tuominen
 
-![Valitse raporttiteema](media/desktop-report-themes/report-themes-2a.png)
+Voit tuoda mukautetun raporttiteematiedoston seuraavasti: 
 
-Raporttiteema otetaan käyttöön raportissa, ja raportti on valmis.
+1. Valitse **Aloitus**-valintanauhassa **Vaihda teemaa** ja valitse sitten avattavasta valikosta **Tuo teema**. 
 
-### <a name="importing-report-themes"></a>Raporttiteemojen tuominen
+   ![Tuo teema](media/desktop-report-themes/report-themes-3a.png)
 
-Jos haluat tuoda mukautetun raporttiteeman, napsauta **Aloitus**-valintanauhan **Vaihda teemaa** -painiketta. Valitse **Tuo teema** avattavasta valikosta.
+   Näyttöön avautuu ikkuna, jossa voit selata JSON-teematiedoston sijaintiin. 
 
-![Tuo teema](media/desktop-report-themes/report-themes-3a.png)
+2. Seuraavassa kuvassa saatavilla on muutamia juhlapyhäteematiedostoja. Valitaan juhlapyhäteema maaliskuulle, *St Patricks Day.json*.
 
-Näyttöön avautuu ikkuna, jossa voit selata JSON-teematiedoston sijaintiin. Power BI Desktop etsii JSON-tiedostoja, koska se on Power BI -raporttiteemojen tiedostotyyppi. Seuraavassa kuvassa saatavilla on muutamia juhlapyhäteematiedostoja. Valitaan juhlapyhäteema maaliskuulle.
+   ![Juhlapyhäteema](media/desktop-report-themes/report-themes_4.png)
 
-![Juhlapyhäteema](media/desktop-report-themes/report-themes_4.png)
+   Kun teematiedosto on ladattu, Power BI Desktop näyttää onnistumisilmoituksen.
 
-Kun teematiedosto on ladattu, Power BI Desktop ilmoittaa asiasta sinulle.
+   ![Teeman tuominen onnistui](media/desktop-report-themes/report-themes_5.png)
 
-![Teeman tuominen onnistui](media/desktop-report-themes/report-themes_5.png)
-
-Teemoja voi mukauttaa Power BI Desktopissa kahdella eri tavalla. Tarkastellaan niitä erikseen.
-
+Raporttiteemoja voi mukauttaa Power BI Desktopissa kahdella eri tavalla. Tarkastellaan niitä erikseen.
 
 ## <a name="customize-report-themes-preview"></a>Raporttiteemojen mukauttaminen (esiversio)
 
-**Power BI Desktopin** joulukuun 2019 julkaisuversiosta lähtien raporttiteemoja voi mukauttaa kahdella eri tavalla:
+Power BI Desktopin joulukuun 2019 julkaisuversiosta lähtien raporttiteemoja voi mukauttaa kahdella eri tavalla:
 
-* Teeman luominen ja mukauttaminen Power BI Desktopissa (esiversio)
-* Mukautetun raporttiteeman JSON-tiedoston luominen ja mukauttaminen
+* [Teeman luominen ja mukauttaminen Power BI Desktopissa (esiversio)](#create-and-customize-a-theme-in-power-bi-desktop-preview)
+* [Mukautetun raporttiteeman JSON-tiedoston luominen ja mukauttaminen](#introduction-to-report-theme-json-files)
 
-Jos haluat mukauttaa teeman suoraan Power BI Desktopissa, valitse ensin **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja valitse sitten seuraavan kuvan esittämällä tavalla **Esiversio-ominaisuudet**-osiosta valintaruutu **Mukauta nykyistä teemaa**.
+### <a name="create-and-customize-a-theme-in-power-bi-desktop-preview"></a>Teeman luominen ja mukauttaminen Power BI Desktopissa (esiversio)
 
-![Mukautettujen teemojen käyttöönotto](media/desktop-report-themes/report-themes_5a.png)
+Power BI Desktopin joulukuun 2019 julkaisuversiosta alkaen mahdollisuus mukauttaa teemaa suoraan Power BI Desktopissa on nyt käytettävissä esikatselutilassa.
 
-Saatat saada kehotteen käynnistää Power BI Desktop uudelleen, jotta esiversiotoiminto voidaan ottaa käyttöön.
+Teeman mukauttaminen suoraan Power BI Desktopissa: 
 
-Uudelleenkäynnistyksen jälkeen voit aloittaa nykyisen teeman mukauttamisen valitsemalla **Aloitus**-valintanauhan ja valitsemalla siitä **Vaihda teemaa > Mukauta nykyistä teemaa**. Näytölle avautuu valintaikkuna useista eri tavoista, joilla voit mukauttaa aiemmin luotua teemaa.
+1. Valitse **Tiedosto** > **Asetukset ja vaihtoehdot** > **Asetukset**. 
 
-![Teeman mukauttaminen](media/desktop-report-themes/report-themes_5b.png)
+2. Valitse **Esikatselutoiminnot** -osiossa **Mukauta nykyistä teemaa** ja valitse sitten **OK**.
 
-Jos pidät jostakin aiemmin luodusta teemasta ja haluat tehdä siihen joitakin muutoksia, voit valita aiemmin luodun teeman ja valita sitten valintaikkunasta **Mukauta nykyistä teemaa** seuraavassa kuvassa esitetyllä tavalla. 
+   ![Mukautettujen teemojen käyttöönotto](media/desktop-report-themes/report-themes_5a.png)
 
-![Mukauta nykyistä teemaa](media/desktop-report-themes/report-themes_5c.png)
+   Saatat saada kehotteen käynnistää Power BI Desktop uudelleen, jotta esiversiotoiminto voidaan ottaa käyttöön. Kun olet käynnistänyt tietokoneen uudelleen, voit aloittaa käytössä olevan teeman mukauttamisen. 
 
-> [!NOTE]
-> Edellisessä kuvassa näkyy käytössä uusi valintanauha, joka on tällä hetkellä saatavilla esiversiona. Voit ottaa käyttöön uuden valintanauhan esiversion valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja valitsemalla sitten **Esiversio-ominaisuudet**-osiosta **Uuden valintanauhan esiversio**.
+3. Valitse **Aloitus**-valintanauhassa **Vaihda teemaa** > **Mukauta nykyistä teemaa**. 
 
-Mukautettavissa olevat teeman asetukset löytyvät seuraavista luokista, jotka näkyvät teeman mukauttamisen valintaikkunassa:
+   Näytölle avautuu valintaikkuna eri tavoista, joilla voit mukauttaa aiemmin luotua teemaa.
 
-* Teeman nimi (voit nimetä mukauttamasi teeman) ja erilaiset väriasetukset (teeman värit, asennearvojen värit, poikkeavat värit ja paljon muuta)
-* Tekstiasetukset, mukaan lukien fonttiperhe, ‑koko ja ‑väri sekä akseleiden nimet, värit, kortit ja suorituskykyilmaisimet sekä välilehtien nimet
-* Visualisointien elementit, kuten tausta, reuna, ylätunniste ja työkaluvihjeet
-* Sivuelementit, kuten tausta ja taustakuva
-* Suodatinruudun asetukset, mukaan lukien taustan väri, läpinäkyvyys, fontin ja kuvakkeen väri, koko, suodatinkortit ja paljon muuta
+   ![Teeman mukauttaminen](media/desktop-report-themes/report-themes_5b.png)
 
-Kun olet tehnyt haluamasi muutokset ja valinnut **Käytä ja tallenna**, teema tallennetaan, minkä jälkeen sitä voidaan käyttää nykyisessä raportissa tai viedä ulos sovelluksesta. 
+4. Jos pidät aiemmin luodusta teemasta ja haluat tehdä joitakin muutoksia, valitse teema ja valitse sitten **Mukauta nykyistä teemaa**. 
 
-Nykyisen teeman mukauttaminen tällä tavalla voi tehdä teemojen mukauttamisesta helppoa, nopeaa ja visuaalista. Jotkin rajatut muutokset edellyttävät kuitenkin teeman JSON-tiedoston muokkaamista seuraavassa osiossa kuvatulla tavalla.
+   ![Mukauta nykyistä teemaa](media/desktop-report-themes/report-themes_5c.png)
+
+Mukautettavissa olevat teeman asetukset löytyvät seuraavista luokista, jotka näkyvät **Mukauta teemaa** -ikkunassa:
+
+* **Nimi ja värit**: Teeman nimi- ja väriasetukset sisältävät teeman värit, asennearvojen värit ja poikkeavat värit.
+* **Text**: Tekstiasetukset sisältävät fonttiperheen, ‑koon ja ‑värin sekä akseleiden nimet, värit, kortit ja suorituskykyilmaisimet sekä välilehtien nimet.
+* **Visualisoinnit**: Visuaalisten elementtien asetukset sisältävät taustan, reunan, ylätunnisteen ja työkaluvihjeet.
+* **Sivu**: Sivun elementtien asetukset sisältävät taustakuvan ja taustan.
+* **Suodatinruutu**: Suodatinruudun asetukset sisältävät taustan värin, läpinäkyvyyden, fontin ja kuvakkeen värin, koon ja suodatinkortit.
+
+Kun olet tehnyt haluamasi muutokset, Tallenna teema valitsemalla **Käytä ja tallenna**. Teemaa voi nyt käyttää nykyisessä raportissa, ja se voidaan viedä. 
+
+Nykyisen teeman mukauttaminen tällä tavalla tekee teemojen mukauttamisesta helppoa, nopeaa ja visuaalista. Voit kuitenkin tehdä teemoihin hienovaraisempia mukautuksia, jotka edellyttävät teeman [JSON-tiedoston](#report-theme-json-file-format) muokkaamista.
 
 > [!TIP]
-> Voit mukauttaa useimpia teeman elementtejä käyttämällä **Mukauta nykyistä teemaa** ‑valintaikkunan visualisointielementtejä, minkä jälkeen voit viedä JSON-tiedoston ulos sovelluksesta ja tehdä hienovaraisia muutoksia manuaalisesti (muokkaamalla JSON-tiedostoa itseään). Sen jälkeen voit nimetä uudelleen tämän säätämäsi JSON-tiedoston, tuoda sen takaisin sovellukseen ja saada näin käyttöön kaikki haluamasi muutokset.
+> Voit mukauttaa useimpia teeman elementtejä käyttämällä **Mukauta teemaa** -ikkunan visuaalisia elementtejä. Sen jälkeen voit halutessasi viedä JSON-tiedoston ja tehdä hienosäädettyjä muutoksia manuaalisesti muokkaamalla JSON-tiedoston asetuksia. Voit nimetä uudelleen tämän hienosäädetyn JSON-tiedoston ja tuoda sen myöhemmin.
 
+## <a name="introduction-to-report-theme-json-files"></a>Raporttiteeman JSON-tiedostojen esittely
+ Kun avaat edellisessä osiossa mainitun JSON-perustiedoston, (St Patricks Day.json), se näyttää seuraavanlaiselta:
 
-## <a name="structure-of-a-report-theme-json-file"></a>Raporttiteeman JSON-tiedoston rakenne
- Edellisessä osiossa valittu JSON-perustiedosto (*St Patricks Day.json* -tiedosto) näyttää editorissa avattuna seuraavalta:
-
-![St. Patrick's day -JSON-tiedosto](media/desktop-report-themes/report-themes_6.png)
-
-JSON-tiedosto sisältää seuraavat pakolliset rivit:
-
-* **name**: teeman nimi ja ainoa pakollinen kenttä.
-
-* **dataColors**: luettelo Power BI Desktopin visualisointien tietojen heksadesimaalivärikoodeista. Luettelo voi sisältää haluamasi määrän värejä.
-
-* **background**, **foreground** ja **tableAccent**: Useita väriluokkia. Käsittelemme väriluokkien tietoja myöhemmin tässä artikkelissa, mutta huomioi nyt, että väriluokkien avulla voit valita raporttiisi useita värejä kerralla.
-
-Tässä on *St. Patricks Day.json* -tiedoston teksti, jota käyttämällä voit luoda oman JSON-tiedostosi:
-
-```json
+ ```json
     {
-        "name": "St Patricks Day",
+        "name": "St Patrick's Day",
         "dataColors": ["#568410", "#3A6108", "#70A322", "#915203", "#D79A12", "#bb7711", "#114400", "#aacc66"],
         "background":"#FFFFFF",
         "foreground": "#3A6108",
@@ -138,68 +147,79 @@ Tässä on *St. Patricks Day.json* -tiedoston teksti, jota käyttämällä voit 
     }
 ```
 
-Jos haluat ainoastaan säätää raportin perusvärejä, saat tuontivalmiin, henkilökohtaisen JSON-tiedoston yksinkertaisesti muuttamalla tämän tiedoston nimen ja heksakoodeja.
+Tässä raporttiteeman JSON-tiedostossa on seuraavat rivit:
 
-JSON-tiedostossa määrität vain muotoilun, jota haluat muokata, joten kaikessa, mitä *ei* ole määritetty JSON-tiedostossa, käytetään Power BI:n oletusasetuksia.
+* **name**: Raporttiteeman nimi. Tämä kenttä on ainoa pakollinen kenttä.
 
-JSON-tiedoston luomisella on monia etuja Voit esimerkiksi määrittää kaikkien kaavioiden fonttikooksi 12, tai tietyn fonttiperheen käyttämisen tietyissä visualisoinneissa. Voit myös poistaa arvopisteen otsikot käytöstä tietyissä kaaviotyypeissä.
+* **dataColors**: Luettelo Power BI Desktopin visualisointien tietojen heksadesimaalivärikoodeista. Luettelo voi sisältää haluamasi määrän värejä.
 
-Kun käytät eriytetyt asetukset sisältävää JSON-tiedostoa, voit luoda teematiedoston, jolla yhdenmukaistat kaavioita ja raportteja. Näin takaat helposti organisaatiosi raporttien yhdenmukaisuuden.
+* **background**, **foreground** ja **tableAccent**: Väriluokkia. Väriluokkien avulla voit valita useita värejä raporttiisi yhdellä kertaa. 
 
-Lisätietoja yksityiskohtaisen JSON-tiedoston muotoilusta on jäljempänä tässä artikkelissa olevassa osiossa **Raporttiteeman JSON-tiedoston muotoilu**.
+Voit käyttää tätä JSON-tiedostoa perustana luodaksesi oman mukautetun raporttiteematiedoston tuontia varten. Jos haluat mukauttaa vain raportin perusvärejä, muuta tiedoston nimeä ja heksadesimaalikoodeja.
 
-## <a name="how-report-theme-colors-stick-to-your-reports"></a>Miten raporttiteeman värit pysyvät raporteissasi?
-Kun julkaiset raportin **Power BI -palveluun**, raporttiteeman värit pysyvät sen mukana.
+Voit määrittää raporttiteeman JSON-tiedostossa vain muotoilun, jota haluat muuttaa. Jos jotakin ei määritetä JSON-tiedostossa, se palautuu Power BI Desktopin oletusasetuksiin.
 
-**Muoto**-paneelin **Tietojen värit** -osion värit ovat raporttiteemasi mukaisia. Esimerkiksi sen jälkeen, kun **St. Patrick's Day** -teemassa on otettu käyttöön useita vihreitä ja ruskeita värejä, valitaan visualisointi. Sitten siirrytään kohtaan **Muotoilu > Tietojen värit**, jolloin näkyvät seuraavat tiedot:
+JSON-tiedoston luomisella on monia etuja Voit esimerkiksi määrittää kaikkien kaavioiden fonttikooksi 12, tietyn fonttiperheen käyttöön tietyissä visualisoinneissa tai poistaa tietoselitteet käytöstä tietyissä kaaviotyypeissä. Kun käytät JSON-tiedostoa, voit luoda raporttiteematiedoston, jolla yhdenmukaistat kaavioita ja raportteja. Näin takaat helposti organisaatiosi raporttien yhdenmukaisuuden.
 
-![Visualisoinnit](media/desktop-report-themes/report-themes_8.png)
+Lisätietoja JSON-tiedoston muodosta on kohdassa [Raporttiteeman JSON-tiedoston muotoilu](#report-theme-json-file-format).
 
-Näetkö kaiken tämän vihreän? Tämä johtuu siitä, että nämä värit sisältyvät tuotuun **raporttiteemaan**, jonka otettiin käyttöön.
+## <a name="how-report-theme-colors-stick-with-your-reports"></a>Miten raporttiteeman värit pysyvät raporteissasi?
+Kun julkaiset raportin Power BI -palveluun, raporttiteeman värit pysyvät sen mukana. **Muoto**-paneelin **Tietojen värit** -osion värit ovat raporttiteemasi mukaisia. 
 
-Värivalikoiman värit ovat myös suhteessa nykyiseen teemaan. Jos esimerkiksi valitset arvopisteen ylimmän rivin kolmannen värin ja siirryt myöhemmin eri teemaan, kyseisen arvopisteen väri päivittyy automaattisesti uuden teeman ylimmän rivin kolmanteen väriin, aivan kuten muuttaessasi teemoja Microsoft Officessa.
+Voit tarkastella raporttiteeman käytettävissä olevia värejä seuraavasti:
+
+1. Valitse visualisointi. 
+
+2. Valitse **Visualisointi**-ruudun **Muotoile**-osasta **Tietojen värit**.
+ 
+3. Valitse kohteen avattava luettelo, jos haluat tarkastella raporttiteeman **Teeman värit** -tietoja.
+
+   ![Teeman värit](media/desktop-report-themes/report-themes_8.png)
+
+Esimerkissä sen jälkeen, kun St. Patrick's Day -raporttiteemassa on otettu käyttöön useita vihreitä ja ruskeita värejä, voit tarkastella teeman värejä. Näetkö kaiken tämän vihreän? Tämä johtuu siitä, että nämä värit sisältyvät tuotuun raporttiteemaan, joka otettiin käyttöön.
+
+Värivalikoiman värit ovat suhteessa nykyiseen teemaan. Oletetaan esimerkiksi, että valitset arvopisteen ylimmän rivin kolmannen värin. Myöhemmin, jos muutat teemaa, kyseisen arvopisteen väri päivittyy automaattisesti uuden teeman ylimmän rivin kolmanteen väriin. Näin tapahtuisi myös, jos muutat teemaa Microsoft Officessa.
 
 ### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Tilanteet, joissa raporttiteeman värit eivät pysy raporteissasi
-Oletetaan, että otat käyttöön mukautetun värijoukon (tai yksittäisen värin) visualisoinnin tietyssä arvopisteessä värinvalitsimen Mukautettu väri -vaihtoehdon avulla. Kun otat raporttiteeman käyttöön, se *ei* ohita tätä mukautettua arvopisteen väriä.
+Oletetaan, että otat käyttöön mukautetun värijoukon (tai yksittäisen värin) visualisoinnin tietyssä arvopisteessä värinvalitsimen **Mukautettu väri** -vaihtoehdon avulla. Kun otat raporttiteeman käyttöön, se *ei* ohita tätä mukautettua arvopisteen väriä.
 
-Saatat myös haluta määrittää arvopisteen värin manuaalisesti käyttämällä Teeman värit -osiota. Värejä *ei* päivitetä, kun otat käyttöön uuden raporttiteeman. Jos haluat palauttaa oletusvärit (jotta ne päivittyvät, kun otat käyttöön uuden raporttiteeman), valitse värinvalitsimen **Teeman värit** -valikoimasta **Palauta oletusasetukseen** tai valitse väri.
+Saatat myös haluta määrittää arvopisteen värin manuaalisesti käyttämällä **Teeman värit** -osiota. Värejä *ei* päivitetä, kun otat käyttöön uuden raporttiteeman. Jos haluat palauttaa oletusvärit (jotta ne päivittyvät, kun otat käyttöön uuden raporttiteeman), valitse värinvalitsimen **Teeman värit** -valikoimasta **Palauta oletusasetukseen** tai valitse väri.
 
 ![Palauta oletusasetukset](media/desktop-report-themes/report-themes_9.png)
 
-Lisäksi monet **mukautetut visualisoinnit** eivät käytä raporttiteemoja.
+Monet mukautetut visualisoinnit eivät käytä raporttiteemoja.
 
-## <a name="report-theme-files-you-can-use-right-now"></a>Tällä hetkellä käytettävissä olevat raporttiteematiedostot
-Haluatko aloittaa **raporttiteemojen** käytön? Seuraavassa on joitakin valmiita raporttiteeman JSON-tiedostoja, jotka voit ladata ja tuoda **Power BI Desktop** -raporttiisi. Näet myös kuvan raporttiteemasta, joka on otettu käyttöön tämän artikkelin raportissa.
+## <a name="custom-report-theme-files-you-can-use-right-now"></a>Tällä hetkellä käytettävissä olevat mukautetut raporttiteematiedostot
+Haluatko aloittaa raporttiteemojen käytön? Tutustu mukautettuihin raporttiteemoihin [teemavalikoimassa](https://community.powerbi.com/t5/Themes-Gallery/bd-p/ThemesGallery) tai kokeile seuraavia valmiita mukautettuja raporttiteeman JSON-tiedostoja, jotka voit ladata ja tuoda Power BI Desktop -raporttiisi:
 
-* [Teema](https://go.microsoft.com/fwlink/?linkid=843924), jota käytettiin [blogitekstissä](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/), jossa kerrottiin **raporttiteemojen** ensijulkaisusta, on nimeltään [*waveform.json*](https://go.microsoft.com/fwlink/?linkid=843924).
+* [Aaltomuoto-teema](https://community.powerbi.com/t5/Themes-Gallery/Waveform/m-p/140536). Tämä raporttiteema esiteltiin [blogikirjoituksessa](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/), jossa kerrottiin raporttiteemojen ensijulkaisusta. [Lataa Waveform.json](https://go.microsoft.com/fwlink/?linkid=843924).
 
-  ![Waverform.json-teema](media/desktop-report-themes/report-themes_10.png)
+  ![Waveform.json-teema](media/desktop-report-themes/report-themes_10.png)
 
-* [Teema, joka soveltuu paremmin näkövammaisille](https://go.microsoft.com/fwlink/?linkid=843923) kuin oletusteema. Se on nimeltään [*ColorblindSafe-Longer.json*](https://go.microsoft.com/fwlink/?linkid=843923).
+* [Värisokeille sopiva teema](https://community.powerbi.com/t5/Themes-Gallery/Color-Blind-Friendly/m-p/140597).
+Tämän raporttiteema on näkörajoitteisille helppolukuisempi. [Lataa ColorblindSafe-Longer.json](https://go.microsoft.com/fwlink/?linkid=843923).
 
-  ![ColorblindSafe-Longer.json-teema](media/desktop-report-themes/report-themes_11.png)
+  ![ColorblindSafe-Longer.json-teema](media/desktop-report-themes/report-themes_11.png).
 
-* Alla näkyy joukko [Power View -teemoja](https://go.microsoft.com/fwlink/?linkid=843925), jotka on pakattu zip-tiedostoon. Mukana on esimerkiksi [*Apothecary.json*](https://go.microsoft.com/fwlink/?linkid=843925).
+* Power View -teemat, kuten Apothecary.json. [Lataa Power View -teemoja zip-tiedostona](https://go.microsoft.com/fwlink/?linkid=843925).
 
   ![Apothecary.json-teema](media/desktop-report-themes/report-themes_12.png)
 
-* Lopuksi alla on *Valentine's Day* -teema.
+* Valentine's Day -teema.
 
   ![Valentine's Day -teema](media/desktop-report-themes/report-themes_13.png)
 
-Latauksen sijaan käytettävissäsi on Valentine's day -teeman JSON-tiedoston koodi:
+  Tässä on Valentine's day -teeman JSON-tiedoston koodi:
 
-```json
-    {
-        "name": "Valentine's Day",
-        "dataColors": ["#990011", "#cc1144", "#ee7799", "#eebbcc", "#cc4477", "#cc5555", "#882222", "#A30E33"],
-        "background":"#FFFFFF",
-        "foreground": "#ee7799",
-        "tableAccent": "#990011"
-    }
-```
-
-**Raporttiteemojen** avulla voit ilmaista Power BI Desktop -raporteissasi itseäsi, organisaatiotasi, juhlapyhää tai vuodenaikaa värikkäin tavoin. 
+   ```json
+       {
+           "name": "Valentine's Day",
+           "dataColors": ["#990011", "#cc1144", "#ee7799", "#eebbcc", "#cc4477", "#cc5555", "#882222", "#A30E33"],
+           "background":"#FFFFFF",
+           "foreground": "#ee7799",
+           "tableAccent": "#990011"
+       }
+   ```
 
 Alla on muutama muu raporttiteema, joiden avulla pääset alkuun:
 
@@ -207,6 +227,25 @@ Alla on muutama muu raporttiteema, joiden avulla pääset alkuun:
 * [Plum](https://community.powerbi.com/t5/Themes-Gallery/Plum/m-p/140711)
 * [Autumn](https://community.powerbi.com/t5/Themes-Gallery/Autumn/m-p/140746)
 * [High contrast.](https://community.powerbi.com/t5/Themes-Gallery/Color-Blind-Friendly/m-p/140597)
+
+Raporttiteemojen avulla voit ilmaista Power BI Desktop -raporteissasi itseäsi, organisaatiotasi, juhlapyhää tai vuodenaikaa värikkäin tavoin. 
+
+
+## <a name="export-report-themes-preview"></a>Raporttiteemojen vieminen (esiversio)
+
+Power BI Desktopin joulukuun 2019 julkaisuversiosta alkaen voit nyt halutessasi viedä käytössä olevan raporttiteeman suoraan Power BI Desktopista JSON-tiedostoon. Kun olet vienyt raporttiteeman, voit käyttää sitä uudelleen omissa raporteissasi. Tämän asetuksen avulla voit viedä JSON-tiedoston useimpiin valmiisiin teemoihin. Ainoat poikkeukset ovat perusteemat (klassinen ja oletusteema), joiden pohjalle muut teemat rakentuvat tuonnin yhteydessä. 
+
+Käytössä olevan teeman vieminen Power BI Desktopista: 
+
+1. Valitse **Tiedosto** > **Asetukset ja vaihtoehdot** > **Asetukset**. 
+
+2. Valitse **Esikatselutoiminnot** -osiossa **Mukauta nykyistä teemaa** ja valitse sitten **OK**.
+
+   Saatat saada kehotteen käynnistää Power BI Desktop uudelleen, jotta esiversiotoiminto voidaan ottaa käyttöön. Kun olet käynnistänyt tietokoneen uudelleen, voit aloittaa käytössä olevan teeman viemisen. 
+
+3.  Valitse **Aloitus**-valintanauhassa **Vaihda teemaa** > **Vie nykyinen teema**. 
+
+4. Siirry **Tallenna nimellä** -valintaikkunassa hakemistoon, johon JSON-tiedosto tallennetaan, ja valitse sitten **Tallenna**.
 
 ## <a name="report-theme-json-file-format"></a>Raporttiteeman JSON-tiedoston muotoilu
 Teeman JSON-tiedostossa on yksinkertaisimmillaan vain yksi pakollinen rivi: **nimi**. 
@@ -217,16 +256,15 @@ Teeman JSON-tiedostossa on yksinkertaisimmillaan vain yksi pakollinen rivi: **ni
     }
 ```
 
-Muut rivit kuin *nimi* ovat valinnaisia, mikä tarkoittaa sitä, että voit lisätä halutessasi lisätä vain sellaisia ominaisuuksia, jotka haluat erityisesti muotoilla teematiedostoon, ja käyttää Power BI:n oletusarvoja muualla. 
+Muut rivit kuin **nimi** ovat valinnaisia, mikä tarkoittaa sitä, että voit halutessasi lisätä vain sellaisia ominaisuuksia, jotka haluat erityisesti muotoilla teematiedostoon, ja käyttää Power BI:n oletusarvoja muualla. 
 
-Nimi-kohdassa voit lisätä joitain perustietojen väriin liittyviä ominaisuuksia. 
+**Nimi**-kohdassa voit lisätä seuraavia perustietojen väriin liittyviä ominaisuuksia: 
 
+* **dataColors**: Luettelo Power BI Desktopin visualisointien tietojen heksadesimaalivärikoodeista. Luettelo voi sisältää haluamasi määrän värejä. Kun tämän luettelon kaikkia värejä on käytetty, jos visualisointiin tarvitaan vielä lisää värejä, se alkaa käyttää Power BI:n oletusarvoista värivalikoimaa. 
+* **hyvä**, **neutraali**, **huono**: Nämä ominaisuudet määrittävät vesiputouskaaviossa ja suorituskykyilmaisimen visualisoinnissa käytetyt värit.
+* **suurin**, **keski**, **pienin**, **tyhjäarvo**: Nämä värit määrittävät eri liukuvärit ehdollisen muotoilun valintaikkunassa.  
 
-* **dataColors**: luettelo Power BI Desktopin visualisointien tietojen heksadesimaalivärikoodeista. Luettelo voi sisältää haluamasi määrän värejä. Kun tämän luettelon kaikkia värejä on käytetty, jos visualisointiin tarvitaan vielä lisää värejä, se alkaa käyttää Power BI:n oletusarvoista värivalikoimaa. 
-* **hyvä, neutraali, huono**: Nämä määrittävät vesiputouskaaviossa ja suorituskykyilmaisimen visualisoinnissa käytetyt värit.
-* **suurin, keski, pienin, tyhjäarvo**: Nämä värit määrittävät eri liukuvärit ehdollisen muotoilun valintaikkunassa.  
-
-Nämä värit määrittävä perusteema näyttäisi seuraavalta:
+Nämä värit määrittävä perusteema voisi näyttää seuraavalta:
 
 ```json
     {
@@ -253,20 +291,19 @@ Nämä värit määrittävä perusteema näyttäisi seuraavalta:
     }
 ```
 
-Seuraavaksi voit lisätä eri väriluokkia. Väriluokkien avulla voit määrittää koko raporttiisi useita värejä yhdelle riville ryhmittelemällä samanlaisten visualisointien ominaisuudet, joilla on yhdessä yleensä sama väri. 
+Seuraavaksi voit lisätä eri väriluokkia, kuten **taustan** ja **edustan**. Väriluokkien avulla voit määrittää koko raporttiisi useita värejä yhdelle riville ryhmittelemällä samanlaisten visualisointien ominaisuudet, joilla on yhdessä yleensä sama väri. 
 
 Seuraavassa taulukossa ovat kuusi väriluokkaa, jotka voit muotoilla.
 
-
 |Väriluokka  |Mitä väriluokka muotoilee  |
 |---------|---------|
-|edusta | Otsikoiden taustaväri (arvopisteiden ulkopuolella) <br> Trendiviivan väri <br>  Tekstiruudun oletusväri <br> Taulukoiden ja matriisien arvojen sekä summien fonttien värit Tietopalkkien akselien väri <br> Korttien arvopisteiden otsikot <br> Mittarien kuvaselitearvojen väri <br> Suorituskykyilmaisimien tavoitteen väri <br>  Suorituskykyilmaisimien tekstin väri <br> Osittajien kohteen väri (kohdistustilassa)  <br> Osittajien avattavan kohteen fontin väri <br> Osittajien lukusyötteen fontin väri <br> Osittajien ylätunnisteen fontin väri <br> Pistekaavioiden suhdeviivan väri <br> Viivakaavion ennusteviivan väri <br> Kartan johtoviivan väri <br> Suodatinruudun ja kortin tekstien väri|
-|foregroundNeutralSecondary |Otsikoiden värit  <br> Selitteiden otsikoiden väri <br> Akselien otsikoiden väri <br> Taulukoiden ja matriisien otsikoiden fontin väri <br> Mittarin kohteen ja kohteiden johtoviivan väri <br>  Suorituskykyilmaisimen trendiakselin väri <br> Osittajien liukusäätimen väri <br> Osittajien kohteiden fontin väri <br> Osittajien ääriviivan väri <br> Viivakaavion väri hiirellä osoitettaessa <br> Monirivisten korttien otsikon väri <br> Valintanauhavetojen väri <br> Muotokarttojen reunan väri <br> Painiketekstien fontin väri <br> Painikekuvakkeiden viivan väri <br> Painikekuvakkeiden ääriviivan väri |
-| foregroundNeutralTertiary | selitteen himmennetty väri <br> Korttiluokan otsikon väri <br> Monirivisten korttien luokkien otsikoiden väri <br> Monirivisten korttien palkin väri <br> Vuokaavion konversioasteen vetojen väri 
-| backgroundLight | Akselien ruudukoiden väri <br> Taulukoiden ja matriisien ruudukoiden väri <br> Osittajien otsikoiden taustaväri (kohdistustilassa)  <br> Monirivisten korttien ääriviivan väri  <br> Muotojen täyttöväri <br> Taustavärien kaaren taustaväri <br> Sovelletun suodatinkortin taustaväri <br> |
-backgroundNeutral | Taulukoiden ja matriisien ruudukoiden ääriviivan väri <br> Muotokarttojen oletusväri <br> Nauhakaavion täyttöväri (kun sarjojen vastaavuusvaihtoehto on pois käytöstä) |
-tausta | Otsikoiden taustaväri (arvopisteiden sisäpuolella) <br> Osittajien avattavien kohteiden taustaväri  <br> Rengaskaavioiden vetojen väri <br> Puukarttojen vetojen väri <br> Yhdistelmäkaavioiden taustaväri <br> Painikkeiden täyttöväri <br> Suodatinruudun ja käytettävissä olevan suodatinkortin taustaväri |
-tableAccent | Ohittaa taulukoiden ja matriisien ruudukon ääriviivan värin, kun käytössä |
+|**foreground** | Otsikoiden taustaväri (arvopisteiden ulkopuolella) <br> Trendiviivan väri <br>  Tekstiruudun oletusväri <br> Taulukoiden ja matriisien arvojen sekä summien fonttien värit Tietopalkkien akselien väri <br> Korttien arvopisteiden otsikot <br> Mittarien kuvaselitearvojen väri <br> Suorituskykyilmaisimien tavoitteen väri <br>  Suorituskykyilmaisimien tekstin väri <br> Osittajien kohteen väri (kohdistustilassa)  <br> Osittajien avattavan kohteen fontin väri <br> Osittajien lukusyötteen fontin väri <br> Osittajien ylätunnisteen fontin väri <br> Pistekaavioiden suhdeviivan väri <br> Viivakaavion ennusteviivan väri <br> Kartan johtoviivan väri <br> Suodatinruudun ja kortin tekstien väri|
+|**foregroundNeutralSecondary** |Otsikoiden värit  <br> Selitteiden otsikoiden väri <br> Akselien otsikoiden väri <br> Taulukoiden ja matriisien otsikoiden fontin väri <br> Mittarin kohteen ja kohteiden johtoviivan väri <br>  Suorituskykyilmaisimen trendiakselin väri <br> Osittajien liukusäätimen väri <br> Osittajien kohteiden fontin väri <br> Osittajien ääriviivan väri <br> Viivakaavion väri hiirellä osoitettaessa <br> Monirivisten korttien otsikon väri <br> Valintanauhavetojen väri <br> Muotokarttojen reunan väri <br> Painiketekstien fontin väri <br> Painikekuvakkeiden viivan väri <br> Painikekuvakkeiden ääriviivan väri |
+| **foregroundNeutralTertiary** | selitteen himmennetty väri <br> Korttiluokan otsikon väri <br> Monirivisten korttien luokkien otsikoiden väri <br> Monirivisten korttien palkin väri <br> Vuokaavion konversioasteen vetojen väri 
+| **backgroundLight** | Akselien ruudukoiden väri <br> Taulukoiden ja matriisien ruudukoiden väri <br> Osittajien otsikoiden taustaväri (kohdistustilassa)  <br> Monirivisten korttien ääriviivan väri  <br> Muotojen täyttöväri <br> Taustavärien kaaren taustaväri <br> Sovelletun suodatinkortin taustaväri <br> |
+**backgroundNeutral** | Taulukoiden ja matriisien ruudukoiden ääriviivan väri <br> Muotokarttojen oletusväri <br> Nauhakaavion täyttöväri (kun sarjojen vastaavuusvaihtoehto on pois käytöstä) |
+**background** | Otsikoiden taustaväri (arvopisteiden sisäpuolella) <br> Osittajien avattavien kohteiden taustaväri  <br> Rengaskaavioiden vetojen väri <br> Puukarttojen vetojen väri <br> Yhdistelmäkaavioiden taustaväri <br> Painikkeiden täyttöväri <br> Suodatinruudun ja käytettävissä olevan suodatinkortin taustaväri |
+**tableAccent** | Ohittaa taulukoiden ja matriisien ruudukon ääriviivan värin, kun käytössä |
 
 
 Tässä on esimerkkiteema, joka määrittää väriluokat:
@@ -284,16 +321,16 @@ Tässä on esimerkkiteema, joka määrittää väriluokat:
     }
 ```
 
-Seuraavaksi voit lisätä JSON-tiedostoon tekstiluokkia. Ne muistuttavat väriluokkia, mutta niiden avulla voit päivittää raportin tekstiryhmien fontin koon, värin ja perheen. Tekstiluokkia on 12, mutta riittää, että määrität vain neljä luokkaa, joita kutsutaan *ensisijaisiksi luokiksi*. Niiden avulla voit muuttaa kaikkia raportin tekstimuotoiluja. Muut tekstiluokat, joita kutsutaan *toissijaisiksi luokiksi*, perivät tai johtavat ominaisuutensa ensisijaisista luokistaan. Usein toissijainen luokka johtaa ensisijaisesta luokasta vaaleamman tekstin sävyn tai suhteellisesti suuremman tai pienemmän tekstin koon. 
+Seuraavaksi voit lisätä JSON-tiedostoon tekstiluokkia. Tekstiluokat muistuttavat väriluokkia, mutta niiden avulla voit päivittää raportin tekstiryhmien fontin koon, värin ja perheen. Tekstiluokkia on 12, mutta riittää, että määrität vain neljä luokkaa, joita kutsutaan *ensisijaisiksi luokiksi*. Niiden avulla voit muuttaa kaikkia raportin tekstimuotoiluja. Muut tekstiluokat, joita kutsutaan *toissijaisiksi luokiksi*, perivät tai johtavat ominaisuutensa ensisijaisista luokistaan. Usein toissijainen luokka johtaa ensisijaisesta luokasta vaaleamman tekstin sävyn tai suhteellisesti suuremman tai pienemmän tekstin koon. 
 
-Katso esimerkiksi *otsikkoluokkaa*. Otsikkoluokan oletusmuotoilu on Segoe UI, #252423 (tummanharmaa väri) ja 12 pisteen fonttikoko, ja tätä luokkaa käytetään taulukon ja matriisin arvojen muotoiluun. Yleensä taulukon tai matriisin kokonaissummissa on samanlainen muotoilu, mutta ne on tummennettu, jotta ne erottuvat paremmin. Siksi niissä käytetään lihavoitua otsikkoluokkaa. Sinun ei kuitenkaan tarvitse koskaan määrittää sitä itse teeman JSON-tiedostossa. Power BI päättelee sen automaattisesti puolestasi. Jos myöhemmin päätät, että haluat otsikkojen fonttikoon olevan 14 pistettä ja määrität sen teemassasi, sinun ei tarvitse päivittää lihavoitua otsikkoluokkaa, koska se perii kaikki tekstimuotoilut otsikkoluokasta ja lihavoi fonttiperheen sen lisäksi. 
+Katso esimerkiksi **otsikkoluokkaa**. **Otsikkoluokan** oletusmuotoilu on Segoe UI, #252423 (a tummanharmaa väri) ja 12 pisteen fonttikoko. Tätä luokkaa käytetään taulukon ja matriisin arvojen muotoiluun. Yleensä taulukon tai matriisin kokonaissummissa on samanlainen muotoilu, mutta ne on tummennettu **lihavoidulla otsikkoluokalla**, jotta ne erottuvat paremmin. Sinun ei kuitenkaan tarvitse määrittää kyseistä luokkaa teeman JSON-muodossa. Power BI tekee sen automaattisesti. Jos myöhemmin päätät, että haluat otsikkojen fonttikoon olevan 14 pistettä ja määrität sen teemassasi, sinun ei tarvitse päivittää **lihavoitua otsikkoluokkaa**, koska se perii kaikki tekstimuotoilut **otsikkoluokasta**. 
 
-Taulukkoluettelo sisältää seuraavat:
+Seuraavassa taulukossa on esitelty seuraavat tiedot:
 * Neljä ensisijaista tekstiluokkaa, mitä ne muotoilevat ja niiden oletusasetukset
 * Toissijaiset luokat, mitä ne muotoilevat ja niiden oletusasetuksen, joka on yksilöllinen ensisijaiseen luokkaan nähden
 
 
-|Ensisijainen luokka  |Toissijaiset luokat  |Luokan nimi JSON-tiedostossa  |Asetukset  |Liittyvät visualisointien objektit  |
+|Ensisijainen luokka  |Toissijaiset luokat  |JSON-luokan nimi  |Asetukset  |Liittyvät visualisointien objektit  |
 |---------|---------|---------|---------|---------|
 | Kuvateksti   | –   | kuvateksti | DIN <br> #252423 <br> 45pt |Korttien arvopisteiden otsikot <br> Suorituskykyilmaisin|
 |Ylätunniste|–|ylätunniste|Segoe UI Semibold <br> #252423 <br> 12pt |Tärkeimpien vaikuttajien otsikot |
@@ -309,7 +346,7 @@ Taulukkoluettelo sisältää seuraavat:
 |-|Pieni ja vaalea  |smallLightLabel    |#605E5C<br>9pt |Arvopisteiden otsikot<br>Arvoakselien otsikot|
 
 
-Sinun ei tarvitse määrittää toissijaisia luokkia teematiedostossa, koska ne perivät ensisijaisesta luokasta. Jos et pidä periytymissäännöistä (jos esimerkiksi et halua, että kokonaissummat ovat taulukon arvojen lihavoituja versioita), voit muotoilla toissijaisia luokkia suoraan teematiedostossa aivan kuin ensisijaisiakin luokkia.
+Sinun ei tarvitse määrittää toissijaisia luokkia teematiedostossa, koska ne perivät ensisijaisesta luokasta. Jos et kuitenkaan pidä periytymissäännöistä (jos esimerkiksi et halua, että kokonaissummat ovat taulukon arvojen lihavoituja versioita), voit muotoilla toissijaisia luokkia suoraan teematiedostossa aivan kuin ensisijaisiakin luokkia.
 
 Tässä on esimerkkiteema, joka määrittää vain ensisijaiset tekstiryhmät: 
 
@@ -341,7 +378,7 @@ Tässä on esimerkkiteema, joka määrittää vain ensisijaiset tekstiryhmät:
     }
 ```
 
-Lopuksi: jos haluat luoda yksityiskohtaisemman JSON-tiedoston, jolla voit määrittää kaikkien visualisointien muotoilun tarkemmin, voit lisätä JSON-tiedostoon **visualStyles**-osion. Asetat muotoilun tarkemmat määritelmät **visualStyles**-osion sisään. **visualStyles**-osio näyttää seuraavanlaiselta:
+Lopuksi: jos haluat luoda yksityiskohtaisemman JSON-tiedoston, jolla voit määrittää kaikkien visualisointien muotoilun tarkemmin, voit lisätä JSON-tiedostoon **visualStyles**-osion ja asettaa muotoilun tarkemmat määritelmät tämän osion sisään. Tässä on esimerkki **visualStyles**-osiosta:
 
     visualStyles: {
         visualName: {
@@ -353,11 +390,11 @@ Lopuksi: jos haluat luoda yksityiskohtaisemman JSON-tiedoston, jolla voit määr
         }
     }
 
-Käytä **visualName**- ja **cardName**-osioissa tiettyä visualisointia ja kortin nimeä. Tällä hetkellä **styleName** on aina tähtimerkki (*), mutta tulevissa julkaisuissa voit luoda visualisoinneille eri tyylejä ja nimetä niitä (kuin taulukkojen ja matriisien tyylejä). **propertyName** on määritetyn muotoiluasetuksen nimi ja **propertyValue** paikka, johon kirjoitat, mitä haluat kyseisen muotoiluasetuksen olevan.  
+Käytä **visualName**- ja **cardName**-osioissa tiettyä visualisointia ja kortin nimeä. Tällä hetkellä **styleName** on aina tähtimerkki (*), mutta tulevissa julkaisuissa voit luoda visualisoinneille eri tyylejä ja nimetä niitä (kuin taulukkojen ja matriisien tyylejä). **propertyName** on muotoiluasetuksen nimi ja **propertyValue** on kyseisen muotoiluasetuksen arvo.  
 
-**visualName**- ja **cardName**-kohdissa voit käyttää tähteä (\*) tietyn visualisoinnin tai kortin nimen sijasta, jos haluat, että asetus koskee kaikkia visualisointeja tai kortteja, joissa on tietty ominaisuus. Jos käytät tähteä (\*) sekä visualisoinnin että kortin nimessä, käytännössä asetusta sovelletaan raportissa yleisesti. Esimerkiksi fonttikoko tai tietty kirjasinperhe valitaan kaikille visualisoinneille.
+Käytä **visualName**- ja **cardName**-kohdissa tähteä, jos haluat, että asetus koskee kaikkia visualisointeja tai kortteja, joissa on ominaisuus. Jos käytät tähteä sekä visualisoinnin että kortin nimessä, käytännössä asetusta sovelletaan raportissa yleisesti. Esimerkiksi fonttikoko tai tietty kirjasinperhe valitaan kaikille visualisoinneille.
 
-Tässä on esimerkki, jossa asetetaan joitain ominaisuuksia visualisointien tyylien avulla. 
+Tässä on esimerkki, jossa asetetaan joitain ominaisuuksia visualisointien tyylien avulla: 
 
 ```json
 {  
@@ -392,12 +429,12 @@ Tässä on esimerkki, jossa asetetaan joitain ominaisuuksia visualisointien tyyl
 }
 ```
 
-Tässä esimerkissä näkyvät seuraavat:
+Tässä esimerkissä on seuraavat asetukset:
 
-* Automaattisen rivityksen ottaminen käyttöön kaikkialla
-* Ruudukon tyylin määrittäminen pisteviivaksi kaikille luokka-akselin visualisoinneille
-* Joidenkin muotoilujen määrittäminen käytettävissä oleville ja sovelletuille suodatinkorteille (huomaa muotoilu, jossa "$id"-arvoa käytetään määrittämään suodatinkorttien eri versiot)
-* Pistekaavioiden kuplan koon määrittäminen arvoon -10.
+* ottaa automaattisen rivityksen käyttöön kaikkialla
+* määrittää ruudukon tyylin pisteviivaksi kaikille luokka-akselin visualisoinneille
+* määrittää jotkin muotoilut käytettävissä oleville ja sovelletuille suodatinkorteille (huomaa muotoilu, jossa "$id"-arvoa käytetään määrittämään suodatinkorttien eri versiot)
+* määrittää pistekaavioiden kuplan koon arvoon -10.
 
 
 > [!NOTE]
@@ -406,9 +443,9 @@ Tässä esimerkissä näkyvät seuraavat:
 > 
 
 ### <a name="json-file-element-definitions"></a>JSON-tiedostoelementtien määritelmät
-Tämän osion taulukoissa määritetään visualisointien nimet (*visualName*), korttien nimet (*cardName*) ja luetteloinnit, joita tarvitaan JSON-tiedoston luomiseen.
+Tämän osion taulukoissa määritetään visualisointien nimet (**visualName**), korttien nimet (**cardName**) ja luetteloinnit, joita tarvitaan JSON-tiedoston luomiseen.
 
-| **visualName** |
+| visualName-arvot |
 | --- |
 | areaChart |
 | barChart |
@@ -442,9 +479,9 @@ Tämän osion taulukoissa määritetään visualisointien nimet (*visualName*), 
 | puukartta |
 | waterfallChart |
 
-Seuraavassa taulukossa määritetään *cardName*-arvot. Jokaisen solun ensimmäinen arvo on JSON-tiedoston termi. Toinen arvo on kortin nimi **Power BI Desktop** -käyttöliittymässä.
+Seuraavassa taulukossa määritetään **cardName**-arvot. Jokaisen solun ensimmäinen arvo on JSON-tiedoston termi. Toinen arvo on kortin nimi Power BI Desktop -käyttöliittymässä.
 
-| **cardName** |
+| cardName-arvot |
 | --- |
 | axis: Mittarin akseli |
 | breakdown: Erittely |
@@ -501,13 +538,13 @@ Seuraavassa taulukossa määritetään *cardName*-arvot. Jokaisen solun ensimmä
 ### <a name="properties-within-each-card"></a>Kunkin kortin ominaisuudet
 Seuraavassa osiossa määritetään kunkin kortin ominaisuudet. Kortin nimen perässä on kunkin ominaisuuden nimi. Näet kunkin ominaisuuden nimen kohdalta, näytetäänkö muotoilu-ruutu, kuvauksen muotoiluasetuksen tarkoituksesta ja muotoiluasetuksen tyypin. Tämän lähestymistavan ansiosta tiedät, millaisia arvoja voit käyttää teematiedostossasi. 
 
-Kun käytät **dateTime**-arvoa, päivämäärän täytyy olla ISO-päivämäärä puolilainausmerkeissä siten, että datetime on alussa. Tässä on esimerkki:
+Kun käytät **dateTime**-arvoa, päivämäärän täytyy olla ISO-päivämäärä puolilainausmerkeissä siten, että datetime on alussa. Katso seuraavaa esimerkkiä.
 
     “datetime’2011-10-05T14:48:00.000Z’”
 
 Totuusarvo on joko true tai false (tosi tai epätosi). Merkkijonojen täytyy olla lainausmerkeissä, kuten seuraavassa esimerkissä: "tämä on merkkijono". Luvut ovat vain itse arvoja (eivät lainausmerkeissä).
 
-Värien tulee olla seuraavassa muodossa, jossa mukautettu heksadesimaalikoodisi korvaa esimerkin ”FFFFFF”-kohdan.  
+Värit ovat seuraavassa muodossa, jossa mukautettu heksadesimaalikoodisi korvaa esimerkin ”FFFFFF”-kohdan:  
 
     { "solid": { "color": "#FFFFFF" } }
 

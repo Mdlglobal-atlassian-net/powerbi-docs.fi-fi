@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 01/07/2019
 ms.author: mihart
-ms.openlocfilehash: 046f35613e5fe748e93389fbe10a77af08f449e3
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: cf70774712a8b72493c8957139d8f802dc4d1ed7
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75303918"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75836653"
 ---
 # <a name="glossary-for-power-bi-service"></a>Power BI -palvelun sanasto
 Power BI -palvelussa saattaa olla ennestään tuntematonta tai sekavalta vaikuttavaa terminologiaa. Sanasto on hyvä paikka termien hakuun, joten se on hyvä lisätä suosikkeihin. Toinen hyvä resurssi lisätietojen saamiseen Power BI -palvelun muodostavista rakenneosista ovat [peruskäsitteet](end-user-basic-concepts.md). Peruskäsitteet tarjoavat korkean tason yleiskatsauksen Power BI:n *osiin* ja niiden yhteyksiin.
@@ -41,7 +41,9 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **ArcGIS for Power BI** ArcGIS on ESRI-yrityksen yhdistämisen ja analytiikan ympäristö. Power BI -visualisointien kirjastoon sisältyvän visualisoinnin nimi on ArcGIS for Power BI.
 
-**assign (määritä)** [Power BI Premium] Verbi työtilan siirtämiselle varattuun kapasiteettiin tai sieltä pois. Älä käytä Ylennä-termiä työtilan siirtämiselle varattuun kapasiteettiin, koska se viittaa siihen, että varattu on jaettua kapasiteettia parempi asia.  
+**assign (määritä)** [Power BI Premium] Verbi työtilan siirtämiselle varattuun kapasiteettiin tai sieltä pois. Älä käytä Ylennä-termiä työtilan siirtämiselle varattuun kapasiteettiin, koska se viittaa siihen, että varattu on jaettua kapasiteettia parempi asia. 
+
+**Auto Insights (automaattiset merkitykselliset tiedot)** Nykyinen nimi *Nopeat merkitykselliset tiedot*.
 
 ## <a name="b"></a>B
 
@@ -49,7 +51,7 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **bookmark (kirjanmerkki)** Näkymä raportin Kirjanmerkit-ruutuun tallennetuista tiedoista Power BI Desktopissa tai -palvelussa. Desktopissa kirjanmerkit tallennetaan .pbix-raporttitiedostoon raportin jakamista varten Power BI -palvelussa.
   
-**breadcrumbs (navigointipolku)** Ylävasemmalla olevalla navigointipolulla voi siirtyä nopeasti työtilojen välillä.
+**breadcrumbs (navigointipolku)** Ylävasemmalla olevalla navigointipolulla voi siirtyä nopeasti raporttien ja koontinäyttöjen välillä.
 
 ## <a name="c"></a>C
 
@@ -65,13 +67,13 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **connect live (yhdistä reaaliajassa)** Tapa muodostaa yhteys SQL Server Analysis Services -tietomalleihin. Kutsutaan myös live-yhteydeksi.
 
-**säilö** Siirtymisruudun alueita kutsutaan *säilöiksi*. Siirtymisruudussa on seuraavat säilöt: Suosikit, Viimeksi käytetyt, Sovellukset, Jaettu kanssani ja Aloitus. 
+**container (säilö)** Siirtymisruudun alueita kutsutaan *säilöiksi*. Siirtymisruudussa on seuraavat säilöt: Suosikit, Viimeksi käytetyt, Sovellukset, Jaettu kanssani ja Aloitus. 
 
 **sisältö** Power BI -palvelun sisältö koostuu yleensä raporttinäkymistä, raporteista ja sovelluksista. Se voi sisältää myös työkirjoja ja tietojoukkoja.
 
 **content list (sisältöluettelo)** Sovelluksen sisällön indeksi.
 
-**content pack (sisältöpaketti)** Kokoelma esipakattuja tietojoukkoja, raportteja ja koontinäyttöjä. Nyt **sovellukset**, lue [uudesta työtilakokemuksesta](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
+**content pack (sisältöpaketti)** Kokoelma esipakattuja tietojoukkoja, raportteja ja koontinäyttöjä. Ne korvataan **sovelluksilla**, lue [uudesta työtilakokemuksesta](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
 
 **content view (sisältönäkymä)**
 
@@ -89,26 +91,29 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **data connector (tietoyhdistin)** Katso yhdistimet.
 
-**data model, Excel Data Model (tietomalli, Excel-tietomalli)**
+**data model, Excel Data Model (tietomalli, Excel-tietomalli)** Power BI -sisällössä tietomalli viittaa taulukkomuotoiseen tietorakenteiden karttaan. Tietomallissa näytetään yhteydet, joita käytetään tietokantojen muodostamiseen. Raporttien suunnittelijat, järjestelmänvalvojat ja kehittäjät voivat luoda ja käsitellä tietomalleja Power BI -sisällön luomiseksi.
 
+**dataflow (tietovuo)** Tietovoiden avulla voidaan käyttää, muuntaa, yhdistää ja täydentää massadataa määrittämällä tietolähdeyhteyksiä, keräämis-, muuntamis- ja lataamislogiikka, päivitysaikatauluja ja paljon muuta. Aiemmin tietosarja.
 
 **dataset (tietojoukko)** vs **data source (tietolähde)** **Tietojoukko** on tietokokoelma, jota käytetään visualisointien ja raporttien luontiin.
 
 **dedicated capacity (varattu kapasiteetti)** [Power BI Premium] Tietomallit, jotka suoritetaan erillisessä laitteistossa Microsoftin pilvipalvelun järjestelmäkeskuksissa tasaisen suorituskyvyn varmistamiseksi mittakaavassa. BI-ratkaisut toimitetaan koko organisaatiolle Power BI -käyttöoikeudesta riippumatta.
 
-**Desktop** Ensimmäinen esiintymä: Power BI Desktopin myöhemmät maininnat: Työpöytä
+**Desktop** tai **Power BI Desktop** Ilmainen Power BI -työkalu, jonka ensisijaisina käyttäjinä ovat raporttien suunnittelijat, järjestelmänvalvojat ja kehittäjät. 
+
 
 
 **diamond (vinoneliö)** Power BI Premium. Kuvakkeen muoto, joka ilmaisee, että työtila on Premium-kapasiteetin työtila.
 
-**drill up, drill down, drillthrough (poraudu ylöspäin, poraudu alaspäin, porautuminen)**
+**drill up, drill down, drillthrough (poraudu ylöspäin, poraudu alaspäin, porautuminen)** Power BI:ssa porautumalla alaspäin tai ylöspäin voit viitata mahdollisuuteen tutkia raportin tai visualisoinnin seuraavaa tasoa. Porautumisella voit viitata mahdollisuuteen valita visualisoinnin osa ja siirtyä raportin toiselle sivulle, suodatettuna tietoihin, jotka liittyvät alkuperäisellä sivulla valitsemasi visualisoinnin osaan.
+Yksityiskohtiin porautuminen tarkoittaa yleensä sitä, että pohjana olevat tietueet näytetään.
 
 ## <a name="e"></a>E
 
 **Editing View (muokkausnäkymä)** Tila, jossa raportin *suunnittelijat* voivat tutkia, suunnitella, luoda ja jakaa raportin.
 
 **ellipsis (kolme pistettä)** ...    
-Kolmen pisteen valinta avaa lisää valikkovaihtoehtoja.
+Kolmen pisteen valinta avaa lisää valikkovaihtoehtoja. Kutsutaan myös **Lisää toimintoja** -valikoksi.
 
 **embed code (upotuskoodi)** Yleinen vakio Internetissä. Power BI:ssä asiakas voi luoda upotuskoodin ja kopioida sen sijoittaakseen sisältöä, kuten raportin visualisoinnin, verkkosivustoon tai blogiin.
 
@@ -117,22 +122,20 @@ Kolmen pisteen valinta avaa lisää valikkovaihtoehtoja.
 **embedding (upottaminen)** Power BI:n tarjonnassa kehittäjille analytiikan integroimisprosessi sovelluksiin Power BI REST -ohjelmointirajapintoja ja Power BI SDK:ta käyttämällä.
 
 
-**environment (ympäristö)** [Power BI Desktop, Power BI Mobile jne.] Käytä Power BI -ympäristöä. Usean palveltavan asiakkaan kohdalla käytä tätä termiä viittaamaan sen vuokraajan valintaan, johon yhteys muodostetaan.
-Power BI -ympäristö (vuokraaja) -termiä voidaan käyttää dokumentaatiossa, jossa se voi auttaa liiketoiminta-analyytikkoja, joille vuokraaja-termi on tutumpi, jotta he tietävät, että kyse on samasta asiasta.
+**environment (ympäristö)** [Power BI Desktop, Power BI -mobiilisovellus, Power BI -palvelu jne.] Toinen tapa viitata johonkin Power BI -työkaluun. Power BI -ympäristö (vuokraaja) -termiä voidaan käyttää dokumentaatiossa, jossa se voi auttaa liiketoiminta-analyytikkoja, joille vuokraaja-termi on tutumpi, jotta he tietävät, että kyse on samasta asiasta.
 
 ## <a name="f"></a>F
 
 **favorite, unfavorite (lisätä suosikkeihin, poistaa suosikeista)** Verbi, joka tarkoittaa suosikkiluetteloon lisäämistä, jotta usein käytettyjen Power BI:n koontinäyttöjen ja raporttien käyttö nopeutuu. Kun et halua pitää niitä enää suosikeissa, voit poistaa ne suosikeista.
 
-**filter (suodatin)**
+**filter (suodatin)** vs. **highlight (korostus)** Suodatin poistaa tiedot, joita ei käytetä. Korostus muuttaa ne tiedot harmaiksi, joita ei käytetä. 
 
-**formatting (muotoilu)**
 
-**focus mode (tarkastelutila)** [Power BI -palvelu]
+**focus mode (tarkastelutila)** Tarkastelutilassa voit avata ponnahdusikkunassa visualisoinnin tai ruudun ja tarkastella sitä lähemmin. Voit edelleen käyttää visualisointia tai ruutua tarkastelutilassa. 
 
-**Free account (ilmainen tili)** Katso tili tässä termikokoelmassa.
+**Free account (Ilmainen tili)** Katso kohta *account (tili)* .
 
-**full screen, full-screen mode (koko näyttö, koko näytön tila)** [Power BI -palvelu]
+**full screen, full-screen mode (koko näytön tila)** Koko näytön tilassa voit tarkastella Power BI -sisältöä ilman valikoiden ja siirtymisruutujen aiheuttamia häiriöitä. Tätä kutsutaan joskus myös TV-tilaksi. 
 
 ## <a name="g"></a>G
 
@@ -145,7 +148,7 @@ Power BI -ympäristö (vuokraaja) -termiä voidaan käyttää dokumentaatiossa, 
 
 ## <a name="i"></a>I
 
-**insights (merkitykselliset tiedot)** automaattinen tietoanalyysi, joka tehdään suorittamalla Microsoftin merkityksellisten tietojen koneoppimisen algoritmeja.
+**insights (merkitykselliset tiedot)** Katso kohta **quick insights (nopeat merkitykselliset tiedot)** .
 
 
 ## <a name="j"></a>J
@@ -176,11 +179,9 @@ Esimerkki: siirtymisruutu Seuraavat maininnat tai vähäinen tila: siirtymäruut
 
 **native (alkuperäinen)** Tulee tuotteen mukana. Esimerkiksi Power BI sisältää joukon *alkuperäisiä* visualisointityyppejä. Voit myös tuoda muita tyyppejä, kuten mukautettuja visualisointeja.
 
-**siirtymisruutu**  tai **siirtymäruutu** Power BI -palvelun vasemmassa reunassa olevat ohjausobjektit.
+**navigation pane (siirtymisruutu)**  tai **nav pane (siirtymäruutu)** Power BI -palvelun vasemmassa reunassa olevat ohjausobjektit.
 
 Esimerkki: siirtymisruutu Seuraavat maininnat tai vähäinen tila: siirtymäruutu
-
-**siirtymäruutu** Katso **siirtymisruutu**
 
 **notification (ilmoitus)** Viestit, joita Power BI -ilmoituskeskus lähettää ja joita siihen lähetetään.  
 
@@ -191,15 +192,14 @@ Esimerkki: siirtymisruutu Seuraavat maininnat tai vähäinen tila: siirtymäruut
 
 **OneDrive for Business** vs. **OneDrive** OneDrive on henkilökohtainen tili ja OneDrive for Business on työtilejä varten.  
 
-**On-premises data gateway (Paikallinen tietoyhdyskäytävä)**
-
+**On-premises (Paikallinen)** Termi, jota käytetään erottamaan paikallinen tietojenkäsittely (jossa tietojenkäsittelyresurssit sijaitsevat asiakkaan omissa tiloissa) pilvitietojenkäsittelystä.
 
 
 ## <a name="p"></a>P
 
 **PaaS** PaaS tulee sanoista platform as a service eli ympäristö palveluna. Esimerkiksi Power BI Embedded.
 
-**page (sivu)** Raporteissa on yksi tai useampi sivu. Raporttipohjan alareunan jokainen välilehti edustaa yhtä sivua.
+**page (sivu)** Raporteissa on yksi tai useampi sivu. Raporttipohjan jokainen välilehti edustaa yhtä sivua.
 
 **pbiviz**Power BI:n mukautetun visualisoinnin tiedostotunniste.
 
@@ -211,7 +211,7 @@ Esimerkki: siirtymisruutu Seuraavat maininnat tai vähäinen tila: siirtymäruut
 
 **phone view (puhelinnäkymä)** Power BI -palvelun käyttöliittymä puhelinraportin asettelua varten.
 
-**pin, unpin (kiinnittää, poistaa kiinnitys)** Toiminto visualisoinnin asettamiselle yleensä raportista koontinäyttöön.
+**pin, unpin (kiinnittää, poistaa kiinnitys)** Raporttien *suunnitteluohjelman* tekemä toiminto visualisoinnin asettamiselle yleensä raportista koontinäyttöön.
 
 **Power BI**, **Power BI -palvelu**, **Power BI Desktop**, **Power BI -mobiilisovellus**, Power BI -palvelutarjonnan osia. *Power BI* on yleinen termi. Sitä käytetään usein tuotteen koko nimen, kuten *Power BI -palvelu* ja *Power BI -mobiilisovellus*, sijaan, tuotteen koko nimen ensimmäisen maininnan jälkeen.
 
@@ -227,10 +227,9 @@ Esimerkki: siirtymisruutu Seuraavat maininnat tai vähäinen tila: siirtymäruut
 
 **Power BI service (Power BI -palvelu)** Verkossa oleva SaaS (Software as a service) -palvelu. Lisätietoja on artikkelissa [Mikä on Power BI?](../fundamentals/power-bi-overview.md).
 
-**Power BI service connector (Power BI -palvelun liitin)** Tämän liittimen avulla Power BI Desktop -käyttäjät voivat muodostaa yhteyden Power BI -palvelun tietojoukkoihin Desktopista. He voivat luoda mallin kerran ja käyttää sitä uudelleen monissa raporteissa ja koontinäytöissä.
-
 **Premium workspace (Premium-työtila)** Varatussa kapasiteetissa suoritettava työtila, jonka asiakkaat tunnistavat vinoneliökuvakkeesta.  
 
+**publish (julkaise)** Power BI -palvelun raporttien *suunnitteluohjelmat* kokoavat Power BI -työtilan sisällön, jotta se on muiden käytettävissä Power BI -sovelluksena. Power BI Desktopin raporttien *suunnitteluohjelmat* viittaavat Julkaise-toiminnolla .pbix-muotoisen Power BI Desktop -raportin lähettämiseen Power BI -palveluun, jotta ne voivat luoda niiden pohjalta koontinäyttöjä ja jakaa ne helposti muiden kanssa. 
 
 ## <a name="q"></a>Q
 **Q&A** Mahdollisuus kirjoittaa kysymyksiä luonnollisella kielellä ja saada vastauksia visualisointien muodossa. Näkyy Power BI -palvelussa ja Desktopissa.
@@ -243,13 +242,10 @@ Esimerkki: siirtymisruutu Seuraavat maininnat tai vähäinen tila: siirtymäruut
 **query string parameter (kyselymerkkijonoparametri)**  
 Voidaan lisätä URL-osoitteeseen Power BI -raportin tulosten suodattamiseksi. Laajimmassa mielessä kyselymerkkijono palauttaa tietokannan tietoja.
 
-**Quick Insights (Nopeat merkitykselliset tiedot)**
-
-
-**pikamittarit**
+**Quick Insights (Nopeat merkitykselliset tiedot)** Nopeat merkitykselliset tiedot viittaavat automaattisesti luotuihin tietoihin, jotka paljastavat tietojen trendejä ja malleja.  
 
 ## <a name="r"></a>R
-**R, Microsoft R**
+**R, Microsoft R** R on tilastollisen tietojenkäsittelyn ja grafiikan ohjelmointikieli ja ohjelmistoympäristö.
 
 **Reading View (lukunäkymä)** Vain luku-näkymä raporteille (muokkausnäkymään verrattuna).
 
@@ -264,19 +260,24 @@ Voidaan lisätä URL-osoitteeseen Power BI -raportin tulosten suodattamiseksi. L
 **report (raportti)**  
 Usean perspektiivin yksittäisen tietojoukon näkymä, jonka visualisoinnit edustavat eri havaintoja ja merkityksellisiä tietoja tietojoukosta. Se voi sisältää yksittäisen visualisoinnin, yhden sivun tai useita sivuja.  
 
-**report editor (raporttieditori)**
+**report editor (raporttieditori)** Raporttieditorissa luodaan uusia raportteja ja tehdään muutoksia raporttien *suunnitteluohjelmien* aiemmin luomiin raportteihin. 
 
-**report measures (raportin mittarit)** Kutsutaan myös mukautetuiksi laskutoimituksiksi. Excel kutsuu näitä lasketuiksi kentiksi. Katso myös *measures (mittarit)* .   
-**report server (raporttipalvelin)** Raporttipalvelimen esiintymä.
+**report measures (raportin mittarit)** Kutsutaan myös mukautetuiksi laskutoimituksiksi. Excel kutsuu näitä *lasketuiksi kentiksi*. Katso myös *measures (mittarit)* .   
 
 **responsive visuals (reagoivat visualisoinnit)** Visualisoinnit, jotka muuttuvat dynaamisesti näyttämään dataa ja merkityksellisiä tietoja suurin mahdollinen määrä, oli näyttö minkäkokoinen tahansa.
 
+**row-level security, RLS (rivitason suojaus)** Power BI -ominaisuus, jonka avulla tietokannan järjestelmänvalvojat voivat hallita tietokantataulukon rivien käyttöä kyselyn suorittaneiden käyttäjien ominaisuuksien (esimerkiksi ryhmän jäsenyyden) perusteella.  
+
+Järjestelmänvalvojat voivat määrittää rivitason suojauksen Power BI:hin tuoduille tietomalleille Power BI Desktopin avulla.  
+
+
 ## <a name="s"></a>S
 **SaaS**   
+Ohjelmisto palveluna (Software as a service, SaaS) on keino toimittaa sovelluksia Internetin kautta verkkopalveluna. Sitä kutsutaan myös verkkopohjaiseksi ohjelmistoksi, pyydettäessä käytettäväksi ohjelmistoksi ja isännöidyksi ohjelmistoksi. 
 
 **screenshot (näyttökuva)** Yksinkertaisia näyttökuvia raportista voidaan lähettää sähköpostitse käyttämällä Lähetä näyttökuva -ominaisuutta.
 
-**service (palvelu)** Katso *Power BI -palvelu*
+**service (palvelu)** Katso *Power BI -palvelu* Itsenäinen resurssi, joka on asiakkaiden käytettävissä paketin tai käyttöoikeuden mukaan. Palvelu on tuote, joka toimitetaan yksinomaan pilvipalvelun kautta.  
 
 **Settings (asetukset)** Sijainti, jossa Power BI -käyttäjät voivat hallita omia yleisiä asetuksiaan, kuten ottaa uusien ominaisuuksien esikatselun käyttöön, määrittää oletuskielen, sulkea tilin jne. Lisäksi käyttäjät voivat hallita yksittäisiä asetuksia sisältöresursseille, hälytyksille ja tilauksille. Kuvakkeena on hammasrataskuvake.
 
@@ -285,8 +286,7 @@ Mobiililaitteissa jakaminen voi viitata alkuperäiseen käyttöjärjestelmän ja
 
 **Jaettu kanssani** Siirtymisruudussa oleva säiliö, joka sisältää kaikki toisen Power BI -käyttäjän suoraan jakamat yksittäiset artefaktit.
 
-**snapshot (tilannevedos)**
-
+**snapshot (tilannevedos)** Power BI:ssä tilannevedos on staattinen kuva ruudusta, koontinäytöstä tai raportista (vrt. live-kuva).
 
 **SQL Server Analysis Services (SSAS)** 
  

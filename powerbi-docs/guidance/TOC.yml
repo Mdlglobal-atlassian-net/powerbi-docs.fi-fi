@@ -10,48 +10,56 @@
     - name: Käsitteet
       expanded: true
       items:
-        - name: Mikä on tähtirakenne?
-          href: star-schema.md
-        - name: Tietomallin koon pienentäminen
-          href: import-modeling-data-reduction.md
-        - name: JAKO-funktion ja jako-operaattorin (/) vertailu
-          href: dax-divide-function-operator.md
-        - name: Käytä SELECTEDVALUE-arvoa arvojen sijaan
-          href: dax-selectedvalue.md
-        - name: Kyselyn lähteeseen delegoinnin tärkeys
-          href: power-query-folding.md
-        - name: Virhefunktioiden asianmukainen käyttö
-          href: dax-error-functions.md
-        - name: Kaavojen parantaminen muuttujien avulla
-          href: dax-variables.md
-        - name: COUNTROWS-rivit COUNT-kohteen sijaan
-          href: dax-countrows.md
-        - name: Vältä tyhjien arvojen muuntamista arvoiksi
-          href: dax-avoid-converting-blank.md
-        - name: Sarake- ja mittaviittaukset
-          href: dax-column-measure-references.md
-        - name: Vältä FILTER-arvon käyttämistä suodatinargumenttina
-          href: dax-avoid-avoid-filter-as-filter-argument.md
-        - name: Tietovoiden parhaat käytännöt
-          href: ../service-dataflows-best-practices.md
-        - name: Power BI Desktopin DirectQuery-mallin ohjeet
-          href: directquery-model-guidance.md
-        - name: Power Query -kyselyihin viittaaminen
-          href: power-query-referenced-queries.md
-        - name: Visualisointien laajentaminen raporttisivun työkaluvihjeiden avulla
-          href: report-page-tooltips.md
-        - name: Raporttisivun porautuminen
-          href: report-drillthrough.md
-        - name: Automaattisen päivämäärän/ajan ohjeet Power BI Desktopissa
-          href: auto-date-time.md
-        - name: Monta-moneen-suhteen ohjeet
-          href: relationships-many-to-many.md
-        - name: Poista Power Query -taustalataus käytöstä
-          href: power-query-background-refresh.md
-        - name: 'Milloin sivutettuja raportteja kannattaa käyttää Power BI:ssä'
-          href: report-paginated-or-power-bi.md
-        - name: 'SQL Server Reporting Services -raporttien siirtäminen Power BI:hin'
-          href: migrate-ssrs-reports-to-power-bi.md
+        - name: Tietojen muuntaminen ja muotoilu
+          items:
+            - name: Kyselyn lähteeseen delegoinnin tärkeys
+              href: power-query-folding.md
+            - name: Power Query -kyselyihin viittaaminen
+              href: power-query-referenced-queries.md
+            - name: Poista Power Query -taustalataus käytöstä
+              href: power-query-background-refresh.md
+            - name: Tietovoiden parhaat käytännöt
+              href: ../service-dataflows-best-practices.md
+        - name: Tietojen mallinnus
+          items:
+            - name: Mikä on tähtirakenne?
+              href: star-schema.md
+            - name: Tietomallin koon pienentäminen
+              href: import-modeling-data-reduction.md
+            - name: Automaattisen päivämäärän/ajan ohjeet Power BI Desktopissa
+              href: auto-date-time.md
+            - name: Monta-moneen-suhteen ohjeet
+              href: relationships-many-to-many.md
+            - name: Power BI Desktopin DirectQuery-mallin ohjeet
+              href: directquery-model-guidance.md
+        - name: DAX
+          items:
+            - name: JAKO-funktion ja jako-operaattorin (/) vertailu
+              href: dax-divide-function-operator.md
+            - name: Virhefunktioiden asianmukainen käyttö
+              href: dax-error-functions.md
+            - name: Käytä SELECTEDVALUE-arvoa arvojen sijaan
+              href: dax-selectedvalue.md
+            - name: COUNTROWS-rivit COUNT-kohteen sijaan
+              href: dax-countrows.md
+            - name: Kaavojen parantaminen muuttujien avulla
+              href: dax-variables.md
+            - name: Vältä tyhjien arvojen muuntamista arvoiksi
+              href: dax-avoid-converting-blank.md
+            - name: sarake- ja mittariviittaukset
+              href: dax-column-measure-references.md
+            - name: Vältä FILTER-arvon käyttämistä suodatinargumenttina
+              href: dax-avoid-avoid-filter-as-filter-argument.md
+        - name: Raportin luominen
+          items:
+            - name: Visualisointien laajentaminen raporttisivun työkaluvihjeiden avulla
+              href: report-page-tooltips.md
+            - name: Raporttisivun porautuminen
+              href: report-drillthrough.md
+            - name: 'Milloin sivutettuja raportteja kannattaa käyttää Power BI:ssä'
+              href: report-paginated-or-power-bi.md
+            - name: 'SQL Server Reporting Services -raporttien siirtäminen Power BI:hin'
+              href: migrate-ssrs-reports-to-power-bi.md
     - name: Raportit
       items:
         - name: Raporttien yleiskatsaus
