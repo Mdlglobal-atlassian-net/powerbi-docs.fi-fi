@@ -54,8 +54,6 @@
               href: service-security-using-microsoft-cloud-app-security-controls.md
         - name: Rivitason suojaus
           href: ../service-admin-rls.md
-        - name: Arkistoitu työtila
-          href: ../service-admin-power-bi-archived-workspace.md
         - name: Mobiilisovellusten määrittäminen Intunella
           href: ../service-admin-mobile-intune.md
     - name: Viittaus
