@@ -9,20 +9,20 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 515c695125cd0702389a951cb5c4acffdd7aac41
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d118cae8cd4b6fbd95066b15819b1e798c8bbe0f
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73868581"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761314"
 ---
 # <a name="power-bi-data-source-prerequisites"></a>Power BI -tietolähde-edellytykset
-Power BI tukee objektien tietyn palvelun versiota jokaisella tietopalvelulla. Lisätietoja Power BI:ssä käytettävistä tietolähteistä on ohjeaiheessa [Tietolähteet](desktop-data-sources.md). Seuraavassa taulukossa kuvataan nämä vaatimukset.
+Power BI tukee objektien tietyn palvelun versiota jokaisella tietopalvelulla. Jos haluat lisätietoja Power BI:ssä käytettävistä tietolähteistä, tutustu ohjeartikkeliin [Tietolähteet](desktop-data-sources.md). Seuraavassa taulukossa kuvataan nämä vaatimukset.
 
 | Tietolähde | Palvelu | Palvelun vähimmäisversio | Tietolähteen vähimmäisversio | Tuetut tietolähdeobjektit | Latauslinkki |
 | --- | --- | --- | --- | --- | --- |
 | SQL Server |ADO.net (sisältyy .Net Frameworkiin) |.NET Framework 3.5 (ainoastaan) |SQL Server 2005+ |Taulukot/näkymät, skalaarifunktiot, taulukkofunktiot |Sisältyy .NET Framework 3.5:een tai uudempaan |
-| Access |Microsoft Access -tietokantamoduuli (ACE) |ACE 2010 SP1 |Ei rajoitusta |Taulukot/näkymät |[Latauslinkki](https://go.microsoft.com/fwlink/?linkid=285987&clcid=0x409) |
+| Käyttöoikeudet |Microsoft Access -tietokantamoduuli (ACE) |ACE 2010 SP1 |Ei rajoitusta |Taulukot/näkymät |[Latauslinkki](https://go.microsoft.com/fwlink/?linkid=285987&clcid=0x409) |
 | Excel (vain .xls-tiedosto) (katso huomautus 1) |Microsoft Access -tietokantamoduuli (ACE) |ACE 2010 SP1 |Ei rajoitusta |Taulukot, laskentataulukot |[Latauslinkki](https://go.microsoft.com/fwlink/?linkid=285987&clcid=0x409) |
 | Oracle (katso huomautus 2) |ODP.NET |ODAC 11.2 Release 5 (11.2.0.3.20) |9.x+ |Taulukot/näkymät |[Latauslinkki](https://go.microsoft.com/fwlink/?linkid=272376&clcid=0x409) |
 | | System.Data.OracleClient (sisältyy .NET Frameworkiin) |.NET Framework 3.5 |9.x+ |Taulukot/näkymät |Sisältyy .NET Framework 3.5:een tai uudempaan |

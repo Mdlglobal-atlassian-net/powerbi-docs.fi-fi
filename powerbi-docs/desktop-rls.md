@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.custom: ''
 ms.date: 12/05/2019
 LocalizationGroup: Create reports
-ms.openlocfilehash: abbd8f34f42bdcfdca6e65df58c78bf394f00d91
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.openlocfilehash: dc2c1e312592048c90643526a898ebe654907a68
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882797"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760654"
 ---
-# <a name="row-level-security-rls-with-power-bi-desktop"></a>Rivitason suojaus (RLS) Power BI Desktopissa
+# <a name="restrict-data-access-with-row-level-security-rls-for-power-bi-desktop"></a>Tietojen käytön rajoittaminen rivitason suojauksen (RLS) avulla Power BI Desktopissa
 
 Power BI Desktopin rivitason suojauksen (RLS) avulla voidaan rajoittaa tietojen käyttöä tietyille käyttäjille. Suodattimet rajoittavat tietoja rivitasolla. Voit määrittää suodattimia roolien sisällä.
 
@@ -40,4 +40,4 @@ Lue lisää vaihtoehdoista [RLS:lle Power BI-palvelun sisällä](service-admin-r
 
 [Rivitason suojaus (RLS) Power BI -palvelussa](service-admin-rls.md)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

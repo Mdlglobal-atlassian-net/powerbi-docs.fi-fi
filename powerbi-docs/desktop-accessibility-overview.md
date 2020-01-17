@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e61df101d26dd95a771a64ce7633e40fcd9c9123
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ef19c638f9c456364757576e21c303103a7f4e39
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878904"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761860"
 ---
 # <a name="overview-of-accessibility-in-power-bi"></a>Power BI:n helppokäyttötoimintojen yleiskatsaus
 Power BI:ssä työskenneltäessä on tärkeää miettiä, millaiset käyttäjät voivat käyttää raportteja. Luotaessa ja esitettäessä raportteja joissa siirtyminen ja joiden ymmärtäminen on helppoa sekä näppäimistön että näytönlukijan käyttäjille, käyttäjät, joilla on näkövamma tai muu fyysinen haitta, saavat samat tiedot.
@@ -27,9 +27,10 @@ Tässä artikkelissa annetaan yleiskatsaus Power BI:hin ja helppokäyttötoimint
 
 Universaalissa suunnittelussa suunnitellaan tuotteita, jotka ovat mahdollisimman monen ihmisen käytettävissä ilman erityistä sopeuttamista tai erikoismuotoilua. Raportteja tai kokemuksia Power BI:ssä luotaessa on tärkeää huomioida käyttäjien tarpeet. Helppokäyttöisen käyttökokemuksen suunnitteleminen ei hyödytä ainoastaan loppukäyttäjiäsi, joilla voi olla kuuloon liittyviä, motorisia, kognitiivisia tai visuaalisia rajoitteita. Se voi auttaa organisaatiosi kaikkia käyttäjiä. Power BI tarjoaa työkalut, joiden avulla voit tehdä ja käyttää helppokäyttöisiä raportteja. Sinun on raportin tekijänä käytettävä näitä työkaluja kaikkien käyttökokemuksen parantamiseksi.
 
+
 ## <a name="accessibility-standards"></a>Saavutettavuusstandardit
 
-Power BI on noudattaa seuraavia helppokäyttöisyysstandardeja.  Tämä auttaa varmistamaan, että mahdollisimman monet voivat käyttää Power BI -kokemuksiasi.
+Power BI on noudattaa seuraavia helppokäyttöisyysstandardeja. Tämä auttaa varmistamaan, että mahdollisimman monet voivat käyttää Power BI -kokemuksiasi. Power BI -mobiilisovellukset on sertifioitu helppokäyttöisiksi luokassa c, mikä tarkoittaa, että kun luot raportteja tai koontinäyttöjä, ne ovat käytettävissä myös kaikille, jotka tarkastelevat niitä Power BI -mobiilisovelluksen avulla. 
 
 ### <a name="wcag-21"></a>WCAG 2.1
 Verkkosisällön saavutettavuus (WCAG) auttaa tekemään verkkosisällöstä helppokäyttöistä toimintarajoitteisille henkilöille. WCAG:ssa on kolme ensisijaista periaatetta:

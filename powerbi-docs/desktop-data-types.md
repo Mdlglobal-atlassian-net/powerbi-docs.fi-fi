@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a3ca4b8ffe709fec7953eb5d4081bdf296504eb1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3f263e67b866f6d6a3ea76257c64bbb2308a25d2
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73868525"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75729709"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Tietotyypit Power BI Desktopissa
 Tässä artikkelissa kuvataan tietotyypit, joita Power BI Desktop ja Data Analysis Expressions (DAX) tukevat. 
@@ -51,7 +51,7 @@ Power BI Desktop tukee kolmea lukutyyppiä:
 >
 
 ### <a name="datetime-types"></a>Päivämäärä/aika-tyypit
-Power BI Desktop tukee viittä päivämäärä/aika-tietotyyppiä kyselynäkymässä ja kolmea tietotyyppiä raporttinäkymässä ja mallissa.   Sekä päivämäärä/aika/aikavyöhyke että kesto muunnetaan malliin lataamisen yhteydessä.
+Power BI Desktop tukee viittä päivämäärä/aika-tietotyyppiä kyselynäkymässä.  Sekä päivämäärä/aika/aikavyöhyke että kesto muunnetaan malliin lataamisen yhteydessä. Power BI Desktop -tietomalli tukee vain päivämäärää/aikaa, mutta se voidaan muotoilla päivämäärinä tai kellonaikoina itsenäisesti. 
 
 **Päivämäärä/kellonaika** – edustaa sekä päivämäärän että kellonajan arvoa.  Kansien alapuolella päivämäärän/ajan arvo tallennetaan desimaalilukutyyppinä.  Näin voit todellisuudessa muuntaa näiden kahden välillä.   Päivämäärän aikaosa tallennetaan murtolukuna 1/300 sekunnin (3,33 ms) kokonaislukukerrannaisiin.  Päivämääriä vuosien 1 900–9 999 välillä tuetaan.
 
@@ -59,7 +59,7 @@ Power BI Desktop tukee viittä päivämäärä/aika-tietotyyppiä kyselynäkymä
 
 **Aika** – edustaa vain aikaa (ei päivämääräosaa).  Malliin muunnettaessa ajan arvo on sama kuin päivämäärän/ajan arvo, jossa desimaalierottimen vasemmalla puolella ei ole numeroita.
 
-**Päivämäärä/aika/aikavyöhyke** – edustaa UTC-päivämäärää/-aikaa.  Tällä hetkellä se muunnetaan malliin lataamisen yhteydessä päivämääräksi/ajaksi.
+**Päivämäärä/aika/aikavyöhyke** – osoittaa UTC-päivämäärää/-aikaa ja aikavyöhykkeen siirtymää.  Se muunnetaan malliin lataamisen yhteydessä päivämääräksi/ajaksi. Power BI -malli ei säädä aikavyöhykettä käyttäjän sijainnin tai maa-asetuksen perusteella. Jos arvo 09:00 on ladattu malliin Yhdysvalloissa, se näytetään muodossa 09:00, kun raportti avataan tai sitä tarkastellaan. 
 
 **Kesto** – edustaa ajan pituutta. Se muunnetaan malliin lataamisen yhteydessä desimaalilukutyypiksi.  Desimaaliluvun tyyppinä se voidaan lisätä päivämäärä/aika-kenttään tai vähentää siitä oikeilla tuloksilla.  Kuten desimaalilukutyyppiä, voit helposti käyttää sitä visualisoinneissa, jotka näyttävät suuruusluokan.
 
@@ -163,7 +163,7 @@ Muunnokset suoritetaan implisiittisesti numeerisille tyypeille tai päivämäär
 | KOKONAISLUKU |KOKONAISLUKU |VALUUTTA |REAALI |REAALI |
 | VALUUTTA |VALUUTTA |VALUUTTA |REAALI |REAALI |
 | REAALI |REAALI |REAALI |REAALI |REAALI |
-| Päivämäärä/kellonaika |REAALI |REAALI |REAALI |Päivämäärä/kellonaika |
+| Päivämäärä/kellonaika |REAALI |REAALI |REAALI |Päivämäärä ja aika |
 
 ### <a name="handling-blanks-empty-strings-and-zero-values"></a>Tyhjien, tyhjien merkkijonojen ja nolla-arvojen käsitteleminen
 Nolla-arvoa, tyhjää arvoa, tyhjää solua tai puuttuvaa arvoa edustaa DAX-kielessä aina sama uusi arvotyyppi TYHJÄ. Tyhjiä arvoja voi myös luoda TYHJÄ-funktiolla tai testata tyhjät ONTYHJÄ-funktiolla.

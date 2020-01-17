@@ -1,6 +1,6 @@
 ---
 title: 'Opetusohjelma: Verkkosivun tietojen tuonti ja analysointi'
-description: 'Opetusohjelma: Verkkosivun tietojen tuonti ja analysointi Power BI Desktopissa'
+description: 'Opetusohjelma: Verkkosivun tietojen tuonti ja analysointi Power BI Desktopilla'
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
@@ -10,14 +10,14 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: e4a805db851e63a725a866065a774ef8ecc23c24
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7d4aaa613ac2d79a08ed6bbc03ba47dd296942de
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879584"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759585"
 ---
-# <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Opetusohjelma: Verkkosivun tietojen analysointi Power BI Desktopissa
+# <a name="tutorial-analyze-webpage-data-by-using-power-bi-desktop"></a>Opetusohjelma: Verkkosivun tietojen analysointi Power BI Desktopilla
 
 Pitkäaikaisena jalkapallofanina haluat raportin UEFA Euroopan mestaruuskisojen voittajista. Power BI Desktopilla voit tuoda nämä tiedot verkkosivulta raporttiin ja luoda visualisointeja näyttämään tietoja. Tässä opetusohjelmassa opit miten Power BI Desktopilla:
 
@@ -43,7 +43,7 @@ Tietojen tuominen:
    >[!NOTE]
    >Voit myös valita **Nouda tiedot** kohteen itse, tai valita **Nouda tiedot** Power BI:n **Aloita** -valintaikkunasta, valitse sitten **Verkko** ja **Kaikki** tai **Muut** **Nouda tiedot** -valintaikkunasta ja valitse vielä **Yhdistä**.
    
-2. Liitä URL-osoite **Verkosta** `https://en.wikipedia.org/wiki/UEFA_European_Football_Championship`-valintaikkunan **URL** -tekstiruutuun ja valitse sitten **OK**.
+2. Liitä URL-osoite **Verkosta**`https://en.wikipedia.org/wiki/UEFA_European_Football_Championship`-valintaikkunan **URL** -tekstiruutuun ja valitse sitten **OK**.
    
     ![Tietojen noutaminen valintaikkunasta](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web2.png)
    
@@ -184,7 +184,7 @@ Jos haluat muuttaa kartan ympyräkaavioksi, valitse kartta ja valitse sitten **Y
 
 Power BI Desktop tarjoaa saumattoman kokemuksen alusta loppuun. Sen avulla voit hakea tietoja laajasta tietolähteiden joukosta ja muotoilla ne analyysitarpeidesi mukaan ja visualisoida tiedot monipuolisilla ja vuorovaikutteisilla tavoilla. Kun raportti on valmis, voit [ladata sen Power BI:hin](desktop-upload-desktop-files.md) ja luoda siihen perustuvia koontinäyttöjä, joita voit jakaa muiden Power BI -käyttäjien kanssa.
 
-## <a name="see-also"></a>Katso myös
+## <a name="see-also"></a>Muuta aiheeseen liittyvää
 * [Lue muita Power BI Desktop -opetusohjelmia](https://go.microsoft.com/fwlink/?LinkID=521937)
 * [Katso Power BI Desktop -videoita](https://go.microsoft.com/fwlink/?LinkID=519322)
 * [Käy Power BI -keskustelupalstalla](https://go.microsoft.com/fwlink/?LinkID=519326)

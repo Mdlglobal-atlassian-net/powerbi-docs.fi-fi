@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ffff443716f11101347debd97f28349afc3904bb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: fee47524be70955a123d08e10dca5ee0dd3e07fd
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876316"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761176"
 ---
-# <a name="directquery-and-sap-business-warehouse-bw"></a>DirectQuery ja SAP Business Warehouse (BW)
+# <a name="connect-to-sap-business-warehouse-by-using-directquery-in-power-bi"></a>SAP Business Warehouseen yhdistäminen DirectQueryn avulla Power BI:ssä
 Voit muodostaa yhteyden **SAP Business Warehouse (BW)** -tietolähteisiin suoraan **DirectQueryn** avulla. SAP BW:n OLAP- ja monidimensioluonteesta johtuen DirectQueryn käytöllä SAP BW:n kanssa ja DirectQueryn käytöllä relaatiolähteiden (esimerkiksi SQL Server) kanssa on monia tärkeitä eroja. Nämä erot esitellään seuraavassa:
 
 * Kun **DirectQuerya** käytetään relaatiolähteiden kanssa, käytössä on joukko kyselyitä (jotka määritetään **Nouda tiedot**- tai **Kyselyeditori**-valintaikkunassa), jotka määrittävät loogisesti, mitkä tiedot ovat käytettävissä kenttäluettelossa. Tämä *ei* kuitenkaan pidä paikkaansa, kun muodostetaan yhteys SAP BW:n kaltaiseen OLAP-lähteeseen. Kun SAP-palvelimeen muodostetaan yhteys **Nouda tiedot** -toiminnolla, valitaan sen sijaan vain Infocube tai BEx-kysely. Tämän jälkeen kaikki valitun Infocuben tai BEx-kyselyn dimensiot ja avainluvut ovat käytettävissä kenttäluettelossa.   

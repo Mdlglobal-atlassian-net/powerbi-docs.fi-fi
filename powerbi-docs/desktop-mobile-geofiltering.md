@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: maggies
 LocalizationGroup: Model your data
-ms.openlocfilehash: c054bc933cb1eaac7475ac0c7649c7e0f77f503b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b30310f78dca919474baf6d5870294bfc05dcacf
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878098"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760992"
 ---
-# <a name="set-geographic-filters-in-power-bi-desktop-for-the-mobile-apps"></a>Maantieteellisten suodattimien määrittäminen Power BI Desktopissa mobiilisovelluksille
+# <a name="set-geographic-filters-in-power-bi-desktop-for-use-in-the-mobile-app"></a>Maantieteellisten suodattimien määrittäminen Power BI Desktopissa käytettäviksi mobiilisovelluksissa
 Power BI Desktopissa voit [luokitella maantieteellisiä tietoja](desktop-data-categorization.md) saraketta kohden, joten Power BI Desktop tietää, miten käsitellä raportin visualisoinnissa olevia arvoja. Toinen etu on, että kun sinä tai työtoverisi tarkastelevat kyseistä raporttia Power BI -mobiilisovelluksissa, Power BI tarjoaa automaattisesti sijaintianne vastaavat maantieteelliset suodattimet. 
 
 Oletetaan esimerkiksi, että olet myyntipäällikkö matkalla tapaamaan asiakkaita, ja haluat suodattaa nopeasti kokonaismyynnin ja tuoton sen asiakkaan osalta, jonka aiot tavata. Haluat eritellä tämänhetkistä sijaintiasi koskevat tiedot joko osavaltion, kaupungin tai todellisen osoitteen mukaan. Myöhemmin, jos sinulla on aikaa jäljellä, haluat käydä muiden lähistöllä toimivien asiakkaiden luona. Voit [suodattaa raportin sijaintisi mukaan kyseisten asiakkaiden löytämiseksi](consumer/mobile/mobile-apps-geographic-filtering.md).
@@ -60,5 +60,5 @@ Lue lisää aiheesta [raportin suodattaminen sijainnin mukaan Power BI -mobiilis
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Tietojen luokittelu Power BI Desktopissa](desktop-data-categorization.md)  
-* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

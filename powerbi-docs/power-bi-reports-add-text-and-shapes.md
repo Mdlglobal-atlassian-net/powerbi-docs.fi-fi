@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3da18269817ef89dfff9524c8875814430bc6cce
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b90bfd9482e28faa8d9dfb0d089ca07656663b53
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874435"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762458"
 ---
-# <a name="text-boxes-and-shapes-in-power-bi-reports"></a>Tekstiruudut ja muodot Power BI -raporteissa
+# <a name="add-text-boxes-and-shapes-to-power-bi-reports"></a>Tekstiruutujen ja muotojen lisääminen Power BI -raportteihin
 Voit lisätä raportteihin tekstiruutuja ja muotoja käyttämällä Power BI -palvelua ja Power BI Desktopia. Kummassakin tapauksessa sinulla on oltava raportin muokkausoikeudet. Jos raportti on jaettu kanssasi Power BI -palvelussa, sinulla ei ole raportin muokkausoikeuksia. 
 
 Katso, miten Will käyttää Power BI Desktopia ja [lisää staattisia kuvia raporttiin](/learn/modules/visuals-in-power-bi/12-formatting). Kokeile sitten lisäämistä itse alla olevien ohjeiden avulla ja käytä Power BI -palvelua sen sijaan.

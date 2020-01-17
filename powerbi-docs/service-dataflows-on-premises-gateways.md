@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 53124f2b1ede9d8a9c3a9866416f713af1fd2061
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: efd110ad73b1bd72813d418a1f641613c88dc0d5
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877259"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762573"
 ---
 # <a name="using-dataflows-with-on-premises-data-sources"></a>Tietovoiden käyttö paikallisiin tietolähteisiin
 
@@ -24,7 +24,8 @@ Voit **tietovoiden** avulla luoda tietokokoelmia erilaisista lähteistä, puhdis
 
 ## <a name="configuring-an-enterprise-gateway-for-use-with-dataflows"></a>Yritysyhdyskäytävän määrittäminen tietovuokäyttöä varten
 
-Jotta paikallisia tietolähteitä voidaan käyttää tietovuossa, tietovuon luoneen käyttäjän on asennettava ja määritettävä **yritysyhdyskäytävä**. Tietovuon luoneen käyttäjän on myös oltava yritysyhdyskäytävän järjestelmänvalvoja, jotta hän voi käyttää tätä yhdyskäytävää tietovuota varten.
+Jos haluat luoda tietovuon yhdyskäytävän avulla, käyttäjän täytyy olla yritysyhdyskäytävän järjestelmänvalvoja – tai järjestelmänvalvojan on täytynyt jakaa tietolähde, jota aiotaan käyttää käyttäjän kanssa. 
+
 
 > [!NOTE]
 > Tietovoita tuetaan vain käyttämällä yritysyhdyskäytäviä.
@@ -35,7 +36,7 @@ Kun luot tietovuota, valitse paikallinen tietolähde tietolähteiden luettelosta
 
 ![Paikallisen tietolähteen valinta](media/service-dataflows-onpremises-gateways/onpremises-gateways_02a.png)
 
-Kun olet tehnyt valintasi, sinua pyydetään antamaan yhteystiedot yritysyhdyskäytävästä, jota käytetään yhteyden muodostamiseen paikalliseen tietoon. Sinun on itse valittava yhdyskäytävä ja annettava valitun yhdyskäytävän tunnistetiedot. Avattavassa luettelossa näkyvät vain yhdyskäytävät, joiden järjestelmänvalvojana toimii käyttäjä.
+Kun olet tehnyt valintasi, sinua pyydetään antamaan yhteystiedot yritysyhdyskäytävästä, jota käytetään yhteyden muodostamiseen paikalliseen tietoon. Sinun on itse valittava yhdyskäytävä ja annettava valitun yhdyskäytävän tunnistetiedot.
 
 ![Anna yhteyden tiedot](media/service-dataflows-onpremises-gateways/onpremises-gateways_03.png)
 

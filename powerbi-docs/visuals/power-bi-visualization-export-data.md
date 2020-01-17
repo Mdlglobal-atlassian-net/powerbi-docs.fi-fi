@@ -11,14 +11,14 @@ ms.topic: conceptual
 ms.date: 11/13/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b2474cd5cc82e1736790f4a352b216dcc8013a6f
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 5c2f448ff705f00bc443a6a27fa80e1b5164a901
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060471"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75757803"
 ---
-# <a name="export-data-from-visualizations"></a>Tietojen vieminen visualisoinneista
+# <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Visualisoinnin lähdetietojen vieminen
 
 Jos haluat nähdä tiedot, joita Power BI käyttää visualisoinnin luomiseksi, [voit näyttää nämä tiedot Power BI:ssä](service-reports-show-data.md). Voit myös viedä nämä tiedot Exceliin *.xlsx*- tai *.csv*-tiedostona. Tietojen vienti edellyttää Pro- tai Premium-käyttöoikeutta ja tietojoukon ja raportin muokkausoikeuksia. <!--If you have access to the dashboard or report but the data is classified as *highly confidential*, Power BI will not allow you to export the data.-->
 

@@ -9,14 +9,14 @@ ms.topic: tutorial
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 8d1b253d5e84bb15dea4612978ee970faccb7a1a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 712864afdea5431fa630d052271e8cb2c05e9dd2
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73866079"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759878"
 ---
-# <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Opetusohjelma: Excelin ja OData-syötteen myyntitietojen yhdistäminen
+# <a name="tutorial-analyze-sales-data-from-excel-and-an-odata-feed"></a>Opetusohjelma: Excelin ja OData-syötteen myyntitietojen analysointi
 
 Tiedot ovat usein monessa tietolähteessä. Sinulla voi olla esimerkiksi kaksi tietokantaa: yksi tuotetietoja ja toinen myyntitietoja varten. **Power BI Desktopissa** voit yhdistää tietoja eri lähteistä ja luoda kiinnostavia tietojen analyysejä ja visualisointeja. 
 

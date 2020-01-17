@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 64e9ff8f4952abe79a62b6b805596554b32aa6c9
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: f14734f168abca1003bd5b6c773c4c70daf53d15
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265466"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762090"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI Yhdysvaltain valtionhallinnon asiakkaille
 **Power BI-palvelulla** on versio, joka on saatavilla Yhdysvaltain valtionhallinnon asiakkaille osana **Office 365 US Government Community** -tilauksia. Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti Yhdysvaltain valtionhallinnon asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio.
@@ -59,6 +59,7 @@ Jotkin ominaisuudet, jotka ovat saatavilla **Power BI -palvelun** kaupallisessa 
 * **Raporttinäkymien ja raporttien käyttötilastot** – käyttötilastot eivät ole käytettävissä raporteille ja raporttinäkymille. Asiakkaat voivat käyttää valvontalokitietoja saadakseen organisaation sisäisen sisällön käyttötietoja.
 * **Tietovuot** – Tietovuot eivät ole käytettävissä.
 * **Sivutetut raportit** – sivutetut raportit ovat tällä hetkellä käytettävissä vain USGov Virginiassa.  USGov Texas-tuki on suunnitteilla, mutta sitä ei ole vielä saatavilla.
+* Government Community Cloudista (GCC) peräisin olevan Power BI -sisällön upottaminen voidaan tehdä vain Office 365 SKU:n avulla. GCC High -asiakkaat voivat käyttää [Office 365- tai Azure-varastointiyksikköjä](developer/embedded-faq.md#what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365).
 
 Jos sinulla on maksuttomia **Power BI** -käyttöoikeuksia määritettynä tilillesi, kyseiset tilit toimivat kaupallisessa**Power BI** -palvelun versiossa, joten ne ovat eivät ole osa **Power BI US Government** -tarjontaa. Voit kohdata seuraavia ongelmia maksuttomissa tileissä:
 
@@ -88,7 +89,7 @@ Seuraavat kysymykset (ja vastaukset) on toimitettu auttamaan sinua saamaan tarvi
 
 **Vastaus**: Kyllä, URL-osoitteet ovat erilaiset. Seuraavassa taulukossa on kukin URL-osoite:
 
-| Kaupallisen version URL-osoite | Yhdysvaltain valtionhallinnon version URL-osoite | Yhdysvaltain julkisen hallinnon GCC High -URL-osoite |
+| Kaupallisen version URL-osoite | Yhdysvaltain julkisen hallinnon version URL-osoite | Yhdysvaltain julkisen hallinnon GCC High -URL-osoite |
 | --- | --- | --- |
 | https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
 

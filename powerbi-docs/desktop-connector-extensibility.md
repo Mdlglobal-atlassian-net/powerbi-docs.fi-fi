@@ -6,53 +6,48 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/22/2019
+ms.date: 01/02/2020
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e493e4a41e7b357a23677c1c50f654dbee51e0ca
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b604ade56335e65b25501eb9fe3d3c2fd185a6f0
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878414"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761389"
 ---
 # <a name="connector-extensibility-in-power-bi"></a>Liittimen laajennettavuus Power BI:ssä
 
-Power BI:ssä asiakkaat ja kehittäjät voivat laajentaa yhdistettävien tietolähteiden määrää monin eri tavoin. He käyttävät olemassa olevia liittimiä ja yleisiä tietolähteitä (kuten ODBC, OData, Oledb, Web, CSV, XML, JSON). Kehittäjät voivat myös luoda tietolaajennuksia, joita kutsutaan **mukautetuiksi liittimiksi**, ja tehdä niistä **sertifioituja liittimiä**.
+Power BI voi muodostaa yhteyden tietoihin olemassa olevilla liittimillä ja yleisillä tietolähteillä (esimerkiksi ODBC, OData, OLE DB, verkko, CSV, XML, ja JSON). Kehittäjät voivat myös ottaa käyttöön uusia tietolähteitä mukautetuilla tietolaajennuksilla joita kutsutaan *mukautetuiksi liittimiksi*. Microsoft on sertifioinut jotkin mukautetut liittimet, joita se jakelee *sertifioituina liittiminä*.
 
-Tällä hetkellä **mukautetut liittimet** otetaan käyttöön valikossa, jonka avulla voit suojatusti hallita järjestelmässä suoritettavan mukautetun koodin tasoa. Voit valita kaikki mukautetut liittimet tai vain Microsoftin sertifioimat ja jakelemat liittimet **Nouda tiedot** -valintaikkunassa.
+Jos käytät itse kehittämiäsi tai jonkin ulkoisen tahon kehittämiä sertifioimattomia mukautettuja liittimiä, sinun täytyy muokata Power BI Desktopin suojausasetuksia sallimaan laajennusten lataaminen ilman vahvistusta tai varoitusta. Koska tämä koodi voi käsitellä tunnistetietoja (esimerkiksi lähettää niitä HTTP-yhteydellä) ja ohittaa tietosuojatasot, käytä tätä suojausasetusta vain, jos luotat ehdottomasti mukautettuihin liittimiisi.
+
+Toinen vaihtoehto on se, että tietyn liittimen kehittäjä allekirjoittaa sen varmenteella ja antaa sinulle tiedot, joita tarvitset sen käyttöön muokkaamatta suojausasetuksiasi. Saat lisätietoja ohjeartikkelista [Tietoja luotetuista ulkopuolisista liittimistä](desktop-trusted-third-party-connectors.md).
 
 ## <a name="custom-connectors"></a>Mukautetut liittimet
 
-**Mukautetut liittimet** voivat sisältää runsaasti mahdollisuuksia – liiketoiminnallesi tärkeistä pienistä ohjelmointirajapinnoista laajoihin toimialakohtaisiin palveluihin, joiden tarjoaja on jokin muu taho kuin Microsoft. Toimittaja jakelee useita liittimiä. Jos tarvitset tietyn tietoliittimen, ota yhteyttä toimittajaan.
+Sertifioimattomat mukautetut liittimet voivat olla esimerkiksi liiketoiminnallesi tärkeitä pieniä ohjelmointirajapintoja tai laajoja toimialakohtaisia palveluita, joille Microsoft ei julkaissut liitintä. Monet liittimet ovat toimittajien jakelemia. Jos tarvitset tietyn tietoliittimen, ota yhteyttä toimittajaan. 
 
-Käyttääksesi **mukautettua liitintä** laita se  *\[asiakirjojen]\\Power BI Desktopin\\mukautetut liittimet* -kansioon ja muuta sen suojausasetuksia seuraavassa osassa kuvatulla tavalla.
+Jos haluat käyttää sertifioimatonta mukautettua liitintä, siirrä liittimen *.pq*-, *.pqx-* , *.m*- tai *.mez*-tiedosto kansioon *\[Tiedostot]\\Power BI Desktop\\Custom Connectors*. Jos tätä kansiota ei ole olemassa, luo se.
 
-Sinun ei tarvitse säätää tietoturva-asetuksia käyttääksesi **sertifioituja liittimiä**.
+Muokkaa tietolaajennuksen suojausasetuksia seuraavasti:
 
-## <a name="data-extension-security"></a>Tietolaajennuksen tietoturva
+Valitse Power BI Desktopissa **Tiedosto** > **Asetukset ja vaihtoehdot** > **Asetukset** > **Suojaus**.
 
-Muuttaaksesi tietolaajennuksen tietoturva-asetuksia **Power BI Desktopissa** valitse **Tiedosto > Asetukset ja vaihtoehdot > Asetukset > Tietoturva**.
+Valitse **Tietolaajennukset**-kohdata **(Ei suositeltu) Salli minkä tahansa laajennuksen lataaminen ilman vahvistusta tai varoitusta**. Valitse **OK** ja käynnistä siten Power BI Desktop uudelleen. 
 
-![Voi valita haluatko ladata mukautettuja yhdistimiä tietolaajennuksen tietoturva-asetuksista](media/desktop-connector-extensibility/data-extension-security-1.png)
+![Sertifioimattomien mukautettujen liittimien salliminen tietolaajennuksen tietoturva-asetuksissa](media/desktop-connector-extensibility/data-extension-security-1.png)
 
-**Tietolaajennukset**-valikosta voit valita kahdesta suojaustasosta:
+Power BI Desktopin tietolaajennusten suojausasetuksen oletusarvo on **(Suositus) Salli vain Microsoftin sertifioimien ja muiden luotettujen kolmannen osapuolen laajennusten lataaminen**. Jos tämä asetus on käytössä ja järjestelmässäsi on sertifioimattomia mukautettuja liittimiä, Power BI Desktopin käynnistyessä näytetään **sertifioimattomien liittimien** valintaikkuna. Siinä luetellaan liittimet, joita ei voida ladata turvallisesti.
 
-* (Suositeltu) Salli vain sertifioitujen laajennusten lataaminen
-* (Ei suositeltu) Salli minkä tahansa laajennuksen lataaminen ilman varoitusta
+![Sertifioimattomien liittimien valintaikkuna](media/desktop-connector-extensibility/data-extension-security-2.png)
 
-Jos aiot käyttää **mukautettuja liittimiä** tai itse kehittämiäsi tai kolmannen osapuolen kehittämiä liittimiä, sinun on valittava **(Ei suositeltu) Salli minkä tahansa laajennuksen lataaminen ilman varoitusta** -vaihtoehto. Microsoft ei suosittele tätä tietoturva-asetusta, ellet luota mukautettuihin liittimiisi täysin. Tämä on siksi, koska koodin avulla voidaan käsitellä tunnistetietoja, kuten lähettää niitä HTTP-yhteyden välityksellä, ja ohittaa yksityisyystasot.
-
-Jos käytössä on **(Suositeltu)** -tietoturva-asetus ja järjestelmässäsi on mukautettuja liittimiä, näyttöön tulee virhe ”Seuraavaa liitintä ei ole sertifioitu, emmekä pystyneet varmistamaan, että sen käyttäminen on turvallista” ja sitten luettelo liittimistä, joita ei voi ladata turvallisesti.
-
-![Valintaikkunassa on kuvattu mukautetut liittimet, joita ei voi ladata tietoturva-asetuksien, tässä tapauksessa TripPinin, vuoksi](media/desktop-connector-extensibility/data-extension-security-2.png)
-
-Jos haluat korjata virheen muuttamatta suojausta, poista allekirjoittamattomat liittimet mukautettujen liittimien kansiosta.
-
-Jos haluat korjata virheen ja käyttää kyseisiä liittimiä, sinun on muutettava tietoturva-asetukseksi **(Ei suositeltu) Salli minkä tahansa laajennuksen lataaminen ilman varoitusta** edellä kuvatulla tavalla. Käynnistä siten **Power BI Desktop** uudelleen.
+Jos haluat korjata virheen, muokkaa **tietolaajennusten** suojausasetusta tai poista allekirjoittamattomat liittimet *mukautettujen liittimien* kansiosta.
 
 ## <a name="certified-connectors"></a>Sertifioidut liittimet
 
-Rajoitettua tietolaajennusten joukkoa pidetään **sertifioituna**. Käytä sertifioituja liittimiä **Nouda tiedot** -valintaikkunassa. Liittimen luonut kolmannen osapuolen kehittäjä on kuitenkin vastuussa liittimen ylläpidosta ja tuesta. Vaikka Microsoft toimii liittimien jakelijana, se ei vastaa niiden suorituskyvystä tai jatkuvasta toimivuudesta.
+Rajoitettua tietolaajennusten joukkoa pidetään *sertifioituna*. Vaikka Microsoft toimii liittimien jakelijana, se ei vastaa niiden suorituskyvystä tai jatkuvasta toimivuudesta. Liittimen luonut ulkopuolinen kehittäjä on kuitenkin vastuussa liittimen ylläpidosta ja tuesta. 
 
-Jos haluat hankkia mukautetulle liittimelle sertifioinnin, pyydä toimittajaasi ottamaan yhteyttä osoitteeseen dataconnectors@microsoft.com.
+Sertifioidut ulkopuoliset liittimet näytetään Power BI Desktopissa **Nouda tiedot** -valintaikkunan luettelossa yleisten liittimien kanssa. Sinun ei tarvitse säätää tietoturva-asetuksia käyttääksesi sertifioituja liittimiä.
+
+Jos haluat hankkia mukautetulle liittimelle sertifioinnin, pyydä toimittajaasi ottamaan yhteyttä seuraavaan: dataconnectors@microsoft.com.

@@ -6,18 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/22/2019
+ms.date: 01/08/2020
 ms.author: kfollis
-ms.openlocfilehash: be7f95b2bbbd6e5e6314c7fd57869a30c176746c
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.openlocfilehash: 2578f8621140a64b85e6765d80d860c1489a5900
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74958490"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762550"
 ---
 # <a name="power-bi-data-sources"></a>Power BI -tietolähteet
 
 Seuraavassa taulukossa esitetään Power BI:n tukemat tietolähteet tietojoukoille ja annetaan tietoja DirectQuerysta ja paikallisesta tietoyhdyskäytävästä. Lisätietoja tietovoista on kohdassa [Yhteyden muodostaminen Power BI -tietovoiden tietolähteisiin](service-dataflows-data-sources.md).
+
+> [!NOTE]
+> Power BI Desktopille on useita tietoliittimiä, jotka edellyttävät todentamista Internet Explorer 10:llä (tai uudemmalla versiolla). 
+
 
 | Tietolähde | Muodosta Desktopista | Muodosta yhteys ja päivitä palvelusta | DirectQuery/live-yhteys | Yhdyskäytävä (tuettu) | Yhdyskäytävä (pakollinen) |
 |---|---|---|---|---|---|---|---|
@@ -28,19 +32,19 @@ Seuraavassa taulukossa esitetään Power BI:n tukemat tietolähteet tietojoukoil
 | appFigures | Kyllä | Kyllä | Ei | Ei | Ei |
 | AtScale-kuutiot | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
 | Azure Analysis Services | Kyllä | Kyllä | Kyllä | Kyllä <sup>2</sup> | Ei |
-| Azure Blob Storage | Kyllä | Kyllä | Ei | Kyllä | Ei |
+| Azure-blob-objektitallennus | Kyllä | Kyllä | Ei | Kyllä | Ei |
 | Azure Cosmos DB | Kyllä | Kyllä | Ei | Ei | Ei |
 | Azure Cost Management | Kyllä | Kyllä | Ei | Ei | Ei |
 | Azure Data Explorer (kusto) | Kyllä | Kyllä | Kyllä | Ei | Ei |
 | Azure Data Lake Storage Gen1 | Kyllä | Kyllä | Ei | Ei | Ei |
-| Azure Data Lake Storage Gen2 | Kyllä | Kyllä | Ei | Ei | Ei |
+| Azure Data Lake Storage Gen2 | Kyllä | Kyllä | Ei | Kyllä | Ei |
 | Azure DevOps | Kyllä | Kyllä | Ei | Ei | Ei |
 | Azure DevOps Server | Kyllä | Kyllä | Ei | Kyllä | Kyllä |
 | Azure HDInsight (HDFS) | Kyllä | Kyllä | Ei | Ei | Ei |
 | Azure HDInsight Spark | Kyllä | Kyllä | Kyllä | Ei | Ei |
 | Azuren SQL-tietokanta | Kyllä | Kyllä | Kyllä | Kyllä <sup>2</sup> | Ei |
 | Azure SQL Data Warehouse | Kyllä | Kyllä | Kyllä | Ei | Ei |
-| Azure-taulukkosäilö | Kyllä | Kyllä | Ei | Kyllä | Ei |
+| Azure-taulukkotallennus | Kyllä | Kyllä | Ei | Kyllä | Ei |
 | BI-liitin | Kyllä | Kyllä | Kyllä | Kyllä | Kyllä |
 | BI360 – budjetointi ja talousraportointi | Kyllä | Kyllä | Ei | Ei | Ei |
 | Common Data Service | Kyllä | Kyllä | Ei | Ei | Ei |
@@ -65,8 +69,8 @@ Seuraavassa taulukossa esitetään Power BI:n tukemat tietolähteet tietojoukoil
 | Google BigQuery | Kyllä | Kyllä | Ei | Ei | Ei |
 | Hadoop-tiedosto (HDFS) | Kyllä | Ei | Ei | Ei | Ei |
 | HDInsight Interactive Query | Kyllä | Kyllä | Kyllä | Ei | Ei |
-| IBM DB2 | Kyllä | Kyllä | Kyllä | Kyllä | Kyllä |
-| IBM Informix -tietokanta | Kyllä | Kyllä | Ei | Kyllä | Kyllä |
+| IBM DB2 | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
+| IBM Informix -tietokanta | Kyllä | Kyllä | Ei | Kyllä | Ei |
 | IBM Netezza | Kyllä | Kyllä | Kyllä | Kyllä | Kyllä |
 | Impala | Kyllä | Kyllä | Kyllä | Kyllä | Kyllä |
 | Indexima | Kyllä | Kyllä | Kyllä | Kyllä | Kyllä |
@@ -95,7 +99,7 @@ Seuraavassa taulukossa esitetään Power BI:n tukemat tietolähteet tietojoukoil
 | Planview Enterprise One – CTM | Kyllä | Kyllä | Ei | Ei | Ei |
 | Planview Enterprise One – PRM | Kyllä | Kyllä | Ei | Ei | Ei |
 | Planview Projectplace | Kyllä | Kyllä | Ei | Ei | Ei |
-| PostgreSQL | Kyllä | Kyllä | Kyllä | Kyllä | Kyllä |
+| PostgreSQL | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
 | Power BI -tietovuot | Kyllä | Kyllä | Ei | Ei | Ei |
 | Power BI -tietojoukot | Kyllä | Kyllä | Kyllä | Ei | Ei |
 | Power Platform -tietovuot | Kyllä | Kyllä | Ei | Ei | Ei |
@@ -114,7 +118,7 @@ Seuraavassa taulukossa esitetään Power BI:n tukemat tietolähteet tietojoukoil
 | SharePoint List | Kyllä | Kyllä | Ei | Kyllä | Ei <sup>4</sup> |
 | SharePoint Online -luettelo | Kyllä | Kyllä | Ei | Kyllä <sup>2</sup> | Ei |
 | Smartsheet | Kyllä | Kyllä | Ei | Ei | Ei |
-| Snowflake | Kyllä | Kyllä | Kyllä | Kyllä | Kyllä |
+| Snowflake | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
 | Spark | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
 | SparkPost | Kyllä | Kyllä | Ei | Ei | Ei |
 | SQL Server | Kyllä | Kyllä | Kyllä | Kyllä | Kyllä |

@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 07/29/2019
-ms.openlocfilehash: c67ce4ef9b5b0ac2054d4ecdf76ee3a1a79571d8
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 02/04/2020
+ms.openlocfilehash: 7a10df09bd6b0f4ce81ee32ae72700080a8020d9
+ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74311072"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691347"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseen organisaatiolle
 
@@ -53,6 +53,8 @@ Jos haluat määrittää ympäristön manuaalisesti, jatka lukemista.
 [Rekisteröi sovellus](register-app.md) Azure Active Directoryyn, jotta sovellus saa käyttöoikeuden [Power BI REST -ohjelmointirajapintoihin](https://docs.microsoft.com/rest/api/power-bi/). Kun rekisteröit sovelluksesi, voit määrittää sovelluksen käyttäjätiedot ja käyttöoikeudet Power BI REST -resursseihin.
 
 Sinun on suoritettava loppuun **palvelinpuolen verkkosovelluksen** rekisteröinti. Rekisteröimällä palvelinpuolen verkkosovelluksen luot sovellussalaisuuden.
+
+Kun olet luonut sovelluksesi Azuressa, avaa sovelluksesi Azuressa, siirry *todentamisen* kohtaan ja lisää *uudelleenohjausten URI-osoitteiden* kohdassa *uudelleenohjauksen URI-osoitteeksi* **/Redirect**.
 
 ## <a name="set-up-your-power-bi-environment"></a>Power BI -ympäristön määrittäminen
 

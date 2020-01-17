@@ -6,16 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/22/2018
+ms.date: 01/07/2020
 ms.author: maggies
-ms.openlocfilehash: b8dd79e4b256a80ba5159a1b3980e798bc611840
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4c4228ea4276235a983849d2ea88e1030f4690f7
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875047"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75732034"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Sivutetun raportin luominen Microsoft Power BI -raporttipalvelimeen
+Tässä artikkelissa annetaan ohjeet sivutetun raportin luomiseen Power BI -raporttipalvelimelle helposti ja nopeasti.
+
+Tarvitsetko neuvoja Power BI -palvelun raportin muodostimen sivutettujen raporttien luomisessa? Lue lisätietoja kohdasta [Power BI:n sivutetun raportin muodostin](../report-builder-power-bi.md).
+
 Nimensä mukaisesti sivutetuissa raporteissa voi olla useita sivuja. Niiden asettelu on kiinteässä muodossa ja ne tarjoavat tarkan mukautuksen. Sivutetut raportit ovat .rdl-tiedostoja.
 
 Voit tallentaa ja käsitellä sivutettuja raportteja Power BI -raporttipalvelimen verkkoportaalissa, samalla tavalla kuin SQL Server Reporting Services (SSRS) -verkkoportaalissa. Voit luoda ja muokata niitä Raportin muodostimessa tai Raportin suunnitteluohjelmassa SQL Server Data Toolsissa (SSDT). Sen jälkeen voit julkaista ne jommankumman verkkoportaalin kautta. Raportin lukijat organisaatiossasi voivat tarkastella niitä selaimessa tai Power BI -mobiilisovelluksessa mobiililaitteillaan.
@@ -24,7 +28,7 @@ Voit tallentaa ja käsitellä sivutettuja raportteja Power BI -raporttipalvelime
 
 Jos olet jo luonut sivutettuja raportteja Raportin muodostimessa tai Raportin suunnitteluohjelmassa, niin osaat myös luoda sivutettuja raportteja Power BI -raporttipalvelimelle. Jos et ole, niin seuraavassa on muutamia nopea ohjeita, joiden avulla pääset alkuun.
 
-## <a name="step-1-install-and-start-report-builder"></a>Vaihe 1: Asenna ja käynnistä Raportin muodostin
+## <a name="step-1-start-report-builder"></a>Vaihe 1: Käynnistä Raportin muodostin
 Olet ehkä jo asentanut Raportin muodostimen raporttien luomiseksi SSRS-palvelimelle. Voit käyttää samaa versiota tai Raportin muodostinta Power BI -raporttipalvelimen raporttien luomiseen. Jos et ole vielä asentanut sitä, prosessi on helppo.
 
 1. Valitse Power BI -raporttipalvelimen verkkoportaalissa **Uusi** > **Sivutettu raportti**.

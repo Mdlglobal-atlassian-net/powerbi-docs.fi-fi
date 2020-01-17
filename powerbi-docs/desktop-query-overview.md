@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3ee7c094972e7251ab99d9092691bf809344a3d5
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 294bd8017d6e6c8a1eaca836b32c7bd5d50d88e1
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876297"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760792"
 ---
-# <a name="query-overview-in-power-bi-desktop"></a>Power BI Desktopin kyselyiden yleiskatsaus
+# <a name="about-using-query-editor-in-power-bi-desktop"></a>Tietoja Power BI Desktopin kyselyeditorin käytöstä
 **Power BI Desktopilla** voit muodostaa yhteyden kasvavaan tietomäärään, luoda houkuttelevia ja perustavanlaatuisia raportteja ja jakaa työsi hedelmät muiden kanssa, jotka voivat taas hyödyntää niitä omassa työssään ja laajentaa liiketoimintatietojaan.
 
 Power BI Desktopissa on kolme näkymää:

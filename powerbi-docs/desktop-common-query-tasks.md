@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 2b1cf2a7f10fd7249dcdec26b5c5f5d12ff15aca
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 116575898812e82f2f15126d0fee640902367ace
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878659"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761745"
 ---
-# <a name="common-query-tasks-in-power-bi-desktop"></a>Yleiset kyselytehtävät Power BI Desktopissa
+# <a name="perform-common-query-tasks-in-power-bi-desktop"></a>Yleisten kyselytehtävien suorittaminen Power BI Desktopissa
 Power BI Desktopin **kyselyeditorissa** on muutamia usein käytettyjä tehtäviä. Tässä asiakirjassa kerrotaan näistä yleisistä tehtävistä ja annetaan linkkejä lisätietoihin. 
 
 Yleisiä kyselytehtäviä ovat seuraavat:
@@ -149,11 +149,11 @@ Power BI Desktop tarjoaa laajan valikoiman kaavaluokkia. Saat lisätietoja ja ka
 
 Kyselyeditorin kaavaluokat ovat seuraavat:
 
-* Luku
+* luku
   * Vakiot
   * Tiedot
   * Muunto ja muotoilu
-  * Muotoilu
+  * Muoto
   * Pyöristys
   * Toiminnot
   * Satunnainen

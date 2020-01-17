@@ -9,108 +9,123 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 245475feeb43ee544117aaa54969f2de1e207cd5
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 1b819aeb0f59df9ee0d48d7c41807abe62efed08
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696278"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885140"
 ---
-# <a name="migrate-to-the-new-powerbi-visuals-tools-3xx"></a>Siirtyminen uuteen powerbi-visuals-tools-versioon 3.x.x
+# <a name="migrate-to-the-new-powerbi-visuals-tools-version-3x"></a>Siirry uuteen powerbi-visuals-tools-versioon 3.*x*
 
-Versiosta 3 alkaen Power BI -visualisointien työkalut käyttävät Webpackia mukautettujen visualisointien luomiseen.
-Uusi versio tarjoaa kehittäjille monia uusia mahdollisuuksia visualisointien luomiseen:
+Versiosta 3 alkaen Power BI -visualisointityökalut (powerbi-visuals-tools tai `pbiviz`) luovat mukautetut visualisoinnit Webpackilla.
+Uusi versio tarjoaa kehittäjille monia parannuksia visualisointien luomiseen:
 
-* TypeScript v3.x.x oletusarvon mukaan. TypeScript 1.5 -versiosta alkaen nimikkeistöä on muutettu. [Lue lisää TypeScript-moduuleista](https://www.typescriptlang.org/docs/handbook/modules.html).
+- TypeScript-versio 3.*x* on oletusarvoisesti käytössä. TypeScript 1.5 -versiosta alkaen nimikkeistöä on muutettu. [Lue lisää TypeScript-moduuleista](https://www.typescriptlang.org/docs/handbook/modules.html).
 
-* ES6-moduuleja tuetaan. [externalJS](migrate-to-new-tools.md#fix-loading-external-libraries)-moduuleita ei tarvitse enää käyttää, voit käyttää niiden sijasta ES6-tuonteja.
+- ECMAScript 6 (ES6) -moduuleja tuetaan. Voit nyt käyttää ES6-tuonteja [externalJS:n](migrate-to-new-tools.md#configure-loading-of-external-libraries) sijaan.
 
-* Uusia versioita [D3v5](https://d3js.org/):stä ja muista ES6-moduulipohjaisista kirjastoista tuetaan.
+- Uusia versioita [D3v5](https://d3js.org/):stä (Data-Driven Documents) ja muista ES6-moduulipohjaisista kirjastoista tuetaan.
 
-* Paketin koko on pienempi. Webpack poistaa käyttämättömän koodin [puunravistelulla](https://webpack.js.org/guides/tree-shaking/). Se vähentää JS-koodia, minkä seurauksena saat paremman suorituskyvyn visuaalisen lataamisen aikana.
+- Paketin koko on pienempi. Webpack poistaa käyttämättömän koodin [puunravistelulla](https://webpack.js.org/guides/tree-shaking/). Tämä vähentää JavaScript-koodia ja tarjoaa paremman suorituskyvyn visualisointien lataamisessa.
 
-* Ohjelmointirajapinnan suorituskykyä on parannettu.
+- Ohjelmointirajapinnan suorituskykyä on parannettu.
 
-* Globaloize.js-kirjasto [on integroitu](migrate-to-new-tools.md#remove-globalizejs-library) formatting-utils-kirjastoon.
+- Globalize.js-kirjasto [on integroitu](migrate-to-new-tools.md#remove-the- globalizejs-library) FormattingUtilsiin.
 
-* Työkalut käyttävät [webpack-bundle-analyzeria](https://github.com/webpack-contrib/webpack-bundle-analyzer) visualisoinnin koodikannan näyttämiseen.
+- Power BI -visualisointityökalut näyttävät visualisoinnin koodikannan [webpack-bundle-analyzerilla](https://github.com/webpack-contrib/webpack-bundle-analyzer).
 
-Kaikki Power BI -visualisointien työkalujen uuteen versioon siirtymisen vaiheet on kuvattu alla.
+Tämä artikkeli kuvaa kaikki Power BI -visualisointien työkalujen uuteen versioon siirtymisen vaiheet.
 
 ## <a name="backward-compatibility"></a>Yhteensopivuus aikaisempien versioiden kanssa
 
 Uudet työkalut säilyttävät yhteensopivuuden aiempien versioiden visualisointien koodikannan kanssa, mutta ne saattavat vaatia lisämuutoksia ulkoisten kirjastojen lataamiseen.
 
-Moduulijärjestelmiä tukevat libs-moduulit tuodaan Webpack-moduuleina. Kaikki muut libs-moduulit ja visual source -koodit kääritään yhdeksi moduuliksi.
+Moduulijärjestelmiä tukevat kirjastot tuodaan Webpack-moduuleina. Kaikki muut kirjastot ja visualisointien lähdekoodit kerätään yhdeksi moduuliksi.
 
-Aikaisemmissa pbiviz-työkaluissa käytetyt yleiset muuttujat, kuten JQuery ja Lodash, ovat nyt vanhentuneita. Tämä tarkoittaa sitä, että jos vanha visuaalinen koodi välittää globaaleilla muuttujilla, visualisointi voidaan tässä tapauksessa murtaa.
+Aikaisemmissa Power BI -visualisointityökaluissa käytetyt yleiset muuttujat ovat nyt vanhentuneita (esimerkiksi JQuery ja Lodash). Jos visualisointisi vanha koodi käyttää yleisiä muuttujia, se ei todennäköisesti toimi uusilla työkaluilla.
 
-Power BI -visualisointien työkalujen aiempaa versiota tarvitaan Visual-luokan määrittämiseen moduulissa `powerbi.extensibility.visual`.
+Tarvitset Power BI -visualisointityökalujen vanhemman versio, jos haluat määrittää visualisointiluokan moduulissa `powerbi.extensibility.visual`. Työkalujen uudella versiolla sinun täytyy sen sijaan määrittää visualisointiluokka TypeScript-päätiedostossa (.ts). Yleensä tämä tiedosto on `src/visual.ts`.
 
-## <a name="how-to-install-powerbi-visuals-tools"></a>Powerbi-visuals-tools-työkalujen asentaminen
+## <a name="install-powerbi-visuals-tools"></a>Powerbi-visuals-tools-työkalujen asentaminen
 
-Uusi työkalusarja voidaan asentaa suorittamalla komento
+Asenna uudet työkalut suorittamalla tämä komento:
 
 ```cmd
 npm install -g powerbi-visuals-tools
 ```
 
-Esimerkki sampleBarChart-visualisoinnista ja vastaavista [muutoksista](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/package.json#L16) kohteessa `package.json`:
+Seuraava koodi on peräisin tiedostosta `package.json` [sampleBarChart-visualisointisäilöstä](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/package.json#L15) sen jälkeen, kun visualisointiprojekti on päivitetty toimimaan uusien työkalujen kanssa:
 
 ```json
 {
     "name": "visual",
-    "version": "1.2.3",
+    "version": "3.0.0",
     "scripts": {
         "pbiviz": "pbiviz",
         "start": "pbiviz start",
+        "package": "pbiviz package",
         "lint": "tslint -r \"node_modules/tslint-microsoft-contrib\"  \"+(src|test)/**/*.ts\"",
         "test": "pbiviz package --resources --no-minify --no-pbiviz"
     },
     "devDependencies": {
-      "@types/d3": "5.0.0",
-      "d3": "5.5.0",
-      "powerbi-visuals-tools": "^3.1.0",
-      "tslint": "^4.4.2",
-      "tslint-microsoft-contrib": "^4.0.0"
+        "@types/d3": "5.7.2",
+        "d3": "5.12.0",
+        "powerbi-visuals-api": "^2.6.1",
+        "powerbi-visuals-tools": "^3.1.7",
+        "powerbi-visuals-utils-dataviewutils": "^2.2.1",
+        "powerbi-visuals-utils-formattingutils": "^4.4.2",
+        "powerbi-visuals-utils-interactivityutils": "^5.6.0",
+        "powerbi-visuals-utils-tooltiputils": "^2.3.1",
+        "tslint": "^5.20.0",
+        "tslint-microsoft-contrib": "^6.2.0"
     }
 }
 ```
 
-## <a name="how-to-install-power-bi-custom-visuals-api"></a>Power BI Custom Visuals -ohjelmointirajapinnan asentaminen
+## <a name="install-the-power-bi-custom-visuals-api"></a>Power BI:n mukautettujen visualisointien ohjelmointirajapinnan asentaminen
 
-Uusi powerbi-visual-tools-versio ei sisällä kaikkia ohjelmointirajapintojen versioita. Sen sijaan kehittäjän tulee asentaa tietty versio paketista [`powerbi-visuals-api`](https://www.npmjs.com/package/powerbi-visuals-api). Paketin versio vastaa Power BI:n mukautettujen visualisointien ohjelmointirajapinnan versiota, ja se tarjoaa kaikki Power BI:n mukautettujen visualisointien ohjelmointirajapinnan tyyppimääritykset.
+Uusi powerbi-visual-tools-versio ei sisällä kaikkia ohjelmointirajapintojen versioita. Sinun täytyy sen sijaan asentaa tietty versio [powerbi-visuals-api](https://www.npmjs.com/package/powerbi-visuals-api)-paketista. Valitse se paketin versio, joka vastaa Power BI:n mukautettujen visualisointien ohjelmointirajapintaversiotasi. Paketti tarjoaa kaikki tyyppimääritelmät Power BI:n mukautettujen visualisointien ohjelmointirajapinnalle.
 
-Lisää `powerbi-visuals-api` projektin riippuvuuksiin suorittamalla komento `npm install --save-dev powerbi-visuals-api`.
-Poista lisäksi linkki vanhoihin ohjelmointirajapinnan tyyppimäärityksiin. Koska Webpack sisällyttää automaattisesti kohteen `powerbi-visuals-api` tyypit. Vastaavat muutokset ovat [tällä](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/package.json#L14) rivillä kohteessa `package.json`.
+Lisää `powerbi-visuals-api` projektiriippuvuuksiisi suorittamalla tämä komento:
 
-## <a name="update-tsconfigjson"></a>Päivitä `tsconfig.json`
+```cmd
+npm install --save-dev powerbi-visuals-api
+```
 
-Jos haluat käyttää ulkoisia moduuleja, vaihda `out`-asetuksen tilalle `outDir`.
-`"outDir": "./.tmp/build/",` sen sijaan `"out": "./.tmp/build/visual.js",`.
+Poista myös kaikki linkit vanhoihin ohjelmointirajapintatyyppimääritelmiin, koska Webpack sisällyttää automaattisesti tyypit kohteesta `powerbi-visuals-api`. Vastaavat muutokset ovat tiedostoissa [package.json](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/package.json#L14) ja [tsconfig.json](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/tsconfig.json#L14).
 
-Sitä tarvitaan, koska TypeScript-tiedostot käännetään JavaScript-tiedostoiksi itsenäisesti. Siksi visual.js-tiedostoa ei enää tarvitse määrittää tulosteena.
+## <a name="update-tsconfigjson"></a>tsconfig.json-tiedoston päivittäminen
 
-Voit myös muuttaa `target`-asetukseksi `ES6`, jos haluat käyttää tulosteena modernia JavaScriptiä. [Se on valinnaista](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/tsconfig.json#L6).
+Jos haluat käyttää ulkoisia moduuleja, vaihda asetus `out` asetukseen `outDir`. Ota esimerkiksi käyttöön `"outDir": "./.tmp/build/",` (ei `"out": "./.tmp/build/visual.js",`).
 
-## <a name="update-custom-visuals-utils"></a>Mukautetut visualisoinnit -apuohjelman päivittäminen
+Tämä muutos vaaditaan, koska TypeScript-tiedostot käännetään JavaScript-tiedostoiksi itsenäisesti. Siksi visual.js-tiedostoa ei enää tarvitse määrittää tuloksena.
 
-Jos käytät jotakin powerbi-visuals-utils https://www.npmjs.com/search?q=powerbi-visuals-utils) -kohdetta, päivitä nekin uusimpaan versioon.
+Voit myös muuttaa asetuksen `target` asetukseksi `ES6`, jos haluat käyttää tuloksena nykyaikaista JavaScriptia. Tämä muutos on [vapaaehtoinen](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/tsconfig.json#L7).
 
-Suorita komento `npm install powerbi-visuals-utils-<UTILNAME> --save`. (Esim. `npm install powerbi-visuals-utils-dataviewutils --save` ), jos haluat uuden version TypeScript-kohteen ulkoisilla moduuleilla.
+## <a name="update-custom-visuals-utilities"></a>Mukautetut visualisoinnit -apuohjelman päivittäminen
 
-Esimerkki on MekkoChart-[säilössä](https://github.com/Microsoft/powerbi-visuals-mekkochart).
-Tämä visualisointi käyttää kaikkia apuohjelmia.
+Jos käytät joitain [powerbi-visuals-utils](https://www.npmjs.com/search?q=powerbi-visuals-utils)-paketteja, päivitä nekin uusimpaan versioon. Voit tehdä tämän suorittamalla seuraavan komennon:
 
-## <a name="remove-globalizejs-library"></a>Globalelize.js-kirjaston poistaminen
+```cmd
+npm install powerbi-visuals-utils-<UTILNAME> --save
+```
 
-Uusi [powerbi-visuals-utils-formattingutils@4.3](https://www.npmjs.com/package/powerbi-visuals-utils-formattingutils) -versio sisältää valmiina globalize.js-kohteen.
-Tätä kirjastoa ei tarvitse sisällyttää manuaalisesti projektiin.
-Kaikki vaaditut lokalisoinnit lisätään lopulliseen pakettiin automaattisesti.
+Jos haluat esimerkiksi uuden version TypeScriptin ulkoisilla moduuleilla, suorita seuraava komento: 
 
-## <a name="fix-loading-external-libraries"></a>Korjaa ulkoisten kirjastojen lataaminen
+```cmd
+npm install powerbi-visuals-utils-dataviewutils --save
+```
 
-Sisällytä sen sijaan uusi JS-tiedosto libsin jälkeen `pbiviz.json`-kohteen `externalJS`-matriisissa. Esimerkki:
+Jos haluat visualisoinnin, joka käyttää kaikkia `powerbi-visuals-utils`-paketteja, tutustu [MekkoChart-säilöön](https://github.com/Microsoft/powerbi-visuals-mekkochart).
+
+## <a name="remove-the-globalizejs-library"></a>Globalelize.js-kirjaston poistaminen
+
+Uusi [powerbi-visuals-utils-formattingutils@4.3](https://www.npmjs.com/package/powerbi-visuals-utils-formattingutils) sisältää valmiina globalize.js-kirjaston. Sinun ei siis tarvitse sisällyttää sitä projektiin manuaalisesti. Kaikki vaaditut lokalisoinnit lisätään lopulliseen pakettiin automaattisesti.
+
+## <a name="configure-loading-of-external-libraries"></a>Ulkoisten kirjastojen lataamisen määrittäminen
+
+Sisällytä uudet JavaScript-tiedostot kirjastojen jälkeen matriisiin `externalJS` kohteessa `pbiviz.json`. Esimerkki:
 
 ```JSON
 "externalJS": [
@@ -121,23 +136,21 @@ Sisällytä sen sijaan uusi JS-tiedosto libsin jälkeen `pbiviz.json`-kohteen `e
 ]
 ```
 
-Tuo libs lähteessä. Esimerkki – `lodash-es`:
+Tuo kirjastot lähdekoodiisi. Jos kyseessä on esimerkiksi `lodash-es`, käytä seuraavaa lauseketta:
 
 ```JS
 import * as _ from "lodash-es";
 ```
 
-missä `_` on kirjaston `lodash` yleinen muuttuja.
+Edellisessä esimerkissä `_` on yleinen muuttuja kirjastolle `lodash`.
 
-## <a name="changes-in-the-visuals-sources"></a>Visualisointilähteiden muutokset
+## <a name="make-changes-in-the-sources-of-your-visuals"></a>Muutosten tekeminen visualisointien lähteisiin
 
-Tärkein muutos on sisäisten moduulien muuntaminen ulkoisiksi moduuleiksi, koska ulkoisia moduuleja ei voi käyttää sisäisten moduulien sisällä.
+Tärkein muutos, joka sinun täytyy tehdä, on muuntaa sisäiset moduulit ulkoisiksi moduuleiksi. Et voi käyttää ulkoisia moduuleja sisäisissä moduuleissa.
 
-Muutokset kuvailevat muokkauksia, jotka on otettu käyttöön palkkikaaviomallissa
+Tässä on tarkka kuvaus muutoksista, jotka sinun täytyy tehdä. Muutokset kuvataan mukautetun palkkikaaviovisualisoinnin koodiesimerkin kontekstissa:
 
-Seuraavassa ovat muutosten yksityiskohtaiset kuvaukset:
-
-1. Poista kaikki moduulien määritykset kustakin [lähdekoodin](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L153) tiedostosta
+1. Poista kaikki moduulien määritykset kustakin [lähdekoodin](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbL1-L3) tiedostosta:
 
     ```typescript
     module powerbi.extensibility.visual {
@@ -145,13 +158,13 @@ Seuraavassa ovat muutosten yksityiskohtaiset kuvaukset:
     }
     ```
 
-2. [Tuo Power BI:n mukautetun visualisoinnin ohjelmointirajapinnan määritelmät](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L2).
+2. [Tuo Power BI:n mukautetun visualisoinnin ohjelmointirajapinnan määritelmät](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbR4):
 
     ```typescript
     import powerbi from "powerbi-visuals-api";
     ```
 
-3. [Tuo](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L12-L23) tarvittavat käyttöliittymät tai luokat sisäisestä `powerbi`-moduulista.
+3. [Tuo tarvittavat liittymät tai luokat](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbR12-R35) sisäisestä moduulista `powerbi`.
 
     ```typescript
     import PrimitiveValue = powerbi.PrimitiveValue; 
@@ -168,19 +181,19 @@ Seuraavassa ovat muutosten yksityiskohtaiset kuvaukset:
     import ISelectionManager = powerbi.extensibility.ISelectionManager; 
     ```
 
-4. [Tuo](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L1) D3.js-kirjasto
+4. [Tuo D3.js-kirjasto](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbR2):
 
     ```typescript
     import * as d3 from "d3";
     ```
 
-    Tai tuo vain vaaditut d3-kirjastomoduulit
+    Voit myös tuoda vain vaaditut D3-kirjastomoduulit:
 
     ```typescript
     import { max, min } from "d3-array";
     ```
 
-5. [Tuo](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L4-L10) visualisointiprojektissa määritetyt apuohjelmat, luokat, liittymät päälähdetiedostoon
+5. [Tuo visualisointiprojektissa määritetyt apuohjelmat, luokat ja liittymät](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbR38-R41) päälähdetiedostoon:
 
     ```typescript
     import { getLocalizedString } from "./localization/localizationHelper";
@@ -194,62 +207,60 @@ Seuraavassa ovat muutosten yksityiskohtaiset kuvaukset:
 
 ### <a name="import-css-styles"></a>Tuo CSS-tyylit
 
-Työkalujen uuden version avulla kehittäjät voivat tuoda CSS, LESS -tyylin suoraan TypeScript-koodiin.
+Työkalujen uuden version avulla voit tyylejä (`CSS` ja `Less`) suoraan TypeScript-koodiin. Kääntäjä ohittaa nyt aiemmin käytetyn [styles-osan](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/pbiviz.json#L21).
 
-Kääntäjä siis ohittaa aiemmin käytetyn [tyyliosion](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/pbiviz.json#L22).
-
-Jos haluat käyttää omaa tyylisivua, avaa main ts -tiedosto ja lisää seuraava rivi:  
+Jos haluat käyttää omaa tyylisivua, avaa TypeScript-päätiedosto (.ts) ja lisää seuraava rivi:  
 
 ```typescript
 import "./../style/visual.less";
 ```  
 
-CSS, LESS -tyylit käännetään automaattisesti.  
+Tyylit (`CSS` ja `Less`) käännetään automaattisesti.
 
 ### <a name="externaljs-section-in-pbivizjson"></a>externalJS-osa kohteessa pbiviz.json
 
-Työkalut [eivät edellytä](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/pbiviz.json#L20) `externalJS`-luetteloa visualisointipaketin lataamiseen. Webpack sisältää kaikki tuodut lib-tiedot.
+Työkalut [eivät edellytä luetteloa `externalJS`-kirjastoista](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-a1a7bbee7e7d2f9d449f4b534532bcf2R20), jotka ladataan visualisointipakettiin, koska Webpack sisältää kaikki tuodut kirjastot.
 
-**Pbivi.json-kohteen externnalJS-osan tulee olla tyhjä.**
+> [!NOTE]
+> Avaa `pbiviz.json` ja jätä osio `externalJS` tyhjäksi.
 
-Kutsumalla tyypillisiä komentoja voit `npm run package` luoda visuaalisen paketin tai `npm run start` käynnistää kehityspalvelimen.
+Tyypillisellä komennolla `npm run package` voit luoda visualisointipaketin ja komennolla `npm run start` käynnistää kehityspalvelimen.
 
-## <a name="updating-d3js-library-to-version-5"></a>D3.js-kirjaston päivittäminen versioon 5
+## <a name="update-the-d3js-library-to-version-5"></a>Päivitä D3.js-kirjasto versioon 5
 
-Uusilla työkaluilla voit aloittaa D3.js-kirjaston uuden version käyttämisen.
+Uusilla visualisointityökaluilla voit aloittaa D3.js-kirjaston uuden version käytön. Päivitä D3 visualisointiprojektissasi suorittamalla nämä komennot:
 
-Kutsukomento, joilla D3 päivitetään visualisointiprojektissa
+- `npm install --save d3@5` asentaa uuden D3.js-kirjaston.
 
-`npm install --save d3@5` asentaa uuden D3.js-kirjaston.
+- `npm install --save-dev @types/d3@5` asentaa D3.js-kirjaston uudet tyyppimääritykset.
 
-`npm install --save-dev @types/d3@5` asentaa D3.js-kirjaston uudet tyyppimääritykset.
+> [!IMPORTANT]
+> D3-versio 5 sisältää useita rikkovia muutoksia.
 
-Useat muutokset saattavat aiheuttaa virheitä muissa komponenteissa, joten muokkaa koodiasi käyttämään uutta D3.js-kirjastoa.
+Muokkaa koodisi yhteensopivaksi uuden D3.js:n kanssa:
 
-1. Liittymäksi `d3.Selection<T>` [vaihdettiin](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR157) `Selection<GElement extends BaseType, Datum, PElement extends BaseType, PDatum>`
+- Liittymä `d3.Selection<T>` [on nyt](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR157) `Selection<GElement extends BaseType, Datum, PElement extends BaseType, PDatum>`.
 
-2. Et voi käyttää useita määritteitä yhdellä `attr`-metodin kutsulla. Jokainen määrite [tulee välittää](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR278) `attr`-metodin eri kutsuissa. Asia toimii [samoin](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR247) myös `style`-metodille.
+- Et voi käyttää useita määritteitä yhdellä menetelmän `attr` kutsulla. Sinun täytyy sen sijaan [välittää kukin määrite erillisellä kutsulla](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR278) menetelmälle `attr`. Tee [erilliset kutsut myös menetelmälle `style`](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR247).
 
-3. D3.js-kirjaston v4-versiossa esitellään uusi merge-metodi. Tämän metodin avulla yhdistetään enter- ja update-valinnat tietojen yhdistämisen jälkeen. [Kutsu merge-metodia](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/83fe8d52d362dccd0034dd8e32c94080d9376b29#diff-433142f7814fee940a0ffc98dc75bfcbR272), jotta d3-kirjastoa käytetään oikein.
+- D3.js versio 4 sisälsi uuden menetelmän `merge`. Tällä menetelmällä yhdistetään `enter`- ja `update`-valinnat tietojen yhdistämisen jälkeen. Jos haluat käyttää D3:a oikein, [kutsu menetelmää `merge`](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/83fe8d52d362dccd0034dd8e32c94080d9376b29#diff-433142f7814fee940a0ffc98dc75bfcbR272).
 
 [Lue lisää](https://github.com/d3/d3/blob/master/CHANGES.md) D3.js-kirjaston muutoksista.
 
-## <a name="babel"></a>Babel
+## <a name="install-babel-and-core-js"></a>Asenna Babel ja core-js
 
-Versiosta 3.1 alkaen työkalut käyttävät Babel-työkalua uuden modernin JS-koodin kääntämiseen vanhaan ES5-muotoon, joten useita eri selaimia tuetaan.
+Versiosta 3.1 alkaen visualisointityökalut kääntävät uuden nykyaikaisen JS-koodin vanhaan ECMAScript 5 (ES5) -muotoon Babelilla, jotta useita eri selaimia voidaan tukea.
 
-Tämä asetus on oletusarvoisesti käytössä, mutta paketti [`@babel/polyfill`](https://babeljs.io/docs/en/babel-polyfill) on tuotava manuaalisesti.
+Babel-asetus on oletusarvoisesti käytössä, mutta sinun täytyy tuoda paketti [`core-js`](https://www.npmjs.com/package/core-js) manuaalisesti. Asenna paketti suorittamalla tämä komento:
 
-Asenna paketti antamalla komento
+```cmd
+npm install --save core-js
+```
 
-`npm install --save @babel/polyfill`
+Tuo sitten paketti visuaalisen koodin alkupisteeseen. Yleensä se on src/visual.ts-tiedosto.
 
-ja tuo paketti visuaalisen koodin alkupisteeseen (yleensä src/visual.ts-tiedosto):
-
-`import "@babel/polyfill";`
+```JS
+import "core-js/stable";
+```
 
 Lue lisätietoa Babel-työkalusta [dokumentaatiosta](https://babeljs.io/docs/en/).
-
-Suorita lopuksi [webpack-visualizer](https://github.com/chrisbateman/webpack-visualizer), niin saat näkyviin visualisoinnin koodiversion.  
-
-![Visualisoinnin koodin tilastotiedot](./media/webpack-stats.png)

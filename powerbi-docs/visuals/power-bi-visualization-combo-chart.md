@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 03a426947787cbd2720661267cac4601a4b9b13a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 11be774515552d10846b51863eda6c155b92b57f
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880956"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75758079"
 ---
-# <a name="combo-chart-in-power-bi"></a>Yhdistelmäkaavio Power BI:ssä
+# <a name="create-and-use-combo-charts-in-power-bi"></a>Yhdistelmäkaavioiden luominen ja käyttäminen Power BI:ssa
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -59,11 +59,11 @@ Seuraavassa videossa luodaan yhdistelmäkaavio käyttämällä myynti- ja markki
 
 1. Aloita tyhjältä raporttisivulta ja luo pylväskaavio, joka näyttää tämän vuoden myynnin ja myyntikatteen kuukauden mukaan.
 
-    a.  Valitse Kentät-ruudussa **Myynti** \> **Tämän vuoden myynti** > **Arvo**.
+    a.  Valitse Kentät-ruudussa **Myynti** \> **Tämän vuoden myynti**  >  **Arvo**.
 
     b.  Vedä **Myynti** \> **Tämän vuoden myyntikate** **Arvo**-kohtaan.
 
-    c. Valitse **Aika** \> **FiscalMonth** ja lisää se **Akseli**-kohtaan.
+    c. Valitse **Aika**  \> **FiscalMonth** ja lisää se **Akseli**-kohtaan.
 
     ![yhdistelmä opetusohjelma esimerkki](media/power-bi-visualization-combo-chart/combotutorial1new.png)
 5. Valitse **Enemmän vaihtoehtoja** (...) visualisoinnin oikeasta yläkulmasta ja valitse **Lajitteluperuste > FiscalMonth**. Jos haluat muuttaa lajittelujärjestyksen, valitse kolme pistettä uudelleen ja valitse joko **Lajittele nousevaan järjestykseen** tai **Lajittele laskevaan järjestykseen**. Tässä esimerkissä käytetään vaihtoehtoa **Lajittele nousevaan järjestykseen**.

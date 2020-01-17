@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 6869430e3fece78210d538c9886234c7728b667a
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: b9df4398c410f52e3d5cdd51a99a40de107f5867
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73866539"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760878"
 ---
-# <a name="modeling-view-in-power-bi-desktop"></a>Mallintamisnäkymä Power BI Desktopissa
+# <a name="work-with-modeling-view-in-power-bi-desktop"></a>Mallintamisnäkymän käyttö Power BI Desktopissa
 
-**Mallintamisnäkymän** avulla **Power BI Desktopissa** voit tarkastella ja käsitellä monimuotoisia tietojoukkoja, jotka sisältävät useita taulukoita.
+**Power BI Desktopin** **mallintamisnäkymässä** voit tarkastella ja käsitellä monimuotoisia tietojoukkoja, jotka sisältävät useita taulukoita.
 
 
 ## <a name="using-modeling-view"></a>Mallintamisnäkymän käyttäminen

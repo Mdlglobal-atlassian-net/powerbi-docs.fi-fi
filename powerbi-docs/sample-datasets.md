@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 04/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d5fcc6866d564367d2a29dc00493a959409ea2ed
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b14b9a8a0978876942de789548d9741fa3932152
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858978"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762228"
 ---
-# <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Millaista mallidataa Power BI:tä varten on saatavilla?
-Olet ehkä aloittanut vasta Power BI:n käytön ja haluat kokeilla sen toimintaa, mutta sinulla ei ole vielä tietoja, joilla testata sitä.  Tai ehkäpä sinulla on tietojoukko. Koska et ymmärrä (vielä) Power BI:n toimintaa kovin hyvin, pelkäät aiheuttavasi tietojoukollesi jotakin vahinkoa.
+# <a name="get-sample-data-for-power-bi"></a>Power BI -mallitietojen hakeminen
+Olet ehkä aloittanut vasta Power BI:n käytön ja haluat kokeilla sen toimintaa, mutta sinulla ei ole vielä tietoja, joilla testata sitä.  Tai ehkäpä sinulla on tietojoukko. Pelkäätkö aiheuttavasi tietojoukollesi jotakin vahinkoa, koska et ymmärrä Power BI:n toimintaa (vielä) kovin hyvin.
 
 Älä huoli! ObviEnce ([www.obvience.com](http://www.obvience.com/)) ja Microsoft ovat luoneet malleja, joita voit käyttää Power BI:ssä, kunnes tunnet olosi vähän luottavaisemmaksi.  Tiedot ovat anonyymejä ja edustavat eri aloja, muun muassa talous-, henkilöstö-, myyntialaa. Lisäksi online-ohjeidemme opetusohjelmissa ja esimerkeissä käytetään näitä samoja malleja, joten pystyt hyvin seuraamaan mukana.      
 
@@ -30,7 +30,7 @@ Ennen kuin aloitamme, lue läpi nämä oikeudelliset ohjeet mallien käyttämise
 
 ## <a name="usage-guidelines-for-the-power-bi-sample-excel-workbooks"></a>Ohjeet Power BI:n Excel-työkirjamallien käytöstä
 
-©2015 Microsoft Corporation. Kaikki oikeudet pidätetään. Asiakirjat ja työkirjat tarjotaan ”sellaisinaan”. Työkirjoissa ilmaistuja tietoja ja näkymiä, mukaan lukien URL-osoitteet ja muut viittaukset verkkosivuihin internetissä, voidaan muuttaa ilman erillistä ilmoitusta. Käytöstä aiheutuvat riskit ovat omalla vastuullasi. Jotkin esimerkit on annettu vain kuvitusta varten, ja ne ovat fiktiivisiä. Niitä ei ole tarkoitettu viittaamaan todelliseen maailmaan, eikä niitä pidä niin tulkita. Microsoft ei myönnä tässä esitettyihin tietoihin liittyen mitään suoria tai epäsuoria takuita.
+©2015 Microsoft Corporation. All rights reserved. Asiakirjat ja työkirjat tarjotaan ”sellaisinaan”. Työkirjoissa ilmaistuja tietoja ja näkymiä, mukaan lukien URL-osoitteet ja muut viittaukset verkkosivuihin internetissä, voidaan muuttaa ilman erillistä ilmoitusta. Käytöstä aiheutuvat riskit ovat omalla vastuullasi. Jotkin esimerkit on annettu vain kuvitusta varten, ja ne ovat fiktiivisiä. Niitä ei ole tarkoitettu viittaamaan todelliseen maailmaan, eikä niitä pidä niin tulkita. Microsoft ei myönnä tässä esitettyihin tietoihin liittyen mitään suoria tai epäsuoria takuita.
 
 Työkirjat eivät anna sinulle mitään immateriaalioikeuksia mihinkään Microsoft-tuotteeseen. Asiakas saa kopioida ja käyttää työkirjaa vain viittaustarkoituksiin sisäisesti.
 
@@ -127,7 +127,7 @@ Kaikki mallisisältöpaketit ovat saatavilla myös Excel-työkirjoina. Excel-ty�
    * [Myynti- ja markkinointimalli](https://go.microsoft.com/fwlink/?LinkId=529785)
 2. Tallenna ladattu tiedosto. Sillä on merkitystä, minne tallennat tiedoston.
 
-   * ![Paikallisesti](media/sample-datasets/power-bi-local-file2.png) **Paikallisesti** – Jos tallennat tiedoston tietokoneesi paikalliselle asemalle tai muuhun organisaatiosi sijaintiin, voit tuoda Power BI:n kautta tiedostosi Power BI:hin. Todellisuudessa tiedosto säilyy paikallisella kiintolevyllä, joten koko tiedostoa ei tuoda Power BI:hin. Käytännössä Power BI -sivustolle luodaan uusi tietojoukko, johon tiedot – ja joissakin tapauksissa tietomalli – ladataan. Jos tiedostossa on raportteja, ne näkyvät Power BI -sivuston Raportit-kohdassa.
+   * ![Paikallisesti](media/sample-datasets/power-bi-local-file2.png)  **Paikallisesti** – Jos tallennat tiedoston tietokoneesi paikalliselle asemalle tai muuhun organisaatiosi sijaintiin, voit tuoda Power BI:n kautta tiedostosi Power BI:hin. Todellisuudessa tiedosto säilyy paikallisella kiintolevyllä, joten koko tiedostoa ei tuoda Power BI:hin. Käytännössä Power BI -sivustolle luodaan uusi tietojoukko, johon tiedot – ja joissakin tapauksissa tietomalli – ladataan. Jos tiedostossa on raportteja, ne näkyvät Power BI -sivuston Raportit-kohdassa.
    * ![Yrityksen OneDrive](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – yritys** – Jos sinulla on OneDrive for Business ja olet kirjautunut siihen sisään käyttämällä samaa tiliä, jolla kirjaudut Power BI:hin, OneDrive for Business on selvästi paras paikka synkronoida Excelissä, Power BI:ssä ja .csv-tiedostoissa olevat työsi Power BI:ssä olevien tietojoukkojen, raporttien ja raporttinäkymien kanssa. Koska sekä Power BI että OneDrive toimivat pilvipalvelussa, Power BI muodostaa yhteyden OneDrivessa sijaitsevaan tiedostoon noin tunnin välein. Jos muutoksia löytyy, Power BI:n tietojoukko, raportit ja raporttinäkymät päivitetään automaattisesti.
    * ![Henkilökohtainen OneDrive](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive – henkilökohtainen** – Jos tallennat tiedostot henkilökohtaiseen OneDrive-tiliisi, saat monia samoja etuja kuin käyttäessäsi OneDrive for Businessia. Suurin ero on, että sinun on kirjauduttava sisään OneDriveen käyttämällä Microsoft-tiliäsi, kun muodostat ensimmäisen kerran yhteyden tiedostoon (Nouda tiedot > Tiedostot > OneDrive - henkilökohtainen). Yleensä Microsoft-tili on eri kuin tili, jota käytetään Power BI:hin kirjautumiseen. Kun kirjaudut sisään OneDriveen käyttämällä Microsoft-tiliäsi, muista valita asetus Pidä minut sisäänkirjautuneena. Näin Power BI voi muodostaa yhteyden tiedostoon noin tunnin välein ja varmistaa, että Power BI:n tietojoukko on synkronoitu.
    * ![SharePoint – työryhmäsivustot](media/sample-datasets/power-bi-sharepoint2.png) **SharePoint – työryhmäsivustot** – Power BI ‑tiedostojen tallentaminen SharePointin työryhmäsivustoille muistuttaa pitkälti tallentamista OneDrive for Business ‑palveluun. Suurin ero on siinä, miten yhteys Power BI:stä tiedostoon muodostetaan. Voit määrittää URL-osoitteen tai muodostaa yhteyden pääkansioon.
@@ -197,4 +197,4 @@ Kaikki mallisisältöpaketit ovat saatavilla myös Power BI:n .pbix-tiedostoina.
 
 [Power BI:n tietolähteet](service-get-data.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

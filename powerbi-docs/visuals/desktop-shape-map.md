@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: eac0c6fab686a3b5cf63d035ea19b52ab83aa339
-ms.sourcegitcommit: 768e1e4b19fe8c7627010127c2420d63021cb542
+ms.openlocfilehash: 3a043a343994c02a916102b83fe79d1ccd5208bf
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199446"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762320"
 ---
-# <a name="shape-maps-in-power-bi-desktop-preview"></a>Muotokartat Power BI Desktopissa (esikatselu)
+# <a name="create-shape-map-visualizations-in-power-bi-desktop-preview"></a>Muotokarttavisualisointien luominen Power BI Desktopissa (esiversio)
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -115,7 +115,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="australia-states"></a>Australia: Osavaltiot
 
-| Tunnus | lyhenne | ISO-koodi | nimi | postinumerotunnus |
+| Tunnus | lyhenne | ISO-koodi | name | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -128,7 +128,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="austria-states"></a>Itävalta: Osavaltiot
 
-| Tunnus | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
+| Tunnus | ISO-koodi | name | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -178,7 +178,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="canada-provinces"></a>Kanada: Provinssit
 
-| Tunnus | ISO-koodi | nimi | postinumerotunnus |
+| Tunnus | ISO-koodi | name | postinumerotunnus |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -196,7 +196,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="france-regions"></a>Ranska: Alueet
 
-| Tunnus | nimi | englanninkielinen nimi |
+| Tunnus | name | englanninkielinen nimi |
 | --- | --- | --- |
 | Auvergne-Rhone-Alpes |  |  |
 | Bourgogne-Franche-Comte |  |  |
@@ -218,7 +218,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="germany-states"></a>Saksa: Osavaltiot
 
-| Tunnus | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
+| Tunnus | ISO-koodi | name | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thuringia |TH |
@@ -270,7 +270,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="italy-regions"></a>Italia: Alueet
 
-| Tunnus | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
+| Tunnus | ISO-koodi | name | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta Valley |VD |
@@ -279,7 +279,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | it-tc |IT-52 |Toscana |Tuscany |TC |
 | it-sc |IT-82 |Sicilia |Sicily |SC |
 | it-sd |IT-88 |Sardegna |Sardinia |SD |
-| it-pm |IT-21 |Piemonte |Piedmont |PM |
+| it-pm |IT-21 |Piemonte |Piedmont |IP |
 | it-ml |IT-67 |Molise |Molise |ML |
 | it-mh |IT-57 |Marche |Marche |MH |
 | it-lm |IT-25 |Lombardia |Lombardy |LM |
@@ -295,7 +295,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="mexico-states"></a>Meksiko: Osavaltiot
 
-| Tunnus | lyhenne | ISO-koodi | nimi | englanninkielinen nimi | postinumerotunnus |
+| Tunnus | lyhenne | ISO-koodi | name | englanninkielinen nimi | postinumerotunnus |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatan |YU |
@@ -332,7 +332,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="netherlands-provinces"></a>Alankomaat: Provinssit
 
-| Tunnus | ISO-koodi | nimi | englanninkielinen nimi |
+| Tunnus | ISO-koodi | name | englanninkielinen nimi |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -349,7 +349,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="uk-countries"></a>Yhdistynyt kuningaskunta: Maat
 
-| Tunnus | ISO-koodi | nimi |
+| Tunnus | ISO-koodi | name |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Scotland |
@@ -358,7 +358,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 
 ### <a name="usa-states"></a>Yhdysvallat: Osavaltiot
 
-| Tunnus | nimi | postinumerotunnus |
+| Tunnus | name | postinumerotunnus |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |
@@ -403,7 +403,7 @@ Kun testaat **muotokarttaa** tässä esikatseluversiossa, käytä **seuraavia al
 | us-or |Oregon |OR |
 | us-mn |Minnesota |MN |
 | us-vt |Vermont |VT |
-| us-id |Idaho |ID |
+| us-id |Idaho |Tunnus |
 | us-wi |Wisconsin |WI |
 | us-wy |Wyoming |WY |
 | us-sd |South Dakota |SD |

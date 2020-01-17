@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/20/2018
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: 567b775cb7323dbd343f2a26d4abc0d60885ab7a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 21ec26182efe2d0b08b2a64227264d5b80756962
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877969"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760723"
 ---
-# <a name="create-power-bi-visuals-using-python"></a>Power BI -visualisointien luominen Pythonin avulla
+# <a name="create-power-bi-visuals-by-using-python"></a>Power BI -visualisointien luominen Pythonin avulla
 **Power BI Desktopin** kanssa voit käyttää **Pythonia** tietojen visualisoimiseen.
 
 ## <a name="prerequisites"></a>Edellytykset
@@ -167,6 +167,7 @@ Tämä opetusohjelma on suunniteltu helpottamaan visualisointien luomisen aloitt
 Python-visualisoinneilla **Power BI Desktopissa** on joitakin rajoituksia:
 
 * Tietojen kokorajoitukset – Python-visualisointien piirtämiseen käyttämä tietomäärä on rajoitettu 150 000 riviin. Jos valittuna on yli 150 000 riviä, vain 150 000 ylintä riviä käytetään ja kuvassa näkyy sanoma.
+* Resoluutio - kaikki Python-visualisoinnit näytetään tarkkuudella 72 DPI.
 * Laskenta-ajan rajoitus – jos Python-visualisoinnin laskenta kestää kauemmin kuin viisi minuuttia, suoritus aikakatkaistaan ja tuloksena on virhe.
 * Yhteydet – muiden Power BI Desktop -visualisointien tavoin, jos eri taulukoista on valittuna tietokenttiä, joiden välille ei ole määritetty yhteyttä, tapahtuu virhe.
 * Python-visualisoinnit päivitetään tietojen päivittämisen, suodattamisen ja korostamisen yhteydessä. Kuitenkin itse kuva ei ole vuorovaikutteinen, eikä sitä voi käyttää ristiinsuodatuksen lähteenä.

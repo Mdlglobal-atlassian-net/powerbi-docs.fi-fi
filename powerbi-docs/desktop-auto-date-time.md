@@ -8,14 +8,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 1f350e8ff888ffc2fd95e6c47bf84ccc96ebf88b
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.openlocfilehash: 160812521939d505612e0725e678dcf985f0d03a
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000154"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761837"
 ---
-# <a name="auto-datetime-in-power-bi-desktop"></a>Automaattinen päivämäärä/aika Power BI Desktopissa
+# <a name="apply-auto-datetime-in-power-bi-desktop"></a>Automaattisen päivämäärän ja ajan käyttö Power BI Desktopissa
 
 Tämä artikkeli on suunnattu tietomallintajille, jotka kehittävät tuonti- tai yhdistelmämalleja Power BI Desktopissa. Se esittelee ja kuvailee _Automaattinen päivä määrä/aika_ -vaihtoehdon.
 

@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: efbeda396217c1a715f9a5d7ae4827c5f8d09a25
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 837412a85eff14c8eaa72fbf1625cadde524cc76
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74698988"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762205"
 ---
-# <a name="r-visuals-in-power-bi"></a>R-visualisoinnit Power BI:ssä
+# <a name="create-and-use-r-visuals-in-power-bi"></a>R-visualisointien luominen ja käyttö Power BI:ssa
 R-visualisointeja voidaan tällä hetkellä luoda vain **Power BI Desktopissa**, ja sen jälkeen ne julkaistaan Power BI -palveluun. Katso lisätietoja R-visualisointien luomisesta kohdasta [Power BI -visualisointien luominen R:n avulla](../desktop-r-visuals.md).
 
 ## <a name="viewing-r-visuals-in-the-power-bi-service"></a>R-visualisointien tarkasteleminen Power BI -palvelussa
@@ -87,6 +87,7 @@ R-visualisoinneilla Power BI -palvelussa on joitakin rajoituksia:
 
 * R-visualisointien tuki rajoittuu paketteihin, jotka on kerrottu kohdassa [Lue, mitä R-paketteja tuetaan](../service-r-packages-support.md). Mukautettujen pakettien tukea ei ole tällä hetkellä.
 * Tietojen kokorajoitukset – R-visualisointien piirtämiseen käyttämä tietomäärä on rajoitettu 150 000 riviin. Jos valittuna on yli 150 000 riviä, vain 150 000 ylintä riviä käytetään ja kuvassa näkyy sanoma.
+* Resoluutio - kaikki R-visualisoinnit näytetään tarkkuudella 72 DPI.
 * Laskenta-ajan rajoitus – jos R-visualisoinnin laskenta kestää kauemmin kuin 60 sekuntia, komentosarja aikakatkaistaan ja tuloksena on virhe.
 * R-visualisoinnit päivitetään tietojen päivittämisen, suodattamisen ja korostamisen yhteydessä. Kuitenkaan itse kuva ei ole vuorovaikutteinen, eikä se tue työkaluvihjeitä.
 * R-visualisoinnit reagoivat muiden visualisointien korostamiseen, mutta et voi napsauttaa R-visualisointien elementtejä ristiinsuodattaaksesi muita elementtejä.

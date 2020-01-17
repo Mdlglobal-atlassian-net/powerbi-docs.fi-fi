@@ -8,14 +8,14 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/15/2019
 ms.author: davidi
-ms.openlocfilehash: b1ab5188ba8f5ccf54589d359f6f8ced1ada3060
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 934827311e089e34e56fbcffe4d4c58a056df4ad
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73878852"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761699"
 ---
-# <a name="how-administrators-can-manage-the-power-bi-desktop-sign-in-form"></a>Miten järjestelmänvalvojat voivat hallita Power BI Desktopin kirjautumislomaketta
+# <a name="administrators-manage-the-power-bi-desktop-sign-in-form"></a>Järjestelmänvalvojat: Power BI Desktopin kirjautumislomakkeen halinta
 Kun Power BI Desktop käynnistetään ensimmäisen kerran, näyttöön tulee kirjautumislomake. Tiedot voidaan täyttää, tai voit jatkaa kirjautumalla Power BI:hin. Järjestelmänvalvojat hallitsevat tätä lomaketta rekisteriavaimen avulla. 
 
 ![Power BI Desktopin ensimmäinen kirjautumislomake](media/desktop-admin-sign-in-form/sign-in-form.png)

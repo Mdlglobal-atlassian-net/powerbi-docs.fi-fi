@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 37b7a85534e1ad8f1f301994dea895e098758d1b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 2b584c0664623f62b6d1d77cce74eaa51b0e9041
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870984"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75758033"
 ---
-# <a name="card-visualizations"></a>Kortin visualisoinnit
+# <a name="create-card-visualizations"></a>Korttivisualisointien luominen
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -28,7 +28,7 @@ Joskus yksittäinen luku on tärkein seikka, jota haluat seurata Power BI-raport
 
 Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedostoa](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
 
-1. Valitse valikkorivin vasemmasta yläosasta **Tiedosto** \> **Avaa**
+1. Valitse valikkorivin vasemmasta yläreunasta **Tiedosto** \> **Avaa**.
    
 2. **Jälleenmyyntianalyysimallin PBIX-tiedoston löytäminen**
 
@@ -40,7 +40,7 @@ Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedost
 
 Ensimmäinen tapa luoda kortti on käyttää Power BI Desktopin raporttieditoria.
 
-1. Aloita tyhjältä raporttisivulta ja valitse kenttä **Myymälä** \> **Avoimien myymälöiden määrä**.
+1. Aloita tyhjältä raporttisivulta ja valitse **Myymälä** \> **Avoimien myymälöiden määrä** -kenttä.
 
     Power BI luo pylväskaavion, jossa yksi luku.
 

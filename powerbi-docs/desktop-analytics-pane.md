@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a3ba6f8faf22d3854ecfcbc40e7931ca887de0f7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 25d80cd81eb06913eb24c17ef10db47fa4d2bea5
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876641"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761906"
 ---
-# <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Analytiikka-ruudun käyttäminen Power BI Desktopissa
+# <a name="use-the-analytics-pane-in-power-bi-desktop"></a>Analytiikka-ruudun käyttäminen Power BI Desktopissa
 **Power BI Desktopin** **Analytiikka**-ruudussa voit lisätä dynaamisia *viiteviivoja* visualisointeihin ja määrittää kohdistuksen tärkeille trendeille tai merkityksellisille tiedoille. **Analytiikka**-ruutu sijaitsee Power BI Desktopin **Visualisoinnit**-alueella.
 
 ![](media/desktop-analytics-pane/analytics-pane_1.png)
@@ -58,7 +58,7 @@ Voit tarkastella tietylle visualisoinnille käytettävissä olevia dynaamisia vi
 4. Jos haluat arvopisteen otsikon näkyvän, liikuta **Arvopisteen otsikko** -liukusäädintä. Tekemällä niin saat näkyviin koko joukon arvopisteen otsikon lisäasetuksia, kuten seuraavassa kuvassa esitetään.
    
    ![](media/desktop-analytics-pane/analytics-pane_5.png)
-5. Huomioi luku, joka näkyy **Keskiarvon viiva** -kohdan vieressä **Analytiikka**-ruudussa. Se kertoo sinulle, kuinka monta dynaamista viivaa sinulla on tällä hetkellä visualisoinnissa ja minkä tyyppisiä ne ovat. Jos lisäämme **suurimman arvon viivan** *Elinkustannukset*-visualisointiin, huomaat, että **Analytiikka**-ruudussa näkyy, että tässä visualisoinnissa on nyt käytössä myös dynaaminen **Suurimman arvon viiva** -viiteviiva.
+5. Huomioi luku, joka näkyy **Keskiarvon viiva** -kohdan vieressä **Analytiikka**-ruudussa. Se kertoo sinulle, kuinka monta dynaamista viivaa sinulla on tällä hetkellä visualisoinnissa ja minkä tyyppisiä ne ovat. Jos lisäämme **suurimman arvon viivan***Elinkustannukset*-visualisointiin, huomaat, että **Analytiikka**-ruudussa näkyy, että tässä visualisoinnissa on nyt käytössä myös dynaaminen **Suurimman arvon viiva** -viiteviiva.
    
    ![](media/desktop-analytics-pane/analytics-pane_6.png)
 
@@ -85,7 +85,7 @@ Seuraavissa visualisoinneissa voidaan käyttää kaikkia dynaamisia viivoja:
 * Pistekaavio
 * Klusteroitu palkkikaavio
 
-Seuraavissa visualisoinneissa voidaan käyttää vain *yhtenäistä viivaa* **Analytiikka**-ruudusta:
+Seuraavissa visualisoinneissa voidaan käyttää vain *yhtenäistä viivaa***Analytiikka**-ruudusta:
 
 * Pinottu aluekaavio
 * Pinottu palkkikaavio

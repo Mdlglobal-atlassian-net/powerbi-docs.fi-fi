@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ca2f1cd4908f99d47519f2dfca42bf2afae5fbed
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: c006d35baa14e68cca7009aabf79438321396802
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73878936"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761929"
 ---
-# <a name="consuming-reports-in-power-bi-with-accessibility-tools"></a>Power BI -raporttien käyttäminen helppokäyttötoimintojen työkalujen avulla
+# <a name="consume-power-bi-reports-by-using-accessibility-features"></a>Power BI -raporttien käyttö helppokäyttötoimintojen avulla
 Power BI:ssä on monia ominaisuuksia, joiden avulla toimintarajoitteisten henkilöiden on helppo käyttää ja käsitellä Power BI -raportteja. Näiden työkalujen avulla käyttäjät saavat raportista samat tiedot kuin ne, jotka eivät käytä apuvälineitä.
 
 ![Suuren kontrastin Windows-asetukset](media/desktop-accessibility/accessibility-consuming-tools-01.png)

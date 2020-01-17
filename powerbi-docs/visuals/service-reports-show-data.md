@@ -9,14 +9,15 @@ ms.topic: conceptual
 ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5417511b12c85cb467c3613671a1e101541c9609
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: f1598aabee45359b312d39f836cede8ca4198bb2
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73880629"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75758619"
 ---
-# <a name="show-the-data-that-was-used-to-create-the-visualization"></a>Visualisoinnin luomiseen käytettyjen tietojen näyttäminen
+# <a name="display-a-visualizations-underlying-data"></a>Visualisoinnin pohjana olevien tietojen näyttäminen
+
 ## <a name="show-data"></a>Näytä tiedot
 Power BI:n visualisointi rakentuu tietojoukoissasi olevista tiedoista. Jos olet kiinnostunut taustatoiminnoista, Power BI:n avulla voit *tarkastella* visualisoinnin luomiseen käytettyjä tietoja. Kun valitset **Näytä tiedot**, Power BI näyttää tiedot visualisoinnin alla (tai vieressä).
 

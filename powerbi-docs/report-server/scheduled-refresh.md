@@ -6,14 +6,14 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/01/2017
+ms.date: 01/09/2020
 ms.author: maggies
-ms.openlocfilehash: 90f08abd119e7dfc0bf639eeb2ed8334fbdfa234
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 7052b0f045b98ce8e25822f76fe0b8391e298a47
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74699011"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75837603"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Power BI -raportin ajoitettu päivitys Power BI -raporttipalvelimessa
 Power BI -raporttien ajoitetun päivityksen avulla raportin tiedot pysyvät ajan tasalla.
@@ -61,8 +61,10 @@ Lisätietoja Analysis Services -esiintymän seurannasta on kohdassa [Analysis Se
 
 Katso Analysis Services -muistiasetuksia koskevia tietoja kohdasta [Muistin ominaisuudet](https://docs.microsoft.com/sql/analysis-services/server-properties/memory-properties).
 
+### <a name="data-model-size-limit"></a>Tietomallin koon rajoitus
+Sisäiseen analyysipalvelumoduuliin ladatun tietomallin enimmäiskoko ajoitetun päivityksen aikana on 2 000 Mt (2 Gt). Tätä maksimikokoa ei voi muuttaa. Jos tietomallisi kasvaa yli 2 gigatavuun, saat päivitysvirheen "Tuloksen pituus ylittää kohteen kokotyypin pituusrajan (2 gigatavua)". Tässä tapauksessa suosittelemme mallin isännöintiä Analysis Services -esiintymässä ja reaaliaikaisen live-yhteyden käyttämistä raportin malliin.
+
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Power BI -raportin [ajoitetun päivityksen](configure-scheduled-refresh.md) määrittäminen.
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-

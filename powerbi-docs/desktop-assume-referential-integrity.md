@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5af9c2e5979121054e51b928c58f49477c19a7d0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4d478396f88a1443c0d23d64199d84f0b615b1da
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878813"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761814"
 ---
-# <a name="assume-referential-integrity-settings-in-power-bi-desktop"></a>Oleta viite-eheys -asetus Power BI Desktopissa
+# <a name="apply-the-assume-referential-integrity-setting-in-power-bi-desktop"></a>Oleta viite-eheys -asetuksen käyttäminen Power BI Desktopissa
 Muodostettaessa yhteyttä tietolähteeseen **DirectQueryn**avulla voit käyttää **Oleta viite-eheys** -valintaa tehokkaamman kyselyiden suorittamisen varmistamiseksi tietolähdettä vasten. Tämä ominaisuus sisältää joitakin vaatimuksia pohjana olevista tiedoista, ja se on käytettävissä vain, kun käytät **DirectQuerya**.
 
 Asetus **Oleta viite-eheys** mahdollistaa kyselyt tietolähteestä käyttämään **INNER JOIN** -lausekkeita **OUTER JOIN** -lausekkeen sijasta, mikä tehostaa kyselyä.
@@ -37,10 +37,10 @@ Seuraavassa esimerkissä näytetään, miten **Oleta viite-eheys** toimii käyte
 1. Seuraavassa kuvassa, joka näyttää **Tilaukset** -taulukon ja **Tuotteet**-taulukon on huomattava, että viite-eheys on olemassa välillä **Tilaukset [Tuotetunnus]** ja **Tuotteet [Tuotetunnus]** . **[Tuotetunnus]** -sarake **Tilaukset**-taulukossa ei ole koskaan *Nolla*, ja jokainen arvo näkyy myös **Tuotteet**-taulukossa. Näin ollen **Oleta viite-eheys** on asetettava saamaan tehokkaampia kyselyjä (tämä asetus ei muuta visualisoinneissa näkyviä arvoja).
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_2.png)
-2. Seuraavassa kuvassa huomaa, että viite-eheys on olemassa välillä **Tilaukset [DepotID]** ja **Varastot [DepotID]** , koska **DepotID** on *Nolla*  joillekin *tilauksille*. Näin ollen **Oleta viite-eheys** *ei* ole määritettävissä.
+2. Seuraavassa kuvassa huomaa, että viite-eheys on olemassa välillä **Tilaukset [DepotID]** ja **Varastot [DepotID]** , koska **DepotID** on *Nolla*  joillekin *tilauksille*. Näin ollen **Oleta viite-eheys***ei* ole määritettävissä.
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
-3. Lopuksi viite-eheys on olemassa välillä **Tilaukset [Asiakastunnus]** ja **Asiakkaat [Asiakastunnus]** seuraavissa taulukoissa; **Asiakastunnus** sisältää joitakin arvoja (tässä tapauksessa *CustX*), jotka eivät ole olemassa *Asiakkaat*-taulukossa. Näin ollen **Oleta viite-eheys** *ei* ole määritettävissä.
+3. Lopuksi viite-eheys on olemassa välillä **Tilaukset [Asiakastunnus]** ja **Asiakkaat [Asiakastunnus]** seuraavissa taulukoissa; **Asiakastunnus** sisältää joitakin arvoja (tässä tapauksessa *CustX*), jotka eivät ole olemassa *Asiakkaat*-taulukossa. Näin ollen **Oleta viite-eheys***ei* ole määritettävissä.
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_4.png)
 

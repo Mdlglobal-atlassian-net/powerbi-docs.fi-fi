@@ -6,17 +6,17 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 10/22/2019
+ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 80ed285a22c0272f3bd268397e0e019396b941d7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 413e30c04ac02e6b957f03494bf6a488edeacac0
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871008"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885316"
 ---
-# <a name="key-influencers-visualization"></a>Tärkeiden vaikuttajien visualisointi
+# <a name="create-key-influencers-visualizations"></a>Tärkeiden vaikuttajien visualisointien luominen
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -57,7 +57,7 @@ Katso tästä videosta, miten voit luoda visualisoinnin tärkeimmistä vaikuttaj
    > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Tuotepäällikkö haluaa selvittää, mitkä tekijät saavat asiakkaat esittämään kielteisiä mielipiteitä pilvipalvelustasi. Jos haluat osallistua, avaa [asiakaspalautteen PBIX-tiedosto](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) Power BI Desktopissa. Voit myös ladata [asiakaspalautteen Excel-tiedoston Power BI -palvelulle tai Power BI Desktopille](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). Valitse jompikumpi linkeistä ja valitse sitten **Lataa** avautuvalta GitHub-sivulta.
+Tuotepäällikkö haluaa selvittää, mitkä tekijät saavat asiakkaat esittämään kielteisiä mielipiteitä pilvipalvelustasi. Jos haluat osallistua, avaa [asiakaspalautteen PBIX-tiedosto](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.pbix) Power BI Desktopissa. Voit myös ladata [asiakaspalautteen Excel-tiedoston Power BI -palvelulle tai Power BI Desktopille](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.xlsx). Valitse jompikumpi linkeistä ja valitse sitten **Lataa** avautuvalta GitHub-sivulta.
 
 > [!NOTE]
 > Asiakaspalautteen tietojoukko perustuu seuraavaan julkaisuun: [Moro et al., 2014] S. Moro, P. Cortez ja P. Rita. "A Data-Driven Approach to Predict the Success of Bank Telemarketing." *Decision Support Systems*, Elsevier, 62:22-31, kesäkuu 2014. 
@@ -73,7 +73,7 @@ Tuotepäällikkö haluaa selvittää, mitkä tekijät saavat asiakkaat esittäm�
     - Rooli organisaatiossa 
     - Paketin tyyppi 
     - Yrityksen koko 
-    - teema
+    - Teema
     
 4. Jätä **Laajenna**-kenttä tyhjäksi. Tätä kenttää käytetään vain analysoitaessa mittaria tai yhteenvetokenttää. 
 
@@ -267,6 +267,8 @@ Jos haluat lisätietoja siitä, miten voit analysoida mittayksiköitä tärkeimp
  
 Tärkeimpien vaikuttajien visualisoinnissa on joitakin rajoituksia:
 
+
+
 - Suoraa kyselyä ei tueta
 - Reaaliaikaista Azure Analysis Services- ja SQL Server Analysis Services -yhteyttä ei tueta
 - Julkaisemista verkkoon ei tueta
@@ -357,6 +359,9 @@ Seuraavassa esimerkissä kuluttaja-asiakkaat ovat alhaisten luokitusten lähde: 
 Tämä johtuu siitä, että visualisointi huomioi myös arvopisteiden määrän vaikuttajia etsiessään. Seuraavassa esimerkissä kuluttajia on yli 29 000 kuluttajaa ja 10 kertaa vähemmän järjestelmänvalvojia (noin 2 900). Heistä vain 390 on antanut alhaisen luokituksen. Visualisoinnilla ei siksi ole riittävästi tietoja määrittämään, onko se todella löytänyt järjestelmänvalvojien arvioihin liittyvän kuvion vai onko kyseessä vain satunnainen löytö. 
 
 ![Miten vaikuttajat määritetään](media/power-bi-visualization-influencers/power-bi-error5.png)
+
+**Mitkä ovat tärkeimpien vaikuttajien arvopisterajoitukset?**
+Suoritamme analyysin 10 000 arvopisteen otokselle. Yhden puolen kuplat näyttävät kaikki löytyneet vaikuttajat. Toisen puolen pylväskaavioista ja pistekaavioista näet näiden tärkeimpien visualisointien otosstrategiat.
 
 **Miten tärkeimmät vaikuttajat lasketaan luokittaista analyysia varten?**
 

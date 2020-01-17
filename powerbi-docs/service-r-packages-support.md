@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1070cf40fb743fc0d4661bd067b6475ef8dc8217
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8bb07269b6406f052caceedb7b1f924e4424fde4
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871695"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762343"
 ---
-# <a name="r-packages-in-the-power-bi-service"></a>R-paketit Power BI -palvelussa
+# <a name="create-visuals-by-using-r-packages-in-the-power-bi-service"></a>Visualisointien luominen R-paketeilla Power BI -palvelussa
 Voit käyttää tehokasta [R-ohjelmointikieltä](https://www.r-project.org/) visualisointien luomiseksi Power BI -palvelussa. Monet R-paketit ovat tuettuja Power BI -palvelussa (ja lisää tuetaan jatkuvasti), mutta joitakin paketteja ei tueta.
 
 Seuraavissa osissa on aakkosjärjestykseen lajiteltu taulukko R-paketeista, jotka ovat tuettuja Power BI:ssä ja joita ei tueta. Katso lisätietoja Power BI:n R-ominaisuuksista artikkelista [R-visualisoinnit](visuals/service-r-visuals.md).
@@ -143,7 +143,7 @@ Seuraavassa taulukossa on esitetty paketit, joita **tuetaan** Power BI -palvelus
 |callr|2.0.2|https://cran.r-project.org/web/packages/callr/index.html|
 |car|2.1-6|https://cran.r-project.org/web/packages/car/index.html|
 |carData|3.0-1|https://cran.r-project.org/web/packages/carData/index.html|
-|caret|6.0-78|https://cran.r-project.org/web/packages/caret/index.html|
+|sirkumfleksi|6.0-78|https://cran.r-project.org/web/packages/caret/index.html|
 |catnet|1.15.3|https://cran.r-project.org/web/packages/catnet/index.html|
 |caTools|1.17.1|https://cran.r-project.org/web/packages/caTools/index.html|
 |cclust|0.6-21|https://cran.r-project.org/web/packages/cclust/index.html|
@@ -302,7 +302,7 @@ Seuraavassa taulukossa on esitetty paketit, joita **tuetaan** Power BI -palvelus
 |foreign|0.8-69|https://cran.r-project.org/web/packages/foreign/index.html|
 |formatR|1.5|https://cran.r-project.org/web/packages/formatR/index.html|
 |formattable|0.2.0.1|https://cran.r-project.org/web/packages/formattable/index.html|
-|Formula|1.2-2|https://cran.r-project.org/web/packages/Formula/index.html|
+|Kaava|1.2-2|https://cran.r-project.org/web/packages/Formula/index.html|
 |fpc|2.1-11|https://cran.r-project.org/web/packages/fpc/index.html|
 |fracdiff|1.4-2|https://cran.r-project.org/web/packages/fracdiff/index.html|
 |fTrading|3042.79|https://cran.r-project.org/web/packages/fTrading/index.html|
@@ -524,7 +524,7 @@ Seuraavassa taulukossa on esitetty paketit, joita **tuetaan** Power BI -palvelus
 |mice|2.46.0|https://cran.r-project.org/web/packages/mice/index.html|
 |microbenchmark|1.4-4|https://cran.r-project.org/web/packages/microbenchmark/index.html|
 |MicrosoftR|3.4.4.0105|NA|
-|mime|0.5|https://cran.r-project.org/web/packages/mime/index.html|
+|mime|0,5|https://cran.r-project.org/web/packages/mime/index.html|
 |miniCRAN|0.2.11|https://cran.r-project.org/web/packages/miniCRAN/index.html|
 |miniUI|0.1.1|https://cran.r-project.org/web/packages/miniUI/index.html|
 |minpack.lm|1.2-1|https://cran.r-project.org/web/packages/minpack.lm/index.html|
@@ -585,7 +585,7 @@ Seuraavassa taulukossa on esitetty paketit, joita **tuetaan** Power BI -palvelus
 |partitions|1.9-19|https://cran.r-project.org/web/packages/partitions/index.html|
 |party|1.2-4|https://cran.r-project.org/web/packages/party/index.html|
 |partykit|1.2-0|https://cran.r-project.org/web/packages/partykit/index.html|
-|PAWL|0.5|https://cran.r-project.org/web/packages/PAWL/index.html|
+|PAWL|0,5|https://cran.r-project.org/web/packages/PAWL/index.html|
 |pbapply|1.3-4|https://cran.r-project.org/web/packages/pbapply/index.html|
 |pbivnorm|0.6.0|https://cran.r-project.org/web/packages/pbivnorm/index.html|
 |pbkrtest|0.4-7|https://cran.r-project.org/web/packages/pbkrtest/index.html|
@@ -697,7 +697,7 @@ Seuraavassa taulukossa on esitetty paketit, joita **tuetaan** Power BI -palvelus
 |readxl|1.0.0|https://cran.r-project.org/web/packages/readxl/index.html|
 |recipes|0.1.2|https://cran.r-project.org/web/packages/recipes/index.html|
 |Redmonder|0.2.0|https://cran.r-project.org/web/packages/Redmonder/index.html|
-|registry|0.5|https://cran.r-project.org/web/packages/registry/index.html|
+|registry|0,5|https://cran.r-project.org/web/packages/registry/index.html|
 |relaimpo|2.2-3|https://cran.r-project.org/web/packages/relaimpo/index.html|
 |relimp|1.0-5|https://cran.r-project.org/web/packages/relimp/index.html|
 |rematch|1.0.1|https://cran.r-project.org/web/packages/rematch/index.html|
@@ -773,7 +773,7 @@ Seuraavassa taulukossa on esitetty paketit, joita **tuetaan** Power BI -palvelus
 |SampleSizeMeans|1.1|https://cran.r-project.org/web/packages/SampleSizeMeans/index.html|
 |SampleSizeProportions|1.0|https://cran.r-project.org/web/packages/SampleSizeProportions/index.html|
 |sandwich|2.4-0|https://cran.r-project.org/web/packages/sandwich/index.html|
-|sas7bdat|0.5|https://cran.r-project.org/web/packages/sas7bdat/index.html|
+|sas7bdat|0,5|https://cran.r-project.org/web/packages/sas7bdat/index.html|
 |satellite|1.0.1|https://cran.r-project.org/web/packages/satellite/index.html|
 |sbgcop|0.975|https://cran.r-project.org/web/packages/sbgcop/index.html|
 |scales|1.0.0|https://cran.r-project.org/web/packages/scales/index.html|
@@ -810,7 +810,7 @@ Seuraavassa taulukossa on esitetty paketit, joita **tuetaan** Power BI -palvelus
 |smoothSurv|2.0|https://cran.r-project.org/web/packages/smoothSurv/index.html|
 |sna|2.4|https://cran.r-project.org/web/packages/sna/index.html|
 |snakecase|0.9.1|https://cran.r-project.org/web/packages/snakecase/index.html|
-|snow|0.4-2|https://cran.r-project.org/web/packages/snow/index.html|
+|lumivalkoinen|0.4-2|https://cran.r-project.org/web/packages/snow/index.html|
 |SnowballC|0.5.1|https://cran.r-project.org/web/packages/SnowballC/index.html|
 |snowFT|1.6-0|https://cran.r-project.org/web/packages/snowFT/index.html|
 |sourcetools|0.1.6|https://cran.r-project.org/web/packages/sourcetools/index.html|
@@ -922,7 +922,7 @@ Seuraavassa taulukossa on esitetty paketit, joita **tuetaan** Power BI -palvelus
 |tweedie|2.3.2|https://cran.r-project.org/web/packages/tweedie/index.html|
 |tweenr|1.0.1|https://cran.r-project.org/web/packages/tweenr/index.html|
 |twitteR|1.1.9|https://cran.r-project.org/web/packages/twitteR/index.html|
-|udpipe|0.5|https://cran.r-project.org/web/packages/udpipe/index.html|
+|udpipe|0,5|https://cran.r-project.org/web/packages/udpipe/index.html|
 |udunits2|0.13|https://cran.r-project.org/web/packages/udunits2/index.html|
 |units|0.5-1|https://cran.r-project.org/web/packages/units/index.html|
 |UpSetR|1.3.3|https://cran.r-project.org/web/packages/UpSetR/index.html|

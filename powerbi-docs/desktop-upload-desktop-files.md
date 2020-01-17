@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fa8e901d73d6ae0f35e74a427354368e75977202
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d528ba824986ff171688a55aee2ca2febe523236
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73865339"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75759286"
 ---
-# <a name="publish-from-power-bi-desktop"></a>Power BI Desktopista julkaiseminen
+# <a name="publish-datasets-and-reports-from-power-bi-desktop"></a>Tietojoukkojen ja raporttien julkaiseminen Power BI Desktopista
 Kun julkaiset **Power BI Desktop** -tiedoston **Power BI -palvelussa**, mallin tiedot ja **Raportti**-näkymässä luomasi raportit julkaistaan Power BI:n työtilassasi. Näet uuden tietojoukon samalla nimellä ja mahdolliset raportit Työtila-siirtymistoiminnossa.
 
 Julkaiseminen **Power BI Desktopista** vaikuttaa samalla tavalla kuin **Nouda tiedot** -toiminnon käyttäminen Power BI:ssä yhteyden muodostamiseksi ja tietojen lataamiseksi **Power BI Desktop** -tiedostosta.
@@ -27,7 +27,7 @@ Julkaiseminen **Power BI Desktopista** vaikuttaa samalla tavalla kuin **Nouda ti
 > 
 
 ## <a name="to-publish-a-power-bi-desktop-dataset-and-reports"></a>Power BI Desktop -tietojoukon ja -raporttien julkaiseminen
-1. Valitse Power BI Desktopissa **Tiedosto** \> **Julkaise** \> **Julkaise Power BI:hin**, tai napsauta valintanauhan **Julkaise**-painiketta.  
+1. Valitse Power BI Desktopissa **Tiedosto** \> **Julkaise** \> **Julkaise Power BI:hin** tai napsauta valintanauhan **Julkaise**-painiketta.  
 
    ![Julkaise-painike](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
 

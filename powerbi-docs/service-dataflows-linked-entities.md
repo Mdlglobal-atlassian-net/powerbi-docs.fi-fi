@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 01/08/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 31e2e681bc4309e5dce31583e70e669bce5e466f
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 3e6de89f66d6f6282fcde25a1d2be445e2721817
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73877251"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762182"
 ---
 # <a name="link-entities-between-dataflows-in-power-bi"></a>Entiteettien linkittäminen tietovoiden välillä Power BI:ssä
 
@@ -81,6 +81,7 @@ Linkitettyjen entiteettien käsittelyn aikana on hyvä pitää mielessä pari ra
 * Linkitettyjen entiteettien syklisiä riippuvuuksia ei sallita
 * Tietovuon on sijaittava [uudessa Power BI -työtilassa](service-create-the-new-workspaces.md)
 * Linkitettyyn entiteettiin ei voida yhdistää tavallista entiteettiä, joka saa tietonsa paikallisesta tietolähteestä
+* Kun kyselyä (esimerkiksi kysely A) käytetään laskettaessa toista kyselyä (kysely B) tietovoissa, kyselystä B tulee laskettu entiteetti. Lasketut entiteetit eivät voi viitata paikallisiin lähteisiin.
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

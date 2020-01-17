@@ -2,21 +2,21 @@
 title: Suuret tietojoukot, arvopisterajat ja tietostrategiat
 description: Visualisointien tietorajat ja tietojen vähentämisen strategiat
 author: mihart
-ms.reviewer: amac
+ms.reviewer: justyna
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/07/2018
+ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1ae0fc339d3837c8fc28cc604b3ddb840807dcd5
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: 320e8a25206a069c43800295ab64a7ab87afbcf0
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74011290"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885244"
 ---
-# <a name="data-point-limits-and-strategies-by-visual-type"></a>Arvopisterajat ja strategiat visualisointityypin mukaan
+# <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Arvopisterajojen ja strategioiden käyttö visualisointityypin mukaan
 
 Kun visualisointia hahmonnetaan Power BI:ssä, visualisoinnin on oltava nopea ja tarkka. Se edellyttää tausta-algoritmien määrittämistä jokaiselle visualisointityypille. Power BI:n visualisointien on oltava riittävän joustavia, jotta ne pystyvät käsittelemään erikokoisia tietojoukkoja. Joissakin tietojoukoissa voi olla vain muutamia arvopisteitä, kun taas toisissa arvopisteitä voi olla useita petatavuja. Tässä artikkelissa käsitellään strategioita, joiden avulla Power BI hahmontaa visualisoinnit.
 
@@ -75,7 +75,7 @@ Katso [viivaotannan toimintaperiaate](../desktop-high-density-sampling.md#how-th
  Käyttää samaa strategiaa kuin pylväskaavio. Huomaa, että **yhdistelmäkaavion** rivillä ei käytetä suuren tiheyden algoritmia, jota käytetään **viivakaaviossa**.
 
 ### <a name="custom-visuals"></a>Mukautetut visualisoinnit
-Jopa 30 000, mutta visualisoinnin tekijät määrittävät käytettävät strategiat
+Jopa 30 000, mutta visualisoinnin tekijät määrittävät käytettävät strategiat. Oletusarvoinen raja on 1 000, mutta visualisoinnin luoja voi muuttaa rajaksi enintään 30 000.
 
 ### <a name="doughnut"></a>Rengaskaavio
 - Maksimipisteet: 3 500
@@ -119,6 +119,9 @@ Kartassa voi olla määritysten mukaan:
 - Rivit: Virtualisointi käyttämällä 500 rivin ikkunaa yhdellä kertaa
 - Sarakkeet: Ylimmät 100 ryhmittelysaraketta 
 - Arvot: useita arvoja ei oteta huomioon tietojen vähentämisessä
+
+### <a name="powerapps-visual"></a>PowerApps-visualisointi
+Jopa 30 000, mutta visualisoinnin tekijät määrittävät käytettävät strategiat. Oletusarvoinen raja on 1 000, mutta visualisoinnin luoja voi muuttaa rajaksi enintään 30 000.
 
 ### <a name="radial-gauge"></a>Viisarimittari
 Ei vähentämisstrategiaa

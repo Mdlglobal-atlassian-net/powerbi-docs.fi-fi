@@ -1,20 +1,20 @@
 ---
-title: Jaettujen tietojoukkojen käyttö Power BI:n sivutetun raportin muodostimessa
-description: Yhteyden muodostaminen jaettuihin tietojoukkoihin Power BI:n sivutetun raportin muodostimesta.
-ms.date: 07/23/2019
+title: Sivutetun raportin luominen jaetulla Power BI-tietojoukolla – Power BI Report Builder
+description: Luo Power BI Report Builderissa sivutettu raportti, joka perustuu Power BI:n jaettuun tietojoukkoon.
+ms.date: 01/03/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: c44f90bc29887a5431c893803cf4910e0e5093d3
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.openlocfilehash: 335b93720718bb72027c29c6093aad952cc4cdb2
+ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73791280"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691481"
 ---
-# <a name="use-shared-datasets-in-power-bi-report-builder"></a>Jaettujen tietojoukkojen käyttö Power BI:n raportin muodostimessa
+# <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Sivutetun raportin luominen jaetulla Power BI-tietojoukolla
 
 Voit käyttää Power BI Desktopissa luomaasi tietojoukkoa tietolähteenä Power BI raportin muodostimen sivutetuissa raporteissa. Kuvittele seuraava skenaario: Olet luonut Power BI -raportin Power BI Desktopissa. Käytit paljon aikaa tietomallin suunnitteluun ja loit kauniin Power BI -raportin, jossa on kaikenlaisia hienoja visualisointeja. Raportissasi on matriisi, jossa on useita rivejä, joten sinun täytyy vierittää nähdäksesi ne kaikki. Raportin lukijat haluavat raportin, jonka he voivat tulostaa ja joka näyttää kaikki kyseisen matriisin rivit. Power BI:n sivutetun raportin avulla se onnistuu: voit tulostaa usean sivun mittaisen taulukon tai matriisin, niin että siinä on sivun ylä-ja alatunnisteet ja suunnittelemasi täydellinen sivun asettelu. Se täydentää Power BI Desktop -raporttia. Haluat raporttien perustuvan täsmälleen samoihin tietoihin ilman eroavuuksia, joten käytät samaa tietojoukkoa.
 

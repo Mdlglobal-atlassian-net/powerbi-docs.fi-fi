@@ -7,17 +7,17 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 11/13/2019
+ms.date: 01/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d653bb0193351e2ecb38c09e6b34d02eea5cce67
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 8aa392b69d21905901f8304c577b87b00ed19057
+ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060657"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885287"
 ---
-# <a name="use-the-decomposition-tree-visual-in-power-bi-preview"></a>Hajotuspuu-visualisoinnin käyttäminen Power BI:ssä (esiversio)
+# <a name="create-and-view-decomposition-tree-visuals-in-power-bi-preview"></a>Hajotuspuu-visualisoinnin luominen ja tarkasteleminen Power BI:ssä (esiversio)
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Power BI hajotuspuu-visualisoinnin avulla voit visualisoida tietoja useissa ulottuvuuksissa. Se kokoaa tiedot automaattisesti ja mahdollistaa porautumisen ulottuvuuksiin missä tahansa järjestyksessä. Lisäksi se on tekoäly-visualisointi, joten voit pyytää sitä etsimään tiettyjen ehtojen perusteella seuraavan ulottuvuuden, johon porautua. Tämän ansiosta se on arvokas työkalu ad-hoc-tutkimiseen ja pääsyyn analysointiin.
@@ -131,6 +131,8 @@ Alla olevassa esimerkissä kaksi ensimmäistä tasoa on lukittu. Tämä tarkoitt
 ![Hajotuspuun lukitseminen](media/power-bi-visualization-decomposition-tree/tree-locking.png)
 
 ## <a name="known-limitations"></a>Tunnetut rajoitukset
+
+Puun tasojen suurin sallittu määrä on 50. Puussa kerralla visualisoitavien arvopisteiden suurin sallittu määrä on 5 000. Katkaisemme tasot siten, että näytämme ylimmät n. Tällä hetkellä ylin n -taso on määritetty kymmeneen. 
 
 Hajotuspuuta ei tueta seuraavissa skenaarioissa:  
 -   Paikallinen Analysis Services

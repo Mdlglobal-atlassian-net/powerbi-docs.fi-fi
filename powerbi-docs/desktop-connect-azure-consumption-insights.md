@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4125ff59f32de8453fe131685f0a05e1c45220c3
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: c6987c5849fd2f971c1d7bdc7fe6130dcd09ce59
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "73876540"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761722"
 ---
 # <a name="connect-to-azure-consumption-insights-data-in-power-bi-desktop"></a>Azure Consumption Insights -tietoihin yhdistäminen Power BI Desktopissa
 
@@ -192,13 +192,13 @@ Azure-portaalin sarakkeet ja tietojen nimet ovat vastaavat ohjelmointirajapinnas
 | ConsumedServiceId |consumedServiceId | |Kyllä |
 | Cost |cost |ExtendedCost |Ei |
 | Cost Center |costCenter |Cost Center |Ei |
-| Date |date |Date |Ei |
+| Päivämäärä |päivämäärä |Päivämäärä |Ei |
 | Päivä | |Päivä |Ei |
 | DepartmentName |departmentName |Department Name |Ei |
 | DepartmentID |departmentId | |Kyllä |
 | Instance ID | | |Kyllä |
 | InstanceId |instanceId |Instance ID |Ei |
-| Location | | |Kyllä |
+| Sijainti | | |Kyllä |
 | Meter Category |meterCategory |Meter Category |Ei |
 | Meter ID | | |Kyllä |
 | Meter Name |meterName |Meter Name |Ei |
@@ -206,7 +206,7 @@ Azure-portaalin sarakkeet ja tietojen nimet ovat vastaavat ohjelmointirajapinnas
 | Meter Sub-Category |meterSubCategory |Meter Sub-Category |Ei |
 | MeterId |meterId |Meter ID |Ei |
 | Kuukausi | |Kuukausi |Ei |
-| Product |product |Product |Ei |
+| Tuote |product |Product |Ei |
 | ProductId |productId | |Kyllä |
 | Resource Group |resourceGroup |Resource Group |Ei |
 | Resource Location |resourceLocation |Resource Location |Ei |
@@ -221,7 +221,7 @@ Azure-portaalin sarakkeet ja tietojen nimet ovat vastaavat ohjelmointirajapinnas
 | Store Service Identifier |storeServiceIdentifier |Store Service Identifier |Ei |
 | StoreServiceIdentifierId | | |Kyllä |
 | Subscription Name |subscriptionName |Subscription Name |Ei |
-| Tags |tags |Tags |Ei |
+| Tunnisteet |tags |Tags |Ei |
 | TagsId | | |Kyllä |
 | Mittayksikkö |unitOfMeasure |Mittayksikkö |Ei |
 | Vuosi | |Vuosi |Ei |

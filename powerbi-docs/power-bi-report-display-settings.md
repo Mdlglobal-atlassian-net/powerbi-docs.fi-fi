@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: cc2ddd0b6fbd0b621c07056ed4b525f66d81319c
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 6aefe879e6d5871c8f88ac15407038aa600bf980
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265880"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762504"
 ---
-# <a name="page-display-settings-in-a-power-bi-report"></a>Power BI -raportin sivun näyttöasetukset
+# <a name="apply-page-display-settings-in-a-power-bi-report"></a>Power BI -raportin sivun näyttöasetusten käyttäminen
 Ymmärrämme, miten tärkeää on pitää raportin asettelu pikselilleen oikeana. Joskus se voi olla hankalaa, koska sinä ja työtoverisi saatatte katsella raportteja erikokoisilta näytöiltä, joissa on erilaiset kuvasuhteet. 
 
 Näyttönäkymän oletusasetuksena on **Sovita sivulle**, ja näytön koon oletusasetus on **16:9**. Jos haluat lukita käyttöön jonkin muun kuvasuhteen tai sovittaa raportin eri tavalla, käytettävissäsi on kaksi työkalua: ***Sivunäkymä***-asetukset ja ***Sivun koko*** -asetukset.
@@ -39,7 +39,7 @@ Avaa Power BI -palvelussa raportti ja valitse vasemmasta yläkulmasta valikko **
 
 ![palvelun sivun näkymäasetukset](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
-Sivun näkymäasetukset ovat käytettävissä sekä [luku- että muokkausnäkymässä](consumer/end-user-reading-view.md). Muokkausnäkymässä raportin omistaja voi määrittää yksittäisille raportin sivuille sivun näkymäasetukset, ja asetukset tallentuvat yhdessä raportin kanssa. Kun työtoverit avaavat raportin lukunäkymässä, he näkevät raportin sivut omistajan asetusten mukaisesti. Lukunäkymässä työtoverit voivat muuttaa *joitakin* **Sivunäkymä**-asetuksia, mutta muutoksia ei tallenneta raportin sulkemisen yhteydessä.
+Sivun näkymäasetukset ovat käytettävissä sekä [luku- että muokkausnäkymässä](consumer/end-user-reading-view.md). Muokkausnäkymässä raportin omistaja voi määrittää yksittäisille raportin sivuille sivun näkymäasetukset, ja asetukset tallentuvat yhdessä raportin kanssa. Kun työtoverit avaavat raportin lukunäkymässä, he näkevät raportin sivut omistajan asetusten mukaisesti. Lukunäkymässä työtoverit voivat muuttaa *joitakin***Sivunäkymä**-asetuksia, mutta muutoksia ei tallenneta raportin sulkemisen yhteydessä.
 
 ## <a name="page-view-settings"></a>Sivun näkymäasetukset
 Ensimmäiset Sivunäkymä-asetukset määrittävät raporttisivun näyttämisen suhteessa selainikkunaan. Vaihtoehdot ovat:

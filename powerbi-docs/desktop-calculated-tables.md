@@ -6,62 +6,62 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/02/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 4da25e0c6ea7115111bc057947183a8b86b5c2f4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c72387d40ddf4b193481a37dbcb40695668eab66
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878702"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75837352"
 ---
-# <a name="using-calculated-tables-in-power-bi-desktop"></a>Laskettujen taulukkojen käyttö Power BI Desktopissa
-Lasketuilla taulukoilla voit lisätä malliin uuden taulukon. Sen sijaan, että hakisit ja lataisit arvoja uuden taulukkosi sarakkeisiin tietolähteestä, luot Data Analysis Expression (DAX) -kaavan, joka määrittelee taulukon arvot. Power BI Desktopissa laskettuja taulukoita luodaan uusi taulukko -toiminnolla raportti- tai tiedot-näkymässä.
+# <a name="create-calculated-tables-in-power-bi-desktop"></a>Laskettujen taulukkojen luominen Power BI Desktopissa
+Useimmissa tapauksissa luot taulukoita tuomalla tietoja malliisi ulkoisesta tietolähteestä. *Lasketuilla taulukoilla* voit kuitenkin lisätä uusia taulukoita perustuen tietoihin, jotka olet jo ladannut malliin. Sen sijaan, että hakisit ja lataisit arvoja uuden taulukkosi sarakkeisiin tietolähteestä, luot [Data Analysis Expression (DAX)](/dax/index) -kaavan, joka määrittää taulukon arvot.
 
-Useimmissa tapauksissa tuot tietoja malliisi ulkoisesta tietolähteestä. Lasketut taulukot tarjoavat kuitenkin tiettyjä etuja. Lasketut taulukot ovat yleensä paras vaihtoehto välituloksien yhteydessä ja tiedoille, jotka haluat tallentaa osana mallia sen sijaan, että ne laskettaisiin uudelleen tai tallennettaisiin osana kyselyä.
+DAX on kaavakieli relaatiotietojen käsittelyyn (esimerkiksi Power BI Desktopissa). DAX käsittää kirjaston, johon kuuluu yli 200 toimintoa, operaattoria ja rakennetta, mikä tarjoaa valtavan joustavuuden luotaessa kaavoja lähes minkä tahansa tietoanalyysitarpeen tulosten laskemista varten. Lasketut taulukot ovat paras vaihtoehto välituloksille ja tiedoille, jotka haluat tallentaa osana mallia sen sijaan, että ne laskettaisiin uudelleen tai kyselytuloksina. Voit esimerkiksi *yhdistää* tai *ristiliittää* kaksi olemassa olevaa taulukkoa.
 
-Toisin kuin kyselyn osana luodut taulukot, raportti- tai tiedot-näkymässä luodut lasketut taulukot perustuvat tietoihin, jotka olet jo ladannut malliin. Saatat esimerkiksi yhdistää tai ristiliittää kaksi taulukkoa.
+Samalla tavalla kuin muissa Power BI Desktop -taulukoilla, lasketuilla taulukoillakin voi olla yhteyksiä toisiin taulukoihin. Lasketun taulukon sarakkeilla on tietotyypit ja muotoiluja – ja ne voivat kuulua tietoluokkaan. Voit nimetä sarakkeet miten haluat ja lisätä niitä raportin visualisointiin muiden kenttien tapaan. Lasketut taulukot lasketaan uudelleen, jos mikään niitä taulukoista, joista laskettu taulukko saa tietonsa, ladataan uudelleen tai päivitetään.
 
-Samalla tavalla kuin normaaleilla taulukoilla, lasketuilla taulukoilla voi olla yhteyksiä toisiin taulukoihin. Lasketun taulukon sarakkeilla on tietotyypit, muotoiluja ja ne voivat kuulua tietoluokkaan. Voit nimetä sarakkeet miten haluat ja lisätä niitä raportin visualisointiin muiden kenttien tapaan. Lasketut taulukot lasketaan uudelleen, jos mikään niitä taulukoista, joista laskettu taulukko saa tietonsa, ladataan uudelleen tai päivitetään millään tavalla.
+## <a name="create-a-calculated-table"></a>Lasketun taulukon luominen
 
-Lasketut taulukot laskevat tuloksia käyttämällä [Data Analysis Expressions](https://msdn.microsoft.com/library/gg413422.aspx) (DAX) -kaavakieltä, joka on tarkoitettu käytettäväksi suhteellisten tietojen, kuten Power BI Desktopin tietojen, kanssa. DAX käsittää kirjaston, johon kuuluu yli 200 toimintoa, operaattoria ja rakennetta, mikä tarjoaa valtavan joustavuuden luotaessa kaavoja lähes minkä tahansa tietoanalyysitarpeen tulosten laskemista varten.
+Voit luoda laskettuja taulukoita Power BI Desktopin raportti- tai tietonäkymän **Uusi taulukko** -toiminnolla.
 
-## <a name="lets-look-at-an-example"></a>Tarkastellaan esimerkkiä
-Jeffillä, joka on Contoson projektipäällikkö, on taulukko, jossa näkyvät maan luoteisosassa olevat työntekijät, ja toinen, jossa näkyvät maan lounaisosassa olevat työntekijät. Jeff haluaa yhdistää nämä kaksi taulukkoa yhteen taulukkoon.
+Kuvittele, että olet henkilöstöpäällikkö ja sinulla on kaksi työntekijätaulukkoa nimeltään **Northwest Employees** ja **Southwest Employees**. Haluat yhdistää nämä kaksi taulukkoa yhdeksi taulukoksi nimeltään **Western Region Employees**.
 
-**LuoteisosanTyöntekijät**
+**Northwest Employees**
 
  ![](media/desktop-calculated-tables/calctables_nwempl.png)
 
-**LounaisosanTyöntekijät**
+**Southwest Employees**
 
  ![](media/desktop-calculated-tables/calctables_swempl.png)
 
-Näiden kahden taulukoiden yhdistäminen lasketun taulukon avulla on varsin helppoa. Jeff voi luoda lasketun taulukon sekä raporttinäkymässä että tietonäkymässä, mutta se on hieman helpompaa tietonäkymässä, koska hän voi nähdä uuden lasketun taulukon välittömästi.
+Valitse Power BI Desktopin raportti- tai tietonäkymässä **Mallinnus**-välilehden **Laskutoimitukset**-ryhmästä **Uusi taulukko**. Tämä on hieman helpompaa tietonäkymässä, koska näet uuden lasketun taulukon heti.
 
-Jeff napsauttaa **Uusi taulukko** **Mallinnus**-välilehden **Tietonäkymässä**. Näyttöön avautuu kaavarivi.
+ ![Uusi taulukko -toiminto tietonäkymässä](media/desktop-calculated-tables/calctables_formulabarempty.png)
 
- ![](media/desktop-calculated-tables/calctables_formulabarempty.png)
+Kirjoita kaavariville seuraava kaava:
 
-Jeff syöttää seuraavan kaavan:
+```dax
+Western Region Employees = UNION('Northwest Employees', 'Southwest Employees')
+```
 
- ![](media/desktop-calculated-tables/calctables_formulabarformula.png)
+Uusi **Western Region Employees** -taulukko luodaan. Se näytetään samalla tavalla kuin muutkin taulukot **Kentät**-ruudussa. Voit luoda suhteita muihin taulukkoihin, lisätä mittareita ja laskettuja sarakkeista sekä lisätä taulukon kenttiä raportteihin samalla tavalla kuin missä tahansa taulukossa.
 
-Luodaan uusi taulukko, jonka nimi on Länsialueen työntekijät.
+ ![Uusi laskettu taulukko](media/desktop-calculated-tables/calctables_westregionempl.png)
 
- ![](media/desktop-calculated-tables/calctables_westregionempl.png)
-
-Jeffin uusi Länsialueen työntekijät -taulukko näyttää Kentät-listassa täysin samalta kuin mikä tahansa muu taulukko. Jeff voi jopa luoda suhteita muihin taulukkoihin ja laskettuihin sarakkeisiin ja mittareihin sekä lisätä taulukon kenttiä raportteihin, kuten missä tahansa taulukossa.
-
- ![](media/desktop-calculated-tables/calctables_fieldlist.png)
+ ![Uusi taulukko -toiminto Kentät-ruudussa](media/desktop-calculated-tables/calctables_fieldlist.png)
 
 ## <a name="functions-for-calculated-tables"></a>Laskettujen taulukoiden toiminnot
-Lasketut taulukot voidaan määrittää millä tahansa DAX-lausekkeella, joka palauttaa taulukon, mukaan lukien yksinkertainen viite toiseen taulukkoon. Esimerkki:
 
- ![](media/desktop-calculated-tables/calctables_formulabarsimpleformula.png)
+Voit määrittää lasketun taulukon millä tahansa DAX-lausekkeella, joka palauttaa taulukon (mukaan lukien yksinkertainen viite toiseen taulukkoon). Esimerkki:
 
-Voit käyttää DAX-lausekkeella laskettuja taulukoita ratkaistaksesi monia analyyttisia ongelmia. Olemme antaneet tässä vain lyhyen esittelyn laskettuihin taulukoihin. Tässä on joitakin tavallisimpia DAX-taulukkofunktioita, jotka saattavat olla hyödyllisiä, kun alat käyttämään laskettuja taulukoita:
+```dax
+New Western Region Employees = 'Western Region Employees'
+```
+
+Tämä artikkeli sisältää vain lyhyen esittelyn lasketuista taulukoista. Voit käyttää DAX-lausekkeella laskettuja taulukoita ratkaistaksesi monia analyyttisia ongelmia. Tässä on joitakin tavallisimpia DAX-taulukkofunktioita, joita voit käyttää:
 
 * DISTINCT
 * VALUES
@@ -73,5 +73,5 @@ Voit käyttää DAX-lausekkeella laskettuja taulukoita ratkaistaksesi monia anal
 * CALENDAR
 * CALENDARAUTO
 
-Katso [DAX-toimintojen viitemateriaaleista](https://msdn.microsoft.com/ee634396.aspx) nämä ja muut taulukon palauttavat DAX-funktioita.
+[DAX-funktioviitteiden](/dax/dax-function-reference) ohjeartikkelissa voit tutustua näihin ja muihin DAX-funktioihin, jotka palauttavat taulukoita.
 

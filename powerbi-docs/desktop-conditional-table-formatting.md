@@ -6,146 +6,174 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/16/2019
+ms.date: 12/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d28028c7b75bedae958df77c743c52b44c4437d9
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: c79a8ddd68fa64b0a16663500a3f02e9a991835b
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74311734"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75730322"
 ---
-# <a name="conditional-formatting-in-tables"></a>Ehdollinen muotoilu taulukoissa 
-Taulukoiden ehdollisen muotoilun avulla voit määrittää mukautettuja solujen värejä, jotka perustuvat solujen arvoihin tai muihin arvoihin tai kenttiin. Voit käyttää myös liukuvärejä. Voit myös näyttää solun arvot tietopalkeilla. 
+# <a name="use-conditional-formatting-in-tables"></a>Ehdollisen muotoilun käyttäminen taulukoissa 
 
-Ehdollisen muotoilun käyttämiseksi valitse alaspäin osoittava nuoli Power BI Desktopin **Visualisoinnit**-ruudun **Kentät**-kohdassa sen **Arvon** vierestä, jota haluat muotoilla (tai napsauta kenttää hiiren kakkospainikkeella). Voit hallita kenttien ehdollista muotoilua ainoastaan **Kenttien** **Arvot**-alueella.
+Power BI Desktopin taulukoiden ehdollisen muotoilun avulla voit määrittää mukautettuja solujen värejä kenttien arvoihin perustuen. Voit käyttää myös liukuvärejä. Voit myös kuvata solujen arvoja tietopalkkien tai suorituskykyilmaisinkuvakkeiden avulla tai aktiivisina verkkolinkkeinä. Voit käyttää ehdollista muotoilua mihin tahansa teksti- tai tietokenttään, kunhan perustat muotoilun kenttään, jolla on numero-, väri- tai heksadesimaalikoodi tai URL-osoitearvot. 
+
+Jos haluat käyttää ehdollista muotoilua, valitse Power BI Desktopissa **Taulukko**- tai **Matriisi**-visualisointi. Napsauta **Visualisoinnit**-ruudun **Kentät**-osassa hiiren kakkospainikkeella tai valitse muotoiltavan **Arvot**-lähteen kentän vieressä oleva alanuoli. Valitse **Ehdollinen muotoilu** ja valitse sitten käytettävä muotoilutyyppi.
 
 ![Ehdollinen muotoilu -valikko](media/desktop-conditional-table-formatting/table-formatting-0-popup-menu.png)
 
-Seuraavissa osioissa kuvataan kutakin näistä ehdollisen muotoilun vaihtoehdoista. Yksi tai useampi vaihtoehto voidaan liittää yhteen taulukon sarakkeeseen.
-
 > [!NOTE]
-> Taulukkoon käytetty ehdollinen muotoilu ohittaa kaikki ehdollisesti muotoilluissa soluissa käytetyt mukautetut taulukkotyylit.
+> Ehdollinen muotoilu ohittaa mukautetun taustan tai fontin värin, jota käytät ehdollisesti muotoilluissa soluissa.
 
-Jos haluat poistaa ehdollisen muotoilun visualisoinnista, napsauta kenttää uudelleen hiiren kakkospainikkeella, valitse **Poista ehdollinen muotoilu** ja valitse sitten poistettavan muotoilun tyyppi.
+Jos haluat poistaa ehdollisen muotoilun visualisoinnista, valitse **Poista ehdollinen muotoilu** kentän avattavasta valikosta ja valitse sitten poistettavan muotoilun tyyppi.
 
 ![Poista ehdollinen muotoilu -valikko](media/desktop-conditional-table-formatting/table-formatting-1-remove.png)
 
-## <a name="background-color-scales"></a>Taustaväriasteikot
+Seuraavissa osioissa kuvataan kutakin ehdollisen muotoilun vaihtoehtoa. Voit yhdistää useamman kuin yhden vaihtoehdon yksittäiseen taulukon sarakkeeseen.
 
-Kun valitset **Ehdollisen muotoilun** ja sitten **Taustaväriasteikot**, seuraava valintaikkuna tulee näyttöön.
+## <a name="format-background-or-font-color"></a>Muotoile tausta tai fontin väri
 
-![Taustaväriasteikot-valintaikkuna](media/desktop-conditional-table-formatting/table-formatting-1-default-dialog.png)
+Jos haluat muotoilla solun taustan tai fontin värin, valitse kentälle **ehdollinen muotoilu** ja valitse sitten avattavasta valikosta joko **Taustaväri** tai **Fontin väri**. 
 
-Voit valita värien perusteena toimivan tietomallin kentän asettamalla **Värien peruste** -määritteen kyseiseen kenttään. Lisäksi voit määrittää valitulle kentälle koostetyypin **Yhteenveto**-arvolla. Väritettävä kenttä on määritetty **Väritettävä**-kentässä, jotta pysyt kärryillä. Voit määrittää ehdollisen muotoilun teksti- ja päivämääräkenttiin. Muista valita muotoilun perustaksi numeerinen arvo.
+![Taustavärin tai fontin värin valitseminen](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-dialog.png)
 
-![Kenttään perustuva väri](media/desktop-conditional-table-formatting/table-formatting-1-apply-color-to.png)
+**Taustaväri**- tai **Fontin väri** -valintaikkuna avautuu, ja sen otsikossa on muotoilemasi kentän nimi. Kun olet valinnut ehdollisen muotoilun asetukset, valitse **OK**. 
 
-Jos haluat erillisiä väriarvoja valituille alueille, valitse **Väri sääntöjen mukaan**. Jos haluat käyttää väriasteikkoa, jätä **Väri sääntöjen mukaan** valitsematta. 
+![Taustaväri- ja Fontin väri -valintaikkunat](media/desktop-conditional-table-formatting/table-formatting-2-diverging.png)
 
-![Taustaväriasteikot-valintaikkuna](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-dialog.png)
+**Taustaväri**- ja **Fontin väri** -asetukset ovat samat, mutta ne vaikuttavat solun taustaväriin ja fontin väriin. Voit käyttää samaa tai eri ehdollista muotoilua kentän fontin värissä ja taustavärissä. Jos teet kentän fontista ja taustasta samanväriset, fontti sulautuu taustaan, jolloin taulukon sarakkeessa näkyvät vain värit.
 
-### <a name="color-by-rules"></a>Väri sääntöjen mukaan
+## <a name="color-by-color-scale"></a>Väri väriasteikon mukaan
 
-Kun valitset **Väri sääntöjen mukaan** -asetuksen, voit antaa yhden tai useamman arvoalueen, joista kukin vastaa valittua väriä.  Kukin arvo alkaa *Jos-arvo* -ehdolla, *ja*-arvoehdolla ja värillä.
+Jos haluat muotoilla solun taustan tai fontin värin väriasteikon mukaan, valitse **Muotoiluperuste**-kentän **Taustaväri**- tai **Fontin väri** -valinta ikkunassa **Väriasteikko**. Valitse **Perustuu kenttään** -kohdassa kenttä, jolle haluat muotoilun perustuvan. Voit perustaa muotoilun nykyiseen kenttään tai mallin mihin tahansa kenttään, jolla on numeeriset tiedot tai väritiedot. 
 
-![Väri sääntöjen mukaan -arvoalue](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-if-value.png)
+Määritä **Yhteenveto**-kohdassa koostamistyyppi, jota haluat käyttää valitussa kentässä. Valitse **Oletusmuotoilu**-kohdassa muotoilu, jota käytetään tyhjille arvoille. 
 
-Taulukkosolut, joissa kunkin alueen arvot on täytetty annetulla värillä. Seuraavassa kuvassa on kolme sääntöä.
+Valitse **Pienin arvo**- ja **Suurin arvo** -kohdissa, käytetäänkö värimallia pienimmän ja suurimman kenttäarvon perusteella vai antamissasi mukautetuissa arvoissa. Valitse avattavasta valikosta väriruudut, joita haluat käyttää vähimmäis- ja enimmäisarvoissa. Valitse **Erkautuva**-valintaruutu, jos haluat määrittää myös **Keskipiste**-arvon ja -värin. 
 
-![Väri sääntöjen mukaan -esimerkki](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules.png)
+![Solun taustan asettaminen väriasteikon avulla](media/desktop-conditional-table-formatting/table-formatting-1-diverging-table.png)
 
-Esimerkkitaulukko näyttää nyt tältä:
+Esimerkkitaulukko, jossa tausta on muotoilu väriasteikon avulla **Affordability**-sarakkeessa, näyttää tältä:
+
+![Esimerkkitaulukko, jossa on erkautuva taustaväriasteikko](media/desktop-conditional-table-formatting/table-formatting-1-apply-color-to.png)
+
+Esimerkkitaulukko, jossa fontti on muotoilu väriasteikon avulla **Affordability**-sarakkeessa, näyttää tältä:
+
+![Esimerkkitaulukko, jossa on erkautuva fonttiväriasteikko](media/desktop-conditional-table-formatting/table-formatting-2-table.png)
+
+## <a name="color-by-rules"></a>Väri sääntöjen mukaan
+
+Jos haluat muotoilla solun taustan tai fontin värin sääntöjen mukaan, valitse **Muotoiluperuste**-kentän **Taustaväri**- tai **Fontin väri** -valinta ikkunassa **Säännöt**. **Perustuu kenttään** näyttää jälleen kentän, johon muotoilu perustuu, ja **Yhteenveto** näyttää kentän koostamistyypin. 
+
+Kirjoita **Säännöt**-kohtaan vähintään yksi tai useampi arvoalue ja määritä kullekin väri. Kukin arvo alkaa *Jos-arvo*-ehdolla, *ja*-arvoehdolla ja värillä. Kunkin arvoalueen solujen taustat tai fontit väritetään annetulla värillä. Seuraavassa esimerkissä on kolme sääntöä:
+
+![Väri sääntöjen mukaan](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-if-value.png)
+
+Esimerkkitaulukko, jossa tausta on muotoilu sääntöjen avulla **Affordability**-sarakkeessa, näyttää tältä:
 
 ![Esimerkkitaulukko, joka sisältää värin sääntöjen mukaan](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-table.png)
 
+## <a name="color-by-color-values"></a>Väri väriarvojen mukaan
 
-### <a name="color-minimum-to-maximum"></a>Värin vähimmäis- ja enimmäisarvo
+Jos sinulla on kenttä tai mittari, jossa on värin nimi- tai heksadesimaaliarvotietoja, voit käyttää ehdollista muotoilua, jotta nämä värit otetaan automaattisesti käyttöön sarakkeen taustassa tai fontin värissä. Voit myös käyttää mukautettua logiikkaa käyttääksesi värejä fontissa tai taustassa.
 
-Voit määrittää *vähimmäis-* ja *enimmäis*arvot ja niiden värit. Jos valitset **Erkautuva**-valinnan, voit määritellä myös valinnaisen *Keski*arvon.
+Kenttä voi käyttää mitä tahansa CSS-värimäärityksen väriarvoja, jotka on lueteltu sivulla [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/). Näihin väriarvoihin kuuluvat seuraavat:
+- 3-, 6- tai 8-numeroinen heksadesimaalikoodit, esimerkiksi #3E4AFF. Muista kirjoittaa #-symboli koodin alkuun. 
+- RGB- tai RGBA-arvot, kuten RGBA (234, 234, 234, 0.5).
+- HSL- tai HSLA-arvot, kuten HSLA (123, 75%, 75%, 0.5).
+- Värien nimet, kuten vihreä, taivaansininen tai persikka. 
 
-![Erkautuva-painike](media/desktop-conditional-table-formatting/table-formatting-1-diverging.png)
+Seuraavassa taulukossa on kuhunkin osavaltioon liittyvä värin nimi: 
 
-Esimerkkitaulukko näyttää nyt tältä:
+![Osavaltiotaulukko, jossa on värien nimet](media/desktop-conditional-table-formatting/conditional-table-formatting_01.png)
 
-![Esimerkkitaulukko, jossa on erkautuvia värejä](media/desktop-conditional-table-formatting/table-formatting-1-diverging-table.png)
+Jos haluat muotoilla **Väri**-saraketta kentän arvojen perusteella, valitse **Väri**-kentälle **Ehdollinen muotoilu** ja valitse sitten **Taustaväri** tai **Fontin väri**. 
 
-## <a name="font-color-scales"></a>Fonttiväriasteikot
+Valitse **Taustaväri**- tai **Fontin väri** -valintaikkunassa **Kentän arvo** avattavasta **Muotoiluperuste**-kentästä.
 
-Kun valitset **Ehdollisen muotoilun** ja sitten **Fonttiväriasteikot**, seuraava valintaikkuna tulee näyttöön. Tämä valintaikkuna on samantapainen kuin **Taustaväriasteikot**-valintaikkuna, mutta sen kautta voit muuttaa fontin väriä solun taustavärin sijaan.
+![Muotoiluperuste-kentän arvo](media/desktop-conditional-table-formatting/conditional-table-formatting_02.png)
 
-![Fonttiväriasteikot-valintaikkuna](media/desktop-conditional-table-formatting/table-formatting-2-diverging.png)
+Esimerkkitaulukko, jossa **taustaväri** on muotoilu värikentän arvon avulla **Väri**-sarakkeessa, näyttää tältä:
 
-Esimerkkitaulukko näyttää nyt tältä:
+![Esimerkkitaulukko, jossa tausta on muotoilu kentän arvon mukaan](media/desktop-conditional-table-formatting/conditional-table-formatting_03.png)
 
-![Esimerkkitaulukko, jossa on fonttiväriasteikkoja](media/desktop-conditional-table-formatting/table-formatting-2-table.png)
+Jos käytät myös **kentän arvoa** sarakkeen **fontin värin** muotoilemiseen, tuloksena on tasainen väri **Väri**-sarakkeessa:
 
-## <a name="data-bars"></a>Tietopalkit
+![Taustan ja fontin muotoilu kentän arvon mukaan](media/desktop-conditional-table-formatting/conditional-table-formatting_04.png)
 
-Kun valitset **Ehdollisen muotoilun** ja sitten **Tietopalkit**, seuraava valintaikkuna tulee näyttöön. 
+## <a name="color-based-on-a-calculation"></a>Väri laskennan perusteella
 
-![Tietopalkit-valintaikkuna](media/desktop-conditional-table-formatting/table-formatting-3-default.png)
+Voit luoda DAX-laskutoimituksen, joka tulostaa eri arvot valitsemiesi liiketoimintalogiikkaehtojen perusteella. DAX-kaavan luominen on yleensä nopeampaa kuin useiden sääntöjen luominen ehdollisen muotoilun valintaikkunassa. 
 
-Oletuksena **Näytä vain palkki** -asetusta ei ole valittu, jolloin taulukkosolu näyttää sekä palkin että todellisen arvon.
+Esimerkiksi seuraava DAX-kaava käyttää heksadesimaaliväriarvoja uuteen **Affordability rank** -sarakkeeseen olemassa olevien **Affordability**-sarakearvojen perusteella:
 
-![Esimerkkitaulukko, jossa on tietopalkkeja ja arvoja](media/desktop-conditional-table-formatting/table-formatting-3-default-table.png)
+![DAX-laskenta](media/desktop-conditional-table-formatting/conditional-table-formatting_05.png)
 
-Jos **Näytä vain palkki** -asetus on valittu, taulukkosolussa näkyy vain palkki.
+Jos haluat ottaa värit käyttöön, valitse **Taustaväri**- tai **Fontin väri**- ehdollinen muotoilu **Affordability**-sarakkeelle ja perusta muotoilu **Affordability rank** -sarakkeen **Kentän arvolle**. 
 
-![Esimerkkitaulukko, jossa on vain tietopalkkeja](media/desktop-conditional-table-formatting/table-formatting-3-default-table-bars.png)
+![Taustavärin perustaminen lasketulle sarakkeelle](media/desktop-conditional-table-formatting/conditional-table-formatting_06.png)
 
-## <a name="color-formatting-by-field-value"></a>Värin muotoileminen kentän arvon mukaan
+Esimerkkitaulukko, jossa **Affordability**-sarakkeen taustaväri perustuu laskettuun **Affordability rank** -sarakkeeseen, näyttää tältä:
 
-Voit käyttää mittaria tai värin määrittävää saraketta joko tekstiarvon tai heksadesimaalikoodin mukaan ja soveltaa tätä väriä taulukon tai matriisivisualisoinnin fonttiväriin. Voit myös luoda mukautetun logiikan tiettyä kenttää varten, ja antaa tämän logiikan soveltaa haluttua väriä fonttiin tai taustaan.
-
-Esimerkiksi seuraavassa taulukossa on kuhunkin tuotemalliin liittyvä väri. 
-
-![ProductName-kenttä värin nimen kanssa](media/desktop-conditional-table-formatting/conditional-table-formatting_01.png)
-
-Jos haluat muotoilla tätä solua sen kentän arvon mukaan, valitse **Ehdollinen muotoilu** -valintaikkuna napsauttamalla hiiren kakkospainikkeella tämän visualisoinnin *Väri*-saraketta ja valitsemalla valikosta **Taustaväri**. 
-
-![Taustavärin valitseminen valikosta](media/desktop-conditional-table-formatting/conditional-table-formatting_02.png)
-
-Valitse avautuvassa valintaikkunassa **Kentän arvo** avattavasta **Muotoiluperuste**-luetteloalueesta seuraavassa kuvassa esitetyllä tavalla.
-
-![Muotoiluperuste-kentän arvo](media/desktop-conditional-table-formatting/conditional-table-formatting_03.png)
-
-Voit toistaa tämän prosessin fonttivärille ja visualisoinnin tulos on yhtenäinen väri **Väri**-sarakkeessa seuraavassa näytössä esitetyn mukaisesti.
-
-![Muotoiluperuste-kentän arvo](media/desktop-conditional-table-formatting/conditional-table-formatting_04.png)
-
-Voit myös luoda liiketoimintalogiikan perusteella DAX-laskutoimituksen, joka tulostaa eri heksadesimaalikoodit haluamiesi ehtojen mukaan. Tämä on yleensä helpompaa kuin useiden sääntöjen luominen ehdollisen muotoilun valintaikkunassa. Tarkastele *ColorKPI*-kenttää seuraavassa esimerkkikuvassa.
-
-![DAX-laskutoimitukset](media/desktop-conditional-table-formatting/conditional-table-formatting_05.png)
-
-Voit sitten määrittää kenttäarvon **taustavärille** seuraavalla tavalla.
-
-![Kentän värin määrittäminen KPI:n mukaan](media/desktop-conditional-table-formatting/conditional-table-formatting_06.png)
-
-Voit sitten saada seuraavan matriisin kaltaiset tulokset.
-
-![Matriisivisualisointi KPI-arvoon perustuvan värin kanssa](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
+![Esimerkkitaulukko, jossa on laskettuihin arvoihin perustuva väri](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
 
 Voit luoda monia muita variaatioita käyttämällä mielikuvitustasi ja joitakin DAX-laskutoimituksia.
 
-Voit värittää visualisointisi käyttämällä arvoja, jotka on lueteltu CSS-värikartassa kohdassa [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/):
-* 3, 6 tai 8-numeroinen heksadesimaalikoodi, esimerkiksi #3E4AFF. Muista kirjoittaa #-symboli koodin alkuun. Koodia "3E4AFF" ei hyväksytä. 
-* RGB- tai RGBA-arvot, kuten RGBA (234, 234, 234, 0.5)
-* HSL- tai HSLA-arvot, kuten HSLA (123, 75%, 75%, 0.5)
-* Värien nimet, kuten vihreä, taivaansininen, persikka 
+## <a name="add-data-bars"></a>Tietopalkkien lisääminen
+
+Jos haluat näyttää tietopalkit solujen arvojen perusteella, valitse **Affordability**-kentälle **Ehdollinen muotoilu** ja valitse sitten avattavasta valikosta **Tietopalkit**. 
+
+**Näytä vain palkki** -asetusta ei ole oletuksena valittu **Tietopalkit**-valintaikkunassa, jolloin taulukkosolut näyttävät sekä palkit että todelliset arvot. Jos haluat näyttää vain tietopalkit, valitse **Näytä vain palkki** -valintaruutu.
+
+Voit määrittää **pienimmän** ja **suurimman** arvon, tietopalkin värit ja suunnan sekä akselin värin. 
+
+![Tietopalkit-valintaikkuna](media/desktop-conditional-table-formatting/table-formatting-3-default.png)
+
+Kun tietopalkit ovat käytössä **Affordability**-sarakkeessa, esimerkkitaulukko näyttää tältä:
+
+![Esimerkkitaulukko, jossa on tietopalkkeja](media/desktop-conditional-table-formatting/table-formatting-3-default-table-bars.png)
+
+## <a name="add-icons"></a>Kuvakkeiden lisääminen
+
+Jos haluat näyttää kuvakkeet solujen arvojen perusteella, valitse kentälle **Ehdollinen muotoilu** ja valitse sitten avattavasta valikosta **Kuvakkeet**. 
+
+Valitse **Kuvakkeet**-valintaikkunan **Muotoiluperuste**-kohdassa joko **Säännöt** tai **Kentän arvo**. 
+
+Jos haluat muotoilla sääntöjä, valitse **Perustuu kenttään**, **Yhteenveto**-menetelmä, **kuvakeasettelu**, **kuvakkeen tasaus**, kuvakkeen **tyyli** ja vähintään yksi **sääntö**. Kirjoita **Säännöt**-kohtaan vähintään yksi sääntö, jolla on *Jos-arvo*-ehto sekä *ja*-arvo-ehto, ja valitse kussakin säännössä käytettävä kuvake. 
+
+Jos haluat muotoilla kentän arvojen mukaan, valitse **Perustuu kenttään**, **Yhteenveto**-menetelmä, **Kuvake asettelu** ja **Kuvakkeen tasaus**.
+
+Seuraavassa esimerkissä kuvakkeita lisätään kolmen säännön perusteella:
+
+![Kuvakkeet-valintaikkuna](media/desktop-conditional-table-formatting/table-formatting-1-default-table.png)
+
+Valitse **OK**. Kun kuvakkeet ovat käytössä **Affordability**-sarakkeessa, esimerkkitaulukko näyttää tältä:
+
+![Esimerkkitaulukko, jossa on kuvakkeita](media/desktop-conditional-table-formatting/table-formatting-1-default-dialog.png)
+
+## <a name="format-as-web-urls"></a>Muotoileminen verkko-URL-osoitteina
+
+Jos sinulla on sarake tai mittari, joka sisältää WWW-URL-osoitteita, voit käyttää ehdollista muotoilua käyttääksesi kyseisiä URL-osoitteita kentissä aktiivisina linkkeinä. Seuraavassa taulukossa on esimerkiksi **Verkkosivusto**-sarake, jossa on verkkosivuston URL-osoite kullekin osavaltiolle:
+
+![Taulukko, jossa on WWW-URL-osoite-sarake](media/desktop-conditional-table-formatting/table-formatting-1-diverging.png)
+
+Jos haluat näyttää kunkin osavaltion nimen linkkinä sen verkkosivustolle, valitse **State**-kentälle **Ehdollinen muotoilu** ja valitse sitten **URL-verkko-osoite**. Valitse **URL-verkko-osoite**-valintaikkunan kohdassa **Perustuu kenttään** **Verkkosivusto** ja valitse sitten **OK**. 
+
+Kun **URL-verkko-osoite**-muotoilu on käytössä **State**-kentässä, kunkin osavaltion nimi on toimiva linkki osavaltion verkkosivustoon. Seuraavassa esimerkkitaulukossa **URL-verkko-osoite**-muotoilu on käytössä **State**-sarakkeessa ja ehdolliset **Tietopalkit** ja **Taustan muotoilu** ovat käytössä **Affordability**-sarakkeessa. 
+
+![Taulukko, jossa on URL-verkko-osoite, tietopalkit ja taustaväri](media/desktop-conditional-table-formatting/table-formatting-3-default-table.png)
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 Sinun on huomioitava muutamia seikkoja, kun käsittelet ehdollista taulukkomuotoilua:
 
-* Ehdollista muotoilua käytetään vain **Matriisi**-visualisoinnin arvoissa, eikä se koske välisummia tai kokonaissummia. 
-* Ehdollista muotoilua ei käytetä **Summa**-rivillä.
-* Mikä tahansa taulukko, joka ei näytä ryhmittelyä yhtenä rivinä, ei tue ehdollista muotoilua.
-* Jos käytät liukuvärimuotoa ja automaattisia enimmäis- ja vähimmäisarvoja tai sääntöpohjaista muotoilua prosenttisäännöillä, ehdollista muotoilua ei vi käyttää, kun tiedot sisältävät NaN-arvoja. NaN on akronyymi sanoista Not a Number eli suomeksi Ei numero. Niitä aiheuttavat yleensä nollalla jakamisen virheet. Voit välttää nämä virheet funktiolla [DIVIDE() DAX](https://docs.microsoft.com/dax/divide-function-dax).
-
+- Ehdollista muotoilua käytetään vain Taulukko- tai Matriisi-visualisointien arvoissa, eikä se koske välisummia, kokonaissummia tai **Summa**-riviä. 
+- Mikä tahansa taulukko, jossa ei ole ryhmittelyä, näytetään yhtenä rivinä, joka ei tue ehdollista muotoilua.
+- Et voi käyttää liukuvärimuotoa ja automaattisia enimmäis- ja vähimmäisarvoja tai sääntöpohjaista muotoilua prosenttisäännöillä, jos tiedot sisältävät *NaN*-arvoja. NaN on akronyymi sanoista ”Not a Number” eli suomeksi ”ei numero”. Niitä aiheuttavat yleensä nollalla jakamisen virheet. Voit välttää nämä virheet funktiolla [DIVIDE() DAX](https://docs.microsoft.com/dax/divide-function-dax).
+- Ehdollisella muotoilulla on oltava kooste tai mittari, jotta sitä voidaan soveltaa arvoon. Tästä syystä **Väri arvon mukaan** -esimerkissä on "Ensimmäinen" tai "Viimeinen". Jos olet luomassa raporttiasi Analysis Servicen moniulotteisen kuution avulla, et voi käyttää määritettä ehdollista muotoilua varten, ellei kuution omistaja ole luonut mittaria, joka antaa arvon.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Katso lisätietoja seuraavasta artikkelista:  
 
-* [Vinkkejä värimuotoiluun Power BI:ssä](visuals/service-tips-and-tricks-for-color-formatting.md)  
+Katso lisätietoja värien muotoilusta artikkelista [Vinkkejä värimuotoiluun Power BI:ssä](visuals/service-tips-and-tricks-for-color-formatting.md)  
 

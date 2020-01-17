@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 08/21/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bf258597f6369541fb9a221c8d423e8a9078a3a4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7c70c4f4e5fec55ffd98d0156944c9973cffdb2a
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879759"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760292"
 ---
-# <a name="use-sap-hana-in-power-bi-desktop"></a>SAP HANA -käyttö Power BI Desktopissa
+# <a name="connect-to-sap-hana-databases-in-power-bi-desktop"></a>Yhteyden muodostaminen SAP HANA -tietokantoihin Power BI Desktopissa
 Voit nyt käyttää **SAP HANA** -tietokantoja Power BI Desktopilla. Jotta voit käyttää **SAP HANA** -tietokantoja, täytyy SAP HANA ODBC -ohjain olla asennettuna paikallisessa asiakastietokoneessa, jotta Power BI Desktopin **SAP HANA** -tietoyhteys toimii oikein. Voit ladata SAP HANA -asiakastyökalut [SAP Development -työkaluista](https://tools.hana.ondemand.com/#hanatools), joka sisältää tarvittavan ODBC-ohjaimen. Vaihtoehtoisesti voit hankkia sen [SAP Software Download Centeristä](https://support.sap.com/swdc). Etsi sieltä Windows-koneille tarkoitettu SAP HANA CLIENT -asiakasohjelmisto. Koska **SAP-ohjelmiston latauskeskus** muuttaa rakennettaan usein, emme voi antaa tarkempia ohjeita kyseisellä sivulla navigoimiseen.
 
 Muodostaaksesi yhteyden **SAP HANA** -tietokantaan, valitse **Nouda tiedot > Tietokanta > SAP HANA -tietokanta** seuraavassa kuvassa esitetyllä tavalla:

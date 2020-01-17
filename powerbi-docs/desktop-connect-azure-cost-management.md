@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1a09bd706a69156066f077bfb1668dd27448bd40
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bf83df157738621116eb9e5461876eee8faf0863
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878595"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75761676"
 ---
-# <a name="connect-to-azure-cost-management-in-power-bi-desktop"></a>Azure Cost Managementiin yhdistäminen Power BI Desktopissa
+# <a name="create-visuals-and-reports-with-the-azure-cost-management-connector-in-power-bi-desktop"></a>Visualisointien luominen Azure Cost Management -liittimellä Power BI Desktopissa
 
 Power BI Desktopin Azure Cost Management -liittimellä voit luoda tehokkaita mukautettuja visualisointeja ja raportteja, joilla ymmärrät paremmin Azure-kulujasi. Azure Cost Management -liitin tukee tällä hetkellä asiakkaita, joilla on [Microsoft Customer Agreement](https://azure.microsoft.com/pricing/purchase-options/microsoft-customer-agreement/)- tai [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/) -sopimus.  
 
@@ -43,7 +43,7 @@ Jos haluat käyttää **Azure Cost Management -liitintä** Power BI Desktopissa,
 
 Jos haluat yhdistää **Microsoft Customer Agreement** -tilillä, voit hakea **laskutusprofiilin tunnuksen** Azure-portaalista:
 
-1.  Siirry [Azure-portaalissa](https://portal.azure.com/) **kustannusten hallinnan ja laskutuksen kohtaan**.
+1.  Siirry [Azure-portaalissa](https://portal.azure.com/)**kustannusten hallinnan ja laskutuksen kohtaan**.
 2.  Valitse laskutusprofiilisi. 
 3.  Valitse valikosta **Asetukset** ja sivupalkista **Ominaisuudet**.
 4.  Kopioi **laskutusprofiilin** **tunnus**. 
@@ -59,7 +59,7 @@ Jos haluat yhdistää **Microsoft Customer Agreement** -tilillä, voit hakea **l
 
 Jos haluat yhdistää Enterprise Agreement (EA) -tilillä, voit hakea rekisteröitymistunnuksen Azure-portaalista:
 
-1.  Siirry [Azure-portaalissa](https://portal.azure.com/) **kustannusten hallinnan ja laskutuksen kohtaan**.
+1.  Siirry [Azure-portaalissa](https://portal.azure.com/)**kustannusten hallinnan ja laskutuksen kohtaan**.
 2.  Valitse laskutustilisi.
 3.  Kopioi **Yleiskatsaus**-valikosta **laskutustilin tunnus**.
 4.  Siirry **Valitse vaikutusalue** -kohtaan, valitse **Rekisteröitymisnumero** ja liitä siihen edellisessä vaiheessa kopioimasi laskutustilin tunnus. 

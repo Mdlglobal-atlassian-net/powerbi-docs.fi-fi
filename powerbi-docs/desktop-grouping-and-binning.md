@@ -7,61 +7,60 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 12/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: eae7ffdaa6f21ed0732500539f922cf10eb7bb61
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 525f7bf4c967722d8f98a9184127bc8c7907cea1
+ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878193"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75729919"
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Ryhmittely ja lokeroiminen Power BI Desktopissa
-Kun **Power BI Desktop** luo visualisointeja, se kokoaa tiedot lohkoiksi (tai ryhmiksi), jotka perustuvat pohjalla olevien tietojen sisältämiin arvoihin. Useimmiten esitys on kunnossa, mutta joskus saatat haluta tarkentaa miten kyseiset lohkot esitetään. Saatat esimerkiksi haluta sijoittaa kolme tuoteluokkaa yhteen suurempaan luokkaan (yksi *ryhmä*). Tai haluat ehkä nähdä myyntiluvut yhdessä lokerossa lukuna 1 000 000 euroa tasaisesti jaetun 923 983 euron sijaan.
+Kun Power BI Desktop luo visualisointeja, se kokoaa tiedot lohkoiksi (tai ryhmiksi), jotka perustuvat pohjalla olevien tietojen sisältämiin arvoihin. Useimmiten esitys on kunnossa, mutta joskus saatat haluta tarkentaa miten kyseiset lohkot esitetään. Saatat esimerkiksi haluta sijoittaa kolme tuoteluokkaa yhteen suurempaan luokkaan (yksi *ryhmä*). Tai haluat ehkä nähdä myyntiluvut yhdessä lokerossa lukuna 1 000 000 euroa 923 983 euron suuruisten lohkojen sijaan.
 
-Power BI Desktopissa voit **ryhmitellä** arvopisteet, mikä auttaa sinua tarkastelemaan, analysoimaan ja tutkimaan visualisointien tietoja ja trendejä. Voit myös määrittää **lokeron koon**, mitä kutsutaan usein *lokeroimiseksi*, jos haluat sijoittaa arvot yhtä suuriin ryhmiin, joiden avulla voit paremmin visualisoida tietoja merkitsevällä tavalla.
+Power BI Desktopissa voit *ryhmitellä* arvopisteet auttamaan sinua tarkastelemaan, analysoimaan ja tutkiman visualisointien tietoja ja trendejä. Voit myös määrittää *lokeron koon*, jos haluat sijoittaa arvot yhtä suuriin ryhmiin, joiden avulla voit paremmin visualisoida tietoja merkitsevällä tavalla. Tätä toimintoa kutsutaan usein *lokeroimiseksi*.
 
 ## <a name="using-grouping"></a>Ryhmittelyn käyttö
-Jos haluat käyttää ryhmittelyä, valitse vähintään kaksi visualisoinnin elementtiä käyttämällä näppäinyhdistelmää CTRL + NAPSAUTUS elementtien monivalintaan. Napsauta seuraavaksi hiiren kakkospainikkeella monivalintaelementtejä ja valitse **Ryhmä** esiin tulevasta valikosta.
+Jos haluat käyttää ryhmittelyä, valitse vähintään kaksi visualisoinnin elementtiä käyttämällä näppäinyhdistelmää CTRL + NAPSAUTUS useiden elementtien valintaan. Napsauta sitten jotakin monivalintaelementtiä hiiren kakkospainikkeella ja valitse pikavalikosta **Ryhmittele**.
 
-![](media/desktop-grouping-and-binning/grouping-binning_1.png)
+![Ryhmittele-komento, kaavio, ryhmittely, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_1.png)
 
-Kun ryhmä on luotu, se lisätään **Selite**-säilöön visualisointia varten, ja se näkyy myös **Kentät**-luettelossa.
+Kun ryhmä on luotu, se lisätään **Selite**-säiliöön visualisointia varten. Ryhmä näkyy myös **Kentät**-luettelossa.
 
-![](media/desktop-grouping-and-binning/grouping-binning_2.png)
+![Selite- ja Kentät-luettelot, ryhmittely, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_2.png)
 
-Kun sinulla on ryhmä, voit helposti muokata kyseisen ryhmän jäseniä napsauttamalla hiiren kakkospainikkeella kenttää **Selite**-säilöstä tai **Kentät**-luettelosta ja valitsemalla **Muokkaa ryhmiä**.
+Kun sinulla on ryhmä, voit helposti muokata kyseisen ryhmän jäseniä. Napsauta hiiren kakkospainikkeella **Selite**-säilön tai **Kentät**-luettelon kenttää ja valitse **Muokkaa ryhmiä**.
 
-![](media/desktop-grouping-and-binning/grouping-binning_3.png)
+![Muokkaa ryhmiä -komento, Selite- ja Kentät-luettelot, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_3.png)
 
-Esiin tulevassa **Ryhmät**-ikkunassa voit luoda uusia ryhmiä tai muokata olemassa olevia ryhmiä. Voit myös *nimetä uudelleen* minkä tahansa ryhmän kaksoisnapsauttamalla ryhmän otsikkoa kohdasta **Ryhmät ja jäsenet** ja kirjoittamalla uuden nimen.
+**Ryhmät**-ikkunassa voit luoda uusia ryhmiä tai muokata olemassa olevia ryhmiä. Voit myös *nimetä uudelleen* minkä tahansa ryhmän. Kaksoisnapsauta ryhmän otsikkoa **Ryhmät ja jäsenet** -ruudussa ja kirjoita sitten uusi nimi.
 
-Voit tehdä ryhmillä kaikenlaista. Voit lisätä kohteita **Arvot, joiden ryhmittely on purettu** -luettelosta uuteen ryhmään tai yhdeksi olemassa olevaksi ryhmäksi. Jos haluat luoda uuden ryhmän, valitse kaksi tai useampi kohde (käyttäen painikeyhdistelmää CTRL + napsautus) **Arvot, joiden ryhmittely on purettu** -ruutuun ja napsauta sitten **Ryhmä** -painiketta kyseisen ruudun alta.
+Voit tehdä ryhmillä kaikenlaista. Voit lisätä kohteita **Arvot, joiden ryhmittely on purettu** -luettelosta uuteen ryhmään tai yhdeksi olemassa olevaksi ryhmäksi. Jos haluat luoda uuden ryhmän, valitse kaksi tai useampi kohde (käyttäen painikeyhdistelmää CTRL + napsautus) **Arvot, joiden ryhmittely on purettu** -ruutuun ja valitse sitten **Ryhmä** -painiketta kyseisen ruudun alta.
 
-Voit lisätä puretun arvon aiemmin luotuun ryhmään: valitse purettu arvo ja valitse sitten aiemmin luotu ryhmä, johon haluat lisätä sen ja valitse **Ryhmä**-painike. Jos haluat poistaa tietoyksikön ryhmästä, valitse se **Ryhmät ja jäsenet** -ruudusta ja napsauta sitten **Pura ryhmittely**. Voit myös valita, onko ryhmittelemättömät luokat sijoitettava ryhmään **Muut** vai pitääkö niiden jäädä puretuiksi.
+Voit lisätä puretun arvon aiemmin luotuun ryhmään: valitse jokin **purettu arvo** ja valitse sitten aiemmin luotu ryhmä, johon haluat lisätä arvon ja valitse **Ryhmä**-painike. Jos haluat poistaa tietoyksikön ryhmästä, valitse se **Ryhmät ja jäsenet** -ruudusta ja valitse sitten **Pura ryhmittely**. Voit myös siirtää ryhmittelemättömiä luokkia **Muut**-ryhmään tai jättää ne ryhmittelemättä.
 
-![](media/desktop-grouping-and-binning/grouping-binning_4.png)
+![Ryhmät-valintaikkuna, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_4.png)
 
 > [!NOTE]
 > Voit luoda ryhmiä mille tahansa kentälle kohdassa **Kentät** ilman monivalintaa olemassa olevasta visualisoinnista. Napsauta kenttää hiiren kakkospainikkeella ja valitse **Uusi ryhmä** esiin tulevasta valikosta.
 
 ## <a name="using-binning"></a>Lokeroinnin käyttäminen
-Voit määrittää numeeristen ja aika-kenttien lokeron koon **Power BI Desktopissa.** Voit käyttää lokeroimisen **Power BI Desktopissa** näkyvien tietojen oikeaan kokoon saattamiseksi.
+Voit määrittää numeeristen ja aika-kenttien lokeron koon **Power BI Desktopissa.** Voit käyttää lokeroimisen Power BI Desktopissa näkyvien tietojen oikeaan kokoon saattamiseksi.
 
 Voit käyttää lokeron kokoa napsauttamalla hiiren kakkospainikkeella **Kenttä** ja valitsemalla **Uusi ryhmä**.
 
-![](media/desktop-grouping-and-binning/grouping-binning_5.png)
+![Uusi ryhmä -komento, Kentät-luettelo, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_5.png)
 
-**Ryhmät**-ikkunassa asetetaan haluttu **lokeron koko**.
+**Ryhmät**-valintaikkunassa asetetaan haluttu **lokeron koko**.
 
-![](media/desktop-grouping-and-binning/grouping-binning_6.png)
+![Lokeron koko, Ryhmät-valintaikkuna, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_6.png)
 
-Kun valitset **OK** huomaat, että uusi kenttä tulee näkyviin **Kentät**-ruutuun *(lokerot)* liitettynä. Sitten voit vetää tämän kentän alustalle lokeron koon käyttämiseksi visualisoinnissa.
+Kun valitset **OK** huomaat, että uusi kenttä tulee näkyviin **Kentät**-ruutuun **(lokerot)** liitettynä. Sitten voit vetää tämän kentän alustalle lokeron koon käyttämiseksi visualisoinnissa.
 
-![](media/desktop-grouping-and-binning/grouping-binning_7.png)
+![Vedä lokerokenttä pohjaan, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_7.png)
 
-Jos haluat nähdä **lokeroimisen** käytännössä, katso tämä [video](https://www.youtube.com/watch?v=BRvdZSfO0DY).
+Jos haluat nähdä *lokeroimisen* käytännössä, katso tämä [video](https://www.youtube.com/watch?v=BRvdZSfO0DY).
 
-Tässä kaikki **ryhmittelystä** ja **lokeroimisesta**, kun haluat varmistaa visualisointien näkymisen raporteissa juurin niin kuin haluat niiden näkyvän.
-
+Tässä kaikki *ryhmittelystä* ja *lokeroimisesta*, kun haluat varmistaa visualisointien näkymisen raporteissa juurin niin kuin haluat niiden näkyvän.

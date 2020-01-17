@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: be45941e67417cbed15433405953cf728fe0aa8d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 2d564b22ecf02c0d8593ed5676e46f2eb4168964
+ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876919"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75836715"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 
@@ -46,7 +46,7 @@ Jos haluat lisätä raporttiin URL-suodattimen sovelluksessa, muotoilu on hiukan
 
 Tässä esimerkki:
 
-app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*&'ctid=*ctid*
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*'&ctid=*ctid*
 
 ### <a name="field-types"></a>Kenttätyypit
 
@@ -107,7 +107,7 @@ Power BI tukee useita muitakin operaattoreita kuin **and**. Seuraavassa taulukos
 |operaattori  | määritelmä | merkkijono  | luku | Päivämäärä |  Esimerkki|
 |---------|---------|---------|---------|---------|---------|
 |**and**     | ja |  kyllä      | kyllä |  kyllä|  product/price le 200 and price gt 3.5 |
-|**eq**     | yhtä suuri kuin |  kyllä      | kyllä   |  kyllä       | Address/City eq 'Redmond' |
+|**eq**     | on |  kyllä      | kyllä   |  kyllä       | Address/City eq 'Redmond' |
 |**ne**     | eri suuri kuin |   kyllä      | kyllä  | kyllä        |  Address/City ne 'London' |
 |**ge**     |  suurempi tai yhtä suuri kuin       | ei | kyllä |kyllä |  product/price ge 10
 |**gt**     | suurempi kuin        |ei | kyllä | kyllä  | product/price gt 20
