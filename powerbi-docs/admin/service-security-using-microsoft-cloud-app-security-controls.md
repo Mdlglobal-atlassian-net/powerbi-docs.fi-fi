@@ -107,7 +107,7 @@ Luo istuntokäytäntö näyttöön tulevassa ikkunassa. Numeroiduissa vaiheissa 
 
   1. Valitse avattavasta **Käytäntömalli**-valikosta *Ei mallia*.
   2. Anna istuntokäytännöllesi asianmukainen nimi **Käytännön nimi** -ruutuun.
-  3. Valitse **istuntosäätimen tyypiksi***Ohjaustiedosto ladattu (DLP:n kanssa)* .
+  3. Valitse **istuntosäätimen tyypiksi** *Ohjaustiedosto ladattu (DLP:n kanssa)* .
 
       Valitse **Aktiviteetin lähde** -osiolle tarvittavat estokäytännöt. Suosittelemme estämään hallitsemattomat ja yhteensopimattomat laitteet. Valitse latausten esto, kun istunto on Power BI:ssä.
 
