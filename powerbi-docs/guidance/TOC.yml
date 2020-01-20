@@ -26,11 +26,11 @@
               href: star-schema.md
             - name: Tietomallin koon pienentäminen
               href: import-modeling-data-reduction.md
-            - name: Automaattisen päivämäärän/ajan ohjeet Power BI Desktopissa
+            - name: Automaattisen päivämäärän/ajan ohjeet
               href: auto-date-time.md
             - name: Monta-moneen-suhteen ohjeet
               href: relationships-many-to-many.md
-            - name: Power BI Desktopin DirectQuery-mallin ohjeet
+            - name: DirectQuery-mallin ohjeet
               href: directquery-model-guidance.md
         - name: DAX
           items:
@@ -54,11 +54,15 @@
           items:
             - name: Visualisointien laajentaminen raporttisivun työkaluvihjeiden avulla
               href: report-page-tooltips.md
-            - name: Raporttisivun porautuminen
+            - name: Raporttisivun porautumisen käyttäminen
               href: report-drillthrough.md
             - name: 'Milloin sivutettuja raportteja kannattaa käyttää Power BI:ssä'
               href: report-paginated-or-power-bi.md
-            - name: 'SQL Server Reporting Services -raporttien siirtäminen Power BI:hin'
+            - name: Limittäisten parametrien käyttäminen sivutetuissa raporteissa
+              href: paginated-report-cascading-parameter.md
+            - name: Tyhjien sivujen välttäminen sivutettuja raportteja tulostettaessa
+              href: report-paginated-blank-page.md
+            - name: 'SSRS-raporttien siirtäminen Power BI:hin'
               href: migrate-ssrs-reports-to-power-bi.md
     - name: Raportit
       items:
