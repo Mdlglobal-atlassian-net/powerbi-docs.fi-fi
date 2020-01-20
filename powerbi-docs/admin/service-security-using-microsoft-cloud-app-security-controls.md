@@ -116,7 +116,7 @@ Luo istuntokäytäntö näyttöön tulevassa ikkunassa. Numeroiduissa vaiheissa 
         Kun vierität alaspäin, näet enemmän vaihtoehtoja. Vaihtoehdot näkyvät seuraavassa kuvassa lisäesimerkkien kera. 
 
   4. Valitse *luottamuksellisuustunnisteeksi* *Erittäin luottamuksellinen* tai parhaiten organisaatiollesi sopiva vaihtoehto.
-  5. Muuta **tarkastusmenetelmäksi***Ei mikään*.
+  5. Muuta **tarkastusmenetelmäksi** *Ei mikään*.
   6. Valitse **Estä**-asetus, joka sopii tarpeisiisi.
   7. Varmista, että luot tällaista toimintoa varten hälytyksen.
 
