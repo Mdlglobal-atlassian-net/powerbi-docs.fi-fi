@@ -1,20 +1,20 @@
 ---
 title: Koontinäytön tietojen luokittelu
 description: Lue lisätietoja koontinäytön tietojen luokittelusta, mukaan lukien siitä, miten järjestelmänvalvojan tulisi se määrittää ja miten koontinäytön omistajat voivat muuttaa luokitusta.
-author: amandacofsky
+author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/10/2017
-ms.author: amac
+ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 421c587c96563784d84500ba9ba06a41ed5cdade
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b9aeb033586eaf5c0effd838626af6c877080f64
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872758"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925728"
 ---
 # <a name="dashboard-data-classification"></a>Koontinäytön tietojen luokittelu
 Jokainen koontinäyttö on erilainen ja riippuen yhdistetystä tietolähteestä, havaitset luultavasti, että sinun ja työtovereidesi, joiden kanssa jaat tietoja, on suoritettava eri varotoimia tietojen arkaluontoisuuden mukaisesti. Joitakin koontinäyttöjä ei pitäisi koskaan jakaa yrityksen ulkopuolisille henkilöille tai tulostaa, kun taas osa voidaan jakaa vapaasti. Käyttämällä koontinäytön tietojen luokitusta, pystyt nostamaan tietoisuutta koontinäyttösi tarkastelijoiden keskuudessa siitä, mitä suojaustasoa tulisi käyttää. Voit lisätä koontinäyttöösi tunnisteen, jossa luokitukset on määritelty yrityksesi IT-osaston mukaan, joten kaikilla ketkä katselevat sisältöä, on saman tasoinen ymmärrys tietojen arkaluontoisuudesta.
@@ -62,7 +62,7 @@ Tietojen luokitus organisaatiossasi toteutetaan yleisen järjestelmänvalvojan t
 1. Valitse Asetukset-hammaskuvake ja sitten **Hallintaportaali**.
    
     ![](media/service-data-classification/admin_portal_in_settings.png)
-2. Vaihda **Koontinäyttöjen ja raporttien tietojen luokitus** *päälle* **Vuokraajan asetukset** -välilehdeltä.
+2. Vaihda **Koontinäyttöjen ja raporttien tietojen luokitus***päälle***Vuokraajan asetukset** -välilehdeltä.
    
     ![](media/service-data-classification/data_classification_switch_location.png)
 
