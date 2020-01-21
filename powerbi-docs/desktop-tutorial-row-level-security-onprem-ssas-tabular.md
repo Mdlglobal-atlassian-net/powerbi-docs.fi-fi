@@ -54,7 +54,7 @@ Nämä ohjeet edellyttävät **AdventureworksDW2012**-relaatiotietokannan käytt
    
    Näet kyseiset käyttäjät myös myöhemmissä tehtävissä.
 
-4. Tee seuraavaksi *sisäliitos***DimSalesTerritory**-taulukon kanssa. Taulukon avulla näet käyttäjän alueeseen liittyvät tiedot. Tämä SQL-koodi tekee *sisäliitoksen*. Kuvasta ilmenee, miltä taulukko tulee näyttämään.
+4. Tee seuraavaksi *sisäliitos* **DimSalesTerritory**-taulukon kanssa. Taulukon avulla näet käyttäjän alueeseen liittyvät tiedot. Tämä SQL-koodi tekee *sisäliitoksen*. Kuvasta ilmenee, miltä taulukko tulee näyttämään.
    
        select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeID, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryID] = b.[SalesTerritoryKey]
    

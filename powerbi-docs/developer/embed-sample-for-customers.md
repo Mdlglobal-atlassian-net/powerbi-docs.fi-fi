@@ -228,7 +228,7 @@ Vaikka sisältöä upotetaan [Power BI REST -ohjelmointirajapintojen](https://do
 
 Jos haluat upottaa sovellukseen sisältöä asiakkaillesi, tarvitset päätilillesi **käyttöoikeustietueen** tai [palvelun päänimen](embed-service-principal.md)**Azure AD:stä**. Sinun täytyy hankkia [Azure AD -käyttöoikeustietue](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) Power BI-sovelluksellesi, ennen kuin voit kutsua [Power BI REST -ohjelmointirajapintoja](https://docs.microsoft.com/rest/api/power-bi/).
 
-Jotta voit luoda Power BI -asiakasohjelman **käyttöoikeustietueen** avulla, sinun on luotava Power BI -asiakasohjelmaobjekti, joka mahdollistaa vuorovaikutuksen [Power BI REST -ohjelmointirajapintojen](https://docs.microsoft.com/rest/api/power-bi/) kanssa. Power BI -asiakasohjelmaobjekti luodaan sijoittamalla **käyttöoikeustietue*****Microsoft.Rest.TokenCredentials***-objektiin.
+Jotta voit luoda Power BI -asiakasohjelman **käyttöoikeustietueen** avulla, sinun on luotava Power BI -asiakasohjelmaobjekti, joka mahdollistaa vuorovaikutuksen [Power BI REST -ohjelmointirajapintojen](https://docs.microsoft.com/rest/api/power-bi/) kanssa. Power BI -asiakasohjelmaobjekti luodaan sijoittamalla **käyttöoikeustietue** ***Microsoft.Rest.TokenCredentials***-objektiin.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;

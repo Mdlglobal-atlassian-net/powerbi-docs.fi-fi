@@ -50,7 +50,7 @@ Tässä videossa näytetään Power BI Desktopin raporttieditori.
 ### <a name="collaborating"></a>Yhteistyö
 
 
-Kun olet luonut raportit, voit tallentaa ne *työtilaan***Power BI -palvelussa**, jossa sinä ja työtoverisi teette yhteistyötä. Voit luoda *koontinäyttöjä* näiden raporttien päälle. Voit sitten jakaa kyseiset koontinäytöt ja raportit raporttien käyttäjille organisaation sisä- ja ulkopuolella. Raportin käyttäjät voivat tarkastella niitä Power BI -palvelun *lukunäkymässä*, ei muokkausnäkymässä. He eivät voi käyttää kaikkia ominaisuuksia, jotka ovat saatavilla raportin tekijöille.  Voit myös jakaa tietojoukkosi ja antaa muiden luoda omia raportteja niistä. Lue lisää [yhteistyöstä Power BI -palvelussa](../service-new-workspaces.md).
+Kun olet luonut raportit, voit tallentaa ne *työtilaan* **Power BI -palvelussa**, jossa sinä ja työtoverisi teette yhteistyötä. Voit luoda *koontinäyttöjä* näiden raporttien päälle. Voit sitten jakaa kyseiset koontinäytöt ja raportit raporttien käyttäjille organisaation sisä- ja ulkopuolella. Raportin käyttäjät voivat tarkastella niitä Power BI -palvelun *lukunäkymässä*, ei muokkausnäkymässä. He eivät voi käyttää kaikkia ominaisuuksia, jotka ovat saatavilla raportin tekijöille.  Voit myös jakaa tietojoukkosi ja antaa muiden luoda omia raportteja niistä. Lue lisää [yhteistyöstä Power BI -palvelussa](../service-new-workspaces.md).
 
 ### <a name="self-service-data-prep-with-dataflows"></a>Omatoiminen tietojen valmisteleminen tietovoiden avulla
 
