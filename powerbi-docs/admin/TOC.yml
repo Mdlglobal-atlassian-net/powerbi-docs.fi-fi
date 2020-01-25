@@ -52,6 +52,8 @@
               href: service-security-enable-data-sensitivity-labels.md
             - name: 'Microsoft Cloud App Securityn käyttäminen Power BI:n kanssa'
               href: service-security-using-microsoft-cloud-app-security-controls.md
+            - name: Tietojen suojaamisen tulosraportti
+              href: service-security-data-protection-metrics-report.md
         - name: Rivitason suojaus
           href: ../service-admin-rls.md
         - name: Mobiilisovellusten määrittäminen Intunella

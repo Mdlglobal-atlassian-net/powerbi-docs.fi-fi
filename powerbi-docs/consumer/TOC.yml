@@ -176,8 +176,8 @@
               href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
             - name: Suosikit mobiilisovelluksissa
               href: mobile/mobile-apps-favorites.md
-            - name: Raportin vuorovaikutuksen määrittäminen mobiilisovelluksissa (vain puhelin)
-              href: mobile/mobile-app-single-tap.md
+            - name: Vuorovaikutusasetusten määrittäminen (vain puhelin)
+              href: mobile/mobile-app-interaction-settings.md
             - name: Tietoilmoitusten määrittäminen Power BI -mobiilisovelluksissa
               href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
             - name: Power BI -mobiilisovellusten ilmoitusten vastaanottaminen
