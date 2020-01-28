@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 935b453dabeaa731a218175526ddddeb980a2b92
-ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
+ms.openlocfilehash: 6abcb77e3eb534e8b5d20c1d5567c117cbb97ffe
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692455"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76161428"
 ---
 # <a name="dax-avoid-using-filter-as-a-filter-argument"></a>DAX: Vältä FILTER-arvon käyttämistä suodatinargumenttina
 
@@ -36,13 +36,13 @@ CALCULATE(
 
 CALCULATE-funktio hyväksyy [FILTER](/dax/filter-function-dax)-DAX-funktion palauttaman taulukkolausekkeen, joka arvioi sen suodatuslausekkeen kullekin **Product**-taulukon riville. Se saa oikean tuloksen – punaisten tuotteiden myyntituloksen. Tulos voidaan kuitenkin saada paljon tehokkaammin käyttämällä totuusarvolauseketta.
 
-Tässä on parannettu mittarimääritys, joka käyttää totuuslauseketta taulukkolausekkeen sijaan.
+Tässä on parannettu mittarimääritys, joka käyttää totuuslauseketta taulukkolausekkeen sijaan. [KEEPFILTERS](/dax/keepfilters-function-dax) DAX -funktio varmistaa, että **Color**-sarakkeeseen sovellettavat kaikki olemassa olevat suodattimet säilytetään, eikä niitä korvata.
 
 ```dax
 Red Sales =
 CALCULATE(
     [Sales],
-    'Product'[Color] = "Red"
+    KEEPFILTERS('Product'[Color] = "Red")
 )
 ```
 

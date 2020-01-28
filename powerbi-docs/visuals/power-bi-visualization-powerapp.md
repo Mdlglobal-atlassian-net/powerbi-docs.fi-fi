@@ -1,0 +1,109 @@
+---
+title: Upota uusi Power-sovellus Power BI -raporttiin
+description: Upota sovellus, joka käyttää samaa tietolähdettä ja voidaan suodattaa samalla tavalla kuin muut raporttikohteet
+author: mihart
+manager: kvivek
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: powerbi-desktop
+ms.topic: tutorial
+ms.date: 01/14/2020
+ms.author: mblythe
+LocalizationGroup: Visualizations
+ms.openlocfilehash: d9549364f9129ee4ddc6e90fb973cb73c241e4a9
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76042114"
+---
+# <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>Opetusohjelma: Upota Power Apps -visualisointi Power BI -raporttiin
+
+Tässä opetusohjelmassa luomme Power Apps -visualisoinnilla uuden Power BI -malliraporttiin upotetun sovelluksen. Tämä sovellus on vuorovaikutuksessa kyseisen raportin muiden visualisointien kanssa.
+
+Jos sinulla ei ole Power Apps -tilausta, [luo ilmainen tili](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) ennen aloittamista.
+
+Tässä opetusohjelmassa opit:
+> [!div class="checklist"]
+> * Lisäämään Power Apps -visualisoinnin Power I -raporttiin
+> * Luomaan Power Appsissa työskennellen uuden sovelluksen, joka käyttää Power BI -raportin tietoja
+> * Tarkastelemaan ja käsittelemään raportin Power Apps -visualisointia
+
+## <a name="prerequisites"></a>Edellytykset
+
+* [Google Chrome](https://www.google.com/chrome/browser/)- tai [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) -selain
+* [Power BI -tilaus](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi), jossa on [mahdollisuusanalyysimalli](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample) asennettuna
+* Käsitys siitä, miten [sovelluksia luodaan Power Appsissa](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app-scratch.md) ja [Power BI -raportteja](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour) muokataan
+
+
+
+## <a name="create-a-new-app"></a>Luo uusi sovellus
+Kun lisäät Power Apps -visualisoinnin raporttiisi, se käynnistää PowerApps Studion PowerAppsin ja Power BI:n välisellä reaaliaikaisella tietoyhteydellä.
+
+1. Avaa mahdollisuusanalyysimallin raportti ja valitse *Tulevia mahdollisuuksia* -sivu. 
+
+
+2. Siirtämällä raporttiruutuja ja muuttamalla niiden kokoa voit tehdä tilaa uudelle visualisoinnille.
+
+    ![Siirrä raporttiruutuja ja muuta niiden kokoa](media/power-bi-visualization-powerapp/power-bi-report-page.jpg)
+
+2. Valitse Visualisoinnit-ruudusta Power Apps -kuvake ja muuta sitten visualisoinnin kokoa, kunnes se mahtuu luomaasi tilaan.
+
+    ![Visualisointiruutu, jossa on valittuna PowerApps-kuvake](media/power-bi-visualization-powerapp/power-bi-powerapps-icon.jpg)
+
+3. Valitse **Kentät**-ruudussa **Nimi**, **Tuotekoodi** ja **Myyntivaihe**. 
+
+    ![valitse kentät](media/power-bi-visualization-powerapp/power-bi-fields.jpg)
+
+4. Valitse Power Apps -visualisoinnissa Power Apps -ympäristö, johon haluat luoda sovelluksen, ja napsauta tai napauta sitten **Luo uusi**.
+
+    ![Luo uusi sovellus](media/power-bi-visualization-powerapp/power-bi-create-new-powerapp.png)
+
+    Näet Power Apps Studiossa luodun perussovelluksen sekä *valikoiman*, jossa näkyy jokin Power BI:ssä valitsemistasi kentistä.
+
+    ![Power Apps avautuu](media/power-bi-visualization-powerapp/power-bi-power-app.png)
+
+5.  Muuta valikoiman kokoa siten, että se vie vain puolet näytöstä. 
+
+6. Valitse vasemmassa ruudussa **Screen1** ja määritä sitten näytön **Täyttö**-ominaisuudeksi ”LightBlue” (jotta se erottuu paremmin raportissa).
+
+    ![värivalikoima](media/power-bi-visualization-powerapp/power-bi-powerapps-fill.png)
+
+6. Tee tilaa otsikko-ohjausobjektille. 
+
+    ![muuta valikoiman mittoja](media/power-bi-visualization-powerapp/power-bi-powerapps-gallery.png)
+
+
+8. Lisää kohdassa **valikoima** tekstiotsikko-ohjausobjekti.
+
+   ![otsikko-ohjausotsikko](media/power-bi-visualization-powerapp/power-bi-label.png)
+
+7. Vedä otsikko visualisoinnin alareunaan. Aseta **Teksti**-ominaisuudeksi `"Opportunity Count: " & CountRows(Gallery1.AllItems)`. Näet nyt tietojoukon mahdollisuuksien kokonaismäärän.
+
+    ![Sovellus ja valikoima, jonka kokoa on muutettu](media/power-bi-visualization-powerapp/power-bi-power-app-label.png)
+
+    ![Sovellus, jonka otsikkoa on päivitetty](media/power-bi-visualization-powerapp/power-bi-label-live.png)
+
+7. Tallenna sovellus nimellä ”Mahdollisuudet-sovellus”. 
+
+    ![tallenna sovellus](media/power-bi-visualization-powerapp/power-bi-save-powerapp.png)
+
+
+## <a name="view-the-app-in-the-report"></a>Sovelluksen tarkasteleminen raportissa
+Sovellus on nyt käytettävissä Power BI -raportissa, ja se on vuorovaikutuksessa muiden visualisointien kanssa, koska se jakaa saman tietolähteen.
+
+![Sovellus Power BI -raportissa](media/power-bi-visualization-powerapp/power-bi-powerapps-visual.png)
+
+Valitse Power BI -raportin osittajassa **Jan**. Näin koko raportti suodatetaan, mukaan lukien sovelluksen tiedot.
+
+![suodatettu raportti](media/power-bi-visualization-powerapp/power-bi-last.png)
+
+Huomaa, että mahdollisuuksien lukumäärä sovelluksessa vastaa raportin vasemmassa yläkulmassa olevaa lukua. Voit valita muita raportin kohteita; sovelluksen tiedot päivitetään.
+
+
+## <a name="clean-up-resources"></a>Puhdista resurssit
+Jos et enää halua käyttää mahdollisuusanalyysimallia, voit poistaa koontinäytön, raportin ja tietojoukon.
+
+
+## <a name="next-steps"></a>Seuraavat vaiheet
+[Q&A-visualisointi](power-bi-visualization-types-for-reports-and-q-and-a.md)

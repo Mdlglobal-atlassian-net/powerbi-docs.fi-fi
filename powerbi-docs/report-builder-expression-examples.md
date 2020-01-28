@@ -1,6 +1,6 @@
 ---
 title: Power BI:n raportin muodostimen lauseke-esimerkit
-description: Lausekkeita käytetään usein Power BI:n sivutettujen raporttien muodostimella luoduissa raporteissa sisällön ja raportin ulkoasun hallintaan.
+description: Lausekkeita käytetään usein Power BI:n raporttien muodostimella luoduissa raporteissa sisällön ja raportin ulkoasun hallintaan.
 ms.date: 10/21/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 06847956eae4dfefc7cff75b5a360fbb8b892c39
-ms.sourcegitcommit: d173e22f5a3e76717adfaa573ea391bde0338ffe
+ms.openlocfilehash: 48e81c91a4555b4c8ea847ddffb1413058bbb152
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728557"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953973"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Power BI:n raportin muodostimen lauseke-esimerkit
-Lausekkeita käytetään usein Power BI:n sivutettujen raporttien muodostimella luoduissa raporteissa sisällön ja raportin ulkoasun hallintaan. Lausekkeet kirjoitetaan Microsoft Visual Basicilla, ja niissä voidaan käyttää sisäisiä funktioita, mukautettua koodia, raportti- ja ryhmämuuttujia sekä käyttäjän määrittämiä muuttujia. Lausekkeet alkavat yhtäläisyysmerkillä (=).   
+Lausekkeita käytetään usein Power BI:n raporttien muodostimella luoduissa raporteissa sisällön ja raportin ulkoasun hallintaan. Lausekkeet kirjoitetaan Microsoft Visual Basicilla, ja niissä voidaan käyttää sisäisiä funktioita, mukautettua koodia, raportti- ja ryhmämuuttujia sekä käyttäjän määrittämiä muuttujia. Lausekkeet alkavat yhtäläisyysmerkillä (=).   
 
 Tässä aiheessa on esimerkkejä lausekkeista, joita voidaan käyttää raporttien yleisissä toiminnoissa.  
   

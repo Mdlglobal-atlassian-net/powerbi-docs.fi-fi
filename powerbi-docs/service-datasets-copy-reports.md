@@ -1,31 +1,33 @@
 ---
-title: Raporttien kopioiminen muista työtiloista (esikatselu) – Power BI
-description: Lue ohjeet siihen, miten voit jakaa tietojoukon koko organisaation käyttäjien kanssa. Tämän ansiosta he voivat luoda omissa työtiloissaan raportteja, jotka perustuvat sinun tietojoukkoosi.
+title: Raporttien kopioiminen muista sovelluksista tai työtiloista (esikatselu) – Power BI
+description: Lue, miten voit luoda raportista kopion ja tallentaa sen omaan työtilaasi.
 author: maggiesMSFT
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 01/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9c7cbd895a913b76a9c0b87155f7800c5538ab28
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 8716a304e5b117c027d75db149ebcc8d95efebfe
+ms.sourcegitcommit: 313a5a6a01c09038a6152d681103accbd2faf437
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223856"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76268947"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Raporttien kopioiminen muista työtiloista (esikatselu)
 
-Kun löydät työtilasta tai sovelluksesta raportin, josta pidät, voit luoda siitä kopion ja tallentaa sen eri työtilaan. Tämän jälkeen voit muokata raportin kopiota ja lisätä sekä poistaa visualisointeja ja muita elementtejä. Sinun ei tarvitse huolehtia tietomallin luomisesta. Se on jo luotu sinulle. Lisäksi on paljon helpompaa muokata aiemmin luotua raporttia kuin aloittaa kokonaan alusta. Kun luot sovelluksen uudesta työtilasta, et kuitenkaan voi julkaista raportin kopiota sovelluksessa. Lisätietoja on [artikkelin Käytä tietojoukkoja eri työtiloissa kohdassa Huomioitavat asiat ja rajoitukset](service-datasets-across-workspaces.md#considerations-and-limitations).
+Kun löydät työtilasta tai sovelluksesta raportin, josta pidät, voit luoda siitä kopion ja tallentaa sen eri työtilaan. Tämän jälkeen voit muokata raportin kopiota ja lisätä sekä poistaa visualisointeja ja muita elementtejä. Sinun ei tarvitse huolehtia tietomallin luomisesta. Se on jo luotu sinulle. Lisäksi on paljon helpompaa muokata aiemmin luotua raporttia kuin aloittaa kokonaan alusta. Kun luot sovelluksen työtilastasi, et kuitenkaan voi aina julkaista raportin kopiota sovelluksessa. Lisätietoja on [artikkelin Käytä tietojoukkoja eri työtiloissa kohdassa Huomioitavat asiat ja rajoitukset](service-datasets-across-workspaces.md#considerations-and-limitations).
 
 > [!NOTE]
 > Jos haluat luoda kopion, tarvitset Pro-käyttöoikeuden, vaikka alkuperäinen raportti olisi Premium-kapasiteetin työtilassa.
 
-## <a name="save-a-copy-of-a-report"></a>Tallenna kopio raportista
+## <a name="save-a-copy-of-a-report-in-a-workspace"></a>Tallenna kopio raportista työtilassa
 
-1. Siirry sovelluksessa tai työtilassa Raportit-luettelonäkymään.
+1. Siirry työtilassa Raportit-luettelonäkymään.
+
+    ![Raportit-luettelonäkymä](media/service-datasets-copy-reports/power-bi-report-list-view.png)
 
 1. Valitse **Toiminnot**-kohdasta **Tallenna kopio**.
 
@@ -37,22 +39,46 @@ Kun löydät työtilasta tai sovelluksesta raportin, josta pidät, voit luoda si
 
     ![Tallenna kopio -valintaikkuna](media/service-datasets-copy-reports/power-bi-dataset-save-report.png)
 
-    Työtila, johon voit tallentaa, riippuu kohteesta, josta kopiot sisällön. Kun kopiot työtilasta, voit tallentaa raportin nykyiseen työtilaan tai toiseen työtilaan Power BI-palvelussa. Näet vain uutta käyttöliittymää käyttävät työtilat, joiden jäsen olet. Kun kopioit sovelluksesta, voit tallentaa raportin omaan työtilaasi.
+    Voit tallentaa raportin nykyiseen työtilaan tai toiseen työtilaan Power BI-palvelussa. Näet vain uutta käyttöliittymää käyttävät työtilat, joiden jäsen olet. 
   
 4. Valitse **Tallenna**.
 
-    Kun tallennat kopion raportista, luot reaaliaikaisen yhteyden tietojoukkoon. Lisäksi voit avata raportin luontitoiminnon ja koko käytettävissä olevan tietojoukon. Et ole tehnyt kopiota tietojoukosta. Tietojoukko on yhä sen alkuperäisessä sijainnissa. Voit käyttää kaikkia tietojoukon taulukoita ja mittareita omassa raportissasi. Tietojoukossa on käytössä rivitason suojauksen (RLS) rajoitukset, joten näet vain tiedot, jotka sinulla on oikeus nähdä RLS-roolisi perusteella.
-
-    Power BI luo automaattisesti merkinnän tietojoukkojen luetteloon, jos raportti perustuu työtilan ulkopuolella olevaan tietojoukkoon. Tämän tietojoukon kuvake on eri kuin työtilan tietojoukkojen kuvake: ![Jaettu tietojoukko -kuvake](media/service-datasets-discover-across-workspaces/power-bi-shared-dataset-icon.png)
-
-
+    Power BI luo raportin kopion automaattisesti ja merkinnän tietojoukkojen luetteloon, jos raportti perustuu työtilan ulkopuolella olevaan tietojoukkoon. Tämän tietojoukon kuvake on eri kuin työtilan tietojoukkojen kuvake: ![Jaettu tietojoukko -kuvake](media/service-datasets-discover-across-workspaces/power-bi-shared-dataset-icon.png)
+    
     Näin työtilan jäsenet voivat päätellä, mitkä raportit ja koontinäytöt käyttävät työtilan ulkopuolella olevia tietojoukkoja. Tapahtuma näyttää tietojoukkoa koskevia tietoja ja valikoituja toimintoja.
 
     ![Tietojoukon toiminnot](media/service-datasets-across-workspaces/power-bi-dataset-actions.png)
 
+    Lisätietoja raportista ja aiheeseen liittyvästä tietojoukosta on tämän artikkelin kohdassa [Raportin kopio](#your-copy-of-the-report).
+
+## <a name="copy-a-report-in-an-app"></a>Kopioi raportti sovelluksessa
+
+1. Avaa kopioitava raportti sovelluksessa.
+2. Valitse valikkorivillä **Lisää vaihtoehtoja** ( **...** ) > **Tallenna kopio**.
+
+    ![Tallenna kopio raportista](media/service-datasets-copy-reports/power-bi-save-copy.png)
+
+    Näet **Tallenna kopio** -vaihtoehdon vain, jos raportti on uuden työtilan käyttökokemuksessa ja sinulla on [muodostamisoikeus](service-datasets-build-permissions.md).
+
+3. Anna raportille nimi > **Tallenna**.
+
+    ![Anna raportin kopiolle nimi](media/service-datasets-copy-reports/power-bi-save-report-from-app.png)
+
+    Kopiosi tallennetaan automaattisesti omaan työtilaasi.
+
+4. Avaa kopio valitsemalla **Siirry raporttiin**.
+
+## <a name="your-copy-of-the-report"></a>Raportin kopio
+
+Kun tallennat kopion raportista, luot reaaliaikaisen yhteyden tietojoukkoon. Lisäksi voit avata raportin luontitoiminnon ja koko käytettävissä olevan tietojoukon. 
+
+![Muokkaa raportin kopiota](media/service-datasets-copy-reports/power-bi-edit-report-copy.png)
+
+Et ole tehnyt kopiota tietojoukosta. Tietojoukko on yhä sen alkuperäisessä sijainnissa. Voit käyttää kaikkia tietojoukon taulukoita ja mittareita omassa raportissasi. Tietojoukossa on käytössä rivitason suojauksen (RLS) rajoitukset, joten näet vain tiedot, jotka sinulla on oikeus nähdä RLS-roolisi perusteella.
+
 ## <a name="view-related-datasets"></a>Näytä liittyvät tietojoukot
 
-Kun sinulla on työtilassasi raportti, sinun täytyy ehkä tietää, mihin tietojoukkoon se perustuu.
+Kun sinulla on raportti yhdessä työtilassa toisen työtilan tietojoukon perusteella, sinun täytyy ehkä tietää enemmän tietojoukosta, johon se perustuu.
 
 1. Valitse Raportit-luettelonäkymässä **Näytä aiheeseen liittyvät**.
 

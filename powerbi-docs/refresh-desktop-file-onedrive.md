@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: ba911361ad2837a10f28358cbd1510effc1dd7eb
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: b2a05f3112a9272d5e41cff20729c445c7a0ae39
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75837656"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76038557"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Päivitä Onedriveen tai SharePoint Onlineen tallennettuja tietojoukkoja
 Tiedostojen tuominen OneDrivesta tai SharePoint Onlinesta Power BI -palveluun on mainio tapa varmistaa, että Power BI Desktop -työsi synkronoidaan Power BI -palvelun kanssa.
@@ -37,7 +37,7 @@ Kun päivität tietojoukon, Power BI ei muodosta yhteyttä OneDriven tai SharePo
 Power BI tukee **Päivitä**- ja **Ajoita päivitys** -komentoja tietojoukoille, jotka on luotu sellaisista Power BI Desktop -tiedostoista, jotka tuotu paikallisesta asemasta, jossa **Nouda tiedot**- tai **Kyselyeditori**-kohtaa käytetään yhteyden muodostamiseen ja tietojen lataamiseen seuraavista tietolähteistä.
 
 > [!NOTE]
-> OneDrivessä olevia tuotuja tiedostoja tuetaan, mutta reaaliaikaisia yhdistettyjä tietojoukkoja OneDrivessä ei tueta OneDrive-päivitysskenaariona.
+> Reaaliaikaisten yhteyksien tietojoukkojen OneDrive-päivitystä tuetaan. OneDrive-päivitysskenaariossa ei kuitenkaan tueta reaaliaikaisen yhteyden tietojoukon muuttamista yhdestä tietojoukosta toiseen jo julkaistussa raportissa.
 
 ### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
 * Kaikki online-tietolähteet, jotka näkyvät Power BI Desktopin **Nouda tiedot**- ja **Kyselyeditori**-kohdassa.

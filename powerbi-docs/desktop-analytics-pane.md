@@ -6,31 +6,34 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 01/10/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 25d80cd81eb06913eb24c17ef10db47fa4d2bea5
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 4ad843078e452502a94aa7d60b3304528fd25496
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761906"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76038645"
 ---
 # <a name="use-the-analytics-pane-in-power-bi-desktop"></a>Analytiikka-ruudun käyttäminen Power BI Desktopissa
-**Power BI Desktopin** **Analytiikka**-ruudussa voit lisätä dynaamisia *viiteviivoja* visualisointeihin ja määrittää kohdistuksen tärkeille trendeille tai merkityksellisille tiedoille. **Analytiikka**-ruutu sijaitsee Power BI Desktopin **Visualisoinnit**-alueella.
 
-![](media/desktop-analytics-pane/analytics-pane_1.png)
+Power BI Desktopin **Analytiikka**-ruudussa voit lisätä dynaamisia *viiteviivoja* visualisointeihin ja määrittää kohdistuksen tärkeille trendeille tai merkityksellisille tiedoille. **Analytiikka**-kuvake ja -ruutu sijaitsevat Power BI Desktopin **Visualisoinnit**-alueella.
+
+![Analytiikka-ruutu, Visualisoinnit, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_1.png)
 
 > [!NOTE]
 > **Analytiikka**-ruutu näkyy ainoastaan, jos valitset visualisoinnin Power BI Desktop -pohjalla.
 
 ## <a name="search-within-the-analytics-pane"></a>Haku Analytiikka-ruudussa
-Helmikuun 2018 **Power BI Desktop** -julkaisusta (versio 2.55.5010.201 tai uudempi) alkaen voit tehdä hakuja **Analytiikka**-ruudussa, joka on **Visualisoinnit** -ruudun alaosio. Hakuruutu tulee näkyviin, kun **Analytiikka**-ruutu valitaan, kuten alla olevassa kuvassa on esitetty.
 
-![](media/desktop-analytics-pane/analytics-pane_1b.png)
+Helmikuun 2018 Power BI Desktop -julkaisusta (versio 2.55.5010.201 tai uudempi) alkaen voit tehdä hakuja**Analytiikka**-ruudussa, joka on **Visualisoinnit**-ruudun alaosio. Hakuruutu tulee näkyviin, kun valitset **Analytiikka**-kuvakkeen.
 
-## <a name="using-the-analytics-pane"></a>Analytiikka-ruudun käyttäminen
-**Analytiikka**-ruudussa voit luoda seuraavanlaisia dynaamisia viiteviivoja (kaikki viivat eivät ole käytettävissä kaikkien visualisointityyppien tapauksessa):
+![Hakuruutu, Analytiikka-ruutu, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_1b.png)
+
+## <a name="use-the-analytics-pane"></a>Analytiikka-ruudun käyttäminen
+
+**Analytiikka**-ruudussa voit luoda seuraavanlaisia dynaamisia viiteviivoja:
 
 * X-akselin yhtenäinen viiva
 * Y-akselin yhtenäinen viiva
@@ -39,82 +42,104 @@ Helmikuun 2018 **Power BI Desktop** -julkaisusta (versio 2.55.5010.201 tai uudem
 * Keskiarvon viiva
 * Mediaanin viiva
 * Prosenttipisteviiva
+* Symmetriavarjostus
+
+> [!NOTE]
+> Kaikki viivat eivät ole saatavissa kaikille visualisointityypeille.
 
 Seuraavissa osiossa esitetään, kuinka voit käyttää **Analytiikka**-ruutua ja dynaamisia viiteviivoja visualisoinneissa.
 
 Voit tarkastella tietylle visualisoinnille käytettävissä olevia dynaamisia viiteviivoja noudattamalla seuraavia ohjeita:
 
 1. Valitse tai luo visualisointi ja valitse sitten **Analytiikka**-kuvake **Visualisoinnit**-osiosta.
-   
-   ![](media/desktop-analytics-pane/analytics-pane_2.png)
-2. Valitse alanuoli luotavan viivatyypin kohdalla, jotta saat sen asetukset näkyviin. Tässä tapauksessa valitaan **Keskiarvon viiva**.
-   
-   ![](media/desktop-analytics-pane/analytics-pane_3.png)
-3. Luo uusi viiva valitsemalla **+ Lisää**. Voit sitten määrittää viivalle nimen kaksoisnapsauttamalla tekstiruutua ja kirjoittamalla haluamasi nimen.
-   
-   Viivalle on mahdollista valita monenlaisia asetuksia, kuten *väri*, *läpinäkyvyys*, *tyyli* ja *sijainti* (suhteessa visualisoinnin tietoelementteihin) sekä mahdollisen otsikon sisällyttäminen. Voit myös valita, mihin visualisoinnin **mittariin** haluat viivan perustuvan, valitsemalla avattavan **Mittari**-luettelon, joka täyttyy automaattisesti visualisoinnin tietoelementeillä. Tässä esimerkkitapauksessa valitsemme mittarin *Sää*, annamme sille otsikon *Keskimääräinen sää* ja mukautamme muutamia muita asetuksia alla esitetyllä tavalla.
-   
-   ![](media/desktop-analytics-pane/analytics-pane_4.png)
-4. Jos haluat arvopisteen otsikon näkyvän, liikuta **Arvopisteen otsikko** -liukusäädintä. Tekemällä niin saat näkyviin koko joukon arvopisteen otsikon lisäasetuksia, kuten seuraavassa kuvassa esitetään.
-   
-   ![](media/desktop-analytics-pane/analytics-pane_5.png)
-5. Huomioi luku, joka näkyy **Keskiarvon viiva** -kohdan vieressä **Analytiikka**-ruudussa. Se kertoo sinulle, kuinka monta dynaamista viivaa sinulla on tällä hetkellä visualisoinnissa ja minkä tyyppisiä ne ovat. Jos lisäämme **suurimman arvon viivan***Elinkustannukset*-visualisointiin, huomaat, että **Analytiikka**-ruudussa näkyy, että tässä visualisoinnissa on nyt käytössä myös dynaaminen **Suurimman arvon viiva** -viiteviiva.
-   
-   ![](media/desktop-analytics-pane/analytics-pane_6.png)
 
-Jos valitsemassasi visualisoinnissa (Tässä tapauksessa **Kartta**-visualisoinnissa) ei voi käyttää dynaamisia viiteviivoja, näkyviin tulee seuraava viesti, kun valitset **Analytiikka**-ruudun.
+    ![Tarkastele analytiikkaa visualisoinnille, Visualisoinnit-ruutu, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_2.png)
 
-![](media/desktop-analytics-pane/analytics-pane_7.png)
+2. Valitse viivatyyppi, jonka haluat luoda, jotta saat sen asetukset esille. Tässä tapauksessa valitaan **Keskiarvon viiva**.
+
+    ![Keskiarvon viiva, Analytiikka-ruutu, Visualisoinnit, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_3.png)
+
+3. Luo uusi viiva valitsemalla **+&nbsp;Lisää**. Sen jälkeen voit nimetä viivan. Kaksoisnapsauta tekstiruutua ja syötä nimesi.
+
+    Nyt sinulla on käytettävissäsi monenlaisia asetuksia viivallesi. Voit määrittää sen **värin**, **läpinäkyvyyden** prosenttiluvun, **viivatyylin** ja **sijainnin** (suhteessa visualisoinnin tietoelementteihin). Voit myös valita, sisällytetäänkö **arvopisteen otsikko**. Jos haluat määrittää visuaalisen mittayksikön, jolle viivasi perustuu, valitse avattava luettelo **Mitta**, joka täyttyy automaattisesti visualisoinnin tietoelementeillä. Tässä valitsemme mittarin **Kulttuuri**, annamme sille otsikon *Keskimääräinen kulttuuri* ja mukautamme muutamia muita asetuksia.
+
+    ![Kulttuurin keskiarvoviiva, Analytiikka-ruutu, Visualisoinnit, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_4.png)
+
+4. Jos haluat arvopisteen otsikon näkyvän, liikuta **Arvopisteen otsikko** -liukusäädintä asennosta **Ei käytössä** asentoon **Käytössä**. Tekemällä niin saat näkyviin koko joukon arvopisteen otsikon lisäasetuksia.
+
+    ![Arvopisteen otsikon asetukset, Analytiikka-ruutu, Visualisoinnit, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_5.png)
+
+5. Huomioi luku, joka näkyy **Keskiarvon viiva** -kohdan vieressä **Analytiikka**-ruudussa. Se kertoo sinulle, kuinka monta dynaamista viivaa sinulla on tällä hetkellä visualisoinnissa ja minkä tyyppisiä ne ovat. Jos lisäämme **suurimman arvon viivan** **Kohtuuhintaisuus**-visualisointiin, **Analytiikka**-ruudussa näkyy, että tässä visualisoinnissa on nyt käytössä myös dynaaminen **Suurimman arvon viiva** -viiteviiva.
+
+    ![Suurimman arvon viivan ja keskiarvoviivan enimmäisarvot, Analytiikka-ruutu, Visualisoinnit, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_6.png)
+
+Jos valitsemassasi visualisoinnissa (tässä tapauksessa **Kartta**-visualisoinnissa) ei voi käyttää dynaamisia viiteviivoja, näkyviin tulee seuraava ilmoitus, kun valitset **Analytiikka**-ruudun.
+
+![Analytiikka ei saatavana Kartta-visualisointiin, Analytiikka-ruutu, Visualisoinnit, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_7.png)
 
 Voit korostaa kaikenlaisia merkityksellisiä tietoja luomalla dynaamisia viiteviivoja **Analytiikka**-ruudun avulla.
 
-Aiomme lisätä enemmän ominaisuuksia ja toimintoja, muun muassa lisätä niiden visualisointien määrää, joissa voidaan käyttää dynaamisia viiteviivoja. Sinun kannattaa siksi tarkistaa uudet ominaisuudet tihein välein.
+Aiomme lisätä enemmän ominaisuuksia ja toimintoja, muun muassa lisätä niiden visualisointien määrää, joissa voidaan käyttää dynaamisia viiteviivoja. Sinun kannattaa tarkistaa uudet ominaisuudet tihein välein.
 
 ## <a name="apply-forecasting"></a>Ennusteiden käyttäminen
-Voit käyttää **Ennuste**-ominaisuutta valitsemalla visualisoinnin ja laajentamalla sitten **Ennuste**-osion **Analytiikka**-ruudussa. Ennusteen muokkaamiseksi voidaan määrittää useita syötteitä, kuten *Ennusteen pituus* ja *Luottamusväli*. Seuraavassa kuvassa esitetään perusviivavisualisointi, jossa on käytetty ennustamista. Voit kuitenkin hyödyntää mielikuvitustasi ja kokeilla *ennustamis*toiminnon käyttöä eri tavoin nähdäksesi, miten se soveltuu malleihisi.
 
-![](media/desktop-analytics-pane/analytics-pane_8.png)
+Jos tietolähteesi sisältää aikatietoja, sinun kannattaa käyttää *Ennustaminen*-ominaisuutta. Valitse vain visualisointi ja laajenna sitten **Ennuste**-osaa **Analytiikka**-ruudussa. Ennusteen muokkaamiseksi on määritettävissä useita syötteitä, kuten **Ennusteen pituus** tai **Luottamusväli**. Seuraava kuva esittää perusviivavisualisointia, jossa käytetään ennusteita. Käytä mielikuvitustasi (ja kokeile ennusteita mielesi mukaan), niin näet, miten ne voivat vaikuttaa malleihisi.
+
+![Ennusteominaisuus, Analytiikka-ruutu, Visualisoinnit, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_8.png)
+
+> [!NOTE]
+> Ennusteominaisuus on saatavissa vain viivakaaviovisualisoinneille.
 
 ## <a name="limitations"></a>Rajoitukset
-Dynaamisten viiteviivojen käyttömahdollisuus perustuu käytössä olevan visualisoinnin tyyppiin. Seuraavassa luettelossa esitetään, mitkä dynaamiset viivat ovat tällä hetkellä käytettävissä eri visualisoinneissa:
 
-Seuraavissa visualisoinneissa voidaan käyttää kaikkia dynaamisia viivoja:
+Dynaamisten viiteviivojen käyttömahdollisuus perustuu käytössä olevan visualisoinnin tyyppiin. Seuraavat luettelot kuvaavat näitä rajoituksia yksityiskohtaisemmin.
+
+Voit käyttää *x-akselin vakioviivaa*, *y-akselin vakioviivaa* ja *symmetriavarjostusta* seuraavassa visualisoinnissa:
+
+* Pistekaavio
+
+*Vakioviivan*, *minimiviivan*, *maksimiviivan*, *keskiarvoviivan*, *mediaaniviivan*, ja *prosenttipisteviivan* käyttö on mahdollista näillä visualisoinneilla:
 
 * Aluekaavio
+* Klusteroitu palkkikaavio
+* Klusteroitu pylväskaavio
 * Viivakaavio
 * Pistekaavio
-* Klusteroitu palkkikaavio
 
 Seuraavissa visualisoinneissa voidaan käyttää vain *yhtenäistä viivaa***Analytiikka**-ruudusta:
 
 * Pinottu aluekaavio
 * Pinottu palkkikaavio
 * Pinottu pylväskaavio
+* Vesiputouskaavio
 * 100 % pinottu palkkikaavio
 * 100 % pinottu pylväskaavio
 
-Seuraavissa visualisoinneissa ainoa valittavissa oleva vaihtoehto on tällä hetkellä *trendiviiva*:
+Seuraavissa visualisoinneissa voi käyttää *trendiviivaa*, jos aikatietoja on käytettävissä:
 
-* Pinoamaton viiva
+* Aluekaavio
 * Klusteroitu pylväskaavio
+* Viivakaavio
+* Viiva- ja klusteroitu pylväskaavio
 
-Lopuksi tulee huomioida, että **Analytiikka**-ruudusta valittavia dynaamisia viiteviivoja ei voida tällä hetkellä käyttää ei-karteesisissa visualisoinneissa, kuten seuraavissa:
+Lopuksi: on monia visualisointeja, joissa et voi käyttää mitään dynaamisia viivoja kuten (mutta ei pelkästään) seuraavat:
 
-* Matriisi
-* Ympyräkaavio
-* Ympyrä
-* Taulukko
+* Suppilo
+* Viiva- ja klusteroitu pylväskaavio
+* Viiva- ja pinottu pylväskaavio
+* Nauhakaavio
+* Epäkartesiaaniset visualisoinnit, kuten donitsikaavio, mittari, matriisi, ympyräkaavio ja taulukko.
 
-Prosenttipisteviiva on käytettävissä vain, kun käytetään tuotuja tietoja **Power BI Desktopissa** tai kun muodostetaan reaaliaikainen yhteys malliin palvelimessa, jossa on käytössä **Analysis Service 2016** tai uudempi, **Azure Analysis Services** -tietokantaan tai Power BI -palvelun tietojoukkoon. 
+Prosenttipisteviiva on käytettävissä vain, kun käytetään tuotuja tietoja *Power BI Desktopissa* tai kun muodostetaan reaaliaikainen yhteys malliin palvelimessa, jonka käytössä on **Analysis Service 2016** tai uudempi, **Azure Analysis Services** -tietokantaan tai Power BI -palvelun tietojoukkoon.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Voit tehdä kaikenlaista Power BI Desktopilla. Saat lisätietoja sen toiminnoista seuraavista resursseista:
+
+Power BI Desktopilla voit tehdä kaikenlaista. Saat lisätietoja sen toiminnoista seuraavista resursseista:
 
 * [Power BI Desktopin uudet ominaisuudet](desktop-latest-update.md)
-* [Lataa Power BI Desktop](desktop-get-the-desktop.md)
+* [Power BI Desktopin hankkiminen](desktop-get-the-desktop.md)
 * [Mikä on Power BI Desktop?](desktop-what-is-desktop.md)
-* [Power BI Desktopin kyselyiden yleiskatsaus](desktop-query-overview.md)
+* [Power BI Desktopin kyselyjen yleiskatsaus](desktop-query-overview.md)
 * [Tietotyypit Power BI Desktopissa](desktop-data-types.md)
 * [Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)
-* [Yleiset kyselytehtävät Power BI Desktopissa](desktop-common-query-tasks.md)    
-
+* [Yleisten tehtävien suorittaminen Power BI Desktopissa](desktop-common-query-tasks.md)

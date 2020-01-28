@@ -1,6 +1,6 @@
 ---
 title: Power BI:n raportin muodostimella luotavien raporttien suunnitteluvinkkejä
-description: Seuraavien vinkkien avulla voit suunnitella sivutettuja raportteja Power BI:n sivutetun raportin muodostimessa.
+description: Seuraavien vinkkien avulla voit suunnitella sivutettuja raportteja Power BI:n raportin muodostimessa.
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: d7e232d09eee2a4cfff17d4565443195e6f7f1aa
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 3b436156d6bd36fe5da7b9b4404227ca1a6de336
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840345"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160531"
 ---
 # <a name="report-design-tips-in-power-bi-report-builder"></a>Power BI:n raportin muodostimella luotavien raporttien suunnitteluvinkkejä
-  Seuraavien vinkkien avulla voit suunnitella sivutettuja raportteja Power BI:n sivutetun raportin muodostimessa.  
+  Seuraavien vinkkien avulla voit suunnitella sivutettuja raportteja Power BI:n raportin muodostimessa.  
   
    
   
@@ -131,7 +131,7 @@ ms.locfileid: "66840345"
   
 -   Jos haluat tallentaa raportin .pdf-tiedostona, raportin leveys on määritettävä yksiselitteiseksi arvoksi, joka antaa vientitiedostomuotoon haluamasi tulokset. Voit esimerkiksi määrittää raportin sivun leveydeksi täsmälleen 7,9375 tuumaa sekä vasemman ja oikean reunuksen leveydeksi 0,5 tuumaa.  
   
--   Käytä raportin katseluohjelman työkalurivillä olevaa **Tulostusasettelua** ja **Sivun asetuksia** hahmontaakseesi raportin tulostuksen kanssa sopivaan näkymään. Voit poistaa ei-toivotut vaakasivut seuraavasti:  
+-   Käytä raportin katseluohjelman työkalurivillä olevaa **Tulostusasettelua** ja **Sivun asetuksia** hahmontaakseesi raportin tulostuksen kanssa sopivaan näkymään. Voit poistaa tarpeettomat tyhjät sivut seuraavasti:  
   
     1.  Poista kaikki ylimääräiset välilyönnit tietoalueiden välistä ja raportin reunoilta.  
   
@@ -140,8 +140,10 @@ ms.locfileid: "66840345"
     3.  **Suorakulmioiden** käyttö säilöinä auttaa hallitsemaan raporttikohteiden hahmontamista kullekin sivulle.  
   
     4.  Voit käyttää pystysuuntaista tekstiä muuttamalla WritingMode-tekstiruutuominaisuutta sarakeotsikoista.  
-  
- Raporttikohteiden toiminta, leveys- ja korkeusominaisuudet, raportin leipätekstin koko, sivun korkeus- ja leveysmääritys, pääraportin reunusten asetukset ja sivuttamisen hahmontamisesta riippuva tuki yhdessä määrittävät, mitkä raporttikohteet mahtuvat hahmonnetulle sivulle samanaikaisesti. 
+
+ Katso lisäohjeita kohdasta [Tyhjien sivujen välttäminen sivutettuja raportteja tulostettaessa](guidance/report-paginated-blank-page.md).
+
+ Raporttikohteiden toiminta, leveys- ja korkeusominaisuudet, raportin leipätekstin koko, sivun korkeus- ja leveysmääritys, pääraportin reunusten asetukset ja sivuttamisen hahmontamisesta riippuva tuki yhdessä määrittävät, mitkä raporttikohteet mahtuvat hahmonnetulle sivulle samanaikaisesti.
  
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

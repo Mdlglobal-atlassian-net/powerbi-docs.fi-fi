@@ -1,6 +1,6 @@
 ---
 title: Lausekkeet Power BI:n raportin muodostimessa
-description: Lausekkeita käytetään yleisesti Power BI:n sivutettujen raporttien muodostimessa tietojen noutamiseen, laskemiseen, näyttämiseen, ryhmittelyyn, lajitteluun, suodattamiseen, parametrisointiin ja muotoiluun.
+description: Lausekkeita käytetään yleisesti Power BI:n raporttien muodostimessa tietojen noutamiseen, laskemiseen, näyttämiseen, ryhmittelyyn, lajitteluun, suodattamiseen, parametrisointiin ja muotoiluun.
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 76d3ac86-650c-46fe-8086-8b3edcea3882
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: d3a72fd967eeb24cfa1093d16c4434447d5fc89d
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 96c62fec55f87a31970b624a79314656ced0c159
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840621"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953872"
 ---
 # <a name="expressions-in-power-bi-report-builder"></a>Lausekkeet Power BI:n raportin muodostimessa
-  Lausekkeita käytetään yleisesti Power BI:n sivutettujen raporttien muodostimessa tietojen noutamiseen, laskemiseen, näyttämiseen, ryhmittelyyn, lajitteluun, suodattamiseen, parametrisointiin ja muotoiluun. 
+  Lausekkeita käytetään yleisesti Power BI:n raporttien muodostimessa tietojen noutamiseen, laskemiseen, näyttämiseen, ryhmittelyyn, lajitteluun, suodattamiseen, parametrisointiin ja muotoiluun. 
   
   Monet raporttikohteiden ominaisuudet voidaan määrittää lausekkeiksi. Lausekkeiden avulla voit hallita raportin sisältöä, rakennetta ja vuorovaikutteisuutta. Lausekkeet on kirjoitettu Microsoft Visual Basicilla ja tallennettu raporttimääritykseen. Raportinkäsittely arvioi ne, kun raportti suoritetaan.  
   

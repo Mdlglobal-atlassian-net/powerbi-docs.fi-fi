@@ -8,17 +8,17 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/07/2020
 ms.author: maggies
-ms.openlocfilehash: 4c4228ea4276235a983849d2ea88e1030f4690f7
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.openlocfilehash: 54416b314b03a5889c58004918513fecd7ff5ccd
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75732034"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75954260"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Sivutetun raportin luominen Microsoft Power BI -raporttipalvelimeen
 Tässä artikkelissa annetaan ohjeet sivutetun raportin luomiseen Power BI -raporttipalvelimelle helposti ja nopeasti.
 
-Tarvitsetko neuvoja Power BI -palvelun raportin muodostimen sivutettujen raporttien luomisessa? Lue lisätietoja kohdasta [Power BI:n sivutetun raportin muodostin](../report-builder-power-bi.md).
+Tarvitsetko neuvoja Power BI -palvelun raportin muodostimen sivutettujen raporttien luomisessa? Katso lisätietoja kohdasta [Power BI:n raportin muodostin](../report-builder-power-bi.md).
 
 Nimensä mukaisesti sivutetuissa raporteissa voi olla useita sivuja. Niiden asettelu on kiinteässä muodossa ja ne tarjoavat tarkan mukautuksen. Sivutetut raportit ovat .rdl-tiedostoja.
 

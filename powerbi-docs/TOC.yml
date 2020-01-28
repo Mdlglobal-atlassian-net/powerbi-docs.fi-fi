@@ -961,16 +961,18 @@
       items:
         - name: Uudet ominaisuudet
           href: report-server/whats-new.md
+        - name: Järjestelmänvalvojan yleiskatsaus
+          href: report-server/admin-handbook-overview.md
         - name: Muutosloki
           href: report-server/changelog.md
         - name: Tukiaikajana
           href: report-server/support-timeline.md
+        - name: Always Encrypted -tuki
+          href: report-server/always-encrypted-support.md
         - name: Laite- ja ohjelmistovaatimukset
           href: report-server/system-requirements.md
         - name: Selaintuki
           href: report-server/browser-support.md
-        - name: Järjestelmänvalvojan yleiskatsaus
-          href: report-server/admin-handbook-overview.md
         - name: Raporttipalvelimen perusteet
           items:
             - name: Power BI -raportin ajoitettu päivitys

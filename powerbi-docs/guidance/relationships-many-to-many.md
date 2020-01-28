@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/25/2019
 ms.author: v-pemyer
-ms.openlocfilehash: becde542f68b2f9fb1412a904793f46a8f154856
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: 6ce82516413fe43cfbc1336e2f6f51003277fb4a
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75308245"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76161290"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Monta-moneen-suhteen ohjeet
 
@@ -120,7 +120,7 @@ Kun dimensiotyyppisten taulukoiden välillä on monta-moneen-suhde, annamme seur
 - Lisää välitaulukko liittyvien entiteettien tallentamista varten.
 - Luo yksi-moneen-suhteita kolmen taulukon välille.
 - Määritä **yksi** kaksisuuntainen suhde, jotta suodatuksen levittäminen jatkuu faktatyyppisiin taulukoihin.
-- Kun ei ole sopivaa, että tunnistearvoja puuttuu, määritä tunnussarakkeiden **Is Nullable** -ominaisuuden arvoksi TRUE – silloin tietojen päivitys epäonnistuu, jos puuttuvia arvoja havaitaan.
+- Kun ei ole sopivaa, että tunnistearvoja puuttuu, määritä tunnussarakkeiden **Is Nullable** -ominaisuuden arvoksi FALSE – silloin tietojen päivitys epäonnistuu, jos puuttuvia arvoja havaitaan.
 - Piilota välitaulukko (ellei se sisällä raportointiin tarvittavia lisäsarakkeita tai -mittareita).
 - Piilota kaikki tunnussarakkeet, jotka eivät sovellu raportointiin (esimerkiksi, kun tunnukset ovat korvaavia avaimia).
 - Jos on järkevää jättää tunnussarake näkyviin, varmista, että se on suhteen ”yksi”-puolella – piilota aina ”monta”-puolen sarake. Tällöin suodatuksen suorituskyky on paras mahdollinen.

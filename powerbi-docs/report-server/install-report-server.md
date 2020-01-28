@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/26/2019
-ms.openlocfilehash: 7297e73dc0e412f75412eb48398ef9c85cda8d6e
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/16/2020
+ms.openlocfilehash: 0b57ec084477955086b3d1bb0acd0a3139d325c6
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74565765"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160600"
 ---
 # <a name="install-power-bi-report-server"></a>Asenna Power BI -raporttipalvelin
 
@@ -47,7 +47,7 @@ Jos olet ostanut Power BI Premiumin, Power BI -raporttipalvelimen tuoteavain on 
 
 ![Premium-asetukset](../report-server/media/install-report-server/pbirs-product-key.png "Power BI -raporttipalvelimen avain Premiumin asetuksissa")
 
-Voit avata tuoteavaimen sisältävän valintaikkunan valitsemalla **Power BI -raporttipalvelimen avain** -kohdan. Voit kopioida avaimen ja käyttää sitä asennuksessa.
+Voit avata valintaikkunan, joka sisältää tuoteavaimen, valitsemalla **Power BI -raporttipalvelimen avain** -kohdan. Voit kopioida avaimen ja käyttää sitä asennuksessa.
 
 ![Tuoteavain](../report-server/media/install-report-server/pbirs-product-key-dialog.png "Power BI -raporttipalvelimen tuoteavain")
 
@@ -146,6 +146,7 @@ Avaa TCP-portti, jonka olet määrittänyt verkkopalvelun URL-osoitetta ja verkk
 * Jos haluat lisätietoja Power BI -palvelun integroinnin määrittämisestä, jotta voit kiinnittää raporttikohteita Power BI -raporttinäkymään, katso [Integrointi Power BI -palvelun kanssa](https://docs.microsoft.com/sql/reporting-services/install-windows/power-bi-report-server-integration-configuration-manager).
 * Lisätietoja sähköpostin määrittämisestä tilausten käsittelyä varten on kohdissa [Sähköpostiasetukset](https://docs.microsoft.com/sql/reporting-services/install-windows/e-mail-settings-reporting-services-native-mode-configuration-manager) ja [Sähköpostin toimitus raporttipalvelimessa](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services).
 * Jos haluat määrittää verkkoportaalin niin, että voit käyttää sitä raporttitietokoneessa raporttien tarkastelua ja hallintaa varten, katso [Palomuurin määrittäminen raporttipalvelimen käyttöä varten](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access) ja [Raporttipalvelimen määrittäminen etähallintaa varten](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-report-server-for-remote-administration).
+* Lisätietoja raporttipalvelinjärjestelmän ominaisuuksien määrittämisestä SQL Management Studiossa saat [palvelinominaisuuksien lisäasetussivulta](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services). Ellei muuta ole määritetty, asetukset koskevat sekä Power BI -raporttipalvelinta että SQL-palvelimen raportointipalveluja.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

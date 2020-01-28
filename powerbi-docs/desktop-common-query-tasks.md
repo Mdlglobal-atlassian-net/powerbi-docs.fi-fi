@@ -1,27 +1,28 @@
 ---
-title: Yleiset kyselytehtävät Power BI Desktopissa
-description: Yleiset kyselytehtävät Power BI Desktopissa
+title: Yleisten kyselytehtävien suorittaminen Power BI Desktopissa
+description: Yleisten kyselytehtävien suorittaminen Power BI Desktopissa
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/09/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 116575898812e82f2f15126d0fee640902367ace
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 8921737fac842d040d014244e2ce80e9bc158b23
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761745"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76040138"
 ---
 # <a name="perform-common-query-tasks-in-power-bi-desktop"></a>Yleisten kyselytehtävien suorittaminen Power BI Desktopissa
-Power BI Desktopin **kyselyeditorissa** on muutamia usein käytettyjä tehtäviä. Tässä asiakirjassa kerrotaan näistä yleisistä tehtävistä ja annetaan linkkejä lisätietoihin. 
 
-Yleisiä kyselytehtäviä ovat seuraavat:
+Power BI Desktopin Power Query -editorin ikkunassa on muutamia usein käytettyjä tehtäviä. Tässä artikkelissa esitellään nämä yleiset tehtävät ja annetaan linkkejä lisätietoihin.
 
-* tietoihin yhdistäminen
+Tässä esiteltyjä yleisiä kyselytehtäviä ovat seuraavat:
+
+* Tietoihin yhdistäminen
 * tietojen muotoileminen ja yhdistäminen
 * rivien ryhmitteleminen
 * sarakkeiden pivotointi
@@ -30,196 +31,135 @@ Yleisiä kyselytehtäviä ovat seuraavat:
 
 Suoritamme näitä tehtäviä muutamien tietoyhteyksien avulla. Voit ladata tiedot tai muodostaa yhteyden niihin, jos haluat suorittaa tässä ohjeartikkelissa kuvatut toimet itse lukiessasi artikkelia.
 
-Ensimmäinen tietoyhteys on Excel-työkirja, jonka voit ladata [tästä linkistä](https://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx). Toinen on verkkoresurssi, jota käytetään myös muissa Power BI Desktop -ohjesisällöissä ja jota voit käyttää seuraavan osoitteen avulla:
+Ensimmäinen tietoyhteys on [Excel-työkirja](https://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx), jonka voit ladata ja tallentaa paikallisesti. Toinen on verkkoresurssi, jota käytetään myös muissa Power BI Desktop -artikkeleissa:
 
-[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+<https://www.bankrate.com/retirement/best-and-worst-states-for-retirement/>
 
-Yleiset kyselytehtävät alkavat yhteyden muodostamisella näihin tietolähteisiin.
+Yleiset kyselytehtävät alkavat vaiheilla, joita tarvitaan yhdistämiseen kumpaankin tietolähteeseen.
 
 ## <a name="connect-to-data"></a>Tietoihin yhdistäminen
-Kun haluat muodostaa yhteyden tietoihin Power BI Desktopissa, napsauta valintanauhan **Aloitus**-välilehden **Nouda tiedot** -painiketta. Power BI Desktop näyttää valikon, jonka sisältää yleisimmät tietolähteet. Jos haluat nähdä luettelon kaikista tietolähteistä, joihin Power BI Desktop voi muodostaa yhteyden, valitse valikon alareunasta **Lisää...** Saat lisätietoja ohjeartikkelista [Power BI Desktopin tietolähteet](https://docs.microsoft.com/power-bi/desktop-data-sources).
 
-![](media/desktop-common-query-tasks/commonquerytasks_getdata.png)
+Jos haluat yhdistää Power BI Desktop -tietoihin, valitse **Aloitus** ja sitten **Nouda tiedot**. Power BI Desktop näyttää valikon, jonka sisältää yleisimmät tietolähteet. Jos haluat nähdä kattavan luettelon tietolähteistä, joihin Power BI Desktop voi yhdistää, valitse valikon alareunasta **Lisää**. Lisätietoja on artikkelissa [Power BI Desktopin tietolähteet](desktop-data-sources.md).
 
-Aloita valitsemalla **Excel**, siirtymällä työkirjaan sijaintiin ja valitsemalla työkirja. Kysely tarkistaa työkirjan ja näyttää löytämänsä tiedot **Siirtymistoiminto**-ikkunassa.
+![Yleisin-tietolähdevalikko, Nouda tiedot -painike, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_getdata.png)
 
-![](media/desktop-common-query-tasks/commonquerytasks_navigator.png)
+Aloita valitsemalla **Excel**, määritä aiemmin mainittu Excel-työkirja ja valitse sitten **Avaa**. Kysely tarkistaa työkirjan ja näyttää sitten löytämänsä tiedot **Siirtymistoiminto**-valintaikkunassa, jonka jälkeen voit valita taulukon.
 
-Valitsemalla **Muokkaa** voit muokata tietoja ennen niiden lataamista Power BI Desktopiin. Voit myös *muotoilla* tietoja ennen niiden lataamista. Kyselyn muokkaaminen ennen lataamista on erityisen hyödyllistä, kun käytät suuria tietojoukkoja, joita aiot rajata ennen lataamista. Haluamme tehdä näin, joten valitse **Muokkaa**.
+![Excel-tietolähde, Siirtymistoiminto-valintaikkuna, Nouda tiedot, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_navigator.png)
 
-Erityyppisiin tietoihin yhdistäminen on aivan yhtä helppoa. Haluamme muodostaa yhteyden myös verkkoresurssiin. Valitse **Nouda tiedot \> Lisää...** ja sitten **Muu \> Verkko**.
+Valitsemalla **Muokkaa tietoja** voit muokata, mukauttaa tai *muotoilla* tietoja ennen niiden lataamista Power BI Desktopiin. Muokkaamisesta on hyötyä erityisesti silloin, kun käsittelet suuria tietojoukkoja, joiden määrää haluat supistaa ennen lataamista.
 
-![](media/desktop-common-query-tasks/commonquerytasks_getdata_other.png)
+Erityyppisiin tietoihin yhdistäminen on helppoa. Haluat ehkä myös yhdistää verkkoresurssiin. Valitse **Nouda tiedot** > **Lisää**, ja valitse sitten **Muu** > **Verkko** > **Yhdistä**.
 
-Kun **Verkosta**-ikkuna avautuu, voit kirjoittaa siihen verkkosivun URL-osoitteen.
+![Verkkotietolähde, Nouda tiedot -valintaikkuna, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_getdata_other.png)
 
-![](media/desktop-common-query-tasks/datasources_fromwebbox.png)
+Kun **Verkosta**-valintaikkuna avautuu, voit kirjoittaa siihen verkkosivun URL-osoitteen.
 
-Valitse **OK**. Kuten aiemminkin, Power BI Desktop tarkistaa työkirjan ja näyttää löytämänsä tiedot **Siirtymistoiminto**-ikkunassa.
+![Verkosta-valintaikkuna, verkkotietolähde, Nouda tiedot, Power BI Desktop](media/desktop-common-query-tasks/datasources_fromwebbox.png)
+
+Valitse **OK**. Kuten aiemmin, Power BI Desktop tarkastaa verkkosivun tiedot ja näyttää esikatseluasetukset **Siirtymistoiminto**-valintaikkunassa. Kun valitset taulukon, se näyttää tietojen esikatselun.
 
 Muut tietoyhteydet ovat samankaltaisia. Jos tietoyhteyden muodostaminen edellyttää todennusta, Power BI Desktop pyytää sinulta soveltuvia tunnistetietoja.
 
-Jos haluat vaiheittaiset ohjeet tietoihin yhdistämiseen Power BI Desktopissa, lue ohjeartikkeli [Tietoihin yhdistäminen Power BI Desktopissa](https://docs.microsoft.com/power-bi/desktop-connect-to-data).
+Jos haluat vaiheittaisen esittelyn tietoihin yhdistämisestä Power BI Desktopissa, lue artikkeli [Tietoihin yhdistäminen Power BI Desktopissa](desktop-connect-to-data.md).
 
 ## <a name="shape-and-combine-data"></a>Tietojen muotoileminen ja yhdistäminen
-Kyselyeditorilla voit muotoilla ja yhdistää tietoja helposti. Tämä osio sisältää muutamia esimerkkejä tietojen muotoilemisesta. Jos haluat kattavamman esittelyn tietojen muotoilemisesta ja yhdistämisestä, lue ohjeartikkeli **[Tietojen muotoileminen ja yhdistäminen Power BI Desktopissa](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data)** .
 
-Edellisessä osiossa yhdistimme kaksi tietojoukkoa: Excel-työkirjan ja verkkoresurssin. Kun ne on ladattu kyselyeditoriin, näemme alla olevassa kuvassa näkyvät tiedot ja verkkosivun kyselyn valittuna (se on valittu kyselyeditorin vasemman puolen **Kyselyt**-ruudussa käytettävissä olevien kyselyiden luettelosta).
+Power Query -editorilla voit muotoilla ja yhdistää tietoja helposti. Tämä osio sisältää muutamia esimerkkejä tietojen muotoilemisesta. Jos haluat kattavamman esittelyn tietojen muotoilemisesta ja yhdistämisestä, lue artikkeli [Tietojen muotoileminen ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md).
 
-![](media/desktop-common-query-tasks/commonquerytasks_querypaneloaded.png)
+Edellisessä osiossa yhdistit kaksi tietojoukkoa: Excel-työkirjan ja verkkoresurssin. Kun tiedot on ladattu Power Query -editorissa, valitse verkkosivukysely käytettävissä olevista kyselyistä **Kyselyt**-ruudussa alla esitetyllä tavalla:
 
-Kun muotoilet tietoja, muokkaat tietolähdettä haluamaasi muotoon ja muotoiluun. Tässä tapauksessa emme tarvitse ensimmäistä saraketta, jonka nimi on *Header*, joten poistamme sen.
+![Kyselyt-ruutu, Power Query -editori, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_querypaneloaded.png)
 
-**Kyselyeditorissa** monet komennot löytyvät sekä valintanauhasta että hiiren kakkospainikkeen tilannekohtaisesta pikavalikosta. Kun esimerkiksi napsautat *Header*-saraketta hiiren kakkospainikkeella, näyttöön avautuu valikko, jossa voit poistaa sarakkeen. Voit myös valita sarakkeen ja napsauttaa sitten valintanauhan **Poista sarakkeet** -painiketta.
+Kun muotoilet tietoja, muokkaat tietolähdettä haluamaasi muotoon ja muotoiluun.
 
-![](media/desktop-common-query-tasks/commonquerytasks_removecolumns.png)
+Power Query -editorissa monet komennot löytyvät valintanauhasta ja tilannekohtaisista valikoista. Kun esimerkiksi napsautat saraketta hiiren kakkospainikkeella, voit tilannekohtaisen valikon avulla poistaa sarakkeen. Voit myös valita sarakkeen ja valita sitten **Poista sarakkeet** -painikkeen valintanauhan **Aloitus**-välilehdestä.
 
-Voit muokata tämän kyselyn tietoja monin eri tavoin: voit esimerkiksi poistaa haluamasi määrän rivejä ylhäältä tai alhaalta, voit lisätä ja jakaa sarakkeita, korvata arvoja ja tehdä muita muotoilutietoja, jotta kyselyeditori saa tiedot haluamassa muodossa.
+![Poista sarakkeet -komento, Power Query -editori, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_removecolumns.png)
+
+Voit muotoilla tietoja monella muulla tavalla tässä kyselyssä. Voit poistaa minkä tahansa määrän rivejä ylhäältä tai alhaalta. Voit myös lisätä ja jakaa sarakkeita, korvata arvoja ja tehdä muita muotoilutehtäviä. Näiden ominaisuuksien avulla voit ohjata Power Query -editoria ja saada tiedot haluamallasi tavalla.
 
 ## <a name="group-rows"></a>Rivien ryhmitteleminen
-Kyselyeditorissa voi ryhmitellä arvoja useilta riveiltä yhdeksi arvoksi. Tästä on hyötyä esimerkiksi silloin, jos olet tekemässä yhteenvetoa tarjotuista tuotteista, kokonaismyynnistä tai opiskelijoiden määrästä.
 
-Tässä esimerkissä ryhmittelemme rivejä oppilaitoksen rekisteröitymistietojoukosta. Tiedot ovat peräisin Excel-työkirjasta ja niitä on muotoiltu kyselyeditorilla siten, että saamme käyttöömme vain tarvitsemamme sarakkeet. Lisäksi taulukko on nimetty uudelleen ja sille on tehty muutamia muitakin muokkauksia.
+Power Query -editorissa voit ryhmitellä arvoja useilta riveiltä yhdeksi arvoksi. Tästä ominaisuudesta voi olla hyötyä silloin, kun teet yhteenvedon tarjotuista tuotteista, kokonaismyynnistä tai opiskelijoiden määrästä.
 
-Tarkistetaan, kuinka monta virastoa (tämä käsittää koulupiirit ja muut opetusvirastot, esimerkiksi alueelliset opetusvirastot jne.) kullakin osavaltiolla on. Valitse *State Abbr* -sarake ja napsauta sitten valintanauhan **Aloitus**- tai **Muunna**-sarakkeen **Ryhmittelyperuste**-painiketta (**Ryhmittelyperuste**-painike löytyy molemmista välilehdistä).
+Tässä esimerkissä ryhmittelit rivejä oppilaitoksen rekisteröitymistietojoukosta. Tiedot ovat Excel-työkirjasta. Se on muotoiltu Power Query -editorissa, jotta saat vain tarvitsemasi sarakkeet sekä voit nimetä taulukon uudelleen ja tehdä pari muuta muunnosta.
 
-![](media/desktop-common-query-tasks/commonquerytasks_groupby.png)
+Selvitetäänpä, montako virastoa on kussakin osavaltiossa. (Virastoja voivat olla esimerkiksi koulupiirit ja muut opetusvirastot, kuten aluepalvelupiirit.) Valitse **Viraston tunnus - NCES-määritetty \[Piiri\] Viimeisin saatavilla oleva vuosi** -sarake. Valitse sitten **Ryhmittelyperuste**-painike valintanauhan **Muunna**-välilehdeltä tai **Aloitus**-välilehdeltä. (**Ryhmittelyperuste** on käytettävissä molemmissa välilehdissä.)
 
-**Ryhmittelyperuste...** -ikkuna avautuu näyttöön. Kun kyselyeditori ryhmittelee rivejä, se luo uuden sarakkeen, jonka se lisää **Ryhmittelyperuste**-tuloksiin. Voit muokata **Ryhmittelyperuste**-toimintoa seuraavin tavoin:
+![Ryhmittelyperuste-valintaikkuna, Power Query -editori, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_groupby.png)
 
-1. *Ryhmittelyperuste*: Tämä on ryhmiteltävä sarake. Kyselyeditori valitsee valitun sarakkeen, mutta voit vaihtaa sitä tässä ikkunassa (voit valita minkä tahansa taulukon sarakkeen).
-2. *Uuden sarakkeen nimi:* Kyselyeditori ehdottaa uudelle sarakkeelle nimeä sen perusteella, minkä toiminnon se suorittaa ryhmiteltävälle sarakkeelle. Voit kuitenkin antaa sarakkeelle minkä tahansa haluamasi nimen.
-3. *Toiminto*: tässä määrität kyselyeditorin suorittaman toiminnon.
-4. *Lisää ryhmittely* ja *Lisää kooste*: Nämä toiminnot näytetään, kun valitset **Lisäasetukset**. Voit suorittaa ryhmittelytoimintoja (**Ryhmittelyperuste**-toimintoja) useille sarakkeille ja suorittaa useita koostetoimintoja **Ryhmittelyperuste**-ikkunassa yhdellä toiminnolla. Kyselyeditori luo uuden sarakkeen (ikkunassa tekemiesi valintojen mukaisesti), joka hyödyntää tietoja useista sarakkeista. 
+**Ryhmittelyperuste**-valintaikkuna tulee näkyviin. Kun Power Query -editori ryhmittelee rivejä, se luo uuden sarakkeen, johon se sijoittaa **Ryhmittelyperuste**-tulokset. Voit muokata **Ryhmittelyperuste**-toimintoa seuraavin tavoin:
 
-Jos haluat lisätä **Ryhmittelyperuste**-toimintoon lisää ryhmittelyitä tai koosteita, napsauta **Lisää ryhmittely**- tai **Lisää kooste** -painiketta. Voit poistaa ryhmittelyn tai koosteen napsauttamalla **...** -kuvaketta ja valitsemalla **Poista**. Kokeile tätä ja katso, miltä tulokset näyttävät.
-   
-   ![](media/desktop-common-query-tasks/commonquerytasks_groupbynumbered.png)
+1. Otsikoimaton avattava luettelo määrittää ryhmiteltävän sarakkeen. Power Query -editori käyttää tätä arvoa oletuksen mukaisesti valittuun sarakkeeseen, mutta voit muuttaa sen miksi tahansa taulukon sarakkeeksi.
+2. **Uuden sarakkeen nimi**: Power Query -editori ehdottaa uudelle sarakkeelle nimeä sen perusteella, minkä toiminnon se suorittaa ryhmiteltävälle sarakkeelle. Voit kuitenkin antaa uudelle sarakkeelle minkä tahansa haluamasi nimen.
+3. **Toiminto**: Voit valita toiminnon, jota Power Query -editori soveltaa, kuten **Summa**, **Mediaani**tai **Laske erilliset rivit**. Oletusarvo on **Laske rivit**.
+4. **Lisää ryhmittely** ja **Lisää kooste**: Nämä painikkeet ovat käytettävissä vain, jos valitset **Lisäasetukset**-vaihtoehdon. Yhdellä toiminnolla voit tehdä ryhmittelytoimintoja (**Ryhmittelyperuste**-toimintoja) monissa sarakkeissa ja luoda useita koosteita näiden painikkeiden avulla. Tässä valintaikkunassa tekemiesi valintojen mukaisesti Power Query -editori luo uuden sarakkeen, joka hyödyntää tietoja useista sarakkeista.
 
-Kun valitset **OK**, kysely suorittaa **Ryhmittelyperuste**-toiminnon ja palauttaa tulokset. Oho, katsopa tätä! Ohiossa, Teksasissa, Illinoisissa ja Kaliforniassa on nyt yli tuhat virastoa.
+Valitse **Lisää ryhmittely** tai **Lisää kooste**, jos haluat lisätä ryhmittelyjä tai koosteita **Ryhmittelyperuste**-toimintoon. Voit poistaa ryhmittelyn tai koosteen valitsemalla rivin oikealla puolella olevan ellipsikuvakkeen ( **...** ), ja sitten **Poista**. Kokeile **Ryhmittelyperuste**-toimintoa käyttämällä oletusarvoja, jotta näet, mitä tapahtuu.
 
-![](media/desktop-common-query-tasks/commonquerytasks_groupedresult.png)
+![Ryhmittelyperuste-valintaikkuna, Power Query -editori, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_groupbynumbered.png)
 
-Kyselyeditorilla voit aina poistaa edellisen muotoilutoiminnon napsauttamalla juuri suorittamasi vaiheen vieressä olevaa **X**-kohtaa. Kokeile rohkeasti. Jos et pidä tuloksista, tee vaihe uudelleen, kunnes kyselyeditori muotoilee tiedot haluamallasi tavalla.
+Kun valitset **OK**, kysely suorittaa **Ryhmittelyperuste**-toiminnon ja palauttaa tulokset. Oho, katsopa tätä! Ohiossa, Illinoisissa, Teksasissa ja Kaliforniassa on nyt kussakin yli tuhat virastoa!
+
+![Laske-sarake, Ryhmittelyperuste-toiminto, Power Query -editori, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_groupedresult.png)
+
+Power Query -editorin avulla voit aina poistaa viimeisimmän muotoilutoiminnon. Valitse **Kyselyasetukset**-ruudun **Käytössä olevat vaiheet** -kohdasta **X** äskettäin suoritetun vaiheen vierestä. Kokeile rohkeasti. Jos et pidä tuloksista, tee vaihe uudelleen, kunnes Power Query -editori muotoilee tiedot haluamallasi tavalla.
 
 ## <a name="pivot-columns"></a>Sarakkeiden pivotointi
-Power BI Desktopissa voit pivotoida sarakkeita ja luoda taulukon, joka sisältää koostearvon, joka ilmaisee yksilöllisten arvojen määrää. Jos haluat esimerkiksi tietää, kuinka monta tuotetta sinulla on kussakin tuoteluokassa, voit luoda nopeasti taulukon, jolla saat tämän selville.
 
-Tarkastellaan esimerkkiä. Seuraavaa **Products**-taulukkoa on muotoiltu siten, että se näyttää vain jokaisen yksilöllisen tuotteen (nimellä) ja sen, mihin tuoteluokkaan se kuuluu. Voit luoda uuden taulukon, joka näyttää kunkin luokan tuotteiden määrän (*CategoryName*-sarakkeen perusteella), valitsemalla sarakkeen ja valitsemalla sitten valintanauhan **Muunna**-välilehdestä **Pivot-sarake**.
+Voit pivotoida sarakkeita ja luoda taulukon, joka sisältää koostearvot sarakkeen kullekin yksilölliselle arvolle. Jos haluat esimerkiksi tietää, kuinka monta erilaista tuotetta on kussakin tuoteluokassa, voit luoda nopeasti taulukon tämän selvittämiseksi.
 
-![](media/desktop-common-query-tasks/pivotcolumns_pivotbutton.png)
+Tarkastellaan esimerkkiä. Seuraavaa **Products_by_Categories** -taulukkoa on muotoiltu siten, että se näyttää vain jokaisen yksilöllisen tuotteen (nimen mukaan) ja sen, mihin tuoteluokkaan se kuuluu. Voit luoda uuden taulukon, joka näyttää kunkin luokan tuotteiden määrän (**CategoryName**-sarakkeen mukaan), valitsemalla sarakkeen ja sitten **Muunna** > **Pivot-sarake**.
 
-Näyttöön avautuu **Pivot-sarake**-ikkuna, josta näet mitä sarakkeen arvoja käytetään uusien sarakkeiden luomiseen (1). Kun laajennat **lisäasetukset** (2), voit valita, mikä toiminto suoritetaan koostearvoille (3).
+![Pivot-sarake-komento, Power Query -editori, Power BI Desktop](media/desktop-common-query-tasks/pivotcolumns_pivotbutton.png)
 
-![](media/desktop-common-query-tasks/pivotcolumns_pivotdialog.png)
+Näyttöön tulee **Pivot-sarake**-valintaikkuna, jossa kerrotaan, mitä sarakkeen arvoja käytetään uusien sarakkeiden luomiseen (1). (Jos **CategoryName**-kohdan haluttua sarakkeen nimeä ei näytetä, valitse se avattavasta luettelosta.) Kun laajennat **Lisäasetukset**-kohtaa (2), voit valita toiminnon, jota sovelletaan koostettuihin arvoihin (3).
 
-Kun valitset **OK**, kysely näyttää taulukon **Pivot-sarake**-ikkunassa annettujen muunto-ohjeiden mukaisesti.
+![Pivot-sarake-valintaikkuna, Power Query -editori, Power BI Desktop](media/desktop-common-query-tasks/pivotcolumns_pivotdialog.png)
 
-![](media/desktop-common-query-tasks/pivotcolumns_pivotcomplete.png)
+Kun valitset **OK**, kysely näyttää taulukon **Pivot-sarake**-valintaikkunassa annettujen muunto-ohjeiden mukaisesti.
+
+![Pivot-sarakkeen tulos, Power Query -editori, Power BI Desktop](media/desktop-common-query-tasks/pivotcolumns_pivotcomplete.png)
 
 ## <a name="create-custom-columns"></a>Mukautettujen sarakkeiden luominen
-Kyselyeditorilla voit luoda mukautettuja kaavoja, jotka suoritetaan taulukkosi useille sarakkeille, ja lisätä sitten näiden kaavojen tulokset uuteen (mukautettuun) sarakkeeseen. Kyselyeditorilla voit luoda mukautettuja sarakkeita helposti.
 
-Valitse kyselyeditorin valintanauhan **Lisää sarake** -välilehdestä **Mukautettu sarake**.
+Power Query -editorissa voit luoda mukautettuja kaavoja, joita sovelletaan taulukon useisiin sarakkeisiin. Tämän jälkeen voit sijoittaa tällaisten kaavojen tulokset uuteen (mukautettuun) sarakkeeseen. Power Query -editorilla voit luoda mukautettuja sarakkeita helposti.
 
-![](media/desktop-common-query-tasks/commonquerytasks_customcolumn.png)
+Kun käytössäsi on Excel-työkirjan tiedot Power Query -editorissa, siirry valintanauhan **Lisää sarake** -välilehteen ja valitse sitten **Mukautettu sarake**.
 
-Näyttöön avautuu seuraava ikkuna. Seuraavassa esimerkissä luomme mukautetun sarakkeen nimeltä *Percent ELL*, joka laskee kuinka monen (tämä ilmaistaan prosenttiosuutena) opiskelijan äidinkieli on jokin muu kuin englanti.
+![Lisää mukautettu sarake -komento, Power Query -editori, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_customcolumn.png)
 
-![](media/desktop-common-query-tasks/customcolumn_addcustomcolumndialog.png)
+Näyttöön avautuu seuraava valintaikkuna. Tässä esimerkissä luodaan mukautettu sarake nimeltä *Percent ELL*, joka laskee, kuinka monen (tämä ilmaistaan prosenttiosuutena) opiskelijan äidinkieli on jokin muu kuin englanti.
 
-Jos uusi mukautettu sarake ei tarjoa haluamiasi tietoja, voit poistaa sen – kuten minkä tahansa muunkin kyselyeditorissa käytetyn vaiheen – **Kyselyasetukset**-ruudun **Käytössä olevat vaiheet** -osiosta napsauttamalla **Lisätty mukautettu** -kohdan vieressä olevaa **X**-kohtaa.
+![Mukautettu sarake -valintaikkuna, Power Query -editori, Power BI Desktop](media/desktop-common-query-tasks/customcolumn_addcustomcolumndialog.png)
 
-![](media/desktop-common-query-tasks/customcolumn_addedappliedstep.png)
+Kuten Power Query -editorin muiden sovellettujen vaiheiden tavoin, jos uusi mukautettu sarake ei sisällä etsimiäsi tietoja, voit poistaa vaiheen. Valitse **Kyselyasetukset**-ruudun **Käytössä olevat vaiheet** -kohdasta **X** **Lisätty mukautettu** -vaiheen vierestä.
+
+![Käytössä olevat vaiheet, Kyselyasetukset-ruutu, Power Query -editori, Power BI Desktop](media/desktop-common-query-tasks/customcolumn_addedappliedstep.png)
 
 ## <a name="query-formulas"></a>Kyselykaavat
-Voit muokata kyselyeditorin luomia vaiheita ja voit luoda mukautettuja kaavoja, joilla voit hallita tarkemmin tietoihin yhdistämistä ja niiden muotoilua. Aina kun kyselyeditori suorittaa toiminnon tiedoille, toimintoon liittyvä kaava näytetään **kaavarivillä**. Saat **kaavarivin** näkyviin valitsemalla valintanauhan **Näytä**-välilehden **Kaavarivi**-valintaruudun.
 
-![](media/desktop-common-query-tasks/queryformulas_formulabar.png)
+Voit muokata Power Query -editorin luomia vaiheita. Voit myös luoda mukautettuja kaavoja, joiden avulla voit yhdistää tietoihin ja muotoilla niitä tarkemmin. Aina kun Power Query -editori suorittaa toiminnon tiedoille, toimintoon liittyvä kaava näytetään kaavarivillä. Saat kaavarivin näkyviin siirtymällä valintanauhan **Näytä**-välilehteen ja valitsemalla sitten **Kaavarivi**.
 
-Kyselyeditori säilyttää jokaisen kyselyn kaikki käytetyt vaiheet tekstinä, jota voit tarkastella ja muokata. Voit tarkastella ja muokata minkä tahansa kyselyn tekstiä **laajennetulla editorilla**, jonka saat näkyviin valitsemalla valintanauhan **Näytä**-välilehdessä **Laajennettu editori**.
+![Kaavarivi-vaihtoehto, Power Query -editori, Power BI Desktop](media/desktop-common-query-tasks/queryformulas_formulabar.png)
 
-![](media/desktop-common-query-tasks/queryformulas_advancededitorbutton.png)
+Power Query -editori säilyttää kunkin kyselyn kaikki käytetyt vaiheet tekstinä, jota voit tarkastella ja muokata. Voit tarkastella tai muokata minkä tahansa kyselyn tekstiä **Laajennettu editori** -kohdan avulla. Valitse vain **Näytä** ja sitten **Laajennettu editori**.
 
-Tässä on näkymä **laajennetusta editorista**: näet siinä **USA\_StudentEnrollment**-kyselyn vaiheet. Nämä vaiheet on luotu Power Query Formula Language -kielellä, jota kutsutaan usein myös **M**-kieleksi. Saat lisätietoja ohjeartikkelista [Lisätietoja Power Query -kaavoista](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). Jos haluat tutustua varsinaisen kielen tietoihin, lue ohjeartikkeli [Excelin Microsoft Power Query -kaavakielestä](/powerquery-m/excel-workbook).
+![Laajennettu editori -komento, Power Query -editori, Power BI Desktop](media/desktop-common-query-tasks/queryformulas_advancededitorbutton.png)
 
-![](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
+Tässä on näkymä **laajennetusta editorista**: näet siinä **USA\_StudentEnrollment**-kyselyn vaiheet. Nämä vaiheet on luotu Power Query Formula Language -kielellä, jota kutsutaan usein myös *M*-kieleksi. Lisätietoja on artikkelissa [Lisätietoja Power Query -kaavoista](https://support.office.com/article/learn-about-power-query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). Jos haluat näyttää kielimäärityksen, lue artikkeli [Power Query M -kielimääritys](/powerquery-m/power-query-m-language-specification).
 
-Power BI Desktop tarjoaa laajan valikoiman kaavaluokkia. Saat lisätietoja ja kattavan luettelon kaikista kyselyeditorin kaavoista [Power Query -kaavaluokkien](https://support.office.com/article/Power-Query-formula-categories-125024ec-873c-47b9-bdfd-b437f8716819) ohjeartikkeleista.
+![Laajennettu editori -valintaikkuna, Power Query -editori, Power BI Desktop](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
 
-Kyselyeditorin kaavaluokat ovat seuraavat:
-
-* luku
-  * Vakiot
-  * Tiedot
-  * Muunto ja muotoilu
-  * Muoto
-  * Pyöristys
-  * Toiminnot
-  * Satunnainen
-  * Trigonometria
-  * Tavut
-* Teksti
-  * Tiedot
-  * Tekstivertailut
-  * Poiminta
-  * Muokkaus
-  * Jäsenyys
-  * Muunnokset
-* Looginen
-* Päivämäärä
-* Aika
-* Päivämäärä ja aika
-* Päivämäärä, aika ja aikavyöhyke
-* Kesto
-* Tietue
-  * Tiedot
-  * Muunnokset
-  * Valinta
-  * Sarjoitus
-* Luettelo
-  * Tiedot
-  * Valinta
-  * Muunnos
-  * Jäsenyys
-  * Joukkotoiminnot
-  * Järjestäminen
-  * Keskiarvot
-  * Yhteenlasku
-  * Numeeriset
-  * Generaattorit
-* Taulukko
-  * Taulukon luominen
-  * Muunnokset
-  * Tiedot
-  * Rivitoiminnot
-  * Saraketoiminnot
-  * Jäsenyys
-* Arvot
-* Aritmeettiset toiminnot
-* Parametrityypit
-* Metatiedot
-* Tietojen käyttö
-* URI
-* Binaarimuodot
-  * Lukujen lukeminen
-* Binaari
-* Viivat
-* Lauseke
-* Funktio
-* Virhe
-* Vertailutoiminto
-* Jakotoiminto
-* Yhdistämistoiminto
-* Korvaustoiminto
-* Tyyppi.
+Power BI Desktop tarjoaa laajan valikoiman kaavaluokkia. Saat lisätietoja ja kattavan luettelon kaikista Power Query -editorin kaavoista artikkelista [Power Query M -funktioviite](/powerquery-m/power-query-m-function-reference).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Voit tehdä kaikenlaista Power BI Desktopilla. Saat lisätietoja sen toiminnoista seuraavista resursseista:
+
+Voit tehdä kaikenlaista Power BI Desktopilla. Saat lisätietoja sen ominaisuuksista seuraavista resursseista:
 
 * [Mikä on Power BI Desktop?](desktop-what-is-desktop.md)
-* [Power BI Desktopin kyselyiden yleiskatsaus](desktop-query-overview.md)
+* [Kyselyn yleiskatsaus Power BI Desktopissa](desktop-query-overview.md)
 * [Power BI Desktopin tietolähteet](desktop-data-sources.md)
 * [Tietoihin yhdistäminen Power BI Desktopissa](desktop-connect-to-data.md)
-* [Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)
-
+* [Tietojen muotoileminen ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)

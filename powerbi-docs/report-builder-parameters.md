@@ -1,6 +1,6 @@
 ---
 title: Raporttiparametrit Power BI:n raportin muodostimessa
-description: Tässä aiheessa kuvataan Power BI:n sivutetun raportin muodostimen raporttiparametrien yleisiä käyttötarkoituksia, määritettäviä ominaisuuksia ja paljon muuta.
+description: Tässä aiheessa kuvataan Power BI:n raportin muodostimen raporttiparametrien yleisiä käyttötarkoituksia, määritettäviä ominaisuuksia ja paljon muuta.
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -9,16 +9,16 @@ ms.author: maggies
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/06/2019
-ms.openlocfilehash: d31036676a5960f7f6eb0f346c2c02ab979ff9bc
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 5a7e91c03b11902f324d6a7c639a03f7652acf16
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128432"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76160853"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Raporttiparametrit Power BI:n raportin muodostimessa
 
-Tässä aiheessa kuvataan Power BI:n sivutetun raportin muodostimen raporttiparametrien yleisiä käyttötarkoituksia, määritettäviä ominaisuuksia ja paljon muuta. Raporttiparametrien avulla voit hallita raportin tietoja, yhdistää toisiinsa liittyviä raportteja ja muuttaa raportin esitystapaa. Voit käyttää raporttiparametreja Raportin muodostimessa luoduissa sivutetuissa raporteissa.
+Tässä aiheessa kuvataan Power BI:n raportin muodostimen raporttiparametrien yleisiä käyttötarkoituksia, määritettäviä ominaisuuksia ja paljon muuta. Raporttiparametrien avulla voit hallita raportin tietoja, yhdistää toisiinsa liittyviä raportteja ja muuttaa raportin esitystapaa. Voit käyttää raporttiparametreja Raportin muodostimessa luoduissa sivutetuissa raporteissa.
 
 ## <a name="bkmk_Common_Uses_for_Parameters"></a> Raporttiparametrien yleiset käyttötarkoitukset
 
@@ -93,7 +93,7 @@ Luo parametri manuaalisesti raporttitietoruudusta. Voit määrittää raporttipa
   
 - Valitse useita parametriarvoja avattavasta luettelosta.  
   
-- Valitse avattavasta luettelosta yksittäisen parametrin arvo, joka määrittää arvot, jotka ovat käytettävissä toisen parametrin avattavassa luettelossa. Nämä ovat johdannaisparametreja. Johdannaisparametrien avulla voit suodattaa tuhansista parametriarvoista sopivan määrän asteittain.  
+- Valitse avattavasta luettelosta yksittäisen parametrin arvo, joka määrittää arvot, jotka ovat käytettävissä toisen parametrin avattavassa luettelossa. Nämä ovat johdannaisparametreja. Johdannaisparametrien avulla voit suodattaa tuhansista parametriarvoista sopivan määrän asteittain. Katso lisätietoja kohdasta [Limittäisten parametrien käyttäminen sivutetuissa raporteissa](guidance/paginated-report-cascading-parameter.md).
   
 - Suorita raportti valitsematta ensin parametriarvoa, koska parametrille on luotu oletusarvo.  
   
@@ -148,5 +148,4 @@ Luo parametri manuaalisesti raporttitietoruudusta. Voit määrittää raporttipa
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 - [Mitä ovat sivutetut raportit Power BI Premiumissa?](paginated-reports-report-builder-power-bi.md)  
- 
- 
+- [Limittäisten parametrien käyttäminen sivutetuissa raporteissa](guidance/paginated-report-cascading-parameter.md)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: ab98463f6dc1defd9ee3f2a97b322fefbe582779
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 016b83e983f2b3139eb040a1f1d8d48d70b44a52
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761038"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953501"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Power BI Desktopin uudet ominaisuudet ja toiminnot
 
@@ -23,7 +23,7 @@ ms.locfileid: "75761038"
 
 Joulukuun päivityksemme ovat yhtä hauskoja kuin laskettelu lumisessa rinteessä. 
 
-Voit ladata uusimman Power BI Desktop -version [Download Centeristä](https://www.microsoft.com/download/details.aspx?id=58494). Jos käytössäsi on Windows 10, voit hankkia Power BI Desktopin Microsoft Storesta Windows 10:ssä. Power BI Desktopin asennustavasta riippumatta kuukausittaiset versiot ovat samat, vaikka versioiden numerointi saattaa erota. Lisätietoja Power BI Desktopin lataamisesta ja asentamisesta on kohdassa [Power BI Desktopin hankkiminen](desktop-get-the-desktop.md). 
+Voit ladata uusimman Power BI Desktop -version [Download Centeristä](https://www.microsoft.com/download/details.aspx?id=58494). Jos käytössäsi on Windows 10, voit hankkia Power BI Desktopin myös [Microsoft Storesta](https://aka.ms/pbidesktopstore). Power BI Desktopin asennustavasta riippumatta kuukausittaiset versiot ovat samat, vaikka versioiden numerointi saattaa erota. Lisätietoja Power BI Desktopin lataamisesta ja asentamisesta on kohdassa [Power BI Desktopin hankkiminen](desktop-get-the-desktop.md). 
 
 > [!IMPORTANT]
 > Syyskuun 2019 versiosta alkaen Power BI Desktop toimitetaan vain yksittäisenä .exe-tiedostona, joka sisältää kaikki tuetut kielet. .msi-versiota ei enää julkaista.
@@ -92,7 +92,7 @@ Tutustu [Power BI -palvelun uusiin ominaisuuksiin](service-whats-new.md) ja [Pow
 ## <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktopin kuukausittainen päivitysvideo
 Seuraavassa videossa esitellään jokainen näistä päivityksistä. Voit katsoa tämän videon myös blogikirjoituksen kautta:
 
-> [!VIDEO https://youtu.be/eCEwgZsVUOs]
+> [!VIDEO https://www.youtube.com/embed/eCEwgZsVUOs]
 
 
 ## <a name="more-videos"></a>Lisää videoita

@@ -1,72 +1,104 @@
 ---
-title: Hyperlinkkien (URL-osoitteiden) lisääminen taulukkoon
-description: Tässä aiheessa kerrotaan, miten voit lisätä hyperlinkkejä (URL-osoitteita) taulukkoon. Power BI Desktopin avulla voit lisätä hyperlinkkejä (URL-osoitteita) taulukkoihin ja matriiseihin. Lisää kyseiset hyperlinkit sitten raporttisi taulukoihin tai matriiseihin joko Power BI Desktopilla tai Power BI -palvelulla.
+title: Hyperlinkkien (URL-osoitteiden) lisääminen taulukkoon tai matriisiin
+description: Tässä ohjeaiheessa kerrotaan, miten hyperlinkkejä (URL-osoitteita) lisätään taulukkoon. Power BI Desktopin avulla voit lisätä hyperlinkkejä (URL-osoitteita) tietojoukkoon. Voit sitten lisätä kyseiset hyperlinkit raporttisi taulukoihin tai matriiseihin Power BI Desktopissa tai Power BI -palvelussa.
 author: maggiesMSFT
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/29/2019
+ms.date: 01/13/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e8cad7035e752e5e344d78a22ad5fd8ea0a072ad
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: ddb54ca91936626b4870b51b86b7fc7f0ac6b2c9
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73874511"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75954204"
 ---
-# <a name="add-hyperlinks-urls-to-a-table"></a>Hyperlinkkien (URL-osoitteiden) lisääminen taulukkoon
-Tässä aiheessa kerrotaan, miten voit lisätä hyperlinkkejä (URL-osoitteita) taulukkoon. Power BI Desktopin avulla voit lisätä hyperlinkkejä (URL-osoitteita) taulukkoihin ja matriiseihin. Lisää kyseiset hyperlinkit sitten raporttisi taulukoihin tai matriiseihin joko Power BI Desktopilla tai Power BI -palvelulla. 
+# <a name="add-hyperlinks-urls-to-a-table-or-matrix"></a>Hyperlinkkien (URL-osoitteiden) lisääminen taulukkoon tai matriisiin
+Tässä ohjeaiheessa kerrotaan, miten hyperlinkkejä (URL-osoitteita) lisätään taulukkoon. Power BI Desktopin avulla voit lisätä hyperlinkkejä (URL-osoitteita) tietojoukkoon. Voit lisätä kyseiset hyperlinkit raporttisi taulukoihin tai matriiseihin joko Power BI Desktopissa tai Power BI -palvelussa. Sen jälkeen voit näyttää URL-osoitteen tai linkin kuvakkeen tai muotoilla toista saraketta linkin tekstinä.
 
-![Taulukko, jossa on hyperlinkit](media/power-bi-hyperlinks-in-tables/hyperlinkedtable.png)
+![Taulukko, jossa on hyperlinkit](media/power-bi-hyperlinks-in-tables/power-bi-url-link-text.png)
 
-> [!NOTE]
-> Voit luoda hyperlinkkejä lennosta [raporttinäkymien ruutuihin](service-dashboard-edit-tile.md) ja [raporttinäkymien tekstikenttiin](service-dashboard-add-widget.md) Power BI -palvelussa. Voit luoda hyperlinkkejä [raporttien tekstiruutuihin](service-add-hyperlink-to-text-box.md) lennosta Power BI -palvelussa ja Power BI Desktopissa.
-> 
+Voit myös luoda hyperlinkkejä [raporttien tekstiruuduissa](service-add-hyperlink-to-text-box.md) Power BI -palvelussa ja Power BI Desktopissa. Power BI -palvelussa voit myös lisätä hyperlinkkejä [koontinäyttöjen ruutuihin](service-dashboard-edit-tile.md) ja [koontinäyttöjen tekstikenttiin](service-dashboard-add-widget.md). 
 
-## <a name="to-create-a-hyperlink-in-a-table-or-matrix-using-power-bi-desktop"></a>Hyperlinkin luominen taulukkoon tai matriisiin Power BI Desktopilla
-Voit luoda taulukoihin ja matriiseihin hyperlinkkejä Power BI Desktopilla mutta et Power BI -palvelussa. Voit luoda hyperlinkkejä myös Excel Power Pivotilla ennen työkirjan tuomista Power BI:hin. Menetelmät on kuvailtu alla.
 
-## <a name="create-a-table-or-matrix-hyperlink-in-power-bi-desktop"></a>Hyperlinkin luominen taulukkoon tai matriisiin Power BI Desktopilla
-Hyperlinkin lisäämisen menettely riippuu siitä, oletko tuonut tiedot vai yhdistänyt niihin DirectQueryllä. Molemmat keinot on kuvattu alla.
+## <a name="format-a-url-as-a-hyperlink-in-power-bi-desktop"></a>URL-osoitteen muotoileminen hyperlinkkinä Power BI Desktopissa
 
-### <a name="for-data-imported-into-power-bi"></a>Power BI:hin tuodut tiedot
-1. Jos hyperlinkkiä ei vielä ole tietojoukon kenttänä, lisää se [mukautettuna sarakkeena](desktop-common-query-tasks.md) Power BI Desktopissa.
-2. Valitse sarake Tiedot-näkymässä ja sitten **Mallinnus**-välilehdeltä avattava **Tietoluokka**-valikko.
-   
-    ![Tietoluokan avattavan valikon luettelo](media/power-bi-hyperlinks-in-tables/pbi_data_category.png)
-3. Valitse **URL-verkko-osoite**.
-4. Siirry Raporttinäkymään ja luo taulukko tai matriisi URL-verkko-osoitteeksi luokiteltuun kenttään. Hyperlinkit näkyvät sinisinä ja alleviivattuina.
+Voit muotoilla URL-osoitteita sisältävää kenttää hyperlinkkeinä Power BI Desktopissa, mutta et Power BI -palvelussa. Voit myös [muotoilla hyperlinkkejä Excel Power Pivotissa](#create-a-table-or-matrix-hyperlink-in-excel-power-pivot) ennen työkirjan tuomista Power BI:hin.
 
-    ![Siniset ja alleviivatut linkit](media/power-bi-hyperlinks-in-tables/power-bi-table-with-hyperlinks2.png)
+1. Jos tietojoukossa ei ole jo hyperlinkkiä sisältävää kenttää Power BI Desktopissa, lisää se [mukautettuna sarakkeena](desktop-common-query-tasks.md).
 
     > [!NOTE]
-    > URL-osoitteiden tulee alkaa tietyillä etuliitteillä. Täysi luettelo löytyy alla olevasta [Huomioon otettavat seikat ja vianmääritys](#considerations-and-troubleshooting) -kohdasta.
-    >
+    > Et voi luoda saraketta DirectQuery-tilassa.  Jos tiedoissasi kuitenkin on jo URL-osoitteita, voit muuttaa ne hyperlinkeiksi.
+
+2. Valitse sarake tietonäkymässä. 
+
+3. Valitse **Mallinnus**-välilehdeltä **Tietoluokka** > **Verkko-URL-osoite**.
    
-1. Jos et halua taulukossa näkyvän pitkää URL-osoitetta, voit näyttää sen sijaan  ![Hyperlinkkikuvake](media/power-bi-hyperlinks-in-tables/power-bi-hyperlink-icon.png) hyperlinkkikuvakkeen. Huomaa, matriiseissa ei voi näyttää kuvakkeita.
+    ![Tietoluokan avattavan valikon luettelo](media/power-bi-hyperlinks-in-tables/power-bi-format-web-url.png)
+
+    > [!NOTE]
+    > URL-osoitteiden tulee alkaa tietyillä etuliitteillä. Täysi luettelo löytyy tämän artikkelin [Huomioon otettavat seikat ja vianmääritys](#considerations-and-troubleshooting) -kohdasta.
+
+## <a name="create-a-table-or-matrix-with-a-hyperlink"></a>Hyperlinkin sisältävän taulukon tai matriisin luominen
+
+1. Kun olet [muotoillut hyperlinkin URL-osoitteena](#format-a-url-as-a-hyperlink-in-power-bi-desktop), siirry raporttinäkymään.
+2. Luo taulukko tai matriisi, joka sisältää kentän, jonka olet luokitellut verkko-URL-osoitteeksi. Hyperlinkit näkyvät sinisinä ja alleviivattuina.
+
+    ![Siniset ja alleviivatut linkit](media/power-bi-hyperlinks-in-tables/power-bi-url-blue-underline.png)
+
+
+## <a name="display-a-hyperlink-icon-instead-of-a-url"></a>Näytä hyperlinkkikuvake URL-osoitteen sijaan
+
+Jos et halua taulukossa näkyvän pitkää URL-osoitetta, voit näyttää sen sijaan ![Hyperlinkkikuvake](media/power-bi-hyperlinks-in-tables/power-bi-hyperlink-icon.png) hyperlinkkikuvakkeen. 
+
+> [!NOTE]
+> Matriisissa ei voi näyttää kuvakkeita.
    
-    Valitse kaavio, jotta se on aktiivinen.
+1. [Luo ensin taulukko, joka sisältää hyperlinkin](#create-a-table-or-matrix-with-a-hyperlink).
 
-    Valitse Muotoilu-kuvake ![Maalirullakuvake](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) Muotoilu-välilehden avaamiseksi.
+2. Valitse taulukko, jotta se on aktiivinen.
 
-    Laajenna **Arvot**, etsi **URL-osoitekuvake** ja ota se **käyttöön.**
+    Avaa Muotoilu-välilehti valitsemalla **Muotoile**-kuvake ![Maalirulla-kuvake](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png).
 
-    ![Ota käyttöön URL-kuvake](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
+    Laajenna **Arvot**-kohtaa, etsi **URL-osoitteen kuvake** ja ota se **käyttöön**.
 
-1. (Valinnainen) [Julkaise raportti Power BI Desktopista Power BI -palveluun](/learn/modules/publish-share-power-bi/2-publish-reports) ja avaa raportti Power BI -palvelussa. Hyperlinkit toimivat myös siellä.
+    ![Ota käyttöön URL-osoitteen kuvake](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
 
-### <a name="for-data-connected-with-directquery"></a>DirectQueryyn yhdistetyt tiedot
-Et voi luoda uutta saraketta DirectQuery-tilassa.  Jos tiedoissasi kuitenkin on jo URL-osoitteita, voit muuttaa ne hyperlinkeiksi.
+1. (Valinnainen) [Julkaise raportti](desktop-upload-desktop-files.md) Power BI Desktopista Power BI -palvelussa. Kun avaat raportin Power BI -palvelussa, myös hyperlinkit toimivat siellä.
 
-1. Luo Raporttinäkymässä taulukko käyttämällä URL-osoitteita sisältävää kenttää.
-2. Valitse sarake Tiedot-näkymässä ja sitten **Mallinnus**-välilehdeltä avattava **Tietoluokka**-valikko.
-3. Valitse **URL-verkko-osoite**. Hyperlinkit näkyvät sinisinä ja alleviivattuina.
-4. (Valinnainen) [Julkaise raportti Power BI Desktopista Power BI -palveluun](/learn/modules/publish-share-power-bi/2-publish-reports) ja avaa raportti Power BI -palvelussa. Hyperlinkit toimivat myös siellä.
+## <a name="format-link-text-as-a-hyperlink"></a>Muotoile linkin tekstiä hyperlinkkinä
+
+Voit myös muotoilla taulukon toista kenttää hyperlinkkinä ilman URL-osoitteen saraketta. Tässä tapauksessa et muotoile saraketta verkko-URL-osoitteena.
+
+> [!NOTE]
+> Et voi muotoilla toista kenttää hyperlinkkinä matriisissa.
+
+1. Jos hyperlinkin sisältävää kenttää ei ole vielä tietojoukossa, lisää se [mukautettuna sarakkeena](desktop-common-query-tasks.md) Power BI Desktopin avulla. Et voi tässäkään tapauksessa luoda saraketta DirectQuery-tilassa.  Jos tiedoissasi kuitenkin on jo URL-osoitteita, voit muuttaa ne hyperlinkeiksi.
+
+2. Luo raporttinäkymässä taulukko tai matriisi, joka sisältää sarakkeen, jota aiot muotoilla linkin tekstinä.
+
+3. Pidä taulukko valittuna ja avaa Muotoilu-välilehti valitsemalla **Muotoile**-kuvake ![Maalirulla-kuvake](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png).
+
+4. Laajenna **Ehdollinen muotoilu** -kohtaa ja varmista, että ruudussa oleva nimi on sarake, jonka haluat linkin tekstiksi. Etsi **URL-osoitteen kuvake** ja **ota se käyttöön**.
+
+    ![Ehdollisen muotoilun verkko-URL-osoite](media/power-bi-hyperlinks-in-tables/power-bi-format-conditional-web-url.png)
+
+5. Valitse **Verkko-URL-osoite**-valintaikkunassa kenttä, joka sisältää URL-osoitteen, **Perustuu kenttään** -ruudussa > **OK**.
+
+    ![Verkko-URL-osoite-valintaikkuna](media/power-bi-hyperlinks-in-tables/power-bi-format-web-url-dialog.png)
+
+    Nyt kyseisen sarakkeen teksti muotoillaan linkkinä.
+
+    ![Hyperlinkkinä muotoiltu teksti](media/power-bi-hyperlinks-in-tables/power-bi-url-link-text.png)
+
+1. (Valinnainen) [Julkaise raportti](desktop-upload-desktop-files.md) Power BI Desktopista Power BI -palvelussa. Kun avaat raportin Power BI -palvelussa, myös hyperlinkit toimivat siellä.
 
 ## <a name="create-a-table-or-matrix-hyperlink-in-excel-power-pivot"></a>Hyperlinkin luominen taulukkoon tai matriisiin Excel Power Pivotilla
+
 Toinen tapa lisätä hyperlinkkejä Power BI -taulukoihin ja -matriiseihin on luoda hyperlinkit tietojoukkoon ennen kyseisen tietojoukon tuomista Power BI:hin tai siihen liittämistä Power BI:ssä. Tässä esimerkissä käytetään Excel-työkirjaa.
 
 1. Avaa työkirja Excelissä.

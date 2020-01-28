@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/07/2020
-ms.openlocfilehash: 4cf5d2c1df4d7e0884083d48aa66421e5c43765a
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.openlocfilehash: 1cf8797939eafb69734ecd0f4be752926d1994a1
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75735139"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953923"
 ---
 # <a name="install-report-builder---power-bi-report-server"></a>Raportin muodostimen asentaminen – Power BI-raporttipalvelin
 
 Raportin muodostin on itsenäinen sovellus, jonka sinä tai järjestelmänvalvoja on asentanut tietokoneeseesi. Voit ladata sen Microsoft Download Centeristä tai Power BI -raporttipalvelimelta.  
 
-Tarvitsetko neuvoja Power BI -palvelun Raportin muodostimen asentamiseen? Lue lisätietoja kohdasta [Power BI:n sivutetun raportin muodostin](../report-builder-power-bi.md).
+Tarvitsetko neuvoja Power BI -palvelun Raportin muodostimen asentamiseen? Lue lisätietoja kohdasta [Power BI:n raportin muodostin](../report-builder-power-bi.md).
   
 Tavallisesti järjestelmänvaloja asentaa ja määrittää Power BI -raporttipalvelimen, myöntää käyttöoikeudet Raportin muodostimen lataamiseen verkkoportaalista, ja hallitsee kansioita ja raporttien käyttöoikeuksia sekä raporttipalvelimelle tallennettuja jaettuja tietojoukkoja. Lisätietoja Power BI -raporttipalvelimesta on artikkelissa [Hallinnan yhteenveto, Power BI -raporttipalvelin](admin-handbook-overview.md).  
   

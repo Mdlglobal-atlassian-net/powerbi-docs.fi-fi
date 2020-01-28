@@ -1,6 +1,6 @@
 ---
 title: Taulukot, matriisit ja luettelot Power BI:n raportin muodostimessa
-description: Power BI:n sivutettujen raporttien muodostimessa taulukot, matriisit ja luettelot ovat tietoalueita, joissa sivutetun raportin tiedot on järjestetty riveihin ja sarakkeisiin.
+description: Power BI:n raporttien muodostimessa taulukot, matriisit ja luettelot ovat tietoalueita, joissa sivutetun raportin tiedot on järjestetty riveihin ja sarakkeisiin.
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.assetid: 9dcf3fc8-bf9c-4a14-a03d-e78254aa4098
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: f48187edc3d955b3b87f902a3056e86a933817e1
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 02ac131325dab59590cb88c524ace68a1226fc69
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840207"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953835"
 ---
 # <a name="tables-matrixes-and-lists-in-power-bi-report-builder"></a>Taulukot, matriisit ja luettelot Power BI:n raportin muodostimessa
  Power BI:n raporttien muodostimessa taulukot, matriisit ja luettelot ovat *tietoalueita*, joissa sivutetun raportin tiedot on järjestetty riveihin ja sarakkeisiin. Solut sisältävät yleensä tekstitietoja, kuten tekstiä, päivämääriä ja numeroita, mutta ne voivat sisältää myös mittareita ja kaavioita tai raporttikohteita, kuten kuvia. Taulukoita, matriiseja ja luetteloita kutsutaan usein *tablix*-tietoalueiksi.  

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 01/14/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 80fc4f4afe29806077d1bf64a59d8761d7ab1c1d
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 8737a0e9b2dd8ba17d28962ed51e24ec0c5cefc4
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099924"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76040489"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualisointityypit Power BI:ssä
 ## <a name="power-bi-visualizations"></a>Visualisoinnit Power BI:ssä
@@ -145,6 +145,13 @@ Lisätietoja on artikkelissa [Matriisivisualisoinnit Power BI:ssä](desktop-matr
 
 >[!TIP]
 >Ympyräkaaviot näyttävät osien suhteen kokonaisuuteen. 
+
+### <a name="power-apps-visual"></a>Power Apps -visualisointi
+![Power Apps -visualisointi](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-powerapps-visual.png)
+
+Raporttien suunnittelijat voivat luoda Power-sovelluksen ja upottaa sen Power BI -raporttiin visualisointina. Käyttäjät voivat käsitellä tätä visualisointia Power BI -raportissa. 
+
+Katso lisätietoja ohjeaiheesta [Power Apps -visualisoinnin lisääminen raporttiin](power-bi-visualization-powerapp.md).
 
 ### <a name="qa-visual"></a>Q&A-visualisointi
 ![Q&A-visualisoinnit](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)

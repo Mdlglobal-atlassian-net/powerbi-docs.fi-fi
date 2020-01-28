@@ -6,47 +6,50 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 01/09/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fd25e4ca6357dbfa5954eeabe0bf97fb6ccb8a1c
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 0cf9d6acd4fe5f729dafb575a2ab736b9e8db7bb
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761360"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76039804"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktopin tietolähteet
 
 Power BI Desktopin avulla voit yhdistää tietoja monista eri lähteistä. Täydellinen luettelo käytettävissä olevista tietolähteistä löytyy [Power BI:n tietolähteiden artikkelista](power-bi-data-sources.md).
 
-Muodosta yhteys tietoihin valitsemalla **Aloitus**-valintanauhassa **Nouda tiedot**. Jos valitset alanuolen tai **Nouda tiedot** -painikkeen, näyttöön tulee **yleisimpien** tietotyyppien valikko, joka näkyy seuraavassa kuvassa:
+Voit muodostaa yhteyden tietoihin **Aloitus**-valintanauhan avulla. Jos haluat näyttää **Yleisin**-tietotyyppivalikon, valitse **Nouda tiedot** -painikkeen nimi tai alanuoli.
 
-![Nouda tiedot Power BI Desktopissa](media/desktop-data-sources/data-sources-01.png)
+![Yleisin-tietotyyppivalikko, Nouda tiedot Power BI Desktopissa](media/desktop-data-sources/data-sources-01.png)
 
-Valitsemalla **Lisää...** **Yleisimmät**-valikossa saat **Nouda tiedot** -ikkunan näkyviin. Voit myös tuoda **Nouda tiedot** -ikkunan (ja ohittaa **Yleisimmät**-valikon) valitsemalla suoraan **Nouda tiedot** **-kuvakepainikkeen**.
+Jos haluat siirtyä **Nouda tiedot** -valintaikkunaan, näytä **Yleisin**-tietotyyppivalikko ja valitse **Lisää**. Voit myös tuoda **Nouda tiedot** -valintaikkunan (ja ohittaa **Yleisin**-valikon) valitsemalla suoraan **Nouda tiedot** -kuvakkeen.
 
-![Nouda tiedot -painike](media/desktop-data-sources/data-sources-02.png)
+![Nouda tiedot -painike, Power BI Desktop](media/desktop-data-sources/data-sources-02.png)
 
 > [!NOTE]
-> Power BI -tiimi laajentaa jatkuvasti **Power BI Desktopin** ja **Power BI -palvelun** käytettävissä olevia tietolähteitä. Näet näin ollen usein keskeneräisten tietolähteiden varhaisia versioita, joissa on merkintä *beeta* tai *esikatselu*. Tietolähteen, jolla on merkintä *beeta* tai *esikatselu*, tuki ja toiminnallisuus ovat rajoitettua, eikä sitä tulisi käyttää tuotantoympäristössä. Lisäksi mikään *Beeta-* tai *Esikatselu*-merkinnällä varustettu **Power BI Desktop** -sisältö ei ehkä ole käytettävissä **Power BI -palvelussa** tai muissa Microsoftin palveluissa ennen kuin tietolähde on yleisesti saatavana (GA).
+> Power BI -tiimi laajentaa jatkuvasti Power BI Desktopin ja Power BI -palvelun käytettävissä olevia tietolähteitä. Näet näin ollen usein keskeneräisten tietolähteiden varhaisia versioita, joissa on merkintä **beeta** tai **esikatselu**. Tietolähteen, jolla on **Beeta**- tai **Esikatselu**-merkintä, tuki ja toiminnallisuus ovat rajoitettua, eikä sitä tulisi käyttää tuotantoympäristöissä. Lisäksi mikään **Beeta-** tai **Esikatselu**-merkinnällä varustettu Power BI Desktop -sisältö ei ehkä ole käytettävissä Power BI -palvelussa tai muissa Microsoftin palveluissa ennen kuin tietolähde on yleisesti saatavana (GA).
 
 > [!NOTE]
 > Power BI Desktopille on useita tietoliittimiä, jotka edellyttävät todentamista Internet Explorer 10:llä (tai uudemmalla versiolla). 
 
 
 ## <a name="data-sources"></a>Tietolähteet
-Kaikki tietotyypit on järjestelty seuraaviin luokkiin:
+
+**Nouda tiedot**-valintaikkuna järjestää tietotyypit seuraaviin luokkiin:
 
 * Kaikki
 * Tiedosto
 * Tietokanta
-* Power BI
+* Power Platform
 * Azure
 * Online-palvelut
 * Muut
 
 **Kaikki**-luokka sisältää kaikki tietoyhteystyypit kaikista luokista.
+
+### <a name="file-data-sources"></a>Tiedoston tietolähteet
 
 **Tiedosto**-luokka tarjoaa seuraavat tietoyhteydet:
 
@@ -60,7 +63,9 @@ Kaikki tietotyypit on järjestelty seuraaviin luokkiin:
 
 Seuraavassa kuvassa näkyy **Tiedosto**-luokan **Nouda tiedot** -ikkuna.
 
-![Nouda tiedot > Tiedosto](media/desktop-data-sources/data-sources-03.png)
+![Tiedoston tietolähteet, Nouda tiedot -valintaikkuna, Power BI Desktop](media/desktop-data-sources/data-sources-03.png)
+
+### <a name="database-data-sources"></a>Tietokannan tietolähteet
 
 **Tietokanta**-luokka tarjoaa seuraavat tietoyhteydet:
 
@@ -74,7 +79,7 @@ Seuraavassa kuvassa näkyy **Tiedosto**-luokan **Nouda tiedot** -ikkuna.
 * MySQL-tietokanta
 * PostgreSQL-tietokanta
 * Sybase-tietokanta
-* Teradata
+* Teradata-tietokanta
 * SAP HANA -tietokanta
 * SAP Business Warehouse -sovelluspalvelin
 * SAP Business Warehouse -viestipalvelin
@@ -84,22 +89,25 @@ Seuraavassa kuvassa näkyy **Tiedosto**-luokan **Nouda tiedot** -ikkuna.
 * Vertica
 * Snowflake
 * Essbase
-* AtScale-kuutiot
+* AtScale-kuutiot (beeta)
 * BI-liitin
+* Denodo
 * Dremio
 * Exasol
 * Indexima (beeta)
 * InterSystems IRIS (beeta)
 * Jethro (beeta)
-* Kyligence Enterprise (beeta)
-* MarkLogic (beeta)
+* Kyligence
+* MarkLogic
 
 > [!NOTE]
 > Jotkin tietokannan yhdistimet edellyttävät, että otat ne käyttöön valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja valitsemalla **Esikatselutoiminnot** ja ottamalla yhdistin käyttöön. Jos et näe joitakin edellä mainituista yhdistimistä ja haluat käyttää niitä, tarkista **Esikatselutoiminnot**-asetukset. Huomaa myös, että tietolähteen, jolla on merkintä *beeta* tai *esikatselu*, tuki ja toiminnallisuus ovat rajoitettua, eikä sitä tulisi käyttää tuotantoympäristössä.
 
 Seuraavassa kuvassa näkyy **Tietokanta**-luokan **Nouda tiedot** -ikkuna.
 
-![Nouda tiedot > Tietokannat](media/desktop-data-sources/data-sources-04.png)
+![Tietokannan tietolähteet, Nouda tiedot -valintaikkuna, Power BI Desktop](media/desktop-data-sources/data-sources-04.png)
+
+### <a name="power-platform-data-sources"></a>Power Platform -tietolähteet
 
 **Power Platform** -luokka tarjoaa seuraavat tietoyhteydet:
 
@@ -110,11 +118,13 @@ Seuraavassa kuvassa näkyy **Tietokanta**-luokan **Nouda tiedot** -ikkuna.
 
 Seuraavassa kuvassa näkyy **Power Platform** -luokan **Nouda tiedot** -ikkuna.
 
-![Nouda tiedot > Power BI](media/desktop-data-sources/data-sources-05.png)
+![Power Platform -tietolähteet, Nouda tiedot -valintaikkuna, Power BI Desktop](media/desktop-data-sources/data-sources-05.png)
+
+### <a name="azure-data-sources"></a>Azure-tietolähteet
 
 **Azure**-luokka tarjoaa seuraavat tietoyhteydet:
 
-* Azuren SQL-tietokanta
+* Azure SQL -tietokanta
 * Azure SQL Data Warehouse
 * Azure Analysis Services -tietokanta
 * Azure-blob-objektitallennus
@@ -131,7 +141,9 @@ Seuraavassa kuvassa näkyy **Power Platform** -luokan **Nouda tiedot** -ikkuna.
 
 Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 
-![Nouda tiedot > Azure](media/desktop-data-sources/data-sources-06.png)
+![Azure-tietolähteet, Nouda tiedot -valintaikkuna, Power BI Desktop](media/desktop-data-sources/data-sources-06.png)
+
+### <a name="online-services-data-sources"></a>Online Services -tietolähteet
 
 **Online-palvelut**-luokka tarjoaa seuraavat tietoyhteydet:
 
@@ -152,6 +164,7 @@ Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 * Data.World – nouda tietojoukko (beeta)
 * Facebook
 * GitHub (beeta)
+* LinkedIn Sales Navigator (beeta)
 * MailChimp (beeta)
 * Marketo (beeta)
 * Mixpanel (beeta)
@@ -160,31 +173,33 @@ Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 * QuickBooks Online (beeta)
 * Smartsheet
 * SparkPost (beeta)
-* Stripe (beeta)
 * SweetIQ (beeta)
-* Planview Enterprise One - CMT (beeta)
+* Planview Enterprise One - CTM (beeta)
 * Twilio (beeta)
 * tyGraph (beeta)
 * Webtrends (beeta)
 * Zendesk (beeta)
 * Dynamics 365 Customer Insights (beeta)
-* Emigo-tietolähde (beeta)
+* Emigo-tietolähde
 * Entersoft Business Suite (beeta)
 * App Store teollisuuskäyttöön
 * Intune-tietovarasto (beeta)
 * Microsoft Graph Security (beeta)
+* Product Insights (beeta)
 * Quick Base
 * TeamDesk (beeta)
-
+* Workplace Analytics (beeta)
 
 Seuraavassa kuvassa näkyy **Online-palvelut**-luokan **Nouda tiedot** -ikkuna.
 
-![Nouda tiedot > Online-palvelut](media/desktop-data-sources/data-sources-07.png)
+![Online Services -tietolähteet, Nouda tiedot -valintaikkuna, Power BI Desktop](media/desktop-data-sources/data-sources-07.png)
+
+### <a name="other-data-sources"></a>Muut tietolähteet
 
 **Muut**-luokka tarjoaa seuraavat tietoyhteydet:
 
 * Verkko
-* SharePoint List
+* SharePoint-luettelo
 * OData-syöte
 * Active Directory
 * Microsoft Exchange
@@ -195,37 +210,39 @@ Seuraavassa kuvassa näkyy **Online-palvelut**-luokan **Nouda tiedot** -ikkuna.
 * ODBC
 * OLE DB
 * BI360 – Budjetointi- ja talousraportointi (beeta)
-* Denodo
 * Tietoruudukko (beeta)
-* Paxata 
+* Paxata
 * QubolePresto (beeta)
 * Roamler (beeta)
+* Siteimprove (beeta)
 * SurveyMonkey (beeta)
 * Tenforce (Smart)List (beeta)
+* Vena (beeta)
 * Työvoiman dimensiot (beeta)
 * Tyhjä kysely
 
 Seuraavassa kuvassa näkyy **Muut**-luokan **Nouda tiedot** -ikkuna.
 
-![Nouda tiedot > Muut](media/desktop-data-sources/data-sources-08.png)
+![Muut tietolähteet, Nouda tiedot -valintaikkuna, Power BI Desktop](media/desktop-data-sources/data-sources-08.png)
 
 > [!NOTE]
 > Tällä hetkellä ei ole mahdollista muodostaa yhteyttä mukautettuihin tietolähteisiin, jotka suojattu Azure Active Directorylla.
 
 ## <a name="connecting-to-a-data-source"></a>Yhteyden muodostaminen tietolähteeseen
+
 Jos haluat muodostaa yhteyden tietolähteeseen, valitse tietolähde **Nouda tiedot** -ikkunassa ja valitse **Muodosta yhteys**. Seuraavassa kuvassa **Muut**-tietoyhteysluokasta on valittu **WWW**.
 
-![Yhdistä verkkoon](media/desktop-data-sources/data-sources-08.png)
+![Yhdistä verkkoon, Nouda tiedot -valintaikkuna, Power BI Desktop](media/desktop-data-sources/data-sources-08.png)
 
 Näyttöön tulee tietoyhteyden mukainen yhteysikkuna. Jos tunnistetietoja vaaditaan, sinua pyydetään antamaan ne. Seuraavassa kuvassa näytetään URL-osoitteen kirjoittaminen WWW-tietolähteeseen yhdistämistä varten.
 
-![syötä URL-verkko-osoite](media/desktop-data-sources/datasources-fromwebbox.png)
+![Syötteen URL-osoite, Verkosta-valintaikkuna, Power BI Desktop](media/desktop-data-sources/datasources-fromwebbox.png)
 
-Kun URL-osoite tai resurssiyhteyden tiedot on annettu, valitse **OK**. Power BI Desktop muodostaa yhteyden tietolähteeseen ja esittää saatavilla olevat tietolähteet **siirtymistoiminnossa**.
+Kirjoita URL-osoite tai resurssiyhteyden tiedot ja valitse sitten **OK**. Power BI Desktop muodostaa yhteyden tietolähteeseen ja esittää saatavilla olevat tietolähteet **siirtymistoiminnossa**.
 
-![Siirtymistoimintonäyttö](media/desktop-data-sources/datasources-fromnavigatordialog.png)
+![Siirtymistoiminto-valintaikkuna, Power BI Desktop](media/desktop-data-sources/datasources-fromnavigatordialog.png)
 
-Voit joko ladata tiedot valitsemalla **Lataa**-painike **Siirtymistoiminto**-ruudun alareunassa tai muokata kyselyä ennen tietojen lataamista valitsemalla **Muokkaa**-painike.
+Lataa tiedot valitsemalla **Lataa**-painike **Siirtymistoiminto**-ruudun alareunasta. Jos haluat muuntaa tai muokata kyselyä Power Query -editorissa ennen tietojen lataamista, valitse **Muunna tiedot** -painike.
 
 Tietolähteisiin yhdistäminen Power BI Desktopissa ei muuta vaadi! Yritä muodostaa yhteys tietoihin kasvavassa tietolähteiden valikoimassa ja tarkista päivitetyt tiedot – kasvatamme tätä luetteloa koko ajan.
 
@@ -233,29 +250,29 @@ Tietolähteisiin yhdistäminen Power BI Desktopissa ei muuta vaadi! Yritä muodo
 
 PBIDS-tiedostot ovat Power BI Desktop -tiedostoja, joilla on tietty rakenne ja joilla on .PBIDS-tiedostotunniste merkkinä siitä, että ne ovat Power BI -tietolähdetiedostoja.
 
-Voit luoda .PBIDS-tiedoston tehostaaksesi **tietojen hakemista** organisaatiossasi raportteja luoville käyttäjille. On suositeltavaa, että järjestelmänvalvojat luovat nämä tiedostot yleisesti käytetyille yhteyksille. Tämä helpottaa PBIDS-tiedostojen käyttöä uusille raportin tekijöille. 
+Voit luoda PBIDS-tiedoston tehostaaksesi **tietojen noutamista** organisaatiossasi raportteja luoville käyttäjille. Jotta uuden raportin tekijän olisi helpompi käyttää PBIDS-tiedostoja, on suositeltavaa, että järjestelmänvalvoja luo nämä tiedostot usein käytettyihin yhteyksiin.
 
-Kun tekijä avaa .PBIDS-tiedoston, Power BI Desktop avautuu ja kysyy käyttäjältä tunnistetietoja, joilla todennetaan ja muodostetaan yhteys tiedostossa määritettyyn tietolähteeseen. Näyttöön avautuu siirtymisikkuna, jossa käyttäjän täytyy valita tietolähteestä taulukot, jotka ladataan malliin. Käyttäjien on ehkä myös valittava tietokanta, jos sitä ei ole määritetty PBIDS-tiedostossa. 
+Kun tekijä avaa PBIDS-tiedoston, Power BI Desktop avautuu ja kysyy käyttäjältä tunnistetietoja, joilla todennetaan ja muodostetaan yhteys tiedostossa määritettyyn tietolähteeseen. Näyttöön avautuu **Siirtymistoiminto**-valintaikkuna, jossa käyttäjän täytyy valita tietolähteestä taulukot, jotka ladataan malliin. Käyttäjien on ehkä myös valittava tietokanta, jos mitään tietokantaa ei ole määritetty PBIDS-tiedostossa.
 
-Tämän jälkeen käyttäjä voi aloittaa visualisointien luomisen tai käydä uudelleen *Viimeaikaiset lähteet* -näkymässä lataamassa malliin uuden joukon taulukoita. 
+Tämän jälkeen käyttäjä voi aloittaa visualisointien luomisen tai valita **Viimeaikaiset lähteet** -kohdan uuden taulukkosarjan lataamiseksi malliin.
 
-Tällä hetkellä .PBIDS-tiedostot tukevat vain yhtä tietolähdettä yhdessä tiedostossa. Jos määrität useita tietolähteitä, tämä aiheuttaa virheen. 
+Tällä hetkellä PBIDS-tiedostot tukevat vain yhtä tietolähdettä yhdessä tiedostossa. Jos määrität useita tietolähteitä, tämä aiheuttaa virheen.
 
-Luodakseen .PBIDS-tiedoston järjestelmänvalvojan täytyy määrittää yhden yhteyden vaaditut annettavat tiedot sekä yhteystila. Se voi olla **DirectQuery**-tila tai **tuontitila**. Jos **tila** puuttuu tiedostosta tai on nolla-arvoinen, Power BI Desktopissa tiedoston avaavaa käyttäjää pyydetään valitsemaan joko DirectQuery-tila tai tuontitila. 
+PBIDS-tiedoston luomiseksi järjestelmänvalvojan täytyy määrittää vaadittavat syötteet yksittäiselle yhteydelle. He voivat myös määrittää yhteystilaksi joko DirectQuery tai Tuo. Jos **tila** puuttuu tiedostosta tai on nolla-arvoinen, Power BI Desktopissa tiedoston avaavaa käyttäjää pyydetään valitsemaan joko **DirectQuery** tai **Tuo**.
 
 ### <a name="pbids-file-examples"></a>Esimerkkejä PBIDS-tiedostoista
 
-Tämä osio sisältää joitain esimerkkejä usein käytetyistä tietolähteistä. .PBIDS-tiedostotyyppi tukee vain tietoyhteyksiä, joita tuetaan myös Power BI Desktopissa, mutta tässä on kaksi poikkeusta: reaaliaikainen yhteys ja tyhjä kysely. 
+Tämä osio sisältää joitain esimerkkejä usein käytetyistä tietolähteistä. PBIDS-tiedostotyyppi tukee vain tietoyhteyksiä, joita tuetaan myös Power BI Desktopissa, mutta tässä on kaksi poikkeusta: reaaliaikainen yhteys ja tyhjä kysely.
 
-.PBIDS-tiedosto *ei* sisällä todennustietoja, taulukkotietoja tai rakennetietoja.  
+PBIDS-tiedosto *ei* sisällä todennustietoja, taulukkotietoja ja rakennetietoja.  
 
-Alla on useita esimerkkejä .PBIDS-tiedostosta, mutta nämä ovat vain esimerkkejä, ei täydellinen luettelo. Jos käytät muita tietolähteitä, voit tarkistaa [Data Source Reference (DSR) -muodon protokolla- ja osoitetiedot](https://docs.microsoft.com/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
+Seuraavissa koodikatkelmissa näytetään useita yleisiä esimerkkejä PBIDS-tiedostoista, mutta ne eivät ole täydellisiä tai kattavia. Jos käytät muita tietolähteitä, voit tarkistaa [Data Source Reference (DSR) -muodon protokolla- ja osoitetiedot](https://docs.microsoft.com/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
 
-Nämä esimerkit on tarkoitettu vain malliksi. Tämä ei ole kattava luettelo eikä tämä sisällä kaikkia DSR-muodon tuettuja liittimiä. Järjestelmänvalvojat ja organisaatiot voivat luoda näiden esimerkkien pohjalta omia tietolähteitään, joista he voivat luoda omia tietolähdetiedostoja sekä tukea niitä. 
+Nämä esimerkit on tarkoitettu vain malliksi. Tämä ei ole kattava luettelo eikä sisällä kaikkia DSR-muodon tuettuja yhdistimiä. Järjestelmänvalvoja tai organisaatio voi luoda näiden esimerkkien pohjalta omia tietolähteitään, joista he voivat luoda omia tietolähdetiedostoja ja tukea niitä.
 
+#### <a name="azure-as"></a>Azure AS
 
-**Azure AS**
-```
+```json
 { 
     "version": "0.1", 
     "connections": [ 
@@ -271,11 +288,9 @@ Nämä esimerkit on tarkoitettu vain malliksi. Tämä ei ole kattava luettelo ei
 }
 ```
 
+#### <a name="folder"></a>Kansio
 
- 
-
-**Kansio**
-```
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -291,8 +306,9 @@ Nämä esimerkit on tarkoitettu vain malliksi. Tämä ei ole kattava luettelo ei
 } 
 ```
 
-**OData**
-```
+#### <a name="odata"></a>OData
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -307,9 +323,10 @@ Nämä esimerkit on tarkoitettu vain malliksi. Tämä ei ole kattava luettelo ei
   ] 
 } 
 ```
- 
-**SAP BW**
-```
+
+#### <a name="sap-bw"></a>SAP BW
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -326,9 +343,10 @@ Nämä esimerkit on tarkoitettu vain malliksi. Tämä ei ole kattava luettelo ei
   ] 
 } 
 ```
- 
-**SAP Hana**
-```
+
+#### <a name="sap-hana"></a>SAP Hana
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -344,10 +362,11 @@ Nämä esimerkit on tarkoitettu vain malliksi. Tämä ei ole kattava luettelo ei
 } 
 ```
 
-**SharePoint-luettelo**
+#### <a name="sharepoint-list"></a>SharePoint-luettelo
 
-URL-osoitteen täytyy osoittaa itse SharePoint-sivustoon, ei luetteloon sivustossa. Käyttäjät saavat käyttöönsä siirtymistoiminnon, jossa he voivat valita luetteloita sivustosta. Näistä luetteloista tulee taulukoita mallissa. 
-```
+URL-osoitteen täytyy osoittaa itse SharePoint-sivustoon, ei luetteloon sivustossa. Käyttäjät saavat käyttöönsä siirtymistoiminnon, jossa he voivat valita luetteloita sivustosta. Näistä luetteloista tulee taulukoita mallissa.
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -362,10 +381,10 @@ URL-osoitteen täytyy osoittaa itse SharePoint-sivustoon, ei luetteloon sivustos
   ] 
 } 
 ```
- 
- 
-**SQL Server**
-```
+
+#### <a name="sql-server"></a>SQL Server
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -383,10 +402,10 @@ URL-osoitteen täytyy osoittaa itse SharePoint-sivustoon, ei luetteloon sivustos
   ] 
 } 
 ```
- 
 
-**Tekstitiedosto**
-```
+#### <a name="text-file"></a>Tekstitiedosto
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -401,10 +420,10 @@ URL-osoitteen täytyy osoittaa itse SharePoint-sivustoon, ei luetteloon sivustos
   ] 
 } 
 ```
- 
 
-**Verkko**
-```
+#### <a name="web"></a>Verkko
+
+```json
 { 
   "version": "0.1", 
   "connections": [ 
@@ -419,10 +438,10 @@ URL-osoitteen täytyy osoittaa itse SharePoint-sivustoon, ei luetteloon sivustos
   ] 
 } 
 ```
- 
 
-**Tietovuo**
-```
+#### <a name="dataflow"></a>Tietovuo
+
+```json
 {
   "version": "0.1",
   "connections": [
@@ -440,12 +459,12 @@ URL-osoitteen täytyy osoittaa itse SharePoint-sivustoon, ei luetteloon sivustos
 }
 ```
 
-
 ## <a name="next-steps"></a>Seuraavat vaiheet
+
 Voit tehdä kaikenlaista Power BI Desktopilla. Saat lisätietoja sen toiminnoista seuraavista resursseista:
 
 * [Mikä on Power BI Desktop?](desktop-what-is-desktop.md)
 * [Power BI Desktopin kyselyiden yleiskatsaus](desktop-query-overview.md)
 * [Tietotyypit Power BI Desktopissa](desktop-data-types.md)
 * [Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)
-* [Yleiset kyselytehtävät Power BI Desktopissa](desktop-common-query-tasks.md)    
+* [Yleiset kyselytehtävät Power BI Desktopissa](desktop-common-query-tasks.md)

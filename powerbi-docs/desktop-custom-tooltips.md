@@ -6,36 +6,38 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 08eda4e93a3e02e357c8153c656ec16811893ea9
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 93177ac56bc2d8ecfe4b85f4ab66daef6bf0f0f3
+ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761429"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76161003"
 ---
 # <a name="customize-tooltips-in-power-bi-desktop"></a>Työkaluvihjeiden mukautus Power BI Desktopissa
+
 Työkaluvihjeet ovat tyylikäs tapa tarjota tilannekohtaista lisätietoa ja yksityiskohtia visualisoinnin arvopisteistä. Alla olevassa kuvassa näkyy Power BI Desktopissa kaaviossa käytetty työkaluvihje.
 
 ![Oletusarvoinen työkaluvihje](media/desktop-custom-tooltips/custom-tooltips-1.png)
 
-Uudessa visualisoinnissa työkaluvihje esittää oletusarvoisesti arvopisteen arvon ja luokan. Työkaluvihjeen tietojen mukauttamisesta voi olla hyötyä monenlaisissa tilanteissa, kun työkaluvihjeen avulla voidaan esittää tilannekohtaista lisätietoa visualisointia tarkasteleville käyttäjille. Mukautettujen työkaluvihjeiden avulla voit määrittää lisää arvopisteitä, jotka näkyvät osana työkaluvihjettä.
+Uudessa visualisoinnissa työkaluvihje esittää oletusarvoisesti arvopisteen arvon ja luokan. Työkaluvihjeen tietojen mukauttamisesta voi olla hyötyä monissa tapauksissa. Työkaluvihjeiden mukauttaminen antaa lisäkontekstia ja tietoja visualisointia tarkasteleville käyttäjille. Mukautettujen työkaluvihjeiden avulla voit määrittää lisää arvopisteitä, jotka näkyvät osana työkaluvihjettä.
 
 ## <a name="how-to-customize-tooltips"></a>Ohjeet työkaluvihjeiden mukauttamiseen
-Jos haluat luoda mukautetun työkaluvihjeen, siirry **Visualisoinnit**-paneelista kohtaan **Kentät** ja vedä haluamasi kenttä **Työkaluvihjeet**-säilöön kuvan osoittamalla tavalla. Kuvasta näkyy, että **Työkaluvihjeet**-säilöön on lisätty kaksi kenttää.
+
+Jos haluat luoda mukautetun työkaluvihjeen, siirry **Visualisoinnit**-ruudusta **Kentät**-ruutuun ja vedä kenttä **Työkaluvihjeet**-säilöön kuvan mukaisesti. Seuraavassa kuvassa **Työkaluvihjeet**-säilöön on lisätty kolme kenttää.
 
 ![Työkaluvihjekenttien lisääminen](media/desktop-custom-tooltips/custom-tooltips-2.png)
 
-Kun työkaluvihjeet on lisätty kenttävalitsimeen, hiiren osoittimen vieminen visualisoinnin arvopisteen kohdalle näyttää työkaluvihjeessä kyseisten kenttien arvot.
+Kun työkaluvihjeet on lisätty **Työkaluvihjeet**-kohtaan, hiiren osoittimen vieminen visualisoinnin arvopisteen kohdalle näyttää työkaluvihjeessä kyseisten kenttien arvot.
 
 ![Mukautettu työkaluvihje](media/desktop-custom-tooltips/custom-tooltips-3.png)
 
-## <a name="customizing-tooltips-with-aggregation-or-quick-calcs"></a>Työkaluvihjeiden mukauttaminen koostamalla tai pikalaskinten avulla
-Voit mukauttaa työkaluvihjettä lisää valitsemalla koostefunktion tai *pikalaskimen*. Se tehdään valitsemalla nuoli **Työkaluvihjeet**-kohdan vierestä ja valitsemalla luettelosta sitten halutut asetukset.
+## <a name="customizing-tooltips-with-aggregation-or-quick-measures"></a>Työkaluvihjeiden mukauttaminen koosteen tai pikamittarin avulla
 
-![Työkaluvihje ja pikalaskin](media/desktop-custom-tooltips/custom-tooltips-4.png)
+Voit mukauttaa työkaluvihjettä edelleen valitsemalla koostetoiminnon tai *pikamittarin*. Valitse **Työkaluvihjeet**-säilön kentän vieressä oleva nuoli. Valitse sitten käytettävissä olevista vaihtoehdoista.
 
-**Työkaluvihjeitä** voi mukauttaa monin tavoin esittämään nopeasti merkityksellisiä tietoja käyttäjille, jotka tarkastelevat koontinäyttöjä tai raportteja, käyttämällä mitä tahansa tietojoukossa olevaa kenttää.
+![Työkaluvihje ja pikamittari](media/desktop-custom-tooltips/custom-tooltips-4.png)
 
+Työkaluvihjeitä voi mukauttaa monin tavoin esittämään nopeasti merkityksellisiä tietoja käyttäjille, jotka tarkastelevat koontinäyttöjä tai raportteja, käyttämällä mitä tahansa tietojoukossa olevaa kenttää.

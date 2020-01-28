@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/27/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 749d8d5b62df87b0e6b29d524e90c694a0e38efe
-ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
+ms.openlocfilehash: 6337c4c5e3098d56e869b8ce71117da2413802e6
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622433"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925663"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Työn järjestäminen uusiin työtiloihin Power BI:ssä
 
@@ -124,6 +124,10 @@ Power BI valvoo seuraavia uuden työtilakokemuksen työtiloja.
 | Päivitetty Power BI -kansion käyttöoikeus| UpdateFolderAccess |
 
 Lue lisää [Power BI:n valvonnasta](service-admin-auditing.md).
+
+## <a name="guest-users"></a>Vieraskäyttäjät
+
+Oletusarvo on, että [Azure AD B2B -vieraskäyttäjät](service-admin-azure-ad-b2b.md) eivät voi käyttää työtiloja. Power BI -järjestelmänvalvoja voi [sallia, että ulkoiset vieraskäyttäjät voivat muokata ja hallita sisältöä organisaatiossa](service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content). Tällöin vieraskäyttäjä pääsee käyttämään niitä työtiloja, joihin hänellä on lupa.
 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
 

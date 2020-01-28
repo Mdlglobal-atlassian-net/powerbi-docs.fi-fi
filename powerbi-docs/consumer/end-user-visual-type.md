@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 01/15/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 1670d3af200c8da672ac7034e4e15f6f460147a7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6fd970064bbe686a433fba0c0675948576edd8c1
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861316"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76039118"
 ---
 # <a name="visual-types-in-power-bi"></a>Visualisointityypit Power BI:ssä
 Visualisointeja on raporteissa, koontinäytöissä, sovelluksissa ja Q&A:ssa. Jotkin näistä visualisointityypeistä ovat Power BI:hin sisältyviä visualisointeja ja jotkin *mukautettuja visualisointeja*. Mukautetut visualisoinnit luodaan Power BI:n ulkopuolella siten, että *raporttien suunnittelijat* voivat lisätä niitä Power BI:n raportteihin ja koontinäyttöihin. 
@@ -22,7 +22,7 @@ Visualisointeja on raporteissa, koontinäytöissä, sovelluksissa ja Q&A:ssa. Jo
 Tämä artikkeli on yleiskatsaus Power BI -palveluun sisältyvistä visualisoinneista.  Ne ovat visualisointeja, joita näet useimmin. Lisätietoja näistä visualisoinneista on [Power BI:n raporttien*visualisointityyppien* suunnitteluohjeissa](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 > [!NOTE]
-> Jos haluat lisätietoja mukautetuista visualisoinneista, hae niitä [Microsoft AppSourcen](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) **Power BI -visualisointien osiossa**. Näet kustakin visualisoinnista kuvauksen, sen tekijän tiedot ja joko näyttökuvia tai videon. 
+> Jos haluat lisätietoja mukautetuista visualisoinneista, hae niitä [Microsoft AppSourcen](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals)**Power BI -visualisointien osiossa**. Näet kustakin visualisoinnista kuvauksen, sen tekijän tiedot ja joko näyttökuvia tai videon. 
 
 ## <a name="list-of-visuals-available-in-power-bi"></a>Power BI:ssä käytettävissä olevien visualisointityyppien luettelo
 Kaikki nämä visualisoinnit löytyvät Power BI:n koontinäytöistä ja raporteista ja tietyistä [Q&A-osioista](end-user-q-and-a.md). Jos haluat ohjeita visualisointien käyttöön, lue ohjeartikkeli [Visualisointien käyttö raporteissa, koontinäytöissä ja sovelluksissa](end-user-visualizations.md)
@@ -139,6 +139,19 @@ Matriisivisualisointi on eräänlainen taulukkovisualisointi (sillä on oma koht
 ![ympyräkaavio](media/end-user-visual-type/pbi-nancy-viz-pie.png)
 
 Ympyräkaaviot näyttävät osien suhteen kokonaisuuteen. 
+
+### <a name="power-apps-visual"></a>Power Apps -visualisointi
+![Power Apps -visualisointi](media/end-user-visual-type/power-bi-powerapps-visual.png)
+
+Raporttien suunnittelijat voivat luoda Power Apps -visualisoinnin ja upottaa sen Power BI -raporttiin. Käyttäjät voivat käsitellä tätä visualisointia Power BI -raportissa. 
+
+### <a name="qa-visual"></a>Q&A-visualisointi
+![Q&A-visualisoinnit](media/end-user-visual-type/power-bi-q-and-a.png)
+
+>[!TIP]
+>Samaan tapaan kuin [koontinäytön Q&A-kokemuksen kanssa](../power-bi-tutorial-q-and-a.md), Q&A-visualisoinnin avulla voit esittää kysymyksiä tiedoistasi käyttämällä luonnollista kieltä. 
+
+Lisätietoja on artikkelissa [Q&A-visualisoinnit Power BI:ssä](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 ### <a name="ribbon-chart"></a>Nauhakaavio
 ![nauhakaavio](media/end-user-visual-type/power-bi-ribbon.png)

@@ -1,126 +1,179 @@
 ---
 title: Power BI -visualisoinnin projektirakenne
-description: Artikkelissa kuvataan visualisointiprojektien rakenne
-author: zBritva
-ms.author: v-ilgali
+description: Tässä artikkelissa kuvataan Power BI -visualisointiprojektin kansio- ja tiedostorakenne
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: tutorial
+ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/15/2019
-ms.openlocfilehash: 728aba749f80710fdc0bb1e180b3318e63caa88c
-ms.sourcegitcommit: 331ebf6bcb4a5cdbdc82e81a538144a00ec935d4
+ms.date: 01/12/2020
+ms.openlocfilehash: 16e7a317102602ffb4faf04da0ed2cae588a2a4d
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/28/2019
-ms.locfileid: "75542089"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925524"
 ---
 # <a name="power-bi-visual-project-structure"></a>Power BI -visualisoinnin projektirakenne
 
-Kun pbiviz uusi `<visual project name>` on suoritettu, työkalu luo kansiossa `<visual project name>` olevien tiedostojen ja kansioiden perusrakenteen.
+Paras tapa aloittaa uuden Power BI -visualisoinnin luominen on käyttää Power BI -visualisoinnin [pbiviz](https://www.npmjs.com/package/powerbi-visuals-tools)-työkalua.
 
-## <a name="visual-project-structure"></a>Visualisoinnin projektirakenne
+Jos haluat luoda uuden visualisoinnin, siirry siihen hakemistoon, jossa haluat Power BI -visualisoinnin sijaitsevan, ja suorita komento:
 
-![Visualisoinnin projektirakenne](./media/visual-project-structure.png)
+`pbiviz new <visual project name>`
 
-* `.vscode` – sisältää projektin asetukset VS Codelle. Määritä työtila muokkaamalla tiedostoa `.vscode/settings.json`. Lue lisää [VS Coden asetuksista dokumentaatiosta](https://code.visualstudio.com/docs/getstarted/settings)
+Tämän komennon suorittamalla luot Power BI -visualisointikansion, joka sisältää seuraavat tiedostot:
 
-* Kansio `assets` sisältää vain tiedoston `icon.png`. Työkalu käyttää tätä tiedostoa visualisoinnin kuvakkeena Power BI:n Visualisointi-ruudussa.
+```markdown
+project
+├───.vscode
+│   ├───launch.json
+│   └───settings.json
+├───assets
+│   └───icon.png
+├───node_modules
+├───src
+│   ├───settings.ts
+│   └───visual.ts
+├───style
+│   └───visual.less
+├───capabilities.json
+├───package-lock.json
+├───package.json
+├───pbiviz.json
+├───tsconfig.json
+└───tslint.json
+```
 
-    ![Visualisointi-ruutu](./media/visualization-pane-analytics-tab.png)
+## <a name="folder-and-file-description"></a>Kansion ja tiedoston kuvaus
 
-* Kansio `node_modules` sisältää kaikki paketit, jotka [Node Package Manager on asentanut](https://docs.npmjs.com/files/folders.html).
+Tämä osa sisältää tietoja kaikista kansioista ja tiedostoista, jotka Power BI -visualisoinnin **pbiciz**-työkalu luo.  
 
-* Kansio `src` sisältää visualisoinnin lähdekoodin. Työkalu luo oletusarvoisesti kaksi tiedostoa:
+### <a name="vscode"></a>.vscode
 
-  * `visual.ts` – visualisoinnin päälähdekoodi.
+Tämä kansio sisältää VS-koodin projektiasetukset.
 
-  * `settings.ts` – visualisoinnin asetusten koodi. Tiedoston luokat yksinkertaistavat [visualisoinnin ominaisuuksien käsittelyä](./objects-properties.md#properties).
+Määritä työtila muokkaamalla `.vscode/settings.json`-tiedostoa.
 
-* Kansio `style` sisältää tiedoston `visual.less`, jossa on visualisoinnin tyylejä.
+Katso lisätietoja kohdasta [Käyttäjän ja työtilan asetukset](https://code.visualstudio.com/docs/getstarted/settings)
 
-* Tiedosto `capabilities.json` sisältää visualisoinnin pääominaisuudet ja asetukset. Sen avulla visualisointi voi esitellä tuetut ominaisuudet, objektit, toiminnot ja tietonäkymän yhdistämismääritykset.
+### <a name="assets"></a>assets
 
-    Lue lisää [ominaisuuksista dokumentaatiosta](./capabilities.md).
+Tämä kansio sisältää `icon.png`-tiedoston.
 
-* `package-lock.json` luodaan automaattisesti kaikille toiminnoille, joissa npm muokkaa joko puuta `node_modules` tai pakettia `package.json`.
+Power BI -visualisointityökalu käyttää tätä uuden Power BI -visualisoinnin kuvakkeena Power BI -visualisointiruudussa.
 
-    Lue lisää [aiheesta `package-lock.json` NPM:n virallisesta dokumentaatiosta](https://docs.npmjs.com/files/package-lock.json).
+<!--- ![Visualization pane](./media/visualization-pane-analytics-tab.png) --->
 
-* `package.json` kuvaa projektipakettia. Se sisältää yleensä tietoja projektista, sen tekijöistä, kuvauksesta ja riippuvuuksista.
+### <a name="src"></a>src
 
-    Lue lisää [aiheesta `package.json` NPM:n virallisesta dokumentaatiosta](https://docs.npmjs.com/files/package.json.html).
+Tämä kansio sisältää visualisoinnin lähdekoodin.
 
-* `pbiviz.json` sisältää visualisoinnin metatiedot. Määritä visualisoinnin metatiedot tässä tiedostossa.
+Tähän kansioon Power BI -visualisointityökalu luo seuraavat tiedostot:
+* `visual.ts` – Visualisoinnin päälähdekoodi.
+* `settings.ts` – Visualisoinnin asetusten koodi. Tiedoston luokat toimivat rajapintana, jonka avulla voit määrittää [visualisoinnin ominaisuudet](./objects-properties.md#properties).
 
-    Tiedoston tyypillinen sisältö:
+### <a name="style"></a>style
 
-  ```json
-    {
-        "visual": {
-            "name": "<visual project name>",
-            "displayName": "<visual project name>",
-            "guid": "<visual project name>23D8B823CF134D3AA7CC0A5D63B20B7F",
-            "visualClassName": "Visual",
-            "version": "1.0.0",
-            "description": "",
-            "supportUrl": "",
-            "gitHubUrl": ""
-        },
-        "apiVersion": "2.6.0",
-        "author": { "name": "", "email": "" },
-        "assets": { "icon": "assets/icon.png" },
-        "externalJS": null,
-        "style": "style/visual.less",
-        "capabilities": "capabilities.json",
-        "dependencies": null,
-        "stringResources": []
-    }
-  ```
+Tämä kansio sisältää `visual.less`-tiedoston, joka sisältää visualisoinnin tyylitiedot.
 
-    jossa
+### <a name="capabilitiesjson"></a>capabilities.json
 
-  * `name` – visualisoinnin sisäinen nimi.
+Tämä tiedosto sisältää visualisoinnin tärkeimmät ominaisuudet ja asetukset ([ominaisuudet](./capabilities.md)). Sen avulla visualisointi voi esitellä tuetut ominaisuudet, objektit, toiminnot ja [tietonäkymän yhdistämismääritykset](./dataview-mappings.md).
 
-  * `displayName` – visualisoinnin nimi Power BI:n käyttöliittymässä.
+### <a name="package-lockjson"></a>package-lock.json
 
-  * `guid` – visualisoinnin yksilöivä tunnus.
+Tämä tiedosto luodaan automaattisesti kaikille toiminnoille, joissa *npm* muokkaa joko `node_modules`-puuta tai `package.json`-tiedostoa.
 
-  * `visualClassName` – visualisoinnin pääluokan nimi. Power BI luo tämän luokan esiintymän, jotta visualisointia voi alkaa käyttää Power BI -raportissa.
+Lisätietoja tästä tiedostosta saat virallisesta [npm-package-lock.json](https://docs.npmjs.com/files/package-lock.json)-dokumentaatiosta.
 
-  * `version` – visualisoinnin versionumero.
+### <a name="packagejson"></a>package.json
 
-  * `author` – sisältää tekijän nimen ja yhteyshenkilön sähköpostiosoitteen.
+Tämä tiedosto kuvaa projektipakettia. Se sisältää sellaista projektia koskevaa tietoa kuin tekijät, kuvauksen ja projektin riippuvuudet.
 
-  * `icon` kohteessa `assets` – polku visualisoinnin kuvaketiedostoon.
+Lisätietoja tästä tiedostosta saat virallisesta [npm-package.json](https://docs.npmjs.com/files/package.json.html)-dokumentaatiosta.
 
-  * `externalJS` sisältää visualisoinnissa käytettävien JS-kirjastojen polut.
+### <a name="pbivizjson"></a>pbiviz.json
 
-    > [!IMPORTANT]
-    > Työkalun uusin versio 3.x.x tai uudempi versio ei enää käytä kohdetta `externalJS`.
+Tämä tiedosto sisältää visualisoinnin metatiedot.
 
-  * `style` on polku tyylitiedostoihin.
+Jos haluat tarkastella `pbiviz.json`-esimerkkitiedostoa, jonka kommentit kuvaavat metatietojen merkintöjä, katso osaa [metatietojen merkinnät](#metadata-entries).
 
-  * `capabilities` on polku tiedostoon `capabilities.json`.
+### <a name="tsconfigjson"></a>tsconfig.json
 
-  * `dependencies` on polku tiedostoon `dependencies.json`. `dependencies.json` sisältää tietoja R-pohjaisissa visualisoinneissa käytettävistä R-paketeista.
+Määritystiedosto kohteelle [TypeScript](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
-  * `stringResources` on lokalisointeja sisältävien tiedostojen polkujen matriisi.
+Tämän tiedoston on sisällettävä polku **\*.ts**-tiedostoon, jossa visualisoinnin pääluokka sijaitsee, kuten `visualClassName`-ominaisuudessa, `pbiviz.json`-tiedostossa on täsmennetty.
 
-  Lue lisää [visualisointien lokalisoinnista dokumentaatiosta](./localization.md)
+### <a name="tslintjson"></a>tslint.json
 
-* `tsconfig.json` on TypeScriptin määritystiedosto.
+Tämä tiedosto sisältää [TSLintin määrityksen](https://palantir.github.io/tslint/usage/configuration/).
 
-    Lue lisää [TypeScriptin määrityksestä virallisesta dokumentaatiosta](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
+## <a name="metadata-entries"></a>Metatietojen merkinnät
 
-    Osan `files` kohteen `tsconfig.json` on sisällettävä polku *.ts-tiedostoon, jossa visualisoinnin pääluokka sijaitsee, mikä on määritetty tiedoston `pbiviz.json` ominaisuudessa `visualClassName`.
+Seuraavan koodiotsikon kommentit, jotka ovat peräisin `pbiviz.json`-tiedostosta, kuvaavat metatietomerkintöjä.
 
-* Tiedosto `tslint.json` sisältää TSLint-määrityksen.
+> [!NOTE]
+> * **pbiciz**-työkalun versiosta 3.x.x alkaen `externalJS`:n tuki loppuu.
+> * Jos tarvitset lokalisointitukea, [lisää Power BI -kieliasetukset visualisointiisi](./localization.md).
 
-    Lue lisää [TSLintin määrityksestä virallisesta dokumentaatiosta](https://palantir.github.io/tslint/usage/configuration/)
+```json
+{
+  "visual": {
+     // The visual's internal name.
+    "name": "<visual project name>",
+
+    // The visual's display name.
+    "displayName": "<visual project name>",
+
+    // The visual's unique ID.
+    "guid": "<visual project name>23D8B823CF134D3AA7CC0A5D63B20B7F",
+
+    // The name of the visual's main class. Power BI creates the instance of this class to start using the visual in a Power BI report.
+    "visualClassName": "Visual",
+
+    // The visual's version number.
+    "version": "1.0.0",
+    
+    // The visual's description (optional)
+    "description": "",
+
+    // A URL linking to the visual's support page (optional).
+    "supportUrl": "",
+
+    // A link to the source code available from GitHub (optional).
+    "gitHubUrl": ""
+  },
+  // The version of the Power BI API the visual is using.
+  "apiVersion": "2.6.0",
+
+  // The name of the visual's author and email.
+  "author": { "name": "", "email": "" },
+
+  // 'icon' holds the path to the icon file in the assets folder; the visual's display icon.
+  "assets": { "icon": "assets/icon.png" },
+
+  // Contains the paths for JS libraries used in the visual.
+  // Note: externalJS' isn't used in the Power BI visuals tool version 3.x.x or higher.
+  "externalJS": null,
+
+  // The path to the 'visual.less' style file.
+  "style": "style/visual.less",
+
+  // The path to the `capabilities.json` file.
+  "capabilities": "capabilities.json",
+
+  // The path to the `dependencies.json` file which contains information about R packages used in R based visuals.
+  "dependencies": null,
+
+  // An array of paths to files with localizations.
+  "stringResources": []
+}
+```
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* Lue lisää [visualisointikonseptista](./power-bi-visuals-concept.md), jotta ymmärrät paremmin visualisointien, käyttäjien ja Power BI:n keskinäistä vuorovaikutusta.
+* Jos haluat ymmärtää visualisoinnin, käyttäjän ja Power BI:n vuorovaikutusta, katso kohtaa [Power BI -visualisointikonsepti](./power-bi-visuals-concept.md).
 
-* Aloita omien Power BI -visualisointien kehittäminen alusta alkaen [vaiheittaisten ohjeiden avulla](./custom-visual-develop-tutorial.md).
+* Aloita omien Power BI -visualisointien kehittäminen alusta alkaen käyttämällä [vaiheittaisia ohjeita](./custom-visual-develop-tutorial.md).

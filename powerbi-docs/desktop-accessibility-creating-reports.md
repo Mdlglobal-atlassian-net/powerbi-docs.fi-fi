@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 50a5705f5e236dc326f4c2b33716e55f6a9f7ce5
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 2b43727799316ade5ccdb868077360da0b315c56
+ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761975"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925679"
 ---
 # <a name="design-power-bi-reports-for-accessibility"></a>Helppokäyttöisten Power BI -raporttien suunnittelu
 Voit suunnitella ja luoda vaikuttavia raportteja, joissa huomioidaan myös helppokäyttötoiminnot. Kun luot raporttia, riippumatta kohdeyleisöstäsi, raportti kannattaa luoda siten, että mahdollisimman moni pystyy käyttämään sitä ilman, että sitä tarvitsee mukauttaa erikoismuotoiluilla.
@@ -22,6 +22,8 @@ Voit suunnitella ja luoda vaikuttavia raportteja, joissa huomioidaan myös helpp
 ![Suuren kontrastin Windows-asetukset](media/desktop-accessibility/accessibility-05.png)
 
 Tässä artikkelissa kuvataan helppokäyttötoimintoja ja-työkaluja, joiden avulla voit luoda helppokäyttöisiä raportteja Power BI:ssä.
+
+Yleensä, kun käytät Power BI:tä näytönlukuohjelmalla, suosittelemme, että otat pois käytöstä tarkistustilan tai selaustilan.
 
 Jos haluat parantaa raporttien luomisprosessia näytönlukuohjelmilla, käytettävissä on pikavalikko. Valikon **Kentät**-luettelossa on helppo siirtyä ylös- tai alaspäin. Valikossa voidaan myös siirtää kenttä toisiin lähteisiin, kuten **selitteeseen** tai **arvoon**.
 

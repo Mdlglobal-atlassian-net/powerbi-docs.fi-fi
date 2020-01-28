@@ -1,6 +1,6 @@
 ---
 title: Raportin suunnittelu Power BI:n raportin muodostimessa
-description: Power BI:n sivutetun raportin muodostimen avulla voit luoda erilaisia sivutettuja raportteja. Raportista tulee hyödyllinen ja helppotajuinen, kun käytät hetken sen suunnitteluun.
+description: Power BI:n raportin muodostimen avulla voit luoda erilaisia sivutettuja raportteja. Raportista tulee hyödyllinen ja helppotajuinen, kun käytät hetken sen suunnitteluun.
 ms.date: 07/25/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.assetid: 79113505-1ce8-4f8c-9260-d861838f7813
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 33cdb53ab411e0d2f4686f7cc9a41bb3f0fe4cb6
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 30ab632d11befd34ff9a234e441b345c696fb54d
+ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623861"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75953827"
 ---
 # <a name="planning-a-report-in-power-bi-report-builder"></a>Raportin suunnittelu Power BI:n raportin muodostimessa
 
-Power BI:n sivutetun raportin muodostimen avulla voit luoda erilaisia sivutettuja raportteja. Voit esimerkiksi luoda raportteja, joissa näytetään myyntitietojen yhteenveto tai niiden tarkka katsaus, toimintaraportteja tai raporttinäkymiä. Voit myös luoda raportteja, joissa hyödynnetään monipuolista tekstin muotoiltua. Tällaisia ovat esimerkiksi myyntitilaukset, tuoteluettelot ja lomakekirjeet. Kaikki nämä raportit on luotu käyttäen samojen peruselementtien yhdistelmiä raportin muodostimessa. Raportista tulee hyödyllinen ja helppotajuinen, kun käytät hetken sen suunnitteluun. Ennen kuin aloitat, pohdi hetki seuraavia asioita:  
+Power BI:n raportin muodostimen avulla voit luoda erilaisia sivutettuja raportteja. Voit esimerkiksi luoda raportteja, joissa näytetään myyntitietojen yhteenveto tai niiden tarkka katsaus, toimintaraportteja tai raporttinäkymiä. Voit myös luoda raportteja, joissa hyödynnetään monipuolista tekstin muotoiltua. Tällaisia ovat esimerkiksi myyntitilaukset, tuoteluettelot ja lomakekirjeet. Kaikki nämä raportit on luotu käyttäen samojen peruselementtien yhdistelmiä raportin muodostimessa. Raportista tulee hyödyllinen ja helppotajuinen, kun käytät hetken sen suunnitteluun. Ennen kuin aloitat, pohdi hetki seuraavia asioita:  
   
 ## <a name="in-what-format-do-you-want-the-report-to-appear"></a>Missä muodossa haluat raportin näkyvän?
   
