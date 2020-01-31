@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/07/2019
+ms.date: 01/15/2020
 ms.author: painbar
-ms.openlocfilehash: ccc7e3864590145309709d27774951c281b3ebdd
-ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
+ms.openlocfilehash: 58b2f96b069815af448352b3b54875dc4d6b27ee
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622364"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538263"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Power BI -sovelluksen etämääritys mobiililaitteiden hallintatyökalun (MDM) avulla
 
@@ -21,8 +21,9 @@ Power BI:n iOS- ja Android-mobiilisovellukset tukevat sovellusasetuksia, joiden 
 
 Power BI -mobiilisovellus tukee määritystä seuraavissa tilanteissa:
 
-- Raporttipalvelimen määrittäminen (iOS ja Android)
-- Tietosuoja-asetukset (iOS)
+* Raporttipalvelimen määrittäminen (iOS ja Android)
+* Tietosuoja-asetukset (iOS ja Android)
+* Käsittelyasetukset (Android)
 
 ## <a name="report-server-configuration-ios-and-android"></a>Raporttipalvelimen määrittäminen (iOS ja Android)
 
@@ -37,11 +38,21 @@ Power BI:n iOS- ja Android-sovelluksen avulla järjestelmänvalvojat voivat pako
 
 ## <a name="data-protection-settings-ios"></a>Tietosuoja-asetukset (iOS)
 
-Power BI:n iOS-sovellus tarjoaa järjestelmänvalvojille mahdollisuuden mukauttaa suojaus- ja tietosuoja-asetusten oletusmäärityksiä. Voit vaatia käyttäjiltä kasvojentunnistusta, kosketustunnistusta tai tunnuskoodia Power BI -sovelluksen käyttämiseksi.
+Power BI:n iOS- ja Android-sovellus tarjoaa järjestelmänvalvojille mahdollisuuden mukauttaa suojaus- ja tietosuoja-asetusten oletusmäärityksiä. Voit vaatia käyttäjiltä kasvojentunnistusta, kosketustunnistusta tai tunnuskoodia Power BI -sovelluksen käyttämiseksi.
 
 | Avain | Tyyppi | Kuvaus |
 |---|---|---|
 | com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Totuusarvo | Oletusarvo on False. <br><br>Voit edellyttää käyttäjiltä biometristä tunnistusta, kuten kasvojen- tai kosketustunnistusta, jotta he voivat käyttää sovellusta laitteellaan. Biometrista tunnistusta käytetään tarvittaessa todennuksen lisäksi.<br><br>Jos käytössä on sovelluksen suojauskäytäntöjä, Microsoft suosittelee asetuksen poistamista käytöstä kahden kirjautumiskehotteen välttämiseksi. |
+
+## <a name="interaction-settings-android"></a>Käsittelyasetukset (Android)
+
+Power BI:n Android-sovelluksen avulla järjestelmänvalvojat voivat määrittää käsittelyasetukset, jos päätetään, että oletuskäsittelyasetuksia pitää muuttaa kaikilla organisaation käyttäjäryhmillä. 
+
+| Avain | Tyyppi | Arvot | Kuvaus |
+|---|---|---|---|
+| com.microsoft.powerbi.mobile.ReportTapInteraction | Merkkijono |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Määritä, tekeekö visualisoinnin napauttaminen myös arvopisteen valinnan. |
+| ccom.microsoft.powerbi.mobile.RefreshAction | Merkkijono |  <nobr>pull-to-refresh</nobr><br>painike | Määritä, onko käyttäjällä painike, joka päivittää raportin, vai tuleeko hänen käyttää päivittämistä vetämällä. |
+| com.microsoft.powerbi.mobile.FooterAppearance | Merkkijono |  docked<br>dynamic | Määritä, kiinnitetäänkö raportin alatunniste raportin alareunaan vai piilotetaanko se automaattisesti. |
 
 ## <a name="deploying-app-configuration-settings"></a>Sovelluksen määritysten käyttöönotto
 

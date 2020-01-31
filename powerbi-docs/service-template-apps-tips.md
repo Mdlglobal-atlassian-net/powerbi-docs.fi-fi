@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: a9f589a5e840e95e349ec303b42b30568820e8b3
-ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
+ms.openlocfilehash: 632c1f1a9f0cba3f403cae4a471df6b7e699f481
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622449"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76710139"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Vihjeitä mallisovellusten kehittämiseen Power BI:ssä
 
@@ -134,6 +134,17 @@ Mallisovellukset tukevat mallitietoja vain sovelluksissa, joten varmista, että 
 * Varmista ennen pbix-tiedoston lataamista mallityötilaan, ettet lataa mitään tarpeettomia yhteyksiä.
 * Noudata Power BI:n [parhaita suunnittelukäytäntöjä raporteille ja visualisoinneille](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices), jotta vaikutat optimaalisesti käyttäjiisi ja saat hyväksynnän jakelulle.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
+
+## <a name="create-a-download-link-for-the-app"></a>Sovelluksen latauslinkin luominen
+
+Kun olet julkaissut mallisovelluksen AppSourcessa, luo latauslinkki sivustoltasi jompaankumpaan seuraavista:
+* AppSourcen lataussivu – sivu on julkisesti tarkasteltavissa, hae linkki AppSource-sivultasi.
+* Power BI – Power BI -käyttäjät voivat tarkastella tätä.
+
+Katso seuraavasta koodiesimerkistä lisätietoja käyttäjän ohjaamisesta sovelluksen latauslinkkiin Power BI:ssä: [GitHub-säilö](https://github.com/microsoft/Template-apps-examples/tree/master/src).
+[![Sovelluksen latauslinkki](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
+
+
 
 ## <a name="known-limitations"></a>Tunnetut rajoitukset
 

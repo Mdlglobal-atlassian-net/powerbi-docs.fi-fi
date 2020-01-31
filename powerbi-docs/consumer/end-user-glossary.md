@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/07/2019
+ms.date: 01/17/2019
 ms.author: mihart
-ms.openlocfilehash: cf70774712a8b72493c8957139d8f802dc4d1ed7
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: e5c3f8b327d6899d83e2304e56e5813a47fc4698
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75836653"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537803"
 ---
 # <a name="glossary-for-power-bi-service"></a>Power BI -palvelun sanasto
 Power BI -palvelussa saattaa olla ennestään tuntematonta tai sekavalta vaikuttavaa terminologiaa. Sanasto on hyvä paikka termien hakuun, joten se on hyvä lisätä suosikkeihin. Toinen hyvä resurssi lisätietojen saamiseen Power BI -palvelun muodostavista rakenneosista ovat [peruskäsitteet](end-user-basic-concepts.md). Peruskäsitteet tarjoavat korkean tason yleiskatsauksen Power BI:n *osiin* ja niiden yhteyksiin.
@@ -77,6 +77,10 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **content view (sisältönäkymä)**
 
+**Jatkuva muuttuja** – muuttuja, jolla voi olla mikä tahansa arvo minimin ja maksimin välillä, muuten kyseessä on diskreetti muuttuja. Esimerkkejä ovat lämpötila, paino, ikä ja aika. Jatkuviin muuttujiin voi sisältyä arvon osia tai murto-osia. Myytyjen sinisten rullalautojen kokonaismäärä on diskreetti muuttuja, koska emme voi myydä rullalaudan puolikasta.
+
+**Korrelaatio** – korrelaatio kertoo meille, miten asioiden käyttäytyminen liittyy toisiin asioihin.  Jos niiden kasvun tai vähenemisen kuviot ovat samanlaiset, ne korreloivat positiivisesti. Jos taas niiden muutossuunnat ovat vastakkaiset, ne korreloivat negatiivisesti. Jos esimerkiksi punaisten rullalautojen myynti kasvaa aina televisiomarkkinointikampanjojen myötä, punaisten rullalautojen ja televisiokampanjojen välillä on positiivinen korrelaatio.
+
 **ristiinsuodatus** Tämä koskee visualisointitoimia. Ristiinsuodatus poistaa tiedot, joita ei käytetä. Esimerkiksi **Valvonta**-vaihtoehdon valitseminen rengaskaaviosta ristiinsuodattaa viivakaavion. Viivakaavio näyttää nyt vain arvopisteet, jotka koskevat Valvonta-segmenttiä.
 
 **ristiinkorostus** Tämä koskee visualisointitoimia. Ristiinkorostus säilyttää kaikki alkuperäiset arvopisteet, mutta himmentää osan, joka ei koske valintaasi. Esimerkiksi **Valvonta**-vaihtoehdon valitseminen rengaskaaviosta ristiinkorostaa pylväskaavion. Pylväskaavio himmentää kaikki tiedot, jotka eivät koske Valvonta-segmenttiä, ja korostaa kaikki tiedot, jotka koskevat Valvonta-segmenttiä.
@@ -93,7 +97,7 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **data model, Excel Data Model (tietomalli, Excel-tietomalli)** Power BI -sisällössä tietomalli viittaa taulukkomuotoiseen tietorakenteiden karttaan. Tietomallissa näytetään yhteydet, joita käytetään tietokantojen muodostamiseen. Raporttien suunnittelijat, järjestelmänvalvojat ja kehittäjät voivat luoda ja käsitellä tietomalleja Power BI -sisällön luomiseksi.
 
-**dataflow (tietovuo)** Tietovoiden avulla voidaan käyttää, muuntaa, yhdistää ja täydentää massadataa määrittämällä tietolähdeyhteyksiä, keräämis-, muuntamis- ja lataamislogiikka, päivitysaikatauluja ja paljon muuta. Aiemmin tietosarja.
+**dataflow (tietovuo)** Tietovoiden avulla voidaan käyttää, muuntaa, yhdistää ja täydentää massadataa määrittämällä tietolähdeyhteyksiä, keräämis-, muuntamis- ja lataamislogiikka, päivitysaikatauluja ja paljon muuta. Aiemmin tietovaranto.
 
 **dataset (tietojoukko)** vs **data source (tietolähde)** **Tietojoukko** on tietokokoelma, jota käytetään visualisointien ja raporttien luontiin.
 
@@ -102,8 +106,9 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 **Desktop** tai **Power BI Desktop** Ilmainen Power BI -työkalu, jonka ensisijaisina käyttäjinä ovat raporttien suunnittelijat, järjestelmänvalvojat ja kehittäjät. 
 
 
-
 **diamond (vinoneliö)** Power BI Premium. Kuvakkeen muoto, joka ilmaisee, että työtila on Premium-kapasiteetin työtila.
+
+**Dimensio** – dimensiot ovat kategorista (teksti-) tietoa. Dimensio kuvaa henkilöä, objektia, kohdetta, paikkaa ja aikaa. Tietojoukossa dimensiot ovat tapa ryhmitellä *mittayksiköt* hyödyllisiin luokkiin. Rullalautayrityksessämme dimensiot voivat tarkoittaa myynnin (joka on mittayksikkö) tarkastelua mallin, värin, maan tai markkinointikampanjan mukaan.   
 
 **drill up, drill down, drillthrough (poraudu ylöspäin, poraudu alaspäin, porautuminen)** Power BI:ssa porautumalla alaspäin tai ylöspäin voit viitata mahdollisuuteen tutkia raportin tai visualisoinnin seuraavaa tasoa. Porautumisella voit viitata mahdollisuuteen valita visualisoinnin osa ja siirtyä raportin toiselle sivulle, suodatettuna tietoihin, jotka liittyvät alkuperäisellä sivulla valitsemasi visualisoinnin osaan.
 Yksityiskohtiin porautuminen tarkoittaa yleensä sitä, että pohjana olevat tietueet näytetään.
@@ -168,6 +173,8 @@ Esimerkki: siirtymisruutu Seuraavat maininnat tai vähäinen tila: siirtymäruut
 **luettelosivu** tai **sisältöluettelo** Yksi elementtien osan sivuista vasemmassa siirtymisruudussa. Esimerkiksi Suosikit, Viimeisimmät, Oma työtila jne.
 
 ## <a name="m"></a>M
+
+**Mittayksikkö** – mittayksikkö on määrällinen (numeromuotoinen) kenttä, jota voidaan käyttää laskutoimituksissa. Tavallisia laskutoimituksia ovat summa, keskiarvo ja minimi. Jos yrityksemme esimerkiksi valmistaa ja myy rullalautoja, mittayksikkömme voivat olla myytyjen rullalautojen lukumäärä ja keskimääräinen vuosivoitto.
 
 **Mobile app (Mobiilisovellus)** Sovellukset, joiden avulla voit käyttää Power BI:tä iOS-, Android- ja Windows-laitteissa.
 
@@ -302,6 +309,8 @@ Voit tilata raportin sivuja, sovelluksia ja koontinäyttöjä sekä vastaanottaa
 ## <a name="t"></a>T
 **tiles (ruudut)**  
 Power BI -raporttinäkymät sisältävät raporttiruutuja.
+
+**Aikasarja** – aikasarja on tapa näyttää aika peräkkäisinä arvopisteinä. Nämä arvopisteet voivat olla sellaisia yksiköitä kuin esimerkiksi sekunteja, tunteja, kuukausia tai vuosia.  
 
 
 ## <a name="u"></a>U

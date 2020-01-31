@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 5dd924f066b6382ed895d81ed0ada5d913c040e6
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: cc20d981e1e774eed109c614e146415ec3813601
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75218166"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709786"
 ---
-# <a name="qa-for-power-bi-consumers"></a>Q&A Power BI -**kuluttajille**
+# <a name="qa-for-power-bi-consumers"></a>Q&A Power BI -kuluttajille
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -167,6 +167,10 @@ Valitse sitten **Asetukset** > **Koontinäytöt**. Varmista, että **Näytä Q&A
 **Vastaus**: Valitse, miten haluat ottaa yhteyttä raportin tai koontinäytön omistajaan. Voit tehdä tämän suoraan Q&A-koontinäytön sivulta tai Q&A-visualisoinnista. Voit myös etsiä omistajan Power BI:n otsikosta.  Suunnittelija voi auttaa parantamaan Q&A:n tuloksia monin eri tavoin. Suunnittelija voi esimerkiksi muuttaa tietojoukon sarakkeessa käytettäviä termejä helpommin ymmärrettäviksi (`CustFN` --> `CustomerFirstName`). Koska suunnittelija tuntee tietojoukon todella hyvin, hän voi myös keksiä sopivia kysymyksiä ja lisätä ne Q&A:n ehdotettuihin kysymyksiin.
 
 ![Näytä yhteystiedot](media/end-user-q-and-a/power-bi-q-and-a-contact.png)
+
+## <a name="privacy"></a>Tietosuoja
+
+Microsoft voi käyttää kysymyksiäsi Power BI:n parantamiseen. Katso lisätietoja[Microsoftin tietosuojatiedoista](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Lisätietoja siitä, miten raportin *suunnittelija* luo ja hallinnoi Q&A-visualisointeja, on artikkelissa [Q&A-visualisointityyppi](../visuals/power-bi-visualization-q-and-a.md).

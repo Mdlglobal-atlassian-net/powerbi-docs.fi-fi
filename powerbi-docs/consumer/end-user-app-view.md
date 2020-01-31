@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 1/22/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0b581b9c45cb75d12eea974c0895474015634eb1
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 0733e726512ff52c5b51ba2d25cea18f8857f1e8
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73851301"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537585"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Koontinäyttöjä ja raportteja hyödyntävien sovellusten asentaminen ja käyttäminen Power BI:ssä
 
@@ -50,10 +50,11 @@ Voit etsiä ja asentaa sovelluksia myös Microsoft AppSourcesta. Näet vain ne s
     ![Hanki sovelluksia -kuvake](./media/end-user-app-view/power-bi-get-app2.png)    
 2. AppSourcen **Oma organisaatio** -osiossa voit tehdä hakuja rajataksesi tuloksia ja löytääksesi haluamasi sovelluksen.
    
-    ![Appsourcen Oma organisaatio -osio](./media/end-user-app-view/power-bi-opportunity-app.png)
+    ![AppSourcen Oma organisaatio -osio](./media/end-user-app-view/power-bi-opportunity-app.png)
 3. Lisää sovellus Sovellukset-sisältöluetteloon valitsemalla **Hanki se nyt**. 
 
-## <a name="get-an-app-from-the-microsoft-appsource-website-httpsappsourcemicrosoftcom"></a>Hae sovellus Microsoft AppSource -sivustosta (https://appsource.microsoft.com)
+## <a name="get-an-app-from-the-microsoft-appsource-website"></a>Hanki sovellus Microsoft AppSource -verkkosivustosta 
+
 Tässä esimerkissä avataan jokin Microsoft-mallisovelluksista. AppSourcesta löydät sovelluksia moniin liiketoiminnassasi käyttämiin palveluihin.  Tällaisia palveluja ovat esimerkiksi Salesforce, Microsoft Dynamics, Google Analytics, GitHub, Zendesk, Marketo ja monet muut. Lisätietoja on kohdassa [Power BI:ssä käyttämiesi palvelujen sovellukset](../service-connect-to-services.md). 
 
 1. Mene selaimessa osoitteeseen https://appsource.microsoft.com, ja valitse **Power BI -sovellukset**.
@@ -92,12 +93,36 @@ Tässä esimerkissä avataan jokin Microsoft-mallisovelluksista. AppSourcesta l�
     ![Tutustu esimerkkitietojen avulla](./media/end-user-apps/power-bi-new-app.png)
 
 
-
-
 ## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Koontinäyttöjen ja raporttien käsitteleminen sovelluksessa
 Tutustu rauhassa sovelluksen muodostavien koontinäyttöjen ja raporttien tietoihin. Voit käyttää kaikkia Power BI:n vakiotoimia, kuten suodatusta, korostusta, lajittelua ja porautumista.  Vaikuttaako koontinäyttöjen ja raporttien välinen ero vieläkin hieman sekavalta?  Lue [koontinäyttöjä koskeva artikkeli](end-user-dashboards.md) ja [raportteja koskeva artikkeli](end-user-reports.md).  
 
+## <a name="update-an-app"></a>Päivitä sovellus 
 
+Sovellusten luojat voivat ajoittain julkaista sovelluksistaan uusia versioita. Uuden version hankinta riippuu siitä, miten sait alkuperäisen version. 
+
+* Jos sait sovelluksen organisaatiostasi, uuden version päivitys on hyvin helppoa eli sinun ei tarvitse tehdä mitään. 
+
+* Jos sait sovelluksen AppSourcesta, näkyviin tulee ilmoituspalkki, kun avaat sovelluksen seuraavan kerran. Ilmoituksen avulla tiedät, että uusi versio on saatavilla. 
+
+    1. Päivitä valitsemalla **Hanki se nyt**.  
+
+        <!--![App update notification](./media/end-user-app-view/power-bi-new-app-version-notification.png) -->
+
+    2. Kun sinua kehotetaan asentamaan päivitetty sovellus, valitse **Asenna**. 
+
+        ![Asenna päivitys](./media/end-user-app-view/power-bi-install.png) 
+
+    3. Koska sinulla on jo tämän sovelluksen versio, voit valita, haluatko korvata aiemman version vai asentaa päivitetyn sovelluksen uuteen työtilaan.   
+
+        ![Korvaa vanha sovellusversio](./media/end-user-app-view/power-bi-already-installed.png) 
+
+
+    > [!NOTE] 
+    > Uuden version asentaminen korvaa raportteihin ja koontinäyttöihin mahdollisesti tekemäsi muutokset. Jos haluat säilyttää päivitetyt raporttisi ja koontinäyttösi, voit tallentaa ne eri nimellä tai eri sijaintiin ennen asentamista. 
+
+    4. Kun olet asentanut päivitetyn version, viimeistele päivitysprosessi valitsemalla **Päivitä sovellus**. 
+
+    <!--![Update app](./media/end-user-app-view/power-bi-new-app-version-update-app.png) -->
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

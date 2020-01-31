@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6a3458de09cece30948ff848859f05ed8127d034
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: e7fa98be039093015e1b19ba8bf20f1368658a43
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75757849"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907808"
 ---
-# <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Täytettyjen karttojen (koropleettikartat) luominen ja käyttäminen Power BI:ssä
+# <a name="filled-maps-choropleth-in-power-bi"></a>Täytetyt kartat (koropleettikartat) Power BI:ssä
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -46,12 +46,12 @@ Täytetyt kartat ovat hyvä vaihtoehto, kun:
 * kun haluat yleiskuvan jakaumasta maantieteellisten sijaintien suhteen.
 
 ### <a name="prerequisites"></a>Edellytykset
-Tässä opetusohjelmassa käytetään [myynti- ja markkinointimallin](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) PBIX-tiedostoa.
+Tässä oppaassa käytetään [myynti- ja markkinointi-PBIX-mallitiedostoa](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
 1. Valitse valikkorivin vasemmasta yläosasta **Tiedosto** > **Avaa**
    
-2. Etsi oma kappaleesi **myynti- ja markkinointiesimerkkitiedostosta**
+2. Etsi oma kappaleesi **PBIX-esimerkkitiedostosta**
 
-1. Avaa **myynti- ja markkinointi -PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. Avaa **myynti- ja markkinointi-PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
 1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
 
@@ -90,11 +90,11 @@ Tällä videolla Kim luo peruskartan ja muuntaa sen täytetyksi kartaksi.
 
     ![Tietojen värit -vaihtoehdon ehdollisen muotoilun painike](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional.png)
 
-6. Käytä **Oletusväri - Tietojen värit** -näyttöä määrittääksesi, miten täytetty karttasi sävytetään. Asetukset antavat sinun muun muassa valita, mihin kenttään sävytys perustuu ja miten sävytys lisätään. Tässä esimerkissä käytetään kenttää **Myyntitiedot** > **Asenne**, ja asenteen pienin arvo määritetään oranssiksi ja suurin arvo siniseksi. Arvot, jotka jäävät maksimi- ja minimiarvon väliin, näkyvät oranssin ja sinisen sävyissä. Käytetyt värit näkyvät näytön alareunassa olevassa kuvassa. 
+6. Käytä **Oletusväri - Tietojen värit** -näyttöä määrittääksesi, miten täytetty karttasi sävytetään. Asetukset antavat sinun muun muassa valita, mihin kenttään sävytys perustuu ja miten sävytys lisätään. Tässä esimerkissä käytetään kenttää **SalesFact** > **Sentiment**, ja asenteen pienin arvo määritetään oranssiksi ja suurin arvo siniseksi. Arvot, jotka jäävät maksimi- ja minimiarvon väliin, näkyvät oranssin ja sinisen sävyissä. Käytetyt värit näkyvät näytön alareunassa olevassa kuvassa. 
 
     ![Oletusarvoinen väriruutu Asenne valittuna](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-field.png)
 
-7. Täytetty kartta sävytetään vihreällä ja punaisella niin, että punainen edustaa alempia asennearvoja ja vihreät suurempia, positiivisempia asenteita.  Jos haluat lisätietoja, vedä kenttä työkaluvihjeisiin.  Olemme lisänneet **SalesFact** > **Sentiment Gap**. Idahon (ID) tilan korostaminen osoittaa, että asenne-ero on alhainen, 6.
+7. Täytetty kartta sävytetään vihreällä ja punaisella niin, että punainen edustaa alempia asennearvoja ja vihreät suurempia, positiivisempia asenteita.  Jos haluat lisätietoja, vedä kenttä työkaluvihjeisiin.  Olemme lisänneet **SalesFact** > **Sentiment -välin**. Idahon (ID) tilan korostaminen osoittaa, että asenneväli on alhainen, 6.
    ![täytetty kartta jossa näkyy Idaho-työkaluvihjeet](media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho-filled-map.png)
 
 10. [Tallenna raportti](../service-report-save.md).
@@ -118,7 +118,7 @@ Yksittäisen sijainnin korostaminen täytetyssä kartassa ristiinsuodattaa muut 
 
    ![Täytetty kartta lisätään Asenne-sivulle](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
-5. Valitse täytetystä kartasta jokin osavaltio.  Tämä ristiinkorostaa ja -suodattaa muut sivulla olevat visualisoinnit. Valitsemalla **Texas** ristiinsuodatat kortteja ja ristiinkorostat palkkikaaviota. Tästä näet, että Asenne on 75 ja että Texas on keskialueella 23.   
+5. Valitse täytetystä kartasta jokin osavaltio.  Tämä ristiinkorostaa ja -suodattaa muut sivulla olevat visualisoinnit. Valitsemalla **Texas** ristiinsuodatat kortteja ja ristiinkorostat palkkikaaviota. Tästä näet, että asenne on 75 ja että Texas on keskialueella 23.   
    ![Texas valittuna](media/power-bi-visualization-filled-maps-choropleths/power-bi-filter.png)
 2. Valitse arvopiste VanArsdel – Asenne kuukauden mukaan -viivakaaviosta. Toiminto suodattaa täytetyn kartan niin, että se näyttää asennearvot VanArsdelista eikä sen kilpailijasta.  
    ![uusi varjostus](media/power-bi-visualization-filled-maps-choropleths/power-bi-vanarsdel.png)

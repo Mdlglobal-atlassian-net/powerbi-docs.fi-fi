@@ -35,7 +35,7 @@ Jos et ole varma, mitä tietolähdettä käytettiin, löydät sen seuraavien vai
    ![Laajennettu editori](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-advanced-editor.png)
 4. Kirjoita muistiin luettelossa annettu lähteen palvelu.  Tässä esimerkissä palvelu on ActiveDirectory.  
    ![Tietolähdepalvelu](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-provider.png)
-5. Vertaa palvelua luetteloon tuetuista tietolähteestä, joka löytyy kohdasta [Power BI-tietojen päivittäminen](power-bi-data-sources.md).
+5. Vertaa palvelua luetteloon tuetuista tietolähteistä, joka löytyy aiheesta [Power BI- tietolähteet](power-bi-data-sources.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Tietojen päivittäminen](refresh-data.md)  

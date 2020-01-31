@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 09f3a3e2dce7fd3462c5a21f014bf630bfc7c83e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ea4e8da2e821483fc567a3038c6133c60992e593
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879035"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538424"
 ---
 # <a name="apply-data-sensitivity-labels-in-power-bi-preview"></a>Luottamuksellisuustunnisteiden käyttö Power BI:ssä (esiversio)
 
@@ -58,6 +58,9 @@ Avaa tietojoukon asetukset-sivulla luottamuksellisuustunniste-osio, valitse halu
 
 Luottamuksellisuustunnisteen ottaminen käyttöön tai muuttaminen tietovuossa toimii samoin kuin tietojoukkojen kohdalla.
 
+## <a name="removing-sensitivity-labels"></a>Luottamuksellisuustunnisteiden poistaminen
+Jos haluat poistaa luottamuksellisuustunnisteen raportista, koontinäytöstä, tietojoukosta tai tietovuosta, seuraa [samaa menettelytapaa kuin tunnisteita käyttöön otettaessa](#applying-sensitivity-labels), mutta valitse **(Ei mitään)** , kun sinua kehotetaan luokittelemaan tietojen luottamuksellisuus. 
+
 ## <a name="data-protection-in-exported-files"></a>Tietojen suojaus viedyissä tiedostoissa
 
 Kun [viet tietoja raportista](https://docs.microsoft.com/power-bi/consumer/end-user-export), jolla on luottamuksellisuustunniste, luottamuksellisuustunniste periytyy muodostettuun tiedostoon (Excel, PowerPoint ja PDF – CSV-tiedostoja ei tueta). Luottamuksellisuustunniste näkyy tiedostossa, ja tiedostoa voivat käyttää vain ne käyttäjät, joilla on riittävät käyttöoikeudet.
@@ -73,12 +76,12 @@ Tietojen luottamuksellisuustunnisteiden käyttöön liittyy seuraavat seikat:
 * Tunnisteiden ja suojausten pakotus vietäviin tiedostoihin on tuettu vain Excel-, PowerPoint- ja PDF-tiedostoille. Tunnisteita ja suojausta ei pakoteta, kun tietoja viedään .CSV-tiedostoihin, tilataan sähköpostiin,upotetaan visualisointeihin tai tulostetaan.
 * Käyttäjällä, joka vie tiedoston Power BI:stä, on oikeus käyttää ja muokata tiedostoa luottamuksellisuustunnisteasetusten mukaisesti. Tiedot vienyt käyttäjä ei saa omistajan käyttöoikeuksia tiedostoon. 
 * Luottamuksellisuustunnisteet eivät ole tällä hetkellä käytettävissä [sivutetuille raporteille]( https://docs.microsoft.com/power-bi/paginated-reports-report-builder-power-bi) tai työkirjoille. 
-* Et voi tällä hetkellä poistaa tunnistetta Power BI -resurssista, kun se on otettu käyttöön.
 * Power BI -resurssien luottamuksellisuustunnisteet näkyvät vain työtilan luettelo- ja historiatiedot-näkymissä. Tunnisteet eivät tällä hetkellä näy näkymissä suosikit, jaettu kanssani, viimeaikaiset tai sovellukset. Huomaathan kuitenkin, että Power BI -resurssissa käytetty tunniste säilyy aina Excel-, PowerPoint- ja PDF-tiedostoihin viedyissä tiedoissa, vaikka se ei olisikaan näkyvissä.
 * Luottamuksellisuustunnisteen *tiedoston salausasetukset*, jotka on määritetty joko [Microsoft 365 -tietoturvakeskusessa](https://security.microsoft.com/) tai [Microsoft 365 -yhteensopivuuskeskuksessa](https://compliance.microsoft.com/), ovat käytössä vain tiedostoissa, jotka *viedään* Power BI:stä; eivät Power BI:n *sisällä*.
 * [HYOK-suojausta](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) ei tueta Power BI:ssä käytetyille luottamuksellisuustunnisteille.
 * Tunnisteiden tarkastelu ja käyttö Office-sovelluksissa vaatii tiettyjä [käyttöoikeuksia](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#subscription-and-licensing-requirements-for-sensitivity-labels).
 * Luottamuksellisuustunnisteita tuetaan vain yleisten (julkisten) pilvipalveluiden vuokraajille. Luottamuksellisuustunnisteita ei tueta muiden pilvipalveluiden vuokraajille.
+* Luottamuksellisuustunnisteita ei tueta [ulkoisille käyttäjille (Azure Active Directory B2B -vieraskäyttäjät)](../service-admin-azure-ad-b2b.md). Tämä tarkoittaa sitä, että ulkoiset käyttäjät eivät voi tarkastella tunnisteita eivätkä viedä tietoja Excel-, PDF- ja PPTX-tiedostoihin. [Poista tunniste](#removing-sensitivity-labels), jotta ulkoiset käyttäjät voivat viedä tietoja kyseisiin tiedostotyyppeihin.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

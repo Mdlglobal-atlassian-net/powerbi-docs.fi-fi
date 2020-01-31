@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
 ms.openlocfilehash: 6c8b62cf798d2fbbd09dab0603d216448d04487c
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 12/11/2019
 ms.locfileid: "75000131"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-bw-using-gx64krb5"></a>Kerberoksen käyttäminen kertakirjautumista (SSO) varten SAP BW:ssä gx64krb5:n avulla
@@ -154,7 +154,7 @@ Lisää tarvittavat rekisterimerkinnät sen tietokoneen rekisteriin, johon yhdys
 
 1. Kirjoita tietolähteen määritysikkunassa SAP BW -sovelluspalvelimen **Isäntänimi**, **Järjestelmänumero** ja **asiakastunnus** samalla tavalla kuin silloin, kun kirjaudut sisään SAP BW -palvelimeesi Power BI Desktopin kautta.
 
-1. Syötä **SNC-kumppanin nimi** -kenttään *p:&lt;SPN, jonka yhdistit SAP BW -palvelukäyttäjään&gt;* . Jos SPN on esimerkiksi SAP/BWServiceUser\@MYDOMAIN.COM, kirjoita *p:SAP/BWServiceUser\@MYDOMAIN.COM***SNC-kumppanin nimi** -kenttään.
+1. Syötä **SNC-kumppanin nimi** -kenttään *p:&lt;SPN, jonka yhdistit SAP BW -palvelukäyttäjään&gt;* . Jos SPN on esimerkiksi SAP/BWServiceUser\@MYDOMAIN.COM, kirjoita *p:SAP/BWServiceUser\@MYDOMAIN.COM* **SNC-kumppanin nimi** -kenttään.
 
 1. Valitse SNC-kirjastoksi **SNC\_LIB** tai **SNC\_LIB\_64**. Varmista, että yhdyskäytäväkoneen **SNC\_LIB\_64** osoittaa gx64krb5.dll-tiedostoon. Vaihtoehtoisesti voit valita **Mukautettu**-vaihtoehdon ja antaa absoluuttisen polun gx64krb5.dll-tiedostolle yhdyskäytäväkoneessa.
 

@@ -85,7 +85,7 @@ Luot vesiputouskaavion, joka näyttää myynnin vaihtelun (arvioitu myynti vs. t
 
     ![Valitse Lajitteluperuste > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscalmonth.png)
     
-    Jos haluat näyttää kuukaudet kronologisessa järjestyksessä, valitse **Lajittele nousevasti**. Tarkista, että keltainen ilmaisin on **Lajittele nousevaan järjestykseen** -vaihtoehdon vieressä vasemmalla. Tämä ilmaisee, että valitsemasi asetus on käytössä.
+    Jos haluat näyttää kuukaudet kronologisessa järjestyksessä, valitse **Lajittele nousevaan järjestykseen**. Tarkista, että keltainen ilmaisin näkyy **Lajittele nousevaan järjestykseen** -vaihtoehdon vieressä vasemmalla. Tämä ilmaisee, että valitsemasi asetus on käytössä.
 
     ![Valitse Lajitteluperuste > Lajittele nousevaan järjestykseen](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-ascending.png)
 

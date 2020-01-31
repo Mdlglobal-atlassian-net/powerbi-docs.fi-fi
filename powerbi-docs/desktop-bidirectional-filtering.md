@@ -7,38 +7,33 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8aeae0075ed32a832c27f475ef3786b7df76576c
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 141dabdce7816d21c49d8c7f98d1438c2fc20e8d
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761768"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709844"
 ---
 # <a name="enable-bidirectional-cross-filtering-for-directquery-in-power-bi-desktop"></a>DirectQueryn kaksisuuntaisen ristiinsuodatuksen käyttöönotto Power BI Desktopissa
 
-Kun taulukoita suodatetaan tiedoille sopivan näkymän luomiseksi, raportin luojat (ja tietojen mallintajat) kohtaavat haasteita määrittäessään, miten suodatusta käytetään raporttiin: taulukon suodatinkonteksti säilyy suhteen toisella puolella, mutta ei toisella, mikä edellyttää usein monimutkaisia DAX-kaavoja halutun tuloksen saamiseksi.
+Kun raporttien tekijät ja tietojen mallintajat suodattavat taulukoita sopivan tietonäkymän luontia varten, he kohtaavat haasteita määrittäessään, miten suodattimia käytetään raportissa. Aiemmin taulukon suodatinkontekstia pidettiin suhteen toisella puolella, mutta ei toisella. Tämä järjestely vaati usein monimutkaista DAX-kaavaa, jotta haluttu tulos saatiin.
 
-Kaksisuuntaisen ristiinsuodatuksen ansiosta raportin luojat (ja tietojen mallintajat) voivat nyt hallita tarkemmin sitä, miten suodattimia käytetään tällaisia taulukoita käsiteltäessä, koska sen avulla nämä suodattimet voidaan ottaa käyttöön taulukkosuhteen *molemmilla* puolilla. Tämä toteutetaan siten, että suodatinkonteksti välitetään taulukkosuhteen toisella puolella olevaan toiseen, liitettyyn taulukkoon.
+Kaksisuuntaisen ristisuodatuksen avulla raporttien luojat ja tietojen mallintajat voivat nyt hallita entistä paremmin sitä, miten he voivat käyttää suodattimia toisiinsa liittyvien taulukoiden käsittelyssä. Kaksisuuntaisen ristisuodatuksen avulla he voivat käyttää suodattimia taulukkosuhteen *molemmilla* puolilla. Voit käyttää suodattimia välittämällä taulukkosuhteen toisella puolella olevaan toiseen taulukkoon.
 
-## <a name="detailed-whitepaper-for-bidirectional-cross-filtering"></a>Yksityiskohtainen tekninen raportti kaksisuuntaista ristiinsuodatusta varten
-Saatavilla on [yksityiskohtainen tekninen raportti](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx), jossa selitetään kaksisuuntainen ristisuodatus Power BI Desktopissa (tekninen raportti kattaa myös SQL Server Analysis Services 2016:n, molemmat toimivat samalla tavalla).
+## <a name="enable-bidirectional-cross-filtering-for-directquery"></a>Kaksisuuntaisen ristiinsuodatuksen ottaminen käyttöön DirectQuerylle
 
-* Lataa [Kaksisuuntainen ristiinsuodatus Power BI Desktopille](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) -tekninen raportti
+Voit ottaa ristiinsuodatuksen käyttöön **Muokkaa suhdetta** -valintaikkunassa. Jos haluat ottaa suhteen ristiinsuodatuksen käyttöön, sinun on määritettävä seuraavat asetukset:
 
-## <a name="enabling-bidirectional-cross-filtering-for-directquery"></a>Kaksisuuntaisen ristiinsuodatuksen ottaminen käyttöön DirectQuerylle
+* Määritä **Ristisuodatussuunta**-asetukseksi **Molemmat**.
+* Valitse **Ota suojaussuodattimet käyttöön molempiin suuntiin**.
 
-Ristisuodatuksen ottamiseksi käyttöön suhteen valintaikkunassa **Suhteen muokkaaminen** seuraavien on oltava valittuna:
-
-* **Ristiinsuodatussuunnaksi** on asetettava **Molemmat**
-* **Ota suojaussuodattimet käyttöön molempiin suuntiin** on myös oltava valittuna
-
-  ![](media/desktop-bidirectional-filtering/bidirectional-filtering_2.png)
+  ![Määritä kaksisuuntainen ristiinsuodatus Power BI Desktopissa.](media/desktop-bidirectional-filtering/bidirectional-filtering_2.png)
 
 > [!NOTE]
-> Kun luot ristiinsuodatuksen DAX-kaavoja Power BI Desktopissa, käytä *UserPrincipalNamea* (joka on usein sama kuin käyttäjän kirjautumisnimi, kuten <em>joe@contoso.com</em>) *Käyttäjänimen* sijaan. Siten joudut ehkä luomaan vastaavan taulukon, joka yhdistää *Käyttäjänimen* (tai esimerkiksi työntekijätunnuksen) *UserPrincipalNameen*.
+> Kun luot ristiinsuodatuksen DAX-kaavoja Power BI Desktopissa, käytä *UserPrincipalName*-nimeä. Tämä kenttä on usein sama kuin käyttäjän kirjautumisnimi, esimerkiksi <em>joe@contoso.com</em>, *Käyttäjänimi*-nimen sijaan. Siksi sinun on ehkä luotava vastaava taulukko, joka yhdistää *UserName*-nimen (tai *EmployeeID*-nimen) *UserPrincipalName*-nimeen.
 
-Saat lisätietoja ja esimerkkejä kaksisuuntaisen ristiinsuodatuksen toiminnasta tässä artikkelissa aiemmin mainitusta [teknisestä raportista](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
+Saat lisätietoja ja esimerkkejä kaksisuuntaisen ristiinsuodatuksen toiminnasta [teknisestä Kaksisuuntainen ristiinsuodatus Power BI Desktopissa -raportista](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
 

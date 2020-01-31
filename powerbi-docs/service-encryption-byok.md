@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 10/24/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: c4b4d706f56d9ebc91b17194c9b2fa631aeb8497
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 4cddf01dd57191b5d3e707589e6d8a78e106259f
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762113"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958467"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Omien salausavainten tuominen Power BI:hin (esikatselu)
 
@@ -105,8 +105,6 @@ Huomioi seuraavat asiat ennen kuin otat BYOK:n käyttöön:
 
 - Et voi _suoraan_ siirtää BYOK:ta käyttävää työtilaa erillisestä Power BI Premium -kapasiteetista jaettuun kapasiteettiin. Sinun on ensin siirrettävä työtila varattuun kapasiteettiin, jossa ei käytetä BYOK:ta.
 
-- Jos siirrät työtilaa, joka käyttää BYOKia varatusta kapasiteetista Power BI Premiumissa jaettuna, raportteja ja tietojoukkoja ei voi käyttää, koska ne salataan avaimella. Tämän välttämiseksi on ensin siirrettävä työtila varattuun kapasiteettiin, jossa ei käytetä BYOK:ia.
-
 ### <a name="enable-byok"></a>BYOK:n käyttöönotto
 
 BYOK:n käyttöönotto edellyttää, että olet Power BI -palvelun vuokraajan järjestelmänvalvoja ja että kirjaudut sisään `Connect-PowerBIServiceAccount` cmdlet-komennon kautta. Sen jälkeen voit ottaa BYOK:n käyttöön [`Add-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/Add-PowerBIEncryptionKey):n avulla seuraavassa esimerkissä kuvatulla tavalla:
@@ -178,7 +176,7 @@ Power BI sisältää cmdlet-lisäkomentoja, joiden avulla voit hallintaan vuokra
 
     Huomaa, että salaus on käytössä kapasiteettitasolla, mutta saat salauksen tilan määritetyn työtilan tietojoukon tasolla.
 
-- [`Switch-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey) vaihtaa (tai _kierrättää_) salaukseen käytetyn avainversion. Cmdlet-komento on päivittää avaimen `-KeyVaultKeyUri`-arvon `-Name`:
+- [ `Switch-PowerBIEncryptionKey` ](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey) vaihtaa (tai _kierrättää_) salaukseen käytetyn avainversion. Cmdlet-komento on päivittää avaimen `-KeyVaultKeyUri`-arvon `-Name`:
 
     ```powershell
     Switch-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'

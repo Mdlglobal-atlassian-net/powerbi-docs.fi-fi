@@ -48,7 +48,7 @@ Käytä liitintä seuraavasti:
 
 1. Valitse **Nouda tiedot** > **Lisää** Power BI Desktopin **Aloitus**-valintanauhasta.
 2. Valitse vasemmalla olevan ikkunan luokkien luettelosta **Online-palvelut**.
-3. Valitse **Microsoft Graph Security (beeta)**.
+3. Valitse **Microsoft Graph Security (beeta)** .
 
     ![Nouda tiedot -valintaikkuna](media/desktop-connect-graph-security/GetData.PNG)
     

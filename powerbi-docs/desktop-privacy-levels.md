@@ -44,7 +44,7 @@ Määritä tietolähteen yksityisyystaso valitsemalla tietolähde ja sitten **Mu
 > 
 
 ## <a name="configure-privacy-levels"></a>Yksityisyystasojen määrittäminen
-**Yksityisyystasot** -asetuksen oletusarvona on **Yhdistä tiedot kunkin lähteen tietosuojatason asetusten mukaisesti**. Se tarkoittaa, että **Yksityisyystasot**-asetukset on pakotettu.
+**Yksityisyystasot** -asetuksen oletusarvona on **Yhdistä tiedot kunkin lähteen Yksityisyystaso-asetustesi mukaisesti**. Tämä tarkoittaa, että **Yksityisyystasot** on pakotettu.
 
 | Asetus | Kuvaus |
 | --- | --- |

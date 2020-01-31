@@ -35,11 +35,11 @@ export interface ISelectionId {
 
 ## <a name="how-to-use-selectionmanager-to-select-data-points"></a>Kuinka arvopisteitä valitaan SelectionManagerin avulla
 
-Visualisoinnin isäntäobjektissa on metodi, jolla luodaan valintojen hallinnan esiintymä. Valintojen hallinta on vastuussa valinnasta, valinnan tyhjentämisestä, pikavalikon näyttämisestä, nykyisten valintojen tallentamisesta ja valintatilan tarkistamisesta. Valintojen hallinnassa on vastaavat menetelmät näille toiminnoille.
+Visualisoinnin isäntäobjektissa on menetelmä, jolla luodaan valintojen hallinnan esiintymä. Valintojen hallinta on vastuussa valinnasta, valinnan tyhjentämisestä, pikavalikon näyttämisestä, nykyisten valintojen tallentamisesta ja valintatilan tarkistamisesta. Valintojen hallinnassa on vastaavat menetelmät näille toiminnoille.
 
 ### <a name="create-an-instance-of-the-selection-manager"></a>Luo valintojen hallinnan esiintymä
 
-Jos käytät valintojen hallintaa, sinun on luotava valintojen hallinnan esiintymä. Visualisoinneissa visuaalisen objektin `constructor` luo yleensä valintojen hallinnan esiintymän.
+Jos käytät valintojen hallintaa, sinun on luotava valintojen hallinnan esiintymä. Visualisoinneissa valintojen hallinnan esiintymä luodaan yleensä visuaalisen objektin `constructor`-kohteessa.
 
 ```typescript
 export class Visual implements IVisual {
@@ -58,7 +58,7 @@ export class Visual implements IVisual {
 
 ### <a name="create-an-instance-of-the-selection-builder"></a>Luo valinnanmuodostimen esiintymä
 
-Kun valintojen hallinnan esiintymä luodaan, sinun tulee luoda `selections` kullekin visualisoinnin arvopisteelle. Visualisoinnin isäntäobjekti tarjoaa `createSelectionIdBuilder`-metodin, jolla luodaan valinta kullekin arvopisteelle. Tämä metodi palauttaa objektin esiintymän, jolla on liittymä `powerbi.visuals.ISelectionIdBuilder`:
+Kun valintojen hallinnan esiintymä luodaan, sinun tulee luoda `selections` kullekin visualisoinnin arvopisteelle. Visualisoinnin isäntäobjekti tarjoaa `createSelectionIdBuilder`-metodin, jolla luodaan valinta kullekin arvopisteelle. Tämä menetelmä palauttaa objektin esiintymän, jolla on liittymä `powerbi.visuals.ISelectionIdBuilder`:
 
 ```typescript
 export interface ISelectionIdBuilder {
@@ -71,15 +71,15 @@ export interface ISelectionIdBuilder {
 }
 ```
 
-Tällä objektilla on vastaavat menetelmät, joilla voidaan luoda `selections` erityyppisille tietonäkymämäärityksille.
+Tällä objektilla on vastaavat menetelmät, joilla voidaan luoda `selections`-valintoja erityyppisille tietonäkymien yhdistämismäärityksille.
 
 > [!NOTE]
-> Metodit `withTable`, `withMatrixNode` esiteltiin Power BI -visualisointien ohjelmointirajapinnassa 2.5.0.
-> Jos sinun on käytettävä valintoja taulukko- tai matriisitietojen näkymämäärityksiin, ohjelmointirajapinnan versio on päivitettävä vähintään versioon 2.5.0.
+> Menetelmät `withTable`ja `withMatrixNode` esiteltiin Power BI -visualisointien ohjelmointirajapinnassa 2.5.0.
+> Jos sinun on käytettävä valintoja taulukkojen tai matriisien tietonäkymien yhdistämismäärityksissä, ohjelmointirajapinnan versio on päivitettävä vähintään versioon 2.5.0.
 
 ### <a name="create-selections-for-categorical-data-view-mapping"></a>Luo valinnat luokittaista tietonäkymämääritystä varten
 
-Tarkastellaan, miten valinnat esitetään mallitietojoukon luokittaisessa tietonäkymämäärityksessä:
+Tarkastellaan, miten valinnat esitetään mallitietojoukon luokittaisessa tietonäkymän yhdistämismäärityksessä:
 
 | Valmistaja | Tyyppi | Arvo |
 | - | - | - |
@@ -108,7 +108,7 @@ Tarkastellaan, miten valinnat esitetään mallitietojoukon luokittaisessa tieton
 | Toyota | Tuontiauto | 20799 |
 | Toyota | Tuontirekka | 23614 |
 
-Visualisointi käyttää seuraavaa tietonäkymämääritystä:
+Visualisointi käyttää seuraavaa tietonäkymän yhdistämismääritystä:
 
 ```json
 {
@@ -188,7 +188,7 @@ Visualisoinnin tietokorit on täytettävä.
 Luokka on `Manufacturer` (sarakkeet), sarja on `Type` (rivit) ja `Values` on `Value` sarjoille.
 
 > [!NOTE]
-> `Values`-tiedot tarvitaan sarjoille, koska tietonäkymämäärityksen mukaan visualisointi odottaa, että `Values` ryhmitellään `Rows`-tietojen mukaan.
+> `Values`-tiedot tarvitaan sarjoille, koska tietonäkymän yhdistämismäärityksen mukaan visualisointi odottaa, että `Values`-tiedot ryhmitellään `Rows`-tietojen mukaan.
 
 #### <a name="create-selections-for-categories"></a>Valintojen luominen luokille
 
@@ -229,9 +229,9 @@ for (let categoryIndex = 0; categoryIndex < categoriesCount; categoryIndex++) {
 }
 ```
 
-Mallikoodissa kaikki luokat iteroidaan. Kunkin iteraation yhteydessä kutsutaan `createSelectionIdBuilder` luomaan kullekin luokalle seuraava valinta kutsumalla valintamuodostimen `withCategory`-metodia. Metodia `createSelectionId` käytetään viimeisenä metodina, joka palauttaa luodun `selection`-objektin.
+Mallikoodissa kaikki luokat iteroidaan. Kunkin iteraation yhteydessä kutsutaan `createSelectionIdBuilder` luomaan kullekin luokalle seuraava valinta kutsumalla valintamuodostimen `withCategory`-menetelmää. Menetelmää `createSelectionId` käytetään viimeisenä menetelmänä, joka palauttaa luodun `selection`-objektin.
 
-`withCategory`-metodissa välitetään `category`-sarake, joka on esimerkissä `Manufacturer` ja luokkaelementin indeksi.
+`withCategory`-menetelmässä välitetään `category`-sarake, joka on esimerkissä `Manufacturer`, ja luokkaelementin indeksi.
 
 #### <a name="create-selections-for-series"></a>Valintojen luominen sarjoille
 
@@ -295,7 +295,7 @@ Taulukon tietonäkymämäärityksen malli
 }
 ```
 
-Voit luoda valinnan kullekin taulukon tietonäkymämääritykselle kutsumalla valinnanmuodostimen `withTable`-metodia.
+Voit luoda valinnan kullekin taulukon tietonäkymän yhdistämismääritykselle kutsumalla valinnanmuodostimen `withTable`-menetelmää.
 
 ```typescript
 public update(options: VisualUpdateOptions) {
@@ -309,7 +309,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-Visualisoinnin koodi iteroi taulukon rivit, ja kukin rivi kutsuu `withTable`-taulukkometodia. `withTable`-metodin parametreja ovat `table`-objekti ja taulukkorivin indeksi.
+Visualisoinnin koodi iteroi taulukon rivit, ja kukin rivi kutsuu `withTable`-taulukkomenetelmää. `withTable`-metodin parametreja ovat `table`-objekti ja taulukkorivin indeksi.
 
 ### <a name="create-selections-for-matrix-data-view-mapping"></a>Luo valinnat matriisin tietonäkymämääritystä varten
 
@@ -342,7 +342,7 @@ Esimerkissä `nodeWalker` kutsuu rekursiivisesti kutakin solmua ja alisolmua.
 
 ## <a name="select-datapoints-to-slice-other-visuals"></a>Tietopisteiden valitseminen muiden visualisointien osittamiseksi
 
-Luokittaisen tietonäkymämäärityksen valintojen mallikoodeissa havaittiin, että painike-elementeille luotiin napsautusten käsittelijä. Käsittelijä kutsuu valintojen hallinnan `select`-metodia ja välittää valinta-objektin.
+Esimerkin luokittaisen tietonäkymän yhdistämismäärityksen valintojen koodeissa näet, että painike-elementeille luotiin napsautusten käsittelijä. Käsittelijä kutsuu valintojen hallinnan `select`-menetelmää ja välittää valinta-objektin.
 
 ```typescript
 button.addEventListener("click", () => {

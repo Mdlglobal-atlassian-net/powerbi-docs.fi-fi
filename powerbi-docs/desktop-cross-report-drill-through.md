@@ -6,116 +6,97 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 01/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7189ef77446446b56b1dcb55b43b022d0fc5c057
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: e500cb29bcc4472c59e7e8215fc0a7e7e728ea0d
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73868770"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538824"
 ---
-# <a name="use-cross-report-drillthrough-in-power-bi-desktop"></a>Raporttien välillä porautumisen käyttäminen Power BI Desktopissa
+# <a name="use-cross-report-drillthrough-in-power-bi"></a>Raporttien välillä porautuminen Power BI:ssä
 
-Power BI Desktopin raporttien välisen porautumisominaisuuden avulla voit siirtyä kontekstuaalisesti raportista toiseen. Tämä edellyttää, että raportit ovat samassa työtilassa tai sovelluksessa Power BI ‑palvelussa. Raporttien välillä porautumisen avulla voit yhdistää kaksi tai useita raportteja, joissa on toisiinsa liittyvää sisältöä, ja välittää suodatettua kontekstia raporttien välisen yhteyden ohella. Tässä artikkelissa kerrotaan, miten voit määrittää Power BI ‑raporttien välillä porautumisen sekä se, millainen käyttökokemus on, kun käyttäjät hyödyntävät raporttien välillä porautumista itse.
+Power BI:n *raporttien välillä porautumisen* avulla voit kontekstuaalisesti siirtyä raportista toiseen saman Power BI -palvelutyötilan tai sovelluksen sisällä. Raportista toiseen porautumalla voit yhdistää kaksi tai useita raportteja, joissa on toisiinsa liittyvää sisältöä, ja välittää suodatettua kontekstia raporttien välisen yhteyden ohella. 
 
-![Näyttökuva Power BI Desktopin porautumisvaihtoehdosta](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
+Raporttien välisen porautumisen aloitat valitsemalla arvopisteen *lähdevisualisoinnista*, joka kuuluu *lähderaporttiin*, minkä jälkeen valitset raporttien välisen **Porautuminen**-kohteen pikavalikosta. 
 
-Seuraavat määritelmät on tärkeä tietää, ennen kuin alat määrittää ja käyttää raporttien välillä porautumista:
+![Power BI:n raporttien välillä porautumisen asetus](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
 
-* **Lähdevisualisointi:** Visualisointi, joka käynnistää porautumistoiminnon visuaalisen pikavalikon avulla.
-* **Lähderaportti:** Raportti, joka sisältää lähdevisualisoinnin raporttien välillä porautumiseen.
-* **Kohdesivu:** Sivu, jolle käyttäjä päätyy porautumistoiminnon aloittamisen jälkeen.
-* **Kohderaportti:** Raportti, joka sisältää kohdesivun raporttien välillä porautumiseen.
+Porautumistoiminto avaa *kohdesivun* *kohderaportissa*. 
 
+![Power BI Desktopin raporttien välillä porautumisen kohde](media/desktop-cross-report-drill-through/cross-report-drill-through-01a.png)
+
+Tämä artikkeli näyttää, miten voit määrittää raporttien välisen porautumistoiminnon ja käyttää sitä Power BI -raporteissa.
 
 > [!NOTE]
-> Power BI Desktopin raporttien välisen porautumisominaisuuden avulla voit siirtyä kontekstuaalisesti raportista toiseen. Tämä edellyttää, että raportit ovat samassa työtilassa tai sovelluksessa Power BI ‑palvelussa. Tämä ei ole käytettävissä, kun käytät yksittäisiä jaettuja raportteja *omassa työtilassa* ([Jaettu kanssani -raportit](service-share-dashboards.md#share-a-dashboard-or-report)). Sen sijaan sinun on käytettävä raporttia työtilassa, josta se on alun perin jaettu.
-
+> Et voi käyttää raporttien välillä porautumista yksilöllisesti jaetuissa [Jaettu kanssani -raporteissa](service-share-dashboards.md#share-a-dashboard-or-report) **Oman työtilan** sisällä. Jotta voit käyttää raporttien välillä porautumista, sinun on käytettävä raportteja siitä työtilasta, jossa ne on jaettu.
 
 ## <a name="enable-cross-report-drillthrough"></a>Raporttien välillä porautumisen käyttöönotto
 
-Jos haluat tehdä raportista raporttien välillä porautumisen kohteen, sinun on otettava kyseinen raportin ominaisuus käyttöön **Asetukset**-ikkunassa. Siirry kohtaan **Tiedosto** > **Asetukset** > **Asetukset** ja sitten sivun vasemmassa alareunassa olevaan kohtaan **Raportin asetukset**.
+Ensimmäinen askel raporttien välisen porautumisen käyttöönotossa on lähde- ja kohderaporttien tietomallien vahvistaminen. Vaikka eri raporttien rakenteen ei tarvitse olla sama, niiden kenttien, joiden kautta haluat porautua, on oltava olemassa molemmissa tietomalleissa. Kenttien nimien sekä niiden taulukoiden nimien, joihin ne kuuluvat, on oltava identtiset. Merkkijonojen on vastattava toisiaan myös kirjainkoon osalta.
 
-Valitse **Salli visualisoinnit tässä raportissa, jos haluat käyttää porautumisen kohteita muista raporteista** -valintaruutu seuraavassa kuvassa esitetyllä tavalla.
+Esimerkiksi jos haluat sijoittaa suodattimen kenttään **Osavaltio** taulukossa **Yhdysvaltain osavaltiot**, molemmissa malleissa on oltava taulukko **Yhdysvaltain osavaltiot** ja taulukossa on oltava kenttä **Osavaltio**. Jos näin ei ole, sinun on päivitettävä pohjana olevassa mallissa olevan kentän tai taulukon nimi. Ainoastaan kenttien näyttönimien päivittäminen ei toimi oikein raporttien välillä porautumisessa.
 
-![Näyttökuva asetusikkunasta, jossa Raporttiasetukset on korostettu](media/desktop-cross-report-drill-through/cross-report-drill-through-02.png)
+Kun olet vahvistanut mallit, ota raporttien välinen porautuminen käyttöön lähderaportissa. 
 
-Raporttien välillä porautuminen on nyt käytössä.
+1. Siirry Power BI Desktopissa kohtaan **Tiedosto** > **Asetukset ja vaihtoehdot** > **Asetukset**. 
+1. Valitse siirtymispalkin vasemman puolen **Asetuksissa**, osan **Nykyinen tiedosto** alaosassa, **Raportin asetukset**. 
+1. Valitse oikealla alhaalla, kohdassa **Raporttien välillä porautuminen**, **Salli visualisoinnit tässä raportissa, jos haluat käyttää porautumisen kohteita muista raporteista**. 
+1. Valitse **OK**. 
+   
+   ![Raporttien välillä porautumisen käyttöönotto Power BI Desktopissa](media/desktop-cross-report-drill-through/cross-report-drill-through-02.png)
 
-## <a name="set-up-cross-report-drillthrough"></a>Raporttien välillä porautumisen määrittäminen
+Voit myös ottaa käyttöön raporttien välillä porautumisen Power BI -palvelussa.
+1. Valitse Power BI -palvelussa se työtila, joka sisältää kohde- ja lähderaporttisi.
+1. Valitse työtilaluettelosta lähderaportin nimen vierestä **Lisäasetukset**-symboli ja valitse sitten **Asetukset**. 
+1. Valitse läheltä **Asetukset**-ruudun alareunaa, kohdasta **Raporttien välillä porautuminen** **Salli visualisoinnit tässä raportissa, jos haluat käyttää porautumisen kohteita muista raporteista** ja valitse sitten **Tallenna**.
+   
+   ![Raporttien välillä porautumisen käyttöönotto Power BI -palvelussa](media/desktop-cross-report-drill-through/cross-report-drill-through-02a.png)
 
-Raporttien välillä poraaminen määritetään kuin raportin sisäinen porautuminen. Porautuminen on otettu käyttöön kohdesivulla, minkä ansiosta muut visualisoinnit voivat porautua käyttöön otettuun sivuun. Katso artikkelista [Porauksen käyttäminen Power BI Desktopissa](desktop-drillthrough.md) vaiheet, joilla voit luoda porautumisen yhdestä raportista.
+## <a name="set-up-a-cross-report-drillthrough-target"></a>Raporttien välisen porautumiskohteen määrittäminen
 
-Jotta voit aloittaa asennuksen, sinun on suoritettava muutama ennakkovaihe:
+Kohdesivun määrittäminen raporttien väliselle porautumiselle on samanlaista kuin porautumisen määrittäminen raportin sisällä. Porautumisen käyttöönotto kohdesivulla sallii muiden visualisointien porautua sivuun. Porautumisen luomisesta yksittäisessä raportissa voit lukea kohteesta [Porautumisen käyttäminen Power BI Desktopissa](desktop-drillthrough.md).
 
-* Määritä porautumisen kohdesivu, jota voidaan sen jälkeen käyttää muista työtilan tai sovelluksen raporteista.
-* Salli raportin tarkastella porautumissivuja oman raporttinsa ulkopuolelta.
+Voit määrittää kohteen raporttien väliselle porautumiselle Power BI Desktopissa tai Power BI -palvelussa. 
+1. Muokkaa kohdetiedostoa ja valitse kohderaportin kohdesivulla **Kentät**-osa **Visualisoinnit**-ruudusta. 
+1. Määritä **Porautuminen**-kohdassa **Raporttien välillä** -valitsin asentoon **Käytössä**. 
+1. Vedä kentät, joita aiot käyttää porautumiskohteina, **Lisää porautumiskentät tähän** -alueelle. Valitse jokaiselle kentälle, haluatko sallia porautumisen, kun kenttää käytetään luokkana, vai kun se summataan mittayksikkönä. 
+1. Valitse, haluatko **säilyttää kaikki suodattimet** visualisoinnillesi. Jos et halua välittää lähdevisualisoinnissa käytössä olevia visualisointeja kohdevisualisoinnillesi, valitse **Ei käytössä**.
+   
+   ![Visualisoinnit-ruutu, jossa porautumisasetukset on korostettu](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
+   
+1. Jos käytät sivua vain raporttien välillä porautumiseen, poista **Takaisin**-painike, joka lisätään automaattisesti pohjaan. **Takaisin**-painike toimii vain raportinsisäisessä siirtymisessä. 
+1. Kun olet määrittänyt kohdesivun, tallenna raportti, jos käytät Power BI -palvelua, tai tallenna ja julkaise raportti, jos käytät Power BI Desktopia.
 
-Etsi porautumisasetukset **Visualisoinnit**-ruudun **Kentät**-osiosta seuraavassa kuvassa esitetyllä tavalla.
+Siinä kaikki! Raporttisi ovat valmiita raporttien välillä porautumiseen. 
 
-![Näyttökuva Visualisoinnit-ruudusta, jossa porautumisasetukset on korostettu](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
+## <a name="use-cross-report-drillthrough"></a>Raporttien välillä porautumisen käyttö
 
-Sivulla porautumisen käyttöönotto edellyttää, että vahvistat ensin lähde- ja kohderaporttien tietomallit. Varmista, että: 
+Raporttien välillä porautumisen käyttämiseksi valitse lähderaportti Power BI -palvelusta ja valitse sitten visualisointi, joka käyttää porautumiskenttää kuten olet määrittänyt kohdesivua määrittäessäsi. Napsauta arvopistettä hiiren kakkospainikkeella visualisointien pikavalikon avaamiseksi, valitse **Porautuminen** ja valitse sitten porautumiskohde. Raporttien välisen porautumisen kohteet esitetään muodossa **Sivun nimi [Raportin nimi]**.
 
-* kentät, jotka haluat välittää, sisältyvät molempiin tietomalleihin.
-* kenttien nimet ja niiden taulukoiden nimet, joihin ne kuuluvat, ovat identtiset (merkkijonojen on myös vastattava toisiaan ja kirjainkoko on merkitsevä).
+![Power BI:n raporttien välillä porautumisen asetus](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
 
-Jos haluat esimerkiksi välittää kenttää *Maa* koskevan suodattimen taulukosta *Maantiede*, molemmissa malleissa on oltava *Maantiede*-taulukko ja kyseisessä taulukossa *Maa*-kenttä. Jos näin ei ole, sinun on päivitettävä pohjana olevassa mallissa olevan kentän tai taulukon nimi. Ainoastaan kenttien näyttönimien päivittäminen ei toimi oikein raporttien välillä porautumisessa. (Huomaa, että raporttien kaikkien rakenteiden ei tarvitse olla täsmälleen samat.)
+Näet tulokset raporttien välillä porautumisen kohderaportin sivulla, kuten määritit ne kohdetta luodessasi. Tulokset suodatetaan porautumisasetusten mukaan.
 
-Jotta voit aloittaa asennuksen, sinun on valmisteltava kohdesivu. Siirry Power BI Desktopissa samalle sivulle ja varmista, että **Raporttien välinen** porautuminen -asetus on **Käytössä**. 
-
-![Näyttökuva, jossa Raporttien välillä porautuminen -asetus on käytössä](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
-
-Vedä pohjaan seuraavaksi kentät, joita haluat käyttää porautumisen kohteena. Valitse, haluatko kenttää käytettävän luokkana tai yhteen vedettynä kuin mittayksikön tavoin. Tässä vaiheessa voit valita, haluatko poistaa käytöstä visualisoinnin **Säilytä kaikki suodattimet** -vaihtoehdon. Jos et halua välittää muita käytössä olevia suodattimia lähdevisualisoinnista porautumisen kohdevisualisointiin, valitse **Ei käytössä**.
-
-> [!NOTE]
-> Jos käytät sivua vain raporttien välillä porautumiseen, poista **Takaisin**-painike, joka lisätään automaattisesti. **Takaisin**-painike tukee vain yhden raportin sisällä siirtymistä. 
-
-Kun olet määrittänyt visualisoinnin, tallenna raportti, jos käytät Power BI -palvelua, tai tallenna ja julkaise raportti, jos käytät Power BI Desktopia.
-
-Edellisessä osiossa kuvattiin, miten raporttien välillä porautuminen otetaan käyttöön Power BI Desktopissa (**Asetukset**-ikkunassa). Jos käytät Power BI -palvelua raporttien välillä porautumisen kohteen luomiseen, raporttien välillä porautumisen käyttöönottaminen edellyttää seuraavaa: 
-
-1. Valitse työtila, jossa lähde- ja kohderaportti sijaitsevat.
-2. Valitse **Raportit**.
-3. Valitse lähderaportin **Asetukset**-kuvake.
-4. Varmista, että raporttien välillä porautumisen asetus on **Käytössä.**
-5. Tallenna raporttisi.
-
-Siinä kaikki! Raporttisi on valmis raportin raporttien välillä porautumiseen. 
-
-Seuraavassa osiossa tutustumme käyttökokemukseen käyttäjän näkökulmasta.
-
-## <a name="cross-report-drillthrough-experience"></a>Raporttien välillä porautumisen käyttökokemus
-
-Kun määrität raporttien välillä porautumisen käyttökokemuksen, voit alkaa hyödyntää ominaisuutta.
-
-Valitse lähderaportti Power BI -palvelussa ja valitse sitten visualisointi, joka käyttää kenttää tai kenttiä tavalla, jonka määritit kohdesivun määrittämisen yhteydessä. Avaa sitten visualisointien pikavalikko napsauttamalla arvopistettä hiiren kakkospainikkeella ja valitse **Porautuminen**.
-
-![Kuvakaappaus lähderaportista Power BI -palvelussa Porautuminen korostettuna](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
-
-Näet tulokset raporttien välillä porautumisen kohderaportin sivulla, juuri niin kuin määritit ne kohdetta luodessasi. Tulokset suodatetaan porautumisasetusten mukaan.
+![Power BI Desktopin raporttien välillä porautumisen kohde](media/desktop-cross-report-drill-through/cross-report-drill-through-01a.png)
 
 > [!IMPORTANT]
-> Power BI tallentaa raportti välillä porautumisen kohteet välimuistiin. Jos teet muutoksia, päivitä selaimesi, jos et näe porautumisen kohteita odotetulla tavalla. 
+> Power BI tallentaa raportti välillä porautumisen kohteet välimuistiin. Jos teet muutoksia, muista päivittää selaimesi, jos et näe porautumiskohteita odotetulla tavalla. 
 
-Raporttien välillä porautumisen kohteiden muoto on seuraava: 
+Jos määrität **Säilytä kaikki suodattimet** asentoon **Käytössä** määrittäessäsi kohdesivua, lähdevisualisoinnin suodatuskontekstiin voi sisältyä: 
 
-`Target Page Name [Target Report Name]`
+- Raportti-, sivu- ja visualisointitason suodattimia, jotka vaikuttavat lähdevisualisointiin 
+- Ristiinsuodatusta ja ristiinkorostusta, jotka vaikuttavat lähdevisualisointiin 
+- Sivulla olevia osittajia ja synkronoinnin osittajia
+- URL-parametrejä
 
-Kun olet valinnut porautumisen kohdesivun, Power BI siirtyy kyseiselle sivulle. Se välittää suodatuksen kontekstin kohdesivun asetusten perusteella. 
+Kun siirryt porauksen kohderaporttiin, Power BI käyttää suodattimia vain sellaisiin kenttiin, joilla on tarkat merkkijonovastaavuudet kenttänimen ja taulukkonimen osalta. 
 
-Lähdevisualisoinnin suodatuksen konteksti voi sisältää seuraavat: 
+Power BI ei käytä tahmeita suodattimia kohderaportista käsin, mutta se käyttää henkilökohtaista oletuskirjanmerkkiäsi, jos sinulla on sellainen. Jos esimerkiksi henkilökohtaisessa oletuskirjanmerkissäsi on raportti tason suodatin *Maa = USA*, Power BI soveltaa kyseistä suodatinta ennen lähdevisualisoinnin suodatuksen kontekstin soveltamista. 
 
-* Lähdevisualisointiin vaikuttavat raportti-, sivu- ja visualisointitason suodattimet. 
-* Lähdevisualisointiin vaikuttava ristiinsuodatus ja ristiinkorostus. 
-* Sivulla ja synkronoinnin osittajilla olevat osittajat.
-* URL-parametrit.
-
-Kun siirryt porautumisen kohderaporttiin, Power BI käyttää suodattimia vain sellaisille kentille, joiden nimelle ja taulukon nimelle se löytää tarkan merkkijonovastaavuuden. Power BI ei käytä kohderaportin kiinteitä suodattimia. Se kuitenkin soveltaa henkilökohtaista oletuskirjanmerkkiäsi, jos sellainen on olemassa. Jos esimerkiksi henkilökohtaisessa oletuskirjanmerkissäsi on raportti tason suodatin *Maa = USA*, Power BI soveltaa kyseistä suodatinta ennen kuin lähdevisualisoinnin suodatuksen kontekstia sovelletaan. 
-
-Raporttien välillä porautumisessa Power BI välittää suodatuksen kontekstin kaikille kohderaportin vakiosivuille. Power BI ei välitä työkaluvihjesivujen suodatuksen kontekstia, koska työkaluvihjesivut suodatetaan työkaluvihjeen käynnistävän lähdevisualisoinnin perusteella.
+Raporttien välillä porautumisessa Power BI välittää suodatuksen kontekstin kohderaportin vakiosivuille. Power BI ei välitä työkaluvihjesivujen suodatuksen kontekstia, koska työkaluvihjesivut suodatetaan työkaluvihjeen käynnistävän lähdevisualisoinnin perusteella.
 
 Jos haluat palata lähderaporttiin, kun raporttien välillä porautuminen on suoritettu, käytä selaimen **Edellinen**-painiketta. 
 
@@ -123,6 +104,6 @@ Jos haluat palata lähderaporttiin, kun raporttien välillä porautuminen on suo
 
 Voit olla kiinnostunut myös seuraavista artikkeleista:
 
-* [Osittajien käyttäminen Power BI Desktopissa](visuals/power-bi-visualization-slicers.md)
-* [Porautumisen käyttäminen Power BI Desktopissa](desktop-drillthrough.md)
+- [Osittajat Power BI:ssä](visuals/power-bi-visualization-slicers.md)
+- [Porautumisen käyttäminen Power BI Desktopissa](desktop-drillthrough.md)
 

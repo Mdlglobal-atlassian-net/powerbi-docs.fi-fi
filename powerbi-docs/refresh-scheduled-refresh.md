@@ -9,23 +9,23 @@ ms.topic: conceptual
 ms.date: 06/06/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 622273ed4c8d6f2faee46d3cc84d981f86bd8c92
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.openlocfilehash: e09b3f8579b65bc242cda1dbdb54f187ab6b47d0
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74958398"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791609"
 ---
 # <a name="configure-scheduled-refresh"></a>Ajoitetun päivityksen määrittäminen
 
 >[!NOTE]
 >Tietojoukon ajoitettu päivitys keskeytetään kahden kuukauden käyttämättömyyden jälkeen. Katso lisätietoja kohdasta [*Ajoitettu päivitys*](#scheduled-refresh) alempana tässä artikkelissa.
 
-Tässä artikkelissa kuvataan vaihtoehtoja, jotka ovat ajastettu päivitykseen vaihtoehdoissa [Paikallinen tietoyhdyskäytävä (henkilökohtainen tila)](service-gateway-personal-mode.md) ja [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md). Voit määrittää päivitysasetukset seuraavilla Power BI -palvelualueilla: Näitä ovat **Yhdyskäytävän yhteys**, **Tietolähteen tunnistetiedot** ja **Ajoitettu päivitys**. Tarkastelemme kutakin vuorotellen. Lisätietoja tietojen päivittämisestä, mukaan lukien päivitysaikataulujen rajoitukset, on kohdassa [Tietojen päivittäminen](refresh-data.md#data-refresh).
+Tässä artikkelissa kuvataan vaihtoehtoja, joiden päivitys voidaan ajastaa käyttäen asetuksia [Paikallinen tietoyhdyskäytävä (henkilökohtainen tila)](service-gateway-personal-mode.md) ja [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md). Voit määrittää päivitysasetukset seuraavilla Power BI -palvelualueilla: Näitä ovat **Yhdyskäytävän yhteys**, **Tietolähteen tunnistetiedot** ja **Ajoitettu päivitys**. Tarkastelemme kutakin vuorotellen. Lisätietoja tietojen päivittämisestä, mukaan lukien päivitysaikataulujen rajoitukset, on aiheessa [Tietojen päivittäminen](refresh-data.md#data-refresh).
 
 Pääset **Ajoitettu päivitys** -näkymään seuraavasti:
 
-1. Valitse **Enemmän vaihtoehtoja** (...) tietojoukon vierestä kohdasta **Tietojoukot**.
+1. Valitse kohdassa **Tietojoukot** haluamasi tietojoukon vierestä **Enemmän vaihtoehtoja** (...).
 2. Valitse **Ajoita päivitys**.
 
     ![Ajoita päivitys](media/refresh-scheduled-refresh/dataset-menu.png)
@@ -75,12 +75,12 @@ Jos käytössäsi on paikallinen tietoyhdyskäytävä tietojen päivittämiseen,
 Aseta **Pidä tietosi ajan tasalla** -liukusäätimen asetukseksi **Kyllä**, jotta voit määrittää asetukset.
 
 > [!NOTE]
-> Pyrimme siihen, että päivitys alkaa 15 minuutin sisällä suunnitellusta ajankohdasta, mutta viive voi venyä tunninkin mittaiseksi, jos tarvittavat resurssit eivät ole saatavilla aikaisemmin.
+> Power BI -palvelu pyrkii aloittamaan tietojen päivittämisen **15 minuutin kuluessa** ajoitetusta päivitysajasta.
 
 ![Ajoitettu päivitys -valintaikkuna](media/refresh-scheduled-refresh/scheduled-refresh.png)
 
 > [!NOTE]
-> Tietojoukon ajoitettu päivitys keskeytetään kahden kuukauden käyttämättömyyden jälkeen. Tietojoukkoa pidetään epäaktiivisena, kun kukaan käyttäjä ei ole käynyt koontinäytössä tai sille rakennetussa raportissa. Samaan aikaan tietojoukon omistajalle lähetetään sähköpostiviesti, joka ilmaisee, että ajoitettu päivitys on keskeytetty. Tietojoukon päivitysaikataulu näytetään sitten **käytöstä poistetuksi**. Jatka ajoitettua päivitystä käymällä millä tahansa koontinäytöllä tai raportissa, joka on rakennettu tietojoukkoon.
+> Tietojoukon ajoitettu päivitys keskeytetään kahden kuukauden käyttämättömyyden jälkeen. Tietojoukkoa pidetään epäaktiivisena, kun kukaan käyttäjä ei ole käynyt koontinäytössä tai sille rakennetussa raportissa. Samaan aikaan tietojoukon omistajalle lähetetään sähköpostiviesti, joka ilmaisee, että ajoitettu päivitys on keskeytetty. Tietojoukon päivitysaikataulu näkyy silloin **poistettuna käytöstä**. Jatka ajoitettua päivitystä käymällä millä tahansa koontinäytöllä tai raportissa, joka on rakennettu tietojoukkoon.
 
 ## <a name="whats-supported"></a>Tuetut toiminnot:
 
@@ -105,7 +105,7 @@ Tiettyjä tietojoukkoja tuetaan ajoitettua päivitystä varten eri yhdyskäytäv
 
 ### <a name="power-bi-gateway"></a>Power BI Gateway
 
-Lisätietoja tuetuista tietolähteistä on kohdassa [Power BI -tietolähteet](power-bi-data-sources.md).
+Lisätietoja tuetuista tietolähteistä on artikkelissa [Power BI -tietolähteet](power-bi-data-sources.md).
 
 ## <a name="troubleshooting"></a>Vianmääritys
 Joskus tietojen päivittäminen ei mene odotetulla tavalla. Yleensä tämä on yhdyskäytävään liittyvä ongelma. Tutustu yhdyskäytävän vianmääritystä koskeviin artikkeleihin, joissa on esitetty työkaluja ja tunnettuja ongelmia.

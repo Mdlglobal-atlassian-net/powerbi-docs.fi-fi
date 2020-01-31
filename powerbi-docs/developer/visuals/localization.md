@@ -29,13 +29,13 @@ Esimerkiksi kieliasetuksen hakeminen mallipalkkikaavion visualisoinnissa.
 Jokainen näistä palkkikaavioista luotiin eri kieliasetuksen (englanti, baski ja hindi) alle, ja ne näytetään työkaluvihjeessä.
 
 > [!NOTE]
-> Visualisoinnin koodin lokalisoinnin hallintaa tuetaan ohjelmointirajapinnasta 1.10.0 ja uudemmista.
+> Visualisoinnin koodin lokalisoinnin hallintaa tuetaan ohjelmointirajapinnassa 1.10.0 ja uudemmissa.
 
 ## <a name="get-the-locale"></a>Hae aluekohtaiset asetukset
 
-`locale` välitetään merkkijonona visualisoinnin alustuksen aikana. Jos aluekohtaisia asetuksia muutetaan Power BI:ssa, visualisointi luodaan uudelleen käyttäen uusia aluekohtaisia asetuksia. Koko mallikoodi on SampleBarChart with Localessa
+`locale` välitetään merkkijonona visualisoinnin alustuksen aikana. Jos aluekohtaisia asetuksia muutetaan Power BI:ssä, visualisointi luodaan uudelleen käyttäen uusia aluekohtaisia asetuksia. Koko mallikoodi on SampleBarChart with Locale -kohteessa
 
-Barchart-konstruktorilla on nyt Aluekohtaiset asetukset -jäsen, joka on muodostettu konstruktorilla, jolla on aluekohtaiset asetukset -isäntäesiintymä.
+BarChart-konstruktorilla on nyt Aluekohtaiset asetukset -jäsen, jonka esiintymä luodaan konstruktorissa aluekohtaiset asetukset -isäntäesiintymän avulla.
 
 ```typescript
 private locale: string;
@@ -43,9 +43,9 @@ private locale: string;
 this.locale = options.host.locale;
 ```
 
-Tuetut kieliasetukset:
+Tuetut aluekohtaiset asetukset:
 
-Aluekohtaiset merkkijonot | Kieli
+Aluekohtainen merkkijono | Kieli
 --------------|----------------------
 ar-SA | العربية (arabia)
 bg-BG | български (bulgaria)
@@ -93,21 +93,21 @@ zh-CN | 中国 (kiina, yksinkertaistettu)
 zh-TW | 中國 (kiina, perinteinen)
 
 > [!NOTE]
-> PowerBI Desktopissa aluekohtaiset asetukset -ominaisuus sisältää asennetun PowerBI Desktopin kielen.
+> Power BI Desktopissa aluekohtaiset asetukset -ominaisuus sisältää asennetun PowerBI Desktopin kielen.
 
 ## <a name="localizing-the-property-pane-for-custom-visuals"></a>Mukautettujen visualisointien ominaisuusruudun lokalisointi
 
-Ominaisuusruudun kentät voidaan lokalisoida entistä yhtenäisemmän ja yhdenmukaisemman käyttökokemuksen tarjoamiseksi. Se tekee mukautetusta visualisoinnista samankaltaista kuin mikä tahansa muu Power BI -ydinvisualisointi.
+Ominaisuusruudun kentät voidaan lokalisoida entistä yhtenäisemmän ja yhdenmukaisemman käyttökokemuksen tarjoamiseksi. Se tekee mukautetusta visualisoinnista samankaltaisen kuin minkä tahansa muun Power BI -ydinvisualisoinnin.
 
-Esimerkiksi `pbiviz new`-komennolla luodun mukautetun visualisoinnin, jota ei voi lokalisoida, ominaisuusruudussa näkyvät seuraavat kentät:
+Esimerkiksi `pbiviz new` -komennolla luodun mukautetun, lokalisoimattoman visualisoinnin ominaisuusruudussa näkyvät seuraavat kentät:
 
-![Lokalisointiominaisuus ruudussa](media/property-pane.png)
+![Lokalisointi ominaisuusruudussa](media/property-pane.png)
 
-sekä luokkatiedot että mittaritiedot on määritetty capabilities.json -tiedostossa muodossa `displayName`.
+sekä luokkatiedot että mittaritiedot on määritetty capabilities.json-tiedostossa muodossa `displayName`.
 
 ## <a name="how-to-localize-capabilities"></a>Kuinka ominaisuuksia lokalisoidaan
 
-Lisää ensin näyttönimiavain jokaiseen näyttönimeen, jonka haluat lokalisoida ominaisuuksiisi. Tässä esimerkissä:
+Lisää ensin näyttönimiavain jokaisen ominaisuuden näyttönimeen, jonka haluat lokalisoida. Tässä esimerkissä:
 
 ```json
 {
@@ -128,11 +128,11 @@ Lisää ensin näyttönimiavain jokaiseen näyttönimeen, jonka haluat lokalisoi
 }
 ```
 
-Lisää sitten hakemisto nimeltä stringResources. Hakemisto sisältää kaikki eri merkkijonojen resurssitiedostot niiden aluekohtaisten asetusten perusteella, joita haluat visualisoinnin tukevan. Tämän hakemiston alla sinun on lisättävä JSON-tiedosto jokaiselle alueellesi, jota haluat tukea. Nämä tiedostot sisältävät aluekohtaisia tietoja ja lokalisoituja merkkijonoarvoja kullekin korvattavalle displayNameKey-kohteelle.
+Lisää sitten hakemisto nimeltä stringResources. Hakemisto sisältää kaikki eri merkkijonojen resurssitiedostot niiden aluekohtaisten asetusten perusteella, joita haluat visualisoinnin tukevan. Tämän hakemiston alla sinun on lisättävä JSON-tiedosto jokaiselle alueelle, jota haluat tukea. Nämä tiedostot sisältävät aluekohtaisia tietoja ja lokalisoituja merkkijonoarvoja kullekin korvattavalle displayNameKey-kohteelle.
 
-Tässä esimerkissä sanotaan, että haluamme tukea arabiaa ja hepreaa. Meidän on lisättävä kaksi JSON-tiedostoa seuraavalla tavalla:
+Tässä esimerkissä haluamme tukea arabiaa ja hepreaa. Meidän on lisättävä kaksi JSON-tiedostoa seuraavalla tavalla:
 
-![Kieliresurssikansion lokalisointien merkkijonot](media/stringresources-files.png)
+![Merkkijonoresurssikansion lokalisointien merkkijonot](media/stringresources-files.png)
 
 Jokainen JSON-tiedosto määrittää yksittäisen kieliasetuksen (tämän tiedoston on oltava jokin yllä olevasta tuetuista alueista) käyttäen haluamiesi näyttönimiavainten merkkijonoarvoja. Tässä esimerkissä hepreankielinen merkkijonoresurssitiedosto näyttää seuraavalta:
 
@@ -146,10 +146,10 @@ Jokainen JSON-tiedosto määrittää yksittäisen kieliasetuksen (tämän tiedos
 }
 ```
 
-Kaikki lokalisointipäällikön käyttöön tarvittavat vaiheet on kuvattu alla.
+Kaikki lokalisointihallinnan käyttöön tarvittavat vaiheet on kuvattu alla.
 
 > [!NOTE]
-> Lokalisointia ei tueta tällä hetkellä dev-visualisoinnin virheen korjauksessa
+> Lokalisointia ei tueta tällä hetkellä dev-visualisoinnin virheenkorjauksessa
 
 ## <a name="setup-environment"></a>Asetusympäristö
 
@@ -159,13 +159,13 @@ Lataa työpöytäkäyttöön Power BI Desktopin lokalisoitu versio osoitteesta h
 
 ### <a name="web-service"></a>Verkkopalvelu
 
-Jos käytät verkkoasiakasta (selainta) palvelussa, vaihda kieli asetuksissa:
+Jos käytät verkko-ohjelmaa (selainta) palvelussa, vaihda kieli asetuksissa:
 
 ![Lokalisointi verkkopalvelussa](media/webservice-settings.png)
 
 ## <a name="resource-file"></a>Resurssitiedosto
 
-Lisää resources. resjson-tiedosto kansioon, joka on nimetty sen alueen mukaan, jota aiot käyttää stringResources-kansion sisällä. Esimerkkinä mainittakoon en-US ja ru-RU.
+Lisää resources.resjson-tiedosto kansioon, joka on nimetty sen alueen mukaan, jota aiot käyttää stringResources-kansion sisällä. Esimerkissä käytämme en-US ja ru-RU.
 
 ![Uusi resjson-tiedosto](media/new-resjson.png)
 
@@ -182,7 +182,7 @@ Lisää sen jälkeen kaikki lokalisointimerkkijonot, joita aiot käyttää edell
 }
 ```
 
-Tämä malli on resources.resjson-tiedoston en-US-versio:
+Tämä esimerkki on resources.resjson-tiedoston en-US-versio:
 
 ```json
 {
@@ -195,7 +195,7 @@ Tämä malli on resources.resjson-tiedoston en-US-versio:
 }
 ```
 
-Uusi localizationManager-esiintymä luo localizationmanager-esiintymän visualisoinnin koodissa seuraavasti
+Uusi localizationManager-esiintymä Luo localizationManager-esiintymä visualisoinnin koodissa seuraavasti
 
 ```typescript
 private localizationManager: ILocalizationManager;
@@ -205,9 +205,9 @@ constructor(options: VisualConstructorOptions) {
 }
 ```
 
-## <a name="localizationmanager-usage-sample"></a>localizationManager-käyttömalli
+## <a name="localizationmanager-usage-sample"></a>esimerkki localizationManager-esiintymän käytöstä
 
-Nyt voit kutsua lokalisointihallinnan getDisplayName-funktiota käyttäen resources. resjson-kohteessa määritettyä merkkijonoavainargumenttia, jotta saat tarvittavan merkkijonon minne tahansa koodisi sisällä:
+Nyt voit kutsua lokalisointihallinnan getDisplayName-funktiota käyttäen resources.resjson-tiedostossa määritettyä merkkijonoavainargumenttia, jotta saat tarvittavan merkkijonon minne tahansa koodiisi:
 
 ```typescript
 let legend: string = this.localization.getDisplayName("Role_Legend");

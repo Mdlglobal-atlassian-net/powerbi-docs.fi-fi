@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ba9c11004099b1e11d935cd0b178463e542bea9a
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 37cbea42d530f05df1d9f1003554680b80c5b5c3
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761791"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907939"
 ---
-# <a name="manage-aggregations-in-power-bi-desktop"></a>Koosteiden hallinta Power BI Desktopissa
+# <a name="aggregations-in-power-bi-desktop"></a>Koosteet Power BI Desktopissa
 
 **Koosteiden** käyttäminen Power BI:ssä mahdollistaa massadatan vuorovaikutteisen analysoinnin aivan uusilla tavoilla. **Koosteiden** avulla voidaan pienentää suurten tietojoukkojen avaamisen kustannuksia huomattavasti päätöksentekoa varten.
 
@@ -93,7 +93,7 @@ Ainoa tapaus, jossa *ristilähde*suhdetta pidetään vahvana, on silloin, jos mo
 Tietoa *ristilähde*koosteiden osumista, jotka eivät ole riipu suhteista, on alla olevassa Ryhmittelyperuste-sarakkeisiin perustuvista koosteista kertovassa osassa.
 
 ### <a name="aggregation-tables-arent-addressable"></a>Koostetaulukoihin ei voi osoittaa
-Käyttäjät, joilla on tietojoukon vain luku -käyttö, eivät voi luoda kyselyn koostetaulukoita. Näin vältetään suojausongelmat käytettäessä RLS:ää. Käyttäjät ja kyselyt viittaavat tietotaulukkoon eivätkä koostetaulukkoon. Heidän ei tarvitse edes tietää koostetaulukon olemassaolosta.
+Käyttäjät, joilla on vain luku -käyttöoikeudet tietojoukkoon, eivät voi luoda kyselyn koostetaulukoita. Näin vältetään suojausongelmat käytettäessä RLS:ää. Käyttäjät ja kyselyt viittaavat tietotaulukkoon eivätkä koostetaulukkoon. Heidän ei tarvitse edes tietää koostetaulukon olemassaolosta.
 
 Tästä syystä **Myyntikooste**-taulukon tulee olla piilotettu. Jos se ei ole, Koosteiden hallinta -valintaikkuna määrittää sen piilotetuksi, kun napsautat Ota kaikki käyttöön -painiketta.
 
@@ -115,7 +115,7 @@ Seuraavassa taulukossa näytetään **Myyntikooste**-taulukon koosteet.
 Avattava Yhteenveto-valikko sisältää seuraavat valittavat arvot.
 * Määrä
 * Ryhmittelyperuste
-* Max
+* Maks
 * Min
 * Summa
 * Laske taulukon rivit
@@ -138,7 +138,7 @@ Useimmat tällaiset vahvistukset pakotetaan poistamalla avattavan valikon arvot 
 Tässä esimerkissä kolme Ryhmittelyperuste-merkintää ovat valinnaisia. Ne eivät vaikuta koosteen toimintaan (lukuun ottamatta myöhemmässä kuvassa näkyvää DISTINCTCOUNT-esimerkkikyselyä). Ne ovat mukana pääasiassa luettavuuden vuoksi. Ilman Ryhmittelyperuste-merkintöjä koosteet saavat silti osumia yhteyksien perusteella. Tämä toiminta eroaa koosteiden käyttämisestä ilman yhteyksiä, joka käydään läpi myöhemmin tässä artikkelissa olevassa massadataa koskevassa esimerkissä.
 
 ### <a name="inactive-relationships"></a>Passiiviset yhteydet
-Ryhmittelyä passiivisen yhteyden käyttämän viiteavainsarakkeen mukaan ja luottamista USERELATIONSHIP-toimintoon koostamisosumien saamiseksi ei tueta.
+Ryhmittelyä passiivisen yhteyden käyttämän viiteavainsarakkeen mukaan ja koostamisosumien saantia USERELATIONSHIP-funktiolla ei tueta.
 
 ### <a name="detecting-whether-aggregations-are-hit-or-missed-by-queries"></a>Koosteista osumia tuottavien tai tuottamattomien kyselyiden tunnistaminen
 
@@ -285,7 +285,7 @@ Seuraava aikatietokysely ei tuota osumaa koosteessa, koska DATESYTD-funktio luo 
 
 ## <a name="caches-should-be-kept-in-sync"></a>Välimuistit tulisi pitää synkronoituna
 
-**Koosteet**, jotka yhdistävät DirectQuery- ja tuonti- ja/tai kaksoistallennustilan, saattavat palauttaa eri tietoja, jos muistissa olevaa välimuistia ei pidetä synkronoituna lähdetietojen kanssa. Kyselyn suorittaminen ei yritä peittää tieto-ongelmia esimerkiksi suodattamalla DirectQuery-tuloksia välimuistiin tallennettujen arvojen kanssa täsmäämiseksi. Nämä ominaisuudet ovat suorituskyvyn optimointeja, ja niitä tulee käyttää vain siten, ettei liiketoiminnan tarpeisiin vastaaminen vaarannu. Omalla vastuullasi on tuntea tietovuot, joten suunnittele toiminta sen mukaan. On olemassa vakiintuneita tekniikoita tällaisten ongelmien käsittelemiseen lähteessä tarvittaessa.
+**Koosteet**, jotka yhdistävät DirectQuery- ja tuonti- ja/tai kaksoistallennustilan, saattavat palauttaa eri tietoja, jos muistissa olevaa välimuistia ei pidetä synkronoituna lähdetietojen kanssa. Kyselyn suorittaminen ei yritä peittää tieto-ongelmia esimerkiksi suodattamalla DirectQuery-tuloksia välimuistiin tallennettujen arvojen kanssa täsmäämiseksi. Nämä ominaisuudet ovat suorituskyvyn optimointeja, ja niitä tulee käyttää vain siten, ettei liiketoiminnan tarpeisiin vastaaminen vaarannu. Vastuullasi on tuntea omat tietovuot, joten suunnittele toiminta sen mukaan. On olemassa vakiintuneita tekniikoita tällaisten ongelmien käsittelemiseen lähteessä tarvittaessa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 024e04bd309080b5b31e43bde7c783255bfc3dba
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 70a1aed046ac213e314da2ddaecafab9c5a941ee
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851078"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537228"
 ---
 # <a name="enable-data-sensitivity-labels-in-power-bi-preview"></a>Luottamuksellisuustunnisteiden käyttöönotto Power BI:ssä (esiversio)
 
@@ -73,3 +73,4 @@ Tässä artikkelissa kerrottiin luottamuksellisuustunnisteiden käyttöönotosta
 * [Power BI:n tietojen suojauksen yleiskatsaus](service-security-data-protection-overview.md)
 * [Luottamuksellisuustunnisteiden käyttö Power BI:ssä](../designer/service-security-apply-data-sensitivity-labels.md)
 * [Microsoft Cloud App Securityn hallinnan käyttö Power BI:ssä](service-security-using-microsoft-cloud-app-security-controls.md)
+* [Tietojen suojaamisen tulosraportti](service-security-data-protection-metrics-report.md)

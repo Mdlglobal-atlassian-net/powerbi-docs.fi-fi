@@ -32,15 +32,15 @@ IF(
 )
 ```
 
-Esimerkissä HASONEVALUE-funktio palauttaa arvon TRUE vain, kun yksittäinen arvo suodattaa **maa-alue**-sarakkeen. Kun arvo on TRUE, VALUES-funktiolla verrataan kirjaimellisesti tekstiin "Australia". Kun VALUES-funktio palauttaa arvon TRUE, **Sales**-mittari kerrotaan 0,10-funktiolla (osuus on 10 %). Jos HANOREVALUE-funktio palauttaa arvon FALSE, koska useampi kuin yksi arvo suodattaa sarakkeen, ensimmäinen IF-funktio palauttaa tyhjän arvon.
+Esimerkissä HASONEVALUE-funktio palauttaa arvon TRUE vain, kun yksittäinen arvo suodattaa **maa-alue**-sarakkeen. Kun arvo on TRUE, VALUES-funktiolla verrataan kirjaimellisesti tekstiin "Australia". Kun VALUES-funktio palauttaa arvon TRUE, **Sales**-mittari kerrotaan luvulla 0,10 (osuus on 10 %). Jos HASONEVALUE-funktio palauttaa arvon FALSE, koska useampi kuin yksi arvo suodattaa sarakkeen, ensimmäinen IF-funktio palauttaa tyhjän tuloksen.
 
 HASONEVALUE-kohteen käyttö on puolustava tekniikka. Se on pakollista, koska useat arvot suodattavat **maa-alue**-sarakkeen. Tässä tapauksessa VALUES-funktio palauttaa useiden rivien taulukon. Useiden rivien taulukon vertaaminen skalaariarvoon johtaa virheeseen.
 
 ## <a name="recommendation"></a>Suositus
 
-Suosittelemme, että käytät [SELECTEDVALUE](/dax/selectedvalue-function)-funktiota. Sen tulos on sama kuin tässä artikkelissa kuvattu ohje, mutta saavutat sen entistä tehokkaammin ja tyylikkäämmin.
+Suosittelemme, että käytät [SELECTEDVALUE](/dax/selectedvalue-function)-funktiota. Sen tulos on sama kuin tässä artikkelissa kuvattu ohje, mutta saavutat tuloksen tehokkaammin ja tyylikkäämmin.
 
-SELECTEDVALUE-funktiolla esimerkki mittayksikön määrityksestä kirjoitetaan nyt uudelleen.
+SELECTEDVALUE-funktiolla esimerkki mittarimäärityksestä kirjoitetaan nyt uudelleen.
 
 ```dax
 Australian Sales Tax =
@@ -51,7 +51,7 @@ IF(
 ```
 
 > [!TIP]
-> On mahdollista välittää _vaihtoehtoinen tulos_ SELECTEDVALUE-funktioon. Vaihtoehtoinen tulos -arvo palautetaan, jos sarakkeeseen ei käytetä suodattimia tai käytetään useita suodattimia.
+> On mahdollista välittää _vaihtoehtoinen tulos_ -arvo SELECTEDVALUE-funktioon. Vaihtoehtoinen tulos -arvo palautetaan, jos sarakkeeseen ei käytetä suodattimia tai jos sarakkeeseen käytetään useita suodattimia.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

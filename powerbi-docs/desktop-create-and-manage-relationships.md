@@ -6,83 +6,98 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/19/2019
+ms.date: 01/09/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: f759992c42cc589d21ed51d5d63775bf54518c3f
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 6f71cf9b8325441fe3827a259daf3bcbe15765a5
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73869122"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709926"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Suhteiden luominen ja hallinta Power BI Desktopissa
-Useita taulukoita tuodessa aiotaan todennäköisesti luoda analyyseja käyttäen tietoja kaikista tuotavista taulukoista. Näiden taulukoiden välisiä suhteita tarvitaan tuloksien tarkkaan laskemiseen ja oikeiden tietojen esittämiseen raporteissa. Power BI Desktop tekee näiden suhteiden luomisesta helppoa. Itse asiassa useimmissa tapauksissa sinun ei tarvitse tehdä mitään, automaattinen tunnistus tekee kaiken puolestasi. Joissakin tapauksissa joudut ehkä luomaan suhteita itse tai muokkaamaan joitakin suhteita. Joka tapauksessa on tärkeää ymmärtää Power BI Desktopissa olevia suhteita ja miten niitä voi luoda ja muokata.
+Jos tuot useita taulukoita, luot todennäköisesti analyyseja kaikkien tuotavien taulukoiden tietojen perusteella. Näiden taulukoiden välisiä suhteita tarvitaan tuloksien tarkkaan laskemiseen ja oikeiden tietojen esittämiseen raporteissa. Power BI Desktop tekee näiden suhteiden luomisesta helppoa. Itse asiassa sinun ei useimmiten tarvitse tehdä mitään, sillä automaattinen tunnistus tekee kaiken puolestasi. Joissakin tilanteissa sinun on ehkä luotava suhteita itse tai muokattava niitä. Joka tapauksessa on tärkeää ymmärtää Power BI Desktopissa olevia suhteita ja miten niitä voi luoda ja muokata.
 
 ## <a name="autodetect-during-load"></a>Automaattinen tunnistus latauksen aikana
-Jos suoritat kyselyn kahdesta tai useammasta taulukosta yhtä aikaa, Power BI Desktop yrittää löytää ja luoda tiedoista suhteita, kun tiedot on ladattu. Kardinaliteetti, ristisuodatussuunta ja aktiiviset ominaisuudet määritetään automaattisesti. Power BI Desktop tarkastelee kyselyyn sisältyvien taulukoiden sarakkeiden nimiä selvittääkseen, sisältyykö niihin mahdollisesti suhteita. Jos suhteita löytyy, ne luodaan automaattisesti. Jos Power BI Desktop ei pysty määrittämään osumaa luotettavasti, se ei luo suhdetta automaattisesti. Voit edelleen luoda tai muokata suhteita Suhteiden hallinta -valintaikkunassa.
+Jos suoritat kyselyn kahdesta tai useammasta taulukosta yhtä aikaa, Power BI Desktop yrittää löytää ja luoda tiedoista suhteita, kun tiedot on ladattu. Suhdeasetukset **Kardinaliteetti**, **Ristisuodatussuunta** ja **Tee tästä suhteesta aktiivinen** määritetään automaattisesti. Power BI Desktop tarkastelee kyselyyn sisältyvien taulukoiden sarakkeiden nimiä selvittääkseen, sisältyykö niihin mahdollisesti suhteita. Jos suhteita löytyy, ne luodaan automaattisesti. Jos Power BI Desktop ei voi määrittää osumaa luotettavasti, se ei luo suhdetta. Voit kuitenkin edelleen luoda tai muokata suhteita manuaalisesti **Suhteiden hallinta** -valintaikkunassa.
 
-## <a name="create-a-relationship-by-using-autodetect"></a>Suhteen luominen automaattisen tunnistuksen avulla
+## <a name="create-a-relationship-with-autodetect"></a>Suhteen luominen automaattisella tunnistuksella
 Valitse **Aloitus**-välilehdessä **Suhteiden hallinta** \> **Automaattinen tunnistus**.
 
-![](media/desktop-create-and-manage-relationships/automaticrelationship.gif)
+![Suhteen luominen automaattisella tunnistuksella](media/desktop-create-and-manage-relationships/automaticrelationship.gif)
 
 ## <a name="create-a-relationship-manually"></a>Suhteen luominen manuaalisesti
 1. Valitse **Aloitus**-välilehdessä **Suhteiden hallinta** \> **Uusi**.
-2. Valitse **Luo suhde** -valintaikkunassa ensimmäisen taulukon avattavasta luettelosta taulukko ja valitse sitten se sarake, jota haluat käyttää suhteessa.
-3. Valitse toisen taulukon avattavasta luettelosta toinen taulukko, jota haluat käyttää suhteessa, valitse haluamasi sarake ja valitse sitten **OK**.
 
-![](media/desktop-create-and-manage-relationships/manualrelationship2.gif)
+2. Valitse taulukko **Luo suhde** -valintaikkunan ensimmäisen taulukon avattavasta luettelosta. Valitse sarake, jota haluat käyttää suhteessa.
 
-Oletusarvona Power BI Desktop määrittää automaattisesti kardinaliteetin (suunnan), ristisuodatussuunnan ja aktiiviset ominaisuudet. Voit kuitenkin asetuksia näitä tarvittaessa. Lisätietoja on tämän artikkelin Tietoja lisäasetuksista -osassa.
+3. Valitse toisen taulukon avattavasta luettelosta toinen taulukko, jonka haluat suhteeseen. Valitse toinen sarake, jota haluat käyttää, ja valitse sitten **OK**.
 
-Näet seuraavan virheilmoituksen: *Yhdellä sarakkeista on oltava yksilölliset arvot*, jos millään suhteen valitulla taulukolla ei ole yksilöllisiä arvoja. Vähintään yhdessä suhteen taulukossa *tulee olla* erillisiä, yksilöllisiä avainarvoja, mikä on yleinen vaatimus kaikissa relaatiotietokannan tekniikoissa. 
+   ![Suhteen luominen manuaalisesti](media/desktop-create-and-manage-relationships/manualrelationship2.gif)
+
+Oletusarvoisesti Power BI Desktop määrittää automaattisesti uutta suhdetta varten asetukset **Kardinaliteetti** (suunnan), **Ristisuodatus** ja **Tee tästä suhteesta aktiivinen**. Voit kuitenkin muuttaa näitä asetuksia tarvittaessa. Lisätietoja on artikkelissa [Tietoja lisäasetuksista](#understanding-additional-options).
+
+Jos millään suhteeseen valituista taulukoista ei ole yksilöllisiä arvoja, näkyviin tulee seuraava virhe: *Jossakin sarakkeista on oltava yksilöiviä arvoja*. Vähintään yhdessä suhteen taulukossa *tulee olla* erillisiä, yksilöllisiä avainarvoja, mikä on yleinen vaatimus kaikissa relaatiotietokannan tekniikoissa. 
 
 Jos kohtaat virheen, on olemassa muutamia tapoja korjata ongelma:
 
-* ”Poista kaksinkertainen rivit” -toiminnon avulla voit luoda sarakkeen, jossa on yksilöllisiä arvoja. Tämän huono puoli on se, että menetät tietoa, kun rivien kaksoiskappaleet poistetaan, ja usein avain (rivin) kopioinnille on syynsä.
+* **Poista kaksoiskappaleet** -toiminnon avulla voit luoda sarakkeen, jossa on yksilöllisiä arvoja. Tämän huono puoli on se, että voit menettää tietoja, kun rivien kaksoiskappaleet poistetaan; usein avaimen (rivin) kopioinnille on syynsä.
 * Lisää malliin listatuista erillisistä avainarvoista koostettu välitaulukko, joka yhdistetään suhteen molempiin alkuperäisiin sarakkeisiin.
 
-Lue lisätietoja [blogikirjoituksesta](https://blogs.technet.microsoft.com/cansql/2016/12/19/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message/).
+Lisätietoja on tässä [blogikirjoituksessa](https://blogs.technet.microsoft.com/cansql/2016/12/19/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message/).
 
 
 ## <a name="edit-a-relationship"></a>Suhteen muokkaaminen
 1. Valitse **Aloitus**-välilehdessä **Suhteiden hallinta**.
+
 2. Valitse **Suhteiden hallinta** -valintaikkunassa haluamasi suhde ja valitse sitten **Muokkaa**.
 
 ## <a name="configure-additional-options"></a>Lisäasetuksien määrittäminen
-Kun luot tai muokkaat suhteen, voit määrittää lisäasetuksia. Oletusarvon mukaan lisäasetukset määritetään automaattisesti parhaan arvauksen perusteella, ja ne voivat olla erilaisia kunkin suhteen kohdalla sarakkeiden tietojen perusteella.
+Kun luot tai muokkaat suhteen, voit määrittää lisäasetuksia. Oletusarvoisesti Power BI Desktop määrittää lisäasetukset automaattisesti parhaan arvauksen perusteella, ja ne voivat olla erilaisia eri suhteissa sarakkeiden tietojen mukaan.
 
-## <a name="cardinality"></a>Kardinaliteetti
-**Monta yhteen (\*:1)** – Tämä on yleisin, oletustyyppi ja tarkoittaa sitä, että arvo voi esiintyä toisessa taulukossa useammin kuin kerran ja esiintyä vain kerran toisessa taulukossa, jota kutsutaan usein hakutaulukoksi.
+### <a name="cardinality"></a>Kardinaliteetti
+**Kardinaliteetti**-asetuksella voi olla jokin seuraavista arvoista:
 
-**Yksi yhteen (1:1)** – Tietty arvo esiintyy vain kerran kummassakin taulukossa, joiden välille on muodostettu suhde.
+**Monta yhteen (\*:1)** : Monta yhteen -suhde on yleisin suhdetyyppi ja myös suhdetyypin oletusasetus. Monta yhteen -tyyppi tarkoittaa sitä, että arvo voi esiintyä toisessa taulukossa useammin kuin kerran ja esiintyä vain kerran toisessa taulukossa, jota kutsutaan usein hakutaulukoksi.
 
-**Monta-moneen-yhteys**: Yhdistelmämallien avulla voit muodostaa Monta-moneen-yhteyksiä taulukoiden välille, mikä poistaa taulukoiden yksilöllisten arvojen vaatimukset. Se myös poistaa edelliset ratkaisut, kuten uusien taulukoiden lisäämisen vain yhteyksien muodostamiseksi. Lisätietoja on artikkelissa [Moni-moneen-kardinaliteetin sisältävät suhteet](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships). 
+**Yksi yhteen (1:1)** : Yksi yhteen -suhteessa tämä tarkoittaa, tietty arvo esiintyy vain kerran kummassakin taulukossa, joiden välille on muodostettu suhde.
 
-Katso lisätietoja kardinaliteetin vaihtamisesta tämän artikkelin Tietoja lisäasetuksista -osasta.
+**Yksi moneen (1:*)** : Yksi moneen -suhteessa arvo esiintyy vain kerran toisen taulukon sarakkeessa, ja toisessa liittyvässä taulukossa arvo voi esiintyä useammin kuin kerran.
 
-## <a name="cross-filter-direction"></a>Ristisuodatussuunta
-**Molemmat** – suodatuksessa molempia taulukoita käsitellään yhtenä taulukkona. **Molemmat** toimii silloin, kun käsitellään yhtä taulukkoa, jossa on useita ympäröiviä hakutaulukoita. Esimerkkinä myyntitulostaulukko, jossa on osaston hakutaulukko. Tätä kutsutaan usein tähtirakenteeksi (päätaulukko, jolla on useita hakutaulukoita.) Jos kuitenkin haluat käsitellä kahta tai useampaa taulukkoa, joilla on myös hakutaulukoita (joista osa on yhteisiä), niin Molemmat-asetusta ei kannata käyttää. Jos käytetään edellistä esimerkkiä, niin tässä tapauksessa olisi myös budjettitaulukko, jossa on jokaisen osaston tavoitebudjetti. Osastotaulukko liittyy siis sekä myynti- että budjettitaulukkoon. Vältä Molemmat-asetusta tällaisessa tilanteessa.
+**Monta moneen (\*:\*)** : Yhdistelmämallien avulla voit muodostaa Monta moneen -yhteyksiä taulukoiden välille, mikä poistaa taulukoiden yksilöllisten arvojen vaatimukset. Se myös poistaa edelliset ratkaisut, kuten uusien taulukoiden lisäämisen vain yhteyksien muodostamiseksi. Lisätietoja on artikkelissa [Moni-moneen-kardinaliteetin sisältävät suhteet](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships). 
 
-**Yksittäinen** – Yleisin, oletussuunta, mikä tarkoittaa, että yhdistettyjen taulukoiden suodatusvalinnat toimivat siinä taulukossa, johon arvot kerätään. Jos tuot tietomallin Power Pivot Excel 2013:sta aiemmasta versiosta, kaikki suhteet ovat yhteen suuntaan toimivia. 
+Lisätietoja siitä, milloin kardinaliteetin asetuksia muutetaan, on artikkelissa [Tietoja lisäasetuksista](#understanding-additional-options).
 
-Katso lisätietoja ristisuodatussuunnasta tämän artikkelin Tietoja lisäasetuksista -osasta.
+### <a name="cross-filter-direction"></a>Ristisuodatussuunta
+**Ristisuodatus**-asetuksella voi olla jokin seuraavista arvoista:
 
-## <a name="make-this-relationship-active"></a>Suhteen muuttaminen aktiiviseksi
-Kun Tee suhteesta aktiivinen -asetus on valittuna, suhde toimii aktiivisena, oletusarvoisena suhteena. Niissä tapauksissa, joissa kahden taulukon välillä on useampi kuin yksi suhde, Power BI Desktop voi käyttää aktiivista suhdetta luomaan automaattisesti visualisointeja, jotka sisältävät molemmat taulukot.
+**Molemmat**: Suodatuksessa molempia taulukoita käsitellään yhtenä taulukkona. **Molemmat**-asetus toimii hyvin silloin, kun käsitellään yhtä taulukkoa, jossa on useita ympäröiviä hakutaulukoita. Esimerkki on myyntitulostaulukko, jossa on osaston hakutaulukko. Tätä kokoonpanoa kutsutaan usein tähtirakenteeksi (päätaulukko, jolla on useita hakutaulukoita). Jos kuitenkin haluat käsitellä vähintään kahta taulukkoa, joilla on myös hakutaulukoita (joista osa on yhteisiä), niin **Molemmat**-asetusta ei kannata käyttää. Jos käytetään edellistä esimerkkiä, niin tässä tapauksessa olisi myös budjettitaulukko, jossa on jokaisen osaston tavoitebudjetti. Osastotaulukko liittyy siis sekä myynti- että budjettitaulukkoon. Vältä **Molemmat**-asetusta tällaisessa tilanteessa.
 
-Katso lisätietoja tietyn suhteen määrittämisestä aktiiviseksi tämän artikkelin Tietoja lisäasetuksista -osasta.
+**Yksittäinen**: Yleisin, ja oletussuunta, mikä tarkoittaa, että yhdistettyjen taulukoiden suodatusvalinnat toimivat siinä taulukossa, johon arvot kerätään. Jos tuot tietomallin Power Pivot Excel 2013:sta aiemmasta versiosta, kaikki suhteet ovat yhteen suuntaan toimivia. 
+
+Lisätietoja siitä, milloin ristisuodatussuunnan asetuksia muutetaan, on artikkelissa [Tietoja lisäasetuksista](#understanding-additional-options).
+
+### <a name="make-this-relationship-active"></a>Suhteen muuttaminen aktiiviseksi
+Kun Tee suhteesta aktiivinen -asetus on valittuna, suhde toimii aktiivisena oletusarvoisena suhteena. Niissä tapauksissa, joissa kahden taulukon välillä on useampi kuin yksi suhde, Power BI Desktop voi käyttää aktiivista suhdetta luomaan automaattisesti visualisointeja, jotka sisältävät molemmat taulukot.
+
+Lisätietoja siitä, milloin tietty suhde määritetään aktiiviseksi, on artikkelissa [Tietoja lisäasetuksista](#understanding-additional-options).
 
 ## <a name="understanding-relationships"></a>Tietoja suhteista
-Kun olet muodostanut suhteen kahden taulukon välille, voit käsitellä molempien taulukoiden tietoja aivan kuin ne olisivat samassa taulukossa. Näin sinun ei tarvitse huolehtia suhteiden yksityiskohdista tai taulukoiden karsimisesta yhdeksi taulukoksi ennen niiden tuomista. Monissa tapauksissa Power BI Desktop voi luoda suhteet automaattisesti puolestasi, joten sinun ei välttämättä edes tarvitse luoda näitä suhteita itse. Jos Power BI Desktop ei kuitenkaan pysty määrittämään varmasti kahden taulukon välistä suhdetta, se ei luo suhdetta automaattisesti. Tässä tapauksessa sinun on luotava suhde itse. 
+Kun olet muodostanut suhteen kahden taulukon välille, voit käsitellä molempien taulukoiden tietoja aivan kuin ne olisivat samassa taulukossa. Näin sinun ei tarvitse huolehtia suhteiden yksityiskohdista tai taulukoiden karsimisesta yhdeksi taulukoksi ennen niiden tuomista. Monissa tilanteissa Power BI Desktop voi luoda suhteet automaattisesti puolestasi. Jos Power BI Desktop ei kuitenkaan voi määrittää varmasti kahden taulukon välistä suhdetta, se ei luo suhdetta automaattisesti. Tällöin sinun on luotava suhde. 
 
 Tehdään nopea harjoitus, jotta saat paremman käsityksen siitä, miten suhteet toimivat Power BI Desktopissa.
 
 >[!TIP]
->Voit suorittaa tämän harjoituksen itse. Kopioi alla oleva Projektitunnit-taulukko Excel-laskentataulukkoon, valitse kaikki solut, valitse **LISÄÄ** \> **Taulukko**. Valitse **Luo taulukko** -valintaikkunassa **OK**. Kirjoita sitten **Taulukon nimi** -kohtaan **Projektitunnit**. Tee samat vaiheet Yritysprojekti-taulukolle. Voit sitten tuoda tiedot käyttämällä Power BI Desktopin **Nouda tiedot** -toimintoa. Valitse työkirja ja taulukot tietolähteeksi.
+>Voit suorittaa tämän harjoituksen itse: 
+>
+> 1. Kopioi seuraava **Projektitunnit**-taulukko Excel-laskenta taulukkoon (otsikko pois lukien), valitse kaikki solut ja valitse sitten **Lisää** \> **Taulukko**. 
+> 2. Valitse **Luo taulukko** -valintaikkunassa **OK**. 
+> 3. Valitse mikä tahansa taulukon solu, valitse **Taulukon rakenne** \> **Taulukon nimi** ja kirjoita sitten*Projektitunnit*. 
+> 4. Tee samat toimet **Yritysprojekti**-taulukolle. 
+> 5. Tuoda tiedot käyttämällä Power BI Desktopin **Nouda tiedot** -toimintoa. Valitse kaksi taulukkoa tietolähteeksi ja valitse sitten **Lataa**.
 
-Tässä ensimmäisessä Projektitunnit-taulukossa on palvelupyyntöihin perustuvat tiedot siitä, kuinka monta tuntia kukakin on käyttänyt tiettyyn projektiin. 
+Ensimmäisessä taulukossa, eli **Projektitunnit**-taulukossa, ovat palvelupyyntöihin perustuvat tiedot siitä, kuinka monta tuntia kukin henkilö on käyttänyt tiettyyn projektiin. 
 
 **Projektitunnit**
 
@@ -100,7 +115,7 @@ Tässä ensimmäisessä Projektitunnit-taulukossa on palvelupyyntöihin perustuv
 | 1010 |Tuominen, Antero |28 |Vihreä |1\.10.2013 |
 | 1011 |Tuominen, Antero |9 |Sininen |15.10.2013 |
 
-Tämä toinen Yritysprojekti-taulukko on luettelo projekteista, joille on määritetty prioriteetiksi A, B tai C. 
+Tämä toinen **Yritysprojekti**-taulukko on luettelo projekteista, joille on määritetty prioriteetti: A, B tai C. 
 
 **Yritysprojekti**
 
@@ -115,70 +130,83 @@ Tämä toinen Yritysprojekti-taulukko on luettelo projekteista, joille on määr
 
 Huomaa, että kummassakin taulukossa on projektisarake. Kummassakin nimi on hieman erilainen, mutta arvot näyttävät olevan samat. Tämä on tärkeää, ja palaamme siihen hetken päästä.
 
-Nyt kun olemme tuoneet nämä kaksi taulukkoa malliin, luodaan raportti. Haluamme ensimmäiseksi saada selville lähetettyjen tuntien määrän projektin prioriteetin mukaan, joten valitaan Kentistä **Prioriteetti** ja **Tunnit**.
+Nyt kun olemme tuoneet nämä kaksi taulukkoa malliin, luodaan raportti. Haluamme ensimmäiseksi saada selville lähetettyjen tuntien määrän projektin prioriteetin mukaan, joten valitaan **Kentät**-ruudusta **Prioriteetti** ja **Tunnit**.
 
- ![](media/desktop-create-and-manage-relationships/candmrel_reportfiltersnorel.png)
+![Valitse Kentät-ruudusta Prioriteetti ja Tunnit](media/desktop-create-and-manage-relationships/candmrel_reportfiltersnorel.png)
 
-Raporttipohjalla olevaa taulukkoa tarkastellessa nähdään, että tuntien määrä on **256,00** kunkin projektin osalta, ja se on myös kokonaismäärä. Tämä ei selvästikään ole oikein. Miksi? Siksi, että tietyssä taulukossa olevien arvojen kokonaismäärää (Projekti-taulukon Tunnit-arvo), jotka on ositettu toisen taulukon arvoilla (Yritysprojekti-taulukon Prioriteetti-arvo), ei voida laskea luomatta taulukoiden välille suhdetta.
+Raporttipohjalla olevaa taulukkoa tarkastellessa nähdään, että jokaisen projektin tuntien määrä on 256 osalta, ja se on myös kokonaismäärä. Tämä määrä ei selvästikään ole oikein. Miksi? Siksi, että tietyssä taulukossa olevien arvojen kokonaismäärää (**Projekti**-taulukon **Tunnit**-arvo), jotka on ositettu toisen taulukon arvoilla (**Yritysprojekti**-taulukon **Prioriteetti**-arvo), ei voida laskea luomatta näiden kahden taulukon välille suhdetta.
 
 Luodaan siis suhde näiden kahden taulukon välille.
 
 Muistatko molemmissa taulukoissa olevat sarakkeet, joilla on projektin nimi mutta samannäköiset arvot? Luomme näiden kahden sarakkeen avulla suhteen taulukoiden välille.
 
-Miksi nämä sarakkeet? No, Projektitunnit-taulukon Projekti-sarakkeessa on arvoja kuten Sininen, Punainen, Keltainen, Oranssi ja niin edelleen. Itse asiassa monella rivillä on sama arvo. Projektille on siis useita väriarvoja.
+Miksi nämä sarakkeet? No, **Projektitunnit**-taulukon **Projekti**-sarakkeessa on arvoja, kuten Sininen, Punainen, Keltainen ja Oranssi. Itse asiassa monella rivillä on sama arvo. **Projekti**-sarakkeelle on siis useita väriarvoja.
 
-Yritysprojekti-taulukon ProjNimi-sarakkeessa kutakin väriarvoa on vain yksi. Tässä taulukossa kukin väriarvo on yksilöllinen, mikä on tärkeää, koska voimme luoda näiden kahden taulukon välille suhteen. Tässä tapauksessa Monta yhteen -suhteen. Monta yhteen -suhteessa vähintään yhden taulukon sarakkeen on sisällettävä yksilöllisiä arvoja. Joillekin suhteille on lisäasetuksia, ja tarkastelemme niitä myöhemmin, mutta luodaan nyt suhde näiden kahden taulukon projektisarakkeiden välille.
+**Yritysprojekti**-taulukon **ProjNimi**-sarakkeessa kutakin väriarvoa on vain yksi projektin nimeä varten. Tässä taulukossa kukin väriarvo on yksilöllinen, mikä on tärkeää, koska voimme luoda näiden kahden taulukon välille suhteen. Tässä tapauksessa Monta yhteen -suhteen. Monta yhteen -suhteessa vähintään yhden taulukon sarakkeen on sisällettävä yksilöllisiä arvoja. Joissakin suhteissa on joitakin lisäasetuksia, joita tarkastelemme myöhemmin. Luodaan nyt suhde kahden taulukon projektisarakkeiden välille.
 
 ### <a name="to-create-the-new-relationship"></a>Uuden suhteen luominen
-1. Valitse **Suhteiden hallinta**.
-2. **Suhteiden hallinta** -kohdassa avaa **Luo suhde** -valintaikkuna valitsemalla **Uusi**, jossa suhteeseen voidaan valita halutut taulukot, sarakkeet ja mahdolliset lisäasetukset.
-3. Valitse ensimmäisessä taulukossa **Projektitunnit** ja valitse sitten **Projekti**-sarake. Tämä on suhteen monta-osa.
-4. Valitse toisessa taulukossa **Yritysprojekti** ja valitse sitten **ProjNimi**-sarake. Tämä on suhteen yksi-osa. 
-5. Jatka valitsemalla **OK** sekä **Luo suhde** -valintaikkunassa että **Suhteiden hallinta** -valintaikkunassa.
+1. Valitse **Aloitus**-välilehdessä **Suhteiden hallinta**.
+2. Valitse **Suhteiden hallinta** -valintaikkunassa **Uusi**, jolloin **Luo suhde** -valintaikkuna avautuu. Siinä suhteeseen voidaan valita halutut taulukot, sarakkeet ja mahdolliset lisäasetukset.
+3. Valitse avattavassa luettelossa **Projektitunnit** ensimmäiseksi taulukoksi ja valitse sitten **Projekti**-sarake. Tämä puoli on suhteen *monta*-osa.
+4. Toisessa avattavassa luettelossa **Yritysprojekti** on esimääritetty toiseksi taulukoksi. Valitse **ProjNimi**-sarake. Tämä puoli on suhteen *yksi*-osa. 
+5. Hyväksy suhteen oletusasetukset ja valitse sitten **OK**.
 
-![](media/desktop-create-and-manage-relationships/candmrel_create_compproj.png)
+   ![Luo suhde -valintaikkuna](media/desktop-create-and-manage-relationships/candmrel_create_compproj.png)
 
-Totta puhuen loit tämän suhteen nyt vaikealla tavalla. Olisit päässyt helpommalla valitsemalla Automaattinen tunnistus -painikkeen Suhteiden hallinta -valintaikkunassa. Itse asiassa automaattinen tunnistus olisi tehnyt työn puolestasi heti, kun latasit tiedot, jos molemmilla sarakkeilla olisi ollut sama nimi. Mutta eihän siinä olisi ollut mitään haastetta!
+6. Valitse **Suhteiden hallinta** -valinta ikkunassa **Sulje**.
+
+Totta puhuen loit tämän suhteen nyt vaikealla tavalla. Olisit päässyt helpommalla valitsemalla **Automaattinen tunnistus** -vaihtoehdon **Suhteiden hallinta** -valintaikkunassa. Itse asiassa automaattinen tunnistus olisi luonut suhteen automaattisesti puolestasi heti, kun latasit tiedot, jos molemmilla sarakkeilla olisi ollut sama nimi. Mutta eihän siinä olisi ollut mitään haastetta!
 
 Tarkastellaan seuraavaksi taas raporttipohjalla olevaa taulukkoa.
 
- ![](media/desktop-create-and-manage-relationships/candmrel_reportfilterswithrel.png)
+![Suhteen luonti Prioriteetti- ja Tunnit-sarakkeilla](media/desktop-create-and-manage-relationships/candmrel_reportfilterswithrel.png)
 
 Sehän näyttää nyt paljon paremmalta.
 
-Kun tunnit lasketaan yhteen Prioriteetin mukaan, Power BI Desktop etsii Yritysprojekti-hakutaulukosta kaikki yksilölliset väriarvot ja sitten kaikkien näiden arvojen esiintymät Yritysprojekti-taulukosta ja laskee lopuksi jokaisen yksilöllisen arvon kokonaismäärän.
+Kun tunnit lasketaan yhteen **Prioriteetti**-sarakkeen mukaan, Power BI Desktop etsii **Yritysprojekti**-hakutaulukosta kaikki yksilölliset väriarvot ja sitten kaikkien näiden arvojen esiintymät **Projektitunnit**-taulukosta ja laskee sitten jokaisen yksilöllisen arvon kokonaissumman.
 
-Tämähän oli helppoa, mutta automaattisen tunnistuksen avulla et välttämättä joudu tekemään näinkään paljon.
+Tämähän oli helppoa. Automaattisen tunnistuksen ansiosta et välttämättä joudu tekemään näinkään paljon.
 
 ## <a name="understanding-additional-options"></a>Tietoja lisäasetuksista
-Kun suhde luodaan joko automaattisella tunnistuksella tai manuaalisesti, Power BI Desktop määrittää automaattisesti lisäasetuksia taulukoiden tietojen perusteella. Voit määrittää nämä suhteiden lisäominaisuudet Luo/Muokkaa-valintaikkunan alimmassa osassa.
+Kun suhde luodaan joko automaattisella tunnistuksella tai manuaalisesti, Power BI Desktop määrittää automaattisesti lisäasetuksia taulukoiden tietojen perusteella. Nämä suhteiden lisäasetukset ovat **Luo suhde**- ja **Muokkaa suhdetta** -valintaikkunan alaosassa.
 
- ![](media/desktop-create-and-manage-relationships/candmrel_advancedoptions2.png)
+ ![Suhdeasetukset](media/desktop-create-and-manage-relationships/candmrel_advancedoptions2.png)
 
-Kuten sanottua, nämä määritetään yleensä automaattisesti eikä sinun tarvitse koskea niihin. Tietyissä tilanteissa nämä asetukset kannattaa kuitenkin määrittää itse.
+Power BI määrittää yleensä nämä asetukset automaattisesti, eikä sinun tarvitse koskea niihin. Monissa tilanteissa näitä asetuksia kannattaa kuitenkin muuttaa itse.
 
 ## <a name="automatic-relationship-updates"></a>Automaattiset suhteen päivitykset
 
-Voit hallita sitä, miten Power BI käsittelee ja mukauttaa automaattisesti yhteyksiä raporteissasi ja malleissasi. Jos haluat määrittää, miten Power BI käsittelee suhdeasetuksia, valitse Power BI Desktopissa **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja valitse sitten vasemmasta ruudusta **Tietojen lataaminen**. Näkyviin tulevat **suhteita** koskevat asetukset.
+Voit hallita sitä, miten Power BI käsittelee ja mukauttaa automaattisesti yhteyksiä raporteissasi ja malleissasi. Jos haluat määrittää, miten Power BI käsittelee suhdeasetuksia, valitse Power BI Desktopissa **Tiedosto** > **Asetukset ja vaihtoehdot** > **Asetukset** ja valitse sitten vasemmassa ruudussa **Tietojen lataaminen**. **Suhteet**-vaihtoehdot tulevat näkyviin.
 
- ![Suhdeasetukset](media/desktop-create-and-manage-relationships/relationships-options-01.png)
+   ![Suhdeasetukset](media/desktop-create-and-manage-relationships/relationships-options-01.png)
 
-Valittavissa on kolme asetusta, jotka voidaan valita ja ottaa käyttöön. 
+Valittavissa on kolme asetusta, jotka voidaan valita ja ottaa käyttöön: 
 
-Ensimmäinen asetus on *Tuo suhteet tietolähteistä*, ja se on oletusarvon mukaan valittuna. Kun asetus on valittuna, Power BI tarkistaa tietolähteessä määritetyt suhteet, kuten viiteavain-/perusavain-suhteet tietovarastossa. Jos tällaisia suhteita on olemassa, ne peilataan myös Power BI -tietomallissa tietoja ladattaessa. Tämän asetuksen avulla voit aloittaa nopeasti mallisi käyttämisen sen sijaan, että etsisit ja määrittäisit suhteet itse.
+- **Tuo suhteet tietolähteistä ensimmäisen lataamisen yhteydessä**: Tämä vaihtoehto on oletusarvoisesti valittuna. Kun se on valittuna, Power BI tarkistaa tietolähteessä määritetyt suhteet, kuten viiteavain-/perusavain-suhteet tietovarastossa. Jos tällaisia suhteita on olemassa, ne peilataan myös Power BI -tietomalliin, kun tiedot ladataan ensimmäisen kerran. Tämän asetuksen avulla voit aloittaa nopeasti mallisi käyttämisen sen sijaan, että etsisit ja määrittäisit suhteet itse.
 
-Toinen asetus on *Päivitä tai poista suhteita, kun tiedot päivitetään*, ja se on oletusarvon mukaan poissa käytöstä. Jos tämä on valittuna (otettu käyttöön valitsemalla asetuksen vieressä oleva valintaruutu), Power BI tarkistaa tietolähteen suhteisiin tehdyt muutokset, kun tietojoukkosi päivitetään. Jos nämä suhteet muuttuvat tai ne poistetaan, Power BI peilaa muutokset omassa tietomallissaan päivittämällä tai poistamalla niitä vastaavasti.
+- **Päivitä tai poista suhteita, kun tiedot päivitetään**: Oletusarvoisesti tämä asetus ei ole valittuna. Jos valitset sen, Power BI tarkistaa tietolähteen suhteisiin tehdyt muutokset, kun tietojoukkosi päivitetään. Jos nämä suhteet muuttuvat tai ne poistetaan, Power BI peilaa muutokset omassa tietomallissaan päivittämällä tai poistamalla niitä vastaavasti.
 
-> [!WARNING]
-> Jos käytät rivitason suojausta, joka on riippuvainen määritetyistä suhteista, emme suosittele toisen *Päivitä tai poista suhteita, kun tiedot päivitetään* -asetuksen valitsemista. Jos suhde, josta RLS-asetuksesi ovat riippuvaisia, poistetaan, mallisi suojaus voi heiketä. 
+   > [!WARNING]
+   > Jos käytät rivitason suojausta, joka on riippuvainen määritetyistä suhteista, tämän asetuksen valitseminen ei ole suositeltavaa. Jos poistat suhteet, josta RLS-asetuksesi ovat riippuvaisia, mallisi suojaus voi heiketä. 
 
-Kolmas asetus on *Havaitse uudet suhteet automaattisesti tietojen lataamisen jälkeen*, joka on kuvattu tämän artikkelin aikaisemmassa osassa [Automaattinen tunnistus latauksen aikana](#autodetect-during-load). 
+- **Havaitse uudet suhteet automaattisesti tietojen lataamisen jälkeen**: Tämä asetus on kuvattu artikkelissa [Automaattinen tunnistus latauksen aikana](#autodetect-during-load). 
 
 
 ## <a name="future-updates-to-the-data-require-a-different-cardinality"></a>Tietojen tulevat päivitykset vaativat eri kardinaliteetin
-Power BI Desktop osaa tavallisesti määrittää suhteen parhaan kardinaliteetin automaattisesti. Jos haluat kuitenkin ohittaa automaattisen asetuksen, koska tiedät tietojen muuttuvan tulevaisuudessa, voit valita asetuksen Kardinaliteetti-ohjausobjektissa. Katsotaan esimerkkiä, jossa meidän on valittava eri kardinaliteetti.
+Power BI Desktop osaa tavallisesti määrittää suhteen parhaan kardinaliteetin automaattisesti. Jos haluat kuitenkin ohittaa automaattisen asetuksen, koska tiedät tietojen muuttuvan tulevaisuudessa, voit muuttaa sitä asetuksen **Kardinaliteetti**-ohjausobjektilla. Katsotaan esimerkkiä, jossa meidän on valittava eri kardinaliteetti.
 
-Alla oleva Yritysprojektiprioriteetti-taulukko on luettelo yrityksen kaikista projekteista ja niiden prioriteeteista. Projektibudjetti-taulukossa on ne projektit, joiden budjetti on hyväksytty.
+**Yritysprojektiprioriteetti**-taulukko on luettelo yrityksen kaikista projekteista ja niiden prioriteeteista. **Projektibudjetti**-taulukossa on ne projektit, joiden budjetti on hyväksytty.
+
+**Yritysprojektiprioriteetti**
+
+| **ProjNimi** | **Prioriteetti** |
+| --- | --- |
+| Sininen |A |
+| Punainen |B |
+| Vihreä |C |
+| Keltainen |C |
+| Purppura |B |
+| Oranssi |C |
 
 **Projektibudjetti**
 
@@ -188,24 +216,13 @@ Alla oleva Yritysprojektiprioriteetti-taulukko on luettelo yrityksen kaikista pr
 | Punainen |100 000 |1\.12.2012 |
 | Vihreä |50 000 |1\.12.2012 |
 
-**Yritysprojektiprioriteetti**
+Jos luomme suhteen **Projektibudjetti**-taulukon **HyväksytytProjektit**-sarakkeen ja **Yritysprojektiprioriteetti**-taulukon **Projekti**-sarakkeen välille, Power BI määrittää automaattisesti **Kardinaliteeti**-asetukseksi **Yksi yhteen (1:1)** ja **Ristisuodatussuunta**-asetukseksi **Molemmat**. 
 
-| **Projekti** | **Prioriteetti** |
-| --- | --- |
-| Sininen |A |
-| Punainen |B |
-| Vihreä |C |
-| Keltainen |C |
-| Purppura |B |
-| Oranssi |C |
+ ![Taulukkosarakkeiden välisen suhteen luominen](media/desktop-create-and-manage-relationships/candmrel_create_compproj_appproj2.png)
 
-Jos Yritysprojektiprioriteetti-taulukon Projekti-sarakkeen ja Projektibudjetti-taulukon HyväksytytProjektit-sarakkeen välille luodaan suhde tällä tavalla:
+Power BI tekee nämä asetukset siksi, että Power BI Desktopin kannalta kahden taulukon paras yhdistelmä on seuraava:
 
- ![](media/desktop-create-and-manage-relationships/candmrel_create_compproj_appproj2.png)
-
-Kardinaliteetti on automaattisesti yksi yhteen (1:1) ja ristisuodatus on Molemmat (esitetyllä tavalla). Tämä johtuu siitä, että Power BI Desktopissa näiden kahden taulukon paras yhdistelmä näyttää tältä:
-
-| **Projekti** | **Prioriteetti** | **Budjettiallokointi** | **Allokointipvm** |
+| **ProjNimi** | **Prioriteetti** | **Budjettiallokointi** | **Allokointipvm** |
 |:--- | --- | ---:| ---:|
 | Sininen |A |40 000 |1\.12.2012 |
 | Punainen |B |100 000 |1\.12.2012 |
@@ -214,9 +231,9 @@ Kardinaliteetti on automaattisesti yksi yhteen (1:1) ja ristisuodatus on Molemma
 | Purppura |B |<br /> |<br /> |
 | Oranssi |C |<br /> |<br /> |
 
-Taulukoiden välillä on yksi yhteen -suhde, koska yhdistettyjen taulukoiden Projekti-sarakkeessa ei ole toistuvia arvoja. Projekti-sarake on yksilöllinen, koska kukin arvo esiintyy vain kerran, joten molempien taulukoiden arvot voidaan yhdistää suoraan ilman kahdentamista.
+Taulukoiden välillä on yksi yhteen -suhde, koska yhdistettyjen taulukoiden **ProjNimi**-sarakkeessa ei ole toistuvia arvoja. **ProjNimi**-sarake on yksilöllinen, koska jokainen arvo esiintyy vain kerran; siksi molempien taulukoiden arvot voidaan yhdistää suoraan ilman kahdentamista.
 
-Mutta oletetaan, että tiedät tietojen muuttuvan seuraavan kerran, kun päivität ne. Projektibudjetti-taulukon päivitetyssä versiossa on nyt ylimääräisiä sinisiä ja punaisia rivejä:
+Mutta oletetaan, että tiedät tietojen muuttuvan seuraavan kerran, kun päivität ne. **Projektibudjetti**-taulukon päivitetyssä versiossa on nyt ylimääräisiä sinisiä ja punaisia projekteja:
 
 **Projektibudjetti**
 
@@ -228,9 +245,9 @@ Mutta oletetaan, että tiedät tietojen muuttuvan seuraavan kerran, kun päivit�
 | Sininen |80 000 |1\.6.2013 |
 | Punainen |90 000 |1\.6.2013 |
 
- Tämän seurauksena näiden kahden taulukon paras yhdistelmä näyttää nyt tältä: 
+ Nämä uudet rivit merkitsevät, että näiden kahden taulukon paras yhdistelmä näyttää nyt tältä: 
 
-| **Projekti** | **Prioriteetti** | **Budjettiallokointi** | **Allokointipvm** |
+| **ProjNimi** | **Prioriteetti** | **Budjettiallokointi** | **Allokointipvm** |
 | --- | --- | ---:| ---:|
 | Sininen |A |40 000 |1\.12.2012 |
 | Punainen |B |100 000 |1\.12.2012 |
@@ -241,50 +258,53 @@ Mutta oletetaan, että tiedät tietojen muuttuvan seuraavan kerran, kun päivit�
 | Sininen |A |80 000 |1\.6.2013 |
 | Punainen |B |90 000 |1\.6.2013 |
 
-Tässä uudessa yhdistetyssä taulukossa Projekti-sarakkeessa on toistuvia arvoja. Alkuperäisillä taulukoilla ei ole enää yksi yhteen -suhdetta, kun taulukko päivitetään. Tässä tapauksessa, koska tiedämme tulevien päivitysten aiheuttavan kaksoisarvoja Projekti-sarakkeeseen, kardinaliteetiksi kannattaa vaihtaa Monta yhteen (\*:1) siten, että monet ovat Projektibudjetin puolella ja yksi Yritysprojektiprioriteetin puolella.
+Tässä uudessa yhdistetyssä taulukossa **ProjNimi**-sarakkeessa on toistuvia arvoja. Alkuperäisillä taulukoilla ei ole enää yksi yhteen -suhdetta, kun taulukko päivitetään. Tässä tapauksessa, koska tiedämme tulevien päivitysten aiheuttavan kaksoisarvoja **ProjNimi**-sarakkeeseen, **Kardinaliteetti**-asetukseksi kannattaa vaihtaa **Monta yhteen (\*:1)** siten, että *monet* ovat **Projektibudjetti**-taulukon puolella ja *yksi* **Yritysprojektiprioriteetti**-taulukon puolella.
 
 ## <a name="adjusting-cross-filter-direction-for-a-complex-set-of-tables-and-relationships"></a>Ristisuodatussuunnan säätäminen monimutkaisia taulukoita ja suhteita varten
-Useimmissa suhteissa ristisuodatussuunnaksi on määritetty Molemmat. Joissakin harvinaisemmissa tilanteissa tämä asetus on määritettävä poikkeamaan oletusarvosta, kuten tuotaessa malleja vanhemmasta Power Pivot -versiosta, jolloin kaikki suhteet on määritetty yksisuuntaisiksi. 
+Useimmissa suhteissa ristisuodatussuunnaksi on määritetty **Molemmat**. Joissakin harvinaisemmissa tilanteissa tämä asetus on määritettävä poikkeamaan oletusarvosta, kuten tuotaessa malleja vanhemmasta Power Pivot -versiosta, jolloin kaikki suhteet on määritetty yksisuuntaisiksi. 
 
-Molemmat-asetuksen avulla Power BI Desktop voi käsitellä liitettyjen taulukoiden kaikkia ominaisuuksia yhtenä taulukkona. Joissakin tilanteissa Power BI Desktop ei voi kuitenkaan määrittää suhteiden ristisuodatussuuntaa Molemmaksi sekä säilyttää yksiselitteistä oletusarvojoukkoa raportointia varten. Jos suhteen ristisuodatussuunnaksi ei ole määritetty Molemmat, se yleensä johtuu siitä, että Molemmat aiheuttaisi moniselitteisyyttä. Jos oletusarvoinen ristisuodatin ei käy, kokeile määrittää asetus tiettyyn taulukkoon tai Molempiin.
+**Molemmat**-asetuksen avulla Power BI Desktop voi käsitellä liitettyjen taulukoiden kaikkia ominaisuuksia yhtenä taulukkona. Joissakin tilanteissa Power BI Desktop ei voi kuitenkaan määrittää suhteiden ristisuodatussuuntaa **Molemmat**-asetuksen mukaiseksi sekä säilyttää yksiselitteistä oletusarvojoukkoa raportointia varten. Jos suhteen ristisuodatussuunnaksi ei ole määritetty **Molemmat**, se yleensä johtuu siitä, että tämä suunnan asetus aiheuttaisi moniselitteisyyttä. Jos oletusarvoinen ristisuodatin ei käy, kokeile määrittää asetus tiettyyn taulukkoon tai valitse asetukseksi **Molemmat**.
 
 Yksisuuntainen ristisuodatus toimii monissa tilanteissa. Itse asiassa, jos olet tuonut mallin Power Pivot Excel 2013:sta tai aiemmasta versiosta, kaikki suhteet on määritetty yksisuuntaisiksi. Yksisuuntainen tarkoittaa, että yhdistettyjen taulukoiden suodatusvalinnat toimivat siinä taulukossa, johon tiedot kerätään. Ristisuodatuksen ymmärtäminen voi olla joskus hieman hankalaa, joten katsotaanpa esimerkkiä.
 
- ![](media/desktop-create-and-manage-relationships/candmrel_singledircrossfiltering.png)
+Jos yksisuuntaisella ristisuodatuksella luodaan projektin tunnit sisältävä yhteenveto, voit tehdä yhteenvedon (tai suodattaa) **Yritysprojekti**-taulukosta ja sen **Prioriteetti**-sarakkeesta tai **YrityksenTyöntekijä**-taulukosta ja sen **Kaupunki**-sarakkeesta. Jos taas haluat laskea työntekijöiden määrän projektia kohti (harvinaisempi kysymys), se ei toimi. Saat sarakkeen, jonka arvot ovat kaikki samoja. Seuraavassa esimerkissä molempien suhteiden ristisuodatuksen suunta on määritetty yksisuuntaiseksi **Projektitunnit**-taulukkoa kohti. **Arvot**-ruudussa on **Projekti**-kentän asetuksena **Määrä**:
 
-Jos yksisuuntaisella ristisuodatuksella luodaan projektin tunnit sisältävä yhteenveto, voit tehdä yhteenvedon (tai suodattaa) Yritysprojektin, Prioriteetin tai YrityksenTyöntekijän, Kaupungin mukaan. Jos taas haluat laskea työntekijöiden määrän projektia kohti (harvinaisempi kysymys), se ei toimi. Saat sarakkeen, jonka arvot ovat kaikki samoja. Alla olevassa esimerkissä molempien suhteiden ristisuodatuksen suunta on määritetty yksisuuntaiseksi Projektitunnit-taulukkoa kohti:
+ ![Ristisuodatussuunta](media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png)
 
- ![](media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png)
+Suodattimen määritystä käytetään **Yritysprojekti**-taulukosta **YrityksenTyöntekijä**-taulukon suuntaan (kuten seuraavassa kuvassa) mutta ei vastavirtaan **YrityksenTyöntekijä**-taulukkoon. 
 
-Suodattimen määritystä käytetään Yritysprojektista YrityksenTyöntekijän suuntaan (kuten alla olevassa kuvassa) mutta ei vastavirtaan YrityksenTyöntekijään. Suodatin kuitenkin toimii, jos ristisuodatuksen suunnaksi määritetään Molemmat. Molemmat-asetuksen avulla suodattimen määritystä käytetään myös Työntekijään.
+ ![Esimerkki ristisuodatuksesta](media/desktop-create-and-manage-relationships/candmrel_singledircrossfiltering.png)
 
- ![](media/desktop-create-and-manage-relationships/candmrel_bidircrossfiltering.png)
 
-Kun ristisuodatuksen suunnaksi määritetään Molemmat, raportti näyttää oikealta:
+Suodatin kuitenkin toimii, jos ristisuodatuksen suunnaksi määritetään **Molemmat**. **Molemmat**-asetuksen avulla suodattimen määritystä käytetään myös **YrityksenTyöntekijä**-taulukkoon.
 
- ![](media/desktop-create-and-manage-relationships/candmrel_repcrossfilterbi.png)
+ ![Suodatinmäärityksen työnkulku](media/desktop-create-and-manage-relationships/candmrel_bidircrossfiltering.png)
 
-Ristisuodatus molempiin suuntiin toimii hyvin yllä olevan kaltaisiin taulukkosuhteisiin. Tätä kutsutaan yleisimmin tähtirakenteeksi, kuten tässä:
+Kun ristisuodatuksen suunnaksi määritetään **Molemmat**, raportti näyttää oikealta:
 
- ![](media/desktop-create-and-manage-relationships/candmrel_crossfilterstarschema.png)
+ ![Ristisuodatussuunnan asetuksena Molemmat](media/desktop-create-and-manage-relationships/candmrel_repcrossfilterbi.png)
+
+Ristisuodatus molempiin suuntiin toimii hyvin edellä olevan kaltaisiin taulukkosuhteisiin. Tätä rakennetta kutsutaan yleisimmin tähtirakenteeksi, kuten tässä:
+
+ ![Ristisuodatus molempiin suuntiin tähtirakenteessa](media/desktop-create-and-manage-relationships/candmrel_crossfilterstarschema.png)
 
 Ristisuodatuksen suunta ei toimi hyvin yleisempään tietokannoista usein löytyvään malliin, kuten tässä kaaviossa:
 
- ![](media/desktop-create-and-manage-relationships/candmrel_crossfilterwithloops.png)
+ ![Ristisuodatus molempiin suuntiin tähtirakenteessa](media/desktop-create-and-manage-relationships/candmrel_crossfilterwithloops.png)
 
 Jos sinulla on tällainen silmukoita sisältävä taulukkomalli, ristisuodatus voi luoda moniselitteisen suhdejoukon. Jos esimerkiksi X-taulukon kenttä lasketaan yhteen ja sitten suodatetaan Y-taulukon kentän mukaan, suodattimen tarkoitettu kulkusuunta ei ole selkeä, eli suodatetaanko ylemmän vai alemman taulukon kautta. Tavallinen esimerkki tämäntyyppisestä mallista on se, että X-taulukko on myyntituloksia sisältävä taulukko ja Y-taulukossa on budjettitiedot. Silloin keskellä olevat taulukot ovat molempien taulukoiden käyttämiä hakutaulukoita, esimerkiksi Yksikkö tai Alue. 
 
-Samaan tapaan kuin aktiivisissa/passiivisissa suhteissa, Power BI Desktop ei salli suhteen määrittämistä Molemmiksi, jos se luo moniselitteisyyttä raporteissa. Tällaisen tilanteen voi ratkaista monella eri tavalla, ja tässä on kaksi yleisintä:
+Samaan tapaan kuin aktiivisissa tai passiivisissa suhteissa, Power BI Desktop ei salli suhteen määrittämistä **Molemmat**-arvoon, jos se loisi moniselitteisyyttä raporteissa. Voit käsitellä tätä tilannetta useilla eri tavoilla. Seuraavassa on kaksi yleisintä:
 
-* Vähennä moniselitteisyyttä poistamalla suhteet tai merkitsemällä ne passiivisiksi. Sitten voit ehkä määrittää suhteen ristisuodatukseksi Molemmat.
-* Poista silmukat tuomalla taulukko kahdesti (erinimisenä toisella kerralla). Tämä luo tähtirakennetta muistuttavan suhdemallin. Tähtirakennetta käytettäessä kaikki suhteet voidaan määrittää Molemmiksi.
+* Vähennä moniselitteisyyttä poistamalla suhteet tai merkitsemällä ne passiivisiksi. Sitten voit ehkä määrittää suhteen ristisuodatusasetukseksi vaihtoehdon **Molemmat**.
+* Poista silmukat tuomalla taulukko kahdesti (erinimisenä toisella kerralla). Tämä luo tähtirakennetta muistuttavan suhdemallin. Tähtirakennetta käytettäessä kaikkiin suhteisiin voidaan määrittää arvo **Molemmat**.
 
 ## <a name="wrong-active-relationship"></a>Väärä aktiivinen suhde
-Kun Power BI Desktop luo suhteita automaattisesti, se havaitsee joskus useamman kuin yhden suhteen kahden taulukon välillä. Kun näin tapahtuu, vain yksi suhteista määritetään aktiiviseksi. Aktiivinen suhde toimii oletussuhteena niin, että kun valitset kenttiä kahdesta eri taulukosta, Power BI Desktop voi luoda automaattisesti visualisoinnin puolestasi. Joissakin tapauksissa automaattisesti valitut suhteet voivat kuitenkin olla vääriä. Suhteiden hallinta -valintaikkunan avulla voit määrittää suhteen aktiiviseksi tai passiiviseksi, tai voit määrittää aktiivisen suhteen Muokkaa suhdetta -valintaikkunassa. 
+Kun Power BI Desktop luo suhteita automaattisesti, se havaitsee joskus useamman kuin yhden suhteen kahden taulukon välillä. Kun näin tehdään, vain yksi suhteista määritetään aktiiviseksi. Aktiivinen suhde toimii oletussuhteena niin, että kun valitset kenttiä kahdesta eri taulukosta, Power BI Desktop voi luoda automaattisesti visualisoinnin puolestasi. Joissakin tapauksissa automaattisesti valitut suhteet voivat kuitenkin olla vääriä. **Suhteiden hallinta** -valintaikkunan avulla voit määrittää suhteen aktiiviseksi tai passiiviseksi, tai voit määrittää aktiivisen suhteen **Muokkaa suhdetta** -valintaikkunassa. 
 
-Jotta voidaan varmistaa, että oletussuhde on aina olemassa, Power BI Desktop sallii kerrallaan vain yhden aktiivisen suhteen kahden taulukon välillä. Sinun on siis ensin määritettävä nykyinen suhde passiiviseksi ja määritettävä sitten haluamasi suhde aktiiviseksi.
+Jotta voidaan varmistaa, että oletussuhde on aina olemassa, Power BI Desktop sallii kerrallaan vain yhden aktiivisen suhteen kahden taulukon välillä. Siksi sinun on ensin määritettävä nykyinen suhde passiiviseksi ja määritettävä sitten haluamasi suhde aktiiviseksi.
 
-Tarkastellaan esimerkkiä. Tämä ensimmäinen taulukko on ProjektinPalvelupyynnöt ja seuraava taulukko on TyöntekijänRooli.
+Tarkastellaan esimerkkiä. Ensimmäinen taulukko on **ProjektinPalvelupyynnöt** ja toinen taulukko on **TyöntekijänRooli**.
 
 **ProjektinPalvelupyynnöt**
 
@@ -316,22 +336,26 @@ Tarkastellaan esimerkkiä. Tämä ensimmäinen taulukko on ProjektinPalvelupyynn
 | Lepistö, Stefan |Projektin rahoittaja |
 | Wahlman, Miika |Projektin rahoittaja |
 
-Tässä on itse asiassa kaksi suhdetta. Toinen on ProjektinPalvelupyynnöt-taulukon Lähettäjä-arvon ja TyöntekijänRooli-taulukon Työntekijä-arvon välillä ja toinen on ProjektinPalvelupyynnöt-taulukon Avaaja-arvon ja TyöntekijänRooli-taulukon Työntekijä-arvon välillä.
+Tässä on itse asiassa kaksi suhdetta:
+- **TyöntekijänRooli**-taulukon **Työntekijä**-sarakkeen ja **ProjektinPalvelupyynnöt**-taulukon **Lähettäjä**-sarakkeen välinen suhde.
+- **ProjektinPalvelupyynnöt**-taulukon **Avaaja**-sarakkeen ja **TyöntekijänRooli**-taulukon **Työntekijä**-sarakkeen välinen suhde.
 
- ![](media/desktop-create-and-manage-relationships/candmrel_activerelview.png)
+ ![Esimerkki kahdesta suhteesta](media/desktop-create-and-manage-relationships/candmrel_activerelview.png)
 
-Jos molemmat suhteet lisätään malliin (Avaaja-suhde ensin), Suhteiden hallinta -valintaikkunassa näkyy, että Avaaja-suhde on aktiivinen:
+Jos molemmat suhteet lisätään malliin (**Avaaja**-suhde ensin), **Suhteiden hallinta** -valintaikkunassa näkyy, että **Avaaja**-suhde on aktiivinen:
 
- ![](media/desktop-create-and-manage-relationships/candmrel_managerelactive.png)
+ ![Avaaja-kohta aktiivisena Suhteiden hallinta -valintaikkunassa](media/desktop-create-and-manage-relationships/candmrel_managerelactive.png)
 
-Jos nyt luodaan raportti, joka käyttää TyöntekijänRooli-taulukon Rooli- ja Työntekijä-kenttiä ja ProjektinPalvelupyynnöt-taulukon tunnit-kenttää taulukon visualisoinnissa raporttipohjassa, vain yhden projektin rahoittajat näkyvät, koska kukaan muu ei ole avannut projektin palvelupyyntöä.
+Jos nyt luodaan raportti, joka käyttää **TyöntekijänRooli**-taulukon **Rooli**- ja **Työntekijä**-kenttiä ja **ProjektinPalvelupyynnöt**-taulukon **Tunnit**-kenttää taulukon visualisoinnissa raporttipohjassa, vain yhden projektin rahoittajat näkyvät, koska kukaan muu ei ole avannut projektin palvelupyyntöä.
 
- ![](media/desktop-create-and-manage-relationships/candmrel_repcrossfilteractive.png)
+ ![Työntekijä-, Rooli-ja Tunnit-kentät valittuina](media/desktop-create-and-manage-relationships/candmrel_repcrossfilteractive.png)
 
-Aktiivista suhdetta voidaan muuttaa käyttämällä Lähettäjä-kenttää Avaaja-kentän sijaan. Poistetaan Suhteiden hallinnassa valinta ProjektinPalvelupyyntöjen (Avaaja) ja TyöntekijänRoolin (Työntekijä) välisestä suhteesta ja valitaan ProjektinPalvelupyyntöjen (Lähettäjä) ja TyöntekijänRoolin (Työntekijä) välinen suhde.
+Aktiivista suhdetta voidaan muuttaa käyttämällä **Lähettäjä**-kenttää **Avaaja**-kentän sijaan. Poista **Suhteiden hallinta** -valintaikkunassa valinta taulukoiden **ProjektinPalvelupyynnöt (Avaaja)** ja **TyöntekijänRooli (Työntekijä)** välisestä suhteesta ja lisää valinta taulukoiden **ProjektinPalvelupyynnöt (Lähettäjä**) ja **TyöntekijänRoolin (Työntekijä)** väliseen suhteeseen.
 
-![](media/desktop-create-and-manage-relationships/candmrel_managerelactivesubmittedby.png)
+![Aktiivisen suhteen muuttaminen Suhteiden hallinta -valintaikkunassa](media/desktop-create-and-manage-relationships/candmrel_managerelactivesubmittedby.png)
 
 ## <a name="see-all-of-your-relationships-in-relationship-view"></a>Kaikkien suhteiden tarkasteleminen Suhde-näkymässä
-Joskus mallissa on useita taulukoita ja monimutkaisia suhteita. Power BI Desktopin Suhde-näkymässä voit tarkastella kaikkia mallin suhteita sekä niiden suuntia ja kardinaliteetteja helppotajuisessa ja mukautettavassa kaaviossa. Lisätietoja on artikkelissa [Suhdenäkymä Power BI Desktopissa](desktop-relationship-view.md).
+Joskus mallissa on useita taulukoita ja monimutkaisia suhteita. Power BI Desktopin **Suhde**-näkymässä voit tarkastella kaikkia mallin suhteita sekä niiden suuntia ja kardinaliteetteja helppotajuisessa ja mukautettavassa kaaviossa. 
+
+Lisätietoja on artikkelissa [Power BI Desktopin suhdenäkymän käyttäminen](desktop-relationship-view.md).
 

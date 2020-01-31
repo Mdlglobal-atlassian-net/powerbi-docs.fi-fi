@@ -1,6 +1,6 @@
 ---
 title: 'DAX: Kaavojen parantaminen muuttujien avulla'
-description: Muuttujien käyttäminen DAX-lausekkeissa.
+description: Ohjeita muuttujien käyttämiseen DAX-lausekkeissa.
 author: peter-myers
 ms.reviewer: asaxton
 ms.service: powerbi
@@ -17,18 +17,18 @@ ms.locfileid: "74700704"
 ---
 # <a name="dax-use-variables-to-improve-your-formulas"></a>DAX: Kaavojen parantaminen muuttujien avulla
 
-Tietojen mallintajana joidenkin DAX-laskelmien kirjoittaminen ja virheen korjaus voi olla haastavaa. On tavallista, että monitasoisiin laskuvaatimuksiin liittyy usein yhdistelmä- tai monitasoisia lausekkeita. Yhdistelmälausekkeisiin voi sisältyä useiden sisäkkäisten funktioiden käyttö ja mahdollisesti lausekelogiikan uudelleenkäyttö.
+Tietojen mallintajana joidenkin DAX-laskelmien kirjoittaminen ja virheenkorjaus voi olla haastavaa. On tavallista, että monitasoisiin laskuvaatimuksiin liittyy usein monitasoisia tai yhdistelmälausekkeita. Yhdistelmälausekkeisiin voi sisältyä useiden sisäkkäisten funktioiden käyttö ja mahdollisesti lausekelogiikan uudelleenkäyttö.
 
-DAX-kaavojen muuttujien avulla voit kirjoittaa monimutkaisia ja tehokkaita laskutoimituksia. Muuttujat voivat:
+DAX-kaavojen muuttujien avulla voit kirjoittaa monimutkaisia ja tehokkaita laskutoimituksia. Muuttujat voivat
 
-- [Parantaa suorituskykyä](#improve-performance)
-- [Parantaa luettavuutta](#improve-readability)
-- [Yksinkertaistaa virheen korjausta](#simplify-debugging)
-- [Vähentää monimutkaisuutta](#reduce-complexity)
+- [parantaa suorituskykyä](#improve-performance)
+- [parantaa luettavuutta](#improve-readability)
+- [yksinkertaistaa virheenkorjausta](#simplify-debugging)
+- [vähentää monimutkaisuutta.](#reduce-complexity)
 
-Tässä artikkelissa esitellään kolme ensimmäistä etua käyttämällä esimerkkinä vuoden aikana tapahtuvaa myynninkasvua. (YoY Sales kasvukaava on: period sales _fewer sales samalle kaudelle viime vuonna, _jaettuna_ myynti samalle kaudelle viime vuonna.)
+Tässä artikkelissa esitellään näistä kolme ensimmäistä käyttämällä esimerkkinä vuoden aikana tapahtunutta myynninkasvua. (tällaisen myynninkasvun kaava on: ajanjakson myynti _fewer myynti samana ajanjaksona viime vuonna _jaettuna_ viime vuoden saman ajanjakson myynnillä.)
 
-Aloitetaan seuraavasta mittayksikkömäärityksestä.
+Aloitetaan seuraavasta mittarimäärityksestä.
 
 ```dax
 Sales YoY Growth % =
@@ -38,13 +38,13 @@ DIVIDE(
 )
 ```
 
-Mittayksikkö tuottaa oikean tuloksen, mutta katsotaan nyt, miten sitä voidaan parantaa.
+Mittari tuottaa oikean tuloksen, mutta katsotaan nyt, miten sitä voidaan parantaa.
 
-## <a name="improve-performance"></a>Parantaa suorituskykyä
+## <a name="improve-performance"></a>Suorituskyvyn parantaminen
 
-Huomaa, että kaava toistaa lausekkeen, joka laskee "samana ajan jaksona viime vuonna". Tämä kaava on tehoton, koska se vaatii Power BI:n saman lausekkeen arvioimista kahdesti. Mittayksikkömääritystä voidaan tehostaa käyttämällä muuttujaa.
+Huomaa, että kaava toistaa lausekkeen, joka laskee "samana ajanjaksona viime vuonna". Tätä kaavaa ei ole kovin tehokas, koska Power BI:n on arvioitava sama lauseke kahdesti. Mittarimääritystä voidaan tehostaa käyttämällä muuttujaa.
 
-Seuraavassa mittayksikkömäärityksessä esitetään parannus. Se käyttää lauseketta, joka määrittää "saman jakson viime vuonna"-tuloksen muuttujalle nimeltä **SalesPriorYear**. Muuttujaa käytetään sitten kahdesti RETURN-lausekkeessa.
+Seuraavassa mittarimäärityksessä esitetään parannus. Se käyttää lauseketta, joka määrittää viime vuoden saman ajanjakson tuloksen muuttujaan nimeltä **SalesPriorYear**. Muuttujaa käytetään sitten kahdesti RETURN-lausekkeessa.
 
 ```dax
 Sales YoY Growth % =
@@ -54,17 +54,17 @@ RETURN
     DIVIDE(([Sales] - SalesPriorYear), SalesPriorYear)
 ```
 
-Mittayksikkö tuottaa edelleen oikean tuloksen ja käyttää noin puolet kyselyn ajasta.
+Mittari tuottaa edelleen oikean tuloksen, mutta noin kaksi kertaa nopeammin.
 
-## <a name="improve-readability"></a>Parantaa luettavuutta
+## <a name="improve-readability"></a>Luettavuuden parantaminen
 
-Huomaa edellisessä mittayksikkö määrityksessä, miten muuttujan nimen valinta tekee paluulausekkeesta helpomman ymmärtää. Lauseke on lyhyt ja itsesään kuvaava.
+Huomaa edellisessä mittarimäärityksessä, miten muuttujan nimen valinta tekee RETURN-lausekkeesta helpomman ymmärtää. Lauseke on lyhyt ja kuvaava.
 
-## <a name="simplify-debugging"></a>Yksinkertaistaa virheen korjausta
+## <a name="simplify-debugging"></a>Virheenkorjauksen yksinkertaistaminen
 
-Muuttujat voivat myös auttaa kaavan virheen korjaamisessa. Jos haluat testata muuttujalle määritettyä lauseketta, voit kirjoittaa paluulausekkeen tilapäisesti uudelleen, jos haluat tulostaa muuttujan.
+Muuttujat voivat myös auttaa kaavan virheiden korjauksessa. Jos haluat testata muuttujalle määritettyä lauseketta, voit kirjoittaa RETURN-lausekkeen tilapäisesti uudelleen tulostamaan muuttujan.
 
-Seuraava mittayksikkö palauttaa vain **SalesPriorYear**-muuttujan. Huomaa, miten se kommentoi aiottua RETURN-lauseketta. Tämän tekniikan avulla voit helposti palauttaa sen takaisin, kun virheenkorjaus on valmis.
+Seuraava mittarimääritys palauttaa vain **SalesPriorYear**-muuttujan. Huomaa, miten se kommentoi aiottua RETURN-lauseketta. Tämän tekniikan avulla voit helposti palauttaa sen takaisin virheenkorjauksen jälkeen.
 
 ```dax
 Sales YoY Growth % =
@@ -75,13 +75,13 @@ RETURN
     SalesPriorYear
 ```
 
-## <a name="reduce-complexity"></a>Vähentää monimutkaisuutta
+## <a name="reduce-complexity"></a>Monimutkaisuuden vähentäminen
 
-Aiemmissa DAX-versioissa muuttujia ei vielä tueta. Monimutkaisia lausekkeita, jotka ottivat käyttöön uusia suodatinkonteksteja, tarvittiin käyttämään [aiemmasta](/dax/earlier-function-dax) tai [AIKAISEMMASTA](/dax/earliest-function-dax) DAX-funktioista viittaus ulompaan suodatinkontekstiin. Valitettavasti tietojen mallintajat pitivät näitä funktiota vaikeina ymmärtää ja käyttää.
+Aiemmissa DAX-versioissa muuttujia ei vielä tuettu. Monimutkaiset lausekkeet, jotka ottivat käyttöön uusia suodatinkonteksteja, edellyttivät [EARLIER](/dax/earlier-function-dax)- tai [EARLIEST](/dax/earliest-function-dax) -DAX-funktioiden käyttämistä viittaamaan ulkoisiin suodatinkonteksteihin. Valitettavasti tietojen mallintajat pitivät näitä funktiota vaikeina ymmärtää ja käyttää.
 
-Muuttujia arvioidaan aina niiden suodattimien ulkopuolella, joita RETURN-lauseke koskee. Tästä syystä, kun käytät muuttujaa muokatun suodattimen yhteydessä, se saavuttaa saman tuloksen kuin VARHAISIMMASSA funktiossa. AIEMMAN tai AIKAISIMMAN funktion käyttöä voidaan siis välttää. Se tarkoittaa, että voit nyt kirjoittaa kaavoja, jotka ovat vähemmän monimutkaisia ja joita on helpompi ymmärtää.
+Muuttujia arvioidaan aina RETURN-lausekkeen suodattimien ulkopuolella. Tästä syystä muuttuja tuottaa saman tuloksen muokatun suodatinkontekstin yhteydessä kuin EARLIEST-funktio. EARLIER- tai EARLIEST-funktioiden käyttöä voidaan siis välttää. Tämä tarkoittaa, että voit nyt kirjoittaa yksinkertaisempia kaavoja, joita on helpompi ymmärtää.
 
-Harkitse seuraavaa laskettua sarakemääritystä, joka lisättiin **aliluokan** taulukkoon. Se arvioi kunkin tuotteen alaluokan sijoituksen **aliluokan myynti**sarakearvojen perusteella.
+Harkitse seuraavaa lasketun sarakkeen määritystä, joka lisättiin **Subcategory**-taulukkoon. Se arvioi kunkin tuotteen aliluokan sijoituksen **Subcategory Sales** -sarakkeen arvojen perusteella.
 
 ```dax
 Subcategory Sales Rank =
@@ -93,9 +93,9 @@ COUNTROWS(
 ) + 1
 ```
 
-EARLIER-funktiolla viitataan **aliluokan myyntisarakkeen** arvoon _nykyisessä rivikontekstissa_.
+EARLIER-funktiolla viitataan **Subcategory Sales** -sarakkeen arvoon _nykyisessä rivikontekstissa_.
 
-Lasketun sarakkeen määritystä voidaan parantaa käyttämällä muuttujaa EARLIER -funktion sijaan. **CurrentSubcategorySales**-muuttuja tallentaa **aliluokan myynti-** sarakkeen arvon _nykyisessä rivikontekstissa_, ja palautuslauseke käyttää sitä muokatun suodatinkontekstin yhteydessä.
+Lasketun sarakkeen määritystä voidaan parantaa käyttämällä muuttujaa EARLIER-funktion sijaan. **CurrentSubcategorySales**-muuttuja tallentaa **Subcategory Sales** -sarakkeen arvon _nykyisessä rivikontekstissa_, ja RETURN-lauseke käyttää sitä muokatun suodatinkontekstin yhteydessä.
 
 ```dax
 Subcategory Sales Rank =
@@ -113,5 +113,5 @@ RETURN
 
 Saat lisätietoja tästä artikkelista tutustumalla seuraaviin resursseihin:
 
-- [VAR](/dax/var-dax) DAX-artikkeli
+- [VAR](/dax/var-dax) -DAX-artikkeli
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

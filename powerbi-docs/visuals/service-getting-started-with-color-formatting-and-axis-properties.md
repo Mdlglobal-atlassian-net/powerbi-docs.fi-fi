@@ -1,27 +1,27 @@
 ---
-title: Värimuotoilun ja akseliominaisuuksien käytön aloittaminen
-description: Värimuotoilun ja akseliominaisuuksien käytön aloittaminen
+title: Raporttien visualisointien muotoilun käytön aloittaminen
+description: Raporttien visualisointien muotoiluasetusten käytön aloittaminen
 author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 12/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7eded3d17e0db5894bd2f1a03fae49357eb27c69
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: b42d83b4cea6f5f5e8908244b2b298dc3f327468
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762251"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540616"
 ---
-# <a name="get-started-with-color-formatting-and-axis-properties"></a>Värimuotoilun ja akseliominaisuuksien käytön aloittaminen
-Valitsemalla **Power BI** voit muuttaa arvosarjojen, arvopisteiden ja jopa visualisointien taustan värin. Voit myös muuttaa x- ja y-akselin esitystapaa, joten voit hallita täydellisesti raporttinäkymien ja raporttien ulkonäköä.
+# <a name="getting-started-with-the-formatting-pane"></a>Muotoiluruudun käytön aloittaminen
+Jos sinulla on raportin muokkausoikeudet, käytettävissäsi on useita muotoiluasetuksia. Valitsemalla **Power BI** -raportit voit muuttaa arvosarjojen, arvopisteiden ja jopa visualisointien taustan värin. Voit muuttaa sitä, miten x-akseli ja y-akseli esitetään. Voit myös muotoilla visualisointien, muotojen ja otsikoiden fonttiominaisuuksia ja hallita raporttiesi ulkoasua täydellisesti.
 
-Aloita valitsemalla **Raportti** **Oma työtilani** -ruudusta. Valitse sitten ylävalikosta **Muokkaa raporttia**.  
+Aloita avaamalla raportti Power BI Desktopissa tai Power BI -palvelussa. Kummassakin on lähes samat muotoiluasetukset. Kun avaat raportin Power BI -palvelussa, valitse valikkoriviltä **Muokkaa raporttia**.  
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_1a.png)
+![Valikkorivi, jossa näkyy Muokkaa-vaihtoehto](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-edit.png)
 
 Kun muokkaat raporttia ja sinulla on visualisointi valittuna, näkyviin tulee **Visualisoinnit**-ruutu, jonka avulla voit lisätä tai muuttaa visualisointeja. Käytettävissä olevien visualisointien alapuolella on kolme kuvaketta: **Kentät** (palkkien pino), **Muoto** (tela) ja **Analytiikka** (suurennuslasi). Alla olevassa kuvassa näkyvä keltainen palkki kuvakkeen alapuolella osoittaa **Kentät**-kuvakkeen olevan valittuna.
 

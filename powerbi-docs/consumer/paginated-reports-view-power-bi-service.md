@@ -19,7 +19,7 @@ ms.locfileid: "74834605"
 
 Tässä artikkelissa opit tarkastelemaan sivutettuja raportteja Power BI -palvelussa. Sivutetut raportit ovat raportteja, jotka on luotu Raportin muodostimessa ja ladattu Premium-kapasiteetissa olevaan työtilaan. Etsi vinoneliökuvaketta ![Power BI Premium -kapasiteetin vinoneliökuvaketta](media/paginated-reports-view-power-bi-service/premium-diamond.png) työtilan nimen vieressä. 
 
-Sivutetuilla raporteilla on oman kuvakkeensa ![Sivutetun raportin kuvake](media/paginated-reports-view-power-bi-service/power-bi-paginated-report-icon.png).
+Sivutetuilla raporteilla on oma kuvakkeensa ![Sivutetun raportin kuvake](media/paginated-reports-view-power-bi-service/power-bi-paginated-report-icon.png).
 
 Voit myös viedä sivutetut raportit erityyppisinä tiedostoina: 
 

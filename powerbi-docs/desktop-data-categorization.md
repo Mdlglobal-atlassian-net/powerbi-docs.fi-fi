@@ -6,37 +6,37 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: ef3191d77e2aeb89ff97468bd4bfdc07b0d7afb8
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 218a05c41c3befed8f8600f6a584560f5be92a1f
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75761337"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709552"
 ---
 # <a name="specify-data-categories-in-power-bi-desktop"></a>Tietoluokkien määrittäminen Power BI Desktopissa
-**Power BI Desktopissa** voit määrittää sarakkeen tietoluokan, jolloin Power BI Desktop tietää, miten sen on käsiteltävä kyseisen sarakkeen arvoja visualisoinnissa.
+Power BI Desktopissa voit määrittää sarakkeen *tietoluokan*, jolloin Power BI Desktop tietää, miten sen on käsiteltävä kyseisen sarakkeen arvoja visualisoinnissa.
 
-Kun Power BI Desktop tuo tietoa, se ei ainoastaan nouda itse tietoa, vaan lisäksi se noutaa tietoja, kuten taulukon ja sarakkeiden nimet, onko kyseessä perusavain jne.  Näillä tiedoilla Power BI Desktop tekee joitakin oletuksia siitä, miten se voi antaa sinulle hyvän oletuskokemuksen visualisointia luodessaan. 
-
-Tässä on esimerkki: kun Power BI Desktop havaitsee, että sarakkeessa on numeerisia arvoja, haluat luultavasti koostaa sen jotenkin, joten se sijoitetaan Arvot-alueelle. Tai jos sarakkeessa on päivämäärä-aika-arvoja, oletuksena on, että käytät sitä luultavasti aikahierarkia-akselina viivakaaviossa.
+Kun Power BI Desktop tuo tietoja, se saa tuotavien tietojen lisäksi myös muita tietoja, kuten taulukoiden ja sarakkeiden nimet, sekä tiedon siitä, ovatko tiedot ensisijainen avain. Näillä tiedoilla Power BI Desktop tekee joitakin oletuksia siitä, miten se voi antaa sinulle hyvän oletuskokemuksen visualisointia luodessaan.
+Jos esimerkiksi sarakkeessa on numeerisia arvoja, haluat luultavasti koostaa sen jotenkin, joten Power BI Desktop sijoittaa sen **Visualisoinnit**-ruudun **Arvot**-alueelle. Jos taas viivakaavion sarakkeessa on päivämäärä-aika-arvoja, Power BI Desktopin oletuksena on, että käytät sitä luultavasti aikahierarkia-akselina.
 
 On kuitenkin joitakin haastavampia tapauksia, esimerkiksi maantiede. Tarkastele seuraavaa Excel-laskentataulukon taulukkoa:
 
 ![](media/desktop-data-categorization/datacategorizationtable.png)
 
-Pitäisikö Power BI Desktopin käsitellä GeoCode-sarakkeen koodeja maalyhenteinä vai Yhdysvaltojen osavaltioiden lyhenteinä?  Se ei ole selvää, koska tällainen koodi voi tarkoittaa kumpaa tahansa.  Esimerkiksi AL voi tarkoittaa Alabamaa tai Albaniaa, AR voi tarkoittaa Arkansasia tai Argentiinaa tai CA voi tarkoittaa Kalifornia tai Kanadaa. Tällä on merkitystä, kun aletaan siirtää GeoCode-kenttää kartalle.  Pitäisikö Power BI Desktopin näyttää kuvaa maailmasta tietyt maat korostettuina vai kuvaa Pohjois-Amerikasta tietyt osavaltiot korostettuina?  Voit määrittää tietoluokan juuri tällaisille tiedoille. Tietojen luokittelulla tarkennetaan edelleen tietoja, joita Power BI Desktop voi käyttää parhaiden mahdollisten visualisointien tarjoamiseksi.  
+Pitäisikö Power BI Desktopin käsitellä **GeoCode**-sarakkeen koodeja maalyhenteinä vai Yhdysvaltojen osavaltioiden lyhenteinä?  Se ei ole selvää, koska tällainen koodi voi tarkoittaa kumpaa tahansa. Esimerkiksi AL voi tarkoittaa Alabamaa tai Albaniaa, AR voi tarkoittaa Arkansasia tai Argentiinaa tai CA voi tarkoittaa Kalifornia tai Kanadaa. Tällä on merkitystä, kun aletaan siirtää GeoCode-kenttää kartalle. 
+
+Tuleeko Power BI Desktopin näyttää kuva maailmasta, jossa maat ovat korostettuja? Vai pitäisikö sen näyttää kuva Yhdysvalloista, jossa osavaltiot ovat korostettuja?  Voit määrittää tietoluokan juuri tällaisille tiedoille. Tietojen luokittelulla tarkennetaan edelleen tietoja, joita Power BI Desktop voi käyttää parhaiden mahdollisten visualisointien tarjoamiseksi.  
 
 **Tietoluokan määrittäminen**
 
-1. Valitse raporttinäkymässä tai tietonäkymässä olevasta **Kentät**-luettelosta kenttä, jonka haluat lajiteltavan eri luokittelun mukaan.
-2. Napsauta valintanauhan **Mallinnus**-välilehdessä avattavaa luetteloa **Tietoluokka:** .  Tämä näyttää luettelon mahdollisista tietoluokista, jotka voit sarakkeellesi valita.  Jotkut valinnat voi olla poistettu käytöstä, jos ne eivät toimi sarakkeesi tämänhetkisen tietotyypin kanssa.  Esimerkiksi jos sarake on binaarista tietotyyppiä, Power BI Desktop ei anna sinun valita maantieteellisten tietojen luokkia. 
+1. Valitse **raportti**näkymässä tai **tieto**näkymässä olevasta **Kentät**-luettelosta kenttä, jonka haluat lajiteltavan eri luokittelun mukaan.
+2. Valitse valintanauhan **Mallinnus**-välilehden **Ominaisuudet**-alueella avausnuoli kohdan **Tietoluokka**vieressä.  Luettelossa näkyvät tietoluokat, jotka voit sarakkeellesi valita. Jotkut valinnat voi olla poistettu käytöstä, jos ne eivät toimi sarakkeesi tämänhetkisen tietotyypin kanssa.  Esimerkiksi jos sarake on binaarista tietotyyppiä, Power BI Desktop ei anna sinun valita maantieteellisten tietojen luokkia. 
+3. Valitse haluamasi luokka.
 
-![](media/desktop-data-categorization/datacategorization.gif)
-
-Siinä kaikki!  Toiminta, joka tavallisesti kertyy visualisointiin, toimii nyt automaattisesti.  
+   ![](media/desktop-data-categorization/desktop-data-categorization.png)
 
 Saatat olla myös kiinnostunut oppimaan aiheesta [maantieteellinen suodatus Power BI -mobiilisovelluksissa](desktop-mobile-geofiltering.md).
 

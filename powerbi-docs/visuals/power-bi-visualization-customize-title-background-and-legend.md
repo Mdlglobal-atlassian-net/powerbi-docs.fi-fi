@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 12/04/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1e2465273368c6b76e602e5ffbdf4ec3a1d121a3
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 252e83a543640ec47fbadd00012bf1a4d8074f84
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75757826"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831402"
 ---
-# <a name="customize-visualization-titles-backgrounds-and-legends"></a>Visualisoinnin otsikoiden, taustojen ja selitteiden mukauttaminen
+# <a name="customize-visualization-titles-legends-and-backgrounds"></a>Mukauta visualisoinnin otsikoita, selitteitä ja taustoja
 
-Tässä opetusohjelmassa opit pari erilaista tapaa mukauttaa visualisointeja. Visualisointien mukauttamiseen on paljon vaihtoehtoja. Paras keino tutustua niihin kaikkiin on tarkastella **Muotoilu**-ruutua (valitse maalirullakuvake). Jotta pääset alkuun, tässä artikkelissa kerrotaan, miten voit mukauttaa visualisoinnin otsikkoa, selitettä ja taustaa ja lisätä teeman.
+Tässä opetusohjelmassa opit pari erilaista tapaa mukauttaa visualisointeja. Visualisointien mukauttamiseen on paljon vaihtoehtoja. Paras keino tutustua niihin kaikkiin on tarkastella **Muotoilu**-ruutua (valitse maalirullakuvake). Jotta pääset alkuun, tässä artikkelissa kerrotaan, miten voit mukauttaa visualisoinnin otsikkoa, selitettä ja taustaa sekä lisätä teeman.
 
 Kaikkia visualisointeja ei voi mukauttaa. Katso lisätietoja visualisointien [täydellisestä luettelosta](#visualization-types-that-you-can-customize).
 
@@ -49,7 +49,7 @@ Seuraa mukana kirjautumalla sisään Power BI Desktopiin ja avaamalla [Jälleenm
 
 1. Siirrä **otsikon** liukusäädin tilaan **Käytössä**.
 
-1. Voit muuttaa otsikkoa kirjoittamalla *Myymälöiden määrä kuukauden mukaan avattuna***Otsikon teksti** -kenttään.
+1. Voit muuttaa otsikkoa kirjoittamalla *Myymälöiden määrä kuukauden mukaan avattuna* **Otsikon teksti** -kenttään.
 
     ![Näyttökuva muotoruudusta, jossa on annettu otsikkoteksti.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png)
 
@@ -62,7 +62,7 @@ Seuraa mukana kirjautumalla sisään Power BI Desktopiin ja avaamalla [Jälleenm
     b. Valitse avattava luettelo väri-ikkunan sulkemiseksi.
 
 
-1. Suurenna tekstikooksi **16 pt**.
+1. Suurenna teksti kokoon **16 pt**.
 
 1. Viimeinen mukautus, jonka teet kaavion otsikkoon, on sen tasaaminen visualisoinnin keskelle.
 
@@ -102,7 +102,7 @@ Jos haluat palauttaa kaikki muutokset, valitse **Palauta oletusasetukseen** **Ta
 
 1. Voit avata Muotoilu-ruudun valitsemalla maalirullakuvakkeen **Visualisoinnit**-välilehdessä.
 
-1. Laajenna **Selite**-vaihtoehtoja:
+1. Laajenna **Selite**-vaihtoehdot:
 
     ![Näyttökuva Selite-kortista.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-legends.png)
 
@@ -112,7 +112,7 @@ Jos haluat palauttaa kaikki muutokset, valitse **Palauta oletusasetukseen** **Ta
 
 1. Lisää selitteen otsikko vaihtamalla **otsikon** tilaksi **Käytössä**.
 
-1. Kirjoita *Esimies***Selitteen nimi** -kenttään.
+1. Kirjoita *Esimies* **Selitteen nimi** -kenttään.
 
 1. Muuta **väri** mustaksi.
 

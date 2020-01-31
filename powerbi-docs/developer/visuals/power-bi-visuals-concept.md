@@ -18,19 +18,19 @@ ms.locfileid: "74700842"
 ---
 # <a name="power-bi-visual-concept"></a>Power BI -visualisointikonsepti
 
-Artikkelissa kerrotaan, miten käyttäjä ja visualisointi toimivat yhdessä Power BI:ssa ja miten käyttäjä on vuorovaikutuksessa Power BI -visualisoinnin kanssa. Näet kaaviosta, mitkä toiminnot vaikuttavat suoraan visualisointiin tai Power BI:iin (esimerkiksi kun käyttäjä valitsee kirjanmerkit).
+Artikkelissa kerrotaan, miten käyttäjä ja visualisointi toimivat yhdessä Power BI:ssä ja miten käyttäjä on vuorovaikutuksessa Power BI -visualisoinnin kanssa. Näet kaaviosta, mitkä toiminnot vaikuttavat suoraan visualisointiin tai Power BI:hin (esimerkiksi kun käyttäjä valitsee kirjanmerkit).
 
 ![Power BI -visualisointi](./media/visual-concept.svg)
 
-## <a name="the-visual-gets-update-from-power-bi"></a>Visualisointi saa päivityksen Power BI:lta
+## <a name="the-visual-gets-update-from-power-bi"></a>Visualisointi saa päivityksen Power BI:stä
 
 Visualisoinnissa on `update`-menetelmä. Tämä menetelmä sisältää visualisoinnin päälogiikan, ja se on vastuussa kaavion hahmontamisesta tai tietojen visualisoinnista.
 
-Lisää päivityksiä `update`-metodille.
+Lisää päivityksiä saa kutsumalla `update`-menetelmää.
 
 ### <a name="user-interacts-with-visual-through-power-bi"></a>Käyttäjä on vuorovaikutuksessa visualisoinnin kanssa Power BI:n kautta
 
-* Käyttäjä avaa visuaalisten ominaisuuksien paneelin.
+* Käyttäjä avaa visualisoinnin ominaisuuspaneelin.
 
     Power BI noutaa tuetut objektit ja ominaisuudet visualisoinnista `capabilities.json` sekä ominaisuuksien todellisten arvojen vastaanottamiseksi Power BI-kutsuissa `enumerateObjectInstances` visualisointimenetelmässä.
 
@@ -38,39 +38,39 @@ Lisää päivityksiä `update`-metodille.
 
     Jos haluat lisätietoja, [lue visualisoinnin ominaisuuksista](capabilities.md).
 
-* [Käyttäjä voi muuttaa visualisoinnin ominaisuutta](../../visuals/power-bi-visualization-customize-title-background-and-legend.md) muotopaneelissa.
+* [Käyttäjä voi muuttaa visualisoinnin ominaisuutta](../../visuals/power-bi-visualization-customize-title-background-and-legend.md) muotoilupaneelissa.
 
-    Kun olet muokannut ominaisuuden arvoa, Power BI kutsuu visualisoinnin `update` menetelmää ja siirtää Update-menetelmään uuden `options`, jossa on uudet arvot objekteille.
+    Kun olet muokannut ominaisuuden arvoa, Power BI kutsuu visualisoinnin `update`-menetelmää ja siirtää siihen uudet `options`-arvot objekteille.
 
-    Lisätietoja saa [lukemalla lisää visualisointien objekteista ja ominaisuuksista](objects-properties.md).
+    [Lue täältä lisätietoja visualisointien objekteista ja ominaisuuksista](objects-properties.md).
 
 * Käyttäjä muuttaa visualisoinnin kokoa.
 
-    Kun käyttäjä muuttaa visualisoinnin kokoa, Power BI kutsuu `update` metodia uudella `option` objektilla. Asetukset sisältävät sisäkkäisen `viewport` objektin, jonka uusi leveys ja korkeus sopivat visualisointiin.
+    Kun käyttäjä muuttaa visualisoinnin kokoa, Power BI kutsuu `update`-metodia uudella `option`-objektilla. Asetukset sisältävät sisäkkäisen `viewport`-objektin visualisoinnin uudella leveydellä ja korkeudella.
 
 * Käyttäjä käyttää raportti-, sivu- tai visualisointitason suodatinta.
 
-    Power BI suodattaa tiedot suodatusehtojen mukaan ja kutsuu visualisoinnin `update` menetelmää, joka antaa uudet tiedot visualisointiin.
+    Power BI suodattaa tiedot suodatusehtojen mukaan ja kutsuu visualisoinnin `update`-menetelmää, joka antaa uudet tiedot visualisointiin.
 
-    Visualisointi saa uuden `options` päivityksen uusilla tiedoilla jossakin sisäkkäisessä objektissa. Se määräytyy visualisoinnin tietonäkymän määritysten mukaan.
+    Visualisointi saa uuden `options`-päivityksen uusilla tiedoilla jossakin sisäkkäisessä objektissa. Se määräytyy visualisoinnin tietonäkymän yhdistämismäärityksen mukaan.
 
     Lisätietoja on artikkelissa [Tietonäkymän yhdistämismääritykset](dataview-mappings.md).
 
 * Käyttäjä valitsee arvopisteen raportin toisesta visualisoinnista.
 
-    Power BI suodattaa tai korostaa valittuja arvopisteitä ja kutsuu `update` metodia visualisoinnissa.
+    Power BI suodattaa tai korostaa valittuja arvopisteitä ja kutsuu `update`-menetelmää visualisoinnissa.
 
     Visualisointi hakee uudet suodatetut tiedot tai samat tiedot, jotka sisältävät valikoiman korostuksia.
 
     Lisätietoja saa artikkelista [Tietojen korostaminen visualisoinneissa](highlight.md).
 
-* Käyttäjä valitsee kirjanmerkit raportin kirjanmerkit -paneelista.
+* Käyttäjä valitsee kirjanmerkin raportin kirjanmerkkipaneelista.
 
     Tällöin voi tapahtua kaksi toimintoa:
 
-    1. Power BI kutsuu toimintoa, joka on rekisteröity menetelmällä`registerOnSelectionCallback` ja takaisinkutsutoiminto hakee vastaavan kirjanmerkin valintamatriisit.
+    1. Power BI kutsuu funktiota, joka on rekisteröity menetelmällä `registerOnSelectionCallback`, ja takaisinkutsutoiminto hakee vastaavan kirjanmerkin valintamatriisit.
 
-    2. Power BI kutsuu `update` menetelmää, joka sisältää `options`vastaavan suodatusobjektin.
+    2. Power BI kutsuu `update`-menetelmää, joka sisältää vastaavan suodatusobjektin `options`-objektissa.
 
     Kummassakin tapauksessa visualisoinnin on muutettava visualisointitilaa vastaanotettujen valintojen tai suodatusobjektin mukaan.
 
@@ -80,10 +80,10 @@ Lisää päivityksiä `update`-metodille.
 
 ### <a name="user-interacts-with-visual-directly"></a>Käyttäjä on vuorovaikutuksessa visualisoinnin kanssa suoraan
 
-* Käyttäjä siirtää osoitinta tieto-osan päälle
+* Käyttäjä siirtää osoittimen tietoelementin päälle
 
-    Visualisointi voi näyttää lisätietoja arvopisteen Power BI Tooltips-ohjelmointirajapinnasta.
-    Käyttäjä pitää hiiren osoitinta visuaalisessa osassa, jossa visualisointi voi käsitellä tapahtuman ja näyttää tietoja työkaluvihje-osassa.
+    Visualisointi voi näyttää lisätietoja arvopisteestä Power BI:n työkaluvihjeiden ohjelmointirajapinnan kautta.
+    Käyttäjä pitää hiiren osoitinta visualisoinnin päällä. Visualisointi voi käsitellä tapahtumaa ja näyttää tietoja työkaluvihje-elementissä.
 
     Visualisointi voi näyttää vakiotyökaluvihjeen tai raporttisivun työkaluvihjeen.
 
@@ -91,39 +91,39 @@ Lisää päivityksiä `update`-metodille.
 
 * Käyttäjä muuttaa visuaalisia ominaisuuksia (esimerkki: käyttäjä laajentaa puuta ja visualisointi tallentaa tilan ominaisuuksissa)
 
-    Visualisointi voi tallentaa ominaisuuksien arvot Power BI API:n kautta. Esimerkiksi kun käyttäjä on vuorovaikutuksessa visualisoinnin kanssa. Ja visualisoinnin on tallennettava tai päivitettävä ominaisuusarvot. Visualisointi voi kutsua `presistProperties` menetelmän.
+    Visualisointi voi tallentaa ominaisuuksien arvot Power BI -ohjelmointirajapinnan kautta. esimerkiksi kun käyttäjä on vuorovaikutuksessa visualisoinnin kanssa. Visualisoinnin on myös tallennettava tai päivitettävä ominaisuusarvot. Visualisointi voi kutsua `presistProperties`-menetelmää.
 
 * Käyttäjä napsauttaa URL-linkkiä.
 
-    Visualisointi ei oletusarvoisesti voi avata URL-osoitetta. Jos haluat avata URL-osoitteen uudessa välilehdessä, visualisoinnin tulee kutsua `launchURL` menetelmä ja välittää URL-osoite parametrina.
+    Visualisointi ei oletusarvoisesti voi avata URL-osoitetta. Jos haluat, että URL-osoite avataan uudessa välilehdessä, visualisoinnin tulee kutsua `launchURL`-menetelmää ja välittää URL-osoite parametrina.
 
-    Lisätietoja on kohdassa [URL API:n käynnistäminen](launch-url.md).
+    Lisätietoja on kohdassa [URL-ohjelmointirajapinnan käynnistäminen](launch-url.md).
 
-* Käyttäjä käyttää suodatinta, joka heittää visualisoinnin
+* Käyttäjä käyttää suodatinta visualisoinnissa
 
-    Visualisointi kutsuu `applyJSONFilter` ja läpäisee suodatusehdot, joiden avulla suodatetaan tietojen suodattaminen toisessa visualisoinnissa.
+    Visualisointi kutsuu `applyJSONFilter`-menetelmää ja lähettää suodatusehdot, joiden avulla suodatetaan tietojen suodattaminen toisessa visualisoinnissa.
 
-    Visualisointi voi käyttää useita suodatintyyppejä, esimerkiksi perus- ja erikoissuodatusta sekä monikkosuodatinta.
+    Visualisointi voi käyttää useita suodatintyyppejä, esimerkiksi perus- ja lisäsuodatusta sekä monikkosuodatinta.
 
     Jos haluat lisätietoja suodattimista, [lue, miten Power BI -visualisoinnit voivat suodattaa tietoja muissa visualisoinneissa](filter-api.md).
 
 * Käyttäjä napsauttaa tai valitsee visualisoinnin elementtejä.
 
-    Jos haluat lisätietoja valinnasta, [lue, miten visualisointi toimii](selection-api.md).
+    Jos haluat lisätietoja valinnasta, [lue visualisoinnin vuorovaikutuksesta](selection-api.md).
 
 ### <a name="the-visual-interacts-with-power-bi"></a>Visualisointi on vuorovaikutuksessa Power BI:n kanssa
 
-* Visualisointi pyytää enemmän tietoja Power BI:sta.
+* Visualisointi pyytää enemmän tietoja Power BI:stä.
 
-    Visualisointi voi käsitellä tieto-osan osakohtaisesti. FetchMoreData-ohjelmointirajapintamenetelmä pyytää tietojoukon seuraavaa osaa.
+    Visualisointi voi käsitellä tietoja osakohtaisesti. FetchMoreData-ohjelmointirajapintamenetelmä pyytää tietojoukon seuraavaa osaa.
 
-    Jos haluat lisätietoja `fetchMoreData`, [lue, miten voit noutaa lisätietoja Power BI:sta](fetch-more-data.md)
+    Jos haluat lisätietoja `fetchMoreData`-menetelmästä, [lue, miten voit noutaa lisätietoja Power BI:stä](fetch-more-data.md)
 
 * Tapahtumapalvelu
 
-    Power BI voi viedä raportteja PDF-muotoon tai lähettää ne sähköpostitse (vain sertifioituja visualisointeja tuetaan). Jos haluat ilmoittaa Power BI:lle, että hahmontamistoiminto on valmis ja se on valmis tallentamaan PDF-tiedoston tai sähköpostiviestin, visualisoinnin tulee kutsua ohjelmointirajapinta tapahtumien hahmontamiseen.
+    Power BI voi viedä raportteja PDF-muotoon tai lähettää ne sähköpostitse (vain sertifioituja visualisointeja tuetaan). Jos haluat, että visualisointi ilmoittaa Power BI:lle, kun hahmontaminen on valmis ja se on valmis tallentamaan PDF-tiedoston tai lähettämään sähköpostiviestin, sen tulee kutsua tapahtumien hahmontamisen ohjelmointirajapintaa.
 
-    Jos haluat lisätietoja, [lue raporttien viemisestä Power BI:sta PDF-muotoon](../../consumer/end-user-pdf.md)
+    Jos haluat lisätietoja, [lue raporttien viemisestä Power BI:stä PDF-muotoon](../../consumer/end-user-pdf.md)
 
     Lue lisätietoja [Tapahtumapalvelusta](event-service.md)
 

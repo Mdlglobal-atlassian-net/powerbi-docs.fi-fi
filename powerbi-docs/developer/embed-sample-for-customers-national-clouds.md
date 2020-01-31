@@ -54,7 +54,7 @@ Tässä artikkelissa näytetään koodi, jota käytetään GitHubin [App Owns Da
 * Government Community Cloud (GCC):
 
     > [!NOTE]
-    > Government Community Cloudista (GCC) peräisin olevan Power BI -sisällön upottaminen voidaan tehdä vain Office 356 SKU:n avulla. Muut kansalliset pilvipalveluasiakkaat voivat käyttää [Office 356- tai Azure-varastointiyksikköjä](embedded-faq.md#what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365).
+    > Government Community Cloudista (GCC) peräisin olevan Power BI -sisällön upottaminen voidaan tehdä vain Office 356 SKU:n avulla. Muiden kansallisten pilvipalveluiden asiakkaat voivat käyttää [Office 356- tai Azure-varastointiyksikköjä](embedded-faq.md#what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365).
 
 1. Korvaa Cloud.config-tiedosto tiedoston GCCCloud.config sisällöllä.
 

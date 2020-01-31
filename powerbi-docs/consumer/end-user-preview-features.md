@@ -7,20 +7,25 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 01/17/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5189c92c9da29b38d9ffaa4bf59e271e08fc4b2c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ad7e2133d531abcbb2165dc2be9846a6a70f4fc0
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73862708"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537418"
 ---
 # <a name="opt-in-for-power-bi-service-preview-features"></a>Power BI -palvelun esikatselutoimintojen käyttäminen
 ## <a name="what-are-preview-features"></a>Mitä ovat *esikatseluominaisuudet*?
 Kun teemme parannuksia Power B -palveluun, julkaisemme joitakin uusia toimintoja *esikatseluominaisuuksina*. Esikatseluominaisuuksia voidaan ottaa käyttöön ja poistaa käytöstä niitä kokeiltaessa.
 
+Jotkin esikatselutoiminnot voidaan ottaa käyttöön ja poistaa käytöstä Power BI koontinäytöstä, aloitussivulta tai itse raportista.
+
+   ![Uusi ulkoasu -vaihtokytkin](./media/end-user-preview-features/power-bi-toggle.png)
+
+Muut esikatselutoiminnot ovat käytettävissä *Asetukset*-valikossa. Tässä artikkelissa kerrotaan, miten voit käyttää esikatselutoimintoja Asetukset-valikon kautta.
 
 ## <a name="find-previews-and-turn-them-on-and-off"></a>Etsi esikatseluominaisuudet ja ota ne käyttöön (tai poista käytöstä)
 1. Avaa Asetukset-valikko valitsemalla Power BI-näytön oikeasta yläkulmasta hammaspyöräkuvake ja valitse **Asetukset**.

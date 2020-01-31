@@ -1,179 +1,168 @@
 ---
 title: Sarakkeen lisääminen esimerkistä Power BI Desktopissa
-description: Luo nopeasti uusi sarake Power BI Desktopissa käyttämällä olemassa olevia sarakkeita esimerkkeinä
+description: Luo nopeasti uusi sarake Power BI Desktopissa käyttämällä olemassa olevia sarakkeita esimerkkeinä.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d07cfda18f44a0872c8c9567aa29ac49a98622a7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b10bbaa4158e6c5392cb6ed937c54bdbb5d555d2
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869453"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538487"
 ---
-# <a name="add-a-column-from-an-example-in-power-bi-desktop"></a>Sarakkeen lisääminen esimerkistä Power BI Desktopissa
-Huhtikuussa 2017 julkaistusta **Power BI Desktop** -versiosta alkaen voit lisätä uusia tietosarakkeita malliin **Kyselyeditorin** avulla antamalla vähintään yksi malliarvo uudelle sarakkeelle. Voit luoda uuden sarakkeen nykyisestä valinnasta tai syöttämällä tietoja perustuen kaikkiin (tai valittuihin) sarakkeisiin tietyssä taulukossa.
+# <a name="add-a-column-from-examples-in-power-bi-desktop"></a>Sarakkeen lisääminen esimerkeistä Power BI Desktopissa
+Power Query -editorin *Lisää sarake esimerkeistä* -toiminnolla voit lisätä uusia sarakkeita tietomalliisi yksinkertaisesti antamalla vähintään yhden esimerkkiarvon uusille sarakkeille. Voit luoda uudet sarake-esimerkit valinnasta tai antaa syötteen kaikkien taulukossa olemassa olevien sarakkeiden perusteella.
 
 ![](media/desktop-add-column-from-example/add-column-from-example_01.png)
 
-Näin voit nopeasti ja helposti luoda uusia sarakkeita, mikä sopii erinomaisesti seuraavissa tilanteissa:
+*Lisäämällä sarakkeen esimerkistä* voit nopeasti ja helposti luoda uusia sarakkeita, mikä sopii erinomaisesti seuraavissa tilanteissa:
 
-* Sinulla on valmiina uuden sarakkeen tiedot, mutta et ole varma, mitä muunnosta (tai muunnoksia) sinun tulisi käyttää.
-* Tiedät, mitä muunnoksia tarvitset, mutta et ole varma mistä kohtaa löydät ne käyttöliittymästä.
-* Tiedät kaikki tarvitsemasi muunnokset *mukautettu sarake* -lausekkeen käyttöön **M**:ssä, mutta vähintään yksi lausekkeista ei ole käytettävissä tai valittavissa käyttöliittymässä.
+- Sinulla on valmiina uuden sarakkeen tiedot, mutta et ole varma, mitä muunnosta tai muunnoksia sinun pitäisi käyttää.
+- Tiedät, mitä muunnoksia tarvitset, mutta et ole varma mitä sinun pitäisi valita käyttöliittymästä.
+- Tiedät kaikki tarvitsemasi muunnokset *mukautettu sarake* -lausekkeen käyttöön *M*-kielessä, mutta vähintään yksi lausekkeista ei ole käytettävissä käyttöliittymässä.
 
-**Lisää sarake esimerkistä** -ominaisuuden käyttö on helppoa ja yksinkertaista. Seuraavissa osissa on käytännön esimerkkejä.
+Sarakkeen lisääminen esimerkistä on helppoa ja yksinkertaista. Seuraavissa osissa näytetään, miten helppoa se on.
 
-## <a name="use-query-editor-to-add-a-new-column-from-examples"></a>Uuden sarakkeen lisääminen esimerkeistä Kyselyeditorin avulla
-Luo uusi sarake esimerkistä käynnistämällä **Kyselyeditori**. Voit käynnistää Kyselyeditorin valitsemalla **Power BI Desktopin** **Aloitus**-valintanauhasta **Muokkaa kyselyitä**.
+## <a name="add-a-new-column-from-examples"></a>Uuden sarakkeen lisääminen esimerkeistä
 
-![](media/desktop-add-column-from-example/add-column-from-example_02.png)
+Jos haluat noutaa mallitietoja Wikipediasta, valitse **Nouda tiedot** > **Verkko** Power BI Desktopin valintanauhan **Aloitus**-välilehdestä. 
 
-Jos haluat saada tietoja verkkosivulta, siirry **Aloitus**-välilehteen, valitse **Nouda tiedot > Verkko** ja liitä URL-osoite valintaikkunaan, joka tulee näkyviin. Tässä artikkelissa käytetään tietoja, jotka ovat peräisin Wikipedia-artikkelista. Voit noutaa tiedot itsellesi napsauttamalla seuraavaa linkkiä ja seuraamalla ohjeita:
+![Tietojen noutaminen verkosta](media/desktop-add-column-from-example/add-column-from-example_02.png)
 
-* [**Yhdysvaltain osavaltiot**](https://wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States)
+Liitä seuraava URL-osoite näyttöön avautuvassa valintaikkunassa ja valitse **OK**: 
 
-Kun olet käynnistänyt **Kyselyeditorin** ja ladannut tietoja, voit aloittaa sarakkeen lisäämisen esimerkeistä. Lisää uusi sarake valitsemalla **Kyselyeditorissa** **Lisää sarake** -välilehti valintanauhassa ja valitsemalla **Sarake esimerkeistä**. Jos valitset avattavan luettelon, voit valita joko **Kaikista sarakkeista** (oletusarvo, jos valitset painikkeen luettelon sijaan) tai **Valinnasta**. Tässä artikkelissa käydään läpi valinta **Kaikista sarakkeista**.
+*https:\//wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States*
 
-![](media/desktop-add-column-from-example/add-column-from-example_03.png)
+Valitse **Siirtymistoiminto**-valintaikkunassa **Yhdysvaltain osavaltiot** -taulukko ja valitse sitten **Muunna tiedot**. Taulukko avautuu Power Query -editorissa.
 
-## <a name="the-add-column-from-examples-pane"></a>Lisää sarake esimerkeistä -ruutu
-Kun valitsen uuden sarakkeen lisäämisen esimerkeistä, uusi ruutu tulee näkyviin kyseisen taulukon sarakkeilla (sinun on ehkä vieritettävä alaspäin nähdäksesi ne kaikki). Uusi **Sarake1** näkyy myös oikealla. Tämä on sarake, jonka **Power BI Desktop** luo esimerkkien perusteella. Uuden **Sarake1**-otsikon alla on tyhjiä soluja, johon voit lisätä omia esimerkkejä, joiden avulla Power BI luo esimerkkien mukaisia sääntöjä ja muunnoksia.
+Jos taas haluat avata jo ladatut tiedot Power BI Desktopista, valitse **Muokkaa kyselyitä** valintanauhan **Aloitus**-välilehdestä. Tiedot avautuvat Power Query -editoriin. 
 
-Huomaa myös, että tämä on **Käytössä oleva vaihe** **Kyselyasetukset**-ruudussa. Tavalliseen tapaan **Kyselyeditori** tallentaa muunnosvaiheet ja käyttää niitä kyselyssä järjestyksessä.
+![Valitse Muokkaa kyselyjä Power BI Desktopssa](media/desktop-add-column-from-example/add-column-from-example_05.png)
 
-![](media/desktop-add-column-from-example/add-column-from-example_04.png)
+Kun mallitiedot ovat avautuneet Power Query Editorissa, valitse valintanauhassa **Lisää sarake** -välilehti valintanauhassa ja valitse sitten **Sarake esimerkeistä**. Valitse **Sarake esimerkeistä** -kuvake, jos haluat luoda sarakkeen kaikista olemassa olevista sarakkeista, tai valitse avausnuoli, jos haluat valita vaihtoehdon **Kaikista sarakkeista** tai **Valinnasta**. Käytä tässä opastuksessa vaihtoehtoa **Kaikista sarakkeista**.
 
-Tätä kutsutaan **Lisää sarakkeita esimerkeistä** -ruuduksi, joka koostuu neljästä pääalueesta:
+![Valitse Lisää sarake esimerkeistä](media/desktop-add-column-from-example/add-column-from-example_03.png)
 
-1. **Komentopalkki**, joka sisältää lyhyen kuvauksen ominaisuudesta tai muunnoksesta.
-2. **Lähetä palautetta** -vaihtoehto, jonka avulla lähetettyjä ehdotuksia käytetään Power BI:n kehittämisessä.
-3. **OK**- ja **Peruuta**-painikkeet, joiden avulla voit vahvistaa muunnokset ja lisätä sarakkeen tai peruuttaa toiminnon.
-4. Uuden sarakkeen alue, jonka riveille voit lisätä malliarvoja (Power BI -esimerkkiä varten), jotka liittyvät kyseisen rivin muihin sarakkeisiin.
+## <a name="add-column-from-examples-pane"></a>Lisää sarake esimerkeistä -ruutu
+Kun valitset **Lisää sarake** > **esimerkeistä**, **Lisää sarake esimerkeistä** -ruutu avautuu taulukon yläosaan. Uusi **Sarake 1** näkyy olemassa olevien sarakkeiden oikealla puolella (saatat joutua vierittämään nähdäksesi ne kaikki). Kun annat esimerkkiarvot **Sarakkeen 1** tyhjille soluille, Power BI luo esimerkkejäsi vastaavat säännöt ja muunnokset ja täyttää loput sarakkeesta niillä.
 
-![](media/desktop-add-column-from-example/add-column-from-example_05.png)
+Huomaa, että **Sarake esimerkeistä** näkyy myös **Kyselyasetukset**-ruudun **Käytetty vaihe** -kohdassa. Tavalliseen tapaan Power Query -editori tallentaa muunnosvaiheet ja käyttää niitä kyselyssä järjestyksessä.
 
-Kun olet kirjoittamassa esimerkkiä uuteen sarakkeeseen, Power BI näyttää esikatselun sarakkeesta havaittujen muunnosten perusteella. Jos kirjoitat esimerkiksi *Alabama* ensimmäiselle riville, se vastaa *Alabama*-arvoa taulukon ensimmäisessä sarakkeessa. Heti, kun painat *Enter*-näppäintä, Power BI täyttää sarakkeen kyseisen arvon mukaan.
+![Lisää sarake esimerkeistä -ruutu](media/desktop-add-column-from-example/add-column-from-example_04.png)
 
-Jos kuitenkin siirryt sen jälkeen esimerkiksi riviin, jonka sisältö on *Massachusetts [E]* ja poistat lopussa olevan *[E]* -osan (koska et tarvitse sitä enää), Power BI havaitsee muutoksen ja luo muunnoksen esimerkin perusteella. Huomaa muunnoksen selitys keskimmäisessä yläruudussa.
+Kun olet kirjoittamassa esimerkkiä uuteen sarakkeeseen, Power BI näyttää esikatselun sarakkeesta luomiensa muunnosten perusteella. Jos kirjoitat esimerkiksi *Alabama* ensimmäiselle riville, se vastaa **Alabama**-arvoa taulukon ensimmäisessä sarakkeessa. Kun painat Enter-näppäintä, Power BI täyttää loput uudesta sarakkeesta ensimmäisen sarakkeen arvon perusteella ja antaa sarakkeelle nimen **Nimi ja postiosoitetunnus[12] - Kopio**.
 
-![](media/desktop-add-column-from-example/add-column-from-example_06.png)
+Siirry nyt uuden sarakkeen riville **Massachusetts [E]** ja poista merkkijonosta osa **[E]** . Power BI havaitsee muutoksen ja luo muunnoksen esimerkin perusteella. Power BI kuvailee **Lisää sarake esimerkeistä** -ruudussa olevat muunnokset ja nimeää sarakkeen uudelleen muotoon **Ennen erotinta oleva teksti.** 
 
-Kun jatkat esimerkkien lisäämistä, **Kyselyeditori** lisää muunnoksia. Kun olet tyytyväinen, voit vahvistaa muutokset valitsemalla **OK**.
+![Muunnettu sarake esimerkeistä](media/desktop-add-column-from-example/add-column-from-example_06.png)
 
-## <a name="see-add-column-from-examples-in-action"></a>Lisää sarake esimerkeistä käytännössä
-Haluatko nähdä tämän käytännössä? Seuraavassa videossa kuvataan toimintoa käytännössä aiemmin tässä esimerkissä annetulla tietolähteellä. Tutustu ja seuraa mukana!
+Kun jatkat esimerkkien lisäämistä, Power Query -editori lisää muunnoksia. Kun olet tyytyväinen, ota muutokset käyttöön valitsemalla **OK**. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-ykbVW9wQfw" frameborder="0" allowfullscreen></iframe>
+Voit nimetä uuden sarakkeen uudelleen kaksoisnapsauttamalla sarakeotsikkoa tai napsauttamalla sitä hiiren kakkospainikkeella ja valitsemalla **Nimeä uudelleen**. 
 
-## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
-Monia muunnoksia voi käyttää **lisättäessä saraketta esimerkeistä**, mutta ei kaikkia. Seuraavassa luettelossa on kaikki tuetut muunnokset.
+Tässä videossa esitellään **Lisää sarake esimerkeistä** -toiminnon käyttöä mallitietolähteen avulla: 
 
-* **Viittaus**
+[Power BI Desktop: Lisää sarake esimerkeistä](https://www.youtube.com/watch?v=-ykbVW9wQfw). 
+
+## <a name="list-of-supported-transformations"></a>Luettelo tuetuista muunnoksista
+Monet muunnokset (eivät kaikki) ovat käytettävissä käytettäessä **Lisää sarake esimerkeistä** -toimintoa. Seuraavassa luettelossa ovat tuetut muunnokset:
+
+**Yleistä**
+
+- Ehdollinen sarake
+
+**Viittaus**
   
-  * Viittaus tiettyyn sarakkeeseen (mukaan lukien rajaukset, puhdistukset ja kirjainkoon muutokset)
+- Viittaus tiettyyn sarakkeeseen, mukaan lukien rajaukset, puhdistukset ja kirjainkoon muutokset
 
-* **Tekstin muunnokset**
-  
-  * Yhdistä (tukee merkkijonojen ja kokonaisen sarakkeen arvojen yhdistämistä)
-  * Korvaa
-  * Pituus
-  * Poimi   
-    * Ensimmäiset merkit
-    * Viimeiset merkit
-    * Alue
-    * Ennen erotinta oleva teksti
-    * Erottimen jälkeen oleva teksti
-    * Erottimien välissä oleva teksti
-    * Pituus
+**Tekstin muunnokset**
 
-* Seuraavat **tekstin muunnokset** ovat käytettävissä marraskuussa 2017 julkaistusta **Power BI Desktop** -versiosta lähtien:
-    
-  * Poista merkit
-  * Säilytä merkit
+- Yhdistä (tukee merkkijonojen ja kokonaisen sarakkeen arvojen yhdistämistä)
+- Korvaa
+- Pituus
+- Poimi   
+  - Ensimmäiset merkit
+  - Viimeiset merkit
+  - Alue
+  - Ennen erotinta oleva teksti
+  - Erottimen jälkeen oleva teksti
+  - Erottimien välissä oleva teksti
+  - Pituus
+  - Poista merkit
+  - Säilytä merkit
 
 > [!NOTE]
 > Kaikki *tekstin* muunnokset ottavat huomioon mahdolliset rajaus-, puhdistus- tai kirjainkoon muunnostarpeet sarakkeen arvoissa.
-> 
-> 
 
-* **Päivämäärän muunnokset**
-  
-  * Päivä
-  * Viikon päivä
-  * Viikon päivän nimi
-  * Vuoden päivä
-  * Kuukausi
-  * Kuukauden nimi
-  * Vuoden neljännes
-  * Kuukauden viikko
-  * Vuoden viikko
-  * Vuosi
-  * Ikä
-  * Vuoden alku
-  * Vuoden loppu
-  * Kuukauden alku
-  * Kuukauden loppu
-  * Vuosineljänneksen alku
-  * Kuukauden päivien määrä
-  * Vuosineljänneksen loppu
-  * Viikon alku
-  * Viikon loppu
-  * Kuukauden päivä
-  * Päivän alku
-  * Päivän loppu
+**Päivämäärän muunnokset**
 
+- Päivä
+- Viikon päivä
+- Viikon päivän nimi
+- Vuoden päivä
+- Kuukausi
+- Kuukauden nimi
+- Vuoden neljännes
+- Kuukauden viikko
+- Vuoden viikko
+- Vuosi
+- Ikä
+- Vuoden alku
+- Vuoden loppu
+- Kuukauden alku
+- Kuukauden loppu
+- Vuosineljänneksen alku
+- Kuukauden päivien määrä
+- Vuosineljänneksen loppu
+- Viikon alku
+- Viikon loppu
+- Kuukauden päivä
+- Päivän alku
+- Päivän loppu
 
-* **Ajan muunnokset**
-  
-  * Tunti
-  * Minuutti
-  * Sekunti  
-  * Paikallinen aika
+**Ajan muunnokset**
+
+- Hour
+- Minute
+- Second  
+- Paikallinen aika
 
 > [!NOTE]
 > Kaikki *päivämäärän* ja *ajan* muunnokset ottavat huomioon mahdollisen tarpeen muuntaa sarakkeen arvot *päivämääräksi* tai *ajaksi* tai *päivämääräksi/ajaksi*.
-> 
-> 
 
-* **Lukujen muunnokset** 
+**Lukujen muunnokset** 
 
-  * Absoluuttinen arvo
-  * Arkuskosini
-  * Arkussini
-  * Arkustangentti
-  * Muunna luvuksi
-  * Kosini
-  * Kuutio
-  * Jaa
-  * Eksponentti
-  * Kertoma
-  * Kokonaislukujako
-  * Parillinen
-  * Pariton
-  * Ln
-  * 10-kantainen logaritmi
-  * Jakojäännös
-  * Kertolasku
-  * Pyöristä alaspäin
-  * Pyöristä ylöspäin
-  * Etumerkki
-  * Sin
-  * Neliöjuuri
-  * Neliö
-  * Erotus
-  * Summa
-  * Tangentti
+- Absoluuttinen arvo
+- Arkuskosini
+- Arkussini
+- Arkustangentti
+- Muunna luvuksi
+- Kosini
+- Kuutio
+- Jaa
+- Eksponentti
+- Kertoma
+- Kokonaislukujako
+- Parillinen
+- Pariton
+- Ln
+- 10-kantainen logaritmi
+- Jakojäännös
+- Kertolasku
+- Pyöristä alaspäin
+- Pyöristä ylöspäin
+- Etumerkki
+- Sin
+- Neliöjuuri
+- Neliö
+- Erotus
+- Summa
+- Tangentti
+- Jakauma/alueet
 
-* Seuraavat **luvun muunnokset** ovat käytettävissä marraskuussa 2017 julkaistusta **Power BI Desktop** -versiosta lähtien:
-
-  * Jakauma/alueet
-
-* **Yleiset**
-  
-  * Ehdollinen sarake

@@ -1,6 +1,6 @@
 ---
 title: 'DAX: Käytä COUNTROWS-kohdetta COUNT-kohteen sijaan'
-description: Lue ohjeet COUNTROWS-virhefunktioiden käyttöön.
+description: Ohjeita COUNTROWS-funktioiden käyttöön.
 author: peter-myers
 ms.reviewer: asaxton
 ms.service: powerbi
@@ -17,35 +17,35 @@ ms.locfileid: "74700658"
 ---
 # <a name="dax-use-countrows-instead-of-count"></a>DAX: Käytä COUNTROWS-kohdetta COUNT-kohteen sijaan
 
-Tietomallinnuksena saatat joskus joutua kirjoittamaan DAX-lausekkeen, joka laskee taulukon rivit. Taulukko voi olla mallitaulukko tai lauseke, joka palauttaa taulukon.
+Tietojen mallintajana saatat joskus joutua kirjoittamaan DAX-lausekkeen, joka laskee taulukon rivejä. Taulukko voi olla mallitaulukko tai lauseke, joka palauttaa taulukon.
 
-Vaatimuksesi voidaan saavuttaa kahdella tavalla. Voit käyttää [COUNT](/dax/count-function-dax)-funktiota sarakkeiden arvojen laskemiseen tai voit laskea taulukon rivit käyttämällä [COUNTROWS](/dax/countrows-function-dax)-funktiota. Kumpikin funktio saavuttaa saman tuloksen, kunhan laskettu sarake ei sisällä tyhjiä kohtia.
+Vaatimuksesi voidaan saavuttaa kahdella tavalla. Voit käyttää [COUNT](/dax/count-function-dax)-funktiota sarakkeiden arvojen laskemiseen tai [COUNTROWS](/dax/countrows-function-dax)-funktiota taulukon rivien laskemiseen. Kumpikin funktio saavuttaa saman tuloksen, kunhan laskettu sarake ei sisällä tyhjiä kohtia.
 
-Seuraavassa mittarimäärityksessä esitetään esimerkki. Se laskee **OrderDate-** sarakearvojen määrän.
+Seuraavassa mittarimäärityksessä esitetään esimerkki. Se laskee **OrderDate**-sarakkeen arvojen määrän.
 
 ```dax
 Sales Orders =
 COUNT(Sales[OrderDate])
 ```
 
-Jos **Sales**-taulukon askelväli on yksi rivi myyntitilausta kohti ja **OrderDate**-sarake ei sisällä tyhjiä arvoja, mittaus palauttaa oikean tuloksen.
+Jos **Sales**-taulukon askelväli on yksi rivi myyntitilausta kohti ja **OrderDate**-sarake ei sisällä tyhjiä kohtia, mittari palauttaa oikean tuloksen.
 
-Seuraava on kuitenkin parempi vaihto ehto.
+Seuraava määritys on kuitenkin parempi vaihtoehto.
 
 ```dax
 Sales Orders =
 COUNTROWS(Sales)
 ```
 
-Toisen mittauksen käyttö on parempi kolmesta syystä:
+Toisen mittarin käyttö on parempi kolmesta syystä:
 
-- Se on tehokkaampaa, joten se toimii paremmin.
-- Siinä ei huomioida taulukon sarakkeissa olevia tyhjiä kohtia.
-- Kaavan tarkoitus on selkeämpi sen takia, että se on itsestään kuvaava.
+- Se on tehokkaampi, joten se toimii paremmin.
+- Siinä ei huomioida mahdollisia tyhjiä kohtia taulukon sarakkeissa.
+- Kaavan tarkoitus on selkeämpi, jopa itseään kuvaava.
 
 ## <a name="recommendation"></a>Suositus
 
-Kun aiot laskea taulukon rivejä, suosittelemme, että käytät aina COUNTROWS-funktiota.
+Kun aiot laskea taulukon rivejä, suosittelemme aina käyttämään COUNTROWS-funktiota.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

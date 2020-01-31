@@ -22,7 +22,7 @@ ms.locfileid: "74830606"
 
 
 > [!IMPORTANT]
-> **Tämä artikkeli on tarkoitettu Power BI -käyttäjille, joilla ei ole raportin tai tietojoukon muokkausoikeuksia. Tarkempia ohjeita lajitteluun saat kohdasta [Sarakkeen perusteella lajittelu Power BI Desktopissa](../desktop-sort-by-column.md)** .
+> **Tämä artikkeli on tarkoitettu Power BI -käyttäjille, joilla ei ole raportin tai tietojoukon muokkausoikeuksia. Tarkempia ohjeita lajitteluun saat artikkelista [Sarakkeen perusteella lajittelu Power BI Desktopissa](../desktop-sort-by-column.md)** .
 
 Voit muuttaa visualisoinnin ulkoasua Power BI -palvelussa lajittelemalla sen eri tietokenttien mukaan. Muuttamalla visualisoinnin lajittelua voit korostaa välitettäviä tietoja.
 
@@ -32,7 +32,7 @@ Voit lajitella visualisoinnit haluamallasi tavalla, olipa käytössä siten nume
 
 ## <a name="get-started"></a>Aloittaminen
 
-Pääset alkuun valitsemalla minkä tahansa visualisoinnin ja valitsemalla **Lisää toimintoja** (...).  Lajitteluvaihtoehtoja on kolme: **Lajittele laskevasti**, **Lajittele nousevasti**ja **Lajitteluperuste**. 
+Pääset alkuun valitsemalla minkä tahansa visualisoinnin ja valitsemalla **Lisää toimintoja** (...).  Lajitteluvaihtoehtoja on kolme: **Lajittele laskevaan järjestykseen**, **Lajittele nousevaan järjestykseen** ja **Lajitteluperuste**. 
     
 
 ![palkkikaavio, jonka X-akseli on lajiteltu aakkosjärjestykseen](media/end-user-change-sort/power-bi-more-actions.png)
@@ -59,7 +59,7 @@ Power BI -raportit säilyttävät suodattimet, osittajat, lajittelun ja muut tie
 
 ![pysyvä lajittelu](media/end-user-change-sort/power-bi-reset.png)
 
-Jos **Palauta oletukset** -painike on harmaana, raportin *suunnittelija* on poistanut käytöstä mahdollisuuden tallentaa (pysyvät) muutokset.
+Jos **Palauta oletukseksi** -painike on harmaana, raportin *suunnittelija* on poistanut käytöstä mahdollisuuden tallentaa (pysyvät) muutokset.
 
 <a name="other"></a>
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys

@@ -7,30 +7,28 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/07/2019
-ms.openlocfilehash: f797dd55202ff4cba87cc3a15601d85091e94823
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 1f54ce3a6bfd69caa3f386b7684e3df7f725523d
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74164051"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709538"
 ---
 # <a name="connect-a-report-to-a-dataset-using-dynamic-binding"></a>Raportin yhdistäminen tietojoukkoon dynaamisen sidonnan avulla 
 
-Kun raportti on yhdistetty tietojoukkoon, voit käyttää dynaamista sidontaa. Raportin ja tietojoukon välistä yhteyttä kutsutaan *sidonnaksi*. Kun sidonta määritetään upotuskohdassa sen sijaan, että se olisi esimääritetty aiemmin, sidontaa kutsutaan [dynaamiseksi sidonnaksi](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLate_binding&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C5d5b0d2d62cf4818f0c108d7635b151e%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637087115150775585&sdata=AbEtdJvgy4ivi4v4ziuui%2Bw2ibTQQXBQNYRKbXn5scA%3D&reserved=0).
- 
+Kun raportti on yhdistetty tietojoukkoon, voit käyttää dynaamista sidontaa. Raportin ja tietojoukon välistä yhteyttä kutsutaan *sidonnaksi*. Kun sidonta määritetään upotuskohdassa sen sijaan, että se olisi esimääritetty aiemmin, sidontaa kutsutaan dynaamiseksi sidonnaksi.
+
 Kun upotat Power BI -raportin käyttäen *dynaamista sidontaa*, voit yhdistää saman raportin eri tietojoukkoihin käyttäjän tunnistetietojen mukaan.
- 
+
 Tämä tarkoittaa, että voit käyttää yhtä raporttia eri tietojen näyttämiseen sen mukaan, mihin tietojoukkoon se on yhdistetty. Esimerkiksi raportti, joka näyttää jälleenmyynnin arvot, voidaan yhdistää eri jälleenmyyjätietojoukkoihin. Siten voidaan tuottaa eri tuloksia sen mukaan, mihin jälleenmyyjän tietojoukkoon se on yhdistetty.
- 
+
 Raportin ja tietojoukon ei tarvitse sijaita samassa työtilassa. Molemmat työtilat (raportin sisältävä ja tietojoukon sisältävä) on määritettävä [kapasiteetille](azure-pbie-create-capacity.md).
 
 Varmista osana upottamista, että *luot tunnuksen, jolla on riittävät käyttöoikeudet*, ja *muokkaa määritysobjektia*.
 
-
 ## <a name="generating-a-token-with-sufficient-permissions"></a>Riittävät käyttöoikeudet sisältävän tunnuksen luominen
 
 Dynaamista sidontaa tuetaan molemmissa upotustilanteissa: *upottaminen organisaation käyttöön* ja *upottaminen asiakkaiden käyttöön*. Alla olevassa taulukossa on kuvattu jokaisen skenaarion huomioon otettavat seikat.
-
 
 |Skenaario  |Tietojen omistajuus  |Tunnus  |Vaatimukset  |
 |---------|---------|---------|---------|

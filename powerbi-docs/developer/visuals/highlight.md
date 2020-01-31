@@ -28,7 +28,7 @@ Jos määrität `supportsHighlight`-ominaisuuden arvoksi `true` kohteessa `capab
 Tässä esimerkissä huomaat, että 1-palkki on valittuna. Se on korostusmatriisin ainoa arvo. On myös tärkeää huomata, että käytössä voisi olla useita valintoja ja osittaisia korostuksia. Korostetut arvot esitetään tietonäkymässä.
 
 > [!Note]
-> Taulukon tietonäkymän yhdistäminen ei tue korostukset-ominaisuutta.
+> Taulukon tietonäkymän yhdistämismääritys ei tue korostusominaisuutta.
 
 ## <a name="highlight-data-points-with-categorical-data-view-mapping"></a>Korosta arvopisteet luokittaisella tietonäkymän yhdistämismäärityksellä
 

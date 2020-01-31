@@ -19,7 +19,7 @@ ms.locfileid: "74699086"
 # <a name="real-time-streaming-in-power-bi"></a>Reaaliaikainen suoratoisto Power BI:ssä
 Power BI: reaaliaikaisen suoratoiston avulla voit suoratoistaa tietoja ja päivittää koontinäyttöjä reaaliajassa. Kaikki Power BI:ssä luotavat visualisoinnit tai koontinäytöt voidaan luoda myös näyttämään ja päivittämään reaaliaikaisia tietoja ja visualisointeja. Tietojen suoratoistoon käytettävät laitteet ja lähteet voivat olla tehtaiden tunnistimia, sosiaalisen median lähteitä, huoltokäyttötietoja ja mitä tahansa muita, joista voidaan kerätä ja lähettää ajan mukaan määräytyviä tietoja.
 
-![Näyttökuva, joka näyttää reaaliaikaisten ympäristötunnistimien tulokset.](media/service-real-time-streaming/real-time-streaming-10.png)
+![Näyttökuva, jossa näkyy reaaliaikaisten ympäristötunnistimien tulokset.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Tässä artikkelissa kerrotaan, miten reaaliaikaisesti suoratoistava tietojoukko määritetään Power BI:ssä. Ennen siihen ryhtymistä on kuitenkin tärkeää tuntea erityyppiset reaaliaikaiset tietojoukot, jotka on suunniteltu näytettäviksi ruuduissa (ja koontinäytöissä), ja mitä eroja näiden tietojoukkojen välillä on.
 
@@ -198,7 +198,7 @@ Tässä esimerkissä käytämme julkisesti saatavilla olevaa virtaa **PubNubista
    ![](media/service-real-time-streaming/real-time-streaming_9.png)
 5. Palattuasi Power BI -työtilaan luo uusi koontinäyttä ja lisää sitten ruutu (katso tarvittaessa ohjeet edeltä). Tällä kerralla, kun luot ruudun ja valitset **Mukautetut suoratoistettavat tiedot**, sinulla on käytettävissäsi suoratoistettava tietojoukko. Nyt voit kokeilla, miten se toimii. Lisäämällä *numero*kenttiä viivakaavioihin ja lisäämällä sitten muita ruutuja saat reaaliaikaisen koontinäytön, joka näyttää seuraavanlaiselta:
    
-   ![Näyttökuva, joka näyttää reaaliaikaisten ympäristötunnistimien tulokset.](media/service-real-time-streaming/real-time-streaming-10.png)
+   ![Näyttökuva, jossa näkyy reaaliaikaisten ympäristötunnistimien tulokset.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Kokeile sitä nyt ja testaa, miten näytetietojoukko toimii. Sitten voit luoda omia tietojoukkoja ja suoratoistaa reaaliaikaiset tiedot Power BI:hin.
 

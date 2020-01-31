@@ -6,45 +6,45 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/15/2019
+ms.date: 01/23/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8bbf391135442d6490033c0fc65b7372154820d2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e3e9e8ebc7feda46cb4c79ffd1535807d04a178b
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73866419"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76709760"
 ---
-# <a name="use-performance-analyzer-to-examine-report-element-performance"></a>Raporttielementtien suorituskyvyn analysointi Suorituskyvyn analysointi -toiminnolla
+# <a name="use-performance-analyzer-to-examine-report-element-performance"></a>Raporttielementtien suorituskyvyn tarkastelu suorituskyvyn analysoinnin avulla
 
-**Power BI Desktopissa** voit selvittää, miten kaikki raporttielementit, kuten visualisoinnit ja DAX-kaavat, toimivat. **Performance Analyzerin** avulla voit tarkastella ja tallentaa lokeja, jotka mittaavat, miten kukin raporttielementti toimii, kun käyttäjät käyttävät niitä, ja missä suhteessa niiden suorituskyky on eniten (tai vähiten) resursseja vievä.
+**Power BI Desktopissa** voit selvittää, miten kaikki raporttielementit, kuten visualisoinnit ja DAX-kaavat, toimivat. **Suorituskyvyn analysoinnin** avulla voit tarkastella ja tallentaa lokeja, jotka mittaavat, miten kukin raporttielementti toimii, kun käyttäjät käyttävät niitä, ja missä suhteessa niiden suorituskyky on eniten (tai vähiten) resursseja vievä.
 
 ![Suorituskyvyn analysointi](media/desktop-performance-analyzer/performance-analyzer-01.png)
 
-Performance Analyzer tutkii ja näyttää keston, joka tarvitaan kaikkien käyttäjien välisten visualisointien käynnistämiseen tai päivittämiseen, ja esittää tiedot, jotta voit tarkastella tai viedä tuloksia tai porautua niihin. Suorituskyvyn analysoiminen auttaa tunnistamaan visualisointeja, jotka vaikuttavat raporttiesi tehokkuuteen ja tunnistamaan vaikutuksen syyn.
+Suorituskyvyn analysointi tutkii ja näyttää keston, joka tarvitaan kaikkien käyttäjien välisten visualisointien käynnistämiseen tai päivittämiseen, ja esittää tiedot, jotta voit tarkastella tai viedä tuloksia tai porautua niihin. Suorituskyvyn analysointi auttaa tunnistamaan visualisointeja, jotka vaikuttavat raporttiesi tehokkuuteen ja tunnistamaan vaikutuksen syyn.
 
-## <a name="displaying-the-performance-analyzer-pane"></a>Performance Analyzer -ruudun näyttäminen
+## <a name="displaying-the-performance-analyzer-pane"></a>Suorituskyvyn analysointi -ruudun näyttäminen
 
-Valitse **Power BI Desktopissa** **Näytä**-valintanauha. **Näytä**-alueella **Näkymä**-valintanauhasta voit valita **Performance Analyzerin** vieressä olevan valintaruudun Performance Analyzer -ruudun näyttämistä varten.
+Valitse **Power BI Desktopissa****Näytä**-valintanauha. **Näytä**-alueella **Näkymä**-valintanauhasta voit valita **Suorituskyvyn analysointi** -kohdan vieressä olevan valintaruudun Suorituskyvyn analysointi -ruudun näyttämiseksi.
 
-![Valitse Näytä-valintanauhasta Performance Analyzer](media/desktop-performance-analyzer/performance-analyzer-02.png)
+![Valitse Näytä-valintanauhasta Suorituskyvyn analysointi](media/desktop-performance-analyzer/performance-analyzer-02.png)
 
-Kun tämä on valittu, Performance Analyzer näkyy sen omassa ruudussa raportin piirtoalustan oikealla puolella.
+Kun tämä on valittu, suorituskyvyn analysointi näkyy omassa ruudussaan raportin piirtoalustan oikealla puolella.
 
-## <a name="using-performance-analyzer"></a>Performance Analyzerin käyttäminen
+## <a name="using-performance-analyzer"></a>Suorituskyvyn analysoinnin käyttäminen
 
-Performance Analyzer mittaa prosessointiaikaa (mukaan lukien visualisoinnin luonti-tai päivitysaika), joka vaaditaan, jotta voidaan päivittää kyselyn suorittamiseen johtaneen käyttäjän vuorovaikutuksen tuloksena aloitetut raporttielementit. Osittajan säätäminen edellyttää esimerkiksi osittajan visualisoinnin muuttamista, tietomalliin lähetettävän kyselyn ja siihen vaikuttavat visualisoinnit, jotka on päivitettävä uusien asetusten seurauksena. 
+Suorituskyvyn analysointi mittaa prosessointiaikaa (mukaan lukien visualisoinnin luonti-tai päivitysaika), joka vaaditaan, jotta voidaan päivittää kyselyn suorittamiseen johtaneen käyttäjän vuorovaikutuksen tuloksena aloitetut raporttielementit. Osittajan säätäminen edellyttää esimerkiksi osittajan visualisoinnin muuttamista, tietomalliin lähetettävän kyselyn ja siihen vaikuttavat visualisoinnit, jotka on päivitettävä uusien asetusten seurauksena. 
 
-Jos haluat Performance Analyzerin aloittavan tallennuksen, valitse **Aloita tallennus**
+Jos haluat suorituskyvyn analysoinnin aloittavan tallennuksen, valitse **Aloita tallennus**
 
 ![Aloita tallennus](media/desktop-performance-analyzer/performance-analyzer-03.png)
 
-Kaikki raportin toiminnot näytetään ja kirjataan Performance Analyzer -ruudussa siinä järjestyksessä, jossa Power BI on ladannut visualisoinnin. Sinulla voi olla esimerkiksi raportti, jonka päivittäminen käyttäjien mukaan kestää kauan. Joidenkin raportin visualisointien näyttäminen voi kestää kauan, kun liukusäädintä säädetään. Performance Analyzer voi kertoa sinulle, mikä visualisointi on syyllinen, ja tunnistaa, mitkä visualisoinnin näkökohdat vievät prosessissa pisimpään. 
+Kaikki raportin toiminnot näytetään ja kirjataan Suorituskyvyn analysointi -ruudussa siinä järjestyksessä, jossa Power BI on ladannut visualisoinnin. Sinulla voi olla esimerkiksi raportti, jonka päivittäminen käyttäjien mukaan kestää kauan. Joidenkin raportin visualisointien näyttäminen voi kestää kauan, kun liukusäädintä säädetään. Suorituskyvyn analysointi voi kertoa sinulle, mikä visualisointi on syyllinen, ja tunnistaa, mitkä visualisoinnin näkökohdat vievät prosessissa pisimpään. 
 
 Kun aloitat tallennuksen, **Aloita tallennus** -painike näkyy harmaana (passiivinen, koska olet jo aloittanut tallennuksen) ja **Pysäytä**-painike on aktiivinen. 
 
-Performance Analyzer kerää ja näyttää suorituskykymittauksen tiedot reaaliajassa. Joten aina, kun napsautat visualisointia, siirrät osittajaa tai teet jotakin muuta, Performance Analyzer näyttää heti suorituskykytulokset ruudussa.
+Suorituskyvyn analysointi kerää ja näyttää suorituskykymittauksen tiedot reaaliajassa. Joten aina, kun napsautat visualisointia, siirrät osittajaa tai teet jotakin muuta, suorituskyvyn analysointi näyttää heti suorituskykytulokset ruudussa.
 
 Jos ruudussa on enemmän tietoja kuin voidaan näyttää, vierityspalkki näyttää siirtyvän lisätietoihin.
 
@@ -58,25 +58,28 @@ Kunkin visualisoinnin lokitiedoissa on käytetty aika (kesto) seuraavien tehtäv
 * **Visuaalinen näyttö** - visualisoinnin vaatima aika näytössä, mukaan lukien verkkokuvien noutamiseen tai geokoodaukseen tarvittava aika. 
 * **Muu** - aika, jonka visualisointi vaatii kyselyiden valmistelemista varten, muiden visualisointien valmistumista odotettaessa tai muun taustan käsittelemisen suorittamista varten.
 
+**Kesto (ms)** -arvot osoittavat kunkin toiminnon *aloituksen* ja *lopetuksen* aikaleiman välisen eron. Useimmat pohja- ja visualisointitoiminnot suoritetaan peräkkäin yksittäisessä käyttöliittymäsäikeessä, joka on jaettu useisiin toimintoihin. Ilmoitetut kestot sisältävät jonossa vietetyn ajan, kun muut toiminnot ovat valmiit. [Suorituskyvyn analysointimalli](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer) GitHubissa ja siihen liittyvässä [dokumentaatiossa](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx) antaa tietoja siitä, miten visualisoinnit kyselevät tietoja, ja miten ne hahmotetaan.
+
+
 ![lokitietojen elementit](media/desktop-performance-analyzer/performance-analyzer-06.png)
 
-Kun olet käsitellyt Performance Analyzer-toiminnon avulla mitattavan raportin elementtejä, voit valita **Pysäytä**-painikkeen. Suorituskykytiedot pysyvät ruudussa omaa analyysiasi varten sen jälkeen, kun olet valinnut **Lopeta**.
+Kun olet käsitellyt suorituskyvyn analysoinnin avulla mitattavan raportin elementtejä, voit valita **Pysäytä**-painikkeen. Suorituskykytiedot pysyvät ruudussa omaa analyysiasi varten sen jälkeen, kun olet valinnut **Lopeta**.
 
-Jos haluat tyhjentää Performance Analyzer -ruudun tiedot, valitse **Tyhjennä**. Kaikki tiedot poistetaan, eikä niitä tallenneta, kun valitset **Tyhjennä**. Seuraavassa osiossa on tietoja datan tallentamisesta lokeissa. 
+Jos haluat tyhjentää Suorituskyvyn analysointi -ruudun tiedot, valitse **Tyhjennä**. Kaikki tiedot poistetaan, eikä niitä tallenneta, kun valitset **Tyhjennä**. Seuraavassa osiossa on tietoja datan tallentamisesta lokeissa. 
 
 ## <a name="refreshing-visuals"></a>Visualisointien päivitys
 
-Voit valita **Päivitä visualisoinnit** Suorituskyvyn analysoiminen -ruudussa, jos haluat päivittää kaikki visualisoinnit raportin nykyisellä sivulla, jolloin Performance Analyzer kerää tietoja kaikista tällaisista visualisoinneista.
+Voit valita **Päivitä visualisoinnit** Suorituskyvyn analysointi -ruudussa, jos haluat päivittää kaikki visualisoinnit raportin nykyisellä sivulla, jolloin suorituskyvyn analysointi kerää tietoja kaikista tällaisista visualisoinneista.
 
-Voit myös päivittää yksittäisiä visualisointeja. Kun Performance Analyzer tallennetaa, voit valita **Päivitä tämä visualisointi** kunkin visualisoinnin oikeasta yläkulmasta, jos haluat päivittää visualisoinnin ja tallentaa sen suorituskykytiedot.
+Voit myös päivittää yksittäisiä visualisointeja. Kun suorituskyvyn analysointi tallentaa, voit valita **Päivitä tämä visualisointi** kunkin visualisoinnin oikeasta yläkulmasta, jos haluat päivittää visualisoinnin ja tallentaa sen suorituskykytiedot.
 
 ![yksilöllisen visualisoinnin päivittäminen](media/desktop-performance-analyzer/performance-analyzer-07.png)
 
 ## <a name="saving-performance-information"></a>Tallennetaan suorituskykytietoja
 
-Voit tallentaa tiedot, jotka Performance Analyzer luo raportista, valitsemalla **Vienti**-painikkeen. **Vienti**-toiminnon valitseminen luo .json-tiedoston, jonka tiedot saadaan Performance Analyzer-ruudusta. 
+Voit tallentaa tiedot, jotka suorituskyvyn analysointi luo raportista, valitsemalla **Vienti**-painikkeen. **Vienti**-toiminnon valitseminen luo .json-tiedoston, jonka tiedot saadaan Suorituskyvyn analysointi -ruudusta. 
 
-![Tallenna Performance Analyzer-lokitiedosto](media/desktop-performance-analyzer/performance-analyzer-05.png)
+![Tallenna suorituskyvyn analysoinnin lokitiedosto](media/desktop-performance-analyzer/performance-analyzer-05.png)
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
@@ -89,3 +92,7 @@ Saat lisätietoja **Power BI Desktopista** ja käytön aloittamisesta tutustumal
 * [Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)
 * [Yleiset kyselytehtävät Power BI Desktopissa](desktop-common-query-tasks.md)   
 
+Katso tietoja suorituskyvyn analysointimallista seuraavista resursseista.
+
+* [Suorituskyvyn analysointimalli](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer)
+* [Suorituskyvyn analysointimallin dokumentaatio](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx)

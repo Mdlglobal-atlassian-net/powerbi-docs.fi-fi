@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 01/14/2020
+ms.date: 01/16/2020
 ms.author: mblythe
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d9549364f9129ee4ddc6e90fb973cb73c241e4a9
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: bbca812644b82f8a0b848dc16e450f880ccb596c
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76042114"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76539896"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>Opetusohjelma: Upota Power Apps -visualisointi Power BI -raporttiin
 
 Tässä opetusohjelmassa luomme Power Apps -visualisoinnilla uuden Power BI -malliraporttiin upotetun sovelluksen. Tämä sovellus on vuorovaikutuksessa kyseisen raportin muiden visualisointien kanssa.
 
-Jos sinulla ei ole Power Apps -tilausta, [luo ilmainen tili](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) ennen aloittamista.
+Jos sinulla ei ole Power Apps -tilausta, [luo ilmainen tili](https://web.powerapps.com/signup?redirect=marketing&email=) ennen aloittamista.
 
 Tässä opetusohjelmassa opit:
 > [!div class="checklist"]
@@ -33,12 +33,12 @@ Tässä opetusohjelmassa opit:
 
 * [Google Chrome](https://www.google.com/chrome/browser/)- tai [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) -selain
 * [Power BI -tilaus](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi), jossa on [mahdollisuusanalyysimalli](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample) asennettuna
-* Käsitys siitä, miten [sovelluksia luodaan Power Appsissa](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app-scratch.md) ja [Power BI -raportteja](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour) muokataan
+* Käsitys siitä, miten [sovelluksia luodaan Power Appsissa](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app-scratch) ja [Power BI -raportteja](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour) muokataan
 
 
 
 ## <a name="create-a-new-app"></a>Luo uusi sovellus
-Kun lisäät Power Apps -visualisoinnin raporttiisi, se käynnistää PowerApps Studion PowerAppsin ja Power BI:n välisellä reaaliaikaisella tietoyhteydellä.
+Kun lisäät Power Apps -visualisoinnin raporttiisi, se käynnistää Power Apps Studion Power Appsin ja Power BI:n välisellä reaaliaikaisella tietoyhteydellä.
 
 1. Avaa mahdollisuusanalyysimallin raportti ja valitse *Tulevia mahdollisuuksia* -sivu. 
 
@@ -49,7 +49,7 @@ Kun lisäät Power Apps -visualisoinnin raporttiisi, se käynnistää PowerApps 
 
 2. Valitse Visualisoinnit-ruudusta Power Apps -kuvake ja muuta sitten visualisoinnin kokoa, kunnes se mahtuu luomaasi tilaan.
 
-    ![Visualisointiruutu, jossa on valittuna PowerApps-kuvake](media/power-bi-visualization-powerapp/power-bi-powerapps-icon.jpg)
+    ![Visualisointiruutu, jossa on valittuna Power Apps -kuvake](media/power-bi-visualization-powerapp/power-bi-powerapps-icon.jpg)
 
 3. Valitse **Kentät**-ruudussa **Nimi**, **Tuotekoodi** ja **Myyntivaihe**. 
 

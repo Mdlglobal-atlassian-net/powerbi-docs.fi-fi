@@ -1,6 +1,6 @@
 ---
 title: Lisää alaspäin porautumisen tuki
-description: Tässä artikkelissa kuvataan porauksen tuen lisääminen Power BI -visualisointeihin
+description: Tässä artikkelissa kuvataan alaspäin porautumisen tuen lisääminen Power BI -visualisointeihin
 author: asander
 ms.author: asander
 manager: rkarlin
@@ -18,21 +18,21 @@ ms.locfileid: "74700589"
 ---
 # <a name="add-drill-down-support"></a>Lisää alaspäin porautumisen tuki
 
-Mukautetut visualisoinnit voivat käyttää Power BI -porautumista.
+Mukautetut visualisoinnit voivat käyttää Power BI:n alaspäin porautumista.
 
-Lue lisää [Power BI -porautumisesta](./../../consumer/end-user-drill.md)
+Lue lisää Power BI:n alaspäin porautumisesta [täältä](./../../consumer/end-user-drill.md)
 
-## <a name="enable-drill-down-support-in-the-visual"></a>Ota käyttöön porautumisen tuki visualisoinnissa
+## <a name="enable-drill-down-support-in-the-visual"></a>Ota käyttöön alaspäin porautumisen tuki visualisoinnissa
 
-Jos haluat tukea porautumista visualisoinnissa, lisää uusi kenttä `capabilities.json` nimeltä "Poraudu”, jolla on yksi ominaisuus:
+Jos haluat tukea alaspäin porautumista visualisoinnissa, lisää uusi kenttä tiedostoon `capabilities.json` nimeltä "drill-down”, jolla on yksi ominaisuus:
 
     *roles - the name of the dataRole you want to enable drill-down on.
 
 > [!NOTE]
-> Porautumistietotyypin on oltava `Grouping` tyyppiä.
-> `max` dataRole-ehtojen ominaisuuden arvoksi on asetettava 1.
+> Alaspäin porautumisen dataRole-roolin on oltava tyyppiä `Grouping`.
+> dataRole-ehtojen `max`-ominaisuuden arvoksi on asetettava 1.
 
-Kun lisäät roolin Poraudu, käyttäjät voivat vetää useita kenttiä tietorooliin.
+Kun lisäät roolin drill-down-objektiin, käyttäjät voivat vetää useita kenttiä tietorooliin.
 
 esimerkki:
 
@@ -78,7 +78,7 @@ esimerkki:
 }
 ```
 
-## <a name="create-the-visual-with-drill-down-support"></a>Visualisoinnin luominen porautumistuella
+## <a name="create-the-visual-with-drill-down-support"></a>Visualisoinnin luominen alaspäin porautumisen tuella
 
 Suorita
 
@@ -86,9 +86,9 @@ Suorita
 pbiviz new testDrillDown -t default
 ```
 
-Jos haluat luoda oletusarvoisen mallivisualisoinnin. Ja käytä yllä olevaa `capabilities.json`-mallia juuri luotuun visualisointiin.
+jos haluat luoda oletusarvoisen mallivisualisoinnin. Käytä lisäksi yllä olevaa `capabilities.json`-mallia juuri luotuun visualisointiin.
 
-Luo `div` säilöön ominaisuus, joka sisältää visualisoinnin HTML-elementit:
+Luo `div`-säilölle ominaisuus, joka sisältää visualisoinnin HTML-elementit:
 
 ```typescript
 "use strict";
@@ -150,7 +150,7 @@ export class Visual implements IVisual {
 }
 ```
 
-Luo `update` päivittämällä visualisoinnin menetelmä`button`s:
+Luo `button`-painikkeet päivittämällä visualisoinnin `update`-menetelmä:
 
 ```typescript
 export class Visual implements IVisual {
@@ -193,7 +193,7 @@ export class Visual implements IVisual {
     // ...
 ```
 
-Käytä yksinkertaisia tyylejä `.\style\visual.less`:
+Käytä yksinkertaisia tyylejä kohteessa `.\style\visual.less`:
 
 ```less
 button {
@@ -220,17 +220,17 @@ Valmistele mallitiedot visualisoinnin testaamista varten:
 |   B   |   B3  |   B31 |   11  |
 |   B   |   B3  |   B32 |   12  |
 
-Ja luo hierarkia Power BI Desktopissa:
+Luo seuraavaksi hierarkia Power BI Desktopissa:
 
 ![Luo uusi hierarkia](./media/create-new-hierarchy.png)
 
-Sisällytä kaikki luokkasarakkeet (H1, H2, H3) uuteen hierarkiaan:
+Sisällytä kaikki luokkasarakkeet (H1, H2 ja H3) uuteen hierarkiaan:
 
 ![Luo uusi hierarkia](./media/new-hierarchy.png)
 
-Näiden vaiheiden jälkeen sinun pitäisi saada seuraava visualisointi:
+Näiden vaiheiden jälkeen sinun pitäisi nähdä seuraava visualisointi:
 
-![Kehitys-visualisointi ja painikkeet](./media/dev-visual-drilldown1.png)
+![Kehittäjän visualisointi ja painikkeet](./media/dev-visual-drilldown1.png)
 
 ## <a name="add-context-menu-to-visual-elements"></a>Pikavalikon lisääminen visualisointielementteihin
 
@@ -238,7 +238,7 @@ Tässä vaiheessa lisäät pikavalikon painikkeen visualisointiin:
 
 ![Visualisoinnin pikavalikko](./media/dev-visual-drilldown-context-menu.png)
 
-Voit luoda pikavalikon tallentamalla `host`-objektin visualisoinnin ominaisuuksiin ja kutsumalla `createSelectionManager`-menetelmän Create Selection Manageriin näyttämään pikavalikon Power BI Visuals -ohjelmointirajapinnanavulla.
+Voit luoda pikavalikon tallentamalla `host`-objektin visualisoinnin ominaisuuksiin ja kutsumalla `createSelectionManager`-metodia valinnan hallintaohjelman luontia varten. Sen avulla voit tuoda näkyviin pikavalikon käyttämällä Power BI Visuals -ohjelmointirajapintaa.
 
 ```typescript
 "use strict";
@@ -272,7 +272,7 @@ export class Visual implements IVisual {
 }
 ```
 
-Muuta `forEach`-funktio takaisinkutsun leipätekstikohteeksi:
+Muuta `forEach`-funktion takaisinkutsun runko-osaa seuraavasti:
 
 ```typescript
     categoricalDataView.categories[categoricalDataView.categories.length - 1].values.forEach( (category: powerbi.PrimitiveValue, index: number) => {
@@ -303,17 +303,17 @@ Muuta `forEach`-funktio takaisinkutsun leipätekstikohteeksi:
     });
 ```
 
-Käytä tietoja visualisointiin:
+Käytä dataa visualisoinnissa:
 
 ![Dataa sisältävä visualisointi](./media/dev-visual-drilldown-data.png)
 
-Viimeisessä vaiheessa sinun pitäisi saada visualisoinnit valintojen ja pikavalikon avulla:
+Viimeisessä vaiheessa sinun pitäisi nähdä visualisointi, jossa on valinnat ja pikavalikko:
 
-![Visualisoinnin luominen porautumistuella](./media/dev-visual-drilldown-demo.gif)
+![Visualisointi, jossa on alaspäin porautumisen tuki](./media/dev-visual-drilldown-demo.gif)
 
-## <a name="add-drill-down-support-for-matrix-data-view-mapping"></a>Lisää porautumistuki matriisin tieto näkymän yhdistämiseen
+## <a name="add-drill-down-support-for-matrix-data-view-mapping"></a>Lisää alaspäin porautumisen tuki matriisin tietonäkymien yhdistämismääritystä varten
 
-Valmistele mallitiedot visualisoinnin testaamiseksi matriisitietojen näkymän yhdistämisillä:
+Valmistele mallitiedot visualisoinnin testaamiseksi matriisin tietonäkymien yhdistämismääritysten käsittelyä varten:
 
 |   Rivi1   |   Rivi2   |   Rivi3   |   Sarake1   |   Sarake2   |   Column3   |   Arvot   |
 |-----|-----|------|-------|-------|-------|-------|
@@ -336,7 +336,7 @@ Valmistele mallitiedot visualisoinnin testaamiseksi matriisitietojen näkymän y
 |   R2   |   R23   |   R232   |   C2   |   C23   |   C232   |   18   |
 |   R2   |   R23   |   R233   |   C2   |   C23   |   C233   |   19   |
 
-Käytä seuraavaa DataView-vastaavuutta visualisoinnille:
+Käytä seuraavaa tietonäkymän yhdistämismääritystä visualisoinnissa:
 
 ```json
 {
@@ -387,11 +387,11 @@ Käytä seuraavaa DataView-vastaavuutta visualisoinnille:
 }
 ```
 
-Käytä tietoja visualisointiin:
+Käytä dataa visualisoinnissa:
 
 ![Dataa sisältävä visualisointi](./media/dev-matrix-visual-drilldown-data.png)
 
-Tuo pakolliset liittymät Power BI:stä tietojen käsittelyä varten:
+Tuo pakolliset liittymät matriisin tietonäkymien yhdistämismääritysten käsittelyä varten:
 
 ```typescript
 // ...
@@ -401,7 +401,7 @@ import DataViewHierarchyLevel = powerbi.DataViewHierarchyLevel;
 // ...
 ```
 
-Luo kaksi ominaisuutta kahdelle `div`rivi- ja sarake elementeille:
+Luo kaksi ominaisuutta kahdelle rivi- ja sarake-elementtien `div`-elementille:
 
 ```typescript
 export class Visual implements IVisual {
@@ -456,7 +456,7 @@ export class Visual implements IVisual {
 }
 ```
 
-Luo funktio`treeWalker` hierarkian läpikulkuun:
+Luo funktio `treeWalker` hierarkian läpikulkua varten:
 
 ```typescript
 export class Visual implements IVisual {
@@ -492,7 +492,7 @@ export class Visual implements IVisual {
 }
 ```
 
-Luo datapoints-kohteen valinnat.
+Luo arvopisteiden valinnat.
 
 ```typescript
 const treeWalker = (matrixNode: DataViewMatrixNode, index: number, levels: DataViewHierarchyLevel[], div: HTMLDivElement)  => {
@@ -536,7 +536,7 @@ const treeWalker = (matrixNode: DataViewMatrixNode, index: number, levels: DataV
 }
 ```
 
-Luo `buttons`, jotta voit käsitellä matriisitietojen visualisoinnin ja näytön pikavalikon:
+Luo painikkeet (`buttons`), jotta voit olla vuorovaikutuksessa visualisoinnin kanssa tuoda näkyviin matriisin arvopisteiden pikavalikon:
 
 ```typescript
 const treeWalker = (matrixNode: DataViewMatrixNode, index: number, levels: DataViewHierarchyLevel[], div: HTMLDivElement)  => {
@@ -574,7 +574,7 @@ const treeWalker = (matrixNode: DataViewMatrixNode, index: number, levels: DataV
 }
 ```
 
-Tyhjennä `div` elementit ennen hahmonnuselementtien suorittamista uudelleen:
+Tyhjennä `div`-elementit ennen elementtien hahmontamista uudelleen:
 
 ```typescript
 public update(options: VisualUpdateOptions) {
@@ -612,9 +612,9 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-Viimeisessä vaiheessa sinun pitäisi saada visualisoinnit pikavalikon avulla:
+Viimeisessä vaiheessa sinun pitäisi nähdä visualisointi, jossa on pikavalikko:
 
-![Visualisoinnin luominen porautumistuella](./media/dev-matrix-visual-drilldown-demo.gif)
+![Visualisointi, jossa on alaspäin porautumisen tuki](./media/dev-matrix-visual-drilldown-demo.gif)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

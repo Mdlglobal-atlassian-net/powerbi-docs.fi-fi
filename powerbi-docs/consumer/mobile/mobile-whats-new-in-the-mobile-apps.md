@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/08/2019
 ms.author: painbar
-ms.openlocfilehash: 44fcfdbaa51b85b191ff1452c66daee7da0360f8
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: caed3a107b8f7a57d2fb3da92073cb8a5f5331cd
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75220513"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538401"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -21,6 +21,27 @@ Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 * [Power BI -tiimin mobiilisovelluksia käsittelevä blogi](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Power BI Desktopin uudet ominaisuudet](../../desktop-latest-update.md)  
 * [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)  
+
+## <a name="december-2019"></a>Joulukuu 2019
+
+### <a name="docked-report-footer-and-a-refresh-button---new-experiences-for-interacting-with-reports-android"></a>Kiinnitetty raportin alatunniste ja päivityspainike – raporttien käsittelyn uudet käyttökokemukset (Android)
+
+Olemme kuulleet Android-käyttäjiltämme, että heidän kokemuksensa raporttien käytöstä ei ole paras mahdollinen: raportin alatunnisteen käyttäminen on vaikeaa ja päivitys vetämällä toimii liian herkästi joissakin laitteissa. Siksi olemme tässä versiossa muuttaneet seuraavia toimintoja:
+* **Kiinnitetty raportin alatunniste**: Kun nyt avaat raportin puhelimessasi, huomaat raportin alatunnisteen kiinnittyvän raporttisivun alareunaan, jossa se on aina näkyvissä ja käytettävissä riippumatta sivulla käyttämistäsi toiminnoista. Näin kaikkien sen toimintojen käyttäminen on helppoa.
+* **Päivitä-painike raportin otsikossa**: raportin otsikossa on myös päivityspainike, jolla raportti on helppo päivittää juuri silloin, kun haluat.
+
+Ne käyttäjät, jotka haluavat jatkaa aiemman toiminnan käyttämistä, voivat palauttaa sen mobiilisovelluksen uusien laajennettujen [vuorovaikutusasetusten](./mobile-app-interaction-settings.md) avulla.
+
+Lisäksi IT-järjestelmänvalvojat voivat [ohittaa uudet oletusasetukset etäyhteydellä](./mobile-app-configuration.md#interaction-settings-android) käyttäjien puolesta mobiililaitteiden hallinnan työkalun ja sovellusmääritystiedoston avulla. Tällä tavalla kaikille organisaation käyttäjille voidaan määrittää samat toiminnot.
+
+> [!NOTE]
+> Päivityspainikkeen ja raportin alatunnisteen käsittelyasetuksilla ei tällä hetkellä ole vaikutusta raporttipalvelimen raportteihin. Tämä kuitenkin muuttuu raporttipalvelimen tammikuun julkaisun myötä.
+
+### <a name="set-default-bookmarks-from-your-mobile-app"></a>Oletuskirjanmerkkien asettaminen mobiilisovelluksesta
+Voit nyt valita raporttiesi oletuskirjanmerkit suoraan Power BI -mobiilisovelluksestasi. Kun sen jälkeen avaat raportin, sen oletuskirjanmerkki otetaan aina käyttöön automaattisesti. [Lisätietoja](./mobile-reports-in-the-mobile-apps.md#bookmarks)
+
+### <a name="filtering-by-location-on-android-tablets"></a>Suodatus sijainnin mukaan Android-tableteissa
+Maantieteellisen suodatuksen avulla voit suodattaa raporttisi kulloisenkin sijaintisi perusteella. Tämä ominaisuus on nyt käytettävissä myös Android-tablettien Power BI -sovelluksessa. [Lisätietoja](./mobile-apps-geographic-filtering.md)
 
 ## <a name="november-2019"></a>Marraskuu 2019
 

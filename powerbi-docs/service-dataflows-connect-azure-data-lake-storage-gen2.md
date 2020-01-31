@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/22/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: c3f703bfe2685166ce575b37c053b2a9603a799f
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: e91900632b7cf470cd91923ca9ec871247c154ba
+ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223872"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76710179"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Azure Data Lake Storage Gen2:n yhdistäminen tietovuon tallentamiseksi
 
@@ -45,7 +45,7 @@ Ennen kuin voit määrittää Power BI:hin Azure Data Lake Storage Gen2 -tilin, 
 1. Tallennustili on luotava samassa AAD-vuokraajassa kuin Power BI -vuokraajasi.
 2. Tallennustili on luotava samalla alueella kuin Power BI -vuokraajasi. Jos haluat tietää, missä Power BI -vuokraajasi sijaitsee, katso artikkelia [Missä Power BI -vuokraajani sijaitsee](service-admin-where-is-my-tenant-located.md).
 3. Tallennustilillä on oltava käytössä *Hierarkkinen nimitila* -ominaisuus.
-4. Power BI -palvelulle on myönnettävä *Lukija*-rooli tallennustilillä.
+4. Power BI -palvelulle on myönnettävä *Lukija*- ja *Tietoyhteys*-roolit tallennustilillä.
 5. Sinun on luotava tiedostojärjestelmä nimeltä **powerbi**.
 6. Power BI -palvelut on valtuutettava käyttämään luomaasi **powerbi**-tiedostojärjestelmää.
 
@@ -59,16 +59,13 @@ Noudata artikkelin [Azure Data Lake Storage Gen2 -tallennustilin luominen](https
 2. Varmista, että otat käyttöön Hierarkkinen nimitila -ominaisuuden
 3. Suosittelemme, että määrität replikoinnin asetukseksi **Maantieteellisesti vikasietoiseksi hajautetun tallennuksen (RA-GRS) lukijaoikeudet**
 
-### <a name="grant-the-power-bi-service-a-reader-role"></a>Myönnä Power BI -palvelulle lukijan rooli
+### <a name="grant-the-power-bi-service-reader-and-data-access-roles"></a>Lukijan ja tietojen käytön roolin myöntäminen Power BI -palvelulle
 
-Seuraavaksi sinun on myönnettävä Power BI -palvelulle lukijan rooli luomallesi tallennustilille. Kyse on sisäänrakennetusta roolista, joten vaiheet ovat yksinkertaisia. 
+Seuraavaksi sinun on myönnettävä Power BI -palvelulle lukija- ja tietoyhteysroolit luomallesi tallennustilille. Ne molemmat ovat sisäänrakennettuja rooleja, joten vaiheet ovat yksinkertaisia. 
 
 Noudata [Sisäisen RBAC-roolin määrittäminen](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role) -artikkelin ohjeita.
 
-Valitse **Lisää roolimääritys** -ikkunassa **Lukija**-rooli, joka määritetään Power BI -palvelulle. Etsi sitten haun avulla **Power BI -palvelu**. Seuraavassa kuvassa näytetään Power BI -palvelulle määritetty **Lukija**-rooli.
-
-![Lukija-roolille määritetty Power BI -palvelu](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05.jpg)
-
+Valitse **Lisää roolimääritys** -ikkunassa **Lukija**- ja **Tietoyhteys**-roolit, jotka määritetään Power BI -palvelulle. Etsi sitten haun avulla **Power BI -palvelu**. 
 
 > [!NOTE]
 > Odota käyttöoikeuden välittymistä Power BI:hin portaalista vähintään 30 minuuttia. Aina kun muutat käyttöoikeuksia portaalissa, kyseisten käyttöoikeuksien näkyminen Power BI:ssä voi kestää 30 minuuttia. 

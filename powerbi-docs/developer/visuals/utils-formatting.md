@@ -1,6 +1,6 @@
 ---
 title: Johdanto Power BI -visualisoinnin muotoilun apuohjelmien käyttöön
-description: Tässä artikkelissa kuvataan, miten voit käyttää muotoilun apuohjelmia ja lokalisointia Power BI -visualisoinnin arvoihin
+description: Tässä artikkelissa kuvataan, miten voit käyttää muotoilun apuohjelmia Power BI -visualisoinnin arvojen muotoiluun ja lokalisointiin
 author: zBritva
 ms.author: v-ilgali
 manager: rkarlin
@@ -18,11 +18,11 @@ ms.locfileid: "74700336"
 ---
 # <a name="formatting-utils"></a>Muotoilun apuohjelmat
 
-Muotoilun apuohjelmat sisältävät luokkia, rajapintoja menetelmiä arvojen muotoilemista varten. Se sisältää myös Extender-menetelmiä merkkijonojen käsittelemiseen ja tekstin koon mittaamiseen SVG/HTML-tiedostossa.
+Muotoilun apuohjelmat sisältävät luokkia, liittymiä ja menetelmiä arvojen muotoilemista varten. Se sisältää myös laajennusmenetelmiä merkkijonojen käsittelemiseen ja tekstin koon mittaamiseen SVG/HTML-tiedostossa.
 
-## <a name="text-measurement-service"></a>Tekstin mittaripalvelu
+## <a name="text-measurement-service"></a>Tekstin mittauspalvelu
 
-Moduuli sisältää seuraavat toiminnot ja liitynnät:
+Moduuli sisältää seuraavat funktiot ja liittymät:
 
 ### <a name="textproperties-interface"></a>TextProperties-liittymä
 
@@ -42,13 +42,13 @@ interface TextProperties {
 
 ### <a name="measuresvgtextwidth"></a>measureSvgTextWidth
 
-Tämä ominaisuus mittaa tekstin leveyttä annetuilla SVG-tekstin ominaisuuksilla.
+Tämä funktio mittaa tekstin leveyttä annetuilla SVG-tekstiominaisuuksilla.
 
 ```typescript
 function measureSvgTextWidth(textProperties: TextProperties, text?: string): number;
 ```
 
-Esimerkki `measureSvgTextWidth`-käytöstä:
+Esimerkki `measureSvgTextWidth`-funktion käytöstä:
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -74,7 +74,7 @@ Tämä funktio palauttaa rect-arvon annetuilla SVG-tekstiominaisuuksilla.
 function measureSvgTextRect(textProperties: TextProperties, text?: string): SVGRect;
 ```
 
-Esimerkki `measureSvgTextRect`-käytöstä:
+Esimerkki `measureSvgTextRect`-funktion käytöstä:
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -94,13 +94,13 @@ textMeasurementService.measureSvgTextRect(textProperties);
 
 ### <a name="measuresvgtextheight"></a>measureSvgTextHeight
 
-Tämä ominaisuus mittaa tekstin korkeutta annetuilla SVG-tekstin ominaisuuksilla.
+Tämä funktio mittaa tekstin korkeutta annetuilla SVG-tekstiominaisuuksilla.
 
 ```typescript
 function measureSvgTextHeight(textProperties: TextProperties, text?: string): number;
 ```
 
-Esimerkki `measureSvgTextHeight`-käytöstä:
+Esimerkki `measureSvgTextHeight`-funktion käytöstä:
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -147,13 +147,13 @@ textMeasurementService.estimateSvgTextBaselineDelta(textProperties);
 
 ### <a name="estimatesvgtextheight"></a>estimateSvgTextHeight
 
-Tämä ominaisuus arvioi tekstin korkeutta annetuilla SVG-tekstin ominaisuuksilla.
+Tämä funktio arvioi tekstin korkeutta annetuilla SVG-tekstiominaisuuksilla.
 
 ```typescript
 function estimateSvgTextHeight(textProperties: TextProperties, tightFightForNumeric?: boolean): number;
 ```
 
-Esimerkki `estimateSvgTextHeight`-käytöstä:
+Esimerkki `estimateSvgTextHeight`-funktion käytöstä:
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -171,17 +171,17 @@ textMeasurementService.estimateSvgTextHeight(textProperties);
 // returns: 27
 ```
 
-Voit tutustua mukautetun visualisoinnin esimerkkikoodiin [tässä](https://github.com/Microsoft/powerbi-visuals-sankey/blob/4d544ea145b4e15006083a3610dfead3da5f61a4/src/visual.ts#L372).
+Voit tutustua mukautetun visualisoinnin esimerkkikoodiin [täällä](https://github.com/Microsoft/powerbi-visuals-sankey/blob/4d544ea145b4e15006083a3610dfead3da5f61a4/src/visual.ts#L372).
 
 ### <a name="measuresvgtextelementwidth"></a>measureSvgTextElementWidth
 
-Tämä mittaa svgElement-alkion leveyden.
+Tämä funktio mittaa svgElement-elementin leveyden.
 
 ```typescript
 function measureSvgTextElementWidth(svgElement: SVGTextElement): number;
 ```
 
-Esimerkki measureSvgTextElementWidth-kohteen käyttämisestä:
+Esimerkki measureSvgTextElementWidth-funktion käyttämisestä:
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -209,13 +209,13 @@ textMeasurementService.measureSvgTextElementWidth(textElement.node());
 
 ### <a name="getmeasurementproperties"></a>getMeasurementProperties
 
-Tämä ominaisuus hakee annetun DOM-elementin tekstin mittauksen ominaisuudet.
+Tämä funktio hakee annetun DOM-elementin tekstin mittaominaisuudet.
 
 ```typescript
 function getMeasurementProperties(element: Element): TextProperties;
 ```
 
-Esimerkki `getMeasurementProperties`-käytöstä:
+Esimerkki `getMeasurementProperties`-funktion käytöstä:
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -250,13 +250,13 @@ textMeasurementService.getMeasurementProperties(element.get(0));
 
 ### <a name="getsvgmeasurementproperties"></a>getSvgMeasurementProperties
 
-Tämä ominaisuus hakee annetun SVG-elementin tekstin mittauksen ominaisuudet.
+Tämä funktio hakee annetun SVG-elementin tekstin mittaominaisuudet.
 
 ```typescript
 function getSvgMeasurementProperties(svgElement: SVGTextElement): TextProperties;
 ```
 
-Esimerkki `getSvgMeasurementProperties`-käytöstä:
+Esimerkki `getSvgMeasurementProperties`-funktion käytöstä:
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -290,13 +290,13 @@ textMeasurementService.getSvgMeasurementProperties(textElement.node());
 
 ## <a name="getdivelementwidth"></a>getDivElementWidth
 
-Tämä funktio palauttaa div-objektin leveyden.
+Tämä funktio palauttaa div-elementin leveyden.
 
 ```typescript
 function getDivElementWidth(element: JQuery): string;
 ```
 
-Esimerkki `getDivElementWidth`-käytöstä:
+Esimerkki `getDivElementWidth`-funktion käytöstä:
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -317,13 +317,13 @@ textMeasurementService.getDivElementWidth(svg)
 
 ### <a name="gettailoredtextordefault"></a>getTailoredTextOrDefault
 
-Vertaa otsikoiden tekstin kokoa käytettävissä olevaan kokoon ja tekee kolme pistettä, kun käytettävissä oleva koko on pienempi.
+Vertaa otsikoiden tekstin kokoa käytettävissä olevaan kokoon ja näyttää kolme pistettä, jos käytettävissä oleva koko on pienempi.
 
 ```typescript
 function getTailoredTextOrDefault(textProperties: TextProperties, maxWidth: number): string;
 ```
 
-Esimerkki `getTailoredTextOrDefault`-käytöstä:
+Esimerkki `getTailoredTextOrDefault`-funktion käytöstä:
 
 ```typescript
 import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
@@ -343,17 +343,17 @@ textMeasurementService.getTailoredTextOrDefault(textProperties, 100);
 
 ## <a name="string-extensions"></a>Merkkijonotunnisteet
 
-Moduuli sisältää seuraavat toiminnot ja liitynnät:
+Moduuli sisältää seuraavat funktiot:
 
 ## <a name="endswith"></a>endsWith
 
-Tällä funktiolla tarkistetaan, päättyikö merkkijono alimerkkijonoon.
+Tämä funktio tarkistaa päättyykö merkkijono alimerkkijonoon.
 
 ```typescript
 function endsWith(str: string, suffix: string): boolean;
 ```
 
-Esimerkki `endsWith`-käytöstä:
+Esimerkki `endsWith`-funktion käytöstä:
 
 ```typescript
 import { stringExtensions } from "powerbi-visuals-utils-formattingutils";
@@ -366,13 +366,13 @@ stringExtensions.endsWith("Power BI", "BI");
 
 ### <a name="equalignorecase"></a>equalIgnoreCase
 
-Tämä funktiolla verrataan merkki jonoja ja ohitetaan kirjainkoko.
+Tämä funktio vertaa merkkijonoja huomioimatta kirjainkokoa.
 
 ```typescript
 function equalIgnoreCase(a: string, b: string): boolean;
 ```
 
-Esimerkki `equalIgnoreCase`-käytöstä:
+Esimerkki `equalIgnoreCase`-funktion käytöstä:
 
 ```typescript
 import { stringExtensions } from "powerbi-visuals-utils-formattingutils";
@@ -385,13 +385,13 @@ stringExtensions.equalIgnoreCase("Power BI", "power bi");
 
 ### <a name="startswith"></a>startsWith
 
-Tällä funktiolla tarkistetaan, alkaako merkkijono alimerkkijonolla.
+Tämä funktio tarkistaa alkaako merkkijono alimerkkijonolla.
 
 ```typescript
 function startsWith(a: string, b: string): boolean;
 ```
 
-Esimerkki `startsWith`-käytöstä:
+Esimerkki `startsWith`-funktion käytöstä:
 
 ```typescript
 import { stringExtensions } from "powerbi-visuals-utils-formattingutils";
@@ -404,13 +404,13 @@ stringExtensions.startsWith("Power BI", "Power");
 
 ### <a name="contains"></a>sisältää
 
-Tämä funktiolla tarkistetaan, sisältääkö merkkijono määritetyn alimerkkijonon.
+Tämä funktio tarkistaa sisältääkö merkkijono määritetyn alimerkkijonon.
 
 ```typescript
 function contains(source: string, substring: string): boolean;
 ```
 
-Esimerkki `contains`-menetelmästä:
+Esimerkki `contains`-menetelmän käytöstä:
 
 ```typescript
 import { stringExtensions } from "powerbi-visuals-utils-formattingutils";
@@ -423,13 +423,13 @@ stringExtensions.contains("Microsoft Power BI Visuals", "Power BI");
 
 ### <a name="isnullorempty"></a>isNullOrEmpty
 
-Tarkistaa, onko merkki jono tyhjä arvo tai määrittämätön tai tyhjä.
+Tarkistaa, onko merkkijono tyhjäarvoinen, määrittämätön tai tyhjä.
 
 ```typescript
 function isNullOrEmpty(value: string): boolean;
 ```
 
-Esimerkki `isNullOrEmpty`-menetelmästä:
+Esimerkki `isNullOrEmpty`-menetelmän käytöstä:
 
 ```typescript
 import { stringExtensions } from "powerbi-visuals-utils-formattingutils";
@@ -440,13 +440,13 @@ stringExtensions.isNullOrEmpty(null);
 // returns: true
 ```
 
-## <a name="value-formatter"></a>Arvon muotoilija
+## <a name="value-formatter"></a>Arvon muotoilu
 
-Moduuli sisältää seuraavat toiminnot ja liitynnät ja luokat:
+Moduuli sisältää seuraavat funktiot, liittymät ja luokat:
 
 ## <a name="ivalueformatter"></a>IValueFormatter
 
-Tämä kuvaa muotoilijan julkisia menetelmiä ja ominaisuuksia.
+Tämä liittymä kuvaa muotoilumoduulin julkisia menetelmiä ja ominaisuuksia.
 
 ```typescript
 interface IValueFormatter {
@@ -464,7 +464,7 @@ Tämä menetelmä muotoilee annetun arvon.
 function format(value: any, format?: string, allowFormatBeautification?: boolean): string;
 ```
 
-Esimerkkejä, `IValueFormatter.format`:
+Esimerkkejä `IValueFormatter.format`-menetelmän käytöstä:
 
 #### <a name="the-thousand-formats"></a>Tuhat-muotoilut
 
@@ -502,7 +502,7 @@ iValueFormatter.format(1234567891236);
 // returns: 1234.57bn
 ```
 
-#### <a name="the-trillion-format"></a>Triljoona-muotoilu
+#### <a name="the-trillion-format"></a>Biljoona-muotoilu
 
 ```typescript
 import { valueFormatter } from "powerbi-visuals-utils-formattingutils";
@@ -514,7 +514,7 @@ iValueFormatter.format(1234567891236);
 // returns: 1.23T
 ```
 
-#### <a name="the-exponent-format"></a>Eksponenttimuotoilu
+#### <a name="the-exponent-format"></a>Eksponentti-muotoilu
 
 ```typescript
 import { valueFormatter } from "powerbi-visuals-utils-formattingutils";
@@ -556,7 +556,7 @@ iValueFormatter.format(0.54);
 // returns: 54.00 %
 ```
 
-#### <a name="the-dates-format"></a>Päivämäärien muoto
+#### <a name="the-dates-format"></a>Päivämäärien muotoilu
 
 ```typescript
 import { valueFormatter } from "powerbi-visuals-utils-formattingutils";
@@ -569,7 +569,7 @@ iValueFormatter.format(date);
 // returns: 11/28/2016 3:36:00 PM
 ```
 
-#### <a name="the-boolean-format"></a>Totuusarvon muoto
+#### <a name="the-boolean-format"></a>Totuusarvon muotoilu
 
 ```typescript
 import { valueFormatter } from "powerbi-visuals-utils-formattingutils";
@@ -593,11 +593,11 @@ iValueFormatter.format(3.141592653589793);
 // returns: 3.142
 ```
 
-Voit tutustua mukautetun visualisoinnin esimerkkikoodiin [tässä](https://github.com/Microsoft/powerbi-visuals-sankey/blob/4d544ea145b4e15006083a3610dfead3da5f61a4/src/visual.ts#L359).
+Voit tutustua mukautetun visualisoinnin esimerkkikoodiin [täällä](https://github.com/Microsoft/powerbi-visuals-sankey/blob/4d544ea145b4e15006083a3610dfead3da5f61a4/src/visual.ts#L359).
 
 ## <a name="valueformatteroptions"></a>ValueFormatterOptions
 
-Tämä kuvaa `options` Ivaluiformatter ja Options of Create -funktiot.
+Tämä liittymä kuvaa IValueFormatter-liittymän `options`-vaihtoehtoja ja create-funktion vaihtoehtoja.
 
 ```typescript
 import { valueFormatter } from "powerbi-visuals-utils-formattingutils";
@@ -640,7 +640,7 @@ import create = valueFormatter.create;
 function create(options: ValueFormatterOptions): IValueFormatter;
 ```
 
-### <a name="example-of-using-create"></a>Esimerkki käytöstä
+### <a name="example-of-using-create"></a>Esimerkki create-funktion käytöstä
 
 ```typescript
 import { valueFormatter } from "powerbi-visuals-utils-formattingutils";
@@ -652,4 +652,4 @@ valueFormatter.create({});
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Lokalisointien lisääminen Power BI mukautettuun visualisointiin](localization.md)  
+[Lokalisointien lisääminen mukautettuun Power BI -visualisointiin](localization.md)  

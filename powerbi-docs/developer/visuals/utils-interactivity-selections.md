@@ -126,8 +126,8 @@ export interface BaseBehaviorOptions<SelectableDataPointType extends BaseDataPoi
 }
 ```
 
-Määritä luokka kohteelle `visual behavior`. Luokka vastaa hiiren tapahtumista `click`, `contextmenu`.
-Kun klikkauksia käytetään tietoelementteihin, visuaalisten kutsujen valintakäsittely valitsee arvopisteet. Jos käyttäjä napsauttaa visualisoinnin taustaosaa, se kutsuu selkeää valintakäsittelijää. Ja luokalla on vastaavat metodit: `bindClick`, `bindClearCatcher`, `bindContextMenu`.
+Määritä luokka kohteelle `visual behavior`. Luokka vastaa hiiren tapahtumista `click` ja `contextmenu`.
+Kun tietoelementtejä napsautetaan, visualisointi kutsuu valintakäsittelijää valitsemaan arvopisteet. Jos käyttäjä napsauttaa visualisoinnin taustaosaa, se kutsuu selkeää valintakäsittelijää. Ja luokalla on vastaavat metodit: `bindClick`, `bindClearCatcher`, `bindContextMenu`.
 
 ```typescript
 export class Behavior<SelectableDataPointType extends BaseDataPoint> implements IInteractiveBehavior {
@@ -214,7 +214,7 @@ protected bindContextMenu() {
 }
 ```
 
-Vuorovaikutteisuuden apuohjelmat kutsuvat `bindEvents`-metodeita, joilla voidaan delegoida funktioita käsittelijöille sekä lisätä `bindClick`-, `bindClearCatcher`- ja `bindContextMenu`-kutsuja `bindEvents`-metodiin:
+Vuorovaikutteisuuden apuohjelmat kutsuvat `bindEvents`-menetelmiä, joilla voidaan delegoida funktioita käsittelijöille sekä lisätä `bindClick`-, `bindClearCatcher`- ja `bindContextMenu`-kutsuja `bindEvents`-menetelmään:
 
 ```typescript
   public bindEvents(
@@ -230,9 +230,9 @@ Vuorovaikutteisuuden apuohjelmat kutsuvat `bindEvents`-metodeita, joilla voidaan
   }
 ```
 
-`renderSelection`-metodi on vastuussa kaavion elementtien visualisointien tilan päivittämisestä.
+`renderSelection`-menetelmä on vastuussa kaavion elementtien visualisointien tilan päivittämisestä.
 
-Malli toteutuksen `renderSelection`-metodista:
+Malli toteutuksen `renderSelection`-menetelmäst:
 
 ```typescript
 public renderSelection(hasSelection: boolean): void {
@@ -246,7 +246,7 @@ public renderSelection(hasSelection: boolean): void {
 }
 ```
 
-Viimeisessä vaiheessa luodaan `visual behavior` -esiintymä ja vuorovaikutteisuuden apuohjelmat -esiintymän `bind`-metodin kutsu:
+Viimeisessä vaiheessa luodaan `visual behavior` -esiintymä ja vuorovaikutteisuuden apuohjelmat -esiintymän `bind`-menelmän kutsu:
 
 ```typescript
 this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{

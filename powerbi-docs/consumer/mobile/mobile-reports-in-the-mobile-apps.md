@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/18/2020
 ms.author: painbar
-ms.openlocfilehash: bb54a4e403f2cc12800d0c97e44308f7ad5c5f65
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 27f6469cb960ff101f45636e0720b935929ff010
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75220710"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76538114"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Raporttien tutkiminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -53,6 +53,13 @@ Jos haluat päästä raporttiin raporttinäkymästä, napauta **Enemmän vaihtoe
 ## <a name="interact-with-reports"></a>Raporttien käsitteleminen
 Kun raportti on avattuna sovelluksessa, voit aloittaa sen käsittelemisen. Raportilla ja sen tiedoilla voi tehdä monia asioita. Raportin alatunnisteessa on toimintoja, joita voit suorittaa raportissa. Napauttamalla ja napauttamalla pitkään raportissa näkyviä tietoja voit myös osittaa ja käsitellä tietoja.
 
+### <a name="single-tap-versus-double-tap-interaction"></a>Käsittely yhdellä napsautuksella tai kaksoisnapsautuksella
+Kun lataat Power BI -mobiilisovelluksen, se on määritetty käsittelyyn yhdellä napsautuksella. Tämä tarkoittaa sitä, että kun napautat visualisointia osittajatoiminnon, ristiinkorostamisen, linkin tai painikkeen napsauttamisen tai muun toiminnon suorittamista varten, napautus sekä valitsee visualisoinnin että suorittaa haluamasi toiminnon.
+
+Halutessasi voit vaihtaa käsittelyyn kaksoisnapautuksella. Kun käsittely kaksoisnapsautuksella on käytössä, valitset visualisoinnin ensin napauttamalla sitä ja suoritat sitten haluamasi toiminnon napauttamalla visualisointia uudelleen.
+
+Jos haluat vaihtaa käsittelyyn kaksoisnapsautuksella tai vaihtaa takaisin käsittelyyn yhdellä napsautuksella, siirry [sovelluksen vuorovaikutusasetuksiin](./mobile-app-interaction-settings.md).
+
 ### <a name="using-tap-and-long-tap"></a>Napauttamisen ja pitkän napauttamisen käyttäminen
 Napautus on sama kuin napsautus hiirellä. Jos siis haluat ristiinkorostaa raportin arvopisteen perusteella, napauta kyseistä arvopistettä.
 Kun napautat osittajan arvoa, arvo valitaan ja raportin muut osat ositetaan kyseisen arvon mukaan.
@@ -63,7 +70,6 @@ Olet luultavasti huomannut, että kun napautat visualisointia, näkyviin tulee r
 ![Visualisointi ja valikko](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
 ### <a name="tooltip-and-drill-actions"></a>Työkaluvihje ja porautumistoiminnot
-
 Kun napautat pitkään arvopistettä, näkyviin tulevassa työkaluvihjeessä näkyvät kyseisen arvopisteen edustamat arvot:
 
 ![Työkaluvihje](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
@@ -126,6 +132,8 @@ Esimerkki:
 
 Power BI -mobiilisovellus tukee sekä raportin luojan määrittämiä raporttikirjanmerkkejä että henkilökohtaisia kirjanmerkkejä, joita voit määrittää Power BI -palvelussa. Löydät Kirjanmerkit-valikon kohdasta **Lisää vaihtoehtoja** (...) [raportin Toiminnot työkaluriviltä](mobile-reports-in-the-mobile-apps.md#all-report-actions).
 
+Oletuskirjanmerkit merkitään erikoiskuvakkeella. Voit määrittää, poistaa tai muuttaa oletusasetuksia henkilökohtaisissa kirjanmerkeissä napauttamalla **Lisää vaihtoehtoja (...)** muutettavan kirjanmerkin vieressä ja valitsemalla **Aseta oletukseksi** tai **Tyhjennä oletus**.
+
 ![Kirjanmerkki-valikko](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
 
 Kun raportin kirjanmerkkinäkymä on avoinna, kirjanmerkin nimi näkyy raportin yläreunassa.
@@ -133,6 +141,15 @@ Kun raportin kirjanmerkkinäkymä on avoinna, kirjanmerkin nimi näkyy raportin 
 ![kirjanmerkkinäkymä](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
 
 [Lue lisää kirjanmerkeistä Power BI -palvelussa](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
+
+## <a name="configure-your-experience-with-reports"></a>Raporttien käyttökokemuksen määrittäminen
+Power BI -mobiilisovelluksessa on useita asetuksia, joiden avulla voit hallita raporttien käyttökokemusta. Tällä hetkellä voit määrittää seuraavat:
+* **Käsittelemisen tuki raporttien visualisoinneissa**: Voit valita käyttöön käsittelyn yhdellä napautuksella tai kaksoisnapautuksella.
+* **Tietojen päivityksen raportti**: Voit valita raportin tietojen päivittämistä varten käyttöön joko päivityspainikkeen tai vetämistoiminnon.
+* **Raportin alatunnisteen näkyvyys**: Voit valita joko kiinnitetyn alatunnisteen, joka on aina näkyvissä, tai dynaamisen alatunnisteen, joka piilotetaan ja tuodaan uudelleen näkyviin sen mukaan, mitä toimintoja (esimerkiksi vieritystä) käytät.
+
+Katso [sovelluksen vuorovaikutusasetuksista](./mobile-app-interaction-settings.md) lisätietoja näiden asetusten muuttamisesta.
+
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Puhelimelle optimoitujen Power BI -raporttien tarkasteleminen ja käyttäminen](mobile-apps-view-phone-report.md)

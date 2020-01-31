@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 01/21/2020
 ms.author: maggies
-ms.openlocfilehash: 019cbc489ae6433629898e44088e689767ef12ae
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 343c7d7e81d8e8ec53383feab6dc4dcfb17129d6
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874190"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540586"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI -raporttien tietolähteet Power BI -raporttipalvelimessa
 Power BI -raportit voivat muodostaa yhteyden useisiin tietolähteisiin. Käytettävissä on eri tietolähteitä riippuen siitä, miten tietoja käytetään. Tiedot voidaan tuoda tai tiedoille voidaan tehdä kyselyitä suoraan DirectQuerylla tai reaaliaikaisella SQL Server Analysis Services -yhteydellä.
@@ -32,17 +32,17 @@ Muutkin tietolähteet saattavat toimia, vaikka ne eivät olekaan tuettujen luett
 | --- | --- | --- | --- |
 | SQL Server -tietokanta |Kyllä |Kyllä |Kyllä |
 | SQL Server Analysis Services |Kyllä |Kyllä |Kyllä |
-| Azure SQL -tietokanta |Kyllä |Kyllä |Kyllä |
+| Azuren SQL-tietokanta |Kyllä |Kyllä |Kyllä |
 | Azure SQL -tietovarasto |Kyllä |Kyllä |Kyllä |
 | Excel |Kyllä |Kyllä |Ei |
 | Access-tietokanta |Kyllä |Kyllä |Ei |
 | Active Directory |Kyllä |Kyllä |Ei |
 | Amazon Redshift |Kyllä |Ei |Ei |
-| Azure Blob Storage |Kyllä |Kyllä |Ei |
+| Azure-blob-objektitallennus |Kyllä |Kyllä |Ei |
 | Azure Data Lake Store |Kyllä |Ei |Ei |
 | Azure HDInsight (HDFS) |Kyllä |Ei |Ei |
 | Azure HDInsight (Spark) |Kyllä |Kyllä |Ei |
-| Azure-taulukkosäilö |Kyllä |Kyllä |Ei |
+| Azure-taulukkotallennus |Kyllä |Kyllä |Ei |
 | Dynamics 365 (online) |Kyllä |Ei |Ei |
 | Facebook |Kyllä |Ei |Ei |
 | Kansio |Kyllä |Kyllä |Ei |
@@ -121,15 +121,15 @@ Power BI -raporttipalvelin ei tue OAuth-pohjaista todennusta mallipäivityksess�
 | SQL Server -tietokanta |Ei |Ei |Kyllä |Kyllä |
 | SQL Server Analysis Services |Ei |Ei |Kyllä |Kyllä |
 | Verkko |Kyllä |Ei |Kyllä |Kyllä |
-| Azure SQL -tietokanta |Ei |Ei |Kyllä |Ei |
+| Azuren SQL-tietokanta |Ei |Ei |Kyllä |Ei |
 | Azure SQL Data Warehouse |Ei |Ei |Kyllä |Ei |
 | Active Directory |Ei |Ei |Kyllä |Kyllä |
 | Amazon Redshift |Ei |Ei |Ei |Ei |
-| Azure Blob Storage |Kyllä |Kyllä |Ei |Ei |
+| Azure-blob-objektitallennus |Kyllä |Kyllä |Ei |Ei |
 | Azure Data Lake Store |Ei |Ei |Ei |Ei |
 | Azure HDInsight (HDFS) |Ei |Ei |Ei |Ei |
 | Azure HDInsight (Spark) |Kyllä |Kyllä |Ei |Ei |
-| Azure-taulukkosäilö |Ei |Kyllä |Ei |Ei |
+| Azure-taulukkotallennus |Ei |Kyllä |Ei |Ei |
 | Dynamics 365 (online) |Ei |Ei |Ei |Ei |
 | Facebook |Ei |Ei |Ei |Ei |
 | Kansio |Ei |Ei |Ei |Kyllä |
@@ -198,16 +198,16 @@ Power BI -raporttipalvelin ei tue OAuth-pohjaista todennusta DirectQuerylle.
 | --- | --- | --- | --- | --- | --- |
 | SQL Server -tietokanta |Ei |Ei |Kyllä |Kyllä |Kyllä |
 | SQL Server Analysis Services |Ei |Ei |Kyllä |Kyllä |Kyllä |
-| Azure SQL -tietokanta |Ei |Ei |Kyllä |Ei |Ei |
+| Azuren SQL-tietokanta |Ei |Ei |Kyllä |Ei |Ei |
 | Azure SQL Data Warehouse |Ei |Ei |Kyllä |Ei |Ei |
 | Oracle-tietokanta |Ei |Ei |Kyllä |Kyllä |Kyllä |
 | SAP Business Warehouse -palvelin |Ei |Ei |Kyllä |Ei |Ei |
-| SAP HANA -tietokanta |Ei |Ei |Kyllä |Kyllä |Ei |
+| SAP HANA -tietokanta |Ei |Ei |Kyllä |Kyllä |Kyllä** |
 | Teradata |Ei |Ei |Kyllä |Kyllä |Kyllä |
 
+**SAP HANA tukee DirectQueryä integroidulla Windows-todentamisella vain, kun sitä käytetään relaatiotietokantana julkaistussa Power BI Desktop -tiedostossa (.pbix).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Nyt kun olet muodostanut yhteyden tietolähteeseen, voit [luoda Power BI -raportin](quickstart-create-powerbi-report.md) sen tiedoista.
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-

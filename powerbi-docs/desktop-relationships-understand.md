@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 56ff7d09530030d1a1ae046a3439022cbf638b9d
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 124f373e7841cb899f0a26debb2bcc8302e8e970
+ms.sourcegitcommit: 7efbe508787029e960d6d535ac959a922c0846ca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760568"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76309121"
 ---
 # <a name="create-model-relationships-in-power-bi-desktop"></a>Mallien suhteiden luominen Power BI Desktopissa
 
@@ -227,4 +227,6 @@ Seuraavassa luettelossa yhteyksien suodattimenlevityskyky on järjestyksessä no
 
 - [Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä](guidance/star-schema.md)
 - [Monta-moneen-suhteen ohjeet](guidance/relationships-many-to-many.md)
+- Video: [Huomioitavat asiat Power BI:n yhteyksiin liittyen](https://youtu.be/78d6mwR8GtA)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+- Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com)

@@ -73,7 +73,7 @@ Seuraavien ohjeiden avulla voit luoda Power BI -perusraportin AdventureWorksDW-m
 
     ![Kentät-ruutu](./media/service-gateway-sql-tutorial/fields-pane.png)
 
-5. Vedä **päättymispäivämäärä** **raporttitason suodattimiin**. Valitse sitten **perussuodatuksen** kohdasta vain **(Tyhjä)**-valintaruutu.
+5. Vedä **päättymispäivämäärä** **raporttitason suodattimiin**. Valitse sitten **perussuodatuksen** kohdasta vain **(Tyhjä)** -valintaruutu.
 
     ![Raporttitason suodattimet](./media/service-gateway-sql-tutorial/report-level-filters.png)
 
@@ -134,7 +134,7 @@ Yhdistit Power BI Desktopissa suoraan paikalliseen SQL Server -tietokantaan, mut
 
 Nyt kun olet yhdistänyt Power BI -tietojoukon SQL Server -tietokantaan paikallisesti tietoyhdyskäytävän kautta, määritä päivitysaikataulu näiden ohjeiden mukaisesti. Tietojoukon säännöllinen päivittäminen auttaa varmistamaan, että raporttisi ja koontinäyttösi sisältävät uusimmat tiedot.
 
-1. Avaa siirtymisruudusta **Oma työtila** \> **Tietojoukot**. Valitse kolme pistettä (**. . .**) **AdventureWorksProducts**-tietojoukon kohdalla ja valitse sitten **Ajoita päivitys**.
+1. Avaa siirtymisruudusta **Oma työtila** \> **Tietojoukot**. Valitse kolme pistettä ( **. . .** ) **AdventureWorksProducts**-tietojoukon kohdalla ja valitse sitten **Ajoita päivitys**.
 
     > [!NOTE]
     > Muista valita kolme pistettä **AdventureWorksProducts**-tietojoukon kohdalta, ei samannimisen raportin kohdalta. **AdventureWorksProducts**-raportin pikavalikko ei sisällä **Ajoita päivitys** -toimintoa.
@@ -168,7 +168,7 @@ Toimi sitten näiden ohjeiden mukaisesti, jotta päivitetyt tiedot lähetetään
 
 1. Valitse Power BI -palvelun siirtymisruudusta **Oma työtila** ja laajenna se.
 
-2. Valitse **Tietojoukot**-kohdassa kolme pistettä **(. . .**) **AdventureWorksProducts**-tietojoukon kohdalla ja valitse sitten **Päivitä nyt**.
+2. Valitse **Tietojoukot**-kohdassa kolme pistettä **(. . .** ) **AdventureWorksProducts**-tietojoukon kohdalla ja valitse sitten **Päivitä nyt**.
 
     ![Päivitä nyt](./media/service-gateway-sql-tutorial/refresh-now.png)
 

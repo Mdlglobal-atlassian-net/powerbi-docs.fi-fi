@@ -10,10 +10,10 @@ ms.date: 12/04/2019
 ms.author: mihart
 LocalizationGroup: Share your work
 ms.openlocfilehash: 25422b2503caed78e6e6518a855f6b23a0571a8c
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74830574"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Raporttien vieminen Power BI:stä PowerPointiin
@@ -30,7 +30,7 @@ Voit julkaista Power BI:llä raportin Microsoft PowerPointiin ja luoda helposti 
 **Power BI -raportin** vieminen **PowerPointiin** on nopeaa. Seuraa seuraavassa osiossa kuvailtuja vaiheita.
 
 ## <a name="export-your-power-bi-report-to-powerpoint"></a>Power BI -raportin vieminen PowerPointiin
-Valitse **Power BI** -palvelussa raportti, joka näytetään kankaalla. Voit myös valita raportin **aloitussivulta**, **sovelluksista** tai siirtymisruudun mistä tahansa muusta säilöstä.
+Valitse **Power BI** -palvelussa raportti, jonka haluat näyttää pohjalla. Voit myös valita raportin **aloitussivulta**, **sovelluksista** tai siirtymisruudun avulla mistä tahansa muusta säilöstä.
 
 Kun PowerPointiin vietävä raportti näkyy kankaalla, valitse **Vie** > **PowerPoint** valikkoriviltä.
 
@@ -43,7 +43,7 @@ Näkyviin tulee ponnahdusikkuna, jossa on vaihtoehtoina **Nykyiset arvot** ja **
 
 ![Valitse vietävät asiat](media/end-user-powerpoint/power-bi-current-values.png)
  
-Ponnahdusikkunassa on myös valintaruutu, jossa voit valita, viedäänkö raportin piilotetut välilehdet. Valitse tämä valintaruutu, jos haluat viedä vain sellaiset raportin välilehdet, joita voit tarkastella selaimessasi. Jos haluat viedä myös kaikki piilotetut välilehdet, jätä tämä valintaruutu tyhjäksi. Jos valintaruutu näkyy harmaana, raportissa ei ole piilotettuja välilehtiä. Piilotetusta välilehdestä esimerkkinä on työkalun vihje-välilehti. [Mukautetut työkaluvihjeet](../desktop-tooltips.md) luodaan raportin *suunnittelijoiden* toimesta, eivätkä ne näy raporttivälilehtinä Power BI -palvelussa *kuluttajille*. 
+Ponnahdusikkunassa on myös valintaruutu, jossa voit valita, viedäänkö raportin piilotetut välilehdet. Valitse tämä valintaruutu, jos haluat viedä vain sellaiset raportin välilehdet, joita voit tarkastella selaimessasi. Jos haluat viedä myös kaikki piilotetut välilehdet, jätä tämä valintaruutu tyhjäksi. Jos valintaruutu näkyy harmaana, raportissa ei ole piilotettuja välilehtiä. Esimerkki piilotetusta välilehdestä on työkaluvihjeen välilehti. [Mukautetut työkaluvihjeet](../desktop-tooltips.md) luodaan raportin *suunnittelijoiden* toimesta, eivätkä ne näy raporttivälilehtinä Power BI -palvelussa *kuluttajille*. 
 
 Kun olet tehnyt valintasi, jatka valitsemalla **Vie**. Näet Power BI -palvelun selainikkunan oikeassa yläkulmassa ilmoituspalkin, jossa ilmoitetaan raportin viemisestä PowerPointiin. Vieminen voi kestää joitakin minuutteja. Voi jatkaa Power BI:ssä työskentelemistä raportin viemisen aikana.
 
@@ -78,7 +78,7 @@ Ota huomioon seuraavat seikat ja rajoitukset, kun käytät **Vieminen PowerPoint
 * R-visualisointeja ei tällä hetkellä tueta. Tällaiset visualisoinnit viedään tyhjinä kuvina PowerPointiin mukanaan virhesanoma siitä, ettei visualisointia tueta.
 * Sertifioituja mukautettuja visualisointeja tuetaan. Saat lisätietoja sertifioiduista mukautetuista visualisoinneista, mukaan lukien sertifioinnin hakemisesta visualisoinnille, artikkelista [Mukautetun visualisoinnin sertifiointi](../developer/power-bi-custom-visuals-certified.md). Mukautettuja visualisointeja, joita ei ole sertifioitu, ei tueta. Ne viedään tyhjinä kuvina PowerPointiin mukanaan virhesanoma siitä, ettei visualisointia tueta.
 * Yli 30 raporttisivua sisältäviä raportteja ei tällä hetkellä voi viedä.
-* Vierityspalkkien visualisoinnit viedään niiden oletustilaan. Visualisoinnissa PowerPointissa näkyy vain tietojen ylin osa. Vieritys PowerPointissa ei ole käytettävissä, koska jokainen dia on kuva. 
+* Visualisoinnit, joissa on vierityspalkkeja, viedään niiden oletustilassa. Visualisoinnissa PowerPointissa näkyy vain tietojen ylin osa. Vieritys PowerPointissa ei ole käytettävissä, koska jokainen dia on kuva. 
 * Raportin vieminen PowerPointiin saattaa kestää muutamia minuutteja. Kestoon vaikuttavat esimerkiksi raportin rakenne ja Power BI -palvelun kulloinenkin kuormitus.
 * Jos **Vie PowerPointiin** -valikkovaihtoehtoa ei ole käytettävissä Power BI -palvelussa, syy on todennäköisesti se, että vuokraajan järjestelmänvalvoja on poistanut toiminnon käytöstä. Saat lisätietoja ottamalla yhteyttä vuokraajan järjestelmänvalvojaan.
 * Taustakuvat rajataan kaavion raja-alueen mukaiseksi. Suosittelemme poistamaan taustakuvat ennen PowerPointiin viemistä.

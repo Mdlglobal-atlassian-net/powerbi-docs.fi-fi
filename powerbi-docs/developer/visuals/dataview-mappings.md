@@ -145,7 +145,7 @@ Tuloksena saatava tietonäkymä sisältää yhä muita tyyppejä (esimerkiksi ta
 }
 ```
 
-Koodimalli yksinkertaisen tietonäkymän vastaavuuden käsittelyä varten
+Koodiesimerkki yksinkertaisen tietonäkymän yhdistämismäärityksen käsittelyä varten
 
 ```typescript
 "use strict";
@@ -183,9 +183,9 @@ export class Visual implements IVisual {
 }
 ```
 
-Tämän seurauksena visualisointi näyttää yksittäisen arvon Power BI:sta:
+Tämän seurauksena visualisointi näyttää yksittäisen arvon Power BI:stä:
 
-![Esimerkki yksittäisen DataView-kartan visualisoinnista](./media/visual-simple-dataview-mapping.png)
+![Esimerkki yksittäisen tietonäkymän yhdistämismäärityksen visualisoinnista](./media/visual-simple-dataview-mapping.png)
 
 ## <a name="categorical-data-mapping"></a>Luokittainen tietojen yhdistäminen
 
@@ -370,8 +370,8 @@ Power BI tuottaa sen luokittaisena tietonäkymänä. Se on luokkien joukko.
 
 Jokainen luokka yhdistyy myös joukkoon arvoja. Jokainen näistä arvoista ryhmitellään vuosina ilmaistavan sarjan mukaan.
 
-Esimerkiksi jokainen `values` matriisi edustaa kunkin vuoden tietoja.
-Lisäksi jokaisella `values` matriisilla on neljä arvoa Kanadassa, USA:ssa, Isossa-Britanniassa ja Meksikossa:
+Esimerkiksi jokainen `values`-matriisi edustaa kunkin vuoden tietoja.
+Lisäksi jokaisella `values`-matriisilla on neljä arvoa Kanadassa, USA:ssa, Isossa-Britanniassa ja Meksikossa:
 
 ```JSON
 {
@@ -424,7 +424,7 @@ Lisäksi jokaisella `values` matriisilla on neljä arvoa Kanadassa, USA:ssa, Iso
 }
 ```
 
-Luokkatietonäkymän vastaavuuden käsittelemisen koodimalli on kuvattu alla. Malli luo hierarkkisen rakenteen `Country => Year => Value`
+Luokittaisen tietonäkymän yhdistämismäärityksen käsittelemisen koodiesimerkki on kuvattu alla. Malli luo hierarkkisen rakenteen `Country => Year => Value`
 
 ```typescript
 "use strict";
@@ -493,7 +493,7 @@ export class Visual implements IVisual {
 
 Visualisoinnin tulos:
 
-![Visualisoinnit, joissa on luokittainen tietonäkymän yhdistämismääritys](./media/categorical-data-view-mapping-visual.png)
+![Visualisointi, jossa on luokittainen tietonäkymän yhdistämismääritys](./media/categorical-data-view-mapping-visual.png)
 
 ## <a name="table-data-mapping"></a>Taulukkotietojen yhdistäminen
 
@@ -557,7 +557,7 @@ Tietoesimerkki:
 
 Tietojen sidonta:
 
-![Taulukon tietonäkymän vastaavuustietojen sidonnasta](./media/table-dataview-mapping-data.png)
+![Taulukon tietonäkymän yhdistämismäärityksen tietojen sidonta](./media/table-dataview-mapping-data.png)
 
 Power BI näyttää tietosi taulukkotietonäkymänä. Sinun ei pidä olettaa, että tiedot on järjestetty.
 
@@ -605,7 +605,7 @@ Voit koostaa tiedot valitsemalla haluamasi kentän ja valitsemalla sitten summan
 
 ![Tietojen koostaminen](./media/data-aggregation.png)
 
-Koodimalli taulukkotietonäkymän vastaavuuden käsittelyä varten.
+Koodiesimerkki taulukon tietonäkymän yhdistämismäärityksen käsittelyä varten.
 
 ```typescript
 "use strict";
@@ -667,7 +667,7 @@ export class Visual implements IVisual {
 }
 ```
 
-Visual Styles-tiedosto `style/visual.less` sisältää taulukon ulkoasun:
+Visualisointitiedosto `style/visual.less` sisältää taulukon ulkoasun:
 
 ```less
 table {
@@ -686,7 +686,7 @@ td {
 }
 ```
 
-![Visualisoinnit, joissa on taulukkotietonäkymän yhdistämismääritys](./media/table-dataview-mapping-visual.png)
+![Visualisointi, jossa on taulukon tietonäkymän yhdistämismääritys](./media/table-dataview-mapping-visual.png)
 
 ## <a name="matrix-data-mapping"></a>Matriisitietojen yhdistäminen
 
@@ -936,4 +936,4 @@ Voit käyttää tietojenvähennysalgoritmia tietonäkymän yhdistämismatriisin 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Lue, miten voit [lisätä porautumistukea tietonäkymän yhdistämismäärityksille Power BI -visualisoinneissa](drill-down-support.md).
+Lue, miten voit [lisätä alaspäin porautumisen tukea tietonäkymän yhdistämismäärityksille Power BI -visualisoinneissa](drill-down-support.md).
