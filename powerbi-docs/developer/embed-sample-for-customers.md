@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/12/2019
-ms.openlocfilehash: e27789ca28d86a53b7d8340b3d766a73a04645cb
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: a07a3e6e1086c463e0f0c8911d7a9b6ce89aa115
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223426"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913660"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseen asiakkaille
 
@@ -410,7 +410,7 @@ Kun olet nyt kehittänyt sovelluksesi, on aika varata työtilalle kapasiteettia.
 
 Luomalla varattua kapasiteettia voit hyötyä siitä, että asiakkaalle varataan tietty resurssi. Valittavanasi on kahdentyyppisiä kapasiteetteja:
 * **Power BI Premium** – vuokraajatason Office 356: n tilaus, joka on saatavilla kahdesta SKU- perheestä, *EM* ja *P*. Kun upotat Power BI -sisältöä, tähän ratkaisuun viitataan nimellä *Power BI -upottaminen*. Lisätietoja tästä tilauksesta on kohdassa [Mikä on Power BI Premium?](../service-premium-what-is.md)
-* [Azure Power BI Embedded](https://portal.azure.com) – voit ostaa varattua kapasiteettia **Microsoft Azure -portaalista**. Tämä tilaus käyttää *A*-SKU:ita. Lisätietoa Power BI Embedded ‑kapasiteetin luomisesta saat ohjeaiheesta [Power BI Embedded -kapasiteetin luominen Azure-portaalissa](azure-pbie-create-capacity.md).
+* **Azure Power BI Embedded** – voit ostaa varattua kapasiteettia [Microsoft Azure -portaalista](https://portal.azure.com). Tämä tilaus käyttää *A*-SKU:ita. Lisätietoa Power BI Embedded ‑kapasiteetin luomisesta saat ohjeaiheesta [Power BI Embedded -kapasiteetin luominen Azure-portaalissa](azure-pbie-create-capacity.md).
 > [!NOTE]
 > A-varastointiyksiköillä et pysty käyttämään Power BI -sisältöä ilmaisella Power BI -käyttöoikeudella.
 
