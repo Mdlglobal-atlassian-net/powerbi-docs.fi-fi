@@ -1,20 +1,20 @@
 ---
 title: Johdanto Power BI -visualisoinnin SVG-apuohjelmien käyttöön
 description: Tässä artikkelissa kuvataan, miten SVG-apuohjelmien avulla voit yksinkertaistaa SVG-käsittelytoimintoja Power BI:n mukautetuissa visualisoinneissa
-author: vtkalek
-ms.author: asander
-manager: asander
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 15398c0e8d7322e29c502f49b8c1ea0798f52afe
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: 612c253e53cdaec5819387548354595c8bd94fa0
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75308521"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819303"
 ---
 # <a name="svg-utils"></a>SVG-apuohjelmat
 
@@ -70,7 +70,7 @@ divSelector.class === "sample-block"; // returns: true
 
 `manipulation` sisältää joitakin erikoisfunktioita, joilla luodaan merkkijonoja SVG-muunnosominaisuudessa käyttämistä varten.
 
-Moduuli sisältää seuraavat toiminnot ja liitynnät:
+Moduuli sisältää seuraavat funktiot:
 
 ### <a name="translate"></a>translate
 
@@ -260,7 +260,7 @@ manipulation.createArrow(10, 20, 5);
 
 `Rect`-moduuli tarjoaa erikoisfunktioita suorakulmioiden käsittelyä varten.
 
-Moduuli sisältää seuraavat toiminnot ja liitynnät:
+Moduuli sisältää seuraavat funktiot:
 
 ### <a name="getoffset"></a>getOffset
 

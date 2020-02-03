@@ -1,20 +1,20 @@
 ---
 title: Johdanto Power BI -visualisoinnin tyyppiapuohjelmien käyttöön
 description: Tässä artikkelissa kuvataan, miten SVG-apuohjelmien avulla voit laajentaa Power BI:n visualisointien perustyyppejä
-author: vtkalek
-ms.author: asander
-manager: asander
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 16645dc70cc236f809a2f2977a2b2fc1a048c254
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: 206fda4e64dd13782753bfd067c962b3079bb4ff
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75308544"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76818728"
 ---
 # <a name="type-utils"></a>Tyyppiapuohjelmat
 
@@ -30,7 +30,7 @@ npm install powerbi-visuals-utils-typeutils --save Tämä komento asentaa paketi
 
 `Double` tarjoaa mahdollisuudet käsitellä lukujen tarkkuutta.
 
-Moduuli sisältää seuraavat toiminnot ja liitynnät:
+Moduuli sisältää seuraavat funktiot:
 
 ### <a name="pow10"></a>pow10
 
@@ -378,7 +378,7 @@ double.toIncrement(0.6383723, 0.05);
 
 `Prototype` sisältää mahdollisuuksia periä objekteja.
 
-Moduuli sisältää seuraavat toiminnot ja liitynnät:
+Moduuli sisältää seuraavat funktiot:
 
 ## <a name="inherit"></a>inherit
 
@@ -434,7 +434,7 @@ prototype.inheritSingle(base);
 
 `PixelConverter` tarjoaa mahdollisuuden muuntaa kuvapisteet pisteiksi ja pisteet kuvapisteiksi.
 
-Moduuli sisältää seuraavat toiminnot ja liitynnät:
+Moduuli sisältää seuraavat funktiot:
 
 ## <a name="tostring"></a>toString
 

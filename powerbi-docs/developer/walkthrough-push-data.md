@@ -1,19 +1,19 @@
 ---
 title: Tietojen työntäminen tietojoukkoon
 description: Tietojen työntäminen Power BI -tietojoukkoon
-author: rkarlin
-ms.author: rkarlin
-ms.reviewer: madia
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: 5db16bfdc1013668be5103f392d6f298c8faf925
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ceebf32f62395db8741eaf43cfc494652fbbbf98
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875458"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76818797"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Tietojen työntäminen Power BI -tietojoukkoon
 
@@ -120,4 +120,4 @@ Aloita tietojen työntäminen tietojoukkoon katsomalla vasemman reunan siirtymis
 [Rekisteröidy Power BI -palveluun](create-an-azure-active-directory-tenant.md)  
 [Esittelyssä JSON](https://json.org/)  
 [Power BI REST -ohjelmointirajapinnan yleiskatsaus](overview-of-power-bi-rest-api.md)  
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

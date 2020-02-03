@@ -1,20 +1,20 @@
 ---
 title: Johdanto Power BI -visualisoinnin tietonäkymäapuohjelmien käyttöön
 description: Tässä artikkelissa kuvataan, miten voit SVG-apuohjelmien avulla yksinkertaistaa Power BI -visualisointien DataView-objektin jäsentämistä
-author: vtkalek
-ms.author: asander
-manager: asander
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 16dc3c6ec1125f85282670091bc41057ae5b1112
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: 79ad33a632a1f4935f462bcde0d36f2ccc55a2bd
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75308659"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76818981"
 ---
 # <a name="dataviewutils"></a>DataView-apuohjelmat
 
@@ -30,7 +30,7 @@ npm install powerbi-visuals-utils-dataviewutils --save Tämä komento asentaa pa
 
 `DataRoleHelper` sisältää toimintoja, joilla voi tarkistaa dataView-objektin roolit.
 
-Moduuli sisältää seuraavat toiminnot ja liitynnät:
+Moduuli sisältää seuraavat funktiot:
 
 ### <a name="getmeasureindexofrole"></a>getMeasureIndexOfRole
 
@@ -223,7 +223,7 @@ dataRoleHelper.hasRoleInValueColumn(valueColumn, "company");
 
 `DataViewObjects` sisältää funktioita objektien arvojen poimimista varten.
 
-Moduuli sisältää seuraavat toiminnot ja liitynnät:
+Moduuli sisältää seuraavat funktiot:
 
 ### <a name="getvalue"></a>getValue
 
@@ -370,7 +370,7 @@ dataViewObjects.getCommonValue(objects, biProperty); // returns: Power
 
 `DataViewObject` sisältää funktioita, joilla poimitaan objektin arvo.
 
-Moduuli sisältää seuraavat toiminnot ja liitynnät:
+Moduuli sisältää seuraavat funktiot:
 
 ### <a name="getvalue"></a>getValue
 
@@ -428,7 +428,7 @@ dataViewObject.getFillColorByPropertyName(object, "fillColor");
 
 `converterHelper` sisältää toimintoja, joilla voi tarkistaa dataView-objektin ominaisuudet.
 
-Moduuli sisältää seuraavat toiminnot ja liitynnät:
+Moduuli sisältää seuraavat funktiot:
 
 ### <a name="categoryisalsoseriesrole"></a>categoryIsAlsoSeriesRole
 

@@ -1,20 +1,20 @@
 ---
 title: Johdanto Power BI -visualisoinnin kaavioapuohjelmien käyttöön
 description: Tässä artikkelissa kerrotaan, miten voit piirtää akseleita ja selitteitä Power BI -visualisointeihin kaavioapuohjelmien avulla
-author: vtkalek
-ms.author: asander
-manager: asander
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: e67b37f73b3cea097a296f313fbfc8922b7dd945
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: e87235232860897765ef95bf0ec865410adf8fd1
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75308567"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819487"
 ---
 # <a name="chart-utils"></a>Kaavioapuohjelmat
 
@@ -32,7 +32,7 @@ npm install powerbi-visuals-utils-chartutils --save
 
 Akselin aputoiminto (apuohjelmien objekti `axis`) tarjoaa funktioita akseleiden käsittelyn helpottamiseen.
 
-Moduuli sisältää seuraavat toiminnot ja liitynnät:
+Moduuli sisältää seuraavat funktiot:
 
 ### <a name="getrecommendednumberofticksforxaxis"></a>getRecommendedNumberOfTicksForXAxis
 
@@ -158,7 +158,7 @@ axis.getTickLabelMargins(
 
 ### <a name="isordinal"></a>isOrdinal
 
-Tarkistaa, onko merkki jono tyhjä arvo tai määrittämätön tai tyhjä.
+Tarkistaa, onko merkkijono tyhjäarvoinen, määrittämätön tai tyhjä.
 
 ```typescript
 function isOrdinal(type: ValueTypeDescriptor): boolean;
@@ -595,7 +595,7 @@ DataLabelManager.isValid(rectangle);
 
 `DataLabelUtils` tarjoaa apuohjelmat arvopisteiden otsikoiden käsittelyyn.
 
-Moduuli sisältää seuraavat toiminnot ja liitynnät ja luokat:
+Moduuli sisältää seuraavat funktiot, liittymät ja luokat:
 
 ### <a name="getlabelprecision"></a>getLabelPrecision
 
@@ -683,7 +683,7 @@ let formattedValue = formatter.format(value);
 
 `Legend`palvelu tarjoaa apuliittymiä mukautettujen visualisointien PBI-selitteiden luomiseen ja hallintaan
 
-Moduuli sisältää seuraavat toiminnot ja liitynnät:
+Moduuli sisältää seuraavat funktiot ja liittymät:
 
 ### <a name="createlegend"></a>createLegend
 
@@ -743,7 +743,7 @@ export interface ILegend {
 
 ### <a name="drawlegend"></a>drawLegend
 
-Tämä ominaisuus mittaa tekstin korkeutta annetuilla SVG-tekstin ominaisuuksilla.
+Tämä funktio mittaa tekstin korkeutta annetuilla SVG-tekstiominaisuuksilla.
 
 ```typescript
 function drawLegend(data: LegendData, viewport: IViewport): void;
