@@ -489,8 +489,10 @@
               href: service-new-workspaces.md
             - name: Töiden jakaminen
               href: service-how-to-collaborate-distribute-dashboards-reports.md
-            - name: Power BI -käytön seuranta
+            - name: Käytön valvominen perinteisissä työtiloissa
               href: service-usage-metrics.md
+            - name: Käytön valvominen uusissa työtiloissa
+              href: service-modern-usage-metrics.md
         - name: Käyttöoikeudet
           items:
             - name: 'Rekisteröidy Power BI:hin'
@@ -645,8 +647,6 @@
               href: service-create-qr-code-for-report.md
             - name: Raportin vieminen Power BI Desktopiin (esikatselu)
               href: service-export-to-pbix.md
-            - name: Raportin suodattaminen URL-osoitteen parametrien avulla
-              href: service-url-filters.md
             - name: Muokkaa SAP-muuttujia
               href: service-edit-sap-variables.md
             - name: Parhaat käytännöt nopeiden ja luotettavien raporttien luomiseen
@@ -691,8 +691,10 @@
           items:
             - name: Raporttinäkymien ja raporttien jakaminen
               href: service-share-dashboards.md
-            - name: Suodatetun raportin jakaminen
+            - name: Raportin suodattaminen ja jakaminen
               href: service-share-reports.md
+            - name: Raportin suodattaminen URL-osoitteen parametrien avulla
+              href: service-url-filters.md
             - name: Tilaa itselle tai muille
               href: service-report-subscribe.md
             - name: Raportin upottaminen SharePoint Onlineen

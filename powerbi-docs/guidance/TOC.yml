@@ -32,6 +32,8 @@
               href: relationships-many-to-many.md
             - name: DirectQuery-mallin ohjeet
               href: directquery-model-guidance.md
+            - name: Yhdistelmämallin ohjeet
+              href: composite-model-guidance.md
         - name: DAX
           items:
             - name: JAKO-funktion ja jako-operaattorin (/) vertailu
@@ -50,8 +52,6 @@
               href: dax-column-measure-references.md
             - name: Vältä FILTER-arvon käyttämistä suodatinargumenttina
               href: dax-avoid-avoid-filter-as-filter-argument.md
-        - name: Raportin luominen
-          items:
             - name: Visualisointien laajentaminen raporttisivun työkaluvihjeiden avulla
               href: report-page-tooltips.md
             - name: Raporttisivun porautumisen käyttäminen
@@ -64,6 +64,10 @@
               href: report-paginated-blank-page.md
             - name: 'SSRS-raporttien siirtäminen Power BI:hin'
               href: migrate-ssrs-reports-to-power-bi.md
+        - name: Järjestelmänvalvoja ja käyttöönotto
+          items:
+            - name: Paikallisten tietoyhdyskäytävien koko
+              href: gateway-onprem-sizing.md
     - name: Raportit
       items:
         - name: Raporttien yleiskatsaus
