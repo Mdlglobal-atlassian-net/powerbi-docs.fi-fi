@@ -457,6 +457,8 @@
           href: service-get-started.md
         - name: Yhdistä GitHub-malliin
           href: service-tutorial-connect-to-github.md
+        - name: Analysoinnin käyttäminen Excelissä
+          href: service-tutorial-analyze-in-excel.md
         - name: Kognitiivisten palvelujen käyttö
           href: service-tutorial-use-cognitive-services.md
         - name: Automaattianalyysipalveluiden integrointi
