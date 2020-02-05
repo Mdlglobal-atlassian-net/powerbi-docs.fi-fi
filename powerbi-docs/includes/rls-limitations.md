@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 09/13/2019
 ms.author: davidi
 ms.openlocfilehash: 6d1a239954a64da1c92cc68b56912e6f4ab67228
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74882775"
 ---
 ## <a name="limitations"></a>Rajoitukset
@@ -17,7 +17,7 @@ Tässä on luettelo tämänhetkisistä rajoituksista pilvimallien rivitason suoj
 
 * Jos määritit aiemmin roolit ja säännöt Power BI -palvelussa, sinun on luotava ne uudelleen Power BI Desktopissa.
 
-* Voit määrittää rivitason suojauksen vain tietojoukoille, jotka on luotu Power BI Desktopin avulla. Jos haluat ottaa rivitason suojauksen käyttöön tietojoukoille, jotka on luotu Excelin avulla, sinun on ensin muunnettava tiedostosi Power BI Desktop (PBIX) -tiedostoiksi. [Lue lisää](../desktop-import-excel-workbooks.md)
+* Voit määrittää rivitason suojauksen vain tietojoukoille, jotka on luotu Power BI Desktopin avulla. Jos haluat ottaa rivitason suojauksen käyttöön tietojoukoille, jotka on luotu Excelin avulla, sinun on ensin muunnettava tiedostosi Power BI Desktop (PBIX) -tiedostoiksi. [Lisätietoja](../desktop-import-excel-workbooks.md)
 
 * Vain tuonti- ja DirectQuery-yhteyksiä tuetaan. Reaaliaikaisista yhteyksistä Analysis Servicesiin huolehditaan paikallisessa mallissa.
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 12/03/2019
-ms.openlocfilehash: 12ecde787bb268190f9b94a2db5992d5840080ac
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.openlocfilehash: 73a6a3d16ae2515af41a3232a37579e18876f38b
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75002531"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "75223677"
 ---
 # <a name="submit-a-power-bi-visual-to-appsource-using-seller-dashboard"></a>Power BI -visualisoinnin lähettäminen AppSourceen myyjän koontinäytön kautta
 
@@ -103,7 +103,7 @@ Noudata tämän osion ohjeita, kun lähetät Power BI -visualisoinnin sertifioit
     * [Vaatimuksien noudattaminen](power-bi-custom-visuals-certified.md#certification-requirements)
     * Kooditarkastuksen läpäiseminen
 
-2. Microsoftin Power BI -visualisointien tiimi ilmoittaa, kun Power BI -visualisointi on joko sertifioitu ja lisätty [sertifioitujen luetteloon](power-bi-custom-visuals-certified.md#list-of-power-bi-visuals-that-have-been-certified) tai hylätty, jolloin mukana toimitetaan raportti korjattavista ongelmista. On kehittäjän vastuulla pitää yllä avointa viestiyhteyttä Microsoftin kanssa ja päivittää tarvittaessa omat sertifioidut visualisointinsa.
+2. Microsoftin Power BI ‑visualisointien tiimi ilmoittaa, kun Power BI ‑visualisointi on joko sertifioitu ja lisätty [sertifioitujen Power BI ‑visualisointien luetteloon](power-bi-custom-visuals-certified.md#certified-power-bi-visuals) tai hylätty, jolloin mukana toimitetaan raportti korjattavista ongelmista. On kehittäjän vastuulla pitää yllä avointa viestiyhteyttä Microsoftin kanssa ja päivittää tarvittaessa omat sertifioidut visualisointinsa.
 
 ## <a name="tracking-submission-status-and-usage"></a>Lähetyksen tilan ja käytön seuraaminen
 

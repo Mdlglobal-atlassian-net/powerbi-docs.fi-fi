@@ -7,18 +7,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/19/2019
 ms.author: mohaali
-ms.openlocfilehash: 9805b98df7f606e61412ca9dee7dc0467a1649a3
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.openlocfilehash: a17f98859e637621fbae037610359c8f29391a98
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74791794"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "75762274"
 ---
-# <a name="introduction-to-power-bi-qa-visual"></a>Johdatus Power BI:n Q&A-visualisointiin
+# <a name="introduction-to-power-bi-qa-visualizations"></a>Johdatus Power BI:n Q&A-visualisointeihin
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-## <a name="what-is-the-qa-visual"></a>Mikä Q&A-visualisointi on
+## <a name="what-are-qa-visualizations"></a>Mitä Q&A-visualisoinnit ovat?
 
 Q&A-visualisoinnin avulla käyttäjät voivat esittää kysymyksiä käyttämällä luonnollista kieltä ja saada vastauksia visualisoinnin muodossa. 
 

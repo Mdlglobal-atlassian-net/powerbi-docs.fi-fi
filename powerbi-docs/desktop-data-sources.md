@@ -10,10 +10,10 @@ ms.date: 01/09/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 0cf9d6acd4fe5f729dafb575a2ab736b9e8db7bb
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "76039804"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktopin tietolähteet
@@ -461,10 +461,10 @@ URL-osoitteen täytyy osoittaa itse SharePoint-sivustoon, ei luetteloon sivustos
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Voit tehdä kaikenlaista Power BI Desktopilla. Saat lisätietoja sen toiminnoista seuraavista resursseista:
+Power BI Desktopilla voit tehdä kaikenlaista. Saat lisätietoja sen toiminnoista seuraavista resursseista:
 
 * [Mikä on Power BI Desktop?](desktop-what-is-desktop.md)
-* [Power BI Desktopin kyselyiden yleiskatsaus](desktop-query-overview.md)
+* [Power BI Desktopin kyselyjen yleiskatsaus](desktop-query-overview.md)
 * [Tietotyypit Power BI Desktopissa](desktop-data-types.md)
 * [Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)
 * [Yleiset kyselytehtävät Power BI Desktopissa](desktop-common-query-tasks.md)

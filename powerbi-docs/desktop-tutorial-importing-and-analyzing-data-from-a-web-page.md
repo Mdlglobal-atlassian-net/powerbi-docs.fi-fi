@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 01/13/2020
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: ef1d72754d7f77d7cb3c835c1a2b94e0f7e324f4
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 5497c56f358470d0d24f69f0d67865dbbd7839a3
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76039400"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77026734"
 ---
 # <a name="tutorial-analyze-webpage-data-by-using-power-bi-desktop"></a>Opetusohjelma: Verkkosivun tietojen analysointi Power BI Desktopilla
 
@@ -24,7 +24,7 @@ Pitkäaikaisena jalkapallofanina haluat raportin UEFA Euroopan mestaruuskisojen 
 - muodostetaan yhteys verkkotietolähteeseen ja siirrytään käytettävissä olevien taulukoiden välillä,
 - muotoillaan ja muunnetaan tietoa Power Query -editorissa,
 - annetaan kyselylle nimi ja tuodaan se Power BI Desktop -raporttiin,
-- luodaan ja mukautetaan kartan ja ympyräkaavion visualisointeja.
+- luodaan ja mukautetaan kartan ja ympyräkaavio visualisointeja.
 
 ## <a name="connect-to-a-web-data-source"></a>Yhteyden muodostaminen verkkotietolähteeseen
 
@@ -36,7 +36,7 @@ Verkkoyhteydet muodostetaan vain perustodentamista käyttämällä. Todentamista
 
 Tietojen tuominen:
 
-1. Power BI Desktopin **Aloitus**-valintanauhan välilehdeltä, avaa nuoli **Nouda tiedot** -kohdan vierestä ja valitse sitten **Verkko**.
+1. Power BI Desktopin **Koti** -valintanauhan välilehdeltä, avaa nuoli **Nouda tiedot**-kohdan vierestä ja valitse sitten **Verkko**.
 
    ![Tietojen noutaminen valintanauhasta](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web3.png) 
 
@@ -116,7 +116,7 @@ Koska etsit nyt vain finaalien voittajatietoja, voit nimetä toisen sarakkeen uu
 
 Voit myös suodattaa **Maa**-sarakkeesta pois rivit, jotka eivät sisällä käypiä arvoja, kuten ”2020”. Voit käyttää suodatinvalikkoa samalla tavalla kuin suodattaessasi **Vuosi**-sarakkeen arvoja, tai voit:
 
-1. napsauttaa hiiren kakkospainiketta **Maa**-solun **2020**-rivillä, jonka on arvo *tyhjä*.
+1. napsauttaa hiiren kakkospainikketta **Maa**-solun **2020**-rivillä, jonka on arvo *tyhjä*.
 
 1. Valitse **Tekstisuodattimet** > **Ei ole yhtä suuri kuin**-pikavalikosta rivit, jotka sisältävät solun arvon.
 
@@ -130,7 +130,7 @@ Nyt kun olet muotoillut tietoja haluamallasi tavalla, voit nimetä kyselysi ”E
 
    ![Kyselyn nimeäminen](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage8.png)
 
-1. Valitse **Sulje ja ota käyttöön** > **Sulje ja ota käyttöön** **Aloitus**-valintanauhan välilehdeltä.
+1. Valitse **Sulje ja ota käyttöön** > **Sulje ja ota käyttöön** **Koti** -valintanauhan välilehdeltä.
 
    ![Sulje ja ota käyttöön](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage9.png)
 
@@ -141,7 +141,7 @@ Kysely ladataan Power BI Desktopin *Raportti*-näkymään, jossa se näkyy **Ken
 >[!TIP]
 >Pääset aina takaisin Power Query -editoriin, jossa voit muokata ja hienosäätää kyselyäsi:
 >- valitsemalla **Lisäasetuksista** kolme pistettä ( **...** ) **Euroopan-mestaruus voittajat** -kohdan vierestä**Kentät**-ruudusta ja valitsemalla **Muokkaa kyselyä**, tai
->- valitsemalla **Muokkaa kyselyitä** > **Muokkaa kyselyitä** **Ulkoiset tiedot** -ryhmästä raporttinäkymän **Aloitus**-valintanauhasta. 
+>- valitsemalla **Muokkaa kyselyitä** > **Muokkaa kyselyitä** **Ulkoiset tiedot** - ryhmästä raporttinäkymän **Koti** -valintanauhasta. 
 
 ## <a name="create-a-visualization"></a>Visualisoinnin luominen
 
@@ -201,7 +201,7 @@ Power BI Desktop tarjoaa saumattoman kokemuksen alusta loppuun. Sen avulla voit 
 
 ## <a name="see-also"></a>Muuta aiheeseen liittyvää
 
-* [Lue muita Power BI Desktop -opetusohjelmia](/guided-learning/)
+* [Lue muita Power BI Desktop -opetusohjelmia](/power-bi/guided-learning/)
 * [Katso Power BI Desktop -videoita](desktop-videos.md)
 * [Käy Power BI -keskustelupalstalla](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Lue Power BI -blogia](https://go.microsoft.com/fwlink/?LinkID=519327)

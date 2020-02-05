@@ -10,10 +10,10 @@ ms.date: 10/31/2019
 ms.author: kfollis
 LocalizationGroup: Get started
 ms.openlocfilehash: 13928bc39801cdaccf73450da64c4f84048fbce3
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74791639"
 ---
 # <a name="sign-up-for-power-bi-as-an-individual"></a>Rekisteröityminen Power BI:hin yksityishenkilönä

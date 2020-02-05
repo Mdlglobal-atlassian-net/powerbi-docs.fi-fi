@@ -11,10 +11,10 @@ ms.author: maggies
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: e3fe8626001972acc0b7555f37844b5abb62753b
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74791989"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Tukemattoman tietolähteen vianmääritys päivitystä varten
@@ -40,9 +40,9 @@ Jos et ole varma, mitä tietolähdettä käytettiin, löydät sen seuraavien vai
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Tietojen päivittäminen](refresh-data.md)  
 [Power BI -yhdyskäytävä – Personal](service-gateway-personal-mode.md)  
-[Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md)  
+[On-premises data gateway (Paikallinen tietoyhdyskäytävä)](service-gateway-onprem.md)  
 [Paikallisen tietoyhdyskäytävän vianmääritys](service-gateway-onprem-tshoot.md)  
 [Power BI -yhdyskäytävän vianmääritys – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

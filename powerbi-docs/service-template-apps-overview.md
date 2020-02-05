@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/08/2019
+ms.date: 12/17/2019
 ms.author: painbar
-ms.openlocfilehash: f519665c78f8c96452091edb84ae9a40f9dc01ba
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.openlocfilehash: 528c86a75e2f255ad502dbdf973a61cd9de693d4
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "74999995"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "75224161"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Mitä Power BI -mallisovellukset ovat?
 
@@ -31,7 +31,7 @@ Power BI -mallisovellusten ansiosta Power BI Pro- ja Power BI Premium -käyttäj
 
 |  |
 |     :---:      |
-| [![Foo](./media/service-template-apps-overview/project-web.png)](https://app.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3) [![Foo](./media/service-template-apps-overview/azure-backup.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-azurebackup.pbi-azurebackup-template) [![Foo](./media/service-template-apps-overview/dynamics-sales.png)](https://app.powerbi.com/groups/me/getapps/services/microsoftdynsmb.businesscentral_sales) [![Foo](./media/service-template-apps-overview/forms-pro.png)](https://app.powerbi.com/groups/me/getapps/services/msfp.formsprocustomersatisfaction) |
+| [![Microsoft Project -verkkosovellus](./media/service-template-apps-overview/project-web.png)](https://app.powerbi.com/groups/me/getapps/services/pbi_msprojectonline.pbi-microsoftprojectwebapp) [![Azure-varmuuskopioinnin verkkosovellus](./media/service-template-apps-overview/azure-backup.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-azurebackup.pbi-azurebackup-template) [![Dynamic 365 Business Central – Sales -verkkosovellus](./media/service-template-apps-overview/dynamics-sales.png)](https://app.powerbi.com/groups/me/getapps/services/microsoftdynsmb.businesscentral_sales) [![Microsoft Forms Pro Customer Satisfaction -verkkosovellus](./media/service-template-apps-overview/forms-pro.png)](https://app.powerbi.com/groups/me/getapps/services/msfp.formsprocustomersatisfaction) |
 |  |
 
 ## <a name="process"></a>Prosessi

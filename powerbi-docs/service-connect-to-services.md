@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 91740d16a91aa8dc1936e8ae1a2812653c45e6a1
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: c342a7472666ee50b7213e7d933ad36da85ce7f6
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73925816"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76975029"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Käyttämiesi palveluiden yhdistäminen Power BI:hin
 Power BI:n avulla voit yhdistää moniin liiketoiminnassasi käyttämiin palveluihin, kuten Salesforce, Microsoft Dynamics ja Google Analytics. Power BI käynnistyy käyttäen tunnistetietojasi ja muodostaa yhteyden palveluun. Se luo Power BI *-työtilan*, jossa on koontinäyttö ja Power BI -raportteja, jotka näyttävät automaattisesti tietosi ja antavat visuaalisesti merkityksellisiä tietoja liiketoiminnastasi.
@@ -70,6 +70,5 @@ Jos olet kiinnostunut luomaan mallisovelluksia ja jakamaan niitä itse, katso [M
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Jaa sovelluksia työtovereillesi](service-create-distribute-apps.md)
 * [Luo uusia työtiloja Power BI:ssä](service-create-the-new-workspaces.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

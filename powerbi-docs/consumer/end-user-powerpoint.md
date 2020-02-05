@@ -10,10 +10,10 @@ ms.date: 12/04/2019
 ms.author: mihart
 LocalizationGroup: Share your work
 ms.openlocfilehash: 25422b2503caed78e6e6518a855f6b23a0571a8c
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74830574"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Raporttien vieminen Power BI:stä PowerPointiin

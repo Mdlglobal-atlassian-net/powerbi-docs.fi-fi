@@ -8,14 +8,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 8789986e94c860bffc622d903e33b4f1edabdd2d
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 160812521939d505612e0725e678dcf985f0d03a
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696160"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "75761837"
 ---
-# <a name="auto-datetime-in-power-bi-desktop"></a>Automaattinen päivämäärä/aika Power BI Desktopissa
+# <a name="apply-auto-datetime-in-power-bi-desktop"></a>Automaattisen päivämäärän ja ajan käyttö Power BI Desktopissa
 
 Tämä artikkeli on suunnattu tietomallintajille, jotka kehittävät tuonti- tai yhdistelmämalleja Power BI Desktopissa. Se esittelee ja kuvailee _Automaattinen päivämäärä ja aika_ -asetuksen.
 
@@ -36,7 +36,7 @@ Jokainen automaattinen päivämäärä/aika-taulukko on itse asiassa [laskettu t
 
 Power BI Desktop luo myös suhteen automaattisen päivämäärän ja ajan taulukon **päivämäärä**-sarakkeen ja mallin päivämääräsarakkeen välille.
 
-Automaattisen päivämäärän ja ajan taulukko sisältää täydet kalenterivuodet, jotka kattavat kaikki mallin päivämääräsarakkeeseen tallennetut päivämääräarvot. Jos esimerkiksi päivämääräsarakkeen aikaisin arvo on 20. maaliskuuta 2016 ja uusin arvo on 23. lokakuuta 2019, taulukko sisältää 1 461 riviä. Se tarkoittaa yhtä riviä kullekin päivämäärälle neljänä kalenterivuotena 2016 – 2019. Power BI päivittää mallin, ja myös jokainen automaattisen päivämäärän ja ajan taulukko päivitetään varmistaen, että ne sisältävät päivämääriä, jotka sisältävät päivämääräsarakkeen arvot.
+Automaattisen päivämäärän ja ajan taulukko sisältää täydet kalenterivuodet, jotka kattavat kaikki mallin päivämääräsarakkeeseen tallennetut päivämääräarvot. Jos esimerkiksi päivämääräsarakkeen aikaisin arvo on 20. maaliskuuta 2016 ja uusin arvo on 23. lokakuuta 2019, taulukko sisältää 1 461 riviä. Se tarkoittaa yhtä riviä kullekin päivämäärälle neljänä kalenterivuotena 2016 – 2019. Kun Power BI päivittää mallin, myös kaikki automaattiset päivämäärä- ja aikataulukot päivitetään. Näin malli sisältää aina päivämäärät, jotka sisältävät päivämääräsarakkeen arvot.
 
 Jos automaattisen päivämäärän ja ajan taulukon rivit olisi mahdollista nähdä, ne näyttäisivät tältä:
 
@@ -53,7 +53,7 @@ Jos automaattisen päivämäärän ja ajan taulukko olisi mahdollista nähdä ma
 
 ## <a name="work-with-auto-datetime"></a>Toimii automaattisen päivämäärän ja ajan kanssa
 
-Kun päivämääräsarakkeelle on määritetty automaattisen päivämäärän ja ajan taulukko (ja kyseinen sarake on näkyvissä), raportin tekijät eivät löydä kyseistä saraketta kenttänä **Kentät**-ruudusta. Sen sijaan he löytävät laajennettavan objektin, jolla on päivämääräsarakkeen nimi. Voit helposti tunnistaa sen, koska se on varustettu kalenterikuvakkeella. Kun raportin tekijät laajentavat kalenteriobjektia, he löytävät hierarkian, jonka nimi on **Päivämäärähierarkia**. Kun tekijä on laajentanut hierarkian, hän löytää neljä tasoa: **Vuosi**, **vuosineljännes**, **kuukausi** ja **päivä**.
+Kun päivämääräsarakkeelle on määritetty automaattinen päivämäärä/aika-taulukko (ja kyseinen sarake on näkyvissä), raportin tekijät eivät löydä kyseistä saraketta kenttänä **Kentät**-ruudusta. Sen sijaan he löytävät laajennettavan objektin, jolla on päivämääräsarakkeen nimi. Voit helposti tunnistaa sen, koska se on varustettu kalenterikuvakkeella. Kun raportin tekijät laajentavat kalenteriobjektia, he löytävät hierarkian, jonka nimi on **Päivämäärähierarkia**. Kun tekijä on laajentanut hierarkian, hän löytää neljä tasoa: **Vuosi**, **vuosineljännes**, **kuukausi** ja **päivä**.
 
 ![Esimerkki Kentät-ruudusta, jossa myyntitaulukko on avattuna. Se sisältää kalenterikuvakkeella varustetun OrderDate-kentän. Se on avattu ja sisältää hierarkian, jonka nimi on Päivämäärähierarkia. Sekin on laajennettu ja sisältää neljä tasoa: Vuosi, vuosineljännes, kuukausi ja päivä.](media/desktop-auto-date-time/auto-date-time-fields-pane-example.png)
 
@@ -93,7 +93,8 @@ Valitse Power BI Desktopissa _Tiedosto > Asetukset ja vaihtoehdot > Asetukset_ j
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Lisätietoja kyselyn automaattisesta päivämäärää/aikaa koskevista aiheista saat seuraavista lähteistä:
+Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
+- [Automaattisen päivämäärän/ajan ohjeet Power BI Desktopissa](guidance/auto-date-time.md)
 - [Päivämäärätaulukkojen määrittäminen ja käyttäminen Power BI Desktopissa](desktop-date-tables.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

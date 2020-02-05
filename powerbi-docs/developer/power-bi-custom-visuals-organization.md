@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
 ms.openlocfilehash: f11636de003aaab2d10d595b3c2b0230e373410c
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74999832"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Organisaation visualisoinnit Power BI:ssä
@@ -37,7 +37,7 @@ Lisätietoja organisaation Power BI -visualisointien käyttöönotosta ja hallin
 > [!WARNING]
 > Mukautettu visualisointi voi sisältää koodia, joka aiheuttaa suojaus- tai tietosuojariskejä. Varmista, että luotat mukautetun visualisoinnin tekijään ja lähteeseen, ennen kuin se otetaan käyttöön organisaation säilössä.
 
-## <a name="considerations-and-limitations"></a>Huomioon otettavat seikat ja rajoitukset
+## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
 Sinun on otettava huomioon useita seikkoja ja rajoituksia.
 

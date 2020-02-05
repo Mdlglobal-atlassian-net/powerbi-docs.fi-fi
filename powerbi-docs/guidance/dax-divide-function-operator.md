@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: c20a366ef657e851ef77a9649dbcc8b66b67dac0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 7eea15d4389afaac2ac69e2f26eaa38fe84e337b
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74695193"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "75304177"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX: JAKO-funktion ja jako-operaattorin (/) vertailu
 
@@ -58,7 +58,7 @@ On suositeltavaa käyttää DIVIDE-jakofunktiota aina, kun nimittäjä on lausek
 
 Jos nimittäjä on vakioarvo, on suositeltavaa käyttää jako-operaattoria. Tässä tapauksessa jakaminen onnistuu varmasti, ja lauseke toimii paremmin, koska se ei sisällä tarpeettomia testauksia.
 
-Harkitse tarkkaan, tuleeko DIVIDE-jakofunktion palauttaa vaihtoehtoinen arvo. Mittarien osalta on yleensä parempi suunnitella ne palauttamaan tyhjän, jos merkityksellisiä tuloksia ei voida laskea. Lisätietoja on kohdassa [Vältä tyhjien tulosten muuntamista arvoiksi](dax-avoid-converting-blank.md).
+Harkitse tarkkaan, tuleeko DIVIDE-jakofunktion palauttaa vaihtoehtoinen arvo. Mittareissa rakenne on yleensä parempi, kun ne voivat palauttaa tyhjän. Tyhjän palauttaminen parempaa, koska raporttien visualisoinnit oletusarvoisesti poistavat ryhmittelyt, kun yhteenvedot ovat tyhjiä. Tämän ansiosta visualisoinnissa voidaan painottaa ryhmiä, joissa on tietoja. Voit tarvittaessa määrittää visualisoinnin näyttämään kaikki ryhmät (jotka palauttavat arvoja tai tyhjän) suodatinkontekstissa ottamalla käyttöön asetuksen [Näytä kohteet, joilla ei ole tietoja](../desktop-show-items-no-data.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

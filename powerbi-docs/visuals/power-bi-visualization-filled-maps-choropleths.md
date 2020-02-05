@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e7fa98be039093015e1b19ba8bf20f1368658a43
-ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
+ms.openlocfilehash: 6a3458de09cece30948ff848859f05ed8127d034
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907808"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "75757849"
 ---
-# <a name="filled-maps-choropleth-in-power-bi"></a>Täytetyt kartat (koropleettikartat) Power BI:ssä
+# <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Täytettyjen karttojen (koropleettikartat) luominen ja käyttäminen Power BI:ssä
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 

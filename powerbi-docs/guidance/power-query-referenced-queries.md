@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/30/2019
 ms.author: v-pemyer
 ms.openlocfilehash: a0127a6ffa0d698a94e368532c44d0f83c362b42
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75002393"
 ---
 # <a name="referencing-power-query-queries"></a>Power Query -kyselyihin viittaaminen
@@ -54,5 +54,5 @@ Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resurssei
 
 - [Omatoiminen tietojen valmisteleminen Power BI:ssä](../service-dataflows-overview.md)
 - [Tietovoiden luominen ja käyttäminen Power BI:ssä](../service-dataflows-create-use.md)
-- Kaveri kuutiossa -video: [Power BI:n ja Excelin Power Query ‑viittauskyselyiden sisällä](https://www.youtube.com/watch?v=3uKNNZqBIkg)
+- Guy in a Cuben video: [Power BI:n ja Excelin Power Query ‑viittauskyselyiden sisällä](https://www.youtube.com/watch?v=3uKNNZqBIkg)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

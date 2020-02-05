@@ -5,10 +5,10 @@ ms.topic: include
 ms.date: 12/03/2019
 ms.author: kfollis
 ms.openlocfilehash: e046ad861f65a0a1b7d0a704fded822038438d85
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74958588"
 ---
 Power BI -palvelun käyttäjät ovat määrittäneet ominaisuuksia, jotka perustuvat käyttäjien käyttöoikeustyyppiin ja siihen, onko heidän käyttämänsä sisältö työtilassa, joka on määritetty Power BI Premium -kapasiteettiin.

@@ -10,10 +10,10 @@ ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
 ms.openlocfilehash: 06e46413be709ac3eda2102332740d709092187e
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74265348"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
@@ -113,13 +113,13 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 
 ### <a name="october-2018"></a>Lokakuu 2018
 * Koosteet [desktop aggregations.md] Power BI -palvelussa.
-* Power BI laajennettu kolmelle uudelle alueelle: Intian keskiosa, Itä-Australia ja Yhdysvaltojen keskiosa (Iowa). 
+* Power BI laajennettu kolmelle uudelle alueelle: Intian keskiosa, Australia, itäinen ja Yhdysvaltojen keskiosa (Iowa). 
 * Vie PowerPointiin -toiminto yleisesti saatavissa.
 
 ### <a name="september-2018"></a>Syyskuu 2018
 * [Koontinäytön kommentointi](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) Power BI -palvelussa.
 * [Power BI -aloitussivun ja yleisen haun](https://powerbi.microsoft.com/blog/introducing-power-bi-home-and-global-search/) julkinen esikatselu.
-* [Kyselyn seuranta](https://powerbi.microsoft.com/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) [kapasiteetin valvontasovelluksessa](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* [Kyselyn seuranta](https://powerbi.microsoft.com/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/)[kapasiteetin valvontasovelluksessa](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
 ### <a name="august-2018"></a>Elokuu 2018
 * [Kapasiteetin valvontasovellus](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) Power BI Premiumissa.
@@ -192,7 +192,7 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * Snowflakea ja SAP BusinessWarehouse DirectQuerya tuetaan nyt paikallisessa tietoyhdyskäytävässä.
 * Uudet [ohjelmointirajapinnat tietojen päivityksen hallintaan](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/) Power BI -palvelussa.
 
-### <a name="june-2017"></a>Kesäkuu 2017
+### <a name="june-2017"></a>Kesä 2017
 * [Power BI Premium](https://powerbi.microsoft.com/blog/power-bi-premium-generally-available/) saatettu yleisesti saataville.
 * Useita ohjelmointirajapintojen parannuksia, kuten [ajoitetun päivityksen automatisointi](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), [raporttien kloonaus ja uudelleensidonta](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), [yhdyskäytävän sidontojen päivitys](https://msdn.microsoft.com/library/mt784650.aspx) ja monta muuta
 * Power BI -sovellusten suhteelliset linkit koontinäytön ruuduista muihin koontinäyttöihin ja raportteihin.
@@ -405,7 +405,7 @@ Tänään julkaistiin runsaasti eniten pyydettyjä ominaisuuksia. [Lue blogimerk
 * Estä käyttäjiä julkaisemasta sisältöpaketteja koko organisaatiolle
 * Mahdollisuus poistaa käytöstä sisällön jakaminen ulkoisille käyttäjille
 
-***Nopeat merkitykselliset tiedot***
+***Quick Insights (Nopeat merkitykselliset tiedot)***
 
 * Nopeat merkitykselliset tiedot, kun julkaiset Power BI Desktop -tiedostoja
 

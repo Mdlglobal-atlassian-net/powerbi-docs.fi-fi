@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 12/02/2019
 ms.openlocfilehash: ec1bd8666a9d76b4ccfa7793415488f85a24dfdb
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74999890"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Power BI -visualisointien julkaiseminen kumppanikeskuksessa
@@ -33,7 +33,7 @@ Kun olet valmis lähettämään Power BI -visualisoinnin, varmista, että se tä
 
 | Kohde | Pakollinen | Kuvaus |
 | --- | --- | --- |
-| Pbiviz-paketti |Kyllä |Pakkaa Power BI -visualisointi Pbiviz-pakettiin, joka sisältää kaikki vaaditut metatiedot.<br>Visualisoinnin nimi<br>Näyttönimi<br>GUID-tunnus<br>Versio<br>Kuvaus<br>Tekijän nimi ja sähköpostiosoite |
+| Pbiviz-paketti |Kyllä |Pakkaa Power BI -visualisointi Pbiviz-pakettiin, joka sisältää kaikki vaaditut metatiedot.<br>Visualisoinnin nimi<br>Näyttönimi<br>GUID<br>Versio<br>Kuvaus<br>Tekijän nimi ja sähköpostiosoite |
 | .pbix-raporttitiedostoesimerkki |Kyllä |Auta käyttäjiä tutustumaan visualisointiisi esittelemällä sitä. Korosta arvoa, jota visualisointi tuo käyttäjille, ja anna esimerkkejä käytöstä ja muotoiluasetuksista. Voit myös lisätä loppuun *vinkkisivun*, jolla annat vinkkejä ja kerrot, mitä kannattaa välttää.<br>.pbix-raporttitiedostoesimerkin täytyy toimia offline-tilassa ilman mitään ulkoista yhteyttä. |
 | Kuvake |Kyllä |Sisällytä mukaan oman visualisointisi logo, joka näytetään kaupassa. Se voi olla .png-, .jpg-, .jpeg- tai .gif-muodossa. Sen on oltava tarkalleen 300 × 300 kuvapistettä (leveys × korkeus).<BR>**Tärkeää!** Lue tämä [AppSourcen kuvien tallennusopas](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) huolellisesti ennen logon lähettämistä. |
 | Näyttökuvat |Kyllä |Anna ainakin yksi näyttökuva. Se voi olla .png-, .jpg-, .jpeg- tai .gif-muodossa. Mittojen on oltava tarkalleen 1 366 kuvapistettä (leveys) ja 768 kuvapistettä (korkeus). Tiedostokoko saa olla enintään 1 024 kt.<br>Käyttäjämäärien kasvattamiseksi suosittelemme, että lisäät näyttökuviin tekstikuplia, jotka tuovat esiin tärkeimpien toimintojen etuja. |
@@ -51,7 +51,7 @@ Ennen **pbiviz**-paketin luomista sinun on täytettävä seuraavat **pbiviz.json
 * kuvaus
 * tuen Url
 * tekijä
-* nimi
+* name
 * sähköposti
 
 Liitä **pbiviz-tiedosto** ja **malliraportin pbix-tiedosto** sähköpostiisi. Power BI -tiimi vastaa sinulle ja antaa ohjeet sekä sovelluspaketin XML-tiedoston ladattavaksi. Tämä XML-sovelluspaketti vaaditaan, jotta voit lähettää julkaisusi Office Developer Centerin kautta.

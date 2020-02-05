@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 12/03/2019
 LocalizationGroup: Gateways
 ms.openlocfilehash: 889fbce483f839147677789c73d826fa23542731
-ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/11/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "75000108"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Kerberos-pohjaisen kertakirjautumisen määrittäminen Power BI -palvelusta paikallisiin tietolähteisiin
@@ -189,7 +189,7 @@ Lopuksi koneessa, joka suorittaa yhdyskäytäväpalvelua (esimerkissämme **OmaY
 
 1. Suorita yhdyskäytäväkoneessa **gpedit.msc**.
 
-2. Siirry kohtaan **Paikallisen tietokoneen käytäntö** &gt; **Tietokoneasetukset** &gt; **Windowsin asetukset** &gt; **Suojausasetukset** &gt; **Paikalliset käytännöt** &gt; **Käyttäjän oikeustehtävät**.
+2. Siirry kohtaan **Paikallisen tietokoneen käytäntö** &gt; **Tietokoneasetukset** &gt; **Windowsin asetukset** &gt; **Suojausasetukset** &gt; **Paikalliset käytännöt** &gt; **Järjestelmäoikeuksien osoitus**.
 
     ![Paikallisen tietokoneen käytäntöjen kansiorakenne](media/service-gateway-sso-kerberos/user-rights-assignment.png)
 
