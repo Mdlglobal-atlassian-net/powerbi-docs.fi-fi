@@ -1,28 +1,34 @@
 ---
 title: Power BI Pro -käyttöoikeuksien hankinta ja määritys
-description: Lue, miten voit ostaa ja määrittää Power BI Pro -käyttöoikeuksia, jotta käyttäjät voivat käyttää sisältöä ja tehdä yhteistyötä työtovereiden kanssa Power BI -palvelussa.
+description: Lue, miten voit ostaa ja määrittää Power BI Pro -käyttöoikeuksia käyttäjille, jotta he voivat käyttää sisältöä ja tehdä yhteistyötä muiden kanssa Power BI -palvelussa.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: quickstart
-ms.date: 10/29/2019
+ms.topic: conceptual
+ms.date: 01/16/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 55cdfad221aef276c790e98de83dd844bc13aafe
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.openlocfilehash: 138173d30b9c37c04047c61dbd04cbd3101696aa
+ms.sourcegitcommit: 08f65ea314b547b41b51afef6876e56182190266
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74958675"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "76753187"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Power BI Pro -käyttöoikeuksien hankinta ja määritys
 
-Power BI Pro on yksilöllinen käyttöoikeus, jonka avulla käyttäjät voivat lukea ja käsitellä raportteja sekä koontinäyttöjä, joita muut käyttäjät ovat julkaisseet Power BI -palvelussa, sekä jakaa sisältöä ja tehdä yhteistyötä muiden Power BI Pro -käyttäjien kanssa. Vain käyttäjät, joilla on Power BI Pro -käyttöoikeus, voivat julkaista tai jakaa sisältöä muiden käyttäjien kanssa tai käyttää muiden käyttäjien luomaa sisältöä, ellei kyseistä sisältöä isännöidä Power BI Premium -ominaisuudessa. Lisätietoja on [Power BI:n hinnoittelusivulla](https://powerbi.microsoft.com/pricing/) kohdassa _Power BI:n ominaisuuksien vertailu_.
+>[!IMPORTANT]
+>Ovatko käyttäjäsi valmiita päivittämään Power BI Pro -käyttöoikeuteen? Voit määrittää tilisi siirtymällä suoraan [Power BI Pro:n käytön aloittaminen](https://go.microsoft.com/fwlink/?LinkId=2106428&clcid=0x409&cmpid=pbidocs-purchasing-power-bi-pro) -kohtaan.
 
-## <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Power BI Pro -käyttöoikeuksien hankinta ja määritys
+Power BI Pro on yksilöllinen käyttöoikeus, jonka avulla käyttäjät voivat lukea ja käsitellä raportteja ja koontinäyttöjä, joita muut käyttäjät ovat julkaisseet Power BI -palvelussa. Käyttäjät, joilla on tämä käyttöoikeustyyppi, voivat jakaa sisältöä ja tehdä yhteistyötä muiden Power BI Pro -käyttäjien kanssa. Vain Power BI Pro -käyttäjät voivat julkaista tai jakaa sisältöä muiden käyttäjien kanssa tai käyttää muiden luomaa sisältöä, ellei Power BI Premium -kapasiteetissa isännöidä tätä sisältöä. Lisätietoja on [Power BI:n hinnoittelusivulla](https://powerbi.microsoft.com/pricing/) kohdassa _Power BI:n ominaisuuksien vertailu_.
 
-Tässä artikkelissa kerrotaan, miten voit ostaa Power BI Pro -käyttöoikeuksia Microsoft 365 -hallintakeskuksesta, ja esitellään kaksi vaihtoehtoa, joiden avulla järjestelmänvalvojat voivat määrittää käyttöoikeudet yksittäiselle käyttäjälle: Microsoft 365 -hallintakeskus ja Azure-portaali (valitse yksi vaihtoehto).
+## <a name="purchase-power-bi-pro-user-licenses"></a>Power BI Pro- käyttöoikeuksien ostaminen
+
+Tässä artikkelissa kerrotaan, miten voit ostaa Power BI Pro -käyttöoikeuksia Microsoft 365 -hallintakeskuksessa. Kun olet ostanut käyttöoikeudet, voit määrittää ne käyttäjille joko Microsoft 365 -hallintakeskuksessa tai Azure-portaalissa.
+
+> [!NOTE]
+> 14. tammikuuta 2020 alkaen Power Platform -tuotteiden (Power BI, Power Apps ja Power Automate) itsepalveluostot, tilaukset ja käyttöoikeuksien hallintatoiminnot ovat käytettävissä kaupallisille pilvipalveluasiakkaille Yhdysvalloissa. Lisätietoja siitä, miten voit ottaa itsepalveluostot käyttöön tai poistaa ne käytöstä organisaatiossasi, on artikkelissa [Itsepalveluostojen usein kysytyt kysymykset](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
 
 ### <a name="prerequisites"></a>Edellytykset
 
@@ -34,83 +40,43 @@ Jos haluat määrittää käyttöoikeudet Azure-portaalissa, sinulla on oltava A
 
 Näiden ohjeiden avulla voit ostaa Power BI Pro -käyttöoikeuksia Microsoft 365 -hallintakeskuksessa:
 
-1. Avaa [Microsoft 365 -hallintakeskus](https://portal.office.com/adminportal/home#/homepage).
+1. Kirjaudu [Microsoft 365 -hallintakeskukseen](https://admin.microsoft.com).
 
-2. Valitse siirtymisruudusta **Laskutus** > **Tilaukset**.
+2. Valitse siirtymisvalikosta **Laskutus** > **Ostopalvelut**.
 
-    ![Siirtymisruutu](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-01.png)
+3. Hae tai vieritä, jotta löydät tilauksen, jonka haluat ostaa. Löydät **Power BI:n** kohdasta **Muut luokat, jotka saattavat kiinnostaa sinua** läheltä sivun alareunaa. Valitse linkki, jos haluat tarkastella organisaatiosi käytettävissä olevia Power BI -tilauksia.
 
-3. Valitse **Tilaukset**-sivun oikeassa yläkulmassa **Lisää tilauksia**.
+4. Valitse **Power BI Pro**.
 
-    ![Tilaus](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-02.png)
+5. Valitse **Ostopalvelut**-sivulta **Osta**.
 
-4. Etsi haluamasi tilaustarjous:
+6. Valitse **Maksa kuukausittain** tai **Maksa koko vuosi** haluamasi maksutavan mukaan.
 
-    Valitse **Enterprise Suitesta** **Office 365 Enterprise E5**.
+7. Syötä käyttöoikeusmäärä, jonka haluat ostaa, kohdassa **Kuinka monta käyttäjää haluat?** . Valitse sitten **Maksa nyt** ostotapahtuman viimeistelemiseksi.
 
-    ![Office E5 -tilaus](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-03.png)
+8. Vahvista ostoksesi siirtymällä kohtaan **Laskutus** > **Tuotteet ja Palvelut** ja etsi **Power BI Pro**.
 
-    Valitse **Muut palvelupaketit** -kohdasta **Power BI Pro**.
+9. Jos haluat lisätä käyttöoikeuksia myöhemmin, etsi **Power BI Pro** **Tuotteet ja palvelut** -sivulta ja valitse sitten **Lisää tai poista käyttöoikeuksia**.
 
-    ![Power BI Pro -tilaus](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-04.png)
+## <a name="assign-licenses-in-the-microsoft-365-admin-center"></a>Käyttöoikeuksien määrittäminen Microsoft 365 -hallintakeskuksessa
 
-5. Vie hiiren kohdistin kolmen pisteen ( **. . .** ) päälle haluamassasi tilauksessa ja valitse **Osta nyt**.
+Lisätietoja käyttöoikeuksien määrittämisestä Microsoft 365 ‑hallintakeskuksessa saat kohdasta [Käyttöoikeuksien määrittäminen käyttäjille](/office365/admin/manage/assign-licenses-to-users).
 
-    ![Osta nyt](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-05.png)
+Vieraskäyttäjien osalta katso [Käyttöoikeuksien määrittäminen käyttäjille käyttöoikeussivulta](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Ennen kuin määrität Pro-käyttöoikeuksia vieraskäyttäjille, ota yhteyttä Microsoft-tiliedustajaan varmistaaksesi, että noudatat Microsoft-sopimuksesi ehtoja.
 
-6. Valitse **Maksa kuukausittain** tai **Maksa koko vuosi** haluamasi laskutustavan mukaan.
-
-7. Anna haluamasi käyttöoikeusmäärä kohdassa **Kuinka monta käyttäjää haluat?** , valitse **Siirry maksamaan** ja viimeistele ostos.
-
-8. Varmista, että hankittu tilaus näkyy nyt **Tilaukset**-sivulla.
-
-   ![Hankittu tilaus](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-06.png)
-
-9. Jos haluat lisätä enemmän käyttöoikeuksia alkuperäisen ostoksen jälkeen, valitse **Power BI Pro** -vaihtoehto **Tilaukset**-sivulla ja valitse sitten **Lisää tai poista käyttöoikeuksia**.
-
-### <a name="assign-licenses-in-the-microsoft-365-admin-center"></a>Käyttöoikeuksien määrittäminen Microsoft 365 -hallintakeskuksessa
+## <a name="assign-licenses-in-the-azure-portal"></a>Käyttöoikeuksien määrittäminen Azure-portaalissa
 
 Voit määrittää Power BI Pro -käyttöoikeuksia yksittäisille käyttäjätileille seuraavien ohjeiden mukaisesti:
 
-1. Avaa [Microsoft 365 -hallintakeskus](https://portal.office.com/adminportal/home#/homepage).
+1. Kirjaudu sisään [Azure-portaaliin](https://portal.azure.com/).
 
-2. Laajenna siirtymisruudun **Käyttäjät**-kohta ja valitse sitten **Aktiiviset käyttäjät**.
+2. Etsi **Azure Active Directory** ja valitse se.
 
-    ![Aktiiviset käyttäjät](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-05.png)
+3. Valitse **Hallitse**-kohdasta **Azure Active Directory** -resurssivalikosta **Käyttöoikeudet**.
 
-3. Valitse käyttäjä ja sitten kohdassa **tuotteiden käyttöoikeudet** valitse **Muokkaa**.
+4. Valitse **Kaikki tuotteet** **Käyttöoikeudet – yleiskatsaus** -resurssivalikosta ja valitse sitten **Power BI Pro**. Esiin tulee luettelo käyttäjistä, joilla on käyttöoikeus.
 
-    ![Tuotteiden käyttöoikeuksien muokkaaminen](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-06.png)
-
-4. Vaihda kohdassa **Power BI Pro** asetukseksi **Käytössä** ja valitse sitten **Tallenna**.
-
-    ![Tuotteiden käyttöoikeudet ovat käytössä](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-07.png)
-
-5. Vahvista valittujen tilien **Tila**-kohdasta, että Power BI Pro -käyttöoikeuden määritys onnistui.
-
-    ![Vahvista käyttöoikeuden tila](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-08.png)
-
-### <a name="assign-licenses-in-the-azure-portal"></a>Käyttöoikeuksien määrittäminen Azure-portaalissa
-
-Voit määrittää Power BI Pro -käyttöoikeuksia yksittäisille käyttäjätileille seuraavien ohjeiden mukaisesti:
-
-1. Avaa [Azure-portaali](https://ms.portal.azure.com/#@microsoft.onmicrosoft.com/dashboard/private/39bc3cf7-31a4-43f6-954c-f2d69ca2f0).
-
-2. Valitse siirtymisruudussa **Azure Active Directory**.
-
-    ![Azure Active Directory](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-01.png)
-
-3. Valitse **Azure Active Directory** -kohdassa **Käyttöoikeudet**.
-
-    ![Käyttöoikeudet](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-02.png)
-
-4. Valitse **Käyttöoikeudet**-kohdassa **Kaikki tuotteet** ja valitse sitten **Power BI Pro**. Näin näet luettelon kaikista käyttäjistä, joilla on käyttöoikeus.
-
-    ![Käyttöoikeudet – Kaikki tuotteet](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-03.png)
-
-5. Jos haluat lisätä Power BI Pro -käyttöoikeuden käyttäjätilille, valitse **Määritä**.
-
-    ![Käyttöoikeuden määritys](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-04.png)
+5. Valitse komentopalkista **+ Määritä**. Valitse **Määritä käyttöoikeus** -sivulla ensin käyttäjä ja valitse sitten **Määritysasetukset** Power BI Pro -käyttöoikeuden ottamiseksi käyttöön valitulle käyttäjätilille.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

@@ -7,15 +7,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 11/27/2019
+ms.date: 1/16/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9e00e68e0a5f6df62072a1d9744276bffbd3beb4
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.openlocfilehash: 4570fea58a19acb4f35a5c24d0a5bfa93beba215
+ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74791653"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76537550"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Raporttien vieminen Power BI:stä PDF-muotoon
 
@@ -63,6 +63,7 @@ Ota huomioon seuraavat seikat ja rajoitukset, kun käytät **Vie PDF-muotoon** -
 * URL-suodattimia ei oteta tällä hetkellä huomioon, kun valitset viennin kohdalla **Nykyiset arvot**.
 * Raporteissa, joiden sivukoko on poikkeava, saattaa esiintyä ongelmia vietäessä. Saat parhaat tulokset vaihtamalla raportissa käyttöön vakiosivukoon.
 * Kun viet PDF-tiedostoon, mukautettuja fontteja käyttävien teemojen avulla voit korvata mukautetun fontin oletusfontilla.
+* Vaikka pyrimme tarjoamaan johdonmukaisen käyttökokemuksen, emme voi taata, että Power BI -palvelusta viety PDF-tiedosto vastaa aina paikallisesta Power BI Desktop -tiedostosta vietyä PDF-tiedostoa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Raportin tulostaminen](end-user-print.md)
