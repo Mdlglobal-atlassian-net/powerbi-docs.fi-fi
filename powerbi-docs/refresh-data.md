@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: bdb5b797146dae0bd8c6a70163a245f44430da8c
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.openlocfilehash: 2db2b4f02dac1ebcd9d24a8217a181efa9ce0779
+ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74791675"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76039042"
 ---
 # <a name="data-refresh-in-power-bi"></a>Tietojen päivittäminen Power BI:ssä
 
@@ -94,7 +94,7 @@ Power BI:n päivitystoiminto voi koostua useista päivitystyypeistä, mukaan luk
 
 Power BI -käyttäjille tietojen päivittäminen tarkoittaa yleensä tietojen tuomista alkuperäisistä tietolähteistä tietojoukkoon joko ajoitetun päivityksen perusteella tai pyydettäessä. Voit suorittaa useita tietojoukkojen päivityksiä päivittäin. Tämä saattaa olla tarpeen, jos pohjana olevat tiedot muuttuvat usein. Power BI:ssä jaettujen kapasiteettien tietojoukot voidaan päivittää päivän aikana enintään kahdeksan kertaa. Jos tietojoukko on Premium-kapasiteetissa, voit ajoittaa päivityksen enintään 48 kertaa päivässä tietojoukon asetuksissa. Katso lisätietoja [Ajoitettu päivitys](#configure-scheduled-refresh) -kohdasta alempana tässä artikkelissa.
 
-Huomaa, että päivittäisten päivitysten jaetun kapasiteetin rajoitus koskee sekä ajoitettujen päivitysten että ohjelmointirajapintapäivitysten määrää yhteensä. Voit myös käynnistää pyydetyn päivityksen valitsemalla **Päivitä nyt** tietojoukon valikosta seuraavassa näyttökuvassa esitetyllä tavalla. Pyydetyt päivitykset eivät sisälly päivitysrajoitukseen. Huomaathan myös, että Premium-kapasiteetissa olevat tietojoukot eivät aseta rajoituksia ohjelmointirajapintapäivityksille. Jos olet kiinnostunut oman päivitysratkaisusi kehittämisestä Power BI REST API:n avulla, katso kohta [Tietojoukot – Tietojoukkojen päivittäminen](/rest/api/power-bi/datasets/refreshdataset).
+Huomaa, että päivittäisten päivitysten jaetun kapasiteetin rajoitus koskee ajoitettujen ja ohjelmointirajapintapäivitysten määrää yhteensä. Voit myös käynnistää pyydetyn päivityksen valitsemalla **Päivitä nyt** tietojoukon valikosta seuraavassa näyttökuvassa esitetyllä tavalla. Pyydetyt päivitykset eivät sisälly päivitysrajoitukseen. Huomaathan myös, että Premium-kapasiteetissa olevat tietojoukot eivät aseta rajoituksia ohjelmointirajapintapäivityksille. Jos olet kiinnostunut oman päivitysratkaisusi kehittämisestä Power BI REST API:n avulla, katso kohta [Tietojoukot – Tietojoukkojen päivittäminen](/rest/api/power-bi/datasets/refreshdataset).
 
 ![Päivitä nyt](media/refresh-data/refresh-now.png)
 
@@ -124,7 +124,7 @@ Huomaa, että tietojoukon asetussivulla **OneDrive-tunnistetiedot** ja **OneDriv
 
 Jos poistat tietojoukon OneDrive-päivityksen käytöstä, voit synkronoida tietojoukon pyydettäessä valitsemalla **Päivitä nyt** tietojoukkovalikosta. Pyydetyn päivityksen aikana Power BI tarkistaa, onko OneDrive- tai SharePoint Online -lähdetiedostosta saatavilla tietojoukkoa uudempi versio. Jos näin on, Power BI synkronoi tietojoukon. **Päivityshistoriassa** nämä toimet näkyvät pyydettyinä päivityksinä **OneDrive**-välilehdellä.
 
-Huomaa, että OneDrive-päivitys ei nouda tietoja alkuperäisistä tietolähteistä. OneDrive-päivitys päivittää vain Power BI -resurssit .pbix-, .xlsx- ja .csv-tiedostojen metatiedoilla ja tiedoilla, kuten seuraavassa kaaviossa esitetään. Power BI käynnistää tietojen päivityksen osana pyydettyä päivitystä varmistaakseen, että tietojoukossa on tietolähteiden uusimmat tiedot. Voit tarkistaa tämän **Päivityshistorian** **Ajoitettu**-välilehdeltä.
+Huomaa, että OneDrive-päivitys ei nouda tietoja alkuperäisistä tietolähteistä. OneDrive-päivitys päivittää vain Power BI -resurssit .pbix-, .xlsx- ja .csv-tiedostojen metatiedoilla ja tiedoilla, kuten seuraavassa kaaviossa esitetään. Power BI käynnistää tietojen päivityksen osana pyydettyä päivitystä varmistaakseen, että tietojoukossa on tietolähteiden uusimmat tiedot. Voit tarkistaa tämän **Päivityshistorian****Ajoitettu**-välilehdeltä.
 
 ![OneDrive-päivittämisen kaavio](media/refresh-data/onedrive-refresh-diagram.png)
 
@@ -317,10 +317,9 @@ Varoituskuvake ilmaisee tietojoukon senhetkiset ongelmat, mutta suosittelemme my
 
 ## <a name="automatic-page-refresh"></a>Automaattinen sivun päivitys
 
-Automaattinen sivun päivitys toimii raporttisivutasolla. Sen avulla raporttien tekijät voivat määrittää sivun visualisoinneille päivitysvälin, jota käytetään vain sivua käytettäessä. Automaattinen sivun päivitys on käytettävissä vain DirectQuery-tietolähteille. Pienin mahdollinen päivitysväli riippuu siitä, millaisessa työtilassa raportti julkaistaan, sekä Premium-työtilojen kapasiteettihallinta-asetuksista.
+Automaattinen sivun päivitys toimii raporttisivutasolla. Sen avulla raporttien tekijät voivat määrittää sivun visualisoinneille päivitysvälin, jota käytetään vain sivua käytettäessä. Automaattinen sivun päivitys on käytettävissä vain DirectQuery-tietolähteille. Pienin mahdollinen päivitysväli riippuu siitä, millaisessa työtilassa raportti julkaistaan, sekä Premium-työtilojen ja [upotettujen työtilojen](developer/embedding.md) kapasiteetinhallinta-asetuksista.
 
 Lue lisätietoja [automaattisen sivun päivityksen](desktop-automatic-page-refresh.md) ohjeartikkelista.
-
 
 ## <a name="best-practices"></a>Parhaat käytännöt
 
