@@ -7,19 +7,44 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/25/2019
-ms.openlocfilehash: ef85aea957ec470b348676b553248f30d3bf8532
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 01/27/2020
+ms.openlocfilehash: 993d83e15eafa0e40938eee13cbeabec75389f47
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73874287"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819533"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
 Power BI -raporttipalvelimen muutoslokissa on listattu jokaisen koontiversion uudet ominaisuudet ja ohjelmavirhekorjaukset.
 
 Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelinten uudet ominaisuudet](whats-new.md). 
+
+
+## <a name="january-2020"></a>Tammikuu 2020
+- **Power BI -raporttipalvelin**
+    - *Versio: 1.6.7327.3007 (koontiversio 15.0.1102.759), julkaistu: 23. tammikuuta 2020*
+         - Ominaisuudet
+            -  Vie Exceliin Power BI -raporteista.
+           -  Power BI Premium -tietojoukkojen tuki sivutetuille raporteille.
+           -  AltText (vaihtoehtoinen teksti) -tuki sivutetuille raporttielementeille.
+           -  Mukautettujen otsikkojen tuki.
+           -  Tuki Azure SQL:n hallittujen esiintymien käyttämiselle luettelona.
+           -  Luettelon läpinäkyvä tietokannan salaus.
+        - Suojauspäivitykset
+        - Ohjelmavirhekorjauksia
+            - Korjauksia näytönlukuohjelmien, raportin hahmontamisen ja näppäimistöllä siirtymisen helppokäyttötoimintoihin.
+            - Korjaus monitavuisten raporttiotsikoiden tallentamiseen.
+            - Korjaus raportti palvelimen luotettavuuteen vaikuttavaan yksityiskohtaiseen kirjaamiseen.
+          - Korjaus, joka varmistaa reaaliaikaisten tietojen saatavuuden Power BI raporteissa mobiililaitteissa.
+          - Korjaus visualisointien välisten korostusten käyttöön Power BI -raporttien suodatetussa viennissä.
+          - Korjaus alatunnisteen kirjoittamiseen vietäessä Wordiin ja käytettäessä sivutettujen raporttien näkyvyyslauseketta. 
+     
+- **Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)**
+    - *Versio: 2.76.5678.1521 (Tammikuu 2020), julkaistu: 23. tammikuuta 2020* (uusi koontiversio ja uusi versio)
+        - Sisältää Power BI -raporttipalvelinyhteyden edellyttämiä muutoksia (tammikuu 2020)        
+
 
 ## <a name="september-2019"></a>Syyskuu 2019
 - **Power BI -raporttipalvelin**
