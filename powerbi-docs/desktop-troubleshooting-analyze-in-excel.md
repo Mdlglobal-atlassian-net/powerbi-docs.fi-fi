@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
-ms.date: 05/08/2019
+ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 987078ae33af10e9c33b4d8a00f8e2e688be12a1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8f4ed049fad2739ef8cc5cd307c06100f68419bd
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73865768"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889301"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Analysoi Excelissä -toiminnon vianmääritys
 
@@ -84,7 +84,7 @@ Jos kohtaat virheen, joka ilmoittaa, että **OLAP-kuution mallia ei löydy**, ky
 Jos yrität käyttää tietojoukkoa, jolla on yhteyksiä paikallisiin Analysis Services -tietoihin, näyttöön saattaa tulla virhesanoma. **Analysoi Excelissä** tukee paikallisten **Analysis Services** -tietojoukkojen ja raporttien käyttöä yhteysmerkkijonon avulla, kunhan tietokone on samassa toimialueessa kuin **Analysis Services** -palvelin ja tilillä on **Analysis Services** -palvelimen käyttöoikeus.
 
 ## <a name="cant-drag-anything-to-the-pivottable-values-area-no-measures"></a>Vetäminen ei onnistu Pivot-taulukon Arvot-alueelle (mittareita ei ole)
-Kun **Analysoi Excelissä** muodostaa yhteyden ulkoiseen OLAP-malliin (näin Excel yhdistää Power BI:hin), *Pivot-taulukko*[edellyttää määritettyjä **mittareita** ulkoisessa mallissa](https://support.microsoft.com/kb/234700), koska kaikki laskutoimitukset suoritetaan palvelimella. Tämä on eri kuin käsiteltäessä paikallista tietolähdettä (kuten taulukoita Excelissä tai tietojoukkoja **Power BI Desktopissa** tai **Power BI -palvelussa**), jolloin taulukkomalli on käytettävissä paikallisesti ja [voit käyttää implisiittisiä mittareita](https://msdn.microsoft.com/library/gg399077.aspx), jotka ovat dynaamisesti luotuja mittareita, joita ei tallenneta tietomalliin. Näissä tapauksissa toiminta Excelissä eroaa **Power BI Desktopista** tai **Power BI -palvelusta**: tiedoissa voi olla sarakkeita, joita voidaan käsitellä mittareina Power BI:ssä mutta ei arvoina (mittareina) Excelissä.
+Kun **Analysoi Excelissä** muodostaa yhteyden ulkoiseen OLAP-malliin (näin Excel yhdistää Power BI:hin), *Pivot-taulukko* [edellyttää määritettyjä **mittareita** ulkoisessa mallissa](https://support.microsoft.com/kb/234700), koska kaikki laskutoimitukset suoritetaan palvelimella. Tämä on eri kuin käsiteltäessä paikallista tietolähdettä (kuten taulukoita Excelissä tai tietojoukkoja **Power BI Desktopissa** tai **Power BI -palvelussa**), jolloin taulukkomalli on käytettävissä paikallisesti ja [voit käyttää implisiittisiä mittareita](https://msdn.microsoft.com/library/gg399077.aspx), jotka ovat dynaamisesti luotuja mittareita, joita ei tallenneta tietomalliin. Näissä tapauksissa toiminta Excelissä eroaa **Power BI Desktopista** tai **Power BI -palvelusta**: tiedoissa voi olla sarakkeita, joita voidaan käsitellä mittareina Power BI:ssä mutta ei arvoina (mittareina) Excelissä.
 
 Tämän ongelman ratkaisuun on muutamia vaihtoehtoja:
 
@@ -105,5 +105,4 @@ Kun mittarit on määritetty mallissa Power BI -palvelussa, niitä voidaan käyt
 
 [Laskentataulukkotietojen lisääminen tietomalliin linkitetyn taulukon avulla](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)
 
-[OLAP-Pivot- ja muiden taulukoiden erot Excelissä](https://support.microsoft.com/kb/234700)
 

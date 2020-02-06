@@ -6,40 +6,40 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/01/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: fdd43320fec2b96aa708cb5bb1a21e269a117d2a
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 76370e2b633e21674ba878e70b5ecfc333453c96
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830606"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76889209"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Power BI -raportin kaavion lajittelutavan vaihtaminen
+
+
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 
 > [!IMPORTANT]
-> **Tämä artikkeli on tarkoitettu Power BI -käyttäjille, joilla ei ole raportin tai tietojoukon muokkausoikeuksia. Tarkempia ohjeita lajitteluun saat artikkelista [Sarakkeen perusteella lajittelu Power BI Desktopissa](../desktop-sort-by-column.md)** .
+> **Tämä artikkeli on tarkoitettu Power BI -käyttäjille, joilla ei ole raportin tai tietojoukon muokkausoikeuksia ja jotka käyttävät vain Power BI:n verkkoversiota (Power BI -palvelu). Jos olet raportin *suunnittelija* tai *järjestelmänvalvoja* tai *omistaja*, tässä artikkelissa ei välttämättä ole kaikkia tarvitsemiasi tietoja. Tutustu siinä tapauksessa artikkeliin [Sarakkeen perusteella lajittelu Power BI Desktopissa](../desktop-sort-by-column.md)** .
 
-Voit muuttaa visualisoinnin ulkoasua Power BI -palvelussa lajittelemalla sen eri tietokenttien mukaan. Muuttamalla visualisoinnin lajittelua voit korostaa välitettäviä tietoja.
+Voit muuttaa visualisoinnin ulkoasua Power BI -palvelussa lajittelemalla sen eri tietokenttien mukaan. Muuttamalla visualisoinnin lajittelua voit korostaa välitettäviä tietoja. Voit lajitella visualisoinnit haluamallasi tavalla, olipa käytössä siten numeerisia tietoja (kuten myyntilukuja) tai tekstiä (kuten osavaltioiden nimiä). Power BI tarjoaa käyttöösi joustavat lajitteluvaihtoehdot ja pikavalikot. 
 
 Koontinäytön visualisointeja ei voi lajitella, mutta Power BI -raportissa voit lajitella useimmat visualisoinnit 
 
-Voit lajitella visualisoinnit haluamallasi tavalla, olipa käytössä siten numeerisia tietoja (kuten myyntilukuja) tai tekstiä (kuten osavaltioiden nimiä). Power BI tarjoaa käyttöösi joustavat lajitteluvaihtoehdot ja pikavalikot. 
-
 ## <a name="get-started"></a>Aloittaminen
 
-Pääset alkuun valitsemalla minkä tahansa visualisoinnin ja valitsemalla **Lisää toimintoja** (...).  Lajitteluvaihtoehtoja on kolme: **Lajittele laskevaan järjestykseen**, **Lajittele nousevaan järjestykseen** ja **Lajitteluperuste**. 
+Pääset alkuun valitsemalla minkä tahansa raportin visualisoinnin ja valitsemalla **Lisää toimintoja** (...).  Lajitteluvaihtoehtoja on kolme: **Lajittele laskevaan järjestykseen**, **Lajittele nousevaan järjestykseen** ja **Lajitteluperuste**. 
     
 
 ![palkkikaavio, jonka X-akseli on lajiteltu aakkosjärjestykseen](media/end-user-change-sort/power-bi-more-actions.png)
 
 ### <a name="sort-alphabetically-or-numerically"></a>Lajittele aakkosjärjestykseen tai numeerisesti
 
-Visualisoinnit voidaan lajitella aakkosjärjestykseen visualisoinnin luokkien nimien tai kunkin luokan numeroiden mukaan. Tässä esimerkissä kaavio on lajiteltu aakkosjärjestykseen myymälän **nimi** -X-akselin mukaan.
+Visualisoinnit voidaan lajitella aakkosjärjestykseen visualisoinnin luokkien tekstimuotoisten nimien tai kunkin luokan numeroiden mukaan. Tässä esimerkissä kaavio on lajiteltu aakkosjärjestykseen myymälän **nimi** -X-akselin mukaan.
 
 ![palkkikaavio, jonka X-akseli on lajiteltu aakkosjärjestykseen](media/end-user-change-sort/powerbi-sort-category.png)
 
@@ -55,7 +55,7 @@ Muuta tarvittaessa lajittelujärjestystä nousevaksi tai laskevaksi.  Valitse uu
 > Kaikki visualisoinnit eivät ole lajiteltavissa. Esimerkiksi seuraavia visualisointeja ei voi lajitella: Puukartta, Kartta, Täytetty kartta, Pistekaavio, Mittari, Kortti, Vesiputous.
 
 ## <a name="saving-changes-you-make-to-sort-order"></a>Lajittelujärjestyksen muutosten tallentaminen
-Power BI -raportit säilyttävät suodattimet, osittajat, lajittelun ja muut tietojen näyttötapaan tekemäsi muutokset. Jos poistut raportista ja palaat myöhemmin takaisin, lajittelua koskevat muutoksesi pysyvät voimassa.  Jos haluat palauttaa raportin suunnittelijan asetukset takaisin käyttöön, valitse **Palauta oletukset** ylemmältä valikkoriviltä. 
+Power BI -raportit säilyttävät suodattimet, osittajat, lajittelun ja muut tietojen näyttötapaan tekemäsi muutokset, vaikka työskentelet [lukunäkymässä](end-user-reading-view.md). Jos poistut raportista ja palaat myöhemmin takaisin, lajittelua koskevat muutoksesi pysyvät voimassa.  Jos haluat palauttaa raportin *suunnittelijan* asetukset takaisin käyttöön, valitse **Palauta oletukset** ylemmältä valikkoriviltä. 
 
 ![pysyvä lajittelu](media/end-user-change-sort/power-bi-reset.png)
 
@@ -65,7 +65,11 @@ Jos **Palauta oletukseksi** -painike on harmaana, raportin *suunnittelija* on po
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
 
 ### <a name="sorting-using-other-criteria"></a>Lajittelu muilla ehdoilla
-Joskus visualisoinnin lajittelussa on käytettävä toista kenttää (joka ei sisälly visualisointiin) tai ehtoa.  Tarpeena voi olla esimerkiksi tietojen lajittelu kuukauden mukaisessa järjestyksessä (eikä aakkosjärjestyksessä) tai vaikkapa koko numerojonon mukaan luvun sijasta (esimerkiksi 0, 1, 9, 20 eikä 0, 1, 20, 9).  Vain raportin luonut henkilö voi tehdä nämä muutokset puolestasi. *Suunnittelijan* yhteystiedot löytyvät valitsemalla raportin nimen otsikkoriviltä.
+Joskus visualisoinnin lajittelussa on käytettävä toista kenttää (joka ei sisälly visualisointiin) tai ehtoa.  Tarpeena voi olla esimerkiksi tietojen lajittelu kuukauden mukaisessa järjestyksessä (eikä aakkosjärjestyksessä) tai vaikkapa koko numerojonon mukaan luvun sijasta (esimerkiksi 0, 1, 9, 20 eikä 0, 1, 20, 9).  
+
+Vain raportin luonut henkilö voi tehdä nämä muutokset puolestasi. *Suunnittelijan* yhteystiedot löytyvät valitsemalla raportin nimen otsikkoriviltä.
+
+Jos olet *suunnittelija*  ja sinulla on sisällön muokkausoikeudet, lue [Sarakkeen perusteella lajittelu Power BI Desktopissa](../desktop-sort-by-column.md), niin opit päivittämään tietojoukon ja ottamaan käyttöön tämän tyyppisen lajittelun.
 
 ![Valikko, joka näyttää yhteystiedot](media/end-user-change-sort/power-bi-contact.png)
 

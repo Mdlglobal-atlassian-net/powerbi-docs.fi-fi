@@ -10,10 +10,10 @@ ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 160c5736bc2894e629f5bb375dd07e993def1e0c
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74265539"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Asiakkaan tuottavuuden malli Power BI:lle: aloita esittely
@@ -111,7 +111,7 @@ Kaksi tämän koontinäytön ruutua, **Tavoite vs. toteutunut** ja **Tulojen kas
 
     ![Carlosin tulokset](media/sample-customer-profitability/power-bi-carlos.png)
 
-4. Jatka tutustumista. Jos löydät jotakin mielenkiintoista, valitse **Kiinnitä** ![kiinnitä-kuvake](media/sample-customer-profitability/power-bi-excel-pin.png) oikeasta yläkulmasta ja [kiinnitä se koontinäyttöön](service-dashboard-pin-tile-from-excel.md).
+4. Jatka tutustumista. Jos löydät jotakin mielenkiintoista, valitse **Kiinnitä** ![kiinnitä-kuvake](media/sample-customer-profitability/power-bi-excel-pin.png) oikeassa yläkulmassa ja [kiinnitä se koontinäyttöön](service-dashboard-pin-tile-from-excel.md).
 
 5. Palaa koontinäyttöön selaimen taaksepäin osoittavalla nuolella.
 

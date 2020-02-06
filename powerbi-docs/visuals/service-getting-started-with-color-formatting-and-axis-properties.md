@@ -6,32 +6,32 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/14/2019
+ms.date: 01/30/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b42d83b4cea6f5f5e8908244b2b298dc3f327468
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 2433f030f00ec8cd337d97c4402b83ed6c4c5a00
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76540616"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76895211"
 ---
 # <a name="getting-started-with-the-formatting-pane"></a>Muotoiluruudun käytön aloittaminen
-Jos sinulla on raportin muokkausoikeudet, käytettävissäsi on useita muotoiluasetuksia. Valitsemalla **Power BI** -raportit voit muuttaa arvosarjojen, arvopisteiden ja jopa visualisointien taustan värin. Voit muuttaa sitä, miten x-akseli ja y-akseli esitetään. Voit myös muotoilla visualisointien, muotojen ja otsikoiden fonttiominaisuuksia ja hallita raporttiesi ulkoasua täydellisesti.
+Jos sinulla on raportin muokkausoikeudet, käytettävissäsi on useita muotoiluasetuksia. Valitsemalla Power BI -raportit voit muuttaa arvosarjojen, arvopisteiden ja jopa visualisointien taustan värin. Voit muuttaa sitä, miten x-akseli ja y-akseli esitetään. Voit muotoilla myös visualisointien, muotojen ja otsikoiden fonttien ominaisuuksia. Power BI antaa sinun päättää raporttiesi ulkoasun täysin.
 
-Aloita avaamalla raportti Power BI Desktopissa tai Power BI -palvelussa. Kummassakin on lähes samat muotoiluasetukset. Kun avaat raportin Power BI -palvelussa, valitse valikkoriviltä **Muokkaa raporttia**.  
+Aloita avaamalla raportti Power BI Desktopissa tai Power BI -palvelussa. Kummassakin on lähes samat muotoiluasetukset. Kun avaat raportin Power BI -palvelussa, valitse valikkoriviltä **Muokkaa**. 
 
 ![Valikkorivi, jossa näkyy Muokkaa-vaihtoehto](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-edit.png)
 
-Kun muokkaat raporttia ja sinulla on visualisointi valittuna, näkyviin tulee **Visualisoinnit**-ruutu, jonka avulla voit lisätä tai muuttaa visualisointeja. Käytettävissä olevien visualisointien alapuolella on kolme kuvaketta: **Kentät** (palkkien pino), **Muoto** (tela) ja **Analytiikka** (suurennuslasi). Alla olevassa kuvassa näkyvä keltainen palkki kuvakkeen alapuolella osoittaa **Kentät**-kuvakkeen olevan valittuna.
+Kun muokkaat raporttia ja sinulla on visualisointi valittuna, näkyviin tulee **Visualisoinnit**-ruutu. Tämän ruudun avulla voit muuttaa visualisointeja. **Visualisoinnit**-ruudun alapuolella on kolme kuvaketta: **Kentät** (palkkien pino), **Muoto** (tela) ja **Analytiikka** (suurennuslasi). Alla olevassa kuvassa näkyvä keltainen palkki kuvakkeen alapuolella osoittaa **Kentät**-kuvakkeen olevan valittuna.
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_2a.png)
+![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format.png)
 
-Kun valitset kohdan **Muoto**, sen alapuolella oleva alue näyttää ne värin ja akselin mukautukset, jotka ovat käytössä valitun visualisoinnin kanssa.  
+Kun valitset kohdan **Muoto**, sen alapuolella oleva alue näyttää mukautukset, jotka ovat käytössä valitun visualisoinnin kanssa.  
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_3a.png)
+![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format-selected.png)
 
-Voit mukauttaa kunkin visualisoinnin monia elementtejä:
+Voit mukauttaa kunkin visualisoinnin monia elementtejä. Saatavilla olevat vaihtoehdot riippuvat valitusta visualisoinnista. Näihin vaihtoehtoihin kuuluvat esimerkiksi seuraavat:
 
 * Selite
 * X-akseli
@@ -44,6 +44,12 @@ Voit mukauttaa kunkin visualisoinnin monia elementtejä:
 * Tausta
 * Lukitse kuvasuhde
 * Reunus
+* Työkaluvihjeet
+* Visualisointiotsikot
+* Muodot
+* Sijainti    
+ynnä muut.
+
 
 > [!NOTE]
 >  
@@ -51,49 +57,101 @@ Voit mukauttaa kunkin visualisoinnin monia elementtejä:
 
 Huomaa myös, että jos et ole valinnut visualisointia, kuvakkeiden sijaan näkyviin tulee **Suodattimet**, josta voit asettaa suodattimia kaikkiin sivulla oleviin visualisointeihin.
 
-Esittelemme pari esimerkkiä: ensimmäinen värien käyttämisestä ja toinen akselin ominaisuuksien muuttamisesta. Sen jälkeen sinun pitäisi olla valmis mukauttamaan värejä, akseleita ja otsikoita koko päivän.
+Paras tapa oppia käyttämään muotoiluasetuksia on kokeilla niitä. Voit aina kumota tekemäsi muutokset tai palauttaa oletusasetukset. Käytettävissä on uskomattoman paljon vaihtoehtoja, ja uusia lisätään koko ajan. Kaikkia muotoiluasetuksia ei voi kuvailla yhdessä artikkelissa. Pääset alkuun, kun tutustumme muutamiin yhdessä. 
+
+1. Visualisoinnissa käytettävien värien muuttaminen   
+2. Tyylin ottaminen käyttöön    
+3. Arvoakselin ominaisuuksien muuttaminen    
+4. Arvopisteiden otsikoiden lisääminen    
+
+
+
 
 ## <a name="working-with-colors"></a>Värien käyttäminen
 
-Käydään läpi kaavion värien mukauttamiseen tarvittavat vaiheet.
+Käydään läpi visualisoinnin värien mukauttamiseen tarvittavat vaiheet.
 
-1. Valitsen raporttipohjasta kohdan **Klusteroitu pylväskaavio**.
-2. Seuraavaksi valitsen **Muoto**-kuvakkeen, joka näyttää käytettävissä olevat mukautukset.
-3. Seuraavaksi valitsen pienen alanuolen **Tietojen värit** -mukauttamisen vasemmalta puolelta. Tämä toiminto näyttää, miten voin mukauttaa tietojen värejä valitsemani visualisoinnin vaihtoehdoilla.
-4. **Tietojen värit** laajenee alaspäin ja näyttää käytettävissä olevat mukautukset.  
-   ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_4a.png)
+1. Valitse visualisointi, jotta siitä tulee aktiivinen.
 
-Tehdään joitain muutoksia. Voin tehdä muutoksia jokaiseen saatavilla olevaan arvosarjaan valitsemalla värin vierestä alanuolen. Laitan **Elinkustannukset**-kohdan keltaisella **Sää**-kohdan oranssilla ja **Yhteisön hyvinvointi** -kohdan vihreällä. Seuraavassa näytössä näkyy viimeinen vaiheeni, **Elinkustannukset**-kohdan muuttaminen.  
+2. Avaa Muotoilu-välilehti valitsemalla maalitelakuvake. Muotoilu-välilehdellä näytetään kaikki valitun visualisoinnin käytettävissä olevat muotoiluelementit.
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_5a.png)
+    ![Kaavio, jossa on Muotoilu-ruudun välilehti valittuna](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-formatting.png)
 
-Muutokset näkyvät alla olevassa kuvassa. Vau, onpa kirkas kaavio. Tässä on muutamia hyödyllisiä elementtejä koskien värien käyttöä. Luettelon numerot esiintyvät myös seuraavassa näytössä ja ne ilmaisevat, mistä näitä hyödyllisiä elementtejä pääsee käyttämään tai muuttamaan.
+3. Laajenna käytettävissä olevat mukautukset valitsemalla **Tietojen värit**.  
 
-1. Et pidä väreistä? Ei hätää, valitse **Palauta oletusasetukseen** ja valintasi palautuvat oletusasetuksiin. Voit tehdä sen joko yhdelle värille tai koko visualisoinnille.
-2. Haluatko värin, jota et näe valikoimassa? Valitse vain **Mukautettu väri** ja valitse asteikolta.  
-   ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_6a.png)
+    ![Kaavio, jossa Muotoilu-ruutu on avoinna ja tietojen värit on laajennettu](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-data-colors.png)
+
+4. Muuta **Näytä kaikki** -kohdan asetukseksi Käytössä ja valitse sarakkeille eri värit.
+
+    ![Kaavio, jossa joissakin sarakkeissa on käytössä uusia värejä](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-change-colors.png)
+
+Alla on muutamia hyödyllisiä vihjeitä värien käyttämiseen. Luettelon numerot esiintyvät myös seuraavassa näytössä ja ne ilmaisevat, mistä näitä hyödyllisiä elementtejä pääsee käyttämään tai muuttamaan.
+
+1. Etkö pidä väristä? Ei hätää, valitse **Palauta oletusasetukseen** ja valintasi palautuvat oletusasetukseen. 
+
+2. Etkö pidä mistään värimuutoksista? Valitse **Palauta oletusasetukseen** **Tietojen väri** -osan alareunasta, niin värit palautetaan oletusasetuksiinsa. 
+
+3. Haluatko värin, jota et näe valikoimassa? Valitse vain **Mukautettu väri** ja valitse asteikolta.  
+
+   ![Tietojen väri -osio, jossa värivalikoima on avoinna](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-color-extras.png)
 
 Etkö pidä juuri tekemistäsi muutoksista? Käytä yhdistelmää **CTRL + Z** kumoamisvaiheena, aivan kuten olet tottunut tekemään.
+
+## <a name="applying-a-style-to-a-table"></a>Tyylin käyttäminen taulukossa
+Joillakin Power BI -visualisoinneilla on **Tyyli**-asetus. Yhdellä napsautuksella visualisoinnissa otetaan käyttöön koko joukko muotoiluasetuksia. 
+
+1. Valitse taulukko tai matriisi muuttaaksesi se aktiiviseksi.   
+1. Avaa Muotoilu-välilehti ja valitse **Tyyli**.
+
+   ![Valitse tyyli Muotoilu-välilehdeltä](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-style.png)
+
+
+1. Valitse tyyli avattavasta valikosta. 
+
+   ![Sama taulukko, jossa on otettu käyttöön lihavoitu otsikko,erottuvat rivit](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-style-flashy.png)
+
+Senkin jälkeen, kun olet ottanut tyylin käyttöön, voit jatkaa kyseisen visualisoinnin ominaisuuksien, kuten värin, muotoilua.
+
 
 ## <a name="changing-axis-properties"></a>Akselin ominaisuuksien muuttaminen
 
 X- tai Y-akselin muokkaaminen on usein hyödyllistä. Seuraavassa kuvassa näytetään, miten voit muokata haluamaasi akselia valitsemalla alanuoli-kuvakkeen akselin vasemmalta puolelta, aivan kuten värejä käyttäessäsi.  
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_7a.png)
+![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-y-axis.png)
 
-Jos haluat tiivistää **X-akseli**n asetuksia, valitse vain ylänuoli-kuvake **X-akseli**n vierestä.
+Alla olevassa esimerkissä olemme tehneet Y-akseliin seuraavat muotoilut:
+- Otsikot on siirretty visualisoinnin oikealle puolelle.
 
-**X-akseli**n vieressä olevalla valintanapilla voit poistaa x-akselin otsikot kokonaan. **Otsikko**-kohdan vieressä olevalla valintanapilla voit valita ovatko akseleiden otsikot käytössä vai eivät.  
+- Aloitusarvo on muutettu nollaksi.
 
-Power BI raportteihin ja raporttinäkymiin on valittavana monenlaisia värejä ja mukautuksia.
+- Otsikon fontin värin on muutettu mustaksi.
 
-> [!NOTE]
->  
-> Mukautukset, jotka ovat käytettävissä **Muoto**-kuvakkeen ollessa valittuna, ovat käytettävissä myös Power BI Desktopissa.
+- Otsikon fontin koko suurennettiin 12:een.
 
-## <a name="setting-color-from-text-values"></a>Värin määrittäminen tekstiarvoista
+- Y-akselille on annettu otsikko.
 
-**Power BI Desktopin** elokuun 2018 päivityksestä alkaen voit määrittää värit tekstiarvon tai heksadesimaalikoodin mukaan tietylle raporttielementille. Jos haluat lisätietoja, katso artikkelia [Ehdollinen muotoilu taulukoissa](../desktop-conditional-table-formatting.md).
 
+    ![sama pylväskaavio, mutta Y-akseli runsaasti muotoiltuna](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-axis-changes.png)
+
+**X-akseli**n tai **Y-akselin** vieressä olevalla valintanapilla voit poistaa akselin otsikot kokonaan. **Otsikko**-kohdan vieressä olevalla valintanapilla voit valita ovatko akseleiden otsikot käytössä vai eivät.  
+
+
+
+## <a name="adding-data-labels"></a>Arvopisteiden otsikoiden lisääminen    
+
+Tässä vielä viimeinen muotoiluesimerkki, ennen kuin aloitat itsenäisen tutustumisen.  Lisätään aluekaavioon arvopisteiden otsikoita. 
+
+Tässä on kaavio *ennen* muotoilua. 
+
+![muotoilematon aluekaavio](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-area-chart.png)
+
+
+Ja tässä muotoilun *jälkeen*.
+
+![muotoiltu aluekaavio](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-data-labels.png)
+
+Aktivoimme visualisoinnin valitsemalla sen ja avasimme Muotoilu-välilehden.  Valitsimme **arvopisteiden otsikot** ja otimme ne käyttöön. Sitten suurensimme fonttikoon 12:ksi, muutimme kirjasinperheen Arial Blackiksi, otimme käyttöön asetuksen **Näytä tausta** ja valitsimme taustaväriksi valkoisen, jonka läpinäkyvyys on 5 %.
+
+Nämä ovat vain muutamia mahdollisia muotoilutehtäviä. Avaa raportti muokkaustilassa ja luo kauniita ja informatiivisia visualisointeja Muotoilu-ruudun avulla.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Katso lisätietoja seuraavasta artikkelista:  

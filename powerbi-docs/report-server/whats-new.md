@@ -1,29 +1,174 @@
 ---
 title: Power BI -raporttipalvelinten uudet ominaisuudet
-description: Lue Power BI -raporttipalvelimen uusista ominaisuuksista. Tämä koskee tärkeimpiä ominaisuuksia, ja tietoja päivitetään uusien julkaisujen myötä.
+description: Lue Power BI -raporttipalvelimen uusista ominaisuuksista. Tämä artikkeli käsittelee tärkeimpiä ominaisuuksia, ja sitä päivitetään uusien julkaisujen myötä.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2019
-ms.openlocfilehash: 526a971817c50599bf77ae085f3d5ff07294b25b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 01/23/2020
+ms.openlocfilehash: 9b7ea090d7860de9ec4132b070bd1286085cc5f3
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858753"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819556"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Power BI -raporttipalvelinten uudet ominaisuudet
 
-Tutustu Power BI -raporttipalvelimen ja Power BI -raporttipalvelimeen optimoidun Power BI Desktopin uusiin ominaisuuksiin. Tämä artikkeli käsittelee tärkeimpiä ominaisuuksia, ja sitä päivitetään jokaisen uuden julkaisun myötä.
+Tutustu Power BI -raporttipalvelimen ja Power BI -raporttipalvelimelle optimoidun Power BI Desktopin uusiin ominaisuuksiin. Tämä artikkeli käsittelee tärkeimpiä ominaisuuksia, ja sitä päivitetään jokaisen uuden julkaisun myötä.
+
+Lataa [Power BI -raporttipalvelin ja Power BI -raporttipalvelimelle optimoitu Power BI Desktop](https://powerbi.microsoft.com/report-server/).
 
 Lisätietoja Power BI:hin liittyvistä uusista ominaisuuksista:
 
 * [Power BI -palvelun uudet ominaisuudet](../service-whats-new.md)
 * [Power BI Desktopin uudet ominaisuudet](../desktop-latest-update.md)
 * [Power BI -mobiilisovellusten uudet ominaisuudet](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## <a name="january-2020"></a>Tammikuu 2020
+
+Lisätietoja on Power BI -raporttipalvelimen blogikirjoituksessa tammikuulta 2020.
+
+### <a name="power-bi-desktop-optimized-for-power-bi-report-server"></a>Power BI -raporttipalvelimelle optimoitu Power BI Desktop
+
+Tämä julkaisuversio tuo mukanaan monia uusia ominaisuuksia, kuten ehdollisen muotoilun painikkeille, parannuksia tietojen profilointiin sekä lisää muotoiluasetuksia suorituskykyilmaisimille ja taulukkovisualisoinneille. Seuraavassa on yhteenveto päivityksistä:
+
+**Raportointi**
+
+- Taulukon sarakkeen tai matriisin arvon määrittäminen mukautetuksi URL-osoitteeksi
+- Suorituskykyilmaisimen visualisoinnin muotoilun asetukset
+- Suodatinruudun käyttökokemuspäivitykset
+
+**Analysointi**
+
+- Painikkeiden ehdollinen muotoilu
+- Lataa lisää merkityksellisten tietojen analysointia varten
+- Uusi DAX-funktio: Vuosineljännes
+
+**Tietojen valmistelu**
+
+- Tietoprofiloinnin parannukset
+
+**Muu**
+
+- Uusi tiedostomuoto:. pbids
+- Mallinnustoimintojen suorituskyvyn parannukset
+
+**Raportointi**
+
+*Taulukon sarakkeen tai matriisin arvon määrittäminen mukautetuksi URL-osoitteeksi*
+
+Voit määrittää taulukon sarakkeen tai matriisin arvon mukautetuksi URL-osoitteeksi. Tämä uusi vaihtoehto on käytettävissä Ehdollinen muotoilu -kortin muotoiluruudussa.
+
+*Suorituskykyilmaisimen visualisoinnin muotoilun asetukset*
+
+Tämän kuukauden julkaisu lisää suorituskykyilmaisimille uusia muotoiluasetuksia:
+
+- Ilmaisimen tekstin muotoilu (fonttiperhe, väri ja tasaus)
+- Trendiakselin läpinäkyvyys
+- Tavoitteen ja etäisyyden tekstin muotoilu (otsikon teksti, fonttiperhe, väri ja koko)
+- Etäisyyden tekstin muotoilu (otsikon teksti, positiivinen suunta, fonttiperhe, väri ja koko)
+- Päivämäärän otsikon lisääminen muotoiltuna (fonttiperhe, väri ja koko)
+
+Voit muotoilla joitakin näistä uusista muotoiluasetuksista ehdollisesti:
+
+- Ilmaisimen fontin väri
+- Tavoitteen fontin väri ja tavoitteen etäisyyden fontin väri
+- Hyvän/huonon/neutraalin tilan värit
+- Päivämäärän fontin väri
+
+*Suodatinruudun käyttökokemuspäivitykset*
+
+Olemassa olevien raporttien siirtämistä uuteen ruutuun on virtaviivaistettu sen jälkeen, kun uusi suodatinominaisuus tuli yleisesti saataville [edellisessä julkaisussa](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2019-feature-summary/#filterPane). Kun avaat Power BI -raporttipalvelimen ensimmäistä kertaa, näet suodatinruudun automaattisen päivityksen valintaikkunan. Päivityksiin sisältyvät myös raporttipalvelimen bannerit silloin, kun raportteja on siirrettävä uuteen käyttökokemukseen.
+
+**Analysointi**
+
+*Painikkeiden ehdollinen muotoilu*
+
+Nämä ehdollisen muotoilun päivitykset ovat kaikki painikkeisiin liittyviä. Voit nyt dynaamisesti asettaa muotoilun seuraaville ominaisuuksille:
+
+- Painiketekstien fontin väri
+- Painikkeen teksti
+- Kuvakkeen viivan väri
+- Ääriviivan väri
+- Täyttöväri
+- Painikkeen työkaluvihje (toimintokortin alla)
+
+*Lataa lisää merkityksellisten tietojen analysointia varten*
+
+Kun suoritat analysoinnin merkityksellisten tietojen (kuten Selitä lisäys) löytämiseksi, koneoppimismalleja käytetään vain määritettyyn ajanjaksoon, jotta voimme näyttää merkitykselliset tiedot nopeasti. Jos analysoitavaa tietoa on paljon, voit nyt jatkaa analyysin suorittamista myös alkuperäisen aikarajan jälkeen.
+
+*Uusi DAX-funktio: Quarter*
+
+Tässä kuussa julkaistiin uusi DAX-funktio Quarter (vuosineljännes). Quarter-funktio palauttaa määritettyä päivämäärää vastaavan vuosineljänneksen.
+
+**Tietojen valmistelu**
+
+*Tietoprofiloinnin parannukset*
+
+Tässä kuussa esittelemme muutamia merkittäviä parannuksia tietoprofiloinnin ominaisuuksiin Power Query -editorissa:
+
+- Uudet ryhmittelyasetukset sarakkeen profiiliruudun arvojakauman visualisoinnille on määritetty saraketyypin mukaan – jo aiemmin lisättyjen arvon mukaan -ehtojen lisäksi.
+- Teksti: Tekstin pituuden mukaan (merkkien määrä).
+- Luku: Merkin (positiivinen/negatiivinen) ja pariteetin (parillinen/pariton) mukaan.
+- Päivämäärä / Päivämäärä ja aika: Vuoden, kuukauden, päivän, vuoden viikon, viikon päivän, AM/PM-ajan ja päivän tunnin mukaan.
+- Muita tietotyyppejä varten esimerkiksi looginen tosi/epätosi.
+
+*Suodatusasetukset*
+
+Pystyit jo aiemmin hyödyntämään useita tyyppikohtaisia ryhmittelyehtoja sarakeprofiilien jakaumaruudussa. Nyt voit myös suodattaa jakaumakaavion jokaisen arvon kuvateksteistä, kun ryhmittelyehtoja otetaan käyttöön. Esimerkiksi Tietoprofiilit-ruudun Päivämäärä/aika-sarakkeesta voit suodattaa esiin tietylle kuukaudelle osuvat arvot.
+
+**Muu**
+
+*Uusi tiedostomuoto:. pbids*
+
+Tässä kuussa julkaisemme uuden .pdids-tiedostomuodon, jonka avulla voit tehostaa tietojen noutamista organisaatiossasi raportteja luoville käyttäjille. Suosittelemme, että järjestelmänvalvojat luovat näitä tiedostoja usein käytetyille yhteyksille.
+
+Kun raportin tekijä avaa .pbids-tiedoston, Power BI Desktop pyytää todentamista, jotta se voi muodostaa yhteyden tiedostossa määritettyyn tietolähteeseen. Tämän jälkeen käyttäjä valitsee malliin ladattavat taulukot. Käyttäjien on ehkä myös valittava tietokanta, jos sitä ei ole määritetty tiedostossa. Sen jälkeen raportin tekijä voi aloittaa visualisointien luomisen.
+
+Lisätietoja ja esimerkkejä saat Power BI Desktopin tietolähteet -artikkelin osiosta [Tietojen noutaminen .pbids-tiedostoja käyttämällä](../desktop-data-sources.md#using-pbids-files-to-get-data).
+
+*Mallinnustoimintojen suorituskyvyn parannukset*
+
+Analysis Services -moduulin suorituskykyä on parannettu mallinnustoimintojen nopeuttamista varten. Sellaisia ovat esimerkiksi mittareiden ja laskettujen sarakkeiden lisääminen sekä suhteiden luominen. Näkemiesi parannusten määrä riippuu mallista, mutta esimerkiksi tiedoston avaaminen tai mittarin lisääminen on voinut nopeutua jopa 20-kertaisesti.
+
+Tässä olivat Power BI -raporttipalvelimen tammikuun 2020 version päivitykset. Jatka palautteen lähettämistä ja muista [äänestää ominaisuuksista, joita haluat nähdä Power BI:ssä tulevaisuudessa](https://ideas.powerbi.com/forums/265200-power-bi).
+
+### <a name="power-bi-report-server"></a>Power BI -raporttipalvelin
+
+#### <a name="export-to-excel-from-power-bi-reports"></a>Vieminen Exceliin Power BI -raporteista
+
+Vieminen Exceliin Power BI -raportista toimii Power BI -raporttipalvelimessa nyt samalla tavalla kuin vieminen Exceliin Power BI -raportista Power BI -palvelussa. Vieminen onnistuu suoraan Excelin .xlsx-muotoon, ja vietävien rivien enimmäismäärä on 150 000.
+
+#### <a name="azure-sql-managed-instance-support"></a>Azure SQL:n hallitun esiintymän tuki
+
+Voit nyt isännöidä Power BI -raporttipalvelimessa käytettävää tietokantaluetteloa Azure SQL:n hallitussa esiintymässä, jota isännöidään joko näennäiskoneessa tai omassa palvelinkeskuksessa. Tuki rajoittuu tietokannan tunnistetietojen käyttämiseen SQL:n hallittuun esiintymään yhdistämistä varten.
+
+#### <a name="power-bi-premium-dataset-support"></a>Power BI Premium -tietojoukkojen tuki
+
+Voit muodostaa yhteyden Power BI -tietojoukkoihin käyttämällä joko Microsoft Report Builderia tai SQL Server Data Toolsia (SSDT). Sen jälkeen voit julkaista nämä raportit Power BI -raporttipalvelimeen käyttämällä SQL Server Analysis Services -yhteyttä. Käyttäjien on käytettävä tallennettua Windows-käyttäjänimeä ja -salasanaa skenaarion ottamiseksi käyttöön.
+
+#### <a name="alttext-alternative-text-support-for-report-elements"></a>AltText (vaihtoehtoinen teksti) -tuki raporttielementeille
+
+Raportin laatimisen aikana voit työkaluvihjeitä käyttämällä määrittää tekstin sen kullekin elementille. Näytönlukijat pystyvät lukemaan näitä työkaluvihjeitä.
+
+#### <a name="azure-active-directory-application-proxy-support"></a>Azure Active Directory -sovellusvälityspalvelimen tuki
+
+Azure Active Directory -sovellusvälityspalvelimen ansiosta sinun ei enää tarvitse hallita omaa verkkosovellusten välityspalvelinta verkko- tai mobiilisovellusten suojatun käytön sallimiseksi. Lisätietoja on artikkelissa [Paikallisten sovellusten etäkäyttö Azure Active Directory -sovellusvälityspalvelimen kautta](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+
+#### <a name="custom-headers"></a>Mukautetut otsikot
+
+Voit määrittää otsikkoarvot kaikille URL-osoitteille, jotka vastaavat määritettyjä säännönmukaisten lausekkeiden rakenteita. Käyttäjät voivat päivittää mukautettuja otsikkoarvoja kelvollisella XML:llä, jos on tarve määrittää otsikkoarvoja valituille pyynnön URL-otsikoille. Järjestelmänvalvojat voivat lisätä XML:ään minkä tahansa määrän otsikoita. Lisätietoja on **Reporting Servicesin kehittyneitä ominaisuuksia** koskevan artikkelin [Mukautetut otsikot](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#custom-headers) -osiossa.
+
+#### <a name="transparent-database-encryption"></a>Läpinäkyvä tietokannan salaus
+
+Power BI -raporttipalvelin tukee nyt läpinäkyvää tietokannan salausta Power BI -raporttipalvelimen luettelotietokannalle Enterprise- ja Standard-versioissa.
+
+#### <a name="microsoft-report-builder-update"></a>Microsoftin Report Builderin päivitys
+
+Report Builderin uusi versio on täysin yhteensopiva Microsoft SQL Server Reporting Servicesin versioiden 2016, 2017 ja 2019 kanssa. Se on myös yhteensopiva Power BI -raporttipalvelimen kaikkien julkaistujen ja tuettujen versioiden kanssa.
 
 ## <a name="september-2019"></a>Syyskuu 2019
 
@@ -33,7 +178,7 @@ Power BI -raporttipalvelimen syyskuun 2019 päivityksessä on paljon Power BI -r
 
 - **Visuaalisen tason suodattimet osittajille** Voit lisätä osittajiin visuaalisen tason suodattimen. Se toimii samalla tavalla kuin minkä tahansa muun visuaalisen tason suodatin, eli suodattaa vain itse osittajan, ei muita visualisointeja. Tämä suodatin on hyödyllinen tyhjien kohteiden suodattamisessa pois tai mittaussuodattimien käytössä.
 - **Taulukoiden ja matriisien kuvakejoukot** KPI-kuvakkeiden avulla voit määrittää säännöt, jotka koskevat taulukon ja matriisin eri kuvakesarjojen näyttämistä samaan tapaan kuin Excelin kuvakejoukoissa.
-- **Visualisointien ryhmittely** Nyt voit ryhmitellä visualisoinnit, muodot, tekstiruudut, kuvat ja painikkeet yhteen raporttisivulla samalla tavalla kuin PowerPointissa. Kun ryhmität objekteja yhteen, voit siirtää niitä kaikkia ja muuttaa niiden kaikkien kokoa samanaikaisesti. Ryhmittely helpottaa työskentelyä sellaisissa raporteissa, joissa on useita objekteja kerroksittain jokaisella sivulla.
+- **Visualisointien ryhmittely** Nyt voit ryhmitellä visualisoinnit, muodot, tekstiruudut, kuvat ja painikkeet yhteen raporttisivulla samalla tavalla kuin PowerPointissa. Kun ryhmität objekteja yhteen, voit siirtää niitä kaikkia ja muuttaa niiden kaikkien kokoa samanaikaisesti. Ryhmittely helpottaa työskentelyä sellaisessa raportissa, joissa on useita objekteja kerroksittain jokaisella sivulla.
 - **Uudet oletusteemat** Raporteissa käytettävissä olevat teemat on päivitetty ja uusien raporttien oletusteema vaihdettu, jotta ne ovat yhdenmukaisia uusien teemojen JSON-asetusten kanssa. Uusi oletusteema vastaa entistä paremmin Microsoftin suunnittelukieltä ja visualisointien parhaita suunnittelukäytäntöjä. 
 - **Päivitetty ruuturakenne** Käyttöliittymä on päivitetty suurelta osin. Kaikkien ruutujen, alatunnisteen ja näkymävalitsimen värit on päivitetty vaaleammiksi, välistykset on päivitetty ja uuden kuvakkeet on otettu käyttöön. Uusi rakenne on koko käyttöliittymän päivittämisen ensimmäinen vaihe.
 
@@ -80,37 +225,39 @@ Seuraavassa on täydellinen ominaisuusluettelo.
 - Kopioiminen leikepöydälle tietojen profiloinnista
 
 
-## <a name="may-2019-power-bi-desktop-for-power-bi-report-server"></a>Toukokuu 2019: Power BI Desktop Power BI -raporttipalvelimelle
+## <a name="may-2019"></a>Toukokuu 2019
+
+### <a name="power-bi-desktop-for-power-bi-report-server"></a>Power BI Desktop Power BI -raporttipalvelimelle
 
 [Power BI -raporttipalvelimen toukokuun 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) blogikirjoituksessa on lisätietoja kaikista uusista ominaisuuksista.
 
 Seuraavassa on joitakin version kohokohtia:
 
-### <a name="performance-analyzer"></a>Suorituskyvyn analysointi 
+#### <a name="performance-analyzer"></a>Suorituskyvyn analysointi 
 
 Jos raporttisi toimii oletettua hitaammin, kokeile Power BI Desktopin suorituskyvyn analysointia. Kun käynnistät sen, se luo loki tiedoston, joka sisältää tiedot kaikista raportissa käyttämistäsi toiminnoista. Lue lisätietoja [suorituskyvyn analysoinnista](../desktop-performance-analyzer.md).
 
-### <a name="new-modeling-view"></a>Uusi mallinnusnäkymä
+#### <a name="new-modeling-view"></a>Uusi mallinnusnäkymä
 
 Power BI Desktopin uuden Mallintamisnäkymän avulla voit tarkastella ja käsitellä monimuotoisia tietojoukkoja, jotka sisältävät useita taulukoita. Kohokohtia ovat useita kaavioita sisältävät asettelut ja sarakkeiden, mittarien ja taulukoiden joukkomuokkaus. Lue lisätietoja [mallinnusnäkymästä](../desktop-modeling-view.md).
 
-### <a name="accessible-visual-interaction"></a>Helppokäyttöinen visuaalinen vuorovaikutus
+#### <a name="accessible-visual-interaction"></a>Helppokäyttöinen visuaalinen vuorovaikutus
 
 Voit nyt käyttää arvopisteitä monissa valmiissa visualisoinneissa näppäimistöllä siirtymisen avulla. Lue lisätietoja [Power BI -raporttien helppokäyttöisyydestä](../desktop-accessibility.md).
 
-### <a name="conditional-formatting-titles-and-web-url-actions"></a>Otsikoiden ehdollinen muotoilu ja verkko-URL-toiminnot
+#### <a name="conditional-formatting-titles-and-web-url-actions"></a>Otsikoiden ehdollinen muotoilu ja verkko-URL-toiminnot
 
 Power BI -raportit ovat vuorovaikutteisia. On järkevää, että raportin otsikot ovat dynaamisia, jotta ne vastaavat raportin kulloistakin tilaa. Voit määrittää painikkeiden, muotojen ja kuvien URL-osoitteet dynaamisiksi saman lausekkeeseen sidotun muotoilun avulla. Lue lisätietoja [lausekepohjaisista otsikoista](../desktop-conditional-format-visual-titles.md).
 
-### <a name="cross-highlight-by-axis-labels"></a>Ristiinkorostus akseleiden nimien mukaan
+#### <a name="cross-highlight-by-axis-labels"></a>Ristiinkorostus akseleiden nimien mukaan
 
 Jos haluat ristiinkorostaa sivun muita elementtejä, voit valita visualisoinnin akselin luokkaotsikoita samalla tavalla kuin visualisoinnin arvopisteitä. Lue lisätietoja [ristiinkorostamisesta](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
 
-### <a name="all-the-new-features"></a>Kaikki uudet ominaisuudet
+#### <a name="all-the-new-features"></a>Kaikki uudet ominaisuudet
 
 Seuraavassa on luettelo kaikista uusista ominaisuuksista:
 
-### <a name="reporting"></a>Raportointi
+#### <a name="reporting"></a>Raportointi
 
 - Ristiinkorostus yhdessä pisteessä viivakaavioissa 
 - Automaattinen rivitys otsikoissa 
@@ -131,24 +278,24 @@ Seuraavassa on luettelo kaikista uusista ominaisuuksista:
 - Rivitietojen selitteen sijainnin ohjausobjektin
 - Suorituskykyilmaisimen visuaalisen ilmaisimen tekstikoon ohjausobjekti
 
-### <a name="analytics"></a>Analytiikka
+#### <a name="analytics"></a>Analytiikka
 
 - Näytä päivämäärät hierarkiana nyt yleisesti saatavilla  
 
-### <a name="modeling"></a>Mallintaminen
+#### <a name="modeling"></a>Mallintaminen
 
 - Uusi mallinnusnäkymä nyt yleisesti saatavilla
 - Uusia DAX-funktioita
 - Päivitä ALLSELECTED DAX -funktioon
 - Poista käytöstä automaattiset päivämäärätaulukot uusissa raporteissa
 
-## <a name="may-2019-power-bi-report-server"></a>Toukokuu 2019: Power BI -raporttipalvelin
+### <a name="power-bi-report-server"></a>Power BI -raporttipalvelin
 
-### <a name="support-for-trusted-visuals"></a>Luotettujen visualisointien tuki
+#### <a name="support-for-trusted-visuals"></a>Luotettujen visualisointien tuki
 
 Power BI -raporttipalvelimeen on lisätty luotettujen visualisointien tuki. Tällä hetkellä tuemme Mapboxia ja PowerOn-visualisointeja. ESRI, Visio ja PowerApps eivät ole tuettuja tässä versiossa.)
 
-### <a name="improved-security-features"></a>Parannetut suojausominaisuudet
+#### <a name="improved-security-features"></a>Parannetut suojausominaisuudet
 
 **RestrictedResourceMimeTypeForUpload**, jonka avulla järjestelmänvalvojat voivat määrittää pilkuin erotellun luettelon kielletyistä mime-tyypeistä, kuten text/html.
 
@@ -176,7 +323,7 @@ Järjestelmänvalvojat voivat määrittää seuraavat palvelinklusterin asetukse
 
 **AllowedResourceExtensionsForUpload** Määritä niiden resurssien tiedostopäätteet, joita raporttipalvelimeen voi ladata. Sisäänrakennettujen tiedostotyyppien tiedostopäätteitä, kuten &ast;.rdl ja &ast;.pbix, ei tarvitse lisätä. Oletusasetus on ”&ast;, &ast;.xml, &ast;.xsd, &ast;.xsl, &ast;.png, &ast;.gif, &ast;.jpg, &ast;.tif, &ast;.jpeg, &ast;.tiff, &ast;.bmp, &ast;.pdf, &ast;.svg, &ast;.rtf, &ast;.txt, &ast;.doc, &ast;.docx, &ast;.pps, &ast;.ppt, &ast;.pptx”. 
 
-**SupportedHyperlinkSchemes** Määrittää CSV-muotoisen luettelon hyperlinkkitoiminnoissa sallituista URI-malleista, joiden hahmontaminen sallitaan. &ast; sallii kaikki hyperlinkkimallit. Esimerkiksi asetus ”http,https” sallisi hyperlinkit osoitteeseen https://www. contoso.com mutta poistaisi hyperlinkit osoitteeseen “mailto:bill@contoso.com” tai javascript:window.open(‘www.contoso.com’, ‘_blank’). Oletusasetus on &ast;.
+**SupportedHyperlinkSchemes** Määrittää CSV-muotoisen luettelon hyperlinkkitoiminnoissa sallituista URI-malleista, joiden hahmontaminen sallitaan. &ast; sallii kaikki hyperlinkkimallit. Esimerkiksi asetus ”http, https” sallisi hyperlinkit osoitteeseen https://www. contoso.com mutta poistaisi hyperlinkit osoitteeseen “mailto:bill@contoso.com” tai javascript:window.open(‘ www.contoso.com’, ‘_blank’). Oletusasetus on &ast;.
 
 ## <a name="august-2018"></a>Elokuu 2018
 
@@ -254,7 +401,7 @@ Suoran SAP HANA SSO -kyselyn Kerberos-tuki on nyt käytettävissä Power BI -rap
 - [Joustavuutta ja muotoilumahdollisuuksia lisäävät uudet visualisoinnin otsikot](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#visualHeader)
 - [Taustakuvan muotoilu](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#wallpaper)
 - [Taulukoiden ja matriisien työkaluvihjeet](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#tableTooltips)
-- [Työkaluvihjeiden poistaminen käytöstä visualisoinneista](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#tooltips)
+- [Visualisointien työkaluvihjeiden poistaminen käytöstä](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#tooltips)
 - [Osittajan helppokäyttötoiminnot](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#slicerAccessibility)
 - [Muotoiluruudun parannuksia](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#formattingPane)
 - [Viiva- ja yhdistelmäkaavioiden askelletun viivan tuki](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#steppedLine)
@@ -353,14 +500,14 @@ Kun poraudut jonkin visualisoinnin valittuun luokkaan, voit suodattaa kaikki kys
 - [Haku muotoilu- ja analyysiruudusta](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search)
 - [Kentän ominaisuudet -ruutu ja kenttien kuvaukset](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#fieldPropertiesPane)
 
-### <a name="analytics"></a>Analysointi
+### <a name="analytics"></a>Analytiikka
 
 - [UTCNOW() ja UTCTODAY()](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#utcDAX)
 - [Mukautetun päivämäärätaulukon merkitseminen](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
 - [Poraaminen suodattaa muut visualisoinnit](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
 - [Solutason muotoilu monirivisten korttien moniulotteisissa AS-malleissa](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#cellLevelFormatting)
 
-### <a name="performance"></a>Menestys
+### <a name="performance"></a>Suorituskyky
 
 - [Suodatuksen suorituskyvyn parannuksia](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#filtering)
 - [DirectQuery-suorituskyvyn parannuksia](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#dqPerf)
@@ -392,7 +539,7 @@ Power BI -raporttipalvelimen avulla voit määrittää ajoitetun tietojen päivi
 
 ### <a name="editing-power-bi-reports-from-the-server"></a>Palvelimella olevien Power BI -raporttien muokkaaminen
 
-Voit avata ja muokata palvelimella olevia Power BI -raporttitiedostoja (.pbix). Saat lataamasi alkuperäisen tiedoston itsellesi.  Tämä tarkoittaa, että **jos palvelin on päivittänyt tiedot, tietoja ei päivitetä, kun avaat tiedoston ensimmäistä kertaa**. Sinun on päivitettävä tiedosto manuaalisesti, jotta muutokset näkyvät.
+Voit avata ja muokata palvelimella olevia Power BI -raporttitiedostoja (.pbix). Saat lataamasi alkuperäisen tiedoston itsellesi. **Jos palvelin on päivittänyt tiedot, tietoja ei päivitetä, kun avaat tiedoston ensimmäistä kertaa**. Sinun on päivitettävä tiedosto manuaalisesti, jotta muutokset näkyvät.
 
 ### <a name="large-file-uploaddownload"></a>Suurten tiedostojen lataaminen palvelimelle tai palvelimelta
 
@@ -404,7 +551,7 @@ Voit käyttää jaettuja tietojoukkoja OData-syötteellisellä Power BI Desktopi
 
 ### <a name="scale-out"></a>Skaalattavuus
 
-Tämä versio tukee skaalattavuutta. Kuormituksen tasauksen ja palvelimen affiniteettimäärityksen avulla takaat parhaan käyttökokemuksen. Huomaa, että skenaariota ei ole vielä optimoitu skaalattavuutta varten, joten mallit saatetaan replikoida useille solmuille. Skenaario toimii ilman verkon kuormituksen tasaustoimintoa ja kiinteitä istuntoja. Huomaa kuitenkin, että mallin N-kertaisen lataamisen vuoksi solmut käyttävät tavallista enemmän muistia. Lisäksi yhteyksien välinen suorituskyky heikkenee, kun virtautettu malli kohtaa uuden solmun pyyntöjen välillä.  
+Tämä versio tukee skaalattavuutta. Kuormituksen tasauksen ja palvelimen affiniteettimäärityksen avulla takaat parhaan käyttökokemuksen. Skenaariota ei ole vielä optimoitu skaalattavuutta varten, joten mallit saatetaan replikoida useille solmuille. Skenaario toimii ilman verkon kuormituksen tasaustoimintoa ja kiinteitä istuntoja. Huomaa kuitenkin, että mallin N-kertaisen lataamisen vuoksi solmut käyttävät tavallista enemmän muistia. Lisäksi yhteyksien välinen suorituskyky heikkenee, kun virtautettu malli kohtaa uuden solmun pyyntöjen välillä.  
 
 ### <a name="administrator-settings"></a>Järjestelmänvalvojan asetukset
 
@@ -416,7 +563,7 @@ Järjestelmänvalvojat voivat määrittää seuraavat palvelinklusterin asetukse
 * MaxFileSizeMb: Oletuksena on nyt 1000
 * ModelCleanupCycleMinutes: Kuinka usein mallit tarkistetaan muistista poistamista varten
 * ModelExpirationMinutes: Kuinka pitkän käyttämättömyysjakson jälkeen malli vanhenee ja poistetaan
-* ScheduleRefreshTimeoutMinutes: Kuinka kauan tietojen päivitys voi kestää mallia kohden. Oletuksena tämä on kaksi tuntia.  Ylärajaa ei ole.
+* ScheduleRefreshTimeoutMinutes: Kuinka kauan tietojen päivitys voi kestää mallia kohden. Oletusarvo on kaksi tuntia.  Ylärajaa ei ole.
 
 **Määritystiedosto rsreportserver.config**
 
@@ -434,7 +581,7 @@ Järjestelmänvalvojat voivat määrittää seuraavat palvelinklusterin asetukse
 
 SSRS 2017:lle julkaistu kehittäjien ohjelmointirajapinta (REST API) on laajennettu Power BI -raporttipalvelimelle, ja se toimii sekä Excel- että .pbix-tiedostojen kanssa. Eräs mahdollinen käyttötapa on tiedostojen ohjelmallinen lataaminen palvelimelta, niiden päivittäminen ja uudelleenjulkaisu. Tämä esimerkki on ainoa tapa päivittää PowerPivot-malleja sisältävät Excel-työkirjat.
 
-Huomaa, että suurille tiedostoille on uusi erillinen ohjelmointirajapinta, jota päivitetään Swaggerin Power BI -raporttipalvelinversiossa. 
+Suurille tiedostoille on uusi ja erillinen ohjelmointirajapinta, jota päivitetään Swaggerin Power BI -raporttipalvelinversiossa. 
 
 ### <a name="sql-server-analysis-services-ssas-and-the-power-bi-report-server-memory-footprint"></a>SQL Server Analysis Services (SSAS) -palvelun ja Power BI-raporttipalvelimen muistin käyttö
 
@@ -454,7 +601,7 @@ Olemme julkaisseet [vaiheittaisen ohjeet, jotka opastavat Office Onlinen Server 
 
 Power BI-raporttipalvelin tukee nyt uusia Power BI -taulukko- ja matriisivisualisointeja. Power BI Desktop -versio on päivitettävä lokakuun 2017 julkaisuversioon, jotta voit luoda kyseisiä visualisointeja sisältäviä raportteja. Versio ei voi olla asennettuna rinnakkain Power BI Desktop (Kesäkuu 2017) -julkaisuversion kanssa. Saat Power BI Desktopin uusimman version [Power BI -raporttipalvelimen lataussivulta](https://powerbi.microsoft.com/report-server/) valitsemalla **lataamisen lisäasetukset**.
 
-## <a name="june-2017"></a>Kesäkuu 2017
+## <a name="june-2017"></a>Kesä 2017
 
 * Power BI -raporttipalvelimen GA-versio (generally available, yleisesti saatavana) tulee saataville.
 
@@ -472,7 +619,6 @@ Power BI-raporttipalvelin tukee nyt uusia Power BI -taulukko- ja matriisivisuali
 Katso seuraavat lähteet, joiden avulla pysyt ajan tasalla Power BI -raporttipalvelimen uusista ominaisuuksista.
 
 * [Microsoftin Power BI ‑blogi](https://powerbi.microsoft.com/blog/)
-* [SQL Server Reporting Services -tiimin blogi](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
 * [Guy in a Cube ‑YouTube-kanava](https://aka.ms/guyinacube)
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

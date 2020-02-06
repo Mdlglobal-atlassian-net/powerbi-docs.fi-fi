@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: b1ce8644decb758775c0bbff87df7975a64692a2
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.openlocfilehash: 53940737f71e04fbf5bccd9520a749f6fc559db9
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886109"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889232"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>SQL Server Reporting Services -raporttien siirtäminen Power BI:hin
 
@@ -104,6 +104,8 @@ Seuraavia SSRS-kohdetyyppejä ei kuitenkaan voi siirtää Power BI:hin:
 
 Jos RDL-raporttisi käyttävät toimintoja tai ominaisuuksia, [joita ei ole tueta Power BI:n sivutetuissa raporteissa](../paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi), voit kehittää ne uudelleen [Power BI -raportteina](../consumer/end-user-reports.md). Vaikka RDL-raporttisi voidaan siirtää, suosittelemme kuitenkin, että harkitset niiden nykyaikaistamista Power BI -raporteiksi, jos tämä on toteuttamiskelpoista.
 
+Jos RDL-raporttisi on noudettava tietoja _paikallisista tietolähteistä_, ne eivät voi käyttää kertakirjautumista (SSO). Tällä hetkellä kaikki tietojen nouto näistä lähteistä tehdään käyttämällä _yhdyskäytävän tietolähteen käyttäjätilin_ suojauskontekstia. SQL Server Analysis Services (SSAS) ei voi pakottaa rivitason suojausta (RLS) käyttäjäkohtaisesti.
+
 Yleensä Power BI:n sivutetut raportit on optimoitu **tulostamista** ja **PDF-tiedostojen luomista**  varten. Power BI -raportit on taas optimoitu **analysointia ja vuorovaikutteisuutta** varten. Saat lisätietoja ohjeartikkelista [Milloin sivutettuja raportteja kannattaa käyttää Power BI:ssä?](report-paginated-or-power-bi.md)
 
 ### <a name="prepare"></a>Valmistele
@@ -116,6 +118,8 @@ _Valmistele_-vaiheessa kaikki laitetaan valmiiksi. Se käsittää Power BI -ymp�
 1. Tutustu Power BI:n jakamiseen ja suunnittele, miten jaat sisältöä julkaisemalla [Power BI -sovelluksia](../service-create-distribute-apps.md).
 1. Harkitse [jaettujen Power BI -tietojoukkojen](../service-datasets-build-permissions.md) käyttöä SSRS:n jaettujen tietolähteiden asemesta.
 1. Luo [Power BI Desktopilla](../desktop-what-is-desktop.md) mobiilioptimoituja raportteja. Voit käyttää esimerkiksi [Power BI:n mukautettuja suorituskykymittarivisualisointeja](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) SSRS:n mobiiliraporttien ja suorituskykymittareiden asemesta.
+1. Arvioi uudelleen sisäisen **Käyttäjätunnus**-kentän käyttö raporteissasi. Jos luotat **Käyttäjätunnukseen** raporttitietojen suojaamisessa, huomaa, että sivutetuissa raporteissa (Power BI -palvelussa isännöitynä) se palauttaa täydellisen käyttäjätunnuksen. NT-tilin nimen, esimerkiksi _AW\mblythe_, palauttamisen sijaan sisäinen kenttä palauttaa jotain tämänkaltaista: _m. Blythe&commat;adventureworks.com_. Sinun on muokattava tietojoukkomäärityksiä ja mahdollisesti lähdetietoja. Muokkaamisen ja julkaisun jälkeen suosittelemme, että testaat raporttisi perusteellisesti varmistaaksesi, että tietojen käyttöoikeudet toimivat odotetulla tavalla.
+1. Arvioi uudelleen sisäisen **ExecutionTime**-kentän käyttö raporteissasi. Jos kyseessä ovat sivutetut raportit (Power BI -palvelussa isännöitynä), sisäinen kenttä palauttaa päivämäärän/ajan _koordinoituna yleisaikana (UTC)_ . Se voi vaikuttaa raporttiparametrin oletusarvoihin ja raportin suorituksen aikatunnisteeseen (jotka yleensä lisätään raportin alatunnisteisiin).
 1. Varmista, että raportteja luovilla käyttäjillä on [Power BI Report Builder](../report-builder-power-bi.md) asennettuna ja että uudet versiot voidaan jakaa jatkossa helposti koko organisaatioosi.
 
 ## <a name="migration-stage"></a>Siirtämisvaihe
@@ -186,7 +190,7 @@ Saat lisätietoja näistä ongelmista sekä ohjeet niiden ymmärtämiseen ja lie
 Saat lisätietoja tästä artikkelista tutustumalla seuraaviin resursseihin:
 
 * [Mitä ovat sivutetut raportit Power BI Premiumissa?](../paginated-reports-report-builder-power-bi.md)
-* Kaveri kuutiossa -video: [Esittelyssä sivutetut raportit Power BI:ssä](https://www.youtube.com/watch?v=wfqn45XNK3M)
+* Guy in a Cuben video: [Esittelyssä sivutetut raportit Power BI:ssä](https://www.youtube.com/watch?v=wfqn45XNK3M)
 * [Milloin sivutettuja raportteja kannattaa käyttää Power BI:ssä?](report-paginated-or-power-bi.md)
 * [Sivutetut raportit Power BI:ssä: usein kysytyt kysymykset](../paginated-reports-faq.md)
 * [Power BI Premiumin usein kysytyt kysymykset](../service-premium-faq.md)

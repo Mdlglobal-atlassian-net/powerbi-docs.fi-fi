@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 01/30/2020
 rLocalizationGroup: Common tasks
-ms.openlocfilehash: a9339cc9f61a3a191e8783935c9ec38e119894e9
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 267a1e8b2f45198059e5acfcdf0233445babbd14
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099204"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76888585"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Raportin tai koontinäytön tilaaminen Power BI -palvelussa 
 
@@ -31,41 +31,43 @@ Kun saat sähköpostiviestin, siinä on mukana linkki, jonka kautta voit siirty�
 
 
 ## <a name="requirements"></a>Vaatimukset
-Tilauksen **luominen** itsellesi edellyttää Power BI Pro -käyttöoikeutta. Käyttäjät, jotka tarkastelevat sisältöä Premium-työtilassa tai sovelluksessa, voivat myös tilata siellä sijaitsevaa sisältöä jopa ilman Power BI Pro -käyttöoikeutta. **Muille tilaamista** voi käyttää vain koontinäytön omistaja. 
+Tilauksen **luominen** itselle edellyttää tietyntyyppistä käyttöoikeutta. Jos et pysty luomaan tilausta, ota yhteyttä Power BI -järjestelmänvalvojaan. **Muille tilaamista** voi käyttää vain koontinäytön tai raportin omistaja. 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>Koontinäytön tai raporttisivun tilaaminen
 Koontinäytön ja raportin tilausprosessit ovat samankaltaiset. Samaa painiketta painamalla voit tilata Power BI -palvelun koontinäyttöjä ja raportteja.
  
-![Tilaa-kuvakkeen valitseminen](./media/end-user-subscribe/power-bi-subscribe-orientation.png).
+![Tilaa-kuvakkeen valitseminen](./media/end-user-subscribe/power-bi-subscribe.png).
 
 1. Avaa koontinäyttö tai raportti.
 2. Valitse yläreunan valikkoriviltä **Tilaa** tai valitse kirjekuvake ![Tilaa-kuvake](./media/end-user-subscribe/power-bi-icon-envelope.png).
    
-   ![Tilaa-kuvake](./media/end-user-subscribe/power-bi-subscribe-icon.png)
 
-   ![Tilausikkuna](./media/end-user-subscribe/power-bi-emails-newest.png)
+
+   ![Tilausikkuna](./media/end-user-subscribe/power-bi-emails-numbered.png)
     
-    Vasemmalla olevassa näytössä näet, milloin olet koontinäytössä. Valitse siinä **Tilaa**. Oikealla olevassa näytössä näet, milloin olet raporttisivulla. Valitse siinä **Tilaa**. Voit tilata useamman kuin yhden raportin sivun valitsemalla **Lisää toinen tilaus** ja valitsemalla toisen sivun. 
+    Vasemmalla olevassa näytössä näet, milloin olet koontinäytössä. Valitse siinä **Tilaa**. Oikealla olevassa näytössä näet, milloin olet raporttisivulla. Valitse siinä **Tilaa**. 
+    
+    a. Voit tilata useamman kuin yhden raportin sivun valitsemalla **Lisää toinen tilaus** ja valitsemalla toisen sivun avattavasta valikosta yläreunan läheltä.
 
-4. Voit ottaa tilauksen käyttöön tai poistaa sen käytöstä keltaisella liukusäätimellä.  Liukusäätimen asettaminen Poissa käytöstä -asentoon ei poista itse tilausta. Jos haluat poistaa tilauksen, valitse roskakorikuvake.
+    b. Voit ottaa tilauksen käyttöön tai poistaa sen käytöstä keltaisella liukusäätimellä.  Liukusäätimen asettaminen Poissa käytöstä -asentoon ei poista itse tilausta. Jos haluat poistaa tilauksen, valitse roskakorikuvake.
 
-5. Halutessasi voit lisätä aiheen ja sähköpostiviestin tiedot. 
+    c. Halutessasi voit lisätä aiheen ja sähköpostiviestin tiedot. 
 
-5. Valitse tilauksesi **tiheys**.  Voit valita Päivittäin, Viikoittain tai Tietojen päivittämisen jälkeen (päivittäin).  Jos haluat saada tilauksen sähköpostit vain tiettyinä päivinä, valitse **Viikoittain** ja valitse sitten, minä päivinä haluat saada sähköposteja.  Jos haluat saada tilauksen sähköpostit esimerkiksi vain arkipäivinä, valitse tiheydeksi **Viikoittain** ja poista lauantain ja sunnuntain valintaruutujen valinnat.   
+    d. Valitse tilauksesi **tiheys**.  Voit valita Päivittäin, Viikoittain tai Tietojen päivittämisen jälkeen (päivittäin).  Jos haluat saada tilauksen sähköpostit vain tiettyinä päivinä, valitse **Viikoittain** ja valitse sitten, minä päivinä haluat saada sähköposteja.  Jos haluat saada tilauksen sähköpostit esimerkiksi vain arkipäivinä, valitse tiheydeksi **Viikoittain** ja poista lauantain ja sunnuntain valintaruutujen valinnat.   
 
-6. Voit valita sähköpostien lähetyskellonajan valitsemalla tiheydeksi Päivittäin tai Viikoittain ja määrittämällä sitten tilaukselle **ajoitetun** **ajan**.  Tämä on aika, jolloin tilaustyösi alkaa. Joissain tilanteissa saattaa kestää muutaman minuutin, ennen kuin sähköposti toimitetaan postilaatikkoosi.    
+    e. Voit valita sähköpostien lähetyskellonajan valitsemalla tiheydeksi Päivittäin tai Viikoittain ja määrittämällä sitten tilaukselle **ajoitetun** **ajan**.  Tämä on aika, jolloin tilaustyösi alkaa. Joissain tilanteissa saattaa kestää muutaman minuutin, ennen kuin sähköposti toimitetaan postilaatikkoosi.    
 
-7. Määritä alkamis- ja päättymispäivät päivämääräkenttiin. Tilauksesi alkamisaika on oletusarvoisesti tilauksen luomispäivä ja päättymispäivä on oletusarvoisesti vuoden päässä. Tilaus lopetetaan päättymispäivänä, jos et ota sitä uudelleen käyttöön.  Saat ennen tilauksen päättymistä ilmoituksia, jossa kysytään, haluatko jatkaa tilausta.     
+    f. Määritä alkamis- ja päättymispäivät päivämääräkenttiin. Tilauksesi alkamisaika on oletusarvoisesti tilauksen luomispäivä ja päättymispäivä on oletusarvoisesti vuoden päässä. Tilaus lopetetaan päättymispäivänä, jos et ota sitä uudelleen käyttöön.  Saat ennen tilauksen päättymistä ilmoituksia, jossa kysytään, haluatko jatkaa tilausta.     
 
-8. Jos haluat tarkistaa tilauksesi ja testata sitä, valitse **Suorita nyt**.  Tämä lähettää sähköpostin sinulle heti. 
+    (esim. Jos haluat tarkistaa tilauksesi ja testata sitä, valitse **Suorita nyt**.  Tämä lähettää sähköpostin sinulle heti. 
 
-8. Jos kaikki näyttää olevan kunnossa, tallenna tilaus valitsemalla **Tallenna ja sulje**. Saat sähköpostin ja tilannevedoksen koontinäytöstä tai raportista määrittämäsi aikataulun mukaisesti. Kaikissa tilauksissa, joiden tiheydeksi määritetään **Tietojen päivittämisen jälkeen**, lähetetään sähköpostia vain kyseisen päivän ensimmäisen ajoitetun päivityksen jälkeen.
+3. Jos kaikki näyttää olevan kunnossa, tallenna tilaus valitsemalla **Tallenna ja sulje**. Saat sähköpostin ja tilannevedoksen koontinäytöstä tai raportista määrittämäsi aikataulun mukaisesti. Kaikissa tilauksissa, joiden tiheydeksi määritetään **Tietojen päivittämisen jälkeen**, lähetetään sähköpostia vain kyseisen päivän ensimmäisen ajoitetun päivityksen jälkeen.
    
    ![sähköpostitilannevedos koontinäytöstä](media/end-user-subscribe/power-bi-subscribe-email.png)
    
-    Raporttisivun päivittäminen ei päivitä tietojoukkoa. Vain tietojoukon omistaja voi manuaalisesti päivittää tietojoukon. Etsi pohjana olevan tietojoukon omistajan nimi valitsemalla **Näytä aiheeseen liittyvät** yläreunan valikkoriviltä tai etsi alkuperäinen tilaussähköposti.
+    Raporttisivun päivittäminen ei päivitä tietojoukkoa. Vain tietojoukon omistaja voi manuaalisesti päivittää tietojoukon. Etsi pohjana olevan tietojoukon omistajan nimi valitsemalla avattavan valikon yläreunan valikkorivi tai etsi alkuperäinen tilaussähköposti.
    
-    ![Liittyvät tietojoukot](./media/end-user-subscribe/power-bi-view-related-screen.png)
+    ![etsi omistaja](./media/end-user-subscribe/power-bi-owner.png)
 
 
 ## <a name="manage-your-subscriptions"></a>Tilausten hallinta

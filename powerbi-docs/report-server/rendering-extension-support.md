@@ -1,6 +1,6 @@
 ---
-title: PDF-hahmontamislaajennuksen määritystenmukaisuus standardiin ISO 14289-1 nähden – Power BI -raporttipalvelin
-description: Tässä asiakirjassa kuvataan Power BI -raporttipalvelimen ja SQL Reporting Servicesin PDF-hahmontamislaajennuksen määritystenmukaisuus ISO 14289-1 (PDF/UA) -määrityksiin nähden.
+title: PDF-hahmontamislaajennuksen määritystenmukaisuus standardiin ISO 14289-1 nähden – Power BI -raporttipalvelin ja SSRS
+description: Tässä asiakirjassa kuvataan Power BI -raporttipalvelimen ja SQL Server Reporting Servicesin PDF-hahmontamislaajennuksen määritystenmukaisuus ISO 14289-1 (PDF/UA) -määrityksiin nähden.
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
@@ -8,23 +8,23 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/04/2019
 ms.author: maggies
-ms.openlocfilehash: c800ee995bc3c03b3cbcda91503e6dea9495f6b5
-ms.sourcegitcommit: 721cf375627b010e8ad12c4c668295f38d450a17
+ms.openlocfilehash: bfefcef18b8cd92a5c3b15c2dcbd4653a6c7c9cd
+ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73638076"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819510"
 ---
-# <a name="pdf-rendering-extension-conformance-to-iso-14289-1---power-bi-report-server"></a>PDF-hahmontamislaajennuksen määritystenmukaisuus standardiin ISO 14289-1 nähden – Power BI -raporttipalvelin 
+# <a name="pdf-rendering-extension-conformance-to-iso-14289-1---power-bi-report-server--ssrs"></a>PDF-hahmontamislaajennuksen määritystenmukaisuus standardiin ISO 14289-1 nähden – Power BI -raporttipalvelin ja SSRS
 
-Koskee seuraavia: Power BI-raporttipalvelin ja SQL Reporting Services
+Koskee seuraavia: Power BI -raporttipalvelin ja SQL Server Reporting Services (SSRS)
 
-Tässä asiakirjassa kuvataan Power BI -raporttipalvelimen ja SQL Reporting Servicesin PDF-hahmontamislaajennuksen määritystenmukaisuus [ISO 14289-1 (PDF/UA)](https://www.pdfa.org/publication/pdfua-in-a-nutshell/) -määrityksiin nähden.
+Tässä asiakirjassa kuvataan Power BI -raporttipalvelimen ja SQL Server Reporting Servicesin PDF-hahmontamislaajennuksen määritystenmukaisuus [ISO 14289-1 (PDF/UA)](https://www.pdfa.org/publication/pdfua-in-a-nutshell/) -määrityksiin nähden.
 
 > [!NOTE]
 > Voit tallentaa tai tulostaa tämän teknisen raportin valitsemalla selaimessa **Tulosta** ja valitsemalla sitten **Tallenna PDF-tiedostona**.
 
-## <a name="1--scope"></a>1.  Alue
+## <a name="1--scope"></a>1.  Vaikutusalue
 
 Ei käytettävissä
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7d94c5d3531576cd36688591b55aaf4a49de51aa
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 924be90a8598c561a12ed87872bdfbd4681831c8
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831290"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889370"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Premium-kapasiteettien kuormitusten määrittäminen
 
@@ -67,7 +67,7 @@ Tietojoukkojen kuormitus on oletuksena käytössä, eikä sitä voi poistaa käy
 | **Välirivien enimmäismäärä** | DirectQueryn palauttamien välirivien enimmäismäärä. Oletusarvo on 1000000 ja sallittu alue on 100000–2147483647. |
 | **Offline-tietojoukon enimmäiskoko (Gt)** | Muistissa olevan offline-tietojoukon enimmäiskoko. Tämä on pakattu koko levyllä. Oletusarvon asettaa SKU ja sallittu alue on 0,1–10 Gt. |
 | **Tulosrivien enimmäismäärä** | DAX-kyselyssä palautettavien rivien enimmäismäärä. Oletusarvo on -1 (ei rajaa) ja sallittu alue on 100000–2147483647. |
-| **Kysely muistiraja (%)** | Kyselyn tai DAX-mittarin tilapäisiin kyselyihin käytettävissä olevan muistin enimmäismäärä prosentteina. |
+| **Kysely muistiraja (%)** | Käytettävissä olevan muistin enimmäismäärä kuormituksessa, jota voidaan käyttää MDX- tai DAX-kyselyn suorittamiseen. |
 | **Kyselyn aikakatkaisu (sekuntia)** | Kyselyn aikakatkaisuajan suurin mahdollinen aika. Oletusarvo on 3600 sekuntia (1 tunti). Arvo 0 määrittää, että kyselyissä ei ole aikakatkaisua. |
 | **Automaattinen sivun päivitys (esikatselu)** | Käytössä / ei käytössä -valitsimen avulla Premium-työtilat voivat käyttää raporteissa automaattista sivun päivitystä. |
 | **Pienin päivitysväli** | Jos automaattinen sivun päivitys on käytössä, sillä on tietty pienin päivitysväli. Se on oletusarvoisesti viisi minuuttia. Pienin sallittu arvo on yksi sekunti. |
@@ -99,11 +99,17 @@ Ota huomioon, että tämä asetus vaikuttaa vain DAX-kyselyihin, kun taas [Väli
 
 Tämän asetuksen avulla voi hallita resurssi-intensiivisten tai huonosti suunniteltujen raporttien vaikutusta. Jotkin kyselyt ja laskutoimitukset voivat aiheuttaa välituloksia, jotka käyttävät paljon muistia kapasiteetissa. Tämä tilanne voi aiheuttaa sen, että muut kyselyt suoritetaan hyvin hitaasti. Tällöin muut tietojoukot poistetaan kapasiteetista ja tuloksena syntyy muistivirheitä kapasiteetin muille käyttäjille.
 
-Tämä asetus koskee tietojen päivittämistä ja raportin hahmonnusta. Tietojen päivittäminen suorittaa sekä tietojen päivittämisen tietolähteestä että kyselyn päivityksestä, ellei kyselyn päivitystä ole poistettu käytöstä. Jos kyselyn päivitystä ei ole poistettu käytöstä, tätä muistirajaa sovelletaan myös näihin kyselyihin. Epäonnistuneen kyselyn takia ajoitetun päivityksen tila ilmoitetaan epäonnistuneeksi, vaikka tietojen päivittäminen onnistui.
+Tämä asetus koskee kaikkia DAX- ja MDX-kyselyitä, jotka Power BI -raportit, Analysoi Excelissä -toiminnon raportit sekä muut työkalut, jotka saattavat muodostaa yhteyden XMLA:n päätepisteeseen, suorittavat.
+
+Huomioi, että tietojen päivittämisen toiminnot voivat myös suorittaa DAX-kyselyitä osana koontinäytön ruutujen ja visualisointien välimuistien päivittämistä sen jälkeen, kun tietojoukon tiedot on päivitetty. Vastaavat kyselyt saattavat myös epäonnistua tämän asetuksen vuoksi, mikä saattaa johtaa siihen, että tietojen päivittämisen toiminnon näytetään epäonnistuneen, vaikka tietojoukon tiedot päivitettiin onnistuneesti.
 
 #### <a name="query-timeout"></a>Kyselyn aikakatkaisu
 
-Tämän asetuksen avulla voit hallita entistä paremmin pitkäkestoisten kyselyiden suorittamista, minkä seurauksena raportit voivat latautua käyttäjille hitaasti. Tämä asetus koskee tietojen päivittämistä ja raportin hahmonnusta. Tietojen päivittäminen suorittaa sekä tietojen päivittämisen tietolähteestä että kyselyn päivityksestä, ellei kyselyn päivitystä ole poistettu käytöstä. Jos kyselyn päivitystä ei ole poistettu käytöstä, tätä aikakatkaisurajaa sovelletaan myös näihin kyselyihin.
+Tämän asetuksen avulla voit hallita entistä paremmin pitkäkestoisten kyselyiden suorittamista, minkä seurauksena raportit voivat latautua käyttäjille hitaasti.
+
+Tämä asetus koskee kaikkia DAX- ja MDX-kyselyitä, jotka Power BI -raportit, Analysoi Excelissä -toiminnon raportit sekä muut työkalut, jotka saattavat muodostaa yhteyden XMLA:n päätepisteeseen, suorittavat.
+
+Huomioi, että tietojen päivittämisen toiminnot voivat myös suorittaa DAX-kyselyitä osana koontinäytön ruutujen ja visualisointien välimuistien päivittämistä sen jälkeen, kun tietojoukon tiedot on päivitetty. Vastaavat kyselyt saattavat myös epäonnistua tämän asetuksen vuoksi, mikä saattaa johtaa siihen, että tietojen päivittämisen toiminnon näytetään epäonnistuneen, vaikka tietojoukon tiedot päivitettiin onnistuneesti.
 
 Tämä asetus koskee yksittäistä kyselyä, eikä sen ajan pituutta, joka kuluu kaikkien tietojoukon tai raportin päivittämiseen liittyvien kyselyiden suorittamiseen. Katso seuraavaa esimerkkiä:
 
@@ -144,7 +150,7 @@ Jos haluat hyötyä uudesta käsittelymoduulista, jaa tietojen käsittely erilli
 
 #### <a name="container-size"></a>Säilön koko
 
-Tietovuon päivityksen yhteydessä tietovuon kuormitus muodostaa säilön kullekin tietovuon entiteetille. Kukin säilö voi varata muistia enintään **Säilön koko -asetuksessa määritettyyn kokoon saakka. Oletusarvo kaikille SKU-yksiköille on 700 Mt. Tätä asetusta kannattaa ehkä muuttaa, jos:
+Tietovuon päivityksen yhteydessä tietovuon kuormitus muodostaa säilön kullekin tietovuon entiteetille. Kukin säilö voi varata muistia enintään Säilön koko -asetuksessa määritettyyn kokoon saakka. Oletusarvo kaikille SKU-yksiköille on 700 Mt. Tätä asetusta kannattaa ehkä muuttaa, jos:
 
 - Tietovoiden päivittyminen kestää liian kauan tai tietovuon päivitys epäonnistuu aikakatkaisun takia.
 - Tietovuon entiteetit sisältävät laskentavaiheita, kuten liittämisen.  

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/09/2019
+ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 444a6978b0fcf841f0d0a3b2d50cc70062389cba
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 6c2c41221e4a199d6a5d3a800f3820746ef7389a
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75222026"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76888358"
 ---
 # <a name="get-power-bi-desktop"></a>Power BI Desktopin hankkiminen
 Power BI Desktopissa voit luoda tarkempia kyselyjä, malleja ja raportteja, jotka visualisoivat tietoja. Power BI Desktopilla voit luoda tietomalleja ja raportteja sekä jakaa töitäsi julkaisemalla niitä Power BI ‑palvelussa. Power BI Desktop on ladattavissa maksutta.
@@ -132,6 +132,8 @@ Voit myös käyttää seuraavia syntaksiparametreja, jotka on määritetty synta
 |INSTALLLOCATION     |Tiedostopolku, johon haluat asentaa         |
 |LANGUAGE     |Kieliasetuksen koodi (esimerkiksi en-US, de-DE, pr-BR), joka pakottaa käyttöön sovelluksen oletuskielen. Jos et määritä kieltä, Power BI Desktop näytetään Windows-käyttöjärjestelmän kielellä. Voit muuttaa tätä asetusta **Asetukset**-valintaikkunasta.         |
 |REG_SHOWLEADGENDIALOG     |Arvo 0 poistaa käytöstä valintaikkunan, joka näytetään ennen kuin olet kirjautunut Power BI Desktopiin.         |
+|DISABLE_UPDATE_NOTIFICATION     |Arvo 1 poistaa päivitysilmoitukset käytöstä.         |
+
 
 Voit esimerkiksi suorittaa Power BI Desktopin seuraavilla asetuksilla ja parametreilla, jolloin asennus suoritetaan ilman käyttöliittymää ja saksan kielellä: 
 

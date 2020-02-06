@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: 100417202fca148be0e2e976ce0cd84167c803d9
-ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74958428"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Tietojen päivittäminen paikallisesta SQL Server -tietokannasta
@@ -44,7 +44,7 @@ Tässä opetusohjelmassa käyt läpi seuraavat vaiheet:
 
 Seuraavien ohjeiden avulla voit luoda Power BI -perusraportin AdventureWorksDW-mallitietokannan avulla. Julkaise raportti Power BI -palveluun, jotta saat Power BI:hin tietojoukon, jonka voit sitten määrittää ja päivittää myöhemmissä vaiheissa.
 
-1. Napsauta Power BI Desktopin **Aloitus**-välilehdellä **Hae tiedot** \> **SQL Server**.
+1. Napsauta Power BI Desktopin **Aloitus**-välilehdessä **Hae tiedot** \> **SQL Server**.
 
 2. Anna **SQL Server -tietokannan** valintaikkunassa **palvelimen** ja **tietokannan (vapaaehtoinen)** nimet. Varmista, että **tietoyhteystilana** on **Tuo**, ja valitse sitten **OK**.
 
@@ -85,7 +85,7 @@ Seuraavien ohjeiden avulla voit luoda Power BI -perusraportin AdventureWorksDW-m
 
 6. Tallenna raportti nimellä AdventureWorksProducts.pbix.
 
-7. Valitse **Aloitus**-välilehdellä **Julkaise** \> **Oma työtila**\>**Valitse**. Kirjaudu sisään Power BI -palveluun, jos sinua pyydetään tekemään niin.
+7. Valitse **Aloitus**-välilehdessä **Julkaise** \> **Oma työtila** \> **Valitse**. Kirjaudu sisään Power BI -palveluun, jos sinua pyydetään tekemään niin.
 
 8. Valitse **Onnistui**-näytöllä **Avaa AdventureWorksProducts.pbix Power BI:ssä**.
 
@@ -134,7 +134,7 @@ Yhdistit Power BI Desktopissa suoraan paikalliseen SQL Server -tietokantaan, mut
 
 Nyt kun olet yhdistänyt Power BI -tietojoukon SQL Server -tietokantaan paikallisesti tietoyhdyskäytävän kautta, määritä päivitysaikataulu näiden ohjeiden mukaisesti. Tietojoukon säännöllinen päivittäminen auttaa varmistamaan, että raporttisi ja koontinäyttösi sisältävät uusimmat tiedot.
 
-1. Avaa siirtymisruudusta **Oma työtila** \> **Tietojoukot**. Valitse kolme pistettä ( **. . .** ) **AdventureWorksProducts**-tietojoukon kohdalla ja valitse sitten **Ajoita päivitys**.
+1. Avaa siirtymisruudussa **Oma työtila** \> **Tietojoukot**. Valitse kolme pistettä ( **. . .** ) **AdventureWorksProducts**-tietojoukon kohdalla ja valitse sitten **Ajoita päivitys**.
 
     > [!NOTE]
     > Muista valita kolme pistettä **AdventureWorksProducts**-tietojoukon kohdalta, ei samannimisen raportin kohdalta. **AdventureWorksProducts**-raportin pikavalikko ei sisällä **Ajoita päivitys** -toimintoa.
@@ -197,7 +197,7 @@ Aiempien päivitysten tulokset kannattaa tarkistaa säännöllisesti päivityshi
     > [!NOTE]
     > OneDrive-välilehti koskee vain tietojoukkoja, jotka ovat yhteydessä OneDriveen tai SharePoint Onlineen tallennettuihin Power BI Desktop -tiedostoihin, Excel-työkirjoihin tai CSV-tiedostoihin. Tästä on lisätietoja kohdassa [Tietojen päivittäminen Power BI:ssä](refresh-data.md).
 
-## <a name="clean-up-resources"></a>Resurssien tyhjentäminen
+## <a name="clean-up-resources"></a>Puhdista resurssit
 
 Jos et halua enää käyttää mallitietoja, hylkää tietokanta SQL Server Management Studiossa (SSMS). Jos et halua käyttää SQL Server -tietolähdettä, poista kyseinen tietolähde tietoyhdyskäytävästäsi. Sinun kannattaa harkita myös tietoyhdyskäytävän asennuksen poistamista, jos asensit sen vain tätä opetusohjelmaa varten. Sinun kannattaa poistaa myös AdventureWorksProducts-tietojoukko ja AdventureWorksProducts-raportti, jotka Power BI loi, kun latasit palveluun AdventureWorksProducts.pbix-tiedoston.
 

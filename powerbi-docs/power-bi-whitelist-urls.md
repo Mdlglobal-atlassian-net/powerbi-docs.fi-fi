@@ -1,26 +1,26 @@
 ---
 title: Power BI:n URL-osoitteet sallittujen luetteloon
-description: Tässä artikkelissa kuvataan päätepisteitä, joiden pitäisi olla Power BI -asiakkaiden tavoitettavissa.
+description: Tässä artikkelissa on luettelo turvallisiksi määritettävistä URL-päätepisteistä ja porteista Power BI -liitettävyyttä varten.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/22/2018
+ms.date: 01/29/2020
 ms.custom: seodec18
-ms.openlocfilehash: cd13e36ca7216036a22db332a508e3c825fecf4b
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 48406a8c68237d182960b46de67f91dbd2717922
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698781"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76894656"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>Power BI:n URL-osoitteet sallittujen luetteloon
 
 **Power BI -verkkopalvelu**, joka tunnetaan myös nimellä Power BI SaaS (Software as a Service) -sovellus, edellyttää Internet-yhteyttä. Alla olevien päätepisteiden tulee olla Power BI -verkkopalvelua käyttävien asiakkaiden ulottuvilla.
 
-Jotta voit käyttää Power BI -verkkopalvelua, sinun on voitava yhdistää päätepisteisiin, jotka on merkitty **pakollisiksi** alla olevissa taulukoissa ja päätepisteisiin, jotka on merkitty **pakollisiksi** linkitetyissä sivustoissa. Jos linkki ulkoiseen sivustoon viittaa tiettyyn osioon, sinun tarvitsee vain tarkistaa tämän osion päätepisteet.
+Jotta voit käyttää Power BI -verkkopalvelua, sinun on voitava yhdistää päätepisteisiin, jotka on merkitty **pakollisiksi** alla olevissa taulukoissa, ja päätepisteisiin, jotka on merkitty **pakollisiksi** linkitetyissä sivustoissa. Jos linkki ulkoiseen sivustoon viittaa tiettyyn osioon, sinun tarvitsee vain tarkistaa tämän osion päätepisteet.
 
 **Valinnaisiksi** merkityt päätepisteet voidaan myös **lisätä sallittujen kohteiden luetteloon**, jotta tietty toiminto toimisi.
 
@@ -46,16 +46,17 @@ Power BI:n yleistä käyttöä varten sinun on voitava yhdistää taulukossa ja 
 | Rivi | Tarkoitus | Kohteet | Portit |
 | --- | --- | --- | --- |
 | 1 | **Pakollinen:** taustapalvelun ohjelmointirajapinnat | *.analysis.windows.net | TCP 443 |
-| 2 | **Pakollinen:** Office 365:n integrointi | Tutustu Office 365 -ohjeeseen [Office Online ja yleiset URL-osoitteet](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | – |
-| 3 | **Pakollinen:** portaali | app.powerbi.com | TCP 443 |
-| 4 | **Pakollinen:** palvelutelemetria | dc.services.visualstudio.com | TCP 443 |
-| 5 | **Valinnainen:** tietoviestit | dynmsg.modpim.com | TCP 443 |
-| 6 | **Valinnainen:** NPS-tutkimukset | nps.onyx.azure.net | TCP 443 |
+| 2 | **Pakollinen:** taustapalvelun ohjelmointirajapinnat | *.pbidedicated.windows.net | TCP 443 |
+| 3 | **Pakollinen:** Office 365:n integrointi | Tutustu Office 365 -ohjeeseen [Office Online ja yleiset URL-osoitteet](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | – |
+| 4 | **Pakollinen:** portaali | app.powerbi.com | TCP 443 |
+| 5 | **Pakollinen:** palvelutelemetria | dc.services.visualstudio.com | TCP 443 |
+| 6 | **Valinnainen:** tietoviestit | dynmsg.modpim.com | TCP 443 |
+| 7 | **Valinnainen:** NPS-tutkimukset | nps.onyx.azure.net | TCP 443 |
 | | | |
 
 ## <a name="administration"></a>Hallinta
 
-Jotta voit suorittaa järjestelmänvalvojan toimintoja Power BI:llä, sinun on voitava yhdistää alla linkitetyissä sivustoissa oleviin päätepisteisiin.
+Jotta voit suorittaa järjestelmänvalvojan toimintoja Power BI:ssä, sinun on voitava yhdistää alla linkitetyissä sivustoissa oleviin päätepisteisiin.
 
 | Rivi | Tarkoitus | Kohteet | Portit |
 | --- | --- | --- | --- |
@@ -64,7 +65,7 @@ Jotta voit suorittaa järjestelmänvalvojan toimintoja Power BI:llä, sinun on v
 
 ## <a name="getting-data"></a>Tietojen hankkiminen
 
-Jotta voit saada tietoja tietyistä tietolähteistä, kuten OneDrivesta, sinun on voitava yhdistää alla olevassa taulukossa oleviin päätepisteisiin. Saatat joutua käyttämään muita internet-toimialueita ja URL-osoitteita, jos organisaatiossasi käytetään muita tietolähteitä.
+Jotta voit saada tietoja tietyistä tietolähteistä, kuten OneDrivesta, sinun on voitava yhdistää alla olevassa taulukossa oleviin päätepisteisiin. Saatat joutua käyttämään muita Internet-toimialueita ja URL-osoitteita, jos organisaatiossasi käytetään muita tietolähteitä.
 
 | Rivi | Tarkoitus | Kohteet | Portit |
 | --- | --- | --- | --- |
@@ -77,7 +78,7 @@ Jotta voit saada tietoja tietyistä tietolähteistä, kuten OneDrivesta, sinun o
 
 ## <a name="dashboard-and-report-integration"></a>Koontinäyttö ja raportin integrointi
 
-Power BI riippuu tietyistä päätepisteistä, jotta se voi tukea koontinäyttöjä ja raportteja. Sinun on voitava yhdistää taulukossa ja alla olevissa linkitetyissä sivustoissa oleviin päätepisteisiin.
+Power BI on riippuvainen tietyistä päätepisteistä, jotta se voi tukea koontinäyttöjä ja raportteja. Sinun on voitava yhdistää taulukossa ja alla olevissa linkitetyissä sivustoissa oleviin päätepisteisiin.
 
 | Rivi | Tarkoitus | Kohteet | Portit |
 | --- | --- | --- | --- |
@@ -86,7 +87,7 @@ Power BI riippuu tietyistä päätepisteistä, jotta se voi tukea koontinäyttö
 
 ## <a name="custom-visuals"></a>Mukautetut visualisoinnit
 
-Power BI riippuu tietyistä päätepisteistä mukautettujen visualisointien tarkastelemiseksi ja käyttämiseksi. Sinun on voitava yhdistää taulukossa ja alla olevissa linkitetyissä sivustoissa oleviin päätepisteisiin.
+Power BI on riippuvainen tietyistä päätepisteistä mukautettujen visualisointien tarkastelemiseksi ja käyttämiseksi. Sinun on voitava yhdistää taulukossa ja alla olevissa linkitetyissä sivustoissa oleviin päätepisteisiin.
 
 | Rivi | Tarkoitus | Kohteet | Portit |
 | --- | --- | --- | --- |
@@ -98,7 +99,7 @@ Power BI riippuu tietyistä päätepisteistä mukautettujen visualisointien tark
 
 ## <a name="related-external-sites"></a>Aiheeseen liittyvät ulkoiset sivustot
 
-Power BI -linkkejä muihin, aiheeseen liittyviin sivustoihin. Nämä verkkosivustot tarjoavat ohjeistusta, tukea, uusi ominaisuuspyyntöjä ja paljon muuta. Nämä sivustot eivät vaikuta Power BI:n toiminnallisuuteen, joten voit halutessasi lisätä ne sallittujen luetteloon.
+Power BI -linkkejä muihin, aiheeseen liittyviin sivustoihin. Nämä verkkosivustot tarjoavat ohjeistusta, tukea, uusi ominaisuuspyyntöjä ja paljon muuta. Näiden sivustojen käyttö ei vaikuta Power BI:n toimintoihin, joten niiden salliminen on valinnaista.
 
 | Rivi | Tarkoitus | Kohteet | Portit |
 | --- | --- | --- | --- |
@@ -107,7 +108,7 @@ Power BI -linkkejä muihin, aiheeseen liittyviin sivustoihin. Nämä verkkosivus
 | 3 | **Valinnainen:** lataussivusto (Power BI Desktopille jne.) | download.microsoft.com | TCP 443 |
 | 4 | **Valinnainen:** ulkoiset uudelleenohjaukset | aka.ms <br> go.microsoft.com | TCP 443 |
 | 5 | **Valinnainen:** Ideas-palautesivusto| ideas.powerbi.com <br> powerbi.uservoice.com | TCP 443 |
-| 6 | **Valinnainen:** Power BI -sivusto – aloitussivu, lue lisää -linkkejä, tukisivusto, latauslinkkejä, kumppanien esittelyjä jne. | powerbi.microsoft.com | TCP 443 |
+| 6 | **Valinnainen:** Power BI -sivusto – aloitussivu, lue lisää -linkkejä, tukisivusto, latauslinkkejä, kumppanien esittelyjä ja niin edelleen. | powerbi.microsoft.com | TCP 443 |
 | 7 | **Valinnainen:** Power BI -kehittäjäkeskus | dev.powerbi.com | TCP 443 |
 | 8 | **Valinnainen:** tukisivusto | support.powerbi.com <br> s3.amazonaws.com <br> *.olark.com <br> logx.optimizely.com <br> mscom.demdex.net <br> tags.tiqcdn.com | TCP 443 |
 | | | |

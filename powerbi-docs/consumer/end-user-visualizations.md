@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fc663f34b5ed95502f84f3858cb54cdb42f6fead
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c182639e97bcaf272c656d2ee2e002e7470efc40
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73860978"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76888520"
 ---
 # <a name="interact-with-visuals-in-reports-dashboards-and-apps"></a>Visualisointien käyttö raporteissa, koontinäytöissä ja sovelluksissa
 
@@ -37,7 +37,7 @@ Monissa näistä vaihtoehdoista järjestelmänvalvoja tai *suunnittelija* voi po
 
 
 > [!IMPORTANT]
-> Aluksi kuitenkin hieman tietoa Q&A:sta. Q&A on Power BI:n luonnollisen kielen mukainen hakutyökalu. Voit kirjoittaa kysymyksen luonnollisella kielellä ja Q&A vastaa kysymykseen visualisoinnin muodossa. Kuluttajat voivat luoda omia visualisointejaan Q&A:n avulla. Q&A:n avulla luotuja visualisointeja ei voi kuitenkaan tallentaa. Q&A on kuitenkin hyvä vaihtoehto, jos haluat tietoja jostakin tietystä aiheesta, jota suunnitteluohjelma ei ottanut mukaan raporttiin tai koontinäyttöön. Lue lisää Q&A:sta kohdasta [Q&A kuluttajille](end-user-q-and-a.md).
+> Aluksi kuitenkin hieman tietoa Q&A:sta. Q&A on Power BI:n luonnollisen kielen mukainen hakutyökalu. Voit kirjoittaa kysymyksen luonnollisella kielellä ja Q&A vastaa kysymykseen visualisoinnin muodossa. Q&A:n avulla kuluttajat voivat luoda omia visualisointejaan lennosta. Q&A:n avulla luotuja visualisointeja ei voi kuitenkaan tallentaa. Q&A on kuitenkin hyvä vaihtoehto, jos haluat tietoja jostakin tietystä aiheesta, jota suunnitteluohjelma ei ottanut mukaan raporttiin tai koontinäyttöön. Lue lisää Q&A:sta kohdasta [Q&A kuluttajille](end-user-q-and-a.md).
 
 
 
@@ -45,13 +45,13 @@ Monissa näistä vaihtoehdoista järjestelmänvalvoja tai *suunnittelija* voi po
 |---------|---------|---------|--------|
 |[Lisää kommentteja visualisointiin tai aloita keskustelu visualisoinnista työtovereiden kanssa](end-user-comment.md).     |  kyllä       |   kyllä      |  ei  |
 |[Avaa raportti, johon visualisointi luotiin, ja tutustu siihen](end-user-tiles.md).     |    kyllä     |   ei      |  ei |
-|[Näytä luettelo suodattimista ja osittajista, jotka vaikuttavat visualisointiin](end-user-report-filter.md).     |    ei     |   kyllä      |  kyllä |
+|[Näytä luettelo suodattimista ja osittajista, jotka vaikuttavat visualisointiin](end-user-report-filter.md).     |    jos avaat tarkastelutilassa     |   kyllä      |  ei |
 |[Avaa visualisointi ja tutustu siihen Q&A:ssa (jos *suunnittelija* on luonut visualisoinnin Q&A:n avulla)](end-user-q-and-a.md).     |   kyllä      |   ei      |  ei  |
 |[Luo visualisointi Q&A:ssa (tutkimista varten, et voi tallentaa sitä)](end-user-q-and-a.md).     |   kyllä      |   jos suunnittelija on lisännyt Q&A:n raporttiin      |  kyllä  |
-|[Pyydä Power BI:tä etsimään puolestasi kiinnostavia faktoja tai trendejä](end-user-insights.md) visualisoinnin tiedoista.  Näitä automaattisesti luotuja visualisointeja kutsutaan *merkityksellisiksi tiedoiksi*.     |    kyllä     |  koko raportti, ei yhtä visualisointia kohti       | ei   |
-|[Näytä vain yksi visualisointi kerrallaan *kohdistus*tilaa](end-user-focus.md) käyttämällä.     | kyllä        |   kyllä      | ei  |
+|[Pyydä Power BI:tä etsimään puolestasi kiinnostavia faktoja tai trendejä](end-user-insights.md) visualisoinnin tiedoista.  Näitä automaattisesti luotuja visualisointeja kutsutaan *merkityksellisiksi tiedoiksi*.     |    kyllä, ruuduille    |  ei       | ei   |
+|[Näytä vain yksi visualisointi kerrallaan *kohdistus*tilaa](end-user-focus.md) käyttämällä.     | kyllä, ruuduille        |   kyllä, visualisoinneille      | ei  |
 |[Katso, milloin visualisointi on viimeksi päivitetty](end-user-fresh.md).     |  kyllä       |    kyllä     | ei  |
-|[Näytä vain yksi visualisointi kerrallaan ilman reunoja tai siirtymisruutuja *koko näyttöä* tai *tarkastelu*tilaa](end-user-focus.md) käyttämällä.     |   kyllä      |  kyllä       | oletus  |
+|[Näytä vain yksi visualisointi kerrallaan ilman reunoja tai siirtymisruutuja *koko näytön* tilaa käyttämällä](end-user-focus.md).     |   kyllä      |  kyllä       | oletus  |
 |[Tulosta](end-user-print.md).     |  kyllä       |   kyllä      | ei  |
 |[Pureudu syvemmälle visualisointiin lisäämällä ja muokkaamalla visualisoinnin suodattimia.](end-user-report-filter.md)     |    ei     |   kyllä      | ei  |
 |Näytä lisätietoja ja työkaluvihjeitä pitämällä hiiren osoitinta visualisoinnin päällä.     |    kyllä     |   kyllä      | kyllä  |
@@ -61,7 +61,7 @@ Monissa näistä vaihtoehdoista järjestelmänvalvoja tai *suunnittelija* voi po
 | Lisää korostus visualisointiin. | ei  | kyllä  |  ei |
 | [Vie Exceliin.](end-user-export.md) | kyllä | kyllä | ei|
 | [Luo ilmoitus](end-user-alerts.md), jos haluat saada ilmoituksen, kun arvo ylittää määrittämäsi raja-arvon.  | kyllä  | ei  | ei |
-| [Ristiinsuodata ja ristiinkorosta muita sivulla olevia visualisointeja](end-user-report-filter.md).  | ei      | kyllä  | ei  |
+| [Ristiinsuodata ja ristiinkorosta muita sivulla olevia visualisointeja](end-user-report-filter.md).  | ei      | kyllä  | ei |
 | [Poraudu visualisointiin, jolla on hierarkia](end-user-drill.md).  | ei  | kyllä   | ei |
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

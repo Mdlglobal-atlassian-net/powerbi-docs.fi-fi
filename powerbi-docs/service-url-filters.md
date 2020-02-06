@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/23/2019
+ms.date: 01/30/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: 2d564b22ecf02c0d8593ed5676e46f2eb4168964
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: e2840d2695b70867b73c873aea7a06acf26bcc3e
+ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75836715"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76913560"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 
@@ -33,7 +33,7 @@ Toinen kyselymerkkijonoparametrien käyttötapa on hyödyllinen edistynyttä Pow
 
 Parametreilla voit suodattaa raportista yhden arvon tai useita arvoja, vaikka kyseiset arvot sisältäisivät välilyöntejä tai erikoismerkkejä. Perussyntaksi on melko yksinkertainen: aloita raportin URL-osoitteella, lisää kysymysmerkki ja lisää sitten suodattimen syntaksi.
 
-URL?filter=***Table***/***Field*** eq '***value***'
+*URL*?filter=*Table*/*Field* eq '*value*'
 
 ![URL-osoite ja suodatin](media/service-url-filters/power-bi-filter-urls7b.png)
 
@@ -84,6 +84,18 @@ Raporttimme on suodatettu Pohjois-Carolinassa. Kaikki raporttisivun visualisoinn
 
 ![Pohjois-Carolinan mukaan suodatettu raportti](media/service-url-filters/power-bi-report4.png)
 
+## <a name="filter-on-more-than-one-value-in-a-field"></a>Useamman kuin yhden kentän arvon mukaan suodattaminen
+
+Jos haluat suodattaa useamman kuin yhden arvon yhdessä kentässä, käytä **in**-operaattoria **and**-operaattorin sijaan. Syntaksi on seuraava:
+
+*URL*?filter=*Table*/*Field* **in** ('*value1*', '*value2*')
+
+Jos haluat suodattaa raportin näyttämään tiedot vain ”NC:n” (Pohjois-Carolinan) tai ”TN:n” (Tennesseen) myymälöille, lisää URL-osoitteeseen seuraava:
+
+?filter=Store/Territory in ('NC', 'TN')
+
+Muita hyödyllisiä operaattoreita on lueteltu [Operaattorit](#operators)-taulukossa myöhemmin artikkelissa.
+
 ## <a name="filter-on-multiple-fields"></a>Useiden kenttien suodattaminen
 
 Voit myös suodattaa useita kenttiä lisäämällä lisäparametrit URL-osoitteeseesi. Palataan takaisin alkuperäisen suodattimen parametriin.
@@ -97,8 +109,6 @@ Voit suodattaa lisäkenttiä lisäämällä **and**-sanan ja toisen kentän sama
 ```
 ?filter=Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
 ```
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/0sDGKxOaC8w?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="operators"></a>Operaattorit
 

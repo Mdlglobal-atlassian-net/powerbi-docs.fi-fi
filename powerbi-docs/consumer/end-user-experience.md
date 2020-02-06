@@ -8,21 +8,21 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: quickstart
-ms.date: 10/30/2019
+ms.date: 01/31/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: e6be58971b265414440041f4667a0b0cc455cdd4
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: fbd629ea7d2c5bb71471ac8073a5a823f1b2c192
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73851518"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76975144"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Pikaopas - Power BI -palveluun tutustuminen
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Nyt kun tunnet Power BI:n perusasiat, tutustutaan **Power BI -palveluun**. Kuten aiemmin mainittiin, ryhmäsi jäsen saattaa käyttää kaiken aikansa **Power BI Desktopissa** tietojen koostamiseen ja raporttien luomiseen muille. Sinun aikasi vuorostaan saattaa kulua Power BI -palvelussa muiden luoman sisällön tarkasteluun ja käsittelemiseen (**kuluttamis**kokemus). Tässä pikaoppaassa tuot näytetietoja ja käytät kyseisiä tietoja tutustuessasi Power BI -palveluun. 
+Nyt kun tunnet Power BI:n perusasiat, tutustutaan **Power BI -palveluun**. Kuten aiemmin mainittiin, ryhmäsi jäsen saattaa käyttää kaiken aikansa **Power BI Desktopissa** tietojen koostamiseen ja raporttien luomiseen muille. Sinun aikasi taas saattaa kulua Power BI -palvelussa muiden luoman sisällön tarkasteluun ja käsittelemiseen (**kuluttamis**kokemus). Tässä pikaoppaassa tuot näytetietoja ja käytät kyseisiä tietoja tutustuessasi Power BI -palveluun. 
  
 ## <a name="prerequisites"></a>Edellytykset
 
@@ -30,121 +30,143 @@ Nyt kun tunnet Power BI:n perusasiat, tutustutaan **Power BI -palveluun**. Kuten
 
 - Lue [Power BI -palvelun peruskäsitteet](end-user-basic-concepts.md)
 
-## <a name="open-power-bi-service-and-get-some-data"></a>Avaa Power BI -palvelu ja kerää joitakin tietoja
-Tutustutaan Power BI -palveluun mallitietojen avulla. Voit käyttää kaikenlaisia mallitietoja tutustuessasi palveluun. Tällä kertaa käytetään vähittäismyymälöitä koskevia tietoja.    
-1. Avaa app.powerbi.com ja valitse **Mallit**-linkki. 
-
-    ![avaa Power BI -palvelu ensimmäistä kertaa](./media/end-user-experience/power-bi-new-user.png)
-
-2. Valitse **Jälleenmyyntianalyysimalli > Yhdistä**.
-
-    ![valitse malli](./media/end-user-experience/power-bi-retail-sample.png)
-
-    Power BI -palvelu tuo mallin ja näyttää raporttinäkymän. Koontinäytöt erottavat Power BI -palvelun Power BI Desktopista. Näyte sisältää myös raportin ja tietojoukon, joihin palaamme myöhemmin.
-
-    ![raporttinäkymän näytöt](media/end-user-experience/power-bi-dashboard.png)
-
-Katso, miten Amanda esittelee Power BI -palvelun siirtymistoiminnot.  Kokeile sen jälkeen itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
 
-## <a name="view-content-dashboards-reports-workbooks-datasets-workspaces-apps"></a>Näytä sisältö (koontinäytöt, raportit, työkirjat, tietojoukot, työtilat, sovellukset)
-Aloitetaan katsomalla, miten perussisältö (koontinäytöt, raportit, tietojoukot, työkirjat) on järjestetty. Sisältö näytetään työtilan kontekstissa. Tässä vaiheessa sinulla on vain yksi työtila, jota kutsutaan **Omaksi työtilaksi**. Kuluttajat eivät tavallisesti tarvitse tai käytä muita työtiloja. Oma työtila -sijaintiin voit tallentaa kaiken omistamasi sisällön. Ajattele sitä oman sisältösi henkilökohtaisena eristyksenä tai työskentelyalueena. Oma työtila on se paikka, johon juuri lataamasi jälleenmyyntianalyysimalli on tallennettu. 
+## <a name="open-the-power-bi-service"></a>Avaa Power BI -palvelu
 
-Sisältösi on jaettu omassa työtilassa neljään välilehteen: Raporttinäkymät, Raportit, Työkirjat ja Tietojoukot.
 
-![Oma työtila -näyttö](./media/end-user-experience/power-bi-my-workspace.png)
+Avaa aluksi Power BI -palvelu (app.powerbi.com) ja siirry kohtaan **Aloitus**. 
+1. Jos vasen siirtymisruutu on kutistettuna, valitse siirtymisruudun kuvake, ![kuvake, jossa on kolme vaakaviivaa](./media/end-user-experience/power-bi-burger.png) jolloin se laajenee. 
 
-Valitse työtila siirtymisruudusta, ja siihen liittyvän sisällön välilehdet (koontinäytöt, raportit, työkirjat, tietojoukot) täyttävät oikealla olevan Power BI -pohjan.
+1. Valitse **Aloitus**, jos se ei ole vielä avoimena. 
 
-Jos olet uusi käyttäjä, näet vain yhden työtilan, joka on **Oma työtila**.
 
-![työtilan lyhyt video](./media/end-user-experience/nav.gif)
+1. Hae mallitiedot. Tutustutaan Power BI -palveluun mallitietojen avulla. Voit käyttää kaikenlaisia mallitietoja tutustuessasi palveluun. Tällä kertaa käytetään markkinointia ja myyntiä koskevia tietoja. 
 
-Välilehdissä (eli *sisältönäkymissä*) näet tietoa sisällöstä sekä toimintoja, joita voit suorittaa kyseiselle sisällölle.  Esimerkiksi Raporttinäkymät-välilehdestä voit avata raporttinäkymän, hakea ja lajitella sisältöä sekä tehdä paljon muuta.
+    Jotta voit seurata mukana, asenna [Myynti ja markkinointi -mallisovellus](end-user-app-marketing.md) noudattamalla näitä ohjeita.
 
-![Koontinäytöt-välilehti](./media/end-user-experience/power-bi-dashboard-tab.png)
+1. Kun sovellus on asennettu, valitse siirtymisruudussa **Sovellukset**. 
+
+   ![avaa Power BI -palvelu ensimmäistä kertaa](./media/end-user-experience/power-bi-home-steps.png)
+
+
+2. Valitse **Sovellukset**-näytössä **Myynti- ja markkinointimalli** -sovellus.
+
+    ![avaa Power BI -palvelu ensimmäistä kertaa](./media/end-user-experience/power-bi-sample-app.png)
+
+2. Valitse **Tutustu sovellukseen**.
+
+    ![valitse malli](./media/end-user-experience/power-bi-explore.png)
+
+
+3. Power BI -palvelu avautuu sovelluksen koontinäyttöön. Koontinäytöt erottavat Power BI -palvelun Power BI Desktopista. Malli sisältää myös raportin ja tietojoukon. 
+
+    ![raporttinäkymän näytöt](media/end-user-experience/power-bi-dash.png)
+
+    Koska olet *kuluttaja*, useimmat vastaanottamasi sovellukset eivät sisällä pohjana olevien tietojoukkojen suoraa käyttöoikeutta. Koska Power BI -mallit luodaan kaikille Power BI -asiakkaille, tietojoukot sisällytetään niihin. *Suunnittelu*työtoverisi käyttävät tietojoukkoja uusien koontinäyttöjen ja raporttien luomisen opettelemiseen. 
+
+## <a name="view-content-dashboards-and-reports"></a>Näytä sisältö (koontinäytöt ja raportit)
+Aloitetaan katsomalla, miten perussisältö (koontinäytöt, raportit, sovellukset) on järjestetty. Sisältö näytetään työtilan kontekstissa. Jokaisella kuluttajalla on vähintään yksi työtila, jonka nimi on **Oma työtila**. Aina, kun asennat sovelluksen, kyseistä sovellusta varten luodaan työtila.  Koska olemme asentaneet Myynti ja markkinointi -mallisovelluksen, meillä on nyt kaksi työtilaa. 
+
+Tarkastele sitä itseksesi valitsemalla **Työtilat** vasemmassa siirtymisruudussa. 
+
+![Omat työtilat ](./media/end-user-experience/power-bi-workspaces.png)
+
+**Oma työtila** -sijaintiin voit tallentaa kaiken omistamasi ja luomasi sisällön. Ajattele sitä oman sisältösi henkilökohtaisena eristyksenä tai työskentelyalueena. Monilla Power BI *-kuluttajilla* **Oma työtila** pysyy tyhjänä, koska heidän työnsä ei edellytä uuden sisällön luontia.  *Kuluttajat* kuluttavat, eli käyttävät, muiden luomia tietoja ja tekevät liiketoimintapäätöksiä näiden tietojen avulla. Jos luotkin sisältöä, lue sen sijaan [Power BI -artikkelit *, jotka on tarkoitettu suunnittelijoille*](../power-bi-creator-landing.md).
+
+**Sovelluksen työtila** sisältää kaiken sisällön tiettyä sovellusta varten.  Kun *suunnittelija* luo sovelluksen, hän niputtaa yhteen kaiken sisällön, jota tarvitaan kyseisen sovelluksen käytössä.  Valitse Myynti ja markkinointi -työtila, jotta näet, mitä *suunnittelija* on niputtanut sovellukseen. 
+
+![Sovelluksen työtila -näyttö](./media/end-user-experience/power-bi-app-workspace.png)
+
+Myynti ja markkinointi -työtila sisältää yhden koontinäytön, yhden raportin ja yhden tietojoukon. Kaikki sovellukset eivät sisällä näitä kolmea sisältöä. Sovelluksessa saattaa olla vain yksi koontinäyttö tai kolme kappaletta jokaista sisältötyyppiä tai jopa kaksikymmentä raporttia. Kaikki riippuu siitä, mitä *suunnittelija* sisällyttää sovellukseen. Koska Myynti ja markkinointi -tiedot ovat mallitietoja, ne sisältävät tietojoukon. Yleensä *kuluttajien* sovellusten työtilat eivät kuitenkaan sisällä tietojoukkoja. 
+
+Työtila on paljon muutakin kuin pelkkä sisältöluettelo. Tällä sivulla voit oppia paljon työtilan koontinäytöistä ja raporteista. Tarkastele hetki sisällön omistajaa, viime päivityksen päivämäärää, liittyvää sisältöä ja hyväksyntiä. Jos työtilassa on kuvaus, kuvaus voi auttaa ymmärtämään työtilan tavoitteita ja sitä, miten voit käyttää sitä liiketoimintatarkoituksiisi. Jos työtilassa on paljon sisältöä, voit haku- ja lajittelutoimintojen avulla löytää etsimäsi nopeasti.
+
+![Sovelluksen työtila -näyttö, jossa näkyy Lisää toimintoja -valikko](./media/end-user-experience/power-bi-workspace-app.png)
+
+Työtila on myös yksi poluista tietoihisi. Avaa koontinäyttö tai raportti valitsemalla se luettelosta.  Määritä koontinäyttö tai raportti suosikiksi viemällä hiiren osoitin sen päälle ja valitsemalla tähtikuvake. Jos *suunnittelija* on antanut sinulle [jakamisoikeudet](end-user-shared-with-me.md), osoittaminen hiirellä tuo näkyviin myös kyseisen toiminnon. 
+
+![Valikossa, joka tulee näkyviin hiirellä osoitettaessa](./media/end-user-experience/power-bi-hover.png)
 
 Avaa raporttinäkymä valitsemalla raporttinäkymän nimi.
 
-![Raporttinäkymät avataan](./media/end-user-experience/power-bi-open-dashboard.png)
+![Raporttinäkymät avataan](./media/end-user-experience/power-bi-dashboard-open.png)
 
 ## <a name="favorite-a-dashboard-and-a-report"></a>Raporttinäkymän ja raportin lisääminen suosikkeihin
-**Suosikkien** avulla pääset nopeasti käyttämään itsellesi tärkeää sisältöä.  
+**Suosikkien** avulla pääset nopeasti käyttämään itsellesi tärkeää sisältöä. Olet juuri oppinut, miten voit määrittää koontinäytön suosikiksi työtilasta. Voit luoda suosikkeja myös suoraan koontinäytöstä tai raportista.
 
-1. Kun raporttinäkymä on auki, valitse **Lisää suosikkeihin** oikeasta yläkulmasta.
+1. Kun koontinäyttö on avoimena, valitse valikkorivillä **Suosikki**.
    
-   ![lisää suosikkeihin](./media/end-user-experience/powerbi-dashboard-favorite.png)
+   ![lisää suosikkeihin](./media/end-user-experience/power-bi-select-favorite.png)
    
    **Lisää suosikkeihin** -kohdan tilalle tulee **Poista suosikeista** ja tähtikuvake muuttuu keltaiseksi.
    
-   ![Poista suosikeista](./media/end-user-experience/power-bi-unfavorite2.png)
+   ![Poista suosikeista](./media/end-user-experience/power-bi-unfavorite.png)
 
-2. Jos haluat nähdä luettelon kaikesta suosikeiksi lisätystä sisällöstä, valitse siirtymisruudussa **Suosikit**-kohdan oikealla puolella oleva nuoli. Siirtymisruutu on Power BI -palvelun pysyvä ominaisuus, joten voit käyttää luetteloa Power BI -palvelun missä tahansa kohdassa.
+2. Jos haluat nähdä luettelon kaikista suosikeiksi määritetyistä sisällöistä, valitse siirtymisruudussa **Suosikit**-kohdan oikealla puolella oleva nuoli. Siirtymisruutu on Power BI -palvelun pysyvä ominaisuus, joten voit käyttää luetteloa Power BI -palvelun missä tahansa kohdassa.
    
-    ![suosikit-pikaikkuna](./media/end-user-experience/power-bi-favorite.png)
+    ![suosikit-pikaikkuna](./media/end-user-experience/power-bi-favorites-flyout.png)
    
-    Meillä on toistaiseksi vain yksi suosikki. Suosikit voivat olla raporttinäkymiä, raportteja tai sovelluksia.  
-
-1. Koontinäytön tai raportin voi merkitä suosikiksi myös sisältönäkymän **Koontinäytöt**- tai **Raportit**-välilehdessä.  Avaa **Raportit**-välilehti ja valitse tähtikuvake raportin nimen vasemmalta puolelta.
-   
-   ![merkitse suosikiksi](./media/end-user-experience/power-bi-report-favorite.png)
-
-3. Avaa **Suosikit**-*ruutu* valitsemalla **Suosikit** siirtymisruudusta tai valitsemalla tähtikuvake ![-näyttökuva, jossa näkyy keltainen tähtikuvake](media/end-user-experience/powerbi-star-icon.png).
-   
-   ![avaa Suosikit-näyttö](./media/end-user-experience/power-bi-favorite-pane.png)
-   
-   Sinulla on nyt kaksi suosikkia: yksi raporttinäkymä ja yksi raportti. Tästä voit avata ja etsiä sisältöä, poistaa sisältöä suosikeista ja jakaa sisältöä työtovereiden kanssa.
-
-4. Avaa raportti raporttieditorissa valitsemalla sen nimi.
-
-    ![avaa raportti](./media/end-user-experience/power-bi-report-open.png)
+    Tällä Power BI -käyttäjällä on tähän mennessä neljä suosikkia. Suosikit voivat olla raporttinäkymiä, raportteja tai sovelluksia.  
 
 
 Katso lisätietoja artikkelista [Suosikit](end-user-favorite.md)
 
 ## <a name="locate-your-most-recent-content"></a>Paikanna uusimmat sisältösi
 
-1. Suosikkien tapaan voit nopeasti tarkastella myös viimeksi käyttämääsi sisältöä missä tahansa Power BI -palvelun kohdassa valitsemalla siirtymisruudusta **Viimeisimmät**-kohdan vieressä olevan nuolen.
+1. Suosikkien tapaan voit nopeasti tarkastella myös viimeksi käyttämääsi sisältöä missä tahansa Power BI -palvelun kohdassa valitsemalla siirtymisruudussa **Viimeisimmät**-kohdan vieressä olevan nuolen.
 
-   ![Viimeisimmät-pikaikkuna](./media/end-user-experience/power-bi-recent-flyout.png)
+   ![Viimeisimmät-pikaikkuna](./media/end-user-experience/power-bi-flyout-recent.png)
 
     Valitse avattava sisältö pikaikkunasta.
 
-2. Joskus et halua vain avata viimeaikaista sisältöä, mutta haluat tarkastella tietoja tai tehdä muita toimia, kuten tarkastella merkityksellisiä tietoja tai viedä Exceliin. Tällaisissa tilanteissa avaa **Viimeaikaiset**-ruutu valitsemalla **Viimeaikaiset** tai sen kuvake siirtymisruudusta. Jos sinulla olisi useampi kuin yksi työtila, tämä luettelo sisältäisi sisältöä kaikista työtiloistasi.
+2. Joskus et ehkä halua pelkästään avata viimeaikaista sisältöä, vaan haluat tarkastella tietoja tai tehdä muita toimia, kuten tarkastella merkityksellisiä tietoja tai viedä tietoja Exceliin. Tällaisissa tilanteissa avaa **Viimeaikaiset**-ruutu valitsemalla **Viimeaikaiset** tai sen kuvake siirtymisruudusta. Tässä esimerkissä Power BI -käyttäjällä on vähintään kaksi työtilaa, joten tässä luettelossa voi olla sisältöä hänen kaikista työtiloistaan.
 
-   ![Viimeisimmät-ruutu](./media/end-user-experience/power-bi-recent.png)
+   ![Viimeisimmät-ruutu](./media/end-user-experience/power-bi-recent-action.png)
 
 Katso lisätietoja artikkelista [Viimeisimmät Power BI:ssä](end-user-recent.md)
 
 ### <a name="search-and-sort-content"></a>Hae ja lajittele sisältöä
-Sisältönäkymässä on helpompi hakea, suodattaa ja lajitella sisältöä. Jos haluat hakea koontinäyttöä, raporttia tai työkirjaa, kirjoita hakualueelle. Power BI suodattaa ja näyttää vain sisällön, jonka nimessä on kirjoittamasi hakumerkkijono.
+Power BI -palvelun uusien käyttäjien saatavilla on vain vähän sisältöä. Kun työtoverit aloittavat sisällön jakamisen kanssasi ja aloitat itse sovellusten lataamisen, sisältöä voi pian olla tarjolla runsaastikin. Silloin haku ja lajittelu ovat erittäin hyödyllisiä ominaisuuksia.
 
-Koska sinulla on vain yksi malli, hakemista ja lajittelemista ei tarvita.  Kun sinulla on pitkiä luetteloita, jotka koostuvat raporttinäkymistä, raporteista, työkirjoista ja tietojoukoista, hakemisesta ja lajittelemisesta on valtavasti hyötyä.
+Hakua voi käyttää Power BI -palvelun lähes jokaisessa osassa. Sen merkkinä näet hakuruudun tai suurennuslasikuvakkeen.    
+![suurennuslasikuvake](./media/end-user-experience/power-bi-search-icon.png)
 
-![hae raporttia](./media/end-user-experience/power-bi-search.png)
+Kirjoita hakukenttään koontinäytön, raportin, työkirjan, sovelluksen tai omistajan nimi tai osa siitä. Power BI suorittaa haun kaikesta sisällöstäsi.
 
-Voit lajitella sisällön myös nimen tai omistajan mukaan. Huomaa ylöspäin osoittava nuoli **Nimi**-kohdan oikealle puolella. Olemme tällä hetkellä lajittelemassa 83 kohdetta aakkosjärjestyksessä nimen mukaan nousevasti. Jos haluat muuttaa lajittelujärjestyksen laskevaksi, valitse **Nimi**. Ylänuoli muuttuu alaspäin osoittavaksi nuoleksi.
+![hae raporttia](./media/end-user-experience/power-bi-search-field.png)
 
-![lajittele sisältö](./media/end-user-experience/power-bi-sort-new.png)
+Sisältöä voi myös lajitella monella tavalla. Vie hiiren osoitin sarakeotsikoiden päälle ja etsi nuolia, jotka ilmaisevat, että sarake voidaan lajitella. Kaikki sarakkeet eivät ole lajiteltavissa. 
 
-Kaikki sarakkeet eivät ole lajiteltavissa. Jos haluat tietää, onko jokin sarake lajiteltavissa, pidä hiiren osoitinta kyseisen sarakeotsikon päällä.
+![nuoli Tyyppi-sarakeotsikon vieressä](./media/end-user-experience/power-bi-sort-icon.png)
+
+Voit etsiä lajittelutoimintoa myös sivun oikean yläkulman läheltä. Valitse, lajitellaanko kohteet nousevaan vai laskevaan järjestykseen päivämäärän, nimen tai omistajan mukaan.  
+
+![lajittele sisältö](./media/end-user-experience/power-bi-sort-date.png)
+
 
 Lisätietoja on artikkelissa [Power BI -siirtyminen: haku ja lajittelu](end-user-search-sort.md)
 
+## <a name="power-bi-home"></a>Power BI:n aloitussivu
+Lopetamme tämän pikaoppaan siihen, mistä aloitimme: Power BI:n **aloitussivulle**. 
+
+![Aloitussivu](./media/end-user-experience/power-bi-home-oldest.png)
+
+Aloitussivulla ovat haku- ja lajittelutyökalut, siirtymisruutu ja pohja, jolla on *kortteja*. Niiden avulla voit avata koontinäyttöjä, raportteja ja sovelluksia. Aluksi aloitussivullasi ei välttämättä ole monia kortteja, mutta tämä muuttuu sitä mukaa kuin aloitat Power BI:n käytön työtovereidesi kanssa. Aloitussivu päivittyy myös yhdessä suositellun sisällön ja oppimisresurssien kanssa.
+
+Jos haluat lisätietoja, katso [Power BI:n aloitussivu](end-user-home.md)
+
 ## <a name="clean-up-resources"></a>Puhdista resurssit
-Kun olet suorittanut pikaoppaan, voit halutessasi poistaa Jälleenmyyntianalyysimallin raporttinäkymän, raportin ja tietojoukon.
+Kun olet päässyt tämän pikaoppaan loppuun, voit halutessasi poistaa mallikoontinäytön, -raportin ja -tietojoukon.
 
 1. Avaa Power BI -palvelu (app.powerbi.com) ja kirjaudu sisään.    
-2. Valitse siirtymisruudussa **Työtilat > Oma työtila**.  
-    Keltainen tähti kertoo, että kyse on suosikista.    
-3. Valitse **Raporttinäkymät**-välilehdestä Jälleenmyyntianalyysimallin raporttinäkymän vieressä oleva **Poista**-roskakorikuvake.    
+2. Avaa Power BI -aloitussivu, vieritä alaspäin kohtaan **Työtilat** ja valitse *Myynti ja markkinointi*.      
 
-    ![poista raporttinäkymä](./media/end-user-experience/power-bi-cleanup.png)
+3. Vie hiiren osoitin koontinäytön, raportin tai tietojoukon päälle ja valitse **Lisää vaihtoehtoja (...)**  > **Poista**. Toista tätä, kunnes kaikki kolme on poistettu.
 
-4. Siirry **Raportit**-välilehdelle ja tee sama Jälleenmyyntianalyysiraportille.
-1. Siirry **Tietojoukot**-välilehdelle ja tee sama Jälleenmyyntianalyysin tietojoukolle.
+    ![poista raporttinäkymä](./media/end-user-experience/power-bi-delete.png)
+
+
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

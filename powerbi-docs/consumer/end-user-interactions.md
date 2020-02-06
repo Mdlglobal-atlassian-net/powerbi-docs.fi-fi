@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 01/29/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: dc8dad0417ac2ed6498fb7612900ebdbb0ce2a18
-ms.sourcegitcommit: 4359baa43ca01b179d28ec59f4e61ba8c07ee288
+ms.openlocfilehash: 512ef5058fdb586a893c5ff9406abf6902ccc4e2
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75303861"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76888496"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Visualisointien ristiinsuodatus keskenään Power BI -raportissa
 Yksi Power BI:n mahtavista ominaisuuksista on se, että kaikki raporttisivun visualisoinnit on yhdistetty toisiinsa. Jos valitset jonkin visualisoinnin arvopisteen, myös sivun kaikki muut kyseisen tiedon sisältävät visualisoinnit muuttuvat valinnan perusteella. 
@@ -45,7 +45,8 @@ Määritellään nämä ehdot alla olevien raporttisivujen tarkastelua varten. L
 
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-- Jos raportissasi on visualisointi, joka tukee [porautumista](end-user-drill.md), yhteen visualisointiin porautuminen ei oletusarvoisesti vaikuta muihin raporttisivun visualisointeihin.     
+- Jos raportissasi on visualisointi, joka tukee [porautumista](end-user-drill.md), yhteen visualisointiin porautuminen ei oletusarvoisesti vaikuta muihin raporttisivun visualisointeihin. Raportin *suunnittelija* voi kuitenkin muuttaa tätä toimintaa, joten tarkista porattavissa olevat visualisoinnit nähdäksesi, onko raportin *suunnittelija* ottanut käyttöön valinnan **poraaminen suodattaa muut visualisoinnit**.
+    
 - Visuaalisen tason suodattimet säilytetään, kun muita visualisointeja ristiinsuodatetaan ja ristiinkorostetaan raporttisivulla. Jos raportin suunnittelija on ottanut tai sinä itse olet ottanut käyttöön Visualisoinnissa A 2visuaalisen tason suodattimia ja käytät visualisoinnin A avulla visualisointia B, visualisointitason suodattimia visualisoinnista A käytetään visualisoinnissa B.
 
     ![Raporttisivu rengaskaavion Kohtuus-segmentti valittuna](media/end-user-interactions/power-bi-visual-filters.png)

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cfde935b2cec6e86b56b4f70865ff2d02b5ce27a
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 90721b059958e59cfd74f9ba1d0d25617a7438e6
+ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75759195"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76889278"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>DirectQueryn käyttö Power BI Desktopissa
 Kun muodostat yhteyden tietolähteeseen, voit *Power BI Desktopin* avulla aina tuoda kopion tiedoista Power BI Desktopiin. Joillekin tietolähteille on saatavilla vaihtoehtoinen menetelmä: yhteyden muodostaminen suoraan tietolähteeseen DirectQueryn avulla.
@@ -55,9 +55,9 @@ DirectQueryn käyttöön liittyy nykyisin joitakin rajoituksia:
 
 - Mittareille määritetään oletusarvoisesti rajoituksia sen varmistamiseksi, että pohjana olevaan tietolähteeseen lähetettyjen kyselyjen suorituskyky on riittävä.
 
-- Tietojen palautuksen tapauksessa on miljoonan rivin rajoitus käytettäessä DirectQueryä. Rajoitus ei vaikuta koosteisiin tai laskelmiin, joita on käytetty DirectQueryn avulla palautetun tietojoukon luontiin. Se vaikuttaa vain palautettuihin riveihin.
+- Tietojen palautuksen tapauksessa on miljoonan rivin rajoitus käytettäessä DirectQueryä, jollei käytetä Premium-ominaisuuksia. Rajoitus ei vaikuta koosteisiin tai laskelmiin, joita on käytetty DirectQueryn avulla palautetun tietojoukon luontiin. Se vaikuttaa vain palautettuihin riveihin. Premium-ominaisuudet voivat asettaa rivien enimmäisrajat, kuten on kuvattu [tässä julkaisussa](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/). 
 
-    Voit esimerkiksi koostaa 10 miljoonaa riviä käyttäen kyselyä, joka suoritetaan tietolähteessä. Kysely palauttaa tämän koosteen tulokset Power BI DirectQueryn avulla, jos palautettuja Power BI -tietoja on alle miljoona riviä. Jos DirectQuerystä palautetaan yli miljoona riviä, Power BI palauttaa virheen.
+    Voit esimerkiksi koostaa 10 miljoonaa riviä käyttäen kyselyä, joka suoritetaan tietolähteessä. Kysely palauttaa tämän koosteen tulokset Power BI DirectQueryn avulla, jos palautettuja Power BI -tietoja on alle miljoona riviä. Jos DirectQuery palauttaa yli miljoona riviä, Power BI palauttaa virheen (jollei käytetä Premium-ominaisuuksia, jolloin rivimäärä on järjestelmänvalvojan määrittämä).
 
 ## <a name="important-considerations-when-using-directquery"></a>DirectQueryn käytössä huomioitavia tärkeitä seikkoja
 Kun käytät DirectQueryä, ota huomioon seuraavat kolme seikkaa:

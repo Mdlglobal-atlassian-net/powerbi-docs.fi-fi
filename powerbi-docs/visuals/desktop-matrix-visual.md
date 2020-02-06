@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/14/2020
+ms.date: 01/30/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fa097489fcf81ec1bb1df2162465e6413bd116c0
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 2e4ab92d5d1adce8659cdb971c5061a0f133b38f
+ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76040419"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76895466"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Matriisivisualisoinnin luominen Power BI:ssä
 
@@ -41,25 +41,24 @@ Tässä esimerkissä oikeanpuoleisimman matriisivisualisoinnin jokainen rivi nä
 
 Kun tarkastelet kokonais- ja välisummia, muista, että nämä arvot perustuvat pohjana oleviin tietoihin. Ne eivät perustu pelkästään näkyvissä oleviin arvoihin.
 
-<!-- use Nov blog post video
 
-## Expanding and collapsing row headers
-There are two ways you can expand row headers. The first is through the right-click menu. You’ll see options to expand the specific row header you clicked on, the entire level or everything down to the very last level of the hierarchy. You have similar options for collapsing row headers as well.
+## <a name="expanding-and-collapsing-row-headers"></a>Riviotsikoiden laajentaminen ja kutistaminen
+Voit laajentaa riviotsikoita kahdella tavalla. Ensimmäinen tapa on käyttää hiiren kakkospainikkeen valikkoa. Näet vaihtoehdot, joilla voit laajentaa valitsemasi riviotsikon, koko tason tai kaiken muun aina hierarkian viimeiseen tasoon asti. Tarjolla ovat vastaavat vaihtoehdot myös riviotsikoiden kutistamiseen.
 
 ![](media/desktop-matrix-visual/power-bi-expand1.png)
 
-You can also add +/- buttons to the row headers through the formatting pane under the row headers card. By default, the icons will match the formatting of the row header, but you can customize the icons’ color and size separately if you want. 
-Once the icons are turned on, they work similarly to the icons from PivotTables in Excel.
+Voit myös lisätä riviotsikoihin +/--painikkeita **Riviotsikot**-kortin muotoiluruudun kautta. Oletusarvoisesti kuvakkeet vastaavat riviotsikon muotoilua, mutta voit halutessasi mukauttaa kuvakkeiden värit ja koot erikseen.
+
+Kun kuvakkeet ovat käytössä, ne toimivat samalla tavalla kuin Excelin pivot-taulukon kuvakkeet.
 
 ![](media/desktop-matrix-visual/power-bi-expand2.png)
 
-The expansion state of the matrix will save with your report. It can be pinned to dashboards as well, but consumers will need to open up the report to change the state. Conditional formatting will only apply to the inner most visible level of the hierarchy. Note that this expand/collapse experience is not currently supported when connecting to AS servers older than 2016 or MD servers.
+Matriisin laajennustila tallennetaan raporttisi kanssa. Matriisi voidaan kiinnittää koontinäyttöön laajennettuna tai kutistettuna. Kun kyseinen koontinäytön ruutu on valittu ja raportti avautuu, laajennustilaa voi yhä muuttaa raportissa. 
 
 ![](media/desktop-matrix-visual/power-bi-expand3.png)
 
-Watch the following video to learn more about expand/collapse in the matrix:
 
--->
+
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Alaspäin porautumisen käyttö matriisivisualisoinnin kanssa
 Matriisivisualisoinnilla voit tehdä erilaisia alaspäin porautumisen toimintoja, jotka eivät ennen olleet käytettävissä. Voit porata rivejä, sarakkeita ja jopa yksittäisiä osioita ja soluja. Niiden toiminta on kuvattu alla.
 
@@ -183,6 +182,16 @@ Matriisissa tai taulukossa saattaa olla sisältöä, jota haluat käyttää muis
 * Kopio on toinen matriisivisualisointi, mutta se sisältää vain kopioidut tiedot.
 
     ![Kuvakaappaus, joka näyttää esimerkin visualisoinnin kopioinnista](media/desktop-matrix-visual/power-bi-copy-visual-example.png)
+
+## <a name="setting-a-matrix-value-as-a-custom-url"></a>Matriisiarvon määrittäminen mukautettuna URL-osoitteena
+
+Jos sinulla on sarake tai mittari, joka sisältää WWW-URL-osoitteita, voit käyttää ehdollista muotoilua käyttääksesi kyseisiä URL-osoitteita kentissä aktiivisina linkkeinä. Tämä vaihtoehto on käytettävissä **Ehdollinen muotoilu** -kortin muotoiluruudussa.
+
+![Suodattimien kortti näyttää valittavat rivit](media/desktop-matrix-visual/power-bi-web-url.png)
+
+Ota **WWW-URL-osoite**-asetus käyttöön ja valitse kenttä, jota käytetään sarakkeen URL-osoitteena. Kun se on otettu käyttöön, kentän (sarakkeen) arvoista tulee aktiivisia linkkejä. Siirry linkin kohdalle ja siirry kyseiseen sivuun valitsemalla linkki. 
+
+Lisätietoja on artikkelissa [Taulukon ehdollinen muotoilu](../desktop-conditional-table-formatting.md).
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Sävytys ja fontin väri matriisivisualisoinneissa
 Matriisivisualisoinnin avulla voit käyttää ehdollista muotoilua (värit, sävytys ja tietopalkit) matriisin solujen taustavärinä, ja voit käyttää ehdollista muotoilua myös itse tekstiin ja arvoihin.
