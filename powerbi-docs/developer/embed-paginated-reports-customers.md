@@ -205,7 +205,7 @@ Vaikka Power BI:n sivutettu raportti upotetaan [Power BI REST -ohjelmointirajapi
 
 Kun upotat Power BI:n sivutettuja raportteja asiakkaitasi varten sovelluksesi sisään, sinulla on oltava **Azure AD** [-palvelun päänimi](embed-service-principal.md) ja sinun on hankittava [Azure AD -käyttöoikeustietue](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) Power BI -sovelluksellesi, ennen kuin voit tehdä kutsuja [Power BI:n REST API -ohjelmointirajapinnoille](https://docs.microsoft.com/rest/api/power-bi/).
 
-Jotta voit luoda Power BI -asiakasohjelman **käyttöoikeustietueen** avulla, luo Power BI -asiakasohjelmaobjekti, joka mahdollistaa vuorovaikutuksen [Power BI REST -ohjelmointirajapintojen](https://docs.microsoft.com/rest/api/power-bi/) kanssa. Power BI -asiakasohjelmaobjekti luodaan sijoittamalla **käyttöoikeustietue*****Microsoft.Rest.TokenCredentials***-objektiin.
+Jotta voit luoda Power BI -asiakasohjelman **käyttöoikeustietueen** avulla, luo Power BI -asiakasohjelmaobjekti, joka mahdollistaa vuorovaikutuksen [Power BI REST -ohjelmointirajapintojen](https://docs.microsoft.com/rest/api/power-bi/) kanssa. Power BI -asiakasohjelmaobjekti luodaan sijoittamalla **käyttöoikeustietue** ***Microsoft.Rest.TokenCredentials***-objektiin.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;

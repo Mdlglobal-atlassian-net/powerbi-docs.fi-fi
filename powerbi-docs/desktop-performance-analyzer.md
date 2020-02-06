@@ -26,7 +26,7 @@ Suorituskyvyn analysointi tutkii ja näyttää keston, joka tarvitaan kaikkien k
 
 ## <a name="displaying-the-performance-analyzer-pane"></a>Suorituskyvyn analysointi -ruudun näyttäminen
 
-Valitse **Power BI Desktopissa****Näytä**-valintanauha. **Näytä**-alueella **Näkymä**-valintanauhasta voit valita **Suorituskyvyn analysointi** -kohdan vieressä olevan valintaruudun Suorituskyvyn analysointi -ruudun näyttämiseksi.
+Valitse **Power BI Desktopissa** **Näytä**-valintanauha. **Näytä**-alueella **Näkymä**-valintanauhasta voit valita **Suorituskyvyn analysointi** -kohdan vieressä olevan valintaruudun Suorituskyvyn analysointi -ruudun näyttämiseksi.
 
 ![Valitse Näytä-valintanauhasta Suorituskyvyn analysointi](media/desktop-performance-analyzer/performance-analyzer-02.png)
 

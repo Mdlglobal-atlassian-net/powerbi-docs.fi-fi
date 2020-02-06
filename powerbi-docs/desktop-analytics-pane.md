@@ -106,7 +106,7 @@ Voit käyttää *x-akselin vakioviivaa*, *y-akselin vakioviivaa* ja *symmetriava
 * Viivakaavio
 * Pistekaavio
 
-Seuraavissa visualisoinneissa voidaan käyttää vain *yhtenäistä viivaa***Analytiikka**-ruudusta:
+Seuraavissa visualisoinneissa voidaan käyttää vain *yhtenäistä viivaa* **Analytiikka**-ruudusta:
 
 * Pinottu aluekaavio
 * Pinottu palkkikaavio

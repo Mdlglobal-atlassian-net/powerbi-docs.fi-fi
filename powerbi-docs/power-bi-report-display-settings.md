@@ -39,7 +39,7 @@ Avaa Power BI -palvelussa raportti ja valitse vasemmasta yläkulmasta valikko **
 
 ![palvelun sivun näkymäasetukset](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
-Sivun näkymäasetukset ovat käytettävissä sekä [luku- että muokkausnäkymässä](consumer/end-user-reading-view.md). Muokkausnäkymässä raportin omistaja voi määrittää yksittäisille raportin sivuille sivun näkymäasetukset, ja asetukset tallentuvat yhdessä raportin kanssa. Kun työtoverit avaavat raportin lukunäkymässä, he näkevät raportin sivut omistajan asetusten mukaisesti. Lukunäkymässä työtoverit voivat muuttaa *joitakin***Sivunäkymä**-asetuksia, mutta muutoksia ei tallenneta raportin sulkemisen yhteydessä.
+Sivun näkymäasetukset ovat käytettävissä sekä [luku- että muokkausnäkymässä](consumer/end-user-reading-view.md). Muokkausnäkymässä raportin omistaja voi määrittää yksittäisille raportin sivuille sivun näkymäasetukset, ja asetukset tallentuvat yhdessä raportin kanssa. Kun työtoverit avaavat raportin lukunäkymässä, he näkevät raportin sivut omistajan asetusten mukaisesti. Lukunäkymässä työtoverit voivat muuttaa *joitakin* **Sivunäkymä**-asetuksia, mutta muutoksia ei tallenneta raportin sulkemisen yhteydessä.
 
 ## <a name="page-view-settings"></a>Sivun näkymäasetukset
 Ensimmäiset Sivunäkymä-asetukset määrittävät raporttisivun näyttämisen suhteessa selainikkunaan. Vaihtoehdot ovat:
