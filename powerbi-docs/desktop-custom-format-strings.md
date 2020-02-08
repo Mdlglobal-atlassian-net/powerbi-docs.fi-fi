@@ -10,10 +10,10 @@ ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 3ec372a51177e5979cdfbca8408e11801aefb414
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74791586"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Mukautettujen muotoilumerkkijonojen käyttö Power BI Desktopissa
@@ -143,7 +143,7 @@ Seuraavassa taulukossa on yksilöity merkit, joiden avulla voit luoda **käyttä
 | ( **:** ) | Kellonajan erotin. Joillakin alueilla kellonajan erottimena voidaan käyttää myös muita merkkejä. Kellonajan erotin erottaa tunnit, minuutit ja sekunnit, kun kellonajan arvot muotoillaan. Järjestelmäasetukset määrittävät merkin, jota käytetään kellonajan erottimena muotoilluissa tuloksissa. |
 | ( **/** ) | Päivämääräerotin. Joillakin alueilla päivämääräerottimena voidaan käyttää myös muita merkkejä. Päivämääräerotin erottaa päivän, kuukauden ja vuoden, kun päivämääräarvot muotoillaan. Järjestelmäasetukset määrittävät merkin, jota käytetään päivämäärän erottimena muotoilluissa tuloksissa. |
 | ( **E- E+ e- e+** ) | Tieteellinen muoto. Jos muotoilulauseke sisältää vähintään yhden numeron paikkamerkin ( **0** tai **#** ) E-, E+-, e- tai e+-merkin oikealla puolella, luku näytetään tieteellisessä muodossa, ja E tai e lisätään luvun ja sen eksponentin väliin. Oikealla olevien numeroiden paikkamerkkien määrä määrittää eksponentissa olevien numeroiden määrän. Aseta miinusmerkki negatiivisten eksponenttien viereen E-:n tai e-:n avulla. Aseta miinusmerkki negatiivisten eksponenttien ja plusmerkki positiivisten eksponenttien viereen E+:n tai e+:n avulla. |
-| **- + $**  ( ) | Näytä literaalimerkki. Jos haluat näyttää muun kuin jonkin luettelossa olevan merkin, kirjoita sen eteen kenoviiva (\) tai kirjoita se kaksinkertaisiin lainausmerkkeihin (&quot; &quot;). |
+| **- + $**  ( ) | Näytä literaalimerkki. Jos haluat näyttää muun kuin jonkin luettelossa olevan merkin, kirjoita sen eteen kenoviiva (\)) tai kirjoita se kaksinkertaisiin lainausmerkkeihin (&quot; &quot;). |
 | ( * *\** ) | Näytä seuraava merkki muotoilumerkkijonossa. Jos haluat näyttää merkin, jolla on erityinen merkitys literaalimerkkinä, kirjoita sen eteen kenoviiva (\). Kenoviivaa itseään ei näytetä. Kenoviivan käyttäminen vastaa merkin lisäämistä kaksinkertaisiin lainausmerkkeihin. Jos haluat kenoviivan näkyvän, käytä kahta kenoviivaa (\\). Literaalimerkkeinä ei voida näyttää esimerkiksi päivämäärän ja kellonajan muotoilumerkkejä (a, c, d, h, m, n, p, q, s, t, w, / ja :), numeromuotoilumerkkejä (#, 0, %, E, e, pilkku ja piste) sekä merkkijonomuotoilun merkkejä (@, &amp;, \&lt;, \&gt; ja !). |
 | (&quot;ABC&quot;) | Näytä merkkijono kaksinkertaisten lainausmerkkien sisällä (&quot; &quot;). |
 

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 02/03/2020
 ms.author: maggies
-ms.openlocfilehash: cfb83ae8b005744098261c6973a87fb929a864dd
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 69ebfa9b1d2ef500b388a1bbb57926dc53ff2607
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858962"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76975006"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Power BI -raportin luominen Power BI -raporttipalvelimeen
 Voit tallentaa ja hallita Power BI -raportteja Power BI -raporttipalvelimen verkkoportaalissa paikallisesti samalla tavalla kuin voit tallentaa Power BI -raportteja pilveen Power BI -palvelussa (https://powerbi.com). Luo ja muokkaa raportteja Power BI Desktopissa ja julkaise ne verkkoportaalissa. Raportin lukijat organisaatiossasi voivat tarkastella niitä selaimessa tai Power BI -mobiilisovelluksessa mobiililaitteillaan.
@@ -90,6 +90,9 @@ Kun raportti on valmis, tallenna se Power BI -raporttipalvelimelle, jonka valits
 2. Nyt voit tarkastella sitä verkkoportaalissa.
    
     ![Raportin tarkastelu verkkoportaalissa](media/quickstart-create-powerbi-report/report-server-powerbi-report.png)
+    
+> [!NOTE]
+> Jos päätät muokata raporttia myöhemmin, työpöydällä näkyvät raporttitiedot ovat aina välimuistissa olevia tietoja, jotka on tallennettu raportin ensimmäisellä luontikerralla.  Jos haluat tarkastella uusimpia tietoja raportin muokkaamisen aikana, sinun on päivitettävä tiedot Power BI Desktop -sovelluksessasi.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 ### <a name="power-bi-desktop"></a>Power BI Desktop

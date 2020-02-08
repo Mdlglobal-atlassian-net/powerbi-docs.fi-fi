@@ -10,10 +10,10 @@ ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a4d948e768682aab77708289320914ce3ef0fdc3
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 02/04/2020
 ms.locfileid: "74699086"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Reaaliaikainen suoratoisto Power BI:ssä
@@ -82,7 +82,7 @@ Katsotaanpa kutakin vaihtoehtoa yksi kerrallaan.
 ### <a name="using-power-bi-rest-apis-to-push-data"></a>Power BI REST -ohjelmointirajapintojen käyttäminen tietojen siirtämiseen
 **Power BI REST -ohjelmointirajapintojen** avulla voidaan luoda ja lähettää tietoja tietojoukkojen **siirtämiseksi** ja tietojoukkojen **suoratoistamiseksi**. Kun luot tietojoukon Power BI REST -ohjelmointirajapinnan avulla, *defaultMode* (oletustila) -merkki kertoo, onko tietojoukko tyypiltään push (siirto) vai streaming (suoratoisto). Jos *defaultMode*-merkkiä ei ole asetettu, tietojoukon oletustilana on **push**-tietojoukko.
 
-Jos *defaultMode*-arvoksi on määritetty *pushStreaming*, tietojoukko on sekä **push**- *että* **streaming**-tietojoukko, jolloin siinä on kummankin tietojoukkotyypin parhaat puolet. 
+Jos *defaultMode*-arvoksi on määritetty *pushStreaming*, tietojoukko on sekä **push**- *että***streaming**-tietojoukko, jolloin siinä on kummankin tietojoukkotyypin parhaat puolet. 
 
 > [!NOTE]
 > Käytettäessä tietojoukkoja, joilla *defaultMode* -merkintä, joka on asetettu tilaan *pushStreaming*, jos pyyntö ylittää **streaming**-tietojoukolle asetetun 15 kilotavua kokorajoituksen, mutta on pienempi kuin **push**-tietojoukolle asetettu 16 megatavun kokorajoitus, pyyntö onnistuu ja tiedot päivitetään push-tietojoukkoon. Suoratoistettavat ruudut kuitenkin epäonnistuvat tilapäisesti.
