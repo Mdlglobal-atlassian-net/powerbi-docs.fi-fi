@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/23/2020
-ms.openlocfilehash: 9b7ea090d7860de9ec4132b070bd1286085cc5f3
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.openlocfilehash: d4e233e55731d77d4136c1b6ef1e341a2d043234
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819556"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77026711"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Power BI -raporttipalvelinten uudet ominaisuudet
 
@@ -160,7 +160,7 @@ Azure Active Directory -sovellusvälityspalvelimen ansiosta sinun ei enää tarv
 
 #### <a name="custom-headers"></a>Mukautetut otsikot
 
-Voit määrittää otsikkoarvot kaikille URL-osoitteille, jotka vastaavat määritettyjä säännönmukaisten lausekkeiden rakenteita. Käyttäjät voivat päivittää mukautettuja otsikkoarvoja kelvollisella XML:llä, jos on tarve määrittää otsikkoarvoja valituille pyynnön URL-otsikoille. Järjestelmänvalvojat voivat lisätä XML:ään minkä tahansa määrän otsikoita. Lisätietoja on **Reporting Servicesin kehittyneitä ominaisuuksia** koskevan artikkelin [Mukautetut otsikot](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#custom-headers) -osiossa.
+Voit määrittää otsikkoarvot kaikille URL-osoitteille, jotka vastaavat määritettyjä säännönmukaisten lausekkeiden rakenteita. Käyttäjät voivat päivittää mukautettuja otsikkoarvoja kelvollisella XML:llä, jos on tarve määrittää otsikkoarvoja valituille pyynnön URL-otsikoille. Järjestelmänvalvojat voivat lisätä XML:ään minkä tahansa määrän otsikoita. Lisätietoja on Reporting Servicesin **palvelimen lisäominaisuuksia** koskevan artikkelin osiossa [CustomHeaders](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#customheaders).
 
 #### <a name="transparent-database-encryption"></a>Läpinäkyvä tietokannan salaus
 
