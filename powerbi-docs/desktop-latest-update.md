@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 016b83e983f2b3139eb040a1f1d8d48d70b44a52
-ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
+ms.openlocfilehash: c6f1a04f7178719eb68bcd54674ea0312c97ef3e
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75953501"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076597"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Power BI Desktopin uudet ominaisuudet ja toiminnot
 
@@ -31,9 +31,9 @@ Voit ladata uusimman Power BI Desktop -version [Download Centeristä](https://ww
 
 Power BI Desktop -päivitysluettelon jokaisen ominaisuuden vieressä olevat linkit tulkitaan seuraavasti:
 
-* [blog]: Most features are explained in a section in the monthly update blog post.
-* [video]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
-* [article]: Some features have an article that provides more detail.
+* \[blogi\]: Useimmat ominaisuudet on selitetty kuukausittaisen päivityksen blogikirjoitusosiossa.
+* \[video\]: Jotkin ominaisuudet sisältävät ominaisuutta käsittelevän videokatkelman, joka toistetaan selaimen uudessa välilehdessä.
+* \[artikkeli\]: Tietyistä ominaisuuksista on tarjolla oma artikkeli, joka sisältää lisätietoja.
 * Muut ominaisuudet ovat itsestään selviä eivätkä tarvitse tuekseen artikkelia tai videota.
 
 Voit myös katsoa koko [Power BI Desktopin kuukausittaisen päivitysvideon](#power-bi-desktop-monthly-update-video).

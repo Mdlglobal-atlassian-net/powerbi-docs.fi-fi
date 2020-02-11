@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 02/06/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 53cc311f2fb0bfa4ab876c80b81ee2a092c4fd8c
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a9417e7de98e0fa1867aa0561743c1ed6c5b63e2
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76913618"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076706"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Power BI:n Julkaise verkkoon -toiminto
 
-Power BI:n **Julkaise verkkoon** -toiminnolla voit helposti upottaa verkossa interaktiivisia Power BI -visualisointeja, kuten blogijulkaisuja ja verkkosivustoja, sähköpostiviestien tai sosiaalisen median kautta. Se onnistuu lisäksi laitteesta riippumatta. Voit myös helposti muokata, päivittää ja ladata uudelleen julkaistuja visualisointeja tai poistaa niiden jakamisen.
+Power BI:n **Julkaise verkkoon** -toiminnolla voit helposti upottaa verkossa interaktiivisia Power BI -visualisointeja, kuten blogijulkaisuja ja verkkosivustoja, sähköpostiviestien tai sosiaalisen median kautta. Se onnistuu lisäksi laitteesta riippumatta. Voit myös helposti muokata, päivittää ja ladata uudelleen julkaistuja visualisointeja tai lopettaa niiden jakamisen.
 
 > [!WARNING]
 > Kun käytät **Julkaise verkkoon** -toimintoa, kuka tahansa Internetissä voi tarkastella julkaisemaasi raporttia tai visualisointia. Siihen ei vaadita todennusta. Lisäksi kaikki näkevät raporttiesi koostamien tietojen tarkkuustason. Varmista ennen raportin julkaisemista, että sinulla on oikeus jakaa tiedot ja visualisoinnit julkisesti. Älä julkaise luottamuksellisia tai omistusoikeudellisia tietoja. Jos olet epävarma, tarkista organisaatiosi käytännöt ennen julkaisemista.
@@ -40,9 +40,11 @@ Seuraavissa vaiheissa kuvataan, miten voit käyttää **Julkaise verkkoon** -toi
 
    ![PtW1](media/service-publish-to-web/publish_to_web1.png)
    
-2. Ota yhteyttä Power BI -järjestelmänvalvojaasi, jos sinulla ei ole oikeutta luoda upotuskoodeja.
+2. Ota yhteyttä [Power BI -järjestelmänvalvojaasi](service-admin-role.md), jos sinulla ei ole oikeutta luoda upotuskoodeja.
 
    ![PtW1](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+   
+   [Näiden vinkkien avulla](#how-to-find-your-power-bi-administrator) voit selvittää, kuka mahdollistaa julkaisemisen verkkoon organisaatiossasi.
 
 3. Tarkista valintaikkunan sisältö ja valitse **Luo upotuskoodi**.
 
@@ -194,6 +196,21 @@ Sinun on oltava Microsoft Power BI:n käyttäjä, jotta voit käyttää **Julkai
 Kun luot upotuskoodin **Julkaise verkkoon** -toiminnolla, käyttäjät Internetissä näkevät raportin. Se on yleisesti saatavilla, joten käyttäjät voivat helposti jakaa raportin sosiaalisessa mediassa jatkossa. Kun käyttäjät tarkastelevat raporttia joko avaamalla suoran julkisen URL-osoitteen tai tarkastelemalla sitä upotettuna verkkosivulle tai blogiin, Power BI piilottaa raportin määritelmän ja raportin tarkasteluun vaadittujen pyyntöjen tulokset. Tämän ansiosta tuhannet käyttäjät voivat tarkastella raporttia samanaikaisesti suorituskyvyn kärsimättä.
 
 Välimuisti on pitkäkestoinen, joten jos päivität raportin määritelmää (esimerkiksi muuttamalla sen näyttötilaa) tai lataat uudelleen raporttitietoja, voi kestää noin tunnin, ennen kuin muutokset näkyvät käyttäjien tarkastelemassa raportin versiossa. Suosittelemme siksi, että suunnittelet työsi etukäteen, ja luot **Julkaise verkkoon** -upotuskoodin vain, kun olet tyytyväinen asetuksiin.
+
+## <a name="how-to-find-your-power-bi-administrator"></a>Miten saat yhteyden Power BI -järjestelmänvalvojaasi
+
+[Julkaise verkkoon -vuokraaja-asetuksen](#tenant-setting) muuttaminen edellyttää organisaatiosi [Power BI -järjestelmänvalvojan](service-admin-role.md) apua.
+
+Jos olet Power BI:tä käyttävä yksityishenkilö tai jos organisaatio on pieni, Power BI -järjestelmänvalvojaa ei ehkä ole määritetty. Seuraa [vuokraajan järjestelmänvalvojan haltuunoton](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover) ohjeita. Kun Power BI -järjestelmänvalvoja on määritetty, hän voi antaa sinulle oikeudet luoda upotuskoodeja.
+
+Vakiintuneissa organisaatioissa on yleensä Power BI -järjestelmänvalvoja entuudestaan. Seuraavissa rooleissa toimivat käyttäjät voivat toimia Power BI -järjestelmänvalvojana:
+
+- Office 365 -järjestelmänvalvojat
+- Azure Active Directory -järjestelmänvalvojat
+- Käyttäjät, joilla on Power BI -palvelun järjestelmänvalvojan rooli Azure Active Directoryssä
+
+Etsi [jokin näistä organisaatiosi henkilöistä](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) ja pyydä häntä päivittämään asetus.
+
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

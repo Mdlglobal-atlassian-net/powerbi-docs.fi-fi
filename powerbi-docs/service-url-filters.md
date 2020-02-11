@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/30/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: e2840d2695b70867b73c873aea7a06acf26bcc3e
-ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
+ms.openlocfilehash: b20820490ec88d34d4ee75c135cc54277e473545
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76913560"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076627"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 
@@ -193,7 +193,7 @@ Tästä ristiriidasta on hyötyä, kun haluat nähdä eri tuloksia: raporttinäk
 On muutamia asioita, jotka tulee ottaa huomioon merkkijonon kyselyparametreja käytettäessä.
 
 * Käytettäessä *in*-operaattoria *in*-operaattorin oikealla puolella olevat arvot on esitettävä sulkeissa olevana pilkuin eroteltuna luettelona.    
-* Power BI -raporttipalvelimessa voit [välittää raporttiparametrit](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) sisällyttämällä ne raportin URL-osoitteeseen. Näissä URL-parametreissa ei ole etuliitettä, koska ne on välitetty suoraan raportin käsittelyohjelmaan.
+* Power BI -raporttipalvelin tukee myös lisäsuodattimien määrittämistä URL-suodatinparametria.  Power BI -raporttipalvelimessa URL-osoite voi näyttää esimerkiksi seuraavalta: https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
 * Kyselyn merkkijonon suodatus ei toimi [Julkaise verkkoon](service-publish-to-web.md)- tai [Vie PDF-muotoon](consumer/end-user-pdf.md) -toiminnoissa.
 * [Upota raportin verkko-osa SharePoint Onlinessa](service-embed-report-spo.md) ei tue URL-suodattimia.
 * Pitkä tietotyyppi on (2^53-1) JavaScriptin rajoitusten vuoksi.

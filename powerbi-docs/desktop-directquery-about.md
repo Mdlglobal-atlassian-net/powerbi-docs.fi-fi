@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 504b389bdbe50d17f969365d7e4f2e51d206918c
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.openlocfilehash: dedbe3800dc4a6b1088ca5a4037bc8451c61d986
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75837285"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77076655"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>Tietoja DirectQueryn käytöstä Power BI:ssä
 
@@ -312,7 +312,7 @@ Aiempien ehdotusten lisäksi myös kaikki seuraavista raportointitoiminnoista vo
 
 * **Mediaani:** Yleensä mikä tahansa kooste, kuten `Sum` tai `Count Distinct`, lähetetään pohjana olevaan lähteeseen. Tämä ei kuitenkaan pidä paikkaansa mediaanin kohdalla, koska pohjana oleva lähde ei yleensä tue sitä. Tässä tapauksessa haetaan tarkat tiedot taustalähteestä ja mediaani lasketaan palautetuista tuloksista. Tämä menetelmä toimii kohtuullisesti, kun mediaani lasketaan suhteellisen pienestä määrästä tuloksia. Suorituskykyyn liittyviä ongelmia tai miljoonan rivin rajoituksesta johtuvia kyselyvirheitä esiintyy, jos kardinaliteetti on suuri. Esimerkiksi **maiden asukaslukujen mediaanin** hakeminen voi olla kohtuullista, mutta **myyntihinnan mediaanin** hakeminen tuskin on.
 
-* **Kehittyneet tekstisuodattimet (* sisältää-suodatin ja vastaavat):* Kun suodatat tekstisaraketta, lisäsuodatus mahdollistaa *sisältää-* ja *alkaa merkkijonolla* -suodattimien ja muiden vastaavien suodattimien käytön. Nämä suodattimet voivat heikentää suorituskykyä joissain tietolähteissä. Etenkään *sisältää*-oletussuodatinta ei tule käyttää, jos haettu arvo on tarkka vastine. Vaikka tulokset voivat olla samoja, todellisista tiedoista riippuen tehokkuus voi poiketa merkittävästi indeksien käytön vuoksi.
+* **Kehittyneet tekstisuodattimet (_sisältää_-suodatin ja vastaavat):** Kun suodatat tekstisaraketta, lisäsuodatus mahdollistaa *sisältää*- ja *alkaa merkkijonolla* . Nämä suodattimet voivat heikentää suorituskykyä joissain tietolähteissä. Etenkään *sisältää*-oletussuodatinta ei tule käyttää, jos haettu arvo on tarkka vastine. Vaikka tulokset voivat olla samoja, todellisista tiedoista riippuen tehokkuus voi poiketa merkittävästi indeksien käytön vuoksi.
 
 * **Monivalintaosittajat:** Osittajat sallivat oletusarvoisesti vain yhden valinnan. Monivalintaisten suodattimien salliminen voi aiheuttaa suorituskykyongelmia, koska käyttäjä valitsee joukon kohteita osittajassa. Jos käyttäjä esimerkiksi valitsee kymmenen kiinnostavaa tuotetta, jokainen uusi valinta johtaa lähteeseen lähetettäviin kyselyihin. Vaikka käyttäjä voikin valita seuraavan kohteen ennen kyselyn valmistumista, tämä menetelmä aiheuttaa lisäkuormitusta pohjana olevalle lähteelle.
 

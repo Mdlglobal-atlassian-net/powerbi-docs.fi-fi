@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 01/16/2020
-ms.author: mblythe
+ms.date: 02/03/2020
+ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: bbca812644b82f8a0b848dc16e450f880ccb596c
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 99869740eb20b14625e66ff50cb48b08e5cb3e15
+ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539896"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036672"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>Opetusohjelma: Upota Power Apps -visualisointi Power BI -raporttiin
 
@@ -25,7 +25,7 @@ Jos sinulla ei ole Power Apps -tilausta, [luo ilmainen tili](https://web.powerap
 
 Tässä opetusohjelmassa opit:
 > [!div class="checklist"]
-> * Lisäämään Power Apps -visualisoinnin Power I -raporttiin
+> * Power Apps -visualisoinnin lisääminen Power BI -raporttiin
 > * Luomaan Power Appsissa työskennellen uuden sovelluksen, joka käyttää Power BI -raportin tietoja
 > * Tarkastelemaan ja käsittelemään raportin Power Apps -visualisointia
 
