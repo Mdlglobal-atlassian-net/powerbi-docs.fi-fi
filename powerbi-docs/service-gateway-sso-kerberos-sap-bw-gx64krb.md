@@ -154,7 +154,7 @@ Lisää tarvittavat rekisterimerkinnät sen tietokoneen rekisteriin, johon yhdys
 
 1. Kirjoita tietolähteen määritysikkunassa SAP BW -sovelluspalvelimen **Isäntänimi**, **Järjestelmänumero** ja **asiakastunnus** samalla tavalla kuin silloin, kun kirjaudut sisään SAP BW -palvelimeesi Power BI Desktopin kautta.
 
-1. Syötä **SNC-kumppanin nimi** -kenttään *p:&lt;SPN, jonka yhdistit SAP BW -palvelukäyttäjään&gt;* . Jos SPN on esimerkiksi SAP/BWServiceUser\@MYDOMAIN.COM, kirjoita *p:SAP/BWServiceUser\@MYDOMAIN.COM***SNC-kumppanin nimi** -kenttään.
+1. Syötä **SNC-kumppanin nimi** -kenttään *p:&lt;SPN, jonka yhdistit SAP BW -palvelukäyttäjään&gt;* . Jos SPN on esimerkiksi SAP/BWServiceUser\@MYDOMAIN.COM, kirjoita *p:SAP/BWServiceUser\@MYDOMAIN.COM* **SNC-kumppanin nimi** -kenttään.
 
 1. Valitse SNC-kirjastoksi **SNC\_LIB** tai **SNC\_LIB\_64**. Varmista, että yhdyskäytäväkoneen **SNC\_LIB\_64** osoittaa gx64krb5.dll-tiedostoon. Vaihtoehtoisesti voit valita **Mukautettu**-vaihtoehdon ja antaa absoluuttisen polun gx64krb5.dll-tiedostolle yhdyskäytäväkoneessa.
 

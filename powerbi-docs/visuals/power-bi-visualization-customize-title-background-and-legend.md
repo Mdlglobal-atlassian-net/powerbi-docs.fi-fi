@@ -49,7 +49,7 @@ Seuraa mukana kirjautumalla sisään Power BI Desktopiin ja avaamalla [Jälleenm
 
 1. Siirrä **otsikon** liukusäädin tilaan **Käytössä**.
 
-1. Voit muuttaa otsikkoa kirjoittamalla *Myymälöiden määrä kuukauden mukaan avattuna***Otsikon teksti** -kenttään.
+1. Voit muuttaa otsikkoa kirjoittamalla *Myymälöiden määrä kuukauden mukaan avattuna* **Otsikon teksti** -kenttään.
 
     ![Näyttökuva muotoruudusta, jossa on annettu otsikkoteksti.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png)
 
