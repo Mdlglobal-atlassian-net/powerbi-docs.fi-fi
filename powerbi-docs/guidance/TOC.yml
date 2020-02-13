@@ -66,6 +66,8 @@
               href: migrate-ssrs-reports-to-power-bi.md
         - name: Järjestelmänvalvoja ja käyttöönotto
           items:
+            - name: Vuokraajan järjestelmänvalvojan asetukset
+              href: admin-tenant-settings.md
             - name: Paikallisten tietoyhdyskäytävien koko
               href: gateway-onprem-sizing.md
     - name: Raportit
