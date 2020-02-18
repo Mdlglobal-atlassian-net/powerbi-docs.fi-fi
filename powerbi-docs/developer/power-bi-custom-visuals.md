@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/03/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 897590324040a69dbaa1ac549dcee80de8da76a5
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 56958d59e52065f3553a60ce49bd988b4869a646
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75691384"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77153955"
 ---
 # <a name="visuals-in-power-bi"></a>Visualisoinnit Power BI:ssä
 
@@ -80,4 +80,4 @@ Jos olet verkkokehittäjä ja olet kiinnostunut luomaan oman visualisoinnin ja l
 
 * Tutustu [Power BI -visualisointien ohjeisiin](guidelines-powerbi-visuals.md).
 
-Onko sinulla kysyttävää? Käy [Power BI -visualisoinnit, Usein kysyttyjä kysymyksiä](power-bi-custom-visuals-faq.md) -sivulla tai kokeile [Power BI -yhteisöä](http://community.powerbi.com/).
+Onko sinulla kysyttävää? Käy [Power BI -visualisoinnit, Usein kysyttyjä kysymyksiä](power-bi-custom-visuals-faq.md) -sivulla tai kokeile [Power BI -yhteisöä](https://community.powerbi.com/).
