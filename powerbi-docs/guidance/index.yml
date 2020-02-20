@@ -12,12 +12,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 01/14/2020
-  ms.openlocfilehash: 16bfba0b4ed83be55604d2a12e5b86edae2d58bc
-  ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
+  ms.openlocfilehash: 8d7ddeffd4394d5fea4770ab0739133b68e04a18
+  ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
   ms.translationtype: HT
   ms.contentlocale: fi-FI
-  ms.lasthandoff: 02/12/2020
-  ms.locfileid: "77154185"
+  ms.lasthandoff: 02/19/2020
+  ms.locfileid: "77465010"
 landingContent:
 - title: Power BI -ohjeet
   linkLists:
@@ -75,7 +75,7 @@ landingContent:
       url: dax-column-measure-references.md
     - text: Vältä FILTER-arvon käyttämistä suodatinargumenttina
       url: dax-avoid-avoid-filter-as-filter-argument.md
-- title: Raportin luominen
+- title: Power BI -raportit
   linkLists:
   - linkListType: concept
     links:
@@ -83,11 +83,17 @@ landingContent:
       url: report-page-tooltips.md
     - text: Raporttisivun porautumisen käyttäminen
       url: report-drillthrough.md
-    - text: Milloin sivutettuja raportteja kannattaa käyttää Power BI:ssä
+- title: Power BI:n sivutetut raportit
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Raporttisivun porautumisen käyttäminen
+      url: report-drillthrough.md
+    - text: Milloin sivutettuja raportteja kannattaa käyttää?
       url: report-paginated-or-power-bi.md
-    - text: Limittäisten parametrien käyttäminen sivutetuissa raporteissa
+    - text: Johdannaisparametrien käyttäminen
       url: paginated-report-cascading-parameter.md
-    - text: Tyhjien sivujen välttäminen sivutettuja raportteja tulostettaessa
+    - text: Tyhjien sivujen välttäminen tulostettaessa
       url: report-paginated-blank-page.md
     - text: SSRS-raporttien siirtäminen Power BI:hin
       url: migrate-ssrs-reports-to-power-bi.md

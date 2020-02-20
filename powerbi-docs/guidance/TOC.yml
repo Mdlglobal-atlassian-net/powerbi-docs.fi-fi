@@ -52,15 +52,19 @@
               href: dax-column-measure-references.md
             - name: Vältä FILTER-arvon käyttämistä suodatinargumenttina
               href: dax-avoid-avoid-filter-as-filter-argument.md
+        - name: Power BI -raportit
+          items:
             - name: Visualisointien laajentaminen raporttisivun työkaluvihjeiden avulla
               href: report-page-tooltips.md
             - name: Raporttisivun porautumisen käyttäminen
               href: report-drillthrough.md
-            - name: 'Milloin sivutettuja raportteja kannattaa käyttää Power BI:ssä'
+        - name: 'Power BI:n sivutetut raportit'
+          items:
+            - name: Milloin sivutettuja raportteja kannattaa käyttää?
               href: report-paginated-or-power-bi.md
-            - name: Limittäisten parametrien käyttäminen sivutetuissa raporteissa
+            - name: Johdannaisparametrien käyttäminen
               href: paginated-report-cascading-parameter.md
-            - name: Tyhjien sivujen välttäminen sivutettuja raportteja tulostettaessa
+            - name: Tyhjien sivujen välttäminen tulostettaessa
               href: report-paginated-blank-page.md
             - name: 'SSRS-raporttien siirtäminen Power BI:hin'
               href: migrate-ssrs-reports-to-power-bi.md
