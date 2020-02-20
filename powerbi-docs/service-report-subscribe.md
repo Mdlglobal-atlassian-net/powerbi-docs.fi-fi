@@ -72,7 +72,7 @@ Sivutettujen raporttien tilaaminen on hieman erilaista. Saat lisätietoja ohjear
    
 ## <a name="email-languages"></a>Sähköpostin kielet
 
-Sähköpostissa ja tilannevedoksessa käytetään samaa kieliasetusta kuin Power BI:ssä (katso [Power BI:ssä tuetut kielet ja maat/alueet](supported-languages-countries-regions.md)). Jos mitään kieltä ei ole määritetty, Power BI käyttää senhetkisen selaimesi paikka-asetuksen mukaista kieltä. Jos haluat nähdä kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![hammasrataskuvake](media/service-report-subscribe/power-bi-settings-icon.png) > **Asetukset > Yleiset > Kieli**. 
+Sähköpostissa ja tilannevedoksessa käytetään samaa kieliasetusta kuin Power BI:ssä (katso [Power BI:n tuetut kielet ja maat tai alueet](supported-languages-countries-regions.md)). Jos mitään kieltä ei ole määritetty, Power BI käyttää senhetkisen selaimesi paikka-asetuksen mukaista kieltä. Jos haluat nähdä kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![hammasrataskuvake](media/service-report-subscribe/power-bi-settings-icon.png) > **Asetukset > Yleiset > Kieli**. 
 
 ![Avattava kielivalikko](media/service-report-subscribe/power-bi-language.png)
 

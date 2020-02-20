@@ -23,7 +23,7 @@ ms.locfileid: "76888585"
 
 Ei ole koskaan ollut näin helppoa pysyä ajan tasalla tärkeimmistä koontinäytöistä ja raporteista. Kun tilaat itsellesi tärkeimmät raporttisivut ja koontinäytöt, Power BI lähettää sinulle sähköpostitse niistä tilannevedoksen. Voit määrittää, miten usein haluat Power BI:n lähettävän sähköpostia: päivittäin, viikoittain tai tietojen päivittyessä. Voit myös määrittää tietyn ajankohdan sille, milloin Power BI lähettää sähköpostit, tai voit suorittaa tämän nyt.  Voit määrittää enintään 24 eri tilausta kullekin raportille tai koontinäytölle.  
 
-Sähköpostissa ja tilannevedoksessa käytetään samaa kieliasetusta kuin Power BI:ssä (katso [Power BI:ssä tuetut kielet ja maat/alueet](../supported-languages-countries-regions.md)). Jos mitään kieltä ei ole määritetty, Power BI käyttää senhetkisen selaimesi paikka-asetuksen mukaista kieltä. Jos haluat nähdä kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![hammasrataskuvake](./media/end-user-subscribe/power-bi-settings-icon.png) > **Asetukset > Yleiset > Kieli**. 
+Sähköpostissa ja tilannevedoksessa käytetään samaa kieliasetusta kuin Power BI:ssä (katso [Power BI:n tuetut kielet ja maat tai alueet](../supported-languages-countries-regions.md)). Jos mitään kieltä ei ole määritetty, Power BI käyttää senhetkisen selaimesi paikka-asetuksen mukaista kieltä. Jos haluat nähdä kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![hammasrataskuvake](./media/end-user-subscribe/power-bi-settings-icon.png) > **Asetukset > Yleiset > Kieli**. 
 
 ![Avattava kielivalikko](./media/end-user-subscribe/power-bi-language.png)
 
