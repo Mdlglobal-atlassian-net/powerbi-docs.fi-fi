@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d30a8012161934ada4ff3cb2ce6852fe62f48892
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 148e5283e1a2e2d5ef61027c24df1a4c3e574822
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73877188"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77179216"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Johdanto tietojoukkojen käyttöön eri työtiloissa (esikatselu)
 
@@ -62,7 +62,7 @@ Jaettuihin tietojoukkoihin perustuvien toimintojen ja ominaisuuksien käyttöoik
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
 - Sovelluksen julkaisijana sinun on varmistettava, että yleisösi voi käyttää työtilan ulkopuolisia tietojoukkoja. Muussa tapauksessa käyttäjät voivat kohdata ongelmia käyttäessään sovellustasi: raportteja ei voi avata ilman tietojoukon käyttöoikeutta, ja koontinäytön ruudut näkyvät lukittuina. Käyttäjät eivät myöskään pysty avaamaan sovellusta, jos ensimmäinen siirtymiskohde on raportti, jolla ei ole tietojoukon käyttöoikeutta.
-- Raportin luominen eri työtilan tietojoukon pohjalta edellyttää uudenlaisia työtiloja molemmissa päissä: raportin täytyy olla uudessa työtilassa ja tietojoukon täytyy olla uudessa työtilassa.
+- Raportin luominen eri työtilan tietojoukon pohjalta edellyttää uudenlaisia työtiloja molemmissa päissä: raportin täytyy olla uudessa työtilassa ja tietojoukon täytyy olla uudessa työtilassa. Voit kopioida raportteja vain uudesta työtilasta toiseen uuteen työtilaan, et perinteiseen työtilaan tai omaan työtilaan. 
 - Perinteisessä työtilassa tietojoukkojen etsintätoiminnossa näytetään vain nykyisen työtilan tietojoukot.
 - Julkaise verkkoon -toiminto ei tarkoituksella toimi jaettuun tietojoukkoon perustuvassa raportissa.
 - Jos kaksi ihmistä on jäsen työtilassa, joka käyttää jaettua työtilaa, ei ole mahdollista, että vain toinen heistä näkee liittyvän tietojoukon työtilassa. Vain käyttäjät, joilla on vähintään lukuoikeudet tietojoukkoon, näkevät jaetun tietojoukon. 

@@ -1,19 +1,19 @@
 ---
 title: Power BI:n käyttö esitystilassa Surface Hubilla, Windows 10 - Power BI
 description: Lue miten Power BI -raportteja näytetään surface Hubilla ja miten Power BI -raporttinäkymiä, raportteja ja ruutuja näytetään Windows 10 -laitteilla koko näytön tilassa.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/10/2018
-ms.author: mshenhav
-ms.openlocfilehash: abd7fd34cf2dbdc2f8f12a7f3c6de6228941af5a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 02/08/2020
+ms.author: painbar
+ms.openlocfilehash: f900a329ccbfa2a6e80883baec9694ddeaf3833a
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869538"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77259965"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Raporttien ja koontinäyttöjen esittäminen esitystilassa Surface Hubilla ja Windows 10 -laitteilla
 Voit esittää raportteja ja koontinäyttöjä Surface Hubilla ja Windows 10 -laitteilla koko näytön esitystilassa. 
@@ -37,14 +37,17 @@ Napauta Power BI -mobiilisovelluksessa **Koko näyttö -kuvaketta**, kun haluat 
 
 ![Raportti koko näytön tilassa työkalurivit molemmilla puolillaan](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
 
-Työkaluriviltä voit suorittaa seuraavat toimet:
+Yläosan työkaluriviltä voit suorittaa seuraavat toimet:
 
-1. Napauttamalla Takaisin-kuvaketta ![takaisin-kuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png) voit palata edelliselle sivulle. Pitämällä kuvaketta painettuna saat esiin navigointipolkuikkunat, jotta voit siirtyä raportin tai koontinäytön sisältävään kansioon.
-2. Muste-kuvakkeella ![muste-kuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png) voit valita värin, kun käytät Surface-kynää piirtämiseen ja merkintöjen tekemiseen raporttisivulle. 
-3. Sivut-kuvakkeella ![sivutus-kuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png) voit korvata esitteillä olevan raporttisivun.
-4. Toistokuvake  ![Toistokuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png) piilottaa toimintopalkin ja aloittaa diaesityksen, jossa sovellus kiertää automaattisesti raporttisivusta toiseen. 
-5. Napsauta Haku-kuvaketta ![Haku-kuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) muiden Power BI:ssä olevien artefaktien etsimistä varten.
-6. Poistu esitystilasta napsauttamalla kuvaketta, jossa on kaksi sisäänpäin osoittavaa nuolta, ![Poistu koko näytön tilasta](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png) työkalurivillä.
+1. **Palaa takaisin** ![Takaisin-kuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png) edelliselle sivulle. Pitämällä kuvaketta painettuna saat esiin navigointipolkuikkunat, jotta voit siirtyä kansioon, joka sisältää raportin tai koontinäytön.
+2. **Valitse käsinkirjoituksen väri** ![Käsinkirjoitus-kuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png), kun käytät Surface-kynää piirtämiseen ja huomautusten lisäämiseen raporttisivulle.
+3. **Poista käsinkirjoitusmerkit** ![Pyyhin-kuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-eraser-icon.png), jotka olet ehkä tehnyt Surface-kynällä, kun piirsit tai lisäsit huomautuksia raporttisivullesi.  
+4. **Vaihda sivut** ![Sivutus-kuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png) raportin toiselle sivulle esityksessä.
+5. **Toista diaesitys**![Toista-kuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png) piilottamalla toimintopalkki ja käynnistämällä diaesitys; sovellus vaihtaa automaattisesti raporttisivujen välillä. 
+6. **Haku** ![Haku-kuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) Power BI:n muiden artefaktien hakemiseksi.
+7. **Päivitä** ![Päivitä-kuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-refresh-icon.png) raportti.
+8. **Poistu** ![Poistu koko näytön tilasta](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png) esitystilasta.
+8. **Jaa** ![Jaa-kuvake](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-share-icon.png) esitysnäkymän kuva työtovereiden kanssa. Kuva sisältää kaikki huomautukset, jotka olet lisännyt Surface-kynällä esityksen aikana.
 
 Voit irrottaa työkalurivin ja vetää sen mihin tahansa paikkaan näytössä. Tästä on hyötyä suurilla näytöillä, kun haluat keskittyä raporttisi tiettyyn alueeseen ja pitää työkalut käsillä sen vieressä. Paina työkaluriviä sormella ja pyyhkäise se raporttipohjaan.
 
@@ -53,5 +56,5 @@ Voit irrottaa työkalurivin ja vetää sen mihin tahansa paikkaan näytössä. T
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Esitä raporttinäkymiä ja raportteja Power BI -palvelusta koko näytön tilassa](../end-user-focus.md)
-* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

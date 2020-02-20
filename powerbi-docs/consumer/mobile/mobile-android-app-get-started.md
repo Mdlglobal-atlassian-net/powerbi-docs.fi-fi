@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/08/2019
+ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: f0ffcdabf1fea090cff769fa35c8346812b37896
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: af3ae969d0aedab3cc49e8d286ce71313da3d6bc
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75220194"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77259781"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Android-laitteiden Power BI -mobiilisovelluksen käytön aloittaminen
 Android-sovellus Microsoft Power BI:lle tarjoaa BI-mobiilikäyttökokemuksen Power BI:lle, Power BI-raporttipalvelimelle ja Reporting Services -palveluille. Voit tarkastella ja käsitellä yrityksen koontinäyttöjä paikallisesti ja pilvipalvelussa missä tahansa, live-tilassa kosketusnäytöllisessä mobiilikäytössä. Tarkastele tietoja koontinäytöissä ja jaa sähköpostitse tai tekstiviestillä työtovereiden kanssa. 
@@ -52,18 +52,18 @@ Jos et ole jo rekisteröinyt, siirry [Power BI -palveluun](https://powerbi.com/)
 1. Avaa Power BI Android-käyttöjärjestelmälle -sovellus Android-laitteesi aloitusnäytössä.
    
    ![Power BI -kuvake](./media/mobile-android-app-get-started/power-bi-logo-android.png)
-2. Jos haluat tarkastella Power BI -koontinäyttöjä ja -raportteja, napauta **Power BI**.  
-   
-   Jos näyttöön tulee sanoma, että Power BI ei voi kirjata sinua sisään, katso kohta [”Todentaminen ei onnistunut, koska tämä laite ei luota yrityksesi SSL-varmenteeseen”](mobile-android-app-error-corporate-ssl-account-is-untrusted.md). Saat lisätietoja siitä, miten voit ratkaista ongelman.
+2. Kirjaudu Power BI -sovellukseen napauttamalla **Power BI** -välilehteä ja täytä kirjautumistietosi.
 
-   Jos haluat tarkastella Power BI -raporttipalvelimen ja Reporting Services -raportteja ja suorituskykyilmaisimia, napauta **Raporttipalvelinta**.
+    Jos näyttöön tulee sanoma, että Power BI ei voi kirjata sinua sisään, katso kohta [”Todentaminen ei onnistunut, koska tämä laite ei luota yrityksesi SSL-varmenteeseen”](mobile-android-app-error-corporate-ssl-account-is-untrusted.md). Saat lisätietoja siitä, miten voit ratkaista ongelman.
+
+   Kirjaudu Reporting Services -mobiiliraportteihin ja -suorituskykyilmaisimiin napauttamalla **Raporttipalvelin**-välilehteä ja täytä kirjautumistietosi.
    
    ![Kirjautuminen Power BI:hin](./media/mobile-android-app-get-started/power-bi-connect-to-login.png)
 
 ## <a name="try-the-power-bi-and-reporting-services-samples"></a>Kokeile Power BI- ja Reporting Services -malleja
 Voit tarkastella ja kokeilla Power BI- ja Reporting Services -malleja jopa ilman rekisteröitymistä.
 
-Voit käyttää malleja valitsemalla siirtymispalkissa **Lisää asetuksia** (...) ja valitsemalla sitten **Mallit**.
+Voit käyttää malleja valitsemalla siirtymispalkissa **Lisää asetuksia** (...) ja valitsemalla **Mallit**.
 
 Power BI -mallien jälkeen tulee useita raporttipalvelimen malleja.
    

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a4d948e768682aab77708289320914ce3ef0fdc3
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 047aa5e19089555538c874702dd50da0f1146ff1
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74699086"
+ms.lasthandoff: 02/10/2020
+ms.locfileid: "77115281"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Reaaliaikainen suoratoisto Power BI:ssä
 Power BI: reaaliaikaisen suoratoiston avulla voit suoratoistaa tietoja ja päivittää koontinäyttöjä reaaliajassa. Kaikki Power BI:ssä luotavat visualisoinnit tai koontinäytöt voidaan luoda myös näyttämään ja päivittämään reaaliaikaisia tietoja ja visualisointeja. Tietojen suoratoistoon käytettävät laitteet ja lähteet voivat olla tehtaiden tunnistimia, sosiaalisen median lähteitä, huoltokäyttötietoja ja mitä tahansa muita, joista voidaan kerätä ja lähettää ajan mukaan määräytyviä tietoja.
@@ -35,7 +35,7 @@ Ensin tutustumme siihen, miten nämä tietojoukot eroavat toisistaan (tässä os
 ### <a name="push-dataset"></a>Push-tietojoukko
 **Tietojoukon siirtäminen** -toiminnon avulla tiedot siirretään Power BI -palveluun. Kun tietojoukko on luotu, Power Bi -palvelu luo automaattisesti uuden tietokannan palveluun tietojen tallentamiseksi. Koska pohjana oleva tietokanta, joka jatkaa tietojen tallentamista niiden saapuessa, tietoja voidaan käyttää raporttien luomiseen. Nämä raportit ja niiden visualisoinnit ovat samanlaisia kuin mitkä tahansa muutkin raporttivisualisoinnit, mikä tarkoittaa sitä, että voit käyttää kaikkia Power BI:n raporttienkasausominaisuuksia visualisointien luomiseen, kuten mukautettujen visualisointien, tietohälytysten ja koontinäyttöön kiinnitettyjen ruutujen luomiseen.
 
-Kun raporttia luodaan tietojoukon siirron avulla, mikä tahansa sen visualisoinneista voidaan kiinnittää koontinäyttöön. Tässä koontinäytössä visualisoinnit päivittyvät reaaliaikaisesti aina, kun tiedot päivitetään. Koontinäyttö käynnistää ruudun päivityksen palvelussa joka kerran, kun uutta tietoa vastaanotetaan.
+Kun raportti on luotu tietojoukon siirron avulla, mikä tahansa sen visualisoinneista voidaan kiinnittää koontinäyttöön. Tässä koontinäytössä visualisoinnit päivittyvät reaaliaikaisesti aina, kun tiedot päivitetään. Koontinäyttö käynnistää ruudun päivityksen palvelussa joka kerran, kun uutta tietoa vastaanotetaan.
 
 On otettava huomioon kaksi asiaa kiinnitettyjen ruutujen suhteen, jotka on saatu tietojoukon siirron kautta:
 
@@ -80,7 +80,7 @@ Tietoja voidaan siirtää tietojoukkoon kolmella pääasiallisella tavalla:
 Katsotaanpa kutakin vaihtoehtoa yksi kerrallaan.
 
 ### <a name="using-power-bi-rest-apis-to-push-data"></a>Power BI REST -ohjelmointirajapintojen käyttäminen tietojen siirtämiseen
-**Power BI REST -ohjelmointirajapintojen** avulla voidaan luoda ja lähettää tietoja tietojoukkojen **siirtämiseksi** ja tietojoukkojen **suoratoistamiseksi**. Kun luot tietojoukon Power BI REST -ohjelmointirajapinnan avulla, *defaultMode* (oletustila) -merkki kertoo, onko tietojoukko tyypiltään push (siirto) vai streaming (suoratoisto). Jos *defaultMode*-merkkiä ei ole asetettu, tietojoukon oletustilana on **push**-tietojoukko.
+**Power BI REST -ohjelmointirajapintojen** avulla voidaan luoda ja lähettää tietoja tietojoukkojen **siirtämiseksi** ja **suoratoistamiseksi**. Kun luot tietojoukon Power BI REST -ohjelmointirajapinnan avulla, *defaultMode* (oletustila) -merkki kertoo, onko tietojoukko tyypiltään push (siirto) vai streaming (suoratoisto). Jos *defaultMode*-merkkiä ei ole asetettu, tietojoukon oletustilana on **push**-tietojoukko.
 
 Jos *defaultMode*-arvoksi on määritetty *pushStreaming*, tietojoukko on sekä **push**- *että***streaming**-tietojoukko, jolloin siinä on kummankin tietojoukkotyypin parhaat puolet. 
 

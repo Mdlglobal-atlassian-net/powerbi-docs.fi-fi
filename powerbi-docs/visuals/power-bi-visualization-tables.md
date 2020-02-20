@@ -7,15 +7,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/04/2019
+ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6d2f1eea22f83d90501581be7d2e9b8230962835
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: 014186acf6bf6b8c00686c0b7a29d0b526b0afb7
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830881"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77154255"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Taulukot Power BI -raporteissa ja raporttinäkymissä
 
@@ -98,22 +98,19 @@ Taulukkoa voi muotoilla monella eri tavalla. Käsittelemme tässä artikkelissa 
 
 ### <a name="conditional-formatting"></a>Ehdollinen muotoilu
 
-*Ehdollinen muotoilu* on yksi muotoilutyyppi. Power BI soveltaa kenttien ehdollista muotoilua **Visualisoinnit**-ruudun **Arvot**-säilöön.
+*Ehdollinen muotoilu* on yksi muotoilutyyppi. Power BI voi soveltaa ehdollista muotoilua mihin tahansa kenttään, jonka lisäsit **Visualisoinnit**-ruudun **Arvot**-säilöön.
 
-Taulukoiden ehdollisen muotoilun avulla voit määrittää mukautettuja solujen taustavärejä ja tekstin värejä solujen arvoihin perustuen. Voit käyttää myös liukuvärejä.
+![Visualisointi-ruutu](media/power-bi-visualization-tables/power-bi-table-values.png)
 
-1. Valitse **Visualisoinnit**-ruudussa **Kentät**-kuvake![kentät-kuvake](media/power-bi-visualization-tables/power-bi-fields-icon.png).
+Taulukoiden ehdollisen muotoilun avulla voit määrittää kuvakkeita, URL-osoitteita, solun taustavärejä ja fontin värejä soluarvojen perusteella. Voit käyttää myös liukuvärejä.
 
-1. Valitse alaspäin osoittava nuoli sen **Arvot**-säilön vierestä, jota haluat muotoilla (tai napsauta kenttää hiiren kakkospainikkeella).
+1. Avaa **Muotoile**-ruudussa **Ehdollinen muotoilu** -kortti.
 
-    > [!NOTE]
-    > Voit hallita kenttien ehdollista muotoilua ainoastaan **Kenttien** **Arvot**-alueella.
+    ![Ehdollinen muotoilu -kortti](media/power-bi-visualization-tables/power-bi-conditional.png)
 
-    ![polku Taustaväriasteikkoihin](media/power-bi-visualization-tables/power-bi-conditional-formatting-background.png)
+1. Valitse muotoiltava kenttä ja ota **taustavärin** liukusäädin käyttöön. Power BI käyttää liukuväriä sarakkeen arvojen perusteella. Jos haluat muuttaa oletusvärejä, valitse **Lisäohjausobjektit**.
 
-1. Valitse **Taustaväri**.
-
-1. Voit määrittää avautuvassa valintaikkunassa värin sekä **vähimmäisarvon** ja **enimmäisarvon**. Jos valitset **Erkautuva**-vaihtoehdon, voit määrittää myös valinnaisen **keskiarvon**.
+    Jos valitset **Erkautuva**-vaihtoehdon, voit määrittää myös valinnaisen **keskiarvon**.
 
     ![Taustaväriasteikot-ikkuna](media/power-bi-visualization-tables/power-bi-conditional-formatting-background2.png)
 
@@ -124,11 +121,11 @@ Taulukoiden ehdollisen muotoilun avulla voit määrittää mukautettuja solujen 
 
     ![oikeassa reunassa näkyvä uusi kenttä](media/power-bi-visualization-tables/power-bi-conditional-formatting2.png)
 
-1. Valitse tietopalkin ehdollinen muotoilu painamalla **Myyntivariaatio yhteensä** -kohdan vieressä olevaa alaspäin osoittavaa nuolta ja valitsemalla **Ehdollinen muotoilu > Tietopalkit**.
+1. Lisää tietopalkin ehdollinen muotoilu ottamalla **Tietopalkit**-liukusäädin käyttöön.  
 
-    ![Tietopalkkien valintapolku](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars.png)
+    ![Ehdollinen muotoilu -kortti, jossa tietopalkit on otettu käyttöön](media/power-bi-visualization-tables/power-bi-data-bar-matrix.png)
 
-1. Määritä avautuvassa valintaikkunassa värit **positiiviselle palkille** ja **negatiiviselle palkille**, valitse **Näytä vain palkki** -vaihtoehto ja tee kaikki muut haluamasi muutokset.
+1. Jos haluat mukauttaa tietopalkkeja, valitse **Lisäohjausobjektit**. Määritä avautuvassa valintaikkunassa värit **positiiviselle palkille** ja **negatiiviselle palkille**, valitse **Näytä vain palkki** -vaihtoehto ja tee kaikki muut haluamasi muutokset.
 
     ![Näytä vain palkki -valintamerkki](media/power-bi-visualization-tables/power-bi-data-bar.png)
 
@@ -138,10 +135,10 @@ Taulukoiden ehdollisen muotoilun avulla voit määrittää mukautettuja solujen 
 
     ![sama taulukko, jossa viimeiseen sarakkeeseen on lisätty palkit](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars2.png)
 
-Jos haluat poistaa ehdollisen muotoilun visualisoinnista, napsauta kenttää uudelleen hiiren kakkospainikkeella ja valitse **Poista ehdollinen muotoilu**.
+1. Lisää visuaalisia vihjeitä taulukkoosi *ehdollisten kuvakkeiden* avulla.  Valitse **Ehdollinen muotoilu** -kortissa **Tämän vuoden myynti** avattavasta valikosta. Ota **Kuvakkeet**-liukusäädin **käyttöön**.  Jos haluat mukauttaa kuvakkeita, valitse **Lisäohjausobjektit**.
 
-> [!TIP]
-> Ehdollinen muotoilu on käytettävissä myös **Muotoilu**-ruudusta. Valitse muokattava arvo ja aseta sitten **Väriasteikko**- tai **Tietopalkki**-arvoksi **Käytössä**, jolloin käytetään oletusasetuksia. Jos haluat mukauttaa asetuksia, valitse **Lisäasetukset**.
+    ![Esimerkkitaulukko, johon on lisätty kuvakkeita](media/power-bi-visualization-tables/power-bi-table-icons.png)
+
 
 ## <a name="copy-values-from-power-bi-tables-for-use-in-other-applications"></a>Arvojen kopiointi Power BI -taulukoista muissa sovelluksissa käytettäviksi
 
@@ -174,6 +171,7 @@ Kopioi useampi kuin yksi solu seuraavasti:
 Joskus Power BI katkaisee raportin tai näkymän sarakeotsikon. Voit näyttää sarakkeen koko nimen liikuttamalla hiiren osoitinta otsikon oikealla puolella nähdäksesi kaksoisnuolet, ja valitsemalla ja vetämällä.
 
 ![videolähennys sarakkeen koon muuttamisesta](media/power-bi-visualization-tables/resizetable.gif)
+
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
 

@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 57819765b156baac2a86b8144e86770a0117adfd
-ms.sourcegitcommit: d5de66b591c2e1de979ce0e3ce5e5b6e1f2a08db
+ms.openlocfilehash: 864854e774defee16d446a513622e1134c77d75c
+ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548595"
+ms.lasthandoff: 02/10/2020
+ms.locfileid: "77115258"
 ---
 # <a name="what-is-power-bi-administration"></a>Mitä on Power BI:n hallinta?
 
@@ -80,10 +80,9 @@ Power BI:n hallintaan liittyy useita työkaluja, jotka on kuvattu seuraavassa ta
 
 Toivomme, että tämä artikkeli tarjosi sinulle yleiskuvan Power BI -järjestelmänvalvojan työstä sekä siihen liittyvistä rooleista, tehtävistä ja työkaluista. Suosittelemme, että syvennät tietämystäsi seuraavien artikkelien avulla.
 
-[Power BI -hallintaportaalin käyttäminen](service-admin-portal.md)
-
-[PowerShellin cmdlet-komentojen käyttäminen](/powershell/power-bi/overview)
-
-[Power BI:n hallinnan usein kysytyt kysymykset](service-admin-faq.md)
-
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+- [Power BI -hallintaportaalin käyttäminen](service-admin-portal.md)
+- [Vuokraajan järjestelmänvalvojan asetuksia koskevat ohjeet](guidance/admin-tenant-settings.md)
+- [PowerShellin cmdlet-komentojen käyttäminen](/powershell/power-bi/overview)
+- [Power BI:n hallinnan usein kysytyt kysymykset](service-admin-faq.md)
+- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+- Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)

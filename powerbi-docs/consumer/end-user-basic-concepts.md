@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 24e5a06d3e835f7ff5114cbf17b772bc7efd00bb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7513479d14b57e47b30d2cd7ac9cc4acfe69d075
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73852240"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77260112"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>Peruskäsitteet Power BI -palvelun kuluttajille
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Tässä artikkelissa oletetaan, että olet jo lukenut [Power BI:n yleiskatsauksen](../fundamentals/power-bi-overview.md) ja tunnistat olevasi [Power BI ***-kuluttaja***](end-user-consumer.md). Kuluttajat saavat Power BI -sisältöä, kuten koontinäyttöjä ja raportteja, työtovereiltaan. Kuluttajat käyttävät Power BI -palvelua, joka on Power BI:n sivustopohjainen versio.
+Tässä artikkelissa oletetaan, että olet jo lukenut [Power BI:n yleiskatsauksen](../fundamentals/power-bi-overview.md) ja tunnistat olevasi [Power BI **_-kuluttaja_** ](end-user-consumer.md). Kuluttajat saavat Power BI -sisältöä, kuten koontinäyttöjä ja raportteja, työtovereiltaan. Kuluttajat käyttävät Power BI -palvelua, joka on Power BI:n sivustopohjainen versio.
 
 Olet varmasti jo kuullut termin ”Power BI Desktop” tai pelkkä ”Desktop”. Se on *suunnittelijoiden*, jotka luovat ja jakavat koontinäyttöjä kanssasi, käyttämä erillinen työkalu. On tärkeää tietää, että saatavilla on myös muita Power BI -työkaluja. Niin kauan kuin olet kuluttaja, käytät vain Power BI-palvelua. Tämä artikkeli koskee vain Power BI -palvelua.
 
@@ -54,13 +54,13 @@ _______________________________________________________
 
 ### <a name="introduction-to-building-blocks"></a>Peruselementtien esittely
 
-Power BI:n viisi peruselementtiä kuluttajille ovat: ***visualisoinnit***, ***koontinäytöt***, ***raportit***, ***sovellukset*** ja  ***tietojoukot***. Näihin viitataan joskus myös nimellä *Power BI* -***sisältö***. Tämä *sisältö* löytyy ***työtiloista***. Tavallinen työnkulku sisältää kaikki peruselementit: Power BI -*suunnittelija* (keltaisella alla olevassa kaaviossa) kerää tietoja *tietojoukoista*, tuo ne Power BI:hin analyysia varten, luo  *raportteja*, jotka ovat täynnä kiinnostavia faktoja ja merkityksellisiä tietoja korostavia *visualisointeja*, kiinnittää raporttien visualisointeja koontinäyttöön ja jakaa raportit ja koontinäytöt kaltaisillesi *kuluttajille* (mustalla alla olevassa kaaviossa). *Suunnittelija* jakaa ne *sovellusten* tai muuntyyppisen jaetun sisällön muodossa.
+Power BI:n viisi peruselementtiä kuluttajille ovat: **_visualisoinnit_** , **_koontinäytöt_** , **_raportit_** , **_sovellukset_** ja **_tietojoukot_** . Näihin viitataan joskus myös nimellä *Power BI* **_-sisältö_** . Tämä *sisältö* löytyy **_työtiloista_** . Tavallinen työnkulku sisältää kaikki peruselementit: Power BI -*suunnittelija* (keltaisella alla olevassa kaaviossa) kerää tietoja *tietojoukoista*, tuo ne Power BI:hin analyysia varten, luo  *raportteja*, jotka ovat täynnä kiinnostavia faktoja ja merkityksellisiä tietoja korostavia *visualisointeja*, kiinnittää raporttien visualisointeja koontinäyttöön ja jakaa raportit ja koontinäytöt kaltaisillesi *kuluttajille* (mustalla alla olevassa kaaviossa). *Suunnittelija* jakaa ne *sovellusten* tai muuntyyppisen jaetun sisällön muodossa.
 
 ![Power BI -työnkulun peruskaavio.](media/end-user-basic-concepts/power-bi-workflow.png)
 
 Kaikista yksinkertaisimmillaan:
 
-- ![Näyttökuva visualisoinnin kuvakkeesta.](media/end-user-basic-concepts/visual.png) ***Visualisointi*** (tai *visuaali*), on Power BI -*suunnittelijoiden* luoma kaavio. Visualisoinnit näyttävät tiedot *raporteista* ja *tietojoukoista*. *Suunnittelijat* luovat visualisointinsa yleensä Power BI Desktopissa.
+- ![Näyttökuva visualisoinnin kuvakkeesta.](media/end-user-basic-concepts/visual.png) **_Visualisointi_** (tai *visuaali*) on Power BI *-suunnittelijoiden* luoma kaaviotyyppi. Visualisoinnit näyttävät tiedot *raporteista* ja *tietojoukoista*. *Suunnittelijat* luovat visualisointinsa yleensä Power BI Desktopissa.
 
     Katso lisätietoja artikkelista [Visualisointien käyttö raporteissa, koontinäytöissä ja sovelluksissa](end-user-visualizations.md).
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 160812521939d505612e0725e678dcf985f0d03a
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 01996f3460b7c7a507796bd3f071f7887a69854e
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75761837"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77154208"
 ---
 # <a name="apply-auto-datetime-in-power-bi-desktop"></a>Automaattisen päivämäärän ja ajan käyttö Power BI Desktopissa
 
@@ -24,6 +24,7 @@ Automaattinen päivämäärä ja aika on tietojen lataamisen asetus Power BI Des
 Kun asetus on käytössä, Power BI Desktop luo piilotetun automaattisen päivämäärä- ja aikataulukon kullekin päivämääräsarakkeelle, edellyttäen, että kaikki seuraavat ehdot toteutuvat:
 
 - Taulukon tallennustila on Tuonti
+- Sarake ei ole laskettu sarake
 - Sarakkeen tietotyyppi on päivämäärä tai päivämäärä/kellonaika
 - Sarake ei ole mallisuhteen "monta"-puoli
 
@@ -44,6 +45,8 @@ Jos automaattisen päivämäärän ja ajan taulukon rivit olisi mahdollista näh
 
 > [!NOTE]
 > Automaattiset päivämäärä-ja aikataulukot piilotetaan pysyvästi myös mallintajilta. Niitä ei voi nähdä **Kentät**-ruudussa tai mallinäkymäkaaviossa, eikä rivejä voi nähdä datanäkymässä. Lisäksi DAX-lausekkeet eivät voi viitata taulukkoon ja sen sarakkeeseen suoraan.
+>
+> Lisäksi niitä ei voi käsitellä käytettäessä [Analysoi Excelissä](service-analyze-in-excel.md) -ominaisuutta eikä malliin voi yhdistää muiden kuin Power BI -raporttien suunnittelutyökalujen avulla.
 
 Taulukko määrittää myös hierarkian, joka tarjoaa visualisointeja porautumispolulla vuosi-, vuosineljännes-, kuukausi- ja päivä tasolla.
 
@@ -98,3 +101,4 @@ Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resurssei
 - [Automaattisen päivämäärän/ajan ohjeet Power BI Desktopissa](guidance/auto-date-time.md)
 - [Päivämäärätaulukkojen määrittäminen ja käyttäminen Power BI Desktopissa](desktop-date-tables.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+- Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)

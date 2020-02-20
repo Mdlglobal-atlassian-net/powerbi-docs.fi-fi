@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/27/2019
-ms.openlocfilehash: 8a3b9389769c92bc52512dbf1215afa405161cd5
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.date: 02/11/2020
+ms.openlocfilehash: 3561d122dde324f1d383d40a152bccc193a2afbe
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539045"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77259709"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
@@ -41,7 +41,7 @@ Microsoft kehitti Power BI Embeddedin riippumattomille ohjelmistotoimittajille, 
 
 Power BI Premium on optimoitu yrityksille, jotka haluavat täydellisen BI-ratkaisun, joka mahdollistaa organisaation, kumppanien, asiakkaiden ja toimittajien tietojen tarkastelun yhdessä näkymässä. Power BI Premium auttaa organisaatiotasi tekemään päätöksiä. Power BI Premium on SaaS-tuote, jonka käyttäjät voivat käyttää sisältöä mobiilisovelluksen, sisäisesti kehitettyjen sovellusten ja Power BI -portaalin kautta.
 
-Power BI Embedded on ISV-kumppaneille, jotka haluavat upottaa visualisointeja sovelluksinsa. Power BI Embedded auttaa asiakkaitasi tekemään päätöksiä, sillä se on suunnattu sovelluskehittäjille, joiden sovelluksia käyttävät asiakkaat voivat käyttää Power BI Embedded -kapasiteettiin tallennettua sisältöä organisaation sisällä tai ulkopuolella. Power BI Embedded -kapasiteetin sisältöä ei voida jakaa yhden napsautuksen julkaisulla verkkoon tai yhden napsautuksen julkaisulla SharePointiin.
+Power BI Embedded on ISV-kumppaneille, jotka haluavat upottaa visualisointeja sovelluksiinsa. Power BI Embedded auttaa asiakkaitasi tekemään päätöksiä, sillä se on suunnattu sovelluskehittäjille, joiden sovelluksia käyttävät asiakkaat voivat käyttää Power BI Embedded -kapasiteettiin tallennettua sisältöä organisaation sisällä tai ulkopuolella. Power BI Embedded -kapasiteetin sisältöä ei voida jakaa yhden napsautuksen julkaisulla verkkoon tai yhden napsautuksen julkaisulla SharePointiin.
 
 ### <a name="what-is-the-microsoft-recommendation-for-when-a-customer-should-buy-power-bi-premium-vs-power-bi-embedded"></a>Mikä on Microsoftin suositus sen suhteen, milloin asiakkaan kannattaa ostaa Power BI Premium ja milloin Power BI Embedded?
 
@@ -55,37 +55,11 @@ PRO-käyttöoikeudella upotettavat tunnukset on tarkoitettu kehitystestaukseen, 
 
 ## <a name="technical"></a>Tekniset
 
-### <a name="what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365"></a>Mikä on Azuren A-varastointiyksiköiden ja Office 365:n EM-varastointiyksiköiden välinen ero?
+### <a name="where-can-i-learn-more-about-capacity-and-skus-in-power-bi-embedded-analytics"></a>Mistä saan tietää enemmän kapasiteetista ja SKU:sta Power BI:n upotetussa analytiikassa?
 
-PowerBI.com on SaaS-yritysohjelmistopalvelu, joka sisältää useita sosiaalisen yhteistyön ja sähköpostitilauksen kaltaisia toimintoja. PowerBI.com auttaa ISV-toimittajia ja kehittäjiä upotetun analytiikkaratkaisun sisällön ja vuokraajatason asetusten hallinnassa.
+Katso artikkelia [Kapasiteetti ja SKU Power BI:n upotetussa analytiikassa](embedded-capacity.md).
 
-Power BI Embedded on PaaS-palvelun ohjelmointirajapintojen joukko, joiden avulla kehittäjät voivat luoda upotetun analytiikkaratkaisun.
-
-Tässä on luettelo joistain ominaisuuksien eroista.
-
-| Ominaisuus | Power BI Embedded | Power BI Premium -kapasiteetti | Power BI Premium -kapasiteetti |
-|----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
-|   | A-varastointiyksiköt – Azure-kapasiteetti | EM-varastointiyksiköt – O365-kapasiteetti | P-varastointiyksiköt – O365-kapasiteetti |
-| Upotusartefaktit Power BI -työtilasta | Kyllä | Kyllä | Kyllä |
-| Power BI -raporttien käyttäminen upotetussa sovelluksessa organisaatiosi tarpeisiin  | Ei | Kyllä | Kyllä |
-| Power BI -raporttien käyttäminen upotetussa sovelluksessa asiakkaittesi tarpeisiin | Kyllä | Kyllä | Kyllä |
-| Power BI -raporttien käyttäminen SharePointissa | Ei | Kyllä | Kyllä |
-| Power BI -raporttien käyttäminen Dynamicsissa | Ei | Kyllä | Kyllä |
-| Power BI -raporttien käyttäminen Teamsissa (ei sisällä mobiilisovellusta) | Ei | Kyllä | Kyllä |
-| Sisällön käyttäminen ilmaisella Power BI -käyttöoikeudella Powerbi.comissa ja Power BI -mobiilisovelluksessa | Ei | Ei | Kyllä |
-| Sisällön käyttäminen ilmaisella Power BI -käyttöoikeudella upotettuna MS Office -sovelluksiin | Ei | Kyllä | Kyllä |
-
-### <a name="power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario"></a>Power BI tarjoaa nyt kolme varastointiyksikköä upottamiseen: A-varastointiyksiköt, EM-varastointiyksiköt ja P-varastointiyksiköt. Mikä niistä minun tulisi ostaa omaa skenaariotani varten?
-
-|  |A-varastointiyksikkö (Power BI Embedded)  |EM-varastointiyksikkö (Power BI Premium)  |P-varastointiyksikkö (Power BI Premium)  |
-|---------|---------|---------|---------|
-|Ostaminen  |Azure-portaali |Office |Office |
-|Käyttötilanteet | Sisällön upottaminen omaan sovellukseen | <li> Sisällön upottaminen omaan sovellukseen <br><br><br> <li> Sisällön upottaminen MS Office -sovelluksiin: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (ei sisällä mobiilisovellusta)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Sisällön upottaminen omaan sovellukseen <br><br><br> <li> Sisällön upottaminen MS Office -sovelluksiin: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (ei sisällä mobiilisovellusta)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br><br> <li> Sisällön jakaminen Power BI -käyttäjien kanssa [Power BI -palvelun](https://powerbi.microsoft.com/) kautta  |
-|Laskutus |Tunneittain |Kuukausittain |Kuukausittain |
-|Sitoutuminen  |Ei sitoutumista |Vuosittain  |Kuukausittain/vuosittain |
-|Erot |Täysi joustavuus – skaalaus ylös/alas, resurssien keskeytys/jatkaminen Azure-portaalissa tai ohjelmointirajapinnan kautta  |Voit käyttää tätä sisällön upottamiseen SharePoint Onlinessa ja Microsoft Teamsissa (ei sisällä mobiilisovellusta) |Yhdistää sovelluksiin upottamisen ja Power BI -palvelun käytön samassa kapasiteetissa |
-
-### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Mitkä ovat ennakkoedellytykset PBIE-kapasiteetin luomiseksi Azuressa?
+### <a name="what-are-the-prerequisites-for-creating-a-pbie-capacity-in-azure"></a>Mitkä ovat ennakkoedellytykset PBIE-kapasiteetin luomiseksi Azuressa?
 
 * Kirjaudu organisaation hakemistoon (Microsoft-tilejä ei tueta).
 * Sinulla on oltava Power BI -vuokraaja, eli vähintään yhden käyttäjän hakemistossasi on täytynyt rekisteröityä Power BI:n käyttäjäksi. 
@@ -156,12 +130,12 @@ Saatavilla olevat alueet (16 – samat alueet kuin Power BI)
 * Yhdysvallat (6) – Itä-Yhdysvallat, Itä-Yhdysvallat 2, Yhdysvaltojen pohjoinen keskiosa, Yhdysvaltojen eteläinen keskiosa, Länsi-Yhdysvallat, Länsi-Yhdysvallat 2
 * Eurooppa (2) – Pohjois-Eurooppa, Länsi-Eurooppa
 * Tyynenmeren Aasia (2) – Kaakkois-Aasia, Itä-Aasia
-* Brasilia (1) – Brasilia, etelä
+* Brasilia (1) – Brasilia, eteläinen
 * Japani (1) – Japani, itä
 * Australia (1) – Kaakkois-Australia
 * Intia (1) – Länsi-Intia
 * Kanada (1) – Kanada, keskinen
-* Yhdistynyt kuningaskunta (1) – Yhdistyneen kuningaskunta, eteläinen
+* Yhdistynyt kuningaskunta (1) – Yhdistynyt kuningaskunta, eteläinen
 
 ### <a name="what-is-power-bi-embeddeds-authentication-model"></a>Mikä on Power BI Embeddedin todennusmalli?
 
@@ -323,7 +297,7 @@ Asiakkaat, jotka käyttävät **Power BI -työtilakokoelmaa** voivat jatkaa sen 
 
 ### <a name="in-what-regions-can-i-create-a-pbi-workspace-collection"></a>Millä alueilla PBI-työtilakokoelmia voi luoda?
 
-Saatavilla alueilla: Kaakkois-Australia; Brasilia, etelä; Kanada, keskinen; Itä-Yhdysvallat 2; Japani, itä; Yhdysvaltojen pohjoinen keskiosa; Pohjois-Eurooppa; Yhdysvaltojen eteläinen keskiosa; Kaakkois-Aasia; Yhdistynyt kuningaskunta, eteläinen; Länsi-Eurooppa; Intia, läntinen ja Länsi-Yhdysvallat.
+Saatavilla alueilla: Kaakkois-Australia; Brasilia, eteläinen; Kanada, keskinen; Itä-Yhdysvallat 2; Japani, itäinen; Yhdysvaltojen pohjoinen keskiosa; Pohjois-Eurooppa; Yhdysvaltojen eteläinen keskiosa; Kaakkois-Aasia; Yhdistynyt kuningaskunta, eteläinen; Länsi-Eurooppa; Intia, läntinen ja Länsi-Yhdysvallat.
 
 ### <a name="why-should-i-migrate-from-pbi-workspace-collection-to-power-bi-embedded"></a>Miksi minun pitäisi siirtyä PBI -työtilakokoelmasta Power BI Embeddediin?
 

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/08/2019
+ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: e3bfdf7fd53e71a4582a1f3e3ba08f55f2e9a290
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: ba39718a5a458ec18af976806bc634d32843afb2
+ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75220323"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77259762"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>iOS-laitteiden Power BI -mobiilisovelluksen käytön aloittaminen
 Microsoft Power BI for iOS -sovellus iPhonessa tai iPadissa tarjoaa BI-mobiilikäyttökokemuksen Power BI:lle, Power BI -raporttipalvelimelle ja Reporting Services -palveluille. Voit tarkastella ja käsitellä yrityksen koontinäyttöjä paikallisesti ja pilvipalvelussa missä tahansa, live-tilassa kosketusnäytöllisessä mobiilikäytössä. Tarkastele tietoja koontinäytöissä ja jaa sähköpostitse tai tekstiviestillä työtovereiden kanssa. Pysy ajan tasalla kaikkein ajantasaisimmilla tiedoilla [Apple Watchin](mobile-apple-watch.md) avulla.  
@@ -40,12 +40,12 @@ Jos et ole jo rekisteröitynyt, siirry osoitteeseen [powerbi.com](https://powerb
 
 ## <a name="get-started-with-the-power-bi-app"></a>Power BI -sovelluksen käytön aloittaminen
 1. Avaa Power BI -sovellus iOS-laitteessasi.
-2. Jos haluat tarkastella Power BI -koontinäyttöjä, napauta **Power BI**.  
-   Voit tarkastella Reporting Services -mobiiliraportteja ja suorituskykyilmaisimia napauttamalla **Raporttipalvelin**.
+2. Kirjaudu Power BI -sovellukseen napauttamalla **Power BI** -välilehteä ja täytä kirjautumistietosi.  
+   Kirjaudu Reporting Services -mobiiliraportteihin ja -suorituskykyilmaisimiin napauttamalla **Raporttipalvelin**-välilehteä ja täytä kirjautumistietosi.
    
    ![Kirjaudu Power BI -mobiilisovellukseen](./media/mobile-iphone-app-get-started/power-bi-connect-to-login.png)
    
-   Kun olet sovelluksessa, voit vaihtaa näiden kahden välillä napauttamalla tilin profiilikuvaa näytön vasemmassa yläkulmassa. 
+   Kun olet sovelluksessa, voit vaihtaa Power BI:n ja raporttipalvelimen välillä napauttamalla tilin profiilikuvaa näytön vasemmassa yläkulmassa. 
 
 ## <a name="try-the-power-bi-and-reporting-services-samples"></a>Kokeile Power BI- ja Reporting Services -malleja
 Voit tarkastella ja kokeilla Power BI- ja Reporting Services -malleja jopa ilman rekisteröitymistä.

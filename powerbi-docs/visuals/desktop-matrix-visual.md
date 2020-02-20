@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2e4ab92d5d1adce8659cdb971c5061a0f133b38f
-ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
+ms.openlocfilehash: 10f79c8670b42828b4219723bd8e503424e77820
+ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "76895466"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77154377"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Matriisivisualisoinnin luominen Power BI:ssä
 
@@ -136,17 +136,32 @@ Voit helposti säätää porrastetun asettelun asetuksia. Kun matriisivisualisoi
 
 Jos poistat porrastetun asettelun käytöstä, Power BI näyttää aliluokat toisessa sarakkeessa sen sijaan, että ne sisennettäisiin ylätason luokan alle.
 
-## <a name="subtotals-with-matrix-visuals"></a>Välisummat matriisivisualisoinneissa
+## <a name="subtotals-and-grand-totals-with-matrix-visuals"></a>Väli- ja kokonaissummat matriisivisualisoinneissa
 
-Voit ottaa sekä rivien että sarakkeiden välisummat käyttöön ja poistaa ne käytöstä matriisivisualisoinneissa. Seuraavassa kuvassa näet, että rivien välisumma-asetus on **käytössä**.
+Voit ottaa sekä rivien että sarakkeiden välisummat käyttöön ja poistaa ne käytöstä matriisivisualisoinneissa. Seuraavassa kuvassa näet, että rivin välisumma-asetus on **käytössä** ja määritetty näkymään alareunassa.
 
-![matriisi, joka näyttää kokonais- ja välisummat](media/desktop-matrix-visual/matrix-visual_20.png)
+![matriisi, joka näyttää kokonais- ja välisummat](media/desktop-matrix-visual/power-bi-subtotals.png)
 
-Siirry Muotoilu-osioon Visualisoinnit-ruudulla, laajenna **Välisummat**-kortti ja aseta Rivien välisummat -liukusäädin **Pois käytöstä** -asentoon. Kun teet näin, välisummat eivät näy.
+Kun otat **Välisummat** käyttöön ja lisäät otsikon, Power BI lisää myös rivin ja saman otsikon kokonaissumman arvolle. Jos haluat muotoilla kokonaissummaa, valitse **kokonaissumman** muotoiluvaihtoehto. 
 
-![matriisi, jossa välisummat on poistettu käytöstä](media/desktop-matrix-visual/matrix-visual_21.png)
+![matriisi, joka näyttää Kokonaissumma-kortin](media/desktop-matrix-visual/power-bi-grand-total.png)
+
+Jos haluat poistaa väli- ja kokonaissummat käytöstä, laajenna **Välisummat**-korttia Visualisoinnit-ruudun Muotoilu-osiossa. Poista rivin välisummien liukusäädin **käytöstä**. Kun teet näin, välisummat eivät näy.
+
+![matriisi, jossa välisummat on poistettu käytöstä](media/desktop-matrix-visual/power-bi-no-subtotals.png)
 
 Voit tehdä saman sarakkeiden välisummille.
+
+## <a name="add-conditional-icons"></a>Lisää ehdollisia kuvakkeita
+Lisää visuaalisia vihjeitä taulukkoon tai matriisiin *ehdollisten kuvakkeiden avulla*. 
+
+Laajenna **Ehdollinen muotoilu** -korttia Visualisoinnit-ruudun Muotoilu-osiossa. Ota **Kuvakkeet**-liukusäädin **käyttöön** ja valitse **Lisäohjausobjektit**.
+
+![Kuvassa näytetään matriisi ja Kuvakkeet-näyttö](media/desktop-matrix-visual/power-bi-icons.png)
+
+Säädä matriisin ehtoja, kuvakkeita ja värejä, ja valitse **OK**. Tässä esimerkissä käytimme punaista merkintää pienille arvoille, purppuranväristä ympyrää korkeille arvoille ja keltaista kolmiota kaikkeen niiden välillä. 
+
+![Kuvassa näytetään matriisi ja kuvakkeet](media/desktop-matrix-visual/power-bi-icons-applied.png)
 
 ## <a name="cross-highlighting-with-matrix-visuals"></a>Ristiinkorostus matriisivisualisoinneissa
 
