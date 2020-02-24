@@ -10,14 +10,14 @@ ms.topic: tutorial
 ms.date: 01/17/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1b90357aa6d8f66612857e8247a8b48dc2c2c369
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 83cf7517fac569f8439f1debcdf621a786835d2c
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539585"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427365"
 ---
-# <a name="implement-row-level-security-in-an-analysis-services-tabular-model"></a>Rivitason suojauksen käyttöönotto Analysis Services -taulukkomallissa
+# <a name="implement-row-level-security-in-an-analysis-services-tabular-model"></a>Rivitason suojauksen käyttöönotto Analysis Servicen taulukkomallissa
 
 Tässä opetusohjelmassa näytetään esimerkkitietojoukon avulla, miten voit ottaa käyttöön [**rivitason suojauksen**](service-admin-rls.md) *Analysis Services -taulukkomallissa* ja käyttää sitä Power BI -raportissa.
 
@@ -28,11 +28,11 @@ Tässä opetusohjelmassa näytetään esimerkkitietojoukon avulla, miten voit ot
 * Laadi Power BI Desktopin -raportti, jossa näytetään raporttia käsittelevälle käyttäjälle räätälöidyt tiedot
 * Ota raportti käyttöön *Power BI -palvelussa*
 * Luo raporttiin perustuva uusi koontinäyttö
-* Jaa koontinäyttö työtovereille
+* jaa koontinäyttö työtovereille
 
 Tämä opetusohjelma edellyttää [AdventureworksDW2012-tietokantaa](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks).
 
-## <a name="task-1-create-the-user-security-table-and-define-data-relationship"></a>Tehtävä 1: Luo käyttäjän suojaustaulukko ja määritä tietoyhteys
+## <a name="task-1-create-the-user-security-table-and-define-data-relationship"></a>Tehtävä 1: Käyttäjän tietoturvataulukon luominen ja tietojen yhteyden määrittäminen
 
 Lukuiset artikkelit opastavat rivitason dynaamisen suojauksen määrittämisessä *taulukkomuotoiseen SQL Server Analysis Services (SSAS)* -malliin. Tässä esimerkissä käytämme [Dynaamisen suojauksen toteuttaminen rivisuodattimien avulla](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters) -artikkelin ohjeita.
 
@@ -44,9 +44,9 @@ Nämä ohjeet edellyttävät AdventureworksDW2012-relaatiotietokannan käyttöä
 
 1. Kun olet luonut ja tallentanut taulukon, sinun on luotava yhteys `DimUserSecurity`-taulukon `SalesTerritoryID`-sarakkeen ja `DimSalesTerritory`-taulukon `SalesTerritoryKey`-sarakkeen välille alla esitetyllä tavalla.
 
-   Napsauta SSMS:ssä hiiren kakkospainikkeella **DimUserSecurity** ja valitse **Rakenne**. Valitse sitten **Taulukon suunnittelu** > **Suhteet...**. Kun olet valmis, tallenna taulukko.
+   Napsauta SSMS:ssä hiiren kakkospainikkeella **DimUserSecurity** ja valitse **Rakenne**. Valitse sitten **Taulukon suunnittelu** > **Suhteet...** . Kun olet valmis, tallenna taulukko.
 
-   ![Viiteavainyhteydet](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_keys.png)
+   ![Foreign Key Relationships](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_keys.png)
 
 1. Lisää käyttäjiä taulukkoon. Napsauta hiiren kakkospainikkeella **DimUserSecurity** ja valitse **Muokkaa ylintä 200 riviä**. Kun olet lisännyt käyttäjiä, `DimUserSecurity`-taulukon tulee näyttää samalta kuin seuraavassa esimerkissä:
 
@@ -62,7 +62,7 @@ Nämä ohjeet edellyttävät AdventureworksDW2012-relaatiotietokannan käyttöä
 
    Vaiheessa 2 luodun suhteen ansiosta liitetty taulukko näyttää kunkin myyntialueen vastuuhenkilön. Voit esimerkiksi nähdä, että *Rita Santos* on vastuussa *Australian* myyntialueesta.
 
-## <a name="task-2-create-the-tabular-model-with-facts-and-dimension-tables"></a>Tehtävä 2: Luo taulukkomalli fakta- ja dimensiotaulukoilla
+## <a name="task-2-create-the-tabular-model-with-facts-and-dimension-tables"></a>Tehtävä 2: Kokoa taulukkomalli fakta- ja dimensiotaulukoilla
 
 Kun relaatiotietovarasto on paikallaan, sinun on määritettävä taulukkomalli. Voit luoda mallin [SQL Server Data Tools](/sql/ssdt/sql-server-data-tools) (SSDT) -työkaluilla. Katso lisätiedot [Uuden taulukkomalliprojektin luominen](/sql/analysis-services/lesson-1-create-a-new-tabular-model-project) -artikkelista.
 
@@ -82,7 +82,7 @@ Kun relaatiotietovarasto on paikallaan, sinun on määritettävä taulukkomalli.
 
 1. `LOOKUPVALUE`-funktio palauttaa arvot sarakkeelle, jossa Windows-käyttäjänimi on sama kuin `USERNAME`-funktion palauttama käyttäjänimi. Voit sitten rajoittaa kyselyt alueisiin, joissa `LOOKUPVALUE`-funktion palauttamat arvot vastaavat saman tai liittyvän taulukon arvoja. Kirjoita seuraava kaava **DAX-suodattimen** sarakkeeseen:
 
-    ```sql
+    ```dax
         =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
     ```
 
@@ -95,7 +95,7 @@ Kun relaatiotietovarasto on paikallaan, sinun on määritettävä taulukkomalli.
 
 1. Lisää `DimUserSecurity`-taulukkoon **DAX-suodattimen** sarakkeeseen seuraava kaava:
 
-    ```sql
+    ```dax
         =FALSE()
     ```
 
@@ -103,7 +103,7 @@ Kun relaatiotietovarasto on paikallaan, sinun on määritettävä taulukkomalli.
 
 Seuraavaksi malli käsitellään ja otetaan käyttöön. Katso lisätietoja kohdasta [Käyttöönotto](/sql/analysis-services/lesson-13-deploy).
 
-## <a name="task-3-add-data-sources-within-your-on-premises-data-gateway"></a>Tehtävä 3: Lisää tietolähteitä paikallisessa tietoyhdyskäytävässä
+## <a name="task-3-add-data-sources-within-your-on-premises-data-gateway"></a>Tehtävä 3: Tietolähteiden lisääminen paikallisessa tietoyhdyskäytävässä
 
 Kun taulukkomuotoinen malli on otettu käyttöön ja valmis yleiseen käyttöön, sinun on lisättävä tietolähdeyhteys paikalliseen Analysis Services -taulukkopalvelimeen.
 
@@ -115,7 +115,7 @@ Kun taulukkomuotoinen malli on otettu käyttöön ja valmis yleiseen käyttöön
 
 Kun tämä toimenpide on valmis, yhdyskäytävä on määritetty ja valmis käsittelemään paikallista Analysis Services -tietolähdettä.
 
-## <a name="task-4-create-report-based-on-analysis-services-tabular-model-using-power-bi-desktop"></a>Tehtävä 4: Luo analyysipalveluiden taulukkomalliin perustuva raportti Power BI Desktopilla
+## <a name="task-4-create-report-based-on-analysis-services-tabular-model-using-power-bi-desktop"></a>Tehtävä 4: Analyysipalveluiden taulukkomalliin perustuvan raportin luominen Power BI Desktopilla
 
 1. Käynnistä Power BI Desktop ja valitse **Nouda tiedot** > **Tietokanta**.
 
@@ -141,7 +141,7 @@ Kun tämä toimenpide on valmis, yhdyskäytävä on määritetty ja valmis käsi
 
 1. Kun raportti on valmis, voit julkaista sen suoraan Power BI -portaaliin. Valitse Power BI Desktopin **Aloitus**-valintanauhasta **Julkaise**.
 
-## <a name="task-5-create-and-share-a-dashboard"></a>Tehtävä 5: Luo ja jaa koontinäyttö
+## <a name="task-5-create-and-share-a-dashboard"></a>Tehtävä 5: Koontinäytön luominen ja jakaminen
 
 Olet luonut raportin ja julkaissut sen **Power BI** -palveluun. Nyt voit käyttää edellisissä vaiheissa luotua esimerkkiä mallin suojaustilanteen havainnollistamiseen.
 
@@ -159,7 +159,7 @@ Kun Rita kirjautuu sisään Power BI -palveluun ja tarkastelee Gracen luomaa jae
 
 Onnittelut! Power BI-palvelussa näytetään paikallisessa Analysis Services -taulukkomallissa määritetty dynaaminen rivitason suojaus. Power BI käyttää `EffectiveUserName`-ominaisuutta lähettäessään senhetkisen Power BI -käyttäjän kirjautumistiedot paikalliselle tietolähteelle kyselyiden suorittamiseksi.
 
-## <a name="task-6-understand-what-happens-behind-the-scenes"></a>Tehtävä 6: Ymmärrä, mitä toimintoja taustalla tapahtuu
+## <a name="task-6-understand-what-happens-behind-the-scenes"></a>Tehtävä 6: Taustalla tapahtuvien toimintojen ymmärtäminen
 
 Tässä tehtävässä oletetaan, että [SQL Server Profiler](/sql/tools/sql-server-profiler/sql-server-profiler) on sinulle tuttu, koska sinun on tallennettava SQL Server Profiler -jäljitys paikallisesta, taulukkomuotoisesta SSAS -esiintymästä.
 
@@ -175,7 +175,7 @@ Jos koontinäytössä tapahtuu muuta toimintaa, Analysis Services -taulukkomalli
 
 Alla näet myös DAX-kyselyn, joka suoritetaan raportin tietojen täyttämiseksi.
    
-   ```sql
+   ```dax
    EVALUATE
      ROW(
        "SumEmployeeKey", CALCULATE(SUM(Employee[EmployeeKey]))

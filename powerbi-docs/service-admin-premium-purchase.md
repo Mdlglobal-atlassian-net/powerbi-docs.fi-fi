@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/10/2019
+ms.date: 02/13/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 8a97f30f75b8bf720d735944589e671392c47237
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 1bf7cc85411fef27e626c330cc07207187302bfc
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75224094"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427733"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Ohjeet Power BI Premiumin ostamiseen
 
 Tässä artikkelissa kuvataan, miten voit ostaa organisaatiollesi Power BI Premium -kapasiteettia. Artikkelissa käsitellään kahta skenaariota:
 
-- P-varastointiyksiköiden käyttöä tyypillisissä tuotantoskenaarioissa. P-varastointiyksiköt edellyttävät kuukausi- tai vuosisitoumusta, ja ne laskutetaan kuukausittain. P-varastointiyksiköt ostetaan [Microsoft 365 -hallintakeskuksessa](https://admmin.microsoft.com).
+- P-varastointiyksiköiden käyttöä tyypillisissä tuotantoskenaarioissa. P-varastointiyksiköt edellyttävät kuukausi- tai vuosisitoumusta, ja ne laskutetaan kuukausittain.
 
 - A-varastointiyksiköiden käyttöä testausskenaarioissa ja tapauksissa, joissa P-varastointiyksiköiden ostamiseen tarvittavia käyttöoikeuksia ei ole (Microsoft 365:n yleisen järjestelmänvalvojan rooli tai laskutuksen järjestelmänvalvojan rooli). A-varastointiyksiköt eivät vaadi aikasitoumusta, ja ne laskutetaan tunneittain. A-varastointiyksiköt ostetaan [Azure-portaalissa](https://portal.azure.com).
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 9c181deb4e36624fa714242583e3fe209abdfb47
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: c166f2d72b170dfb76e3c1f7f6d50052083df6a2
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76889324"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427388"
 ---
 # <a name="create-measures-for-data-analysis-in-power-bi-desktop"></a>Tietoanalyysin mittareiden luominen Power BI Desktopissa
 
@@ -49,7 +49,7 @@ Jan huomaa, että vaikka laskelmaa ei määritetty, se on annettu automaattisest
 
 Jan tarvitsee kuitenkin mittarin, jolla hän voi laskea tulevan vuoden myyntiennusteet, jotka perustuvat edellisen vuoden myyntiin kerrottuna 1.06:lla, joka vastaa odotettua kuuden prosentin nousua. Tätä laskentaa varten hän luo mittarin. Jan luo uuden mittarin käyttämällä *Uusi mittari* -toimintoa ja syöttää seuraavan DAX-kaavan:
 
-```sql
+```dax
     Projected Sales = SUM('Sales'[Last Years Sales])*1.06
 ```
 
