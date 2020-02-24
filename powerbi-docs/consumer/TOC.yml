@@ -8,24 +8,24 @@
           href: end-user-consumer.md
         - name: Peruskäsitteitä ja terminologiaa Power BI -kuluttajille
           href: end-user-basic-concepts.md
+        - name: Tutustu Power BI -palveluun
+          href: end-user-reading-view.md
+    - name: Aloittaminen
+      items:
+        - name: 'Opi käyttämään Power BI:tä'
+          href: end-user-experience.md
         - name: Sisällön etsiminen aloitussivun avulla
           href: end-user-home.md
+        - name: Opi kysymään kysymyksiä luonnollisella kielellä
+          href: end-user-q-and-a.md
+        - name: Ensimmäinen kirjautumiskerta
+          href: end-user-sign-in.md
+        - name: Hae käyttöoikeustyyppisi
+          href: end-user-license.md
         - name: Siirry uuteen ulkoasuun
           href: ../service-new-look.md
         - name: 'Uusi ulkoasu: Minne toiminnot ovat kadonneet?'
           href: ../service-new-look-where-actions.md
-    - name: Pika-aloitus
-      items:
-        - name: 'Opi käyttämään Power BI:tä'
-          href: end-user-experience.md
-        - name: 'Mitä Power BI:llä voi tehdä?'
-          href: end-user-reading-view.md
-        - name: Ensimmäinen kirjautumiskerta
-          href: end-user-sign-in.md
-    - name: Opetusohjelmat
-      items:
-        - name: Koontinäytön hälytyksen luominen
-          href: end-user-alerts.md
     - name: Ohjeet
       items:
         - name: Koontinäytöt
@@ -40,6 +40,10 @@
               href: end-user-tiles.md
             - name: Kommentin lisääminen tai keskustelun aloittaminen
               href: end-user-comment.md
+            - name: Näytä automaattiset merkitykselliset tiedot koontinäytön ruuduille
+              href: end-user-insights.md
+            - name: Koontinäytön hälytyksen luominen
+              href: end-user-alerts.md
         - name: Raportit
           items:
             - name: Raportit
@@ -78,7 +82,7 @@
               href: end-user-visual-type.md
             - name: Visualisoinnin luomiseen käytettyjen tietojen näyttäminen
               href: end-user-show-data.md
-            - name: 'Visualisointiin porautuminen Power BI:ssä'
+            - name: Porautuminen alaspäin visualisoinnissa
               href: end-user-drill.md
             - name: ArcGIS-karttojen käsittely
               href: ../power-bi-visualizations-arcgis.md
@@ -104,8 +108,6 @@
               href: end-user-subscribe.md
             - name: 'Hae ja lajittele sisältöä Power BI:ssä'
               href: end-user-search-sort.md
-            - name: Näytä automaattiset merkitykselliset tiedot koontinäytön ruuduille
-              href: end-user-insights.md
             - name: Ota esikatselutoiminnot käyttöön
               href: end-user-preview-features.md
             - name: Power BI -palvelun ilmoitusten vastaanottaminen
@@ -134,7 +136,7 @@
           href: end-user-faq.md
         - name: Tuetut selaimet
           href: end-user-browsers.md
-        - name: 'Power BI:n tukemat nopeiden merkityksellisten tietojen tyypit'
+        - name: Nopeiden merkityksellisten tietojen tyypit
           href: end-user-insight-types.md
 - name: Power BI -mobiilisovellukset
   items:

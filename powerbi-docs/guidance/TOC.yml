@@ -62,6 +62,10 @@
           items:
             - name: Milloin sivutettuja raportteja kannattaa käyttää?
               href: report-paginated-or-power-bi.md
+            - name: Tietojen noudon ohjeet
+              href: report-paginated-data-retrieval.md
+            - name: Kuvien käytön ohjeet
+              href: report-paginated-image.md
             - name: Johdannaisparametrien käyttäminen
               href: paginated-report-cascading-parameter.md
             - name: Tyhjien sivujen välttäminen tulostettaessa

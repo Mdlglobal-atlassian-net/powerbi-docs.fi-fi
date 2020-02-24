@@ -1,0 +1,101 @@
+### YamlMime:Landing
+title: Kuluttajien Power BI -dokumentaatio
+summary: Kuluttajana saat raporttinäkymiä ja raportteja työtovereilta. Käytät Power BI:tä, jossa voit tarkastella ja käsitellä tätä sisältöä ja tehdä sen perusteella liiketoimintapäätöksiä.
+metadata:
+  title: Power BI kuluttajille
+  description: Power BI:n käytön aloittaminen Tutustu Power BI -palvelun ominaisuuksiin ja toimintoihin ja näet, mitä voit tehdä niiden avulla Power BI:n käyttäjänä tai loppukäyttäjänä.
+  ms.service: powerbi
+  ms.subservice: powerbi-consumer
+  ms.topic: landing-page
+  author: mihart
+  ms.author: mihart
+  ms.date: 01/10/2020
+  ms.openlocfilehash: d08520a7ee3526323111de91c4dfb67e139a8813
+  ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 02/20/2020
+  ms.locfileid: "77497789"
+landingContent:
+- title: Tietoja Power BI:stä kuluttajille
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Mikä Power BI -kuluttaja on?
+      url: end-user-consumer.md
+    - text: Tutustu Power BI -palveluun
+      url: end-user-reading-view.md
+    - text: Käsitteiden ja sisällön tarkasteleminen
+      url: end-user-basic-concepts.md
+- title: Aloittaminen
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Kirjaudu sisään
+      url: end-user-sign-in.md
+  - linkListType: concept
+    links:
+    - text: Lue tietoja raporteista
+      url: end-user-reports.md
+    - text: Lue tietoja raporttinäkymistä
+      url: end-user-dashboards.md
+    - text: Lue tietoja sovelluksista
+      url: end-user-apps.md
+- title: Sisällön tarkasteleminen
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Näytä raportti
+      url: end-user-report-view.md
+    - text: Sisällön näyttäminen suurempana tai yksinään
+      url: end-user-focus.md
+    - text: Visualisoinnin luonnissa käytettävien tietojen näyttäminen
+      url: end-user-show-data.md
+    - text: Tietojen vieminen Exceliin
+      url: end-user-export.md
+- title: Vuorovaikutus ja analysointi
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Liikkuminen Power BI:ssä
+      url: end-user-experience.md
+    - text: Porautuminen alaspäin visualisoinnissa
+      url: end-user-drill.md
+    - text: Visualisoinnin lajittelun muuttaminen
+      url: end-user-change-sort.md
+    - text: Raportin suodattimien käyttäminen
+      url: end-user-report-filter.md
+    - text: Kysymysten kysyminen luonnollisella kielellä
+      url: end-user-q-and-a.md
+- title: Yhteistyö ja jakaminen
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Raportin julkaiseminen PowerPointiin
+      url: end-user-powerpoint.md
+    - text: Raportin vieminen PDF-muotoon
+      url: end-user-pdf.md
+    - text: Sisällön tilaaminen
+      url: end-user-subscribe.md
+- title: Edistyneitä aiheita
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Kirjanmerkkien luominen ja käyttäminen
+      url: end-user-bookmarks.md
+    - text: Automaattisten merkityksellisten tietojen tarkasteleminen
+      url: end-user-insights.md
+    - text: Sivutetun raportin tarkasteleminen
+      url: paginated-reports-view-power-bi-service.md
+- title: Resurssit
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Sanasto
+      url: end-user-glossary.md
+    - text: Usein kysytyt kysymykset
+      url: end-user-faq.md
+    - text: Merkityksellisten tietojen tyypit
+      url: end-user-insight-types.md
+    - text: Visualisointien tyypit
+      url: end-user-visual-type.md
