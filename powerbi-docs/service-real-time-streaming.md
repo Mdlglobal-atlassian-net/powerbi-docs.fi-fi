@@ -82,7 +82,7 @@ Katsotaanpa kutakin vaihtoehtoa yksi kerrallaan.
 ### <a name="using-power-bi-rest-apis-to-push-data"></a>Power BI REST -ohjelmointirajapintojen käyttäminen tietojen siirtämiseen
 **Power BI REST -ohjelmointirajapintojen** avulla voidaan luoda ja lähettää tietoja tietojoukkojen **siirtämiseksi** ja **suoratoistamiseksi**. Kun luot tietojoukon Power BI REST -ohjelmointirajapinnan avulla, *defaultMode* (oletustila) -merkki kertoo, onko tietojoukko tyypiltään push (siirto) vai streaming (suoratoisto). Jos *defaultMode*-merkkiä ei ole asetettu, tietojoukon oletustilana on **push**-tietojoukko.
 
-Jos *defaultMode*-arvoksi on määritetty *pushStreaming*, tietojoukko on sekä **push**- *että***streaming**-tietojoukko, jolloin siinä on kummankin tietojoukkotyypin parhaat puolet. 
+Jos *defaultMode*-arvoksi on määritetty *pushStreaming*, tietojoukko on sekä **push**- *että* **streaming**-tietojoukko, jolloin siinä on kummankin tietojoukkotyypin parhaat puolet. 
 
 > [!NOTE]
 > Käytettäessä tietojoukkoja, joilla *defaultMode* -merkintä, joka on asetettu tilaan *pushStreaming*, jos pyyntö ylittää **streaming**-tietojoukolle asetetun 15 kilotavua kokorajoituksen, mutta on pienempi kuin **push**-tietojoukolle asetettu 16 megatavun kokorajoitus, pyyntö onnistuu ja tiedot päivitetään push-tietojoukkoon. Suoratoistettavat ruudut kuitenkin epäonnistuvat tilapäisesti.

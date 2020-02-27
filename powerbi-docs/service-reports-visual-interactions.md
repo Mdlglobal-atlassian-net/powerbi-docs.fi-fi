@@ -27,7 +27,7 @@ Katso [Tietoja suodattamisesta ja korostamisesta](power-bi-reports-filters-and-h
 
 Tässä artikkelissa kerrotaan, miten voit käyttää **visualisointitoimia** Power BI Desktopissa. Prosessi vastaa Power BI -palvelun [muokkausnäkymää](service-interact-with-a-report-in-editing-view.md). Jos sinulla on vain lukunäkymän käyttöoikeus tai jos raportti on jaettu kanssasi, et voi muuttaa visualisointitoimien asetuksia.
 
-Termejä *ristiinsuodatus* ja *ristiinkorostus* käytetään tässä kuvatun toiminnan erottamiseksi siitä, mitä tapahtuu, kun käytät visualisointien *suodattamiseen* ja *korostamiseen***Suodattimet**-ruutua.  
+Termejä *ristiinsuodatus* ja *ristiinkorostus* käytetään tässä kuvatun toiminnan erottamiseksi siitä, mitä tapahtuu, kun käytät visualisointien *suodattamiseen* ja *korostamiseen* **Suodattimet**-ruutua.  
 
 > [!NOTE]
 > Tässä videossa käytetään Power BI Desktopin ja Power BI -palvelun vanhempia versioita. 
