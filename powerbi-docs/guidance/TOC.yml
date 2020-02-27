@@ -7,6 +7,8 @@
       items:
         - name: Yleiskatsaus
           href: overview.md
+        - name: 'Optimointiopas Power BI:hin'
+          href: power-bi-optimization.md
     - name: Käsitteet
       expanded: true
       items:
@@ -78,6 +80,8 @@
               href: admin-tenant-settings.md
             - name: Paikallisten tietoyhdyskäytävien koko
               href: gateway-onprem-sizing.md
+            - name: Raportin suorituskyvyn valvominen
+              href: monitor-report-performance.md
     - name: Raportit
       items:
         - name: Raporttien yleiskatsaus
