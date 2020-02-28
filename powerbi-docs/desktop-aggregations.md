@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 02/14/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: d8db626300902125cf3536f03ed111ef3e052324
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: b7ff14b4932ba77b47fdb603124d29858c622fc7
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76538718"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427648"
 ---
 # <a name="use-aggregations-in-power-bi-desktop"></a>Koosteiden käyttö Power BI Desktopissa
 
@@ -48,8 +48,8 @@ Kun olet luonut haluamasi kentät sisältävän uuden taulukon, napsauta hiiren 
 **Koosteiden hallinta** -valintaikkunan avattavassa **Yhteenveto**-kohdassa on seuraavat arvot:
 - Määrä
 - Ryhmittelyperuste
-- Suurin
-- Pienin
+- Max
+- Min
 - Summa
 - Laske taulukon rivit
 
@@ -84,7 +84,7 @@ Koosteominaisuus on vuorovaikutuksessa taulukkotason tallennustilojen kanssa. Po
 
 Jos haluat määrittää koostetaulukon tallennustilaksi Tuonti kyselyjen nopeuttamiseksi, valitse koostetaulukko Power BI Desktopin **malli**näkymästä. Laajenna **Ominaisuudet**-ruudussa **Lisäasetukset**-kohtaa, siirry alaspäin valinnassa **Tallennustila**-kohtaan ja valitse **Tuonti**. Ota huomioon, että tämä toiminto on peruuttamaton. 
 
-![Tallennustilan määrittäminen](media/desktop-aggregations/aggregations-04.png)
+![Tallennustilan tilan määrittäminen](media/desktop-aggregations/aggregations-04.png)
 
 Lisätietoja taulukon tallennustiloista löytyy artikkelista [Tallennustilan hallinta Power BI Desktopissa](desktop-storage-mode.md).
 
@@ -116,7 +116,7 @@ Luo sen sijaan **Myyntikooste**-koostetaulukko. **Myyntikooste**-taulukossa rivi
 
 Seuraavia dimensiotaulukoita käytetään useimmiten kyselyille, joilla on merkittävä liikearvo. Ne voivat suodattaa **Myyntikooste**-taulukon käyttämällä *yksi moneen*- tai *monta yhteen* -suhteita.
 
-- Paikkatieto
+- Maantiede
 - Asiakas
 - Päivämäärä
 - Tuotteen aliluokka
@@ -153,7 +153,7 @@ Vahvat suhteet sisältävät seuraavia tallennustilayhdistelmiä, joissa molemma
 | *Monen* puolen taulukko | *1*-puolen taulukko |
 | ------------- |----------------------| 
 | Kaksoistaulukko          | Kaksoistaulukko                 | 
-| Tuonti        | Tuonti- tai kaksoistaulukko       | 
+| Tuo        | Tuonti- tai kaksoistaulukko       | 
 | DirectQuery   | DirectQuery- tai kaksoistaulukko  | 
 
 Ainoa tapaus, jossa *ristilähde*suhdetta pidetään vahvana, on silloin, jos molemman taulukon määrityksenä on Tuonti. Monta moneen -suhteita pidetään aina heikkoina.
@@ -182,9 +182,13 @@ AVERAGE-funktio voi hyötyä koosteista. Seuraava kysely tuottaa osuman koostees
 
 ![AVERAGE-koosteen kysely](media/desktop-aggregations/aggregations-code_06.jpg)
 
-Joissakin tapauksissa DISTINCTCOUNT-funktio voi hyötyä koosteista. Seuraava kysely tuottaa osuman koosteessa, koska **Asiakasavain**-ryhmälle on Ryhmittelyperuste-merkintä, mikä säilyttää **Asiakasavain**-ryhmän erotettavuuden koostetaulukossa. Tämä tekniikka voi silti saavuttaa suorituskykyrajan, jossa yli 2–5 miljoonaa erillistä arvoa voi vaikuttaa kyselyn suorituskykyyn. Se voi kuitenkin olla hyödyllinen tilanteissa, joissa tietotaulukossa on miljardeja rivejä, mutta sarakkeessa on 2–5 miljoonaa erillistä arvoa. Tässä tapauksessa DISTINCTCOUNT-funktio voidaan suorittaa nopeammin kuin miljardeja rivejä sisältävän taulukon tarkistaminen, vaikka se olisi tallennettu välimuistiin.
+Joissakin tapauksissa DISTINCTCOUNT-funktio voi hyöytä koosteista. Seuraava kysely tuottaa osuman koosteessa, koska **Asiakasavain**-ryhmälle on Ryhmittelyperuste-merkintä, mikä säilyttää **Asiakasavain**-ryhmän erotettavuuden koostetaulukossa. Tämä tekniikka voi silti saavuttaa suorituskykyrajan, jossa yli 2–5 miljoonaa erillistä arvoa voi vaikuttaa kyselyn suorituskykyyn. Se voi kuitenkin olla hyödyllinen tilanteissa, joissa tietotaulukossa on miljardeja rivejä, mutta sarakkeessa on 2–5 miljoonaa erillistä arvoa. Tässä tapauksessa DISTINCTCOUNT-funktio voidaan suorittaa nopeammin kuin miljardeja rivejä sisältävän taulukon tarkistaminen, vaikka se olisi tallennettu välimuistiin.
 
 ![DISTINCTCOUNT-koosteen kysely](media/desktop-aggregations/aggregations-code_07.jpg)
+
+DAX-aikatietofunktiot havaitsevat koosteet. Seuraava kysely osuu koosteeseen, koska DATESYTD-funktio luo **CalendarDay**-arvojen taulukon ja koska koostetaulukon rakeisuustaso on sellainen,että **Date**-taulukon ryhmittelysarake kattaa sen. Tämä on esimerkki CALCULATE-funktion taulukkoarvoisesta suodattimesta, joka voi toimia koosteiden kanssa.
+
+![SUMMARIZECOLUMNS-koostekysely](media/desktop-aggregations/aggregations-code-07b.jpg)
 
 ## <a name="aggregation-based-on-groupby-columns"></a>Ryhmittelyperuste-sarakkeisiin perustuva kooste 
 
@@ -224,7 +228,7 @@ Seuraava kysely tuottaa osuman koosteessa, koska koostetaulukko kattaa **Toimint
 
 Voit yhdistää suhteita ja Ryhmittely-sarakkeiden tekniikoita koosteita varten. Suhteisiin perustuvat koosteet saattavat edellyttää, että denormalisoidut dimensiotaulukot jaetaan useisiin taulukoihin. Jos tämä on kallista tai hankalaa tietyille dimensiotaulukoille, voit replikoida tarvittavat määritteet koostetaulukossa näille dimensioille ja käyttää suhteita muille dimensioille.
 
-Esimerkiksi seuraava malli replikoi **Kuukausi**-, **Vuosineljännes**-, **Puolivuosi**- ja **Vuosi**-arvot **Myyntikooste**-taulukkoon. **Myyntikooste**- ja **Päivämäärä**-taulukoiden välillä ei ole suhdetta, mutta suhteita on **Asiakas**- ja **Tuotteen aliluokka** -taulukoihin. **Myyntikooste**-taulukon tallennustila on Tuonti.
+Esimerkiksi seuraava malli replikoi **Kuukausi**-, **Vuosineljännes**-, **Puolivuosi**- ja **Vuosi**-arvot **Myyntikooste**-taulukkoon. **Myyntikooste**- ja **Päivämäärä**-taulukoiden välillä ei ole suhdetta, mutta suhteita on **Asiakas**- ja **Tuotteen aliluokka** -taulukoihin. **Myyntikooste**-taulukon tallennustila on tuonti.
 
 ![Yhdistetyt koostetekniikat](media/desktop-aggregations/aggregations_15.jpg)
 
@@ -254,7 +258,7 @@ Seuraava esimerkki on [yhdistelmämalli](desktop-composite-models.md), joka sis�
 
 - **Kuljettajan toiminta** DirectQuery -taulukko sisältää yli biljoona riviä IoT-tietoja, jotka ovat peräisin massadatajärjestelmästä. Se käyttää porautumiskyselyjä yksittäisten IoT-lukemien näyttämiseen hallituissa suodatinkonteksteissa.
 - **Kuljettajan toiminnan kooste** -taulukko on välitason koostetaulukko DirectQuery-tilassa. Se sisältää yli miljardi riviä Azure SQL Data Warehousessa ja on optimoitu lähteessä sarakesäilöindeksejä käyttämällä.
-- **Kuljettajan toiminnan kooste2** -tuontitaulukon rakeisuus on suurempi, koska ryhmittelyperuste-määritteitä on vähän ja niiden kardinaliteetti on pieni. Rivejä voi olla vain tuhansia, joten se mahtuu helposti välimuistiin. Näitä määritteitä käytetään tärkeässä johtajatason koontinäkymässä, joten niihin viittaavien kyselyjen on oltava mahdollisimman nopeita.
+- **Kuljettajan toiminnan kooste2** -tuontitaulukon rakeisuus on suurempi, koska ryhmittelyperuste-määritteitä on vähän ja niiden kardinaliteetti on pieni. Rivejä voi olla vain tuhansia, joten se mahtuu helposti välimuistiin. Näitä määritteitä käytetään tärkeässä johtajatason raporttinäkymässä, joten niihin viittaavien kyselyjen on oltava mahdollisimman nopeita.
 
 > [!NOTE]
 > DirectQuery-koostetaulukoita, jotka käyttävät tietotaulukon eri tietolähdettä, tuetaan vain, jos koostetaulukko on SQL Server-, Azure SQL- tai Azure SQL Data Warehouse -lähde.

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 12/03/2019
+ms.date: 02/20/2020
 LocalizationGroup: Gateways
-ms.openlocfilehash: 889fbce483f839147677789c73d826fa23542731
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: aacab1541f336ed12c36dab8243d0096c9a6ed19
+ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75000108"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558636"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Kerberos-pohjaisen kertakirjautumisen määrittäminen Power BI -palvelusta paikallisiin tietolähteisiin
 
@@ -246,11 +246,17 @@ SAP HANA ja SAP BW sisältävät ylimääräisiä tietolähdekohtaisia määrity
 
 ## <a name="run-a-power-bi-report"></a>Power BI -raportin suorittaminen
 
-Kun olet suorittanut kaikki määritysvaiheet, käytä Power BI:n **yhdyskäytävän hallintasivua** kertakirjautumisessa käytettävän tietolähteen määrittämiseen. Jos käytössäsi on useita yhdyskäytäviä, varmista, että valitset yhdyskäytävän, jonka olet määrittänyt Kerberos-kertakirjautumiselle. Varmista sitten tietolähteen kohdalla **Lisäasetukset** -kohdassa, että **Käytä DirectQuery-kyselyissä kertakirjautumista Kerberoksen kautta** -kohta on valittuna.
+Kun olet suorittanut kaikki määritysvaiheet, käytä Power BI:n **yhdyskäytävän hallintasivua** kertakirjautumisessa käytettävän tietolähteen määrittämiseen. Jos käytössäsi on useita yhdyskäytäviä, varmista, että valitset yhdyskäytävän, jonka olet määrittänyt Kerberos-kertakirjautumiselle. Varmista sitten, että tietolähteen **Lisäasetukset**-kohdassa on valittuna **Käytä DirectQuery-kyselyissä kertakirjautumista Kerberoksen kautta** tai **Käytä DirectQuery- ja tuontikyselyissä kertakirjautumista Kerberoksen kautta** DirectQuery-pohjaisille raporteille ja että **Käytä DirectQuery- ja tuontikyselyissä kertakirjautumista Kerberoksen kautta** on valittuna päivityspohjaisille raporteille.
 
-![Lisäasetukset-vaihtoehto](media/service-gateway-sso-kerberos/advanced-settings.png)
+![Lisäasetukset-vaihtoehto](media/service-gateway-sso-kerberos/advanced-settings-02.png)
 
- Julkaise DirectQuery-pohjainen raportti Power BI Desktopista. Tämän raportin on käytettävä tietoja, joita käyttäjä voi käyttää ja jotka on yhdistetty (Azure) Active Directory -käyttäjään, joka kirjautuu Power BI -palveluun. Päivityksen toimintotavan vuoksi sinun täytyy käyttää DirectQueryä tuonnin sijaan. Kun yhdyskäytävä päivittää tuontipohjaisia raportteja, se käyttää **Käyttäjänimi**- ja **Salasana**-kenttiin syöttämiäsi tunnistetietoja tietolähteen luonnin aikana. Toisin sanoen Kerberos-kertakirjautumista *ei* käytetä. Kun julkaiset, valitse yhdyskäytävä, jonka olet määrittänyt kertakirjautumiselle, jos sinulla on useita yhdyskäytäviä. Power BI -palvelussa voit nyt päivittää raportin tai luoda uuden raportin julkaistun tietojoukon perusteella.
+Jos julkaiset DirectQuery-pohjaisen raportin Power BI Desktopista ja yhdistät sen tietolähteeseen silloin, kun **Käytä DirectQuery-kyselyissä kertakirjautumista Kerberoksen kautta** tai **Käytä DirectQuery- ja tuontikyselyissä kertakirjautumista Kerberoksen kautta** on valittuna, kyseinen raportti käyttää tietoja, jotka ovat Power BI -palveluun kirjautuvaan (Azure) Active Directory -käyttäjään yhdistetyn käyttäjän käytettävissä.
+
+Samoin jos julkaiset päivityspohjaisen raportin Power BI Desktopista ja yhdistät sen tietolähteeseen, kun **Käytä DirectQuery- ja tuontikyselyissä kertakirjautumista Kerberoksen kautta** on valittuna, sinun ei tarvitse antaa tunnistetietoja. Päivitys suoritetaan tietojoukon omistajan Active Directory -kontekstin alaisuudessa.
+
+Jos kuitenkin yhdistät sen tietolähteeseen, jossa **Käytä DirectQuery- ja tuontikyselyissä kertakirjautumista Kerberoksen kautta** ei ole valittuna, päivitys käyttää tunnistetietoja, jotka täytit **Käyttäjänimi**- ja **Salasana**-kenttiin tietolähdettä luodessasi. Toisin sanoen Kerberos-kertakirjautumista *ei* käytetä. 
+
+ Kun julkaiset, valitse yhdyskäytävä, jonka olet määrittänyt kertakirjautumiselle, jos sinulla on useita yhdyskäytäviä. 
 
 Tämä määritys toimii useimmissa tapauksissa. Kerberoksessa voi kuitenkin olla eri määrityksiä ympäristösi mukaan. Jos raportti ei lataudu, ota yhteyttä toimialueen järjestelmänvalvojaan asian selvittämiseksi. Jos tietolähteesi on SAP BW, saat lisätietoja myös tietolähdekohtaisista vianmääritysosiosta [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting)- ja [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting)-kirjastoille valitsemasi SNC-kirjaston mukaan.
 

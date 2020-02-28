@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 21d663b2f29a8090e6cfb7013d16c739ef0a29b3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7c0c08e8056232fa7c60b20faf48b0137a19bc5f
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851449"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496391"
 ---
 # <a name="drill-mode-in-a-visual-in-power-bi"></a>Visualisointiin porautumistila Power BI:ssä
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -32,6 +34,7 @@ Päivämäärät ovat hierarkian yksilöivä tyyppi.  Raporttien suunnittelijat 
 Etkö ole varma, mitkä Power BI -visualisoinnit sisältävät hierarkian? Liikuta hiiren osoitinta visualisoinnin päällä. Jos näet porautumisen ohjausobjektien yhdistelmän ylhäällä, visualisoinnissa on hierarkia.
 
 ![Näyttökuva porautumiskuvakkeista.](./media/end-user-drill/power-bi-drill-icons.png)  
+
 
 ## <a name="learn-how-to-drill-down-and-up"></a>Opi porautumaan alas- ja ylöspäin
 
@@ -141,7 +144,9 @@ Huomaa, että kokonaismäärät ovat samat kohdissa **Kaupunki**, **Postinumero*
 
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
-Oletusarvoisesti poraaminen ei suodata raportin muita visualisointeja. Raportin suunnittelija voi kuitenkin muuttaa tätä oletustoimintaa. Kun poraudut, katso, ovatko sivun muut visualisoinnit ristiinsuodatettu tai ristiinkorostettu.
+- Oletusarvoisesti poraaminen ei suodata raportin muita visualisointeja. Raportin suunnittelija voi kuitenkin muuttaa tätä oletustoimintaa. Kun poraudut, katso, ovatko sivun muut visualisoinnit ristiinsuodatettu tai ristiinkorostettu.
+
+- Kanssasi jaetun raportin tarkasteleminen edellyttää Power BI Pro- tai Premium-käyttö oikeuden. [Mikä käyttöoikeus minulla on?](end-user-license.md)
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
@@ -152,4 +157,4 @@ Oletusarvoisesti poraaminen ei suodata raportin muita visualisointeja. Raportin 
 
 [Power BI:n peruskäsitteet](end-user-basic-concepts.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

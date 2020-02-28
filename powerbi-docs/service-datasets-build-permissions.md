@@ -6,21 +6,27 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/01/2019
+ms.date: 02/12/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b17fa4299d2db84f63f0d8f7ed4c17a0c9c437db
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 48380d40d819ea1af74430546b9548c372bd2091
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872548"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426606"
 ---
 # <a name="build-permission-for-shared-datasets-preview"></a>Jaettujen tietojoukkojen muodostamisoikeus (esiversio)
 
-Power BI Desktopin *tietomallien* luojana voit jakaa niitä *tietojoukkoina* Power BI -palvelussa. Tämän jälkeen raporttien tekijät voivat helposti etsiä ja käyttää uudelleen jakamiasi tietojoukkoja. Lue ohjeet siihen, miten voit hallita tietojen käyttöä muodostamisoikeuden avulla.
+Kun luot raportin Power BI Desktopissa, raportin tiedot tallennetaan *tietomalliin*. Kun julkaiset raporttisi Power BI -palvelussa, julkaiset tiedot myös *tietojoukkona*. Voit antaa muille *muodostamisoikeuden* kyseiseen raporttiin, jotta he voivat löytää jakamasi tietojoukon ja käyttää sen uudelleen. Tässä artikkelissa on ohjeet siihen, miten voit hallita tietojen käyttöä muodostamisoikeuden avulla.
 
-Muodostamisoikeus koskee vain tietojoukkoja. Kun annat käyttäjille muodostamisoikeuksia, he voivat luoda uutta sisältöä tietojoukkoon, esimerkiksi raportteja, koontinäyttöjä, Q&A;n kiinnitettyjä ruutuja ja merkityksellisten tietojen hakuja. Käyttäjät voivat luoda uutta sisältöä tietojoukkoon myös Power BI:n ulkopuolella, esimerkiksi Excel-laskentataulukoita Analysoi Excelissä -toiminnolla, XMLA:lla ja viemällä pohjana olevat tiedot.
+Muodostamisoikeus koskee tietojoukkoja. Kun annat käyttäjille muodostamisoikeuksia, he voivat luoda uutta sisältöä tietojoukkosi perusteella, esimerkiksi raportteja, koontinäyttöjä, Q&A:n kiinnitettyjä ruutuja ja merkityksellisten tietojen hakuja. 
+
+Käyttäjillä on myös oltava muodostamisoikeudet, jotta he voivat käsitellä tietoja Power BI:n *ulkopuolella*:
+
+- Pohjana olevien tietojen vieminen.
+- Uuden sisällön luominen tietojoukon perusteella, esimerkiksi [Analysoi Excelissä](service-analyze-in-excel.md) -toiminnolla.
+- Tietojen käyttäminen XMLA-päätepisteen kautta.
 
 ## <a name="ways-to-give-build-permission"></a>Tapoja antaa muodostamisoikeus
 

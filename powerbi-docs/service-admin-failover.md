@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 02/20/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 24867d231cca0135c09119f4b885b393cb2b8dd8
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 3dd50d4f57b3146135cde5e91062ed3b2a0eecc1
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699057"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527334"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Power BI:n suuren käytettävyyden, vikasietoisuuden ja järjestelmäpalautuksen usein kysytyt kysymykset
 
@@ -53,7 +53,10 @@ Power BI -tukisivulla ([https://powerbi.microsoft.com/support/](https://powerbi.
 
 ## <a name="how-long-does-it-take-power-bi-to-fail-over"></a>Kuinka kauan Power BI:n vikasietoisuuden toteutus kestää?
 
-Kun vikasietopäätös on tehty, vikasietoesiintymän käyttöön saamisessa voi kestää jopa 60 minuuttia.
+Kestää noin 15 minuuttia, että Power BI toimii jälleen sen jälkeen, kun on todettu, että vikasieto vaaditaan. Aika, joka tarvitaan vikasietotarpeen tunnistamiseen, vaihtelee toimimattoman skenaarion mukaan. 
+
+Kun vikasieto suoritetaan, Power BI käyttää Azure-tallennuksen maantieteellistä replikointia vikasiedon suorittamiseksi. Tällaisten replikointien palautuspiste on yleensä 15 minuuttia, mutta [Azure-tallennus ei takaa tätä aikaa](https://docs.microsoft.com/azure/storage/common/storage-redundancy) palvelutasosopimuksen yhteydessä, joten Power BI ei myöskään pysty takaamaan ajanjaksoa. 
+
 
 ## <a name="when-does-my-power-bi-instance-return-to-the-original-region"></a>Milloin Power BI -esiintymäni palaa alkuperäiselle alueelle?
 

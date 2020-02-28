@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 02/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 3a2b06071986b6994c68bde06e87c5ae7f5e7360
-ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
+ms.openlocfilehash: f22b235ddb1918bda5284f72759485d01c4ceab9
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75953729"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496738"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktopin aiemmat kuukausipäivitykset
 
@@ -32,6 +32,89 @@ Kunkin päivityksen vieressä olevat linkit tarkoittavat seuraavaa:
 Voit myös katsoa **Uusimmat päivitykset** -videon, joka on aivan tämän artikkelin alussa. Napsauta päivitysluettelon alla olevan videokuvan **toistokuvaketta**.
 
 Seuraavat osiot käsittelevät **Power BI Desktopin** aiempien kuukausien päivityksiä.
+
+
+## <a name="december-2019-update-2765678661"></a>Joulukuun 2019 päivitys (2.76.5678.661)
+
+Joulukuun päivityksemme olivat yhtä hauskoja kuin laskettelu lumisessa rinteessä. 
+
+> [!IMPORTANT]
+> Syyskuun 2019 versiosta alkaen Power BI Desktop toimitetaan vain yksittäisenä .exe-tiedostona, joka sisältää kaikki tuetut kielet. .msi-versiota ei enää julkaista.
+
+Power BI Desktop -päivitysluettelon jokaisen ominaisuuden vieressä olevat linkit tulkitaan seuraavasti:
+
+* [blogi]: Most features are explained in a section in the monthly update blog post.
+* [video]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
+* [artikkeli]: Some features have an article that provides more detail.
+* Muut ominaisuudet ovat itsestään selviä eivätkä tarvitse tuekseen artikkelia tai videota.
+
+Seuraavat päivitykset olivat uutta Power BI Desktopissa tässä kuussa:
+
+### <a name="reporting"></a>Raportointi
+* Teemojen päivitykset (esikatselu) [[video]](https://youtu.be/eCEwgZsVUOs?t=10)  [[artikkeli]](desktop-report-themes.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#customizeTheme) 
+* Vie nykyinen teema (esikatselu) [[video]](https://youtu.be/eCEwgZsVUOs?t=242)  [[artikkeli]](desktop-report-themes.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#exportTheme) 
+* Taulukon sarakkeen tai matriisin arvon määrittäminen mukautetuksi URL-osoitteeksi [[video]](https://youtu.be/eCEwgZsVUOs?t=277)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#customURL) 
+* Suorituskykyilmaisimen visualisoinnin muotoilun asetukset [[video]](https://youtu.be/eCEwgZsVUOs?t=354)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#KPI) 
+* Uusi hajontapuumuotoilu [[video]](https://youtu.be/eCEwgZsVUOs?t=442)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#decomp) 
+* Suodatinruudun vaihtopainike uudessa valintanauhassa [[video]](https://youtu.be/eCEwgZsVUOs?t=599)    [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#filterToggle) 
+* Automaattisen sivun päivittämisen kyselyn tiedot [[video]](https://youtu.be/eCEwgZsVUOs?t=717)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#APR) 
+
+
+### <a name="analytics"></a>Analytiikka
+* Lataa lisää merkityksellisten tietojen analysointia varten [[video]](https://youtu.be/eCEwgZsVUOs?t=831)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#moreAI) 
+* Uusi DAX-funktio: Quarter [[video]](https://youtu.be/eCEwgZsVUOs?t=855)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#quarter) 
+
+
+### <a name="visuals"></a>Visualisoinnit
+* Visualisoinnit-ruudun mukauttaminen (yleisesti saatavilla) [[video]](https://youtu.be/eCEwgZsVUOs?t=865)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#personalizeViz) 
+* Uudet mukautetut visualisoinnit [[video]](https://youtu.be/eCEwgZsVUOs?t=886)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#xViz) 
+
+
+### <a name="data-connectivity"></a>Tietoyhteydet
+* Azure Data Lake Storage Gen2 -liitin (yleisesti saatavilla) [[video]](https://youtu.be/eCEwgZsVUOs?t=2151)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/) 
+* Power Platform -tietovuot -liitin (yleisesti saatavilla) [[video]](https://youtu.be/eCEwgZsVUOs?t=2180)  [[artikkeli]](service-edit-sap-variables.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#ADLS) 
+* PostgreSQL-liitin sisältää nyt Npgsql-toimittajan [[video]](https://youtu.be/eCEwgZsVUOs?t=2220)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#PostgreSQL) 
+* AtScale-yhdistin (yleisesti saatavilla) [[video]](https://youtu.be/eCEwgZsVUOs?t=2245)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#AtScale) 
+* Azuren Time Series Insights -liitin [[video]](https://youtu.be/eCEwgZsVUOs?t=2261)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#ATS) 
+* Data Virtuality -liitin [[video]](https://youtu.be/eCEwgZsVUOs?t=2294)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#DataVirt) 
+* Zucchetti HR infinity -liitin [[video]](https://youtu.be/eCEwgZsVUOs?t=2345) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#Zucchetti) 
+
+
+### <a name="data-preparation"></a>Tietojen valmistelu
+* Tekoälyn merkityksellisten tietojen päivitykset (esikatselu) [[video]](https://youtu.be/eCEwgZsVUOs?t=2366)  [[artikkeli]](desktop-ai-insights.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#AIfunc) 
+
+
+### <a name="template-apps"></a>Mallisovellukset
+* Monikanavan merkitykselliset tiedot Dynamics 365:een[[video]](https://youtu.be/eCEwgZsVUOs?t=2416)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#Omni) 
+* Asiakaspalveluanalytiikka Dynamics 365:een  [[video]](https://youtu.be/eCEwgZsVUOs?t=2500)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#CS)
+* Microsoft Forms Pro asiakaspalveluille[[video]](https://youtu.be/eCEwgZsVUOs?t=2525)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#Forms) 
+
+
+Lisätietoja näistä uusista ominaisuuksista on [Power BI Desktopin joulukuun 2019 ominaisuusyhteenvedossa](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/).
+
+Tutustu [Power BI -palvelun uusiin ominaisuuksiin](service-whats-new.md) ja [Power BI -mobiilisovellusten uusiin ominaisuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+> [!NOTE]
+> Katso [Power BI Desktopin käytettävissä olevia tietolähteitä](desktop-data-sources.md). Luettelomme pitenee jatkuvasti, joten tarkista se usein.
+
+
+## <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktopin kuukausittainen päivitysvideo
+Seuraavassa videossa esitellään jokainen näistä päivityksistä. Voit katsoa tämän videon myös blogikirjoituksen kautta:
+
+> [!VIDEO https://www.youtube.com/embed/eCEwgZsVUOs]
+
+Voit myös ladata Power BI Desktopin edellisiä versioita, jos organisaatiosi vaatii niin. Suosittelemme aina Power BI Desktopin uusimman version käyttämistä jonkin aiemman version sijasta. Kaikkia aiempia versioita koskevat seuraavat rajoitukset:
+
+* Power BI Desktopin aiempia versioita ei ylläpidetä – uusinta julkaisua tulee aina käyttää, jotta saa käyttöönsä uusimmat ominaisuudet ja päivitykset.
+* Power BI Desktopin aiemmilla versioilla ei ehkä voi avata tiedostoja, jotka on luotu tai tallennettu Power BI Desktopin uusimmilla versioilla. 
+* Jos saat varoituksen, kun lataat Power BI Desktopin uudemmassa versiossa tallennettua raporttia, ja tallennat raportin sitten aiemmassa versiossa, menetät kaikki uusiin ominaisuuksiin liittyvät tiedot.
+* Arkistoimme vain Power BI Desktopin englanninkieliset versiot.
+
+Valitse jompikumpi seuraavista linkeistä, jos haluat ladata aiemman version: 
+
+* [Power BI Desktop, joulukuun 2019 versio – 32-bittinen](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2019-12.exe)
+* [Power BI Desktop, joulukuun 2019 versio – 64-bittinen](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2019-12_x64.exe)
+
 
 
 ## <a name="november-2019-update-2755649341"></a>Marraskuun 2019 päivitys (2.75.5649.341)

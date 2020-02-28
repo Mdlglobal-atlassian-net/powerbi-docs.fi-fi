@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/09/2020
+ms.date: 02/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0cf9d6acd4fe5f729dafb575a2ab736b9e8db7bb
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: f13c8f34fbbe927ee6929a0b3e717248aedd63d0
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76039804"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427549"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktopin tietolähteet
 
@@ -89,8 +89,8 @@ Seuraavassa kuvassa näkyy **Tiedosto**-luokan **Nouda tiedot** -ikkuna.
 * Vertica
 * Snowflake
 * Essbase
-* AtScale-kuutiot (beeta)
-* BI-liitin
+* AtScale-kuutiot
+* BI-liittimen tietojen virtuaalisuus, LDW (beeta)
 * Denodo
 * Dremio
 * Exasol
@@ -162,7 +162,6 @@ Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 * Adobe Analytics
 * appFigures (beeta)
 * Data.World – nouda tietojoukko (beeta)
-* Facebook
 * GitHub (beeta)
 * LinkedIn Sales Navigator (beeta)
 * MailChimp (beeta)
@@ -182,6 +181,7 @@ Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 * Dynamics 365 Customer Insights (beeta)
 * Emigo-tietolähde
 * Entersoft Business Suite (beeta)
+* FactSet Analytics (beeta)
 * App Store teollisuuskäyttöön
 * Intune-tietovarasto (beeta)
 * Microsoft Graph Security (beeta)
@@ -210,7 +210,10 @@ Seuraavassa kuvassa näkyy **Online-palvelut**-luokan **Nouda tiedot** -ikkuna.
 * ODBC
 * OLE DB
 * BI360 – Budjetointi- ja talousraportointi (beeta)
+* FHIR
 * Tietoruudukko (beeta)
+* Jamf Pro (beeta)
+* MicroStrategy for Power BI
 * Paxata
 * QubolePresto (beeta)
 * Roamler (beeta)
@@ -219,6 +222,7 @@ Seuraavassa kuvassa näkyy **Online-palvelut**-luokan **Nouda tiedot** -ikkuna.
 * Tenforce (Smart)List (beeta)
 * Vena (beeta)
 * Työvoiman dimensiot (beeta)
+* Zucchetti HR Infinity (beeta)
 * Tyhjä kysely
 
 Seuraavassa kuvassa näkyy **Muut**-luokan **Nouda tiedot** -ikkuna.

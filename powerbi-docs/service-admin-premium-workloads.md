@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 02/14/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 924be90a8598c561a12ed87872bdfbd4681831c8
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: ae05fdcd3a38f10707e991524bac61a305b88794
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76889370"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427710"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Premium-kapasiteettien kuormitusten määrittäminen
 
@@ -170,7 +170,7 @@ Sivutettujen raporttien kuormituksen avulla voit suorittaa SQL Server Reporting 
 | **Muistin enimmäismäärä (%)** | Sivutettujen raporttien käytettävissä olevan muistin enimmäismäärä prosentteina kapasiteetissa. |
 |  |  |
 
-Sivutetut raportit mahdollistavat mukautetun koodin suorittamisen, kun raporttia hahmonnetaan. Voit esimerkiksi muuttaa tekstin väriä dynaamisesti sisällön perusteella, mikä käyttää enemmän muistia. Power BI Premium suorittaa sivutetut raportit rajoitetussa tilassa kapasiteetin sisällä. 
+Sivutetut raportit tarjoavat samat toiminnot kuin nykyiset SQL Server Reporting Services (SSRS) -raportit, mukaan lukien raportin tekijöiden mahdollisuuden lisätä mukautettua koodia.  Tämän ansiosta tekijät voivat muuttaa raportteja dynaamisesti esimerkiksi muuttamalla tekstien värejä koodilausekkeiden perusteella.  Asianmukainen eristäminen varmistetaan suorittamalla sivutetut raportit kunkin kapasiteetin suojatussa eristyksessä. Samoilla kapasiteeteilla suoritettavat raportit voivat aiheuttaa niiden välisiä sivuvaikutuksia. Tavallisesti rajoitetaan, ketkä voivat julkaista sisältöä SSRS-esiintymään, ja samanlaista käytäntöä kannattaa noudattaa sivutettujen raporttien kanssa. Varmista, että organisaatio luottaa niihin tekijöihin, jotka julkaisevat sisältöä kapasiteettiin. Voit suojata ympäristöäsi vielä paremmin valmistelemalla useita kapasiteetteja ja määrittämällä kuhunkin eri tekijät. 
 
 Joissakin tapauksissa sivutettujen raporttien kuormitus saattaa lakata toimimasta. Näissä tapauksissa kuormitus näyttää virhetilan hallintaportaalissa ja raportin hahmontaminen aikakatkaistaan käyttäjiltä. Voit ratkaista ongelman poistamalla kuormituksen käytöstä ja ottamalla sen uudelleen käyttöön.
 

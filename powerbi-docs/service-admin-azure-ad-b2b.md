@@ -1,6 +1,6 @@
 ---
 title: Sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla
-description: Power BI on integroitu Azure Active Directory Business-to-Businessin (Azure AD B2B) kanssa, jotta Power BI -sisältöä voidaan jakaa turvallisesti organisaation ulkopuolisten vierailevien käyttäjien kanssa.
+description: Power BI mahdollistaa sisällön jakamisen ulkopuolisten vieraskäyttäjien kanssa Azure Active Directory Business-to-Businessin (Azure AD B2B:n) kautta.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,43 +9,44 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 2a17e4963d4607b67279f65205579e115df2e550
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.openlocfilehash: 828736dac528a8ba8c77b90162309236f5bc7018
+ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77026642"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558604"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla
 
-Power BI on integroitu Azure Active Directory Business-to-Businessiin (Azure AD B2B), jotta Power BI -sisältöä voidaan jakaa turvallisesti organisaation ulkopuolisille vieraskäyttäjille säilyttäen samalla sisäisten tietojen hallinta. Lisäksi voit myös sallia organisaation ulkopuolisten vieraskäyttäjien muokata ja hallita organisaatiosi sisäistä sisältöä.
+Power BI mahdollistaa sisällön jakamisen ulkopuolisten vieraskäyttäjien kanssa Azure Active Directory Business-to-Businessin (Azure AD B2B:n) kautta.
+Azure AD B2B:n avulla organisaatiosi mahdollistaa jakamisen ulkoisten käyttäjien kanssa ja hallitsee sitä yhdestä paikasta. Ulkoisilla käyttäjillä on oletusarvoisesti oikeudet ainoastaan käyttää sisältöä. Lisäksi voit myös sallia organisaation ulkopuolisten vieraskäyttäjien muokata ja hallita organisaatiosi sisäistä sisältöä.
 
 Tässä artikkelissa annetaan perustiedot Azure AD B2B:stä Power BI:ssä. Lisätietoja saat kohdasta [Power BI ‑sisällön jakaminen ulkoisille vieraskäyttäjille Azure Active Directory B2B:n avulla](whitepaper-azure-b2b-power-bi.md).
 
 ## <a name="enable-access"></a>Käytön salliminen
 
-Varmista, että [Jaa sisältöä ulkoisten käyttäjien kanssa](service-admin-portal.md#export-and-sharing-settings) -ominaisuus on käytössä Power BI -hallintaportaalissa, ennen kuin kutsut vieraskäyttäjiä. Vaikka asetus on käytössä, käyttäjällä on oltava Azure Active Directoryssa oikeus kutsua vieraskäyttäjiä. Oikeuden voi määrittää Vieraiden kutsuja -roolissa. 
+Varmista, että [Jaa sisältöä ulkoisten käyttäjien kanssa](service-admin-portal.md#export-and-sharing-settings) -ominaisuus on käytössä Power BI -hallintaportaalissa, ennen kuin kutsut vieraskäyttäjiä. Vaikka asetus on käytössä, käyttäjällä on oltava Azure Active Directoryssa oikeus kutsua vieraskäyttäjiä. Oikeus määritetään Vieraiden kutsuja -roolissa. 
 
-Voit käyttää myös [Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) -toimintoa. Sen avulla voit valita vieraskäyttäjän, joka voi tarkastella ja luoda sisältöä työtiloissa, esimerkiksi selata organisaatiosi Power BI:tä.
+[Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) -vaihtoehdon avulla voit antaa vieraskäyttäjille oikeudet nähdä ja luoda sisältöä työtiloissa sekä myös selata organisaatiosi Power BI:tä.
 
 > [!NOTE]
-> [Jaa sisältöä ulkoisten käyttäjien kanssa](service-admin-portal.md#export-and-sharing-settings) -asetuksella määritetään, voiko ulkoisia käyttäjiä kutsua organisaatioosi Power BI:n kautta. Kun ulkoinen käyttäjä hyväksyy kutsun, hänestä tulee organisaatiosi Azure AD B2B -vieraskäyttäjä. Vieraskäyttäjät näkyvät valittavina henkilöinä Power BI:n valitsimissa. Kun asetus on poistettu käytöstä, organisaatiosi nykyisillä vieraskäyttäjillä säilyvät oikeudet kaikkiin kohteisiin, joihin heillä oli käyttöoikeus. Lisäksi he näkyvät edelleen henkilöiden valitsimissa. Jos vieraita lisätään suunniteltuina kutsuina, he näkyvät niin ikään valittavina henkilöinä. Jos haluat estää vieraskäyttäjiä käyttämästä Power BI:tä, voit käyttää Azure AD:n ehdollista käyttöoikeuskäytäntöä.
+> [Jaa sisältöä ulkoisten käyttäjien kanssa](service-admin-portal.md#export-and-sharing-settings) -asetuksella määritetään, salliko Power BI ulkoisten käyttäjien kutsumisen organisaatioosi. Kun ulkoinen käyttäjä hyväksyy kutsun, hänestä tulee organisaatiosi Azure AD B2B -vieraskäyttäjä. Vieraskäyttäjät näkyvät valittavina henkilöinä Power BI:n valitsimissa. Kun asetus on poistettu käytöstä, organisaatiosi nykyisillä vieraskäyttäjillä säilyvät oikeudet kaikkiin kohteisiin, joihin heillä oli käyttöoikeus. Lisäksi he näkyvät edelleen henkilöiden valitsimissa. Jos vieraita lisätään [suunniteltuina kutsuina](#planned-invites), he näkyvät niin ikään valittavina henkilöinä. Jos haluat estää vieraskäyttäjiä käyttämästä Power BI:tä, käytä Azure AD:n ehdollista käyttöoikeuskäytäntöä.
 
 ## <a name="who-can-you-invite"></a>Kenet voi kutsua?
 
-Vieraskäyttäjiä sallitaan useimmista sähköpostipalveluista. Myös henkilökohtaiset tilit, kuten gmail.com, outlook.com tai hotmail.com, ovat sallittuja. Azure AD B2B:ssä näitä osoitteita kutsutaan *sosiaalisiksi käyttäjätiedoiksi*.
+Vieraskäyttäjiä sallitaan organisaatioosi useimmista sähköpostipalveluista. Myös henkilökohtaiset tilit, kuten gmail.com, outlook.com tai hotmail.com, ovat sallittuja. Azure AD B2B:ssä näitä osoitteita kutsutaan *sosiaalisiksi käyttäjätiedoiksi*.
 
 Et voi kutsua julkishallinnon pilvipalveluun, kuten [Yhdysvaltain valtionhallinnon Power BI](service-govus-overview.md), liittyviä käyttäjiä.
 
 ## <a name="invite-guest-users"></a>Vieraskäyttäjien kutsuminen
 
-Vieraskäyttäjät tarvitsevat kutsun vain, kun kutsut heidät organisaatioosi ensimmäisen kerran. Voit kutsua käyttäjiä kahdella tavalla: suunnitelluilla kutsuilla ja ad hoc -kutsuilla.
+Vieraskäyttäjät tarvitsevat kutsun vain, kun kutsut heidät organisaatioosi ensimmäisen kerran. Voit kutsua käyttäjiä suunniteltujen tai ad hoc ‑kutsujen avulla.
 
-Voit kutsua vieraskäyttäjiä seuraavilla Power BI:n toiminnoilla:
+Käytä seuraavia ominaisuuksia, jotta voit käyttää ad hoc ‑kutsuja:
 * Raporttien ja koontinäyttöjen jakaminen
 * Sovelluksen käyttöoikeusluettelo
 
-Jos sinun on lisättävä työtilaan sellaisia ulkoisia käyttäjiä, jotka eivät ole valmiiksi vieraita Azure AD:ssä, voit käyttää suunniteltuja kutsuja seuraavassa kuvatulla tavalla. 
+Ad hoc ‑kutsuja ei tueta työtilojen käyttöoikeusluetteloilla. Voit lisätä kyseiset käyttäjät organisaatioosi [suunniteltujen kutsujen](#planned-invites) avulla. Kun ulkoinen käyttäjä on vieras organisaatiossasi, lisää hänet työtilan käyttöoikeusluetteloon.
 
 ### <a name="planned-invites"></a>Suunnitellut kutsut
 
@@ -81,14 +82,14 @@ Vieraskäyttäjä saa sähköpostin, josta ilmenee että olet jakanut sovellukse
 
 ![Näyttökuva, jossa sovelluksen sähköposti jaetaan vieraskäyttäjälle](media/service-admin-azure-ad-b2b/guest-user-invite-email-2.png)
 
-Vieraskäyttäjän tulee kirjautua sisään organisaatiossaan käyttämällä sähköpostiosoitteella. Sisäänkirjautumisen jälkeen he saavat kehotuksen hyväksyä kutsu. Sisäänkirjautumisen jälkeen sovellus aukeaa vieraskäyttäjälle. Jotta käyttäjä voi palata sovellukseen, hän voi lisätä linkin kirjanmerkkeihin tai tallentaa sähköpostin.
+Vieraskäyttäjän tulee kirjautua sisään organisaatiossaan käyttämällä sähköpostiosoitteella. Sisäänkirjautumisen jälkeen he saavat kehotuksen hyväksyä kutsu. Sisäänkirjautumisen jälkeen sovellus aukeaa vieraskäyttäjälle. Jotta käyttäjä voi palata sovellukseen, hänen kannattaa lisätä linkki kirjanmerkkeihin tai tallentaa sähköposti.
 
 
 ## <a name="licensing"></a>Käyttöoikeudet
 
 Vieraskäyttäjällä on oltava tarvittavat käyttöoikeudet, jotta hän voi tarkastella jakamaasi sisältöä. On kolme tapaa varmistaa, että käyttäjällä on tarvittava käyttöoikeus: Power BI Premiumin käyttäminen, Power BI Pro -käyttöoikeuden määrittäminen tai vieraan Power BI Pro -käyttöoikeuden käyttäminen.
 
-Kun käytät [Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) -ominaisuutta, vieraskäyttäjät tarvitsevat Power BI Pro -käyttöoikeudet lisätäkseen sisältöä työtiloihin tai jakaakseen sisältöä toisille käyttäjille.
+[Vieraskäyttäjät, jotka voivat muokata ja hallita sisältöä organisaatiossa](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization), tarvitsevat Power BI Pro ‑käyttöoikeudet lisätäkseen sisältöä työtiloihin ja jakaakseen sisältöä muille.
 
 ### <a name="use-power-bi-premium"></a>Power BI Premiumia käyttämällä
 
@@ -110,23 +111,23 @@ Vieraskäyttäjällä on jo vuokraajan Power BI Pro -käyttöoikeus.
 
 ## <a name="guest-users-who-can-edit-and-manage-content"></a>Vieraskäyttäjät, jotka voivat muokata ja hallita sisältöä
 
-Kun käytät [Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) -ominaisuutta, erikseen määritetyt vieraskäyttäjät saavat käyttää organisaatiosi Power BI:tä. He voivat nähdä kaiken heille sallitun sisällön. He voivat käyttää aloitussivua, selata työtiloja, asentaa sovelluksia, nähdä nimensä käyttöoikeusluettelossa, ja lisätä sisältöä työtiloihin. He voivat luoda ja hallinnoida järjestelmänvalvojina uutta käyttökokemusta käyttäviä työtiloja. Käyttöön liittyy joitakin rajoituksia. Rajoitukset mainitaan Huomioitavat asiat ja rajoitukset -luettelossa.
+Kun käytät [salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) -ominaisuutta, erikseen määritetyt vieraskäyttäjät saavat organisaatiosi Power BI:n lisäkäyttöoikeudet. Sallitut vieraat näkevät kaiken sisällön, jonka käyttöoikeudet heillä on. Lisäksi he voivat käyttää aloitussivua, selata työtiloja, asentaa sovelluksia, nähdä nimensä käyttöoikeusluettelossa ja lisätä sisältöä työtiloihin. He voivat luoda ja hallinnoida järjestelmänvalvojina uutta käyttökokemusta käyttäviä työtiloja. Käyttöön liittyy joitakin rajoituksia. Rajoitukset mainitaan Huomioitavat asiat ja rajoitukset -luettelossa.
  
-Auta näitä käyttäjiä kirjautumaan Power BI:hin antamalla heille vuokraajan URL-osoite. Etsi vuokraajan URL-osoite seuraavien vaiheiden mukaisesti.
+Voit auttaa näitä käyttäjiä kirjautumaan Power BI:hin antamalla heille vuokraajan URL-osoitteen. Etsi vuokraajan URL-osoite seuraavien vaiheiden mukaisesti.
 
 1. Valitse Power BI -palvelun yläreunan valikosta ohje ( **?** ) ja sitten **Tietoja Power BI:stä**.
 
-2. Katso arvo kohdan **Vuokraajan URL-osoite** vierestä. Arvo on vuokraajan URL-osoite, jonka voit jakaa vieraskäyttäjille.
+2. Katso arvo kohdan **Vuokraajan URL-osoite** vierestä. Jaa vuokraajan URL-osoite sallituille vieraskäyttäjillesi.
 
     ![Näyttökuva Tietoja Power BI:stä -valintaikkunassa, jossa näkyy vieraskäyttäjän vuokraajan URL-osoite.](media/service-admin-azure-ad-b2b/power-bi-about-dialog.png)
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
-* Ulkoisten Azure AD B2B -vieraiden pääsy on lähtökohtaisesti rajattu pelkkään kuluttajasisältöön. Ulkoiset Azure AD B2B -vieraat voivat tarkastella sovelluksia, koontinäyttöjä ja raportteja, viedä tietoja ja luoda sähköpostitilauksia koontinäytöille ja raporteille. He eivät pääse käsiksi työtilaan tai pysty julkaisemaan omaa sisältöään. Nämä rajoitukset eivät kuitenkaan koske niitä vieraskäyttäjiä, joiden käyttöoikeus perustuu ominaisuuteen [Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization).
+* Ulkoisten Azure AD B2B -vieraiden pääsy on lähtökohtaisesti rajattu pelkkään kuluttajasisältöön. Ulkoiset Azure AD B2B -vieraat voivat tarkastella sovelluksia, koontinäyttöjä ja raportteja, viedä tietoja ja luoda sähköpostitilauksia koontinäytöille ja raporteille. He eivät pääse käsiksi työtilaan tai pysty julkaisemaan omaa sisältöään. Voit poistaa nämä rajoitukset käyttämällä [Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) ‑toimintoa.
 
 * Vieraskäyttäjien kutsumiseen tarvitaan Power BI Pro -käyttöoikeus. Pro-kokeiluversion käyttäjät eivät voi kutsua vieraskäyttäjiä Power BI:ssä.
 
-* Eräät käyttökokemukset eivät ole niiden käyttäjien saatavilla, joiden käyttöoikeus perustuu ominaisuuteen [Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization). Jos he haluavat päivittää tai julkaista raportteja, heidän tulee käyttää Power BI -palvelun verkkokäyttöliittymää, mm. Nouda tiedot, Power Bi Desktop -tiedostojen lataamiseksi verkkoon.  Seuraavia käyttökokemuksia ei tueta:
+* [Vieraskäyttäjät, jotka voivat muokata ja hallita organisaation sisältöä](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization), eivät voi käyttää joitain ominaisuuksia. Jos he haluavat päivittää tai julkaista raportteja, heidän tulee käyttää Power BI -palvelun verkkokäyttöliittymää, mm. Nouda tiedot, Power Bi Desktop -tiedostojen lataamiseksi verkkoon.  Seuraavia käyttökokemuksia ei tueta:
     * Suorajulkaisu Power BI Desktopista Power BI -palveluun
     * Vieraskäyttäjät eivät voi käyttää Power BI Desktopia yhteyden muodostamiseksi Power BI -palvelussa sijaitseviin palvelutietojoukkoihin
     * Office 365 -ryhmiin sidotut perinteiset työtilat:
@@ -155,6 +156,8 @@ Auta näitä käyttäjiä kirjautumaan Power BI:hin antamalla heille vuokraajan 
     * [Salli tai estä vieraskäyttäjiä käyttämästä Power BI -palvelua](/azure/active-directory/conditional-access/overview)
     
 * Organisaation ulkopuolista jakamista ei tueta kansallisissa pilvipalveluissa. Luo sen sijaan organisaatioosi käyttäjätilejä, joita ulkoiset käyttäjät voivat käyttää sisällön käyttämiseen. 
+
+* Jos jaat suoraan vieraskäyttäjälle, Power BI lähettää heille linkin sähköpostitse. Jos et halua lähettää sähköpostiviestiä, lisää vieraskäyttäjä käyttöoikeusryhmään ja jaa kyseiselle käyttöoikeusryhmälle.  
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

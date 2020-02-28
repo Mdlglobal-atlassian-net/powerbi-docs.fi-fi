@@ -1,68 +1,70 @@
 ---
 title: Sarakkeen perusteella lajittelu Power BI Desktopissa
-description: Sarakkeen perusteella lajittelu Power BI Desktopissa
+description: Voit muuttaa visualisoinnin ulkoasua Power BI:ssä lajittelemalla sen eri tietokenttien mukaan.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/17/2019
+ms.date: 01/30/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 78632db52ae197a1643dcf1f2831e140568bc6fe
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 0cbba86bd77debda9ab2162b8f9b190e1846b99c
+ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75223427"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77464657"
 ---
 # <a name="sort-by-column-in-power-bi-desktop"></a>Sarakkeen perusteella lajittelu Power BI Desktopissa
-Voit muuttaa visualisoinnin ulkoasua **Power BI Desktopissa** ja **Power BI -palvelussa** lajittelemalla sen eri tietokenttien mukaan. Muuttamalla visualisoinnin lajittelua voit korostaa välitettäviä tietoja ja varmistaa, että visualisointi kuvastaa tätä trendiä (tai tietoa).
+Voit muuttaa visualisoinnin ulkoasua Power BI Desktopissa ja Power BI -palvelussa lajittelemalla sen eri tietokenttien mukaan. Muuttamalla visualisoinnin lajittelua voit korostaa välitettäviä tietoja ja varmistaa, että visualisointi kuvastaa tätä trendiä (tai tietoa).
 
-Voit lajitella visualisoinnit haluamallasi tavalla ja muokata niiden ulkoasua, olipa käytössä siten numeerisia tietoja (kuten myyntilukuja) tai tekstiä (kuten osavaltioiden nimiä).  **Power BI** tarjoaa käyttöösi joustavat lajitteluvaihtoehdot ja pikavalikot. Valitse missä tahansa visualisoinnissa kolmen pisteen valikko (...) ja valitse kenttä, jonka mukaan haluat lajitella, seuraavassa kuvassa esitetyllä tavalla.
+Voit lajitella visualisoinnit ja muokata niiden ulkoasua, olipa käytössä siten numeerisia tietoja (kuten myyntilukuja) tai tekstiä (kuten osavaltioiden nimiä). Power BI tarjoaa käyttöösi useita joustavia lajitteluvaihtoehtoja ja pikavalikoita. Voit lajitella minkä tahansa visualisoinnin valitsemalla sen **Lisää toimintoja** (...) ‑valikon, valitsemalla **Lajitteluperuste** ja valitsemalla sitten kentän, jota haluat käyttää lajitteluperusteena.
 
 ![Lisää asetuksia -valikko](media/desktop-sort-by-column/sortbycolumn_2.png)
 
-## <a name="more-depth-and-an-example"></a>Lisää syvyyttä ja esimerkki
-Otetaan seuraavaksi esimerkki, jossa on lisää syvyyttä, ja katsotaan, kuinka se toimii **Power BI Desktopissa**.
+## <a name="sorting-example"></a>Esimerkki lajittelusta
+Otetaan seuraavaksi esimerkki, jossa on lisää syvyyttä, ja katsotaan, kuinka se toimii Power BI Desktopissa.
 
-Seuraava visualisointi esittää kustannukset, määrät ja summat valmistajan nimen perusteella. Tässä on visualisointi sellaisena kuin se näkyy ennen lisälajittelua.
+Seuraava visualisointi esittää kustannukset, määrät ja summat valmistajan nimen perusteella. Tässä on visualisointi sellaisena kuin se näkyy ennen lisälajittelua:
 
 ![Alkuperäinen visualisointi](media/desktop-sort-by-column/sortbycolumn_1.png)
 
-Visualisoinnin lajitteluperuste on tällä hetkellä **Myyntimäärät**, mikä selviää vertaamalla selitettä nousevien palkkien väriin. On kuitenkin olemassa parempi tapa selvittää nykyinen lajittelusarake: voidaan avata visualisoinnin oikeassa yläkulmassa olevasta kolmen pisteen valikosta (...). Kun valitset kolmen pisteen valikot, seuraava näkymä tulee esiin:
+Visualisointi lajitellaan tällä hetkellä **Myyntimäärät**-sarakkeen mukaan. Lajittelusarake voidaan päätellä vertaamalla nousevien palkkien väriä selitteeseen, mutta on myös parempi tapa: **Lisää toimintoja** ‑valikko, jonka voit avata valitsemalla kolme pistettä (...).
 
 ![Lisää asetuksia -valikko](media/desktop-sort-by-column/sortbycolumn_2.png)
 
-* Nykyinen lajittelukenttä on **Myyntimäärät** ilmaistuina niiden tietojen mukaan, jotka **Lajittelu myyntimäärien mukaan** on lihavoinut ja jotka sisältävät keltaisen palkin. 
+Lajitteluvaihtoehdot ovat seuraavat:
 
-* Nykyinen lajittelusuunta on pienimmästä suurimpaan, katso pieni kuvake **A/Z** (A - Z) ja nuoli alas.
+* Nykyinen lajittelukenttä on **Myyntimäärät**, joka ilmenee lihavoidusta **Myyntimäärät**-kohdasta, jota edeltää keltainen palkki. 
 
-Tarkastellaan lajittelukenttää ja suuntaa itsenäisesti seuraavissa kahdessa osassa.
+* Nykyinen lajittelusuunta on nouseva, mikä ilmenee lihavoidusta **Lajittele nousevaan järjestykseen** ‑kohdasta, jota edeltää keltainen palkki.
 
-## <a name="selecting-which-column-to-use-for-sorting"></a>Lajittelusarakkeen valitseminen
-Huomasit keltaisen palkin kohdan **Lajittelu myyntimäärien mukaan** vieressä valikossa **Enemmän vaihtoehtoja**, joka ilmaisee, että visualisointi on lajiteltu **Myyntimäärät**-sarakkeen mukaan. Toisen sarakkeen mukaan lajitteleminen on helppoa – avaa kolmen pisteen valikosta kolmen pisteen valikko ja valitse toinen sarake.
+Tarkastellaan lajittelukenttää ja lajittelun suuntaa seuraavissa kahdessa osassa.
 
-Seuraavassa kuvassa olemme valinneet *Alennuksen määrä* -sarakkeen lajitteluperusteeksi. Kyseinen sarake on yksi visualisoinnin riveistä palkkien sijaan. Tältä visualisointi näyttää, kun **Lajittele alennuksen määrän perusteella** on valittu.
+## <a name="select-which-column-to-use-for-sorting"></a>Lajittelusarakkeen valitseminen
+Huomasit **Myyntimäärät**-kohtaa edeltävän keltaisen palkin **Enemmän vaihtoehtoja** ‑valikossa. Palkki ilmaisee, että visualisointi on lajiteltu **Myyntimäärät**-sarakkeen mukaan. Toisen sarakkeen perusteella lajittelu on helppoa: valitse kolme pistettä (...) avataksesi **Lisää toimintoja** ‑valikon, valitse **Lajitteluperuste** ja valitse sitten eri sarake.
 
-![Lajittele alennuksen määrän perusteella](media/desktop-sort-by-column/sortbycolumn_3.png)
+Seuraavassa kuvassa olemme valinneet **Alennuksen määrä** -sarakkeen lajitteluperusteeksi. Kyseinen sarake näkyy yhtenä visualisoinnin riveistä palkkien sijaan. 
 
-Huomaa, miten visualisointi on muuttunut. Arvot järjestetään nyt arvosta suurimmasta alennuksen arvosta tässä visualisoinnissa Fabrikam Inc:sta alaspäin Northwind Tradersiin asti, jolla on pienin arvo. 
+![Lajittelu alennussumman mukaan](media/desktop-sort-by-column/sortbycolumn_3.png)
+
+Huomaa, miten visualisointi on muuttunut. Arvot järjestetään nyt suurimmasta **alennuksen arvosta** eli Fabrikam Inc:sta alimpaan eli Northwind Tradersiin asti. 
 
 Mutta entä jos haluamme lajittele tiedot nousevasti laskevan järjestyksen sijaan? Seuraavasta osasta näet, miten helppoa se on.
 
-## <a name="selecting-the-sort-order---smallest-to-largest-largest-to-smallest"></a>Lajittelujärjestyksen valitseminen – pienimmästä suurimpaan tai suurimmasta pienimpään
-Kun katsomme lähemmin **Valinnat**-valikkoa edellisessä kuvassa huomaamme, että kohdan **Lajittele alennuksen määrän perusteella** vieressä olevassa kuvakkeessa näkyy **Z/A** (Z-kirjan A-kirjaimen yllä). Katso:
+## <a name="select-the-sort-order"></a>Lajittelujärjestyksen valitseminen
+Kun tarkastelemme edellisen kuvan **Lisää toimintoja** ‑valikkoa tarkemmin, huomaamme, että **Lajittele laskevaan järjestykseen** on lihavoitu ja että sitä edeltää keltainen palkki.
 
 ![Lajittele suurimmasta pienimpään](media/desktop-sort-by-column/sortbycolumn_4.png)
 
-Kun **Z/A** on näkyvissä, se tarkoittaa, että visualisointi on lajiteltu valitun sarakkeen mukaan suurimmasta arvosta pienimpään arvoon. Haluatko muuttaa sen? Napauta tai napsauta **Z/A**-kuvaketta, niin lajittelujärjestykseksi vaihtuu **A/Z**, jolloin visualisointi lajitellaan pienimmästä arvosta suurimpaan arvoon valitun sarakkeen mukaan.
+Kun **Lajittele laskevaan järjestykseen** on näkyvissä, se tarkoittaa, että visualisointi on lajiteltu valitun sarakkeen mukaan suurimmasta arvosta pienimpään arvoon. Haluatko muuttaa sen? Ei hätää. Valitse **Lajittele nousevaan järjestykseen**, niin valitun sarakkeen lajittelujärjestys muuttuu pienimmästä suurimpaan arvoon.
 
-Tässä on sama visualisointi sen jälkeen, kun sen lajittelujärjestys on muutettu napauttamalla **Z/A**-kuvaketta **Lajittele alennuksen määrän mukaan**. Huomaa, että Northwind Traders on nyt luettelossa ensimmäinen valmistaja ja Fabrikam Inc. on viimeinen, toisin kuin aiemmassa lajittelussa.
+Tässä on sama visualisointi sen jälkeen, kun **Alennuksen arvon** järjestys on muutettu. Huomaa, että Northwind Traders on nyt luettelossa ensimmäinen valmistaja ja Fabrikam Inc. on viimeinen, toisin kuin aiemmassa lajittelussa.
 
 ![Lajittele pienimmästä suurimpaan](media/desktop-sort-by-column/sortbycolumn_5.png)
 
-Voit lajitella visualisoinnin minkä tahansa sarakkeen mukaan. Voimme esimerkiksi valita lajittelusarakkeeksi Myyntimäärät-sarakkeen ja valita **Lajittele myyntimäärien mukaan**, jolloin eniten myyneet valmistajat näkyvät ensimmäisinä. Muut sarakkeet säilyvät mukana visualisoinnissa valmistajaa koskevien arvojen mukaan. Tältä visualisointi näyttää näillä asetuksilla.
+Voit lajitella visualisoinnin minkä tahansa sarakkeen mukaan. Olisimme voineet helposti esimerkiksi valita lajittelusarakkeeksi **Myyntimäärät**-sarakkeen, jolloin eniten myyneet valmistajat näkyvät ensimmäisinä. Muut sarakkeet säilyvät mukana visualisoinnissa valmistajaa koskevien arvojen mukaan. Tältä visualisointi näyttää näillä asetuksilla.
 
 ![Lajittele myyntimäärien mukaan](media/desktop-sort-by-column/sortbycolumn_6.png)
 
@@ -71,9 +73,9 @@ Tiedot voidaan lajitella myös käyttämällä **Lajittele sarakkeen mukaan** -p
 
 ![Lajittele sarakkeen mukaan -painike](media/desktop-sort-by-column/sortbycolumn_8.png)
 
-Tämä tapa edellyttää, että valitset ensin sarakkeen **Kentät**-ruudussa ja painat sitten **Lajittele sarakkeen mukaan** -painiketta valitaksesi, miten (minkä sarakkeen mukaan) haluat lajitella visualisoinnin. Sinun on valittava lajiteltava sarake (kenttä) **Kentät**-ruudussa, jotta voit ottaa käyttöön **Lajittele sarakkeen mukaan** -painikkeen – muuten painike ei ole käytössä.
+Tämä tapa edellyttää, että valitset ensin sarakkeen (kentän) **Kentät**-ruudusta ja lajittelet visualisoinnin valitsemalla sitten **Mallinnus** > **Lajittele sarakkeen mukaan**. Jos et valitse saraketta, **Lajittele sarakkeen mukaan** ‑painike ei ole aktiivinen.
 
-Tässä on yleinen esimerkki: sinulla on tietoja jokaiselta kuukaudelta ja haluat lajitella ne aikajärjestyksessä. Seuraavissa vaiheissa esitellään, miten se on mahdollista.
+Katsotaan yleistä esimerkkiä. Sinulla on tietoja jokaiselta kuukaudelta ja haluat lajitella ne aikajärjestyksessä. Seuraavissa vaiheissa esitellään, miten se on mahdollista:
 
 1. Huomaa, että kun visualisointi on valittuna, mutta mitään saraketta ei ole valittu **Kentät**-ruudussa, **Lajittele sarakkeen mukaan** -painike ei ole käytössä (painike näkyy harmaana).
    
@@ -82,29 +84,32 @@ Tässä on yleinen esimerkki: sinulla on tietoja jokaiselta kuukaudelta ja halua
 2. Kun valitsemme lajiteltavan sarakkeen **Kentät**-ruudussa, **Lajittele sarakkeen mukaan** -painike muuttuu aktiiviseksi.
    
    ![Lajittele sarakkeen mukaan -painike on aktiivinen](media/desktop-sort-by-column/sortbycolumn_10.png)
-3. Nyt, kun visualisointi on valittuna, voimme valita *Kuukausi*-vaihtoehdon oletusarvon (*Kuukauden nimi*) sijaan, jolloin visualisointi lajitellaan haluamassamme järjestyksessä eli kuukauden mukaan.
+3. Nyt kun visualisointi on valittuna, voimme valita **Kuukausi**-vaihtoehdon oletusarvon **Kuukauden nimi** sijaan, jolloin visualisointi lajitellaan haluamassamme järjestyksessä eli kuukauden mukaan.
    
    ![Lajittele sarakkeen mukaan -valikko](media/desktop-sort-by-column/sortbycolumn_11.png)
 
-Siinä kaikki. Muista, että sinun on valittava sarake **Kentät**-ruudussa, jotta **Lajittele sarakkeen mukaan** -painike aktivoituu.
 
-## <a name="getting-back-to-default-column-for-sorting"></a>Lajittelun oletussarakkeen palauttaminen
-Voit lajitella visualisoinnin minkä tahansa sarakkeen mukaan, mutta joskus haluat ehkä palauttaa visualisoinnin lajittelun oletussarakkeen. Se onnistuu helposti. Kun visualisoinnissa on valittuna lajittelusarake (kolmien pisteen vieressä on keltainen palkki), avaa **Enemmän vaihtoehtoja**-valikko ja valitse kyseinen sarake uudelleen, niin visualisointi lajitellaan taas oletussarakkeen mukaan.
+<!---
+This functionality is no longer active. Jan 2020
 
-Tässä on esimerkiksi edellinen kaavio:
+## Getting back to default column for sorting
+You can sort by any column you'd like, but there may be times when you want the visual to return to its default sorting column. No problem. For a visual that has a sort column selected, open the **More options** menu and select that column again, and the visualization returns to its default sort column.
 
-![Alkuperäinen visualisointi](media/desktop-sort-by-column/sortbycolumn_6.png)
+For example, here's our previous chart:
 
-Kun siirrymme takaisin valikkoon ja valitsemme **Myyntimäärät**-sarakkeen uudelleen, visualisointi järjestetään aakkosjärjestyksessä **Valmistaja** -arvon mukaan, seuraavassa kuvassa esitetyllä tavalla.
+![Initial visualization](media/desktop-sort-by-column/sortbycolumn_6.png)
 
-![Lajittelun oletusjärjestys](media/desktop-sort-by-column/sortbycolumn_7.png)
+When we go back to the menu and select **SalesQuantity** again, the visual defaults to being ordered alphabetically by **Manufacturer**, as shown in the following image.
 
-Visualisointien monipuolisten lajitteluvaihtoehtojen avulla voit luoda juuri haluamasi kaavion tai esityksen.
+![Default sort order](media/desktop-sort-by-column/sortbycolumn_7.png)
+
+With so many options for sorting your visuals, creating just the chart or image you want is easy.
+--->
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 Voit olla kiinnostunut myös seuraavista artikkeleista:
 
 * [Raporttien välillä porautumisen käyttäminen Power BI Desktopissa](desktop-cross-report-drill-through.md)
-* [Osittajien käyttäminen Power BI Desktopissa](visuals/power-bi-visualization-slicers.md)
+* [Osittajat Power BI:ssä](visuals/power-bi-visualization-slicers.md)
 

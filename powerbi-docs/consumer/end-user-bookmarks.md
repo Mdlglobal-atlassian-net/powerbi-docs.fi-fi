@@ -5,21 +5,23 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: d5816c4080340b3ff5f29f6000fd203e1a2dedfd
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 5f197f2c2ca85673452a10986f19e26c5802c739
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73852253"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496608"
 ---
 # <a name="what-are-bookmarks"></a>Mitä ovat kirjanmerkit?
 
+[!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
+
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Kirjanmerkit vangitsevat voimassaolevan määritetyn näkymän raporttisivusta, suodattimet, osittajat ja visualisointien tilan. Kun valitset kirjanmerkin, Power BI vie sinut takaisin kyseiseen näkymään. Kirjanmerkkejä on kahdenlaisia – itse luomiasi ja raportin *suunnittelijoiden*luomia.
+Kirjanmerkit vangitsevat voimassaolevan määritetyn näkymän raporttisivusta, suodattimet, osittajat ja visualisointien tilan. Kun valitset kirjanmerkin, Power BI vie sinut takaisin kyseiseen näkymään. Kirjanmerkkejä on kahdenlaisia – itse luomiasi ja raportin *suunnittelijoiden*luomia. Kuka tahansa Power BI -käyttäjä voi luoda omia kirjanmerkkejä. Toisten luomien kirjanmerkkien käyttäminen edellyttää kuitenkin Power BI Pro- tai Premium-käyttöoikeuden. [Mikä käyttöoikeus minulla on?](end-user-license.md)
 
 ## <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Kirjanmerkkien avulla voit jakaa merkityksellisiä tietoja ja koostaa tarinoita Power BI:ssä 
 Kirjanmerkeille on monia käyttötarkoituksia. Ajatellaanpa, että löydät kiinnostavan tiedon ja haluat säilyttää sen – luo kirjanmerkki, niin että pääset myöhemmin takaisin. Sinun täytyy poistua ja haluat säilyttää nykyisen työsi, luo siis kirjanmerkki. Voit jopa tehdä kirjanmerkin raportin oletusnäkymään, niin että joka kerta kun palaat, samainen raporttisivun näkymä aukeaa ensin. 
@@ -33,6 +35,9 @@ Kun haluat avata Kirjanmerkit-ruudun, valitse valikkoriviltä **Kirjanmerkit** >
 
 ### <a name="report-bookmarks"></a>Raportin kirjanmerkit
 Jos raportin *suunnittelija* on sisällyttänyt raporttiin kirjanmerkkejä, löydät ne otsikon **Raportin kirjanmerkit** alta. Tällä raporttisivulla on kaksi kirjanmerkkiä, B1 ja B2. 
+
+> [!NOTE]
+> Sinulla täytyy olla Power BI Pro tai Premium, jotta voit tarkastella jaettuja raportteja. 
 
 ![Näytä Raportin kirjanmerkit.](media/end-user-bookmarks/power-bi-report.png)
 

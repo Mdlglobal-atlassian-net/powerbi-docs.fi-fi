@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 02/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 90721b059958e59cfd74f9ba1d0d25617a7438e6
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: d8432ae10afab6cbf12c017a8f315fd55825212d
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76889278"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427227"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>DirectQueryn käyttö Power BI Desktopissa
 Kun muodostat yhteyden tietolähteeseen, voit *Power BI Desktopin* avulla aina tuoda kopion tiedoista Power BI Desktopiin. Joillekin tietolähteille on saatavilla vaihtoehtoinen menetelmä: yhteyden muodostaminen suoraan tietolähteeseen DirectQueryn avulla.
@@ -46,8 +46,6 @@ DirectQueryn käytöstä on joitakin etuja:
 
 ## <a name="limitations-of-directquery"></a>DirectQueryn rajoitukset
 DirectQueryn käyttöön liittyy nykyisin joitakin rajoituksia:
-
-- Kaikkien taulukoiden on oltava peräisin yksittäisestä tietokannasta, ellei käytetä [yhdistelmämalleja](desktop-composite-models.md).
 
 - Jos **kyselyeditorin** kysely on liian monimutkainen, tapahtuu virhe. Virheen korjaamiseksi on joko poistettava ongelmallinen vaihe **kyselyeditorissa** tai *tuotava* tiedot DirectQueryn käytön sijasta. Moniulotteisten tietolähteiden, kuten SAP Business Warehousen, tapauksessa ei voi käyttää **kyselyeditoria**.
 
@@ -94,7 +92,7 @@ Jos käytetty tietolähde ei tarvitse **paikallista tietoyhdyskäytävää** (**
 
 4. Lisää tunnistetiedot. Muussa tapauksessa ilmenee virhe, kun avaat julkaistun raportin tai tutustut tietojoukkoon, joka on luotu DirectQuery-yhteydellä.
 
-Muille tietolähteille kuin **Azure SQL -tietokanta**, **Azure SQL Data Warehouse** ja **Redshift**, jotka käyttävät DirectQueryä **, on asennettava paikallinen tietoyhdyskäytävä**, ja tietolähde on rekisteröitävä tietoyhteyden muodostamiseksi. Lisätietoja on ohjeaiheessa [Mikä on paikallinen tietoyhdyskäytävä?](service-gateway-onprem.md)
+Muille tietolähteille kuin **Azuren SQL-tietokanta**, **Azure SQL Data Warehouse**, **Redshift** tai **Snowflake Data Warehouse**, jotka käyttävät DirectQueryä, on asennettava **paikallinen tietoyhdyskäytävä**, ja tietolähde on rekisteröitävä tietoyhteyden muodostamiseksi. Lisätietoja on ohjeaiheessa [Mikä on paikallinen tietoyhdyskäytävä?](service-gateway-onprem.md)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Saat lisätietoja DirectQuerystä seuraavista resursseista:

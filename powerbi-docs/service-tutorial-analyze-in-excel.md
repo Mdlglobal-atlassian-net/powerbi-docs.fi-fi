@@ -1,31 +1,31 @@
 ---
-title: 'Opetusohjelma: Analysoinnin käyttäminen Excelissä'
-description: Tässä opetusohjelmassa tuodaan tietojoukkoja Exceliin Power BI -tietojoukot -sivua käyttämällä.
+title: 'Opetusohjelma: Power BI:n Analysoi Excelissä ‑toiminnon käyttö aloittaen Excelistä'
+description: Tässä opetusohjelmassa tuodaan tietojoukkoja Exceliin Power BI -tietojoukot -sivua käyttämällä. Tämä aloitetaan Excelistä.
 author: tejaskulkarni
 ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 01/27/2020
+ms.date: 02/13/2020
 ms.author: tekulkar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: a68adccec019e64e554d199d23d7dddd782f56a2
-ms.sourcegitcommit: 53c2b5ea4ee1fe2659804d5ccc8e4bb445a8bcad
+ms.openlocfilehash: d3795c34e477c593af4afefbe5cc01040026bfa4
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76921481"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426537"
 ---
-# <a name="tutorial-use-analyze-in-excel"></a>Opetusohjelma: Analysoinnin käyttäminen Excelissä
+# <a name="tutorial-use-power-bi-analyze-in-excel-starting-in-excel"></a>Opetusohjelma: Power BI:n Analysoi Excelissä ‑toiminnon käyttö aloittaen Excelistä
 
-Organisaatiosi käyttää Power BI:tä tietojen käyttöoikeuksien jakamiseen. Analysoi Excelissä -toiminnon avulla voit luoda pivot-taulukkoja ja -kaavioita, jolloin voit lisätä kontekstia analytiikkaan tai lyhentää aikaa, joka tarvittavien tietojoukkojen etsimiseen ja tuomiseen kuluu.
+Organisaatiosi käyttää Power BI:tä tietojen käyttöoikeuksien jakamiseen. Käynnistä Power BI:n Analysoi Excelissä ‑toiminto Excelistä, jotta voit luoda pivot-taulukoita ja pivot-kaavioita Excelissä. Niiden avulla voit tuoda analytiikkaan lisäkontekstia tai nopeuttaa tarvittavien tietojoukkojen etsimistä ja tuomista.
 
-Aloita tietojoukon valitsemisen valitsemalla Analysoi Excelissä -toiminto. Sinua neuvotaan tietoja käyttävän pivot-taulukon luomisessa.  
+Aloita Power BI ‑tietojoukon käsittely valitsemalla Excelissä ”Analysoi Excelissä”. Sinua neuvotaan tietoja käyttävän pivot-taulukon luomisessa.  
 
 Voit etsiä organisaatiosi jakamia lisätietojoukkoja palaamalla Tietojoukot-sivulle.
 
-Jos kohtaat ongelman, valitse Ei-vaihtoehto alla olevan työn kulun kyseisessä vaiheessa ja anna palautetta linkitetyllä kaavakkeella.  
+Jos kohtaat ongelman, valitse **Ei**-vaihtoehto alla olevan työnkulun kyseisessä vaiheessa ja anna palautetta linkitetyllä kaavakkeella.  
 
 Tässä opetusohjelmassa opit:
 

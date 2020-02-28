@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: ba39718a5a458ec18af976806bc634d32843afb2
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: c766393c9a4c81c484afe6f934e1ebb8314d0fb9
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77259762"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426629"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>iOS-laitteiden Power BI -mobiilisovelluksen käytön aloittaminen
 Microsoft Power BI for iOS -sovellus iPhonessa tai iPadissa tarjoaa BI-mobiilikäyttökokemuksen Power BI:lle, Power BI -raporttipalvelimelle ja Reporting Services -palveluille. Voit tarkastella ja käsitellä yrityksen koontinäyttöjä paikallisesti ja pilvipalvelussa missä tahansa, live-tilassa kosketusnäytöllisessä mobiilikäytössä. Tarkastele tietoja koontinäytöissä ja jaa sähköpostitse tai tekstiviestillä työtovereiden kanssa. Pysy ajan tasalla kaikkein ajantasaisimmilla tiedoilla [Apple Watchin](mobile-apple-watch.md) avulla.  
@@ -32,7 +32,7 @@ Katso [Power BI -mobiilisovellusten uudet ominaisuudet](mobile-whats-new-in-the-
 ## <a name="download-the-app"></a>Lataa sovellus
 [Lataa iOS-sovellus](https://go.microsoft.com/fwlink/?LinkId=522062 "Lataa iOS-sovellus") Apple App Storesta iPhoneen tai iPadiin.
 
-Voit käyttää Power BI for iOS -sovellusta iOS 11:llä ja tätä uudemmilla käyttöjärjestelmillä. 
+Voit käyttää Power BI -mobiilisovellusta iOS 11:llä ja tätä uudemmilla käyttöjärjestelmillä. 
 
 ## <a name="sign-up-for-the-power-bi-service"></a>Rekisteröidy Power BI -palveluun
 Jos et ole jo rekisteröitynyt, siirry osoitteeseen [powerbi.com](https://powerbi.microsoft.com/get-started/) ja valitse kohdasta **Power BI - Pilviyhteistyö ja -jakaminen** **Kokeile ilmaiseksi**.

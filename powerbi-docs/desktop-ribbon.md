@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/11/2019
+ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0f7debd49541679b2ec5d41eaa2307c50bf170ce
-ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
+ms.openlocfilehash: df8c84b5b7baf55a32e07e3e48cb02317fdf7875
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74016131"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527413"
 ---
 # <a name="use-the-updated-ribbon-in-power-bi-desktop-preview"></a>Power BI Desktopin (esiversio) päivitetyn valintanauhan käyttäminen
 
@@ -51,7 +51,18 @@ Nämä edut voidaan ryhmitellä seuraaviin luokkiin:
 
 * **Yksiriviseksi tiivistetty valintanauha säästää tilaa** - Toinen päivitetyn valintanauhan etu on mahdollisuus tiivistää itse valintanauha yhdelle riville, jolloin valintanauhan kohteet näytetään dynaamisesti kontekstin perusteella. 
 
-    ![Paremmat teemat](media/desktop-ribbon/desktop-ribbon-06.png)
+    ![Kutistettu valintanauha](media/desktop-ribbon/desktop-ribbon-06.png)
+
+* **Näppäinvihjeet siirtymiseen ja painikkeiden valitsemiseen** – voit aktivoida valintanauhassa siirtymisen näppäinvihjeet valitsemalla **Alt + Windows-näppäin**. Kun näppäinvihjeet on aktivoitu, voit siirtyä valitsemalla näppäimistöltä vihjeissä näkyvät näppäimet.
+
+    ![Näppäinvihjeet](media/desktop-ribbon/desktop-ribbon-07.png)
+
+* **Mukautetut muotoilumerkkijonot** – sen lisäksi, että voit määrittää mukautettuja muotoilumerkkijonoja *Ominaisuudet*-ruudussa, voit myös määrittää niitä valintanauhassa. Valitse se mittari tai sarake, jonka haluat mukauttaa, niin näkyviin tulee valintasi perusteella joko **Mittarityökalut**- tai **Saraketyökalut**-pikavälilehti. Välilehden muotoiluosiossa voit sitten kirjoittaa mukautetun muotoilumerkkijonon suoraan avattavaan valikkoruutuun.
+
+    ![Mukautetut muotoilumerkkijonot](media/desktop-ribbon/desktop-ribbon-08.png)
+
+* **Helppokäyttötoiminnot** – otsikkorivissä, valintanauhassa ja tiedostovalikossa on täydet helppokäyttötoiminnot. Siirry valintanauhaosioon valitsemalla Ctrl + F6. Sen jälkeen voit siirtyä ylä- ja alapalkeissa **sarkaimella** ja siirtyä elementtien välillä nuolinäppäinten avulla.
+
 
 Näkyvien muutosten lisäksi päivitetyn valintanauhan avulla voimme tehdä Power BI Desktopiin ja sen valintanauhaan jatkossa muutoksia, kuten seuraavat:
 

@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: tebercov
-ms.openlocfilehash: a15a27255f15bdce39ddb14a6cda798d170ba3ad
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4b17ed5458a6245ab5796edcf15f6dee5f885358
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871373"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77497134"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Mallisovelluksen päivittäminen, poistaminen ja purkaminen
 
@@ -36,15 +36,21 @@ Jos olet tehnyt muutoksia Power BI Desktopissa, aloita vaiheesta (1). Jos et ole
 
    Näkyvillä on nyt kaksi versiota: tuotantoympäristössä oleva versio sekä testausvaiheessa oleva uusi versio.
 
-    ![Mallisovelluksen kaksi versiota](media/service-template-apps-update-extract-delete/power-bi-template-app-update.png)
+    ![Mallisovelluksen kaksi versiota](media/service-template-apps-update-extract-delete/power-bi-template-app-update1.png)
 
-5. Kun olet valmis korottamaan sovelluksesi esituotantoon niin, että sen testausta voidaan jatkaa oman vuokraajasi ulkopuolella, palaa Julkaisun hallinta -ruutuun ja valitse **Testaus**-kohdan vierestä **Korota sovellus**.
-6. Linkkisi on nyt aktiivinen. Lähetä se uudelleen pilvikumppaniportaaliin (CPP) [Power BI -sovellustarjouksen päivitys](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer) -kohdan ohjeiden mukaisesti.
-7. Tarjous on **julkaistava** uudelleen pilvikumppaniportaalissa ja myös vahvistettava uudelleen.
+1. Kun olet valmis korottamaan sovelluksesi esituotantoon niin, että sen testausta voidaan jatkaa oman vuokraajasi ulkopuolella, palaa Julkaisun hallinta -ruutuun ja valitse **Testaus**-kohdan vierestä **Korota sovellus**.
 
-   >[!NOTE]
-   >Korota sovellus tuotantovaiheeseen vasta, kun pilvikumppaniportaali on hyväksynyt sovelluksen ja olet julkaissut sen.
+   Sinulla on nyt versio tuotannossa ja versio esituotannossa.
 
+   ![Mallisovelluksen korotuksen kaksi versiota harmaina](media/service-template-apps-update-extract-delete/power-bi-template-app-update2.png)
+
+   Linkkisi on nyt aktiivinen. **Huomaa, että esituotannossa oleva Korota sovellus -painike näkyy harmaana**. Tämä estää nykyisen sovellusversion reaaliaikaisen tuotantolinkin korvaamisen vahingossa, ennen kuin pilvikumppaniportaali on vahvistanut ja hyväksynyt uuden sovellusversion.
+
+1. Lähetä linkki uudelleen pilvikumppaniportaaliin (CPP) [Power BI -sovellustarjouksen päivitys](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer) -kohdan ohjeiden mukaisesti. Tarjous on **julkaistava** uudelleen pilvikumppaniportaalissa sekä vahvistettava ja hyväksyttävä.
+
+   Kun tarjouksesi on hyväksytty, Korota sovellus -painike tulee uudelleen aktiiviseksi. 
+1. Korota sovelluksesi tuotantovaiheeseen.
+   
 ### <a name="update-behavior"></a>Päivityksen toiminta
 
 1. Sovelluksen päivittäminen sallii mallisovelluksen asennusohjelman [päivittää malli sovelluksen](service-template-apps-install-distribute.md#update-a-template-app) jo asennetussa työtilassa ilman yhteyden määrityksen menettämistä.

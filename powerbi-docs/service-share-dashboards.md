@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e6e66a4459abefbc66ec4e70b882cddc4771facf
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 96f78ff87dc4f955e134815e6237e4fb5a1ca1e7
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565670"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426675"
 ---
 # <a name="share-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Power BI -koontinäyttöjen ja -raporttien jakaminen työtovereiden ja muiden kanssa
 *Jakaminen* on kätevä keino myöntää parille henkilölle käyttöoikeus luomiisi koontinäyttöihin ja raportteihin. Power BI tarjoaa myös [useita muita tapoja tehdä yhteistyötä ja jakaa koontinäyttöjä ja raportteja](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -37,7 +37,7 @@ Katso, miten Amanda jakaa koontinäyttönsä työtovereiden kanssa yrityksensä 
 
 ## <a name="share-a-dashboard-or-report"></a>Koontinäytön tai raportin jakaminen
 
-1. Valitse koontinäyttöjen tai raporttien luettelossa tai avatussa koontinäytössä tai raportissa **Jaa** ![Jaa-kuvake](media/service-share-dashboards/power-bi-share-icon.png).
+1. Valitse raporttinäkymien tai raporttien luettelossa tai avatussa raporttinäkymässä tai raportissa **Jaa** ![Jaa-kuvake](media/service-share-dashboards/power-bi-share-icon.png).
 
 2. Kirjoita yläreunan ruutuun henkilöiden, jakeluryhmien tai käyttöoikeusryhmien koko sähköpostiosoitteet. Et voi jakaa sisältöä dynaamisten jakeluluetteloiden kanssa. 
    
@@ -70,7 +70,7 @@ Katso, miten Amanda jakaa koontinäyttönsä työtovereiden kanssa yrityksensä 
 ## <a name="see-who-has-access-to-a-dashboard-or-report"></a>Katso, kenellä on oikeus käyttää koontinäyttöä tai raporttia
 Toisinaan sinun on nähtävä henkilöt, joiden kanssa olet jakanut sisältöä, sekä se, kenen kanssa he ovat jakaneet sisältöä.
 
-1. Valitse koontinäyttöjen ja raporttien luettelosta tai itse koontinäytöstä tai raportista **Jaa** ![Jaa-kuvake](media/service-share-dashboards/power-bi-share-icon.png). 
+1. Valitse raporttinäkymien ja raporttien luettelosta tai itse koontinäytöstä tai raportista **Jaa** ![Jaa-kuvake](media/service-share-dashboards/power-bi-share-icon.png). 
 2. Valitse **Jaa koontinäyttö** tai **Jaa raportti** -valintaikkunassa **Käytä**.
    
     ![Jaa koontinäyttö -valintaikkuna, Käytä-välilehti](media/service-share-dashboards/power-bi-share-dialog-access.png)
@@ -90,6 +90,8 @@ Vain suorat vastaanottajasi näkevät jaetun koontinäytön tai raportin. Jos l�
 
 Organisaatiosi ulkopuoliset henkilöt eivät näe mitään tietoja, jos rooli- tai rivitason suojausta sovelletaan paikallisiin Analysis Services -taulukkomalleihin.
 
+Käytä käyttöoikeusryhmää (ei jakeluryhmää) jakaessasi ryhmälle, joka sisältää ulkoisia sähköpostiosoitteita. Käyttäjät, jotka käyttävät ulkoista sähköpostiosoitetta jakeluryhmässä, eivät näe jakamaasi sisältöä, elleivät he ole Azure Active Directoryn (Azure AD) yritysten välisiä vieraskäyttäjiä. Lue lisää [Azure AD:n yritysten välisistä vieraskäyttäjistä](service-admin-azure-ad-b2b.md).
+
 Jos lähetit linkin Power BI -mobiilisovelluksesta organisaatiosi ulkopuolisille henkilöille, linkkiä napsauttamalla koontinäyttö avautuu selaimessa eikä Power BI -mobiilisovelluksessa.
 
 ### <a name="allow-external-users-to-edit-content"></a>Sisällön muokkauksen salliminen ulkoisille käyttäjille
@@ -103,7 +105,7 @@ Vain koontinäytön tai raportin omistaja voi ottaa uudelleenjakamisen käyttö�
 * Tyhjennä **Salli vastaanottajien jakaa koontinäyttösi (tai raporttisi)** -valintaruutu kutsun alareunasta ennen sen lähettämistä.
 
 ### <a name="if-youve-already-shared-the-dashboard-or-report"></a>Jos olet jo jakanut koontinäytön tai raportin
-1. Valitse koontinäyttöjen ja raporttien luettelosta tai itse koontinäytöstä tai raportista **Jaa** ![Jaa-kuvake](media/service-share-dashboards/power-bi-share-icon.png). 
+1. Valitse raporttinäkymien ja raporttien luettelosta tai itse koontinäytöstä tai raportista **Jaa** ![Jaa-kuvake](media/service-share-dashboards/power-bi-share-icon.png). 
 2. Valitse **Jaa koontinäyttö** tai **Jaa raportti** -valintaikkunassa **Käytä**.
    
     ![Jaa koontinäyttö -valintaikkuna, Käytä-välilehti](media/service-share-dashboards/power-bi-share-dialog-access.png)
@@ -127,7 +129,7 @@ Kun jaat koontinäyttöjä ja raportteja, ota huomioon seuraavat seikat:
 * Kaikki voivat manuaalisesti [päivittää tietoja](refresh-data.md).
 * Jos käytät Office 365:n sähköpostia, voit jakaa tietoja jakeluryhmän jäsenten kanssa antamalla jakeluryhmään liittyvän sähköpostiosoitteen.
 * Työtoverit, joilla on sama sähköpostin toimialue kuin sinulla, ja työtoverit, joiden toimialue on erilainen, mutta joka on rekisteröity samassa vuokraajassa, voivat jakaa koontinäytön muiden kanssa. Oletetaan esimerkiksi, että toimialueet contoso.com ja contoso2.com on rekisteröity samassa vuokraajassa ja sähköpostiosoitteesi on konrads@contoso.com. Sekä ravali@contoso.com että gustav@contoso2.com voivat jakaa koontinäyttösi, kunhan annat heille jakamisoikeuden.
-* Jos työtovereillasi on jo käyttöoikeus tiettyyn koontinäyttöön tai raporttiin, voit lähettää suoran linkin kopioimalla URL-osoitteen, kun olet koontinäytössä tai raportissa. Esimerkki: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
+* Jos työtovereillasi on jo käyttöoikeus tiettyyn koontinäyttöön tai raporttiin, voit lähettää suoran linkin kopioimalla URL-osoitteen, kun olet koontinäytössä tai raportissa. Esimerkiksi: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
 * Samoin jos työtovereillasi on jo käyttöoikeus tiettyyn koontinäyttöön, voit [lähettää suoran linkin pohjana olevaan raporttiin](service-share-reports.md). 
 
 ### <a name="share-with-more-than-100-separate-users"></a>Jakaminen yli 100 erillisen käyttäjän kanssa

@@ -7,17 +7,19 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: tutorial
-ms.date: 10/18/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f7ebc459379dbf292603a605db8d3f9c7162e92f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 5f4dc1d1f3e707a59ef81e63be42714c499d050f
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851268"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496527"
 ---
-# <a name="tutorial-set-dashboard-alerts-on-power-bi-dashboards"></a>Opetusohjelma: Koontinäytön hälytysten määrittäminen Power BI -koontinäytöissä
+# <a name="tutorial-set-alerts-on-power-bi-dashboards"></a>Opetusohjelma: Ilmoitusten määrittäminen Power BI -raporttinäkymissä
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -112,9 +114,10 @@ Voit hallita ilmoituksia usealla tavalla: suoraan raporttinäkymän ruudusta, Po
 * Hälytyksiä voi asettaa vain mittareihin, suorituskykyilmaisimiin ja kortteihin.
 * Jos et pysty asettamaan hälytystä mittarille, suorituskykyilmaisimelle tai kortille, pyydä apua järjestelmänvalvojalta. Joskus hälytykset on poistettu käytöstä tai ne eivät ole käytettävissä koontinäytössäsi tai tietyntyyppisissä koontinäytön ruuduissa.
 * Ilmoitukset toimivat vain tiedoissa, joita päivitetään. Ne eivät toimi staattisissa tiedoissa. Useimmat Microsoftin toimittamista malleista ovat staattisia. 
+* *Kuluttajat* eivät luo omia raporttinäkymiään, vaan *suunnittelijat* luovat raporttinäkymiä jakavat niitä kuluttajille. Sisällön vastaanottaminen ja jaetun sisällön katsominen edellyttää Power BI Pro- tai Premium-käyttöoikeutta. Saat lisätietoja kohdasta [Mikä käyttöoikeus minulla on?](end-user-license.md) 
 
 
-## <a name="clean-up-resources"></a>Resurssien tyhjentäminen
+## <a name="clean-up-resources"></a>Puhdista resurssit
 Ohjeet hälytysten poistamiseen on annettu edellä. Lyhyesti sanottuna valitse Power BI -valikkopalkin rataskuvake. Valitse **Asetukset**-kohdassa **Hälytykset** ja poista hälytys.
 
 > [!div class="nextstepaction"]

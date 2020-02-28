@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/03/2019
-ms.openlocfilehash: 2a95f8afce2762b82e73741563a29fa22b433d36
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 02/13/2020
+ms.openlocfilehash: ee789274f6581423ed7adebc5b662a732dbeaa7a
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874107"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426652"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Asenna Power BI -raporttipalvelimelle optimoitu Power BI Desktop
 
@@ -93,11 +93,15 @@ Power BI -raporttipalvelimen raportit eivät tue näitä ominaisuuksia Power BI 
 * Navigointipolut
 * Maantieteellinen suodatus tai viivakoodit
 
+### <a name="custom-security"></a>Mukautettu suojaus
+
+Power BI -raporttipalvelimelle optimoitu Power BI Desktop ei tue mukautettua suojausta. Jos Power BI ‑raporttipalvelimeen on määritetty mukautettu suojauslaajennus, et voi tallentaa Power BI ‑raporttia Power BI Desktopista (optimoitu Power BI ‑raporttipalvelimelle) Power BI ‑raporttipalvelimen esiintymään. Sinun täytyy tallentaa .pbix-raporttitiedosto Power BI Desktopista ja ladata se Power BI ‑raporttipalvelimen portaalisivustoon.
+
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop Power BI -raporttipalvelimen aiempiin versioihin
 
 Jos raporttipalvelimesi on aiempi versio, tarvitset vastaavan version Power BI Desktopista. Tässä on linkki edellisen version lataamiseen.
 
-- Microsoft Power BI Desktop ([optimoitu Power BI -raporttipalvelimelle – tammikuu 2019](https://go.microsoft.com/fwlink/?linkid=2055039))
+- Microsoft Power BI Desktop ([optimoitu Power BI -raporttipalvelimelle – syyskuun 2019](https://go.microsoft.com/fwlink/?linkid=2103723))
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

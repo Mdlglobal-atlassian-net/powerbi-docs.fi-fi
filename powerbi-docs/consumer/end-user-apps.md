@@ -3,21 +3,22 @@ title: Mikä Power BI -sovellus on?
 description: Power BI:ssä sovellukset kokoavat toisiinsa liittyvät koontinäytöt ja raportit yhteen paikkaan.
 author: mihart
 ms.reviewer: lukaszp
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 02/19/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 784c0ed368a12951220ccf719c70ac7d8d3db040
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: fd11e6fd45a3978eb301adabc15ac8941e7824bf
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73851015"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496701"
 ---
 # <a name="apps-in-power-bi"></a>Sovellukset Power BI:ssä
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -29,9 +30,9 @@ Sovellukset on järjestetty **Sovellukset**-sisältöluetteloon. Näytä sovellu
 ![Sovellukset Power BI:ssä](./media/end-user-apps/power-bi-apps.png)
 
 > [!NOTE]
-> Sovellusominaisuuden käyttö edellyttää Power BI Pro -käyttöoikeutta. <!-- add link to how to figure out your license -->
+> Sovellusominaisuuden käyttö edellyttää Power BI Pro -käyttöoikeutta. [Hae käyttöoikeustyyppisi](end-user-license.md)
 
-## <a name="app-designers-and-app-consumers"></a>Sovelluksen ***suunnittelijat*** ja sovelluksen ***kuluttajat***
+## <a name="app-designers-and-app-consumers"></a>Sovelluksen *suunnittelijat* ja sovelluksen *kuluttajat*
 Roolistasi riippuen saatat olla henkilö, joka luo sovelluksia (*suunnittelija*) omaan käyttöönsä tai jakaa niitä työtovereidensa kanssa. Vaihtoehtoisesti voit olla henkilö, joka vastaanottaa ja lataa muiden luomia sovelluksia (*kuluttaja*). Tämä artikkeli on tarkoitettu sovellusten *kuluttajille*.
 
 ## <a name="advantages-of-apps"></a>Sovellusten edut

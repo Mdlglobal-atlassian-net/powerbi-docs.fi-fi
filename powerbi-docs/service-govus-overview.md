@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 02/19/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 26dabde3846ec33e2f5910de75fb8165cce6513a
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: 590b00f5eb03b1bd31430866a52faa4748f9b32a
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76160761"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496940"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI Yhdysvaltain valtionhallinnon asiakkaille
 Tämä artikkeli on tarkoitettu Yhdysvaltain valtionhallinnon asiakkaille, jotka ottavat Power BI:n käyttöön osana Office 365 Government -palvelupakettia. Government-palvelupaketit on suunniteltu sellaisten organisaatioiden ainutlaatuisiin tarpeisiin, joiden pitää olla yhteensopivia Yhdysvaltain valtionhallinnon vaatimusten ja suojausstandardien kanssa. Yhdysvaltain valtionhallinnon asiakkaille suunniteltu Power BI-palvelu eroaa Power BI-palvelu kaupallisesta versiosta. Nämä ominaisuuksien erot ja ominaisuudet kuvataan seuraavissa osissa.
@@ -89,12 +89,12 @@ Jotta valtionhallinnon pilvipalveluasiakkaiden tarpeet saadaan täytettyä, valt
 |Raportin luominen|Koontinäyttöjen ja raporttien luominen ja tarkasteleminen|Käytettävissä|Käytettävissä|Käytettävissä|
 |  |Ajoitettu tietojen päivittäminen|Käytettävissä|Käytettävissä|Käytettävissä|
 |  |Päivitettävät työryhmän koontinäytöt|Käytettävissä|Käytettävissä|Käytettävissä|
-|  |Sivutetut raportit|Käytettävissä vain USGov Texasissa ja USGov Virginiassa |Käytettävissä|Toteutussuunnitelmassa|
+|  |Sivutetut raportit|Käytettävissä|Käytettävissä|Toteutussuunnitelmassa|
 |  |Mallisovellukset|Ei käytettävissä|Ei käytettävissä|Ei käytettävissä|
 |Tietoihin yhdistäminen|Tietojen ja raporttien tuominen Excelistä|Käytettävissä|Käytettävissä|Käytettävissä|
 |  |Tietojen tuominen CSV-tiedostoista|Käytettävissä|Käytettävissä|Käytettävissä|
 |  |Tietojen tuominen Power BI Desktop -tiedostoista|Käytettävissä|Käytettävissä|Käytettävissä|
-|  |Yhteydet CDS:ään|Ei käytettävissä|Ei käytettävissä|Ei käytettävissä|
+|  |Yhteydet CDS:ään|Käytettävissä|Ei käytettävissä|Ei käytettävissä|
 |  |Azure Data Lake Storage Gen2 -liitin|Ei käytettävissä|Ei käytettävissä|Ei käytettävissä|
 |Tiedonhallinta|Tiedonhallinnan yhdyskäytävä|Käytettävissä|Käytettävissä|Käytettävissä|
 |  |Tietojen salaus Azure SQL:ssä|Käytettävissä|Käytettävissä|Käytettävissä|
@@ -103,7 +103,7 @@ Jotta valtionhallinnon pilvipalveluasiakkaiden tarpeet saadaan täytettyä, valt
 |  |Upottaminen SharePoint Onlinessa Embed-verkko-osan avulla|Käytettävissä|Käytettävissä|Käytettävissä|
 |  |Tietovuot ja tekoälytoiminnot|Ei käytettävissä|Ei käytettävissä|Ei käytettävissä|
 |  |Power Automate -liitettävyys tietopohjaisille hälytyksille|Ei käytettävissä|Ei käytettävissä|Ei käytettävissä|
-|  |Power BI -välilehti Teamsissa|Ei käytettävissä|Ei käytettävissä|Ei käytettävissä|
+|  |Power BI -välilehti Teamsissa|Käytettävissä|Ei käytettävissä|Ei käytettävissä|
 |  |Automaattinen koneoppiminen|Ei käytettävissä|Ei käytettävissä|Ei käytettävissä|
 |  |Kognitiiviset palvelut|Ei käytettävissä|Ei käytettävissä|Ei käytettävissä|
 |  |Azure ML|Ei käytettävissä|Ei käytettävissä|Ei käytettävissä|
@@ -111,7 +111,6 @@ Jotta valtionhallinnon pilvipalveluasiakkaiden tarpeet saadaan täytettyä, valt
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * [Rekisteröidy Yhdysvaltain valtionhallinnon Power BI:hin](service-govus-signup.md)
+* [Microsoft Power Apps Yhdysvaltain valtionhallinnolle](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
+* [Power Automate Yhdysvaltain valtionhallinnolle](https://docs.microsoft.com/power-automate/us-govt)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Yhdysvaltain valtionhallinnon Power BI:n esittelyohjelma</a>
-* [Power BI -palvelun käytön aloittaminen](service-get-started.md)
-* [Mikä on Power BI Desktop?](desktop-what-is-desktop.md)
-

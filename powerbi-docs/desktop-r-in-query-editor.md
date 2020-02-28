@@ -1,79 +1,77 @@
 ---
 title: R:n käyttö Power-kyselyeditorissa
-description: Käytä R:ää Power BI Desktopin kyselyeditorissa kehittyneeseen analyysiin
+description: Käytä R:ää Power BI Desktopin Power Query -editorissa kehittyneeseen analyysiin.
 author: davidiseminger
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 01/28/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d2ba33e18701ad147cb38072461804b4528101ea
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a157b674cd96c10081168ac5258e5b2f6145f09d
+ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877935"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77464888"
 ---
-# <a name="use-r-in-query-editor"></a>R:n käyttö kyselyeditorissa
+# <a name="use-r-in-power-query-editor"></a>R:n käyttö Power-kyselyeditorissa
 
-[**R**](https://mran.microsoft.com/documents/what-is-r) on tehokas ohjelmointikieli, jota monet tilastotieteilijät, datatieteilijät ja tietoanalyytikot käyttävät. Voit käyttää **R:ää** Power BI Desktopin **kyselyeditorissa** seuraaviin tarkoituksiin:
+[R-kieli](https://mran.microsoft.com/documents/what-is-r) on tehokas ohjelmointikieli, jota monet tilastotieteilijät, datatieteilijät ja tietoanalyytikot käyttävät. Voit käyttää R:ää Power BI Desktopin Power Query -editorissa seuraaviin tarkoituksiin:
 
-* Tietomallien valmistelu
+* Tietomallien valmistelu.
 
-* Raporttien luominen
+* Raporttien luominen.
 
 * Tietojen puhdistaminen, edistynyt tietojen muotoilu ja tietojoukkoanalytiikka, jotka sisältävät puuttuvat tiedot, ennusteet, klusteroinnin ja paljon muuta.  
 
 ## <a name="install-r"></a>Asenna R
 
-Voit ladata **R:n** maksutta [Revolution Open -lataussivulta](https://mran.revolutionanalytics.com/download/) ja [CRAN-säilöstä](https://cran.r-project.org/bin/windows/base/).
+Voit ladata R:n maksutta [Revolution R Open -lataussivulta](https://mran.revolutionanalytics.com/download/) ja [CRAN-säilöstä](https://cran.r-project.org/bin/windows/base/).
 
-### <a name="install-mice"></a>Asenna mice
+## <a name="install-mice"></a>Asenna mice
 
-R-ympäristössä on oltava asennettuna [**mice**-kirjasto](https://www.rdocumentation.org/packages/mice/versions/3.5.0/topics/mice). Ilman **mice**-kirjastoa mallikomentosarjan koodi ei toimi oikein. **Mice**-paketin myötä otetaan käyttöön menetelmä, jonka avulla puuttuvat tiedot käsitellään.
+Edellytyksenä sinun on asennettava [mice-kirjasto](https://www.rdocumentation.org/packages/mice/versions/3.5.0/topics/mice) R-ympäristöösi. Ilman mice-kirjastoa mallikomentosarjan koodi ei toimi oikein. Mice-paketin myötä otetaan käyttöön menetelmä, jonka avulla puuttuvat tiedot käsitellään.
 
-**Mice**-kirjaston asentaminen:
+Mice-kirjaston asentaminen:
 
-1. Käynnistä R.exe-ohjelma (esimerkiksi C:\Program Files\Microsoft\R Open\R-3.5.3\bin\R.exe)  
+1. Käynnistä R.exe-ohjelma (esimerkiksi C:\Program Files\Microsoft\R Open\R-3.5.3\bin\R.exe).  
 
-2. Suorita asennuskomento:
+2. Suorita asennuskomento R-kehotteesta:
 
    ``` 
-   >  install.packages('mice') 
+   install.packages('mice') 
    ```
 
-## <a name="use-r-in-query-editor"></a>R:n käyttö kyselyeditorissa
+## <a name="use-r-in-power-query-editor"></a>R:n käyttö Power-kyselyeditorissa
 
-Havainnollistamme **R:n** käyttöä **kyselyeditorissa** käyttämällä esimerkkinä osakemarkkinoiden tietojoukkoa, joka on .csv-tiedostossa. Työstämme sitä seuraavien vaiheiden kautta:
+Havainnollistamme R:n käyttöä Power Query -editorissa käyttämällä esimerkkinä osakemarkkinoiden tietojoukkoa, joka on .csv-tiedostossa. Työstämme sitä seuraavien vaiheiden kautta:
 
-1. [Lataa **EuStockMarkets_NA.csv**-tiedosto](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Muista, mihin tallensit sen.
+1. [Lataa EuStockMarkets_NA.csv-tiedosto](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Muista, mihin tallensit sen.
 
-1. Lataa tiedosto **Power BI Desktopiin**: valitse **Aloitus**-valintanauhasta **Nouda tiedot > Teksti/CSV**.
+1. Lataa tiedosto Power BI Desktopiin. Valitse **Aloitus**-välilehdeltä **Nouda tiedot** > **Teksti/CSV**.
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_1.png)
+   ![Valitse Teksti/CSV](media/desktop-r-in-query-editor/r-in-query-editor_1.png)
 
-1. Valitse tiedosto ja valitse sitten **Avaa**. CSV-tiedot näytetään **teksti/CSV-tiedosto** -valintaikkunassa.
+1. Valitse EuStockMarkets_NA.csv-tiedosto ja valitse sitten **Avaa**. CSV-tiedot näytetään **Teksti/CSV-tiedosto**-valintaruudussa.
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_2.png)
+   ![Valitse CSV-tiedosto](media/desktop-r-in-query-editor/r-in-query-editor_2.png)
 
-1. Kun tiedot on ladattu, näet ne **Kentät**-ruudussa.
+1. Lataa tiedot tiedostosta valitsemalla **Lataa**. Kun Power BI on ladannut tiedot, uusi taulukko näkyy **Kentät**-ruudussa.
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_3.png)
+   ![Tiedot Kentät-ruudussa](media/desktop-r-in-query-editor/r-in-query-editor_3.png)
 
-1. Jos haluat avata **kyselyeditorin**, valitse **Aloitus**-valintanauhasta **Muokkaa kyselyitä**.
+1. Jos haluat avata Power Query -editorin, valitse **Aloitus**-valintanauhassa **Muokkaa kyselyitä**.
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_4.png)
+   ![Valitse Muokkaa kyselyitä](media/desktop-r-in-query-editor/r-in-query-editor_4.png)
 
-1. Valitse **Muunna**-valintanauhasta **Suorita R-komentosarja**. Näyttöön tulee **Suorita R-komentosarja** -editori.  
+1. Valitse **Muunna**-välilehdeltä **Suorita R-komentosarja**. Näyttöön tulee **Suorita R-komentosarja** -editori. Riveiltä 15 ja 20 puuttuu tietoja, kuten muiltakin rivejä, joita et näe kuvassa. Seuraavissa vaiheissa näytetään, miten R täyttää kyseiset rivit puolestasi.
 
-   Riveiltä 15 ja 20 puuttuu tietoja, kuten muiltakin rivejä, joita et näe kuvassa. Seuraavissa vaiheissa näytetään, miten R täyttää kyseiset rivit puolestasi.
+   ![Valitse Suorita R-komentosarja](media/desktop-r-in-query-editor/r-in-query-editor_5d.png)
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_5d.png)
-
-1. Anna tässä esimerkissä seuraava komentosarjakoodi. Muista korvata &lt;Oma tiedostopolku&gt; polulla, joka osoittaa **EuStockMarkets_NA.csv**-tiedostoon paikallisessa tiedostojärjestelmässäsi, esimerkiksi C:/Users/John Doe/Documents/Microsoft/EuStockMarkets_NA.csv
+1. Tätä esimerkkiä varten lisää seuraava komentosarjakoodi **Komentosarja**-ruutuun **Suorita R-komentosarja** -ikkunassa. Korvaa *&lt;Oma tiedostopolku&gt;* polulla, joka osoittaa EuStockMarkets_NA.csv-tiedostoon paikallisessa tiedostojärjestelmässäsi, esimerkiksi C:/Käyttäjät/Jari Kantee/Tiedostot/Microsoft/EuStockMarkets_NA.csv.
 
     ```r
        dataset <- read.csv(file="<Your File Path>/EuStockMarkets_NA.csv", header=TRUE, sep=",")
@@ -87,48 +85,55 @@ Havainnollistamme **R:n** käyttöä **kyselyeditorissa** käyttämällä esimer
     > [!NOTE]
     > Saat joutua korvaamaan muuttujan nimeltä *tuloste*, jotta voit luoda oikein uuden tietojoukon, johon suodattimia käytetään.
 
-7. Kun olet valinnut **OK**, **kyselyeditori** näyttää tietoturvaa koskevan varoituksen.
+7. Valitse **OK**. Power Query -editori näyttää tietosuojaa koskevan varoituksen.
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_6.png)
-8. Jotta R-komentosarjat toimivat oikein Power BI -palvelussa, kaikki tietolähteet on asetettava **julkisiksi**. Saat lisätietoja tietosuoja-asetuksista ja niiden vaikutuksista katsomalla [yksityisyystasot](desktop-privacy-levels.md).
+   ![Tietosuojavaroitus](media/desktop-r-in-query-editor/r-in-query-editor_6.png)
+8. Valitse varoitusviestissä **Jatka**. Määritä esiin tulevassa **Yksityisyystasot**-valintaikkunassa kaikkien tietolähteiden arvoksi **Julkinen**, jotta R-komentosarjat toimivat oikein Power BI -palvelussa. 
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_7.png)
+   ![Yksityisyystasot-valintaruutu](media/desktop-r-in-query-editor/r-in-query-editor_7.png)
 
-   Kun olet valinnut **Tallenna**, komentosarja suoritetaan. Huomaa **Kentät**-ruudun uusi sarake **completedValues**. Huomaa, että muutamia tietoelementtejä puuttuu, kuten rivillä 15 ja 18. Katso seuraavassa kohdassa, miten R käsittelee sen.
+   Saat lisätietoja tietosuoja-asetuksista ja niiden vaikutuksista katsomalla [Power BI Desktopin yksityisyystasot](desktop-privacy-levels.md).
 
-   Käyttämällä vain viittä R-komentosarjan riviä **kyselyeditori** täyttää puuttuvat arvot ennakoivan mallin avulla.
+ 9. Suorita komentosarja valitsemalla **Tallenna**. 
+
+   Huomaa **Kentät**-ruudun uusi sarake **completedValues**. Tästä sarakkeesta puuttuu joitakin tietoelementtejä, kuten rivillä 15 ja 18. Katso seuraavassa kohdassa, miten R käsittelee sen.
+
+   Käyttämällä vain viittä R-komentosarjan riviä Power Query -editori täyttää puuttuvat arvot ennakoivan mallin avulla.
 
 ## <a name="create-visuals-from-r-script-data"></a>Visualisointien luominen R-komentosarjatiedoista
 
-Voimme nyt visualisoida, miten **mice**-kirjastoa käyttävä R-komentosarjakoodi täytti puuttuvat arvot, mikä on esitetty seuraavassa kuvassa:
+Voimme nyt luoda visualisoinnin siitä, miten R-komentosarjakoodi ja mice-kirjasto täydentävät puuttuvat arvot.
 
-![](media/desktop-r-in-query-editor/r-in-query-editor_8a.png)
+![R-komentosarjan visualisointi](media/desktop-r-in-query-editor/r-in-query-editor_8a.png)
 
-Voit tallentaa kaikki valmiit visualisoinnit yhteen **Power BI Desktopin** .pbix-tiedostoon ja käyttää tietomallia ja sen R-komentosarjoja Power BI -palvelussa.
+Voit tallentaa kaikki valmiit visualisoinnit yhteen Power BI Desktopin .pbix-tiedostoon ja käyttää tietomallia ja sen R-komentosarjoja Power BI -palvelussa.
 
 > [!NOTE]
 > Voit [ladata .pbix-tiedoston](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete%20Values%20with%20R%20in%20PQ.pbix), jossa kaikki nämä vaiheet on suoritettu.
 
 Kun olet ladannut .pbix-tiedoston Power BI -palveluun, sinun on lisätoimien avulla otettava käyttöön tietojen päivitys ja päivitetyt visualisoinnit:  
 
-* **Ota tietojoukon ajoitettu päivitys käyttöön** – Jos haluat ottaa tietojoukon ja R-komentosarjan sisältävän työkirjan päivittämisen käyttöön, katso kohta [Ajoitetun päivityksen määrittäminen](refresh-scheduled-refresh.md), jossa on myös tietoja **henkilökohtaisesta yhdyskäytävästä**.
+* **Ota ajoitettu päivitys käyttöön tietojoukolle**: Ohjeita ajoitetun päivityksen määrittämiseen työkirjalle, jossa on R-komentosarjat sisältävä tietojoukko, on artikkelissa [Ajoitetun päivityksen määrittäminen](refresh-scheduled-refresh.md). Tässä artikkelissa on myös tietoja henkilökohtaisista yhdyskäytävistä.
 
-* **Asenna henkilökohtainen yhdyskäytävä** – **henkilökohtainen yhdyskäytävä** on oltava asennettuna koneessa, jossa tiedosto ja **R** sijaitsevat. Power BI -palvelu käyttää työkirjaa ja hahmontaa päivitetyt visualisoinnit uudelleen. Lue lisätietoja [henkilökohtaisen yhdyskäytävän asentamisesta ja määrittämisestä](service-gateway-personal-mode.md).
+* **Asenna henkilökohtainen yhdyskäytävä**: Henkilökohtainen yhdyskäytävä täytyy olla asennettuna koneessa, jossa tiedosto ja R sijaitsevat. Power BI -palvelu käyttää työkirjaa ja hahmontaa päivitetyt visualisoinnit uudelleen. Jos haluat lisätietoja, katso [Henkilökohtaisten yhdyskäytävien käyttö Power BI:ssä](service-gateway-personal-mode.md).
 
 ## <a name="limitations"></a>Rajoitukset
 
-Kyselyissä, jotka sisältävät **Kyselyeditorissa** luotuja R-komentosarjoja, on joitakin rajoituksia:
+Kyselyissä, jotka sisältävät Power Query -editorissa luotuja R-komentosarjoja, on joitakin rajoituksia:
 
-* Kaikki R-tietolähteet on määritettävä **julkisiksi**. Myös kaikkien muiden **kyselyeditorin** kyselyn vaiheiden on oltava julkisia. Siirry tietolähdeasetuksiin **Power BI Desktopissa** valitsemalla **Tiedosto > Asetukset > Tietolähdeasetukset**.
+* Kaikki R-tietolähteet on määritettävä **julkisiksi**. Myös kaikkien muiden Power Query -editorin kyselyn vaiheiden on oltava julkisia. 
 
-  ![](media/desktop-r-in-query-editor/r-in-query-editor_9.png)
+   Siirry tietolähdeasetuksiin Power BI Desktopissa valitsemalla **Tiedosto** > **Asetukset** > **Tietolähdeasetukset**.
 
-  Valitse **Tietolähdeasetukset**-valintaikkunassa tietolähteet ja sitten **Muokkaa käyttöoikeuksia...** .  Aseta **yksityisyystasoksi** **Julkinen**.
+   ![Valitse Tietolähdeasetukset](media/desktop-r-in-query-editor/r-in-query-editor_9.png)
 
-  ![](media/desktop-r-in-query-editor/r-in-query-editor_10.png)    
-* Jos haluat ottaa R-visualisointien tai tietojoukon ajoitetun päivityksen käyttöön, sinun on otettava **Ajoitettu päivitys** käyttöön ja asennettava **Henkilökohtainen yhdyskäytävä** tietokoneeseen, jossa työkirja ja **R** ovat. Saat lisätietoja kummastakin tämän artikkelin edellisestä osasta, jonka linkeissä on lisätietoja kummastakin.
+   Valitse **Tietolähdeasetukset**-valintaikkunassa ainakin yksi tietolähde ja valitse sitten **Muokkaa käyttöoikeuksia**. Aseta **yksityisyystasoksi** **Julkinen**.
 
-Voit tehdä kaikenlaisia asioita R:llä ja mukautetuilla kyselyillä, joten tutki ja muotoile tietoja sellaisiksi, miten haluat niiden näkyvän.
+   ![Tietolähdeasetusten valintaikkuna](media/desktop-r-in-query-editor/r-in-query-editor_10.png)  
+  
+* Jos haluat ajoittaa R-visualisointien tai tietojoukon päivityksen, ota ajoitettu päivitys käyttöön ja asenna henkilökohtainen yhdyskäytävä tietokoneeseen, jossa työkirja ja R ovat. 
+
+Voit tehdä R:llä ja mukautetuilla kyselyillä kaikenlaista. Tutustu tietoihin ja muotoile niitä niin, että ne näkyvät haluamallasi tavalla.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
@@ -138,4 +143,4 @@ Voit tehdä kaikenlaisia asioita R:llä ja mukautetuilla kyselyillä, joten tutk
 
 * [Ulkoisen R IDE:n käyttö Power BI:n kanssa](desktop-r-ide.md) 
 
-* [R-paketit Power BI-palvelussa](service-r-packages-support.md)
+* [Visualisointien luominen R-paketeilla Power BI -palvelussa](service-r-packages-support.md)

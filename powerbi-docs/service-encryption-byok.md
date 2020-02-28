@@ -1,5 +1,5 @@
 ---
-title: Omien salausavainten tuominen Power BI:hin (esikatselu)
+title: Omien salausavainten tuominen Power BI:hin
 description: Lue, miten voit käyttää omia salausavaimia Power BI Premiumissa.
 author: davidiseminger
 ms.author: davidi
@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 02/20/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: c4b4d706f56d9ebc91b17194c9b2fa631aeb8497
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 133d807d26ba6571eeb614852f3f651a749a369f
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75762113"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527767"
 ---
-# <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Omien salausavainten tuominen Power BI:hin (esikatselu)
+# <a name="bring-your-own-encryption-keys-for-power-bi"></a>Omien salausavainten tuominen Power BI:hin
 
 Power BI salaa tiedot _levossa_ ja _käytössä_ olevat tiedot. Oletusarvoisesti Power BI käyttää Microsoftin hallitsemia avaimia tietojen salaamiseen. Power BI Premiumissa voit käyttää omia avaimia tietojoukkoon tuotuihin, levossa oleviin tietoihin (katso lisätiedot artikkelista [Huomioitavaa tietolähteissä ja tallennusvälineissä](#data-source-and-storage-considerations)). Tähän menetelmään viitataan usein termillä _Bring Your Own Key_ (BYOK).
 
 ## <a name="why-use-byok"></a>Mitä etuja BYOK tarjoaa?
 
-BYOK:n avulla on helppo noudattaa vaatimuksia, jotka määrittävät avainjärjestelyt pilvipalveluntarjoajan kanssa (tässä tapauksessa Microsoft). BYOK:ta käytettäessä annat Power BI:n levossa olevien tietojen salausavaimet ja hallitset niitä sovellustasolla. Tämän ansiosta voit valvoa organisaatiosi avaimia ja perua ne, jos päätät lopettaa palvelun käytön. Avainten kumoamisen jälkeen palvelu ei voi lukea tietoja.
+BYOK:n avulla on helppo noudattaa vaatimuksia, jotka määrittävät avainjärjestelyt pilvipalveluntarjoajan kanssa (tässä tapauksessa Microsoft). BYOK:ta käytettäessä annat Power BI:n levossa olevien tietojen salausavaimet ja hallitset niitä sovellustasolla. Tämän ansiosta voit valvoa organisaatiosi avaimia ja perua ne, jos päätät lopettaa palvelun käytön. Avainten kumoamisen jälkeen palvelu ei voi lukea tietoja 30 minuuttiin.
 
 ## <a name="data-source-and-storage-considerations"></a>Huomioitavaa tietolähteissä ja tallennusvälineissä
 
@@ -34,7 +34,12 @@ BYOK:n käyttö edellyttää, että lataat tietoja Power BI -palveluun Power BI 
 - [Virtautettavat tietojoukot](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 - [Suuret mallit](service-premium-large-models.md)
 
-BYOK koskee vain PBIX-tiedostoon liittyvää tietojoukkoa, ei ruutujen ja visualisointien kyselytulosten välimuisteja.
+BYOK koskee vain tietojoukkoja. Push-tietojoukkoja, Excel-tiedostoja ja CSV-tiedostoja, joita käyttäjät voivat ladata palveluun, ei salata käyttämällä omaa avaintasi. Jos haluat selvittää, mitkä artefakteja tallennetaan työtiloihisi, käytä seuraavaa PowerShell-komentoa:
+
+```PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All```
+
+> [!NOTE]
+> Tämä cmdlet-komento edellyttää Power BI -hallintamoduulin versiota 1.0.840. Voit tarkistaa versiosi suorittamalla komennon Get-InstalledModule-Name MicrosoftPowerBIMgmt. Asenna uusin versio suorittamalla komento Install-Module -Name MicrosoftPowerBIMgmt. Saat lisätietoja Power BI:n cmdlet-komennosta ja sen parametreista kohdasta [Power BI:n PowerShell-cmdlet-komentomoduuli](https://docs.microsoft.com/powershell/power-bi/overview).
 
 ## <a name="configure-azure-key-vault"></a>Azure Key Vaultin määrittäminen
 
@@ -183,3 +188,17 @@ Power BI sisältää cmdlet-lisäkomentoja, joiden avulla voit hallintaan vuokra
     ```powershell
     Switch-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
     ```
+
+
+
+## <a name="next-steps"></a>Seuraavat vaiheet
+
+* [Power BI:n PowerShell-cmdlet-komentomoduuli](https://docs.microsoft.com/powershell/power-bi/overview) 
+
+* [Töiden jakamistavat Power BI:ssä](service-how-to-collaborate-distribute-dashboards-reports.md)
+
+* [Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla](service-url-filters.md)
+
+* [Upota raportin verkko-osa SharePoint Onlinessa](service-embed-report-spo.md)
+
+* [Power BI:n Julkaise verkkoon -toiminto](service-publish-to-web.md)

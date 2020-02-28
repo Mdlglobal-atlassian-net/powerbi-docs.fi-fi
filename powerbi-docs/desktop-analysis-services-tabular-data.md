@@ -1,61 +1,60 @@
 ---
-title: Analysis Servicesin taulukkomuotoisten tietojen käyttäminen Power BI Desktopissa
-description: Analysis Servicesin taulukkomuotoiset tiedot Power BI Desktopissa
+title: Analysis Servicesin taulukkomuotoisiin tietoihin yhdistäminen Power BI Desktopissa
+description: Power BI Desktopissa voit yhdistää SQL Server Analysis Servicesin taulukkomalleihin ja hakea niistä tietoja käyttämällä reaaliaikaista yhteyttä tai valitsemalla Power BI Desktopiin tuotavat kohteet.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/28/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7ce20b8b6dc382cdafe61bde3e9305197fd33ea6
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: ac15a732f3d388fd5dafa61d33eec1d82022da54
+ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762067"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77464241"
 ---
 # <a name="connect-to-analysis-services-tabular-data-in-power-bi-desktop"></a>Analysis Servicesin taulukkomuotoisiin tietoihin yhdistäminen Power BI Desktopissa
-Power BI Desktopissa on kaksi tapaa muodostaa yhteys SQL Server Analysis Servicesin taulukkomalleihin ja hakea niistä tietoja: Tutustu käyttämällä reaaliaikaista yhteyttä tai Valitse kohteet ja tuo Power BI Desktopiin.
+Power BI Desktopissa on kaksi tapaa muodostaa yhteys SQL Server Analysis Servicesin taulukkomalleihin ja hakea niistä tietoja: Tutustu käyttämällä reaaliaikaista yhteyttä tai valitsemalla kohteet ja tuomalla ne Power BI Desktopiin.
 
 Menetelmien kuvailu on alla.
 
-**Tutustu käyttämällä reaaliaikaista yhteyttä** – Kun käytät reaaliaikaista yhteyttä, taulukkomallin tai perspektiivin kohteet, kuten taulukot, sarakkeet ja mittarit näkyvät Power BI Desktopin Kentät-luettelossa. Voit käyttää Power BI Desktopin kehittyneitä visualisointi- ja raportointityökaluja taulukkomallin tutkimiseen uusilla, erittäin vuorovaikutteisilla tavoilla.
+**Tutustuminen reaaliaikaisen yhteyden avulla**: Kun käytät reaaliaikaista yhteyttä, taulukkomallin tai perspektiivin kohteet, kuten taulukot, sarakkeet ja mittarit näkyvät Power BI Desktopin **Kentät**-luettelossa. Voit käyttää Power BI Desktopin kehittyneitä visualisointi- ja raportointityökaluja taulukkomallin tutkimiseen uusilla, erittäin vuorovaikutteisilla tavoilla.
 
-Kun muodostat yhteyden reaaliajassa, mallista ei tuoda tietoja Power BI Desktopiin. Aina kun olet vuorovaikutuksessa visualisoinnin kanssa, Power BI Desktop lähettää taulukkomallille kyselyn ja laskee näkemäsi tulokset. Näet aina taulukkomallin uusimmat käytettävissä olevat tiedot, jotka ovat peräisin joko viimeisimmästä käsittelykerrasta tai taulukkomallissa käytettävissä olevista Direct Query -taulukoista. 
+Kun muodostat yhteyden reaaliajassa, mallista ei tuoda tietoja Power BI Desktopiin. Aina kun olet vuorovaikutuksessa visualisoinnin kanssa, Power BI Desktop lähettää taulukkomallille kyselyn ja laskee näkemäsi tulokset. Näet aina taulukkomallin uusimmat käytettävissä olevat tiedot, jotka ovat peräisin joko viimeisimmästä käsittelykerrasta tai taulukkomallissa käytettävissä olevista DirectQuery-taulukoista. 
 
 Muista, että taulukkomallien suojaus on erittäin tehokas. Power BI Desktopissa näkyvät kohteet riippuvat siitä, että sinulla on oikeudet taulukkomalliin, johon olet muodostanut yhteyden.
 
 Kun olet luonut dynaamisia raportteja Power BI Desktopissa, voit jakaa ne julkaisemalla ne Power BI -sivustossasi. Kun julkaiset Power BI Desktop -tiedoston käyttäen reaaliaikaista yhteyttä Power BI -sivustollasi olevaan taulukkomalliin, järjestelmänvalvojan on pitänyt asentaa ja määrittää paikallisen tietoyhdyskäytävän. Voit lukea lisää [paikallisesta tietoyhdyskäytävästä](service-gateway-onprem.md).
 
-**Valitse kohteet ja tuo ne Power BI Desktopiin** – Kun muodostat yhteyden tämän asetuksen avulla, voit valita esim. taulukoita, sarakkeita ja mittareita taulukkomallista tai perspektiivistä ja ladata ne Power BI Desktop -malliin. Voit räätälöidä tiedostoa lisää Power BI Desktopin edistyneellä kyselyeditorilla. Voit käyttää Power BI Desktop mallinnusominaisuuksia malliin tietojen lisämallintamiseen. Power BI Desktopin ja taulukkomallin välillä ei säilytetä reaaliaikaista yhteyttä. Voit tutustua Power BI Desktop -mallin offline-tilassa tai julkaista sen Power BI -sivustollasi.
+**Valitse kohteet ja tuo ne Power BI Desktopiin**: Kun muodostat yhteyden tämän asetuksen avulla, voit valita esim. taulukoita, sarakkeita ja mittareita taulukkomallista tai perspektiivistä ja ladata ne Power BI Desktop -malliin. Power BI Desktopin Power Query ‑editorin avulla voit määrittää haluamasi tiedot ja sen mallintamisominaisuudet tarkemmin. Koska Power BI Desktopin ja taulukkomallin välillä ei ole reaaliaikaista yhteyttä, voit tutustua Power BI Desktop ‑malliin offline-tilassa tai julkaista sen Power BI ‑sivustoon.
 
 ## <a name="to-connect-to-a-tabular-model"></a>Yhteyden muodostaminen taulukkomalliin
-1. Napsauta Power BI Desktopin **Aloitus**-välilehdellä **Hae tiedot**.
+1. Valitse Power BI Desktopin **Aloitus**-välilehdeltä **Hae tiedot** > **Lisää** > **Tietokanta**.
    
-   ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata.png)
-2. Napsauta **SQL Server Analysis Services -tietokanta** ja valitse **Yhdistä**.
+1. Valitse **SQL Server Analysis Services -tietokanta** ja valitse sitten **Yhdistä**.
    
-   ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as.png)
-3. Anna palvelimen nimi ja valitse yhteystila. 
+   ![SQL Server Analysis Services -tietokannan valitseminen](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as.png)
+3. Kirjoita **SQL Server Analysis Services Database** ‑ikkunaan **palvelimen** nimi, valitse yhteystila ja valitse sitten **OK**.
    
-   ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_server.png)
-4. Tämä vaihe määräytyy yhteystilavalintasi mukaan:
+   ![SQL Server Analysis Services -tietokantaikkuna](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_server.png)
+4. Tämä vaihe **Siirtyminen**-ikkunassa määräytyy yhteystilavalintasi mukaan:
 
-* Jos olet muodostamassa reaaliaikaista yhteyttä, valitse siirtymistoiminnossa taulukkomalli tai perspektiivi.
+   - Jos olet muodostamassa reaaliaikaista yhteyttä, valitse taulukkomalli tai perspektiivi.
   
-  ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_live.png)
-* Jos valitset Valitse kohteet ja nouda tiedot, valitse siirtymistoiminnossa taulukkomalli tai perspektiivi. Voit halutessasi valita vain tietyt taulukot tai sarakkeet ladattavaksi. Jos haluat muokata tietojasi ennen lataamista, avaa ne kyselyeditorissa napsauttamalla Muokkaa. Kun olet valmis, valitse Lataa ja tuo tiedot Power BI Desktopiin.
+      ![Taulukkomallin tai perspektiivin valitseminen siirtymisikkunasta](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_live.png)
+   - Jos valitsit kohteiden valitsemisen ja tietojen hakeminen, valitse taulukkomalli tai perspektiivi ja valitse sitten jokin tietty taulukko tai sarake, jonka haluat ladata. Jos haluat muotoilla tietoja ennen lataamista, avaa Power Query ‑editori valitsemalla **Muokkaa kyselyjä**. Kun olet valmis, tuo tiedot Power BI Desktopiin valitsemalla **Lataa**.
 
-  ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_select.png)
+      ![Ladattavan siirtymistaulukon tai ‑sarakkeen valitseminen](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_select.png)
 
 ## <a name="frequently-asked-questions"></a>Usein kysyttyjä kysymyksiä
 **Kysymys:** Tarvitsenko paikallisen tietoyhdyskäytävän?
 
 **Vastaus**: Riippuu tilanteesta. Jos käytät Power BI Desktopia yhdistääksesi reaaliajassa taulukkomalliin, mutta et aio julkaista sitä Power BI -sivustossasi, et tarvitse yhdyskäytävää. Jos aiot julkaista taulukkomallin Power BI -sivustossasi, tietoyhdyskäytävä varmistaa turvallisen viestinnän Power BI -palvelun ja paikallisen Analysis Services -palvelimen välillä. Ota yhteys Analysis Services -palvelinten ylläpitäjään, ennen kuin asennat tietoyhteyskäytävän.
 
-Jos valitset valitse kohteet ja nouda tiedot, tuot taulukkomallin tiedot suoraan Power BI Desktop -tiedostoon, joten yhdyskäytävä ei ole tarpeen.
+Jos valitset kohteiden valitsemisen ja tietojen noutamisen, tuot taulukkomallin tiedot suoraan Power BI Desktop -tiedostoon, joten yhdyskäytävä ei ole tarpeen.
 
 **Kysymys:** Mitä eroa on reaaliaikaisen yhteyden muodostamisessa taulukkomalliin Power BI -palvelusta ja reaaliaikaisen yhteyden muodostamisessa Power BI Desktopista?
 
@@ -75,27 +74,27 @@ Jos valitset valitse kohteet ja nouda tiedot, tuot taulukkomallin tiedot suoraan
 
 **Kysymys:** Näen siirtymistoiminnossa mallin ja perspektiivin. Mikä niiden ero on?
 
-**Vastaus**: Perspektiivi on taulukkomallin tietty näkymä. Se voi sisältää vain valittuja taulukoita, sarakkeita tai mittareita tietoanalyysin tarpeiden mukaan. Taulukkomalli sisältää aina vähintään yhden perspektiivin, johon voi sisältyä mitä tahansa mallissa. Jos et ole varma, mitä sinun pitäisi valita, ota yhteys järjestelmänvalvojaan.
+**Vastaus**: Perspektiivi on taulukkomallin tietty näkymä. Se voi sisältää vain valittuja taulukoita, sarakkeita tai mittareita tietoanalyysin tarpeiden mukaan. Taulukkomalli sisältää aina vähintään yhden perspektiivin, johon voi sisältyä mitä tahansa mallissa. Jos et ole varma, mikä perspektiivi sinun pitäisi valita, ota yhteys järjestelmänvalvojaan.
 
 **Kysymys:** Onko Analysis Servicesissä ominaisuuksia, jotka muuttavat Power BI:n toimintaa?
 
 **Vastaus**: Kyllä. Taulukkomuotoisen mallin käyttämien ominaisuuksien mukaan Power BI Desktopin käyttökokemus voi muuttua. Esimerkkejä ovat muun muassa seuraavat:
-* Mittarit saattavat näkyä mallissa ryhmiteltyinä yhteen kenttäluettelon yläosassa sen sijaan, että ne näkyisivät taulukoissa sarakkeiden rinnalla. Ei hätää! Voit edelleen käyttää niitä tavalliseen tapaan; ne vain löytyvät helpommin näin.
-* Jos taulukkomuotoisessa mallissa on määritettynä laskentaryhmiä, voit käyttää niitä vain yhdessä mallin mittareiden kanssa. Et voi käyttää niitä luomiesi implisiittisten mittareiden kanssa lisäämällä visualisointiin numerokenttiä. Mallilla voi myös olla **DiscourageImplicitMeasures**-lippu asetettuna manuaalisesti. Se vaikuttaa samalla tavalla. Lisätietoja on kohdassa [Laskentaryhmät Analysis Servicesissä](https://docs.microsoft.com/analysis-services/tabular-models/calculation-groups#benefits)
+* Mittarit saattavat näkyä mallissa ryhmiteltyinä yhteen **Kentät**-ruudun luettelon yläosassa sen sijaan, että ne näkyisivät taulukoissa sarakkeiden rinnalla. Ei hätää: voit edelleen käyttää niitä tavalliseen tapaan, ne vain löytyvät helpommin näin.
+
+* Jos taulukkomuotoisessa mallissa on määritettynä laskentaryhmiä, voit käyttää niitä vain yhdessä mallin mittareiden kanssa. Et voi käyttää niitä luomiesi implisiittisten mittareiden kanssa lisäämällä visualisointiin numerokenttiä. Mallilla voi myös olla **DiscourageImplicitMeasures**-lippu asetettuna manuaalisesti. Se vaikuttaa samalla tavalla. Lisätietoja on kohdassa [Laskentaryhmät Analysis Servicesissä](https://docs.microsoft.com/analysis-services/tabular-models/calculation-groups#benefits).
 
 ## <a name="to-change-the-server-name-after-initial-connection"></a>Voit muuttaa palvelimen nimen ensiyhteyden jälkeen
 Kun olet luonut Power BI Desktop -tiedoston ja tutustunut reaaliaikaiseen yhteyteen, saatat joissakin tapauksissa haluta vaihtaa yhteyden toiseen palvelimeen. Jos olet esimerkiksi luonut Power BI Desktop -tiedoston muodostaessasi yhteyden kehityspalvelimeen ja ennen Power BI -palveluun julkaisemista, haluatkin vaihtaa yhteyden tuotantopalvelimeen.
 
-1. Valitse **Muokkaa kyselyjä** valintanauhasta.
-   
-   ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_chname_editquery.png)
-2. Kirjoita uuden palvelimen nimi.
-   
-   ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_chname_dialog.png)
-   
+Palvelimen nimen muuttaminen:
+
+1. Valitse **Muokkaa kyselyjä** **Aloitus**-välilehdeltä.
+
+2. Kirjoita **SQL Server Analysis Services Database** ‑ikkunaan **palvelimen** nimi ja valitse sitten **OK**.
+
    
 ## <a name="troubleshooting"></a>Vianmääritys 
-Seuraavassa on listattu kaikki tunnetut ongelmat, jotka ilmenevät yhdistettäessä SQL Server Analysis Servicesiin (SSAS) tai Azure Analysis Servicesiin. 
+Seuraavassa on lueteltu kaikki tunnetut ongelmat, jotka ilmenevät yhdistettäessä SQL Server Analysis Servicesiin (SSAS) tai Azure Analysis Servicesiin: 
 
-* **Virhe: Mallirakennetta ei voitu ladata** – Tämä virhe ilmenee yleensä silloin, kun käyttäjä muodostaa yhteyden Analysis Servicesiin ilman tietokannan/mallin käyttöoikeutta.
+* **Virhe: Mallirakennetta ei voitu ladata**: Tämä virhe ilmenee yleensä, kun käyttäjä yhdistää Analysis Servicesiin ilman tietokannan/kuution käyttöoikeutta.
 

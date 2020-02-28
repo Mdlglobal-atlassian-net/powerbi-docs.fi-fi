@@ -3,20 +3,21 @@ title: Mikä Power BI:n kuluttajaversio on?
 description: Yleiskatsaus – Power BI kuluttajille (kutsutaan myös loppukäyttäjiksi tai yrityskäyttäjiksi).
 author: mihart
 ms.service: powerbi
-ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 10/31/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: bf5e83005e0bd1782e497cdeec1d3689e5749b12
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 100a9302e260a7c8f34c6fa07cc6b231e7271ce6
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863797"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496194"
 ---
 # <a name="the-power-bi-service-for-consumers"></a>Power BI -palvelu kuluttajille
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 Elämme tietokulttuurissa, jossa liiketoimintapäätökset perustuvat tosiasioihin, eivät mielipiteisiin. Tarvitset tietoja näiden päätösten tekemiseen, eivätkä työkaverisi aiheuta pettymystä tässä suhteessa.     
  
@@ -43,6 +44,8 @@ Työroolisi määrittää, miten käytät Power BI:tä. Loppukäyttäjät eli *k
 Kuluttajana et voi käyttää Power BI:n kaikkia ominaisuuksia. Tällä ei ole merkitystä, koska koontinäyttöjen ja raporttien luominen on muiden tehtävä. Sinä käytät Power BI -palvelua analysointiin, valvontaan, tarkasteluun ja päätöksentekoon. 
 
 Jossain vaiheessa tulet näkemään termin ”Power BI Desktop” tai vain ”Desktop”. Tämä on erillinen työkalu, jota *suunnittelijat* käyttävät koontinäyttöjen ja raporttien luomiseen ja jakamiseen kanssasi.  Sinun on hyvä tietää, että on olemassa muita Power BI -työkaluja, mutta jos olet kuluttaja, tulet työskentelemään vain Power BI -palvelun kanssa. 
+
+Tarvitset Power BI Pro- tai Premium-käyttöoikeuden, koska käsittelet *jaettua* sisältöä. [Mikä käyttöoikeus minulla on?](end-user-license.md)
 
 
 ## <a name="safely-interact-with-content"></a>Sisällön turvallinen käyttö 

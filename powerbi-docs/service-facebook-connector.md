@@ -6,20 +6,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dcfc695d0371cce21a827ddfe71b3b4b05863935
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 882cddf7728a27e78056a35c14fde20f00678e33
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762412"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527698"
 ---
 # <a name="use-the-facebook-connector-for-power-bi-desktop"></a>Power BI Desktopin Facebook-yhdistimen käyttö
 **Power BI Desktopin** Facebook-yhdistin on riippuvainen Facebook Graph ‑ohjelmointirajapinnasta. Siksi sen ominaisuudet ja käytettävyys voivat vaihdella ajan mittaan.
 
 Voit katsella [opetusohjelman Power BI Desktopin Facebook-yhdistimestä](desktop-tutorial-facebook-analytics.md).
+
+> [!IMPORTANT]
+> **Facebook-tietoliittimen poistamista koskeva ilmoitus:** Tietojen tuominen ja päivittäminen Facebookista Exceliin lakkaa toimimasta oikein huhtikuun alussa 2020. Voit käyttää Facebookin *Hae ja muunna (Power Query)* -liitintä siihen asti. Kyseisen ajankohdan jälkeen et voi muodostaa yhteyttä Facebookiin ja saat virhesanoman. Suosittelemme tarkistamaan tai poistamaan olemassa olevat Facebook-liitintä käyttävät *Hae ja muunna (Power Query)* -kyselyt mahdollisimman pian odottamattomien tulosten välttämiseksi.
+
 
 Facebook poisti Graph-ohjelmointirajapinnan version 1.0 käytöstä 30.4.2015. Power BI käyttää Graph-ohjelmointirajapintaa Facebook-yhdistimen taustalla, jotta voit muodostaa yhteyden tietoihisi ja analysoida niitä.
 

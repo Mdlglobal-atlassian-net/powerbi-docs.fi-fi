@@ -7,14 +7,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/31/2020
 ms.author: davidi
-ms.openlocfilehash: a6d949f95f463cb988958551d825a4eae824fb70
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: d3733b651ac8b9687d3b0547cc2f76c04a0d0823
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73865832"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427250"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Vinkkejä raporttien luomiseen Power BI Desktopissa
 Joskus voi tarvita hieman ylimääräistä apua, jotta tiedoista saa kaiken hyödyn irti. Olemme koonneet yhteen muutamia vinkkejä, joita voit hyödyntää, kun luot raportteja Microsoftin Power BI Desktopissa *ja* Microsoft Excel 2016:ssa. Niistä on hyötyä myös Excel 2013 Pro Plus -versioissa, joissa Power Pivot -apuohjelma on otettu käyttöön sekä Power Query asennettuna ja käytössä. 
@@ -36,7 +36,7 @@ Kun napsautat Power BI Desktopin kyselyeditorin siirtymistoiminnossa jotakin kys
 
 * Kun käytät tiedostoja kyselyn tietolähteenä, absoluuttinen polku tiedostoon tallennetaan kyselyyn. Kun jaat tai siirrät Power BI Desktop -tiedostoa tai Excel-laskentataulukkoa, säästät aikaa, kun voit päivittää viittaukset kerralla sen sijaan, että päivittäisit yksittäiset polut.
 
-Oletusarvoisesti kaikki kyselyt lataavat joko Excel-laskentataulukkoon tai tietomalliin (tai molempiin). Tietyt kyselyt ovat välivaiheita, eikä niitä ole tarkoitettu loppukäyttäjille. Tästä on usein kyse, kun kyselyihin viitataan edellä mainitulla tavalla. Voit hallita kyselyn lataamistapaa napsauttamalla kyselyä hiiren kakkospainikkeella siirtymistoiminnossa ja muuttamalla Ota lataaminen käyttöön -asetusta. Kun *Ota lataaminen käyttöön* -asetuksen vieressä ei ole valintamerkkiä, kysely on yhä käytettävissä Kysely-välilehdessä ja voit käyttää sitä muihin kyselyihin. Tämä on erityisen hyödyllinen yhdessä Yhdistä-, Liitä- ja Viittaus-muunnosten kanssa. Koska kyselytuloksia ei kuitenkaan ole ladattu tietomalliin, kysely ei tarpeettomasti täytä raportin kenttäluetteloa tai tietomallia. 
+Oletuksena kaikki kyselyt ladataan tietomalliin. Tietyt kyselyt ovat välivaiheita, eikä niitä ole tarkoitettu loppukäyttäjille. Tästä on usein kyse, kun kyselyihin viitataan edellä mainitulla tavalla. Voit hallita kyselyn lataamistapaa napsauttamalla kyselyä hiiren kakkospainikkeella siirtymistoiminnossa ja muuttamalla Ota lataaminen käyttöön -asetusta. Kun *Ota lataaminen käyttöön* -asetuksen vieressä ei ole valintamerkkiä, kysely on yhä käytettävissä Kysely-välilehdessä ja voit käyttää sitä muihin kyselyihin. Tämä on erityisen hyödyllinen yhdessä Yhdistä-, Liitä- ja Viittaus-muunnosten kanssa. Koska kyselytuloksia ei kuitenkaan ole ladattu tietomalliin, kysely ei tarpeettomasti täytä raportin kenttäluetteloa tai tietomallia. 
 
 ## <a name="scatter-charts-need-a-point-identifier"></a>Pistekaavio edellyttää pistetunnusta
 Otetaan esimerkiksi yksinkertainen taulukko, joka sisältää lämpötiloja ja niiden mittausaikoja. Jos tiedot piirretään suoraan pistekaavioon, Power BI koostaa kaikki arvot yhdeksi pisteeksi. Jotta voit näyttää yksittäiset arvopisteet, sinun täytyy lisätä kenttä kentän Tiedot-jakaumaan. Yksinkertainen tapa tehdä tämä Power BI Desktopissa on käyttää Kysely-välilehden Lisää sarake -valintanauhan Lisää indeksisarake -vaihtoehtoa. 
@@ -116,7 +116,7 @@ Tietojoukkoja ladataan aktiivisista asiakastukipyynnöistä ja työkohteiden tie
 > 
 > 
 
-Kun haluamme seurata kaikkia tapahtumia ja työkohteita, jotka liittyvät tiettyyn CustomerName-kohteeseen, emme voi noin vain muodostaa suhdetta näiden tietojoukkojen välille. Tietyt WorkItem-tiedot eivät ehkä liity CustomerName-tietoon, joten tällainen kenttä olisi tyhjä tai arvoltaan null. WorkItem- ja CustomerIncident-skeemoihin voi sisältyä useita tietueita mille tahansa CustomerName-kohteelle. 
+Kun haluamme seurata kaikkia tapauksia ja työkohteita, jotka liittyvät tiettyyn CustomerName-kohteeseen, emme voi noin vain muodostaa suhdetta näiden tietojoukkojen välille. Tietyt WorkItem-tiedot eivät ehkä liity CustomerName-tietoon, joten tällainen kenttä olisi tyhjä tai arvoltaan null. WorkItem- ja CustomerIncident-skeemoihin voi sisältyä useita tietueita mille tahansa CustomerName-kohteelle. 
 
 ### <a name="creating-relationships-in-power-bi-desktop-when-the-data-has-null-or-blank-values"></a>Suhteiden muodostaminen Power BI Desktopissa, kun tiedoissa on tyhjiä tai null-arvoja
 Tietojoukoissa on usein sarakkeita, jotka sisältävät tyhjiä tai null-arvoja. Se voi aiheuttaa ongelmia suhteiden käyttämisessä. Ongelman voi korjata periaatteessa kahdella tavalla. Voit poistaa rivit, jotka sisältävät tyhjiä tai null-arvoja. Sen voi tehdä joko Kysely-välilehden suodatustoiminnolla tai valitsemalla Säilytä vain vastaavat rivit -asetuksen, jos kyselyjä ollaan yhdistämässä. Vaihtoehtoisesti voit korvata null-arvoiset tai tyhjät arvot arvoilla, jotka toimivat suhteissa. Yleensä käytetään esimerkiksi merkkijonoja ”NULL” ja ”(Tyhjä)”. Mitään yhtä ja ainoaa oikeaa tapaa ei ole. Rivien suodattaminen pois kyselyvaiheessa poistaa rivejä ja voi vaikuttaa yhteenvetotilastoihin ja laskutoimituksiin. Jälkimmäisessä lähestymistavassa säilytetään kyseiset tietorivit, mutta se voi aiheuttaa liittymättömien rivien näkymisen liittyvinä mallissa, mikä aiheuttaa vääriä tuloksia laskutoimituksissa. Jos valitset jälkimmäisen ratkaisun, varmista, että käytät suodattimia näkymässä/kaaviossa aina tarpeen mukaan, jotta saat tarkkoja tuloksia. Mikä tärkeintä, arvioi tarkkaan, mitkä rivit säilytetään tai poistetaan, niin ymmärrät sen yleisen vaikutuksen analyysiin. 
@@ -132,7 +132,7 @@ Tietojoukkoja ladataan aktiivisista asiakastukipyynnöistä ja työkohteiden tie
 > 
 > 
 
-Kun haluamme seurata kaikkia tapahtumia ja työkohteita, jotka liittyvät tiettyyn CustomerName-kohteeseen, emme voi noin vain muodostaa suhdetta näiden tietojoukkojen välille. Tietyt WorkItem-tiedot eivät ehkä liity CustomerName-tietoon, joten tällainen kenttä olisi tyhjä tai arvoltaan null. Jos sinulla on tyhjiä tai null-arvoja CustomerNames-taulukossa, et välttämättä vieläkään voi muodostaa yhteyttä. Lisätietoja on artikkelissa Suhteiden muodostaminen Power BI Desktopissa, kun tiedoissa on tyhjiä tai null-arvoja. Yhdelle CustomerName-kohteelle voi olla useita WorkItem- ja CustomerIncident-arvoja. 
+Kun haluamme seurata kaikkia tapauksia ja työkohteita, jotka liittyvät tiettyyn CustomerName-kohteeseen, emme voi noin vain muodostaa suhdetta näiden tietojoukkojen välille. Tietyt WorkItem-tiedot eivät ehkä liity CustomerName-tietoon, joten tällainen kenttä olisi tyhjä tai arvoltaan null. Jos sinulla on tyhjiä tai null-arvoja CustomerNames-taulukossa, et välttämättä vieläkään voi muodostaa yhteyttä. Lisätietoja on artikkelissa Suhteiden muodostaminen Power BI Desktopissa, kun tiedoissa on tyhjiä tai null-arvoja. Yhdelle CustomerName-kohteelle voi olla useita WorkItem- ja CustomerIncident-arvoja. 
 
 Jotta voit muodostaa suhteen tässä tapauksessa, sinun on luotava looginen tietojoukko kaikista CustomerName-arvoista näissä kahdessa tietojoukossa. Luo looginen tietojoukko Kysely-välilehdellä seuraavasti:
 

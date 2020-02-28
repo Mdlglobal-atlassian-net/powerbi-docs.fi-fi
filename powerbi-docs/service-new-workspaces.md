@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/27/2019
+ms.date: 02/12/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6337c4c5e3098d56e869b8ce71117da2413802e6
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: 976d53a5a74bc077d3d4642ccec336b1225344ae
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75925663"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77426560"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Työn järjestäminen uusiin työtiloihin Power BI:ssä
 
@@ -68,15 +68,16 @@ Tässä ovat ominaisuudet neljästä roolista: järjestelmänvalvojat, jäsenet,
 | Lisätä tai poistaa ihmisiä, myös muita järjestelmänvalvojia.  | X  |   |   |   |
 | Lisätä jäseniä tai muita, joilla on vähäisemmät oikeudet.  |  X | X  |   |   |
 | Julkaista ja päivittää sovelluksen. |  X | X  |   |   |
-| Jakaa kohteen tai sovelluksen. |  X | X  |   |   |
-| Sallia muille kohteiden jakaminen uudelleen. |  X | X  |   |   |
+| Jakaa kohteen tai sovelluksen.<sup>1</sup> |  X | X  |   |   |
+| Sallia muille kohteiden jakaminen uudelleen.<sup>1</sup> |  X | X  |   |   |
 | Luoda, muokata ja poistaa työtilan sisältöä.  |  X | X  | X  |   |
 | Julkaista raportteja työtilaan ja poistaa sisältöä.  |  X | X  | X  |   |
 | Luo raportti toisessa työtilassa tämän työtilan tietojoukon perusteella.<sup>1</sup> |  X | X  | X  |   |
-| Kopioi raportti.<sup>1</sup> | X | X | X |  |
-| Tarkastele ja käytä kohdetta.<sup>2</sup> |  X | X  | X  | X  |
+| Kopioi raportti.<sup>2</sup> | X | X | X |  |
+| Tarkastele ja käytä kohdetta.<sup>3</sup> |  X | X  | X  | X  |
 
-1. Jos haluat kopioida raportin tai luoda raportin toisessa työtilassa tämän työtilan tietojoukon perusteella, seuraavien ehtojen on täytyttävä:
+1. Osallistujat ja katselijat voivat käyttää työtilan kohteita, jos heillä on oikeudet jakaa kohteita uudelleen.
+2. Jos haluat kopioida raportin tai luoda raportin toisessa työtilassa tämän työtilan tietojoukon perusteella, seuraavien ehtojen on täytyttävä:
     - Tarvitset Power BI Pro -käyttöoikeuden. Lisätietoja on seuraavassa osiossa [Käyttöoikeudet](#licensing).
     - Tarvitset tietojoukon muodostamisen käyttöoikeuden. Tämän työtilan tietojoukoissa käyttäjillä, joilla on järjestelmänvalvojan, jäsenen tai osallistujaroolin, on muodostamisen käyttöoikeus työtilaroolin kautta.
 2. Vaikka sinulla ei olisikaan Power BI Pro -käyttöoikeutta, voit tarkastella ja käyttää Power BI -palvelun kohteita, jos kohteet ovat Premium-kapasiteetin työtilassa.

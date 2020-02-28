@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 241789dc6255dd461ef6cc62425b732788d7c63d
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: 85db7414fc476f2a62368d150e068a71c13d41cb
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410836"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527518"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä
 
@@ -71,9 +71,10 @@ On tärkeää ymmärtää, että Power BI -mallit tukevat toista menetelmää yh
 
 ![Kuvake-esimerkki kenttäluettelossa](media/star-schema/field-list-example.png)
 
-Mittareiden luomiseen on kuitenkin kaksi vakuuttavaa syytä myös yksinkertaisissa saraketason yhteenvedoissa:
+Mittareiden luomiseen on kuitenkin kolme vakuuttavaa syytä myös yksinkertaisissa saraketason yhteenvedoissa:
 
 - Kun tiedät, että raportin tekijät tekevät kyselyn malliin [MDX](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017)-lausekkeella, mallissa on oltava _eksplisiittisiä mittareita_. Eksplisiittiset mittarit määritetään DAX:llä. Tämä mallilähestymistapa on erityisen sovelias, kun Power BI -tietojoukkoon tehdään kyselyitä MDX:llä, koska MDX ei tue sarakearvojen yhteenvetoja. MDX:ää käytetään etenkin [Analysoi Excelissä](https://docs.microsoft.com/power-bi/service-analyze-in-excel) -toimintoa käytettäessä (Pivot-taulukot tekevät MDX-kyselyitä).
+- Kun tiedät, että raportin tekijät luovat Power BI:n sivutettuja raportteja MDX-kyselyjen suunnittelutyökalulla, mallissa on oltava eksplisiittiset mittarit. Vain MDX-kyselyjen suunnittelutyökalu tukee [palvelimen koosteita](/sql/reporting-services/report-design/report-builder-functions-aggregate-function). Jos Power BI:n on arvioitava raportin tekijöiden mittarit (sivutettujen raporttien moduulin sijaan), heidän on käytettävä MDX-kyselyjen suunnittelutyökalua.
 - Jos haluat varmistaa, että raportin tekijät voivat tehdä yhteenvedon sarakkeista vain tietyllä tavalla. Esimerkiksi jälleenmyyjämyynnin **Yksikköhinta**-sarakkeesta (joka on yksikkökohtainen hinta) voidaan tehdä yhteenveto, mutta vain käyttämällä määrättyjä koostamisfunktioita. Sitä ei tule koskaan laskea yhteen, mutta se voidaan vetää yhteen käyttämällä muita koostamisfunktioita (minimi, maksimi, keskiarvo jne.). Tässä esiintymässä mallintaja voi piilottaa **Yksikköhinta**-sarakkeen ja luoda mittareita kaikille sopiville koostamisfunktioille.
 
 Ota huomioon, että tämä rakennemenetelmä toimii hyvin Power BI -palvelussa ja Q&A:ssa laadituille raporteille. Power BI Desktopin live-yhteyksien avulla raporttien tekijät voivat näyttää **Kentät**-ruudussa piilotetut kentät, minkä ansiosta tämä rakennemenetelmä voidaan kiertää.

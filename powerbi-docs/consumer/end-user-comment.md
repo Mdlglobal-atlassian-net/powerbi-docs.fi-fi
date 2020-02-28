@@ -7,23 +7,28 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: da941de8b44f3833a5f80bba648f4a185f35b36e
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 59ba4d0e62613ed25569efd0602815e3d98aec4d
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73852026"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496505"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Kommenttien lisääminen koontinäyttöön tai raporttiin
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Lisää henkilökohtainen kommentti tai aloita keskustelu koontinäytöstä tai raportista työtovereidesi kanssa. **Kommentti**-ominaisuus on vain yksi tapa, jolla *kuluttaja* voi tehdä yhteistyötä muiden kanssa. 
 
 ![kommentit video](media/end-user-comment/comment.gif)
+
+> [!NOTE]
+> Yhteistyön tekeminen muiden kanssa, mukaan lukien kommenttien lisääminen jaettuihin raportteihin, edellyttää Power BI Pro- tai Premium-käyttöoikeuden. [Mikä tyyppinen käyttöoikeus minulla on?](end-user-license.md)
 
 ## <a name="how-to-use-the-comments-feature"></a>Kommentti-toiminnon käyttäminen
 Voit lisätä kommentteja koko koontinäyttöön, koontinäytön yksittäisiin visualisointeihin, raporttisivulle, sivutettuun raporttiin ja raporttisivun yksittäisiin visualisointeihin. Voit lisätä yleisen kommentin tai tietyille työtovereille tarkoitetun kommentin.  
@@ -34,7 +39,7 @@ Kun lisäät kommentin raporttiin, Power BI tallentaa nykyiset suodatin- ja osit
 
 Miksi tämä on tärkeää? Oletetaan, että työtoveri on käyttänyt suodatinta, joka paljasti mielenkiintoisen merkityksellisen tiedon, jonka hän haluaa jakaa työryhmän kanssa. Jos tätä suodatinta ei ole valittu, kommentissa ei ehkä ole järkeä.
 
-Jos käytät sivutettua raporttia, voit lisätä vain raporttiasi koskevan yleisen kommentin.  Reportin yksittäisiä visualisointeja koskeville kommenteille ei ole saatavissa tukea.
+Jos käytät sivutettua raporttia, voit lisätä vain raporttiasi koskevan yleisen kommentin.  Sivutetun raportin yksittäisiä visualisointeja koskeville kommenteille ei ole saatavissa tukea.
 
 ### <a name="add-a-general-comment-to-a-dashboard-or-report"></a>Yleisen kommentin lisääminen koontinäyttöön tai raporttiin
 Prosessit kommenttien lisäämiseksi koontinäyttöön tai raporttiin muistuttavat toisiaan.  Tässä esimerkissä käytetään koontinäyttöä. 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a62d1cf6d21df822265c3c41d4e74e74181b7051
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.openlocfilehash: e7534fd0da2039a2dafaf3ca80ee6957fa8d8754
+ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885208"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77464297"
 ---
 # <a name="connect-to-a-snowflake-computing-warehouse-in-power-bi-desktop"></a>Snowflake Computing -varastoon yhdistäminen Power BI Desktopissa
 Voit muodostaa Power BI Desktopissa yhteyden **Snowflake Computing** -varastoon ja käyttää sen tietoja samaan tapaan kuin muita tietolähteitä käytetään Power BI Desktopissa. 
@@ -27,11 +27,11 @@ Voit muodostaa Power BI Desktopissa yhteyden **Snowflake Computing** -varastoon 
 ## <a name="connect-to-a-snowflake-computing-warehouse"></a>Snowflake Computing -varastoon yhdistäminen
 Jos haluat muodostaa yhteyden **Snowflake Computing** ‑varastoon, valitse Power BI Desktopin **Aloitus**-valintanauhasta **Nouda tiedot**. Valitse vasemmalla näkyvistä luokista **Tietokanta**, jolloin näkyviin tulee **Snowflake**.
 
-![](media/desktop-connect-snowflake/connect_snowflake_2b.png)
+![](media/desktop-connect-snowflake/connect-snowflake-2b.png)
 
-Kirjoita tai liitä näkyviin tulevan **Snowflake**-ikkunan ruutuun Snowflake Computing -varastosi nimi ja valitse **OK**. Huomaa, että voit **tuoda** tiedot suoraan Power BI:hin tai käyttää **DirectQueryä**. Lue lisätietoja [DirectQueryn käyttämisestä](desktop-use-directquery.md).
+Kirjoita tai liitä näkyviin tulevan **Snowflake**-ikkunan ruutuun Snowflake Computing -varastosi nimi ja valitse **OK**. Huomaa, että voit **tuoda** tiedot suoraan Power BI:hin tai käyttää **DirectQueryä**. Lue lisätietoja [DirectQueryn käyttämisestä](desktop-use-directquery.md). Huomaa, että AAD SSO tukee vain DirectQueryä.
 
-![](media/desktop-connect-snowflake/connect_snowflake_3.png)
+![](media/desktop-connect-snowflake/connect-snowflake-3.png)
 
 Kirjoita käyttäjänimesi ja salasanasi pyydettäessä.
 
@@ -42,14 +42,14 @@ Kirjoita käyttäjänimesi ja salasanasi pyydettäessä.
 > 
 > 
 
-Jos haluat käyttää Microsoft-tilin vaihtoehtoa, pyydä Snowflake-järjestelmänvalvojaasi ottamaan yhteyttä Snowflakeen, jotta saat tietoa liittymisestä tämän ominaisuuden yksityiseen esikatseluun.
+Jos haluat käyttää Microsoft-tilin asetusta, Snowflaken AAD-integraatio on määritettävä Snowflaken puolella. Voit tehdä tämän lukemalla [aihetta koskevat Snowflake-ohjeet](https://docs.snowflake.net/manuals/user-guide/oauth-powerbi.html#power-bi-sso-to-snowflake).
 
 ![Microsoft-tilin todennustyyppi Snowflake-liittimessä.](media/desktop-connect-snowflake/connect-snowflake-6.png)
 
 
 Kun yhteyden muodostaminen onnistuu, näyttöön avautuu **Siirtymistoiminto**-ikkuna, jossa näet palvelimella käytettävissä olevat tiedot. Voit valita ikkunasta yhden tai useita elementtejä tuotavaksi **Power BI Desktopiin**.
 
-![ODBC-virhe 28000 aiheuttaa yhteysvirheen.](media/desktop-connect-snowflake/connect_snowflake_5.png)
+![ODBC-virhe 28000 aiheuttaa yhteysvirheen.](media/desktop-connect-snowflake/connect-snowflake-5.png)
 
 Voit **ladata** valitun taulukon, jolloin koko taulukko tuodaan **Power BI Desktopiin**, tai voit **muokata** kyselyä, joka avautuu **kyselyeditoriin**. Näin voit suodattaa ja tarkentaa käytettävää tietojoukkoa ja ladata sitten tarkennetun tietojoukon **Power BI Desktopiin**.
 

@@ -1,22 +1,24 @@
 ---
 title: Power BI -raporttinäkymän tarkasteleminen
-description: Raporttinäkymät ovat Power BI -palvelun keskeinen ominaisuus. Lue lisätietoja raporttinäkymän avaamisesta ja tarkastelemisesta.
+description: Koontinäytöt ovat Power BI -palvelun keskeinen ominaisuus. Lue lisätietoja koontinäytön avaamisesta ja tarkastelemisesta.
 author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f250d380fc8938f7b5d7723b5b8becb65f27d79d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64809b2542cbe64951dc2f8fae12b13b8f6bc79e
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73852595"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496300"
 ---
 # <a name="view-a-dashboard"></a>Tarkastele koontinäyttöä
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -25,7 +27,7 @@ Power BI:n *kuluttajat* käyttävät paljon aikaa koontinäyttöjen tarkasteluun
 ![koontinäyttö](media/end-user-dashboard-open/power-bi-new-dash-new.png)
 
 
-Koontinäytön jakamiseen ja jaetun koontinäytön tarkasteluun vaaditaan Power BI Pro.
+Koontinäytön jakamiseen ja jaetun koontinäytön tarkasteluun vaaditaan Power BI Pro- tai Premium-käyttöoikeus. [Mikä käyttöoikeus minulla on?](end-user-license.md). 
 
 ## <a name="open-a-dashboard"></a>Avaa koontinäyttö
 
@@ -33,7 +35,7 @@ Koontinäytön jakamiseen ja jaetun koontinäytön tarkasteluun vaaditaan Power 
 
 |              |         |
 |------------|--------------------------------|
-|![koontinäytön kuvake](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Koontinäytöt voidaan avata useista Power BI -palvelun sijainneista. <br> Etsi tämä koontinäytön kuvake. Kun olet löytänyt <br>koontinäytön, sen avaaminen on helppoa - sinun tarvitsee vain valita se, niin koontinäyttö <br>täyttää Power BI -pohjan. |
+|![koontinäytön kuvake](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Koontinäytöt voidaan avata useista Power BI -palvelun sijainneista. <br> Etsi tämä koontinäytön kuvake. Kun olet löytänyt <br>koontinäytön, sen avaaminen on helppoa - sinun tarvitsee vain valita se, niin koontinäyttö täyttää Power BI -pohjan. |
 |                    |          |
 
 
@@ -52,5 +54,5 @@ Voit etsiä koontinäyttöjä kaikista siirtymisruudun säilöistä.
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* Tutustu koontinäyttöihin paremmin tutustumalla johonkin [mallikoontinäytöistämme](../sample-tutorial-connect-to-the-samples.md).
+* Tutustu koontinäyttöihin paremmin tutustumalla johonkin [mallikoontinäytöistämme](../sample-tutorial-connect-to-the-samples.md).    
 * Lue lisätietoja [koontinäytön ruuduista](end-user-tiles.md) ja siitä, mitä tapahtuu, kun valitset sellaisen.

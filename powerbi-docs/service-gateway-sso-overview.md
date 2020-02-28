@@ -9,16 +9,16 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: bfa4534b625a965226dfced17403a7e2da7a7f84
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: b5ef7e99edbf862891811047ea5f1f961aaea348
+ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74699195"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527587"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Yleiskatsaus kertakirjautumisen (SSO) käyttämiseen Power BI -yhdyskäytävissä
 
-Voit saada saumattoman kertakirjautumisen, jolloin Power BI -raportit ja -koontinäytöt päivitetään reaaliaikaisesti paikallisista tiedoista, määrittämällä paikallisen tietoyhdyskäytävän. Voit valita, määritätkö yhdyskäytävän rajoitetun [Kerberos](service-gateway-sso-kerberos.md)-delegoinnin vai Security Assertion Markup Languagen ([SAML](service-gateway-sso-saml.md)) avulla. Paikallinen tietoyhdyskäytävä tukee kertakirjautumista käyttämällä [DirectQueryä](desktop-directquery-about.md), joka muodostaa yhteyden paikallisiin tietolähteisiin.
+Voit saada saumattoman kertakirjautumisen, jolloin Power BI -raportit ja -koontinäytöt päivitetään reaaliaikaisesti paikallisista tiedoista, määrittämällä paikallisen tietoyhdyskäytävän. Voit valita, määritätkö yhdyskäytävän rajoitetun [Kerberos](service-gateway-sso-kerberos.md)-delegoinnin vai Security Assertion Markup Languagen ([SAML](service-gateway-sso-saml.md)) avulla. Paikallinen tietoyhdyskäytävä tukee kertakirjautumista käyttämällä [DirectQueryä](desktop-directquery-about.md) tai päivitystä, joka muodostaa yhteyden paikallisiin tietolähteisiin. 
 
 Power BI tukee seuraavia tietolähteitä:
 
@@ -33,7 +33,9 @@ Power BI tukee seuraavia tietolähteitä:
 
 Emme tällä hetkellä tue SSO:ta [M-laajennuksissa](https://github.com/microsoft/DataConnectors/blob/master/docs/m-extensions.md).
 
-Kun käyttäjä on vuorovaikutuksessa DirectQuery-raportin kanssa Power BI -palvelussa, jokainen ristisuodatus-, ositus-, lajittelu- ja raportin muokkaustoiminto voi aiheuttaa kyselyjä, jotka suoritetaan reaaliajassa pohjana olevalle paikalliselle tietolähteelle. Kun määrität kertakirjautumisen tietolähteelle, kyselyt suoritetaan Power BI:n kanssa vuorovaikutuksessa (verkkosisällön tai Power BI -mobiilisovellusten kautta) olevan käyttäjän käyttäjätiedoilla. Näin ollen jokainen käyttäjä näkee juuri ne tiedot, joihin hänellä on käyttöoikeudet pohjana olevassa tietolähteessä. Kun kertakirjautuminen on määritetty, eri käyttäjät eivät tallenna tietoja välimuistiin jaetusti.
+Kun käyttäjä on vuorovaikutuksessa DirectQuery-raportin kanssa Power BI -palvelussa, jokainen ristisuodatus-, ositus-, lajittelu- ja raportin muokkaustoiminto voi aiheuttaa kyselyjä, jotka suoritetaan reaaliajassa pohjana olevalle paikalliselle tietolähteelle. Kun määrität kertakirjautumisen tietolähteelle, kyselyt suoritetaan Power BI:n kanssa vuorovaikutuksessa (verkkosisällön tai Power BI -mobiilisovellusten kautta) olevan käyttäjän käyttäjätiedoilla. Näin ollen jokainen käyttäjä näkee juuri ne tiedot, joihin hänellä on käyttöoikeudet pohjana olevassa tietolähteessä. 
+
+Voit myös määrittää Power BI -palvelussa päivitettäväksi määritetyn raportin käyttämään kertakirjautumista. Kun määrität kertakirjautumisen tälle tietolähteelle, kyselyt suoritetaan tietojoukon omistajan Power BI:n käyttäjätiedoilla. Tämän vuoksi päivitys tapahtuu tietojoukon omistajan oikeuksien perusteella pohjana olevassa tietolähteessä. Päivittäminen SSO:n avulla on tällä hetkellä käytössä vain tietolähteille, jotka käyttävät [rajoitettua Kerberos-delegointia](service-gateway-sso-kerberos.md) 
 
 ## <a name="query-steps-when-running-sso"></a>Kyselyn vaiheet suoritettaessa kertakirjautumista
 

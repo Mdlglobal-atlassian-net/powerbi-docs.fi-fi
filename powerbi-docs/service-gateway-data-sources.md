@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 02/21/2020
 ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2665e33d5f268bf8037634406aca819c23f3513c
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 15b3236741eb19d9f08601f9503e0380f54a8d63
+ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698183"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558690"
 ---
 # <a name="manage-data-sources"></a>Tietolähteiden hallinta
 
@@ -45,11 +45,24 @@ Useimmat tietolähteiden hallintatoiminnot voidaan suorittaa myös ohjelmointira
 
 5. SQL Serverin tapauksessa valitaan **Todennusmenetelmäksi** **Windows** tai **Perus** (SQL-todennus). Jos valitset **Perus**, anna tietolähteen tunnistetiedot.
 
-6. **Lisäasetukset**-kohdassa voit halutessasi määrittää tietolähteen [yksityisyystason](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) (ei koske [DirectQuerya](desktop-directquery-about.md)).
+6. **Lisäasetukset**-kohdassa voit määrittää [kertakirjautumisen](service-gateway-sso-overview.md) tietolähteellesi. 
+
+    ![lisäasetukset](media/service-gateway-data-sources/advanced-settings-02.png)
+
+Voit määrittää **Käytä DirectQuery-kyselyissä kertakirjautumista Kerberoksen kautta** tai **Käytä DirectQuery- ja tuontikyselyissä kertakirjautumista Kerberoksen kautta** DirectQuery-pohjaisille raporteille ja **Käytä DirectQuery- ja tuontikyselyissä kertakirjautumista Kerberoksen kautta** päivityspohjaisille raporteille.
+
+Jos käytät vaihtoehtoa **Käytä DirectQuery-kyselyissä kertakirjautumista Kerberoksen kautta** ja käytät tätä tietolähdettä DirectQuery-pohjaisessa raportissa, se käyttää käyttäjää, joka on liitetty (Azuren) Active Directory -käyttäjään, joka kirjautuu sisään Power BI -palveluun. Jos kyseessä on päivityspohjainen raportti, se käyttää tunnistetietoja, jotka lisäät **Käyttäjänimi**- ja **Salasana**-kenttiin.
+
+Jos käytät vaihtoehtoa **Käytä DirectQuery- ja tuontikyselyissä kertakirjautumista Kerberoksen kautta**, sinun ei tarvitse antaa tunnistetietojasi. Jos tätä tietolähdettä käytetään DirectQuery-pohjaisessa raportissa, se käyttää käyttäjää, joka on liitetty (Azuren) Active Directory -käyttäjään, joka kirjautuu sisään Power BI -palveluun.  Jos kyseessä on päivityspohjainen raportti, se käyttää tietojoukon omistajan suojauskontekstia
+
+> [!NOTE]
+>Tuontikyselyiden kertakirjautuminen on käytettävissä vain [rajoitettua Kerberos-delegointia](service-gateway-sso-kerberos.md) käyttävien SSO-tietolähteiden luettelossa.
+
+7. **Lisäasetukset**-kohdassa voit halutessasi määrittää tietolähteen [yksityisyystason](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) (ei koske [DirectQuerya](desktop-directquery-about.md)).
 
     ![Lisäasetukset](media/service-gateway-data-sources/advanced-settings.png)
 
-7. Valitse **Lisää**. *Yhteyden muodostaminen onnistui* -teksti tulee näkyviin, jos yhteys muodostettiin.
+8. Valitse **Lisää**. *Yhteyden muodostaminen onnistui* -teksti tulee näkyviin, jos yhteys muodostettiin.
 
     ![Yhteyden muodostaminen onnistui](media/service-gateway-data-sources/connection-successful.png)
 

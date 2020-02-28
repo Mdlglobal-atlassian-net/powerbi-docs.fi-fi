@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 01/12/2020
-ms.openlocfilehash: 16e7a317102602ffb4faf04da0ed2cae588a2a4d
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: 58c226fd66c2551565f85ee75bd06469a46c4128
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75925524"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427066"
 ---
 # <a name="power-bi-visual-project-structure"></a>Power BI -visualisoinnin projektirakenne
 
@@ -115,7 +115,7 @@ Tämä tiedosto sisältää [TSLintin määrityksen](https://palantir.github.io/
 Seuraavan koodiotsikon kommentit, jotka ovat peräisin `pbiviz.json`-tiedostosta, kuvaavat metatietomerkintöjä.
 
 > [!NOTE]
-> * **pbiciz**-työkalun versiosta 3.x.x alkaen `externalJS`:n tuki loppuu.
+> * **pbiviz**-työkalun versiosta 3.x.x alkaen `externalJS`:n tuki loppuu.
 > * Jos tarvitset lokalisointitukea, [lisää Power BI -kieliasetukset visualisointiisi](./localization.md).
 
 ```json

@@ -6,21 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 02/19/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 76370e2b633e21674ba878e70b5ecfc333453c96
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 1a59618ea27944314465d8e08d5f0c249c3bed0b
+ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76889209"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77496468"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Power BI -raportin kaavion lajittelutavan vaihtaminen
 
-
-
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 
 > [!IMPORTANT]
@@ -32,7 +30,7 @@ Koontinäytön visualisointeja ei voi lajitella, mutta Power BI -raportissa voit
 
 ## <a name="get-started"></a>Aloittaminen
 
-Pääset alkuun valitsemalla minkä tahansa raportin visualisoinnin ja valitsemalla **Lisää toimintoja** (...).  Lajitteluvaihtoehtoja on kolme: **Lajittele laskevaan järjestykseen**, **Lajittele nousevaan järjestykseen** ja **Lajitteluperuste**. 
+Aloita avaamalla sinulle jaettu raportti. Valitse visualisointi (joka voidaan lajitella) ja sitten **Lisää toimintoja** (...).  Lajitteluvaihtoehtoja on kolme: **Lajittele laskevaan järjestykseen**, **Lajittele nousevaan järjestykseen** ja **Lajitteluperuste**. 
     
 
 ![palkkikaavio, jonka X-akseli on lajiteltu aakkosjärjestykseen](media/end-user-change-sort/power-bi-more-actions.png)
@@ -69,9 +67,9 @@ Joskus visualisoinnin lajittelussa on käytettävä toista kenttää (joka ei si
 
 Vain raportin luonut henkilö voi tehdä nämä muutokset puolestasi. *Suunnittelijan* yhteystiedot löytyvät valitsemalla raportin nimen otsikkoriviltä.
 
-Jos olet *suunnittelija*  ja sinulla on sisällön muokkausoikeudet, lue [Sarakkeen perusteella lajittelu Power BI Desktopissa](../desktop-sort-by-column.md), niin opit päivittämään tietojoukon ja ottamaan käyttöön tämän tyyppisen lajittelun.
-
 ![Valikko, joka näyttää yhteystiedot](media/end-user-change-sort/power-bi-contact.png)
+
+Jos olet *suunnittelija*  ja sinulla on sisällön muokkausoikeudet, lue [Sarakkeen perusteella lajittelu Power BI Desktopissa](../desktop-sort-by-column.md), niin opit päivittämään tietojoukon ja ottamaan käyttöön tämän tyyppisen lajittelun.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Lue lisätietoja [Power BI -raporttien visualisoinneista](end-user-visualizations.md).

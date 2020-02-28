@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 02/13/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ddb54ca91936626b4870b51b86b7fc7f0ac6b2c9
-ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
+ms.openlocfilehash: f8a49780804449296194d7adb8091f7f0c5748fe
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75954204"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427802"
 ---
 # <a name="add-hyperlinks-urls-to-a-table-or-matrix"></a>Hyperlinkkien (URL-osoitteiden) lisääminen taulukkoon tai matriisiin
 Tässä ohjeaiheessa kerrotaan, miten hyperlinkkejä (URL-osoitteita) lisätään taulukkoon. Power BI Desktopin avulla voit lisätä hyperlinkkejä (URL-osoitteita) tietojoukkoon. Voit lisätä kyseiset hyperlinkit raporttisi taulukoihin tai matriiseihin joko Power BI Desktopissa tai Power BI -palvelussa. Sen jälkeen voit näyttää URL-osoitteen tai linkin kuvakkeen tai muotoilla toista saraketta linkin tekstinä.
@@ -34,7 +34,7 @@ Voit muotoilla URL-osoitteita sisältävää kenttää hyperlinkkeinä Power BI 
     > [!NOTE]
     > Et voi luoda saraketta DirectQuery-tilassa.  Jos tiedoissasi kuitenkin on jo URL-osoitteita, voit muuttaa ne hyperlinkeiksi.
 
-2. Valitse sarake tietonäkymässä. 
+2. Valitse sarake tieto- tai raporttinäkymässä. 
 
 3. Valitse **Mallinnus**-välilehdeltä **Tietoluokka** > **Verkko-URL-osoite**.
    
@@ -66,7 +66,7 @@ Jos et halua taulukossa näkyvän pitkää URL-osoitetta, voit näyttää sen si
 
     Laajenna **Arvot**-kohtaa, etsi **URL-osoitteen kuvake** ja ota se **käyttöön**.
 
-    ![Ota käyttöön URL-osoitteen kuvake](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
+    ![Ota käyttöön URL-kuvake](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
 
 1. (Valinnainen) [Julkaise raportti](desktop-upload-desktop-files.md) Power BI Desktopista Power BI -palvelussa. Kun avaat raportin Power BI -palvelussa, myös hyperlinkit toimivat siellä.
 
@@ -79,13 +79,20 @@ Voit myös muotoilla taulukon toista kenttää hyperlinkkinä ilman URL-osoittee
 
 1. Jos hyperlinkin sisältävää kenttää ei ole vielä tietojoukossa, lisää se [mukautettuna sarakkeena](desktop-common-query-tasks.md) Power BI Desktopin avulla. Et voi tässäkään tapauksessa luoda saraketta DirectQuery-tilassa.  Jos tiedoissasi kuitenkin on jo URL-osoitteita, voit muuttaa ne hyperlinkeiksi.
 
-2. Luo raporttinäkymässä taulukko tai matriisi, joka sisältää sarakkeen, jota aiot muotoilla linkin tekstinä.
+2. Valitse tieto- tai raporttinäkymässä sarake, joka sisältää URL-osoitteen. 
+
+3. Valitse **Mallinnus**-välilehdeltä **Tietoluokka**. Varmista, että sarakkeen muotoilu on **Luokittelematon**.
+
+2. Luo raporttinäkymässä taulukko tai matriisi, joka sisältää URL-sarakkeen ja sarakkeen, jota aiot muotoilla linkin tekstinä.
 
 3. Pidä taulukko valittuna ja avaa Muotoilu-välilehti valitsemalla **Muotoile**-kuvake ![Maalirulla-kuvake](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png).
 
-4. Laajenna **Ehdollinen muotoilu** -kohtaa ja varmista, että ruudussa oleva nimi on sarake, jonka haluat linkin tekstiksi. Etsi **URL-osoitteen kuvake** ja **ota se käyttöön**.
+4. Laajenna **Ehdollinen muotoilu** -kohtaa ja varmista, että ruudussa oleva nimi on sarake, jonka haluat linkin tekstiksi. Etsi **WWW-URL-osoite** ja **ota se käyttöön**.
 
     ![Ehdollisen muotoilun verkko-URL-osoite](media/power-bi-hyperlinks-in-tables/power-bi-format-conditional-web-url.png)
+
+    > [!NOTE]
+    > Jos et näe **WWW-URL-osoite**-vaihtoehtoa, varmista, että hyperlinkit sisältävän sarakkeen muotoilu *ei* ole **WWW-URL-osoite** avattavassa **Tietoluokka**-valikossa.
 
 5. Valitse **Verkko-URL-osoite**-valintaikkunassa kenttä, joka sisältää URL-osoitteen, **Perustuu kenttään** -ruudussa > **OK**.
 

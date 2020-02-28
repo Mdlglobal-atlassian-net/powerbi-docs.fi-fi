@@ -1,29 +1,37 @@
 ---
-ms.openlocfilehash: eb7cba03daee47f6772fc46be50419731b41765e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 8dc488a47ac2b5b4e7980b7404b2722b1120b6ab
+ms.sourcegitcommit: cde65bb8b1bed1ee8cf512651afeb829ddc155de
+ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61193842"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77464368"
 ---
 ## <a name="validate-the-roles-within-power-bi-desktop"></a>Roolien vahvistaminen Power BI Desktopissa
 Kun olet luonut roolit, voit testata niiden tuloksia Power BI Desktopissa.
 
-1. Valitse **Näytä rooleina**. 
+1. Valitse **Mallinnus**-välilehdeltä **Näytä rooleina**. 
 
-    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles.png)
+    ![Valitse Näytä rooleina](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles.png)
 
-    Näet luomasi roolit **Näytä rooleina** -näkymässä.
+    **Näytä rooleina** -ikkuna tulee näkyviin ja näet luomasi roolit.
 
-    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
+    ![Näytä rooleina-ikkuna](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
 
-3. Valitse luomasi rooli >**OK**, jos haluat ottaa roolin käyttöön. Raportit hahmontavat ainoastaan ne tiedot, jotka koskevat kyseistä roolia. 
+3. Valitse luomasi rooli ja valitse sitten **OK**, jos haluat ottaa roolin käyttöön. 
 
-4. Voit myös valita **toisen käyttäjän** ja määrittää tietyn käyttäjän. On parasta määrittää täydellinen käyttäjätunnus (UPN), koska sitä Power BI -palvelu ja Power BI -raporttipalvelin käyttävät.
+   Raportit hahmontavat ainoastaan ne tiedot, jotka koskevat kyseistä roolia.
 
-    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
+4. Voit myös valita **toisen käyttäjän** ja määrittää tietyn käyttäjän. 
 
-1. Valitse **OK**, jolloin raportit hahmonnetaan sen perusteella, mitä käyttäjä näkee. 
+    ![Valitse Toinen käyttäjä](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
 
-**Toinen käyttäjä** näyttää eri tuloksia Power BI Desktopissa ainoastaan, jos käytössäsi on dynaaminen tietoturva, joka perustuu DAX-lausekkeisiin. 
+   On parasta määrittää täydellinen käyttäjätunnus (UPN), koska sitä Power BI -palvelu ja Power BI -raporttipalvelin käyttävät.
+
+   **Toinen käyttäjä** näyttää eri tuloksia Power BI Desktopissa ainoastaan, jos käytössäsi on dynaaminen tietoturva, joka perustuu DAX-lausekkeisiin. 
+
+5. Valitse **OK**. 
+
+   Raportit hahmonnetaan sen perusteella, mitä käyttäjä näkee.
+
+
 

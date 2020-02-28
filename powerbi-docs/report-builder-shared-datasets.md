@@ -1,18 +1,18 @@
 ---
 title: Sivutetun raportin luominen jaetulla Power BI-tietojoukolla – Power BI Report Builder
 description: Luo Power BI Report Builderissa sivutettu raportti, joka perustuu Power BI:n jaettuun tietojoukkoon.
-ms.date: 01/03/2020
+ms.date: 02/12/2020
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 335b93720718bb72027c29c6093aad952cc4cdb2
-ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
+ms.openlocfilehash: 4a46f0aae642b42cd797940e0b0991cfa77a077e
+ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691481"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77427832"
 ---
 # <a name="create-a-paginated-report-based-on-a-power-bi-shared-dataset"></a>Sivutetun raportin luominen jaetulla Power BI-tietojoukolla
 
@@ -27,6 +27,7 @@ Tietojoukon ei tarvitse olla Premium-kapasiteetin työtilassa, eikä sinun tarvi
 Seuraavassa on luettelo asioista, joita tarvitset ja joita et tarvitse jaetun tietojoukon käyttöön Power BI:n raportin muodostimessa.
 
 - Power BI:n raportin muodostin. [Power BI:n raportin muodostimen lataaminen ja asentaminen](https://go.microsoft.com/fwlink/?linkid=2086513).
+- Power BI Desktop. [Lataa ja asenna Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 - Sinulla on oltava tietojoukon muodostamisen käyttöoikeus, jotta voit käyttää Power BI -tietojoukkoa. Lue [muodostamisen käyttöoikeudesta](service-datasets-build-permissions.md).
 - Jos haluat luoda sivutetun raportin raportin muodostimessa, et tarvitse Power BI Pro -käyttöoikeutta. 
 - Tarvitset Power BI Pro -käyttöoikeuden sivutetun raportin julkaisemiseen. Tarvitset työtilaan myös vähintään osallistujan roolin Premium-kapasiteetissa. 
@@ -57,12 +58,26 @@ Seuraavassa on luettelo asioista, joita tarvitset ja joita et tarvitse jaetun ti
     Muista, että voit muodostaa yhteyden useisiin saman sivutetun raportin Power BI -tietojoukkoihin ja muihin tietolähteisiin.
 
 
-## <a name="get-the-query-for-the-dataset"></a>Tietojoukon kyselyn hakeminen
+## <a name="get-the-dax-query-for-the-dataset"></a>Tietojoukon DAX-kyselyn hakeminen
 
 Kun haluat, että Power BI -raportin ja raportin muodostimen-raportin tiedot ovat samat, yhteyden muodostaminen tietojoukkoon ei riitä. Tarvitset myös kyseiselle tietojoukolle luodun kyselyn.
 
+### <a name="video-get-the-dax-query"></a>Video: Hae DAX-kysely
+
+Seuraavassa videossa Chris Finlan esittelee, miten voit hakea DAX-raportin, jonka tarvitset sivutettua raporttia varten.
+
+<iframe width="400" height="450" src="https://www.youtube.com/embed/NfoOK4QRkhI" frameborder="0" allowfullscreen></iframe>
+
+### <a name="steps-to-get-the-dax-query"></a>DAX-kyselyn hakemisen vaiheet
+
+Tässä ovat kyselyn hakemisen vaiheet.
+
 1. Avaa Power BI -raportti (.pbix) Power BI Desktopissa.
-1. Varmista, että raportissasi on taulukko, joka sisältää kaikki sivutettuun raporttiisi haluamasi tiedot.
+1. Varmista, että raportissasi on taulukko, joka sisältää kaikki sivutettuun raporttiisi haluamasi tiedot. Taulukon on täytettävä nämä kaksi vaatimusta:
+    - Sen on oltava litteä taulukko eikä matriisi tai muu visualisointi. Jos se ei ole taulukko, muunna se taulukoksi nyt, käy läpi seuraavaksi tulevat Suorituskyvyn analysoinnin vaiheet ja muunna se sitten takaisin haluamaksesi visualisoinniksi.
+    - Sinun on käytettävä *esimääritettyjä mittayksiköitä* numeerisissa kentissä. Niiden vieressä on laskinsymboli. Lue lisää [mittareiden luomisesta](desktop-measures.md). 
+
+        ![Mittarikuvake](media/report-builder-shared-datasets/power-bi-measure-icon.png)
 
 1. Valitse **Näytä**-valintanauhasta **Suorityskyvyn analysointi**.
 
@@ -204,6 +219,7 @@ Oletetaan esimerkiksi, että raporttisi muoto on 8.5" X 11"ja että olet määri
 
 - Tietojoukoissa, jotka käyttävät reaaliaikaista yhteyttä Analysis Servicesiin, voit muodostaa yhteyden suoraan käyttämällä pohjana olevaa Analysis Services -yhteyttä jaetun tietojoukon sijaan.
 - Tietojoukot, joissa on ylennettyjä tai sertifioituja tukia, näkyvät käytettävissä olevien tietojoukkojen luettelossa, mutta niitä ei ole merkitty sellaiseksi. 
+- Et voi upottaa sivutettuja raportteja, jotka perustuvat jaettuihin Power BI -tietojoukkoihin App Owns Data -skenaariossa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
