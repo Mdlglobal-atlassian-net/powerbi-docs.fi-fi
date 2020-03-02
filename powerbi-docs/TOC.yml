@@ -655,8 +655,6 @@
               href: service-export-to-pbix.md
             - name: Muokkaa SAP-muuttujia
               href: service-edit-sap-variables.md
-            - name: Parhaat käytännöt nopeiden ja luotettavien raporttien luomiseen
-              href: power-bi-reports-performance.md
         - name: Kysymysten kysyminen tiedoistasi
           items:
             - name: 'Tietojen tutkiminen Q&A:n avulla'
@@ -757,8 +755,8 @@
               href: admin/service-security-data-protection-overview.md
             - name: Luottamuksellisuustunnisteiden käyttäminen
               href: designer/service-security-apply-data-sensitivity-labels.md
-        - name: Tietojen historiatiedot
-          href: service-data-lineage.md
+        - name: Näytä tietojen historiatiedot
+          href: designer/service-data-lineage.md
         - name: Mallisovellukset
           items:
             - name: Mallisovellusten yleiskatsaus
