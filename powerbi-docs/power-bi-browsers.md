@@ -6,21 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 02/27/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: ec93e1575ec5429a3ca4c790150973a23224d97b
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 927e882e9b0cd7195aec6cffd7305d887d1c306e
+ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427779"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782382"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Power BI:n tuetut selaimet
 Power BI:tä voi käyttää seuraavissa selaimissa:
 
 - Microsoft Edge
-- Internet Explorer 11. Joitakin edistyneempiä ominaisuuksia, kuten siirtymänäkymää, ei tueta Internet Explorerissa. Lisätietoja on kohdassa [Tietojen siirtymä (esikatselu)](service-data-lineage.md).
+- Internet Explorer 11. Joitakin edistyneempiä ominaisuuksia, kuten siirtymänäkymää, ei tueta Internet Explorerissa. Lisätietoja on kohdassa [Tietojen siirtymä (esikatselu)](designer/service-data-lineage.md).
 - Uusin Chrome-työpöytäversio
 - Uusin Safari Mac -versio
 - Uusin Firefox-työpöytäversio. Firefox voi muuttaa Power BI:ssä käytettyjä fontteja 
