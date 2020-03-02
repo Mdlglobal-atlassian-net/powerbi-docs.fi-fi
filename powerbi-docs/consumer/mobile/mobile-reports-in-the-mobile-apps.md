@@ -54,9 +54,9 @@ Jos haluat päästä raporttiin raporttinäkymästä, napauta **Enemmän vaihtoe
 Kun raportti on avattuna sovelluksessa, voit aloittaa sen käsittelemisen. Raportilla ja sen tiedoilla voi tehdä monia asioita. Raportin alatunnisteessa on toimintoja, joita voit suorittaa raportissa. Napauttamalla ja napauttamalla pitkään raportissa näkyviä tietoja voit myös osittaa ja käsitellä tietoja.
 
 ### <a name="single-tap-versus-double-tap-interaction"></a>Käsittely yhdellä napsautuksella tai kaksoisnapsautuksella
-Kun lataat Power BI -mobiilisovelluksen, se on määritetty käsittelyyn yhdellä napsautuksella. Tämä tarkoittaa sitä, että kun napautat visualisointia osittajatoiminnon, ristiinkorostamisen, linkin tai painikkeen napsauttamisen tai muun toiminnon suorittamista varten, napautus sekä valitsee visualisoinnin että suorittaa haluamasi toiminnon.
+Kun lataat Power BI -mobiilisovelluksen, se on määritetty käsittelyyn yhdellä napautuksella. Tämä tarkoittaa sitä, että kun napautat visualisointia osittajatoiminnon, ristiinkorostamisen, linkin tai painikkeen napsauttamisen tai muun toiminnon suorittamista varten, napautus sekä valitsee visualisoinnin että suorittaa haluamasi toiminnon.
 
-Halutessasi voit vaihtaa käsittelyyn kaksoisnapautuksella. Kun käsittely kaksoisnapsautuksella on käytössä, valitset visualisoinnin ensin napauttamalla sitä ja suoritat sitten haluamasi toiminnon napauttamalla visualisointia uudelleen.
+Halutessasi voit vaihtaa käsittelyyn kaksoisnapautuksella. Kun käsittely kaksoisnapautuksella on käytössä, valitset visualisoinnin ensin napauttamalla sitä ja suoritat sitten haluamasi toiminnon napauttamalla visualisointia uudelleen.
 
 Jos haluat vaihtaa käsittelyyn kaksoisnapsautuksella tai vaihtaa takaisin käsittelyyn yhdellä napsautuksella, siirry [sovelluksen vuorovaikutusasetuksiin](./mobile-app-interaction-settings.md).
 
