@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/23/2020
+ms.date: 02/25/2020
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: bc8b8c16675e6d413c22d4ae88018222b02b17d6
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.openlocfilehash: f5bf1b55c2e092dc755da9f391c83ce3c42661b2
+ms.sourcegitcommit: 30ed21cca2125001f2f992dc6c5f546f4956631c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76709893"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652515"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Tallennustilan hallinta Power BI -työtiloissa
 
@@ -28,8 +28,8 @@ Oman työtilan ja sovellustyötilan tallennusrajoitukset riippuvat siitä, onko 
 ### <a name="shared-capacity-limits"></a>Jaetun kapasiteetin rajoitukset
 Kun työtilalla on jaettu kapasiteetti: 
 
-- Tallennusrajoitus työtilaa kohti on 10 Gt.
-- Vuokraajan tasolla sovellustyötilojen kokonaiskäyttö voi olla enintään 10 Gt kerrottuna Pro-käyttöoikeuksien määrällä.
+- Työtilakohtainen tallennusrajoitus on 100 Gt.
+- Vuokraajan tasolla sovellustyötilojen vuokraajakohtainen kokonaiskäytön raja on 10 Gt kerrottuna Pro-käyttöoikeuksien määrällä.
 
 ### <a name="premium-capacity-limits"></a>Premium-kapasiteetin rajoitukset
 Kun työtilalla on Premium-kapasiteetti:

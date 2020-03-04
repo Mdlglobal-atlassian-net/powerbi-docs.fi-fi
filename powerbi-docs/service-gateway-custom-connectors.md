@@ -9,12 +9,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 78ac4f3280125fb522661a63f679981b3cda34e3
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 51d03582ec91b926526a075a356323eb4f95a84b
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699454"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609877"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Mukautettujen tietoliittimien käyttäminen paikallisen tietoyhdyskäytävän kanssa
 
@@ -46,6 +46,7 @@ Kun tämä vaihtoehto on käytössä, mukautetut liittimet ovat saatavilla tieto
 
 * Varmista, että taustalla oleva yhdyskäytäväpalvelu pääsee käyttämään luomaasi kansiota. Yleensä et voi käyttää Windows-kansiossa olevia kansioita tai järjestelmäkansioita. Paikallinen tietoyhdyskäytävä -sovellus tuo näyttöön sanoman, jos kansio ei ole käytettävissä. Tämä ohje ei koske paikallista tietoyhdyskäytävää (henkilökohtainen tila).
 * Jotta mukautetut liittimet toimisivat paikallisen tietoyhdyskäytävän kanssa, niiden on sovellettava mukautetun liittimen koodin ”Testiyhteys”-osiota. Tätä osiota ei vaadita, kun käytät mukautettuja liittimiä Power BI Desktopin avulla. Tästä syystä voit käyttää tätä varten Desktopin kanssa toimivaa mukautettua liitintä, mutta et yhdyskäytävää. Katso [näistä ohjeista](https://github.com/Microsoft/DataConnectors/blob/master/docs/m-extensions.md#implementing-testconnection-for-gateway-support), miten voit ottaa käyttöön Testiyhteys-osion.
+* Mukautettujen liittimien OAuth-yhteyksiä yhdyskäytävien kautta tuetaan tällä hetkellä vain yhdyskäytävän järjestelmänvalvojille, mutta ei muille tietolähteiden käyttäjille.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

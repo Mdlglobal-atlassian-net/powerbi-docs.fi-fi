@@ -60,6 +60,16 @@
               href: report-page-tooltips.md
             - name: Raporttisivun porautumisen käyttäminen
               href: report-drillthrough.md
+            - name: Vihjeitä akselien hallintaan
+              href: report-design-tips-axes.md
+            - name: Vihjeitä kaavion ruudukon hallintaan
+              href: report-tips-chart-gridlines.md
+            - name: Vihjeitä otsikoiden käytön optimointiin
+              href: report-tips-labels.md
+            - name: Vihjeitä selitteiden muotoiluun ja käyttöön
+              href: report-tips-legends.md
+            - name: Vihjeitä visualisointien värien optimointiin
+              href: report-tips-visual-colors.md
         - name: 'Power BI:n sivutetut raportit'
           items:
             - name: Milloin sivutettuja raportteja kannattaa käyttää?

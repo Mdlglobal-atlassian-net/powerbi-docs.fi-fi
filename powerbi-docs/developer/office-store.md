@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 12/02/2019
-ms.openlocfilehash: ec1bd8666a9d76b4ccfa7793415488f85a24dfdb
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.date: 02/13/2020
+ms.openlocfilehash: 031e1fd5d5c57e37e0d70541d6662b0af7b91b07
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74999890"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576786"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Power BI -visualisointien julkaiseminen kumppanikeskuksessa
 
@@ -39,7 +39,7 @@ Kun olet valmis lähettämään Power BI -visualisoinnin, varmista, että se tä
 | Näyttökuvat |Kyllä |Anna ainakin yksi näyttökuva. Se voi olla .png-, .jpg-, .jpeg- tai .gif-muodossa. Mittojen on oltava tarkalleen 1 366 kuvapistettä (leveys) ja 768 kuvapistettä (korkeus). Tiedostokoko saa olla enintään 1 024 kt.<br>Käyttäjämäärien kasvattamiseksi suosittelemme, että lisäät näyttökuviin tekstikuplia, jotka tuovat esiin tärkeimpien toimintojen etuja. |
 | Tuen latauslinkki |Kyllä |Anna asiakkaillesi tuen URL-osoite. Tämä linkki on lisätty osana myyjän koontinäytön luetteloasi, ja käyttäjät näkevät sen käyttäessään visualisointiluetteloasi AppSourcessa. URL-osoitteen täytyy olla muodossa, johon kuuluu https:// tai https://. |
 | Tietosuoja-asiakirjan linkki |Kyllä |Anna linkki visualisoinnin tietosuojakäytäntöön. Tämä linkki on lisätty osana myyjän koontinäytön luetteloasi, ja käyttäjät näkevät sen käyttäessään visualisointiluetteloasi AppSourcessa. Linkin täytyy olla muodossa, johon kuuluu https:// tai https://. |
-| Käyttöoikeussopimus (EULA) |Kyllä |Sinun on ladattava palveluun käyttöoikeussopimus. Se voi olla oma käyttöoikeussopimuksesi tai Office-kaupan oletuskäyttöoikeussopimus Power BI -visualisoinneille. Jos haluat käyttää oletuskäyttöoikeussopimusta, liitä seuraava URL-osoite myyjän koontinäytön ”Käyttöoikeussopimus”-tiedoston latauksen valintaikkunaan. [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
+| Käyttöoikeussopimus (EULA) |Kyllä |Sinun on annettava EULA-tiedosto Power BI -visualisointiasi varten. |
 | Videolinkki |Ei |Voit kasvattaa kiinnostusta visualisointiasi kohtaan antamalla linkin sen esittelyvideoon. URL-osoitteen täytyy olla muodossa, johon kuuluu https:// tai https://. |
 | GitHub-säilö |Ei |Jaa julkinen linkki [GitHub](https://www.github.com)-säilöön, joka sisältää Power BI -visualisoinnin lähteet ja esimerkkitiedot. Tämän ansiosta muut kehittäjät voivat antaa palautetta ja ehdottaa parannuksia koodiisi. |
 

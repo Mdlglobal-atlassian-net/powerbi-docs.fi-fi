@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: mohaali
-ms.openlocfilehash: e18579d654cb2ab17ed0dbff73fba95f5f9a64ed
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d6b07025f2aefe334fbbd65659b527c2bcad1efd
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875069"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609955"
 ---
 # <a name="best-practices-to-optimize-qa-in-power-bi"></a>Q&A:n optimoimisen parhaat käytännöt Power BI:ssä
 Yleisien lauseiden ja luonnollisen kielen käyttäminen tiedoista esitettävissä kysymyksissä on tehokasta. Vielä tehokkaampaa on, kun tiedot vastaavat, minkä Power BI:n Q&A-toiminto tekee.
@@ -197,4 +197,4 @@ Tämä vaihe voi olla tärkeä. Silloinkin, kun taulukon ja sarakkeiden nimet ov
 
 ![Q&A:n Ominaisuudet-ruudun synonyymit](media/qna-modelling-pane-synonyms.png)
 
- Ole huolellinen lisätessäsi synonyymeja. Saman synonyymin lisääminen useampaan kuin yhteen sarakkeeseen tai taulukkoon luo moniselitteisyyttä. Q&A käyttää mahdollisuuksien mukaan kontekstia valitakseen moniselitteisten synonyymien välillä, mutta kaikkiin kysymyksiin kontekstia ei ole riittävästi. Jos esimerkiksi käyttäjä esittää kysymyksen ”laske asiakkaat” ja mallissasi on kolme eri asiaa synonyymilla ”asiakas” kanssa, asiakas ei välttämättä saa hakemaansa vastausta. Varmista näissä tapauksissa, että ensisijainen synonyymi on ainutkertainen, sillä sitä käytetään oikaisussa. Se voi varoittaa käyttäjää moniselitteisyydestä (esimerkiksi oikaisu kysymyksestä ”näytä arkistoitujen asiakastietueiden määrä”) ja antaa vihjeen, että käyttäjä haluaa ehkä esittää kysymyksen toisin.
+ Ole huolellinen lisätessäsi synonyymeja. Saman synonyymin lisääminen useampaan kuin yhteen sarakkeeseen tai taulukkoon luo moniselitteisyyttä. Q&A käyttää mahdollisuuksien mukaan kontekstia valitakseen moniselitteisten synonyymien välillä, mutta kaikkiin kysymyksiin kontekstia ei ole riittävästi. Jos esimerkiksi käyttäjä esittää kysymyksen ”laske asiakkaat” ja mallissasi on kolme eri asiaa synonyymilla ”asiakas” kanssa, käyttäjä ei välttämättä saa hakemaansa vastausta. Varmista näissä tapauksissa, että ensisijainen synonyymi on ainutkertainen, sillä sitä käytetään oikaisussa. Se voi varoittaa käyttäjää moniselitteisyydestä (esimerkiksi oikaisu kysymyksestä ”näytä arkistoitujen asiakastietueiden määrä”) ja antaa vihjeen, että käyttäjä haluaa ehkä esittää kysymyksen toisin.

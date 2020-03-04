@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c2985f0281274adcdbde737c0f3b00688a401df7
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: ecb377ccabf3b94f37c3fcc69b24c4437c42281b
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75221271"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609821"
 ---
 # <a name="use-ai-insights-in-power-bi-desktop-preview"></a>Tekoälyn merkityksellisten tietojen käyttö Power BI Desktopissa (esiversio)
 
@@ -153,7 +153,7 @@ Useat organisaatiot käyttävät **automaattianalyysin** malleja saadakseen pare
 
 Jotta tätä ominaisuutta voisi käyttää, datatieteilijän tulee vain myöntää Azuren automaattianalyysipalveluiden mallille käyttöoikeus BI-analyytikkoon Azure-portaalin kautta. Kunkin istunnon aluksi Power Query sitten löytää kaikki Azuren automaattianalyysipalveluiden mallit, joihin käyttäjällä on käyttöoikeus, ja paljastaa ne dynaamisina Power Query -funktioina. Käyttäjä voi käynnistää kyseiset funktiot käyttämällä niitä Power Query -editorin valintanauhasta tai käynnistämällä suoraan M-funktion. Lisäksi Power BI käsittelee käyttöoikeuspyynnöt automaattisesti erissä suorituskyvyn parantamiseksi, kun se käynnistää Azuren automaattianalyysipalveluiden mallin rivijoukolle.
 
-Tätä toimintoa tuetaan tällä hetkellä vain Power BI -tietovoille sekä Power Query Onlinelle Power BI -palvelussa.
+Tätä toimintoa tuetaan Power BI Desktopille, Power BI -tietovoille sekä Power Query Onlinelle Power BI -palvelussa.
 
 Lisätietoja tietovoista on artikkelissa [Omatoiminen tietojen valmistelu Power BI:ssä](service-dataflows-overview.md).
 

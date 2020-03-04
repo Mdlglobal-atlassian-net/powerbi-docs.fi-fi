@@ -8,13 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 01/12/2019
-ms.openlocfilehash: 4ffab3913560498dd57103f0a25c39f7a03a42ec
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.date: 02/17/2020
+ms.openlocfilehash: 52a99380f8e1afc39ddfc59a401418e61fe6ad58
+ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77026665"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782426"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Sertifioinnin hankkiminen Power BI -visualisoinnille
 
@@ -43,11 +43,13 @@ Kun lähetät Power BI -visualisointia, varmista, että käännetty paketti vast
 
 Vaikka sinun ei tarvitse julkisesti jakaa koodiasi GitHubissa, koodisäilön on oltava saatavilla Power BI -tiimin tarkistettavaksi. Paras tapa tehdä tämä on toimittamalla lähdekoodi (JavaScript tai TypeScript) GitHubissa.
 
-Säilön on sisällettävä koodi vain yhdelle Power BI -visualisoinnille. Se ei saa sisältää useiden Power BI -visualisointien koodia eikä asiaan liittymätöntä koodia.
-
-Säilöön on sisällytettävä haara, jonka nimi on **sertifiointi** (pieni alkukirjain pakollinen). Tämän haaran lähdekoodin on vastattava lähetettyä pakettia. Tätä koodia saa päivittää vain seuraavan lähetysmenettelyn yhteydessä, jos olet lähettämässä Power BI -visualisointisi uudelleen.
+Säilön on sisällettävä seuraavat:
+* Koodi vain yhdelle Power BI -visualisoinnille. Se ei saa sisältää useiden Power BI -visualisointien koodia eikä asiaan liittymätöntä koodia.
+* Haara, jonka nimi on **sertifiointi** (pieni alkukirjain pakollinen). Tämän haaran lähdekoodin on vastattava lähetettyä pakettia. Tätä koodia saa päivittää vain seuraavan lähetysmenettelyn yhteydessä, jos olet lähettämässä Power BI -visualisointisi uudelleen.
 
 Jos Power BI -visualisointisi käyttää yksityisiä NPM-paketteja tai git-alityyppejä, sinun on järjestettävä käyttöoikeus tämän koodin sisältäviin lisäsäilöihin.
+
+Jos haluat tietää, miltä Power BI -visualisointisäilö näyttää, tarkastele [Power BI -visualisointien esimerkkipalkkikaavion](https://github.com/microsoft/PowerBI-visuals-sampleBarChartgi) GitHub-säilöä.
 
 ### <a name="file-requirements"></a>Tiedostovaatimukset
 
@@ -113,6 +115,18 @@ Power BI -sertifioinnin pyytäminen:
 
 >[!NOTE]
 > Jos Power BI -visualisoinnin lähettämisprosessi on kesken ja sinun on käytettävä [myyjän koontinäyttöä](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (vanhaa hallintatyökalua), katso ohjeet kohdasta [Myyjän koontinäytön sertifioinnin lähettämisprosessi](seller-dashboard.md#seller-dashboard-certification-submission-process).
+
+### <a name="private-repository-submission-process"></a>Yksityisen säilön lähettämisprosessi
+
+Jos käytät yksityistä säilöä, kuten GitHub-säilöä, joka lähettää Power BI -visualisoinnin varmentamista varten, noudata tämän osan ohjeita.
+1. Luo uusi tili vahvistustiimiä varten.
+2. Määritä tiliisi [kaksivaiheinen todentaminen](https://help.github.com/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa).
+3. [Luo uusi palautuskoodijoukko](https://help.github.com/github/authenticating-to-github/configuring-two-factor-authentication-recovery-methods#generating-a-new-set-of-recovery-codes).
+4. Kun lähetät Power BI -visualisoinnin, anna seuraavat tiedot:
+    * Linkki säilöön
+    * Kirjautumisen tunnistetiedot (salasana mukaan lukien)
+    * Palautuskoodit
+    * Vain luku -oikeudet tiliimme ([pbidvsupport](https://github.com/pbicvsupport))
 
 ## <a name="certified-power-bi-visuals"></a>Sertifioidut Power BI -visualisoinnit
 

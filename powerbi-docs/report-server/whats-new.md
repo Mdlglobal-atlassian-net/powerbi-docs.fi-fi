@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/23/2020
-ms.openlocfilehash: d4e233e55731d77d4136c1b6ef1e341a2d043234
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.date: 02/27/2020
+ms.openlocfilehash: 251f89dd031d9a2bda146266308dc528f05eddb2
+ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77026711"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782444"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Power BI -raporttipalvelinten uudet ominaisuudet
 
@@ -165,6 +165,10 @@ Voit määrittää otsikkoarvot kaikille URL-osoitteille, jotka vastaavat määr
 #### <a name="transparent-database-encryption"></a>Läpinäkyvä tietokannan salaus
 
 Power BI -raporttipalvelin tukee nyt läpinäkyvää tietokannan salausta Power BI -raporttipalvelimen luettelotietokannalle Enterprise- ja Standard-versioissa.
+
+#### <a name="power-bi-visuals-api"></a>Power BI:n visualisointien ohjelmointirajapinta
+
+Tämä versio sisältää ohjelmointirajapinnan version 2.6.
 
 #### <a name="microsoft-report-builder-update"></a>Microsoftin Report Builderin päivitys
 
@@ -446,34 +450,34 @@ Maaliskuussa 2018 Power BI -raporttipalvelimelle optimoituun Power BI Desktop -v
 
 Uusia ominaisuuksia on vino pino, mutta seuraavat ovat erityisen kiinnostavia.
 
-#### <a name="rule-based-conditional-formatting-for-table-and-matrixhttpspowerbimicrosoftcomblogpower-bi-desktop-november-2017-feature-summaryconditionalformatting"></a>[Sääntöihin perustuva ehdollinen muotoilu taulukoissa ja matriiseissa](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting)
+#### <a name="rule-based-conditional-formatting-for-table-and-matrix"></a>[Sääntöihin perustuva ehdollinen muotoilu taulukoissa ja matriiseissa](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting)
 
 Luo sääntöjä, joiden perusteella taustaväri tai sarakkeen fontin väri valitaan ehdollisesti taulukon tai matriisin liiketoimintalogiikan mukaan.
 
-#### <a name="show-and-hide-pageshttpspowerbimicrosoftcomblogpower-bi-desktop-january-2018-feature-summaryhidepages"></a>[Sivujen näyttäminen ja piilottaminen](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
+#### <a name="show-and-hide-pages"></a>[Sivujen näyttäminen ja piilottaminen](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
 
 Kuvitellaan, että haluat antaa lukijoillesi raporttisi käyttöoikeudet, mutta jotkut sivut eivät ole täysin valmiit. Nyt voit piilottaa ne, kunnes ne ovat valmiita. Voit myös piilottaa sivut normaalista siirtymisnäkymästä, jolloin lukijat voivat siirtyä sivulle kirjanmerkkien tai porautumisen avulla.
 
-#### <a name="bookmarkinghttpspowerbimicrosoftcomblogpower-bi-desktop-march-2018-feature-summarybookmarking"></a>[Kirjanmerkkien lisääminen](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
+#### <a name="bookmarking"></a>[Kirjanmerkkien lisääminen](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
 
 Voit nyt luoda kirjanmerkkejä ja käyttää raporttisi tietoja kerronnan tukena.
 
 - [Kirjanmerkkien ristiinkorostus](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting): Kirjanmerkit säilyttävät ja näyttävät raportin sivun, joka korostettiin ristiin kirjanmerkin luontihetkellä.
 - [Lisää joustavuutta kirjanmerkkien käyttämiseen](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility): Kirjanmerkit heijastavat raportissa määrittämiäsi ominaisuuksia ja vaikuttavat vain valitsemiisi visualisointeihin.
 
-#### <a name="multi-select-data-points-across-multiple-chartshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarycrosshighlight"></a>[Monivalinta-arvopisteet useiden kaavioiden välillä](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
+#### <a name="multi-select-data-points-across-multiple-charts"></a>[Monivalinta-arvopisteet useiden kaavioiden välillä](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
 
 Voit valita useita arvopisteitä useista kaavioista ja käyttää ristiinsuodatusta koko sivulla.
 
-#### <a name="sync-slicers-across-multiple-pages-of-your-reporthttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarysyncslicers"></a>[Osittajien synkronointi usealle raporttisivulle](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers)
+#### <a name="sync-slicers-across-multiple-pages-of-your-report"></a>[Osittajien synkronointi usealle raporttisivulle](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers)
 
 Osittajaa voidaan käyttää yhdellä, kahdella tai useammalla raporttisivulla.
 
-#### <a name="quick-measureshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summaryquickmeasures"></a>[Pikamittarit](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
+#### <a name="quick-measures"></a>[Pikamittarit](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
 
 Luo uusia mittareita nykyisten mittareiden ja taulukon numeeristen sarakkeiden perusteella.
 
-#### <a name="drilling-down-filters-other-visualshttpspowerbimicrosoftcomblogpower-bi-desktop-december-feature-summarydrillfiltersothervisuals"></a>[Muiden visualisointien suodattaminen poraamalla](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
+#### <a name="drilling-down-filters-other-visuals"></a>[Muiden visualisointien suodattaminen poraamalla](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
 
 Kun poraudut jonkin visualisoinnin valittuun luokkaan, voit suodattaa kaikki kyseisen sivun visualisoinnit saman luokan mukaan.
 

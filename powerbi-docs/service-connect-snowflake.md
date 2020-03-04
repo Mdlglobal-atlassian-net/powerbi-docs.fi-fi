@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/20/2019
 ms.author: gepopell
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 03e6e8efae5cd4a5f61e3d07bc0b3c524b3b0a46
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 5e5519e30be30d6367791d1b6822196b407a21b1
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77429345"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576862"
 ---
 #  <a name="connecting-to-snowflake-in-power-bi-service"></a>Snowflakeen yhdistäminen Power BI ‑palvelussa
 
@@ -49,7 +49,7 @@ Power BI:n toimintaperiaatteiden vuoksi kertakirjautuminen toimii ainoastaan sil
 
 * Jos käytät tietomallissa ainoastaan Snowflake-lähdettä, voit käyttää kertakirjautumista, jos et halua käyttää paikallista tietoyhdyskäytävää
 * Jos käytät Snowflake-lähdettä ja jotain muuta lähdettä, voit käyttää kertakirjautumista, jos mikään lähteistä ei käytä paikallista tietoyhdyskäytävää
-* Jos käytät Snowflake-lähdettä paikallisen tietoyhdyskäytävän kautta, voit käyttää AAD-tunnistetietoja mutta et kertakirjautumista. Tällä voi olla merkitystä sellaisissa tapauksissa, että yrität päästä VNetiin yksittäisestä IP-osoitteesta, johon on asennettu yhdyskäytävä, sen sijaan että se olisi asennettu Power BI:n koko IP-osoitealueelle.
+* Jos käytät Snowflake-lähdettä paikallisen tietoyhdyskäytävän kautta, AAD-tunnistetiedot eivät ole tällä hetkellä tuettuja. Tällä voi olla merkitystä sellaisissa tapauksissa, että yrität päästä VNetiin yksittäisestä IP-osoitteesta, johon on asennettu yhdyskäytävä, sen sijaan että se olisi asennettu Power BI:n koko IP-osoitealueelle.
 * Jos käytät Snowflake-lähdettä ja jotain muuta lähdettä, joka edellyttää yhdyskäytävää, sinun on käytettävä myös Snowflakea paikallisen tietoyhdyskäytävän kautta. Kertakirjautuminen ei tällöin onnistu.
 
 Katso lisätiedot paikallisten tietoyhdyskäytävien käytöstä artikkelista [Mikä paikallinen tietoyhdyskäytävä on?](https://docs.microsoft.com/power-bi/service-gateway-onprem)

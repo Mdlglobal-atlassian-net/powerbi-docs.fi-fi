@@ -1,29 +1,29 @@
 ---
 title: Power BI -integrointi Power Automaten kanssa
-description: Opi luomaan Power BI -tietoilmoitusten käynnistämiä työnkulkuja.
+description: Opi luomaan Power BI -tietoilmoitusten käynnistämiä Power Automate -työnkulkuja.
 author: maggiesMSFT
 ms.reviewer: ''
 featuredvideoid: YhmNstC39Mw
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 02/25/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: e9c6185506d1992a46ee14ff1eafe0c37d9f65c1
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: aafba825c5bd4ece3c8b97256d5943f91b456cd7
+ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75223774"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609708"
 ---
 # <a name="power-automate-and-power-bi"></a>Power Automate ja Power BI
 
-[Power Automate](https://docs.microsoft.com/power-automate/getting-started) on työnkulun automatisoimiseen tarkoitettu SaaS-palvelu, joka toimii yhä useamman yrityskäyttäjän luottaman sovelluksen ja SaaS-palveluiden kanssa. Työnkulun avulla voit automatisoida tehtäviä integroimalla suosikkisovelluksesi ja -palvelusi, (Power BI mukaan lukien) saadaksesi ilmoituksia, synkronoidaksesi tiedostoja, kerätäksesi tietoja ja paljon muuta. Toistuvista tehtävistä tulee helppoja työnkulun automatisoinnin ansiosta.
+[Power Automate](https://docs.microsoft.com/power-automate/getting-started) on työnkulun automatisoimiseen tarkoitettu SaaS-palvelu, joka toimii yhä useamman yrityskäyttäjän luottaman sovelluksen ja SaaS-palveluiden kanssa. Power Automaten avulla voit automatisoida tehtäviä integroimalla suosikkisovelluksesi ja -palvelusi (Power BI mukaan lukien) esimerkiksi ilmoitusten saamista, tiedostojen synkronoimista ja tietojen keräämistä varten. Toistuvista tehtävistä tulee helppoja työnkulun automatisoinnin ansiosta.
 
-[Aloita Flow’n käyttö nyt.](https://docs.microsoft.com/power-automate/getting-started)
+[Aloita Power Automaten käyttö heti.](https://docs.microsoft.com/power-automate/getting-started)
 
-Katso, miten Sirui luo työnkulun, joka lähettää yksityiskohtaisen sähköpostin kollegoille, kun Power BI -ilmoitus käynnistyy. Kokeile sitten itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita.
+Katso, miten Sirui luo Power Automate -työnkulun, joka lähettää yksityiskohtaisen sähköpostin kollegoille, kun Power BI -ilmoitus käynnistyy. Kokeile sitten itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YhmNstC39Mw" frameborder="0" allowfullscreen></iframe>
 
@@ -38,7 +38,7 @@ Tässä tehtävässä käytämme mallia luodaksemme yksinkertaisen työnkulun, j
 1. Kirjaudu sisään Power Automateen (flow.microsoft.com).
 2. Valitse **Omat työnkulut**.
    
-   ![Työnkulut-valikkorivi](media/service-flow-integration/power-bi-my-flows.png)
+   ![Power Automaten valikkorivi](media/service-flow-integration/power-bi-my-flows.png)
 3. Valitse **Luo mallista**.
    
     ![Omat työnkulut -valikkorivi](media/service-flow-integration/power-bi-template.png)
@@ -48,7 +48,7 @@ Tässä tehtävässä käytämme mallia luodaksemme yksinkertaisen työnkulun, j
 
 
 ### <a name="build-the-flow"></a>Työnkulun muodostaminen
-Tässä mallissa on yksi käynnistin (Power BI-tietohälytys Irlannin uusia olympiamitaleita varten) ja yksi toiminto (lähetä sähköpostiviesti). Valitessasi kentän, Flow näyttää siihen lisättävissä olevaa dynaamista sisältöä.  Tässä esimerkissä lisäämme ruutuarvon ja ruudun URL-osoitteen sanoman tekstiosaan.
+Tässä mallissa on yksi käynnistin (Power BI-tietohälytys Irlannin uusia olympiamitaleita varten) ja yksi toiminto (lähetä sähköpostiviesti). Valitessasi kentän Power Automate näyttää siihen lisättävissä olevaa dynaamista sisältöä.  Tässä esimerkissä lisäämme ruutuarvon ja ruudun URL-osoitteen sanoman tekstiosaan.
 
 ![työnkulkumalli](media/service-flow-integration/power-bi-template1.png)
 
@@ -59,7 +59,7 @@ Tässä mallissa on yksi käynnistin (Power BI-tietohälytys Irlannin uusia olym
    
    ![Lähetä sähköpostiviesti -ruutu](media/service-flow-integration/power-bi-flow-email.png)
 
-3. Flow luo otsikon ja sanoman, jotka voit säilyttää sellaisenaan tai joita voit muokata. Kaikki Power BI -ilmoitusta luotaessa syötetyt arvot ovat käytettävissäsi -- aseta vain kohdistin niiden ylle ja valitse harmaalla korostettu alue. 
+3. Power Automate luo otsikon ja sanoman, jotka voit säilyttää sellaisinaan tai joita voit muokata. Kaikki Power BI -ilmoitusta luotaessa syötetyt arvot ovat käytettävissäsi -- aseta vain kohdistin niiden ylle ja valitse harmaalla korostettu alue. 
 
    ![Lähetä sähköpostiviesti -ruutu](media/service-flow-integration/power-bi-flow-email-default.png)
 
@@ -69,7 +69,7 @@ Tässä mallissa on yksi käynnistin (Power BI-tietohälytys Irlannin uusia olym
 
     Voit myös hyväksyä oletusarvoisen sähköpostiviestin tai luoda omasi. Yllä oleva esimerkki sisältää muutaman viestiin tehdyn muutoksen.
 
-1. Kun olet valmis, valitse **Luo työnkulku** tai **Tallenna työnkulku**.  Työnkulku luodaan ja tarkastetaan.  Flow kertoo, jos siitä löydetään virheitä.
+1. Kun olet valmis, valitse **Luo työnkulku** tai **Tallenna työnkulku**.  Työnkulku luodaan ja tarkastetaan.  Power Automate kertoo, jos se löytää virheitä.
 2. Jos virheitä löytyy, valitse **Muokkaa työnkulkua** korjataksesi ne tai valitse **Valmis** suorittaaksesi uuden työnkulun.
    
    ![onnistumisilmoitus](media/service-flow-integration/power-bi-flow-running.png)
@@ -77,13 +77,13 @@ Tässä mallissa on yksi käynnistin (Power BI-tietohälytys Irlannin uusia olym
    
    ![ilmoituksen sähköpostiviesti](media/service-flow-integration/power-bi-flow-email2.png)
 
-## <a name="create-a-flow-that-uses-power-bi---from-scratch-blank"></a>Luo työnkulku, jota Power BI käyttää - alusta asti (tyhjä)
-Seuraavaksi luomme yksinkertaisen työnkulun alusta alkaen, joka käynnistyy Power BI -tietoilmoituksella.
+## <a name="create-a-power-automate-that-uses-power-bi---from-scratch-blank"></a>Power BI:tä käyttävän Power Automate -työnkulun luominen – alusta alkaen (tyhjä)
+Seuraavaksi luomme alusta alkaen yksinkertaisen työnkulun, joka käynnistyy Power BI -tietoilmoituksella.
 
 1. Kirjaudu sisään Power Automateen.
 2. Valitse **Omat työnkulut** > **Luo tyhjästä**.
    
-   ![Flow’n yläreunan valikkorivi](media/service-flow-integration/power-bi-my-flows.png)
+   ![Power Automaten yläosan valikkorivi](media/service-flow-integration/power-bi-my-flows.png)
 3. Käytä hakuruutua hakeaksesi Power BI -käynnistimiä ja valitse **Power BI - tietopohjaisen ilmoituksen käynnistyminen**.
 
 ### <a name="build-your-flow"></a>Työnkulun luominen
@@ -96,15 +96,15 @@ Seuraavaksi luomme yksinkertaisen työnkulun alusta alkaen, joka käynnistyy Pow
 3. Syötä hakuun **Outlook** ja valitse **Luo tapahtuma**.
    
    ![muodosta työnkulku](media/service-flow-integration/power-bi-create-event.png)
-4. Täytä tapahtumakentät. Valitessasi kentän, Flow näyttää siihen lisättävissä olevaa dynaamista sisältöä.
+4. Täytä tapahtumakentät. Valitessasi kentän Power Automate näyttää siihen lisättävissä olevaa dynaamista sisältöä.
    
    ![jatka työnkulun muodostamista](media/service-flow-integration/power-bi-flow-event.png)
-5. Valitse **Luo työnkulku**, kun olet valmis.  Flow tallentaa ja tarkastaa työnkulun. Jos virheitä ei löydetä, valitse **Valmis** ja voit suorittaa tämän työnkulun.  Uusi työnkulku lisätään **Omat työnkulut** -sivulle.
+5. Valitse **Luo työnkulku**, kun olet valmis.  Power Automate tallentaa ja arvioi työnkulun. Jos virheitä ei löydetä, valitse **Valmis** ja voit suorittaa tämän työnkulun.  Uusi työnkulku lisätään **Omat työnkulut** -sivulle.
    
    ![Viimeistele työnkulku](media/service-flow-integration/power-bi-flow-running.png)
 6. Kun Power BI -tietoilmoitus käynnistää työnkulun, näyttöön ilmestyvä Outlook -tapahtumailmoitus näyttää suunnilleen tältä.
    
-    ![Flow käynnistää Outlook-ilmoituksen](media/service-flow-integration/power-bi-flow-notice.png)
+    ![Power Automate käynnistää Outlook-ilmoituksen](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Power Automaten käytön aloittaminen](https://docs.microsoft.com/power-automate/getting-started/)

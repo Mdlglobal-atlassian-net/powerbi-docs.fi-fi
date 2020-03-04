@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: c3e2327131ae82fa025236c9242476466b6d9074
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: a0f4808aaf267e3cdb822e8778005c2eca247cb5
+ms.sourcegitcommit: 82c41f91055da8c1cc5d8cc67927d5246d11247b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73864071"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78199000"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Power BI Embeddedin suorituskykyä parantavat parhaat käytännöt
 
 Tässä artikkelissa on suosituksia, joiden avulla nopeutat sovelluksesi raporttien, koontinäyttöjen, ja ruutujen hahmontamista.
 
 > [!Note]
-> Muista, että latausaika riippuu pääasiassa raporttiin ja itse tietoihin liittyvistä elementeistä, kuten visualisoinneista, tietojen koosta ja kyselyjen ja laskettujen mittareiden monimutkaisuudesta. Lisätietoja on ohjeaiheessa [Power BI:n suorituskykyä parantavat parhaat käytännöt](../power-bi-reports-performance.md).
+> Muista, että latausaika riippuu pääasiassa raporttiin ja itse tietoihin liittyvistä elementeistä, kuten visualisoinneista, tietojen koosta ja kyselyjen ja laskettujen mittareiden monimutkaisuudesta. Lisätietoja on artikkelissa [Power BI:n optimointiopas](../guidance/power-bi-optimization.md).
 
 ## <a name="update-tools-and-sdk-packages"></a>Työkalujen ja SDK-pakettien päivittäminen
 
@@ -106,6 +106,6 @@ Suorityskyvyn analysointi -toiminnon avulla voit tarkastella ja kirjata lokeja, 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* [Power BI -raportin suorituskyvyn parhaat käytännöt](../power-bi-reports-performance.md)
+* [Power BI:n optimointiopas](../guidance/power-bi-optimization.md)
 * [Power BI Embeddedin ongelmien vianmääritys](embedded-troubleshoot.md)
 * [Power BI Embedded: usein kysytyt kysymykset](embedded-faq.md)

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 02/24/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 184aeb1f26e54bb8b8935f2f06ec6cad2e282ecf
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: a89cb77b99356f9f282b522c2041e96210a026e9
+ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537901"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576769"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Power BI:n tukemat merkityksellisten tietojen tyypit
 
@@ -55,7 +55,7 @@ Havaitsee tapaukset, joissa useat mittarit osoittavat samanlaisen mallin tai tre
 ![Esimerkki korrelaatiosta](./media/end-user-insight-types/pbi-auto-insight-types-correlation.png)
 
 ### <a name="low-variance"></a>Pieni varianssi
-Havaitsee tapaukset, jossa arvopisteet eivät eroa keskiarvosta huomattavasti.
+Havaitsee tapaukset, joissa dimension arvopisteet eivät ole kaukana keskiarvosta, eli varianssi on pieni. Oletetaan, että sinulla on dimensio ”Myynti” ja dimensio ”alue”. Kun tarkastelet alueita, huomaat, että arvopisteiden ja (arvopisteiden) keskiarvon välillä on hyvin vähän eroa. Merkityksellinen tieto käynnistyy, kun myynnin varianssi kaikilla alueilla alittaa kynnysarvon. Tällöin myynti on siis melko samankaltaista kaikilla alueilla.
 
 ![Esimerkki pienestä varianssista](./media/end-user-insight-types/power-bi-low-variance.png)
 
@@ -75,7 +75,9 @@ Etsii toistuvia kuvioita aikasarjatiedoissa, kuten viikoittaista, kuukausittaist
 ![Esimerkki kausivaihtelusta](./media/end-user-insight-types/pbi-auto-insight-types-seasonality-new.png)
 
 ### <a name="steady-share"></a>Vakaa jako
-Korostaa tapaukset, joissa on olemassa pääkohde-alikohde-korrelaatio alikohteen osuudessa suhteessa pääkohteen yleisarvoon jatkuvassa muuttujassa.
+Korostaa tapaukset, joissa on olemassa pääkohde-alikohde-korrelaatio alikohteen osuudessa suhteessa pääkohteen yleisarvoon jatkuvassa muuttujassa. Vakaan jaon merkitykselliset tiedot koskevat mittayksikön, dimension ja toisen päivämäärä/aika-dimension kontekstia. Tämä merkityksellinen tieto käynnistyy, kun tietyllä dimension arvolla, esimerkiksi ”Koillisalue”-arvolla, on vakaa prosenttiosuus kokonaismyynnistä kyseisessä päivämäärä-/aikadimensiossa.
+
+Vakaan jaon merkityksellinen tieto muistuttaa pienen varianssin merkityksellistä tietoa, koska ne molemmat liittyvät arvon varianssin puutteeseen tietyllä aikavälillä. Vakaan jaon merkitykselliset tiedot mittaavat kuitenkin varianssin puutetta **prosenttiosuudessa kokonaisuudesta** tietyllä aikavälillä, kun taas pienen varianssin merkitykselliset tiedot mittaavat varianssin puutetta absoluuttisissa mittausarvoissa tietyssä dimensiossa.
 
 ![Esimerkki vakaasta jaosta](./media/end-user-insight-types/pbi-auto-insight-types-steadyshare.png)
 
