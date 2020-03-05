@@ -30,7 +30,7 @@ ms.locfileid: "74265636"
 * enintään 5 000 000 riviä tallennettu taulukkoa kohden ”ei mitään säilytyskäytännön” tietojoukossa  
 * 4 000 merkkiä arvoa kohden merkkijonosarakkeelle JULKAISE rivejä -toiminnossa
   
-## <a name="see-also"></a>Katso myös
+## <a name="see-also"></a>Muuta aiheeseen liittyvää
 
 [Azure AD -palvelun rajat ja rajoitukset](https://docs.microsoft.com/azure/active-directory/active-directory-service-limits-restrictions)   
 [Power BI REST -ohjelmointirajapinnan yleiskatsaus](https://docs.microsoft.com/rest/api/power-bi/)

@@ -57,11 +57,11 @@ Tämä ei kuitenkaan tarkoita sitä, ettetkö voi tallentaa muutoksiasi. Se on t
 | --- | --- | --- |
 | Sivut |Yksi sivu |Yksi tai useampi sivu |
 | Tietolähteet |Yksi tai useampi raportti ja yksi tai useampi tietojoukko koontinäyttöä kohden |Yksi tietojoukko raporttia kohden |
-| Suodatus |Ei voi suodattaa tai jakaa sektoreihin |Monta eri tapaa suodattaa, korostaa ja jakaa sektoreihin |
+| suodatusta |Ei voi suodattaa tai jakaa sektoreihin |Monta eri tapaa suodattaa, korostaa ja jakaa sektoreihin |
 | Hälytysten asettaminen |Voit luoda hälytyksiä lähetettäväksi sähköpostina, kun koontinäyttö täyttää tietyt ehdot |Ei |
 | Ominaisuus |Voit määrittää jonkin koontinäytön esittelyssä olevaksi koontinäytöksi |Esittelyssä olevaa raporttia ei voida luoda |
 | Pohjana olevat tietojoukkojen taulukot ja kentät ovat näkyvissä |Ei. Voit viedä tietoja, mutta et näe tietojoukon taulukoita ja kenttiä itse koontinäytössä |Kyllä. Näet ne tietojoukon taulukot, kentät ja arvot, joihin sinulla on oikeudet |
-| Mukauttaminen |Ei  |Voit suodattaa, viedä, tarkastella liittyvää sisältöä, lisätä kirjanmerkkejä, luoda QR-koodeja, analysoida Excelissä ja niin edelleen |
+| Mukautus |Ei  |Voit suodattaa, viedä, tarkastella liittyvää sisältöä, lisätä kirjanmerkkejä, luoda QR-koodeja, analysoida Excelissä ja niin edelleen |
 
 <!--| Available in Power BI Desktop |No |Yes, can create and view reports in Desktop |
 | Pinning |Can pin existing visuals (tiles) only from current dashboard to your other dashboards |Can pin visuals (as tiles) to any of your dashboards. Can pin entire report pages to any of your dashboards. | -->

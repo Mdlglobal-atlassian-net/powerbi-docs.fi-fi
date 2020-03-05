@@ -105,7 +105,7 @@ Lisätietoja [Power BI -hälytyksistä](end-user-alerts.md)
 ### <a name="use-qa-to-ask-questions-using-natural-language"></a>Käytä Q&A-toimintoa esittääksesi kysymyksiä luonnollisella kielellä
 Joskus nopein tapa saada vastauksia tiedoista on esittää kysymyksiä luonnollisella kielellä. Q&A-kysymysruutu on käytettävissä koontinäytön yläreunassa. Esimerkiksi ”näytä suuri mahdollisuuksien määrä myyntivaiheen mukaan suppilona”. 
 
-![Kysymykset ja vastaukset](./media/end-user-reading-view/power-bi-q-and-a.png)
+![Q&A](./media/end-user-reading-view/power-bi-q-and-a.png)
 
 Lisätietoja [Power BI Q&A:sta](end-user-q-and-a.md)
 
@@ -192,7 +192,7 @@ Sen lisäksi, että voit näyttää visualisoinnin luomiseen käytettävät tied
 
 Tämä on vain lyhyt yleiskuvaus siitä, mitä *kuluttajat* voivat tehdä Power BI -palvelussa.  
 
-## <a name="clean-up-resources"></a>Resurssien tyhjentäminen
+## <a name="clean-up-resources"></a>Puhdista resurssit
 - Jos olet yhdistänyt sovelluksen, avaa Sovellukset-sisällysluettelo valitsemalla siirtymisruudusta **Sovellukset**. Pidä osoitinta poistettavan sovelluksen päällä ja valitse roskakorikuvake.
 
 - Jos toit tai yhdistit Power BI -näyteraportin, avaa siirtymisruudusta **Oma työtila**. Käytä ylhäällä olevia välilehtiä ja etsi koontinäyttö, raportti ja tietojoukko, ja valitse sitten roskakorikuvake kunkin kohdalla.

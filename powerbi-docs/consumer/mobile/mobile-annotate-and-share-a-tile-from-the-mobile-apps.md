@@ -73,5 +73,5 @@ Voit myös [jakaa ruudun Windows 10 -laitteiden Power BI -mobiilisovelluksesta](
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Koontinäytön jakaminen Power BI -mobiilisovelluksista](mobile-share-dashboard-from-the-mobile-apps.md)
-* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/21/2020
+ms.date: 03/02/2020
 ms.author: maggies
-ms.openlocfilehash: 343c7d7e81d8e8ec53383feab6dc4dcfb17129d6
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 08eca8ecb9aa941c2670a801113bc711bff409b2
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76540586"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237519"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI -raporttien tietolähteet Power BI -raporttipalvelimessa
 Power BI -raportit voivat muodostaa yhteyden useisiin tietolähteisiin. Käytettävissä on eri tietolähteitä riippuen siitä, miten tietoja käytetään. Tiedot voidaan tuoda tai tiedoille voidaan tehdä kyselyitä suoraan DirectQuerylla tai reaaliaikaisella SQL Server Analysis Services -yhteydellä.
@@ -41,7 +41,7 @@ Muutkin tietolähteet saattavat toimia, vaikka ne eivät olekaan tuettujen luett
 | Azure-blob-objektitallennus |Kyllä |Kyllä |Ei |
 | Azure Data Lake Store |Kyllä |Ei |Ei |
 | Azure HDInsight (HDFS) |Kyllä |Ei |Ei |
-| Azure HDInsight (Spark) |Kyllä |Kyllä |Ei |
+| Azure HDInsight (Spark) |Kyllä |Ei |Ei |
 | Azure-taulukkotallennus |Kyllä |Kyllä |Ei |
 | Dynamics 365 (online) |Kyllä |Ei |Ei |
 | Facebook |Kyllä |Ei |Ei |
@@ -128,7 +128,7 @@ Power BI -raporttipalvelin ei tue OAuth-pohjaista todennusta mallipäivityksess�
 | Azure-blob-objektitallennus |Kyllä |Kyllä |Ei |Ei |
 | Azure Data Lake Store |Ei |Ei |Ei |Ei |
 | Azure HDInsight (HDFS) |Ei |Ei |Ei |Ei |
-| Azure HDInsight (Spark) |Kyllä |Kyllä |Ei |Ei |
+| Azure HDInsight (Spark) |Ei |Ei |Ei |Ei |
 | Azure-taulukkotallennus |Ei |Kyllä |Ei |Ei |
 | Dynamics 365 (online) |Ei |Ei |Ei |Ei |
 | Facebook |Ei |Ei |Ei |Ei |

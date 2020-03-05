@@ -89,5 +89,5 @@ Takaisin artikkeliin [Q&A Power BI:ssä](end-user-q-and-a.md)
 
 [Power BI:n peruskäsitteet](end-user-basic-concepts.md)  
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

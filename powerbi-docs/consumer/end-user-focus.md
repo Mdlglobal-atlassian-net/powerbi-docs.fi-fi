@@ -111,13 +111,13 @@ Tarkastelutila on käytettävissä koontinäytön ruuduille ja raportin visualis
 
 - Avaa raportin visualisointi pitämällä hiiren osoitinta visualisoinnin päällä ja valitse **tarkastelutila**kuvake ![tarkastelutilakuvake](media/end-user-focus/pbi_popout.jpg).  
 
-   ![tarkastelutilakuvake näkyy ruudulla](media/end-user-focus/power-bi-hover-focus-icon.png)
+   ![kohdistustilakuvake näkyy ruudulla](media/end-user-focus/power-bi-hover-focus-icon.png)
 
 
 
-Visualisointi aukeaa ja täyttää koko raporttipohjan. Huomaa, että käytettävissäsi on edelleen **Suodattimet**-ruutu, jonka avulla voit käsitellä visualisointia. **Suodattimet**-ruutu ja siirtymisruutu voidaan kutistaa.
+Visualisointi aukeaa ja täyttää koko raportin. Huomaa, että käytettävissäsi on edelleen **Suodattimet**-ruutu, jonka avulla voit käsitellä visualisointia. **Suodattimet**-ruutu ja siirtymisruutu voidaan kutistaa.
 
-   ![ruutu täyttää raporttipohjan](media/end-user-focus/power-bi-focus-filter.png)
+   ![ruutu täyttää raportin](media/end-user-focus/power-bi-focus-filter.png)
 
 
    ![ruutu täyttää raporttipohjan ja molemmat valikot kutistetaan](media/end-user-focus/power-bi-menu-collapse.png)  

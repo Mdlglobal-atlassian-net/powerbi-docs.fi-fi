@@ -275,4 +275,4 @@ namespace walkthrough_push_data
 [Power BI:n REST-ohjelmointirajapinnan yleiskatsaus](overview-of-power-bi-rest-api.md)  
 [Power BI:n REST-ohjelmointirajapinnan viite](https://docs.microsoft.com/rest/api/power-bi/)  
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

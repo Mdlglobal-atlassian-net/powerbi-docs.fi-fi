@@ -59,6 +59,6 @@ Power BI ‑mobiilisovelluksissa on tällä hetkellä seuraavien kielten tuki:
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Power BI:n tuetut kielet ja maat tai alueet](../../supported-languages-countries-regions.md)
-* Onko sinulla kysymyksiä? Voit esittää kysymyksiä [Power BI -yhteisössä](https://community.powerbi.com/).
+* Onko sinulla kysyttävää? Voit esittää kysymyksiä [Power BI -yhteisössä](https://community.powerbi.com/).
 * Eikö ongelma ratkennut? Vieraile [Power BI -tukisivulla](https://powerbi.microsoft.com/support/).
 

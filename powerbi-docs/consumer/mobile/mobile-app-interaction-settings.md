@@ -20,7 +20,7 @@ ms.locfileid: "76542285"
 ## <a name="overview"></a>Yleiskatsaus
 
 Power BI -mobiilisovelluksessa on useita määritettävissä olevia käsittelyasetuksia, joiden avulla voit hallita sitä, miten tietojasi käsitellään, ja määrittää, miten jotkin Power BI -mobiilisovelluksen osat toimivat. Tällä hetkellä asetukset koskevat seuraavia:
-* [Käsitteleminen yhdellä napautuksella tai kaksoisnapautuksella raportin visualisoinneissa](#single-tap)
+* [Käsitteleminen yhdellä napsautuksella tai kaksoisnapsautuksella raportin visualisoinneissa](#single-tap)
 * [Kiinnitetty tai dynaaminen raportin alatunniste](#docked-report-footer-android-phones) (Android)
 * [Päivittäminen painikkeella tai päivittäminen vetämällä](#report-refresh-android-phones) (Android)
 
@@ -34,9 +34,9 @@ Saat vuorovaikutusasetukset näkyviin avaamalla [sivupaneelin](./mobile-apps-hom
 ## <a name="interaction-settings"></a>Käsittelyasetukset
 
 ### <a name="single-tap"></a>Napautus
-Kun lataat Power BI -mobiilisovelluksen, se on määritetty käsittelyyn yhdellä napautuksella. Tämä tarkoittaa sitä, että kun napautat visualisointia osittajatoiminnon, ristiinkorostamisen, linkin tai painikkeen napsauttamisen tai muun toiminnon suorittamista varten, napautus sekä valitsee visualisoinnin että suorittaa haluamasi toiminnon.
+Kun lataat Power BI -mobiilisovelluksen, se on määritetty käsittelyyn yhdellä napsautuksella. Tämä tarkoittaa sitä, että kun napautat visualisointia osittajatoiminnon, ristiinkorostamisen, linkin tai painikkeen napsauttamisen tai muun toiminnon suorittamista varten, napautus sekä valitsee visualisoinnin että suorittaa haluamasi toiminnon.
 
-Halutessasi voit poistaa käytöstä käsittelyn yhdellä napautuksella. Sen jälkeen käsittelyssä käytetään kaksoisnapautusta. Kun käsittely kaksoisnapautuksella on käytössä, valitset visualisoinnin ensin napauttamalla sitä ja suoritat sitten haluamasi toiminnon napauttamalla visualisointia uudelleen.
+Halutessasi voit poistaa käytöstä käsittelyn yhdellä napautuksella. Sen jälkeen käsittelyssä käytetään kaksoisnapautusta. Kun käsittely kaksoisnapsautuksella on käytössä, valitset visualisoinnin ensin napauttamalla sitä ja suoritat sitten haluamasi toiminnon napauttamalla visualisointia uudelleen.
 
 ### <a name="docked-report-footer-android-phones"></a>Kiinnitetty raportin alatunniste (Android-puhelimet)
 

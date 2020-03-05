@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 06/06/2019
-ms.openlocfilehash: 7cfc52557d9dcce03dd2e42818bb04f4754c190d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 03/02/2020
+ms.openlocfilehash: 1d7b355987163ede2c70a4052e98ec02522db751
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75304318"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237887"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Upotetun tietolähteen luominen sivutettuun raporttiin Power BI -palvelussa
 
@@ -53,9 +53,7 @@ Katso lisätiedot kohdasta [Raporttitiedot Power BI:n raportin muodostimessa](re
   
     -   Kirjoita yhteysmerkkijono suoraan **Yhteysmerkkijono**-tekstiruutuun. 
   
-    -   Luo lauseke, joka antaa tulokseksi yhteysmerkkijonon, valitsemalla lausekepainike (**fx)** . Kirjoita lauseke Lauseke-ruutuun **Lauseke**-valintaikkunassa. Valitse **OK**. 
-  
-    -   Valitse **Muodosta**, niin vaiheessa 2 valitsemasi tietolähteen **Yhteyden ominaisuudet** -valintaikkuna avautuu.  
+     -   Valitse **Muodosta**, niin vaiheessa 2 valitsemasi tietolähteen **Yhteyden ominaisuudet** -valintaikkuna avautuu.  
   
         Täytä **Yhteyden ominaisuudet** -valintaikkunan kentät tietolähdetyypin tiedoilla. Yhteyden ominaisuuksiin kuuluvat tietolähteen tyyppi, tietolähteen nimi ja tunnistetiedot. Kun olet määrittänyt arvot tässä valintaikkunassa, valitse **Testaa yhteyttä** varmistaaksesi, että tietolähde on käytettävissä ja että määrittämäsi tunnistetiedot ovat oikeat.  
   

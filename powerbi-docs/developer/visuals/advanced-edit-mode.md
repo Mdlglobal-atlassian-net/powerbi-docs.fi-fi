@@ -44,7 +44,7 @@ Jos `advancedEditModeSupport`-ominaisuus puuttuu tiedostosta *capabilities.json*
 Kun valitset **Muokkaa**, visualisointi saa update()-kutsun, jossa EditMode-asetuksena on `Advanced`. Sen mukaan, mikä arvo on määritetty *capabilities.json*-tiedostossa, seuraavat toiminnot toteutetaan:
 
 * `SupportedNoAction`: Isäntä ei vaadi lisätoimia.
-* `SupportedInFocus`: Isäntä avaa visualisoinnin kohdistustilaan.
+* `SupportedInFocus`: Isäntä avaa visualisoinnin tarkastelutilaan.
 
 ## <a name="exit-advanced-edit-mode"></a>Poistuminen kehittyneestä muokkaustilasta
 

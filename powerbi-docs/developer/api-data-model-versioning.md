@@ -38,5 +38,5 @@ Palvelut ***EIVÄT SAA*** muuttaa tietomalliaan todennetun käyttäjän mukaan. 
   
 Jos haluat lisätietoja OData-tietomallien standardeista, katso [OData-versio 4.0 osa 1: Protocol Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  
   
-## <a name="see-also"></a>Katso myös
+## <a name="see-also"></a>Muuta aiheeseen liittyvää
 [Power BI REST -ohjelmointirajapinnan yleiskatsaus](https://docs.microsoft.com/rest/api/power-bi/)  

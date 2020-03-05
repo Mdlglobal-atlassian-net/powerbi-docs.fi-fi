@@ -79,7 +79,7 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **Jatkuva muuttuja** – muuttuja, jolla voi olla mikä tahansa arvo minimin ja maksimin välillä, muuten kyseessä on diskreetti muuttuja. Esimerkkejä ovat lämpötila, paino, ikä ja aika. Jatkuviin muuttujiin voi sisältyä arvon osia tai murto-osia. Myytyjen sinisten rullalautojen kokonaismäärä on diskreetti muuttuja, koska emme voi myydä rullalaudan puolikasta.
 
-**Korrelaatio** – korrelaatio kertoo meille, miten asioiden käyttäytyminen liittyy toisiin asioihin.  Jos niiden kasvun tai vähenemisen kuviot ovat samanlaiset, ne korreloivat positiivisesti. Jos taas niiden muutossuunnat ovat vastakkaiset, ne korreloivat negatiivisesti. Jos esimerkiksi punaisten rullalautojen myynti kasvaa aina televisiomarkkinointikampanjojen myötä, punaisten rullalautojen ja televisiokampanjojen välillä on positiivinen korrelaatio.
+**Korrelaatio** – korrelaatio kertoo meille, miten asioiden käyttäytyminen liittyy toisiin asioihin.  Jos niiden kasvun tai vähenemisen mallit ovat samanlaiset, ne korreloivat positiivisesti. Jos taas niiden muutossuunnat ovat vastakkaiset, ne korreloivat negatiivisesti. Jos esimerkiksi punaisten rullalautojen myynti kasvaa aina televisiomarkkinointikampanjojen myötä, punaisten rullalautojen ja televisiokampanjojen välillä on positiivinen korrelaatio.
 
 **ristiinsuodatus** Tämä koskee visualisointitoimia. Ristiinsuodatus poistaa tiedot, joita ei käytetä. Esimerkiksi **Valvonta**-vaihtoehdon valitseminen rengaskaaviosta ristiinsuodattaa viivakaavion. Viivakaavio näyttää nyt vain arvopisteet, jotka koskevat Valvonta-segmenttiä.
 
@@ -108,7 +108,7 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **diamond (vinoneliö)** Power BI Premium. Kuvakkeen muoto, joka ilmaisee, että työtila on Premium-kapasiteetin työtila.
 
-**Dimensio** – dimensiot ovat kategorista (teksti-) tietoa. Dimensio kuvaa henkilöä, objektia, kohdetta, paikkaa ja aikaa. Tietojoukossa dimensiot ovat tapa ryhmitellä *mittayksiköt* hyödyllisiin luokkiin. Rullalautayrityksessämme dimensiot voivat tarkoittaa myynnin (joka on mittayksikkö) tarkastelua mallin, värin, maan tai markkinointikampanjan mukaan.   
+**Dimensio** – dimensiot ovat kategorista (teksti-) tietoa. Dimensio kuvaa henkilöä, objektia, kohdetta, tuotteita, paikkaa ja aikaa. Tietojoukossa dimensiot ovat tapa ryhmitellä *mittarit* hyödyllisiin luokkiin. Rullalautayrityksessämme dimensiot voivat tarkoittaa myynnin (joka on mittayksikkö) tarkastelua mallin, värin, maan tai markkinointikampanjan mukaan.   
 
 **drill up, drill down, drillthrough (poraudu ylöspäin, poraudu alaspäin, porautuminen)** Power BI:ssa porautumalla alaspäin tai ylöspäin voit viitata mahdollisuuteen tutkia raportin tai visualisoinnin seuraavaa tasoa. Porautumisella voit viitata mahdollisuuteen valita visualisoinnin osa ja siirtyä raportin toiselle sivulle, suodatettuna tietoihin, jotka liittyvät alkuperäisellä sivulla valitsemasi visualisoinnin osaan.
 Yksityiskohtiin porautuminen tarkoittaa yleensä sitä, että pohjana olevat tietueet näytetään.

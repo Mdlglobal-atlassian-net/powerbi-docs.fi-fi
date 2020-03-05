@@ -29,7 +29,7 @@ Jos visualisointisi on vuorovaikutuksessa muiden visualisointien kanssa, valitse
 
 1. Asenna (tai päivitä) tarvittava apuohjelma [powerbi-visuals-utils-interactivityutils](https://github.com/Microsoft/PowerBI-visuals-utils-interactivityutils/), versio 3.0.0 tai uudempi versio. Se sisältää lisäluokkia, joita voi käsitellä tilanvalitsimen tai suodattimen avulla. Se vaaditaan suodatinvisualisointeihin ja mihin tahansa visualisointiin, jossa on käytössä `InteractivityService`.
 
-2. Päivitä visualisointien ohjelmointirajapinta versioon 1.11.0, jotta voit käyttää kohdetta `registerOnSelectCallback` `SelectionManager`-esiintymässä. Se vaaditaan visualisoinneille, joissa ei ole suodattimia ja joissa on käytössä pelkkä `SelectionManager` eikä `InteractivityService`.
+2. Päivitä visualisointien ohjelmointirajapinta versioon 1.11.0, jotta voit käyttää kohdetta `registerOnSelectCallback``SelectionManager`-esiintymässä. Se vaaditaan visualisoinneille, joissa ei ole suodattimia ja joissa on käytössä pelkkä `SelectionManager` eikä `InteractivityService`.
 
 ### <a name="how-power-bi-visuals-interact-with-power-bi-in-report-bookmarks"></a>Power BI -visualisointien vuorovaikutus Power BI:n kanssa raportin kirjanmerkeissä
 

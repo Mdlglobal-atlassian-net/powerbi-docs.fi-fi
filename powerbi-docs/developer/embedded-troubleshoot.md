@@ -21,7 +21,7 @@ Tässä artikkelissa käsitellään joitain yleisiä ongelmia, joita saattaa ilm
 
 ## <a name="tools-to-troubleshoot"></a>Vianmäärityksen työkalut
 
-### <a name="fiddler-trace"></a>Fiddler-jäljitys
+### <a name="fiddler-trace"></a>Jäljitys Fiddlerillä
 
 [Fiddler](https://www.telerik.com/fiddler) on Telerikin ilmainen työkalu, joka valvoo HTTP-liikennettä.  Voit tarkastella Power BI -ohjelmointirajapinnan tiedonsiirtoa asiakaskoneelta. Tämä työkalu saattaa näyttää virheitä ja muita olennaisia tietoja.
 

@@ -45,6 +45,6 @@ Katso, miten Amanda tarkastelee ja hallitsee ilmoituksia ja reagoi niihin. Kokei
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Power BI -palvelun tietoilmoitukset](end-user-alerts.md)
 * [Tietoilmoitusten määrittäminen iPhone-sovelluksessa (Power BI iOS:lle)](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* [Tietoilmoitusten määrittäminen Power BI -mobiilisovellukseen Windows 10:ssä](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* Ilmenikö muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+* [Määritä tietoilmoitukset Power BI Windows 10 -mobiilisovelluksella](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

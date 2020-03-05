@@ -361,7 +361,7 @@ Useita menetelmiä kutsutaan:
 
 * [`describe`](https://jasmine.github.io/api/2.6/global.html#describe): Kuvailee testitapauksen. Jasmine-ympäristön yhteydessä se kuvailee usein ohjelmistopaketin tai ominaisuusryhmän.
 
-* `beforeEach`: Sitä kutsutaan aina, ennen kuin kutsutaan `it`-menetelmää, joka on määritetty [ `describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach)-menetelmässä.
+* `beforeEach`: Sitä kutsutaan aina, ennen kuin kutsutaan `it`-menetelmää, joka on määritetty [`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach)-menetelmässä.
 
 * [`it`](https://jasmine.github.io/api/2.6/global.html#it): Määrittää yhden ominaisuuden. `it`-menetelmän tulee sisältää vähintään yksi `expectations`.
 

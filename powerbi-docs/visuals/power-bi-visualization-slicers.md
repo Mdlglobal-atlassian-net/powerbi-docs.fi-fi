@@ -53,7 +53,7 @@ Power BI -osittajat eivät tue
 
 1. Avaa tiedosto raporttinäkymässä valitsemalla vasemman ruudun **Raportti**-kuvake ![Raportti-kuvake](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Luo uusi osittaja valitsemalla **Yleiskatsaus**-sivulla, kun pohjassa ei ole mitään valittuna, **Osittaja**-kuvake ![osittajakuvake](media/power-bi-visualization-slicers/slicer-icon.png) **Visualisoinnit**-ruudusta. 
+1. Luo uusi osittaja valitsemalla **Yleiskatsaus**-sivulla, kun pohjassa ei ole mitään valittuna, **Osittaja**-kuvake ![osittajakuvake](media/power-bi-visualization-slicers/slicer-icon.png)**Visualisoinnit**-ruudusta. 
 
 1. Kun uusi osittaja on valittuna, lisää osittajaan tiedot valitsemalla **Kentät**-ruudussa **Alue** > **Aluejohtaja**. 
 
@@ -170,7 +170,7 @@ Käytettävissä on erilaisia muotoiluasetuksia osittajan tyypin mukaan. Käytt�
 1. Voit katsella ja muokata asetuksia valitsemalla kunkin luokan vieressä olevaa avattavan valikon nuolta. 
 
 ### <a name="general-options"></a>Yleiset asetukset
-1. Valitse **Muotoile**-kohdasta **Yleiset**, valitse **ääriviivan väriksi** punainen ja vaihda sitten **ääriviivan paksuudeksi** *2*. 
+1. Valitse **Muotoile**-kohdasta **Yleiset**, valitse **ääriviivan väriksi** punainen ja vaihda sitten **ääriviivan paksuudeksi***2*. 
 
     Tämä määrittää otsikon ja kohteiden ääriviivojen ja alleviivausten värin ja paksuuden.
 

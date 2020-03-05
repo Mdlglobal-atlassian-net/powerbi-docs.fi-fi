@@ -53,4 +53,4 @@ Voit kutsua API:a suorittamaan todennuksen käyttäjätunnuksella ja salasanalla
 * **Valtuutustunnus** – käytetään API-kutsujen varmentamiseen toisen käyttäjän puolesta. Ne on rajoitettu tiettyyn sovellukseen. Tunnuksilla on elinkaari, ja kun ne vanhenevat, ne on päivitettävä.
 * **Päivitä tunnus** – kun tunnukset vanhenevat, ne päivitetään.
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

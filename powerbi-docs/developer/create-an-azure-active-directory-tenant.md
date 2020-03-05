@@ -95,6 +95,6 @@ Nyt kun sinulla on Azure AD -vuokraaja, voit käyttää vuokraajaa Power BI -koh
 
 [Mikä Azure Active Directory on?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) 
  
-[Pika-aloitus: Kehitysympäristön määrittäminen](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
+[Pikaopas: Kehitysympäristön määrittäminen](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

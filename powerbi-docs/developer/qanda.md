@@ -102,4 +102,4 @@ Aloita Q&A-osa luomalla upotustunnus tietojoukosta. Lisätietoja on artikkelissa
 
 Jos haluat kokeilla Q&A:n upotusta, tutustu [JavaScript-upotuksen malliin](https://microsoft.github.io/PowerBI-JavaScript/demo/).
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

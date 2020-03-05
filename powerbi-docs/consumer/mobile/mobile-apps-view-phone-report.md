@@ -55,7 +55,7 @@ Kun valitset puhelinraportissa visualisoinnin, puhelinraportti korostaa visualis
 Kun visualisointi on valittuna, voit tehdä erilaisia toimintoja, kuten vierittää visualisointia. Kun haluat poistaa visualisoinnin valinnan, kosketa aluetta visualisoinnin ulkopuolella.
 
 ## <a name="open-visuals-in-focus-mode"></a>Visualisointien avaaminen tarkastelutilassa
-Myös kohdistustila on mahdollinen puhelinraporteissa: saat suuremman näkymän yksittäisestä visualisoinnista ja pääset tutustumaan siihen helpommin.
+Myös tarkastelutila on mahdollinen puhelinraporteissa: saat suuremman näkymän yksittäisestä visualisoinnista ja pääset tutustumaan siihen helpommin.
 
 * Napauta puhelinraportissa visualisoinnin oikeasta yläkulmasta kolmea pistettä ( **...** ) &gt; **Laajenna tarkastelutilaan**.
   
@@ -133,5 +133,5 @@ Raportin tekijät voivat [määrittää porautumisen](https://docs.microsoft.com
 * [Power BI -puhelinsovelluksille optimoitujen raporttien luominen](../../desktop-create-phone-report.md)
 * [Koontinäytön puhelinnäkymän luominen Power BI:ssä](../../service-create-dashboard-mobile-phone-view.md)
 * [Mihin tahansa kokoon optimaalisten reagoivien visualisointien luominen](../../visuals/desktop-create-responsive-visuals.md)
-* Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

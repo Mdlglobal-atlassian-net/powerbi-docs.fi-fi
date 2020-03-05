@@ -39,5 +39,5 @@ Lisätietoja [Power BI -raporttien visualisoinneista](power-bi-report-visualizat
 
 [Power BI:n peruskäsitteet](../consumer/end-user-basic-concepts.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

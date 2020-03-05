@@ -17,7 +17,7 @@ ms.locfileid: "74265561"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Syötä tiedot tietojoukon kattavaan koodiluetteloon
 
-Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot syötetään tietojoukkoon](walkthrough-push-data.md).
+Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot työnnetään tietojoukkoon](walkthrough-push-data.md).
 
 Kun olet suorittanut toimet 2-5 kohdasta **tietojen syöttäminen tietojoukkoon**, täydellisen lähdekoodisi pitäisi näyttää seuraavanlaiselta.
 
@@ -234,4 +234,4 @@ Kun olet suorittanut toimet 2-5 kohdasta **tietojen syöttäminen tietojoukkoon*
 [Power BI:n REST-ohjelmointirajapinnan viite](https://docs.microsoft.com/rest/api/power-bi/)  
 [Power BI REST -ohjelmointirajapinnan yleiskatsaus](overview-of-power-bi-rest-api.md)  
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

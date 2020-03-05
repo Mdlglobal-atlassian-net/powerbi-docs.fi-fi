@@ -1,5 +1,5 @@
 ---
-title: Tietojoukon luominen
+title: Luo tietojoukko
 description: Vaihe vaiheelta – Tietojen työntäminen tietojoukkoon – Tietojoukon luominen Power BI:ssä
 author: KesemSharabi
 ms.author: kesharab
@@ -107,7 +107,7 @@ Lisää tämä koodi kohtaan Program.cs.
 
 Seuraavaksi kerrotaan, miten [saat tietojoukon lisäämään rivejä Power BI -taulukkoon](walkthrough-push-data-get-datasets.md).
 
-Alla on [Kattava koodiluettelo](#code).
+Alla on [kattava koodiluettelo](#code).
 
 <a name="code"/>
 
@@ -235,5 +235,5 @@ namespace walkthrough_push_data
 [Power BI REST -ohjelmointirajapinnan yleiskatsaus](overview-of-power-bi-rest-api.md)  
 [Power BI:n REST-ohjelmointirajapinnan viite](https://docs.microsoft.com/rest/api/power-bi/)  
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

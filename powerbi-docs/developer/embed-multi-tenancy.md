@@ -36,17 +36,17 @@ Tässä artikkelissa kuvataan eri lähestymistapoja ja analysoidaan niitä erila
 
 **Vuokraaja** – Yksi asiakas (organisaatio), joka käyttää SaaS-sovellusta sekä resursseja tai tietoja, jotka asiakas tuo SaaS-sovellukseen.
 
-**[Power BI](../fundamentals/power-bi-overview.md)**  – Power BI -pilvipalvelu, jossa Power BI Embedded toimii.
+**[Power BI](../fundamentals/power-bi-overview.md)** – Power BI -pilvipalvelu, jossa Power BI Embedded toimii.
 
 **Power BI -vuokraaja** – Joukko yhteen AAD-vuokraajaan liittyviä Power BI -resursseja.
 
-**[Power BI -työtila](../service-create-workspaces.md)**  – Sisällön säilö Power BI:ssä.
+**[Power BI -työtila](../service-create-workspaces.md)** – Sisällön säilö Power BI:ssä.
 
 **Power BI -artefaktit** – Power BI -työtiloissa on useita Power BI -artefakteja, joita ovat esimerkiksi koontinäytöt, raportit, tietojoukot ja tietovuot.
 
-**[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)**  – Joukko julkisia ohjelmointirajapintoja, joiden avulla kehittäjät voivat luoda sellaisia sovelluksia, jotka hallitsevat Power BI -sisältöä ja upottavat Power BI -elementtejä.
+**[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)** – Joukko julkisia ohjelmointirajapintoja, joiden avulla kehittäjät voivat luoda sellaisia sovelluksia, jotka hallitsevat Power BI -sisältöä ja upottavat Power BI -elementtejä.
 
-**[Rivitason suojaus (RLS)](embedded-row-level-security.md)**  – Antaa mahdollisuuden hallita käyttäjän käyttöoikeuksia taulukon yksittäisissä riveissä oleviin tietoihin. Rivitason suojauksen voi ottaa käyttöön tietolähteen tasolla tai Power BI:n semanttisessa mallissa.
+**[Rivitason suojaus (RLS)](embedded-row-level-security.md)** – Antaa mahdollisuuden hallita käyttäjän käyttöoikeuksia taulukon yksittäisissä riveissä oleviin tietoihin. Rivitason suojauksen voi ottaa käyttöön tietolähteen tasolla tai Power BI:n semanttisessa mallissa.
 
 **Pääkäyttäjä** – Käyttäjätiedot, jotka edustavat SaaS-sovellusta Power BI -ympäristössä ja joita SaaS-sovellus käyttää kutsuessaan Power BI -ohjelmointirajapintoja. Pääkäyttäjän on oltava AAD-käyttäjä, jolla on Power BI Pro -käyttöoikeus.
 
@@ -56,7 +56,7 @@ Tässä artikkelissa kuvataan eri lähestymistapoja ja analysoidaan niitä erila
 
 **[Power BI Pro -käyttöoikeus](../service-admin-purchasing-power-bi-pro.md)** – Käyttäjäkohtainen käyttöoikeus, joka antaa oikeuden julkaista sisältöä työtiloihin, kuluttaa sovelluksia ilman Premium-kapasiteettia, jakaa koontinäyttöjä sekä tilata koontinäyttöjä ja raportteja.
 
-**[Tietoyhteystilat](../desktop-directquery-about.md)**  – Tietolähteiden yhdistäminen Power BI:hin voidaan tehdä eri tiloissa:
+**[Tietoyhteystilat](../desktop-directquery-about.md)** – Tietolähteiden yhdistäminen Power BI:hin voidaan tehdä eri tiloissa:
 
    * Tuonti – Yleisin tapa hakea tietoja.
    * DirectQuery – Muodostetaan suora yhteys tietoihin niiden lähdesäilössä.
