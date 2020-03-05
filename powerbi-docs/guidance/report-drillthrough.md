@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 48942b30b84706c933ccef455129c84a67ac5a1b
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: d5599db57ef7b105575dcb7ee4b4342f374624f0
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76040372"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290577"
 ---
 # <a name="use-report-page-drillthrough"></a>Raporttisivun porautumisen käyttäminen
 
@@ -70,5 +70,5 @@ Raportin suunnittelun aikana suosittelemme seuraavia käytäntöjä:
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
 - [Porautumisen käyttäminen Power BI Desktopissa](../desktop-drillthrough.md)
-- Guy in a Cuben video: [Porautumiseen porautuminen Power BI Desktopissa](https://www.youtube.com/watch?v=2x9lLHDbtDk)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+- Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)

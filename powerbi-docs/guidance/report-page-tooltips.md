@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 826af7b224b901b6dc9f3926260b1d920836a792
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: f86317b12e3637d6522eebc2f304786c1b39c083
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76040345"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290609"
 ---
 # <a name="extend-visuals-with-report-page-tooltips"></a>Visualisointien laajentaminen raporttisivun työkaluvihjeiden avulla
 
@@ -88,5 +88,5 @@ Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resurssei
 - [Power BI Desktopissa luotuihin raporttisivuihin perustuvien työkaluvihjeiden luominen](../desktop-tooltips.md)
 - [Työkaluvihjeiden mukautus Power BI Desktopissa](../desktop-custom-tooltips.md)
 - [Power BI -raporttien parantaminen visuaalisia elementtejä käyttämällä](../desktop-visual-elements-for-reports.md)
-- Guy in a Cuben video: [Power BI -raporttisivun työkaluvihje – näin voit luoda sellaisen Power BI Desktopissa](https://www.youtube.com/watch?v=URTA7JZsAtw)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+- Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)

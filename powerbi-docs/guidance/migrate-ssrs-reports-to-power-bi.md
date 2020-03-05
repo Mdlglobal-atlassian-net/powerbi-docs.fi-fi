@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: e65dd42e8ec787d0c6edba534f79cdb06e5ba14c
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: f8b7cc302cd4a26aa099f723f47865723dccb7c9
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527288"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290632"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>SQL Server Reporting Services -raporttien siirtäminen Power BI:hin
 
@@ -192,7 +192,6 @@ Saat lisätietoja tästä artikkelista tutustumalla seuraaviin resursseihin:
 
 - [Mitä ovat sivutetut raportit Power BI Premiumissa?](../paginated-reports-report-builder-power-bi.md)
 - [Sivutettujen raporttien tietojen nouto-ohjeet](report-paginated-data-retrieval.md)
-- Guy in a Cuben video: [Esittelyssä sivutetut raportit Power BI:ssä](https://www.youtube.com/watch?v=wfqn45XNK3M)
 - [Milloin sivutettuja raportteja kannattaa käyttää Power BI:ssä?](report-paginated-or-power-bi.md)
 - [Sivutetut raportit Power BI:ssä: usein kysytyt kysymykset](../paginated-reports-faq.md)
 - [Power BI Premiumin usein kysytyt kysymykset](../service-premium-faq.md)
