@@ -73,6 +73,8 @@
               href: visuals/high-contrast-support.md
             - name: Osittajien synkronoinnin käyttöönotto
               href: visuals/enable-sync-slicers.md
+            - name: Visualisointien virheiden korjaus
+              href: visuals/visuals-how-to-debug.md
             - name: Power BI -visualisointien vianmääritys
               href: power-bi-custom-visuals-troubleshoot.md
         - name: Viittaus
@@ -101,6 +103,8 @@
                   href: visuals/utils-svg.md
                 - name: Tyyppiapuohjelmat
                   href: visuals/utils-type.md
+                - name: Työkaluvihjeiden apuohjelmat
+                  href: visuals/utils-tooltip.md
                 - name: Tietonäkymäapuohjelmat
                   href: visuals/utils-dataview.md
         - name: Resurssit
@@ -156,6 +160,8 @@
           items:
             - name: Upottaminen sovelluksesta
               href: embed-from-apps.md
+            - name: Raportin vieminen tiedostoon
+              href: export-to.md
             - name: Sovellusten automaattinen asentaminen
               href: embed-auto-install-app.md
             - name: Azure Active Directory -vuokraajan luominen
@@ -257,8 +263,6 @@
           items:
             - name: Tunnistetietojen määrittäminen
               href: configure-credentials.md
-            - name: Tunnistetietojen salaaminen
-              href: encrypt-credentials.md
         - name: Viittaus
           items:
             - name: REST-ohjelmointirajapinnat

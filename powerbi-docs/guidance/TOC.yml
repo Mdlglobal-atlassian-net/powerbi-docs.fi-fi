@@ -30,8 +30,16 @@
               href: import-modeling-data-reduction.md
             - name: Automaattisen päivämäärän/ajan ohjeet
               href: auto-date-time.md
-            - name: Monta-moneen-suhteen ohjeet
+            - name: Yksi-yhteen-yhteydet
+              href: relationships-one-to-one.md
+            - name: Monta moneen -yhteydet
               href: relationships-many-to-many.md
+            - name: Passiiviset ja aktiiviset yhteydet
+              href: relationships-active-inactive.md
+            - name: Kaksisuuntaiset yhteydet
+              href: relationships-bidirectional-filtering.md
+            - name: Yhteyden vianmääritys
+              href: relationships-troubleshoot.md
             - name: DirectQuery-mallin ohjeet
               href: directquery-model-guidance.md
             - name: Yhdistelmämallin ohjeet
