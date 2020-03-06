@@ -140,6 +140,8 @@
           items:
             - name: 'Kapasiteetti ja SKU Power BI:n upotetussa analytiikassa'
               href: embedded-capacity.md
+            - name: Kapasiteetin suunnittelu
+              href: embedded-capacity-planning.md
             - name: Suorituskykyä parantavat parhaat käytännöt
               href: embedded-performance-best-practices.md
             - name: Palvelun päänimi
