@@ -1,0 +1,61 @@
+- name: 'Power BI:n sivutetut raportit'
+  href: index.yml
+  expanded: true
+  items:
+    - name: Yleiskatsaus
+      expanded: true
+      items:
+        - name: Mitä sivutetut raportit ovat?
+          href: paginated-reports-report-builder-power-bi.md
+        - name: 'Power BI:n raportin muodostin'
+          href: report-builder-power-bi.md
+    - name: Opetusohjelmat
+      expanded: true
+      items:
+        - name: 'Käytännön labratyö: Luo sivutettu raportti'
+          href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
+        - name: Luo sivutettu raportti ja lataa se palvelimeen
+          href: paginated-reports-quickstart-aw.md
+    - name: Käsitteet
+      expanded: true
+      items:
+        - name: Siirry raportin suunnittelunäkymässä
+          href: paginated-reports-report-design-view.md
+        - name: Raportin suunnittelu
+          href: report-builder-planning-report.md
+        - name: Raportin muodostimen tiedot
+          href: report-builder-data.md
+        - name: Tuetut tietolähteet
+          href: paginated-reports-data-sources.md
+        - name: Suunnitteluvinkkejä
+          href: report-builder-design-tips.md
+        - name: 'Taulukot, matriisit, luettelot'
+          href: report-builder-tables-matrices-lists.md
+        - name: Parametrit
+          href: report-builder-parameters.md
+        - name: URL-parametrit sivutetuissa raporteissa
+          href: report-builder-url-parameters.md
+        - name: Lauseke-esimerkit
+          href: report-builder-expression-examples.md
+        - name: Raportin sivutus
+          href: paginated-reports-pagination.md
+        - name: Raporttien esikatselu
+          href: report-builder-previewing-reports.md
+        - name: Sivutettujen raporttien usein kysytyt kysymykset
+          href: paginated-reports-faq.md
+    - name: Ohjeet
+      items:
+        - name: Anna tiedot suoraan sivutettuun raporttiin
+          href: paginated-reports-enter-data.md
+        - name: Upotetun tietolähteen luominen
+          href: paginated-reports-embedded-data-source.md
+        - name: Upotetun tietojoukon luominen
+          href: paginated-reports-create-embedded-dataset.md
+        - name: Luo raportti jaetulla Power BI-tietojoukolla
+          href: report-builder-shared-datasets.md
+        - name: Parametrien luominen
+          href: paginated-reports-parameters.md
+        - name: Raporttiparametrin välittäminen URL-osoitteessa
+          href: report-builder-url-pass-parameters.md
+        - name: Sivutetun raportin julkaiseminen
+          href: paginated-reports-save-to-power-bi-service.md
