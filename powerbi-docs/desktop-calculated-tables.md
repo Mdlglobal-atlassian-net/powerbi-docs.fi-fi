@@ -21,7 +21,7 @@ Useimmissa tapauksissa luot taulukoita tuomalla tietoja malliisi ulkoisesta tiet
 
 DAX on kaavakieli relaatiotietojen käsittelyyn (esimerkiksi Power BI Desktopissa). DAX käsittää kirjaston, johon kuuluu yli 200 toimintoa, operaattoria ja rakennetta, mikä tarjoaa valtavan joustavuuden luotaessa kaavoja lähes minkä tahansa tietoanalyysitarpeen tulosten laskemista varten. Lasketut taulukot ovat paras vaihtoehto välituloksille ja tiedoille, jotka haluat tallentaa osana mallia sen sijaan, että ne laskettaisiin uudelleen tai kyselytuloksina. Voit esimerkiksi *yhdistää* tai *ristiliittää* kaksi olemassa olevaa taulukkoa.
 
-Samalla tavalla kuin muissa Power BI Desktop -taulukoilla, lasketuilla taulukoillakin voi olla yhteyksiä toisiin taulukoihin. Lasketun taulukon sarakkeilla on tietotyypit ja muotoiluja – ja ne voivat kuulua tietoluokkaan. Voit nimetä sarakkeet miten haluat ja lisätä niitä raportin visualisointiin muiden kenttien tapaan. Lasketut taulukot lasketaan uudelleen, jos mikään niitä taulukoista, joista laskettu taulukko saa tietonsa, ladataan uudelleen tai päivitetään.
+Samalla tavalla kuin muissa Power BI Desktop -taulukoilla, lasketuilla taulukoillakin voi olla yhteyksiä toisiin taulukoihin. Lasketun taulukon sarakkeilla on tietotyypit ja muotoiluja – ja ne voivat kuulua tietoluokkaan. Voit nimetä sarakkeet miten haluat ja lisätä niitä raportin visualisointiin muiden kenttien tapaan. Lasketut taulukot lasketaan uudelleen, jos yksikään niistä taulukoista, joista laskettu taulukko saa tietonsa, ladataan uudelleen tai päivitetään.
 
 ## <a name="create-a-calculated-table"></a>Lasketun taulukon luominen
 
