@@ -1,8 +1,9 @@
-- name: Power BI kuluttajille
-  href: power-bi-consumer-landing.md
 - name: Power BI -palvelu kuluttajille
+  href: index.yml
+  expanded: true
   items:
     - name: Yleiskatsaus
+      expanded: true
       items:
         - name: Mikä Power BI -kuluttaja on?
           href: end-user-consumer.md
@@ -11,6 +12,7 @@
         - name: Tutustu Power BI -palveluun
           href: end-user-reading-view.md
     - name: Aloittaminen
+      expanded: true
       items:
         - name: 'Opi käyttämään Power BI:tä'
           href: end-user-experience.md
@@ -20,7 +22,7 @@
           href: end-user-q-and-a.md
         - name: Ensimmäinen kirjautumiskerta
           href: end-user-sign-in.md
-        - name: Hae käyttöoikeustyyppisi
+        - name: Mikä Power BI -käyttöoikeus minulla on?
           href: end-user-license.md
         - name: Siirry uuteen ulkoasuun
           href: ../service-new-look.md
@@ -138,109 +140,3 @@
           href: end-user-browsers.md
         - name: Nopeiden merkityksellisten tietojen tyypit
           href: end-user-insight-types.md
-- name: Power BI -mobiilisovellukset
-  items:
-    - name: Yleiskatsaus
-      items:
-        - name: Mitä mobiilisovellukset ovat?
-          href: mobile/mobile-apps-for-mobile-devices.md
-        - name: Aloitussivun esittely
-          href: mobile/mobile-apps-home-page.md
-    - name: Pika-aloitus
-      items:
-        - name: Tutustu raporttinäkymiin ja raportteihin
-          href: mobile/mobile-apps-quickstart-view-dashboard-report.md
-    - name: Opetusohjelmat
-      items:
-        - name: Esitä kysymyksiä iOS-mobiilisovelluksissa
-          href: mobile/tutorial-mobile-apps-ios-qna.md
-    - name: Käsitteet
-      items:
-        - name: Mobiilisovellusten uudet toiminnot
-          href: mobile/mobile-whats-new-in-the-mobile-apps.md
-        - name: Oikeiden tietojen käyttö mobiilisovelluksissa
-          href: mobile/mobile-apps-data-in-real-world-context.md
-        - name: Tietojen tarkastelu offline-tilassa mobiilisovelluksissa
-          href: mobile/mobile-apps-offline-data.md
-        - name: Power BI ja tehostettu todellisuus -sovellus (esikatselu)
-          href: mobile/mobile-mixed-reality-app.md
-    - name: Ohjeet
-      items:
-        - name: Kaikki mobiilisovellukset
-          items:
-            - name: Raporttinäkymät Power BI -mobiilille
-              href: mobile/mobile-apps-view-dashboard.md
-            - name: Raportit mobiilisovelluksissa
-              href: mobile/mobile-reports-in-the-mobile-apps.md
-            - name: Ruutujen käyttö mobiilisovelluksissa
-              href: mobile/mobile-tiles-in-the-mobile-apps.md
-            - name: Koontinäytön jakaminen Power BI -mobiilisovelluksista
-              href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
-            - name: Suosikit mobiilisovelluksissa
-              href: mobile/mobile-apps-favorites.md
-            - name: Vuorovaikutusasetusten määrittäminen (vain puhelin)
-              href: mobile/mobile-app-interaction-settings.md
-            - name: Tietoilmoitusten määrittäminen Power BI -mobiilisovelluksissa
-              href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
-            - name: Power BI -mobiilisovellusten ilmoitusten vastaanottaminen
-              href: mobile/mobile-apps-notification-center.md
-            - name: Tiettyyn sijaintiin vievän tarkan linkin luominen
-              href: mobile/mobile-apps-deep-link-specific-location.md
-            - name: Raportin suodattaminen sijainnin mukaan Power BI ‑mobiilisovelluksessa
-              href: mobile/mobile-apps-geographic-filtering.md
-            - name: Reporting Servicesiin yhdistäminen OAuth-todennuksen avulla
-              href: mobile/mobile-oauth-ssrs.md
-        - name: iOS ja Android
-          items:
-            - name: Puhelimelle optimoitujen raporttien tarkasteleminen
-              href: mobile/mobile-apps-view-phone-report.md
-            - name: Paikallisten raporttien tarkastelu mobiilisovelluksissa
-              href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-            - name: Sisällön käyttäminen ulkoisesta organisaatiosta (B2B)
-              href: mobile/mobile-apps-b2b.md
-            - name: Power BI QR-koodin lukeminen puhelimella
-              href: mobile/mobile-apps-qr-code.md
-            - name: Merkintöjen tekeminen ja jakaminen mobiilisovelluksissa
-              href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-            - name: Viivakoodin lukeminen Power BI -mobiilisovelluksesta
-              href: mobile/mobile-apps-scan-barcode-iphone.md
-            - name: Määrittäminen mobiililaitteiden hallinnan avulla
-              href: mobile/mobile-app-configuration.md
-        - name: iOS
-          items:
-            - name: iOS-sovelluksen käytön aloittaminen
-              href: mobile/mobile-iphone-app-get-started.md
-            - name: 'Suojautuminen Face ID:n, Touch ID:n tai tunnuskoodin avulla'
-              href: mobile/mobile-ios-native-secure-access.md
-            - name: Q&A virtuaalinen analyytikko iOS-mobiilisovelluksissa
-              href: mobile/mobile-apps-ios-qna.md
-            - name: Power BI -mobiilisovelluksen integrointi Siri-pikakuvakkeiden kanssa
-              href: mobile/mobile-apps-iOS-siri-Shortcuts.md
-            - name: iOS-laitteen haun integrointi
-              href: mobile/mobile-apps-iOS-search-integration.md
-            - name: 'Power BI:n Apple Watch -sovellus'
-              href: mobile/mobile-apple-watch.md
-        - name: Android-laitteet
-          items:
-            - name: Android-sovelluksen käytön aloittaminen
-              href: mobile/mobile-android-app-get-started.md
-            - name: Yrityksen SSL-varmenteeseen ei luoteta -ongelman korjaaminen
-              href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
-            - name: Android System Webview pitää päivittää -ongelman korjaaminen
-              href: mobile/mobile-android-error-update-android-system-webview.md
-        - name: Power BI -sovellus Windows 10 -laitteille
-          items:
-            - name: Windows 10 -sovelluksen käytön aloittaminen
-              href: mobile/mobile-windows-10-phone-app-get-started.md
-            - name: Kiinnitä raporttinäkymä aloitusnäyttöön
-              href: mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-            - name: Tarkastele Reporting Servicesin mobiiliraportteja ja suorituskykyilmaisimia
-              href: mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md
-            - name: 'Power BI:n tarkastelu Surface Hubissa'
-              href: mobile/mobile-windows-10-app-presentation-mode.md
-            - name: Kertakirjautuminen Windows-sovelluksessa
-              href: mobile/mobile-windows-10-app-single-sign-on-sso.md
-    - name: Resurssit
-      items:
-        - name: Mobiilisovellusten tuetut kielet
-          href: mobile/mobile-apps-supported-languages.md

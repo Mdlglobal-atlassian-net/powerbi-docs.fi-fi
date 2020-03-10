@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: Tietojen muuntaminen, muotoileminen ja mallintaminen Power BI:ssä – dokumentaatio
+summary: Power BI -dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+metadata:
+  title: Tietojen muuntaminen, muotoileminen ja mallintaminen Power BI:ssä – dokumentaatio
+  description: Power BI -dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 03/03/2020
+  ms.openlocfilehash: 738bc26097120b0075f3ca1ffb0787f241aec982
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924525"
+landingContent:
+- title: Tietojen muuntaminen ja muotoileminen
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Kyselyeditorin yleiskatsaus
+      url: ../desktop-query-overview.md
+  - linkListType: tutorial
+    links:
+    - text: Tietojen muotoileminen ja yhdistäminen
+      url: ../desktop-shape-and-combine-data.md
+  - linkListType: concept
+    links:
+    - text: Yleiset kyselytehtävät
+      url: ../desktop-common-query-tasks.md
+  - linkListType: how-to-guide
+    links:
+    - text: Tiedostojen yhdistäminen (binaarit)
+      url: ../desktop-combine-binaries.md
+- title: Mallitiedot
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Mallinnusnäkymä
+      url: ../desktop-modeling-view.md
+    - text: Monta moneen -yhteydet
+      url: ../desktop-many-to-many-relationships.md
+  - linkListType: how-to-guide
+    links:
+    - text: Suhteiden luominen ja hallinta
+      url: ../desktop-create-and-manage-relationships.md
+    - text: Tietojen luokituksen käyttäminen
+      url: ../desktop-data-categorization.md
+- title: Laskutoimitukset
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Tutustuminen DAX-perusteisiin
+      url: ../desktop-quickstart-learn-dax-basics.md
+    - text: Laskettujen sarakkeiden luominen
+      url: ../desktop-tutorial-create-calculated-columns.md
+  - linkListType: concept
+    links:
+    - text: Lasketut taulukot
+      url: ../desktop-calculated-tables.md
+  - linkListType: how-to-guide
+    links:
+    - text: Pikamittareiden käyttö
+      url: ../desktop-quick-measures.md
+- title: Omatoiminen tietojen valmistelu
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Omatoiminen tietojen valmisteleminen Power BI:ssä
+      url: ../desktop-quickstart-connect-to-data.md
+  - linkListType: concept
+    links:
+    - text: 'Tietovuot: Omatoiminen tietojen valmistelu'
+      url: ../service-dataflows-overview.md
+    - text: Tietovoiden luominen ja käyttäminen
+      url: ../service-dataflows-create-use.md

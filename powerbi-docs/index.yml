@@ -1,0 +1,243 @@
+### YamlMime:Hub
+title: Power BI -dokumentaatio
+summary: Power BI lisää merkityksellisiä tietojasi ja tietojen arvoa. Power BI -dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+brand: power-bi
+metadata:
+  title: Power BI -dokumentaatio
+  description: Power BI lisää merkityksellisiä tietojasi ja tietojen arvoa. Löydät täältä asiantuntevia tietoja ja vastauksia riippumatta siitä, miten käytät Power BI:tä.
+  services: service
+  ms.service: powerbi
+  ms.subservice: subservice
+  ms.topic: hub-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 03/03/2020
+  ms.openlocfilehash: ad1e273947744f2d7611f6a4a03940e52f2a64fa
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924295"
+highlightedContent:
+  items:
+  - title: Power BI Desktopin käytön aloittaminen
+    itemType: get-started
+    url: desktop-getting-started.md
+  - title: Rekisteröidy Power BI -palveluun
+    itemType: how-to-guide
+    url: service-self-service-signup-for-power-bi.md
+  - title: Yhteistyö- ja jakamistavat
+    itemType: concept
+    url: service-how-to-collaborate-distribute-dashboards-reports.md
+conceptualContent:
+  items:
+  - title: Power BI Aloittaminen
+    links:
+    - url: power-bi-overview.md
+      itemType: overview
+      text: Mikä Power BI on?
+    - url: desktop-what-is-desktop.md
+      itemType: overview
+      text: Mikä on Power BI Desktop?
+    - url: power-bi-service-overview.md
+      itemType: overview
+      text: Mikä Power BI -palvelu on?
+    footerLink:
+      url: fundamentals/index.yml
+      text: Näytä lisää
+  - title: Power BI kuluttajille
+    links:
+    - url: consumer/end-user-consumer.md
+      itemType: get-started
+      text: Olenko minä Power BI -kuluttaja?
+    - url: consumer/end-user-experience.md
+      itemType: get-started
+      text: Power BI -palvelussa siirtyminen
+    - url: consumer/end-user-dashboards.md
+      itemType: concept
+      text: Mikä on koontinäyttö?
+    footerLink:
+      url: consumer/index.yml
+      text: Näytä lisää
+  - title: Power BI:n hallinta
+    links:
+    - url: service-admin-administering-power-bi-in-your-organization.md
+      itemType: overview
+      text: Mitä on Power BI:n hallinta?
+    - url: service-admin-licensing-organization.md
+      itemType: concept
+      text: Käyttöoikeudet organisaatiossasi
+    - url: service-admin-portal.md
+      itemType: concept
+      text: Hallintaportaali
+    footerLink:
+      url: admin/index.yml
+      text: Näytä lisää
+  - title: Kehitä Power BI:ssä
+    links:
+    - url: developer/what-can-you-do.md
+      itemType: overview
+      text: Mitä kehittäjät voivat tehdä
+    - url: power-bi-custom-visuals.md
+      itemType: overview
+      text: Kehittäjät ja visualisoinnit
+    - url: developer/embedding.md
+      itemType: overview
+      text: Upotettu analytiikka
+    footerLink:
+      url: developer/index.yml
+      text: Näytä lisää
+  - title: Tietoihin yhdistäminen
+    links:
+    - url: desktop-quickstart-connect-to-data.md
+      itemType: tutorial
+      text: Tietoihin yhdistäminen
+    - url: service-gateway-onprem.md
+      itemType: concept
+      text: Paikalliset tietoyhdyskäytävät
+    - url: refresh-data.md
+      itemType: concept
+      text: Tietojen uudelleenlataus
+    footerLink:
+      url: connect-data/index.yml
+      text: Näytä lisää
+  - title: Tietojen muuntaminen ja muotoilu
+    links:
+    - url: desktop-analytics-pane.md
+      itemType: how-to-guide
+      text: Analytiikka-ruudun käyttäminen
+    - url: desktop-common-query-tasks.md
+      itemType: concept
+      text: Yleiset kyselytehtävät
+    - url: desktop-shape-and-combine-data.md
+      itemType: tutorial
+      text: Tietojen muotoileminen ja yhdistäminen
+    footerLink:
+      url: transform-model/index.yml
+      text: Näytä lisää
+  - title: Mallitiedot
+    links:
+    - url: desktop-add-custom-column.md
+      itemType: how-to-guide
+      text: Mukautetun sarakkeen lisääminen
+    - url: desktop-tutorial-create-calculated-columns.md
+      itemType: tutorial
+      text: Laskettujen sarakkeiden luominen
+    - url: desktop-create-and-manage-relationships.md
+      itemType: how-to-guide
+      text: Suhteiden luominen ja hallinta
+    footerLink:
+      url: transform-model/index.yml
+      text: Näytä lisää
+  - title: Raporttien ja koontinäyttöjen luominen
+    links:
+    - url: desktop-report-themes.md
+      itemType: concept
+      text: Raporttiteemat
+    - url: desktop-conditional-table-formatting.md
+      itemType: concept
+      text: Mitä sivutetut raportit ovat?
+    - url: paginated-reports/paginated-reports-report-builder-power-bi.md
+      itemType: how-to-guide
+      text: Koontinäytön luominen
+    footerLink:
+      url: create-reports/index.yml
+      text: Näytä lisää
+  - title: Yhteistyö ja jakaminen
+    links:
+    - url: service-share-dashboards.md
+      itemType: concept
+      text: Raporttinäkymien ja raporttien jakaminen
+    - url: service-create-the-new-workspaces.md
+      itemType: how-to-guide
+      text: Uusien työtilojen luominen
+    - url: service-datasets-across-workspaces.md
+      itemType: concept
+      text: Johdatus jaettuihin tietojoukkoihin
+    footerLink:
+      url: collaborate-share/index.yml
+      text: Näytä lisää
+  - title: Integroi tuotteissa
+    links:
+    - url: service-azure-and-power-bi.md
+      itemType: concept
+      text: Azure ja Power BI
+    - url: service-analyze-in-excel.md
+      itemType: concept
+      text: Analysoi Excelissä
+    - url: service-embed-report-spo.md
+      itemType: concept
+      text: Upota SharePoint Onlinessa
+    footerLink:
+      url: collaborate-share/index.yml
+      text: Näytä lisää
+  - title: Power BI mobiilisovelluksissa
+    links:
+    - url: consumer/mobile/mobile-apps-for-mobile-devices.md
+      itemType: get-started
+      text: Mitä mobiilisovellukset ovat?
+    - url: consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md
+      itemType: quickstart
+      text: Tutustu raporttinäkymiin ja raportteihin
+    - url: consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+      itemType: how-to-guide
+      text: Paikallisten raporttien näyttäminen
+    footerLink:
+      url: consumer/mobile/index.yml
+      text: Näytä lisää
+  - title: Suuryritykset
+    links:
+    - url: service-premium-what-is.md
+      itemType: overview
+      text: Mikä on Power BI Premium?
+    - url: service-admin-power-bi-security.md
+      itemType: concept
+      text: Suojaus
+    - url: admin/service-security-data-protection-overview.md
+      itemType: concept
+      text: Tietojen suojaus
+    footerLink:
+      url: admin/index.yml
+      text: Näytä lisää
+  - title: Ohjeet parhaisiin käytäntöihin
+    links:
+    - url: guidance/overview.md
+      itemType: overview
+      text: Ohjeiden yleiskatsaus
+    - url: guidance/star-schema.md
+      itemType: concept
+      text: Tähtirakenteet
+    - url: guidance/import-modeling-data-reduction.md
+      itemType: concept
+      text: Tietomallin koon pienentäminen
+    footerLink:
+      url: guidance/index.yml
+      text: Näytä lisää
+  - title: Hanki tietoja
+    links:
+    - url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/
+      itemType: learn
+      text: Tutustu siihen, miten Power BI voi auttaa sinua
+    - url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/
+      itemType: learn
+      text: Analysoi tiedot
+    - url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/
+      itemType: learn
+      text: Aloita luominen
+    footerLink:
+      url: guided-learning/index.yml
+      text: Näytä lisää
+additionalContent:
+  sections:
+  - title: Aiheeseen liittyvät työkalut
+  - items:
+    - title: Power BI -raporttipalvelin
+      summary: Tutustu Power BI -raporttipalvelimeen. Se on verkkoportaalilla varustettu paikallinen raporttipalvelin, jossa voit tarkastella ja hallinnoida Power BI -raportteja, sivutettuja raportteja ja suorituskykyilmaisimia.
+      url: report-server/index.yml
+    - title: Power BI:n REST-ohjelmointirajapinnat
+      summary: Power BI:n REST-ohjelmointirajapinnat tarjoavat palvelun päätepisteitä upottamiseen, hallintaan ja käyttäjäresursseihin.
+      url: https://docs.microsoft.com/rest/api/power-bi/
+    - title: Power Platform -dokumentaatio
+      summary: Lue, miten Power BI, Power Apps, Power Automate ja Power Virtual Agents toimivat yhdessä tukien toisiaan.
+      url: https://docs.microsoft.com/power-platform/

@@ -1,0 +1,67 @@
+### YamlMime:Landing
+title: Power BI -mobiilisovellusten dokumentaatio
+summary: Power BI -dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+metadata:
+  title: Power BI -mobiilisovellusten dokumentaatio
+  description: Power BI -dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/11/2020
+  ms.openlocfilehash: 96881ecb03132579643517679aaab3c87b7a977f
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78923904"
+landingContent:
+- title: Tietoja Power BI -mobiilisovelluksista
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Mitä mobiilisovellukset ovat?
+      url: mobile-apps-for-mobile-devices.md
+    - text: Mobiilisovellusten uudet toiminnot
+      url: mobile-whats-new-in-the-mobile-apps.md
+    - text: Mobiilisovelluksen aloitussivu
+      url: mobile-apps-home-page.md
+- title: Aloittaminen
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Androidin käytön aloittaminen
+      url: mobile-android-app-get-started.md
+    - text: iOS:n käytön aloittaminen
+      url: mobile-iphone-app-get-started.md
+    - text: Windows 10:n käytön aloittaminen
+      url: mobile-windows-10-phone-app-get-started.md
+  - linkListType: quickstart
+    links:
+    - text: Tutustuminen koontinäyttöihin ja raportteihin
+      url: mobile-apps-quickstart-view-dashboard-report.md
+- title: Tutustu
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Kysymysten esittäminen tiedoista
+      url: tutorial-mobile-apps-ios-qna.md
+  - linkListType: how-to-guide
+    links:
+    - text: Tietojen näyttäminen offline-tilassa
+      url: mobile-apps-offline-data.md
+    - text: Koontinäytön tai raportin jakaminen
+      url: mobile-share-dashboard-from-the-mobile-apps.md
+    - text: Tietoilmoitusten määrittäminen
+      url: mobile-set-data-alerts-in-the-mobile-apps.md
+- title: Paikalliset raportit
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Paikallisten raporttien ja suorituskykyilmaisinten näyttäminen
+      url: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+    - text: Yhteyden muodostaminen OAuthin kanssa paikallisiin raportteihin
+      url: mobile-oauth-ssrs.md

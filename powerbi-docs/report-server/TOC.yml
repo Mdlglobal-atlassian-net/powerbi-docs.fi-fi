@@ -1,0 +1,124 @@
+- name: Power BI -raporttipalvelin
+  expanded: true
+  items:
+    - name: Yleiskatsaus
+      expanded: true
+      items:
+        - name: Mikä on Power BI -raporttipalvelin?
+          href: get-started.md
+        - name: Power BI-raporttipalvelimen ja palvelun vertailu
+          href: compare-report-server-service.md
+    - name: Opetusohjelmat
+      expanded: true
+      items:
+        - name: 'Tutustu Power BI -raporttipalvelimeen VM:ssä'
+          href: tutorial-explore-report-server-web-portal.md
+    - name: Käsitteet
+      expanded: true
+      items:
+        - name: Uudet ominaisuudet
+          href: whats-new.md
+        - name: Järjestelmänvalvojan yleiskatsaus
+          href: admin-handbook-overview.md
+        - name: Muutosloki
+          href: changelog.md
+        - name: Tukiaikajana
+          href: support-timeline.md
+        - name: Always Encrypted -tuki
+          href: always-encrypted-support.md
+        - name: Laite- ja ohjelmistovaatimukset
+          href: system-requirements.md
+        - name: Selaintuki
+          href: browser-support.md
+        - name: Raporttipalvelimen perusteet
+          items:
+            - name: Power BI -raportin ajoitettu päivitys
+              href: scheduled-refresh.md
+            - name: Power BI -raporttien tietolähteet
+              href: data-sources.md
+            - name: Sivutetun raportin tietolähteet
+              href: connect-data-sources.md
+            - name: Tilaukset
+              href: 'https://go.microsoft.com/fwlink/?linkid=851310'
+            - name: Mobiilisovelluksen käyttö
+              href: 'https://go.microsoft.com/fwlink/?linkid=848711'
+            - name: Ajoitetun päivityksen vianmääritys
+              href: scheduled-refresh-troubleshoot.md
+        - name: Raporttipalvelin kehittäjille
+          items:
+            - name: Raporttipalvelin kehittäjille
+              href: developer-handbook-overview.md
+            - name: Raporttien katseluohjelman ohjausobjekti
+              href: 'https://go.microsoft.com/fwlink/?linkid=848724'
+            - name: Kehittäjälaajennukset
+              href: 'https://go.microsoft.com/fwlink/?linkid=848723'
+            - name: Raporttien upotus
+              href: quickstart-embed.md
+    - name: Ohjeet
+      items:
+        - name: Power BI Desktopin asentaminen
+          href: install-powerbi-desktop.md
+        - name: Report Builderin asentaminen
+          href: install-report-builder.md
+        - name: Raporttipalvelimen perusteet
+          items:
+            - name: Power BI -raportin luominen raporttipalvelimeen
+              href: quickstart-create-powerbi-report.md
+            - name: Raporttipalvelimen sisällön hallinta
+              href: getting-around.md
+            - name: 'RLS (row-level security, rivitason suojaus) raporttipalvelimessa'
+              href: row-level-security-report-server.md
+            - name: Sivutetun raportin luominen raporttipalvelimeen
+              href: quickstart-create-paginated-report.md
+            - name: Anna tiedot suoraan sivutettuun raporttiin
+              href: ../paginated-reports/paginated-reports-enter-data.md
+            - name: Suorituskykyilmaisimien käsitteleminen
+              href: 'https://go.microsoft.com/fwlink/?linkid=849021'
+            - name: Jaettujen tietojoukkojen käyttö OData-syötteinä
+              href: access-dataset-odata.md
+            - name: Tietolähteen yhteysmerkkijonon muuttaminen PowerShellin avulla
+              href: connect-data-source-apis.md
+            - name: Ajoitetun päivityksen määrittäminen
+              href: configure-scheduled-refresh.md
+            - name: Kommenttien lisääminen raporttiin
+              href: add-comments.md
+        - name: Raporttipalvelin järjestelmänvalvojille
+          items:
+            - name: Raporttipalvelimen asentaminen
+              href: install-report-server.md
+            - name: Tuoteavaimen etsiminen
+              href: find-product-key.md
+            - name: Raporttipalvelimen päivittäminen
+              href: upgrade.md
+            - name: Raporttipalvelimen siirtäminen
+              href: migrate-report-server.md
+            - name: Kerberoksen määrittäminen Power BI -raporttien käyttöön
+              href: configure-kerberos-powerbi-reports.md
+            - name: Mobiilisovelluksen käyttöoikeuksien määrittäminen etäkäytön välityksellä
+              href: configure-powerbi-mobile-apps-remote.md
+            - name: WAP- ja AD FS -asetusten määrittäminen
+              href: connect-adfs-wap-report-server.md
+            - name: Raporttipalvelimen määrittäminen Azure-sovellusvälityspalvelimen avulla
+              href: azure-application-proxy.md
+            - name: 'Etämobiilikäyttö Azure AD:lla'
+              href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi'
+            - name: Excel-työkirjojen isännöinti
+              href: excel-oos.md
+    - name: Viittaus
+      items:
+        - name: REST-ohjelmointirajapinta
+          href: rest-api.md
+        - name: WMI
+          href: 'https://go.microsoft.com/fwlink/?linkid=848719'
+        - name: SOAP-ohjelmointirajapinnat
+          href: 'https://go.microsoft.com/fwlink/?linkid=848721'
+        - name: URL-käyttö
+          href: 'https://go.microsoft.com/fwlink/?linkid=848722'
+        - name: Laajennukset
+          href: 'https://go.microsoft.com/fwlink/?linkid=848723'
+    - name: Resurssit
+      items:
+        - name: Kapasiteetin suunnittelun raportti
+          href: capacity-planning.md
+        - name: PDF-hahmontamislaajennuksen vaatimustenmukaisuus
+          href: rendering-extension-support.md

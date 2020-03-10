@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: Power BI:n sivutettujen raporttien dokumentaatio
+summary: Power BI:n sivutettujen raporttien dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+metadata:
+  title: Power BI:n sivutettujen raporttien dokumentaatio
+  description: Power BI:n sivutettujen raporttien dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/25/2020
+  ms.openlocfilehash: 47a77e156c6b59440e0de500a3f2ab9dede01c85
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924594"
+landingContent:
+- title: Tietoja Power BI:n sivutetuista raporteista
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Mitä ovat Power BI:n sivutetut raportit?
+      url: paginated-reports-report-builder-power-bi.md
+    - text: Power BI:n raportin muodostin
+      url: report-builder-power-bi.md
+- title: Aloittaminen
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Luo sivutettu raportti ja lataa se
+      url: paginated-reports-quickstart-aw.md
+  - linkListType: concept
+    links:
+    - text: Käsittely raportin suunnittelunäkymässä
+      url: paginated-reports-report-design-view.md
+    - text: Sivutetun raportin suunnitteleminen
+      url: report-builder-planning-report.md
+- title: Tietoihin yhdistäminen
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Tiedot Raportin muodostimessa
+      url: report-builder-data.md
+    - text: Tuetut tietolähteet
+      url: paginated-reports-data-sources.md
+  - linkListType: how-to-guide
+    links:
+    - text: Upotetun tietolähteen luominen
+      url: paginated-reports-embedded-data-source.md
+    - text: Upotetun tietojoukon luominen
+      url: paginated-reports-create-embedded-dataset.md
+- title: Raporttien luominen
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Taulukot, matriisit ja luettelot
+      url: report-builder-tables-matrices-lists.md
+  - linkListType: how-to-guide
+    links:
+    - text: Raportin luominen jaetussa tietojoukossa
+      url: report-builder-shared-datasets.md
+    - text: Parametrien luominen
+      url: paginated-reports-parameters.md
+- title: Raporttien tarkentaminen ja julkaiseminen
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Lauseke-esimerkit
+      url: report-builder-expression-examples.md
+    - text: Raportin sivutus
+      url: paginated-reports-pagination.md
+  - linkListType: how-to-guide
+    links:
+    - text: Raporttiparametrin välittäminen URL-osoitteessa
+      url: report-builder-url-pass-parameters.md
+    - text: Sivutetun raportin julkaiseminen
+      url: paginated-reports-save-to-power-bi-service.md

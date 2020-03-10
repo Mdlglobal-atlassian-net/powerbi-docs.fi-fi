@@ -1,0 +1,87 @@
+### YamlMime:Landing
+title: Power BI -raporttipalvelimen dokumentaatio
+summary: Power BI -raporttipalvelimen dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+metadata:
+  title: Power BI -raporttipalvelimen dokumentaatio
+  description: Power BI -raporttipalvelimen dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 03/03/2020
+  ms.openlocfilehash: f727b8832c29c4bfca448a03898620c183eb13a2
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924617"
+landingContent:
+- title: Tietoja Power BI -raporttipalvelimesta
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Mikä on Power BI -raporttipalvelin?
+      url: get-started.md
+  - linkListType: concept
+    links:
+    - text: Raporttipalvelimen ja palvelun vertailu
+      url: compare-report-server-service.md
+    - text: Power BI -raporttipalvelinten uudet ominaisuudet
+      url: whats-new.md
+- title: Aloittaminen
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Tutustu Power BI -raporttipalvelimeen VM:ssä
+      url: tutorial-explore-report-server-web-portal.md
+  - linkListType: concept
+    links:
+    - text: Järjestelmänvalvojan yleiskatsaus
+      url: admin-handbook-overview.md
+    - text: Yleiskatsaus kehittäjille
+      url: developer-handbook-overview.md
+  - linkListType: how-to-guide
+    links:
+    - text: Power BI Desktopin asentaminen
+      url: install-powerbi-desktop.md
+    - text: Report Builderin asentaminen
+      url: install-report-builder.md
+- title: Raporttipalvelin järjestelmänvalvojille
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Laite- ja ohjelmistovaatimukset
+      url: system-requirements.md
+  - linkListType: how-to-guide
+    links:
+    - text: Raporttipalvelimen asentaminen
+      url: install-report-server.md
+    - text: Raporttipalvelimen tuoteavaimen etsiminen
+      url: find-product-key.md
+    - text: Raporttipalvelimen asennuksen siirtäminen
+      url: migrate-report-server.md
+    - text: Kerberosin määrittäminen
+      url: configure-kerberos-powerbi-reports.md
+- title: Raportin tekijöiden raporttipalvelin
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Power BI -raportin ajoitettu päivitys
+      url: scheduled-refresh.md
+    - text: Power BI -raporttien tietolähteet
+      url: data-sources.md
+    - text: Sivutetun raportin tietolähteet
+      url: connect-data-sources.md
+  - linkListType: how-to-guide
+    links:
+    - text: Luo Power BI -raportti
+      url: quickstart-create-powerbi-report.md
+    - text: Hallitse sisältöä verkkoportaalissa
+      url: getting-around.md
+    - text: Jaettujen tietojoukkojen käyttö OData-syötteinä
+      url: access-dataset-odata.md
+    - text: Rivitason suojaus
+      url: row-level-security-report-server.md

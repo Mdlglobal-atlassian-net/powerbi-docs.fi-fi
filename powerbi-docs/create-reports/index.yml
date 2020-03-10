@@ -1,0 +1,121 @@
+### YamlMime:Landing
+title: Raporttien ja koontinäyttöjen luominen Power BI:ssä – dokumentaatio
+summary: Power BI -dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+metadata:
+  title: Raporttien ja koontinäyttöjen luominen Power BI:ssä – dokumentaatio
+  description: Power BI -dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/25/2020
+  ms.openlocfilehash: 592a7bff1f511158de929ce0a225f26558a1997b
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924180"
+landingContent:
+- title: Aloittaminen
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Päivitetyn valintanauhan käyttäminen
+      url: ../desktop-ribbon.md
+    - text: Helppokäyttöisyyden yleiskatsaus
+      url: ../desktop-accessibility-overview.md
+    - text: Mallitietojen hankkiminen
+      url: ../sample-datasets.md
+  - linkListType: tutorial
+    links:
+    - text: Mallipakettien tuominen ja avaaminen
+      url: ../sample-tutorial-connect-to-the-samples.md
+  - linkListType: concept
+    links:
+    - text: Raporttinäkymä
+      url: ../desktop-report-view.md
+- title: Visualisoinnit
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Visualisointien yleiskatsaus
+      url: ../visuals/power-bi-report-visualizations.md
+    - text: Visualisointityypit
+      url: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
+  - linkListType: how-to-guide
+    links:
+    - text: Vihjeitä ja vinkkejä karttoihin
+      url: ../visuals/power-bi-map-tips-and-tricks.md
+    - text: Tietojen vieminen visualisoinnista
+      url: ../visuals/power-bi-visualization-export-data.md
+    - text: Osittajat
+      url: ../visuals/power-bi-visualization-slicers.md
+- title: Raporttien suunnitteleminen
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Raporttiteemat
+      url: ../desktop-report-themes.md
+    - text: Tekstiruudut ja muodot
+      url: ../power-bi-reports-add-text-and-shapes.md
+  - linkListType: how-to-guide
+    links:
+    - text: Taulukon ehdollinen muotoilu
+      url: ../desktop-conditional-table-formatting.md
+    - text: Ryhmittelyn ja lokeroinnin käyttö
+      url: ../desktop-grouping-and-binning.md
+    - text: Kirjanmerkkien lisääminen raporttiin
+      url: ../desktop-bookmarks.md
+- title: Raportin vuorovaikutusten suunnitteleminen
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Raporttinäkymä Power BI Desktopissa
+      url: ../desktop-report-view.md
+  - linkListType: how-to-guide
+    links:
+    - text: Tietojen tutkiminen Q&A:n avulla
+      url: ../power-bi-tutorial-q-and-a.md
+    - text: Porauksen käyttäminen raportissa
+      url: ../desktop-drillthrough.md
+    - text: Kirjanmerkkien lisääminen raporttiin
+      url: ../desktop-bookmarks.md
+    - text: Suodattimien lisääminen raporttiin
+      url: ../power-bi-report-filter.md
+- title: Power BI:n sivutetut raportit
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Mitä ovat Power BI:n sivutetut raportit?
+      url: ../paginated-reports/paginated-reports-report-builder-power-bi.md
+    - text: Power BI:n raportin muodostin
+      url: ../paginated-reports/report-builder-power-bi.md
+  - linkListType: concept
+    links:
+    - text: Lauseke-esimerkit
+      url: ../paginated-reports/report-builder-expression-examples.md
+    - text: Taulukot, matriisit ja luettelot
+      url: ../paginated-reports/report-builder-tables-matrices-lists.md
+  - linkListType: how-to-guide
+    links:
+    - text: Raportin luominen jaetussa tietojoukossa
+      url: ../paginated-reports/report-builder-shared-datasets.md
+    - text: Parametrien luominen
+      url: ../paginated-reports/paginated-reports-parameters.md
+- title: Koontinäytöt
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Koontinäyttöjen esittely
+      url: ../service-dashboards.md
+  - linkListType: how-to-guide
+    links:
+    - text: Koontinäytön luominen
+      url: ../service-dashboard-create.md
+    - text: Ruudun kiinnittäminen koontinäyttöön
+      url: ../service-share-dashboards.md
+    - text: Kuvien tai videoiden lisääminen koontinäyttöön
+      url: ../service-dashboard-add-widget.md

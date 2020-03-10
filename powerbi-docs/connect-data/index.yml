@@ -1,0 +1,71 @@
+### YamlMime:Landing
+title: Tietoihin yhdistäminen Power BI:ssä – dokumentaatio
+summary: Power BI -dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+metadata:
+  title: Tietoihin yhdistäminen Power BI:ssä – dokumentaatio
+  description: Power BI -dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/25/2020
+  ms.openlocfilehash: a46c459c61f85b2f8cb4885f93c1893724485dff
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924134"
+landingContent:
+- title: Yhdistä tietoihin Power BI:ssä
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Tietolähteet
+      url: ../desktop-data-sources.md
+    - text: Tietonäkymä Power BI Desktopissa
+      url: ../desktop-data-view.md
+  - linkListType: tutorial
+    links:
+    - text: Tietojen tuominen verkkosivulta
+      url: ../desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
+- title: Yhdyskäytävät
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Paikalliset tietoyhdyskäytävät
+      url: ../service-gateway-onprem.md
+  - linkListType: tutorial
+    links:
+    - text: Yhteyden muodostaminen paikallisiin SQL Server -tietoihin
+      url: ../service-gateway-sql-tutorial.md
+  - linkListType: how-to-guide
+    links:
+    - text: Henkilökohtaisten yhdyskäytävien käyttö
+      url: ../service-gateway-personal-mode.md
+- title: Mallisovellukset
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Mitä mallisovellukset ovat?
+      url: ../service-template-apps-overview.md
+  - linkListType: concept
+    links:
+    - text: Luo mallisovelluksia
+      url: ../service-template-apps-create.md
+    - text: Mallisovellusten jakaminen organisaatiossa
+      url: ../service-template-apps-install-distribute.md
+- title: Päivitä tiedot
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Tietojen uudelleenlataus
+      url: ../refresh-data.md
+    - text: Lisäävää päivitys Power BI Premiumissa
+      url: ../service-premium-incremental-refresh.md
+  - linkListType: how-to-guide
+    links:
+    - text: Ajoitetun päivityksen määrittäminen
+      url: ../refresh-scheduled-refresh.md

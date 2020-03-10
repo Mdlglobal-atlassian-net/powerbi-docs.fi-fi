@@ -1,0 +1,67 @@
+### YamlMime:Landing
+title: Power BI:n käytön aloittamisen dokumentaatio
+summary: Power BI -dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+metadata:
+  title: Power BI:n käytön aloittamisen dokumentaatio
+  description: Power BI -dokumentaatio tarjoaa asiantuntijatietoja ja ratkaisuja tarpeisiisi vastaamiseksi riippumatta siitä, miten käytät Power BI:tä.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 03/05/2020
+  ms.openlocfilehash: ec79ce7ca7d7e50f5a3a806ad14de50b786483f5
+  ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 03/07/2020
+  ms.locfileid: "78924364"
+landingContent:
+- title: Mikä Power BI on?
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Mikä Power BI on?
+      url: ../power-bi-overview.md
+    - text: Mikä on Power BI Desktop?
+      url: ../desktop-what-is-desktop.md
+    - text: Mikä Power BI -palvelu on?
+      url: ../power-bi-service-overview.md
+    - text: Power BI Desktopin ja palvelun vertailu
+      url: ../service-service-vs-desktop.md
+- title: Uudet ominaisuudet
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Power BI Desktopin uudet ominaisuudet
+      url: ../desktop-latest-update.md
+    - text: Palvelun uudet ominaisuudet
+      url: ../service-whats-new.md
+- title: Learnin käytön aloittaminen
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Analyysiraporttien luominen ja käyttäminen
+      url: https://docs.microsoft.com/learn/paths/create-use-analytics-reports-power-bi/
+    - text: Tietojen noutaminen Power BI Desktopissa
+      url: https://docs.microsoft.com/power-bi/guided-learning/gettingdata?tutorial-step=1
+- title: Käyttöoikeudet
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Rekisteröidy Power BI:hin
+      url: ../service-self-service-signup-for-power-bi.md
+    - text: Toiminnot käyttöoikeustyypin mukaan
+      url: ../service-features-license-type.md
+- title: Resurssit
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Power BI -videot
+      url: ../videos.md
+    - text: Power BI Desktop -videot
+      url: ../desktop-videos.md
+    - text: Verkkoseminaarit
+      url: ../webinars.md
