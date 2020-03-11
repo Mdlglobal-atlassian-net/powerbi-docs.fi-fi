@@ -8,16 +8,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 1da75b14f628c8c765ea89a34dd2a2665cdf9a4b
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: 1e69c7eefe25da771ecc4d9602d6a21081f2c052
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530437"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920766"
 ---
 # <a name="data-retrieval-guidance-for-paginated-reports"></a>Sivutettujen raporttien tietojen nouto-ohjeet
 
-Tämä artikkeli koskee raportin laatijaa, joka suunnittelee Power BI:n [sivutettuja raportteja](../paginated-reports-report-builder-power-bi.md). Se sisältää suosituksia, joiden avulla voit suunnitella tehokkaan ja toimivan tietojen noudon.
+Tämä artikkeli koskee raportin laatijaa, joka suunnittelee Power BI:n [sivutettuja raportteja](../paginated-reports/paginated-reports-report-builder-power-bi.md). Se sisältää suosituksia, joiden avulla voit suunnitella tehokkaan ja toimivan tietojen noudon.
 
 ## <a name="data-source-types"></a>Tietolähdetyypit
 
@@ -101,13 +101,13 @@ Suosittelemme _tietojoukon parametrointia_, kun on oletettavasti epätodennäkö
 
 ## <a name="non-native-data-sources"></a>Muut kuin alkuperäiset tietolähteet
 
-Jos sinun on luotava sivutettuja raportteja sellaisten tietolähteiden perusteella, joita [sivutetut raportit eivät suoraan tue](../paginated-reports-data-sources.md), voit kehittää ensin Power BI Desktop -tietomallin. Näin voit muodostaa yhteyden yli 100 [Power BI -tietolähteeseen](../power-bi-data-sources.md). Kun olet julkaissut Power BI -palvelussa, voit luoda sivutetun raportin, joka muodostaa yhteyden Power BI -tietojoukkoon.
+Jos sinun on luotava sivutettuja raportteja sellaisten tietolähteiden perusteella, joita [sivutetut raportit eivät suoraan tue](../paginated-reports/paginated-reports-data-sources.md), voit kehittää ensin Power BI Desktop -tietomallin. Näin voit muodostaa yhteyden yli 100 [Power BI -tietolähteeseen](../power-bi-data-sources.md). Kun olet julkaissut Power BI -palvelussa, voit luoda sivutetun raportin, joka muodostaa yhteyden Power BI -tietojoukkoon.
 
 ## <a name="data-integration"></a>Tietojen integrointi
 
 Jos sinun on yhdistettävä tietoja useista tietolähteistä, sinulla on kaksi vaihtoehtoa:
 
-- **Yhdistä raportin tietojoukot**: Jos [sivutetut raportit tukevat tietolähteitä suoraan](../paginated-reports-data-sources.md), voit halutessasi luoda laskettuja kenttiä, jotka käyttävät Report Builderin [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function)- tai [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function)-funktioita.
+- **Yhdistä raportin tietojoukot**: Jos [sivutetut raportit tukevat tietolähteitä suoraan](../paginated-reports/paginated-reports-data-sources.md), voit halutessasi luoda laskettuja kenttiä, jotka käyttävät Report Builderin [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function)- tai [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function)-funktioita.
 - **Luo Power BI Desktop -malli**: On kuitenkin tehokkaampaa, että luot tietomallin Power BI Desktopissa. Power Queryn avulla voit yhdistää kyselyitä minkä tahansa [tuetun tietolähteen](../power-bi-data-sources.md) perusteella. Kun olet julkaissut Power BI -palvelussa, voit luoda sivutetun raportin, joka muodostaa yhteyden Power BI -tietojoukkoon.
 
 ## <a name="sql-server-complex-data-types"></a>SQL Serverin monimutkaiset tietotyypit
@@ -143,6 +143,6 @@ Kun raportti suoritetaan, kaikki tietojoukot arvioidaan, vaikka niitä ei ole si
 
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
-- [Power BI:n sivutetuissa raporteissa tuetut tietolähteet](../paginated-reports-data-sources.md)
+- [Power BI:n sivutetuissa raporteissa tuetut tietolähteet](../paginated-reports/paginated-reports-data-sources.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)

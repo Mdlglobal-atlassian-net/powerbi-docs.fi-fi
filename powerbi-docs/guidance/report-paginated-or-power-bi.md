@@ -8,16 +8,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/04/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 3838c0b487be7faace2e58dd706aa7d172841215
-ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
+ms.openlocfilehash: 049b6ac14c6d35d68815eac32520a4eaa654ad42
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78290494"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920725"
 ---
 # <a name="when-to-use-paginated-reports-in-power-bi"></a>Milloin sivutettuja raportteja kannattaa käyttää Power BI:ssä
 
-Tämä artikkeli koskee raportin laatijaa, joka suunnittelee raportteja Power BI:lle. Se tarjoaa ehdotuksia, joiden avulla voit valita sopivan ajankohdan [Power BI:n sivutettujen raporttien](../paginated-reports-report-builder-power-bi.md) kehittämiseen.
+Tämä artikkeli koskee raportin laatijaa, joka suunnittelee raportteja Power BI:lle. Se tarjoaa ehdotuksia, joiden avulla voit valita sopivan ajankohdan [Power BI:n sivutettujen raporttien](../paginated-reports/paginated-reports-report-builder-power-bi.md) kehittämiseen.
 
 > [!NOTE]
 > Power BI:n sivutettujen raporttien julkaiseminen edellyttää Power BI Premium -tilausta. Raportit hahmonnetaan vain silloin, kun ne ovat työtilassa varatussa kapasiteetissa, jonka [sivutettujen raporttien kuormitus on otettu käyttöön](../service-admin-premium-workloads.md#paginated-reports).
@@ -49,7 +49,7 @@ On monia pakottavia tilanteita, joissa saatat suosia Power BI:n sivutetun raport
 - **Tarkkuusasettelu**: Voit suunnitella erittäin muotoiltuja ja pikselintarkkoja asetteluja, jotka on määritetty haluttuun kokoon ja sijaintiin tuuman tai senttimetrin murto-osan tarkkuudella.
 - **Dynaaminen rakenne**: Voit luoda erittäin reagoivia asetteluja asettamalla useita raportin ominaisuuksia käyttämään VB.NET-lausekkeita. Lausekkeilla on pääsy moniin keskeisiin .NET Framework -kirjastoihin.
 - **Hahmonnuskohtainen asettelu**: Lausekkeiden avulla voit muokata raportin asettelua käytetyn hahmontamismuodon perusteella. Voit esimerkiksi suunnitella raportin, joka poistaa käytöstä näkyvyyden vaihtomekanismin (alaspäin ja ylöspäin porautumisen), kun se hahmonnetaan käyttäen muuta kuin vuorovaikutteista muotoa, esimerkiksi PDF:ää.
-- **Alkuperäiset kyselyt**: Sinun ei tarvitse ensin kehittää Power BI -tietojoukkoa. Voit kirjoittaa alkuperäisiä kyselyitä (tai käyttää tallennettuja toimintosarjoja) mille tahansa [tuetulle tietolähteelle](../paginated-reports-data-sources.md). Kyselyt voivat sisältää parametrisointia.
+- **Alkuperäiset kyselyt**: Sinun ei tarvitse ensin kehittää Power BI -tietojoukkoa. Voit kirjoittaa alkuperäisiä kyselyitä (tai käyttää tallennettuja toimintosarjoja) mille tahansa [tuetulle tietolähteelle](../paginated-reports/paginated-reports-data-sources.md). Kyselyt voivat sisältää parametrisointia.
 - **Graafisten kyselyjen suunnittelutyökalu**: Power BI:n Raportin muodostin sisältää graafisten kyselyjen suunnittelutyökaluja, joiden avulla voit kirjoittaa ja testata tietojoukkokyselyitä.
 - **Staattiset tietojoukot**: Voit määrittää tietojoukon ja syöttää tiedot suoraan raporttimääritykseen. Tästä ominaisuudesta on hyötyä erityisesti demon tukemisessa tai soveltuvuusselvityksen (POC) toimittamisessa.
 - **Tietojen integrointi**: Voit yhdistää tietoja eri tietolähteistä tai staattisilla tietojoukoilla. Se tehdään luomalla mukautettuja kenttiä VB.NET-lausekkeiden avulla.
@@ -70,7 +70,7 @@ On monia pakottavia tilanteita, joissa saatat suosia Power BI:n sivutetun raport
 
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
-- [Mitä ovat sivutetut raportit Power BI Premiumissa?](../paginated-reports-report-builder-power-bi.md)
+- [Mitä ovat sivutetut raportit Power BI Premiumissa?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - [SQL Server Reporting Services -raporttien siirtäminen Power BI:hin](migrate-ssrs-reports-to-power-bi.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)

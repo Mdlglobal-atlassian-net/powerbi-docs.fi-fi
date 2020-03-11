@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 4b3158cbe26efe05e3d35c1c6c93027738cc817a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 649f4d002c9adbfa882c4ee4320f040f490fd116
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871486"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041719"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Mallisovelluksen luominen Power BI:ssä
 
@@ -58,7 +58,7 @@ Jotta voisit luoda mallisovelluksen, jonka voi jakaa muille Power BI -vuokraajil
 
 Kuten tavallisessakin Power BI -työtilassa, seuraava tehtäväsi on luoda työtilan sisältö.  
 
-- [Luo oma Power BI -sisältösi](power-bi-creator-landing.md) työtilassa.
+- [Luo oma Power BI -sisältösi](index.yml) työtilassa.
 
 Jos käytät Power Query -parametreja, varmista, että niiden tietolaji on määritelty hyvin (esimerkiksi teksti). Tietolajeja Mikä tahansa ja Binaarinen ei tueta.
 

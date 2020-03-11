@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/03/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 2c984abaec40028fb01affa8ff7bf0bf87cdd616
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.openlocfilehash: 007ff786fcee5d2a7b7237ad578a202cfcf25b69
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78260872"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401941"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Suuret mallit Power BI Premiumissa (esikatselu)
 
@@ -123,7 +123,7 @@ Muista seuraavat rajoitukset, kun käytät suuria malleja:
 
 ## <a name="availability-in-regions"></a>Saatavuus eri alueilla
 
-Power BI:n suuret mallit ovat käytettävissä vain tietyillä Azure-alueilla, jotka tukevat [Azuren premium-tiedostosäilöä](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers).
+Power BI:n suuret mallit ovat käytettävissä vain tietyillä Azure-alueilla, jotka tukevat [Azuren premium-tiedostosäilöä](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers).
 
 Seuraavassa on lueteltu alueet, joilla Power BI:ssä voidaan käyttää suuria malleja. Suuria malleja ei tueta alueilla, joita ei ole seuraavassa luettelossa:
 
@@ -156,7 +156,7 @@ Seuraavassa on lueteltu alueet, joilla Power BI:ssä voidaan käyttää suuria m
 
 Seuraavissa linkeissä on tietoja, jotka voivat olla hyödyllisiä suuria malleja käytettäessä:
 
-* [Azuren premium-tiedostosäilö](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers)
+* [Azuren premium-tiedostosäilö](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers)
 * [Power BI Premiumin Multi-Geo-tuen määrittäminen](service-admin-premium-multi-geo.md)
 * [Omien salausavainten tuominen Power BI:hin](service-encryption-byok.md)
 * [Kapasiteettien toiminta](service-premium-what-is.md#how-capacities-function)

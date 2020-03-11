@@ -8,16 +8,16 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 2a8dca43077fe12e4903585e3926cc67fe864136
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: 90f501b257313c48cbef13517747ff83cd9ea9d1
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76162407"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920777"
 ---
 # <a name="use-cascading-parameters-in-paginated-reports"></a>Johdannaisparametrien käyttö sivutetuissa raporteissa
 
-Tämä artikkeli koskee raportin laatijaa, joka suunnittelee Power BI:n [sivutettuja raportteja](../paginated-reports-report-builder-power-bi.md). Se tarjoaa skenaarioita johdannaisparametrien suunnittelemiseksi. Johdannaisparametrit ovat raportin parametreja, joilla on riippuvuussuhteita. Kun raportin käyttäjä valitsee parametrin arvon (tai arvot), sen avulla voidaan määrittää toisen parametrin käytettävissä olevat arvot.
+Tämä artikkeli koskee raportin laatijaa, joka suunnittelee Power BI:n [sivutettuja raportteja](../paginated-reports/paginated-reports-report-builder-power-bi.md). Se tarjoaa skenaarioita johdannaisparametrien suunnittelemiseksi. Johdannaisparametrit ovat raportin parametreja, joilla on riippuvuussuhteita. Kun raportin käyttäjä valitsee parametrin arvon (tai arvot), sen avulla voidaan määrittää toisen parametrin käytettävissä olevat arvot.
 
 > [!NOTE]
 > Tässä artikkelissa ei esitellä johdannaisparametreja eikä niiden määrittämistä. Jos et ole tutustunut hyvin johdannaisparametreihin, suosittelemme, että luet ensin artikkelin [Johdannaisparametrien lisääminen raporttiin (Raportin muodostin ja SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs).
@@ -37,10 +37,10 @@ Taulukko nimeltä **Reseller** tallentaa kullekin jälleenmyyjälle yhden tietue
 
 - ResellerCode (kokonaisluku)
 - ResellerName
-- Country-Region
+- Maa tai alue
 - State-Province
-- City
-- PostalCode
+- Kaupunki
+- Postinumero
 
 Löydät täältä myös **Sales**-nimisen sarakkeen. Se tallentaa myyntitilaustietueet ja sillä on viiteavainsuhde **Reseller**-taulukkoon **ResellerCode**-sarakkeessa.
 
@@ -281,7 +281,7 @@ Varmista, että optimoit tietolähteesi:
 
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
-- [Raportin parametrit Power BI:n Raportin muodostimessa](../report-builder-parameters.md)
+- [Raportin parametrit Power BI:n Raportin muodostimessa](../paginated-reports/report-builder-parameters.md)
 - [Johdannaisparametrien lisääminen raporttiin (Raportin muodostin ja SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com)

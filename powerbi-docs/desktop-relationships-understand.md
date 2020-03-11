@@ -8,14 +8,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 7be55c8b44a89ad5b317743b62e033cf34a01ef9
-ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
+ms.openlocfilehash: 991f8b47337ba563ecfd223d69d687269a44ed78
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78290678"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041604"
 ---
-# <a name="create-model-relationships-in-power-bi-desktop"></a>Mallien suhteiden luominen Power BI Desktopissa
+# <a name="model-relationships-in-power-bi-desktop"></a>Mallien suhteet Power BI Desktopissa
 
 Tämä artikkeli on tarkoitettu tuotujen tietojen mallintajille, jotka käyttävät Power BI Desktopia. Se on tärkeä mallisuunnittelun aihealue, jolla on oleellinen rooli toimitettaessa intuitiivisia, tarkkoja ja optimaalisia malleja.
 

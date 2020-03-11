@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/04/2019
-ms.openlocfilehash: f9ed7f47c0f36e540d22270048e93acd2d3a8e21
-ms.sourcegitcommit: df8bcc65f0df69bf1fc1d47eb06575742eac1622
+ms.openlocfilehash: 09471cdacacc8d0b1067598cefac41915b0ef0d7
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75953775"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920915"
 ---
 # <a name="implementing-row-level-security-in-embedded-paginated-reports-preview"></a>Rivitason suojauksen toteuttaminen upotetuissa sivutetuissa raporteissa (esikatselu)
 
@@ -26,13 +26,13 @@ Tämä ominaisuus tarjoaa turvallisen tavan näyttää tietojen alijoukko niin, 
 
 ## <a name="configuring-a-parameter-to-filter-the-dataset"></a>Parametrin määrittäminen tietojoukon suodattamiseksi
 
-Kun otat rivitason suojauksen käyttöön Power BI -sivutetulle raportille, sinun on määritettävä [parametri](../report-builder-parameters.md)**UserID**-määritteelle. Tämä parametri rajoittaa tietojoukosta vedettyjä tietoja ennen raportin upottamista.
+Kun otat rivitason suojauksen käyttöön Power BI -sivutetulle raportille, sinun on määritettävä [parametri](../paginated-reports/report-builder-parameters.md)**UserID**-määritteelle. Tämä parametri rajoittaa tietojoukosta vedettyjä tietoja ennen raportin upottamista.
 
 Kun olet määrittänyt parametrin **UserID:lle**, käytä [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)-ohjelmointirajapintaa upotetun suojaustunnuksen saamiseksi.
 
 ## <a name="use-userid-as-a-filter-at-report-or-query-level"></a>UserID-tunnuksen käyttäminen suodattimen raportti- tai kyselytasolla
 
-Voit käyttää **UserId**-tunnusta *suodattimena* tai *kyselynä* tietolähteeseen [Power BI Report Builderissa](../report-builder-power-bi.md).
+Voit käyttää **UserId**-tunnusta *suodattimena* tai *kyselynä* tietolähteeseen [Power BI Report Builderissa](../paginated-reports/report-builder-power-bi.md).
 
 ### <a name="using-the-filter"></a>Suodattimen käyttö
 

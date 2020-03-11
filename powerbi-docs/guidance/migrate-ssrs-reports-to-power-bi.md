@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: f8b7cc302cd4a26aa099f723f47865723dccb7c9
-ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
+ms.openlocfilehash: cf11b98d7eacd7b1e245fb0aed62d0f14e7f4c4c
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78290632"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041312"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>SQL Server Reporting Services -raporttien siirtäminen Power BI:hin
 
@@ -60,11 +60,11 @@ Suosittelemme, että käytät [RDL-siirtotyökalua](https://github.com/microsoft
 
 Työkalu automatisoi seuraavat tehtävät:
 
-- Se tarkistaa, onko sinulla [tukemattomia tietolähteitä](../paginated-reports-data-sources.md) ja [raporttitoimintoja](../paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi).
-- Se muuntaa kaikki _jaetut_ resurssit _upotetuiksi_ resursseiksi:
-  - Jaetuista **tietolähteistä** tulee upotettuja tietolähteitä.
-  - Jaetuista **tietojoukoista** tulee upotettuja tietojoukkoja.
-- Se julkaisee (tarkistukset läpäisevät) raportit sivutettuina raportteina määritettyyn Power BI -työtilaan (Premium-kapasiteetissa).
+* Se tarkistaa, onko sinulla [tukemattomia tietolähteitä](../paginated-reports/paginated-reports-data-sources.md) ja [raporttitoimintoja](../paginated-reports/paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi).
+* Se muuntaa kaikki _jaetut_ resurssit _upotetuiksi_ resursseiksi:
+  * Jaetuista **tietolähteistä** tulee upotettuja tietolähteitä.
+  * Jaetuista **tietojoukoista** tulee upotettuja tietojoukkoja.
+* Se julkaisee (tarkistukset läpäisevät) raportit sivutettuina raportteina määritettyyn Power BI -työtilaan (Premium-kapasiteetissa).
 
 Se ei muokkaa tai poista olemassa olevia raporttejasi. Kun työkalu on valmis, se tuottaa yhteenvedon kaikista suoritetuista (sekä onnistuneista että epäonnistuneista) toiminnoista.
 
@@ -102,7 +102,7 @@ Seuraavia SSRS-kohdetyyppejä ei kuitenkaan voi siirtää Power BI:hin:
 
 <sup>1</sup> [RDL-siirtotyökalu](https://github.com/microsoft/RdlMigration) muuntaa jaetut tietolähteet ja jaetut tietojoukot automaattisesti, kunhan ne käyttävät tuettuja tietolähteitä.
 
-Jos RDL-raporttisi käyttävät toimintoja tai ominaisuuksia, [joita ei ole tueta Power BI:n sivutetuissa raporteissa](../paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi), voit kehittää ne uudelleen [Power BI -raportteina](../consumer/end-user-reports.md). Vaikka RDL-raporttisi voidaan siirtää, suosittelemme kuitenkin, että harkitset niiden nykyaikaistamista Power BI -raporteiksi, jos tämä on toteuttamiskelpoista.
+Jos RDL-raporttisi käyttävät toimintoja tai ominaisuuksia, [joita ei ole tueta Power BI:n sivutetuissa raporteissa](../paginated-reports/paginated-reports-faq.md#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi), voit kehittää ne uudelleen [Power BI -raportteina](../consumer/end-user-reports.md). Vaikka RDL-raporttisi voidaan siirtää, suosittelemme kuitenkin, että harkitset niiden nykyaikaistamista Power BI -raporteiksi, jos tämä on toteuttamiskelpoista.
 
 Jos RDL-raporttisi on noudettava tietoja _paikallisista tietolähteistä_, ne eivät voi käyttää kertakirjautumista (SSO). Tällä hetkellä kaikki tietojen nouto näistä lähteistä tehdään käyttämällä _yhdyskäytävän tietolähteen käyttäjätilin_ suojauskontekstia. SQL Server Analysis Services (SSAS) ei voi pakottaa rivitason suojausta (RLS) käyttäjäkohtaisesti.
 
@@ -113,7 +113,7 @@ Yleensä Power BI:n sivutetut raportit on optimoitu **tulostamista** ja **PDF-ti
 _Valmistele_-vaiheessa kaikki laitetaan valmiiksi. Se käsittää Power BI -ympäristön valmistelun, raporttien suojaamisen ja julkaisemisen suunnittelun sekä ideat niiden SSRS-kohteiden uudelleenkehittämiseksi, joita ei voida siirtää.
 
 1. Varmista, että [sivutettujen raporttien kuormitus](../service-admin-premium-workloads.md#paginated-reports) on käytössä Power BI Premium -kapasiteetissasi ja että sillä on riittävästi muistia.
-1. Varmista raportin [tietolähteiden](../paginated-reports-data-sources.md) tuki ja ota käyttöön [Power BI -yhdyskäytävä](../service-gateway-onprem.md), joka mahdollistaa yhteydet paikallisiin tietolähteisiin.
+1. Varmista raportin [tietolähteiden](../paginated-reports/paginated-reports-data-sources.md) tuki ja ota käyttöön [Power BI -yhdyskäytävä](../service-gateway-onprem.md), joka mahdollistaa yhteydet paikallisiin tietolähteisiin.
 1. Tutustu Power BI:n suojaukseen ja suunnittele, [miten luot SSRS-kansiot ja -käyttöoikeudet](/sql/reporting-services/security/secure-folders) uudelleen [Power BI:n työtiloilla ja työtilarooleilla](../service-new-workspaces.md).
 1. Tutustu Power BI:n jakamiseen ja suunnittele, miten jaat sisältöä julkaisemalla [Power BI -sovelluksia](../service-create-distribute-apps.md).
 1. Harkitse [jaettujen Power BI -tietojoukkojen](../service-datasets-build-permissions.md) käyttöä SSRS:n jaettujen tietolähteiden asemesta.
@@ -121,7 +121,7 @@ _Valmistele_-vaiheessa kaikki laitetaan valmiiksi. Se käsittää Power BI -ymp�
 1. Arvioi uudelleen sisäisen **Käyttäjätunnus**-kentän käyttö raporteissasi. Jos luotat **Käyttäjätunnukseen** raporttitietojen suojaamisessa, huomaa, että sivutetuissa raporteissa (Power BI -palvelussa isännöitynä) se palauttaa täydellisen käyttäjätunnuksen. NT-tilin nimen, esimerkiksi _AW\mblythe_, palauttamisen sijaan sisäinen kenttä palauttaa jotain tämänkaltaista: _m. Blythe&commat;adventureworks.com_. Sinun on muokattava tietojoukkomäärityksiä ja mahdollisesti lähdetietoja. Muokkaamisen ja julkaisun jälkeen suosittelemme, että testaat raporttisi perusteellisesti varmistaaksesi, että tietojen käyttöoikeudet toimivat odotetulla tavalla.
 1. Arvioi uudelleen sisäisen **ExecutionTime**-kentän käyttö raporteissasi. Jos kyseessä ovat sivutetut raportit (Power BI -palvelussa isännöitynä), sisäinen kenttä palauttaa päivämäärän/ajan _koordinoituna yleisaikana (UTC)_ . Se voi vaikuttaa raporttiparametrin oletusarvoihin ja raportin suorituksen aikatunnisteeseen (jotka yleensä lisätään raportin alatunnisteisiin).
 1. Jos tietolähteesi on SQL Server (paikallinen), tarkista, että raportit eivät käytä kartan visualisointeja. Kartan visualisointi riippuu SQL Serverin spatiaalisista tietotyypeistä, eikä yhdyskäytävä tue niitä. Lisätietoja on kohdassa [Sivutettujen raporttien tietojen nouto-ohjeet (SQL Serverin monimutkaiset tietotyypit)](report-paginated-data-retrieval.md#sql-server-complex-data-types).
-1. Varmista, että raportteja luovilla käyttäjillä on [Power BI Report Builder](../report-builder-power-bi.md) asennettuna ja että uudet versiot voidaan jakaa jatkossa helposti koko organisaatioosi.
+1. Varmista, että raportteja luovilla käyttäjillä on [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) asennettuna ja että uudet versiot voidaan jakaa jatkossa helposti koko organisaatioosi.
 
 ## <a name="migration-stage"></a>Siirtämisvaihe
 
@@ -137,7 +137,7 @@ Kuka tahansa, jolla on SSRS-esiintymän ja Power BI -työtilan käyttöoikeus, v
 1. Lataa jokainen raporttimääritelmä ja tallenna .rdl-tiedostot paikallisesti.
 1. Avaa Power BI Report Builderin _uusin versio_. Muodosta yhteys Power BI -palveluun Azure AD -tunnistetiedoillasi.
 1. Avaa kukin raportti Power BI Report Builderissa ja toimi sitten seuraavasti:
-   1. Varmista, että kaikki tietolähteet ja tietojoukot on upotettu raporttimääritelmään ja että ne ovat [tuettuja tietolähteitä](../paginated-reports-data-sources.md).
+   1. Varmista, että kaikki tietolähteet ja tietojoukot on upotettu raporttimääritelmään ja että ne ovat [tuettuja tietolähteitä](../paginated-reports/paginated-reports-data-sources.md).
    1. Esikatsele raportti ja tarkista, että se näkyy oikein.
    1. Valitse _Tallenna nimellä_ ja valitse sitten _Power BI -palvelu_.
    1. Valitse työtila, joka sisältää raportin.
@@ -156,7 +156,7 @@ Voit automatisoida sisältösi siirtämisen julkisesti saatavilla olevilla SSRS:
 
 Saat lisätietoja ohjelmointirajapinnoista seuraavista ohjeartikkeleista:
 
-- [Power BI:n REST-ohjelmointirajapinnan viite](../developer/rest-api-reference.md)
+- [Power BI:n REST-ohjelmointirajapinnan viite](../developer/automation/rest-api-reference.md)
 - [SQL Server Reporting Servicesin REST-ohjelmointirajapinnat](/sql/reporting-services/developer/rest-api).
 
 ## <a name="post-migration-stage"></a>Jälkisiirtämisvaihe
@@ -165,7 +165,7 @@ Kun olet suorittanut siirtämisen, olet valmis _jälkisiirtämisvaiheeseen_. Tä
 
 ### <a name="configure-data-sources"></a>Tietolähteiden määrittäminen
 
-Kun raportit on siirretty Power BI:hin, sinun täytyy varmistaa, että niiden tietolähteet on määritetty oikein. Tämä voi sisältää yhdyskäytävätietolähteiden määrittämistä ja [tietolähteiden tunnistetietojen suojattua tallentamista](../paginated-reports-data-sources.md#azure-sql-database-authentication). Näitä toimintoja ei tehdä RDL-siirtotyökalulla.
+Kun raportit on siirretty Power BI:hin, sinun täytyy varmistaa, että niiden tietolähteet on määritetty oikein. Tämä voi sisältää yhdyskäytävätietolähteiden määrittämistä ja [tietolähteiden tunnistetietojen suojattua tallentamista](../paginated-reports/paginated-reports-data-sources.md#azure-sql-database-authentication). Näitä toimintoja ei tehdä RDL-siirtotyökalulla.
 
 ### <a name="review-report-performance"></a>Raportin tehokkuuden tarkistaminen
 
@@ -190,13 +190,13 @@ Saat lisätietoja näistä ongelmista sekä ohjeet niiden ymmärtämiseen ja lie
 
 Saat lisätietoja tästä artikkelista tutustumalla seuraaviin resursseihin:
 
-- [Mitä ovat sivutetut raportit Power BI Premiumissa?](../paginated-reports-report-builder-power-bi.md)
+- [Mitä ovat sivutetut raportit Power BI Premiumissa?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - [Sivutettujen raporttien tietojen nouto-ohjeet](report-paginated-data-retrieval.md)
 - [Milloin sivutettuja raportteja kannattaa käyttää Power BI:ssä?](report-paginated-or-power-bi.md)
-- [Sivutetut raportit Power BI:ssä: usein kysytyt kysymykset](../paginated-reports-faq.md)
+- [Sivutetut raportit Power BI:ssä: usein kysytyt kysymykset](../paginated-reports/paginated-reports-faq.md)
 - [Power BI Premiumin usein kysytyt kysymykset](../service-premium-faq.md)
 - [RDL-siirtotyökalu](https://github.com/microsoft/RdlMigration)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-- Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)
+- Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com)
 
 Tarjolla on Power BI -kumppaneita, jotka voivat auttaa organisaatiotasi toteuttamaan siirtymisen onnistuneesti. Jos haluat ryhtyä yhteistyöhön Power BI -kumppanin kanssa, siirry [Power BI -kumppaniportaaliin](https://powerbi.microsoft.com/partners/).

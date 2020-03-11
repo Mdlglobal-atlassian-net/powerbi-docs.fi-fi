@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/16/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4e42a00c516cf9cd24c307c8f953a6cc7f840314
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: f4e7d1aa580f7ad95da103fc2cb1e7e069a80ee6
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539737"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78946850"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Visualisoinnin lähdetietojen vieminen
 
@@ -166,7 +166,7 @@ On useita strategioita, joita Power BI -järjestelmänvalvojien ja suunnittelijo
 
 - Tietojoukkojen omistajat voivat määrittää rivitason suojauksen (RLS). RLS rajoittaa käyttöoikeuksia vain luku -käyttäjiltä. Mutta jos olet määrittänyt sovellustyötilan ja antanut jäsenille muokkausoikeudet, RLS-rooleja ei sovelleta heihin. Lisätietoja on artikkelissa [Rivitason suojaus](../service-admin-rls.md).
 
-- Raporttisuunnittelijat voivat piilottaa sarakkeita niin, että ne eivät näy **Kentät**-luettelossa. Lisätietoja on kohdassa [Tietojoukon ominaisuudet](../developer/api-dataset-properties.md)
+- Raporttisuunnittelijat voivat piilottaa sarakkeita niin, että ne eivät näy **Kentät**-luettelossa. Lisätietoja on kohdassa [Tietojoukon ominaisuudet](../developer/automation/api-dataset-properties.md)
 
 - Power BI -järjestelmänvalvojat voivat lisätä [luottamuksellisuustunnisteita](../admin/service-security-data-protection-overview.md) koontinäyttöihin, raportteihin, tietojoukkoihin ja tietovoihin. He voivat sitten pakottaa suojausasetuksia, kuten salauksia tai vesileimoja, viedessään tietoa. 
 

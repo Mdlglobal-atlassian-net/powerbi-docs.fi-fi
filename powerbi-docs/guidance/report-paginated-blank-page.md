@@ -8,23 +8,23 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 76d1631b95c30d5ae56ced5d64e5174f6f9db759
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 349459b95a815a52665e50687554f81f90a9c81b
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76041861"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920814"
 ---
 # <a name="avoid-blank-pages-when-printing-paginated-reports"></a>Tyhjien sivujen välttäminen sivutettuja raportteja tulostettaessa
 
-Tämä artikkeli koskee raportin laatijaa, joka suunnittelee Power BI:n [sivutettuja raportteja](../paginated-reports-report-builder-power-bi.md). Se antaa suosituksia, joiden avulla voit välttää tyhjiä sivuja, kun raporttisi viedään paperimuotoon, kuten PDF tai Microsoft Word, tai se tulostetaan.
+Tämä artikkeli koskee raportin laatijaa, joka suunnittelee Power BI:n [sivutettuja raportteja](../paginated-reports/paginated-reports-report-builder-power-bi.md). Se antaa suosituksia, joiden avulla voit välttää tyhjiä sivuja, kun raporttisi viedään paperimuotoon, kuten PDF tai Microsoft Word, tai se tulostetaan.
 
 ## <a name="page-setup"></a>Sivun asetukset
 
 Raportin sivukoko-ominaisuudet määrittävät sivun suunnan, mitat ja reunukset. Voit käyttää näitä raportin ominaisuuksia seuraavasti:
 
 - Käyttämällä raportin **ominaisuussivua**: Napsauta hiiren kakkospainikkeella raporttipohjan ulkopuolella olevaa tummanharmaata aluetta ja valitse sitten _Raportin ominaisuudet_.
-- Käyttämällä [**Ominaisuus**-ruutua](../paginated-reports-report-design-view.md#4-properties-pane): Napsauta raporttipohjan ulkopuolella olevaa tummanharmaata aluetta raporttiobjektin valitsemiseksi. Varmista, että **Ominaisuudet**-ruutu on auki.
+- Käyttämällä [**Ominaisuus**-ruutua](../paginated-reports/paginated-reports-report-design-view.md#4-properties-pane): Napsauta raporttipohjan ulkopuolella olevaa tummanharmaata aluetta raporttiobjektin valitsemiseksi. Varmista, että **Ominaisuudet**-ruutu on auki.
 
 Raportin **ominaisuussivun** **Sivun asetukset** -sivu sisältää helpon käyttöliittymän sivun asetusominaisuuksien tarkastelua ja päivitystä varten.
 
@@ -91,7 +91,7 @@ Lopuksi jos tulostat raportin paperille, varmista, että tulostimeen on lisätty
 
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
-- [Mitä ovat sivutetut raportit Power BI Premiumissa?](../paginated-reports-report-builder-power-bi.md)
-- [Sivutus Power BI:n sivutetuissa raporteissa](../paginated-reports-pagination.md)
+- [Mitä ovat sivutetut raportit Power BI Premiumissa?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
+- [Sivutus Power BI:n sivutetuissa raporteissa](../paginated-reports/paginated-reports-pagination.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com)

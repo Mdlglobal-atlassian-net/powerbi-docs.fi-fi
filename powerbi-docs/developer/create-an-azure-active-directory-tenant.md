@@ -8,20 +8,20 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/28/2019
-ms.openlocfilehash: bdad4a068a5463bd683bc0dbfd20e68873599ace
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: c1944f80616b748d1120d28b1ba91e1f0f2ab6e8
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265126"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041443"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Luo Azure Active Directory -vuokraaja käytettäväksi Power BI:n kanssa
 
-Katso, miten voit luoda uuden Azure Active Directory (Azure AD) -vuokraajan käytettäväksi mukautetun, [Power BI REST -ohjelmointirajapintoja](rest-api-reference.md) kutsuvan sovelluksesi kanssa.
+Katso, miten voit luoda uuden Azure Active Directory (Azure AD) -vuokraajan käytettäväksi mukautetun, [Power BI REST -ohjelmointirajapintoja](automation/rest-api-reference.md) kutsuvan sovelluksesi kanssa.
 
 Vuokraaja edustaa organisaatiota Azure Active Directoryssa. Se on Azure AD -palvelun erityisesiintymä, jonka organisaatio saa käyttöönsä ja omistaa, kun se liittyy Microsoftin pilvipalveluun, kuten Azureen, Microsoft Intuneen tai Office 365:een. Kukin Azure AD -vuokraaja on yksilöllinen ja erillinen muista Azure AD -vuokraajista.
 
-Kun sinulla on Azure AD -vuokraaja, voit määrittää sovelluksen ja myöntää sille oikeuksia, joilla sovelluksesi voi kutsua [Power BI REST -ohjelmointirajapintoja](rest-api-reference.md).
+Kun sinulla on Azure AD -vuokraaja, voit määrittää sovelluksen ja myöntää sille oikeuksia, joilla sovelluksesi voi kutsua [Power BI REST -ohjelmointirajapintoja](automation/rest-api-reference.md).
 
 Organisaatiollasi saattaa jo olla Azure AD -vuokraaja, jota voit käyttää sovellustasi varten. Voit myös luoda uuden vuokraajan erityisesti omaa sovellustasi varten. Tässä artikkelissa näytetään, miten voit luoda uuden vuokraajan.
 

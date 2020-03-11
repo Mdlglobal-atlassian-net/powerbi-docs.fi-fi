@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 06e46413be709ac3eda2102332740d709092187e
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 32f0c03fc0ae586b8b98c7a4c84c9d4c7bbd9078
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74265348"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920954"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
 Tarkista tältä sivulta **Power BI -palvelun** tunnetut ongelmat ja hiljattain julkaistut ominaisuudet. Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -41,11 +41,11 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * Uusia kapasiteettiasetuksia Power BI Premiumille.
 * [Mukautettu tuotemukautus](https://powerbi.microsoft.com/blog/announcing-custom-branding-for-your-organization/) organisaation käyttöön.
 * Yhteenvedettyjen tietojen vienti muodostamisoikeuksilla.
-* [Sivutettujen raporttien](paginated-reports-report-builder-power-bi.md) URL-parametrien tuki.
+* [Sivutettujen raporttien](paginated-reports/paginated-reports-report-builder-power-bi.md) URL-parametrien tuki.
 * Kuukausittaisten sähköpostitilausten tuki. 
 
 ### <a name="july-2019"></a>Heinäkuu 2019
-* [Sivutettujen raporttien](paginated-reports-report-builder-power-bi.md) muiden kuin Premium-tietojoukkojen tuki.
+* [Sivutettujen raporttien](paginated-reports/paginated-reports-report-builder-power-bi.md) muiden kuin Premium-tietojoukkojen tuki.
 * Power BI -[koosteiden](desktop-aggregations.md) yleinen saatavuus.
 * Päivitysilmoitusten lähettäminen muille.
 * [Testaustyökalu](https://powerbi.microsoft.com/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) Power BI Premium -kapasiteeteille.
@@ -57,7 +57,7 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * [Jaettujen ja sertifioitujen tietojoukkojen](service-datasets-across-workspaces.md) julkinen esikatselu.
 * [Premium-kapasiteettimittarisovelluksessa](service-admin-premium-monitor-capacity.md) käytettävissä olevat AI-mittarit.
 * [Power BI -mallisovellusten](service-template-apps-overview.md) yleinen saatavuus.
-* [Sivutettujen raporttien](paginated-reports-report-builder-power-bi.md) yleinen saatavuus Power BI:ssä.
+* [Sivutettujen raporttien](paginated-reports/paginated-reports-report-builder-power-bi.md) yleinen saatavuus Power BI:ssä.
 * Bring Your Own Keyn ([BYOK](service-encryption-byok.md)) julkinen esikatselu Power BI Premiumissa.
 * Katselija-rooli [uudelle työtilakokemukselle](service-new-workspaces.md).
 
@@ -69,9 +69,9 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 ### <a name="april-2019"></a>Huhtikuu 2019
 * Power BI:n [tietovoiden](service-dataflows-overview.md) yleinen saatavuus.
 * Uuden työtilakokemuksen yleinen saatavuus.
-* Uudet Power BI -alueet Ranskassa ja Koreassa.
+* Uudet Power BI -alueet Ranskassa ja Etelä-Koreassa.
 * Päivitetty Q&A-kokemus koontinäyttöjä varten.
-* Azure Analysis Services -tuki [sivutetuissa raporteissa](paginated-reports-report-builder-power-bi.md).
+* Azure Analysis Services -tuki [sivutetuissa raporteissa](paginated-reports/paginated-reports-report-builder-power-bi.md).
 * Power BI -sovelluksissa tuetaan sivutettuja raportteja.
 * [Sähköpostitilaukset](https://powerbi.microsoft.com/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) ja PDF-liitteet sivutettuja raportteja varten.
 * Hallintaportaali tukee Power BI Premiumin yhteenvetoa ja kuormitusarvoja
@@ -108,7 +108,7 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 
 ### <a name="november-2018"></a>Marraskuu 2018
 * Power BI -tietojen valmistelu saatavissa [tietovoiden](service-dataflows-overview.md) julkisessa esikatselussa.
-* [Sivutettujen raporttien](paginated-reports-report-builder-power-bi.md) julkinen esikatselu Power BI Premiumissa.
+* [Sivutettujen raporttien](paginated-reports/paginated-reports-report-builder-power-bi.md) julkinen esikatselu Power BI Premiumissa.
 * Tietojen koko ja tietojoukkojen lukumäärä muistissa [kapasiteetin valvontasovelluksessa](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
 ### <a name="october-2018"></a>Lokakuu 2018
