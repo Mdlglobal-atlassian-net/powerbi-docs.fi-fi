@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 02/13/2020
-ms.openlocfilehash: 031e1fd5d5c57e37e0d70541d6662b0af7b91b07
-ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
+ms.openlocfilehash: 3f27c32442ecf3c70c3dc3e7d070fcc8bf14d7b1
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576786"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237864"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Power BI -visualisointien julkaiseminen kumppanikeskuksessa
 
@@ -37,8 +37,8 @@ Kun olet valmis lähettämään Power BI -visualisoinnin, varmista, että se tä
 | .pbix-raporttitiedostoesimerkki |Kyllä |Auta käyttäjiä tutustumaan visualisointiisi esittelemällä sitä. Korosta arvoa, jota visualisointi tuo käyttäjille, ja anna esimerkkejä käytöstä ja muotoiluasetuksista. Voit myös lisätä loppuun *vinkkisivun*, jolla annat vinkkejä ja kerrot, mitä kannattaa välttää.<br>.pbix-raporttitiedostoesimerkin täytyy toimia offline-tilassa ilman mitään ulkoista yhteyttä. |
 | Kuvake |Kyllä |Sisällytä mukaan oman visualisointisi logo, joka näytetään kaupassa. Se voi olla .png-, .jpg-, .jpeg- tai .gif-muodossa. Sen on oltava tarkalleen 300 × 300 kuvapistettä (leveys × korkeus).<BR>**Tärkeää!** Lue tämä [AppSourcen kuvien tallennusopas](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) huolellisesti ennen logon lähettämistä. |
 | Näyttökuvat |Kyllä |Anna ainakin yksi näyttökuva. Se voi olla .png-, .jpg-, .jpeg- tai .gif-muodossa. Mittojen on oltava tarkalleen 1 366 kuvapistettä (leveys) ja 768 kuvapistettä (korkeus). Tiedostokoko saa olla enintään 1 024 kt.<br>Käyttäjämäärien kasvattamiseksi suosittelemme, että lisäät näyttökuviin tekstikuplia, jotka tuovat esiin tärkeimpien toimintojen etuja. |
-| Tuen latauslinkki |Kyllä |Anna asiakkaillesi tuen URL-osoite. Tämä linkki on lisätty osana myyjän koontinäytön luetteloasi, ja käyttäjät näkevät sen käyttäessään visualisointiluetteloasi AppSourcessa. URL-osoitteen täytyy olla muodossa, johon kuuluu https:// tai https://. |
-| Tietosuoja-asiakirjan linkki |Kyllä |Anna linkki visualisoinnin tietosuojakäytäntöön. Tämä linkki on lisätty osana myyjän koontinäytön luetteloasi, ja käyttäjät näkevät sen käyttäessään visualisointiluetteloasi AppSourcessa. Linkin täytyy olla muodossa, johon kuuluu https:// tai https://. |
+| Tuen latauslinkki |Kyllä |Anna asiakkaillesi tuen URL-osoite. Tämä linkki on lisätty kumppanikeskusluettelosi osaksi, ja käyttäjät näkevät sen käyttäessään visualisointiluetteloasi AppSourcessa. URL-osoitteen täytyy olla muodossa, johon kuuluu https:// tai https://. |
+| Tietosuoja-asiakirjan linkki |Kyllä |Anna linkki visualisoinnin tietosuojakäytäntöön. Tämä linkki on lisätty kumppanikeskusluettelosi osaksi, ja käyttäjät näkevät sen käyttäessään visualisointiluetteloasi AppSourcessa. Linkin täytyy olla muodossa, johon kuuluu https:// tai https://. |
 | Käyttöoikeussopimus (EULA) |Kyllä |Sinun on annettava EULA-tiedosto Power BI -visualisointiasi varten. |
 | Videolinkki |Ei |Voit kasvattaa kiinnostusta visualisointiasi kohtaan antamalla linkin sen esittelyvideoon. URL-osoitteen täytyy olla muodossa, johon kuuluu https:// tai https://. |
 | GitHub-säilö |Ei |Jaa julkinen linkki [GitHub](https://www.github.com)-säilöön, joka sisältää Power BI -visualisoinnin lähteet ja esimerkkitiedot. Tämän ansiosta muut kehittäjät voivat antaa palautetta ja ehdottaa parannuksia koodiisi. |
@@ -74,9 +74,6 @@ Power BI -tiimin on tarkistettava tiedostot, kun lähetät uuden Power BI -visua
 Jos haluat lähettää Power BI -visualisoinnin kumppanikeskukseen, sinun on oltava rekisteröitynyt kumppanikeskukseen. Jos et ole vielä rekisteröitynyt, [avaa kehittäjätili kumppanikeskuksessa](https://docs.microsoft.com/office/dev/store/open-a-developer-account).
 
 Lähetä Power BI -visualisointi kumppanikeskukseen noudattamalla alla olevia ohjeita. Lisätietoja lähettämisprosessista on kohdassa [Office-ratkaisun lähettäminen AppSourceen kumppanikeskuksen kautta](https://docs.microsoft.com/office/dev/store/use-partner-center-to-submit-to-appsource).
-
->[!NOTE]
-> Jos Power BI -visualisoinnin lähettämisprosessi on kesken ja sinun on käytettävä [myyjän koontinäyttöä](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (vanhaa hallintatyökalua), katso ohjeet kohdasta [Power BI -visualisoinnin lähettäminen AppSourceen myyjän koontinäytön kautta](seller-dashboard.md).
 
 1. Kirjaudu sisään **kumppanikeskukseen**.
 

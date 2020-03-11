@@ -8,13 +8,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 02/17/2020
-ms.openlocfilehash: 52a99380f8e1afc39ddfc59a401418e61fe6ad58
-ms.sourcegitcommit: ec4d2d0f52d737e8e0583f6a7b16e6fd87382510
+ms.date: 03/01/2020
+ms.openlocfilehash: 8aea9041665de69b2c5be954dc8f13a6402a06e0
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77782426"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260757"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Sertifioinnin hankkiminen Power BI -visualisoinnille
 
@@ -56,10 +56,14 @@ Jos haluat tietää, miltä Power BI -visualisointisäilö näyttää, tarkastel
 Käytä ohjelmointirajapinnan viimeisintä versiota Power BI -visualisoinnin kirjoittamiseen.
 
 Säilön on sisällettävä seuraavat tiedostot:
-* **.gitignore** - Lisää `node_modules` tähän tiedostoon. Koodi ei voi sisältää *node_modules* -kansiota.
+* **.gitignore** - Lisää `node_modules`, `.tmp`, `dist` tähän tiedostoon. Koodi ei voi sisältää *node_modules*-, *.tmp*- tai *dist*-kansioita.
 * **capabilities.json** - Jos olet lähettämässä uutta versiota Power BI -visualisoinnistasi ja siihen kuuluu tämän tiedoston ominaisuuksiin liittyviä muutoksia, varmista, että ne eivät ole ristiriidassa olemassa olevien käyttäjien raporttien kanssa.
-* **pbiviz.json**
-* **package.json**
+* **pbiviz.json** 
+* **package.json**. Visualisoinnissa on oltava asennettuna seuraava paketti:
+   * [tslint](https://www.npmjs.com/package/tslint): 5.18.0 tai uudempi
+   * [typescript](https://www.npmjs.com/package/typescript): 3.0.0 tai uudempi
+   * [tslint-microsoftcontrib](https://www.npmjs.com/package/tslint-microsoft-contrib): 6.2.0 tai uudempi
+   * Tiedoston on sisällettävä komento lint-toiminnon suorittamiseen:  lint: tslint -c tslint.json -p tsconfig.json
 * **package-lock.json**
 * **tsconfig.json**
 
@@ -70,7 +74,7 @@ Varmista, että seuraavat komennot eivät palauta mitään virheitä.
 * `npm install`
 * `pbiviz package`
 * `npm audit` - Ei saa palauttaa korkean tai kohtalaisen tason varoituksia.
-* [TSlint Microsoftilta](https://www.npmjs.com/package/tslint-microsoft-contrib) ilman ohitettuja määrityksiä. Tämä komento ei saa palauttaa mitään lint-virheitä.
+* [TSlint Microsoftilta](https://www.npmjs.com/package/tslint-microsoft-contrib) ja [vaadittu määritys](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/tslint.json). Tämä komento ei saa palauttaa mitään lint-virheitä.
 
 ### <a name="compiling-requirements"></a>Kääntämisvaatimukset
 

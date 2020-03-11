@@ -45,7 +45,7 @@ Käytettävissä olevat toiminnot määräytyvät sisällön *suunnittelijan* m�
 * Valitsemalla tähtikuvakkeen voit [lisätä koontinäytön tai raportin suosikkeihin](end-user-favorite.md) ![tähtikuvake](./media/end-user-shared-with-me/power-bi-star-icon.png).
 * Koontinäytön tai raportin poistaminen  ![roskakorikuvake](./media/end-user-shared-with-me/power-bi-delete-icon.png).
 * Voit jakaa joitakin koontinäyttöjä ja raportteja edelleen muille  ![jakamiskuvake](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
-* [Avaa raportti Exceliin](end-user-export.md) ![vie Exceliin-kuvake](./media/end-user-shared-with-me/power-bi-excel.png) 
+* [Avaa raportti Excelissä](end-user-export.md) ![vie Exceliin -kuvake](./media/end-user-shared-with-me/power-bi-excel.png) 
 * [Näytä merkitykselliset tiedot](end-user-insights.md), jotka Power BI löytää tiedoista ![merkitykselliset tiedot -kuvake](./media/end-user-shared-with-me/power-bi-insights.png).
   
   > [!NOTE]

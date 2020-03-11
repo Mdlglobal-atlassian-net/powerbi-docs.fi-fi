@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/25/2020
+ms.date: 03/03/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 4f256d9b0cbecf76ff002cc0214155b8b36014ee
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 2c984abaec40028fb01affa8ff7bf0bf87cdd616
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609895"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260872"
 ---
 # <a name="large-models-in-power-bi-premium-preview"></a>Suuret mallit Power BI Premiumissa (esikatselu)
 
@@ -123,7 +123,7 @@ Muista seuraavat rajoitukset, kun käytät suuria malleja:
 
 ## <a name="availability-in-regions"></a>Saatavuus eri alueilla
 
-Suuret mallit eivät ole saatavilla kaikilla alueilla, joilla Power BI on saatavilla. Power BI:n suuret mallit ovat käytettävissä vain niillä Azure-alueilla, jotka tukevat [Azuren premium-tiedostosäilöä](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers).
+Power BI:n suuret mallit ovat käytettävissä vain tietyillä Azure-alueilla, jotka tukevat [Azuren premium-tiedostosäilöä](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers).
 
 Seuraavassa on lueteltu alueet, joilla Power BI:ssä voidaan käyttää suuria malleja. Suuria malleja ei tueta alueilla, joita ei ole seuraavassa luettelossa:
 

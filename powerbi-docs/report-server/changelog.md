@@ -7,13 +7,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/27/2020
-ms.openlocfilehash: 993d83e15eafa0e40938eee13cbeabec75389f47
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.date: 03/02/2020
+ms.openlocfilehash: 0a8cf16ddf7fe9e091599f1790a37a83b9923240
+ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819533"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78237956"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
@@ -24,6 +24,14 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
 
 ## <a name="january-2020"></a>Tammikuu 2020
 - **Power BI -raporttipalvelin**
+    - *Versio: 1.6.7364.4075 (koontiversio 15.0.1102.777), julkaistu: Maaliskuu 2, 2020*
+         - Ohjelmavirhekorjauksia
+           -  Olemme korjanneet Power BI -raporttien ongelman, joka esti latauksen tiettyihin tietolähteisiin.
+           -  Olemme korjanneet Power BI -raporttipalvelimen työpöytälinkin latauskohteen portaalista.
+           -  Olemme korjanneet DynamicImageDPI for Excel -hahmontamisen.
+           -  Olemme korjanneet Oracle-yhteyksiin liittyvän ongelman, jossa yhteydet käyttivät väärää säikeen maa-asetusta tietyissä monen käyttäjän skenaarioissa.
+           -  Olemme korjanneet tilanteen, jossa CustomHeaders-oletusarvo aiheutti virheitä raportin upotuksessa.
+           -  Olemme korjanneet ongelman, jossa SQL-parametrien nimet luotiin tietyissä tapauksissa virheellisesti.
     - *Versio: 1.6.7327.3007 (koontiversio 15.0.1102.759), julkaistu: 23. tammikuuta 2020*
          - Ominaisuudet
             -  Vie Exceliin Power BI -raporteista.

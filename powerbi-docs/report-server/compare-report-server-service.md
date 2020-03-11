@@ -8,13 +8,13 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.date: 02/13/2020
-ms.openlocfilehash: c760450319f5ca32856520bce9c9f9b67a8616d6
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.date: 03/04/2020
+ms.openlocfilehash: a48f9c5938c93376cc5dcdbe3491ee2a7e6813c0
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427756"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290655"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Power BI -raporttipalvelimen ja Power BI -palvelun vertailu
 
@@ -24,11 +24,11 @@ Power BI -raporttipalvelimessa ja Power BI -palvelussa on monia samankaltaisuuks
 
 | Ominaisuudet | Power BI -raporttipalvelin | Power BI -palvelu | Huomautukset |
 |---------|---------|---------|---------|
-| Käyttöönotto | Paikallisesti tai pilvipalvelussa | Pilvipalvelut | Power BI -raporttipalvelin voidaan ottaa käyttöön Azure-näennäiskoneissa (pilvipalvelussa), mikäli käytössä on Power BI Premium -käyttöoikeus |
+| Käyttöönotto | Paikallisesti tai pilvipalvelussa | Pilvipalvelut | Power BI -raporttipalvelin voidaan ottaa käyttöön Azure-näennäiskoneissa (pilvipalvelussa), mikäli käytössä on Power BI Premium -käyttöoikeus tai SQL Server Enterprise ja Software Assurance|
 | Lähdetiedot | Pilvipalvelu ja/tai paikallinen | Pilvipalvelu ja/tai paikallinen |  |
 | Käyttöoikeus | Power BI Premium tai SQL Server EE ja SA-ylläpito | Power BI Pro ja/tai Power BI Premium | |  
 | Elinkaari | Moderni elinkaarikäytäntö | Täysin hallittu palvelu |  |
-| Julkaisuaikataulu | Kolme kertaa vuodessa (tammikuu, toukokuu, syyskuu) | Kerran kuukaudessa | Uusimmat ominaisuudet ja korjaukset julkaistaan ensin Power BI -palvelussa. Useimmat ydintoiminnot julkaistaan Power BI -raporttipalvelimessa muutaman versiopäivityksen sisällä; eräät ominaisuudet on tarkoitettu vain Power BI -palveluun. |
+| Julkaisuaikataulu | Kolme kertaa vuodessa (tammikuu, toukokuu, syyskuu) | Kerran kuukaudessa | Uusimmat ominaisuudet ja korjaukset julkaistaan ensin Power BI -palvelussa. Power BI -raporttipalvelimeen tulee jokaisen julkaisuversion myötä koonti Power BI Desktopin julkaisuversion ominaisuuksista; suurin osa muista ominaisuuksista on tarkoitettu vain Power BI -palveluun. |
 | Luo Power BI -raportteja Power BI Desktopissa | Kyllä | Kyllä |  |
 | Luo Power BI -raportteja selaimessa | Ei | Kyllä |  |
 | Kutsu ja yhdistä Power BI:n jaettuihin tietojoukkoihin | Ei | Kyllä | [Johdanto tietojoukkojen käyttöön eri työtiloissa ](../service-datasets-across-workspaces.md) |

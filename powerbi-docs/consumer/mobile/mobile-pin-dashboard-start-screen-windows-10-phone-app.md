@@ -22,7 +22,7 @@ Voit kiinnittää Power BI -koontinäyttöjä Windowsin aloitusnäyttöön Power
 
 ## <a name="pin-a-dashboard-to-your-start-screen-as-a-live-tile"></a>Koontinäytön kiinnittäminen aloitusnäyttöön tapahtumaruutuna
 1. Avaa koontinäyttö.
-2. Napauta **Kiinnitä aloitusnäyttöön** ![Kiinnitä aloitusnäyttöön -kuvake](./media/mobile-pin-dashboard-start-screen-windows-10-phone-app/power-bi-windows-10-pin-start-icon.png).
+2. Napauta **Kiinnitä aloitusnäyttöön**![Kiinnitä aloitusnäyttöön -kuvake](./media/mobile-pin-dashboard-start-screen-windows-10-phone-app/power-bi-windows-10-pin-start-icon.png).
    
    ![Windows 10:n mobiilisovelluksen yläpalkki](./media/mobile-pin-dashboard-start-screen-windows-10-phone-app/power-bi-windows-10-pin-start.png)
    

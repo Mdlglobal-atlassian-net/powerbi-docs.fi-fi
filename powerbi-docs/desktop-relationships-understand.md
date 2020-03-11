@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 124f373e7841cb899f0a26debb2bcc8302e8e970
-ms.sourcegitcommit: 7efbe508787029e960d6d535ac959a922c0846ca
+ms.openlocfilehash: 7be55c8b44a89ad5b317743b62e033cf34a01ef9
+ms.sourcegitcommit: b59ec11a4a0a3d5be2e4d91548d637d31b3491f8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76309121"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290678"
 ---
 # <a name="create-model-relationships-in-power-bi-desktop"></a>Mallien suhteiden luominen Power BI Desktopissa
 
@@ -46,7 +46,7 @@ Power BI Desktopin entä jos -parametri on ominaisuus, joka luo irrallisen taulu
 
 ## <a name="relationship-properties"></a>Yhteyden ominaisuudet
 
-Malliyhteys liittää yhden taulukon yhden sarakkeen toisen taulukon yhteen sarakkeeseen. (On yksi erityinen tapaus, jossa tämä vaatimus ei ole tosi, ja tämä koskee vain monisarakkeisia yhteyksiä DirectQuery-malleissa. Lisätietoja on artikkelissa DAX-funktiosta [COMBINEVALUES](/dax/combinevalues-function-dax).)
+Malliyhteys liittää yhden taulukon yhden sarakkeen toisen taulukon yhteen sarakkeeseen. (On yksi erityinen tapaus, jossa tämä vaatimus ei ole tosi, ja se koskee vain monisarakkeisia yhteyksiä DirectQuery-malleissa. Lisätietoja on artikkelissa DAX-funktiosta [COMBINEVALUES](/dax/combinevalues-function-dax).)
 
 > [!NOTE]
 > Saraketta ei ole mahdollista liittää toiseen sarakkeeseen _samassa taulukossa_. Tämä sekoitetaan usein mahdollisuuteen määrittää relaatiotietokannan viiteavainrajoite, joka on itseensä viittaava taulukon osalta. Tätä relaatiotietokantakonseptia voidaan käyttää pää-alielementtisuhteiden tallentamiseen (esimerkiksi jokainen työntekijätietue on suhteessa “raportoi henkilölle” -työntekijään). Tämäntyyppisiin yhteyksiin perustuvan mallihierarkian luominen ei ole mahdollista luomalla malliyhteyksiä. Jos haluat saavuttaa tämän, katso artikkelia [Pää-alielementtifunktiot](/dax/parent-and-child-functions-dax).
@@ -65,13 +65,13 @@ Neljä vaihtoehtoa pikamerkintätapoineen on kuvattu seuraavassa luettelossa:
 - Yksi yhteen (1:1)
 - Monta moneen (\*:\*)
 
-Kun luot yhteyden Power BI Desktopissa, suunnittelutoiminta havaitsee sen automaattisesti ja määrittää kardinaliteettityypin. Suunnittelutoiminto voi tehdä tämän, koska se tekee mallista kyselyn sen selvittämiseksi, mitkä sarakkeet sisältävät yksilöllisiä arvoja. Tuontimalleissa se käyttää sisäisiä tallennustilastoja; DirectQuery-malleissa se lähettää profilointikyselyjä tietolähteelle. Joskus se voi kuitenkin erehtyä. Tämä tapahtuu siksi, että tietoja ei ole vielä ladattu taulukoihin, tai siksi, että sarakkeet, joiden odotat sisältävän kaksoiskappalearvoja sisältävät vain ainutlaatuisia arvoja. Kummassakin tapauksessa voit päivittää kardinaliteettityypin, jos kaikki “yksi”-puolen sarakkeet sisältävät ainutlaatuisia arvoja (tai tietorivejä ei vielä ole ladattu taulukkoon).
+Kun luot yhteyden Power BI Desktopissa, suunnittelutoiminta havaitsee sen automaattisesti ja määrittää kardinaliteettityypin. Suunnittelutoiminto tekee mallista kyselyn ja selvittää, mitkä sarakkeet sisältävät yksilöllisiä arvoja. Tuontimalleissa se käyttää sisäisiä tallennustilastoja; DirectQuery-malleissa se lähettää profilointikyselyjä tietolähteelle. Joskus se voi kuitenkin erehtyä. Tämä tapahtuu siksi, että tietoja ei ole vielä ladattu taulukoihin, tai siksi, että sarakkeet, joiden odotat sisältävän kaksoiskappalearvoja, sisältävät vain ainutlaatuisia arvoja. Kummassakin tapauksessa voit päivittää kardinaliteettityypin, jos kaikki “yksi”-puolen sarakkeet sisältävät ainutlaatuisia arvoja (tai tietorivejä ei vielä ole ladattu taulukkoon).
 
 **Yksi moneen**- ja **Monta yhteen** -kardinaliteettivalinnat ovat oleelliselta osin sama asia, ja ne ovat myös kaikkein tavallisimmat kardinaliteettityypit.
 
 Kun määrität Yksi moneen- tai Monta yhteen -yhteyden, valitset sen, joka vastaa sarakkeiden yhdistämisjärjestystäsi. Pohdi, miten määrittäisit yhteyden **Tuote**-taulukosta **Myynti**-taulukkoon käyttämällä kustakin taulukosta löytyvää **ProductID**-saraketta. Kardinaliteettityypiksi tulee _Yksi moneen_, koska sarake **ProductID** **Tuote**-taulukossa sisältää yksilöllisiä arvoja. Jos olet yhdistänyt taulukot päinvastaiseen suuntaan, **Myynnistä** **Tuotteeseen**, kardinaliteettityypiksi tulee _Monta yhteen_.
 
-**Yksi yhteen** -yhteys tarkoittaa, että molemmat sarakkeet sisältävät yksilöllisiä arvoja. Tämä kardinaliteettityyppi ei ole yleinen, eikä se luultavasti ole optimaalinen mallin rakenne, koska tallennetaan tarpeetonta tietoa.<!-- For guidance on using this cardinality type, see the [One-to-one relationship guidance](guidance/relationships-one-to-one) article.-->
+**Yksi yhteen** -yhteys tarkoittaa, että molemmat sarakkeet sisältävät yksilöllisiä arvoja. Tämä kardinaliteettityyppi ei ole yleinen, eikä se luultavasti ole optimaalinen mallin rakenne, koska tallennetaan tarpeetonta tietoa. Lisätietoja tämän kardinaliteettityypin käyttämisestä on artikkelissa [Yksi-yhteen-suhteen ohjeet](guidance/relationships-one-to-one.md).
 
 **Monta moneen** -yhteys tarkoittaa, että molemmat sarakkeet voivat sisältää saman arvon useampia kertoja. Tätä kardinaliteettityyppiä käytetään harvoin. Siitä on yleensä hyötyä silloin, kun suunnitellaan monimutkaisia mallivaatimuksia. Ohjeita tämän kardinaliteettityypin käyttämisestä on kohdassa [Monta-moneen-suhteen ohjeet](guidance/relationships-many-to-many.md).
 
@@ -95,13 +95,13 @@ _Yksittäinen_ ristisuodatussuunta tarkoittaa “yhteen suuntaan” ja _Molemmat
 
 Yksi moneen -yhteyksissä ristisuodatussuunta menee aina “yksi”-puolelta, ja valinnaisesti “monta”-puolelta (kaksisuuntainen). Yksi yhteen -yhteyksissä ristisuodatussuunta lähtee aina molemmista taulukoista. Lopuksi: Monta moneen -yhteyksissä ristisuodatussuunta voi lähteä jommastakummasta taulukosta, tai molemmista taulukoista. Huomaa, että kun kardinaliteettityyppi sisältää “yksi”-puolen, suodattimet leviävät aina siltä puolelta.
 
-Kun ristisuodatussuunnaksi on määritetty **Molemmat**, lisäominaisuutena on käytettävissä kaksisuuntainen suodatus, kun pakotetaan rivitason suojaussääntöjä (RLS). Lisätietoja RLS:stä saat artikkelista [Rivitason suojaus (RLS) Power BI Desktopissa](desktop-rls.md).
+Kun ristisuodatussuunnaksi on määritetty **Molemmat**, käytettävissä on lisäominaisuus. Se voi käyttää kaksisuuntaista suodatusta, kun rivitason suojauksen (RLS) sääntöjä käytetään. Lisätietoja RLS:stä saat artikkelista [Rivitason suojaus (RLS) Power BI Desktopissa](desktop-rls.md).
 
 Yhteyden ristisuodatussuunnan muokkaaminen, kuten suodatuksen leviämisen poistaminen käytöstä, voidaan tehdä myös mallilaskelman avulla. Se tehdään käyttämällä DAX-funktiota [CROSSFILTER](/dax/crossfilter-function).
 
 Kaksisuuntaiset yhteydet voivat vaikuttaa haitallisesti suorituskykyyn. Lisäksi kaksisuuntaisen yhteyden määrittäminen voi synnyttää moniselitteisiä leviämispolkuja. Tässä tapauksessa Power BI Desktop voi epäonnistua yhteyden muuttamisessa ja antaa sinulle virheilmoituksen. Joskus Power BI Desktop voi kuitenkin sallia moniselitteisen yhteyspolun määrittämisen taulukoiden välille. Käsittelyjärjestyssääntöjä, jotka vaikuttavat moniselitteisyyden tunnistamiseen ja polun määrittämiseen, kuvataan myöhemmin tämän artikkelin aiheessa [Käsittelyjärjestyssäännöt](#precedence-rules).
 
-Suosittelemme kaksisuuntaisen suodatuksen käyttöä vain kun se on välttämätöntä.<!-- For guidance on bi-directional filtering, see the [Cross filter relationship guidance](guidance/relationships-bidirectional-filtering) article.-->
+Suosittelemme kaksisuuntaisen suodatuksen käyttöä vain kun se on välttämätöntä. Lisätietoja on artikkelissa [Kaksisuuntaisen suhteen ohjeet](guidance/relationships-bidirectional-filtering.md).
 
 > [!TIP]
 > Power BI Desktopin mallinäkymässä voit selvittää yhteyden ristisuodatussuunnan panemalla merkille yhteysviivan nuolenpääkuviot. Yksinkertainen nuolenpääkuvio edustaa yksisuuntaista suodatinta nuolenpään suunnassa, kaksinkertainen nuolenpääkuvio edustaa kaksisuuntaista yhteyttä.
@@ -110,7 +110,7 @@ Suosittelemme kaksisuuntaisen suodatuksen käyttöä vain kun se on välttämät
 
 Kahden mallitaulukon välillä voi olla vain yksi aktiivinen suodatuksen levityspolku. On kuitenkin mahdollista ottaa käyttöön ylimääräisiä yhteyspolkuja, vaikka nämä yhteydet on määritettävä _passiivisiksi_. Passiivisia yhteyksiä voidaan muuttaa aktiivisiksi vain mallilaskelman arvioinnin aikana. Se tehdään käyttämällä DAX-funktiota [USERELATIONSHIP](/dax/userelationship-function-dax).
 
-<!--For guidance on defining inactive relationships, see the [Active vs inactive relationship guidance](guidance/relationships-active-inactive) article.-->
+Lisätietoja on artikkelissa [Aktiivisten ja passiivisten suhteiden ohjeet](guidance/relationships-active-inactive.md).
 
 > [!TIP]
 > Power BI Desktop -mallinäkymässä voit selvittää, onko yhteys aktiivinen vai passiivinen. Aktiivista yhteyttä edustaa yhtenäinen viiva; passiivinen yhteys esitetään katkoviivana.
@@ -119,7 +119,7 @@ Kahden mallitaulukon välillä voi olla vain yksi aktiivinen suodatuksen levitys
 
 Ominaisuus _Oleta viite-eheys_ on käytettävissä vain yksi moneen- ja yksi yhteen -yhteyksissä kahden DirectQuery-tallennustapataulukon välillä, jotka perustuvat samaan tietolähteeseen. Kun ominaisuus on käytössä, tietolähteelle lähetettävät alkuperäiskyselyt liittävät molemmat taulukot yhteen käyttämällä SISÄLIITOSTA ULKOLIITOKSEN sijaan. Yleensä tämän ominaisuuden käyttöönotto parantaa kyselyn tehokkuutta, mutta tämä riippuu kuitenkin tietolähteen ominaisuuksista.
 
-Tämän ominaisuuden tulee aina olla käytössä, kun taulukoiden välillä on tietokannan viiteavaimen rajoite. Silloin, kun viiteavaimen rajoitetta ei ole, voit yhä ottaa ominaisuuden käyttöön, jos olet varma tietojen eheydestä.
+Ota tämä ominaisuus aina käyttöön, kun taulukoiden välillä on tietokannan viiteavaimen rajoite. Silloin, kun viiteavaimen rajoitetta ei ole, voit yhä ottaa ominaisuuden käyttöön, jos olet varma tietojen eheydestä.
 
 > [!IMPORTANT]
 > Jos tietojen eheys vaarantuu, sisäliitos poistaa yhteensopimattomat rivit taulukoiden väliltä. Pohdi esimerkiksi mallitaulukkoa **Myynti**, jonka **ProductID**-sarakkeeseen sisältyy siihen liittyvästä **Tuote**-taulukosta puuttuva arvo. Suodattimien levittäminen **Tuote**-taulukosta **Myynti**-taulukkoon poistaa tuntemattomien tuotteiden myyntirivit. Tämä johtaa siihen, että myyntitulokset näkyvät todellista pienempinä.
@@ -164,7 +164,7 @@ Seuraavassa esimerkissä on kaksi vahvaa yhteyttä, molemmat merkitty **S**:llä
 
 Tuontimalleilla, joissa kaikki tiedot on tallennettu Vertipaq-välimuistiin, jokaiselle vahvalle yhteydelle luodaan tietorakenne aina kun tiedot päivitetään. Tietorakenteet koostuvat kaikkien sarakkeidenvälisten arvojen indeksoiduista linkityksistä, ja niiden tarkoitus on nopeuttaa taulukoiden liittämistä kyselyn aikana.
 
-Kyselyn aikana vahvat yhteydet mahdollistavat _taulukon laajentamisen_. Taulukon laajentaminen johtaa virtuaalitaulukon luomiseen, kun säilytetään perustaulukon alkuperäiset sarakkeet ja laajennetaan ne liittyviin taulukoihin. Tuontitaulukoilla tämä tehdään kyselymoduulissa; DirectQuery-taulukoilla se tehdään lähdetietokantaan lähetetyssä alkuperäisessä kyselyssä (silä ehdolla, että “Oleta viite-eheys” -ominaisuus ei ole käytössä). Kyselymoduuli toimii sitten laajennetun taulukon yhteydessä käyttäen suodattimia ja ryhmitellen laajennetun taulukon sarakkeiden arvojen mukaan.
+Kyselyn aikana vahvat yhteydet mahdollistavat _taulukon laajentamisen_. Taulukon laajentaminen johtaa virtuaalitaulukon luomiseen, kun säilytetään perustaulukon alkuperäiset sarakkeet ja laajennetaan ne liittyviin taulukoihin. Tuontitaulukoilla tämä tehdään kyselymoduulissa; DirectQuery-taulukoilla se tehdään lähdetietokantaan lähetetyssä alkuperäisessä kyselyssä (sillä ehdolla, että **Oleta viite-eheys**-ominaisuus ei ole käytössä). Kyselymoduuli toimii sitten laajennetun taulukon yhteydessä käyttäen suodattimia ja ryhmitellen laajennetun taulukon sarakkeiden arvojen mukaan.
 
 > [!NOTE]
 > Passiiviset yhteydet laajennetaan silloinkin, kun ei ole laskelmaa käyttämässä yhteyttä. Kaksisuuntaisilla yhteyksillä ei ole vaikutusta taulukon laajentamiseen.
@@ -194,7 +194,7 @@ Seuraavassa esimerkissä on kaksi heikkoa yhteyttä, molemmat merkitty **W**:ll�
 
 Tuontimalleissa tietorakenteita ei koskaan luoda heikoille yhteyksille. Tämä tarkoittaa, että taulukkoliitokset on ratkaistava kyselyn aikana.
 
-Taulukon laajentamista ei koskaan tapahdu heikoilla yhteyksillä. Taulukot liitetään käyttämällä SISÄLIITOS-semantiikkaa, ja tästä syystä tyhjiä virtuaalirivejä ei lisätä viite-eheysrikkomusten kompensoimiseksi.
+Taulukon laajentamista ei koskaan tapahdu heikoilla yhteyksillä. Taulukot liitetään käyttämällä INNER JOIN -semantiikkaa, ja tästä syystä tyhjiä virtuaalirivejä ei lisätä viite-eheysrikkomusten kompensoimista varten.
 
 Heikkoihin yhteyksiin liittyy muitakin rajoituksia:
 
@@ -210,7 +210,7 @@ Kaksisuuntaiset yhteydet voivat tuoda käyttöön useita – ja siksi moniselitt
 
 1. Monta yhteen- ja yksi yhteen -yhteydet, myös heikot yhteydet
 2. Monta moneen -yhteydet
-3. Kaksisuuntaiset yhteydet päinvastaisessa suunnassa (ts. “monta”-puolelta)
+3. Kaksisuuntaiset yhteydet päinvastaisessa suunnassa (eli ”monta”-puolelta)
 
 ### <a name="performance-preference"></a>Suorituskykyjärjestys
 
@@ -221,12 +221,16 @@ Seuraavassa luettelossa yhteyksien suodattimenlevityskyky on järjestyksessä no
 3. Monta moneen -malliyhteydet, jotka on saavutettu välittäjätaulukon avulla, mikä edellyttää ainakin yhtä kaksisuuntaista yhteyttä
 4. Saartenväliset yhteydet
 
-<!--For further information and guidance on many-to-many relationships, see the [Cross filter relationship guidance](guidance/relationships-bidirectional-filtering) article.-->
-
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
+Saat lisätietoja tästä artikkelista tutustumalla seuraaviin resursseihin:
+
 - [Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä](guidance/star-schema.md)
+- [Yksi-yhteen-suhteen ohjeet](guidance/relationships-one-to-one.md)
 - [Monta-moneen-suhteen ohjeet](guidance/relationships-many-to-many.md)
-- Video: [Huomioitavat asiat Power BI:n yhteyksiin liittyen](https://youtu.be/78d6mwR8GtA)
+- [Aktiivisten ja passiivisten suhteiden ohjeet](guidance/relationships-active-inactive.md)
+- [Kaksisuuntaisen suhteen ohjeet](guidance/relationships-bidirectional-filtering.md)
+- [Yhteyden vianmääritysohjeet](guidance/relationships-troubleshoot.md)
+- Video: [Huomioitavat asiat Power BI:n yhteyksiin liittyen](https://www.youtube.com/watch?v=78d6mwR8GtA)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-- Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com)
+- Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)

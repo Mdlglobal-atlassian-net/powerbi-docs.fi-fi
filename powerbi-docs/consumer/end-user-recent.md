@@ -42,7 +42,7 @@ Jos sinulla on vähintään kuusi hiljattain käytettyä kohdetta, voit avata Vi
 Käytettävissä olevat toiminnot määräytyvät sisällön *suunnittelijan* määrittämien asetusten mukaan. Vaihtoehtojasi voivat olla seuraavat:
 * Valitsemalla tähtikuvakkeen voit [lisätä koontinäytön, raportin tai sovelluksen suosikkeihin](end-user-favorite.md) ![tähtikuvake](./media/end-user-shared-with-me/power-bi-star-icon.png).
 * Voit jakaa joitakin koontinäyttöjä ja raportteja edelleen muille  ![jakamiskuvake](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
-* [Avaa raportti Exceliin](end-user-export.md) ![vie Exceliin-kuvake](./media/end-user-shared-with-me/power-bi-excel.png) 
+* [Avaa raportti Excelissä](end-user-export.md) ![vie Exceliin -kuvake](./media/end-user-shared-with-me/power-bi-excel.png) 
 * [Näytä merkitykselliset tiedot](end-user-insights.md), jotka Power BI löytää tiedoista ![merkitykselliset tiedot -kuvake](./media/end-user-shared-with-me/power-bi-insights.png).
 * Lisäksi, jos luetteloista tulee pitkiä, voit [etsiä tarvitsemasi käyttämällä hakukenttää ja lajittelua](end-user-search-sort.md). Voit selvittää, voiko sarakkeen lajitella, pitämällä hiiren osoitinta sen kohdalla, kunnes näkyviin tulee nuoli. Tässä esimerkissä hiiren osoittimen pitäminen **Viimeisin käyttö** -sarakkeen päällä tuo näkyviin nuolen – viimeisin sisältösi voidaan lajitella käyttöpäivän mukaan. 
 

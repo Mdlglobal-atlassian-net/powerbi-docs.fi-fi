@@ -6,23 +6,20 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/25/2019
+ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 6ce82516413fe43cfbc1336e2f6f51003277fb4a
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.openlocfilehash: 937f8ca693113cf85d265420da44f7c9f8b68f5f
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76161290"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260442"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Monta-moneen-suhteen ohjeet
 
 Tämä artikkeli on tarkoitettu tietojen mallintajille, jotka käyttävät Power BI Desktopia. Tässä kuvataan kolme erilaista monta-moneen-mallinnusskenaariota. Lisäksi tässä annetaan ohjeet niiden onnistuneeseen suunnitteluun malleissasi.
 
-> [!NOTE]
-> Tämä artikkeli ei sisällä mallien suhteiden johdantoa. Jos et ole täysin perehtynyt suhteisiin, niiden ominaisuuksiin tai niiden määrittämiseen, suosittelemme, että luet ensin [Mallien suhteet Power BI Desktopissa](../desktop-relationships-understand.md) -artikkelin.
->
-> Lisäksi on tärkeää, että ymmärrät tähtirakenteen periaatteet. Lisätietoja on artikkelissa [Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä](star-schema.md).
+[!INCLUDE [relationships-prerequisite-reading](includes/relationships-prerequisite-reading.md)]
 
 Monta-moneen-skenaarioita on itse asiassa kolme. Ne ilmenevät, kun teet seuraavaa:
 
@@ -164,7 +161,7 @@ Visualisoinnissa näytetään tarkka tulos. Mallin hyödyllisyys on kuitenkin ra
 
 ### <a name="relate-many-to-many-facts-guidance"></a>Liitä monta-moneen-faktat – ohjeet
 
-Emme yleisesti ottaen suosittele kahden faktatyyppisen taulukon liittämistä suoraan monta-moneen-kardinaliteetin avulla. Tärkein syy on se, että malli ei tarjoa joustavuutta raportin visualisointien suodatukseen tai ryhmittelyyn. Esimerkissä visualisoinnit voivat suodattaa tai ryhmitellä vain **Order**-taulukon **OrderID**-sarakkeen mukaan. Toinen syy liittyy tietojesi laatuun. Jos tietojesi eheydessä on ongelmia, joitakin rivejä voidaan jättää pois kyselyjen suorittamisen aikana _heikon suhteen_ vuoksi. Katso lisätietoja kohdasta [Suhteen arviointi](../desktop-relationships-understand.md#relationship-evaluation).
+Emme yleisesti ottaen suosittele kahden faktatyyppisen taulukon liittämistä suoraan monta-moneen-kardinaliteetin avulla. Tärkein syy on se, että malli ei tarjoa joustavuutta raportin visualisointien suodatukseen tai ryhmittelyyn. Esimerkissä visualisoinnit voivat suodattaa tai ryhmitellä vain **Order**-taulukon **OrderID**-sarakkeen mukaan. Toinen syy liittyy tietojesi laatuun. Jos tietojesi eheydessä on ongelmia, joitakin rivejä voidaan jättää pois kyselyjen suorittamisen aikana _heikon suhteen_ vuoksi. Jos haluat lisätietoja, katso [Mallien suhteet Power BI Desktopissa (Suhteen arviointi)](../desktop-relationships-understand.md#relationship-evaluation).
 
 Faktatyyppisten taulukoiden suoran liittämisen sijaan suosittelemme [tähtirakenteen](star-schema.md) periaatteiden käyttöönottoa. Voit tehdä sen lisäämällä dimensiotyyppisiä taulukoita. Dimensiotyyppiset taulukot liittyvät faktatyyppisiin taulukoihin yksi-moneen-suhteiden avulla. Tämä rakennemenettely on tehokas, sillä se tarjoaa joustavia raportointivaihtoehtoja. Sen avulla voit suodattaa tai ryhmitellä käyttämällä mitä tahansa dimensiotyyppisiä sarakkeita ja tehdä yhteenvedon mistä tahansa liittyvästä faktatyyppisestä taulukosta.
 
@@ -187,7 +184,7 @@ Kun otat käyttöön tähtirakenteen periaatteet, saat seuraavat edut:
 - Raportin visualisoinnit voivat _suodattaa tai ryhmitellä_ dimensiotyyppisen taulukon minkä tahansa näkyvissä olevan sarakkeen mukaan
 - Raportin visualisoinnit voivat _tehdä yhteenvedon_ faktatyyppisen taulukon mistä tahansa näkyvissä olevasta sarakkeesta
 - **OrderLine**-, **OrderDate**- tai **Product**-taulukoihin käytetyt suodattimet leviävät molempiin faktatyyppisiin taulukoihin
-- Kaikki suhteet ovat yksi-moneen-suhteita, ja jokainen suhde on _vahva suhde_. Tietojen eheyteen liittyviä ongelmia ei peitetä. Katso lisätietoja kohdasta [Suhteen arviointi](../desktop-relationships-understand.md#relationship-evaluation).
+- Kaikki suhteet ovat yksi-moneen-suhteita, ja jokainen suhde on _vahva suhde_. Tietojen eheyteen liittyviä ongelmia ei peitetä. Jos haluat lisätietoja, katso [Mallien suhteet Power BI Desktopissa (Suhteen arviointi)](../desktop-relationships-understand.md#relationship-evaluation).
 
 ## <a name="relate-higher-grain-facts"></a>Liitä yksityiskohtaiset faktat
 
@@ -300,4 +297,6 @@ Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resurssei
 
 - [Mallien suhteet Power BI Desktopissa](../desktop-relationships-understand.md)
 - [Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä](star-schema.md)
+- [Suhteen vianmääritysohjeet](relationships-troubleshoot.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+- Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)

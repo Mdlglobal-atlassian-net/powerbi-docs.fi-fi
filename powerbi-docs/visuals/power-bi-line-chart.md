@@ -26,7 +26,7 @@ Näissä ohjeissa käytetään myynnin ja markkinoinnin mallisovellusta sellaise
 
 1. Aloita tyhjältä raporttisivulta. Jos käytät Power BI ‑palvelua, varmista, että avaat raportin [muokkausnäkymässä](../service-interact-with-a-report-in-editing-view.md).
 
-2. Valitse Kentät-ruudusta **SalesFact**\>**Yksiköt yhteensä**, ja valitse **Päivämäärä** > **Kuukausi**.  Power BI luo pylväskaavion raporttipohjalle.
+2. Valitse Kentät-ruudusta **SalesFact** \> **Yksiköt yhteensä**, ja valitse **Päivämäärä** > **Kuukausi**.  Power BI luo pylväskaavion raporttipohjalle.
 
     ![Valitse Kentät-ruudusta](media/power-bi-line-charts/power-bi-step1.png)
 
@@ -35,7 +35,7 @@ Näissä ohjeissa käytetään myynnin ja markkinoinnin mallisovellusta sellaise
     ![muunna viivakaavioksi](media/power-bi-line-charts/power-bi-convert-to-line.png)
    
 
-4. Suodata viivakaavio näyttämään tiedot vuosille 2012–2014. Jos Suodattimet-ruutu on kutistettu, laajenna se nyt. Valitse Kentät-ruudusta **Päivämäärä**\>**Vuosi** ja vedä se Suodattimet-ruutuun. Pudota se otsikon **Tämän visualisoinnin suodattimet** alle. 
+4. Suodata viivakaavio näyttämään tiedot vuosille 2012–2014. Jos Suodattimet-ruutu on kutistettu, laajenna se nyt. Valitse Kentät-ruudusta **Päivämäärä** \> **Vuosi** ja vedä se Suodattimet-ruutuun. Pudota se otsikon **Tämän visualisoinnin suodattimet** alle. 
      
     ![viiva Kentät-ruudun vieressä](media/power-bi-line-charts/power-bi-year-filter.png)
 

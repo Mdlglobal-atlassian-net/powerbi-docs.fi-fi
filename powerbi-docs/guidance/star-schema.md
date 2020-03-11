@@ -8,24 +8,24 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 85db7414fc476f2a62368d150e068a71c13d41cb
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: 279e6895122f6b82f8e7670d982a8b50c78ec83a
+ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527518"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260412"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä
 
 Tämä artikkeli kohdistuu Power BI Desktopin tietomallintajille. Artikkelissa kuvaillaan tähtirakenne ja sen merkitys, kun kehitetään suorituskykyyn ja käytettävyyteen optimoituja Power BI -tietomalleja.
 
-Tämän artikkelin tarkoituksena ei ole käydä tähtirakenne läpi kokonaisvaltaisesti. Jos haluat lisätietoja, tutustu muuhun julkaistuun sisältöön, kuten **The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling** (2. painos, 2002), Ralph Kimball et al.
+Tämän artikkelin tarkoituksena ei ole käydä tähtirakennetta läpi kokonaisvaltaisesti. Jos haluat lisätietoja, tutustu muuhun julkaistuun sisältöön, kuten **The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling** (2. painos, 2002), Ralph Kimball et al.
 
 ## <a name="star-schema-overview"></a>Tähtirakenteen yleiskatsaus
 
 **Tähtirakenne** on kypsä mallinnusmenetelmä, joka on laajasti käytössä relaatiotietovarastoissa. Se edellyttää, että mallintajat luokittelevat mallitaulukot joko _dimensioksi_ tai _faktaksi_.
 
-**Dimensiotaulukot** kuvailevat liiketoiminnan entiteettejä eli mallinnettavia asioita. Entiteetit voivat sisältää tuotteita, henkilöitä, paikkoja ja käsitteitä aika mukaan luettuna. Yhdenmukaisin tähtirakenteesta löytyvä taulukko on päivämäärän dimensiotaulukko. Dimensiotaulukko sisältää avainsarakkeen (tai -sarakkeet), joka toimii yksilöivänä tunnisteena, ja kuvaavia sarakkeita.
+**Dimensiotaulukot** kuvailevat liiketoiminnan entiteettejä eli mallinnettavia _asioita_. Entiteetit voivat sisältää tuotteita, henkilöitä, paikkoja ja käsitteitä aika mukaan luettuna. Yhdenmukaisin tähtirakenteesta löytyvä taulukko on päivämäärän dimensiotaulukko. Dimensiotaulukko sisältää avainsarakkeen (tai -sarakkeet), joka toimii yksilöivänä tunnisteena, ja kuvaavia sarakkeita.
 
 **Faktataulukot** sisältävät huomioita tai tapahtumia: ne voivat olla myyntitilauksia, varastosaldoja, valuuttakursseja, lämpötiloja jne. Faktataulukko sisältää dimension avainsarakkeita, jotka liittyvät dimensiotaulukoihin, ja numeerisia mittarisarakkeita. Dimension avainsarakkeet määrittävät faktataulukon _dimensiot_, kun taas dimension avainarvot määrittävät faktataulukon _rakeisuuden_. Harkitse esimerkiksi faktataulukkoa, joka on suunniteltu tallentamaan myyntitavoitteet, joissa on kaksi dimension avainsaraketta: **Päivämäärä** ja **Tuoteavain**. On helppo ymmärtää, että taulukossa on kaksi dimensiota. Rakeisuutta ei kuitenkaan voida määrittää ottamatta huomioon dimension avainarvoja. Tässä esimerkissä otetaan huomioon, että **Päivämäärä**-sarakkeeseen tallennetut arvot ovat kunkin kuukauden ensimmäinen päivä. Tässä tapauksessa rakeisuus on kuukauden tuotetasolla.
 
@@ -42,7 +42,7 @@ Huomaa, että jokainen Power BI -raportin visualisointi luo kyselyn, joka lähet
 - Dimensiotaulukot tukevat _suodatusta_ ja _ryhmittelyä_.
 - Faktataulukot tukevat _yhteenvetoa_.
 
-Vaikka taulukon tyypin (dimension tai fakta) määrittämiseen ei ole mallintajien asettamaa taulukko-ominaisuutta, mallin yhteydet määrittävät tyypin. Mallin yhteys muodostaa suodatuksen välityspolun kahden taulukon välille. Yhteyden **Kardinaliteetti**-ominaisuus määrittää taulukkotyypin. Yleinen yhteyden kardinaliteetti on "yksi moneen" tai sen käänteinen vastapari "monta yhteen". "Yksi" puoli on aina dimensiotyyppinen taulukko ja "moni" puoli on aina faktatyyppinen taulukko.
+Ei ole olemassa mitään taulukon ominaisuutta, jolla mallintajat määrittäisivät taulukon dimensio- tai faktataulukoksi. Se määritetään mallien yhteyksien perusteella. Mallin yhteys muodostaa suodatuksen välityspolun kahden taulukon välille. Yhteyden **Kardinaliteetti**-ominaisuus määrittää taulukkotyypin. Yleinen yhteyden kardinaliteetti on _yksi moneen_ tai sen käänteinen vastapari _monta yhteen_. "Yksi" puoli on aina dimensiotyyppinen taulukko ja "moni" puoli on aina faktatyyppinen taulukko. Jos haluat lisätietoja yhteyksistä, katso [Mallien suhteet Power BI Desktopissa](../desktop-relationships-understand.md).
 
 ![Käsitteellinen tähtirakenne](media/star-schema/star-schema-example2.png)
 
@@ -73,17 +73,17 @@ On tärkeää ymmärtää, että Power BI -mallit tukevat toista menetelmää yh
 
 Mittareiden luomiseen on kuitenkin kolme vakuuttavaa syytä myös yksinkertaisissa saraketason yhteenvedoissa:
 
-- Kun tiedät, että raportin tekijät tekevät kyselyn malliin [MDX](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017)-lausekkeella, mallissa on oltava _eksplisiittisiä mittareita_. Eksplisiittiset mittarit määritetään DAX:llä. Tämä mallilähestymistapa on erityisen sovelias, kun Power BI -tietojoukkoon tehdään kyselyitä MDX:llä, koska MDX ei tue sarakearvojen yhteenvetoja. MDX:ää käytetään etenkin [Analysoi Excelissä](https://docs.microsoft.com/power-bi/service-analyze-in-excel) -toimintoa käytettäessä (Pivot-taulukot tekevät MDX-kyselyitä).
+- Kun tiedät, että raportin tekijät tekevät kyselyn malliin [MDX](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017)-lausekkeella, mallissa on oltava _eksplisiittisiä mittareita_. Eksplisiittiset mittarit määritetään DAX:llä. Tämä mallilähestymistapa on erityisen sovelias, kun Power BI -tietojoukkoon tehdään kyselyitä MDX:llä, koska MDX ei tue sarakearvojen yhteenvetoja. MDX:ää käytetään etenkin [Analysoi Excelissä](https://docs.microsoft.com/power-bi/service-analyze-in-excel) -toimintoa käytettäessä, koska Pivot-taulukot tekevät MDX-kyselyitä.
 - Kun tiedät, että raportin tekijät luovat Power BI:n sivutettuja raportteja MDX-kyselyjen suunnittelutyökalulla, mallissa on oltava eksplisiittiset mittarit. Vain MDX-kyselyjen suunnittelutyökalu tukee [palvelimen koosteita](/sql/reporting-services/report-design/report-builder-functions-aggregate-function). Jos Power BI:n on arvioitava raportin tekijöiden mittarit (sivutettujen raporttien moduulin sijaan), heidän on käytettävä MDX-kyselyjen suunnittelutyökalua.
 - Jos haluat varmistaa, että raportin tekijät voivat tehdä yhteenvedon sarakkeista vain tietyllä tavalla. Esimerkiksi jälleenmyyjämyynnin **Yksikköhinta**-sarakkeesta (joka on yksikkökohtainen hinta) voidaan tehdä yhteenveto, mutta vain käyttämällä määrättyjä koostamisfunktioita. Sitä ei tule koskaan laskea yhteen, mutta se voidaan vetää yhteen käyttämällä muita koostamisfunktioita (minimi, maksimi, keskiarvo jne.). Tässä esiintymässä mallintaja voi piilottaa **Yksikköhinta**-sarakkeen ja luoda mittareita kaikille sopiville koostamisfunktioille.
 
-Ota huomioon, että tämä rakennemenetelmä toimii hyvin Power BI -palvelussa ja Q&A:ssa laadituille raporteille. Power BI Desktopin live-yhteyksien avulla raporttien tekijät voivat näyttää **Kentät**-ruudussa piilotetut kentät, minkä ansiosta tämä rakennemenetelmä voidaan kiertää.
+Tämä rakennemenetelmä toimii hyvin Power BI -palvelussa ja Q&A:ssa laadituille raporteille. Power BI Desktopin live-yhteyksien avulla raporttien tekijät voivat näyttää **Kentät**-ruudussa piilotetut kentät, minkä ansiosta tämä rakennemenetelmä voidaan kiertää.
 
 ## <a name="surrogate-keys"></a>Korvaavat avaimet
 
 **Korvaava avain** on yksilöivä tunniste, joka lisätään taulukkoon tähtirakenteen tueksi. Määrittelyn mukaan sitä ei ole määritetty tai tallennettu lähdetietoihin. Yleensä korvaavat avaimet lisätään relaatiotietovaraston dimensiotaulukoihin, jotta kullekin dimensiotaulukon riville voidaan antaa yksilöivä tunnus.
 
-Power BI:n malliyhteydet perustuvat yksittäiseen yksilöivään sarakkeeseen yhdessä taulukossa, joka välittää suodattimet yksittäiseen sarakkeeseen eri taulukossa. Kun mallissa oleva dimensiotyyppinen taulukko ei sisällä yksittäistä yksilöivää saraketta, sinun on lisättävä yksilöivä tunnus, josta tulee suhteen "yksi"-puoli. Power BI Desktopissa se onnistuu helposti luomalla [Power Query -indeksisarake](https://docs.microsoft.com/powerquery-m/table-addindexcolumn).
+Power BI:n malliyhteydet perustuvat yksittäiseen yksilöivään sarakkeeseen yhdessä taulukossa, joka välittää suodattimet yksittäiseen sarakkeeseen eri taulukossa. Kun mallissa oleva dimensiotyyppinen taulukko ei sisällä yksittäistä yksilöivää saraketta, sinun on lisättävä yksilöivä tunnus, josta tulee suhteen "yksi"-puoli. Power BI Desktopissa tämä edellytys toteutuu helposti luomalla [Power Query -indeksisarake](https://docs.microsoft.com/powerquery-m/table-addindexcolumn).
 
 ![Indeksisarakkeen luominen Power Queryn työkalurivin avulla](media/star-schema/toolbar-index.png)
 
@@ -91,7 +91,7 @@ Tämä kysely on yhdistettävä "monta"-puolen kyselyyn, jotta siihenkin voidaan
 
 ## <a name="snowflake-dimensions"></a>Snowflake-dimensiot
 
-**Snowflake-dimensio** on joukko normalisoituja taulukoita yksittäiselle liiketoimintaentiteetille. Esimerkiksi Adventure Works luokittelee tuotteet luokan ja aliluokan mukaan. Luokat on määritetty aliluokkiin, ja tuotteet on puolestaan määritetty aliluokkiin. Adventure Works -relaatiotietovarastossa tuotedimensio normalisoidaan ja tallennetaan kolmeen liittyvään taulukkoon: **DimProductCategory** , **DimProductSubcategory** ja **DimProduct**.
+**Snowflake-dimensio** on joukko normalisoituja taulukoita yksittäiselle liiketoimintaentiteetille. Esimerkiksi Adventure Works luokittelee tuotteet luokan ja aliluokan mukaan. Luokat on määritetty aliluokkiin, ja tuotteet on puolestaan määritetty aliluokkiin. Adventure Works -relaatiotietovarastossa tuotedimensio normalisoidaan ja tallennetaan kolmeen liittyvään taulukkoon: **DimProductCategory**, **DimProductSubcategory** ja **DimProduct**.
 
 Mielikuvitusta käyttäen voit nähdä normalisoidut taulukot sijoitettuina ulospäin faktataulukosta, mistä syntyy Snowflake-rakenne (lumihiutale).
 
@@ -124,7 +124,7 @@ Power BI -mallin dimensiotyypin taulukon kertapäivitys saa aikaan tyypin 1 hita
 
 ### <a name="type-2-scd"></a>Tyypin 2 hitaasti muuttuva dimensio
 
-**Tyypin 2** **hitaasti muuttuva dimensio** tukee dimension jäsenten versiointia. Jos lähdejärjestelmä ei tallenna versioita, yleensä tietovaraston lataamisprosessi havaitsee muutokset ja hallitsee dimensiotaulukon muutosta asianmukaisella tavalla. Tässä tapauksessa dimensiotaulukon on käytettävä korvaavaa avainta, jotta dimension jäsenen _versio_ saa yksilöivän viittauksen. Se sisältää myös sarakkeet, jotka määrittävät version päivämääräalueen (kuten **StartDate** ja **EndDate**) sekä mahdollisesti merkintäsarakkeen (kuten **IsCurrent**), jotta suodattaminen nykyisten dimension jäsenten mukaan onnistuu helposti.
+**Tyypin 2** **hitaasti muuttuva dimensio** tukee dimension jäsenten versiointia. Jos lähdejärjestelmä ei tallenna versioita, yleensä tietovaraston lataamisprosessi havaitsee muutokset ja hallitsee dimensiotaulukon muutosta asianmukaisella tavalla. Tässä tapauksessa dimensiotaulukon on käytettävä korvaavaa avainta, jotta dimension jäsenen _versio_ saa yksilöivän viittauksen. Se sisältää myös sarakkeet, jotka määrittävät version päivämääräalueen, esimerkiksi **StartDate** ja **EndDate**, sekä mahdollisesti merkintäsarakkeen, kuten **IsCurrent**, jotta suodattaminen nykyisten dimension jäsenten mukaan onnistuu helposti.
 
 Adventure Works esimerkiksi määrittää myyjät myyntialueisiin. Kun myyjä siirtyy toiselle alueelle, myyjästä on luotava uusi versio sen varmistamiseksi, että historialliset tiedot pysyvät liitettynä entiseen alueeseen. Myyjän myyntihistorian tarkan analyysin tukemista varten dimensiotaulukkoon on tallennettava myyjien ja myyjiin liittyvien alueiden versiot. Taulukossa on oltava myös ajan määrittävät alkamis- ja päättymispäivämäärien arvot. Nykyiset versiot voivat määrittää tyhjän päättymispäivämäärän (tai 31.12.9999), mikä osoittaa, että rivi on nykyinen versio. Taulukossa on myös määritettävä korvaava avain, koska liiketoiminta-avain (tässä esiintymässä työntekijän tunnus) ei ole yksilöivä.
 
@@ -166,6 +166,8 @@ Noudata seuraavia hyvän rakenteen käytäntöjä, kun luot mallin dimensiotyypp
 - Varmista, että sarakkeiden nimet ovat kuvaavia ja selkeitä. Vaikka **Vuosi**-saraketta voidaan käyttää kaikissa päivämäärätaulukoissa (sarakenimet ovat yksilöiviä taulukon sisällä), kyseessä ei ole itsestäänselvästi kuvaava oletusarvoinen visualisoinnin otsikko. Harkitse sarakkeiden nimeämistä uudelleen kussakin dimensioroolin taulukossa siten, että **lähetyspäivämäärä**-taulukon vuosisarakkeen nimi on esimerkiksi **Lähetysvuosi** ja niin edelleen.
 - Varmista tarvittaessa, että taulukon kuvaukset antavat raportin tekijöille (**Kentät**-ruudun työkaluvihjeiden kautta) tietoa siitä, miten suodattimien täyttäminen on määritetty. Tämä selkeys on tärkeää, kun malli sisältää yleisesti nimetyn taulukon, kuten **Päivämäärä**, jota käytetään useiden faktatyyppisten taulukoiden suodattamiseen. Jos kyseisessä taulukossa on esimerkiksi aktiivinen yhteys jälleenmyyjän myynnin tilauspäivämäärän sarakkeeseen, voit käyttää taulukon kuvauksena jotakin seuraavankaltaista: ”Suodattaa jälleenmyyjän myynnin tilauspäivämäärän mukaan”.
 
+Lisätietoja on artikkelissa [Aktiivisten ja passiivisten suhteiden ohjeet](relationships-active-inactive.md).
+
 ## <a name="junk-dimensions"></a>Roskadimensiot
 
 **Roskadimensio** on hyödyllinen, kun dimensioita on useita, ne sisältävät vähän määritteitä (kenties vain yhden) ja näillä määritteillä on vähän arvoja. Hyviä ehdokkaita ovat tilauksen tilan sarakkeet tai asiakkaan demografiset sarakkeet (sukupuoli, ikäryhmä jne.).
@@ -186,6 +188,8 @@ Power BI -mallissa myyntitilauksen numeron sarake voi olla syytä lisätä fakta
 
 ![Johdetun dimension esimerkki](media/star-schema/degenerate-dimension.png)
 
+Lisätietoja on artikkelissa [Yksi-yhteen-suhteen ohjeet (Johdetut dimensiot)](relationships-one-to-one.md#degenerate-dimensions).
+
 ## <a name="factless-fact-tables"></a>Faktattomat faktataulukot
 
 **Faktaton faktataulukko** ei sisällä yhtäkään mittarisaraketta. Se sisältää vain dimensioavaimia.
@@ -198,7 +202,7 @@ Esimerkiksi myyjille voidaan määrittää yksi _tai useampi_ myyntialue. Välit
 
 ![Faktattoman faktataulukon esimerkki](media/star-schema/factless-fact.png)
 
-Tämä monta-moneen-rakennemenetelmä on hyvin dokumentoitu, ja se voidaan saavuttaa ilman välitaulukkoa. Välitaulukkomenetelmää pidetään kuitenkin parhaana käytäntönä kahden dimension yhdistämisessä toisiinsa. Lisätietoja on kohdassa [Moni-moneen-kardinaliteetin sisältävien suhteiden käyttäminen Power BI Desktopissa](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships).
+Tämä monta-moneen-rakennemenetelmä on hyvin dokumentoitu, ja se voidaan saavuttaa ilman välitaulukkoa. Välitaulukkomenetelmää pidetään kuitenkin parhaana käytäntönä kahden dimension yhdistämisessä toisiinsa. Lisätietoja on artikkelissa [Monta-moneen-suhteen ohjeet (Liitä kaksi dimensiotyyppistä taulukkoa)](relationships-many-to-many.md#relate-many-to-many-dimensions).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
@@ -206,6 +210,9 @@ Lisätietoja tähtirakenteesta ja Power BI:n mallin rakenteesta on seuraavissa a
 
 - [Dimensiomallinnuksen Wikipedia-artikkeli](https://go.microsoft.com/fwlink/p/?linkid=246459)
 - [Yhteyksien luominen ja hallinta Power BI Desktopissa](../desktop-create-and-manage-relationships.md)
-- [Moni-moneen-kardinaliteetin sisältävät suhteet Power BI Desktopissa](../desktop-many-to-many-relationships.md)
-- [Mallintamisen ohjattu oppimiskokemus](/learn/modules/model-data-power-bi/)
+- [Yksi-yhteen-suhteen ohjeet](relationships-one-to-one.md)
+- [Monta-moneen-suhteen ohjeet](relationships-many-to-many.md)
+- [Kaksisuuntaisen suhteen ohjeet](relationships-bidirectional-filtering.md)
+- [Aktiivisten ja passiivisten suhteiden ohjeet](relationships-active-inactive.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+- Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)

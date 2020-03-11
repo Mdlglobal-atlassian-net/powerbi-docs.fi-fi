@@ -45,7 +45,7 @@ Vaikka sinulla ei olisikaan pääsyä Reporting Services -verkkoportaaliin, voit
 Selaa näytteitä suorituskykymittarien ja mobiiliraporttien käyttämiseksi vuorovaikutteisesti.
 
 ## <a name="connect-to-a-reporting-services-report-server"></a>Muodosta yhteys Reporting Servicesin -raporttien palvelimelle
-1. Napauta siirtymisruudun alaosassa **Asetukset** ![Asetukset-kuvake](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png)
+1. Napauta siirtymisruudun alaosassa kohtaa **Asetukset** ![Asetukset-kuvake](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png)
 2. Napauta **Yhdistä palvelimeen**.
 3. Kirjoita palvelimen osoite ja käyttäjänimesi ja salasanasi. Käytä tätä muotoilua palvelimen osoitteessa:
    
@@ -95,7 +95,7 @@ Lue lisää [suosikeista Power BI -mobiilisovelluksissa](mobile-apps-favorites.m
 ## <a name="remove-a-connection-to-a-report-server"></a>Yhteyden poistaminen raporttipalvelimeen
 Voit olla yhdistettynä vain yhteen raporttipalvelimen kerrallaan Power BI -mobiilisovelluksestasi. Jos haluat muodostaa yhteyden eri palvelimeen, sinun on katkaistava yhteys nykyiseen.
 
-1. Napauta siirtymisruudun alaosassa **Asetukset** ![Asetukset-kuvake](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png).
+1. Napauta siirtymisruudun alaosassa kohtaa **Asetukset** ![Asetukset-kuvake](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png).
 2. Napauta ja pidä palvelimen nimeä, johon et halua olla yhteydessä.
 3. Napauta **Poista palvelin**.
    
