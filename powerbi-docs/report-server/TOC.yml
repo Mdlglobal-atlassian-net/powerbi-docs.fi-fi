@@ -1,4 +1,5 @@
-- name: Power BI -raporttipalvelin
+- name: Power BI -raporttipalvelimen dokumentaatio
+  href: index.yml
   expanded: true
   items:
     - name: Yleiskatsaus
