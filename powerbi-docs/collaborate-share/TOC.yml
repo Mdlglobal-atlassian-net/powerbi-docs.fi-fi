@@ -31,6 +31,8 @@
               href: ../service-create-distribute-apps.md
             - name: Tietojen tallennuksen hallinta työtiloissa
               href: ../service-admin-manage-your-data-storage-in-power-bi.md
+            - name: Tietojen historiatiedot
+              href: service-data-lineage.md
             - name: Ryhmän OneDrive-tiedostoihin yhdistäminen
               href: ../service-connect-to-files-in-app-workspace-onedrive-for-business.md
             - name: Yhteistyö perinteisessä työtilassa

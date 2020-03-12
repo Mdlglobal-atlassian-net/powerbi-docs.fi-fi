@@ -313,8 +313,6 @@
               href: ../desktop-accessibility-consuming-tools.md
             - name: Pikanäppäimet Power BI Desktopissa
               href: ../desktop-accessibility-keyboard-shortcuts.md
-        - name: Tietojen historiatiedot
-          href: ../service-data-lineage.md
         - name: Sivutetut raportit
           items:
             - name: Anna tiedot suoraan sivutettuun raporttiin
