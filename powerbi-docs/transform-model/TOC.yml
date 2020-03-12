@@ -19,7 +19,7 @@
     - name: Käsitteet
       expanded: true
       items:
-        - name: Mallisuhteiden luominen
+        - name: Mallisuhteiden ymmärtäminen
           href: ../desktop-relationships-understand.md
         - name: Mallinnusnäkymän käyttö
           href: ../desktop-modeling-view.md

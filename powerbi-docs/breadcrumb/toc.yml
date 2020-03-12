@@ -2,26 +2,41 @@
   href: /
   topicHref: /
   items:
-    - name: Power BI
-      tocHref: /power-bi/
-      topicHref: /power-bi/
+    - name: Power Platform
+      href: /power-platform/
+      topicHref: /power-platform/
       items:
-        - name: Kuluttajat
-          tocHref: /power-bi/consumer/
-          topicHref: /power-bi/consumer/power-bi-consumer-landing
-        - name: Kehittäjä
-          tocHref: /power-bi/developer/
-          topicHref: /power-bi/developer/index
+        - name: Power BI
+          tocHref: /power-bi/
+          topicHref: /power-bi/
           items:
-            - name: 'R:ää hyödyntävien Power BI -visualisointien käyttö Power BI:ssä'
+            - name: Kuluttajat
+              tocHref: /power-bi/consumer/
+              topicHref: /power-bi/consumer/index
+            - name: Kehittäjä
               tocHref: /power-bi/developer/
               topicHref: /power-bi/developer/index
-        - name: Ohjattu oppiminen
-          tocHref: /power-bi/guided-learning/
-          topicHref: /power-bi/guided-learning/
-        - name: Raporttipalvelin
-          tocHref: /power-bi/report-server/
-          topicHref: /power-bi/report-server/get-started
-        - name: Opas
-          tocHref: /power-bi/guidance/
-          topicHref: /power-bi/guidance/index
+            - name: Ohjattu oppiminen
+              tocHref: /power-bi/guided-learning/
+              topicHref: /power-bi/guided-learning/
+            - name: Raporttipalvelin
+              tocHref: /power-bi/report-server/
+              topicHref: /power-bi/report-server/index
+            - name: Opas
+              tocHref: /power-bi/guidance/
+              topicHref: /power-bi/guidance/index
+            - name: 'Yhteistyö, jakaminen ja integrointi'
+              tocHref: /power-bi/collaborate-share/
+              topicHref: /power-bi/collaborate-share/index
+            - name: Raporttien ja koontinäyttöjen luominen
+              tocHref: /power-bi/create-reports/
+              topicHref: /power-bi/create-reports/index
+            - name: Tietoihin yhdistäminen
+              tocHref: /power-bi/connect-data/
+              topicHref: /power-bi/connect-data/index
+            - name: Aloittaminen
+              tocHref: /power-bi/fundamentals/
+              topicHref: /power-bi/fundamentals/index
+            - name: 'Tietojen muuntaminen, muotoilu ja mallintaminen'
+              tocHref: /power-bi/transform-model/
+              topicHref: /power-bi/transform-model/index

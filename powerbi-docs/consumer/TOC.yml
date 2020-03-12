@@ -66,6 +66,8 @@
               href: end-user-powerpoint.md
             - name: "Lisää\_kirjanmerkki raporttiin"
               href: end-user-bookmarks.md
+            - name: Lisää korostus raporttiin
+              href: end-user-spotlight.md
             - name: 'Sivutetut raportit Power BI:ssä'
               items:
                 - name: Sivutetut raportit
@@ -116,6 +118,8 @@
               href: end-user-notification-center.md
         - name: Nouda tiedot
           items:
+            - name: 'Työtilat Power BI:ssä'
+              href: end-user-workspaces.md
             - name: 'Sovellukset Power BI:ssä'
               href: end-user-apps.md
             - name: Sovellusten asentaminen ja käyttäminen

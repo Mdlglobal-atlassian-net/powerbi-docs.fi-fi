@@ -7,6 +7,8 @@
       items:
         - name: Mitä mobiilisovellukset ovat?
           href: mobile-apps-for-mobile-devices.md
+        - name: Mobiilisovellusten uudet toiminnot
+          href: mobile-whats-new-in-the-mobile-apps.md
         - name: Aloitussivun esittely
           href: mobile-apps-home-page.md
     - name: Pika-aloitus
@@ -22,8 +24,6 @@
     - name: Käsitteet
       expanded: true
       items:
-        - name: Mobiilisovellusten uudet toiminnot
-          href: mobile-whats-new-in-the-mobile-apps.md
         - name: Oikeiden tietojen käyttö mobiilisovelluksissa
           href: mobile-apps-data-in-real-world-context.md
         - name: Tietojen tarkastelu offline-tilassa mobiilisovelluksissa
@@ -44,8 +44,6 @@
               href: mobile-share-dashboard-from-the-mobile-apps.md
             - name: Suosikit mobiilisovelluksissa
               href: mobile-apps-favorites.md
-            - name: Vuorovaikutusasetusten määrittäminen (vain puhelin)
-              href: mobile-app-interaction-settings.md
             - name: Tietoilmoitusten määrittäminen Power BI -mobiilisovelluksissa
               href: mobile-set-data-alerts-in-the-mobile-apps.md
             - name: Power BI -mobiilisovellusten ilmoitusten vastaanottaminen
@@ -70,6 +68,8 @@
               href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
             - name: Viivakoodin lukeminen Power BI -mobiilisovelluksesta
               href: mobile-apps-scan-barcode-iphone.md
+            - name: Vuorovaikutusasetusten määrittäminen
+              href: mobile-app-interaction-settings.md
             - name: Määrittäminen mobiililaitteiden hallinnan avulla
               href: mobile-app-configuration.md
         - name: iOS
@@ -100,7 +100,7 @@
               href: mobile-windows-10-phone-app-get-started.md
             - name: Kiinnitä raporttinäkymä aloitusnäyttöön
               href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-            - name: Tarkastele Reporting Servicesin mobiiliraportteja ja suorituskykyilmaisimia
+            - name: Paikallisten raporttien ja suorituskykyilmaisinten tarkasteleminen
               href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
             - name: 'Power BI:n tarkastelu Surface Hubissa'
               href: mobile-windows-10-app-presentation-mode.md
