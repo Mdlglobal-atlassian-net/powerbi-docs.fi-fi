@@ -46,6 +46,8 @@
           href: ../power-bi-data-sources.md
         - name: Power BI -tietolähde-edellytykset
           href: ../desktop-data-source-prerequisites.md
+        - name: Parannettujen tietojoukon metatietojen käyttäminen Power BI Desktopissa (esiversio)
+          href: ../desktop-enhanced-dataset-metadata.md
         - name: 'Power BI:n monidimensiomallien käyttö'
           href: ../desktop-default-member-multidimensional-models.md
         - name: 'Tietoja DirectQueryn käytöstä Power BI:ssä'
