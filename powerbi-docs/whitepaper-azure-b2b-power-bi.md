@@ -10,11 +10,11 @@ ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
 ms.openlocfilehash: 538c533a1b951fd2dff1b481adb94e2b1d0cf87b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870886"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79213599"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure Active Directory B2B:n avulla
 
@@ -318,7 +318,7 @@ Power BI:n integrointi Azure AD B2B:hen antaa Contosolle saumattoman ja vaivatto
 
 Nyt kun olemme on nähneet, miten Contoso voi saumattomasti jakaa Power BI-sisältöä kumppaniorganisaation vieraskäyttäjille, katsotaan, mitä kulissien takana tapahtuu.
 
-Kun Contoso kutsuu käyttäjän [ lucy@supplier1.com ](mailto:lucy@supplier1.com) hakemistoonsa, Azure AD luo linkin käyttäjän [ Lucy@supplier1.com ](mailto:Lucy@supplier1.com) ja Contoso Azure AD -vuokraajan välille. Tämän linkin avulla Azure AD tietää, että Lucy@supplier1.com voi käyttää Contoso-vuokraajan sisältöä.
+Kun Contoso kutsuu käyttäjän [lucy@supplier1.com](mailto:lucy@supplier1.com) hakemistoonsa, Azure AD luo linkin käyttäjän [Lucy@supplier1.com](mailto:Lucy@supplier1.com) ja Contoso Azure AD -vuokraajan välille. Tämän linkin avulla Azure AD tietää, että Lucy@supplier1.com voi käyttää Contoso-vuokraajan sisältöä.
 
 Kun Lucy yrittää käyttää Contoson Power BI -sovellusta, Azure AD tarkistaa, että Lucylla on oikeus käyttää Contoso-vuokraajaa, ja tarjoaa sitten Power BI:lle tunnuksen, joka ilmaisee, että Lucy on todennettu Contoso-vuokraajan sisällön käyttäjäksi. Power BI käyttää tätä tunnusta valtuutukseen ja varmistaa, että Lucylla on käyttöoikeus Contoson Power BI -sovellukseen.
 
@@ -336,7 +336,7 @@ On tärkeää tunnistaa, että Azure AD-tiliä käytetään tai luodaan ulkoisen
 Contoso voi valita yhden kolmesta menetelmästä, kun se antaa Power BI -sisältönsä käyttöoikeuksia toimittajiensa ja kumppaniorganisaatioidensa vieraskäyttäjille.
 
 > [!NOTE]
-> _Azure AD B2B's Free-taso riittää Power BI käyttämiseen Azure AD B2B-yhteyden avulla. Jotkin edistyneet Azure AD B2B-ominaisuudet, kuten dynaamiset ryhmät, edellyttävät lisä käyttö oikeuksia. Lisä tietoja on Azure AD B2B-dokumentaatiossa:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_ ](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
+> _Azure AD B2B's Free-taso riittää Power BI käyttämiseen Azure AD B2B-yhteyden avulla. Jotkin edistyneet Azure AD B2B-ominaisuudet, kuten dynaamiset ryhmät, edellyttävät lisä käyttö oikeuksia. Lisä tietoja on Azure AD B2B-dokumentaatiossa:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
 
 ### <a name="approach-1-contoso-uses-power-bi-premium"></a>Approach 1: contoso käyttää Power BI Premium
 
@@ -454,12 +454,12 @@ Kuten huomaat, dynaaminen rivitason suojaus toimii sekä sisäisten että vierai
 
 ## <a name="connecting-to-on-premises-data-sources"></a>Yhdistäminen paikallisiin tietolähteisiin
 
-Power BI tarjoaa Contosolle kyvyn hyödyntää suoraan sellaisia paikallisia tietolähteitä kuin [SQL Server Analysis Services](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise-manage-ssas/) tai [SQL Server](https://powerbi.microsoft.com/documentation/powerbi-gateway-kerberos-for-sso-pbi-to-on-premises-data/) [paikallisen tietoyhdyskäytävän](https://powerbi.microsoft.com/documentation/powerbi-gateway-onprem/) ansiosta. Tietolähteisiin on mahdollista myös kirjautua samoilla tunnistetiedoilla kuin Power BI:hin.
+Power BI tarjoaa Contosolle kyvyn hyödyntää suoraan sellaisia paikallisia tietolähteitä kuin [SQL Server Analysis Services](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise-manage-ssas/) tai [SQL Server](https://powerbi.microsoft.com/documentation/powerbi-gateway-kerberos-for-sso-pbi-to-on-premises-data/)[paikallisen tietoyhdyskäytävän](https://powerbi.microsoft.com/documentation/powerbi-gateway-onprem/) ansiosta. Tietolähteisiin on mahdollista myös kirjautua samoilla tunnistetiedoilla kuin Power BI:hin.
 
 > [!NOTE]
 > Kun asennat yhdyskäytävän Power BI -vuokraajan yhteyden muodostamiseksi, sinun on käytettävä vuokraajassasi luotua käyttäjää. Ulkoiset käyttäjät eivät voi asentaa yhdyskäytävää ja yhdistää sitä vuokraajaasi.
 
-Tämä saattaa olla monimutkaisempaa ulkoisille käyttäjille, koska ulkoiset käyttäjät ovat yleensä tuntemattomia paikallisessa AD:ssä. Power BI sallii vaihtoehtoisen menetelmän, jossa Contoso-järjestelmänvalvojat voivat yhdistää ulkoiset käyttäjänimet sisäisiin käyttäjänimiin artikkelissa [Tietolähteen hallinta – Analysis Services](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise-manage-ssas/) kuvatulla tavalla. Esimerkiksi [ lucy@supplier1.com ](mailto:lucy@supplier1.com) voidaan yhdistää osoitteeseen [lucy\_supplier1\_com #EXT@contoso.com](mailto:lucy_supplier1_com).
+Tämä saattaa olla monimutkaisempaa ulkoisille käyttäjille, koska ulkoiset käyttäjät ovat yleensä tuntemattomia paikallisessa AD:ssä. Power BI sallii vaihtoehtoisen menetelmän, jossa Contoso-järjestelmänvalvojat voivat yhdistää ulkoiset käyttäjänimet sisäisiin käyttäjänimiin artikkelissa [Tietolähteen hallinta – Analysis Services](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise-manage-ssas/) kuvatulla tavalla. Esimerkiksi [lucy@supplier1.com](mailto:lucy@supplier1.com) voidaan yhdistää osoitteeseen [lucy\_supplier1\_com #EXT@contoso.com](mailto:lucy_supplier1_com).
 
 ![Käyttäjänimien yhdistäminen](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_40.png)
 
@@ -490,7 +490,7 @@ Vieraskäyttäjät saavat vain luku -oletuskokemuksen ja eivätkä voi muokata j
 
 Auta näitä käyttäjiä kirjautumaan Power BI:hin antamalla heille vuokraajan URL-osoite. Etsi vuokraajan URL-osoite seuraavien vaiheiden mukaisesti.
 
-1. Valitse Power BI -palvelun yläreunan valikosta ohje ( **?** ) ja sitten **Tietoja Power BI:stä**.
+1. Valitse Power BI -palvelun yläreunan valikosta ohje (**?** ) ja sitten **Tietoja Power BI:stä**.
 2. Katso arvo kohdan **Vuokraajan URL-osoite** vierestä. Tämä on vuokraajan URL-osoite, jonka voit jakaa vieraskäyttäjille.
 
     ![Vuokraajan URL-osoite](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_42.png)
