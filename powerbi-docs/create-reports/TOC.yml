@@ -129,6 +129,8 @@
               href: ../desktop-insights-find-where-different.md
             - name: Painikkeiden luominen
               href: ../desktop-buttons.md
+            - name: Porautumispainikkeiden luominen
+              href: ../desktop-drill-through-buttons.md
             - name: Kirjanmerkkien luominen merkityksellisten tietojen tallentamista ja jakamista varten
               href: ../desktop-bookmarks.md
             - name: Raporttiteemojen käyttö
