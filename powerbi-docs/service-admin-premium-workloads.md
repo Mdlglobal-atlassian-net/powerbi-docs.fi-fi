@@ -9,16 +9,16 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/14/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: ae05fdcd3a38f10707e991524bac61a305b88794
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: de988442edf4c60841bac757bb67ea5ed5038b25
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427710"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207961"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Premium-kapasiteettien kuormitusten määrittäminen
 
-Tässä artikkelissa kuvaillaan, miten voit ottaa käyttöön ja määrittää Power BI Premium -kapasiteettien kuormituksia. Oletusarvoisesti kapasiteetit tukevat ainoastaan Power BI -kyselyjen suorittamiseen liittyviä kuormituksia. Voit myös ottaa käyttöön ja määrittää muita kuormituksia **[tekoälylle (kognitiiviset palvelut)](service-cognitive-services.md)** , **[tietovoille](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** ja **[sivutetuille raporteille](paginated-reports-save-to-power-bi-service.md)** .
+Tässä artikkelissa kuvaillaan, miten voit ottaa käyttöön ja määrittää Power BI Premium -kapasiteettien kuormituksia. Oletusarvoisesti kapasiteetit tukevat ainoastaan Power BI -kyselyjen suorittamiseen liittyviä kuormituksia. Voit myös ottaa käyttöön ja määrittää muita kuormituksia **[tekoälylle (kognitiiviset palvelut)](service-cognitive-services.md)** , **[tietovoille](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** ja **[sivutetuille raporteille](paginated-reports/paginated-reports-save-to-power-bi-service.md)** .
 
 ## <a name="default-memory-settings"></a>Oletusmuistiasetukset
 
@@ -67,7 +67,7 @@ Tietojoukkojen kuormitus on oletuksena käytössä, eikä sitä voi poistaa käy
 | **Välirivien enimmäismäärä** | DirectQueryn palauttamien välirivien enimmäismäärä. Oletusarvo on 1000000 ja sallittu alue on 100000–2147483647. |
 | **Offline-tietojoukon enimmäiskoko (Gt)** | Muistissa olevan offline-tietojoukon enimmäiskoko. Tämä on pakattu koko levyllä. Oletusarvon asettaa SKU ja sallittu alue on 0,1–10 Gt. |
 | **Tulosrivien enimmäismäärä** | DAX-kyselyssä palautettavien rivien enimmäismäärä. Oletusarvo on -1 (ei rajaa) ja sallittu alue on 100000–2147483647. |
-| **Kysely muistiraja (%)** | Käytettävissä olevan muistin enimmäismäärä kuormituksessa, jota voidaan käyttää MDX- tai DAX-kyselyn suorittamiseen. |
+| **Kysely muistiraja (%)** | Käytettävissä olevan muistin enimmäismäärä kuormituksessa, jota voidaan käyttää MDX- tai DAX-kyselyn suorittamiseen. Oletusarvo on 0, minkä vuoksi SKU-kohtainen automaattinen kyselyn muistin enimmäismäärä otetaan käyttöön. |
 | **Kyselyn aikakatkaisu (sekuntia)** | Kyselyn aikakatkaisuajan suurin mahdollinen aika. Oletusarvo on 3600 sekuntia (1 tunti). Arvo 0 määrittää, että kyselyissä ei ole aikakatkaisua. |
 | **Automaattinen sivun päivitys (esikatselu)** | Käytössä / ei käytössä -valitsimen avulla Premium-työtilat voivat käyttää raporteissa automaattista sivun päivitystä. |
 | **Pienin päivitysväli** | Jos automaattinen sivun päivitys on käytössä, sillä on tietty pienin päivitysväli. Se on oletusarvoisesti viisi minuuttia. Pienin sallittu arvo on yksi sekunti. |
@@ -102,6 +102,14 @@ Tämän asetuksen avulla voi hallita resurssi-intensiivisten tai huonosti suunni
 Tämä asetus koskee kaikkia DAX- ja MDX-kyselyitä, jotka Power BI -raportit, Analysoi Excelissä -toiminnon raportit sekä muut työkalut, jotka saattavat muodostaa yhteyden XMLA:n päätepisteeseen, suorittavat.
 
 Huomioi, että tietojen päivittämisen toiminnot voivat myös suorittaa DAX-kyselyitä osana koontinäytön ruutujen ja visualisointien välimuistien päivittämistä sen jälkeen, kun tietojoukon tiedot on päivitetty. Vastaavat kyselyt saattavat myös epäonnistua tämän asetuksen vuoksi, mikä saattaa johtaa siihen, että tietojen päivittämisen toiminnon näytetään epäonnistuneen, vaikka tietojoukon tiedot päivitettiin onnistuneesti.
+
+Oletusasetus on 0, minkä vuoksi seuraava SKU-kohtainen automaattinen kyselyn muistin enimmäismäärä otetaan käyttöön.
+
+|                              | EM1/A1 | EM2/A2 | EM3/A3 | P1/A4 | P2/A5 | P3/A6 |   
+|------------------------------|----------|----------|----------|---------|---------|---------|
+| Automaattinen kyselyn muistin enimmäismäärä | 1 GT     | 2 Gt     | 2 Gt     | 6 Gt    | 6 Gt    | 10 Gt   |
+|                              |          |          |          |         |         |         |
+
 
 #### <a name="query-timeout"></a>Kyselyn aikakatkaisu
 
@@ -200,7 +208,7 @@ Kuormituksia voidaan ottaa käyttöön ja määrittää kapasiteetille käyttäm
 
 [Power BI Premium -kapasiteettien optimointi](service-premium-capacity-optimize.md)     
 [Omatoiminen tietovoita sisältävien tietojen valmisteleminen Power BI:ssä](service-dataflows-overview.md)   
-[Mitä ovat sivutetut raportit Power BI Premiumissa?](paginated-reports-report-builder-power-bi.md)   
+[Mitä ovat sivutetut raportit Power BI Premiumissa?](paginated-reports/paginated-reports-report-builder-power-bi.md)   
 [Automaattinen sivun päivitys Power BI Desktopissa (esiversio)](desktop-automatic-page-refresh.md)
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

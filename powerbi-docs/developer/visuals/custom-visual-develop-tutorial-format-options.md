@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 11/21/2018
-ms.openlocfilehash: f1a1bfc161fe163a4c4680dbcc90e6ad28b80a90
-ms.sourcegitcommit: 0da17de80c9651f9f4474d1abb1bdaaade8808fb
+ms.openlocfilehash: 3d0dc39fbf6d1daf978292d0e5e43129e66376c7
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "75498495"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381004"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>Opetusohjelma: Muotoiluasetusten lisääminen Power BI -visualisointiin
 
@@ -287,4 +287,4 @@ Katso vihjeitä mukautetun visualisoinnin virheenkorjauksesta [virheenkorjauksen
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Voit antaa luomasi visualisoinnin muiden käyttöön lähettämällä sen **AppSourceen**. Katso lisätietoja tästä prosessista artikkelista [Mukautettujen visualisointien julkaiseminen AppSourceen](../office-store.md).
+Voit antaa luomasi visualisoinnin muiden käyttöön lähettämällä sen **AppSourceen**. Lisätietoja tästä prosessista on artikkelissa [Power BI -visualisointien julkaiseminen AppSourceen](office-store.md).

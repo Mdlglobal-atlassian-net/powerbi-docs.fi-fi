@@ -6,22 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/09/2019
+ms.date: 03/13/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: b32eee568ba560e95899cf0965a11f3bb037aed6
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 719c07abdcdb42916db8a01a7fab28d3f6c98fba
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75222451"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133324"
 ---
 # <a name="get-started-with-power-bi-desktop"></a>Power BI Desktopin käytön aloittaminen
 Tervetuloa Power BI Desktopin aloitusoppaaseen. Tässä esittelyssä kerrotaan, miten Power BI Desktop toimii, mitä sillä voi tehdä ja miten voit luoda luotettavia tietomalleja ja hienoja raportteja liiketoimintatietojen kehittämiseksi.
 
 Saat lyhyen yleiskatsauksen Power BI Desktopin toiminnoista ja tutustumalla tämän oppaan näyttöihin vain muutamassa minuutissa. Jos haluat kattavamman käsityksen, voit lukea jokaisen osan, noudattaa vaiheita ja lopuksi julkaista itse luomasi Power BI Desktop -tiedoston [Power BI -palveluun](https://app.powerbi.com/) ja jakaa sen muiden kanssa.
 
-![Power BI Desktop -raportti](media/desktop-getting-started/hero.png)
+![Power BI Desktop -raportti](media/desktop-getting-started/hero-02.png)
 
 Voit myös katsoa [Power BI Desktopin käytön aloittaminen](https://www.youtube.com/watch?v=Qgam9M8I0xA) -videon ja ladata [Talousmallin](https://go.microsoft.com/fwlink/?LinkID=521962) Excel-työkirjan, jota voit seurata samaan aikaan videon kanssa.
 

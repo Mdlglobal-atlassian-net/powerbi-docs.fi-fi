@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 1b927bcca087e832138e4ac02c555e34915febd9
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 4745935e618f47f6092f6a33d879dd95d59b9963
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079320"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488288"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Syötä tiedot tietojoukon kattavaan koodiluetteloon
 
@@ -225,7 +225,7 @@ Kun olet suorittanut toimet 2-5 kohdasta **tietojen syöttäminen tietojoukkoon*
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * [Syötä tiedot Power BI -tietojoukkoon](walkthrough-push-data.md)
-* [Rekisteröi sovellus Azure AD:n kanssa ](../register-app.md)  
+* [Rekisteröi sovellus Azure AD:n kanssa ](../embedded/register-app.md)  
 * [Todennustunnuksen hankkiminen](walkthrough-push-data-get-token.md)  
 * [Tietojoukon luominen Power BI:ssä](walkthrough-push-data-create-dataset.md)  
 * [Tietojoukon hankkiminen rivien lisäämiseksi Power BI -taulukkoon](walkthrough-push-data-get-datasets.md)  

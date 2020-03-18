@@ -9,11 +9,11 @@ ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 622d01632b9c9cbe6203090b3ac2149d4bc94474
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73853631"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207869"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Julkaise sovellus Power BI:ssä
 
@@ -202,4 +202,4 @@ Sovellusten julkaisemisessa muistettavat asiat:
 * [Asenna ja käytä sovelluksia Power BI:ssä](consumer/end-user-apps.md)
 * [Power BI -sovellukset ulkoisille palveluille](service-connect-to-services.md)
 * [Power BI -hallintaportaali](https://docs.microsoft.com/power-bi/service-admin-portal)
-* Ilmenikö kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

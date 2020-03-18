@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2db2b4f02dac1ebcd9d24a8217a181efa9ce0779
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 810077e8c651d3d6faf91eecb6fd320c24a69d2f
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76039042"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488794"
 ---
 # <a name="data-refresh-in-power-bi"></a>Tietojen päivittäminen Power BI:ssä
 
@@ -76,7 +76,7 @@ Koska Power BI ei tuo tietoja, sinun ei tarvitse päivittää tietoja. Power BI 
 Push-tietojoukot eivät sisällä tietolähteen muodollista määritelmää, joten ne eivät edellytä tietojen päivittämistä Power BI:ssä. Voit päivittää ne työntämällä tietoja tietojoukkoon Azure Stream Analyticsin tai muun ulkoisen palvelun tai prosessin kautta. Tämä on yleinen tapa suorittaa reaaliaikainen analyysi Power BI:llä. Power BI suorittaa edelleen push-tietojoukon päällä käytettyjen ruutujen välimuistin päivitykset. Katso yksityiskohtaiset ohjeet [opetusohjelmasta: Stream Analytics ja Power BI: Reaaliaikainen analyysiraporttinäkymä tietovirroille](/azure/stream-analytics/stream-analytics-power-bi-dashboard).
 
 > [!NOTE]
-> Push-tilan toimintaan liittyy useita rajoituksia, jotka on kerrottu kohdassa [Power BI:n REST-ohjelmointirajapinnan rajoitukset](developer/api-rest-api-limitations.md).
+> Push-tilan toimintaan liittyy useita rajoituksia, jotka on kerrottu kohdassa [Power BI:n REST-ohjelmointirajapinnan rajoitukset](developer/automation/api-rest-api-limitations.md).
 
 ### <a name="power-bi-refresh-types"></a>Power BI:n päivitystyypit
 
@@ -317,7 +317,7 @@ Varoituskuvake ilmaisee tietojoukon senhetkiset ongelmat, mutta suosittelemme my
 
 ## <a name="automatic-page-refresh"></a>Automaattinen sivun päivitys
 
-Automaattinen sivun päivitys toimii raporttisivutasolla. Sen avulla raporttien tekijät voivat määrittää sivun visualisoinneille päivitysvälin, jota käytetään vain sivua käytettäessä. Automaattinen sivun päivitys on käytettävissä vain DirectQuery-tietolähteille. Pienin mahdollinen päivitysväli riippuu siitä, millaisessa työtilassa raportti julkaistaan, sekä Premium-työtilojen ja [upotettujen työtilojen](developer/embedding.md) kapasiteetinhallinta-asetuksista.
+Automaattinen sivun päivitys toimii raporttisivutasolla. Sen avulla raporttien tekijät voivat määrittää sivun visualisoinneille päivitysvälin, jota käytetään vain sivua käytettäessä. Automaattinen sivun päivitys on käytettävissä vain DirectQuery-tietolähteille. Pienin mahdollinen päivitysväli riippuu siitä, millaisessa työtilassa raportti julkaistaan, sekä Premium-työtilojen ja [upotettujen työtilojen](developer/embedded/embedding.md) kapasiteetinhallinta-asetuksista.
 
 Lue lisätietoja [automaattisen sivun päivityksen](desktop-automatic-page-refresh.md) ohjeartikkelista.
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
 ms.date: 03/25/2019
-ms.openlocfilehash: 3ff7eb4a771ed8c65d18262f61170f312049a898
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 1a74d856ad46dc6843546919aa4234dc86d2be5c
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079412"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488428"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Mitä kehittäjät voivat tehdä Power BI -ohjelmointirajapinnalla?
 
@@ -25,10 +25,10 @@ Seuraavassa on joitakin asioita, joita voit tehdä Power BI -ohjelmointirajapinn
 
 | **Lisätietoja** | **Viittaa näihin tietoihin** |
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Upottaa raportteja, koontinäyttöjä ja ruutuja sekä Power BI:tä käyttävien että Power BI:tä käyttämättömien käyttäjien saataville. | [Power BI:n koontinäyttöjen, raporttien ja ruutujen upottaminen](../embed-sample-for-customers.md) |
+| Upottaa raportteja, koontinäyttöjä ja ruutuja sekä Power BI:tä käyttävien että Power BI:tä käyttämättömien käyttäjien saataville. | [Power BI:n koontinäyttöjen, raporttien ja ruutujen upottaminen](../embedded/embed-sample-for-customers.md) |
 | Suorittaa hallintatehtäviä Power BI -objekteille | [Power BI:n REST-ohjelmointirajapinnan viite](https://docs.microsoft.com/rest/api/power-bi/) |
 | Laajentaa aiemmin luotua liiketoiminnan työnkulkua työntääksesi avaintietoja Power BI ‑koontinäyttöön | [Tietojen lähettäminen koontinäyttöön](walkthrough-push-data.md) |
-| Todentaa käyttäjiä Power BI -palvelussa | [Todentaa käyttäjiä Power BI -palvelussa](../get-azuread-access-token.md) |
+| Todentaa käyttäjiä Power BI -palvelussa | [Todentaa käyttäjiä Power BI -palvelussa](../embedded/get-azuread-access-token.md) |
 
 > [!NOTE]
 > Power BI -ohjelmointirajapinnat viittaavat työtiloihin edelleen ryhminä. Mitkä tahansa viittaukset ryhmiin tarkoittavat sitä, että työskentelet työtilojen parissa.

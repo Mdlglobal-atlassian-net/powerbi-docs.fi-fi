@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 03/07/2020
 ms.author: painbar
-ms.openlocfilehash: b7a02261e6e00c01befa8ba7716b9e0d132323ea
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: 1991381f8b2917fe3bc61a8be22fbdf44e706d71
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496764"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205546"
 ---
 # <a name="remotely-configure-power-bi-app-using-mobile-device-management-mdm-tool"></a>Power BI -sovelluksen etämääritys mobiililaitteiden hallintatyökalun (MDM) avulla
 
@@ -22,8 +22,8 @@ Power BI:n iOS- ja Android-mobiilisovellukset tukevat sovellusasetuksia, joiden 
 Power BI -mobiilisovellus tukee määritystä seuraavissa tilanteissa:
 
 * Raporttipalvelimen määrittäminen (iOS ja Android)
-* Tietosuoja-asetukset (iOS ja Android)
-* Käsittelyasetukset (Android)
+* Tietosuoja-asetukset (iOS)
+* Vuorovaikutusasetukset (iOS ja Android)
 
 ## <a name="report-server-configuration-ios-and-android"></a>Raporttipalvelimen määrittäminen (iOS ja Android)
 
@@ -38,20 +38,24 @@ Power BI:n iOS- ja Android-sovelluksen avulla järjestelmänvalvojat voivat pako
 
 ## <a name="data-protection-settings-ios"></a>Tietosuoja-asetukset (iOS)
 
-Power BI:n iOS- ja Android-sovellus tarjoaa järjestelmänvalvojille mahdollisuuden mukauttaa suojaus- ja tietosuoja-asetusten oletusmäärityksiä. Voit vaatia käyttäjiltä kasvojentunnistusta, kosketustunnistusta tai tunnuskoodia Power BI -sovelluksen käyttämiseksi.
+Power BI:n iOS-sovellus tarjoaa järjestelmänvalvojille mahdollisuuden mukauttaa suojaus- ja tietosuoja-asetusten oletusmäärityksiä. Voit vaatia käyttäjiltä kasvojentunnistusta, kosketustunnistusta tai tunnuskoodia Power BI -sovelluksen käyttämiseksi.
 
 | Avain | Tyyppi | Kuvaus |
 |---|---|---|
 | com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Totuusarvo | Oletusarvo on False. <br><br>Voit edellyttää käyttäjiltä biometristä tunnistusta, kuten kasvojen- tai kosketustunnistusta, jotta he voivat käyttää sovellusta laitteellaan. Biometrista tunnistusta käytetään tarvittaessa todennuksen lisäksi.<br><br>Jos käytössä on sovelluksen suojauskäytäntöjä, Microsoft suosittelee asetuksen poistamista käytöstä kahden kirjautumiskehotteen välttämiseksi. |
 
-## <a name="interaction-settings-android"></a>Käsittelyasetukset (Android)
+## <a name="interaction-settings-ios-and-android"></a>Vuorovaikutusasetukset (iOS ja Android)
 
-Power BI:n Android-sovelluksen avulla järjestelmänvalvojat voivat määrittää käsittelyasetukset, jos päätetään, että oletuskäsittelyasetuksia pitää muuttaa kaikilla organisaation käyttäjäryhmillä. 
+Power BI:n iOS- ja Android-sovelluksen avulla järjestelmänvalvojat voivat määrittää vuorovaikutusasetukset, jos päätetään, että oletusvuorovaikutusasetuksia pitää muuttaa kaikissa organisaation käyttäjäryhmissä.
+
+>[!NOTE]
+>Kaikkia vuorovaikutuksia ei tueta tällä hetkellä kaikissa laitteissa. Katso [Määritä raportin vuorovaikutusasetukset](mobile-app-interaction-settings.md) kaaviolle, joka näyttää käytettävyyden eri laitteilla.
 
 | Avain | Tyyppi | Arvot | Kuvaus |
 |---|---|---|---|
-| com.microsoft.powerbi.mobile.ReportTapInteraction | Merkkijono |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Määritä, tekeekö visualisoinnin napauttaminen myös arvopisteen valinnan. |
-| com.microsoft.powerbi.mobile.RefreshAction | Merkkijono |  <nobr>pull-to-refresh</nobr><br>painike | Määritä, onko käyttäjällä painike, joka päivittää raportin, vai tuleeko hänen käyttää päivittämistä vetämällä. |
+| com.microsoft.powerbi.mobile.ReportTapInteraction | Merkkijono |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Määritä, tehdäänkö visualisoinnin napautuksella myös arvopisteen valinta. |
+| com.microsoft.powerbi.mobile.EnableMultiSelect | Totuusarvo |  <nobr>Tosi</nobr><br><nobr>Epätosi</nobr> | Määritä, korvataanko nykyinen valinta arvopisteen napautuksella vai lisätäänkö se nykyiseen valintaan. |
+| com.microsoft.powerbi.mobile.RefreshAction | Merkkijono |  <nobr>pull-to-refresh</nobr><br>painike | Määritä, onko käyttäjällä painike raportin päivittämiseen, vai tuleeko hänen päivittää vetämällä. |
 | com.microsoft.powerbi.mobile.FooterAppearance | Merkkijono |  docked<br>dynamic | Määritä, kiinnitetäänkö raportin alatunniste raportin alareunaan vai piilotetaanko se automaattisesti. |
 
 ## <a name="deploying-app-configuration-settings"></a>Sovelluksen määritysten käyttöönotto

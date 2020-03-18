@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: 590f11f23a04a698459cc4db99efe5308ccc0ce3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 996e409e634292ca0767f34c49931cfbcdcd4b94
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879950"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379527"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Opetusohjelma: Yksikkötestien lisääminen Power BI:n visualisointien projekteille
 
@@ -381,7 +381,7 @@ npm run test
 
 `karma.js` suorittaa testitapauksen Chrome-selaimessa.
 
-![Karma JavaScript avattuna Chromeen](./media/karmajs-chrome.png)
+![Karma JavaScript avattuna Chromeen](media/unit-tests-introduction/karmajs-chrome.png)
 
 > [!NOTE]
 > Google Chrome on asennettava paikallisesti.
@@ -453,7 +453,7 @@ export class SampleBarChartDataBuilder extends TestDataViewBuilder {
 
 Kun sijoitat tietoja tietokenttäsäilöihin, Power BI tuottaa tietoihin perustuvan luokittaisen `dataview`-objektin.
 
-![Tietokenttäsäilöt](./media/fields-buckets.png)
+![Tietokenttäsäilöt](media/unit-tests-introduction/fields-buckets.png)
 
 Yksikkötesteissä sinulla ei ole Power BI:n keskeisiä funktioita tietojen toistamiseksi. Sinun on kuitenkin yhdistettävä staattiset tietosi luokittaiseksi `dataview`-kohteeksi. Voit helpottaa sen yhdistämistä `TestDataViewBuilder`-luokan avulla.
 
@@ -596,23 +596,23 @@ Lines        : 52.83% ( 112/212 )
 
 Visualisointisi avautuu Chrome-selaimessa seuraavasti:
 
-![UT-käynnistykset Chromessa](./media/karmajs-chrome-ut-runned.png)
+![UT-käynnistykset Chromessa](media/unit-tests-introduction/karmajs-chrome-ut-runned.png)
 
 Yhteenveto osoittaa, että kattavuus on kasvanut. Jos haluat lisätietoja nykyisen koodin kattavuudesta, avaa `coverage\index.html`.
 
-![UT-kattavuuden indeksi](./media/code-coverage-index.png)
+![UT-kattavuuden indeksi](media/unit-tests-introduction/code-coverage-index.png)
 
 Voit myös tarkastella `src`-kansion kattavuutta:
 
-![Src-kansion kattavuus](./media/code-coverage-src-folder.png)
+![Src-kansion kattavuus](media/unit-tests-introduction/code-coverage-src-folder.png)
 
 Voit tarkastella lähdekoodia tiedoston vaikutusalueella. `Coverage`-apuohjelmat korostaisivat rivin punaisella, jos tiettyä koodia ei suoriteta yksikkötestien aikana.
 
-![Visual. ts-tiedoston koodin kattavuus](./media/code-coverage-visual-src.png)
+![Visual. ts-tiedoston koodin kattavuus](media/unit-tests-introduction/code-coverage-visual-src.png)
 
 > [!IMPORTANT]
 > Koodin kattavuus ei tarkoita, että käytettävissäsi olisi hyvä toimintojen kattavuus visualisoinnissa. Yksi yksinkertainen yksikkötesti kattoi yli 96 prosenttia kohteessa `src\visual.ts`.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Kun visualisointi on valmis, voit lähettää sen julkaistavaksi. Lisätietoja tästä on artikkelissa [Power BI -visualisointien julkaiseminen AppSourceen](../office-store.md).
+Kun visualisointi on valmis, voit lähettää sen julkaistavaksi. Lisätietoja tästä on artikkelissa [Power BI -visualisointien julkaiseminen AppSourceen](office-store.md).

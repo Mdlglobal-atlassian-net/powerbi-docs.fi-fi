@@ -10,11 +10,11 @@ ms.date: 01/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 278aa4c28db97c348e683b759e8a7f9415f19c3e
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76039247"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79206834"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Tietojoukkoihin yhdistäminen Power BI -palvelussa Power BI Desktopista
 
@@ -32,7 +32,7 @@ Yksi Power BI:n suosion haaste on raporttien, koontinäyttöjen ja niiden pohjan
 
 Oletetaan, että Anna on tiimisi yritysanalyytikko. Anna on taitava luomaan hyviä tietomalleja, joita kutsutaan usein tietojoukoiksi. Anna voi luoda tietojoukon ja raportin, ja jakaa sitten tämän raportin Power BI -palvelussa.
 
-![Power BI -palvelussa julkaiseminen](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
+![Power BI -palveluun kirjautuminen](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
 
 Kaikki pitävät Annan raportista ja tietojoukosta. Ja tässä ongelma juuri piilee. Kaikki Annan tiimin jäsenet yrittävät luoda *oman versionsa* tästä tietojoukosta ja jakaa sitten omat raporttinsa tiimin kanssa. Yhtäkkiä tiimin työtilassa voi olla lukuisia raportteja eri tietojoukoista Power BI -palvelussa. Mikä on niistä uusin? Olivatko tietojoukot samat vai vain suurin piirtein samat? Mitkä olivat niiden erot? Power BI -palvelun reaaliaikaisen yhteysominaisuuden ansiosta tilanne saadaan hallintaan. Näemme seuraavassa osiossa, miten muut voivat käyttää Annan julkaisemaa tietojoukkoa omissa raporteissaan ja omissa työtiloissaan. Näin kaikki voivat luoda saman vankan, yhtenäisen ja julkaistun tietojoukon avulla omia yksilöllisiä raporttejaan.
 
@@ -40,7 +40,7 @@ Kaikki pitävät Annan raportista ja tietojoukosta. Ja tässä ongelma juuri pii
 
 Anna luo raportin ja luo sen pohjana olevan tietojoukon. Anna julkaisee sen sitten Power BI -palvelussa. Raportti näkyy tiimin työtilassa Power BI -palvelussa. Jos Anna tallentaa sen *uuden käyttökokemuksen mukaiseen työtilaan*, hän voi määrittää *muodostamisoikeudet* niin, että kaikki hänen työtilaansa kuuluvat ja sen ulkopuoliset henkilöt voivat nähdä raportin ja käyttää sitä.
 
-Saat lisätietoja uudesta työtilojen käyttökokemuksesta [Työtilat](service-new-workspaces.md)-kohdasta.
+Saat lisätietoja uudesta työtilojen käyttökokemuksesta [työtilat](service-new-workspaces.md)-kohdasta.
 
 Annan työtilan sisä- ja ulkopuolella olevat muut jäsenet voivat nyt muodostaa reaaliaikaisen yhteyden Annan jaettuun tietomalliin Power BI -palvelun reaaliaikaisen yhteysominaisuuden avulla. He voivat luoda omia yksilöllisiä raporttejaan *alkuperäisestä tietojoukostaan* *omissa uusissa työtilojen käyttökokemuksissaan*.
 

@@ -1,19 +1,19 @@
 ---
 title: Power BI ja tehostettu todellisuus -sovellus (esikatselu)
 description: Tarkastele raporttinäkymiä ja raportteja Power BI:n tehostettu todellisuus -sovelluksessa (esikatselu), joko virtuaaliseen maailmaan upotettuna tai omassa ympäristössäsi.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/05/2018
-ms.author: mshenhav
-ms.openlocfilehash: 04a77aa9a5a464baf0ce1c9a88604d84ad0feb53
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/11/2020
+ms.author: painbar
+ms.openlocfilehash: 99e9c407a92d126ddc4c6f4822106cfa6458dbac
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879138"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205914"
 ---
 # <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI ja tehostettu todellisuus -sovellus (esikatselu)
 Tarkastele koontinäyttöjä ja raportteja Power BI:n tehostettu todellisuus -sovelluksessa (esikatselu), joko virtuaalimaailmassa tai sijoita niitä tiettyihin kohtiin omassa ympäristössäsi. 
@@ -60,7 +60,7 @@ Poimi Power BI -kohde, pidä se näkökentässäsi ja seuraa sitä katseellasi p
 
 **”Kiinnitä”** 
 
-Käytä komentoa asettaaksesi kohde Power BI -kiinnitysvyöhön, jolloin se seuraa sinua näkökenttäsi ulkopuolellasi ja siihen on helppo päästä käsiksi.
+Komentoa käyttämällä voit asettaa kohteen Power BI -kiinnitysvyöhön, jolloin se seuraa mukana näkökenttäsi ulkopuolella, ja siihen on helppo päästä käsiksi.
 
 **”Aseta tähän”**
 
@@ -70,7 +70,7 @@ Tämä komento asettaa koontinäytön tai raportin seinälle tai kohteeseen, tai
 
 **"Siirry alkuun"**
 
-Tämä komento palaa takaisin Power BI:n perinteiseen Windows -näkymään. 
+Tämä komento palauttaa takaisin Power BI:n perinteiseen Windows-näkymään. 
 
 **”Poista”**
 

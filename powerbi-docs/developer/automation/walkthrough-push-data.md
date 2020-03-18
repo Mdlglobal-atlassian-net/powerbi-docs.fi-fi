@@ -8,22 +8,22 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/22/2019
-ms.openlocfilehash: c39c7234ec4bc1b632355f92bdfdec9dc2b21ae4
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 932e458c90b248e01a88d45a849838cff27f6dcb
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079274"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488196"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Tietojen työntäminen Power BI -tietojoukkoon
 
 Power BI -ohjelmointirajapinnan avulla voit työntää tietoja Power BI -tietojoukkoon. Tässä artikkelissa kuvataan, miten voit työntää Tuote-taulukon sisältävän Myyntimarkkinointi-tietojoukon olemassa olevaan tietojoukkoon.
 
-Ennen aloittamista tarvitset Azure Active Directoryn (Azure AD) ja [Power BI -tilin](../create-an-azure-active-directory-tenant.md).
+Ennen aloittamista tarvitset Azure Active Directoryn (Azure AD) ja [Power BI -tilin](../embedded/create-an-azure-active-directory-tenant.md).
 
 ## <a name="steps-to-push-data-into-a-dataset"></a>Vaiheet tietojen työntämiseksi tietojoukkoon
 
-* Vaihe 1: [Rekisteröi sovellus Azure AD:n kanssa ](../register-app.md)
+* Vaihe 1: [Rekisteröi sovellus Azure AD:n kanssa ](../embedded/register-app.md)
 * Vaihe 2: [Todennustunnuksen hankkiminen](walkthrough-push-data-get-token.md)
 * Vaihe 3: [Tietojoukon luominen Power BI:ssä](walkthrough-push-data-create-dataset.md)
 * Vaihe 4: [Tietojoukon hankkiminen rivien lisäämiseksi Power BI -taulukkoon](walkthrough-push-data-get-datasets.md)
@@ -111,11 +111,11 @@ Power BI:n taulukon rakenteessa voi käyttää seuraavia tietotyyppejä.
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>Lisätietoja tietojen työntämisestä Power BI:hin
 
-Aloita tietojen työntäminen tietojoukkoon katsomalla vasemman reunan siirtymisruudusta kohta [Vaihe 1: Rekisteröi sovelluksen Azure AD:n kanssa](../register-app.md) siirtymisruudussa.
+Aloita tietojen työntäminen tietojoukkoon katsomalla vasemman reunan siirtymisruudusta kohta [Vaihe 1: Rekisteröi sovelluksen Azure AD:n kanssa](../embedded/register-app.md) siirtymisruudussa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* [Rekisteröidy Power BI -palveluun](../create-an-azure-active-directory-tenant.md)  
+* [Rekisteröidy Power BI -palveluun](../embedded/create-an-azure-active-directory-tenant.md)  
 * [Esittelyssä JSON](https://json.org/)  
 * [Power BI REST -ohjelmointirajapinnan yleiskatsaus](overview-of-power-bi-rest-api.md)  
 

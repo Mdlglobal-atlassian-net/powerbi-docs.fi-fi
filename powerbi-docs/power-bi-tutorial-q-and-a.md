@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 183ce11457069612f84bb834d7060a047cae1866
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 71a727d1d7e39661ed86a4fdf574e3f1fa8fb595
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73875076"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488863"
 ---
 # <a name="use-power-bi-qa-to-explore-your-data-and-create-visuals"></a>Tietojen tutkiminen ja visualisointien luominen Power BI Q&A:n avulla
 
 Joskus nopein tapa saada vastauksia tiedoista on esittää kysymyksiä luonnollisella kielellä. Power BI:n Q&A-ominaisuuden avulla voit tutkia tietojasi omien sanoin.  Tämän artikkelin ensimmäisessä osassa kuvataan, miten Q&A:ta käytetään Power BI -palvelun koontinäytöissä. Toisessa osassa kuvataan, mitä voit tehdä Q&A:lla, kun luot raportteja Power BI -palvelussa tai Power BI Desktopissa. Katso lisää taustatietoja artikkelista [Q&A kuluttajille](consumer/end-user-q-and-a.md). 
 
-[Q&A-toimintoa Power BI:n mobiilisovelluksissa](consumer/mobile/mobile-apps-ios-qna.md) ja [Q&A-toimintoa Power BI Embeddedin kanssa](developer/qanda.md) käsitellään erillisissä artikkeleissa. 
+[Q&A-toimintoa Power BI:n mobiilisovelluksissa](consumer/mobile/mobile-apps-ios-qna.md) ja [Q&A-toimintoa Power BI Embeddedin kanssa](developer/embedded/qanda.md) käsitellään erillisissä artikkeleissa. 
 
 Q&A on vuorovaikutteinen, jopa hauska. Usein yksi kysymys johtaa muihin, sillä visualisoinnit paljastavat kiinnostavia polkuja seurattaviksi. Katso videoesittely visualisointien luonnista Q&A:n avulla, tutustu kyseisiin visualisointeihin ja kiinnittää niitä koontinäyttöihin.
 

@@ -7,14 +7,14 @@ ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 6854dad244636854cc8b77ddf1ffc15342281771
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a631e6f5baf7942b81ce22a238d80f4aea40d022
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76818889"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379683"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Vuorovaikutteisuuden lisääminen visualisointiin Power BI:n visualisointien valinnoilla
 
@@ -179,11 +179,11 @@ Jos käyttäjä valitsee `Type`-kohteesta vaihtoehdon `Import Car` (valitsee tie
 | Nissan | **Tuontiauto** | 5485 |
 | Toyota | **Tuontiauto** | 20799 |
 
-![Visualisointi, jossa on luokka- ja sarjavalinnat](media/visual-selections-sample.png)
+![Visualisointi, jossa on luokka- ja sarjavalinnat](media/selection-api/visual-selections-sample.png)
 
 Visualisoinnin tietokorit on täytettävä.
 
-![Visualisoinnin ja valintojen tietokorit](media/visual-selections-databuckets.png)
+![Visualisoinnin ja valintojen tietokorit](media/selection-api/visual-selections-databuckets.png)
 
 Luokka on `Manufacturer` (sarakkeet), sarja on `Type` (rivit) ja `Values` on `Value` sarjoille.
 

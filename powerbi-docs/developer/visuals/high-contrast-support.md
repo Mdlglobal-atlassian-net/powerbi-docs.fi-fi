@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 021040706ff34f43c6a7772849f2e27181041bc9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 56ebfeb8c1c52b83f5be0ca9e9db6f312986dd57
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880043"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380125"
 ---
 # <a name="high-contrast-mode-support-in-power-bi-visuals"></a>Suuren kontrastin tila Power BI:n visualisoinneissa
 
@@ -82,9 +82,9 @@ Power BI:n alkuperäiset visualisoinnit noudattavat näitä ohjeita:
 
 Seuraavassa esimerkkipalkkikaaviossa kaikki palkit on piirretty käyttäen kahden kuvapisteen paksuista edustan ääriviivaa ja taustan täyttöä. Vertaa sen ulkoasua, kun käytössä ovat oletusvärit sekä muutama suuren kontrastin teema:
 
-![Esimerkkipalkkikaavio vakioväreillä](./media/hc-samplebarchart-standard.png)
-![Esimerkkipalkkikaavio *Tumma 2* -väriteemalla](./media/hc-samplebarchart-dark2.png)
-![Esimerkkipalkkikaavio *Valkoinen*-väriteemalla](./media/hc-samplebarchart-white.png)
+![Esimerkkipalkkikaavio vakioväreillä](media/high-contrast-support/hc-samplebarchart-standard.png)
+![Esimerkkipalkkikaavio *Tumma 2* -väriteemalla](media/high-contrast-support/hc-samplebarchart-dark2.png)
+![Esimerkkipalkkikaavio *Valkoinen*-väriteemalla](media/high-contrast-support/hc-samplebarchart-white.png)
 
 Seuraavassa osassa näkyy yksi kohta `visualTransform`-toiminnossa, joka on muutettu tukemaan suurta kontrastia. Sitä kutsutaan osana hahmonnusta päivityksen aikana.
 

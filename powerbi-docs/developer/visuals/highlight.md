@@ -6,28 +6,28 @@ ms.author: kesharab
 ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/31/2019
-ms.openlocfilehash: 0c1263760157371f9f4d9fc0f122d6e37d73d720
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: d406396db64b52326bbd8ea2aa485cd3d7451294
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76819165"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380016"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Korosta arvopisteitä Power BI:n visualisoinneissa
 
 Oletusarvon mukaan aina, kun elementti valitaan, `values`-matriisi `dataView`-objektissa suodatetaan vain valittuihin arvoihin. Se saa kaikki muut sivun visualisoinnit näyttämään vain valitut tiedot.
 
-![`tietonäkymän` korostaminen oletustoiminta](./media/highlight-dataview.png)
+![`tietonäkymän` korostaminen oletustoiminta](media/highlight/highlight-dataview.png)
 
 Jos määrität `supportsHighlight`-ominaisuuden arvoksi `true` kohteessa `capabilities.json`, saat täyden suodattamattoman `values`-matriisin sekä `highlights`-matriisin. `highlights`-matriisi on yhtä pitkä kuin arvomatriisi, ja valitsemattomat arvot asetetaan arvoon `null`. Kun tämä ominaisuus on käytössä, on visualisoinnin vastuulla korostaa asianmukaiset tiedot vertaamalla `values`-matriisia `highlights`-matriisiin.
 
-![`tietonäkymä` tukee korostamista](./media/highlight-dataview-supports.png)
+![`tietonäkymä` tukee korostamista](media/highlight/highlight-dataview-supports.png)
 
 Tässä esimerkissä huomaat, että 1-palkki on valittuna. Se on korostusmatriisin ainoa arvo. On myös tärkeää huomata, että käytössä voisi olla useita valintoja ja osittaisia korostuksia. Korostetut arvot esitetään tietonäkymässä.
 
-> [!Note]
+> [!NOTE]
 > Taulukon tietonäkymän yhdistämismääritys ei tue korostusominaisuutta.
 
 ## <a name="highlight-data-points-with-categorical-data-view-mapping"></a>Korosta arvopisteet luokittaisella tietonäkymän yhdistämismäärityksellä
@@ -187,7 +187,7 @@ public update(options: VisualUpdateOptions) {
 
 `categoryValues` on luokan arvojen matriisi, `measureValues` on mittareiden matriisi, ja `measureHighlights` korostetut arvojen osat.
 
-> [!Note]
+> [!NOTE]
 > Ominaisuuden `measureHighlights` arvot voivat olla pienempiä kuin ominaisuuden `categoryValues` arvot.
 > Tämä tarkoittaa, että arvo korostettiin osittain.
 
@@ -271,7 +271,7 @@ div.value {
 
 Tuloksena pitäisi olla seuraava visualisointinäkymä.
 
-![Visualisoinnit, joissa on luokittainen tietonäkymän yhdistämismääritys ja korostus](./media/dev-categorical-visual-highlight-demo.gif)
+![Visualisoinnit, joissa on luokittainen tietonäkymän yhdistämismääritys ja korostus](media/highlight/dev-categorical-visual-highlight-demo.gif)
 
 ## <a name="highlight-data-points-with-matrix-data-view-mapping"></a>Korosta arvopisteet matriisitietonäkymän yhdistämismäärityksellä
 
@@ -582,7 +582,7 @@ JSON.stringify(options.dataViews[0].matrix.rows.root.children[0].children[0].chi
 
 `value`-ominaisuus edustaa solmun arvoa ilman, että valinta otetaan käyttöön muusta visualisoinnista, ja korostusominaisuus ilmaisee, mikä osa tiedoista korostui.
 
-> [!Note]
+> [!NOTE]
 > Ominaisuuden `highlight` arvo voi olla pienempi kuin ominaisuuden `value` arvo.
 > Tämä tarkoittaa, että arvo korostettiin osittain.
 
@@ -643,7 +643,7 @@ public update(options: VisualUpdateOptions) {
 
 Tuloksena saat visualisoinnin, jossa on painikkeita ja arvot `highlighted value/default value`
 
-![Visualisointi, jossa on matriisitietonäkymän yhdistämismääritykset ja korostus](./media/dev-matrix-visual-highlight-demo.gif)
+![Visualisointi, jossa on matriisitietonäkymän yhdistämismääritykset ja korostus](media/highlight/dev-matrix-visual-highlight-demo.gif)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

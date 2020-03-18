@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: b50ebde94d78ca42437979d792fb6402affe8855
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 571d4a2992a5017114cf94c3f49296769062d8ee
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74696620"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380810"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Power BI -visualisointien tietonäkymän yhdistämismääritykset
 
@@ -185,7 +185,7 @@ export class Visual implements IVisual {
 
 Tämän seurauksena visualisointi näyttää yksittäisen arvon Power BI:stä:
 
-![Esimerkki yksittäisen tietonäkymän yhdistämismäärityksen visualisoinnista](./media/visual-simple-dataview-mapping.png)
+![Esimerkki yksittäisen tietonäkymän yhdistämismäärityksen visualisoinnista](media/dataview-mappings/visual-simple-dataview-mapping.png)
 
 ## <a name="categorical-data-mapping"></a>Luokittainen tietojen yhdistäminen
 
@@ -493,7 +493,7 @@ export class Visual implements IVisual {
 
 Visualisoinnin tulos:
 
-![Visualisointi, jossa on luokittainen tietonäkymän yhdistämismääritys](./media/categorical-data-view-mapping-visual.png)
+![Visualisointi, jossa on luokittainen tietonäkymän yhdistämismääritys](media/dataview-mappings/categorical-data-view-mapping-visual.png)
 
 ## <a name="table-data-mapping"></a>Taulukkotietojen yhdistäminen
 
@@ -508,7 +508,7 @@ Annetuilla ominaisuuksilla:
     {
         "displayName": "Column",
         "name": "column",
-        "kind": "Measure"
+        "kind": "Grouping"
     },
     {
         "displayName": "Value",
@@ -557,7 +557,7 @@ Tietoesimerkki:
 
 Tietojen sidonta:
 
-![Taulukon tietonäkymän yhdistämismäärityksen tietojen sidonta](./media/table-dataview-mapping-data.png)
+![Taulukon tietonäkymän yhdistämismäärityksen tietojen sidonta](media/dataview-mappings/table-dataview-mapping-data.png)
 
 Power BI näyttää tietosi taulukkotietonäkymänä. Sinun ei pidä olettaa, että tiedot on järjestetty.
 
@@ -603,7 +603,7 @@ Power BI näyttää tietosi taulukkotietonäkymänä. Sinun ei pidä olettaa, et
 
 Voit koostaa tiedot valitsemalla haluamasi kentän ja valitsemalla sitten summan.  
 
-![Tietojen koostaminen](./media/data-aggregation.png)
+![Tietojen koostaminen](media/dataview-mappings/data-aggregation.png)
 
 Koodiesimerkki taulukon tietonäkymän yhdistämismäärityksen käsittelyä varten.
 
@@ -686,7 +686,7 @@ td {
 }
 ```
 
-![Visualisointi, jossa on taulukon tietonäkymän yhdistämismääritys](./media/table-dataview-mapping-visual.png)
+![Visualisointi, jossa on taulukon tietonäkymän yhdistämismääritys](media/dataview-mappings/table-dataview-mapping-visual.png)
 
 ## <a name="matrix-data-mapping"></a>Matriisitietojen yhdistäminen
 
@@ -767,7 +767,7 @@ Tietojoukko:
 
 Power BI:n ydinmatriisivisualisointi hahmontaa tiedot taulukon tapaan.
 
-![Matriisivisualisointi](./media/matrix-visual-smaple.png)
+![Matriisivisualisointi](media/dataview-mappings/matrix-visual-smaple.png)
 
 Visualisointi saa tietorakenteensa seuraavassa koodissa kuvatulla tavalla (vain kaksi ensimmäistä taulukon riviä näkyvät tässä):
 

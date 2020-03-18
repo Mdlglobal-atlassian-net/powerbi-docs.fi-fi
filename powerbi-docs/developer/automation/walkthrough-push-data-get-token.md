@@ -8,22 +8,22 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/29/2019
-ms.openlocfilehash: 4b1c890a69863f3e05dee052efe9529b174f0874
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 7e74b01a6b12302393a3e4bc40b2e9cccfc13d63
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079113"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488265"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Vaihe 2: Todennustunnuksen hankkiminen
 
 Tämä artikkeli on toinen vaihe [Tietojen työntäminen Power BI-tietojoukkoon](walkthrough-push-data.md) -sarjassa.
 
-Vaiheessa 1 [rekisteröit asiakassovelluksen Azure AD:ssä](../register-app.md). Tässä vaiheessa hankitaan todennustunnus. Power BI -sovellukset on integroitu Azure Active Directoryyn, jotta sovelluksessa voidaan käyttää suojattua kirjautumista ja todennusta. Tunnuksen avulla sovellus voi todentautua Azure AD:ssä ja käyttää Power BI -resursseja.
+Vaiheessa 1 [rekisteröit asiakassovelluksen Azure AD:ssä](../embedded/register-app.md). Tässä vaiheessa hankitaan todennustunnus. Power BI -sovellukset on integroitu Azure Active Directoryyn, jotta sovelluksessa voidaan käyttää suojattua kirjautumista ja todennusta. Tunnuksen avulla sovellus voi todentautua Azure AD:ssä ja käyttää Power BI -resursseja.
 
 ## <a name="get-an-authentication-access-token"></a>Todennustunnuksen hankkiminen
 
-Ennen kuin aloitat, varmista, että olet suorittanut [Tietojen työntäminen Power BI -tietojoukkoon](walkthrough-push-data.md) -sarjan [edellisen vaiheen](../register-app.md). 
+Ennen kuin aloitat, varmista, että olet suorittanut [Tietojen työntäminen Power BI -tietojoukkoon](walkthrough-push-data.md) -sarjan [edellisen vaiheen](../embedded/register-app.md). 
 
 Nämä toimenpiteet edellyttävät Visual Studio 2015:ttä tai uudempaa versiota.
 
@@ -39,7 +39,7 @@ Nämä toimenpiteet edellyttävät Visual Studio 2015:ttä tai uudempaa versiota
 
 3. Lisää näiden vaiheiden jälkeen luetteloitu koodinäyte Program.cs:ään.
 
-4. Korvaa ”{ClientID}” **Asiakastunnuksella**, jonka sait [sarjan edellisessä artikkelissa](../register-app.md) sovelluksen rekisteröinnin yhteydessä.
+4. Korvaa ”{ClientID}” **Asiakastunnuksella**, jonka sait [sarjan edellisessä artikkelissa](../embedded/register-app.md) sovelluksen rekisteröinnin yhteydessä.
 
 5. Suorita konsolisovellus ja kirjaudu Power BI -tilillesi. 
 
