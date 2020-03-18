@@ -51,6 +51,8 @@
               href: ../service-url-filters.md
             - name: Tilaa itselle tai muille
               href: ../service-report-subscribe.md
+            - name: Ominaisuuksien sisältö kotisivulla
+              href: service-featured-content.md
             - name: Raportin upottaminen Microsoft Teamsiin
               href: ../service-embed-report-microsoft-teams.md
             - name: Raportin upottaminen SharePoint Onlineen
