@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/17/2019
+ms.date: 02/18/2020
 ms.author: mihart
-ms.openlocfilehash: e5c3f8b327d6899d83e2304e56e5813a47fc4698
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 4679973cf65ced31a40b3a1bb40c820184e10e2c
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537803"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040096"
 ---
 # <a name="glossary-for-power-bi-service"></a>Power BI -palvelun sanasto
 Power BI -palvelussa saattaa olla ennestään tuntematonta tai sekavalta vaikuttavaa terminologiaa. Sanasto on hyvä paikka termien hakuun, joten se on hyvä lisätä suosikkeihin. Toinen hyvä resurssi lisätietojen saamiseen Power BI -palvelun muodostavista rakenneosista ovat [peruskäsitteet](end-user-basic-concepts.md). Peruskäsitteet tarjoavat korkean tason yleiskatsauksen Power BI:n *osiin* ja niiden yhteyksiin.
@@ -22,7 +22,9 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 ## <a name="a"></a>A
 
-**account (tili)** On olemassa erilaisia Power BI -tilejä.  Power BI Pro -tili on maksullinen kuukausittainen tilaus.  Power BI:n maksuttoman version avulla voi tarkastella sisältöä, joka sijaitsee Power BI Premium -kapasiteetissa.  
+**tili** On olemassa erilaisia Power BI -tilejä, joita kutsutaan myös *käyttöoikeuksiksi*.  Tilit ovat joko käyttäjäkohtaisia tai organisaatiotilejä. Käyttäjäkohtaiset tilit ovat saatavina *maksuttomina* tai *Pro*-versioina.  Power BI:n *maksuttoman* version käyttäjällä on joko erillinen Power BI Desktop, tai hän käyttää Power BI -palvelua Premium-organisaatiotilin osana. Power BI:n käyttäjäkohtainen *Pro*-tili on maksullinen kuukausitilaus, joka mahdollistaa yhteistyön tekemisen ja sisällön jakamisen muiden *Pro*-käyttäjien kanssa. 
+
+*Premium-* organisaatiotilissä (tunnetaan myös nimellä *Premium-kapasiteetti*) on tietyt lisäominaisuudet käyttäjäkohtaisiin käyttöoikeuksiin sisältyvien toimintojen lisäksi. Esimerkiksi *Premium*-käyttöoikeudelliseen organisaatioon kuuluvat *maksuttomien* käyttäjäkohtaisten tilien omistajat voivat tehdä Power BI:ssä paljon enemmän kuin ne *maksuttomien* tilien käyttäjät, joilla ei ole *Premiumia*. *Premium*-organisaatiotileihin sisältyvät *maksuttomien* tilien käyttäjät voivat esimerkiksi tehdä yhteistyötä työtovereiden kanssa ja tarkastella sisältöä, jota isännöidään Power BI Premium -kapasiteetissa.  
 
 **admin portal (hallintaportaali)** Paikka, jossa Power BI -järjestelmänvalvojat voivat hallita Power BI:n käyttäjiä, ominaisuuksia ja asetuksia organisaatiossaan. (Huomautus: (Office 365, Azure ja PowerApps käyttävät hallintakeskusta.)
 
@@ -170,6 +172,8 @@ Power BI -palvelun vasemmassa reunassa olevat ohjausobjektit.
 
 Esimerkki: siirtymisruutu Seuraavat maininnat tai vähäinen tila: siirtymäruutu
 
+**käyttöoikeus** Katso *tili*.
+
 **luettelosivu** tai **sisältöluettelo** Yksi elementtien osan sivuista vasemmassa siirtymisruudussa. Esimerkiksi Suosikit, Viimeisimmät, Oma työtila jne.
 
 ## <a name="m"></a>M
@@ -226,15 +230,17 @@ Esimerkki: siirtymisruutu Seuraavat maininnat tai vähäinen tila: siirtymäruut
 
 **Power BI Embedded** Kehittäjien käyttämä tuote Power BI -koontinäyttöjen ja -raporttien upottamiseen omiin sovelluksiin, sivustoihin ja työkaluihin.
 
-**Power BI Premium** Power BI Pro -käyttöoikeuden lisäosa, jonka avulla organisaatiot voivat ennakoivasti skaalata BI-ratkaisuja erillisen laitteiston hankinnan kautta.
+**Power BI Premium** Power BI Pro -käyttöoikeuden lisäosa, jonka avulla organisaatiot voivat ennakoivasti skaalata BI-ratkaisuja erillisen laitteiston hankinnan kautta. Katso *tili*.
 
-**Power BI Pro license (Power BI Pro -käyttöoikeus)** Kuukausittainen käyttöoikeus, joka mahdollistaa koontinäyttöjen luomisen, jaettujen tietojen työstämisen, tietojen automaattisen päivittämisen, tietojen käytön valvonnan ja hallinnoimisen ja mahdollisuuden paketoida jaettavaa sisältöä (Power BI -sovellukset).
+**Power BI Pro** Kuukausittainen käyttäjäkohtainen käyttöoikeus, joka mahdollistaa raporttien ja koontinäyttöjen luomisen, jaettujen tietojen työstämisen, tietojen automaattisen päivittämisen, tietojen käytön valvonnan ja hallinnoimisen ja mahdollisuuden pakata jaettavaa sisältöä (Power BI -sovellukset). Katso *tili*.
 
 **Power BI Report Server (Power BI -raporttipalvelin)** SSRS:n uusi tuotemerkillinen tarjooma, joka julkaistaan Power BI Premiumin kanssa ja jonka avulla organisaatiot voivat luoda hajautettuja BI- yhdistelmäjärjestelmiä (pilvipalvelujen ja paikallisen käyttöönoton yhdistelmä). Embedded tarjoaa lokalisoidun keinon tallentaa ja hallita Power BI -raportteja.
 
 **Power BI service (Power BI -palvelu)** Verkossa oleva SaaS (Software as a service) -palvelu. Lisätietoja on artikkelissa [Mikä on Power BI?](../fundamentals/power-bi-overview.md).
 
 **Premium workspace (Premium-työtila)** Varatussa kapasiteetissa suoritettava työtila, jonka asiakkaat tunnistavat vinoneliökuvakkeesta.  
+
+**Pro**-käyttöoikeus tai **Pro**-tili Katso *tili*.
 
 **publish (julkaise)** Power BI -palvelun raporttien *suunnitteluohjelmat* kokoavat Power BI -työtilan sisällön, jotta se on muiden käytettävissä Power BI -sovelluksena. Power BI Desktopin raporttien *suunnitteluohjelmat* viittaavat Julkaise-toiminnolla .pbix-muotoisen Power BI Desktop -raportin lähettämiseen Power BI -palveluun, jotta ne voivat luoda niiden pohjalta koontinäyttöjä ja jakaa ne helposti muiden kanssa. 
 

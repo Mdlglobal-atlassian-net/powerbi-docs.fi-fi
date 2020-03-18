@@ -8,16 +8,18 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/30/2020
-rLocalizationGroup: Common tasks
-ms.openlocfilehash: 267a1e8b2f45198059e5acfcdf0233445babbd14
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.date: 03/09/2020
+LocalizationGroup: Common tasks
+ms.openlocfilehash: 869da47cd64e93a930fe6e92071345be093617a7
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76888585"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114027"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Raportin tai koontinäytön tilaaminen Power BI -palvelussa 
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -63,7 +65,7 @@ Koontinäytön ja raportin tilausprosessit ovat samankaltaiset. Samaa painiketta
 
 3. Jos kaikki näyttää olevan kunnossa, tallenna tilaus valitsemalla **Tallenna ja sulje**. Saat sähköpostin ja tilannevedoksen koontinäytöstä tai raportista määrittämäsi aikataulun mukaisesti. Kaikissa tilauksissa, joiden tiheydeksi määritetään **Tietojen päivittämisen jälkeen**, lähetetään sähköpostia vain kyseisen päivän ensimmäisen ajoitetun päivityksen jälkeen.
    
-   ![sähköpostitilannevedos koontinäytöstä](media/end-user-subscribe/power-bi-subscribe-email.png)
+   ![sähköpostitilannevedos koontinäytöstä](media/end-user-subscribe/power-bi-email.png)
    
     Raporttisivun päivittäminen ei päivitä tietojoukkoa. Vain tietojoukon omistaja voi manuaalisesti päivittää tietojoukon. Etsi pohjana olevan tietojoukon omistajan nimi valitsemalla avattavan valikon yläreunan valikkorivi tai etsi alkuperäinen tilaussähköposti.
    
@@ -73,11 +75,12 @@ Koontinäytön ja raportin tilausprosessit ovat samankaltaiset. Samaa painiketta
 ## <a name="manage-your-subscriptions"></a>Tilausten hallinta
 Vain sinä itse voit hallita luomiasi tilauksia. Valitse uudelleen **Tilaa** ja valitse vasemmasta alakulmasta **Kaikkien tilausten hallinta** (katso yllä olevat näyttökuvat). 
 
-![kaikkien tilausten tarkastelu Omassa työtilassa](./media/end-user-subscribe/power-bi-manage.png)
+![kaikkien tilausten tarkastelu Omassa työtilassa](./media/end-user-subscribe/power-bi-manage-subscriptions.png)
 
 Tilaus päättyy, jos Pro-käyttöoikeus umpeutuu, omistaja poistaa koontinäytön tai tilauksen luomiseen käytetty käyttäjätili poistetaan.
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
+* Jos haluat välttää tilaussähköpostien joutumisen roskapostikansioosi, lisää Power Platformin sähköpostialias PowerPlat-noreply@microsoft.com yhteystietoihisi. Jos käytät Microsoft Outlookia, napsauta aliasta hiiren kakkospainikkeella ja valitse **Lisää Outlook-yhteystietoihin**. 
 * Jos koontinäytössä on yli 25 kiinnitettyä ruutua tai neljä kiinnitettyä reaaliaikaisista raporttisivua, koontinäyttö ei ehkä hahmonnu täysin käyttäjille lähetetyissä tilauksen sähköpostiviesteissä. Suosittelemme, että otat yhteyttä koontinäytön tekijään ja pyydät häntä vähentämään kiinnitettyjen ruutujen määrän alle 25:een ja kiinnitettyjen reaaliaikaisten raporttien määrän alle neljään, jotta sähköpostiviesti näytetään oikein.  
 * Jos koontinäytön sähköpostitilausten joillakin ruuduilla on käytössä rivitason suojaus (RLS), näitä ruutuja ei näytetä.  Jos raportin sähköpostitilausten tietojoukko käyttää rivitason suojausta (RSL), et pysty luomaan tilausta.
 * Jos sähköpostissa olevat linkit (sisältöön) lakkaavat toimimasta, sisältö on ehkä poistettu. Näyttökuvan alla olevassa sähköpostiviestissä näet, oletko tilannut viestin itse vai onko joku muu tehnyt tilauksen puolestasi. Jos joku muu on tehnyt tilauksen, pyydä työtoveria joko peruuttamaan sähköpostiviestit tai tekemään tilaus uudelleen.

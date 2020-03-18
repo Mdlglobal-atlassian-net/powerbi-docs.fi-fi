@@ -1,19 +1,19 @@
 ---
 title: Linkin luominen tiettyyn sijaintiin Power BI ‑mobiilisovelluksissa
 description: Opettele luomaan Power BI ‑mobiilisovelluksessa tarkka linkki tiettyyn koontinäkymään, ruutuun tai raporttiin käyttämällä URI-tunnusta.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/24/2019
-ms.author: mshenhav
-ms.openlocfilehash: 427019d831aa02723f17efd3de78081c368717c2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/11/2020
+ms.author: painbar
+ms.openlocfilehash: f0a72cf315c8ad911414274daae11b712971b305
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879282"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114503"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Linkin luominen tiettyyn sijaintiin Power BI ‑mobiilisovelluksissa
 Linkkien avulla voit käyttää suoraan tiettyjä kohteita Power BI:ssä: raporttia, koontinäyttöä ja ruutua.
@@ -112,7 +112,7 @@ https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSecti
 Lue lisää siitä, [miten voit luoda kyselyparametrin raporttien suodattamiseksi](https://docs.microsoft.com/power-bi/service-url-filters).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Palaute auttaa meitä päättämään, mitä toimintoja otamme käyttöön tulevaisuudessa, joten muista äänestää muita ominaisuuksia, jotka haluaisit nähdä Power BI ‑mobiilisovelluksissa. 
+Palaute auttaa meitä päättämään, mitä toimintoja otamme käyttöön tulevaisuudessa, joten muista äänestää muita toimintoja, jotka haluaisit nähdä Power BI ‑mobiilisovelluksissa. 
 
 * [Power BI -sovellukset mobiililaitteille](mobile-apps-for-mobile-devices.md)
 * Seuraa käyttäjää @MSPowerBI Twitterissä

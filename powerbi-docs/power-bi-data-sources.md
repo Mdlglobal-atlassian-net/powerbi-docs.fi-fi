@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 03/10/2020
 ms.author: kfollis
-ms.openlocfilehash: 261d800dac9b65747e648bc76944a0b8a5077b73
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 1853e710958b5bed0dad011594d9e04ccc99842d
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427089"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041673"
 ---
 # <a name="power-bi-data-sources"></a>Power BI -tietolähteet
 
@@ -43,7 +43,7 @@ Seuraavassa taulukossa esitetään Power BI:n tukemat tietolähteet tietojoukoil
 | Azure HDInsight (HDFS) | Kyllä | Kyllä | Ei | Ei | Ei |
 | Azure HDInsight Spark | Kyllä | Kyllä | Kyllä | Ei | Ei |
 | Azuren SQL-tietokanta | Kyllä | Kyllä | Kyllä | Kyllä <sup>2</sup> | Ei |
-| Azure SQL Data Warehouse | Kyllä | Kyllä | Kyllä | Ei | Ei |
+| Azure SQL Data Warehouse | Kyllä | Kyllä | Kyllä | Kyllä <sup>2</sup> | Ei |
 | Azure-taulukkotallennus | Kyllä | Kyllä | Ei | Kyllä | Ei |
 | BI-liitin | Kyllä | Kyllä | Kyllä | Kyllä | Kyllä |
 | BI360 – budjetointi ja talousraportointi | Kyllä | Kyllä | Ei | Ei | Ei |
@@ -134,7 +134,7 @@ Seuraavassa taulukossa esitetään Power BI:n tukemat tietolähteet tietojoukoil
 | Twilio | Kyllä | Kyllä | Ei | Ei | Ei |
 | tyGraph | Kyllä | Kyllä | Ei | Ei | Ei |
 | Vertica | Kyllä | Kyllä | Kyllä | Kyllä | Kyllä |
-| Verkko | Kyllä | Kyllä | Ei | Kyllä | Kyllä |
+| Verkko | Kyllä | Kyllä | Ei | Kyllä | Kyllä <sup>6</sup> |
 | Webtrends | Kyllä | Kyllä | Ei | Ei | Ei |
 | Työvoiman dimensiot | Kyllä | Kyllä | Ei | Kyllä | Ei |
 | XML | Kyllä | Kyllä | Ei | Kyllä | Ei <sup>4</sup> |
@@ -143,13 +143,15 @@ Seuraavassa taulukossa esitetään Power BI:n tukemat tietolähteet tietojoukoil
 
 <sup>1</sup> Tuetaan [ACE OLEDB -palvelun kanssa](https://www.microsoft.com/download/details.aspx?id=54920), asennettuna samaan koneeseen kuin yhdyskäytävä.
 
-<sup>2</sup> Tuetaan samalla M-funktiolla kuin paikallisessa versiossa.
+<sup>2</sup> Tuettu samalla M-funktiolla kuin paikallisessa versiossa, mikä aiheuttaa rajoitetut todennusvalinnat (yhdyskäytävä ei tue OAuthia).
 
 <sup>3</sup> Excel 1997–2003 -tiedostot (.xls) edellyttävät [ACE OLEDB -palvelua](https://www.microsoft.com/download/details.aspx?id=54920).
 
 <sup>4</sup> Edellytetään tekniikan paikallisessa versiossa.
 
 <sup>5</sup> Tuetaan vain [henkilökohtaisen yhdyskäytävän](service-gateway-personal-mode.md) kanssa.
+
+<sup>6</sup> Pakollinen .html-, .xls- ja Access-tietokannoille
 
 ## <a name="single-sign-on-sso-for-directquery-sources"></a>DirectQuery-lähteiden kertakirjautuminen
 

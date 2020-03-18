@@ -7,21 +7,24 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/22/2020
+ms.date: 02/20/2020
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 27128618fc594a8b7259a3de3862c6766eaecd86
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 811eaa9769a099122597d7132de80cbc2d22a51b
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537493"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040132"
 ---
 # <a name="export-data-from-a-visual"></a>Tietojen vieminen visualisoinnista
 
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Jos haluat nähdä visualisoinnin luomiseen käytetyt tiedot, [voit näyttää kyseiset tiedot Power BI:ssä](end-user-show-data.md) tai viedä ne tiedot Exceliin. Tietojen vienti edellyttää sopivaa käyttöoikeutta sekä sisällön muokkausoikeuksia. Jos vieminen ei onnistu, ota yhteys Power BI -järjestelmänvalvojaasi. 
+Jos haluat nähdä visualisoinnin luomiseen käytetyt tiedot, [voit näyttää kyseiset tiedot Power BI:ssä](end-user-show-data.md) tai viedä ne tiedot Exceliin. Tietojen vienti edellyttää sopivaa käyttöoikeutta sekä sisällön muokkausoikeuksia. Jos vieminen ei onnistu, ota yhteys Power BI -järjestelmänvalvojaasi. Tietojen vieminen vaatii Power BI Pro -käyttöoikeuden: joko käyttäjäkohtaisen Pro-käyttöoikeuden tai käyttäjäkohtaisen Pro-käyttöoikeuden organisaatiossa, jolla on Premium-kapasiteetin käyttöoikeus. Yleensä tällaista käyttöoikeustyyppiä käyttävät raporttien *suunnittelijat* eivätkä *kuluttajat*. Jos haluat lisätietoja, katso [Mikä käyttöoikeus minulla on?](end-user-license.md).
+
 
 ## <a name="from-a-visual-on-a-power-bi-dashboard"></a>Power BI -raporttinäkymän visualisoinnista
 

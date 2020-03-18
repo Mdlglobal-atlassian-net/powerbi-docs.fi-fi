@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 03/15/2019
-ms.openlocfilehash: 9f9383e5cdb4b4690ef75294f7ff8c17fb643d9a
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 4e8ce6d9a892abf3e24ecae6dee1e3ea23504d31
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265019"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041351"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Mitä kehittäjät voivat tehdä Power BI:llä?
 
@@ -37,7 +37,7 @@ Saat lisätietoja upottamisesta Power BI:llä kohdasta [Upottaminen Power BI:ll�
 
 ## <a name="developing-custom-visuals"></a>Mukautettujen visualisointien kehittäminen
 
-Power BI:n mukautettujen visualisointien avulla voit luoda yksilöllisen visualisointityypin, joka on räätälöity sinulle tai yrityksellesi. Usein näitä mukautettuja visualisointeja luovat kehittäjät. Ne luodaan, kun Power BI:n visualisointien valikoima ei täysin vastaa tarpeitasi.
+Power BI:n mukautettujen visualisointien avulla voit luoda yksilöllisen visualisointityypin, joka on räätälöity sinulle tai yrityksellesi. Usein näitä mukautettuja visualisointeja luovat kehittäjät. Niitä luodaan, kun Power BI:n visualisointien valikoima ei vastaa tarpeitasi täysin.
 
 Mukautettujen visualisointien avulla voit luoda omia visualisointeja käytettäväksi Power BI ‑raporteissa. Mukautetut visualisoinnit kirjoitetaan Typescriptillä, joka on JavaScriptin yläjoukko. TypeScript tukee edistyneempiä ominaisuuksia ja varhaista pääsyä ES6/ES7-toiminnallisuuteen. Visualisointityylit käsitellään Cascading Style Sheet (CSS) -tyyliohjeiden avulla. Käyttömukavuuden lisäämiseksi käytämme Less-esikääntäjää, joka tukee joitakin kehittyneitä ominaisuuksia, kuten sisäkkäisyyttä, muuttujia, ehtoja, silmukoita ja muita ominaisuuksia. Jos et halua käyttää mitään näistä ominaisuuksista, voit kirjoittaa pelkkää CSS:ää Less-tiedostoon.
 
@@ -53,7 +53,7 @@ Lisäksi kehittäjät voivat luoda tiedoista omia visualisointejaan, joita voida
 
 ![Tietojen työntämismalli](media/what-can-you-do/powerbi-push-data.png)
 
-Voit tutustua Power BI -ohjelmointirajapinnoilla tehtäviin asioihin kohdassa [Mitä kehittäjä voi tehdä Power BI -ohjelmointirajapinnoilla](overview-of-power-bi-rest-api.md)?
+Voit tutustua Power BI -ohjelmointirajapinnoilla tehtäviin asioihin kohdassa [Mitä kehittäjä voi tehdä Power BI -ohjelmointirajapinnoilla](automation/overview-of-power-bi-rest-api.md)?
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
@@ -61,6 +61,6 @@ Voit tutustua Power BI -ohjelmointirajapinnoilla tehtäviin asioihin kohdassa [M
 
 [Power BI:n mukautetun visualisoinnin kehittäminen](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)
 
-[Mitä kehittäjät voivat tehdä Power BI -ohjelmointirajapinnalla?](overview-of-power-bi-rest-api.md)
+[Mitä kehittäjät voivat tehdä Power BI -ohjelmointirajapinnalla?](automation/overview-of-power-bi-rest-api.md)
 
 [Power BI -kehittäjäkeskus](https://powerbi.microsoft.com/developers/)

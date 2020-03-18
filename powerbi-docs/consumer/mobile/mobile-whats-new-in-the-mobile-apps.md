@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/09/2020
 ms.author: painbar
-ms.openlocfilehash: 7aa31d9c6eadd4c7c9c88c9006a360a6089f28e2
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: 97d2a3acba87309b74de1776f1325bb4c4a78910
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77259816"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79041549"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -21,6 +21,29 @@ Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 * [Power BI -tiimin mobiilisovelluksia käsittelevä blogi](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Power BI Desktopin uudet ominaisuudet](../../desktop-latest-update.md)  
 * [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)  
+
+## <a name="february-2020"></a>Helmikuu 2020
+
+### <a name="multi-select-mode-android-and-ios"></a>Monivalintatila (Android ja iOS)
+
+Olemme lisänneet mahdollisuuden valita raporttisivulta useita arvopisteitä. Kun monivalinta on käytössä, jokainen napsautettava arvopiste lisätään valittujen arvopisteiden joukkoon, ja yhdistetyt tulokset korostetaan automaattisesti kaikissa sivun visualisoinneissa. Voit ottaa monivalintatilan käyttöön [mobiilisovelluksen asetukset](./mobile-app-interaction-settings.md) -sivulla.
+
+>[!NOTE]
+>Monivalintatilaa tuetaan Power BI -raporttipalvelimen seuraavassa julkaisuversiossa.
+
+### <a name="report-footer-can-now-always-be-visible-in-the-mobile-app-for-iphones"></a>Raportin alatunniste voi nyt olla aina näkyvissä iPhone-mobiilisovelluksessa
+
+Voit nyt kiinnittää sekä iPhonella että Android-puhelimella raportin alatunnisteen raporttisivun alareunaan, jossa se on aina näkyvissä ja käytettävissä riippumatta sivulla käyttämistäsi toiminnoista. Näin kaikkien sen toimintojen käyttäminen on helppoa. Voit kiinnittää alatunnisteen ottamalla **Kiinnitetty raportin alatunniste** -valinnan käyttöön [mobiilisovelluksen asetussivulla](./mobile-app-interaction-settings.md).
+
+### <a name="support-for-pbirs-reports-preview-windows"></a>PBIRS-raporttien tuki (esikatselu) (Windows)
+
+Nyt voit avata Power BI -raporttipalvelimen (PBIRS) raporttisi Power BI -sovelluksessa.
+
+### <a name="quickly-access-your-recent-items-windows"></a>Käytä viimeaikaisia kohteitasi nopeasti (Windows)
+
+Napsauta hiiren kakkospainikkeella Power BI -sovelluksen kuvaketta Windowsin tehtäväpalkissa, niin saat luettelon kaikista viimeksi tarkasteluista kohteistasi. Napsauta mitä tahansa luettelon kohdetta, niin voit palata siihen nopeasti.
+
+![Tehtäväpalkin pikavalikko](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-windows-taskbar-quick-access.png)
 
 ## <a name="january-2020"></a>Tammikuu 2020
 
@@ -38,7 +61,7 @@ Olemme kuulleet Android-käyttäjiltämme, että heidän kokemuksensa raporttien
 
 Ne käyttäjät, jotka haluavat jatkaa aiemman toiminnan käyttämistä, voivat palauttaa sen mobiilisovelluksen uusien laajennettujen [vuorovaikutusasetusten](./mobile-app-interaction-settings.md) avulla.
 
-Lisäksi IT-järjestelmänvalvojat voivat [ohittaa uudet oletusasetukset etäyhteydellä](./mobile-app-configuration.md#interaction-settings-android) käyttäjien puolesta mobiililaitteiden hallinnan työkalun ja sovellusmääritystiedoston avulla. Tällä tavalla kaikille organisaation käyttäjille voidaan määrittää samat toiminnot.
+Lisäksi IT-järjestelmänvalvojat voivat [ohittaa uudet oletusasetukset etäyhteydellä](./mobile-app-configuration.md#interaction-settings-ios-and-android) käyttäjien puolesta mobiililaitteiden hallinnan työkalun ja sovellusmääritystiedoston avulla. Tällä tavalla kaikille organisaation käyttäjille voidaan määrittää samat toiminnot.
 
 > [!NOTE]
 > Päivityspainikkeen ja raportin alatunnisteen käsittelyasetuksilla ei tällä hetkellä ole vaikutusta raporttipalvelimen raportteihin. Tämä kuitenkin muuttuu raporttipalvelimen tammikuun julkaisun myötä.
@@ -96,7 +119,7 @@ Lue lisää [mukautetusta siirtymisestä](https://powerbi.microsoft.com/blog/des
 
 ### <a name="introducting-power-bi-mobile-new-look-preview-ios-and-android"></a>Power BI -mobiilisovelluksen uusi ulkoasu (esikatselu) (iOS ja Android)
 
-Olemme päivittäneet sovelluksen ulkoasua, kehittäneet uusia ominaisuuksia, lisänneet usein käytettyä sisältöä tarjoavan aloitussivun sekä uusia siirtymispalkkeja, joiden aruutujalposti siirtyä paikasta toiseen sovelluksen kautta. Uudet ja päivitetyt ominaisuudet mahdollistavat tarvitsemasi sisällön nopean löytämisen silloin kun niitä eniten tarvitset.
+Olemme päivittäneet sovelluksen ulkoasua, kehittäneet uusia ominaisuuksia, lisänneet usein käytettyä sisältöä tarjoavan aloitussivun sekä uusia siirtymisruutuja, joiden avulla voit siirtyä paikasta toiseen sovelluksen kautta. Uudet ja päivitetyt ominaisuudet mahdollistavat tarvitsemasi sisällön nopean löytämisen silloin kun sitä eniten tarvitset.
 Koska uusi ulkoasu on esikatselussa, sinun on otettava se erikseen käyttöön.
 Lue lisää [Power BI -mobiilisovelluksen uudesta ulkoasusta](https://powerbi.microsoft.com/blog/introducing-power-bi-mobile-apps-new-look-preview/).
 
@@ -264,7 +287,7 @@ Nyt voit luoda puhelinraporttiasettelun raportille, joka on jo julkaistu Power B
 
 ### <a name="dashboard-commenting-ios-and-android"></a>Koontinäytön kommentointi (iOS ja Android) 
 
-Voit lisätä kommentteja suoraan koontinäyttöihin ja tiettyihin ruutuihin keskustellaksesi tiedoistasi, ja kaikki koontinäyttöä tarkastelevat näkevät kommentit. Voit myös tuoda muita organisaatiosi käyttäjiä keskusteluun @mentioning heidät. Jos käyttäjästä on @mentioned, hän saa palveluilmoituksen viestisi kera matkapuhelimeensa.
+Voit lisätä kommentteja suoraan koontinäyttöihin ja tiettyihin ruutuihin keskustellaksesi tiedoistasi, ja kaikki koontinäyttöä tarkastelevat näkevät kommentit. Voit myös tuoda muita organisaatiosi käyttäjiä keskusteluun @mentioning heidät. Jos käyttäjästä on @mentioned, hän saa matkapuhelimeensa palveluilmoituksen viestisi lisäksi.
 
 Tällä hetkellä saatavilla iOS- ja Android-laitteisiin. Windows-tuki tulossa pian.
 
@@ -812,7 +835,7 @@ Parannuksia Power BI -mobiilisovelluksiin: Android, iOS (iPhone ja iPad) ja Wind
 
 #### <a name="android"></a>Android-
 * Ryhmätyötiloja tuki: tee yhteistyötä työtovereiden kanssa ryhmätyötiloissa. 
-* Todentamattomien käyttäjien tuki:  tilanteisiin, joissa käyttäjät eivät jostain syystä pysty kirjautumaan sisään sovellukseen, on lisätty nopea ja kätevä tapa ottaa yhteyttä tukeen ja lähettää palautetta.
+* Todentamattomien käyttäjien tuki:  Tilanteisiin, joissa käyttäjät eivät jostain syystä pysty kirjautumaan sisään sovellukseen, on lisätty nopea ja kätevä tapa ottaa yhteyttä tukeen ja lähettää palautetta.
 * Parannettu käyttökokemus käytettäessä roolipohjaista suojausta käyttäviä koontinäyttöjä.          
 * Parannettu tietojen muotoilu kaavioissa ja kaikkien koontinäytön ruutujen tasaus. 
 
@@ -832,4 +855,3 @@ Parannuksia Power BI -mobiilisovelluksiin: Android, iOS (iPhone ja iPad) ja Wind
 * Parannettu käyttökokemus käytettäessä roolipohjaista suojausta käyttäviä koontinäyttöjä. 
 * Uuden ominaisuuden avulla voit selata edestakaisin koontinäytön ruuduissa ja tarkastella niitä suoraan tarkastelutilassa ilman, että joudut palaamaan takaisin koontinäyttöön seuraavan ruudun valitsemista varten.
 * Lisää vakauden ja suorituskyvyn parannuksia. 
-

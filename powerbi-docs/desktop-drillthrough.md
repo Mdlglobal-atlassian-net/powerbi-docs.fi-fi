@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/08/2019
+ms.date: 03/05/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a7b00b0cb611dd3e0921885ddaca6547fdb43fd3
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 020b7e0a5fd0c3372e3a83d9973a404978e56b7d
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74311020"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401252"
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Porautumisen käyttäminen Power BI Desktopissa
 Power BI Desktopin *porautumisen* avulla voit luoda raporttisivun, jolla keskitytään tiettyyn entiteettiin, kuten toimittajaan, asiakkaaseen tai valmistajaan. Jos haluat porautua, napsauta hiiren kakkospainikkeella arvopistettä toisella raporttisivulla ja poraudu sitten keskittyvällä sivulla: näin saat lisätietoja, jotka on suodatettu kyseisen kontekstin mukaisesti.
@@ -33,6 +33,11 @@ Power BI Desktopin *porautumisen* avulla voit luoda raporttisivun, jolla keskity
     Kun lisäät kentän **porautumissuodattimiin**, Power BI Desktop luo automaattisesti visualisoinnin *Takaisin*-painikkeelle. Visualisointi muuttuu painikkeeksi julkaistuissa raporteissa. Käyttäjät, jotka käyttävät raporttiasi Power BI -palvelussa, voivat tämän painikkeen avulla palata raporttisivulle, jolta he tulivat.
 
     ![Porautumiskuva](media/desktop-drillthrough/drillthrough_03.png)
+
+> [!IMPORTANT]
+> Voit määrittää ja suorittaa porautumisen saman raportin sivulle, mutta et voi porautua eri raportin sivulle.  
+
+
 
 ## <a name="use-your-own-image-for-a-back-button"></a>Oman kuvan käyttäminen Takaisin-painikkeena    
  Koska Takaisin-painike on kuva, voit korvata kyseisen visualisoinnin kuvan visualisoinnin millä tahansa haluamallasi kuvalla. Se toimii silti oikein Takaisin-painikkeena niin, että raportin käyttäjät voivat palata alkuperäiselle sivulle. 
@@ -54,13 +59,12 @@ Jos haluat käyttää itse valitsemaasi kuvaa Takaisin-painikkeena, toimi seuraa
 
 ## <a name="pass-all-filters-in-drillthrough"></a>Kaikkien suodattimien siirtäminen porautumisessa
 
-Toukokuun 2018 Power BI Desktop -versiosta alkaen voit siirtää kaikki käytetyt suodattimet porautumisikkunaan. Voit esimerkiksi valita vain tietyn tuoteluokan ja kyseiseen luokkaan suodatetut visualisoinnit ja valita sitten porautumisen. Saatat olla kiinnostunut siitä, miltä porautuminen näyttäisi kaikkien näiden suodattimien ollessa käytössä.
+Voit siirtää kaikki käytetyt suodattimet porautumisikkunaan. Voit esimerkiksi valita vain tietyn tuoteluokan ja kyseiseen luokkaan suodatetut visualisoinnit ja valita sitten porautumisen. Saatat olla kiinnostunut siitä, miltä porautuminen näyttäisi kaikkien näiden suodattimien ollessa käytössä.
 
 Jos haluat säilyttää kaikki käytetyt suodattimet, ota **Visualisoinnit**-ruudun **Porautuminen**-osiossa **Säilytä kaikki suodattimet** -asetus **käyttöön**. 
 
 ![Säilytä kaikki suodattimet](media/desktop-drillthrough/drillthrough_06.png)
 
-Toukokuuta 2018 edeltävissä Power BI Desktop -versioissa toiminta vastaa toimintaa siinä tapauksessa, että tämä asetus **ei ole käytössä**.
 
 Kun sitten poraudut visualisointiin, voit nähdä, mitkä suodattimet on otettu käyttöön sen seurauksena, että lähdevisualisoinnissa on käytössä tilapäisiä suodattimia. Nämä tilapäiset suodattimet näkyvät **Visualisointi**ruudun **Porautuminen**-osiossa kursivoituina. 
 

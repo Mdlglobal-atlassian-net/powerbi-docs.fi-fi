@@ -7,279 +7,284 @@ ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 06/18/2019
-ms.openlocfilehash: be7a708dfcc6ebc40c62a1a9075e2cbf134363b1
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.topic: how-to
+ms.date: 02/24/2020
+ms.openlocfilehash: 3614505cec185779bce3f63c6e7a565a5ef39443
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76818682"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78920893"
 ---
-# <a name="microsoft-power-bi-visuals-interactivity-utils"></a>Microsoft Power BI -visualisointien vuorovaikutteisuuden apuohjelmat
+# <a name="power-bi-visuals-interactivity-utils"></a>Power BI -visualisointien vuorovaikutteisuuden apuohjelmat
 
-Vuorovaikutteisuuden apuohjelmat (InteractivityUtils) on joukko funktioita ja luokkia, joiden avulla voidaan yksinkertaistaa mukautettujen Power BI -visualisointien ristiinvalintaa ja ristiinsuodatusta.
+Vuorovaikutteisuuden apuohjelmat (`InteractivityUtils`) on joukko funktioita ja luokkia, joiden avulla voidaan yksinkertaistaa Power BI -visualisointien ristiinvalintaa ja ristiinsuodatusta.
+
+> [!NOTE]
+> Vuorovaikutteisuuden apuohjelmien uudet päivitykset tukevat vain työkalujen viimeisintä versiota (3.x.x ja uudemmat).
 
 ## <a name="installation"></a>Asennus
 
-> [!NOTE]
-> Jos jatkat vanhan powerbi-visuals-tools-version käyttämistä (versionumero alle 3.x.x), asenna työkalujen uusi versio (3.x.x).
+1. Jos haluat asentaa paketin. suorita seuraava komento hakemistossa, joka sisältää nykyisen Power BI -visualisointiprojektin.
 
-> [!IMPORTANT]
-> Vuorovaikutteisuuden apuohjelmien uudet päivitykset tukevat vain työkalujen viimeisintä versiota. [Lue lisätietoja siitä, kuinka visualisointikoodi päivitetään käytettäväksi uusimpien työkalujen kanssa](migrate-to-new-tools.md)
+    ```bash
+    npm install powerbi-visuals-utils-interactivityutils --save
+    ```
 
-Paketin asentamista varten tulee suorittaa seuraava komento hakemistossa, joka sisältää nykyisen mukautetun visualisoinnin:
+2. Jos käytät työkalun versiota 3.0 tai tätä uudempaa versiota, asenna `powerbi-models` riippuvuuksien ratkaisemiseksi.
 
-```bash
-npm install powerbi-visuals-utils-interactivityutils --save
-```
+    ```bash
+    npm install powerbi-models --save
+    ```
 
-Versiosta 3.0 eteenpäin on lisäksi asennettava ```powerbi-models``` riippuvuuksien ratkaisemiseksi.
+3. Jos haluat käyttää vuorovaikutteisuuden apuohjelmia, tuo tarvittava komponentti Power BI -visualisoinnin lähdekoodiin.
 
-```bash
-npm install powerbi-models --save
-```
+    ```typescript
+    import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";
+    ```
 
-Käyttäjien vuorovaikutteisuuden apuohjelmiin on tuotava tarvittava komponentti visualisoinnin lähdekoodiin.
+### <a name="including-the-css-files"></a>CSS-tiedostojen sisällyttäminen
 
-```typescript
-import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";
-```
-
-### <a name="including-css-artifacts-to-the-custom-visual"></a>CSS-artefaktien sisällyttäminen mukautettuun visualisointiin
-
-Jos haluat käyttää pakettia mukautettujen visualisointiesi kanssa, tuo seuraava CSS-tiedosto `your.less`-tiedostoon:
+Jos haluat käyttää pakettia Power BI -visualisoinnissa, tuo seuraava CSS-tiedosto `.less`-tiedostoon.
 
 `node_modules/powerbi-visuals-utils-interactivityutils/lib/index.css`
 
-Tuloksena on seuraava tiedostorakenne:
+Tuo CSS-tiedosto `.less`-tiedostona, koska Power BI -visualisointityökalu rivittää ulkoiset CSS-säännöt.
 
 ```less
 @import (less) "node_modules/powerbi-visuals-utils-interactivityutils/lib/index.css";
 ```
 
-> [!NOTE]
-> Tuo .css-tiedosto .less-tiedostona, koska Power BI Visuals Tools rivittää ulkoiset CSS-säännöt.
+## <a name="selectabledatapoint-properties"></a>SelectableDataPoint-ominaisuudet
 
-## <a name="usage"></a>Käyttö
+Yleensä arvopisteet sisältävät valintoja ja arvoja. Liittymä laajentaa `SelectableDataPoint`-liittymän.
 
-### <a name="define-interface-for-data-points"></a>Määritä arvopisteiden käyttöliittymä
-
-Yleensä arvopisteet sisältävät valintoja ja arvoja. Liittymä laajentaa `SelectableDataPoint`-liittymän. `SelectableDataPoint` sisältää jo ominaisuuksia:
+`SelectableDataPoint` sisältää jo alla kuvatut ominaisuudet.
 
 ```typescript
-  /** Flag for identifying that data point was selected */
+  /** Flag for identifying that a data point was selected */
   selected: boolean;
+
   /** Identity for identifying the selectable data point for selection purposes */
   identity: powerbi.extensibility.ISelectionId;
-  /**
+
+  /*
    * A specific identity for when data points exist at a finer granularity than
-   * selection is performed.  For example, if your data points should select based
-   * only on series even if they exist as category/series intersections.
+   * selection is performed.  For example, if your data points select based
+   * only on series, even if they exist as category/series intersections.
    */
+
   specificIdentity?: powerbi.extensibility.ISelectionId;
 ```
 
-Vuorovaikutteisuuden apuohjelmien käyttämisen ensimmäisenä vaiheena on vuorovaikutteisuuden apuohjelmien ja tallentamisen objektin esiintymän tallentaminen visualisoinnin ominaisuutena
+## <a name="defining-an-interface-for-data-points"></a>Arvopisteiden käyttöliittymän määrittäminen
 
-```typescript
-export class Visual implements IVisual {
-  // ...
-  private interactivity: interactivityBaseService.IInteractivityService<VisualDataPoint>;
-  // ...
-  constructor(options: VisualConstructorOptions) {
+1. Vuorovaikutteisuuden apuohjelmien esiintymän luominen ja esiintymän tallentaminen visualisoinnin ominaisuutena
+
+    ```typescript
+    export class Visual implements IVisual {
       // ...
-      this.interactivity = interactivitySelectionService.createInteractivitySelectionService(this.host);
+      private interactivity: interactivityBaseService.IInteractivityService<VisualDataPoint>;
       // ...
-  }
-}
-```
+      constructor(options: VisualConstructorOptions) {
+          // ...
+          this.interactivity = interactivitySelectionService.createInteractivitySelectionService(this.host);
+          // ...
+      }
+    }
+    ```
 
-```typescript
-import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";
+    ```typescript
+    import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";
 
-export interface VisualDataPoint extends interactivitySelectionService.SelectableDataPoint {
-    value: powerbi.PrimitiveValue;
-}
-```
+    export interface VisualDataPoint extends interactivitySelectionService.SelectableDataPoint {
+        value: powerbi.PrimitiveValue;
+    }
+    ```
 
-Toinen vaihe on perustoimintaluokan laajentaminen:
+2. Laajenna perustoimintaluokka.
 
-> [!NOTE]
-> BaseBehavior esiteltiin [vuorovaikutteisuuden apuohjelmien versiossa 5.6.x](https://www.npmjs.com/package/powerbi-visuals-utils-interactivityutils/v/5.6.0). Jos käytät vanhaa versiota, luo käyttäytymisluokka alla olevasta mallista (`BaseBehavior`-luokka on sama):
+    > [!NOTE]
+    > `BaseBehavior` esiteltiin [vuorovaikutteisuuden apuohjelmien versiossa 5.6.x](https://www.npmjs.com/package/powerbi-visuals-utils-interactivityutils/v/5.6.0). Jos käytät tätä vanhempaa versiota, luo käyttäytymisluokka alla olevasta mallista.
 
-Määritä toimintaluokan asetusten liittymä:
+3. Määritä toimintaluokan asetusten liittymä.
 
-```typescript
-import { SelectableDataPoint } from "./interactivitySelectionService";
+    ```typescript
+    import { SelectableDataPoint } from "./interactivitySelectionService";
 
-import {
-    IBehaviorOptions,
-    BaseDataPoint
-} from "./interactivityBaseService";
+    import {
+        IBehaviorOptions,
+        BaseDataPoint
+    } from "./interactivityBaseService";
 
-export interface BaseBehaviorOptions<SelectableDataPointType extends BaseDataPoint> extends IBehaviorOptions<SelectableDataPointType> {
-    /** D3 selection object of main elements on the chart */
+    export interface BaseBehaviorOptions<SelectableDataPointType extends BaseDataPoint> extends IBehaviorOptions<SelectableDataPointType> {
+
+    /** d3 selection object of the main elements on the chart */
     elementsSelection: Selection<any, SelectableDataPoint, any, any>;
-    /** D3 selection object of some element on backgroup to hadle click of reset selection */
+
+    /** d3 selection object of some elements on backgroup, to hadle click of reset selection */
     clearCatcherSelection: d3.Selection<any, any, any, any>;
-}
-```
+    }
+    ```
 
-Määritä luokka kohteelle `visual behavior`. Luokka vastaa hiiren tapahtumista `click` ja `contextmenu`.
-Kun tietoelementtejä napsautetaan, visualisointi kutsuu valintakäsittelijää valitsemaan arvopisteet. Jos käyttäjä napsauttaa visualisoinnin taustaosaa, se kutsuu selkeää valintakäsittelijää. Ja luokalla on vastaavat metodit: `bindClick`, `bindClearCatcher`, `bindContextMenu`.
+4. Määritä luokka kohteelle `visual behavior`. Voit myös laajentaa luokan `BaseBehavior`.
 
-```typescript
-export class Behavior<SelectableDataPointType extends BaseDataPoint> implements IInteractiveBehavior {
-    /** D3 selection object of main elements on the chart */
-    protected options: BaseBehaviorOptions<SelectableDataPointType>;
-    protected selectionHandler: ISelectionHandler;
+    **Luokan määrittäminen kohteelle `visual behavior`**
 
+    Luokka vastaa hiiren tapahtumista `click` ja `contextmenu`.
+
+    Kun käyttäjä napsauttaa tietoelementtejä, visualisointi kutsuu valintakäsittelijää valitsemaan arvopisteet. Jos käyttäjä napsauttaa visualisoinnin taustaosaa, se kutsuu selkeää valintakäsittelijää.
+
+    Luokalla on vastaavat menetelmät:
+    * `bindClick`
+    * `bindClearCatcher`
+    * `bindContextMenu`.
+
+    ```typescript
+    export class Behavior<SelectableDataPointType extends BaseDataPoint> implements IInteractiveBehavior {
+
+        /** d3 selection object of main elements in the chart */
+        protected options: BaseBehaviorOptions<SelectableDataPointType>;
+        protected selectionHandler: ISelectionHandler;
+    
+        protected bindClick() {
+          // ...
+        }
+    
+        protected bindClearCatcher() {
+          // ...
+        }
+    
+        protected bindContextMenu() {
+          // ...
+        }
+    
+        public bindEvents(
+            options: BaseBehaviorOptions<SelectableDataPointType>,
+            selectionHandler: ISelectionHandler): void {
+          // ...
+        }
+    
+        public renderSelection(hasSelection: boolean): void {
+          // ...
+        }
+    }
+    ```
+
+    **Luokan `BaseBehavior` laajentaminen**
+
+    ```typescript
+    import powerbi from "powerbi-visuals-api";
+    import { interactivitySelectionService, baseBehavior } from "powerbi-visuals-utils-interactivityutils";
+
+    export interface VisualDataPoint extends interactivitySelectionService.SelectableDataPoint {
+        value: powerbi.PrimitiveValue;
+    }
+
+    export class Behavior extends baseBehavior.BaseBehavior<VisualDataPoint> {
+      // ...
+    }
+    ```
+
+5. Jos haluat käsitellä napsautuselementtejä, kutsu *d3*-valintaobjektin menetelmää `on`. Tämä koskee myös kohteita `elementsSelection` ja `clearCatcherSelection`.
+
+    ```typescript
     protected bindClick() {
-      // ...
+      const {
+          elementsSelection
+      } = this.options;
+    
+      elementsSelection.on("click", (datum) => {
+          const mouseEvent: MouseEvent = getEvent() as MouseEvent || window.event as MouseEvent;
+          mouseEvent && this.selectionHandler.handleSelection(
+              datum,
+              mouseEvent.ctrlKey);
+      });
     }
+    ```
 
-    protected bindClearCatcher() {
-      // ...
-    }
+6. Lisää vastaava käsittelijä tapahtumalle `contextmenu`, jos haluat kutsua valintojen hallinnan menetelmää `showContextMenu`.
 
+    ```typescript
     protected bindContextMenu() {
-      // ...
+        const {
+            elementsSelection
+        } = this.options;
+    
+        elementsSelection.on("contextmenu", (datum) => {
+            const event: MouseEvent = (getEvent() as MouseEvent) || window.event as MouseEvent;
+            if (event) {
+                this.selectionHandler.handleContextMenu(
+                    datum,
+                    {
+                        x: event.clientX,
+                        y: event.clientY
+                    });
+                event.preventDefault();
+            }
+        });
     }
+    ```
 
-    public bindEvents(
-        options: BaseBehaviorOptions<SelectableDataPointType>,
-        selectionHandler: ISelectionHandler): void {
-      // ...
-    }
+7. Vuorovaikutteisuuden apuohjelmat kutsuvat menetelmää `bindEvents` määrittääkseen funktiot käsittelijöille. Lisää menetelmään `bindEvents` seuraavat kutsut:
+    * `bindClick`
+    * `bindClearCatcher`
+    * `bindContextMenu`
 
+    ```typescript
+      public bindEvents(
+          options: BaseBehaviorOptions<SelectableDataPointType>,
+          selectionHandler: ISelectionHandler): void {
+
+          this.options = options;
+          this.selectionHandler = selectionHandler;
+
+          this.bindClick();
+          this.bindClearCatcher();
+          this.bindContextMenu();
+      }
+    ```
+
+8. `renderSelection`-menetelmä on vastuussa kaavion elementtien visualisointien tilan päivittämisestä. Tässä on esimerkki menetelmän `renderSelection` toteutuksesta.
+
+    ```typescript
     public renderSelection(hasSelection: boolean): void {
-      // ...
+        this.options.elementsSelection.style("opacity", (category: any) => {
+            if (category.selected) {
+                return 0.5;
+            } else {
+                return 1;
+            }
+        });
     }
-}
-```
+    ```
 
-tai voit laajentaa luokkaa `BaseBehavior`:
+9. Viimeisessä vaiheessa luodaan `visual behavior` -esiintymä ja kutsutaan vuorovaikutteisuuden apuohjelmien esiintymän menetelmää `bind`.
 
-```typescript
-import powerbi from "powerbi-visuals-api";
-import { interactivitySelectionService, baseBehavior } from "powerbi-visuals-utils-interactivityutils";
-
-export interface VisualDataPoint extends interactivitySelectionService.SelectableDataPoint {
-    value: powerbi.PrimitiveValue;
-}
-
-export class Behavior extends baseBehavior.BaseBehavior<VisualDataPoint> {
-  // ...
-}
-```
-
-Elementtien klikkauksien käsittelyä varten kutsu D3-valintaobjektin metodia `on` (myös kohteille elementsSelection ja clearCatcherSelection):
-
-```typescript
-protected bindClick() {
-  const {
-      elementsSelection
-  } = this.options;
-
-  elementsSelection.on("click", (datum) => {
-      const mouseEvent: MouseEvent = getEvent() as MouseEvent || window.event as MouseEvent;
-      mouseEvent && this.selectionHandler.handleSelection(
-          datum,
-          mouseEvent.ctrlKey);
-  });
-}
-```
-
-Lisää vastaava käsittelijä tapahtumalle `contextmenu`, jos haluat kutsua valintojen hallinnan metodia `showContextMenu`:
-
-```typescript
-protected bindContextMenu() {
-    const {
-        elementsSelection
-    } = this.options;
-
-    elementsSelection.on("contextmenu", (datum) => {
-        const event: MouseEvent = (getEvent() as MouseEvent) || window.event as MouseEvent;
-        if (event) {
-            this.selectionHandler.handleContextMenu(
-                datum,
-                {
-                    x: event.clientX,
-                    y: event.clientY
-                });
-            event.preventDefault();
-        }
+    ```typescript
+    this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
+        behavior: this.behavior,
+        dataPoints: this.categories,
+        clearCatcherSelection: select(this.target),
+        elementsSelection: selectionMerge
     });
-}
-```
+    ```
 
-Vuorovaikutteisuuden apuohjelmat kutsuvat `bindEvents`-menetelmiä, joilla voidaan delegoida funktioita käsittelijöille sekä lisätä `bindClick`-, `bindClearCatcher`- ja `bindContextMenu`-kutsuja `bindEvents`-menetelmään:
+    * `selectionMerge` on *d3*-valintaobjekti, joka edustaa visualisoinnin kaikkia valittavissa olevia elementtejä.
+    * `select(this.target)` on *d3*-valintaobjekti, joka edustaa visualisoinnin DOM-pääelementtejä.
+    * `this.categories` ovat datapisteitä, joissa on elementtejä ja joissa liittymä on `VisualDataPoint` tai `categories: VisualDataPoint[];`.
+    * `this.behavior` on uusi esiintymä kohteesta `visual behavior`, joka luodaan visualisoinnin konstruktorissa, kuten alla näytetään.
 
-```typescript
-  public bindEvents(
-      options: BaseBehaviorOptions<SelectableDataPointType>,
-      selectionHandler: ISelectionHandler): void {
-
-      this.options = options;
-      this.selectionHandler = selectionHandler;
-
-      this.bindClick();
-      this.bindClearCatcher();
-      this.bindContextMenu();
-  }
-```
-
-`renderSelection`-menetelmä on vastuussa kaavion elementtien visualisointien tilan päivittämisestä.
-
-Malli toteutuksen `renderSelection`-menetelmäst:
-
-```typescript
-public renderSelection(hasSelection: boolean): void {
-    this.options.elementsSelection.style("opacity", (category: any) => {
-        if (category.selected) {
-            return 0.5;
-        } else {
-            return 1;
-        }
-    });
-}
-```
-
-Viimeisessä vaiheessa luodaan `visual behavior` -esiintymä ja vuorovaikutteisuuden apuohjelmat -esiintymän `bind`-menelmän kutsu:
-
-```typescript
-this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
-    behavior: this.behavior,
-    dataPoints: this.categories,
-    clearCatcherSelection: select(this.target),
-    elementsSelection: selectionMerge
-});
-```
-
-* `selectionMerge` on D3-valintaobjekti, joka edustaa visualisoinnin kaikkia valittavissa olevia elementtejä.
-
-* `select(this.target)` on D3-valintaobjekti, joka edustaa visualisoinnin tärkeimpiä DOM-elementtejä.
-
-* `this.categories` ovat datapisteitä, ja liittymä on `VisualDataPoint` (tai `categories: VisualDataPoint[];`)
-
-* `this.behavior` on uusi `visual behavior` -esiintymä
-
-  luodaan visualisoinnin konstruktorissa:
-
-  ```typescript
-  export class Visual implements IVisual {
-    // ...
-    constructor(options: VisualConstructorOptions) {
+      ```typescript
+      export class Visual implements IVisual {
         // ...
-        this.behavior = new Behavior();
-    }
-    // ...
-  }
-  ```
-
-Visualisointi on nyt valmis käsittelijän valintaan.
-
+        constructor(options: VisualConstructorOptions) {
+            // ...
+            this.behavior = new Behavior();
+        }
+        // ...
+      }
+      ```
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * [Lue, miten voit käsitellä valintoja kirjanmerkkejä vaihdettaessa](bookmarks-support.md#visuals-with-selection)

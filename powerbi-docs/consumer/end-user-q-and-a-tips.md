@@ -6,21 +6,24 @@ ms.reviewer: Mohammad
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/23/2019
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 9fd5375684466eca49582ff9d153fd2533ad7e92
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: 83db194ab670f1726f9598193dc2d3addf2eae72
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099012"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114299"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Vihjeitä kysymysten esittämiseen Power BI:n Q&A-toiminnolla
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Q&A-toiminnon tunnistamia sanoja ja termejä
 Tämän sivun avainsanaluettelo ei ole tyhjentävä.  Paras tapa nähdä, tunnistaako Power BI avainsanan, on kokeilla sen kirjoittamista kysymysruutuun.  Jos sana tai termi näkyy harmaana, Power BI ei tunnista sitä.
 
-Alla olevassa luettelossa käytetään preesensiä, mutta useimmissa tapauksissa kaikki aikamuodot tunnistetaan. Esimerkki: ”is” sisältää myös muodot **are**, **was**, **were**, **will be**, **have**, **has**, **had**, **will have**, **has got**, **do**, **does**, **did**.  Ja ”lajittele” sisältää muodot **lajiteltu** ja **lajittelu**.  Power BI myös tunnistaa ja ottaa hakuun mukaan sanan yksikön ja monikon. 
+Alla olevassa luettelossa käytetään preesensiä, mutta useimmissa tapauksissa kaikki aikamuodot tunnistetaan. Esimerkiksi "is" käsittää kaikki seuraavat: **are**, **was**, **were**, **will be**, **have**, **has**, **had**, **will have**, **has got**, **do**, **does**, **did**.  Ja "sort" käsittää kaikki seuraavat: **sorted** ja **sorting**.  Power BI myös tunnistaa ja ottaa hakuun mukaan sanan yksikön ja monikon. 
 
 > [!NOTE]
 > Q&A-toiminto on käytettävissä myös [Microsoft Power BI -sovelluksessa iOS:lle iPad-, iPhone- ja iPod Touch -laitteissa](mobile/mobile-apps-ios-qna.md).
@@ -39,7 +42,7 @@ Alla olevassa luettelossa käytetään preesensiä, mutta useimmissa tapauksissa
 |     |         |         |
 |**Konjunktiot**     |  ja, tai, kukin, kanssa, verrattuna, mutta, ei kumpikaan, sekä, lisäksi       |         
 |          |         |
-|**Supistumat**     |  Q&A-toiminto tunnistaa lähes kaikki supistumat, kokeile.  Joitakin esimerkkejä: ettei, muttei, tai esimerkiksi englannin didn’t, haven’t, won’t, wouldn’t          |
+|**Supistumat**     |  Q&A-toiminto tunnistaa lähes kaikki supistumat, kokeile.  Joitakin esimerkkejä: ettei, muttei, tai esimerkiksi englannin didn't, haven't, he'd, he's, isn't, it's, she'll, they'd, weren't, who's, won't, wouldn't          |
 |        |         |
 |**Päivämäärät**     |       Power BI tunnistaa useimmat päivämääräsanat (päivä, viikko, kuukausi, vuosi, vuosineljännes, vuosikymmen jne.) sekä eri muodoissa kirjoitetut päivämäärät (katso alla). Power BI tunnistaa myös seuraavat avainsanat: MonthName, Days 1-31, decade. Esimerkkejä: tammikuun 3. 1995, 3. tammikuuta 1995, 3.1.1995, 03.01.1995, kolmas tammikuuta, tammikuu 1995, 1995 tammikuu, 1995-01, 01/1995, kuukausien nimet         |
 |        |         |

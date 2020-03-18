@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c3ccbe6ad87a813185943845431fa1a859b09a76
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: 498636d61f61764cfaef29db32454f55f1328243
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76888427"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401229"
 ---
 # <a name="power-bi-data-source-prerequisites"></a>Power BI -tietolähde-edellytykset
 Power BI tukee objektien tietyn palvelun versiota jokaisella tietopalvelulla. Jos haluat lisätietoja Power BI:ssä käytettävistä tietolähteistä, tutustu ohjeartikkeliin [Tietolähteet](desktop-data-sources.md). Seuraavassa taulukossa kuvataan nämä vaatimukset.
@@ -28,7 +28,7 @@ Power BI tukee objektien tietyn palvelun versiota jokaisella tietopalvelulla. Jo
 | | System.Data.OracleClient (sisältyy .NET Frameworkiin) |.NET Framework 3.5 |9.x+ |Taulukot/näkymät |Sisältyy .NET Framework 3.5:een tai uudempaan |
 | IBM DB2 |IBM:n ADO.Net-asiakasohjelma (osa IBM:n tietopalvelimen ohjainpakettia) |10.1 |9.1+ |Taulukot/näkymät |[Latauslinkki](https://go.microsoft.com/fwlink/?linkid=274911&clcid=0x409) |
 | MySQL |Connector/Net |6.6.5 |5.1 |Taulukot/näkymät, skalaarifunktiot |[Latauslinkki](https://go.microsoft.com/fwlink/?linkid=278885&clcid=0x409) |
-| PostgreSQL |NPGSQL ADO.NET -palvelu |2.0.12 |9.4 |Taulukot/näkymät |[Latauslinkki](https://go.microsoft.com/fwlink/?linkid=282716&clcid=0x409) |
+| PostgreSQL |NPGSQL ADO.NET -palvelu (sisältyy Power BI Desktopiin) |4.0.10 |9.4 |Taulukot/näkymät |[Latauslinkki](https://go.microsoft.com/fwlink/?linkid=282716&clcid=0x409) |
 | Teradata |Teradatan .NET-tietopalvelu |14+ |12+ |Taulukot/näkymät |[Latauslinkki](https://go.microsoft.com/fwlink/?linkid=278886&clcid=0x409) |
 | SAP Sybase SQL Anywhere |iAnywhere.Data.SQLAnywhere for .NET 3.5 |16+ |16+ |Taulukot/näkymät |[Latauslinkki](https://go.microsoft.com/fwlink/?linkid=324846) |
 

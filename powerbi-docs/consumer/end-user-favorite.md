@@ -7,24 +7,25 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/19/2019
+ms.date: 03/09/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 48322b554a7b600bc5cadc7c40fe366c64cd8549
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: bb69d1ecc4e91912b947a2120607e1a0502d8162
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73852645"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040500"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-the-power-bi-service"></a>Power BI -palvelun suosikkikoontinäytöt, -raportit ja -sovellukset
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 Kun lisäät tietyn sisällön *suosikkeihin*, pääset nopeasti käyttämään sitä **Suosikit**-sisältöluettelosta sekä **Power BI -aloitussivun** > **Suosikeista ja usein käytetyistä**. Suosikit ovat tyypillisesti sisältöä, jota käytät useimmiten, ja ne tunnistetaan keltaisesta tähdestä.
 
    ![Suosikit-kuvake](./media/end-user-favorite/power-bi-favorite-nav.png)
 
    ![Suosikit ja usein käytetyt -kuvake](./media/end-user-favorite/power-bi-home.png)
-
-Voit myös valita yhden koontinäytön Power BI -palvelun [suositelluksi koontinäytöksi](end-user-featured.md).
 
 ## <a name="add-a-dashboard-or-report-as-a-favorite"></a>Koontinäytön tai raportin lisääminen suosikkeihin
 
@@ -67,7 +68,7 @@ Jos et enää käytä raporttia yhtä usein kuin aiemmin, voi poistaa sen suosik
 2. Valitse keltainen tähti suosikeista poistettavan sisällön vieressä.
 
 > [!NOTE]
-> Voit myös poistaa suosikeista raporttinäkymän, raportin sovelluksen. Avaa se ja poista keltaisen kuvakkeen valinta. 
+> Voit myös poistaa suosikeista raporttinäkymän, raportin sovelluksen. Voit muuntaa keltaisen tähden takaisin valkoiseksi tähdeksi avaamalla ja valitsemalla sen. 
 > 
 > 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat

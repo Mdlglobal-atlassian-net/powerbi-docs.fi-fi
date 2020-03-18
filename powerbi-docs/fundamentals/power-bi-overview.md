@@ -8,12 +8,12 @@ ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 9da9465bea8512b541d3f1af3983df70d184ac26
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 5ad960560ba6c99228ba63ee0041789b9ec6ff7d
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875667"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114981"
 ---
 # <a name="what-is-power-bi"></a>Mikä Power BI on?
 **Power BI** on kokoelma ohjelmistopalveluja, sovelluksia ja yhdistimiä, jotka yhdessä muuntavat toisiinsa liittymättömistä lähteistä peräisin olevan tiedon johdonmukaisiksi, visuaalisesti vaikuttaviksi ja vuorovaikutteisiksi näkemyksiksi. Tiedot voivat olla Excel-laskentataulukossa tai joukossa pilvipohjaisia ja paikallisia hybriditietovarastoja. Power BI:n avulla voit helposti muodostaa yhteyden tietolähteisiin, visualisoida ja löytää tärkeitä asioita sekä jakaa niitä kenen kanssa haluat.
@@ -51,7 +51,7 @@ Tutustu rooliasi vastaaviin dokumentteihin:
 Tyypillinen Power BI -työnkulku alkaa yhteyden ottamisesta tietolähteisiin ja raportin luomisesta Power BI Desktopissa. Sen jälkeen julkaiset kyseisen raportin Power BI Desktopista Power BI -palveluun ja jaat sen, jotta Power BI -palvelua ja mobiililaitteita käyttävät loppukäyttäjät voivat tarkastella ja käsitellä raporttia.
 Tämä työnkulku on yleinen ja näyttää, miten kolme keskeistä Power BI -osaa täydentävät toisiaan.
 
-Tutustu yksityiskohtaiseen [Power BI Desktopin ja Power BI -palvelun vertailuun](../designer/service-service-vs-desktop.md).
+Tutustu yksityiskohtaiseen [Power BI Desktopin ja Power BI -palvelun vertailuun](../fundamentals/service-service-vs-desktop.md).
 
 ## <a name="on-premises-reporting-with-power-bi-report-server"></a>Paikallinen raportointi Power BI -raporttipalvelimella
 
@@ -66,6 +66,6 @@ Power BI -raporttipalvelin on ratkaisu, jonka voit ottaa käyttöön oman palomu
 Lue lisää [Power BI -raporttipalvelimesta](../report-server/get-started.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-- [Pika-aloitus: Power BI -palvelussa liikkuminen](../service-the-new-power-bi-experience.md)   
+- [Pikaopas: Power BI -palvelussa liikkuminen](../service-the-new-power-bi-experience.md)   
 - [Opetusohjelma: Power BI -palvelun käytön aloittaminen](../service-get-started.md)
-- [Pika-aloitus: Tietoihin yhdistäminen Power BI Desktopissa](../desktop-quickstart-connect-to-data.md)
+- [Pikaopas: Tietoihin yhdistäminen Power BI Desktopissa](../desktop-quickstart-connect-to-data.md)

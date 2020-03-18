@@ -1,19 +1,19 @@
 ---
 title: Yhdistäminen Power BI -raporttipalvelimeen ja SSRS-palvelimeen OAuthia käyttämällä
 description: Opi määrittämään ympäristö tukemaan OAuth-todennusta Power BI -mobiilisovelluksella ja muodostamaan yhteys SQL Server Reporting Services 2016:een tai uudempaan versioon.
-author: maggiesMSFT
-ms.author: maggies
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/03/2019
-ms.openlocfilehash: 3680344c3449c80064b818f7ab2a5b48020fba4b
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.date: 03/11/2020
+ms.openlocfilehash: c3c6e8d7ddb823eb1e857b102c2f6c788e366141
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75220604"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114948"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Yhdistäminen Power BI -raporttipalvelimeen ja SSRS-palvelimeen OAuthia käyttämällä
 
@@ -148,7 +148,7 @@ Sinun kannattaa ottaa Web Application Proxy (Rooli) -Windows-rooli käyttöön y
 
 OAuth-todennuksesta Windows-todennukseen siirtyminen edellyttää rajoitetun delegoinnin ja protokollan siirron käyttämistä. Tämä on osa Kerberos-määritystä. Reporting Servicesin SPN määritettiin jo Reporting Services -määrityksen yhteydessä.
 
-Tässä vaiheessa on määritettävä rajoitettu delegointi WAP-palvelimen konetilillä Active Directoryssa. Sinun on ehkä pyydettävä apua toimialueen järjestelmänvalvojalta, jos sinulla ei ole Active Directoryn käyttöoikeuksia.
+Tässä vaiheessa on määritettävä rajoitettu delegointi WAP-palvelimen konetilillä Active Directoryssa. Sinun on ehkä tarpeen tehdä yhteistyötä toimialueen järjestelmänvalvojan kanssa, jos sinulla ei ole Active Directory -käyttöoikeuksia.
 
 Rajoitettu delegointi kannattaa määrittää seuraavasti.
 
@@ -207,7 +207,7 @@ Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentic
 Kun olet lisännyt WAP-sovelluksen, sinun on määritettävä BackendServerAuthenticationMode käyttämään IntegratedWindowsAuthentication ‑todennusta. Tämän määrittämistä varten tarvitset tunnuksen WAP-sovelluksesta.
 
 ```powershell
-Get-WebApplicationProxyApplication “Contoso Reports” | fl
+Get-WebApplicationProxyApplication "Contoso Reports" | fl
 ```
 
 ![Lisää sovellusryhmä](media/mobile-oauth-ssrs/wap-application-id.png)

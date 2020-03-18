@@ -7,22 +7,22 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
-ms.author: pashah
-ms.openlocfilehash: ad657da4e0a81c6b3b9845d9c130755334f5a97f
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.author: parshah
+ms.openlocfilehash: ecb4f9540651b52f28626f8baa88854ff133b9d0
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565722"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401993"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimella
-Power BI -raporttipalvelin on omatoiminen liiketoiminta- ja yritystietojen raportointiratkaisu, jota asiakkaat voivat käyttää paikallisesti yrityksensä palomuurin suojaamana. Siinä yhdistyvät Power BI Desktopin vuorovaikutteinen raportointiominaisuus ja paikallinen SQL Server Reporting Services -palvelinympäristö. Yritysten raskas ja kasvava analytiikan käyttö ja raportointi ja yrityksen käyttäjäkannan skaalaamiseen tarvittavan laitteisto-infrastruktuurin ja ohjelmistolisenssien budjetointi voi olla haastavaa. Tämän artikkelin tarkoituksena on antaa ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimen avulla jakamalla eri kuormituksille tehtyjen erilaisten kuormitustestien tuloksia. Organisaatioiden raportit, kyselyt ja käyttötavat vaihtelevat suuresti, mutta tässä artikkelissa esitetyt tulokset yhdessä varsinaisten testien ja niiden suoritustapojen yksityiskohtaisen kuvauksen kanssa toimivat vertailukohtana kaikille, jotka ovat aloittamassa suunnittelua Power BI -raporttipalvelimen käyttöönottamisesta.
+Power BI -raporttipalvelin on omatoiminen liiketoiminta- ja yritystietojen raportointiratkaisu, jota asiakkaat voivat käyttää paikallisesti yrityksensä palomuurin suojaamana. Siinä yhdistyvät Power BI Desktopin vuorovaikutteinen raportointiominaisuus ja paikallinen SQL Server Reporting Services -palvelinympäristö. Yritysten raskas ja kasvava analytiikan käyttö ja raportointi ja yrityksen käyttäjäkannan skaalaamiseen tarvittavan laitteisto-infrastruktuurin ja ohjelmistolisenssien budjetointi voi olla haastavaa. Tämän artikkelin tarkoituksena on antaa ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimen avulla jakamalla eri kuormituksille tehtyjen erilaisten kuormitustestien tuloksia. Organisaatioiden raportit, kyselyt ja käyttötavat vaihtelevat suuresti, mutta tässä artikkelissa esitetyt tulokset yhdessä varsinaisten testien ja niiden suoritustapojen yksityiskohtaisen kuvauksen kanssa toimivat vertailukohtana kaikille, jotka ovat aloittamassa suunnittelua Power BI -raporttipalvelimen käyttöönottamiseksi.
 
 ## <a name="executive-summary"></a>Yhteenveto
 Suoritimme kahdenlaisia kuormituksia Power BI -raporttipalvelimen avulla. Jokainen kuormitus muodostui erityyppisten raporttien hahmontamisesta ja erilaisista verkkoportaalitoiminnoista. 
 
-* ”Raskas Power BI -raportti” - kuormituksessa useimmin suoritettu toiminto (eli toimintoa suoritettiin 60 % ajasta) oli Power BI -raporttien hahmontaminen.
-* ”Raskas sivutettu raportti” -kuormituksessa useimmin suoritettu toiminto oli sivutettujen raporttien hahmontaminen.
+* Raskas Power BI -raportti - kuormituksessa useimmin suoritettu toiminto (eli toimintoa suoritettiin 60 % ajasta) oli Power BI -raporttien hahmontaminen.
+* Raskas sivutettu raportti -kuormituksessa useimmin suoritettu toiminto oli sivutettujen raporttien hahmontaminen.
 
 Seuraavassa taulukossa kuvataan käyttäjien enimmäismäärä, jonka Power BI -raporttipalvelin pystyy käsittelemään vähintään 99 prosentin luotettavuudella. Taustaoletuksena on, että käytössä on neljän palvelimen topologia ja että enintään 5 prosenttia käyttäjistä käyttää raporttipalvelinta samanaikaisesti. 
 
@@ -143,4 +143,3 @@ Jos haluat suorittaa Reporting Servicesin LoadTest-työkalun käyttämällä oma
 5. Kun olet valmis ottamaan ympäristön käyttöön, suorita testit noudattamalla ohjeita kohdassa https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution.
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-

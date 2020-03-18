@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 6c2c41221e4a199d6a5d3a800f3820746ef7389a
-ms.sourcegitcommit: 8b300151b5c59bc66bfef1ca2ad08593d4d05d6a
+ms.openlocfilehash: 1d61723b08c26197d94b53188b741fd01d47a620
+ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76888358"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78401192"
 ---
 # <a name="get-power-bi-desktop"></a>Power BI Desktopin hankkiminen
 Power BI Desktopissa voit luoda tarkempia kyselyjä, malleja ja raportteja, jotka visualisoivat tietoja. Power BI Desktopilla voit luoda tietomalleja ja raportteja sekä jakaa töitäsi julkaisemalla niitä Power BI ‑palvelussa. Power BI Desktop on ladattavissa maksutta.
@@ -158,6 +158,7 @@ Jos otat Power BI Desktopin käyttöön käyttäjillesi työkalulla, joka edelly
 
     Kohdekansiossa on kansio nimeltä *AttachedContainer*, joka sisältää .msi-tiedostot.
 
+Asennuksen päivitystä .exe-tiedostosta .msi tiedostoksi, joka on poimittu exe-tiedostosta, ei tueta.   Tämän päivityksen tekeminen edellyttää, että poistat vanhan Power BI Desktop -version asennuksen.
 
 ### <a name="issues-when-using-previous-releases-of-power-bi-desktop"></a>Ongelmia Power BI Desktopin aiempia versioita käytettäessä
 

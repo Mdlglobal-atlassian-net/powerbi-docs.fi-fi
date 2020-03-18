@@ -7,17 +7,20 @@ featuredvideoid: et_MLSL2sA8
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 9/22/2019
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ab37c806aaf3cd666c71dc22ee1f3d4d457647e0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e86e8c87ca7942e74ff2f16e299304f56f4a2aa3
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863394"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79113094"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Merkityksellisten tietojen tarkasteleminen koontinäytön ruuduissa Power BI:n avulla
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 Koontinäytön visualisointi[ruutujen](end-user-tiles.md) kautta voit tarkastella tietoja. Kun valitset ruudun, raportti avautuu tai [avaa usein kysytyt kysymykset](end-user-q-and-a.md). Raportissa voit suodattaa ja lajitella raportin taustalla olevaa tietojoukkoa ja perehtyä siihen tarkemmin. Kun suoritat merkityksellisiä tietoja, Power BI tarkastelee tietoja puolestasi.
 
 ![kolme pistettä -valikkotila](./media/end-user-insights/power-bi-insight.png)

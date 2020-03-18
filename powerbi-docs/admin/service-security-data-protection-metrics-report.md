@@ -3,19 +3,18 @@ title: Tietojen suojaamisen tulosraportti
 description: Lisätietoja tietojen suojaamisen tulosraportista
 author: paulinbar
 manager: rkarlin
-ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 03/11/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 952f47f60e14932ce4b22dbd01bf60d9d7243c62
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: d2bd3308de21aa6064765b820745201efd8b23ab
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542147"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79112483"
 ---
 # <a name="data-protection-metrics-report-preview"></a>Tietojen suojaamisen tulosraportti (esikatselu)
 
@@ -52,6 +51,7 @@ Tietojen suojaamisen tulosraportista julkaistaan ajoittain parannettuja versioit
 * Organisaatiollasi on oltava asianmukainen [Cloud App Security -käyttöoikeus](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls#microsoft-cloud-app-security-licensing), jotta Cloud App Securityn tietoja voidaan käyttää.
 * Jos päätät jakaa tietojen suojaamisen tulosraportin tietoja sellaisen käyttäjän kanssa, joka ei ole Power BI -järjestelmänvalvoja, ota huomioon, että raportti sisältää luottamuksellisia tietoja organisaatiostasi.
 * Tietojen suojaamisen tulosraportti on erityinen raportti, jota ei näy Jaettu kanssani-, Viimeaikaiset- ja Suosikit-luetteloissa.
+* Tietojen suojaamisen tulosraportti ei ole [ulkoisten käyttäjien (Azure Active Directoryn B2B-vieraskäyttäjät)](../service-admin-azure-ad-b2b.md) käytettävissä.
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Tietojen suojaus Power BI:ssä (esiversio)](./service-security-data-protection-overview.md)
 * [Microsoft Cloud App Securityn hallinnan käyttäminen Power BI:ssä (esikatselu)](./service-security-using-microsoft-cloud-app-security-controls.md)

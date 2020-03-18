@@ -1,29 +1,28 @@
 ---
-title: Tarkastele SSRS-mobiiliraportteja ja suorituskykymittareita Windows 10 -mobiilisovelluksessa – Power BI
+title: Paikallisten raporttien ja suorituskykyilmaisimien tarkastelu Power BI:n Windows-sovelluksessa
 description: Power BI -mobiilisovellus Windows 10:lle tarjoaa tärkeiden, paikalliseen liiketoimintaan liittyvien tietojen reaaliaikaisen, kosketuskäyttöisten mobiilikäytön.
-author: mshenhav
-ms.reviewer: ''
+author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
-ms.author: mshenhav
-ms.openlocfilehash: 4666e7c0e4901a99867ea72ab404df4cbffe110b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 03/09/2020
+ms.author: painbar
+ms.openlocfilehash: 010513ec8ca908167bbc99255a6fd207ca0ccfba
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879365"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040871"
 ---
-# <a name="view-reporting-services-ssrs-mobile-reports-and-kpis-in-the-windows-10-power-bi-mobile-app"></a>Tarkastele Reporting Services (SSRS):n mobiiliraportteja ja suorituskykymittareita Windows 10 -laitteiden Power BI -sovelluksella
-Power BI -mobiilisovellus Windows 10:lle tarjoaa tärkeiden, paikalliseen liiketoimintaan liittyvien tietojen reaaliaikaisen, kosketuskäyttöisten mobiilikäytön SQL Server 2016 Reporting Servicesissä. 
+# <a name="view-on-premises-reports-and-kpis-in-the-power-bi-windows-app"></a>Paikallisten raporttien ja suorituskykyilmaisimien tarkastelu Power BI:n Windows-sovelluksessa
+Power BI -sovellus Windows 10:lle tarjoaa tärkeiden, paikalliseen liiketoimintaan liittyvien tietojen reaaliaikaisen, kosketuskäyttöisen mobiilikäytön SQL Server 2016 Reporting Servicesissä. 
 
 ![Reporting Servicesin mobiiliraportit](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
 
 ## <a name="first-things-first"></a>Aloitetaan tärkeimmästä
 Voit luoda [Reporting Services -mobiiliraportteja](https://msdn.microsoft.com/library/mt652547.aspx) SQL Server 2016 Enterprise Edition -mobiiliraportin julkaisuohjelmalla ja julkaista ne [Reporting Services -verkkoportaalissa](https://msdn.microsoft.com/library/mt637133.aspx). Luo suorituskykymittarit suoraan verkkoportaalissa. Voit järjestää ne kansioihin ja merkitä haluamasi suosikit, jotta löydät ne helposti. 
 
-Sitten voit tarkastella Power BI -mobiilisovelluksessa Windows 10:lle omia mobiiliraportteja ja suorituskykymittareita, järjestää niitä kansioihin tai kerätä suosikeiksi. 
+Sitten voit tarkastella Windows 10:n Power BI -sovelluksessa suorituskykymittareita, mobiiliraportteja ja Power BI -raportteja, järjestää niitä kansioihin tai kerätä suosikeiksi. 
 
 > [!NOTE]
 > Laitteessa on oltava käytössä Windows 10. Sovellus toimii parhaiten laitteissa, joissa on vähintään 1 Gigatavua RAM-muistia ja 8 Gigatavua tallennustilaa.
@@ -68,7 +67,7 @@ Selaa näytteitä suorituskykymittarien ja mobiiliraporttien käyttämiseksi vuo
    > 
 
 ## <a name="view-reporting-services-kpis-and-mobile-reports-in-the-power-bi-app"></a>Tarkastele Reporting Services -suorituskykymittareita ja mobiiliraportteja Power BI -sovelluksella
-Reporting Services -mobiiliraportit ja suorituskykymittarit näkyvät samoissa kansiossa, joissa ne ovat Reporting Services -verkkoportaalissa.
+Reporting Services -mobiiliraportit, suorituskykyilmaisimet ja Power BI -raportit (esikatselu) näkyvät samoissa kansiossa, joissa ne ovat Reporting Services -verkkoportaalissa.
 
 ![Raportin kansiot](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-folders.png)
 
@@ -80,7 +79,7 @@ Reporting Services -mobiiliraportit ja suorituskykymittarit näkyvät samoissa k
     ![Reporting Servicesin mobiiliraportit](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
 
 ## <a name="view-your-favorite-kpis-and-reports"></a>Suosikkisuorituskykymittareiden ja -raporttien tarkastelu
-Voit merkitä suorituskykymittareiden ja mobiiliraportteja suosikeiksi  Reporting Services -verkkoportaalissa ja tarkastella niitä yhdessä kätevässä kansiossa Windows 10 -laitteessasi Power BI -suosikkikoontinäyttöjesi ja raporttien kera.
+Voit merkitä suorituskykymittareita, mobiiliraportteja ja Power BI -raportteja suosikeiksi Reporting Services -verkkoportaalissa ja tarkastella niitä yhdessä kätevässä kansiossa Windows 10 -laitteessasi Power BI -suosikkikoontinäyttöjesi ja raporttien kera.
 
 * Napauta **Suosikit**.
   
@@ -88,8 +87,6 @@ Voit merkitä suorituskykymittareiden ja mobiiliraportteja suosikeiksi  Reportin
   
    Verkkoportaalin suosikit ovat kaikki tällä sivulla.
   
-   ![Suosikit-sivu](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-windows-10-ssrs-favorites.png)
-
 Lue lisää [suosikeista Power BI -mobiilisovelluksissa](mobile-apps-favorites.md).
 
 ## <a name="remove-a-connection-to-a-report-server"></a>Yhteyden poistaminen raporttipalvelimeen

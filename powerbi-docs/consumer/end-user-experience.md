@@ -11,12 +11,12 @@ ms.topic: quickstart
 ms.date: 01/31/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: fbd629ea7d2c5bb71471ac8073a5a823f1b2c192
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 595ce61bf2020c27420a33871e82ca7ff9025d60
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76975144"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79040141"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Pikaopas - Power BI -palveluun tutustuminen
 
@@ -72,7 +72,7 @@ Tarkastele sitä itseksesi valitsemalla **Työtilat** vasemmassa siirtymisruudus
 
 ![Omat työtilat ](./media/end-user-experience/power-bi-workspaces.png)
 
-**Oma työtila** -sijaintiin voit tallentaa kaiken omistamasi ja luomasi sisällön. Ajattele sitä oman sisältösi henkilökohtaisena eristyksenä tai työskentelyalueena. Monilla Power BI *-kuluttajilla* **Oma työtila** pysyy tyhjänä, koska heidän työnsä ei edellytä uuden sisällön luontia.  *Kuluttajat* kuluttavat, eli käyttävät, muiden luomia tietoja ja tekevät liiketoimintapäätöksiä näiden tietojen avulla. Jos luotkin sisältöä, lue sen sijaan [Power BI -artikkelit *, jotka on tarkoitettu suunnittelijoille*](../power-bi-creator-landing.md).
+**Oma työtila** -sijaintiin voit tallentaa kaiken omistamasi ja luomasi sisällön. Ajattele sitä oman sisältösi henkilökohtaisena eristyksenä tai työskentelyalueena. Monilla Power BI *-kuluttajilla* **Oma työtila** pysyy tyhjänä, koska heidän työnsä ei edellytä uuden sisällön luontia.  *Kuluttajat* kuluttavat, eli käyttävät, muiden luomia tietoja ja tekevät liiketoimintapäätöksiä näiden tietojen avulla. Jos luotkin sisältöä, lue sen sijaan [Power BI -artikkelit *, jotka on tarkoitettu raporttien tekijöille*](../index.yml).
 
 **Sovelluksen työtila** sisältää kaiken sisällön tiettyä sovellusta varten.  Kun *suunnittelija* luo sovelluksen, hän niputtaa yhteen kaiken sisällön, jota tarvitaan kyseisen sovelluksen käytössä.  Valitse Myynti ja markkinointi -työtila, jotta näet, mitä *suunnittelija* on niputtanut sovellukseen. 
 

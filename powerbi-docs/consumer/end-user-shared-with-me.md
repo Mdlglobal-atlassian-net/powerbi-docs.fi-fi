@@ -7,17 +7,19 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/25/2019
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6fdb336faaceee21347f426beb6fdefc0bdb70f4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d97727969ed48c50a86be032835b237d293a1d96
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861682"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79114152"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Minulle jaettujen koontinäyttöjen ja raporttien tarkastelu
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -25,7 +27,7 @@ Kun työtoveri jakaa sinulle sisältöä **Jaa**-painiketta käyttämällä, se 
 
 ![Jaa-kuvake](./media/end-user-shared-with-me/power-bi-share-dashboard.png)
 
-Katso videolta, kun Amanda kertoo lisää **Jaettu kanssani** ‑sisältöluettelosta ja näyttää, miten luettelosta siirrytään sisältöihin toiseen ja miten luetteloa voi suodattaa. Kokeile sitten itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita. Tarvitset Power BI Pro ‑käyttöoikeuden voidaksesi tarkastella sinulle jaettuja koontinäyttöjä. Lisätietoja on artikkelissa [Mikä on Power BI Premium?](../service-premium-what-is.md)
+Katso videolta, kun Amanda kertoo lisää **Jaettu kanssani** ‑sisältöluettelosta ja näyttää, miten luettelosta siirrytään sisältöihin toiseen ja miten luetteloa voi suodattaa. Kokeile sitten itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita. Tarvitset Power BI Pro ‑käyttöoikeuden voidaksesi tarkastella sinulle jaettuja koontinäyttöjä. Saat lisätietoja ohjeartikkelista [Mikä käyttöoikeus minulla on?](end-user-license.md)
     
 
 > [!NOTE]

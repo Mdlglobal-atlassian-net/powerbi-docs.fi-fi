@@ -5,21 +5,21 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 02/18/2020
+ms.date: 02/24/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 100a9302e260a7c8f34c6fa07cc6b231e7271ce6
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: fb1209103c88e78148f746321d5ff8d8bd6e1a20
+ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496194"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79039925"
 ---
 # <a name="the-power-bi-service-for-consumers"></a>Power BI -palvelu kuluttajille
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-Elämme tietokulttuurissa, jossa liiketoimintapäätökset perustuvat tosiasioihin, eivät mielipiteisiin. Tarvitset tietoja näiden päätösten tekemiseen, eivätkä työkaverisi aiheuta pettymystä tässä suhteessa.     
+Elämme tietokulttuurissa, jossa liiketoimintapäätökset perustuvat tosiasioihin, eivät mielipiteisiin. Tarvitset tietoja näiden päätösten tekemiseen, eivätkä työtoverisi aiheuta pettymystä tässä suhteessa.     
  
 He lähettävät sinulle kaikenlaisia raportteja, laskentataulukoita, kaavioita sisältäviä sähköpostiviestejä ja jopa tulosteita. Kun tietoa kasaantuu, on koko ajan vaikeampaa löytää tarvittavat tiedot nopeasti, ja pelkäät, että et ehkä käytä kaikkein uusimpia tietoja.  
  
@@ -31,7 +31,7 @@ Power BI tekee työstäsi helpompaa ja samalla vaikuttavampaa. Kaikki tiedot vis
 
 ![Power BI -koontinäyttö](media/end-user-consumer/power-bi-consumer-examples.png)
  
-Avaa Power BI -palvelu selaimessa tai mobiililaitteessa. Sinä ja työkaverisi käsittelette samoja luotettuja koontinäyttöjä ja raportteja, jotka päivittyvät automaattisesti, joten käytössänne on aina uusin sisältö.   
+Avaa Power BI -palvelu selaimessa tai mobiililaitteessa. Sinä ja työtoverisi käsittelette samoja luotettuja koontinäyttöjä ja raportteja, jotka päivittyvät automaattisesti, joten käytössänne on aina uusin sisältö.   
 
 ![Power BI -koontinäyttö](media/end-user-consumer/power-bi-funnel.png)
 
@@ -45,7 +45,7 @@ Kuluttajana et voi käyttää Power BI:n kaikkia ominaisuuksia. Tällä ei ole m
 
 Jossain vaiheessa tulet näkemään termin ”Power BI Desktop” tai vain ”Desktop”. Tämä on erillinen työkalu, jota *suunnittelijat* käyttävät koontinäyttöjen ja raporttien luomiseen ja jakamiseen kanssasi.  Sinun on hyvä tietää, että on olemassa muita Power BI -työkaluja, mutta jos olet kuluttaja, tulet työskentelemään vain Power BI -palvelun kanssa. 
 
-Tarvitset Power BI Pro- tai Premium-käyttöoikeuden, koska käsittelet *jaettua* sisältöä. [Mikä käyttöoikeus minulla on?](end-user-license.md)
+Koska käsittelet *jaettua* sisältöä, tarvitset tavallisen **maksuttoman** käyttöoikeuden **Premium**-kapasiteettia käyttävässä organisaatiossa. [Mikä käyttöoikeus minulla on?](end-user-license.md)
 
 
 ## <a name="safely-interact-with-content"></a>Sisällön turvallinen käyttö 

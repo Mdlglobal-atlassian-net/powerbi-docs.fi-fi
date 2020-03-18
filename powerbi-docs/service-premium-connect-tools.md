@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 07/24/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 0364fae1648e6155cc5e5a92850861c3bedbabdc
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: aaafaa5b2822e3e17fdc92b43bf7b745330a547b
+ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871895"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78946831"
 ---
 # <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Tietojoukkoihin yhdistäminen asiakassovelluksilla ja työkaluilla (esikatselu)
 
-Power BI Premiumin työtilat ja tietojoukot tukevat Microsoftin sekä muiden valmistajien asiakassovellusten ja työkalujen *Vain luku* -yhteyksiä. Oletusarvon mukaan yhteydet ovat käytössä
+Power BI Premiumin työtilat ja tietojoukot tukevat Microsoftin sekä muiden valmistajien asiakassovellusten ja työkalujen *Vain luku* -yhteyksiä. Oletusarvon mukaan yhteydet ovat käytössä.
 
 > [!NOTE]
 > Tämä artikkeli on tarkoitettu vain Power BI Premiumin työtilojen ja tietojoukkojen Vain luku -yhteyksien esittelyksi. Sen tarkoitus *ei ole* tarjota tarkkoja tietoja ohjelmoitavuudesta, tietyistä työkaluista ja sovelluksista, arkkitehtuurista tai työtilojen sekä tietojoukkojen hallinnasta. Tässä käsitellyt aiheet edellyttävät vankkaa ymmärrystä Analysis Servicesin taulukkomallisesta tietokanta-arkkitehtuurista ja -ylläpidosta.
@@ -104,17 +104,13 @@ Seuraavia tietojoukkoja ei tueta Power BI -palvelussa:
 
 Tällä hetkellä mallin rooleja ja roolijäsenyyksiä ei voi etsiä tai näyttää XMLA-päätepisteiden avulla.
 
-## <a name="disable-connectivity"></a>Poista yhteys käytöstä
-
-Oletusarvon mukaan XMLA-päätepisteyhteys on käytössä tietojoukkojen kuormituksessa. Voit poistaa yhteyden käytöstä [kuormituksen asetuksissa](service-admin-premium-workloads.md#workload-settings).
-
 ## <a name="audit-logs"></a>Valvontalokit 
 
 Kun asiakassovellukset ja työkalut yhdistävät työtilaan, käyttö XMLA-päätepisteiden kautta kirjataan Power BI -valvontalokeihin **GetWorkspaces**-toiminnon alle. Saat lisätietoja artikkelista [Power BI:n valvonta](service-admin-auditing.md).
 
-## <a name="see-also"></a>Katso myös
+## <a name="see-also"></a>Muuta aiheeseen liittyvää
 
-[Analysis Services -viittaukset](https://docs.microsoft.com/bi-reference/#pivot=home&panel=home-all)   
+[Analysis Services -viittaukset](https://docs.microsoft.com/bi-reference/?pivot=home&panel=home-all)   
 [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-ssms)   
 [SQL Server Analysis Servicesin taulukkomuotoinen protokolla](https://docs.microsoft.com/openspecs/sql_server_protocols/ms-ssas-t/b98ed40e-c27a-4988-ab2d-c9c904fe13cf)   
 [Dynaamiset hallintanäkymät](https://docs.microsoft.com/sql/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services)   

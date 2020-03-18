@@ -13,6 +13,9 @@
             - name: Kuluttajat
               tocHref: /power-bi/consumer/
               topicHref: /power-bi/consumer/index
+            - name: Mobiili
+              tocHref: /power-bi/consumer/mobile/
+              topicHref: /power-bi/consumer/mobile/index
             - name: Kehittäjä
               tocHref: /power-bi/developer/
               topicHref: /power-bi/developer/index

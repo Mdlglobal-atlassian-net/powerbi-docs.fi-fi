@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/24/2020
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: a89cb77b99356f9f282b522c2041e96210a026e9
-ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
+ms.openlocfilehash: 4870fac504f36600c13af49c5798d896eeb59261
+ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576769"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79113156"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Power BI:n tukemat merkityksellisten tietojen tyypit
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 Power BI voi etsiä tiedoistasi mielenkiintoisia trendejä ja malleja. Nämä trendit ja mallit esitetään *merkityksellisiksi tiedoiksi* kutsuttujen visualisointien muodossa. 
 
@@ -75,7 +77,7 @@ Etsii toistuvia kuvioita aikasarjatiedoissa, kuten viikoittaista, kuukausittaist
 ![Esimerkki kausivaihtelusta](./media/end-user-insight-types/pbi-auto-insight-types-seasonality-new.png)
 
 ### <a name="steady-share"></a>Vakaa jako
-Korostaa tapaukset, joissa on olemassa pääkohde-alikohde-korrelaatio alikohteen osuudessa suhteessa pääkohteen yleisarvoon jatkuvassa muuttujassa. Vakaan jaon merkitykselliset tiedot koskevat mittayksikön, dimension ja toisen päivämäärä/aika-dimension kontekstia. Tämä merkityksellinen tieto käynnistyy, kun tietyllä dimension arvolla, esimerkiksi ”Koillisalue”-arvolla, on vakaa prosenttiosuus kokonaismyynnistä kyseisessä päivämäärä-/aikadimensiossa.
+Korostaa tapaukset, joissa on olemassa pääkohde-alikohde-korrelaatio alikohteen osuudessa suhteessa pääkohteen yleisarvoon jatkuvassa muuttujassa. Vakaan jaon merkitykselliset tiedot koskevat mittayksikön, dimension ja toisen päivämäärä/aika-dimension kontekstia. Tämä merkityksellinen tieto käynnistyy, kun tietyllä dimension arvolla, esimerkiksi Koillisalue-arvolla, on vakaa prosenttiosuus kokonaismyynnistä kyseisessä päivämäärä-/aikadimensiossa.
 
 Vakaan jaon merkityksellinen tieto muistuttaa pienen varianssin merkityksellistä tietoa, koska ne molemmat liittyvät arvon varianssin puutteeseen tietyllä aikavälillä. Vakaan jaon merkitykselliset tiedot mittaavat kuitenkin varianssin puutetta **prosenttiosuudessa kokonaisuudesta** tietyllä aikavälillä, kun taas pienen varianssin merkitykselliset tiedot mittaavat varianssin puutetta absoluuttisissa mittausarvoissa tietyssä dimensiossa.
 

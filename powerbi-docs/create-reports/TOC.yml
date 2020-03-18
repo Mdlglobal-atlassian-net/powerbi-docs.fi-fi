@@ -145,7 +145,7 @@
               href: ../desktop-grouping-and-binning.md
             - name: 'Power BI -visualisointien luominen R:n avulla'
               href: ../desktop-r-visuals.md
-            - name: 'R:ää hyödyntävien mukautettujen visualisointien lataaminen ja käyttö'
+            - name: 'R:ää hyödyntävien Power BI -visualisointien lataaminen ja käyttäminen'
               href: ../desktop-r-powered-custom-visuals.md
             - name: Ruudukoiden ja ruudukkoon kohdistamisen käyttö
               href: ../desktop-gridlines-snap-to-grid.md
