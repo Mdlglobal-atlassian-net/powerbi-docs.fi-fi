@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 538c533a1b951fd2dff1b481adb94e2b1d0cf87b
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 955a14b37d59f554fb12b302c16472387c896e54
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79213599"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488587"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure Active Directory B2B:n avulla
 
@@ -336,7 +336,7 @@ On tärkeää tunnistaa, että Azure AD-tiliä käytetään tai luodaan ulkoisen
 Contoso voi valita yhden kolmesta menetelmästä, kun se antaa Power BI -sisältönsä käyttöoikeuksia toimittajiensa ja kumppaniorganisaatioidensa vieraskäyttäjille.
 
 > [!NOTE]
-> _Azure AD B2B's Free-taso riittää Power BI käyttämiseen Azure AD B2B-yhteyden avulla. Jotkin edistyneet Azure AD B2B-ominaisuudet, kuten dynaamiset ryhmät, edellyttävät lisä käyttö oikeuksia. Lisä tietoja on Azure AD B2B-dokumentaatiossa:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
+> _Azure AD B2B's Free-taso riittää Power BI käyttämiseen Azure AD B2B-yhteyden avulla. Jotkin edistyneet Azure AD B2B-ominaisuudet, kuten dynaamiset ryhmät, edellyttävät lisä käyttö oikeuksia. Lisä tietoja on Azure AD B2B-dokumentaatiossa:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_ ](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
 
 ### <a name="approach-1-contoso-uses-power-bi-premium"></a>Approach 1: contoso käyttää Power BI Premium
 
@@ -490,7 +490,7 @@ Vieraskäyttäjät saavat vain luku -oletuskokemuksen ja eivätkä voi muokata j
 
 Auta näitä käyttäjiä kirjautumaan Power BI:hin antamalla heille vuokraajan URL-osoite. Etsi vuokraajan URL-osoite seuraavien vaiheiden mukaisesti.
 
-1. Valitse Power BI -palvelun yläreunan valikosta ohje (**?** ) ja sitten **Tietoja Power BI:stä**.
+1. Valitse Power BI -palvelun yläreunan valikosta ohje ( **?** ) ja sitten **Tietoja Power BI:stä**.
 2. Katso arvo kohdan **Vuokraajan URL-osoite** vierestä. Tämä on vuokraajan URL-osoite, jonka voit jakaa vieraskäyttäjille.
 
     ![Vuokraajan URL-osoite](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_42.png)
@@ -576,7 +576,7 @@ Miksi vaihtoehtoa ei kannata valita:
 
 ### <a name="alternative-option-2-create-a-custom-power-bi-embedded-application-using-custom-authentication"></a>Vaihtoehtoinen vaihto ehto 2: mukautetun Power BI Embedded-sovelluksen luominen mukautetun todennuksen avulla
 
-Contoson toinen vaihtoehto on luoda oma mukautettu upotettu Power BI -sovellus, joka käyttää mukautettua todentamista (['Sovellus omistaa tiedot'](https://docs.microsoft.com/power-bi/developer/embed-sample-for-customers)). Vaikka monilla organisaatioilla ei ole aikaa tai resursseja luoda mukautettua sovellusta, jolla ne voisivat jakaa Power BI-sisältöä ulkoisille kumppaneilleen, joillekin organisaatioille tämä on paras tapa, ja ansaitsee siksi huomiota.
+Contoson toinen vaihtoehto on luoda oma mukautettu upotettu Power BI -sovellus, joka käyttää mukautettua todentamista (['Sovellus omistaa tiedot'](https://docs.microsoft.com/power-bi/developer/embedded/embed-sample-for-customers)). Vaikka monilla organisaatioilla ei ole aikaa tai resursseja luoda mukautettua sovellusta, jolla ne voisivat jakaa Power BI-sisältöä ulkoisille kumppaneilleen, joillekin organisaatioille tämä on paras tapa, ja ansaitsee siksi huomiota.
 
 Organisaatioilla on usein olemassa kumppaniportaaleja, jotka keskittävät kumppanien käyttöoikeudet kaikkiin organisaation resursseihin, eristävät ne organisaation sisäisistä resursseista ja tarjoavat virtaviivaistettuja kokemuksia kumppaneille, niin että ne tukevat monia kumppaneita ja yksittäisiä käyttäjiä.
 
