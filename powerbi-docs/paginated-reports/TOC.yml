@@ -12,6 +12,8 @@
     - name: Opetusohjelmat
       expanded: true
       items:
+        - name: Verkkokurssi
+          href: paginated-reports-online-course.md
         - name: 'Käytännön labratyö: Luo sivutettu raportti'
           href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
         - name: Luo sivutettu raportti ja lataa se palvelimeen
