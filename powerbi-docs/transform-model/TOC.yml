@@ -75,6 +75,8 @@
               href: ../desktop-measures.md
             - name: Suorituskykyilmaisimien tuominen ja näyttäminen
               href: ../desktop-import-and-display-kpis.md
+            - name: Automaattisen päivämäärän/ajan käyttö
+              href: ../desktop-auto-date-time.md
         - name: Omatoiminen tietojen valmistelu
           items:
             - name: Tietovoiden luominen ja käyttäminen
