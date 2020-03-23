@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/12/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 07fd9a00034a210dfbcc6cae4aa721e3b09bd37a
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 1caa68ac00f9821979f741bf3266514fcb33c36a
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76889393"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381165"
 ---
 # <a name="what-is-power-bi-premium"></a>Mikä on Power BI Premium?
 
@@ -88,7 +88,7 @@ Kunkin Premium-SKU:n (ja yhtä suuren A-SKU:n) resurssit ja rajoitukset on kuvat
 
 ### <a name="capacity-workloads"></a>Kapasiteetin kuormitukset
 
-Kapasiteetin kuormitukset ovat käyttäjien käytettävissä olevia palveluita. Oletusarvoisesti Premium- ja Azure-kapasiteetit tukevat ainoastaan Power BI -kyselyjen suorittamiseen liittyviä tietojoukon kuormituksia. Tietojoukon kuormitusta ei voi poistaa käytöstä. Muita kuormituksia voi ottaa käyttöön [tekoälylle (kognitiiviset palvelut)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [tietovoille](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium) ja [sivutetuille raporteille](paginated-reports-save-to-power-bi-service.md). Näitä kuormituksia tuetaan vain Premium-tilauksissa. 
+Kapasiteetin kuormitukset ovat käyttäjien käytettävissä olevia palveluita. Oletusarvoisesti Premium- ja Azure-kapasiteetit tukevat ainoastaan Power BI -kyselyjen suorittamiseen liittyviä tietojoukon kuormituksia. Tietojoukon kuormitusta ei voi poistaa käytöstä. Muita kuormituksia voi ottaa käyttöön [tekoälylle (kognitiiviset palvelut)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [tietovoille](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium) ja [sivutetuille raporteille](paginated-reports/paginated-reports-save-to-power-bi-service.md). Näitä kuormituksia tuetaan vain Premium-tilauksissa. 
 
 Jokainen lisäkuormitus antaa määrittää enimmäismuistin (prosenttiosuutena kaikesta käytettävissä olevasta muistista), jota kuormitus voi käyttää. SKU määrittää enimmäismuistin oletusarvot. Voit maksimoida kapasiteettisi käytettävissä olevat resurssit ottamalla käyttöön vain kyseiset lisäkuormitukset niitä käytettäessä. Voit muuttaa muistiasetuksia vain, jos olet todennut, että oletusasetukset eivät vastaa kapasiteettisi resurssivaatimuksia. Kapasiteetin järjestelmänvalvojat voivat ottaa kuormituksia käyttöön ja määrittää niitä kapasiteettiin käyttämällä [hallintaportaalin](service-admin-portal.md)**kapasiteettiasetuksia** tai käyttämällä [kapasiteettien REST-ohjelmointirajapintoja](https://docs.microsoft.com/rest/api/power-bi/capacities).  
 
@@ -209,7 +209,7 @@ Varastointiyksiköissä P1 – P3 ja A4–A6 tuetut sivutetut raportit perustuva
 
 Power BI Premiumissa sivutetut raportit ovat kuormituksia, jotka on otettava käyttöön kapasiteetissa hallintaportaalia käyttämällä. Kapasiteetin järjestelmänvalvojat voivat ottaa käyttöön ja sitten määrittää muistin määrän prosenttiosuutena kapasiteetin kokonaismuistiresursseista. Premium suorittaa sivutetut raportit rajoitetussa tilassa kapasiteetin sisällä toisin kuin muun tyyppiset kuormitukset. Tälle tilalle osoitetaan kaikki määritetty muisti riippumatta siitä, onko kuormitus aktiivinen. Oletusarvo on 20 %. 
 
-Saat lisätietoja artikkelista [Mitä ovat sivutetut raportit Power BI Premiumissa?](paginated-reports-report-builder-power-bi.md) Saat lisätietoja sivutettujen raporttien kuormitusten käyttöönotosta artikkelista [Kuormitusten määrittäminen](service-admin-premium-workloads.md).
+Saat lisätietoja artikkelista [Mitä ovat sivutetut raportit Power BI Premiumissa?](paginated-reports/paginated-reports-report-builder-power-bi.md) Saat lisätietoja sivutettujen raporttien kuormitusten käyttöönotosta artikkelista [Kuormitusten määrittäminen](service-admin-premium-workloads.md).
 
 ## <a name="power-bi-report-server"></a>Power BI -raporttipalvelin
  
@@ -227,7 +227,7 @@ Premium mahdollistaa Pro-version käyttäjien luoman sisällön laaja-alaisen ja
 
 Lisätietoja on artikkelissa [Power BI-käyttöoikeudet](service-admin-licensing-organization.md).
 
-## <a name="tool-connectivity-preview"></a>Työkalun liitettävyys (esikatselu)
+## <a name="analysis-services-in-power-bi-premium-preview"></a>Analysis Services Power BI Premiumissa (esikatselu)
 
 Kulissien takana Power BI -tietojoukot käyttävät yrityksille sopivaa Microsoft **Analysis Services Vertipaq -moduulia**. Analysis Services tarjoaa ohjelmoitavuusominaisuuden ja asiakassovellus- ja työkalutuen avoimen standardin XMLA-protokollaa tukevien asiakaskirjastojen ja ohjelmointirajapintojen kautta. Tällä hetkellä Power BI Premium -tietojoukot tukevat Microsoftin ja kolmansien osapuolten sovellusten ja työkalujen *vain luku* -toimintoja **XMLA-päätepisteiden** kautta. 
 

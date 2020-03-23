@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/17/2019
+ms.date: 03/12/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 34b409bc6c319594c6b8e79acd48e5ed0d674ced
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 8bb95da5383eedac57fb705f697a8481e934e379
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698459"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79202018"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Power BI Premium -kapasiteetin uudelleenkäynnistäminen
 
@@ -30,7 +30,9 @@ Power BI parantaa jatkuvasti sitä, miten se suojaa Premium-kapasiteetin käytt�
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Onko uudelleenkäynnistysprosessi turvallinen? Menetänkö joitakin tietoja?
 
-Kaikki kapasiteetin tallennetut tiedot, määritykset, raportit ja koontinäytöt säilyvät täysin samoina uudelleenkäynnistyksen jälkeen. Kun käynnistät kapasiteetin uudelleen, kaikki jatkuvat ajoitetut ja tilapäiset päivitykset pysäytetään. Palvelu yrittää päivityksiä uudelleen, kun kapasiteetti on käytettävissä. Kapasiteettia käsittelevät käyttäjät menettävät tallentamattomat työt. Heidän on päivitettävä selaimensa, kun uudelleenkäynnistys on suoritettu loppuun.
+Kaikki kapasiteetin tallennetut tiedot, määritykset, raportit ja koontinäytöt säilyvät täysin samoina uudelleenkäynnistyksen jälkeen. Kun käynnistät kapasiteetin uudelleen, päivitysmoduuli useimmiten pysäyttää käynnissä olevat ajoitetut ja tilapäiset päivitykset väliaikaisesti. Sen jälkeen ne käynnistetään uudelleen Power BI:n sisäisen päivityksen uudelleenyrityslogiikan mukaan. Palvelu yrittää uudelleen kaikkia vaikutuksen kohteina olleita päivityksiä, kun kapasiteetti on taas käytettävissä. Päivitysten tila käyttöliittymässä ei ehkä muutu uudelleenkäynnistysprosessin aikana. 
+
+Kapasiteettia käsittelevät käyttäjät menettävät tallentamattomat työt uudelleenkäynnistysprosessin aikana. Käyttäjien on päivitettävä selaimensa, kun uudelleenkäynnistys on suoritettu loppuun.
 
 ## <a name="how-do-i-restart-a-capacity"></a>Miten kapasiteetti voidaan käynnistää uudelleen?
 

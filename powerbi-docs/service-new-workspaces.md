@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 03/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 976d53a5a74bc077d3d4642ccec336b1225344ae
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 27ebe50030fbd06f65be5530ee2a2c0a7897f0f5
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77426560"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488725"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Työn järjestäminen uusiin työtiloihin Power BI:ssä
 
@@ -54,7 +54,7 @@ Uudet päivitetyt työtilat ja aiemmat perinteiset työtilat ovat käytettäviss
 
 ## <a name="roles-in-the-new-workspaces"></a>Roolit uusissa työtiloissa
 
-Voit myöntää käyttöoikeuden uuteen työtilaan lisäämällä käyttäjäryhmiä tai henkilöitä yhteen työtilarooliin: katselijat, jäsenet, osallistujat tai järjestelmänvalvojat. Kaikki käyttäjäryhmän jäsenet saavat määrittämäsi roolin. Jos henkilö on useissa käyttäjäryhmissä, hän saa hänelle myönnettyjen roolien antaman korkeimman käyttöoikeustason.
+Voit myöntää käyttöoikeuden uuteen työtilaan lisäämällä käyttäjäryhmiä tai henkilöitä yhteen työtilarooliin: järjestelmänvalvojat, jäsenet, osallistujat tai katselijat. Kaikki käyttäjäryhmän jäsenet saavat määrittämäsi roolin. Jos henkilö on useissa käyttäjäryhmissä, hän saa hänelle myönnettyjen roolien antaman korkeimman käyttöoikeustason.
 
 Roolien avulla voit hallita, kuka voi tehdä mitäkin työtilassa, joten ryhmät voivat tehdä yhteistyötä. Uusissa työtiloissa voit määrittää henkilöille ja käyttäjäryhmille rooleja. Voit käyttää käyttöoikeusryhmiä, Office 365 -ryhmiä ja jakeluluetteloita. 
 
@@ -70,11 +70,14 @@ Tässä ovat ominaisuudet neljästä roolista: järjestelmänvalvojat, jäsenet,
 | Julkaista ja päivittää sovelluksen. |  X | X  |   |   |
 | Jakaa kohteen tai sovelluksen.<sup>1</sup> |  X | X  |   |   |
 | Sallia muille kohteiden jakaminen uudelleen.<sup>1</sup> |  X | X  |   |   |
+| Ominaisuussovelluksia työtovereiden kotisivuilla |  X | X  |   |   |
+| Ominaisuuskoontinäyttöjä ja raportteja työtovereiden kotisivuilla |  X | X  | X |   |
 | Luoda, muokata ja poistaa työtilan sisältöä.  |  X | X  | X  |   |
 | Julkaista raportteja työtilaan ja poistaa sisältöä.  |  X | X  | X  |   |
 | Luo raportti toisessa työtilassa tämän työtilan tietojoukon perusteella.<sup>1</sup> |  X | X  | X  |   |
 | Kopioi raportti.<sup>2</sup> | X | X | X |  |
 | Tarkastele ja käytä kohdetta.<sup>3</sup> |  X | X  | X  | X  |
+| Työtilan tietovoihin tallennettujen tietojen lukeminen | X | X | X | X |
 
 1. Osallistujat ja katselijat voivat käyttää työtilan kohteita, jos heillä on oikeudet jakaa kohteita uudelleen.
 2. Jos haluat kopioida raportin tai luoda raportin toisessa työtilassa tämän työtilan tietojoukon perusteella, seuraavien ehtojen on täytyttävä:

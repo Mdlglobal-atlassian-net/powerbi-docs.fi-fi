@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/19/2020
+ms.date: 03/13/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 590b00f5eb03b1bd31430866a52faa4748f9b32a
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: b36bc6d23b56b4118f848ad9fa4e8f39dbc65d2d
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496940"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376720"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI Yhdysvaltain valtionhallinnon asiakkaille
 Tämä artikkeli on tarkoitettu Yhdysvaltain valtionhallinnon asiakkaille, jotka ottavat Power BI:n käyttöön osana Office 365 Government -palvelupakettia. Government-palvelupaketit on suunniteltu sellaisten organisaatioiden ainutlaatuisiin tarpeisiin, joiden pitää olla yhteensopivia Yhdysvaltain valtionhallinnon vaatimusten ja suojausstandardien kanssa. Yhdysvaltain valtionhallinnon asiakkaille suunniteltu Power BI-palvelu eroaa Power BI-palvelu kaupallisesta versiosta. Nämä ominaisuuksien erot ja ominaisuudet kuvataan seuraavissa osissa.
@@ -46,7 +46,7 @@ Office 365 järjestää eri ympäristöjä valtion virastoille vaihtelevien yhte
 Kun olet ottanut käyttöön Office 365:n, voit lisätä Power BI -tilauksen. Osta Power BI Pro Government -palvelu suorittamalla vaiheittaiset ohjeet kohdassa [Rekisteröi Yhdysvaltain julkishallinnon organisaatio](service-govus-signup.md#existing-office-government-cloud-customers). Osta riittävästi käyttöoikeuksia kaikille käyttäjille, joiden tarvitsee päästä käyttämään Power BI:tä, ja määritä sitten käyttöoikeudet yksittäisille käyttäjätileille.
 
 > [!IMPORTANT]
-> Power BI US Government ei ole saatavissa ilmaisena käyttöoikeutena. Kaikille käyttäjille on määritettävä Pro-käyttöoikeudet, jotta he saavat käyttää valtionhallinnon yhteisöpilveä. Jos käyttäjän tilille on määritetty ilmainen käyttöoikeus, hän saa käyttää ainoastaan kaupallisia pilvipalveluja ja hänelle tulee todennus- ja käyttöoikeusongelmia. Jos haluat tarkastella eri käyttöoikeustyyppien välisiä eroja, katso kohtaa [Power BI -palvelun ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md).
+> Power BI US Government ei ole saatavissa ilmaisena käyttöoikeutena. Kaikille käyttäjille on määritettävä Pro-käyttöoikeudet, jotta he saavat käyttää valtionhallinnon yhteisöpilveä. Jos käyttäjän tilille on määritetty ilmainen käyttöoikeus, hän saa käyttää ainoastaan kaupallisia pilvipalveluja ja hänelle tulee todennus- ja käyttöoikeusongelmia. Jos olet ostanut Power BI Premiumin, sinun ei tarvitse määrittää Pro-käyttöoikeuksia käytön mahdollistamiseksi.  Kuka tahansa organisaation käyttäjä voi käyttää hänen kanssaan jaettuja raportteja, kunhan raportti julkaistaan Premium-kapasiteettiin. Jos haluat tarkastella eri käyttöoikeustyyppien välisiä eroja, katso kohtaa [Power BI -palvelun ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md).
 >
 >
 

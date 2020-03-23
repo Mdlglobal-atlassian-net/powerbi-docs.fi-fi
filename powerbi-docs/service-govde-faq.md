@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 4459ae95ccd900b0592dbae1048800bcd4609307
-ms.sourcegitcommit: 57ec4d51744b89bd695e6c62184c21342f2eae83
+ms.openlocfilehash: d349e19e4f5cc73cadf2a281b07a220ff7c076bf
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74178260"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376772"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Usein kysyttyjä kysymyksiä Power BI:n pilvipalvelun saksalaisille asiakkaille
 **Power BI -palvelusta** on saatavilla Euroopan unionin ja Euroopan Vapaakauppajärjestön sopimuksen (EU/EFTA) asiakkaille versio, johon viitataan usein nimellä Microsoft Cloud Deutschland (MCD). Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu erityisesti EU/EFTA -asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio, joka on tarjolla valtionhallinnon asiakkaille.
@@ -44,7 +44,7 @@ Seuraavat kysymykset ja vastaukset tarjoavat tärkeää tietoa Microsoft Cloud D
    
    * [Power BI Desktop](https://powerbi.microsoft.com/desktop/)
    * [Power BI Mobile](https://powerbi.microsoft.com/mobile/)
-   * [Paikallinen tietoyhdyskäytävä](https://powerbi.microsoft.com/gateway/)
+   * [On-premises data gateway (Paikallinen tietoyhdyskäytävä)](https://powerbi.microsoft.com/gateway/)
    * [Power BI Publisher for Excel](https://powerbi.microsoft.com/excel-dashboard-publisher/)
 6. **Onko mitään ominaisuuksia rajoitettu Power BI Saksan pilvipalvelussa?**
    
@@ -65,7 +65,7 @@ Seuraavat kysymykset ja vastaukset tarjoavat tärkeää tietoa Microsoft Cloud D
 | Käyttäjän käyttöoikeuksien hallinta Office-portaalissa, palvelun kunnon tila ja järjestelmänvalvojien tukipyynnöt |[https://portal.office.de/](https://portal.office.de/) |[https://portal.office.com/](https://portal.office.com/) |
 | AAD -valtuutuksen URI |[https://login.microsoftonline.de/common/oauth2/authorize/](https://login.microsoftonline.de/common/oauth2/authorize/) |[https://login.microsoftonline.com/common/oauth2/authorize/](https://login.microsoftonline.com/common/oauth2/authorize/) |
 | Power BI -palvelun resurssi URI |[https://analysis.cloudapi.de/powerbi/api](https://analysis.cloudapi.de/powerbi/api) |[https://analysis.windows.net/powerbi/api](https://analysis.windows.net/powerbi/api) |
-| Mukautettujen visualisointien kirjasto |[https://app.powerbi.de/visuals/](https://app.powerbi.de/visuals/) |[https://app.powerbi.com/visuals/](https://app.powerbi.com/visuals/) |
+| Power BI:n visualisointien kirjasto |[https://app.powerbi.de/visuals/](https://app.powerbi.de/visuals/) |[https://app.powerbi.com/visuals/](https://app.powerbi.com/visuals/) |
 | Rekisteröi Power BI -sovellus (Embedded:lle) |[https://app.powerbi.de/apps](https://app.powerbi.de/apps) |[https://app.powerbi.com/apps](https://app.powerbi.com/apps) |
 | Azure-portaali (Embedded:lle) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
 | Yhteisö |[https://community.powerbi.com/](https://community.powerbi.com/) |[https://community.powerbi.com/](https://community.powerbi.com/) |

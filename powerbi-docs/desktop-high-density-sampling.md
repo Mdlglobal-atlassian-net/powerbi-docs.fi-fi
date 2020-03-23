@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 40e11f6423df12355800a2c62876e5de1f8b3f82
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 344b041b8cca3e6ed4be1f40c0e783df18315679
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73867471"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378589"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Suuren tiheyden viivaotanta Power BI:ssä
 Kesäkuussa 2017 julkaistussa **Power BI Desktop** -versiossa ja **Power BI -palvelun** päivityksissä otettiin käyttöön uusi näytteenottoalgoritmi, joka parantaa visualisointeja, joissa käytetään suuren tiheyden viivaotantaa. Saatat esimerkiksi luoda viivakaavion vähittäismyymälöidesi myyntituloksista, ja jokaisella myymälällä on yli 10 000 myyntikuittia joka vuosi. Tällaisten myyntitietojen viivakaavio ottaa näytteen jokaisen myymälän tiedoista, jotta niistä saadaan tuotettua merkityksellinen esitys ajallisen myyntivaihtelun kuvaamiseksi. Näytteistä luodaan pohjana olevia tietoja kuvaava monijaksoinen viivakaavio. Tämä on yleinen tapa suuren tiheyden tietojen visualisoinnissa. Power BI Desktopin suuren tiheyden näytteenottoa on parannettu, ja sitä kuvataan nyt tarkemmin tässä artikkelissa.
@@ -29,7 +29,7 @@ Aiemmin **Power BI** valitsi näytteen arvopisteitä koko pohjana olevasta tieto
 
 Tässä tilanteessa osakkeen hinnalla on monia arvoja jokaisena päivänä. Luonnollisesti osakkeella on alin ja ylin hinta, mutta ne voivat ilmetä mihin tahansa aikaan sellaisina päivinä, joina osakkeilla käydään kauppaa. Suuren tiheyden viivaotannassa näytteet pohjatiedoista saatetaan ottaa joka päivä klo 10.30 ja klo 24.00, jolloin tuloksena on edustava tilannevedos pohjatiedoista eli hinnasta kyseisinä ajankohtina. Tämä näyte ei kuitenkaan välittämättä taltioi tietopisteen eli kyseisen päivän alinta ja ylintä osakehintaa. Tässä ja monissa muissa tilanteissa näyte kuvaa pohjatietoja edustavasti mutta ei aina pysty taltioimaan tärkeitä seikkoja, kuten tässä tapauksessa osakkeen alimpia ja ylimpiä hintoja päivittäin.
 
-Suuren tiheyden tiedoista otetaan näytteitä siksi, että voidaan luoda kohtuullisen nopeasti visualisointeja, joiden vuorovaikutteisuus säilyy. Jos visualisoinnissa on liikaa arvopisteitä, sen käyttö hidastuu ja trendit voivat jäädä hahmottamatta. Näytteenottoalgoritmeja kehitetään siis sen takia, että tällaisista tiedoista saataisiin tuotettua parhaita mahdollisia visualisointeja. Power BI Desktopin käyttämää algoritmia on parannettu siten, että se tarjoaa parhaan vasteajan ja esityksen. Sen tavoitteena on lisäksi taltioida tärkeimmät arvopisteet jokaisesta näytteistetystä ajankohdasta.
+Suuren tiheyden tiedoista otetaan näytteitä siksi, että näin voidaan kohtuullisen nopeasti luoda visualisointeja, joiden vuorovaikutteisuus säilyy. Jos visualisoinnissa on liikaa arvopisteitä, sen käyttö hidastuu ja trendit voivat jäädä hahmottamatta. Näytteenottoalgoritmeja kehitetään siis sen takia, että tällaisista tiedoista saataisiin tuotettua parhaita mahdollisia visualisointeja. Power BI Desktopin käyttämää algoritmia on parannettu siten, että se tarjoaa parhaan vasteajan ja esityksen. Sen tavoitteena on lisäksi taltioida tärkeimmät arvopisteet jokaisesta näytteistetystä ajankohdasta.
 
 ## <a name="how-the-new-line-sampling-algorithm-works"></a>Uuden viivaotanta-algoritmin toimintaperiaate
 Suuren tiheyden viivaotannan uusi algoritmi on käytettävissä jatkuvan X-akselin sisältävien viivakaavioiden ja aluekaavioiden visualisointiin.
@@ -46,7 +46,7 @@ Kaikkia visualisointeja koskevat seuraavat rajoitukset:
 Tietorajoitusten enimmäismäärä on korkeampi seuraaville visualisointityypeille, jotka ovat *poikkeuksia* 3 500 arvopisteen rajaan:
 
 * **150 000** arvopistettä enimmäismäärä R-visualisoinneille.
-* **30 000** arvopistettä mukautetuille visualisoinneille.
+* Power BI -visualisointien **30 000** arvopistettä.
 * **10 000** arvopistettä pistekaavioille (pistekaavioiden oletusarvo on 3 500)
 * **3 500** kaikille muille visualisoinneille
 

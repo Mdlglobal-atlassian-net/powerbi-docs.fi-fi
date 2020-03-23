@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 767ea586ce35d60c99742ada6f90fe342bd59313
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: e9156e539ee9f1a344b89f7814c148829498e5fc
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114731"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435923"
 ---
 # <a name="single-sign-on-in-the-power-bi-mobile-windows-app"></a>Kertakirjautuminen Power BI:n Windows-mobiilisovelluksessa
 
@@ -21,7 +21,10 @@ Lue lisää kertakirjautumisesta Power BI:n Windows-mobiilisovellukseen. Kertaki
 
 Koska Power BI Windows -sovellus on integroitu Azure Active Directoryyn, voit käyttää ensisijaista organisaatiotiliäsi toimialueeseen liitettyihin laitteisiin kirjautumisen lisäksi myös kirjautumisessa sisään Power BI -palveluun. Jos tarkastelet Power BI:tä s Windows -puhelimella, voit varmistaa, että Power BI:tä varten käyttämäsi tili on määritetty työpaikan tai oppilaitoksen tilinä laitteen asetuksissa.  
 
-Kertakirjautuminen on käytettävissä vain Windows-laitteissa, joita Windows Azure Active Directory hallitsee. 
+Kertakirjautuminen on käytettävissä vain Windows-laitteissa, joita Windows Azure Active Directory hallitsee.
+
+>[!NOTE]
+>Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** lopetetaan 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="sign-in-with-sso"></a>Kertakirjautumisen käyttäminen
 

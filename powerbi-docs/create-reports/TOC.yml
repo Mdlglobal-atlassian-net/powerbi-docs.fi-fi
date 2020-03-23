@@ -11,8 +11,8 @@
     - name: Opetusohjelmat
       expanded: true
       items:
-        - name: 'Käytännön labratyö: Luo sivutettu raportti'
-          href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
+        - name: 'Verkkokurssi: Sivutetut raportit'
+          href: ../paginated-reports/paginated-reports-online-course.md
         - name: Luo sivutettu raportti ja lataa se palvelimeen
           href: ../paginated-reports/paginated-reports-quickstart-aw.md
     - name: Mallit
@@ -99,18 +99,6 @@
               href: ../paginated-reports/paginated-reports-faq.md
     - name: Toimintaohjeet
       items:
-        - name: Tietojoukkojen ja raporttien julkaiseminen
-          href: ../desktop-upload-desktop-files.md
-        - name: Visualisointien lisääminen Power BI -raporttiin (osa 1)
-          href: ../visuals/power-bi-report-add-visualizations-i.md
-        - name: Visualisointien lisääminen Power BI -raporttiin (osa 2)
-          href: ../visuals/power-bi-report-add-visualizations-ii.md
-        - name: 'Visualisoinnin otsikoiden, taustojen ja selitteiden mukauttaminen'
-          href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
-        - name: 'Power BI:n Näytä kohteet, joilla ei ole tietoja -ominaisuus'
-          href: ../desktop-show-items-no-data.md
-        - name: Automaattisen päivämäärän/ajan käyttö
-          href: ../desktop-auto-date-time.md
         - name: Power BI -raportit
           items:
             - name: Automaattisen sivun päivityksen käyttöönotto (esiversio)
@@ -211,12 +199,22 @@
               href: ../service-create-qr-code-for-report.md
             - name: Raportin vieminen Power BI Desktopiin (esikatselu)
               href: ../service-export-to-pbix.md
+            - name: Tietojoukkojen ja raporttien julkaiseminen
+              href: ../desktop-upload-desktop-files.md
         - name: Visualisoinnit
           items:
+            - name: Visualisointien lisääminen Power BI -raporttiin (osa 1)
+              href: ../visuals/power-bi-report-add-visualizations-i.md
+            - name: Visualisointien lisääminen Power BI -raporttiin (osa 2)
+              href: ../visuals/power-bi-report-add-visualizations-ii.md
             - name: Visualisointien lisääminen Power BI -raportteihin
               href: ../visuals/power-bi-report-visualizations.md
             - name: Visualisointien muokkaaminen Power BI -raporteissa
               href: ../visuals/power-bi-report-change-visualization-type.md
+            - name: 'Visualisoinnin otsikoiden, taustojen ja selitteiden mukauttaminen'
+              href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
+            - name: 'Power BI:n Näytä kohteet, joilla ei ole tietoja -ominaisuus'
+              href: ../desktop-show-items-no-data.md
             - name: Arvopisterajojen ja strategioiden käyttö visualisointityypin mukaan
               href: ../visuals/power-bi-data-points.md
             - name: Visualisoinnin pohjana olevien tietojen näyttäminen
@@ -317,6 +315,8 @@
               href: ../desktop-accessibility-keyboard-shortcuts.md
         - name: Sivutetut raportit
           items:
+            - name: 'Käytännön labratyö: Luo sivutettu raportti'
+              href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
             - name: Anna tiedot suoraan sivutettuun raporttiin
               href: ../paginated-reports/paginated-reports-enter-data.md
             - name: Upotetun tietolähteen luominen

@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 03/09/2020
+ms.date: 03/17/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 869da47cd64e93a930fe6e92071345be093617a7
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 11e9bfb2c8dce526ad81395645165c2c7dd70a00
+ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114027"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525702"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Raportin tai koontinäytön tilaaminen Power BI -palvelussa 
 
@@ -65,7 +65,7 @@ Koontinäytön ja raportin tilausprosessit ovat samankaltaiset. Samaa painiketta
 
 3. Jos kaikki näyttää olevan kunnossa, tallenna tilaus valitsemalla **Tallenna ja sulje**. Saat sähköpostin ja tilannevedoksen koontinäytöstä tai raportista määrittämäsi aikataulun mukaisesti. Kaikissa tilauksissa, joiden tiheydeksi määritetään **Tietojen päivittämisen jälkeen**, lähetetään sähköpostia vain kyseisen päivän ensimmäisen ajoitetun päivityksen jälkeen.
    
-   ![sähköpostitilannevedos koontinäytöstä](media/end-user-subscribe/power-bi-email.png)
+   ![sähköpostitilannevedos koontinäytöstä](media/end-user-subscribe/power-bi-email-old.png)
    
     Raporttisivun päivittäminen ei päivitä tietojoukkoa. Vain tietojoukon omistaja voi manuaalisesti päivittää tietojoukon. Etsi pohjana olevan tietojoukon omistajan nimi valitsemalla avattavan valikon yläreunan valikkorivi tai etsi alkuperäinen tilaussähköposti.
    
@@ -80,14 +80,14 @@ Vain sinä itse voit hallita luomiasi tilauksia. Valitse uudelleen **Tilaa** ja 
 Tilaus päättyy, jos Pro-käyttöoikeus umpeutuu, omistaja poistaa koontinäytön tai tilauksen luomiseen käytetty käyttäjätili poistetaan.
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-* Jos haluat välttää tilaussähköpostien joutumisen roskapostikansioosi, lisää Power Platformin sähköpostialias PowerPlat-noreply@microsoft.com yhteystietoihisi. Jos käytät Microsoft Outlookia, napsauta aliasta hiiren kakkospainikkeella ja valitse **Lisää Outlook-yhteystietoihin**. 
+* Jos haluat välttää tilaussähköpostien joutumisen roskapostikansioosi, lisää Power BI:n sähköpostialias no-reply-powerbi@microsoft.com yhteystietoihisi. Jos käytät Microsoft Outlookia, napsauta aliasta hiiren kakkospainikkeella ja valitse **Lisää Outlook-yhteystietoihin**. 
 * Jos koontinäytössä on yli 25 kiinnitettyä ruutua tai neljä kiinnitettyä reaaliaikaisista raporttisivua, koontinäyttö ei ehkä hahmonnu täysin käyttäjille lähetetyissä tilauksen sähköpostiviesteissä. Suosittelemme, että otat yhteyttä koontinäytön tekijään ja pyydät häntä vähentämään kiinnitettyjen ruutujen määrän alle 25:een ja kiinnitettyjen reaaliaikaisten raporttien määrän alle neljään, jotta sähköpostiviesti näytetään oikein.  
 * Jos koontinäytön sähköpostitilausten joillakin ruuduilla on käytössä rivitason suojaus (RLS), näitä ruutuja ei näytetä.  Jos raportin sähköpostitilausten tietojoukko käyttää rivitason suojausta (RSL), et pysty luomaan tilausta.
 * Jos sähköpostissa olevat linkit (sisältöön) lakkaavat toimimasta, sisältö on ehkä poistettu. Näyttökuvan alla olevassa sähköpostiviestissä näet, oletko tilannut viestin itse vai onko joku muu tehnyt tilauksen puolestasi. Jos joku muu on tehnyt tilauksen, pyydä työtoveria joko peruuttamaan sähköpostiviestit tai tekemään tilaus uudelleen.
 * Raporttisivujen tilaukset on sidottu raporttisivun nimeen. Jos tilaat raporttisivun ja nimeät sen uudelleen, sinun on luotava myös tilaus uudelleen.
 * Jos et voi käyttää tilaustoimintoa, ota yhteyttä järjestelmänvalvojaasi. Organisaatiosi on saattanut poistaa tämän ominaisuuden käytöstä.  
-* Sähköpostitilaukset eivät tue suurinta osaa [mukautetuista visualisoinneista](../developer/power-bi-custom-visuals.md).  Poikkeuksena ovat mukautetut visualisoinnit, jotka on [sertifioitu](../developer/power-bi-custom-visuals-certified.md).  
-* Sähköpostitilaukset eivät tue R:ää hyödyntäviä mukautettuja visualisointeja tällä hetkellä.  
+* Sähköpostitilaukset eivät tue suurinta osaa [Power BI -visualisoinneista](../developer/visuals/power-bi-custom-visuals.md).  Poikkeuksena ovat mukautetut Power BI -visualisoinnit, jotka on [sertifioitu](../developer/visuals/power-bi-custom-visuals-certified.md).  
+* Sähköpostitilaukset eivät tue R:ää hyödyntäviä Power BI -visualisointeja tällä hetkellä.  
 * Erityisesti koontinäyttötilausten osalta tiettyjä ruututyyppejä ei vielä tueta.  Sellaisia ovat esimerkiksi suoratoisto-, video- ja mukautetut verkkosisältöruudut.     
 * Tilaukset voi epäonnistua sähköpostiviestien kokorajoitusten vuoksi, jos koontinäytöissä tai raporteissa on erittäin suuria kuvia.    
 * Power BI keskeyttää automaattisesti sellaisten tietojoukkojen päivittämisen, joihin liittyvissä koontinäytöissä tai raporteissa ei ole käyty yli kahteen kuukauteen.  Jos lisäät koontinäytön tai raportin tilauksen, päivitystä kuitenkaan ei lopeteta, vaikka kohteessa ei käytäisikään.

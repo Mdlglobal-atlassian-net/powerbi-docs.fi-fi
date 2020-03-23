@@ -9,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 03/05/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 50cb15e95f051dd6860112243514464dd80a8b1e
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.openlocfilehash: 299329cad78d831a3b77e55107e94a234d6f64b1
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78401178"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133202"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Power BI Desktopin kirjautumisongelmien vianmääritys
 Voit toisinaan kohdata virheitä, kun yrität kirjautua sisään **Power BI Desktopiin**. Sisäänkirjautumisongelmiin on kaksi yleistä syytä: **Välityspalvelimen todennusvirheet** ja **URL-osoitteiden virheet uudelleenohjattaessa muuhun kuin HTTPS-protokollaan**. 
@@ -75,4 +75,37 @@ Voit kerätä jäljityksen **Power BI Desktopissa** seuraavasti:
     `C:\Users/<user name>/AppData/Local/Microsoft/Power BI Desktop/Traces`
 
 Kyseisessä kansiossa voi olla useita jäljitystiedostoja. Lähetä järjestelmänvalvojalle vain viimeisimmät tiedostot virheen tunnistamisen helpottamiseksi. 
+
+
+## <a name="using-default-system-credentials-for-web-proxy"></a>Järjestelmän oletusarvoisten tunnistetietojen käyttö välityspalvelimelle
+
+Power BI Desktopin lähettämissä verkkopyynnöissä ei käytetä verkon välityspalvelimen tunnistetietoja. Power BI Desktop ei välttämättä pysty tekemään verkkopyyntöjä välityspalvelinta käyttävissä verkoissa. 
+
+Maaliskuun 2020 Power BI Desktop -versiosta alkaen järjestelmän- tai verkonvalvojat voivat sallia verkon välityspalvelimen todennukselle oletusarvoisten järjestelmän tunnistetietojen käytön. Järjestelmänvalvojat voivat luoda **UseDefaultCredentialsForProxy**-nimisen rekisterimerkinnän ja määrittää arvoksi yksi (1), jotta oletusarvoisten järjestelmän tunnistetietojen käyttö voidaan mahdollistaa verkon välityspalvelimen todennukselle.
+
+Rekisterimerkintä voidaan sijoittaa jompaankumpaan seuraavista sijainneista:
+
+`[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Microsoft Power BI Desktop]`
+`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop]`
+
+Rekisterimerkintää ei tarvitse olla molemmissa sijainneissa.
+
+![Rekisteriavain järjestelmän oletusarvoisten tunnistetietojen käytölle](media/desktop-troubleshooting-sign-in/desktop-tshoot-sign-in-03.png)
+
+Kun rekisterimerkintä on luotu (uudelleenkäynnistys voi olla tarpeen), käytetään Internet Explorerissa määritettyjä välityspalvelinasetuksia, kun Power BI Desktop tekee verkkopyyntöjä. 
+
+Kuten minkä tahansa välityspalvelin- tai tunnistetietoasetuksen muuttamisen yhteydessä, tämän rekisterimerkinnän luomisella on vaikutuksia tietoturvaan, joten järjestelmänvalvojien on varmistettava, että he ovat määrittäneet Internet Explorerin välityspalvelimet oikein ennen tämän ominaisuuden ottamista käyttöön.         
+
+### <a name="limitations-and-considerations-for-using-default-system-credentials"></a>Järjestelmän oletusarvoisten tunnistetietojen käyttämistä koskevat rajoitukset ja huomioitavat seikat
+
+Järjestelmänvalvojien on otettava huomioon erinäiset vaikutukset tietoturvaan ennen tämän ominaisuuden käyttöönottoa. 
+
+Seuraavia suosituksia tulee noudattaa aina, kun tämä ominaisuus otetaan käyttöön asiakkaille:
+
+* Käytä välityspalvelimessa ainoastaan **Neuvottelu**-todennusmallia, jotta varmistetaan, että asiakas käyttää vain Active Directory -verkkoon yhdistettyjä välityspalvelimia. 
+* Älä käytä **NTLM-varatoimintoa** tätä ominaisuutta käyttävien asiakkaiden kohdalla.
+* Jos käyttäjät eivät ole välityspalvelinta käyttävässä verkossa, kun tämä ominaisuus otetaan käyttöön ja määritetään tässä osiossa olevien suositusten mukaisesti, yhteyden muodostamista välityspalvelimeen ei yritetä ja järjestelmän oletusarvoisia tunnistetietoja ei käytetä.
+
+
+[Järjestelmän oletusarvoisten tunnistetietojen käyttö välityspalvelimelle](#using-default-system-credentials-for-web-proxy)
 

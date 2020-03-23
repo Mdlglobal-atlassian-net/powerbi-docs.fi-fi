@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3e23f56da424ae18565b6cbec591c9d855f23139
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: e45d3e109d072984d6c01b2cbdfdd9b53e936a3b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79113132"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377209"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Raporttien vieminen Power BI:stä PDF-muotoon
 
@@ -53,7 +53,7 @@ Siinä kaikki. Voit ladata tiedoston ja avata sen millä tahansa PDF-lukuohjelma
 Ota huomioon seuraavat seikat ja rajoitukset, kun käytät **Vie PDF-muotoon** -toimintoa.
 
 * R- ja Python-visualisointeja ei tällä hetkellä tueta. Nämä visualisoinnit ovat tyhjiä PDF-tiedostossa. Niiden tilalla näytetään virheilmoitus. 
-* Sertifioituja mukautettuja visualisointeja tuetaan. Saat lisätietoja sertifioiduista mukautetuista visualisoinneista, mukaan lukien sertifioinnin hakemisesta visualisoinnille, artikkelista [Mukautetun visualisoinnin sertifiointi](../developer/power-bi-custom-visuals-certified.md). Mukautettuja visualisointeja, joita ei ole sertifioitu, ei tueta. Niiden tilalla näytetään virheilmoitus PDF-tiedostossa.
+* Sertifioituja Power BI -visualisointeja tuetaan. Saat lisätietoja sertifioiduista Power BI -visualisoinneista, mukaan lukien sertifioinnin hakemisesta Power BI -visualisoinnille, artikkelista [Power BI -visualisoinnin sertifiointi](../developer/visuals/power-bi-custom-visuals-certified.md). Power BI -visualisointeja, joita ei ole sertifioitu, ei tueta. Niiden tilalla näytetään virheilmoitus PDF-tiedostossa.
 * ESRI-visualisointia ei tueta
 * Yli 30 raporttisivua sisältäviä raportteja ei tällä hetkellä voi viedä.
 * Raportin vieminen PDF-muotoon saattaa kestää muutamia minuutteja. Kestoon vaikuttavat esimerkiksi raportin rakenne ja Power BI -palvelun kulloinenkin kuormitus.

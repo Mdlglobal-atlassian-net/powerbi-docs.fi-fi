@@ -6,30 +6,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 03/20/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: df8c84b5b7baf55a32e07e3e48cb02317fdf7875
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: cbaf3244ce8e8aa2755b6b47bf6381c191293306
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527413"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133234"
 ---
-# <a name="use-the-updated-ribbon-in-power-bi-desktop-preview"></a>Power BI Desktopin (esiversio) päivitetyn valintanauhan käyttäminen
+# <a name="use-the-updated-ribbon-in-power-bi-desktop"></a>Power BI Desktopin päivitetyn valintanauhan käyttäminen
 
-Marraskuun 2019 päivityksestä alkaen Power BI Desktopin valintanauhaa muokataan, niin että sen ulkoasu ja käyttökokemus vastaavat paremmin muita Microsoftin tuotteita, kuten Microsoft Officea.
+Maaliskuun 2020 päivityksestä alkaen Power BI Desktopin valintanauhaa muokataan, niin että sen ulkoasu ja käyttökokemus vastaavat paremmin muita Microsoftin tuotteita, kuten Microsoft Officea. Päivitetty valintanauha näkyy kuukausittaisissa päivityksissä marraskuusta 2019 alkaen esikatselutoimintona, ja maaliskuun 2020 päivityksestä alkaen uusi valintanauha on käytössä oletusarvoisesti.
 
 ![Power BI Desktopin uusi valintanauha](media/desktop-ribbon/desktop-ribbon-02.png)
 
-Päivitetty valintanauha on esikatselutilassa, jotta voimme kerätä palautetta käyttäjiltä ja asiakkailta sekä varmistaa, että käyttökokemus on erinomainen. Oletamme esikatselun, palautteen ja parannusten vievän muutaman kuukauden, minkä jälkeen päivitetty Power BI Desktop -valintanauha julkaistaan yleisesti saatavaksi. 
-
 ## <a name="how-to-enable-the-updated-ribbon"></a>Päivitetyn valintanauhan ottaminen käyttöön
 
-Power BI:n päivitetty valintanauha on esikatselutoiminto, joka täytyy erikseen ottaa käyttöön. Voit ottaa toiminnon käyttöön valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja valitsemalla sitten vasemmasta sarakkeesta **Esikatselutoiminnot**. Oikeanpuoleisessa ruudussa on **Päivitetty valintanauha** -valinta. Ota esikatseluominaisuus käyttöön valitsemalla **Päivitetty valintanauha** -valintaruutu. Esikatselutoiminnon käyttöönotto edellyttää Power BI Desktopin käynnistämistä uudelleen.
+Maaliskuun 2020 päivityksestä alkaen päivitetty valintanauha on käytössä oletusarvoisesti. Tätä vanhemmissa Power BI Desktopin versioissa (marraskuun 2019 päivityksestä alkaen) Power BI:n päivitetty valintanauha oli esikatselutoiminto, ja se on otettava käyttöön. Voit ottaa sen käyttöön kyseisissä aiemmissa päivityksissä valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset** ja valitsemalla sitten vasemmasta sarakkeesta **Esikatselutoiminnot**. Oikeanpuoleisessa ruudussa on **Päivitetty valintanauha** -valinta. Ota esikatseluominaisuus käyttöön valitsemalla **Päivitetty valintanauha** -valintaruutu. Esikatselutoiminnon käyttöönotto edellyttää Power BI Desktopin käynnistämistä uudelleen.
 
 ![Power BI Desktopin päivitetty valintanauha -asetus](media/desktop-ribbon/desktop-ribbon-01.png)
 
+> [!NOTE]
+> Power BI Desktopin versioissa maaliskuusta 2020 alkaen päivitettyä valintanauhaa ei tarvitse ottaa käyttöön, koska maaliskuun 2020 alusta lähtien uusi valintanauha on käytössä oletusarvoisesti.
 
 ## <a name="features-of-the-new-ribbon"></a>Uuden valintanauhan ominaisuudet
 

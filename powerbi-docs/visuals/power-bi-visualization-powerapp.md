@@ -3,19 +3,19 @@ title: Upota uusi Power-sovellus Power BI -raporttiin
 description: Upota sovellus, joka käyttää samaa tietolähdettä ja voidaan suodattaa samalla tavalla kuin muut raporttikohteet
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: tapan maniar
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 02/03/2020
+ms.date: 03/17/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 99869740eb20b14625e66ff50cb48b08e5cb3e15
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.openlocfilehash: 3be5f9efe3a6e18ba46f6990b09952d37b967e16
+ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036672"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525932"
 ---
 # <a name="tutorial-embed-a-power-apps-visual-in-a-power-bi-report"></a>Opetusohjelma: Upota Power Apps -visualisointi Power BI -raporttiin
 
@@ -106,4 +106,5 @@ Jos et enää halua käyttää mahdollisuusanalyysimallia, voit poistaa koontin�
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Q&A-visualisointi](power-bi-visualization-types-for-reports-and-q-and-a.md)
+[Q&A-visualisointi](power-bi-visualization-types-for-reports-and-q-and-a.md)    
+[Opetusohjelma: Power Apps -visualisoinnin upottaminen Power BI -raporttiin](https://docs.microsoft.com/powerapps/maker/canvas-apps/powerapps-custom-visual)

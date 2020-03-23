@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 83db194ab670f1726f9598193dc2d3addf2eae72
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: d97ff72c385edd4c59c6eb72ce1eb873656923c9
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114299"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376818"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Vihjeitä kysymysten esittämiseen Power BI:n Q&A-toiminnolla
 
@@ -67,7 +67,7 @@ Alla olevassa luettelossa käytetään preesensiä, mutta useimmissa tapauksissa
 |  |  |
 |**Ylimmät N**     |     (tilaus, luokittelu): ylin, alin, suurin, pienin, ensimmäinen, viimeinen, seuraava, aikaisin, uusin, vanhin, viimeisin            |
 |        |         |
-|**Visualisointityypit**     |  kaikki Power BI:n alkuperäiset visualisointityypit.  Jos visualisointiruudussa on jokin vaihtoehto, voit sisällyttää sen kysymykseen.  Poikkeuksena tähän sääntöön ovat [mukautetut visualisoinnit](../developer/power-bi-custom-visuals.md), jotka olet lisännyt manuaalisesti Visualisointi-ruutuun.  |
+|**Visualisointityypit**     |  kaikki Power BI:n alkuperäiset visualisointityypit.  Jos visualisointiruudussa on jokin vaihtoehto, voit sisällyttää sen kysymykseen.  Poikkeuksena tähän sääntöön ovat [Power BI -visualisoinnit](../developer/visuals/power-bi-custom-visuals.md), jotka olet lisännyt manuaalisesti Visualisointi-ruutuun.  |
 |  |  Esimerkki: näytä alueet kuukauden ja kokonaismyynnin mukaan palkkikaaviona               |
 |        |         |
 |**Wh (suhde, määre)**  | milloin, missä, mikä, kuka, kenen, kuinka monta, kuinka paljon, kuinka monta kertaa, kuinka usein, määrä, numero, lukumäärä, miten pitkään, mitä                |

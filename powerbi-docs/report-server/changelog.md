@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.openlocfilehash: 0a8cf16ddf7fe9e091599f1790a37a83b9923240
-ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+ms.openlocfilehash: f27f03a88a39ce046ae64454b9b092e87c07d0a3
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78237956"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381096"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
@@ -200,7 +200,7 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
         - Ominaisuudet
             - Suoran SAP HANA SSO -kyselyn Kerberos-tuki nyt käytettävissä Power BI -raporteissa
             - Mukautettujen visualisointien ohjelmointirajapinta sisältyy julkaisuun – versio 1.13.0
-            - Mukautetuissa visualisoinneissa palataan edelliseen palvelimen nykyisen ohjelmointirajapintaversion kanssa yhteensopivaan versioon (jos sellainen on käytettävissä)
+            - Power BI -visualisoinneissa palataan edelliseen palvelimen nykyisen ohjelmointirajapintaversion kanssa yhteensopivaan versioon (jos sellainen on käytettävissä)
 
 - **Power BI Desktop (optimoitu Power BI -raporttipalvelimelle)**
     - *Versio: 2.61.5192.641 (elokuu 2018), julkaistu: 15. elokuuta 2018*
@@ -322,7 +322,7 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
             - Korjattu ongelma, joka aiheutti `{{UserId}}`-tunnisteen ratkaisemisen tallennettuihin tunnistetietoihin sen sijaan, että raportti suoritettaisiin Power BI -raporteissa.
             - Korjattu ongelma, joka esti tiettyjen kuvien piirtymisen Power BI -raporttipalvelimen raportteihin.
             - Korjattu ongelma, joka esti Power BI -raportin nimen muuttamisen Power BI -raporttipalvelimessa.
-            - Korjattu ongelma, joka esti mukautettujen visualisointien lataamisen Power BI -mobiilisovellukseen ilman paikallisen välimuistin tyhjentämistä asentamalla mobiilisovellus uudelleen.
+            - Korjattu ongelma, joka esti Power BI -visualisointien lataamisen Power BI -mobiilisovellukseen ilman paikallisen välimuistin tyhjentämistä asentamalla mobiilisovellus uudelleen.
 
     - *Koontiversio 14.0.600.271, julkaistu: 12. kesäkuuta 2017*
         - Power BI -raporttipalvelimen ensimmäinen julkaisu

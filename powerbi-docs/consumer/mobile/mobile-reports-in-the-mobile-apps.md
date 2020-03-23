@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/18/2020
+ms.date: 03/07/2020
 ms.author: painbar
-ms.openlocfilehash: 27f6469cb960ff101f45636e0720b935929ff010
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 9f9a0afb766becefa5b74c5737795f6f227e7c27
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76538114"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435762"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Raporttien tutkiminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -21,6 +21,9 @@ Koskee seuraavia:
 | ![iPhone](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![iPad](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Android-puhelin](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Android-tabletti](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Windows 10 -laitteet](./media/mobile-reports-in-the-mobile-apps/win-10-logo-40-px.png) |
 |:---: |:---: |:---: |:---: |:---: |
 | iPhonet |iPadit |Android-puhelimet |Android-tabletit |Windows 10 -laitteet |
+
+>[!NOTE]
+>Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** päättyy 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 Power BI -raportti on vuorovaikutteinen näkymä tiedoistasi, joka sisältää eri havaintoja ja merkityksellisiä tietoja esittäviä visualisointeja. Raporttien tarkasteleminen Power BI -mobiilisovelluksissa on kolmivaiheisen prosessin kolmas vaihe:
 
@@ -59,6 +62,14 @@ Kun lataat Power BI -mobiilisovelluksen, se on määritetty käsittelyyn yhdell�
 Halutessasi voit vaihtaa käsittelyyn kaksoisnapautuksella. Kun käsittely kaksoisnapsautuksella on käytössä, valitset visualisoinnin ensin napauttamalla sitä ja suoritat sitten haluamasi toiminnon napauttamalla visualisointia uudelleen.
 
 Jos haluat vaihtaa käsittelyyn kaksoisnapsautuksella tai vaihtaa takaisin käsittelyyn yhdellä napsautuksella, siirry [sovelluksen vuorovaikutusasetuksiin](./mobile-app-interaction-settings.md).
+
+### <a name="single-select-versus-multi-select-mode-for-data-point-selection"></a>Yksittäisvalintatila monivalintatilaan verrattuna arvopisteen valinnassa
+
+Valitset arvopisteen raportissa napauttamalla sitä. Voit valita, käytätkö yksittäisvalintatilaa vai monivalintatilaa. Kun valitset arvopisteen napauttamalla sitä yksittäisvalintatilassa, kyseinen valinta korvaa tekemäsi aiemmat valinnat. Kun valitset arvopisteen napauttamalla sitä monivalintatilassa, valintasi *lisätään* kaikkiin tekemiisi valintoihin, ja kaikkien valintojesi yhteenlaskettu tulos on korostettu kaikissa raportin visualisoinneissa.
+
+Jos haluat poistaa valitun arvopisteen valinnan, napauta sitä uudelleen.
+
+Jos haluat vaihtaa yksittäisvalinta- ja monivalintatilan välillä, siirry [sovelluksen vuorovaikutusasetuksiin](./mobile-app-interaction-settings.md).
 
 ### <a name="using-tap-and-long-tap"></a>Napauttamisen ja pitkän napauttamisen käyttäminen
 Napautus on sama kuin napsautus hiirellä. Jos siis haluat ristiinkorostaa raportin arvopisteen perusteella, napauta kyseistä arvopistettä.

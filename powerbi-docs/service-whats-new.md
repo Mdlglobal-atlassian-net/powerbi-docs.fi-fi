@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 32f0c03fc0ae586b8b98c7a4c84c9d4c7bbd9078
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 878e4a2e033d33e8c6bb027f35976c19e8b108c9
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78920954"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488840"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
 Tarkista tältä sivulta **Power BI -palvelun** tunnetut ongelmat ja hiljattain julkaistut ominaisuudet. Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -91,7 +91,7 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * Suodatettu vienti PPT- ja PDF-muotoon.
 * [Ohje- ja tukiasetukset](https://powerbi.microsoft.com/blog/tailoring-help-and-support-for-power-bi-users/) hallintaportaalissa.
 * Tietojen periytymisen käyttökokemus [tietovuoille](service-dataflows-overview.md).
-* Sertifioidut mukautetut visualisoinnit -asetus hallintaportaalissa.
+* Sertifioidut Power BI -visualisoinnit -asetus hallintaportaalissa.
 
 ### <a name="january-2019"></a>Tammikuu 2019
 * [Turvallisten Power BI -raporttien upottaminen](service-embed-secure.md) sisäisiin portaaleihin tai verkkosivustoihin.
@@ -126,7 +126,7 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * Power BI [-raportin URL-suodattimen](service-url-filters.md) parannukset
 
 ### <a name="july-2018"></a>Heinäkuu 2018
-* Mukautettujen visualisointien tuki [pysyville suodattimille](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/).
+* Power BI -visualisointien tuki [pysyville suodattimille](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/).
 * [Ohjelmointirajapinnat ja PowerShellin cmdlet-komennot](https://powerbi.microsoft.com/blog/announcing-apis-and-powershell-cmdlets-for-power-bi-administrators/) Power BI:n järjestelmänvalvojille
 * [Multi-Geo-tuki](service-admin-premium-multi-geo.md) Power BI Premiumille.
 
@@ -153,20 +153,20 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 ### <a name="february-2018"></a>Helmikuu 2018
 * Asenna [Power BI -sovellukset](service-create-distribute-apps.md) automaattisesti käyttäjille.
 * P4- ja P5-kapasiteetit Power BI Premiumissa
-* [Organisaation mukautettujen visualisointien](developer/power-bi-custom-visuals-organization.md) esiversio.
+* [Organisaation Power BI -visualisointien](developer/visuals/power-bi-custom-visuals-organization.md) esikatselu.
 
 ### <a name="january-2018"></a>Tammikuu 2018
-*   Jaa Power BI -raportteja ja lisää niitä suosikiksi.
-*   OAuth2- ja DirectQuery-kertakirjautumisen (SSO) tuki Azure SQL -tietokannalle ja Data Warehouselle.
-*   Alueen valvonta: valvontalokit tallennetaan nyt samalle Office 365:n alueelle kuin niiden vuokraaja.
-*   SharePoint Onlinen [Power BI -raportin verkko-osan](https://go.microsoft.com/fwlink/p/?LinkId=825698) yleinen saatavuus.
-*   Hallintatoiminto mukautettujen visualisointien tarkastelemisen käytöstä poistamiseksi kaikilta vuokraajan käyttäjiltä.
-*   Ajoitetun päivityksen tuki Azure Analysis Servicesille (AAS).
+*    Jaa Power BI -raportteja ja lisää niitä suosikiksi.
+*    OAuth2- ja DirectQuery-kertakirjautumisen (SSO) tuki Azure SQL -tietokannalle ja Data Warehouselle.
+*    Alueen valvonta: valvontalokit tallennetaan nyt samalle Office 365:n alueelle kuin niiden vuokraaja.
+*    SharePoint Onlinen [Power BI -raportin verkko-osan](https://go.microsoft.com/fwlink/p/?LinkId=825698) yleinen saatavuus.
+*    Hallintatoiminto Power BI -visualisointien tarkastelemisen käytöstä poistamiseksi kaikilta vuokraajan käyttäjiltä.
+*    Ajoitetun päivityksen tuki Azure Analysis Servicesille (AAS).
 
 ## <a name="previous-months-2017"></a>Edelliset kuukaudet (2017)
 ### <a name="october-and-november-2017"></a>Lokakuu ja marraskuu 2017
-*   Valikoiva sisällön julkaisu [Power BI -sovellusten](service-create-distribute-apps.md) avulla.
-*   Jakaminen ulkoisille käyttäjille [Azure Active Directory B2B:n](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/) avulla.
+*    Valikoiva sisällön julkaisu [Power BI -sovellusten](service-create-distribute-apps.md) avulla.
+*    Jakaminen ulkoisille käyttäjille [Azure Active Directory B2B:n](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/) avulla.
 * Tekoälyavusteiset sovellussuositukset.
 * Käyttöliittymäpäivitykset koontinäytön ruudulla.
 * Sähköpostitilausten tuki sovelluksille. 
@@ -183,8 +183,8 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * Tunne yleisösi [käyttäjäkohtaisten käyttötietojen](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/) perusteella.
 * Aloita verkkopalvelujen [Power BI -palvelun](service-connect-to-services.md) sovellusten käyttö.
 * Muodosta yhteys IBM Netezzaan paikallisella tietoyhdyskäytävällä tuonti- ja DirectQuery-yhteystilojen kautta.
-* Power BI Embeddedin [dynaamista rivitason suojausta](developer/embedded-row-level-security.md) tuetaan nyt.
-* [Lisäsuodatuksen ohjelmointirajapinta](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) lisätty nyt mukautettujen visualisointien ohjelmointirajapinnan versioon 1.7.
+* Power BI Embeddedin [dynaamista rivitason suojausta](developer/embedded/embedded-row-level-security.md) tuetaan nyt.
+* [Lisäsuodatuksen ohjelmointirajapinta](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) lisätty nyt Power BI -visualisointien ohjelmointirajapinnan versioon 1.7.
 
 ### <a name="july-2017"></a>Heinäkuu 2017
 * [Sähköpostitilausten](consumer/end-user-subscribe.md) tuki koontinäytöissä.
@@ -197,7 +197,7 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * Useita ohjelmointirajapintojen parannuksia, kuten [ajoitetun päivityksen automatisointi](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), [raporttien kloonaus ja uudelleensidonta](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), [yhdyskäytävän sidontojen päivitys](https://msdn.microsoft.com/library/mt784650.aspx) ja monta muuta
 * Power BI -sovellusten suhteelliset linkit koontinäytön ruuduista muihin koontinäyttöihin ja raportteihin.
 * [Impala-liitin](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#impala) yleisesti saatavilla Power BI Desktopissa.
-* Power BI:n visuaalisten ominaisuuksien laajentaminen [vuorovaikutteisten mukautettujen R-visualisointien](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/) avulla.
+* Power BI:n visuaalisten ominaisuuksien laajentaminen [vuorovaikutteisten Power BI:n R-visualisointien](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/) avulla.
 
 ### <a name="april-and-may-2017"></a>Huhtikuu ja toukokuu 2017
 * Mittaa vaikutustasi ja paranna sitä [koontinäytön ja raporttien luojien käyttötiedoilla](service-usage-metrics.md).
@@ -213,7 +213,7 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * Parannetut [vianmääritysviestit DAX-kyselyille](https://powerbi.microsoft.com/blog/power-bi-service-march-feature-summary/#DAXtroubleshooting).
 * Hallitse tietojoukkojasi paremmin [mukautettujen välimuistin päivitysaikataulujen avulla](https://powerbi.microsoft.com/blog/announcing-custom-cache-refresh-schedules-in-the-power-bi-service/).
 * Muodosta yhteys [Amazon Redshiftiin](https://powerbi.microsoft.com/blog/announcing-support-for-amazon-redshift-reports-in-the-power-bi-service/).
-* Selaa [Power BI:n mukautettujen visualisointeja Office-kaupassa](https://powerbi.microsoft.com/blog/custom-visuals-now-available-in-the-office-store/).
+* Selaa [Power BI -visualisointeja Office-kaupassa](https://powerbi.microsoft.com/blog/custom-visuals-now-available-in-the-office-store/).
 * Esikatselu: [Tilaa raporttisivut](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/), jotta pysyt ajan tasalla tiedoistasi.
 * Azure AD -sisältöpaketin avulla saat lisätietoja siitä, miten työntekijät ja kumppanit käyttävät Azure AD:tä.
 
@@ -225,7 +225,7 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 ### <a name="january-2017"></a>Tammikuu 2017
 * Hallitse Power BI:tä [Power BI -järjestelmänvalvojaroolin](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#pbiadminrole) avulla.
 * [Power BI -valvontalokit](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#auditlogs) Office 365:n valvontaportaalissa ovat yleisesti saatavilla.
-* [Kehittäjätyökalujen ja mukautettujen visualisointien ohjelmointirajapintojen](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) versio 1.4 julkaistu.
+* [Kehittäjätyökalujen ja Power BI -visualisointien ohjelmointirajapintojen](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) versio 1.4 julkaistu.
 * [Reaaliaikaisen suoratoiston ominaisuusjoukko](https://powerbi.microsoft.com/blog/announcing-general-availability-of-power-bi-real-time-streaming-datasets/) julkaistu yleisesti saataville.
 * [Lähetä tietoja Power BI:hin Power Automaten avulla](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) kirjoittamatta riviäkään koodia.
 * Esikatselu: [Tilaa raporttisivut](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/), jotta pysyt ajan tasalla tiedoistasi.

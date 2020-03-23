@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/11/2019
 ms.author: painbar
-ms.openlocfilehash: 3af0470e29b4f71cf8948bff4c1b317304533ac8
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: ff33bc2005918ba08c6098afd91a020e0cb6ba79
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114658"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435808"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Tietoilmoitusten määrittäminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -103,6 +103,10 @@ Voit hallita yksittäisiä ilmoituksia Power BI -mobiilisovelluksessa tai [halli
 5. Jos haluat poistaa ilmoituksen kokonaan, napauta roskakorikuvaketta ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-delete-alert-icon.png).
 
 ## <a name="data-alerts-on-a-windows-device"></a>Tietoilmoitukset Windows-laitteessa
+
+>[!NOTE]
+>Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** lopetetaan 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
+
 ### <a name="set-data-alerts-on-a-windows-device"></a>Tietoilmoitusten asettaminen Windows-laitteessa
 1. Napauttamalla numero- tai mittariruutua koontinäytöllä voit avata sen.  
 2. Napauttamalla kellokuvaketta ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-off.png) voit lisätä ilmoituksen.  

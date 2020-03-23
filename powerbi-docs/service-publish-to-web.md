@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/25/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 99fd17e8491613affbfe78e7cd9a2f268f588975
-ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+ms.openlocfilehash: 0876d5ecd1d58c909242bbc05be213780d3aefdc
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78237979"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488771"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Power BI:n Julkaise verkkoon -toiminto
 
@@ -124,9 +124,9 @@ Kun olet luonut oman **Julkaise verkkoon** -upotuskoodin ja jakanut sen, raportt
 
 Tietojen uudelleenlataukset näkyvät automaattisesti upotetussa raportissa tai visualisoinnissa. Päivitettyjen tietojen näkyminen upotuskoodeissa voi kestää noin tunnin. Voit poistaa automaattisen päivityksen käytöstä valitsemalla raportin käyttämän tietojoukon aikataulussa **Älä päivitä**.  
 
-## <a name="custom-visuals"></a>Mukautetut visualisoinnit
+## <a name="power-bi-visuals"></a>Power BI:n visualisoinnit
 
-Mukautettuja visualisointeja tuetaan **Julkaise verkkoon** -toiminnossa. Kun käytät **Julkaise verkkoon** -toimintoa, niiden käyttäjien, joiden kanssa jaat julkaistun visualisoinnin, ei tarvitse ottaa käyttöön mukautettuja visualisointeja raportin tarkastelemiseksi.
+Power BI -visualisointeja tuetaan **Julkaise verkkoon** -toiminnossa. Kun käytät **Julkaise verkkoon** -toimintoa, niiden käyttäjien, joiden kanssa jaat julkaistun visualisoinnin, ei tarvitse ottaa käyttöön Power BI -visualisointeja raportin tarkastelemiseksi.
 
 ## <a name="limitations"></a>Rajoitukset
 
@@ -144,7 +144,7 @@ Mukautettuja visualisointeja tuetaan **Julkaise verkkoon** -toiminnossa. Kun kä
 - Kertakirjautumista tietokyselymalleissa ei tueta.
 - Luottamuksellisia tai omistusoikeudellisia tietoja ei tueta.
 - [Jaettuja ja sertifioituja tietojoukkoja ei tueta](service-datasets-share.md).
-- **Upota**-vaihtoehdon tarjoama automaattisen todentamisen mahdollisuus ei toimi Power BI:n JavaScript-ohjelmointirajapinnan kanssa. Jos käytät Power BI:n JavaScript-ohjelmointirajapintaa, käytä upotuksessa [käyttäjä omistaa tiedot](developer/embed-sample-for-your-organization.md) -menetelmää.
+- **Upota**-vaihtoehdon tarjoama automaattisen todentamisen mahdollisuus ei toimi Power BI:n JavaScript-ohjelmointirajapinnan kanssa. Jos käytät Power BI:n JavaScript-ohjelmointirajapintaa, käytä upotuksessa [käyttäjä omistaa tiedot](developer/embedded/embed-sample-for-your-organization.md) -menetelmää.
 
 ## <a name="tenant-setting"></a>Vuokraaja-asetukset
 

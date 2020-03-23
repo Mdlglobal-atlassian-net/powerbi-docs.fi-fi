@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/03/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4d8a5c1cceb66b7103a58c7bcebfa46dbdd97430
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 5208c72016a148f86a119bdddd2bbd1f69d3456b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74831116"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381027"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Power BI -palvelun raporttien ja koontinäyttöjen tilaaminen itsellesi ja muille
 
@@ -95,10 +95,10 @@ Tilaus päättyy, jos Pro-käyttöoikeus umpeutuu, omistaja poistaa koontinäyt�
 * Jos raportin sähköpostitilausten tietojoukko käyttää rivitason suojausta (RSL), voit luoda tilauksen itsellesi. Et voi tilata muiden puolesta raportteja, joissa on käytössä rivitason suojaus (RLS), ellet käytä sivutettua raporttia, jonka avulla voit lähettää tilauksen muille käyttämällä suojauskontekstia. 
 * Raporttisivujen tilaukset on sidottu raporttisivun nimeen. Jos tilaat raporttisivun ja nimeät sen uudelleen, sinun on luotava myös tilaus uudelleen.
 * Tietyt organisaatiosi Azure Active Directoryyn määrittämät asetukset voivat rajoittaa sähköpostitilausten käyttämistä Power BI:ssä.  Tällaisia rajoituksia voivat olla esimerkiksi monimenetelmäinen todentaminen tai IP-aluerajoitukset resursseja käytettäessä.
-* Tällä hetkellä raporttien/koontinäyttöjen sähköpostitilauksia, jotka käyttävät reaaliaikaisia tietojoukkoyhteyksiä, ei tueta, kun tilataan muille käyttäjille kuin itsellesi, ellei käytössä ole sivutettu raportti, joka sallii tilauksen lähettämisen muille suojauskontekstin puitteissa. 
-* Sähköpostitilaukset eivät tue suurinta osaa [mukautetuista visualisoinneista](developer/power-bi-custom-visuals.md).  Poikkeuksena ovat mukautetut visualisoinnit, jotka on [sertifioitu](developer/power-bi-custom-visuals-certified.md).  
-* Sähköpostitilaukset eivät tällä hetkellä tue R:ää hyödyntäviä mukautettuja visualisointeja.  
-* Sähköpostitilaukset lähetetään käyttäen raportin oletusarvoista suodatin- ja osittajatilaa. Oletusarvoihin tilauksen jälkeen tehdyt muutokset eivät näy sähköpostiviestissä.  Sivutetut raportit tukevat tätä ominaisuutta, ja niiden avulla voit valita kullekin tilaukselle määritetyt parametriarvot.   
+* Tällä hetkellä raporttien/koontinäyttöjen sähköpostitilauksia, jotka käyttävät reaaliaikaisia tietojoukkoyhteyksiä, ei tueta, kun tilataan muille käyttäjille kuin itsellesi, ellei käytössä ole sivutettu raportti, joka sallii tilauksen lähettämisen muille suojauskontekstin puitteissa.
+* Sähköpostitilaukset eivät tue suurinta osaa [Power BI -visualisoinneista](developer/visuals/power-bi-custom-visuals.md).  Poikkeuksena ovat mukautetut Power BI -visualisoinnit, jotka on [sertifioitu](developer/visuals/power-bi-custom-visuals-certified.md).  
+* Sähköpostitilaukset eivät tue R:ää hyödyntäviä Power BI -visualisointeja tällä hetkellä.  
+* Sähköpostitilaukset lähetetään käyttäen raportin oletusarvoista suodatin- ja osittajatilaa. Oletusarvoihin tilauksen jälkeen tehdyt muutokset eivät näy sähköpostiviestissä.  Sivutetut raportit tukevat tätä ominaisuutta, ja niiden avulla voit valita kullekin tilaukselle määritetyt parametriarvot.
 * Erityisesti koontinäyttötilausten osalta tiettyjä ruututyyppejä ei vielä tueta.  Sellaisia ovat esimerkiksi suoratoisto-, video- ja mukautetut verkkosisältöruudut.     
 * Jos jaat koontinäytön työtoverille vuokraajasi ulkopuolella, et voi luoda myös tilausta kyseiselle työtoverille. Jos olet aaron@xyz.com, voit jakaa kohteen anyone@ABC.com kanssa, mutta et voi vielä tilata kohdetta anyone@ABC.com eivätkä he voi tilata jaettua sisältöä.      
 * Power BI keskeyttää automaattisesti sellaisten tietojoukkojen päivittämisen, joihin liittyvissä koontinäytöissä tai raporteissa ei ole käyty yli kahteen kuukauteen.  Jos lisäät koontinäytön tai raportin tilauksen, päivitystä kuitenkaan ei lopeteta, vaikka kohteessa ei käytäisikään.    

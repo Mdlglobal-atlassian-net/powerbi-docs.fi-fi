@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 12/19/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: b7a45309c3bfad27cc3b26990ee148a9e44b8998
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: ae11ec64a0bffbd3e64c0fd677a7225c2b31f521
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75927110"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488679"
 ---
 # <a name="power-bi-premium-metrics-app"></a>Power BI Premium Metrics -sovellus
 
@@ -262,7 +262,7 @@ Jos vuorovaikutteisen kyselyn tietojoukon lataamiseen ei ole riittävästi muist
 
 Skenaarion 1 vianmäärityksessä tulee ensin määrittää, johtuuko rajoittaminen muistin riittämättömyydestä. Voit tehdä sen suorittamalla seuraavat vaiheet.
 
-1.  Valitse sinua kiinnostava tietojoukko **taulukosta A** napsauttamalla sitä: 
+1.    Valitse sinua kiinnostava tietojoukko **taulukosta A** napsauttamalla sitä: 
 
     ![Taulukko A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
@@ -305,7 +305,7 @@ Erillisillä kapasiteeteilla Power BI rajoittaa samanaikaisten päivitysten mä�
 
 Skenaarion 2 diagnosoimiseksi on ensin määritettävä, johtuuko rajoittaminen siitä, että päivitysten suurin sallittu samanaikaisuus on saavutettu. Voit tehdä sen suorittamalla seuraavat vaiheet.
 
-1.  Valitse sinua kiinnostava tietojoukko **taulukosta A** napsauttamalla sitä: 
+1.    Valitse sinua kiinnostava tietojoukko **taulukosta A** napsauttamalla sitä: 
 
     ![Taulukko A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
@@ -341,6 +341,6 @@ Skenaarion 2 diagnosoimiseksi on ensin määritettävä, johtuuko rajoittaminen 
 * [Microsoft Power BI Premiumin tekninen raportti](https://aka.ms/pbipremiumwhitepaper)
 * [Power BI:n yrityskäyttöönoton suunnittelemisen tekninen raportti](https://aka.ms/pbienterprisedeploy)
 * [Laajennetun Pro-kokeiluversion aktivointi](service-extended-pro-trial.md)
-* [Power BI Embedded: usein kysytyt kysymykset](developer/embedded-faq.md)
+* [Power BI Embedded: usein kysytyt kysymykset](developer/embedded/embedded-faq.md)
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

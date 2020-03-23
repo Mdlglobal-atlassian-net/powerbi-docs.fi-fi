@@ -1,36 +1,38 @@
 ---
-title: Porautumisen käyttäminen Power BI Desktopissa
-description: Lue, miten voit porautua tietoihin uudella raporttisivulla Power BI Desktopissa
+title: Porautumisen määrittäminen Power BI -raporteissa
+description: Lue, miten voit porautua tietoihin uudella raporttisivulla Power BI -raporteissa
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/05/2020
+ms.date: 03/12/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 020b7e0a5fd0c3372e3a83d9973a404978e56b7d
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.openlocfilehash: 5a494341ff6ee9c5fe4b2c2119749f58f2fd540d
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78401252"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79201449"
 ---
-# <a name="use-drillthrough-in-power-bi-desktop"></a>Porautumisen käyttäminen Power BI Desktopissa
-Power BI Desktopin *porautumisen* avulla voit luoda raporttisivun, jolla keskitytään tiettyyn entiteettiin, kuten toimittajaan, asiakkaaseen tai valmistajaan. Jos haluat porautua, napsauta hiiren kakkospainikkeella arvopistettä toisella raporttisivulla ja poraudu sitten keskittyvällä sivulla: näin saat lisätietoja, jotka on suodatettu kyseisen kontekstin mukaisesti.
+# <a name="set-up-drill-through-in-power-bi-reports"></a>Porautumisen määrittäminen Power BI -raporteissa
+Power BI -raporttien *porautumisen* avulla voit luoda raporttisivun, jolla keskitytään tiettyyn entiteettiin, kuten toimittajaan, asiakkaaseen tai valmistajaan. Kun raporttiesi lukijat käyttävät porautumista, he napsauttavat kakkospainikkeella arvopistettä toisella raporttisivulla ja porautuvat sitten kohdistettuun sivuun. Näin saat lisätietoja, jotka on suodatettu kyseisen kontekstin mukaisesti. Voit myös [luoda painikkeen, joka porautuu](desktop-drill-through-buttons.md) tietoihin, kun lukijat napsauttavat sitä.
 
-![Porautumisen käyttö](media/desktop-drillthrough/drillthrough_01.png)
+Voit määrittää porautumisen raporteissa Power BI Desktopissa tai Power BI -palvelussa.
 
-## <a name="using-drillthrough"></a>Porautumisen käyttö
+![Porautumisen käyttäminen](media/desktop-drillthrough/power-bi-drill-through-right-click.png)
+
+## <a name="set-up-the-drill-through-destination-page"></a>Porautumisen kohdesivun määrittäminen
 1. Jos haluat käyttää porautumista, luo raporttisivu, jolla on visualisointeja, jotka haluat porautumisen kohde-entiteettityypille. 
 
     Oletetaan, että haluat tarjota porautumisen esimerkiksi valmistajille. Tässä tapauksessa voit luoda porautumissivun, jolla on visualisointeja kokonaismyynnistä, toimitettujen yksiköiden kokonaismääristä, kategoriakohtaisista myynneistä, aluekohtaisista myynneistä ja niin edelleen. Tällä tavoin, kun kyseiselle sivulle poraudutaan, visualisointi on kohdistettu valitsemaasi valmistajaan.
 
 2. Vedä sitten porautumissivulla **visualisointipaneelin** **Kentät-** osiossa se kenttä, jolle haluat ottaa porautumisen käyttöön, **Porautumissuodattimiin**.
 
-    ![Porautumislähde](media/desktop-drillthrough/drillthrough_02.png)
+    ![Porautumissäilö](media/desktop-drillthrough/drillthrough_02.png)
 
-    Kun lisäät kentän **porautumissuodattimiin**, Power BI Desktop luo automaattisesti visualisoinnin *Takaisin*-painikkeelle. Visualisointi muuttuu painikkeeksi julkaistuissa raporteissa. Käyttäjät, jotka käyttävät raporttiasi Power BI -palvelussa, voivat tämän painikkeen avulla palata raporttisivulle, jolta he tulivat.
+    Kun lisäät kentän **porautumissuodattimiin**, Power BI luo automaattisesti visualisoinnin *Takaisin*-painikkeelle. Visualisointi muuttuu painikkeeksi julkaistuissa raporteissa. Käyttäjät, jotka käyttävät raporttiasi Power BI -palvelussa, voivat tämän painikkeen avulla palata raporttisivulle, jolta he tulivat.
 
     ![Porautumiskuva](media/desktop-drillthrough/drillthrough_03.png)
 
@@ -57,7 +59,7 @@ Jos haluat käyttää itse valitsemaasi kuvaa Takaisin-painikkeena, toimi seuraa
 
     Kun raportin käyttäjä valitsee porautumisen, sivu suodatetaan näyttämään tietoja hiiren kakkospainikkeella napsautetusta arvopisteestä. Oletetaan esimerkiksi, että käyttäjä napsauttaa hiiren kakkospainikkeella arvopistettä Contososta (valmistaja) ja valitsee porautumisen. Avautuva porautumissivu on suodatettu näyttämään tietoja Contososta.
 
-## <a name="pass-all-filters-in-drillthrough"></a>Kaikkien suodattimien siirtäminen porautumisessa
+## <a name="pass-all-filters-in-drill-through"></a>Kaikkien suodattimien siirtäminen porautumisessa
 
 Voit siirtää kaikki käytetyt suodattimet porautumisikkunaan. Voit esimerkiksi valita vain tietyn tuoteluokan ja kyseiseen luokkaan suodatetut visualisoinnit ja valita sitten porautumisen. Saatat olla kiinnostunut siitä, miltä porautuminen näyttäisi kaikkien näiden suodattimien ollessa käytössä.
 
@@ -65,14 +67,13 @@ Jos haluat säilyttää kaikki käytetyt suodattimet, ota **Visualisoinnit**-ruu
 
 ![Säilytä kaikki suodattimet](media/desktop-drillthrough/drillthrough_06.png)
 
-
-Kun sitten poraudut visualisointiin, voit nähdä, mitkä suodattimet on otettu käyttöön sen seurauksena, että lähdevisualisoinnissa on käytössä tilapäisiä suodattimia. Nämä tilapäiset suodattimet näkyvät **Visualisointi**ruudun **Porautuminen**-osiossa kursivoituina. 
+Kun sitten poraudut visualisointiin, voit nähdä, mitkä suodattimet on otettu käyttöön sen seurauksena, että lähdevisualisoinnissa on käytössä tilapäisiä suodattimia. Nämä tilapäiset suodattimet näkyvät **Visualisointi**-ruudun **Porautuminen**-osiossa kursivoituina. 
 
 ![Kursivoidut tilapäiset suodattimet](media/desktop-drillthrough/drillthrough_07.png)
 
 Voisit tehdä tämän myös työkaluvihjesivuille, mutta käyttö olisi tässä tapauksessa outoa, koska työkaluvihjeet eivät näyttäisi toimivan oikein. Tästä syystä käyttöä työkaluvihjeiden kanssa ei suositella.
 
-## <a name="add-a-measure-to-drillthrough"></a>Mittarin lisääminen porautumiseen
+## <a name="add-a-measure-to-drill-through"></a>Mittarin lisääminen porautumiseen
 
 Sen lisäksi, että voit siirtää kaikki suodattimet porautumisikkunaan, voit myös lisätä mittarin tai numeerisen yhteenvetosarakkeen porautumisalueeseen. Voit ottaa sen käyttöön vetämällä porautumiskentän **Porautuminen**-korttiin. 
 
@@ -86,6 +87,6 @@ Tässä oli kaikki, mitä sinun tarvitsee tietää käyttääksesi porautumista 
 
 Voit olla kiinnostunut myös seuraavista artikkeleista:
 
-* [Raporttien välillä porautumisen käyttäminen Power BI Desktopissa](desktop-cross-report-drill-through.md)
+* [Raporttien välillä porautumisen käyttäminen Power BI -raporteissa](desktop-cross-report-drill-through.md)
 * [Osittajien käyttäminen Power BI Desktopissa](visuals/power-bi-visualization-slicers.md)
 

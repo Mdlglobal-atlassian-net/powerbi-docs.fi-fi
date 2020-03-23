@@ -8,12 +8,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart
-ms.openlocfilehash: 4679973cf65ced31a40b3a1bb40c820184e10e2c
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 19a3b1bbf5f2ea3043b92d97a66196ca3e32118c
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79040096"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377232"
 ---
 # <a name="glossary-for-power-bi-service"></a>Power BI -palvelun sanasto
 Power BI -palvelussa saattaa olla ennestään tuntematonta tai sekavalta vaikuttavaa terminologiaa. Sanasto on hyvä paikka termien hakuun, joten se on hyvä lisätä suosikkeihin. Toinen hyvä resurssi lisätietojen saamiseen Power BI -palvelun muodostavista rakenneosista ovat [peruskäsitteet](end-user-basic-concepts.md). Peruskäsitteet tarjoavat korkean tason yleiskatsauksen Power BI:n *osiin* ja niiden yhteyksiin.
@@ -188,7 +188,7 @@ Esimerkki: siirtymisruutu Seuraavat maininnat tai vähäinen tila: siirtymäruut
 
 ## <a name="n"></a>N
 
-**native (alkuperäinen)** Tulee tuotteen mukana. Esimerkiksi Power BI sisältää joukon *alkuperäisiä* visualisointityyppejä. Voit myös tuoda muita tyyppejä, kuten mukautettuja visualisointeja.
+**native (alkuperäinen)** Tulee tuotteen mukana. Esimerkiksi Power BI sisältää joukon *alkuperäisiä* visualisointityyppejä. Voit kuitenkin tuoda muitakin tyyppejä, kuten Power BI -visualisointeja.
 
 **navigation pane (siirtymisruutu)**  tai **nav pane (siirtymäruutu)** Power BI -palvelun vasemmassa reunassa olevat ohjausobjektit.
 

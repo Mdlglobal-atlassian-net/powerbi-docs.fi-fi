@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: db636f16729847c40806bc328efbbdd700e79083
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 0bbdc13e1adf52ba90435f22920e4351e8f34404
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114741"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435946"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Windows 10:n Power BI -mobiilisovelluksen käytön aloittaminen
 Windows 10:n Power BI -mobiilisovellus tuo Power BI:n tablet-laitteeseen tai puhelimeen. Voit käyttää yritystietoja ajan tasalla olevan, kosketuksella toimivan mobiilijärjestelmän kautta. Tarkastele ja käytä yrityksesi koontinäyttöjä missä tahansa kätevästi [Windowsin Aloitusnäytöllä](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -28,6 +28,9 @@ Sitten voit käyttää koontinäyttöjä ja raportteja, tutkia tietoja ja jakaa 
 * [**Hanki Windows 10:n Power BI -mobiilisovellus** ](https://go.microsoft.com/fwlink/?LinkID=526478) Windows Storesta.
   
   Laitteen käyttöjärjestelmän on oltava Windows 10. Sovellusta voidaan käyttää laitteissa, joissa on vähintään 3 gigatavua RAM-muistia ja 8 gigatavua tallennustilaa.
+
+  >[!NOTE]
+  >Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** lopetetaan 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
    
 * Katso [Power BI -mobiilisovellusten uudet ominaisuudet](mobile-whats-new-in-the-mobile-apps.md).
 

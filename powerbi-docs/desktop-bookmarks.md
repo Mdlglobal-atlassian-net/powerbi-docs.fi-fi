@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 08d222f03991bdf605f8e465ff0152d40d07d815
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: 00ea3e70b34ecdaf2c5bd8b8728153bfb26f899b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "75761883"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378980"
 ---
 # <a name="create-bookmarks-in-power-bi-desktop-to-share-insights-and-build-stories"></a>Merkityksellisten tietojen luominen ja tarinoiden koostaminen kirjanmerkkien avulla Power BI Desktopissa
 Power BI Desktopin *kirjanmerkkien* avulla voit tallentaa raporttisivun määritetyn näkymän, mukaan lukien suodatukset ja visualisointien tilan. Voit myöhemmin palata tähän tilaan valitsemalla tallennetun kirjanmerkin. 
@@ -198,7 +198,7 @@ Ota kirjanmerkkien esikatseluversio käyttöön seuraavasti:
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
 Tähän kirjanmerkkitoiminnon versioon liittyy tiettyjä rajoituksia ja huomioitavia asioita.
 
-* Useimmat mukautetut visualisoinnit toimivat yleensä hyvin kirjanmerkeissä. Jos kuitenkin kohtaat ongelmia kirjanmerkkien ja mukautetun visualisoinnin kanssa, ota yhteyttä kyseisen visualisoinnin tekijään ja pyydä häntä lisäämään kirjanmerkkituen visualisointiin. 
+* Useimmat Power BI -visualisoinnit toimivat yleensä hyvin kirjanmerkeissä. Jos kuitenkin kohtaat ongelmia kirjanmerkkien ja mukautetun visualisoinnin kanssa, ota yhteyttä kyseisen visualisoinnin tekijään ja pyydä häntä lisäämään kirjanmerkkituen visualisointiin. 
 * Jos lisäät visualisoinnin raporttisivulle kirjanmerkin luomisen jälkeen, visualisointi näkyy oletustilassaan. Tämä tarkoittaa myös sitä, että jos lisäät osittajan sivulle, jolle on aiemmin luotu kirjanmerkkejä, osittaja toimii oletustilassaan.
 * Visualisointien siirtely kirjanmerkin luomisen jälkeen näkyy kirjanmerkissä. 
 

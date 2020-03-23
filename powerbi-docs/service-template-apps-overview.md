@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/17/2019
 ms.author: painbar
-ms.openlocfilehash: bfc6a32f7b6ef83e6e69351fb4d87d89c8c2806e
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: c9a42949ca517860c8b3f0e6faa07d49bd8054e8
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427578"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376680"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Mitä Power BI -mallisovellukset ovat?
 
@@ -102,7 +102,7 @@ Lisää ehdotuksia on artikkelissa [Vihjeitä mallisovellusten luomiseen Power B
 | Tietolähteet | Pilvipohjaista ajoitettua tietojen päivittämistä tukevat tietolähteet sallitaan. <br>Ei tueta: <li> DirectQuery</li><li>Reaaliaikaiset yhteydet (Azure AS ei käy)</li> <li>Paikalliset tietolähteet (henkilökohtaiset yhdyskäytävät ja yritysyhdyskäytävät eivät ole tuettuja)</li> <li>Reaaliaikainen (push-tietojoukkoa ei tueta)</li> <li>Yhdistelmämallit</li></ul> |
 | Tietojoukko: työtilojen välinen | Työtilojen välisiä tietojoukkoja ei sallita  |
 | Kyselyparametrit | Ei tueta: Tyyppiä ”Any” tai ”Binary” olevat parametrit estävät tietojoukon päivitystoiminnon |
-| Mukautetut visualisoinnit | Vain julkisesti käytettävissä olevia mukautettuja visualisointeja tuetaan. [Organisaation mukautettuja visualisointeja](developer/power-bi-custom-visuals-organization.md) ei tueta. |
+| Power BI:n visualisoinnit | Vain julkisesti käytettävissä olevia Power BI -visualisointeja tuetaan. [Organisaation Power BI -visualisointeja](developer/visuals/power-bi-custom-visuals-organization.md) ei tueta. |
 
 ## <a name="support"></a>Tuki
 Saat tukea kehityksen aikana osoitteesta [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Valvomme ja hallinnoimme tätä sivustoa aktiivisesti. Asiakastapaukset ohjataan nopeasti oikealle tiimille.

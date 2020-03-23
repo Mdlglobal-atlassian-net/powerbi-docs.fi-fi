@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/25/2019
+ms.date: 03/16/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: d56e329d5331403c0ed0ce4da28bf73aea65d9a6
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 97aad9a72cba6fe195208902e2a3d986b3225a3d
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427871"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488702"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -104,7 +104,7 @@ Lue lisätietoja itse raporteista osiosta [Power BI:n koontinäyttöjen ja rapor
 
 ### <a name="per-user-data-in-usage-metrics"></a>Käyttäjäkohtaiset tiedot käyttömittareissa
 
-Oletusarvoisesti käyttäjäkohtaiset tiedot on otettu käyttöön käyttötiedoille ja sisällön kuluttajan tilitiedot sisältyvät tietoraporttiin. Jos et halua sisällyttää näitä tietoja joillekin tai kaikille käyttäjille, poista ominaisuus käytöstä määritetyille käyttöoikeusryhmille tai koko organisaatiolle. Tilitiedot näkyvät sitten raportissa *nimettöminä*.
+Oletusarvoisesti käyttäjäkohtaiset tiedot on otettu käyttöön käyttötiedoille ja sisällön kuluttajan tilitiedot sisältyvät tietoraporttiin. Jos et halua sisällyttää näitä tietoja joillekin tai kaikille käyttäjille, poista ominaisuus käytöstä määritetyiltä käyttöoikeusryhmiltä tai koko organisaatiolta. Tilitiedot näkyvät sitten raportissa *nimettöminä*.
 
 ![Käyttäjäkohtaiset käyttötiedot](media/service-admin-portal/power-bi-admin-per-user-usage-data.png)
 
@@ -277,6 +277,14 @@ Organisaatiosi käyttäjät voivat luoda sähköpostitilauksia. Lue lisää [til
 
 ![Ota käyttöön sähköpostitilaukset](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
 
+### <a name="featured-content"></a>Esitelty sisältö
+
+Salli joidenkin tai kaikkien organisaatiosi raportin tekijöiden esitellä sisältöään Power BI -aloitussivun Esitelty-osiossa. Uudet käyttäjät näkevät esitellyn sisällön Power BI -aloitussivunsa yläreunassa. Esitelty sisältö siirtyy kotisivulla alaspäin sitä mukaa kun käyttäjät lisäävät **suosikkeja**, **usein käytettyjä** ja **viimeaikaisia**. 
+
+Suosittelemme aloittamaan pienellä joukolla vetäjiä. Jos annetaan koko organisaation esitellä sisältöä kotisivulla, voi olla vaikeaa seurata kaikkea ylennettyä sisältöä. 
+
+Kun olet ottanut käyttöön esitellyn sisällön, voit hallita sitä myös järjestelmänvalvojan portaalissa. Katso tästä artikkelista kohtaa [Esitellyn sisällön hallinta](#manage-featured-content), kun haluat lisätietoja toimialasi esitellyn sisällön hallinnasta.
+
 ## <a name="content-pack-and-app-settings"></a>Sisältöpaketin ja sovelluksen asetukset
 
 ### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Julkaise sisältöpaketteja ja sovelluksia koko organisaatiolle
@@ -312,17 +320,16 @@ Organisaation käyttäjät voivat käyttää Esrin tarjoamaa ArcGIS Maps for Pow
 
 Organisaation käyttäjät voivat käyttää Azure-hausta riippuvaisia ulkoisia hakutoimintoja.
 
-## <a name="custom-visuals-settings"></a>Mukautettujen visualisointien asetukset
+## <a name="power-bi-visuals-settings"></a>Power BI -visualisointien asetukset
 
-### <a name="add-and-use-custom-visuals"></a>Lisää ja käytä mukautettuja visualisointeja
+### <a name="add-and-use-power-bi-visuals"></a>Power BI -visualisointien lisääminen ja käyttäminen
 
-Organisaation käyttäjät voivat käyttää mukautettuja visualisointeja ja jakaa niitä. [Lisätietoja](developer/power-bi-custom-visuals.md)
+Organisaation käyttäjät voivat käyttää Power BI -visualisointeja ja jakaa niitä. [Lisätietoja](developer/visuals/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > Tämä asetus voidaan ulottaa koskemaan koko organisaatiota tai rajoittaa määrättyihin ryhmiin.
 
-
-Power BI Desktop (alkaen maaliskuun 2019 julkaisusta) tukee **ryhmäkäytäntöä** mukautettujen visualisointien poistamiseksi käytöstä organisaation käyttöön otetuilla tietokoneilla.
+Power BI Desktop (alkaen maaliskuun 2019 julkaisusta) tukee **ryhmäkäytäntöä** Power BI -visualisointien poistamiseksi käytöstä organisaation käyttöön otetuilla tietokoneilla.
 
 <table>
 <tr><th>Määrite</th><th>Arvo</th>
@@ -335,16 +342,16 @@ Power BI Desktop (alkaen maaliskuun 2019 julkaisusta) tukee **ryhmäkäytäntö�
 </tr>
 </table>
 
-Arvo 1 (desimaalimuotoinen) ottaa käyttöön mukautetut visualisoinnit Power BI:ssä (tämä on oletusarvo).
+Arvo 1 (desimaalimuotoinen) ottaa käyttöön Power BI -visualisoinnit Power BI:ssä (tämä on oletusarvo).
 
-Arvo 0 (desimaalimuotoinen) poistaa käytöstä mukautetut visualisoinnit Power BI:ssä.
+Arvo 0 (desimaalimuotoinen) poistaa käytöstä Power BI -visualisoinnit Power BI:ssä.
 
 ### <a name="allow-only-certified-visuals"></a>Salli vain sertifioidut visualisoinnit
 
-Organisaation käyttäjät, joille on annettu oikeudet lisätä ja käyttää mukautettuja visualisointeja ”Lisää ja käytä mukautettuja visualisointeja” -asetuksen mukaisesti, saavat käyttää ainoastaan [sertifioituja mukautettuja visualisointeja](https://go.microsoft.com/fwlink/?linkid=2002010) (sertifioimattomat visualisoinnit estetään ja käyttöyritys johtaa virheilmoitukseen). 
+Organisaation käyttäjät, joille on annettu oikeudet lisätä ja käyttää Power BI -visualisointeja ”Lisää ja käytä Power BI -visualisointeja” -asetuksen mukaisesti, saavat käyttää ainoastaan [sertifioituja Power BI -visualisointeja](https://go.microsoft.com/fwlink/?linkid=2002010) (sertifioimattomat visualisoinnit estetään ja käyttöyritys johtaa virheilmoitukseen). 
 
 
-Power BI Desktop (alkaen maaliskuun 2019 julkaisusta) tukee **ryhmäkäytäntöä** sertifioimattomien mukautettujen visualisointien poistamiseksi käytöstä organisaation käyttöön otetuilla tietokoneilla.
+Power BI Desktop (alkaen maaliskuun 2019 julkaisusta) tukee **ryhmäkäytäntöä** sertifioimattomien Power BI -visualisointien poistamiseksi käytöstä organisaation käyttöön otetuilla tietokoneilla.
 
 <table>
 <tr><th>Määrite</th><th>Arvo</th>
@@ -357,9 +364,9 @@ Power BI Desktop (alkaen maaliskuun 2019 julkaisusta) tukee **ryhmäkäytäntö�
 </tr>
 </table>
 
-Arvo 1 (desimaalimuotoinen) ottaa käyttöön sertifioimattomat mukautetut visualisoinnit Power BI:ssä (tämä on oletusarvo).
+Arvo 1 (desimaalimuotoinen) ottaa käyttöön sertifioimattomat Power BI -visualisoinnit Power BI:ssä (tämä on oletusarvo).
 
-Arvo 0 (desimaalimuotoinen) poistaa käytöstä sertifioimattomat mukautetut visualisoinnit Power BI:ssä (tämä asetus sallii vain [sertifioidut mukautetut visualisoinnit](https://go.microsoft.com/fwlink/?linkid=2002010)).
+Arvo 0 (desimaalimuotoinen) poistaa käytöstä sertifioimattomat Power BI -visualisoinnit Power BI:ssä (tämä asetus sallii vain [sertifioidut Power BI -visualisoinnit](https://go.microsoft.com/fwlink/?linkid=2002010)).
 
 ## <a name="r-visuals-settings"></a>R-visualisointien asetukset
 
@@ -404,11 +411,11 @@ Organisaation käyttäjät voivat merkitä koontinäyttöjä luokituksilla, jotk
 
 ### <a name="embed-content-in-apps"></a>Sisällön upottaminen sovelluksiin
 
-Organisaation käyttäjät voivat upottaa Power BI -koontinäyttöjä ja -raportteja SaaS-sovelluksiin (palveluina tarjottaviin sovelluksiin). Jos poistat tämän asetuksen käytöstä, käyttäjät eivät näe REST-ohjelmointirajapintoja, joilla he voivat upottaa Power BI -sisältöä sovelluksiin. [Lisätietoja](developer/embedding.md)
+Organisaation käyttäjät voivat upottaa Power BI -koontinäyttöjä ja -raportteja SaaS-sovelluksiin (palveluina tarjottaviin sovelluksiin). Jos poistat tämän asetuksen käytöstä, käyttäjät eivät näe REST-ohjelmointirajapintoja, joilla he voivat upottaa Power BI -sisältöä sovelluksiin. [Lisätietoja](developer/embedded/embedding.md)
 
 ### <a name="allow-service-principals-to-use-power-bi-apis"></a>Salli palvelun päänimien käyttää Power BI -ohjelmointirajapintoja
 
-Azure Active Directoryyn (Azure AD) rekisteröidyt verkkosovellukset käyttävät määritettyä palvelun päänimeä Power BI -ohjelmointirajapintojen käyttöön ilman sisäänkirjautunutta käyttäjää. Jotta sovellus voi käyttää todennustyyppinä palvelun päänimeä, sen palvelun päänimen on sisällyttävä sallittuun käyttöoikeusryhmään. [Lisätietoja](developer/embed-service-principal.md)
+Azure Active Directoryyn (Azure AD) rekisteröidyt verkkosovellukset käyttävät määritettyä palvelun päänimeä Power BI -ohjelmointirajapintojen käyttöön ilman sisäänkirjautunutta käyttäjää. Jotta sovellus voi käyttää todennustyyppinä palvelun päänimeä, sen palvelun päänimen on sisällyttävä sallittuun käyttöoikeusryhmään. [Lisätietoja](developer/embedded/embed-service-principal.md)
 
 > [!NOTE]
 > Palvelun päänimet perivät käyttöoikeudet kaikkiin Power BI -vuokraaja-asetuksiin käyttöoikeusryhmästään. Jos haluat rajoittaa käyttöoikeuksia, luo erillinen käyttöoikeusryhmä palvelun päänimille ja lisää se asianmukaisten käyttöön otettujen Power BI -asetusten Lukuun ottamatta tiettyjä käyttöoikeusryhmiä -luetteloon.
@@ -456,9 +463,9 @@ Ohjausobjekti, jonka avulla organisaation käyttäjät voivat ladata ja asentaa 
 
 ### <a name="power-bi-embedded"></a>Power BI Embedded
 
-**Power BI Embedded** -välilehden avulla voit tarkastella Power BI Embedded (A-varastointiyksikkö) -kapasiteetteja, jotka olet ostanut asiakkaalle. Koska voit ostaa A-varastointiyksikköjä vain Azuresta, voit [hallita Azuren upotettuja kapasiteetteja](developer/azure-pbie-create-capacity.md)**Azure-portaalista**.
+**Power BI Embedded** -välilehden avulla voit tarkastella Power BI Embedded (A-varastointiyksikkö) -kapasiteetteja, jotka olet ostanut asiakkaalle. Koska voit ostaa A-varastointiyksikköjä vain Azuresta, voit [hallita Azuren upotettuja kapasiteetteja](developer/embedded/azure-pbie-create-capacity.md)**Azure-portaalista**.
 
-Lisätietoja siitä, miten voit hallita Power BI Embedded (A-varastointiyksikkö) -asetuksia, on artikkelissa [Mikä on Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
+Lisätietoja siitä, miten voit hallita Power BI Embedded (A-varastointiyksikkö) -asetuksia, on artikkelissa [Mikä on Power BI Embedded](developer/embedded/azure-pbie-what-is-power-bi-embedded.md).
 
 ## <a name="embed-codes"></a>Upotuskoodit
 
@@ -466,14 +473,14 @@ Järjestelmänvalvojana voit tarkastella vuokraajatilillesi raporttien julkista 
 
 ![Upotuskoodit Power BI -hallintaportaalissa](media/service-admin-portal/embed-codes.png)
 
- ## <a name="organizational-visuals">Organisaation visualisoinnit.</a> 
+ ## <a name=""></a><a name="organizational-visuals">Organisaation visualisoinnit.</a> 
 
-**Organisaation visualisoinnit** -välilehden avulla voit ottaa käyttöön ja hallita organisaatiosi mukautettuja visualisointeja. Organisaation visualisointien avulla voit helposti käyttää omia visualisointeja organisaatiossa, ja raporttien tekijät voivat sitten hakea ja tuoda niitä raportteihinsa Power BI Desktopista. [Lisätietoja](developer/power-bi-custom-visuals-organization.md)
+**Organisaation visualisoinnit** -välilehden avulla voit ottaa käyttöön ja hallita organisaatiosi Power BI -visualisointeja. Organisaation visualisointien avulla voit helposti käyttää omia visualisointeja organisaatiossa, ja raporttien tekijät voivat sitten hakea ja tuoda niitä raportteihinsa Power BI Desktopista. [Lisätietoja](developer/visuals/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > Mukautettu visualisointi voi sisältää koodia, jolla on tietoturva- tai tietosuojariskejä. Varmista siis, että luotat mukautetun visualisoinnin tekijään ja lähteeseen, ennen kuin otat sen käyttöön organisaation säilössä.
 
-Seuravasta kuvasta näet kaikki mukautetut visualisoinnit, jotka on tällä hetkellä otettu käyttöön organisaation säilössä.
+Seuravasta kuvasta näet kaikki Power BI -visualisoinnit, jotka on tällä hetkellä otettu käyttöön organisaation säilössä.
 
 ![Organisaation järjestelmänvalvojan visualisointi](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
 
@@ -483,11 +490,11 @@ Jos haluat lisätä luetteloon uuden mukautetun visualisoinnin, toimi seuraavast
 
 1. Valitse oikeanpuoleisessa ruudussa **Lisää mukautettu visualisointi**.
 
-    ![Mukautettujen visualisointien lomake](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
+    ![Power BI:n visualisointien lomake](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
 
 1. Täytä **Mukautetun visualisoinnin lisääminen** -lomake:
 
-    * **Valitse .pbiviz-tiedosto** (pakollinen): valitse ladattava mukautetun visualisoinnin tiedosto. Vain versioituja ohjelmointirajapinnan mukautettuja visualisointeja tuetaan (lue täältä lisätietoja siitä, mitä tämä tarkoittaa).
+    * **Valitse .pbiviz-tiedosto** (pakollinen): valitse ladattava mukautetun visualisoinnin tiedosto. Vain versioituja ohjelmointirajapinnan Power BI -visualisointeja tuetaan (lue täältä lisätietoja siitä, mitä tämä tarkoittaa).
 
     Tarkista ennen visualisoinnin lataamista, että sen tietoturva ja tietosuoja täyttävät organisaatiosi vaatimukset.
 
@@ -524,9 +531,9 @@ Jos haluat päivittää visualisoinnin organisaation säilöstä, valitse ratask
 
 Varmista, että visualisoinnin tunnus pysyy samana. Uusi tiedosto korvaa aiemman tiedoston kaikissa organisaation raporteissa. Jos visualisoinnin uusi versio rikkoo minkä tahansa sen aiemman version käyttö- tai tietorakenteen, älä korvaa aiempaa versiota. Lue sen sijaan visualisoinnista uusi versio, joka luetellaan erikseen. Voit esimerkiksi lisätä uuden luetteloidun visualisoinnin nimeen versionumeron (versio X.X). Näin käyttäjät tietävät, että kyseessä on saman visualisoinnin päivitetty versio, ja voivat välttää olemassa olevien raporttien toimintojen virheet sekä ongelmat. Varmista taas, että visualisoinnin tunnus pysyy samana. Kun käyttäjä sitten seuraavan kerran siirtyy organisaatioon säilöön Power BI Desktopista, hän voi tuoda uuden version. Tässä yhteydessä häneltä kysytään, haluaako hän korvata raportissa olevan nykyisen version.
 
-Saat lisätietoja [organisaation mukautettujen visualisointien usein kysytyistä kysymyksistä](/power-bi/developer/power-bi-custom-visuals-faq#organizational-power-bi-visuals).
+Saat lisätietoja [organisaation Power BI -visualisointien usein kysytyistä kysymyksistä](developer/visuals/power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)
 
-## <a name="dataflowStorage">Tietovuon tallennustila (esikatselu)</a>
+## <a name=""></a><a name="dataflowStorage">Tietovuon tallennustila (esikatselu)</a>
 
 Oletusarvon mukaan Power BI:ssä käytetyt tiedot tallennetaan Power BI:n tarjoamaan sisäiseen tallennustilaan. Tietovoiden ja Azure Data Lake Storage Gen2 (ADLS Gen2) -järjestelmän integroinnin myötä voit tallentaa tietovuot organisaatiosi Azure Data Lake Storage Gen2 -tilille. Lisätietoja on kohdassa [Tietovuot ja Azure Data Lake -integrointi (esikatselu)](service-dataflows-azure-data-lake-integration.md).
 
@@ -542,7 +549,7 @@ Järjestelmänvalvojana voit tarkastella vuokraajassa olevia työtiloja. Voit la
 |---------|---------|
 | Aktiivinen | Normaali työtila. Tämä ei kerro mitään käytöstä tai sisällöstä, vaan vain sen, että työtila itsessään on ”normaali”. |
 | Yhteydetön | Työtila, jolla ei ole järjestelmänvalvojakäyttäjää. |
-| Poistettu | Poistettu työtila. Metatietoja säilytetään riittävästi, jotta työtila voidaan palauttaa tarvittaessa. |
+| Poistettu | Poistettu työtila. Metatietoja säilytetään riittävä määrä enintään 90 päivän ajan, jotta työtila voidaan palauttaa tarvittaessa. |
 | Poistetaan | Työtila, jota ollaan poistamassa, mutta jota ei vielä ole poistettu. Käyttäjät voivat poistaa omat työtilansa, jolloin ne siirtyvät Poistetaan- tai Poistettu-tilaan. |
 
 ## <a name="custom-branding"></a>Mukautus
@@ -561,6 +568,17 @@ Järjestelmänvalvojana voit mukauttaa Power BI:n ulkoasua koko organisaatiolle.
 Katso lisätietoja artikkelista [Organisaation mukautus](https://aka.ms/orgBranding).
 
 ![Työtilojen luettelo](media/service-admin-portal/workspaces-list.png)
+
+## <a name="manage-featured-content"></a>Esitellyn sisällön hallinta
+
+Vuokraajan järjestelmänvalvojana voit hallita kaikkia raportteja, koontinäyttöjä ja sovelluksia, jotka on ylennetty Esitellyt-osioon Power BI -aloitussivulle koko organisaatiossasi.
+
+- Valitse hallintaportaalissa **Esitelty sisältö**.
+
+Tässä näet yleiskatsauksen siitä, kuka esitteli sisällön ja milloin se esiteltiin, sekä kaikki sen oleelliset metatiedot. Jos jokin vaikuttaa epäilyttävältä tai jos haluat tyhjentää Esitellyt-osion, voit tarpeen mukaan poistaa ylennetyn sisällön.
+
+Katso tämän artikkelin kohdasta [Esitelty sisältö](#featured-content) lisätietoja esitellyn sisällön käyttöönotosta.
+
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 [Power BI:n hallinta organisaatiossa](service-admin-administering-power-bi-in-your-organization.md)  

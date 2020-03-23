@@ -7,18 +7,18 @@ manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: 0253455cfba96c3c467f4cf8882550e22edce8ba
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: dd8510230a66a9897023686aefb72990ac01a5fd
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76819234"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380385"
 ---
 # <a name="add-drill-down-support"></a>Lisää alaspäin porautumisen tuki
 
-Mukautetut visualisoinnit voivat käyttää Power BI:n alaspäin porautumista.
+Power BI -visualisoinnit voivat käyttää Power BI:n alaspäin porautumista.
 
 Lue lisää Power BI:n alaspäin porautumisesta [täältä](./../../consumer/end-user-drill.md)
 
@@ -205,38 +205,38 @@ button {
 
 Valmistele mallitiedot visualisoinnin testaamista varten:
 
-|   H1  |   H2    | H3  |   ARVOT  |
+|   H1  |   H2    | H3  |   VALUES  |
 |-----|-----|------|-------|
-|   A   |   A1  |   A11 |   1   |
-|   A   |   A1  |   A12 |   2   |
-|   A   |   A2  |   A21 |   3   |
-|   A   |   A2  |   A22 |   4   |
-|   A   |   A3  |   A31 |   5   |
-|   A   |   A3  |   A32 |   6   |
-|   B   |   B1  |   B11 |   7   |
-|   B   |   B1  |   B12 |   8   |
-|   B   |   B2  |   B21 |   9   |
-|   B   |   B2  |   B22 |   10  |
-|   B   |   B3  |   B31 |   11  |
-|   B   |   B3  |   B32 |   12  |
+|   A   |    A1  |    A11 |    1   |
+|   A    |    A1    |    A12    |    2    |
+|   A    |    A2    |    A21    |    3    |
+|   A    |    A2    |    A22    |    4    |
+|   A    |    A3    |    A31    |    5    |
+|   A    |    A3    |    A32    |    6    |
+|   B    |    B1    |    B11    |    7    |
+|   B    |    B1    |    B12    |    8    |
+|   B    |    B2    |    B21    |    9    |
+|   B    |    B2    |    B22    |    10    |
+|   B    |    B3    |    B31    |    11    |
+|   B    |    B3    |    B32    |    12    |
 
 Luo seuraavaksi hierarkia Power BI Desktopissa:
 
-![Luo uusi hierarkia](./media/create-new-hierarchy.png)
+![Luo uusi hierarkia](media/drill-down-support/create-new-hierarchy.png)
 
 Sisällytä kaikki luokkasarakkeet (H1, H2 ja H3) uuteen hierarkiaan:
 
-![Luo uusi hierarkia](./media/new-hierarchy.png)
+![Luo uusi hierarkia](media/drill-down-support/new-hierarchy.png)
 
 Näiden vaiheiden jälkeen sinun pitäisi nähdä seuraava visualisointi:
 
-![Kehittäjän visualisointi ja painikkeet](./media/dev-visual-drilldown1.png)
+![Kehittäjän visualisointi ja painikkeet](media/drill-down-support/dev-visual-drilldown1.png)
 
 ## <a name="add-context-menu-to-visual-elements"></a>Pikavalikon lisääminen visualisointielementteihin
 
 Tässä vaiheessa lisäät pikavalikon painikkeen visualisointiin:
 
-![Visualisoinnin pikavalikko](./media/dev-visual-drilldown-context-menu.png)
+![Visualisoinnin pikavalikko](media/drill-down-support/dev-visual-drilldown-context-menu.png)
 
 Voit luoda pikavalikon tallentamalla `host`-objektin visualisoinnin ominaisuuksiin ja kutsumalla `createSelectionManager`-metodia valinnan hallintaohjelman luontia varten. Sen avulla voit tuoda näkyviin pikavalikon käyttämällä Power BI Visuals -ohjelmointirajapintaa.
 
@@ -305,11 +305,11 @@ Muuta `forEach`-funktion takaisinkutsun runko-osaa seuraavasti:
 
 Käytä dataa visualisoinnissa:
 
-![Dataa sisältävä visualisointi](./media/dev-visual-drilldown-data.png)
+![Dataa sisältävä visualisointi](media/drill-down-support/dev-visual-drilldown-data.png)
 
 Viimeisessä vaiheessa sinun pitäisi nähdä visualisointi, jossa on valinnat ja pikavalikko:
 
-![Visualisointi, jossa on alaspäin porautumisen tuki](./media/dev-visual-drilldown-demo.gif)
+![Visualisointi, jossa on alaspäin porautumisen tuki](media/drill-down-support/dev-visual-drilldown-demo.gif)
 
 ## <a name="add-drill-down-support-for-matrix-data-view-mapping"></a>Lisää alaspäin porautumisen tuki matriisin tietonäkymien yhdistämismääritystä varten
 
@@ -389,7 +389,7 @@ Käytä seuraavaa tietonäkymän yhdistämismääritystä visualisoinnissa:
 
 Käytä dataa visualisoinnissa:
 
-![Dataa sisältävä visualisointi](./media/dev-matrix-visual-drilldown-data.png)
+![Dataa sisältävä visualisointi](media/drill-down-support/dev-matrix-visual-drilldown-data.png)
 
 Tuo pakolliset liittymät matriisin tietonäkymien yhdistämismääritysten käsittelyä varten:
 
@@ -614,7 +614,7 @@ public update(options: VisualUpdateOptions) {
 
 Viimeisessä vaiheessa sinun pitäisi nähdä visualisointi, jossa on pikavalikko:
 
-![Visualisointi, jossa on alaspäin porautumisen tuki](./media/dev-matrix-visual-drilldown-demo.gif)
+![Visualisointi, jossa on alaspäin porautumisen tuki](media\drill-down-support\dev-visual-drilldown-demo.gif)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

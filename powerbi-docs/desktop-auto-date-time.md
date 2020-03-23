@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 01996f3460b7c7a507796bd3f071f7887a69854e
-ms.sourcegitcommit: e27d40054949421701f829113c4a5f6d260c8d5f
+ms.openlocfilehash: 6ec4e5afe63fbdf754fcb20ec8cd12379740d33d
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77154208"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79201535"
 ---
 # <a name="apply-auto-datetime-in-power-bi-desktop"></a>Automaattisen päivämäärän ja ajan käyttö Power BI Desktopissa
 
@@ -33,7 +33,7 @@ Kun asetus on käytössä, Power BI Desktop luo piilotetun automaattisen päivä
 Jokainen automaattinen päivämäärä/aika-taulukko on itse asiassa [laskettu taulukko](desktop-calculated-tables.md), joka luo tietorivejä DAX [CALENDAR](/dax/calendar-function-dax)-toimintoa käyttämällä. Jokaisessa taulukossa on myös kuusi laskettua saraketta: **Päivä**, **kuukauden numero**, **kuukausi**, **vuosineljänneksen numero**, **vuosineljännes**ja **vuosi**.
 
 > [!NOTE]
-> Power BI kääntää ja muotoilee sarakkeiden nimet ja arvot [mallin kielen](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop)mukaan.
+> Power BI kääntää ja muotoilee sarakkeiden nimet ja arvot [mallin kielen](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop) mukaan. Jos malli esimerkiksi on luotu englannin kielellä, se näyttää edelleen esimerkiksi kuukausien nimet englanninkielisinä, vaikka sitä katsottaisiin korealaisella asiakasohjelmalla.
 
 Power BI Desktop luo myös suhteen automaattisen päivämäärän ja ajan taulukon **päivämäärä**-sarakkeen ja mallin päivämääräsarakkeen välille.
 

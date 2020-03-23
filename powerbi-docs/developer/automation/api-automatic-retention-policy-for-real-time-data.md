@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: cdbf50ee5078eaade7794242b3ed522e043cab22
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 3ac4c28b3f07cb1a19e241089b54ee4594a7a7dd
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079642"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378290"
 ---
 # <a name="automatic-retention-policy-for-real-time-data"></a>Automaattinen reaaliaikaisten tietojen säilytyskäytäntö
 
@@ -25,6 +25,6 @@ Power BI -palvelun automaattinen säilytyskäytäntö on kyselymerkkijonoparamet
 
 </center>
 
-Säilytyskäytännöt tulevat käyttöön, kun luot tietojoukot. Sinun on ainoastaan lisättävä oletussäilytyskäytännön kyselyparametri POST-testitietojoukkojen kutsuun ja määrittää sen arvoksi *basicFIFO*.  
+Säilytyskäytännöt tulevat käyttöön, kun luot tietojoukot. Sinun on ainoastaan lisättävä oletussäilytyskäytännön kyselyparametri POST-testitietojoukkojen kutsuun ja määritettävä sen arvoksi *basicFIFO*.  
   
     POST https://api.powerbi.com/v1.0/myorg/datasets?defaultRetentionPolicy={None | basicFIFO}

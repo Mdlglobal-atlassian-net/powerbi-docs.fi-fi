@@ -7,15 +7,15 @@ featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/30/2019
+ms.date: 03/17/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 28d142ae92353f415f3cf29db959b24a8040c50b
-ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
+ms.openlocfilehash: e5c89a8089929b7d87d2a1291ef2c5d3a5b012b7
+ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558576"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525909"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Vinkkejä Power BI -karttavisualisoinneille
 Power BI:n voi integroida Bing Mapsin kanssa, jolloin karttoja voidaan luoda oletusarvoisten karttakoordinaattien avulla (prosessia kutsutaan geokoodaukseksi). Power BI ja Bing Maps käyttävät algoritmeja oikean sijainnin määrittämiseen, mutta joskus sijainnin määritys perustuu parhaaseen arvaukseen. Jos Power BI ei pysty luomaan kartan visualisointia itse, se käyttää apuna Bing Mapsia. 
@@ -86,7 +86,7 @@ Kun tietoihin poraudutaan maantieteellisten hierarkioiden avulla, on tärkeää 
 
 * Porapainike äärimmäisenä oikealla, kutsutaan Porautumistilaksi ![Porautumistila-painikkeen](media/power-bi-map-tips-and-tricks/power-bi-drill-down.png) avulla voit valita karttasijainnin ja porautua kyseiseen sijaintiin taso kerrallaan. Jos esimerkiksi otat Poraudu alaspäin -toiminnon käyttöön ja napsautat Pohjois-Amerikkaa, siirryt hierarkiassa seuraavalle tasolle – Pohjois-Amerikan osavaltioihin. Geokoodausta varten Power BI lähettää Bing Mapsiin vain Pohjois-Amerikan maa- ja osavaltiotiedot.  
 * Vasemmassa reunassa on kaksi muuta porautumistoimintoa. Ensimmäisen vaihtoehdon, ![ensimmäisen porautumiskuvakkeen](media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png) , avulla voit porautua hierarkian seuraavalle tasolle kaikissa sijainneissa yhtä aikaa. Jos esimerkiksi tarkastelet maita ja siirryt sitten tämän toiminnon avulla seuraavalle tasolle tarkastelemaan osavaltioita, Power BI näyttää kaikkien maiden osavaltiot. Geokoodausta varten Power BI lähettää Bing Mapsiin osavaltiotiedot (ei maatietoja) kaikista sijainneista. Tästä toiminnosta on hyötyä, jos hierarkian tasot eivät liity sen yläpuolella olevaan tasoon. 
-* Toinen toiminto, ![poraudu karttojen avulla](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) , muistuttaa Poraudu alaspäin -toimintoa, mutta sinun ei tarvitse napsauttaa karttaa.  Toiminto laajentaa alaspäin hierarkian seuraavalle tasolle muistaen nykyisen tason kontekstin. Jos esimerkiksi tarkastelet maita ja valitset tämän kuvakkeen, siirryt hierarkiassa alaspäin seuraavalle tasolle eli osavaltioihin. Geokoodausta varten Power BI lähettää Bing Mapsiin tietoja jokaisesta osavaltiosta ja osavaltiota vastaavasta maasta, jotta geokoodaus on mahdollisimman tarkka. Useimmissa kartoissa käytät joko tätä toimintoa tai oikeassa reunassa olevaa Poraudu alaspäin -toimintoa, joten voit lähettää Bingiin mahdollisimman paljon tietoja tarkkojen sijaintitietojen saamiseksi. 
+* Toinen toiminto, ![poraudu karttojen avulla](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) , muistuttaa Poraudu alaspäin -toimintoa, mutta sinun ei tarvitse napsauttaa karttaa.  Toiminto laajentuu alaspäin hierarkian seuraavalle tasolle muistaen nykyisen tason kontekstin. Jos esimerkiksi tarkastelet maita ja valitset tämän kuvakkeen, siirryt hierarkiassa alaspäin seuraavalle tasolle eli osavaltioihin. Geokoodausta varten Power BI lähettää Bing Mapsiin tietoja jokaisesta osavaltiosta ja osavaltiota vastaavasta maasta, jotta geokoodaus on mahdollisimman tarkka. Useimmissa kartoissa käytät joko tätä toimintoa tai oikeassa reunassa olevaa Poraudu alaspäin -toimintoa, joten voit lähettää Bingiin mahdollisimman paljon tietoja tarkkojen sijaintitietojen saamiseksi. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Power BI -visualisointiin porautuminen](../consumer/end-user-drill.md)

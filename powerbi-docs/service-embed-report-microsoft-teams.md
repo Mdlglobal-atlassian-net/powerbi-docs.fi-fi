@@ -1,5 +1,5 @@
 ---
-title: Raporttien upottaminen Microsoft Teamsin Power BI ‑välilehdellä
+title: Raporttien upottaminen Microsoft Teamsin Power BI -välilehden avulla
 description: Microsoft Teamsin Power BI ‑välilehden avulla voit helposti upottaa vuorovaikutteisia raportteja kanaviin ja keskusteluihin.
 author: LukaszPawlowski-MS
 ms.author: lukaszp
@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 01/31/2020
-ms.openlocfilehash: fb4846a777dda4787e1ed0be7de869367a616ea5
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.date: 03/12/2020
+ms.openlocfilehash: fe8b5ed0e3cdf0003986ffe6eab18e97e83f3dec
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530483"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381200"
 ---
 # <a name="embed-report-with-the-power-bi-tab-for-microsoft-teams"></a>Raporttien upottaminen Microsoft Teamsin Power BI ‑välilehden avulla
 
@@ -68,6 +68,18 @@ Kun raportti upotetaan Microsoft Teamsiin, käyttäjät eivät saa automaattises
 > Katso Power BI -palvelussa, kuka saa nähdä raportin, ja myönnä käyttöoikeudet niille, jotka eivät ole luettelossa.
 
 Voit varmistaa, että kaikki ryhmäsi jäsenet voivat käyttää upottamiasi raportteja, esimerkiksi sijoittamalla ne yksittäiseen Power BI:n työtilaan ja antamalla tiimin Office 365 ‑ryhmälle työtilan käyttöoikeudet.
+
+## <a name="start-a-conversation"></a>Aloita keskustelu
+
+Kun lisäät Power BI -raportin välilehden Teamsiin, Teams luo automaattisesti välilehtikeskustelun raportin oheen. 
+
+- Valitse **Näytä välilehtikeskustelu** oikeassa yläkulmassa.
+
+    ![Näytä välilehtikeskustelu -kuvake](media/service-embed-report-microsoft-teams/power-bi-teams-conversation-icon.png)
+
+    Ensimmäinen kommentti on linkki raporttiin. Kaikki kyseisellä Teams-kanavalla olevat käyttäjät voivat tarkastella raporttia ja keskustella siitä keskustelussa.
+
+    ![Välilehtikeskustelu](media/service-embed-report-microsoft-teams/power-bi-teams-conversation-tab.png)
 
 ## <a name="known-issues-and-limitations"></a>Tunnetut ongelmat ja rajoitukset
 

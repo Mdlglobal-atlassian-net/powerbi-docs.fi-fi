@@ -9,35 +9,35 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 27e4bbd1437f59b7cf213333d9df27019aaadcd4
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: ad7c0dab0c4390326eea157351735802d12b3795
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698850"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488564"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Power BI Premiumin Multi-Geo-tuen määrittäminen
 
-Multi-Geo on Power BI Premiumin ominaisuus, joka auttaa monikansallisia asiakkaita huomioimaan organisaation aluekohtaiset, alakohtaiset ja tietojen säilytykseen liittyvät vaatimukset. Ota selvää, miten voit Power BI Premium -asiakkaana ottaa sisällön tietokeskuksia käyttöön muilla alueilla kuin Power BI -vuokraajan kotialueella. Maantieteellinen alue voi sisältää useamman kuin yhden alueen. Esimerkiksi Yhdysvallat on maantieteellinen alue, ja esimerkiksi Yhdysvaltojen läntinen keskiosa sekä Yhdysvaltojen eteläinen keskiosa ovat Yhdysvaltain alueita. Voit halutessasi ottaa sisältöä käyttöön millä tahansa seuraavista alueista:
+Multi-Geo on Power BI Premiumin ominaisuus, joka auttaa monikansallisia asiakkaita huomioimaan organisaation aluekohtaiset, alakohtaiset ja tietojen säilytykseen liittyvät vaatimukset. Ota selvää, miten voit Power BI Premium -asiakkaana ottaa sisällön tietokeskuksia käyttöön muilla alueilla kuin Power BI -vuokraajan kotialueella. Maantieteellinen alue voi sisältää useamman kuin yhden alueen. Esimerkiksi Yhdysvallat on maantieteellinen sijainti, ja Läntinen keskiosa, Yhdysvallat ja Eteläinen keskiosa, Yhdysvallat ovat Yhdysvaltain alueita. Voit halutessasi ottaa sisältöä käyttöön millä tahansa seuraavista alueista:
 
 - United States
 - Kanada
-- Yhdistynyt kuningaskunta
+- Iso-Britannia
 - Brasilia
 - Eurooppa
 - Japani
 - Intia
-- Tyynenmeren Aasia
+- Aasia ja Tyynenmeren alue
 - Australia
 - Afrikka
 
 Multi-Geo ei ole käytettävissä Saksan Power BI:ssä, 21Vianetin ylläpitämässä Kiinan Power BI:ssä tai Yhdysvaltain valtionhallinnon Power BI:ssä.
 
-Multi-Geo on nyt käytettävissä myös Power BI Embeddedissä. Lisätietoja on artikkelissa [Multi-Geo-tuki Power BI Embeddedissä](developer/embedded-multi-geo.md).
+Multi-Geo on nyt käytettävissä myös Power BI Embeddedissä. Lisätietoja on artikkelissa [Multi-Geo-tuki Power BI Embeddedissä](developer/embedded/embedded-multi-geo.md).
 
 ## <a name="enable-and-configure"></a>Käyttöön ottaminen ja määrittäminen
 
-Voit ottaa Multi-Geon käyttöön uusille kapasiteeteille valitsemalla avattavasta valikosta muun kuin oletusalueen.  Kukin käytettävissä oleva kapasiteetti näyttää alueen, minne se tällä hetkellä sijoittuu, kuten **Yhdysvaltojen läntinen keskiosa**.
+Voit ottaa Multi-Geon käyttöön uusille kapasiteeteille valitsemalla avattavasta valikosta muun kuin oletusalueen.  Kukin käytettävissä oleva kapasiteetti näyttää alueen, minne se tällä hetkellä sijoittuu, kuten **Läntinen keskiosa, Yhdysvallat**.
 
 ![Kapasiteetin koko: valitse alue. Power BI Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-capacity-size.png)
 
@@ -70,7 +70,7 @@ Nämä kohteet säilyvät vuokraajan kotialueella:
 
 ## <a name="view-capacity-regions"></a>Kapasiteettien alueiden tarkasteleminen
 
-Hallintaportaalissa voit tarkastella Power BI -vuokraajan kaikkia kapasiteetteja ja niiden nykyisiä alueita.
+Hallintaportaalissa voit tarkastella Power BI -vuokraajan kaikkia kapasiteetteja ja niiden nykyisiä sijaintialueita.
 
 ![Näytä Premium-kapasiteetit](media/service-admin-premium-multi-geo/power-bi-multi-geo-premium-capacities.png) 
 
@@ -99,6 +99,6 @@ Voit ottaa työtiloja ulos Multi-Geo-kapasiteetista jommallakummalla seuraavista
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 - [Mikä on Power BI Premium?](service-premium-what-is.md)
-- [Multi-Geo Power BI Embedded -kapasiteeteille](developer/embedded-multi-geo.md)
+- [Multi-Geo Power BI Embedded -kapasiteeteille](developer/embedded/embedded-multi-geo.md)
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

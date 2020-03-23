@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/16/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 138173d30b9c37c04047c61dbd04cbd3101696aa
-ms.sourcegitcommit: 08f65ea314b547b41b51afef6876e56182190266
+ms.openlocfilehash: eefae2b230bf087635b79ed4645a9297b7194edd
+ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "76753187"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525633"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Power BI Pro -käyttöoikeuksien hankinta ja määritys
 
@@ -28,7 +28,7 @@ Power BI Pro on yksilöllinen käyttöoikeus, jonka avulla käyttäjät voivat l
 Tässä artikkelissa kerrotaan, miten voit ostaa Power BI Pro -käyttöoikeuksia Microsoft 365 -hallintakeskuksessa. Kun olet ostanut käyttöoikeudet, voit määrittää ne käyttäjille joko Microsoft 365 -hallintakeskuksessa tai Azure-portaalissa.
 
 > [!NOTE]
-> 14. tammikuuta 2020 alkaen Power Platform -tuotteiden (Power BI, Power Apps ja Power Automate) itsepalveluostot, tilaukset ja käyttöoikeuksien hallintatoiminnot ovat käytettävissä kaupallisille pilvipalveluasiakkaille Yhdysvalloissa. Lisätietoja siitä, miten voit ottaa itsepalveluostot käyttöön tai poistaa ne käytöstä organisaatiossasi, on artikkelissa [Itsepalveluostojen usein kysytyt kysymykset](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
+> 14. tammikuuta 2020 alkaen Power Platform -tuotteiden (Power BI, Power Apps ja Power Automate) itsepalveluostot, tilaukset ja käyttöoikeuksien hallintatoiminnot ovat käytettävissä kaupallisille pilvipalveluasiakkaille. Lisätietoja siitä, miten voit ottaa itsepalveluostot käyttöön tai poistaa ne käytöstä organisaatiossasi, on artikkelissa [Itsepalveluostojen usein kysytyt kysymykset](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
 
 ### <a name="prerequisites"></a>Edellytykset
 
@@ -62,7 +62,7 @@ Näiden ohjeiden avulla voit ostaa Power BI Pro -käyttöoikeuksia Microsoft 365
 
 Lisätietoja käyttöoikeuksien määrittämisestä Microsoft 365 ‑hallintakeskuksessa saat kohdasta [Käyttöoikeuksien määrittäminen käyttäjille](/office365/admin/manage/assign-licenses-to-users).
 
-Vieraskäyttäjien osalta katso [Käyttöoikeuksien määrittäminen käyttäjille käyttöoikeussivulta](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Ennen kuin määrität Pro-käyttöoikeuksia vieraskäyttäjille, ota yhteyttä Microsoft-tiliedustajaan varmistaaksesi, että noudatat Microsoft-sopimuksesi ehtoja.
+Vierailevien käyttäjien osalta katso [Käyttöoikeuksien määrittäminen käyttäjille käyttöoikeussivulta](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Ennen kuin määrität Pro-käyttöoikeuksia vieraskäyttäjille, ota yhteyttä Microsoft-tiliedustajaan varmistaaksesi, että noudatat Microsoft-sopimuksesi ehtoja.
 
 ## <a name="assign-licenses-in-the-azure-portal"></a>Käyttöoikeuksien määrittäminen Azure-portaalissa
 

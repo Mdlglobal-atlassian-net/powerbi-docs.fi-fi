@@ -9,23 +9,23 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: d9e291ff4f61f69ec84e39767906a79f65c2f30f
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 6bf8ccd9048262ce05aff68819ecdb31a44ddfe2
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114169"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377186"
 ---
 # <a name="visual-types-in-power-bi"></a>Visualisointityypit Power BI:ssä
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-Visualisointeja on raporteissa, koontinäytöissä, sovelluksissa ja Q&A:ssa. Jotkin näistä visualisointityypeistä ovat Power BI:hin sisältyviä visualisointeja ja jotkin *mukautettuja visualisointeja*. Mukautetut visualisoinnit luodaan Power BI:n ulkopuolella siten, että *raporttien suunnittelijat* voivat lisätä niitä Power BI:n raportteihin ja koontinäyttöihin. 
+Visualisointeja on raporteissa, koontinäytöissä, sovelluksissa ja Q&A:ssa. Jotkin näistä visualisointityypeistä ovat Power BI:hin sisältyviä visualisointeja ja jotkin *Power BI -visualisointeja*. Mukautetut visualisoinnit luodaan Power BI:n ulkopuolella siten, että *raporttien suunnittelijat* voivat lisätä niitä Power BI:n raportteihin ja koontinäyttöihin. 
 
 Tämä artikkeli on yleiskatsaus Power BI -palveluun sisältyvistä visualisoinneista.  Ne ovat visualisointeja, joita näet useimmin. Lisätietoja näistä visualisoinneista on [Power BI:n raporttien*visualisointityyppien* suunnitteluohjeissa](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 > [!NOTE]
-> Jos haluat lisätietoja mukautetuista visualisoinneista, hae niitä [Microsoft AppSourcen](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals)**Power BI -visualisointien osiossa**. Näet kustakin visualisoinnista kuvauksen, sen tekijän tiedot ja joko näyttökuvia tai videon. 
+> Jos haluat lisätietoja Power BI -visualisoinneista, hae niitä [Microsoft AppSourcen](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals)**Power BI -visualisointien osiossa**. Näet kustakin visualisoinnista kuvauksen, sen tekijän tiedot ja joko näyttökuvia tai videon. 
 
 ## <a name="list-of-visuals-available-in-power-bi"></a>Power BI:ssä käytettävissä olevien visualisointityyppien luettelo
 Kaikki nämä visualisoinnit löytyvät Power BI:n koontinäytöistä ja raporteista ja tietyistä [Q&A-osioista](end-user-q-and-a.md). Jos haluat ohjeita visualisointien käyttöön, lue ohjeartikkeli [Visualisointien käyttö raporteissa, koontinäytöissä ja sovelluksissa](end-user-visualizations.md)
@@ -237,7 +237,7 @@ Vesiputouskaavio on hyvä vaihtoehto:
 - jos haluat havainnollistaa yrityksen alku- ja lopetushenkilöstömäärän vuoden aikana
 - jos haluat visualisoida, kuinka paljon rahaa ansaitset ja käytät joka kuukausi sekä tilin juoksevan saldon.
 
-## <a name="qna"></a>Kerro Q&A:lle, minkä visualisoinnin haluat
+## <a name="tell-qa-which-visual-to-use"></a><a name="qna"></a>Kerro Q&A:lle, minkä visualisoinnin haluat
 Kun kirjoitat Power BI Q&A:lla kyselyjä luonnollisella kielellä, voit määrittää visualisointityypin kyselyssäsi.  Esimerkki:
 
 

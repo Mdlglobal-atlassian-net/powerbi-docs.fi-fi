@@ -6,20 +6,20 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
-ms.openlocfilehash: 8829cb8af41611fb29cd4fc22da7706e80ef3210
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4379fbfe051b69a2c9502a033ba462c1dded2022
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880351"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380625"
 ---
 # <a name="tooltips-in-power-bi-visuals"></a>Power BI:n visualisointien työkaluvihjeet
 
-Visualisoinnit voivat nyt hyödyntää Power BI:n työkaluvihjetukea. Power BI:n työkaluvihjeet käsittelevät seuraavia toimia:
+Visualisoinnit voivat nyt hyödyntää Power BI:n työkaluvihjetukea. Power BI:n työkaluvihjeet käsittelevät seuraavia toimia:'''
 
-* Näytä työkaluvihje.
+* Näytä työkaluvihje.'''
 * Piilota työkaluvihje.
 * Siirrä työkaluvihje.
 
@@ -27,7 +27,7 @@ Työkaluvihjeet voivat näyttää tekstimuotoisen elementin, jolla on otsikko, t
 
 Seuraavassa kuvassa näkyy työkaluvihje mallipalkkikaaviossa:
 
-![Palkkikaaviomallin työkaluvihjeet](./media/tooltips-in-samplebarchart.png)
+![Palkkikaaviomallin työkaluvihjeet](media/add-tooltips/tooltips-in-samplebarchart.png)
 
 Edellä oleva työkaluvihjeen kuva havainnollistaa yksittäistä palkkiluokkaa ja arvoa. Voit laajentaa yksittäisen työkaluvihjeen näyttämään useita arvoja.
 
@@ -209,7 +209,7 @@ Mallin rakenne on
 
 Voit määrittää raporttisivun työkaluvihjeet **Muotoilu**-ruudussa.
 
-![Raporttisivun työkaluvihje](media/report-page-tooltip.png)
+![Raporttisivun työkaluvihje](media/add-tooltips/report-page-tooltips.png)
 
 * `supportedTypes`: Visualisoinnin tukema työkaluvihjeiden määritys, joka näkyy kenttäsäilössä. 
    * `default`: Määrittää, tuetaanko tietokentän kautta tapahtuvaa ”automaattisten” työkaluvihjeiden sidontaa. 

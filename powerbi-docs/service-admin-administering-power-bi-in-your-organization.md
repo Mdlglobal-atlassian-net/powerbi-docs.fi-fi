@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 864854e774defee16d446a513622e1134c77d75c
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: cfe877d6fac96124badc19f6ab685523077132fc
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/10/2020
-ms.locfileid: "77115258"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381280"
 ---
 # <a name="what-is-power-bi-administration"></a>Mitä on Power BI:n hallinta?
 
@@ -59,7 +59,7 @@ Järjestelmänvalvojat suorittavat monia tehtäviä, jotka tukevat Power BI -vuo
 | Premium-kapasiteetin hallinta |<ul><li>Premium-kapasiteetin hankinta ja käsittely<br><li>Palvelun laadun varmistaminen|
 | Upotetun kapasiteetin hallinta |<ul><li>Upotetun kapasiteetin hallinta, jotta riippumattomat ohjelmistokehittäjät ja muut kehittäjät voivat käyttää Power BI -ominaisuuksia helpommin</ul>|
 | Sisäisten käytäntöjen, lakien ja säädösten noudattamisen varmistaminen | <ul><li>Yritystietojen luokittelun hallinta<br><li>Sisällön julkaisemisen ja jakamisen käytäntöjen valvonnan tukeminen</ul>|
-| Power BI -resurssien hallinta |<ul><li>Työtilojen hallinta<br><li>Mukautettujen visualisointien julkaiseminen<br><li>Power BI:n muihin sovelluksiin upottamiseen käytettyjen koodien vahvistaminen|
+| Power BI -resurssien hallinta |<ul><li>Työtilojen hallinta<br><li>Power BI -visualisointien julkaiseminen<br><li>Power BI:n muihin sovelluksiin upottamiseen käytettyjen koodien vahvistaminen|
 | Vuokraajan käyttäjien auttaminen ja tukeminen |<ul><li>Tietojen käytön ja muiden ongelmien vianmääritys</ul>|
 | Muut tehtävät |<ul><li>Power BI Desktopin käyttöönotto, esim. Microsoft Endpoint Configuration Managerin avulla<br><li>Power BI -mobiilisovelluksen käyttöönoton hallinta Intunella<br><li>Tietosuojan ja tietoturvan hallinta, kuten lähdetietojen suojauksen hallinta</ul>|
 
@@ -69,7 +69,7 @@ Power BI:n hallintaan liittyy useita työkaluja, jotka on kuvattu seuraavassa ta
 
 | **Työkalu** | **Tavalliset tehtävät** |
 | --- | --- |
-| Power BI -hallintaportaali |<ul><li>Premium-kapasiteetin hankinta ja käsittely</li><li>Palvelun laadun varmistaminen</li><li>Yritystietojen luokittelun hallinta</li><li>Sisällön julkaisemisen ja jakamisen käytäntöjen valvonnan tukeminen</li><li>Työtilojen hallinta<br><li>Mukautettujen visualisointien julkaiseminen</li><li>Power BI:n muihin sovelluksiin upottamiseen käytettyjen koodien vahvistaminen</li><li>Tietojen käytön ja muiden ongelmien vianmääritys</li></ul>|
+| Power BI -hallintaportaali |<ul><li>Premium-kapasiteetin hankinta ja käsittely</li><li>Palvelun laadun varmistaminen</li><li>Yritystietojen luokittelun hallinta</li><li>Sisällön julkaisemisen ja jakamisen käytäntöjen valvonnan tukeminen</li><li>Työtilojen hallinta<br><li>Power BI -visualisointien julkaiseminen</li><li>Power BI:n muihin sovelluksiin upottamiseen käytettyjen koodien vahvistaminen</li><li>Tietojen käytön ja muiden ongelmien vianmääritys</li></ul>|
 | Microsoft 365 -hallintakeskus |<ul><li>Käyttäjien rekisteröitymisen hallinta</li><li>Pro-käyttöoikeuksien hankinta ja määritys</li><li>Power BI:n käytön estäminen käyttäjiltä</li></ul>|
 | Office 365:n tietoturva- ja yhteensopivuuskeskus |<ul><li>Tapahtumien valvonnan arviointi ja hallinta</li></ul>|
 | Azure Active Directory (AAD) Azure-portaalissa |<ul><li>Power BI -resurssien ehdollisen käyttöoikeuden määrittäminen AAD:n kautta</li><li>Power BI Embedded -kapasiteetin valmistelu</li></ul>|

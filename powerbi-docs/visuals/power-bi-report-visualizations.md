@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/28/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 02617e690c347448ecb1c313bc86969dabeb9984
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: bd8053123d8a5c2fa0c4362cb2a534021208ba36
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099081"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381464"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualisoinnit Power BI -raporteissa
 
@@ -27,7 +27,7 @@ Power BI:ssä on monta erilaista visualisointityyppiä käytettävissä suoraan 
 
 ![ruutu, jossa on kuvakkeet kullekin visualisointityypille](media/power-bi-report-visualizations/power-bi-icons.png)
 
-Voit myös hakea lisää vaihtoehtoja [Microsoft AppSource -yhteisösivustossa](https://appsource.microsoft.com), josta voit [ladata](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) Microsoftin ja yhteisön tarjoamia [mukautettuja visualisointeja](../developer/visuals/custom-visual-develop-tutorial.md).
+Voit myös hakea lisää vaihtoehtoja [Microsoft AppSource -yhteisösivustossa](https://appsource.microsoft.com), josta voit [ladata](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) Microsoftin ja yhteisön tarjoamia [Power BI -visualisointeja](../developer/visuals/custom-visual-develop-tutorial.md).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
@@ -40,7 +40,7 @@ Jos olet uusi Power BI -käyttäjä tai haluat kerrata, löydät Power BI -visua
 
 ## <a name="upload-a-custom-visualization-and-use-it-in-power-bi"></a>Mukautetun visualisoinnin lataaminen ja käyttäminen Power BI:ssä
 
-Lisää oma tai [Microsoft AppSource -yhteisösivustosta](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) löytämäsi mukautettu visualisointi. Oletko luova henkilö? Tutustu lähdekoodiimme ja luo [kehittäjien työkalujen](../developer/visuals/custom-visual-develop-tutorial.md) avulla uusi visualisointityyppi. Halutessasi voit [jakaa sen yhteisölle](../developer/office-store.md). Saat lisätietoja mukautetun visualisoinnin kehittämisestä [Power BI:n mukautetun visualisoinnin kehittäminen](../developer/visuals/custom-visual-develop-tutorial.md) -ohjeartikkelista.
+Lisää oma tai [Microsoft AppSource -yhteisösivustosta](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) löytämäsi mukautettu visualisointi. Oletko luova henkilö? Tutustu lähdekoodiimme ja luo [kehittäjien työkalujen](../developer/visuals/custom-visual-develop-tutorial.md) avulla uusi visualisointityyppi. Halutessasi voit [jakaa sen yhteisölle](../developer/visuals/office-store.md). Saat lisätietoja mukautetun visualisoinnin kehittämisestä [Power BI:n mukautetun visualisoinnin kehittäminen](../developer/visuals/custom-visual-develop-tutorial.md) -ohjeartikkelista.
 
 ## <a name="personalize-your-visualization-pane-preview"></a>Visualisointiruudun räätälöinti (esikatselu)
 
@@ -52,7 +52,7 @@ Kun visualisointi on kiinnitetty, se liikkuu muiden oletusvisualisointien mukana
 
 ![Räätälöity visualisointiruutu](media/power-bi-report-visualizations/power-bi-personalized-visualization-pane.png)
 
-Kun tämä toiminto on esikatseluvaiheessa, näet kiinnitettyjä visualisointeja vain Power BI Desktopissa. Lisäksi tämä toiminto edellyttää, että olet kirjautuneena.
+Kun tämä toiminto on esikatseluvaiheessa, näet kiinnitetyt visualisointisi vain Power BI Desktopissa. Lisäksi tämä toiminto edellyttää, että olet kirjautuneena.
 
 ## <a name="change-the-visualization-type"></a>Visualisointityypin muuttaminen
 
@@ -70,4 +70,4 @@ Power BI -palvelussa visualisointeja voi [kiinnittää koontinäyttöön](../ser
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
-* [Mukautetut visualisoinnit](../developer/power-bi-custom-visuals.md)
+* [Power BI -visualisoinnit](../developer/visuals/power-bi-custom-visuals.md)

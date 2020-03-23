@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/21/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4194afb71dec7b50d75def0677489d3ff009917e
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: f9e0288c91f65d10329aaac29df8eb6e7a81f297
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79113764"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377156"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Raporttien vieminen Power BI:stä PowerPointiin
 
@@ -78,7 +78,7 @@ Edellä olevien vaiheiden jälkeen voit tehdä PowerPoint-esitykselläsi ja sen 
 Ota huomioon seuraavat seikat ja rajoitukset, kun käytät **Vieminen PowerPointiin** -ominaisuutta.
 
 * R- ja Python-visualisointeja ei tällä hetkellä tueta. Tällaiset visualisoinnit viedään tyhjinä kuvina PowerPointiin mukanaan virhesanoma siitä, ettei visualisointia tueta.
-* Sertifioituja mukautettuja visualisointeja tuetaan. Saat lisätietoja sertifioiduista mukautetuista visualisoinneista, mukaan lukien sertifioinnin hakemisesta visualisoinnille, artikkelista [Mukautetun visualisoinnin sertifiointi](../developer/power-bi-custom-visuals-certified.md). Mukautettuja visualisointeja, joita ei ole sertifioitu, ei tueta. Ne viedään tyhjinä kuvina PowerPointiin mukanaan virhesanoma siitä, ettei visualisointia tueta.
+* Sertifioituja Power BI -visualisointeja tuetaan. Saat lisätietoja sertifioiduista mukautetuista visualisoinneista, mukaan lukien sertifioinnin hakemisesta visualisoinnille, artikkelista [Mukautetun visualisoinnin sertifiointi](../developer/power-bi-custom-visuals-certified.md). Mukautettuja visualisointeja, joita ei ole sertifioitu, ei tueta. Ne viedään tyhjinä kuvina PowerPointiin mukanaan virhesanoma siitä, ettei visualisointia tueta.
 * ESRI-visualisointia ei tueta
 * Yli 30 raporttisivua sisältäviä raportteja ei tällä hetkellä voi viedä.
 * Visualisoinnit, joissa on vierityspalkkeja, viedään niiden oletustilassa. Visualisoinnissa PowerPointissa näkyy vain tietojen ylin osa. Vieritys PowerPointissa ei ole käytettävissä, koska jokainen dia on kuva. 

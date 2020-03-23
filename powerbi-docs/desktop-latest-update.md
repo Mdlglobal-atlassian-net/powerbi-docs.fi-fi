@@ -6,21 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 03/12/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 4fc4144b5436fd451280e7189484d9cc01ce69b5
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: 402bf2028b7cc30acf0ce752e8f0343a44829cb3
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496677"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378474"
 ---
 # <a name="whats-new-in-power-bi-desktop"></a>Power BI Desktopin uudet ominaisuudet ja toiminnot
 
-## <a name="february-2020-update-2785740642"></a>Helmikuun 2020 päivitys (2.78.5740.642)
+## <a name="march-2020-update-2795768562"></a>Maaliskuun 2020 päivitys (2.79.5768.562)
 
-Helmikuun päivityksemme ovat upeita, ja uudet ominaisuutemme ovat sydämenmuotoista suklaarasiaakin parempia. 
+Olemme onnekkaita kuin nelilehtinen apila saadessamme jakaa maaliskuun Power BI Desktopin kanssasi. 
 
 Voit ladata uusimman Power BI Desktop -version [Download Centeristä](https://www.microsoft.com/download/details.aspx?id=58494). Jos käytössäsi on Windows 10, voit hankkia Power BI Desktopin myös [Microsoft Storesta](https://aka.ms/pbidesktopstore). Power BI Desktopin asennustavasta riippumatta kuukausittaiset versiot ovat samat, vaikka versioiden numerointi saattaa erota. Lisätietoja Power BI Desktopin lataamisesta ja asentamisesta on kohdassa [Power BI Desktopin hankkiminen](desktop-get-the-desktop.md). 
 
@@ -39,39 +39,49 @@ Voit myös katsoa koko [Power BI Desktopin kuukausittaisen päivitysvideon](#pow
 
 Seuraavat päivitykset olivat uutta Power BI Desktopissa tässä kuussa:
 
-### <a name="data-management"></a>Tiedonhallinta
-* Lisäävä päivitys on nyt yleisesti saatavilla [[video]](https://youtu.be/TN61JvbUAxk?t=16)  [[artikkeli]](service-premium-incremental-refresh.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Incremental_refresh) 
 
 ### <a name="reporting"></a>Raportointi
-* Hierarkkinen osittaja (esikatselu) [[video]](https://youtu.be/TN61JvbUAxk?t=207)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Hierarchical_slicer) 
-* Uuden valintanauhan päivitykset (esikatselu) [[video]](https://youtu.be/TN61JvbUAxk?t=424)  [[artikkeli]](desktop-ribbon.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Ribbon) 
+* Painikkeiden uudet toimintotyypit [[video]](https://youtu.be/DMjvJGGB_LQ?t=45)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_action_types) 
+* Taulukoiden monisarakkeinen lajittelu   [[video]](https://youtu.be/DMjvJGGB_LQ?t=414) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Multi-column_sort) 
+* Kaksoisakseli viivakaaviolle   [[video]](https://youtu.be/DMjvJGGB_LQ?t=504)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Dual_axis) 
+* Suodatinruutuhaku   [[video]](https://youtu.be/DMjvJGGB_LQ?t=553)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Filter_pane_search) 
+* Päivityksiä hajotuspuuvisualisointiin   [[video]](https://youtu.be/DMjvJGGB_LQ?t=688)  [[artikkeli]](visuals/power-bi-visualization-decomposition-tree.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Updates_to_decomp_tree) 
+* Uusi nauha on nyt oletuksena käytössä   [[video]](https://youtu.be/DMjvJGGB_LQ?t=785)  [[artikkeli]](desktop-ribbon.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_ribbon) 
+
+
 
 
 ### <a name="modeling"></a>Mallintaminen
-* Uudet DAX-funktiot: FirstNonBlankValue, LastNonBlankValue [[video]](https://youtu.be/TN61JvbUAxk?t=716)  [[artikkeli]](https://docs.microsoft.com/dax/firstnonblankvalue-function-dax)   [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_New_DAX_Functions) 
+* Uusi DAX-funktio: COALESCE [[video]](https://youtu.be/DMjvJGGB_LQ?t=830)  [[artikkeli]](https://docs.microsoft.com/dax/firstnonblankvalue-function-dax)   [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_DAX_function
+) 
 
 ### <a name="visuals"></a>Visualisoinnit
-* Uudet mukautetut visualisoinnit [[video]](https://youtu.be/TN61JvbUAxk?t=835)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Visualizations) 
+* Päivityksiä ArcGIS-karttoihin [[video]](https://youtu.be/DMjvJGGB_LQ?t=1043)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Updates_to_ArcGIS) 
+* Uudet Power BI -visualisoinnit [[video]](https://youtu.be/DMjvJGGB_LQ?t=1025)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Waterfall_chart
+)
 
 
 ### <a name="template-apps"></a>Mallisovellukset
-* Microsoft 365:n käyttöanalytiikka [[video]](https://youtu.be/TN61JvbUAxk?t=910)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Microsoft_365_usage) 
-* P3:n NFL-analytiikka  [[video]](https://youtu.be/TN61JvbUAxk?t=928)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_NFL)
-* Acterys Quickbooksille, Zerolle ja WorkflowMaxille  [[video]](https://youtu.be/TN61JvbUAxk?t=932)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Acterys) 
+* Data Marun Azure DevOps -koontinäyttö [[video]](https://youtu.be/DMjvJGGB_LQ?t=1116)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Azure_DevOps_dashboard) 
+* Encaminan TeamsPower  [[video]](https://youtu.be/DMjvJGGB_LQ?t=1135)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_TeamsPower)
 
 
 ### <a name="data-preparation"></a>Tietojen valmistelu
-* Kyselydiagnostiikka – tuki käyttäjille, jotka eivät ole järjestelmänvalvojia [[video]](https://youtu.be/TN61JvbUAxk?t=938)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_non_admin_support) 
+* Kyselydiagnostiikka nyt yleisesti saatavilla [[video]](https://youtu.be/DMjvJGGB_LQ?t=1144)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Query_diagnostics) 
 
 
 ### <a name="data-connectivity"></a>Tietoyhteydet
-* MicroStrategy-liitin (yleisesti saatavilla) [[video]](https://youtu.be/TN61JvbUAxk?t=962)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_MicroStrategy_connector) 
-* FHIR-liitin (yleisesti saatavilla) [[video]](https://youtu.be/TN61JvbUAxk?t=962)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_FHIR) 
-* Lisäliittimet: Factset, TIBCO, Jamf Pro, Asana [[video]](https://youtu.be/TN61JvbUAxk?t=978)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Factset_connector) 
+* Hive LLAP -liitin (esiversio) [[video]](https://youtu.be/DMjvJGGB_LQ?t=1165)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Hive_LLAP_connector) 
+* Cognite-liitin (esiversio) [[video]](https://youtu.be/DMjvJGGB_LQ?t=1165)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Cognite) 
 
 
+### <a name="other-features"></a>Muut ominaisuudet
+* Parannettujen tietojoukon metatietojen käyttäminen (esiversio) [[video]](https://youtu.be/DMjvJGGB_LQ?t=1184)  [[artikkeli]](desktop-enhanced-dataset-metadata.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Enhanced_dataset_metadata) 
+* Järjestelmän oletusarvoisten tunnistetietojen käyttö välityspalvelimelle [[video]](https://youtu.be/DMjvJGGB_LQ?t=1239)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Using_default_system) 
+* Uusi opettajajohtoinen järjestelmänvalvojaksi päivässä -koulutus [[video]](https://youtu.be/DMjvJGGB_LQ?t=1247)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_administrator) 
 
-Lisätietoja näistä uusista ominaisuuksista on [Power BI Desktopin ominaisuusyhteenvedon sisältävässä blogikirjoituksessa](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/).
+
+Lisätietoja näistä uusista ominaisuuksista on [Power BI Desktopin ominaisuusyhteenvedon sisältävässä blogikirjoituksessa](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/).
 
 Tutustu [Power BI -palvelun uusiin ominaisuuksiin](service-whats-new.md) ja [Power BI -mobiilisovellusten uusiin ominaisuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -82,7 +92,7 @@ Tutustu [Power BI -palvelun uusiin ominaisuuksiin](service-whats-new.md) ja [Pow
 ## <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktopin kuukausittainen päivitysvideo
 Seuraavassa videossa esitellään jokainen näistä päivityksistä. Voit katsoa tämän videon myös blogikirjoituksen kautta:
 
-> [!VIDEO https://www.youtube.com/embed/TN61JvbUAxk]
+> [!VIDEO https://www.youtube.com/embed/DMjvJGGB_LQ]
 
 
 

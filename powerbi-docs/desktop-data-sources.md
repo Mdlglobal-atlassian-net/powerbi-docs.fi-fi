@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/13/2020
+ms.date: 03/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f13c8f34fbbe927ee6929a0b3e717248aedd63d0
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: fa0686171ee6f9e171e69d60f804d8e141530103
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427549"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79207248"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Power BI Desktopin tietolähteet
 
@@ -90,7 +90,8 @@ Seuraavassa kuvassa näkyy **Tiedosto**-luokan **Nouda tiedot** -ikkuna.
 * Snowflake
 * Essbase
 * AtScale-kuutiot
-* BI-liittimen tietojen virtuaalisuus, LDW (beeta)
+* BI-liitin 
+* Tietojen virtuaalisuus, LDW (beeta)
 * Denodo
 * Dremio
 * Exasol
@@ -124,9 +125,10 @@ Seuraavassa kuvassa näkyy **Power Platform** -luokan **Nouda tiedot** -ikkuna.
 
 **Azure**-luokka tarjoaa seuraavat tietoyhteydet:
 
-* Azure SQL -tietokanta
+* Azuren SQL-tietokanta
 * Azure SQL Data Warehouse
 * Azure Analysis Services -tietokanta
+* Azure-tietokanta PostgreSQL:lle
 * Azure-blob-objektitallennus
 * Azure-taulukkotallennus
 * Azure Cosmos DB
@@ -154,8 +156,8 @@ Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (paikallinen)
 * Microsoft Azure Consumption Insights (beeta)
-* Azure DevOps (beeta)
-* Azure DevOps Server (beeta)
+* Azure DevOps (vain taulut)
+* Azure DevOps Server (vain taulut)
 * Salesforce-objektit
 * Salesforce-raportit
 * Google Analytics
@@ -164,7 +166,6 @@ Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 * Data.World – nouda tietojoukko (beeta)
 * GitHub (beeta)
 * LinkedIn Sales Navigator (beeta)
-* MailChimp (beeta)
 * Marketo (beeta)
 * Mixpanel (beeta)
 * Planview Enterprise One - PRM (beeta)
@@ -178,6 +179,7 @@ Seuraavassa kuvassa näkyy **Azure**-luokan **Nouda tiedot** -ikkuna.
 * tyGraph (beeta)
 * Webtrends (beeta)
 * Zendesk (beeta)
+* Asana (beeta)
 * Dynamics 365 Customer Insights (beeta)
 * Emigo-tietolähde
 * Entersoft Business Suite (beeta)
@@ -205,6 +207,7 @@ Seuraavassa kuvassa näkyy **Online-palvelut**-luokan **Nouda tiedot** -ikkuna.
 * Microsoft Exchange
 * Hadoop-tiedosto (HDFS)
 * Spark
+* Hive LLAP (beeta)
 * R-komentosarja
 * Python-komentosarja
 * ODBC
@@ -220,6 +223,7 @@ Seuraavassa kuvassa näkyy **Online-palvelut**-luokan **Nouda tiedot** -ikkuna.
 * Siteimprove (beeta)
 * SurveyMonkey (beeta)
 * Tenforce (Smart)List (beeta)
+* TIBCO (R):n tietojen virtualisointi (beeta)
 * Vena (beeta)
 * Työvoiman dimensiot (beeta)
 * Zucchetti HR Infinity (beeta)

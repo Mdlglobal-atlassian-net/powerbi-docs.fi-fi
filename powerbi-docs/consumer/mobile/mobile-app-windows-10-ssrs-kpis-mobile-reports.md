@@ -7,12 +7,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/09/2020
 ms.author: painbar
-ms.openlocfilehash: 010513ec8ca908167bbc99255a6fd207ca0ccfba
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 67daafc0938216b135b31d3190c191402e9a10de
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79040871"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435371"
 ---
 # <a name="view-on-premises-reports-and-kpis-in-the-power-bi-windows-app"></a>Paikallisten raporttien ja suorituskykyilmaisimien tarkastelu Power BI:n Windows-sovelluksessa
 Power BI -sovellus Windows 10:lle tarjoaa tärkeiden, paikalliseen liiketoimintaan liittyvien tietojen reaaliaikaisen, kosketuskäyttöisen mobiilikäytön SQL Server 2016 Reporting Servicesissä. 
@@ -26,8 +26,9 @@ Sitten voit tarkastella Windows 10:n Power BI -sovelluksessa suorituskykymittare
 
 > [!NOTE]
 > Laitteessa on oltava käytössä Windows 10. Sovellus toimii parhaiten laitteissa, joissa on vähintään 1 Gigatavua RAM-muistia ja 8 Gigatavua tallennustilaa.
-> 
-> 
+
+>[!NOTE]
+>Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** lopetetaan 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="explore-samples-without-a-sql-server-2016-reporting-services-server"></a>Tutustu näytteisiin ilman SQL Server 2016 Reporting Services -palvelinta
 Vaikka sinulla ei olisikaan pääsyä Reporting Services -verkkoportaaliin, voit tutustua Reporting Services -mobiiliraporttien ominaisuuksiin.

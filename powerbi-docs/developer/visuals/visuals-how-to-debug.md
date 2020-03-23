@@ -6,19 +6,19 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/14/2020
-ms.openlocfilehash: 4ce61fcd4f322abc0362956453d76ced9b78d887
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.openlocfilehash: c87d1af9033044a8b79d6fe00d566d9b46c499fc
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78264239"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377888"
 ---
 # <a name="how-to-debug-power-bi-visuals"></a>Power BI -visualisointien virheenkorjaus
 
 Tällä sivulla esitellään vinkkejä virheenkorjaukseen visualisointia luotaessa. Tässä artikkelissa on virheenkorjauksen perusvaiheet, ja siinä esitellään edustan vakiosovellusten ja Power BI -visualisointien virheenkorjauksen erot.
-Artikkelin lukemisen jälkeen osaat korjata mukautetut visualisoinnit käyttämällä keskeytyskohtia, lokipoikkeuksia ja sieppauspoikkeuksia Chromessa ja Edgessä.
+Artikkelin lukemisen jälkeen osaat korjata Power BI -visualisoinnit käyttämällä keskeytyskohtia, lokipoikkeuksia ja sieppauspoikkeuksia Chromessa ja Edgessä.
 
 ## <a name="using-breakpoints"></a>Keskeytyskohtien käyttäminen
 
@@ -80,7 +80,7 @@ Voit myös määrittää selaimen keskeytymään, kun poikkeuksia havaitaan. Nä
 3. Napsauta **keskeytys poikkeuksien ilmetessä** -kuvaketta (kuusikulmio, jossa on taukosymboli).
 4. Valitse **Keskeytys kaikkien poikkeuksien ilmetessä**.
 
-![Tietoroolikentät](./media/how-to-debug-edge.png)
+![Tietoroolikentät](media/visuals-how-to-debug/how-to-debug-edge.png)
 
 ## <a name="chrome"></a>Chrome
 
@@ -89,8 +89,8 @@ Voit myös määrittää selaimen keskeytymään, kun poikkeuksia havaitaan. Nä
 3. Napsauta **keskeytys poikkeuksien ilmetessä** -kuvaketta (stop-merkki, jossa on taukosymboli).
 4. Valitse **Keskeytys havaittujen poikkeusten ilmetessä** -valintaruutu.
 
-![Tietoroolikentät](./media/how-to-debug-chrome.png)
+![Tietoroolikentät](media/visuals-how-to-debug/how-to-debug-chrome.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Power BI -visualisointien vianmääritys](../power-bi-custom-visuals-troubleshoot.md)
-* Saat lisätietoja ja vastauksia kysymyksiisi [Power BI -visualisointien usein kysytyistä kysymyksistä](../power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)
+* [Power BI -visualisointien vianmääritys](power-bi-custom-visuals-troubleshoot.md)
+* Saat lisätietoja ja vastauksia kysymyksiisi [Power BI -visualisointien usein kysytyistä kysymyksistä](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)

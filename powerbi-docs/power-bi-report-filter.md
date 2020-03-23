@@ -1,20 +1,20 @@
 ---
 title: Uusi suodatuskokemus Power BI -raporteissa
-description: Power BI -suodattimet saavat uusia toimintoja ja uuden rakenteen.
+description: Power BI:n suodattimilla on uusia toimintoja ja uusi rakenne.
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 02/26/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: e991b84dede16f35a732c54ff916ec02f5610783
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: f4dbbdd30b403c8ac14db069b826f26af0bce24a
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762527"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79201826"
 ---
 # <a name="work-with-filters-in-power-bi-reports"></a>Suodattimien käyttö Power BI -raporteissa
 
@@ -44,7 +44,7 @@ Uusi suodatuskokemus otetaan käyttöön oletuksena uusissa raporteissa. Voit ot
 
 1. Valitse Power BI Desktopin aiemmin luodussa raportissa **Tiedosto** > **Asetukset ja vaihtoehdot** > **Asetukset**
 2. Valitse siirtymisruudussa **Nykyinen tiedosto** -kohdassa **Raportin asetukset**.
-3. Valitse **Suodatuskokemus**-kohdan alta **Ota käyttöön päivitetty suodatinruutu ja näytä suodattimet visualisoinnin otsikossa tälle raportille**.
+3. Valitse **Suodatuskokemus**-kohdan alta **Ota käyttöön päivitetty Suodattimet-ruutu ja näytä suodattimet visualisoinnin otsikossa tälle raportille**.
 
 ### <a name="turn-on-new-filters-for-an-existing-report-in-the-service"></a>Ota käyttöön uudet suodattimet aiemmin luodussa raportissa palvelussa
 
@@ -52,9 +52,12 @@ Jos olet ottanut **uuden ulkoasun** käyttöön Power BI -palvelussa ![Uusi ulko
 
 Jos et ole ottanut uutta ulkoasua käyttöön, voit nähdä uuden suodatuskokemuksen noudattamalla seuraavia vaiheita.
 
-1. Valitse Power BI -palvelussa **Raportit**-välilehti työtilan sisältöluettelosta.
-2. Etsi raportti, jonka haluat ottaa käyttöön, ja valitse kyseisen raportin **Asetukset**-kuvake ![Raportin asetukset -kuvake](media/power-bi-report-filter/power-bi-settings-icon.png).
-3. Valitse **Suodatuskokemus**-kohdan alta **Ota käyttöön päivitetty suodatinruutu ja näytä suodattimet visualisoinnin otsikossa tälle raportille**.
+1. Avaa Power BI -palvelussa työtilan sisältöluettelo.
+2. Etsi raportti, jonka haluat ottaa käyttöön, valitse **Lisää vaihtoehtoja (...)** ja valitse sitten **Asetukset** kyseisessä raportissa.
+
+    ![Raporttiasetukset](media/power-bi-report-filter/power-bi-filter-options.png)
+
+3. Valitse **Suodatuskokemus**-kohdan alta **Ota käyttöön päivitetty Suodattimet-ruutu ja näytä suodattimet visualisoinnin otsikossa tälle raportille**.
 
     ![Ota käyttöön päivitettyjen suodattimien ruutu](media/power-bi-report-filter/power-bi-service-filter-enable.png)
 
@@ -82,11 +85,21 @@ Kun otat käyttöön uuden Suodattimet-ruudun, näet sen raporttisivun oikealla 
 
 1. Oletusarvon mukaan raportin käyttäjät voivat nähdä Suodattimet-ruudun. Jos et halua heidän näkevän sitä, valitse silmäkuvake **Suodattimet**-ruudun vierestä.
 
-    ![Power BI -suodattimen silmäkuvake](media/power-bi-report-filter/power-bi-filter-eye.png)
+    ![Power BI -suodattimen silmäkuvake](media/power-bi-report-filter/power-bi-filter-eye-icon.png)
 
 2. Voit aloittaa uuden Suodattimet-ruudun luomisen vetämällä haluamasi kentät uuteen Suodattimet-ruutuun joko visualisointi-, sivu- tai raporttitason suodattimina.
 
 Kun lisäät visualisoinnin raporttipohjaan, Power BI lisää automaattisesti suodattimen Suodattimet-ruutuun visualisoinnin jokaiseen kenttään. 
+
+## <a name="hide-the-filters-pane-while-editing"></a>Piilota Suodattimet-ruutu muokkaamisen aikana
+
+Power BI Desktopissa on uusi valintanauha esikatselussa. **Näytä**-välilehdessä voit **Suodattimet**-vaihtopainikkeen avulla näyttää tai piilottaa Suodattimet-ruudun. Tämä ominaisuus on hyödyllinen, kun et käytä Suodattimet-ruutua ja tarvitset lisätilaa näytössä. Tämä lisäys asettaa Suodattimet-ruudun samalle tasolle muiden avattavien ja suljettavien ruutujen, kuten Kirjanmerkit- ja Valinta-ruutujen, kanssa. 
+
+![Näytä tai piilota Suodattimet-ruutu muokkaamisen aikana](media/power-bi-report-filter/power-bi-filter-hide.png)
+
+Tämä asetus piilottaa Suodattimet-ruudun vain Power BI Desktopissa. Jos haluat piilottaa Suodattimet-ruudun käyttäjiltä, valitse sen sijaan **silmäkuvake** **suodattimien** vieressä.
+
+![Silmäkuvake](media/power-bi-report-filter/power-bi-filter-eye.png) 
 
 ## <a name="lock-or-hide-filters"></a>Lukitse tai piilota suodattimet
 
@@ -124,16 +137,16 @@ Voit myös muotoilla näitä elementtejä suodatinkorteissa sen mukaan, onko ne 
 1. Napsauta raportissa joko itse raporttia tai taustaa (*taustakuva*) ja valitse sitten **Visualisoinnit**-ruudussa **Muotoilu**. 
     Näet vaihtoehtoja raporttisivun, taustakuvan ja myös Suodattimet-ruudun ja Suodattimet-korttien muotoiluun.
 
-1. Laajenna **suodatinruutu** määrittääksesi taustan värin, kuvakkeen ja vasemman reunan täydentämään raporttisivua.
+1. Laajenna **Suodattimet-ruutu** määrittääksesi taustan värin, kuvakkeen ja vasemman reunan täydentämään raporttisivua.
 
-    ![Laajenna suodatinruutu](media/power-bi-report-filter/power-bi-format-filter-pane.png)
+    ![Laajenna Suodattimet-ruutu](media/power-bi-report-filter/power-bi-format-filter-pane.png)
 
 1. Laajenna **suodatinkortit** määrittääksesi **Käytettävissä**- ja **Otettu käyttöön** -kohtien värin ja reunan. Jos teet Käytettävissä- ja Otettu käyttöön -kohtien korteista eri väriset, on selvää, mitkä suodattimet on otettu käyttöön. 
   
     ![Laajenna suodatinkortti](media/power-bi-report-filter/power-bi-format-filter-cards.png)
 
-## <a name="theming-for-filter-pane"></a>Suodattimet-ruudun teeman määrittäminen
-Voit nyt muuttaa suodatinruudun oletusasetuksia teematiedoston avulla. Tässä on esimerkki teemakatkelmasta, jonka avulla pääset alkuun:
+## <a name="theming-for-filters-pane"></a>Suodattimet-ruudun teeman määrittäminen
+Voit nyt muuttaa Suodattimet-ruudun oletusasetuksia teematiedoston avulla. Tässä on esimerkki teemakatkelmasta, jonka avulla pääset alkuun:
 
  
 ```
@@ -204,9 +217,9 @@ Voit nyt muuttaa suodatinruudun oletusasetuksia teematiedoston avulla. Tässä o
 }] 
 ```
 
-## <a name="sort-the-filter-pane"></a>Lajittele suodatinruutu
+## <a name="sort-the-filters-pane"></a>Lajittele Suodattimet-ruutu
 
-Mukautettu lajittelutoiminto on osa uutta suodatinruutukokemusta. Raportin luojat voivat järjestellä suodattimia vetämällä ja pudottamalla.
+Mukautettu lajittelutoiminto on osa uutta Suodattimet-ruudun kokemusta. Raportin luojat voivat järjestellä suodattimia vetämällä ja pudottamalla.
 
 ![Järjestä uudelleen suodattimen lajittelujärjestys](media/power-bi-report-filter/power-bi-filter-sort.gif)
 
@@ -223,11 +236,25 @@ Kun muokkaat Suodattimet-ruutua, voit muokata otsikkoa kaksoisnapsauttamalla sit
 
 ![Nimeä suodatin uudelleen](media/power-bi-report-filter/power-bi-filter-rename.png)
 
+## <a name="filters-pane-search"></a>Suodattimet-ruudun haku
+
+Suodattimet-ruudun hakuominaisuuden avulla voit suorittaa haun suodatinkorteissa otsikon mukaan. Tästä ominaisuudesta on hyötyä, jos Suodattimet-ruudussa on useita erilaisia suodatinkortteja ja tarvitset apua tiettyjen suodatinkorttien löytämisessä.
+
+![Hae suodatinta](media/power-bi-report-filter/power-bi-filter-search.png)
+
+Voit myös muotoilla hakuruutua muiden Suodattimet-ruudun elementtien tapaan.
+
+![Muotoile hakuruutua](media/power-bi-report-filter/power-bi-filter-format-search.png)
+
+Tämä Suodattimet-ruudun hakutoiminto on käytössä oletusarvoisesti, mutta voit ottaa sen käyttöön tai poistaa sen käytöstä valitsemalla **Ota haku käyttöön Suodattimet-ruudulle** Asetukset-valintaikkunan raporttiasetuksissa.
+
+![Ota haku käyttöön tai poista se käytöstä](media/power-bi-report-filter/power-bi-enable-search-filter.png)
+
 ## <a name="restrict-changes-to-filter-type"></a>Rajoita suodatintyypin muutoksia
 
 Voit raporttiasetusten Suodatuskokemus-osiossa hallita sitä, voivatko käyttäjät muuttaa suodatintyyppiä.
 
-![Rajoita suodatintyypin muuttamista](media/power-bi-report-filter/power-bi-filter-restrict-change.png)
+![Rajoita suodatintyypin muuttamista](media/power-bi-report-filter/power-bi-enable-change-filter-type.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

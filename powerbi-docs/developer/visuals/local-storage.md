@@ -6,14 +6,14 @@ ms.author: kesharab
 ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 01/21/2019
-ms.openlocfilehash: 7665f0c8e3c909263f194a0fd54a54ed2a752c8c
-ms.sourcegitcommit: 0cc594ebb78a6d0e88784673ed09f8aefd10c7a7
+ms.openlocfilehash: e2cb11ea9be85916e6b5557e7933f6a6b5a7159a
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819096"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79380590"
 ---
 # <a name="local-storage-api"></a>Paikallisen tallennustilan ohjelmointirajapinta
 
@@ -59,5 +59,5 @@ export class Visual implements IVisual {
 
 ## <a name="known-limitations-and-issues"></a>Tunnetut rajoitukset ja ongelmat
 
-Paikallisen tallennuksen ohjelmointirajapinta ei ole oletusarvoisesti aktivoitu mukautetuille visualisoinneille. Jos haluat aktivoida sen mukautetulle visualisoinnille, lähetä pyyntö Power BI:n mukautettujen visualisointien tukeen `pbicvsupport@microsoft.com`.  
+Paikallisen tallennuksen ohjelmointirajapinta ei ole oletusarvoisesti aktivoitu Power BI -visualisoinneille. Jos haluat aktivoida sen Power BI -visualisoinnissasi, lähetä pyyntö Power BI -visualisointien tukeen `pbicvsupport@microsoft.com`.  
 **Huomaa, että visualisoinnin tulee olla käytettävissä [AppSourcessa](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals) ja sen pitää olla [sertifioitu](https://powerbi.microsoft.com/en-us/documentation/powerbi-custom-visuals-certified/).**

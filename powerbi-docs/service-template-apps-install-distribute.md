@@ -1,134 +1,130 @@
 ---
-title: Mallisovellusten jakaminen organisaatiossa - Power BI
+title: Mallisovellusten asentaminen ja jakaminen organisaatiossa - Power BI
 description: Lue lisätietoja siitä, miten voit asentaa, mukauttaa ja jakaa mallisovelluksia organisaatiossa Power BI:n välityksellä.
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 09/14/2019
-ms.author: tebercov
-ms.openlocfilehash: dcb037fdf064611947719a57316f31d901e3b81d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.topic: how-to
+ms.date: 03/15/2020
+ms.author: painbar
+ms.openlocfilehash: 08aadc3027c5b265194e4239b150ea5d27fe2e43
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73871412"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436107"
 ---
-# <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Mallisovellusten asentaminen ja jakaminen organisaatiossa - Power BI
+# <a name="install-and-distribute-template-apps-in-your-organization"></a>Mallisovellusten asentaminen ja jakaminen organisaatiossa
 
-Oletko Power BI -analyytikko? Jos olet, tässä artikkelissa kerrotaan, miten voit asentaa *mallisovelluksia*, joiden avulla voit yhdistää moniin liiketoiminnassa käyttämiisi palveluihin. Tällaisia palveluita ovat esimerkiksi Salesforce, Microsoft Dynamics ja Google Analytics. Voit muokata raporttinäkymää ja raportteja organisaatiosi tarpeiden mukaiseksi ja jakaa ne työtovereillesi *sovelluksena*. 
+Oletko Power BI -analyytikko? Jos olet, tässä artikkelissa kerrotaan, miten voit asentaa [mallisovelluksia](service-template-apps-overview.md), joiden avulla voit yhdistää moniin liiketoiminnassa käyttämiisi palveluihin. Tällaisia palveluita ovat esimerkiksi Salesforce, Microsoft Dynamics ja Google Analytics. Sitten voit muokata mallisovelluksen valmiiksi luotua raporttinäkymää ja raportteja organisaatiosi tarpeiden mukaiseksi ja jakaa ne työtovereillesi [sovelluksina](consumer/end-user-apps.md). 
 
 ![Asennetut Power BI -sovellukset](media/service-template-apps-install-distribute/power-bi-get-apps.png)
 
-Jos olet kiinnostunut luomaan mallisovelluksia ja jakamaan niitä itse, katso [Mallisovelluksen luominen Power BI:ssä](service-template-apps-create.md). Power BI -kumppanit voivat muodostaa Power BI -sovelluksia ja ottaa ne käyttöön Power BI -asiakkaille. Koodausta tarvitaan hyvin vähän tai ei lainkaan. 
+Jos olet kiinnostunut luomaan mallisovelluksia itse ja jakamaan niitä organisaatiosi ulkopuolella, katso [Mallisovelluksen luominen Power BI:ssä](service-template-apps-create.md). Power BI -kumppanit voivat muodostaa Power BI -sovelluksia ja ottaa ne käyttöön Power BI -asiakkaille. Koodausta tarvitaan hyvin vähän tai ei lainkaan. 
 
 ## <a name="prerequisites"></a>Edellytykset  
 
-Mallisovelluksen asentamiseen, mukauttamiseen ja jakamiseen liittyvät seuraavat vaatimukset: 
+Mallisovelluksen asentamiseen, mukauttamiseen ja jakamiseen tarvitset seuraavat asiat: 
 
-- [Power BI Pro -käyttöoikeus](service-self-service-signup-for-power-bi.md)
-- [Power BI-peruskäsitteiden](service-basic-concepts.md) tuntemus
-- kelvollinen asennuslinkki mallisovelluksen luojalta tai AppSourcesta 
-- oikeudet asentaa mallisovelluksia. 
+* [Power BI Pro -käyttöoikeus](service-self-service-signup-for-power-bi.md)
+* oikeudet asentaa mallisovelluksia vuokraajaan
+* sovelluksen kelvollinen asennuslinkki, jonka saat joko AppSourcesta tai sovelluksen luojalta
+* [Power BI-peruskäsitteiden](service-basic-concepts.md) hyvä tuntemus.
 
 ## <a name="install-a-template-app"></a>Mallisovelluksen asentaminen
-
-Saatat saada linkin mallisovellukseen. Muussa tapauksessa voit etsiä AppSourcesta mallisovelluksen, josta olet kiinnostunut. Kummassakin tapauksessa voit asentamisen jälkeen muokata mallisovellusta ja jakaa sen organisaatioosi.
-
-### <a name="search-appsource-from-a-browser"></a>Hae AppSourcesta selaimella
-
-Valitse selaimessa tämä linkki, niin AppSource avautuu ja Power BI -sovellukset näkyvät suodatettuina:
-
-- https://appsource.microsoft.com/marketplace/apps?product=power-bi
-
-### <a name="search-appsource-from-the-power-bi-service"></a>AppSource-haku Power BI -palvelusta
 
 1. Valitse Power BI -palvelun siirtymisruudussa **Sovellukset** > **Hanki sovelluksia**.
 
     ![Hanki sovelluksia](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
 
-2. Valitse AppSourcessa **Sovellukset**.
+1. Valitse näyttöön tulevassa AppSource-ikkunassa **Sovellukset**. Selaa haluamaasi sovellukseen tai hae sovellus ja valitse sitten **Hanki se nyt**.
 
     ![Haku AppSourcessa](media/service-template-apps-install-distribute/power-bi-appsource.png)
 
-3. Selaa sovellukseen tai hae sovellus ja valitse sitten **Hanki se nyt**.
+1. Valitse avautuvassa valintaikkunassa **Asenna**.
 
-4. Valitse valintaikkunassa **Asenna**.
+    ![Asenna sovellus](media/service-template-apps-install-distribute/power-install-dialog.png)
+    
+    Sovellus asennetaan siihen liittyvän työtilan kanssa. **Jos päätät mukauttaa sovellusta, mukautus tehdään tässä liittyvässä työtilassa**.
 
-    ![Asenna sovellus](media/service-template-apps-install-distribute/power-install-dialog.png) Jos sinulla on Power BI Pro -käyttöoikeus, sovellus asennetaan siihen liittyvän työtilan kanssa. Sovellusta mukautetaan siihen liittyvässä työtilassa.
+    > [!NOTE]
+    > Jos käytät sellaisen sovelluksen asennuslinkkiä, jota ei ole AppSourcessa, näyttöön tulee vahvistusvalintaikkuna, joka pyytää sinua vahvistamaan valintasi.
+    >
+    >Jotta voit asentaa mallisovelluksen, jota ei ole AppSourcessa, sinun on pyydettävä tarvittavat käyttöoikeudet järjestelmänvalvojaltasi. Lisätietoja on Power BI:n hallintaportaalin kohdassa [Mallisovelluksen asetukset](service-admin-portal.md#template-apps-settings).
 
-    Kun asennus on valmis, näkyviin tulee ilmoitus, että uusi sovelluksesi on valmis.
-4. Valitse **Siirry sovellukseen**.
-5. Valitse **Aloita uuden sovelluksesi käyttö** -kohdassa jokin kolmesta vaihtoehdosta:
+    Kun asennus on valmis, ilmoitus kertoo, että uusi sovelluksesi on valmis.
 
-    ![Aloita sovelluksesi käyttö](media/service-template-apps-create/power-bi-template-app-get-started.png)
+    ![Siirry sovellukseen](media/service-template-apps-install-distribute/power-bi-go-to-app.png)
 
-    - **Tarkastele sovellusta**: Mallitietojen perustarkastelua. Aloita tästä, niin saat perustuntuman sovelluksen ulkoasusta ja käytöstä. 
-    - **Yhdistä tiedot**: Vaihda tietolähde mallitiedoista omaan tietolähteeseesi. Voit määrittää tietojoukon parametrit ja tietolähteen tunnistetiedot uudelleen. Katso [Tunnetut rajoitukset](service-template-apps-tips.md#known-limitations) mallisovellusten vinkkejä sisältävästä artikkelista. 
-    - **Siirry työtilaan** (edistynein vaihtoehto): Voit tehdä mitä tahansa sovelluskehittäjän sallimia muutoksia.
+## <a name="connect-to-data"></a>Tietoihin yhdistäminen
 
-    Voit myös ohittaa tämän valintaikkunan ja siirtyä suoraan sovellukseen liittyvään työtilaan käyttämällä siirtymisruudun **Työtilat**-vaihtoehtoa.
-    >[!NOTE]
-    >Mallisovelluksen asennus asentaa sekä *organisaation sovelluksen* että *työtilan*. Lue lisää [sovellusten jakamisesta Power BI:ssä](service-create-distribute-apps.md).
- 
-6. Ennen kuin mallisovellusta jaetaan työtovereille, kannattaa muodostaa yhteys omiin tietoihin. Haluat ehkä myös muokata raporttia tai koontinäyttöä, niin että se toimii mahdollisimman hyvin organisaatiossasi. Tässä vaiheessa voit myös lisätä muita raportteja tai raporttinäkymiä.
+1. Valitse **Siirry sovellukseen**. Näkyviin tulee **Aloita uuden sovelluksesi käyttö** -ikkuna.
 
-   Jos napsautat sellaisen sovelluksen asennuslinkkiä, jota ei ole AppSourcessa, näyttöön tulee vahvistusvalintaikkuna, joka pyytää sinua vahvistamaan valintasi.
+   ![Aloita sovelluksesi käyttö](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
 
-   ![Asenna sovellus](media/service-template-apps-install-distribute/power-install-unvalidated-dialog.png)
+1. Napsauta **Yhdistä**.
+    
+    Tämä avaa yhden tai useita valintaikkunoita, joissa voit vaihtaa tietolähteen mallitiedoista omaan tietolähteeseesi. Tämä tarkoittaa yleensä tietojoukon parametrien ja tietolähteen tunnistetietojen määrittämistä uudelleen. Katso kohta [Tunnetut rajoitukset](service-template-apps-tips.md#known-limitations).
+    
+    Alla olevassa esimerkissä tietoihin yhdistäminen tuo esiin kaksi valintaikkunaa.
 
-   >[!NOTE]
-   >Jotta voit asentaa mallisovelluksia, joita ei ole AppSourcessa, sinun on pyydettävä käyttöoikeudet järjestelmänvalvojaltasi. Lisätietoja on Power BI:n [hallintaportaalin kohdassa Mallisovelluksen asetukset](service-admin-portal.md#template-apps-settings).
+   ![Muodosta yhteys tietojen valintaikkunoihin](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
-## <a name="customize-and-publish-the-app"></a>Sovelluksen mukauttaminen ja julkaiseminen
+    Kun olet täyttänyt yhteyden valintaikkunat, yhteyden muodostamisprosessi alkaa. Ilmoituspalkissa ilmoitetaan, että tarkastelet mallitietoja.
 
-Kun olet päivittänyt sovelluksen organisaatiotasi varten, voit julkaista sen. Vaiheet ovat samat kuin mitä tahansa sovellusta julkaistaessa.
+    ![Mallitietojen tarkasteleminen](media/service-template-apps-install-distribute/power-bi-template-app-viewing-sample-data.png)
 
-1. Kun olet lopettanut mukauttamisen, valitse työtilan luettelonäkymän oikeasta yläkulmasta **Päivitä sovellus**.  
+    Odota, että tietojen yhdistäminen ja päivittäminen on valmis. Edistymisen ilmaisin tietojoukon rivillä (uusi ulkoasu) tai välilehdessä (vanha ulkoasu) kertoo, milloin prosessi on valmis.
 
-    ![Aloita sovelluksen asennus](media/service-template-apps-install-distribute/power-bi-start-install-app.png)
+   Kun yhteyksien ja tietojen päivittäminen on valmis, päivitä selaimesi. Ilmoituspalkissa ilmoitetaan nyt, että sinun on päivitettävä sovellus, jotta voit ottaa käyttöön sovellukseen tekemäsi muutokset ja jakaa sen.
 
-2. **Tiedot**-kohdassa voit muokata kuvausta ja taustaväriä.
+    ![Sovelluksen mukauttaminen ja jakaminen](media/service-template-apps-install-distribute/power-bi-template-app-customize-share.png)
 
-   ![Määritä sovelluksen kuvaus ja väri](media/service-template-apps-install-distribute/power-bi-install-app-details.png)
+## <a name="customize-and-share-the-app"></a>Sovelluksen mukauttaminen ja jakaminen
 
-3. **Siirtyminen**-kohdassa voit käyttää voit käyttää sovelluksessa uutta siirtymisen muodostinta tai valita aloitussivua varten koontinäytön tai raportin. Lisätietoja on kohdassa [Suunnittele siirtymistoiminnot](service-create-distribute-apps.md#design-the-navigation-experience).
+Kun olet päivittänyt selaimen tietojen yhdistämisen ja päivittämisen jälkeen, näet nyt sovellukseen liittyvän työtilan. Tässä vaiheessa voit muokata siellä olevia artefakteja samalla tavalla kuin missä tahansa työtilassa. Muista kuitenkin, että tekemäsi muutokset korvataan, kun päivität sovelluksen uuteen versioon, ellet tallenna muuttamiasi kohteita eri nimillä. [Katso lisätietoja korvaamisesta](#overwrite-behavior).
 
-   ![Määritä sovelluksen aloitussivu](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+Lisätietoja artefaktien muokkaamisesta työtilassa on kohdassa
+* [Power BI -raporttieditoriin tutustuminen](service-the-report-editor-take-a-tour.md)
+* [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
 
-4. **Käyttöoikeus**-kohdassa annat käyttöoikeuden joko valituille käyttäjille tai koko organisaatiolle.  
-
-   ![Määritä sovelluksen käyttöoikeus](media/service-template-apps-install-distribute/power-bi-install-access.png)
-
-5. Valitse **Päivitä sovellus**. 
-
-6. Kun sovellus on julkaistu, voit kopioida linkin ja jakaa sen käyttäjille, joille olet antanut käyttöoikeudet. Jos olet jakanut linkin käyttäjille, hekin näkevät sovelluksen AppSourcen **Oma organisaatio** -välilehdellä.
+Kun olet tehnyt haluamasi muutokset työtilassa oleviin artefakteihin, olet valmis julkaisemaan ja jakamaan sovelluksen. Lisätietoja on artikkelissa [Sovelluksen julkaiseminen](service-create-distribute-apps.md#publish-your-app).
 
 ## <a name="update-a-template-app"></a>Mallisovelluksen päivittäminen
 
-Mallisovellusten tekijät voivat julkaista mallisovellustensa uudet versiot AppSourcen tai suoran linkin kautta. Kun he tekevät tämän, voit päivittää mallisovelluksen, kun asennat sovelluksen saman tai uuden version uudelleen.
+Mallisovellusten luojat julkaisevat ajoittain uusia parannettuja versioita mallisovelluksistaan joko AppSourcen, suoran linkin tai molempien kautta.
 
-  >[!NOTE]
-  >Uuden version asentaminen korvaa raportteihin ja koontinäyttöihin tekemäsi muutokset. Jos haluat säilyttää päivitetyt raporttisi ja koontinäyttösi, voit tallentaa ne eri nimellä tai eri sijaintiin ennen asentamista.
+Jos olet alun perin ladannut sovelluksen AppSourcesta, kun mallisovelluksen uusi versio tulee saataville, Power BI -palvelussa näkyviin tulevassa ilmoituspalkissa kerrotaan, että uusi sovellusversio on saatavilla.
 
-- **Korvaa olemassa oleva versio:** Korvaa olemassa olevan työtilan mallisovelluksen päivitetyllä versiolla.
+  ![Mallisovelluksen päivitysilmoitus](media/service-template-apps-install-distribute/power-bi-new-app-version-notification.png)
 
-   ![Mallisovelluksen päivittäminen](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
+>[!NOTE]
+>Jos olet alun perin hankkinut sovelluksen suoran linkin kautta AppSourcen sijaan, ainoa tapa saada tietää, milloin uusi versio on saatavilla, on ottaa yhteyttä mallisovelluksen luojaan.
 
-- **Asenna uuteen työtilaan:** Asentaa työtilan ja sovelluksen uuden version, joka on määritettävä uudelleen
+  Jos haluat asentaa päivityksen, valitse ilmoituspalkissa **Hanki se** tai etsi sovellus uudelleen AppSourcesta ja valitse **Hanki se nyt**. Jos olet saanut suoran linkin päivitykseen mallinsovelluksen luojalta, napsauta linkkiä.
+  
+  Sinulta kysytään, haluatko korvata nykyisen version vai asentaa uuden version uuteen työtilaan. Korvaaminen on valittuna oletusarvoisesti.
+
+  ![Mallisovelluksen päivittäminen](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
+
+- **Korvaa olemassa oleva versio:** Korvaa olemassa olevan työtilan mallisovelluksen päivitetyllä versiolla. [Katso lisätietoja korvaamisesta](#overwrite-behavior).
+
+- **Asenna uuteen työtilaan:** Asentaa työtilan ja sovelluksen uuden version, joka on määritettävä uudelleen (eli tietoihin yhdistäminen, siirtymisen ja käyttöoikeuksien määrittäminen).
 
 ### <a name="overwrite-behavior"></a>Korvaamisen toiminta
 
-* Korvaaminen päivittää raportit, koontinäytöt ja *työtilassa* olevan tietojoukon, ei sovellusta. Korvaaminen ei muuta sovelluksen siirtymistä, asennusta ja käyttöoikeutta.
-* Kun olet päivittänyt työtilan, sinun on *päivitettävä sovellus*, jotta muutokset otetaan käyttöön työtilasta organisaation sovellukseen.
-* Korvaaminen säilyttää määritetyt parametrit ja todentamisen. Päivityksen jälkeen automaattinen tietojoukon päivitys alkaa. Sinä aikana organisaation sovellus, raportit ja koontinäytöt esittävät *mallitietojen* käyttökokemuksen.
+* Korvaaminen päivittää raportit, koontinäytöt ja työtilassa olevan tietojoukon, ei sovellusta. Korvaaminen ei muuta sovelluksen siirtymistä, asennusta ja käyttöoikeuksia.
+* Kun olet päivittänyt työtilan, sinun on **päivitettävä sovellus, jotta muutokset otetaan käyttöön työtilasta sovellukseen**.
+* Korvaaminen säilyttää määritetyt parametrit ja todentamisen. Päivityksen jälkeen automaattinen tietojoukon päivitys alkaa. **Tämän päivityksen aikana sovelluksessa, raporteissa ja koontinäytöissä näkyvät mallitiedot**.
+
   ![Mallitiedot](media/service-template-apps-install-distribute/power-bi-sample-data.png)
-* Korvaaminen esittää aina mallitiedot, kunnes päivitys on valmis. Jos malli sovelluksen tekijä on tehnyt muutoksia tietojoukkoon tai parametreihin, työtilan ja sovelluksen käyttäjät voivat edelleen tarkastella *mallitietojen* käyttökokemusta.
-* Korvaaminen ei koskaan poista *uusia* raportteja eikä koontinäyttöjä, jotka olet lisännyt työtilaan. Se korvaa alkuperäiset raportit ja koontinäytöt ja alkuperäisen tekijän tekemät muutokset.
+
+* Korvaaminen esittää aina mallitiedot, kunnes päivitys on valmis. Jos mallisovelluksen tekijä on tehnyt muutoksia tietojoukkoon tai parametreihin, työtilan ja sovelluksen käyttäjät eivät näe uusia tietoja ennen päivityksen valmistumista. Niiden sijaan he näkevät edelleen mallitiedot.
+* Korvaaminen ei koskaan poista uusia raportteja eikä koontinäyttöjä, jotka olet lisännyt työtilaan. Se korvaa ainoastaan alkuperäiset raportit ja koontinäytöt ja alkuperäisen tekijän tekemät muutokset.
 
 >[!IMPORTANT]
->Muista [päivittää sovellus](#customize-and-publish-the-app) korvaamisen jälkeen, jotta muutokset tulevat voimaan organisaation sovelluksen käyttäjien raporteissa ja koontinäytössä.
+>Muista [päivittää sovellus](#customize-and-share-the-app) korvaamisen jälkeen, jotta muutokset tulevat voimaan organisaation sovelluksen käyttäjien raporteissa ja koontinäytössä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

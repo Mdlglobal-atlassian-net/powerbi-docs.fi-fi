@@ -8,18 +8,18 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 279e6895122f6b82f8e7670d982a8b50c78ec83a
-ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+ms.openlocfilehash: ba1909c5fc75abdf7338572c646d98fca83595b0
+ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78260412"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133262"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä
 
 Tämä artikkeli kohdistuu Power BI Desktopin tietomallintajille. Artikkelissa kuvaillaan tähtirakenne ja sen merkitys, kun kehitetään suorituskykyyn ja käytettävyyteen optimoituja Power BI -tietomalleja.
 
-Tämän artikkelin tarkoituksena ei ole käydä tähtirakennetta läpi kokonaisvaltaisesti. Jos haluat lisätietoja, tutustu muuhun julkaistuun sisältöön, kuten **The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling** (2. painos, 2002), Ralph Kimball et al.
+Tämän artikkelin tarkoituksena ei ole käydä tähtirakennetta läpi kokonaisvaltaisesti. Jos haluat lisätietoja, tutustu muuhun julkaistuun sisältöön, kuten **The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling** (3. painos, 2013), Ralph Kimball et al.
 
 ## <a name="star-schema-overview"></a>Tähtirakenteen yleiskatsaus
 

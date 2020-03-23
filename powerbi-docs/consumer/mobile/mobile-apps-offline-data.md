@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
-ms.openlocfilehash: 2974f257509d88a469f981bbdecf8cdca47c8e9e
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 9c38aef858d723e548529f450e34d0480de5f8b2
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75219069"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435440"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Tietojen tarkastelu offline-tilassa Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -21,6 +21,9 @@ Koskee seuraavia:
 | ![iPhone](./media/mobile-apps-offline-data/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-offline-data/ipad-logo-50-px.png) | ![Android-puhelin](./media/mobile-apps-offline-data/android-phone-logo-50-px.png) | ![Android-tabletti](./media/mobile-apps-offline-data/android-tablet-logo-50-px.png) | ![Windows 10](./media/mobile-apps-offline-data/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhonet |iPadit |Android-puhelimet |Android-tabletit |Windows 10 -laitteet |
+
+>[!NOTE]
+>Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** lopetetaan 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 Yksi etu tietojen tarkastelemisessa Power BI -mobiilisovelluksessa mobiiliselaimen sijaan on, että voit tarkastella tietojasi myös silloin, kun et ole yhteydessä verkkoon. 
 
@@ -59,7 +62,7 @@ Kun olet offline-tilassa ja Power BI on mobiililaitteessasi, saatat kohdata näi
 * Sivutetut raportit (RDL) eivät ole käytettävissä ilman verkkoyhteyttä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Palaute auttaa meitä päättämään, mitä toimintoja otamme käyttöön tulevaisuudessa, joten muista äänestää muita ominaisuuksia, jotka haluaisit nähdä Power BI ‑mobiilisovelluksissa. 
+Palaute auttaa meitä päättämään, mitä toimintoja otamme käyttöön tulevaisuudessa, joten muista äänestää muita toimintoja, jotka haluaisit nähdä Power BI ‑mobiilisovelluksissa. 
 
 * [Power BI -sovellukset mobiililaitteille](mobile-apps-for-mobile-devices.md)
 * Seuraa käyttäjää @MSPowerBI Twitterissä

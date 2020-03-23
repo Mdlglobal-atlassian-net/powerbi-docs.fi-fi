@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/23/2020
+ms.date: 03/12/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5a4ed3ffc833b2405a3c231b80047c71b40a64cc
-ms.sourcegitcommit: 08f65ea314b547b41b51afef6876e56182190266
+ms.openlocfilehash: 2316fcf5d0b5c0a4c63e4786b80b8c7e20c643e3
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "76753693"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378957"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Raporttiteemojen käyttäminen Power BI Desktopissa
 
@@ -185,7 +185,7 @@ Voit tarkastella raporttiteeman käytettävissä olevia värejä seuraavasti:
 
 Esimerkissä sen jälkeen, kun St. Patrick's Day -raporttiteemassa on otettu käyttöön useita vihreitä ja ruskeita värejä, voit tarkastella teeman värejä. Näetkö kaiken tämän vihreän? Tämä johtuu siitä, että nämä värit sisältyvät tuotuun raporttiteemaan, joka otettiin käyttöön.
 
-Värivalikoiman värit ovat suhteessa nykyiseen teemaan. Oletetaan esimerkiksi, että valitset arvopisteen ylimmän rivin kolmannen värin. Myöhemmin, jos muutat teemaa, kyseisen arvopisteen väri päivittyy automaattisesti uuden teeman ylimmän rivin kolmanteen väriin. Näin tapahtuisi myös, jos muutat teemaa Microsoft Officessa.
+Värivalikoiman värit ovat suhteessa nykyiseen teemaan. Oletetaan esimerkiksi, että valitset arvopisteen ylimmän rivin kolmannen värin. Jos vaihdat teemaa myöhemmin, kyseisen arvopisteen väri päivittyy automaattisesti uuden teeman ylimmän rivin kolmanteen väriin. Näin tapahtuisi myös, jos vaihtaisit teemaa Microsoft Officessa.
 
 ### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Tilanteet, joissa raporttiteeman värit eivät pysy raporteissasi
 
@@ -195,7 +195,7 @@ Saatat myös haluta määrittää arvopisteen värin manuaalisesti käyttämäll
 
 ![Palauta oletusasetukset](media/desktop-report-themes/report-themes_9.png)
 
-Monet mukautetut visualisoinnit eivät käytä raporttiteemoja.
+Monet Power BI -visualisoinnit eivät käytä raporttiteemoja.
 
 ## <a name="custom-report-theme-files-you-can-use-right-now"></a>Tällä hetkellä käytettävissä olevat mukautetut raporttiteematiedostot
 
@@ -271,7 +271,7 @@ Muut rivit kuin **nimi** ovat valinnaisia, mikä tarkoittaa sitä, että voit ha
 
 **Nimi**-kohdassa voit lisätä seuraavia perustietojen väriin liittyviä ominaisuuksia:
 
-- **dataColors**: Luettelo värien heksadesimaalivärikoodeista, joilla väritetään tietoja edustavat muodot Power BI Desktop -visualisoinneissa. Luettelo voi sisältää haluamasi määrän värejä. Kun tämän luettelon kaikkia värejä on käytetty, jos visualisointiin tarvitaan vielä lisää värejä, se alkaa käyttää Power BI:n oletusarvoista värivalikoimaa.
+- **dataColors**: Luettelo värien heksadesimaalivärikoodeista, joilla väritetään tietoja edustavat muodot Power BI Desktop -visualisoinneissa. Luettelo voi sisältää haluamasi määrän värejä. Kun tämän luettelon kaikkia värejä on käytetty ja visualisointiin tarvitaan vielä lisää värejä, se alkaa käyttää Power BI:n oletusarvoista värivalikoimaa.
 - **hyvä**, **neutraali**, **huono**: Nämä ominaisuudet määrittävät vesiputouskaaviossa ja suorituskykyilmaisimen visualisoinnissa käytetyt värit.
 - **suurin**, **keski**, **pienin**, **tyhjäarvo**: Nämä värit määrittävät eri liukuvärit ehdollisen muotoilun valintaikkunassa.
 
@@ -312,13 +312,13 @@ Seuraavassa taulukossa ovat kuusi väriluokkaa, jotka voit muotoilla.  **Värilu
 |---------|---------|
 | **firstLevelElements** <br> **foreground**    (vanhentunut) | Otsikoiden taustaväri (arvopisteiden ulkopuolella) <br> Trendiviivan väri <br>  Tekstiruudun oletusväri <br> Taulukoiden ja matriisien arvojen sekä summien fonttien värit Tietopalkkien akselien väri <br> Korttien arvopisteiden otsikot <br> Mittarien kuvaselitearvojen väri <br> Suorituskykyilmaisimien tavoitteen väri <br>  Suorituskykyilmaisimien tekstin väri <br> Osittajien kohteen väri (kohdistustilassa)  <br> Osittajien avattavan kohteen fontin väri <br> Osittajien lukusyötteen fontin väri <br> Osittajien ylätunnisteen fontin väri <br> Pistekaavioiden suhdeviivan väri <br> Viivakaavion ennusteviivan väri <br> Kartan johtoviivan väri <br> Suodatinruudun ja kortin tekstien väri|
 | **secondLevelElements** <br> **foregroundNeutralSecondary** (vanhentunut) | “vaalea” [toissijaiset tekstiluokat](#setting-formatted-text-defaults) <br> Otsikoiden värit  <br> Selitteiden otsikoiden väri <br> Akselien otsikoiden väri <br> Taulukoiden ja matriisien otsikoiden fontin väri <br> Mittarin kohteen ja kohteiden johtoviivan väri <br>  Suorituskykyilmaisimen trendiakselin väri <br> Osittajien liukusäätimen väri <br> Osittajien kohteiden fontin väri <br> Osittajien ääriviivan väri <br> Viivakaavion väri hiirellä osoitettaessa <br> Monirivisten korttien otsikon väri <br> Valintanauhavetojen väri <br> Muotokarttojen reunan väri <br> Painiketekstien fontin väri <br> Painikekuvakkeiden viivan väri <br> Painikekuvakkeiden ääriviivan väri |
-| **thirdLevelElements** <br >**backgroundLight** (vanhentunut) | Akselien ruudukoiden väri <br> Taulukoiden ja matriisien ruudukoiden väri <br> Osittajien otsikoiden taustaväri (kohdistustilassa)  <br> Monirivisten korttien ääriviivan väri  <br> Muotojen täyttöväri <br> Taustavärien kaaren taustaväri <br> Sovelletun suodatinkortin taustaväri <br> |
-| **fourthLevelElements** <br> **foregroundNeutralTertiary** (vanhentunut) | selitteen himmennetty väri <br> Korttiluokan otsikon väri <br> Monirivisten korttien luokkien otsikoiden väri <br> Monirivisten korttien palkin väri <br> Vuokaavion konversioasteen vetojen väri
+| **thirdLevelElements** <br >**backgroundLight** (vanhentunut) | Akselien ruudukoiden väri <br> Taulukoiden ja matriisien ruudukoiden väri <br> Osittajien otsikoiden taustaväri (kohdistustilassa)  <br> Monirivisten korttien ääriviivan väri  <br> Muotojen täyttöväri <br> Taustavärien kaaren taustaväri <br> Sovelletun suodatinkortin taustaväri <br> Kun tausta = FFFFFF: <br> Käytöstä poistetun painikkeen täytön väri <br> Käytöstä poistetun painikkeen ääriviivan väri <br> |
+| **fourthLevelElements** <br> **foregroundNeutralTertiary** (vanhentunut) | selitteen himmennetty väri <br> Korttiluokan otsikon väri <br> Monirivisten korttien luokkien otsikoiden väri <br> Monirivisten korttien palkin väri <br> Vuokaavion konversioasteen vetojen väri <br> Käytöstä poistetun painikkeen fontin väri <br> Käytöstä poistetun viivan väri <br> |
 | **background** | Otsikoiden taustaväri (arvopisteiden sisäpuolella) <br> Osittajien avattavien kohteiden taustaväri  <br> Rengaskaavioiden vetojen väri <br> Puukarttojen vetojen väri <br> Yhdistelmäkaavioiden taustaväri <br> Painikkeiden täyttöväri <br> Suodatinruudun ja käytettävissä olevan suodatinkortin taustaväri |
-| **secondaryBackground** <br> **backgroundNeutral** (vanhentunut) | Taulukoiden ja matriisien ruudukoiden ääriviivan väri <br> Muotokarttojen oletusväri <br> Nauhakaavion täyttöväri (kun sarjojen vastaavuusvaihtoehto on pois käytöstä) |
+| **secondaryBackground** <br> **backgroundNeutral** (vanhentunut) | Taulukoiden ja matriisien ruudukoiden ääriviivan väri <br> Muotokarttojen oletusväri <br> Nauhakaavion täyttöväri (kun sarjojen vastaavuusvaihtoehto on pois käytöstä) <br> Kun tausta != FFFFFF: <br> Käytöstä poistetun painikkeen täytön väri <br> Käytöstä poistetun painikkeen ääriviivan väri <br> |
 | **tableAccent** | Ohittaa taulukoiden ja matriisien ruudukon ääriviivan värin, kun käytössä |
 
-Tässä on esimerkkiteema, joka määrittää väriluokat:
+Seuraavassa on esimerkkiteema, joka määrittää väriluokat:
 
 ```json
 {
@@ -464,7 +464,7 @@ Tässä esimerkissä on seuraavat asetukset:
 
 - ottaa automaattisen rivityksen käyttöön kaikkialla
 - määrittää ruudukon tyylin pisteviivaksi kaikille luokka-akselin visualisoinneille
-- määrittää jotkin muotoilut käytettävissä oleville ja sovelletuille suodatinkorteille (huomaa muotoilu, jossa "$id"-arvoa käytetään määrittämään suodatinkorttien eri versiot)
+- määrittää jotkin muotoilut käytettävissä oleville ja sovelletuille suodatinkorteille (huomaa muotoilu, jossa ”$id”-arvoa käytetään määrittämään suodatinkorttien eri versiot)
 - määrittää pistekaavioiden kuplan koon arvoon -10.
 
 > [!NOTE]
@@ -4491,7 +4491,7 @@ Seuraavassa osiossa määritetään luetteloinnit, joita voit käyttää JSON-ti
 
 ## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
 
-Jos käytät yhtä alkuperäisistä teemoistamme, “Perinteistä” teemaa, tai mukautettua teemaa, jonka olet tuonut näiden lisäksi, teeman valintaikkunan tekstiosa ei ole saatavilla määritettäväksi.
+Jos käytät yhtä alkuperäisistä teemoistamme, eli Perinteinen-teemaa, tai mukautettua teemaa, jonka olet tuonut näiden lisäksi, teeman valintaikkunan tekstiosa ei ole saatavilla määritettäväksi.
 
 Sisäisistä teemoista tämä rajoitus vaikuttaa seuraaviin:
 * Perinteinen

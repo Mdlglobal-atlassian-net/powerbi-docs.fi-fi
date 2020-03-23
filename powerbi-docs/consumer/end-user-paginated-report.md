@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 0ab2ececd4ede03a10094be53a2c08617463cc53
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: c4c21dc0f02e547cd7319d789a3eb66cce1f4b88
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79113106"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377347"
 ---
 # <a name="paginated-reports-in-the-power-bi-service"></a>Sivutetut raportit Power BI -palvelussa
 
@@ -36,7 +36,7 @@ Tämä yksinkertainen sivutettu raportti antaa tulot vuosittain, kun olet valinn
 
 ![Yksinkertainen yhden parametrin raportti](./media/end-user-paginated-report/power-bi-report-simple.png)
 
-Power BI -raportit ovat paljon vuorovaikutteisempia verrattuna sivutettuihin raportteihin. Power BI -raportit mahdollistavat ad-hoc-raportoinnin ja tukevat monia muita visualisointityyppejä, mukaan lukien mukautetut visualisoinnit.
+Power BI -raportit ovat paljon vuorovaikutteisempia verrattuna sivutettuihin raportteihin. Power BI -raportit mahdollistavat ad-hoc-raportoinnin ja tukevat monia muita visualisointityyppejä, mukaan lukien Power BI -visualisoinnit.
 
 ## <a name="identify-a-paginated-report"></a>Tunnista sivutettu raportti
 

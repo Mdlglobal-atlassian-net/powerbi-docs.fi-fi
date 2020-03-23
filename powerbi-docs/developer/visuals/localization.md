@@ -7,16 +7,16 @@ manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: ad63a1b97c744e8614e584874c4d896a85598e48
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: bb323737934ade08ed4998bdcf8d441e8951732c
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76819119"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379843"
 ---
-# <a name="add-the-locale-in-power-bi-for-custom-visuals"></a>Alueen lisääminen Power BI:n mukautetuille visualisoinneille
+# <a name="add-the-locale-in-power-bi-for-power-bi-visuals"></a>Alueen lisääminen Power BI:ssä Power BI -visualisoinneille
 
 Visualisoinnit voivat noutaa Power BI:n aluekohtaiset asetukset sisällön lokalisoimiseksi kyseiselle kielelle.
 
@@ -24,7 +24,7 @@ Lue lisää kohdasta [Power BI:n tuetut kielet ja maat tai alueet](./../../suppo
 
 Esimerkiksi kieliasetuksen hakeminen mallipalkkikaavion visualisoinnissa.
 
-![Mallipalkkikaavion visualisoinnin lokalisointi](media/locale-in-samplebarchart.png)
+![Mallipalkkikaavion visualisoinnin lokalisointi](media/localization/locale-in-samplebarchart.png)
 
 Jokainen näistä palkkikaavioista luotiin eri kieliasetuksen (englanti, baski ja hindi) alle, ja ne näytetään työkaluvihjeessä.
 
@@ -95,13 +95,13 @@ zh-TW | 中國 (kiina, perinteinen)
 > [!NOTE]
 > Power BI Desktopissa aluekohtaiset asetukset -ominaisuus sisältää asennetun PowerBI Desktopin kielen.
 
-## <a name="localizing-the-property-pane-for-custom-visuals"></a>Mukautettujen visualisointien ominaisuusruudun lokalisointi
+## <a name="localizing-the-property-pane-for-power-bi-visuals"></a>Power BI -visualisointien ominaisuusruudun lokalisointi
 
 Ominaisuusruudun kentät voidaan lokalisoida entistä yhtenäisemmän ja yhdenmukaisemman käyttökokemuksen tarjoamiseksi. Se tekee mukautetusta visualisoinnista samankaltaisen kuin minkä tahansa muun Power BI -ydinvisualisoinnin.
 
 Esimerkiksi `pbiviz new` -komennolla luodun mukautetun, lokalisoimattoman visualisoinnin ominaisuusruudussa näkyvät seuraavat kentät:
 
-![Lokalisointi ominaisuusruudussa](media/property-pane.png)
+![Lokalisointi ominaisuusruudussa](media/localization/property-pane.png)
 
 sekä luokkatiedot että mittaritiedot on määritetty capabilities.json-tiedostossa muodossa `displayName`.
 
@@ -132,7 +132,7 @@ Lisää sitten hakemisto nimeltä stringResources. Hakemisto sisältää kaikki 
 
 Tässä esimerkissä haluamme tukea arabiaa ja hepreaa. Meidän on lisättävä kaksi JSON-tiedostoa seuraavalla tavalla:
 
-![Merkkijonoresurssikansion lokalisointien merkkijonot](media/stringresources-files.png)
+![Merkkijonoresurssikansion lokalisointien merkkijonot](media/localization/stringresources-files.png)
 
 Jokainen JSON-tiedosto määrittää yksittäisen kieliasetuksen (tämän tiedoston on oltava jokin yllä olevasta tuetuista alueista) käyttäen haluamiesi näyttönimiavainten merkkijonoarvoja. Tässä esimerkissä hepreankielinen merkkijonoresurssitiedosto näyttää seuraavalta:
 
@@ -161,13 +161,13 @@ Lataa työpöytäkäyttöön Power BI Desktopin lokalisoitu versio osoitteesta h
 
 Jos käytät verkko-ohjelmaa (selainta) palvelussa, vaihda kieli asetuksissa:
 
-![Lokalisointi verkkopalvelussa](media/webservice-settings.png)
+![Lokalisointi verkkopalvelussa](media/localization/webservice-settings.png)
 
 ## <a name="resource-file"></a>Resurssitiedosto
 
 Lisää resources.resjson-tiedosto kansioon, joka on nimetty sen alueen mukaan, jota aiot käyttää stringResources-kansion sisällä. Esimerkissä käytämme en-US ja ru-RU.
 
-![Uusi resjson-tiedosto](media/new-resjson.png)
+![Uusi resjson-tiedosto](media/localization/new-resjson.png)
 
 Lisää sen jälkeen kaikki lokalisointimerkkijonot, joita aiot käyttää edellisessä vaiheessa lisäämässäsi resources.resjson-tiedostossa.
 

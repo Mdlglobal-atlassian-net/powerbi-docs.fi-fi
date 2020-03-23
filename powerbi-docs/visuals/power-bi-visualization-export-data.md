@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/16/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f4e7d1aa580f7ad95da103fc2cb1e7e069a80ee6
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 9823e35fb2ddb99cf2932fa83e92598ba40f6690
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "78946850"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381372"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Visualisoinnin lähdetietojen vieminen
 
@@ -252,7 +252,7 @@ Nämä rajoitukset ja huomioitavat asiat koskevat Power BI Desktopia ja Power BI
 
 - Jos visualisointi käyttää useamman kuin yhden tietotaulukon tietoja, eikä näille taulukoille ole suhdetta tietomallissa, Power BI vie vain ensimmäisen taulukon tiedot.
 
-- Mukautettuja visualisointeja ja R-visualisointeja ei tällä hetkellä tueta.
+- Power BI -visualisointeja ja R-visualisointeja ei tällä hetkellä tueta.
 
 - Voit Power BI:ssä nimetä kentän (sarakkeen) uudelleen kaksoisnapsauttamalla kenttää ja kirjoittamalla uuden nimen. Power BI viittaa uuteen nimeen *aliaksena*. On mahdollista, että Power BI -raporttiin voi päätyä kenttien nimien kaksoiskappaleita, mutta Excel ei salli kaksoiskappaleita. Kun Power BI vie sitten tiedot Exceliin, kentän aliakset muunnetaan takaisin alkuperäisen kentän (sarakkeen) nimiksi.  
 

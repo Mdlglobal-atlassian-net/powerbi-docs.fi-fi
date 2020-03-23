@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 28116a4e2b89fe5f8fe719f8d6c0d9eca28310eb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6e468ac429c26f3b1880501914816ac60f8b7858
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73867685"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378727"
 ---
 # <a name="export-reports-to-pdf-from-power-bi-desktop"></a>Raporttien vienti PDF-tiedostoon Power BI Desktopista
 **Power BI Desktopissa** tai Power BI -palvelussa voit viedä raportteja PDF-tiedostoon, ja jakaa tai tulostaa näitä raportteja helposti tästä PDF-tiedostosta.
@@ -34,7 +34,7 @@ Kun vienti on valmis, PDF-tiedosto ladataan tietokoneen oletusarvoiseen PDF-kats
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 **Vie PDF-tiedostoon** -ominaisuuden osalta on otettava huomioon pari seikkaa:
 
-* Ominaisuuden avulla voit viedä mukautettuja visualisointeja, mutta *et* taustakuvaa, jota olet ehkä käyttänyt raporttiin.
+* Ominaisuuden avulla voit viedä Power BI -visualisointeja, mutta *et* taustakuvaa, jota olet ehkä käyttänyt raporttiin.
 
 Koska taustakuvaa ei viedä PDF-tiedostoon, sinun on kiinnitettävä erityistä huomiota raportteihin, jotka käyttävät tummaa taustakuvaa. Jos raportin teksti on vaaleaa tai valkoista, eikä erotu tummasta taustakuvasta, tekstiä voi olla vaikea lukea tai sitä ei voida lukea lainkaan vientiprosessin aikana PDF-tiedostoon, koska taustakuvaa ei viedä raportin muiden osien kanssa. 
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 50daa90f937a9d1c7081d9b22e3c743da950945c
-ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
+ms.openlocfilehash: e7e5e406a0a4c9cdcecfab5a5af681857600feb5
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548574"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488518"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automaattinen sivun päivitys Power BI Desktopissa (esiversio)
 
@@ -35,9 +35,9 @@ Seuraavassa kuvassa näkyy **Sivun päivitys** -kortti. Numeroitujen elementtien
 
 ![Sivun päivitys -kortti](media/desktop-automatic-page-refresh/automatic-page-refresh-02.png)
 
-1.  Automaattinen sivun päivitys -liukusäädin: tällä voit ottaa sivun päivityksen käyttöön ja poistaa sen käytöstä.
-2.  Sivun päivitysvälin arvo: tämä on päivitysvälin numeroarvo.
-3.  Sivun päivitysvälin yksikkö: tämä on päivitysvälin mittayksikkö.
+1.    Automaattinen sivun päivitys -liukusäädin: tällä voit ottaa sivun päivityksen käyttöön ja poistaa sen käytöstä.
+2.    Sivun päivitysvälin arvo: tämä on päivitysvälin numeroarvo.
+3.    Sivun päivitysvälin yksikkö: tämä on päivitysvälin mittayksikkö.
 
 Tässä voit ottaa sivun päivityksen käyttöön ja valita päivitysvälin. Se on oletusarvoisesti 30 minuuttia. Pienin sallittu arvo on yksi sekunti. Raportti päivitetään valitsemasi arvon mukaisesti. 
 
@@ -62,10 +62,10 @@ Seuraavasta kuvasta näet DirectQueryn tulokset Suorituskyvyn analysointi -toimi
 
 Mietitään hetken muitakin tämän tietolähteen ominaisuuksia. 
 
-1.  Tietoja saapuu kahden sekunnin välein. 
-2.  Suorituskyvyn analysointi näyttää kyselyiden enimmäismäärän näyttöajaksi noin 4,9 sekuntia (4 668 millisekuntia). 
-3.  Tietolähde on määritetty suoriutumaan noin 1 000 samanaikaisesta kyselystä sekunnissa. 
-4.  Odotat, että raporttia käyttää samanaikaisesti noin 10 käyttäjää.
+1.    Tietoja saapuu kahden sekunnin välein. 
+2.    Suorituskyvyn analysointi näyttää kyselyiden enimmäismäärän näyttöajaksi noin 4,9 sekuntia (4 668 millisekuntia). 
+3.    Tietolähde on määritetty suoriutumaan noin 1 000 samanaikaisesta kyselystä sekunnissa. 
+4.    Odotat, että raporttia käyttää samanaikaisesti noin 10 käyttäjää.
 
 Tämä tuottaa siis seuraavan tuloksen:
 
@@ -83,13 +83,13 @@ Tutustutaan seuraavaksi siihen, miten voit tunnistaa ja korjata suorituskykyonge
 
 Voit myös määrittää automaattisia sivun päivitysvälejä raporteille, jotka on luotu Power BI Desktopissa ja julkaistu Power BI -palveluun. 
 
-Power BI -palvelun raporttien automaattinen sivun päivitys määritetään samankaltaisella tavalla kuin Power BI Desktopissa. Jos automaattinen sivun päivitys on määritetty Power BI -palvelussa, se tukee myös [upotettua Power BI](developer/embedding.md) -sisältöä. Seuraavassa kuvassa näytetään Power BI -palvelun **sivun päivitysmääritykset**:
+Power BI -palvelun raporttien automaattinen sivun päivitys määritetään samankaltaisella tavalla kuin Power BI Desktopissa. Jos automaattinen sivun päivitys on määritetty Power BI -palvelussa, se tukee myös [upotettua Power BI](developer/embedded/embedding.md) -sisältöä. Seuraavassa kuvassa näytetään Power BI -palvelun **sivun päivitysmääritykset**:
 
 ![Automaattinen sivun päivitys Power BI -palvelussa](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
 
-1.  Automaattinen sivun päivitys -liukusäädin: tällä voit ottaa sivun päivityksen käyttöön ja poistaa sen käytöstä.
-2.  Sivun päivitysvälin arvo: tämä on päivitysvälin numeroarvo (täytyy olla kokonaisluku).
-3.  Sivun päivitysvälin yksikkö: tämä on päivitysvälin mittayksikkö.
+1.    Automaattinen sivun päivitys -liukusäädin: tällä voit ottaa sivun päivityksen käyttöön ja poistaa sen käytöstä.
+2.    Sivun päivitysvälin arvo: tämä on päivitysvälin numeroarvo (täytyy olla kokonaisluku).
+3.    Sivun päivitysvälin yksikkö: tämä on päivitysvälin mittayksikkö.
 
 ### <a name="page-refresh-intervals"></a>Sivun päivitysvälit
 

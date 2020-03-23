@@ -2,19 +2,19 @@
 title: Muotokarttojen käyttäminen Power BI Desktopissa (esikatselu)
 description: Alueiden suhteellisten vertailujen luominen muotokartoilla Power BI Desktopissa
 author: mihart
-ms.reviewer: amanda, justyna, sujata
+ms.reviewer: justyna, sujata
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/14/2019
+ms.date: 03/18/2020
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3a043a343994c02a916102b83fe79d1ccd5208bf
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 67c2acad74827c515c92ed0d16dd642170b8dc61
+ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762320"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79525656"
 ---
 # <a name="create-shape-map-visualizations-in-power-bi-desktop-preview"></a>Muotokarttavisualisointien luominen Power BI Desktopissa (esiversio)
 
@@ -22,7 +22,7 @@ ms.locfileid: "75762320"
 
 Luo **Muotokartta**-visualisointi alueiden vertailemiseksi kartalla värejä käyttämällä. Toisin kuin **Kartta**-visualisoinnissa **Muotokartta** ei voi näyttää arvopisteiden tarkkoja maantieteellisiä sijainteja kartalla. Sen sijaan sen päätarkoituksena on näyttää alueiden suhteellisia vertailuja kartalla eri värejä käyttämällä.
 
-**Muotokartta**-visualisoinnit perustuvat ESRI/TopoJSON-karttoihin, jotka tarjoavat mielenkiintoisen mahdollisuuden käyttää mukautettuja karttoja eli omia karttoja, joita voit luoda. Tällaisia karttoja voivat olla esimerkiksi maantieteelliset kartat, istumapaikkakartat, pohjapiirrokset ja muut. **Muotokarttojen** tämä esikatseluversio ei kuitenkaan tarjoa mahdollisuutta mukautettujen karttojen käyttöön.
+**Muotokartta**-visualisoinnit perustuvat TopoJSON-karttoihin, jotka tarjoavat mielenkiintoisen mahdollisuuden käyttää mukautettuja karttoja, eli omia karttoja, joita voit luoda. Tällaisia karttoja voivat olla esimerkiksi maantieteelliset kartat, istumapaikkakartat, pohjapiirrokset ja muut. **Muotokarttojen** tämä esikatseluversio ei kuitenkaan tarjoa mahdollisuutta mukautettujen karttojen käyttöön.
 
 ## <a name="creating-shape-maps"></a>Muotokarttojen luominen
 Voit testata **Muotokartta**-ohjausobjektia kartoilla, jotka sisältyvät tähän esikatseluversioon, tai voit käyttää omaa mukautettua karttaa, kunhan se täyttää vaatimukset, jotka on määritetty seuraavassa **Mukautettujen karttojen käyttäminen** -osiossa.

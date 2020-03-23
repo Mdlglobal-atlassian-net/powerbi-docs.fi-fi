@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 047aa5e19089555538c874702dd50da0f1146ff1
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: ed1100a418259845e6a2656e1c5bab6d80358df0
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/10/2020
-ms.locfileid: "77115281"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381073"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Reaaliaikainen suoratoisto Power BI:ssä
 Power BI: reaaliaikaisen suoratoiston avulla voit suoratoistaa tietoja ja päivittää koontinäyttöjä reaaliajassa. Kaikki Power BI:ssä luotavat visualisoinnit tai koontinäytöt voidaan luoda myös näyttämään ja päivittämään reaaliaikaisia tietoja ja visualisointeja. Tietojen suoratoistoon käytettävät laitteet ja lähteet voivat olla tehtaiden tunnistimia, sosiaalisen median lähteitä, huoltokäyttötietoja ja mitä tahansa muita, joista voidaan kerätä ja lähettää ajan mukaan määräytyviä tietoja.
@@ -33,7 +33,7 @@ On olemassa kolmentyyppisiä reaaliaikaisia tietojoukkoja, jotka voidaan näytt�
 Ensin tutustumme siihen, miten nämä tietojoukot eroavat toisistaan (tässä osassa) ja sitten käsittelemme sitä, miten tietoja siirretään kuhunkin näistä tietojoukoista.
 
 ### <a name="push-dataset"></a>Push-tietojoukko
-**Tietojoukon siirtäminen** -toiminnon avulla tiedot siirretään Power BI -palveluun. Kun tietojoukko on luotu, Power Bi -palvelu luo automaattisesti uuden tietokannan palveluun tietojen tallentamiseksi. Koska pohjana oleva tietokanta, joka jatkaa tietojen tallentamista niiden saapuessa, tietoja voidaan käyttää raporttien luomiseen. Nämä raportit ja niiden visualisoinnit ovat samanlaisia kuin mitkä tahansa muutkin raporttivisualisoinnit, mikä tarkoittaa sitä, että voit käyttää kaikkia Power BI:n raporttienkasausominaisuuksia visualisointien luomiseen, kuten mukautettujen visualisointien, tietohälytysten ja koontinäyttöön kiinnitettyjen ruutujen luomiseen.
+**Tietojoukon siirtäminen** -toiminnon avulla tiedot siirretään Power BI -palveluun. Kun tietojoukko on luotu, Power Bi -palvelu luo automaattisesti uuden tietokannan palveluun tietojen tallentamiseksi. Koska pohjana oleva tietokanta, joka jatkaa tietojen tallentamista niiden saapuessa, tietoja voidaan käyttää raporttien luomiseen. Nämä raportit ja niiden visualisoinnit ovat samanlaisia kuin mitkä tahansa muutkin raporttivisualisoinnit, mikä tarkoittaa sitä, että voit käyttää kaikkia Power BI:n raporttien luontiominaisuuksia luodaksesi visualisointeja, myös Power BI -visualisointeja, tietoilmoituksia ja koontinäyttöön kiinnitettyjä ruutuja.
 
 Kun raportti on luotu tietojoukon siirron avulla, mikä tahansa sen visualisoinneista voidaan kiinnittää koontinäyttöön. Tässä koontinäytössä visualisoinnit päivittyvät reaaliaikaisesti aina, kun tiedot päivitetään. Koontinäyttö käynnistää ruudun päivityksen palvelussa joka kerran, kun uutta tietoa vastaanotetaan.
 
@@ -45,7 +45,7 @@ On otettava huomioon kaksi asiaa kiinnitettyjen ruutujen suhteen, jotka on saatu
 ### <a name="streaming-dataset"></a>Suoratoistettava tietojoukko
 Myös **suoratoistettavassa tietojoukossa** tiedot lähetetään Power BI -palveluun, mutta prosessissa on yksi tärkeä ero: Power BI tallentaa tiedot vain tilapäiseen välimuistiin, joka vanhenee nopeasti. Tilapäistä välimuistia käytetään vain sellaisten visualisointien näyttämiseen, joihin voidaan kohdistaa jokin tilapäinen aikakäsite, kuten viivakaavio, jolla on yhden tunnin aikaraja.
 
-**Suoratoistettavaa tietojoukkoa** käytettäessä pohjana *ei* ole mitään tietojoukkoa, joten *et voi* koota raporttivisualisointeja käyttämällä suoratoiston kautta virtaavia tietoja. Sen vuoksi et voi hyödyntää raporttitoimintoja, kuten suodatusta, mukautettuja visualisointeja tai muita raporttitoimintoja.
+**Suoratoistettavaa tietojoukkoa** käytettäessä pohjana *ei* ole mitään tietojoukkoa, joten *et voi* koota raporttivisualisointeja käyttämällä suoratoiston kautta virtaavia tietoja. Sen vuoksi et voi hyödyntää raporttitoimintoja, kuten suodatusta, Power BI -visualisointeja tai muita raporttitoimintoja.
 
 Ainoa tapa suoratoistettavan tietojoukon visualisoimiseen on lisätä ruutu ja käyttää suoratoistettavaa tietojoukkoa **mukautettuna suoratoistettavana tietolähteenä**. Mukautetut suoratoistettavat ruudut, jotka pohjautuvat **suoratoistettavaan tietojoukkoon**, ovat optimoituja reaaliaikaisten tietojen nopeaa toistoa varten. Tietojen Power BI -palveluun siirtämisen ja visualisoinnin päivittymisen välillä on vain hyvin pieni viive, koska tietoja ei tarvitse syöttää tietokantaan tai lukea tietokannasta.
 
@@ -54,7 +54,7 @@ Käytännössä suoratoistettavia tietojoukkoja ja niiden mukana suoratoistettav
 ### <a name="pubnub-streaming-dataset"></a>Suoratoistettava PubNub-tietojoukko
 Suoratoistettavaa **PubNub**-tietojoukkoa käytettäessä Power BI -verkkosovellus käyttää PubNub SDK:ta PubNub-tietovirran lukemiseen eikä Power BI -palvelu tallenna mitään tietoja.
 
-Samoin kuin **suoratoistettavan tietojoukon** kohdalla, **suoratoistettavassa PubNub-tietojoukossa** ei ole pohjana tietojoukkoa Power BI:ssa, joten et voi koota raporttivisualisointeja sisään virtaavista tiedoista etkä pysty hyödyntämään raporttitoimintoja, kuten suodatusta, mukautettuja visualisointeja jne. Tämän vuoksi **suoratoistettava PubNub-tietojoukko** voidaan visualisoida vain lisäämällä ruutu koontinäyttöön ja määrittämällä PubNub-tietovirta lähteeksi.
+Samoin kuin **suoratoistettavan tietojoukon** kohdalla, **suoratoistettavassa PubNub-tietojoukossa** ei ole pohjana tietojoukkoa Power BI:ssa, joten et voi koota raporttivisualisointeja sisään virtaavista tiedoista etkä pysty hyödyntämään raporttitoimintoja, kuten suodatusta tai Power BI -visualisointeja. Tämän vuoksi **suoratoistettava PubNub-tietojoukko** voidaan visualisoida vain lisäämällä ruutu koontinäyttöön ja määrittämällä PubNub-tietovirta lähteeksi.
 
 **Suoratoistettavaan PubNub-tietojoukkoon** pohjautuvat ruudut ovat optimoituja reaaliaikaisten tietojen nopeaa toistoa varten. Koska Power BI on suorassa yhteydessä PubNub-tietovirtaan, tietojen Power BI -palveluun siirtämisen ja visualisoinnin päivittymisen välillä on vain hyvin pieni viive.
 
@@ -64,9 +64,7 @@ Seuraavassa taulukossa (eli matriisissa) kuvataan reaaliaikaisen suoratoiston ko
 ![](media/service-real-time-streaming/real-time-streaming_11.png)
 
 > [!NOTE]
-> Katso [tästä artikkelista](https://docs.microsoft.com/power-bi/developer/api-rest-api-limitations) lisätietoja **Push**-siirtotoiminnon rajoituksista tietojen siirtomäärien osalta.
-> 
-> 
+> Katso [tästä artikkelista](developer/automation/api-rest-api-limitations.md) lisätietoja **Push**-siirtotoiminnon rajoituksista tietojen siirtomäärien osalta.
 
 ## <a name="pushing-data-to-datasets"></a>Tietojen siirtäminen tietojoukkoihin
 Edellisessä osassa kuvailtiin reaaliaikaiseen suoratoistoon käytettävien reaaliaikaisten tietojoukkojen kolmea päätyyppiä sekä niiden välisiä eroja. Tässä osassa kuvataan, miten tietoja voidaan luoda ja siirtää kyseisiin tietojoukkoihin.
@@ -110,7 +108,7 @@ Kun **Historiatietojen analyysi** on pois käytöstä (se on oletusarvoisesti po
 ### <a name="using-azure-stream-analytics-to-push-data"></a>Azure Stream Analytics -toiminnon käyttäminen tietojen siirtämiseen
 Voit lisätä Power BI:n lähtökohdaksi **Azure Stream Analyticsissa** (ASA) ja visualisoida sitten nämä tietovirrat reaaliaikaisesti Power BI -palvelussa. Tässä osassa kuvaillaan tämän prosessin tekniset yksityiskohdat.
 
-Azure Stream Analytics käyttää Power BI REST -ohjelmointirajapintoja lähtötietovirran luomiseksi Power BI:hin, ja sen *defaultModeksi* asetettu *pushStreaming* (katso lisätiedot tämän artikkelin aiemmista osista *defaultModen* osalta), jonka ansiosta saadaan aikaan tietojoukko, joka voi hyödyntää sekä **push**- että **streaming**-ominaisuuksia. Tietojoukon luomisen aikana Azure Stream Analytics määrittää myös **retentionPolicy*-merkin tilaan *basicFIFO*. Tällä asetuksella siirrettyjä tietojoukkoja tukeva tietokanta tallentaa 200 000 riviä, ja kun tämä raja saavutetaan, rivejä pudotetaan ”ensimmäinen sisään, ensimmäinen ulos” (FIFO) -periaatteen mukaan.
+Azure Stream Analytics käyttää Power BI REST -ohjelmointirajapintoja lähtötietovirran luomiseksi Power BI:hin, ja sen *defaultModeksi* asetettu *pushStreaming* (katso lisätiedot tämän artikkelin aiemmista osista *defaultModen* osalta), jonka ansiosta saadaan aikaan tietojoukko, joka voi hyödyntää sekä **push**- että **streaming**-ominaisuuksia. Tietojoukon luomisen aikana Azure Stream Analytics määrittää myös **retentionPolicy**-merkin tilaan *basicFIFO*. Tällä asetuksella siirrettyjä tietojoukkoja tukeva tietokanta tallentaa 200 000 riviä, ja kun tämä raja saavutetaan, rivejä pudotetaan ”ensimmäinen sisään, ensimmäinen ulos” (FIFO) -periaatteen mukaan.
 
 > [!CAUTION]
 > Mikäli Azure Stream Analytics -hakusi saa aikaan erittäin nopean tulosteen Power BI:hin (esimerkiksi kerran tai kaksi sekunnissa), Azure Stream Analytics aloittaa näiden tulosteiden yhdistämisen yhteen pyyntöerään. Tämä saattaa aiheuttaa sen, että pyynnön koko ylittää suoratoistettavien ruutujen rajan. Tässä tapauksessa suoratoistettavien ruutujen hahmontaminen epäonnistuu, kuten aiemmissa osissa on todettu. Näissä tapauksissa paras käytäntö on hidastaa tietojen tulostenopeutta Power BI:hin, esimerkiksi asettamalla maksimiarvo joka sekunnin sijaan yli 10 sekuntiin.

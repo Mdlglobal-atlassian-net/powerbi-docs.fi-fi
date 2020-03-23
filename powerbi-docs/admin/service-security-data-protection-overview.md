@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/22/2020
+ms.date: 03/12/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: adfa99a3e973108d65a06361ed967bef2ce37eb3
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: fa373fca782a582ec2ac2ef60cb36322efaff327
+ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76537205"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79205270"
 ---
 # <a name="data-protection-in-power-bi-preview"></a>Tietojen suojaus Power BI:ssä (esiversio)
 
@@ -23,7 +23,7 @@ Nykyajan yrityksillä on tiukat määräykset ja vaatimukset arkaluontoisten tie
 
 Power BI:n tietojen suojauksessa voit tehdä seuraavaa:
 
-* Microsoftin luottamuksellisuustunnisteiden avulla voit luokitella ja merkitä sisältöä Power BI -palvelussa (raporttinäkymät, raportit, tietojoukot ja tietovuot) käyttämällä samaa taksonomiaa, jota käytetään tiedostojen luokittelemiseen ja suojaamiseen Office 365:ssä. 
+* Microsoft-luottamuksellisuustunnisteiden avulla voit luokitella ja merkitä sisältöä Power BI -palvelussa (raporttinäkymät, raportit, tietojoukot ja tietovuot) käyttämällä samaa taksonomiaa, jota käytetään tiedostojen luokittelemiseen ja suojaamiseen Office 365:ssä. 
 
 * Pakota suojausasetuksia, kuten salausta tai vesileimoja, kun viet tietoja Power BI -palvelusta tiedostoihin, käyttämällä sisällön luottamuksellisuustunnistetta ja suojausta (Excel, PowerPoint ja PDF). 
 
@@ -105,13 +105,10 @@ Seuraavassa on lueteltu joitakin luottamuksellisuustunnisteiden rajoituksia Powe
 * [HYOK-suojausta](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) ei tueta Power BI:ssä käytetyille luottamuksellisuustunnisteille.
 * Tunnisteiden tarkastelu ja käyttö Office-sovelluksissa vaatii tiettyjä [käyttöoikeuksia](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#subscription-and-licensing-requirements-for-sensitivity-labels).
 * Luottamuksellisuustunnisteita tuetaan vain yleisten (julkisten) pilvipalveluiden vuokraajille. Luottamuksellisuustunnisteita ei tueta muiden pilvipalveluiden vuokraajille.
-* Luottamuksellisuustunnisteita ei tueta [ulkoisille käyttäjille (Azure Active Directory B2B -vieraskäyttäjät)](../service-admin-azure-ad-b2b.md). Tämä tarkoittaa sitä, että ulkoiset käyttäjät eivät voi tarkastella tunnisteita eivätkä viedä tietoja Excel-, PDF- ja PPTX-tiedostoihin. [Poista tunniste](../designer/service-security-apply-data-sensitivity-labels.md#removing-sensitivity-labels), jotta ulkoiset käyttäjät voivat viedä tietoja kyseisiin tiedostotyyppeihin.
-
-
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Tässä artikkelissa annetaan yleiskatsaus tietojen suojauksesta Power BI:ssä. Seuraavissa artikkeleissa annetaan lisätietoja tietojen suojauksesta Power BI:ssä. 
+Tässä artikkelissa annetaan yleiskatsaus tietojen suojaamisesta Power BI:ssä. Seuraavissa artikkeleissa annetaan lisätietoja tietojen suojaamisesta Power BI:ssä. 
 
 * [Luottamuksellisuustunnisteiden käyttöönotto Power BI:ssä](service-security-enable-data-sensitivity-labels.md)
 * [Luottamuksellisuustunnisteiden käyttö Power BI:ssä](../designer/service-security-apply-data-sensitivity-labels.md)

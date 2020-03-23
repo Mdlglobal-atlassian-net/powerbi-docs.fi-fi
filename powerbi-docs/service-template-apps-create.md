@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 649f4d002c9adbfa882c4ee4320f040f490fd116
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 6b7b472b0c16c47ae2497c5dc8c74cc1c4d778d4
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041719"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436015"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Mallisovelluksen luominen Power BI:ssä
 
@@ -30,7 +30,7 @@ Mallisovelluksen kehittämistä varten tarvitaan:
 - [Power BI Pro -käyttöoikeus](service-self-service-signup-for-power-bi.md)
 - [Power BI Desktop -asennus](desktop-get-the-desktop.md) (valinnainen)
 - [Power BI-peruskäsitteiden](service-basic-concepts.md) tuntemus
-- Käyttöoikeudet mallisopimuksen julkiseen jakamiseen. Lisätietoja on Power BI:n [hallintaportaalin kohdassa Mallisovelluksen asetukset](service-admin-portal.md#template-apps-settings).
+- Käyttöoikeudet mallisovelluksen jakamiseen julkisesti (lisätietoja on Power BI [-hallintaportaalissa kohdassa Mallisovelluksen asetukset](service-admin-portal.md#template-apps-settings)
 
 ## <a name="create-the-template-workspace"></a>Mallin työtilan luominen
 
@@ -87,7 +87,7 @@ Nyt kun työtilassasi on sisältöä, voit pakata sen mallisovellukseksi. Ensimm
 
     Aktivoi **Uusi siirtymisen muodostin**, jossa voit määrittää sovelluksen siirtymisruudun (lisätietoja on tämän artikkelin kohdassa [Suunnittele siirtymistoiminnot](service-create-distribute-apps.md#design-the-navigation-experience)).
 
-   ![Määritä sovelluksen aloitussivu](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+   ![Määritä sovelluksen aloitussivu](media/service-template-apps-create/power-bi-install-app-content.png)
     
     **Sovelluksen aloitussivu:** Jos päätät jättäytyä pois siirtymisen muodostimesta, voit valita sovelluksen aloitussivun. Määritä sovelluksesi aloitussivuksi jokin raportti tai koontinäyttö. Käytä aloitussivua, joka antaa oikean vaikutelman.
 
@@ -109,7 +109,7 @@ Nyt kun työtilassasi on sisältöä, voit pakata sen mallisovellukseksi. Ensimm
     - **Pakollinen**: tämän avulla voit edellyttää asennusohjelmaa antamaan käyttäjäkohtaisen parametrin.
     - **Lukitse**: Lukitus estää parametrin päivittämisen.
 
-    **Käyttöoikeudet** Päätä testivaiheessa, ketkä muut organisaatiosi käyttäjät voivat asentaa sovelluksesi ja testata sitä. Ei huolta. Voit milloin tahansa palata ja muuttaa näitä asetuksia (asetus ei vaikuta jaetun mallinsovelluksen käyttöoikeuksiin).
+    **Käyttöoikeudet** Päätä testivaiheessa, ketkä muut organisaatiosi käyttäjät voivat asentaa sovelluksesi ja testata sitä. Voit aina palata takaisin ja muuttaa näitä asetuksia myöhemmin. Asetus ei vaikuta hajautetun mallisovelluksen käyttöön.
 
 2. Valitse **Luo sovellus**.
 

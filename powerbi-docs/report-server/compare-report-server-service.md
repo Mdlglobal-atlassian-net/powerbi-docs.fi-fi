@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
 ms.date: 03/04/2020
-ms.openlocfilehash: 4c48b9c2695c7feab5897527c9ff2fbf2a2d0455
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 7762ace1da913713567b79a9650b3f07aa71146d
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78920951"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381050"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Power BI -raporttipalvelimen ja Power BI -palvelun vertailu
 
@@ -52,7 +52,7 @@ Power BI -raporttipalvelimessa ja Power BI -palvelussa on monia samankaltaisuuks
 | Edistynyt Office 365 -yhteistyö | Ei | Kyllä | [Yhteistyö työtilassa](../service-collaborate-power-bi-workspace.md) Office 365:n kautta |
 | R-visualisoinnit | Ei | Kyllä | [Luo R-visualisoinnit](../desktop-r-visuals.md) Power BI Desktopissa ja julkaise ne Power BI -palvelussa. Et voi tallentaa Power BI -raportteja R-visualisointien kanssa Power BI -raporttipalvelimeen.  |
 | Esikatselutoiminnot | Ei | Kyllä | [Power BI:n esikatseluominaisuuksien käyttäminen](../consumer/end-user-preview-features.md) |
-| Mukautetut visualisoinnit | Kyllä | Kyllä | [Mukautetut visualisoinnit Power BI:ssä](../developer/power-bi-custom-visuals.md) |
+| Power BI:n visualisoinnit | Kyllä | Kyllä | [Power BI:n visualisoinnit](../developer/visuals/power-bi-custom-visuals.md) |
 | Yhdistelmämallit | Ei | Kyllä |
 | Power BI Desktop | Raporttipalvelimelle optimoitu versio, ladattavissa raporttipalvelimen kanssa | Power BI -palvelulle optimoitu versio, saatavilla Windows-kaupasta | [Power BI Desktop raporttipalvelimelle](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop Power BI -palvelulle](https://aka.ms/pbidesktopstore) |
 

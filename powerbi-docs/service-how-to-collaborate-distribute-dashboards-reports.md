@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 03/12/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7633f0771a87c01d53261d13135d831e95e80136
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 86992d2e1426616f8d902a9f49d35407fde60ef2
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881331"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79376749"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Töiden jakamistavat Power BI:ssä
 
@@ -23,10 +23,12 @@ Olet luonut raporttinäkymiä ja raportteja. Olet ehkä myös muokannut niitä y
 * Yhteistyö työtovereiden kanssa kuvaavien raporttien ja raporttinäkymien luomiseksi *työtiloissa*.
 * Kyseisten raporttinäkymien ja raporttien niputtaminen *sovelluksiin* ja niiden julkaiseminen suurelle ryhmälle tai koko organisaatiolle.
 * Sellaisten *jaettujen tietojoukkojen* luominen, joita työtoverit voivat käyttää omien raporttiensa pohjana omissa työtiloissaan.
-* Ulkoisille Power BI -käyttäjille jaettavan *mallisovelluksen* luominen Microsoft AppSourcella.
 * Raporttinäkymien tai raporttien jakaminen muutamalle henkilölle palvelun tai Power BI -mobiilisovellusten kautta.
+* Merkintöjen lisääminen ja jakaminen Power BI -mobiilisovelluksissa.
+* Raportin upottaminen Microsoft Teamsiin.
 * Raporttien tulostaminen.
 * Raporttien *upottaminen* suojattuihin portaaleihin tai julkisiin verkkosivustoihin.
+* Ulkoisille Power BI -käyttäjille jaettavan *mallisovelluksen* luominen Microsoft AppSourcella.
 
 Riippumatta siitä, minkä vaihtoehdon valitset, sisällön jakamiseen tarvitaan [Power BI Pro -käyttöoikeus](service-features-license-type.md), tai sisällön on oltava [Premium-kapasiteetissa](service-premium-what-is.md). Sisältöäsi tarkastelevia työtovereita koskevat käyttöoikeusvaatimukset vaihtelevat valitsemasi vaihtoehdon mukaan. Seuraavissa osioissa annetaan lisätietoja. 
 
@@ -97,6 +99,10 @@ Jaat tilannevedoksen ruudusta, raportista tai visualisoinnista, ja vastaanottaja
 Lue lisää [ruutujen, raporttien ja visualisointien jakamisesta ja merkintöjen lisäämisestä niihin](consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) iOS- ja Android-mobiilisovelluksissa.
 
 Voit myös [jakaa tilannevedoksen ruudusta](consumer/mobile/mobile-windows-10-phone-app-get-started.md) Windows 10 -laitteiden Power BI -sovelluksesta.
+
+## <a name="embed-a-report-in-microsoft-teams"></a>Raportin upottaminen Microsoft Teamsiin
+
+Kasvata tietopohjaista yhteistyötä organisaatiossasi upottamalla Power BI -raportteja ja Power BI:n sivutettuja raportteja Microsoft Teamsissa. Voit lisätä erillisiä Power BI -välilehtiä kullekin yksittäiselle raportille ja antaa kullekin välilehdelle raportin nimen tai minkä tahansa muun nimen. Työtoverisi voivat tarkastella raporttejasi Power BI -välilehdissä Teamsissa. He voivat myös avata keskusteluikkunan ja kommentoida raporttia suoraan Teamsissa. Lue lisää [raportin upottamisesta Microsoft Teamsissa](service-embed-report-microsoft-teams.md).
 
 ## <a name="print-or-save-as-pdf-or-other-static-file"></a>Tulostaminen tai tallentaminen PDF-tiedostona tai muuna staattisena tiedostona
 

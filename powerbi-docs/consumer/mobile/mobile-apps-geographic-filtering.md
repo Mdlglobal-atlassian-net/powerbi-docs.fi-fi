@@ -7,12 +7,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: d4e8ab0effef52071f592902a6c2fdb2649ff52d
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 4a9dcf14d1745087e2596507d4c7dbc7a03b5ab3
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114768"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435325"
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Raportin suodattaminen maantieteellisen sijainnin mukaan Power BI ‑mobiilisovelluksessa
 Koskee seuraavia:
@@ -25,8 +25,9 @@ Kun tarkastelet Power BI ‑raporttia mobiililaitteelta, näetkö oikeassa yläk
 
 > [!NOTE]
 > Voit suodattaa sijainnin mukaan ainoastaan, jos raportin maantieteelliset nimet ovat englanniksi; esimerkiksi ”New York City” tai ”Germany”. Windows 10 ‑tabletit ja ‑tietokoneet eivät tue maantieteellistä suodatusta, mutta Windows 10 ‑puhelimet tukevat.
-> 
-> 
+
+>[!NOTE]
+>Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** päättyy 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="filter-your-report-by-your-geographic-location"></a>Raportin suodattaminen maantieteellisen sijaintisi mukaan
 1. Avaa mobiililaitteellasi raportti Power BI ‑mobiilisovelluksessa.

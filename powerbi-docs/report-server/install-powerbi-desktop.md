@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/13/2020
-ms.openlocfilehash: ee789274f6581423ed7adebc5b662a732dbeaa7a
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 74e2c60bfe0d6d494fc1175fb001b4b4b7eb24fa
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77426652"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381119"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Asenna Power BI -raporttipalvelimelle optimoitu Power BI Desktop
 
@@ -70,7 +70,7 @@ Jos Power BI Desktop on optimoitu Power BI -raporttipalvelimelle, voit valita ki
 
 ### <a name="report-visuals-in-a-browser"></a>Raportin visualisoinnit selaimessa
 
-Power BI -raporttipalvelimen raportit tukevat lähes kaikkia visualisointeja, mukautetut visualisoinnit mukaan lukien. Power BI -raporttipalvelimen raportit eivät tue seuraavia:
+Power BI -raporttipalvelimen raportit tukevat lähes kaikkia visualisointeja, Power BI -visualisoinnit mukaan lukien. Power BI -raporttipalvelimen raportit eivät tue seuraavia:
 
 * R-visualisoinnit
 * ArcGIS-kartat
@@ -89,7 +89,7 @@ Power BI -raporttipalvelimen raportit eivät tue näitä ominaisuuksia Power BI 
 
 * R-visualisoinnit
 * ArcGIS-kartat
-* Mukautetut visualisoinnit
+* Power BI:n visualisoinnit
 * Navigointipolut
 * Maantieteellinen suodatus tai viivakoodit
 

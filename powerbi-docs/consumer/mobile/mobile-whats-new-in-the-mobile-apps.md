@@ -8,19 +8,22 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/09/2020
 ms.author: painbar
-ms.openlocfilehash: 97d2a3acba87309b74de1776f1325bb4c4a78910
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 6885f635f96da3bbea039f445e83cd7cada144ce
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79041549"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435969"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 
 * [Power BI -tiimin mobiilisovelluksia käsittelevä blogi](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Power BI Desktopin uudet ominaisuudet](../../desktop-latest-update.md)  
-* [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)  
+* [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)
+
+>[!NOTE]
+>Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** lopetetaan 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="february-2020"></a>Helmikuu 2020
 
@@ -396,7 +399,7 @@ Nyt kun joku jakaa raportin kanssasi, se näkyy **Jaettu kanssani** -sivulla koo
 
 #### <a name="improved-hyperlink-support"></a>Parannettu hyperlinkkien tuki
 
-Voit nyt mukautettujen visualisointien linkkejä napauttamalla avata ne mobiiliselaimessasi.
+Voit nyt Power BI -visualisointien linkkejä napauttamalla avata ne mobiiliselaimessasi.
 
 #### <a name="intune-integration-android"></a>Intune-integrointi (Android)
 
@@ -470,7 +473,7 @@ Lue [mobiilisovellusten ominaisuusyhteenveto huhtikuulta 2017](https://powerbi.m
 #### <a name="all-devices"></a>Kaikki laitteet
 **Puhelinraporttien taustaväri** Kun määrität raportin taustavärin Power BI Desktopissa, puhelinraportissa käytetään samaa taustaväriä. Lue lisätietoja [raporttisivujen optimoinnista puhelimille](../../desktop-create-phone-report.md).
 
-**Kehitä mobiililaitteille sopivia mukautettuja visualisointeja** Lue tästä [kehittäjän oppaasta](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) vinkkejä, joiden avulla voit luoda mukautettuja visualisointeja, jotka näyttävät hyvältä ja toimivat hyvin mobiililaitteissa.
+**Kehitä mobiililaitteille sopivia Power BI -visualisointeja** Lue tästä [kehittäjän oppaasta](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) vinkkejä, joiden avulla voit luoda Power BI -visualisointeja, jotka näyttävät hyvältä ja toimivat hyvin mobiililaitteissa.
 
 #### <a name="ios-devices"></a>iOS-laitteet
 **Puhu tiedoillesi: esitä kysymyksiä puhumalla** Voit nyt [esittää kysymyksiä tiedoistasi Q&A:lla](mobile-apps-ios-qna.md) puhumalla kirjoittamisen sijaan. 

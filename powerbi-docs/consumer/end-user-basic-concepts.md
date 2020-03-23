@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 2c8a8356fe20136d0325efe51934a7db3d4b113e
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: e303d85083624bb67e73729024875d0f6f44fc42
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496890"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79377140"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>Peruskäsitteet Power BI -palvelun kuluttajille
 
@@ -118,7 +118,7 @@ Power BI:ssa on esimerkiksi seuraavia visualisointeja: vesiputous, nauhakaavio, 
 
 Tutustu [Power BI:hin sisältyvien visualisointien täydelliseen luetteloon](../power-bi-visualization-types-for-reports-and-q-and-a.md).
 
-Myös yhteisösi voi luoda visualisointeja, joita kutsutaan *mukautetuiksi visualisoinneiksi*. Jos et tunnista raportissa olevaa visualisointia, se on todennäköisesti mukautettu visualisointi. Jos et osaa tulkita mukautettua visualisointia, etsi raportin tai koontinäytön *suunnittelijan* yhteystiedot ja ota häneen yhteyttä.
+Myös yhteisösi voi luoda visualisointeja, joita kutsutaan *Power BI -visualisoinneiksi*. Jos et tunnista raportissa olevaa visualisointia, se on todennäköisesti mukautettu visualisointi. Jos et osaa tulkita mukautettua visualisointia, etsi raportin tai koontinäytön *suunnittelijan* yhteystiedot ja ota häneen yhteyttä.
 
 Yksi raportin visualisointi...
 

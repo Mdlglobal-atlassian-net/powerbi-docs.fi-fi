@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 07ddf82b120e0e4b77b7545863b536282f849de3
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: c757534ba0d93fb5eb04f10ee7b8792c8c9e4af3
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114434"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435785"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Koontinäytön tai raportin jakaminen Power BI -mobiilisovelluksista
 Koskee seuraavia:
@@ -21,6 +21,9 @@ Koskee seuraavia:
 | ![iPhone](./media/mobile-share-dashboard-from-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-share-dashboard-from-the-mobile-apps/ipad-logo-50-px.png) | ![Android-puhelin](./media/mobile-share-dashboard-from-the-mobile-apps/android-phone-logo-50-px.png) | ![Android-tabletti](./media/mobile-share-dashboard-from-the-mobile-apps/android-tablet-logo-50-px.png) | ![Windows 10](./media/mobile-share-dashboard-from-the-mobile-apps/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhonet |iPadit |Android-puhelimet |Android-tabletit |Windows 10 -laitteet |
+
+>[!NOTE]
+>Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** lopetetaan 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 [Power BI Pro -käyttöoikeuksilla](../../service-features-license-type.md) voit kutsua muita tarkastelemaan koontinäyttöjä ja raportteja jakamalla linkkejä Power BI -mobiilisovellusten kautta. Voit jakaa kenen tahansa kanssa, organisaation sisällä tai sen ulkopuolelle, yrityssähköpostitilillä tai ilman sitä. Heilläkin tosin täytyy olla Power BI Pro -käyttöoikeudet tai sisällön on oltava [Premium-kapasiteetissa](../../service-premium-what-is.md).
 

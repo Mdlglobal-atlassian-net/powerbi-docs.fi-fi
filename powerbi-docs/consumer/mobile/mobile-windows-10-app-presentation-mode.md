@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/08/2020
 ms.author: painbar
-ms.openlocfilehash: f900a329ccbfa2a6e80883baec9694ddeaf3833a
-ms.sourcegitcommit: 17aad73762579d6822383b27b96b1b63f87f2d6f
+ms.openlocfilehash: 3be0ab1eb45716d0b9b7736d3e5bf5b8bfc25891
+ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77259965"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79435992"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Raporttien ja koontinäyttöjen esittäminen esitystilassa Surface Hubilla ja Windows 10 -laitteilla
 Voit esittää raportteja ja koontinäyttöjä Surface Hubilla ja Windows 10 -laitteilla koko näytön esitystilassa. 
@@ -28,8 +28,9 @@ Voit myös [esittää raporttinäkymiä ja raportteja Power BI -palvelusta koko 
 
 > [!NOTE]
 > Esitystila eroaa [ruutujen tarkastelutilassa](mobile-tiles-in-the-mobile-apps.md).
-> 
-> 
+
+>[!NOTE]
+>Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** lakkaa 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="use-presentation-mode"></a>Käytä esitystilaa
 Napauta Power BI -mobiilisovelluksessa **Koko näyttö -kuvaketta**, kun haluat vaihtaa koko näytön tilaan.

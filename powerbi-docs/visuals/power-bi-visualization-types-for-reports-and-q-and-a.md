@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8737a0e9b2dd8ba17d28962ed51e24ec0c5cefc4
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 12c2d839c14a4a982505f56b7d605bacc5edc728
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76040489"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381418"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualisointityypit Power BI:ssä
 ## <a name="power-bi-visualizations"></a>Visualisoinnit Power BI:ssä
 Lisäämme uusia visualisointeja, pysy kuulolla!
 
-Tutustu [Microsoft AppSourceen](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) , josta löydät kasvavan luettelon [mukautetuista visualisoinneista](../developer/power-bi-custom-visuals.md), joita voit ladata ja käyttää omissa raporttinäkymissä ja raporteissa. Oletko luova henkilö? [Lue, miten voit luoda ja lisätä omia visualisointeja tähän yhteisösivustoon](../developer/office-store.md).  
+Tutustu [Microsoft AppSourceen](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), josta löydät kasvavan luettelon [Power BI -visualisoinneista](../developer/visuals/power-bi-custom-visuals.md), joita voit ladata ja käyttää omissa raporttinäkymissä ja raporteissa. Oletko luova henkilö? [Lue, miten voit luoda ja lisätä omia visualisointeja tähän yhteisösivustoon](../developer/visuals/office-store.md).  
 
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Luettelo visualisoinneista, jotka ovat käytettävissä Power BI:ssa
 Kaikki nämä visualisoinnit voidaan lisätä Power BI-raportteihin, jotka on määritetty Q&A:ssa ja kiinnitetty raporttinäkymään.

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/30/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 019a3af81cd3661307fd9de6d0577ac58a11ae6a
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 58f9a56d41bd35987f7c258fafdbff26aedf5df1
+ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78919781"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79488817"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Raportin upottaminen turvalliseen portaaliin tai sivustoon
 
@@ -104,7 +104,7 @@ newUrl += "&$filter=Industries/Industry eq '" + filterValue + "'";
 
 }
 
-//Assumes there’s an iFrame on the page with id=”iFrame”
+//Assumes there's an iFrame on the page with id="iFrame"
 
 var report = document.getElementById("iFrame")
 
@@ -133,9 +133,9 @@ Voit luoda mukautetun ja helposti koodattavan käyttökokemuksen lisäämällä 
 
 * Perinteistä SharePoint-palvelinta ei tueta, koska se edellyttää Internet Explorer 11:tä aiempaa versiota tai yhteensopivuusnäkymätilan käyttöönottoa.
 
-* Voit luoda kertakirjautumisella toimivan käyttökokemuksen [Upota SharePoint Onlineen -vaihtoehdon](service-embed-report-spo.md) avulla tai luomalla mukautetun integraation [käyttäjä omistaa tiedot](developer/embed-sample-for-your-organization.md) -upotusmenetelmällä. 
+* Voit luoda kertakirjautumisella toimivan käyttökokemuksen [Upota SharePoint Onlineen -vaihtoehdon](service-embed-report-spo.md) avulla tai luomalla mukautetun integraation [käyttäjä omistaa tiedot](developer/embedded/embed-sample-for-your-organization.md) -upotusmenetelmällä. 
 
-* **Upota**-vaihtoehdon tarjoama automaattisen todentamisen mahdollisuus ei toimi Power BI:n JavaScript-ohjelmointirajapinnan kanssa. Jos käytät Power BI:n JavaScript-ohjelmointirajapintaa, käytä upotuksessa [käyttäjä omistaa tiedot](developer/embed-sample-for-your-organization.md) -menetelmää. 
+* **Upota**-vaihtoehdon tarjoama automaattisen todentamisen mahdollisuus ei toimi Power BI:n JavaScript-ohjelmointirajapinnan kanssa. Jos käytät Power BI:n JavaScript-ohjelmointirajapintaa, käytä upotuksessa [käyttäjä omistaa tiedot](developer/embedded/embed-sample-for-your-organization.md) -menetelmää. 
 
 * Todennustunnuksen elinkaarta hallitaan AAD-asetusten mukaan. Kun todennustunnus vanhenee, käyttäjän on päivitettävä selain, jotta saat päivitetyn todennustunnuksen. Oletuselinikä on yksi tunti, mutta se voi olla lyhyempi tai pidempi organisaatiossasi.
 

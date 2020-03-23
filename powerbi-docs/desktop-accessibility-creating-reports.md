@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2b43727799316ade5ccdb868077360da0b315c56
-ms.sourcegitcommit: 052df769e6ace7b9848493cde9f618d6a2ae7df9
+ms.openlocfilehash: ae13bc69d7049dc9cf5c9d71ce0961ec566252bf
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75925679"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79379095"
 ---
 # <a name="design-power-bi-reports-for-accessibility"></a>Helppokäyttöisten Power BI -raporttien suunnittelu
 Voit suunnitella ja luoda vaikuttavia raportteja, joissa huomioidaan myös helppokäyttötoiminnot. Kun luot raporttia, riippumatta kohdeyleisöstäsi, raportti kannattaa luoda siten, että mahdollisimman moni pystyy käyttämään sitä ilman, että sitä tarvitsee mukauttaa erikoismuotoiluilla.
@@ -253,8 +253,8 @@ Helppokäyttötoimintojen ja -työkalujen Power BI tarjoaa seuraavan tarkistusli
 * Varmista, että kaikki koristekuvat on merkitty piilotetuiksi sarkainjärjestyksessä, jotta näytönlukuohjelma jättää ne huomioimatta.
 * Älä käytä liikaa koristekuvia, jotta niistä ei tule häiritseviä.
 
-### <a name="custom-visuals"></a>Mukautetut visualisoinnit
-* Tarkista mukautettujen visualisointien helppokäyttöinen **Näytä tiedot** -taulukko. Jos näytettävät tiedot eivät riitä, kokeile toista visualisointia.
+### <a name="power-bi-visuals"></a>Power BI:n visualisoinnit
+* Tarkista Power BI -visualisointien helppokäyttöinen **Näytä tiedot** -taulukko. Jos näytettävät tiedot eivät riitä, kokeile toista visualisointia.
 * Jos käytät mukautettua *PlayAxis*-visualisointia, varmista, että se ei toistu automaattisesti. Ilmaise selkeästi, että käyttäjän on painettava Toista/keskeytä-painiketta käynnistääkseen/pysäyttääkseen arvojen muuttumisen.
 
 ### <a name="across-visuals-on-the-page"></a>Kaikki yhden sivun visualisoinnit

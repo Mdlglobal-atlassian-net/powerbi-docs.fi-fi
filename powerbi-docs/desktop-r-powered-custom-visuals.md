@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9cc5c40328955f54cb0f37567d7ff91d37a302ce
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 020967948e3f0551de50e4485be0dde450a4f18b
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128237"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79378681"
 ---
 # <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>R:ää hyödyntävien Power BI -visualisointien käyttö Power BI:ssä
 
 **Power BI Desktopissa** ja **Power BI -palvelussa** voit käyttää R:ää hyödyntäviä Power BI -visualisointeja ilman etukäteistietoa R:stä ja ilman R-komentosarjoja. Tämä mahdollistaa R-visualisointien ja R-komentosarjojen analyyttisen ja visuaalisen tehon ottamisen käyttöön ilman, että sinun pitää opetella R:n käyttöä tai ohjelmoida itse.
 
-Jos haluat käyttää R:ää hyödyntäviä Power BI -visualisointeja, valitse ja lataa ensin mukautettu R-visualisointi, jota haluat käyttää, Power BI:n **Power BI -visualisointien** [**AppSource**](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1)-valikoimasta.
+Jos haluat käyttää R:ää hyödyntäviä Power BI -visualisointeja, valitse ja lataa ensin mukautettu R-visualisointi, jota haluat käyttää, Power BI:n **Power BI -visualisointien**[**AppSource**](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1)-valikoimasta.
 
 ![R-visualisointi 1a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_1a.png)
 
@@ -38,7 +38,7 @@ Alla on ohjeet visualisointien selaamiseen ja valitsemiseen verkossa **AppSource
 
    ![R-visualisointi 2a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_2a.png)
 
-2. Valitse **Power BI -visualisoinnit** [Power BI:n visualisoinnit](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) -kirjastosivun vasemman ruudun apuohjelmaluettelosta.
+2. Valitse **Power BI -visualisoinnit**[Power BI:n visualisoinnit](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) -kirjastosivun vasemman ruudun apuohjelmaluettelosta.
 
    ![R-visualisointi 2b](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_2b.png)
 
@@ -129,7 +129,7 @@ Power BI -tiimi työskentelee aktiivisesti ratkaistakseen nämä ongelmat ennen 
 
    b.  Suorita R-konsolista seuraavat kohdat:
 
-       source(“C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R”)
+       source("C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R")
 
    Tyypilliset oletusasennussijainnit ovat seuraavat:
 
@@ -149,7 +149,7 @@ Power BI -tiimi työskentelee aktiivisesti ratkaistakseen nämä ongelmat ennen 
 
 Tutustu seuraaviin lisätietoihin, jotka koskevat R:ää Power BI:ssä.
 
-* [Power BI:n Power BI -visualisointien valikoima](https://app.powerbi.com/visuals/)
+* [Power BI -visualisointien valikoima](https://app.powerbi.com/visuals/)
 * [R-komentosarjojen suorittaminen Power BI Desktopissa](desktop-r-scripts.md)
 * [R-visualisointien luominen Power BI Desktopissa](desktop-r-visuals.md)
 * [Ulkoisen R IDE:n käyttö Power BI:n kanssa](desktop-r-ide.md)
