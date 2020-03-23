@@ -10,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 04ee1386547ed888531ea139227969d49629863d
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 79f18faf56fba8afa85afd808f6faa1bd16811d8
+ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74699540"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381142"
 ---
 # <a name="troubleshooting-tile-errors"></a>Ruutuvirheiden vianmääritys
 Seuraavassa on yleisiä virheitä, joita voit kohdata ruutujen kohdalla sekä niiden selitykset.
@@ -31,13 +31,14 @@ tai **Tietomallia ei voitu noutaa. Ota yhteyttä koontinäytön omistajaan ja va
 
 Ei voineet käyttää tietoja, koska tietolähde ei ollut käytettävissä. Tämä ongelma voi ilmetä, jos tietolähde on poistettu, sen nimi on vaihdettu, se on siirretty toiseen paikkaan, se on offline-tilassa tai sen käyttöoikeudet ovat muuttuneet. Tarkista, että lähde on edelleen osoittamassamme sijainnissa ja sinulla on edelleen oikeudet käyttää sitä. Jos tämä ei ole ongelman ratkaisu, lähde voi olla hidas. Yritä myöhemmin uudelleen aikana, jolloin lähteen kuormitus on pienempi. Jos kyseessä on paikallinen lähde, tietolähteen omistaja voi ehkä antaa enemmän tietoja.
 
-**Sinulla ei ole oikeuksia tarkastella tätä tiedostoa tai avata työkirjaa.**
+**Sinulla ei ole oikeuksia tarkastella tätä ruutua tai avata työkirjaa.**
 
 Ota yhteyttä koontinäytön omistajaan ja varmista, että tietolähteet ja malli ovat olemassa ja että niitä voi käyttää tililläsi.
 
-**Järjestelmänvalvojasi on poistanut mukautetut visualisoinnit käytöstä.**
+**Järjestelmänvalvojasi on poistanut Power BI -visualisoinnit käytöstä.**
 
-Power BI-järjestelmänvalvojasi on poistanut käytöstä organisaatiosi tai suojausryhmäsi mukautetut visualisoinnit. Et voi käyttää [Microsoft Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals)n mukautettuja visualisointeja etkä tuoda omia visualisointeja tiedostosta. Voi käyttää vain valmiiksi pakattua joukkoa visualisointeja.
+Power BI -järjestelmänvalvojasi on poistanut käytöstä organisaatiosi tai suojausryhmäsi Power BI -visualisoinnit.
+Et voi käyttää [Microsoft Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals)n Power BI -visualisointeja etkä tuoda omia visualisointeja tiedostosta. Voi käyttää vain valmiiksi pakattua joukkoa visualisointeja.
 
 
 **Tietomuotojen on sisällettävä vähintään yksi ryhmä tai laskutoimitus, joka tulostaa tietoja. Ota yhteyttä koontinäytön omistajaan.**
