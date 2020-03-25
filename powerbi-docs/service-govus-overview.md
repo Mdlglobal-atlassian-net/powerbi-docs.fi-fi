@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/13/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: b36bc6d23b56b4118f848ad9fa4e8f39dbc65d2d
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 349b4d51c1649b714c67e61ac42ddcc49b2eeb12
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79376720"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80114884"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI Yhdysvaltain valtionhallinnon asiakkaille
 Tämä artikkeli on tarkoitettu Yhdysvaltain valtionhallinnon asiakkaille, jotka ottavat Power BI:n käyttöön osana Office 365 Government -palvelupakettia. Government-palvelupaketit on suunniteltu sellaisten organisaatioiden ainutlaatuisiin tarpeisiin, joiden pitää olla yhteensopivia Yhdysvaltain valtionhallinnon vaatimusten ja suojausstandardien kanssa. Yhdysvaltain valtionhallinnon asiakkaille suunniteltu Power BI-palvelu eroaa Power BI-palvelu kaupallisesta versiosta. Nämä ominaisuuksien erot ja ominaisuudet kuvataan seuraavissa osissa.
@@ -95,7 +95,7 @@ Jotta valtionhallinnon pilvipalveluasiakkaiden tarpeet saadaan täytettyä, valt
 |  |Tietojen tuominen CSV-tiedostoista|Käytettävissä|Käytettävissä|Käytettävissä|
 |  |Tietojen tuominen Power BI Desktop -tiedostoista|Käytettävissä|Käytettävissä|Käytettävissä|
 |  |Yhteydet CDS:ään|Käytettävissä|Ei käytettävissä|Ei käytettävissä|
-|  |Azure Data Lake Storage Gen2 -liitin|Ei käytettävissä|Ei käytettävissä|Ei käytettävissä|
+|  |Azure Data Lake Storage Gen2 -liitin|Käytettävissä|Ei käytettävissä|Ei käytettävissä|
 |Tiedonhallinta|Tiedonhallinnan yhdyskäytävä|Käytettävissä|Käytettävissä|Käytettävissä|
 |  |Tietojen salaus Azure SQL:ssä|Käytettävissä|Käytettävissä|Käytettävissä|
 |  |Tietojen salaus Power BI:n blob-objektisäilössä|Käytettävissä|Käytettävissä|Käytettävissä|

@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: ad7c0dab0c4390326eea157351735802d12b3795
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 4b30e2fbf4ec3607b3ee155749a1ddeeb9f76cad
+ms.sourcegitcommit: 075a0ade4134d28f578fda78996595e8cd9f3555
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488564"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80147350"
 ---
 # <a name="configure-multi-geo-support-for-power-bi-premium"></a>Power BI Premiumin Multi-Geo-tuen määrittäminen
 
@@ -93,7 +93,7 @@ Voit ottaa työtiloja ulos Multi-Geo-kapasiteetista jommallakummalla seuraavista
 - Vahvista, että kaikki aloittamasi alueiden väliset siirtymät noudattavat kaikkia yrityksen ja julkishallinnon edellyttämiä vaatimustenmukaisuusehtoja ennen tiedonsiirron aloittamista.
 - Etäalueelle tallennettu välimuistissa oleva kysely pysyy alueellaan levossa. Muut siirrettävät tiedot voivat kuitenkin liikkua edestakaisin useiden maantieteellisten alueiden välillä.
 - Kun siirrät tietoja alueelta toiselle Multi-Geo-ympäristössä, lähdetiedot saattavat jäädä jopa 30 päivän ajaksi alueelle, jolta ne on siirretty. Tänä aikana loppukäyttäjät eivät pysty käyttämään niitä. Tiedot poistetaan tältä alueelta ja tuhotaan 30 päivän aikana.
-- Multi-Geon käyttäminen ei paranna yleistä suorituskykyä. Raporttien ja raporttinäkymien lataamiseen liittyy edelleen metatietopyyntöjä kotialueelle.
+
 - [Tietovuot](service-dataflows-overview.md)-ominaisuutta ei tällä hetkellä tueta Multi-Geon yhteydessä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

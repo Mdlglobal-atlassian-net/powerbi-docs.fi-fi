@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 01/30/2020
-ms.openlocfilehash: 1f27d05f2de5cdc8e04b6fabb48b7625fc45ce2a
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: ec299ceb5862be3f1e121e0e7d67eca6447f2da6
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78921903"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80113734"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Power BI:n sivutetuissa raporteissa tuetut tietolähteet
 
@@ -27,7 +27,7 @@ Sivutetut raportit tukevat suoraan seuraavia tietolähteitä:
 | --- | --- | --- |
 | Azuren SQL-tietokanta <br>Azure SQL Data Warehouse | Perus, kertakirjautuminen (SSO), OAuth2 |   |
 | Azure SQL:n hallittu esiintymä | Perustodennus | julkisen päätepisteen kautta käyttämällä Microsoft Azuren SQL-tietokantalaajennusta  |
-| Azure Analysis Services | SSO, OAuth2 | AAS-palomuuri täytyy poistaa käytöstä tai määrittää sallimaan kaikki IP-alueet.  Aliaksen käyttämistä ei tueta  |
+| Azure Analysis Services | SSO, OAuth2 | AAS-palomuuri täytyy poistaa käytöstä tai määrittää sallimaan kaikki IP-alueet.|
 | Power BI -tietojoukko | SSO | Power BI:n Premium- ja muut kuin Premium-tietojoukot. Edellyttää lukuoikeutta |
 | Power BI:n Premium-tietojoukko (XMLA) | SSO |   |
 | Anna tiedot | – | Tiedot on upotettu raporttiin. |
