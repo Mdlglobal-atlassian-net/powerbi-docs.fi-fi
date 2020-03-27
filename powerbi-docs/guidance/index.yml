@@ -12,12 +12,12 @@ metadata:
   author: maggiesMSFT
   ms.author: maggies
   ms.date: 01/14/2020
-  ms.openlocfilehash: 23792d8d132702860c611623fc3888debe07cfed
-  ms.sourcegitcommit: d55d3089fcb3e78930326975957c9940becf2e76
+  ms.openlocfilehash: 5f6e5c71f368b5b707534cde769de477bd8fa6a6
+  ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
   ms.translationtype: HT
   ms.contentlocale: fi-FI
-  ms.lasthandoff: 03/04/2020
-  ms.locfileid: "78260688"
+  ms.lasthandoff: 03/26/2020
+  ms.locfileid: "80273428"
 landingContent:
 - title: Power BI -ohjeet
   linkLists:
@@ -89,7 +89,7 @@ landingContent:
   linkLists:
   - linkListType: concept
     links:
-    - text: Visualisointien laajentaminen raporttisivun työkaluvihjeiden avulla
+    - text: Raporttisivun työkaluvihjeiden käyttäminen
       url: report-page-tooltips.md
     - text: Raporttisivun porautumisen käyttäminen
       url: report-drillthrough.md
@@ -103,6 +103,10 @@ landingContent:
       url: report-tips-legends.md
     - text: Vihjeitä visualisointien värien optimointiin
       url: report-tips-visual-colors.md
+    - text: Vihjeitä datapiirrosten lajittelemiseen ja jakeluun
+      url: report-tips-sort-distribute-data-plots.md
+    - text: Vihjeitä muotojen, kuvien ja kuvakkeiden käyttämiseen
+      url: report-tips-shapes-images-icons.md
 - title: Power BI:n sivutetut raportit
   linkLists:
   - linkListType: concept
