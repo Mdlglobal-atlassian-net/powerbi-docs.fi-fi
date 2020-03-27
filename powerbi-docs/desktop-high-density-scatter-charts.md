@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ae33d7aac0eb42e925e78b8b76a9d7106cdf9d20
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: b603ced5775d72c09419ea5e18b2eb03b2680e95
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73867438"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273359"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Suuren tiheyden näytteenotto Power BI:n pistekaavioissa
 Syyskuussa 2017 julkaistussa **Power BI Desktop** -versiossa ja **Power BI -palvelun** päivityksissä otettiin käyttöön uusi näytteenottoalgoritmi, joka parantaa sitä, kuinka pistekaaviot esittävät suuren tiheyden tiedot.
@@ -85,7 +85,8 @@ Suuren tiheyden näytteenoton uusi algoritmi on merkittävä parannus Power BI:h
 * **Suuren tiheyden näytteenoton** algoritmi toimii vain käytettäessä reaaliaikaisia yhteyksiä Power BI -palveluun pohjautuviin malleihin, tuotuihin malleihin tai DirectQueryyn.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Lisätietoja suuren tiheyden näytteenotosta muissa kaavioissa on seuraavassa artikkelissa.
+
+Lisätietoja suuren tiheyden näytteenotosta on seuraavissa artikkeleissa:
 
 * [Suuren tiheyden viivaotanta Power BI:ssä](desktop-high-density-sampling.md)
-
+* [Vihjeitä tietolohkojen lajittelemiseen ja jakeluun Power BI ‑raporteissa](guidance/report-tips-sort-distribute-data-plots.md)

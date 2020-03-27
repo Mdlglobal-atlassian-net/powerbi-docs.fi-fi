@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/04/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 69295657702f995786379b18d3ad1ed3641bcbb8
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.openlocfilehash: 729a50e251a9c2ae083375e187ff133022f3ce91
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75729806"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80114861"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Power BI -visualisointien luominen R:n avulla
 Power BI Desktopissa voit visualisoida tietojasi *R*:n avulla. [R](https://mran.revolutionanalytics.com/documents/what-is-r) on kieli ja ympäristö tilastolliselle tietojenkäsittelylle ja grafiikalle.
@@ -130,6 +130,8 @@ Power BI Desktopin R-visualisoinneilla on seuraavat rajoitukset:
 * Tietojen koko: R-visualisointien piirtämiseen käyttämä tietomäärä on rajoitettu 150 000 riviin. Jos valittuna on yli 150 000 riviä, vain 150 000 ylintä riviä käytetään ja kuvassa näkyy sanoma.
 
 * Tarkkuus: Kaikki R-visualisoinnit näytetään tarkkuudella 72 DPI.
+
+* Piirtolaite: Ainoastaan oletuslaitteelle piirtoa tuetaan. 
 
 * Laskenta-ajat: Jos R-visualisoinnin laskeminen kestää yli viisi minuuttia, tämä aiheuttaa aikakatkaisuvirheen.
 

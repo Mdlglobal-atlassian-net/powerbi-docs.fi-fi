@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/13/2020
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5693e75ff186c3edb95eeaa92d26823e0e0d3a60
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: d5b57b782af52542ed944b5e5e7504a974ee9d81
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76039055"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273336"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Suorita Python-komentosarjoja Power BI Desktopissa
 
@@ -109,6 +109,14 @@ Voit suorittaa Python-komentosarjasi Power BI Desktopissa seuraavasti:
 Jos Pythonia ei ole asennettu tai tunnistettu, näyttöön tulee varoitus. Näyttöön tulee varoitus myös, jos sinulla on useita paikallisia koneasennuksia. Lue uudelleen kohdat Pythonin asentaminen ja Python-komentosarjojen ottaminen käyttöön.
 
 ![Varoitus siitä, ettei Pythonia ole asennettu](media/desktop-python-scripts/python-scripts-3.png)
+
+#### <a name="using-custom-python-distributions"></a>Mukautettujen Python-jakeluiden käyttäminen
+
+Power BI suorittaa komentosarjoja suoraan käyttämällä python.exe-suoritustiedostoa käyttäjän valitsemasta hakemistosta (määritetty asetussivulla). Versioissa, jotka edellyttävät lisävaihetta ympäristön valmistelemiseen (esim. Conda), saattaa esiintyä suorituksen keskeytymiseen johtava ongelma.
+
+Suosittelemme, että käytät virallista Python-versiota (https://www.python.org/ ), jotta vältyt tällaisilta ongelmilta.
+
+Voit yrittää ratkaista ongelman käynnistämällä Power BI Desktopin mukautetun Python-ympäristön kehotteesta.
 
 ### <a name="refresh"></a>Päivitä
 

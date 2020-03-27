@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/22/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e91900632b7cf470cd91923ca9ec871247c154ba
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.openlocfilehash: 8297d5e16c15baac058f82b75634eb4f31b3c630
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76710179"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80113159"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Azure Data Lake Storage Gen2:n yhdistäminen tietovuon tallentamiseksi
 
@@ -42,12 +42,10 @@ Jos haluat käyttää Azure Data Lake Storage Gen2:ta tietovoita varten, tarvits
 
 Ennen kuin voit määrittää Power BI:hin Azure Data Lake Storage Gen2 -tilin, sinun on luotava ja määritettävä tallennustili. Tarkastellaanpa Power BI:n vaatimuksia:
 
-1. Tallennustili on luotava samassa AAD-vuokraajassa kuin Power BI -vuokraajasi.
-2. Tallennustili on luotava samalla alueella kuin Power BI -vuokraajasi. Jos haluat tietää, missä Power BI -vuokraajasi sijaitsee, katso artikkelia [Missä Power BI -vuokraajani sijaitsee](service-admin-where-is-my-tenant-located.md).
-3. Tallennustilillä on oltava käytössä *Hierarkkinen nimitila* -ominaisuus.
-4. Power BI -palvelulle on myönnettävä *Lukija*- ja *Tietoyhteys*-roolit tallennustilillä.
-5. Sinun on luotava tiedostojärjestelmä nimeltä **powerbi**.
-6. Power BI -palvelut on valtuutettava käyttämään luomaasi **powerbi**-tiedostojärjestelmää.
+1. Sinun on oltava ADLS-tallennustilin omistaja. Tämä asetus on määritettävä resurssitasolla, eikä se saa olla peritty tilaustasolta.
+2. Tallennustili on luotava samassa AAD-vuokraajassa kuin Power BI -vuokraajasi.
+3. Tallennustili on luotava samalla alueella kuin Power BI -vuokraajasi. Jos haluat tietää, missä Power BI -vuokraajasi sijaitsee, katso artikkelia [Missä Power BI -vuokraajani sijaitsee](service-admin-where-is-my-tenant-located.md).
+4. Tallennustilillä on oltava käytössä *Hierarkkinen nimitila* -ominaisuus.
 
 Seuraavissa osioissa käydään tarkemmin läpi vaiheita, joita tarvitaan Azure Data Lake Storage Gen2 -tilisi määrittämiseen.
 
@@ -59,73 +57,17 @@ Noudata artikkelin [Azure Data Lake Storage Gen2 -tallennustilin luominen](https
 2. Varmista, että otat käyttöön Hierarkkinen nimitila -ominaisuuden
 3. Suosittelemme, että määrität replikoinnin asetukseksi **Maantieteellisesti vikasietoiseksi hajautetun tallennuksen (RA-GRS) lukijaoikeudet**
 
-### <a name="grant-the-power-bi-service-reader-and-data-access-roles"></a>Lukijan ja tietojen käytön roolin myöntäminen Power BI -palvelulle
+### <a name="grant-permissions-to-power-bi-services"></a>Käyttöoikeuksien myöntäminen Power BI -palveluille
 
 Seuraavaksi sinun on myönnettävä Power BI -palvelulle lukija- ja tietoyhteysroolit luomallesi tallennustilille. Ne molemmat ovat sisäänrakennettuja rooleja, joten vaiheet ovat yksinkertaisia. 
 
 Noudata [Sisäisen RBAC-roolin määrittäminen](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role) -artikkelin ohjeita.
 
-Valitse **Lisää roolimääritys** -ikkunassa **Lukija**- ja **Tietoyhteys**-roolit, jotka määritetään Power BI -palvelulle. Etsi sitten haun avulla **Power BI -palvelu**. 
+Valitse **Lisää roolimääritys** -ikkunasta **Lukija- ja Tietoyhteys** -roolit. Etsi sitten haun avulla **Power BI -palvelu** ‑sovellus.
+Toista samat vaiheet **Säilön Blob-tietojen omistaja** ‑roolille ja määritä rooli sekä **Power BI ‑palvelulle** että **Power BI Premium** ‑sovelluksille.
 
 > [!NOTE]
 > Odota käyttöoikeuden välittymistä Power BI:hin portaalista vähintään 30 minuuttia. Aina kun muutat käyttöoikeuksia portaalissa, kyseisten käyttöoikeuksien näkyminen Power BI:ssä voi kestää 30 minuuttia. 
-
-
-### <a name="create-a-file-system-for-power-bi"></a>Luo tiedostojärjestelmä Power BI:tä varten
-
-Sinun on luotava tiedostojärjestelmä nimeltä *powerbi*, ennen kuin tallennustilasi voidaan lisätä Power BI:hin. Tällaisen tiedostojärjestelmän voi luoda monella tavalla, kuten Azure Databricksin, HDInsightin, AZCopyn tai Azure Storage Explorerin avulla. Tässä osiossa näytetään, miten voit luoda helposti tiedostojärjestelmän Azure Storage Explorerin avulla.
-
-Tämä vaihe edellyttää, että asennat Azure Storage Explorerin version 1.6.2 tai uudemman version. Jos haluat asentaa Azure Storage Explorerin Windows-, Macintosh- tai Linux-käyttöjärjestelmään, katso artikkelia [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
-
-1. Kun olet asentanut Azure Storage Explorerin, näet ensimmäisen käynnistyksen yhteydessä Microsoft Azure Storage Explorerin Muodosta yhteys -ikkunan. Vaikka Storage Explorer tarjoaa useita keinoja muodostaa yhteyden tallennustileihin, vain yhtä keinoa tuetaan nykyisin vaaditulle määritykselle. 
-
-2. Etsi vasemmasta ruudusta aiemmin luomasi tallennustili ja laajenna sitä.
-
-3. Napsauta hiiren oikealla painikkeella Blob-säilöt ja valitse pikavalikosta Luo blob-säilö.
-
-   ![napsauta hiiren oikealla painikkeella Blob-säilöt](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05a.jpg)
-
-4. Blob-säilöt-kansion alle tulee tekstiruutu. Anna nimi *powerbi* 
-
-   ![anna nimi ”powerbi”](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05b.jpg)
-
-5. Paina Enter, kun olet valmis luomaan blob-säilön
-
-   ![paina Enter, kun olet valmis luomaan blob-säilön](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05c.jpg)
-
-Seuraavassa osiossa myönnät Power BI -palveluperheelle täydet käyttöoikeudet luomaasi tiedostojärjestelmään. 
-
-### <a name="grant-power-bi-permissions-to-the-file-system"></a>Myönnä Power BI -käyttöoikeudet tiedostojärjestelmään
-
-Jotta voit myöntää käyttöoikeudet tiedostojärjestelmään, sinun on sovellettava käyttöoikeuksien hallintapalvelun (ACL, Access Control List) asetuksia, jotka myöntävät Power BI -palvelun käyttöoikeuden. Tätä varten sinun on ensiksi saatava Power BI -palvelujen käyttäjätiedot vuokraajassasi. Voit tarkastella Azure Active Directory (AAD) -sovelluksia Azure-portaalin **Yrityssovellukset**-osiossa.
-
-Etsi vuokraajan sovelluksia seuraavasti:
-
-1. Valitse [Azure-portaalissa](https://portal.azure.com/)**Azure Active Directory** siirtymisruudusta.
-2. Valitse Azure **Active Directory** -ruudussa **Yrityssovellukset**.
-3. Valitse avattavasta **Sovellustyyppi**-valikosta **Kaikki sovellukset** ja valitse sitten **Käytä**. Esiin tulee seuraavan kuvan kaltainen vuokraajan sovellusten malli.
-
-    ![AAD-yrityssovellukset](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_06.jpg)
-
-4. Kirjoita hakupalkkiin *Power* ja esiin tulee Power BI:n ja Power Query -sovellusten objektitunnusten kokoelma. Tarvitset jokaista kolmea arvoa seuraavissa vaiheissa.  
-
-    ![Etsi Power-sovelluksia](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
-
-5. Valitse ja kopioi Power BI Premium -palvelun ja Power Query Onlinen molemmat objektitunnukset hakutuloksistasi. Valmistaudu liittämään nämä arvot myöhemmissä vaiheissa.
-
-6. Siirry sitten **Azure Storage Explorerin** avulla *powerbi*-tiedostojärjestelmään, jonka loit edellisessä osiossa. Noudata [Käyttöoikeuksien hallinta](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) -osion ohjeita, jotka löytyvät artikkelista [Tiedostojen ja hakemistotason käyttöoikeuksien määrittäminen Azure Storage Explorerin avulla](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer).
-
-7. Määritä vaiheessa 5 noudetulle kummallekin Power BI Premium -objektitunnukselle **Luku**-, **Kirjoitus**- ja **Suoritus**-käyttöoikeus ja oletusarvoiset käyttöoikeusluettelot *powerbi*-tiedostojärjestelmään.
-
-   ![määritä kummallekin kaikki kolme käyttöoikeutta](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07a.jpg)
-
-8. Määritä vaiheessa 4 noudetulle Power Query Online -objektitunnukselle **Kirjoitus**- ja **Suoritus**-käyttöoikeus ja oletusarvoiset käyttöoikeusluettelot *powerbi*-tiedostojärjestelmään.
-
-   ![määritä seuraavaksi Kirjoitus- ja Suoritus-käyttöoikeus](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07b.jpg)
-
-9. Määritä lisäksi myös **Muut**-vaihtoehdolle **Suoritus**-käyttöoikeus ja oletusarvoiset käyttöoikeusluettelot.
-
-    ![määritä lopuksi Muut-vaihtoehdolle Suoritus-käyttöoikeus](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07c.jpg)
 
 ## <a name="connect-your-azure-data-lake-storage-gen2-to-power-bi"></a>Azure Data Lake Storage Gen2:n yhdistäminen Power BI:hin
 

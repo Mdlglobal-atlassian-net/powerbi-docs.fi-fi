@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/26/2020
+ms.date: 03/17/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: f4dbbdd30b403c8ac14db069b826f26af0bce24a
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 8dfc6e872b67605a262c7390b91703649a2cfb0f
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79201826"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80114031"
 ---
 # <a name="work-with-filters-in-power-bi-reports"></a>Suodattimien käyttö Power BI -raporteissa
+
+[!INCLUDE [applies-to](includes/applies-to.md)] [!INCLUDE [yes-desktop](includes/yes-desktop.md)] [!INCLUDE [yes-service](includes/yes-service.md)]
 
 Power BI:n suodattimilla on uusia toimintoja ja uusi rakenne. Kun valitset uuden suodatuskokemuksen, voit muotoilla Suodattimet-ruutua siten, että se näyttää samalta kuin muu raportti. Voit lukita ja jopa piilottaa suodattimia. Kun suunnittelet raporttia, et enää näe vanhaa Suodattimet-ruutua lainkaan Visualisoinnit-ruudussa. Voit tehdä kaikenlaiset suodattimen muokkaukset ja muotoilut yhdessä Suodattimet-ruudussa. 
 

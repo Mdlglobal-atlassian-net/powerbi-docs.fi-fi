@@ -10,12 +10,12 @@ ms.date: 03/16/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 97aad9a72cba6fe195208902e2a3d986b3225a3d
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 48f26229ea77bbe26ee07d46925d41cadcce7c12
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488702"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80114438"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -233,7 +233,12 @@ Käyttäjät näkevät käyttöliittymässä eri asetuksia sen mukaan, mikä hei
 
 ### <a name="export-data"></a>Vie tiedot
 
-Organisaation käyttäjät voivat viedä tietoja ruudusta tai visualisoinnista. Lue lisätietoja [tietojen viemisestä ruudusta tai visualisoinnista](visuals/power-bi-visualization-export-data.md).
+Organisaation käyttäjät voivat viedä tietoja ruudusta tai visualisoinnista. Tämä hallitsee Analysoi Excelissä-, Vie .csv-tiedostoon-, tietojoukkojen lataaminen (.pbix)- ja Power BI -palvelun reaaliaikainen yhteys ‑ominaisuuksia. Lue lisätietoja [tietojen viemisestä ruudusta tai visualisoinnista](visuals/power-bi-visualization-export-data.md).
+
+>[!NOTE]
+> Ennen Vie Exceliin ‑asetuksen julkaisua tämä asetus hallitsi myös tietojen viemistä Excel-tiedostoihin. Lisätietoja on [Vie Exceliin ‑kohdan huomautuksessa](#export-to-excel).
+
+![Vie tietoja ‑asetus](media/service-admin-portal/powerbi-admin-portal-export-data-setting.png)
 
 Seuraavassa kuvassa näkyy tietojen vieminen ruudusta.
 
@@ -241,6 +246,15 @@ Seuraavassa kuvassa näkyy tietojen vieminen ruudusta.
 
 > [!NOTE]
 > Jos poistat **Vie tiedot** -toiminnon käytöstä, käyttäjät eivät voi käyttää myöskään [Analysoi Excelissä](service-analyze-in-excel.md) -toimintoa tai Power BI -palvelun reaaliaikaista yhteyttä.
+
+### <a name="export-to-excel"></a>Vie Exceliin
+
+Organisaation käyttäjät voivat viedä tietoja visualisoinnista Excel-tiedostoon.
+
+![Vie Exceliin ‑asetus](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
+
+>[!IMPORTANT]
+> Ennen Vie Exceliin ‑asetuksen julkaisua Vie tietoja ‑asetus hallitsi tietojen viemistä Excel-tiedostoon. Sen vuoksi sellaisten vuokraajien järjestelmänvalvojille, jotka olivat olemassa ennen Vie Exceliin -asetuksen julkaisua, näkyy Vie Exceliin ‑asetuksen ensimmäisellä näyttökerralla *muutoksia, joita ei ole otettu käyttöön*. Järjestelmänvalvojien on otettava kyseiset muutokset käyttöön, jotta uusi asetus tulee voimaan. Muussa tapauksessa Excel-tiedostoon viemiseen sovelletaan jatkossakin Vie tietoja ‑asetusta.
 
 ### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Vie raportit PowerPoint-esityksinä tai PDF-tiedostoina
 

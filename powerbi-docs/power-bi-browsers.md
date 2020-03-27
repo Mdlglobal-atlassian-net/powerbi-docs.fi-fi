@@ -6,26 +6,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/27/2020
+ms.date: 03/25/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: a7112ff766b3b32b374b203d9f2206cabbd7fa2e
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: abe556231978d762dab652263aa2c55cf3c8a955
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79115039"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273267"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Power BI:n tuetut selaimet
-Power BI:tä voi käyttää seuraavissa selaimissa:
+
+Power BI on suunniteltu toimimaan kaikkien näiden tuettujen selainten kanssa, mutta suorituskyky vaihtelee selainvalinnan mukaan. Suorituskyky saattaa heikentyä erityisesti, jos käytät Internet Exploreria. Suorituskyvyn vuoksi suosittelemme, että vaihdat Internet Explorerista nykyaikaiseen selaimeen, kuten Microsoft Edgeen. Microsoft Edgen suorituskyvyn ennustetaan paranevan, kun Edge Chromium otetaan käyttöön. Jos suorituskyky on edelleen heikko, kokeile muita tuettuja nykyaikaisia selaimia. Power BI ‑ratkaisun suorituskyky saattaa olla parempi jollain niistä.
+
+Power BI tukee näitä selaimia kaikissa ympäristöissä, joissa ne ovat saatavilla:
 
 - Microsoft Edge
 - Internet Explorer 11. Joitakin edistyneempiä ominaisuuksia, kuten siirtymänäkymää, ei tueta Internet Explorerissa. Lisätietoja on kohdassa [Tietojen siirtymä (esikatselu)](collaborate-share/service-data-lineage.md).
 - Uusin Chrome-työpöytäversio
 - Uusin Safari Mac -versio
 - Uusin Firefox-työpöytäversio. Firefox voi muuttaa Power BI:ssä käytettyjä fontteja 
-
-Näitä selaimia tuetaan kaikissa ympäristöissä, joissa ne ovat saatavilla.
 
 > [!NOTE]
 > Power BI ei toimi missään selaimessa iOS10:ssä tai aiemmissa versioissa.
@@ -34,4 +35,3 @@ Näitä selaimia tuetaan kaikissa ympäristöissä, joissa ne ovat saatavilla.
 * [Mikä on Power BI?](power-bi-overview.md)
 * Voit esittää kysymyksiä [Power BI -yhteisössä](https://community.powerbi.com/)
 * Eikö ongelma ratkennut? Vieraile [Power BI -tukisivulla](https://powerbi.microsoft.com/support/)
-

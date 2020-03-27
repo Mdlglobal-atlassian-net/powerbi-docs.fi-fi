@@ -9,12 +9,12 @@ ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
 ms.date: 08/29/2019
-ms.openlocfilehash: b8301ca17559b81d4db132fbeaa0955ce68a4c6e
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.openlocfilehash: 7a5ec7ef1f66a4a5b6ec80c80e9fd37e19bb2813
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78922524"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80113550"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Raporttiparametrin välittäminen URL-osoitteessa Power BI:n sivutetuissa raporteissa 
 
@@ -64,8 +64,8 @@ Jos haluat välittää totuusarvon, määritä epätosi-arvoksi 0 ja tosi-arvoks
 
 > [!NOTE]
 > Jos raporttisi sisältää raporttiparametrin, jolla on oletusarvo, ja **Kehote**-ominaisuuden arvo on **epätosi** (eli **Kehote käyttäjälle** -ominaisuutta ei ole valittu Report Managerissa), et voi välittää kyseisen raporttiparametrin arvoa URL-osoitteeseen. Tämän ansiosta järjestelmänvalvojat voivat estää loppukäyttäjiä lisäämästä tai muokkaamasta tiettyjen raporttiparametrien arvoja.
-
-> Power BI ei tue yli 900 merkkiä pitkiä kyselymerkkijonoja.  Tämän arvon voi ylittää, jos tarkastelet sivutettua raporttia URL-parametrien avulla.  Tämä pätee etenkin silloin, jos käytät moniarvoisia parametreja.
+> 
+> Power BI tukee enintään 2 000 merkkiä pitkiä kyselymerkkijonoja.  Tämän arvon voi ylittää, jos tarkastelet sivutettua raporttia URL-parametrien avulla.  Tämä pätee etenkin silloin, jos käytät moniarvoisia parametreja.
 
 ## <a name="additional-examples"></a>Muita esimerkkejä 
 

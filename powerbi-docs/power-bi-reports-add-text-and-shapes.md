@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b90bfd9482e28faa8d9dfb0d089ca07656663b53
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: 6e5281b03ecf9de5414b334d4f88658fb9741d3f
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762458"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273198"
 ---
 # <a name="add-text-boxes-and-shapes-to-power-bi-reports"></a>Tekstiruutujen ja muotojen lisääminen Power BI -raportteihin
 Voit lisätä raportteihin tekstiruutuja ja muotoja käyttämällä Power BI -palvelua ja Power BI Desktopia. Kummassakin tapauksessa sinulla on oltava raportin muokkausoikeudet. Jos raportti on jaettu kanssasi Power BI -palvelussa, sinulla ei ole raportin muokkausoikeuksia. 
@@ -63,8 +63,10 @@ Katso, miten Will käyttää Power BI Desktopia ja [lisää staattisia kuvia rap
    > 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Hyperlinkin lisääminen tekstiruutuun](service-add-hyperlink-to-text-box.md)
 
-[Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
+Voit olla kiinnostunut myös seuraavista artikkeleista:
 
-Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+* [Hyperlinkin lisääminen tekstiruutuun](service-add-hyperlink-to-text-box.md)
+* [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
+* [Vihjeitä analyysin parantamiseen muodoilla, kuvilla ja kuvakkeilla Power BI ‑raporteissa](guidance/report-tips-shapes-images-icons.md)
+* Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

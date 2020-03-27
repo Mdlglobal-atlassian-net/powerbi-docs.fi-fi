@@ -5,15 +5,15 @@ author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 622d01632b9c9cbe6203090b3ac2149d4bc94474
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 0b420a41474349f86be682987ff9f8144debab11
+ms.sourcegitcommit: 075a0ade4134d28f578fda78996595e8cd9f3555
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207869"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80147373"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Julkaise sovellus Power BI:ssä
 
@@ -28,6 +28,7 @@ Yrityskäyttäjät saavat sovelluksesi käyttöönsä eri tavoin:
 - He voivat etsiä ja asentaa sovelluksen Microsoft AppSourcesta.
 - Voit lähettää heille suoran linkin.
 - Voit asentaa sen automaattisesti työtovereittesi Power BI -tileille, jos Power BI -järjestelmänvalvojasi antaa sinulle luvan.
+- Power BI ei lähetä sähköpostia sisäisille käyttäjille, kun jaat sovelluksen tai päivität sovellusta. Jos jaat sen ulkoisille käyttäjille, kyseiset käyttäjät saavat suoran linkin sähköpostiviestin välityksellä. 
 
 Voit luoda sovelluksen, jossa on omat sisäänrakennetut siirtymiskomennot, jolloin käyttäjät voivat vaivattomasti löytää sisältösi. He eivät voi muokata sovelluksen sisältöä. He voivat käyttää sitä joko Power BI -palvelussa tai jossakin mobiilisovelluksista. He voivat suodattaa, korostaa ja lajitella tiedot itse. He saavat päivitykset automaattisesti, ja sinä voit määrittää, kuinka usein tiedot päivitetään. Voit myös antaa heille muodostamisoikeuden yhteyden muodostamiseksi pohjana oleviin tietojoukkoihin ja kopioiden luomiseksi raporteista sovelluksessa. Lue lisätietoja [muodostamisoikeudesta](service-datasets-build-permissions.md).
 

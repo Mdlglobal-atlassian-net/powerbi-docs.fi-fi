@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 03/25/2020
 LocalizationGroup: Reports
-ms.openlocfilehash: b20820490ec88d34d4ee75c135cc54277e473545
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: 79f3fa8c9c175b698cb91784f95d3bb9d8ca0cc5
+ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77076627"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273244"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Raportin suodattaminen URL-osoitteen kyselymerkkijonoparametrien avulla
 
@@ -193,11 +193,17 @@ Tästä ristiriidasta on hyötyä, kun haluat nähdä eri tuloksia: raporttinäk
 On muutamia asioita, jotka tulee ottaa huomioon merkkijonon kyselyparametreja käytettäessä.
 
 * Käytettäessä *in*-operaattoria *in*-operaattorin oikealla puolella olevat arvot on esitettävä sulkeissa olevana pilkuin eroteltuna luettelona.    
-* Power BI -raporttipalvelin tukee myös lisäsuodattimien määrittämistä URL-suodatinparametria.  Power BI -raporttipalvelimessa URL-osoite voi näyttää esimerkiksi seuraavalta: https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
-* Kyselyn merkkijonon suodatus ei toimi [Julkaise verkkoon](service-publish-to-web.md)- tai [Vie PDF-muotoon](consumer/end-user-pdf.md) -toiminnoissa.
-* [Upota raportin verkko-osa SharePoint Onlinessa](service-embed-report-spo.md) ei tue URL-suodattimia.
-* Pitkä tietotyyppi on (2^53-1) JavaScriptin rajoitusten vuoksi.
+* Power BI -raporttipalvelin tukee myös lisäsuodattimien määrittämistä URL-suodatinparametria. Power BI -raporttipalvelimessa URL-osoite voi näyttää esimerkiksi seuraavalta: `https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'`
 * Raporttisuodattimien URL-suodattimissa on 10 lausekkeen rajoitus (10 AND-funktiolla yhdistettyä suodatinta).
+* Pitkä tietotyyppi on (2^53-1) JavaScriptin rajoitusten vuoksi.
+
+URL-suodattimia tuetaan joissakin upotustilanteissa, mutta ei kaikissa.
+
+- [Raportin upottamista turvalliseen portaaliin tai sivustoon](service-embed-secure.md) tuetaan.
+- Power BI Embedded tukee URL-suodattimia. Lisätietoja on kohdassa [Power BI Embeddedin URL-osoitteiden suodatuksen lisäominaisuudet](https://azure.microsoft.com/updates/power-bi-embedded-advanced-url-filtering-capabilities).
+- Kyselyn merkkijonon suodatus ei toimi [Julkaise verkkoon](service-publish-to-web.md)- tai [Vie PDF-muotoon](consumer/end-user-pdf.md) -toiminnoissa.
+- [Upota raportin verkko-osa SharePoint Onlinessa](service-embed-report-spo.md) ei tue URL-suodattimia.
+- Teams ei salli URL-osoitteen määrittämistä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

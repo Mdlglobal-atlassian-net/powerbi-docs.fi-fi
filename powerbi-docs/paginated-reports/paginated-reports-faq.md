@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 02/28/2020
-ms.openlocfilehash: d9d97715853ab87ac507ff41117ab176b8620e2e
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.date: 03/18/2020
+ms.openlocfilehash: 885c6b98e66a6ce2fd8069cc86bf50440cb94b4b
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79205247"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80113602"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sivutetut raportit Power BI:ssä: Usein kysytyt kysymykset 
 
@@ -48,7 +48,7 @@ Office 365 -valvontalokeissa eritellään tämän raporttityypin käyttö seuraa
 - Power BI -raportin luominen
 - Ladattu Power BI -raportti
 
-ReportType-kentän arvona on ”PaginatedReport”, jolla määritetään sivutetut raportit verrattuna Power BI -raportteihin.
+ReportType-kentän arvona on "PaginatedReport", jolla määritetään sivutetut raportit verrattuna Power BI -raportteihin.
 
 Lisäksi valvontalokit tarjoavat seuraavat tapahtumat  sivutetuille raporteille:
 
@@ -68,13 +68,17 @@ Voit ladata sivutettuja raportteja omaan työtilaasi ilman Pro-käyttöoikeutta,
 
 Näyttöön tulee virheviesti, etkä voi tarkastella raporttia, ennen kuin kuormitus on otettu takaisin käyttöön. Voit silti poistaa raportin työtilasta.
 
-### <a name="what-is-the-default-memory-for-each-of-the-premium-skus-supported-for-paginated-reports"></a>Mikä on oletusmuisti kullekin Premium-varastointiyksikölle, joita tuetaan sivutetuille raporteille?
+### <a name="what-is-the-default-memory-for-each-of-the-premium-skus-that-support-paginated-reports"></a>Mikä on oletusmuisti kullekin Premium-varastointiyksikölle, jotka tukevat sivutettuja raportteja?
 
 Oletusmuisti kullekin Premium-varastointiyksikölle sivutettuja raportteja varten:
 
 - **P1/A4**: Oletus 20 %, vähintään 10 %
 - **P2/A5**: Oletus 20 %, vähintään 5 %
 - **P3/A6**: Oletus 20 %, vähintään 2,5 %
+
+Power BI ‑vuokraajien järjestelmänvalvojat voivat muokata muistin oletusarvoista enimmäisosuutta hallintaportaalista. Katso **Sivutettujen raporttien** kuormitusosio **Kapasiteettiasetukset**-välilehden **Power BI Premium** ‑kohdasta.
+
+:::image type="content" source="media/paginated-reports-faq/paginated-reports-capacity-settings.png" alt-text="Sivutettujen raporttien Kapasiteettiasetukset-välilehti":::
 
 ## <a name="general"></a>Yleiset
 
@@ -164,7 +168,7 @@ Tarkoituksenamme on ottaa käyttöön mahdollisimman laajasti raporttien tuki pa
 
 ### <a name="is-there-a-report-viewer-control-for-paginated-reports-in-the-power-bi-service"></a>Onko Power BI -palvelussa raporttien katseluohjelman hallinta sivutetuille raporteille?
 
-Ei, nykyisin ei ole saatavilla raporttien katseluohjelman hallintaa.
+Ei, raporttien katseluohjelman hallintaa ei tällä hetkellä ole saatavilla.
 
 ### <a name="can-you-search-for-paginated-reports-from-the-new-home-experience-in-the-power-bi-service"></a>Voidaanko sivutettuja raportteja hakea Power BI -palvelun uudesta Aloitus-kohdasta?
 

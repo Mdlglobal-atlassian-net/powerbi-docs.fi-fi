@@ -10,12 +10,12 @@ ms.date: 01/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 6cf298f6fd4d6d99163b2c0f5674b40cfc14bbfc
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 1102022edca3afad2a658facdf43da7b8bca547d
+ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75657186"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80113780"
 ---
 # <a name="track-user-activities-in-power-bi"></a>Käyttäjien toiminnan seuraaminen Power BI:ssä
 
@@ -49,7 +49,7 @@ Voit viedä toimintotapahtumat blob-säilöön tai SQL-tietokantaan Power BI RES
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?startDateTime='2019-08-31T00:00:00'&endDateTime='2019-08-31T23:59:59'
 ```
 
-Jos lokikirjausten määrä on suuri, **ActivityEvents**-ohjelmointirajapinta palauttaa vain noin 5 000 – 10 000 kirjausta sekä jatkumistunnuksen. Sen jälkeen sinun on kutsuttava **ActivityEvents**-ohjelmointirajapintaa uudelleen jatkumistunnuksen avulla, jotta saat seuraavan kirjauserän, ja niin edelleen, kunnes olet noutanut kaikki kirjaukset etkä saa enää uutta jatkumistunnusta. Seuraavassa on esimerkki jatkumistunnuksen käytöstä.
+Jos lokikirjausten määrä on suuri, **ActivityEvents**-ohjelmointirajapinta palauttaa vain noin 5 000 – 10 000 kirjausta sekä jatkumistunnuksen. Kutsu **ActivityEvents**-ohjelmointirajapintaa uudelleen jatkumistunnuksen avulla, jotta saat seuraavan kirjauserän, ja niin edelleen, kunnes olet noutanut kaikki kirjaukset etkä saa enää uutta jatkumistunnusta. Seuraavassa on esimerkki jatkumistunnuksen käytöstä.
 
 ```
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?continuationToken='%2BRID%3ARthsAIwfWGcVAAAAAAAAAA%3D%3D%23RT%3A4%23TRC%3A20%23FPC%3AARUAAAAAAAAAFwAAAAAAAAA%3D'
@@ -68,12 +68,15 @@ while(response.ContinuationToken != null)
 }
 completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 ```
-
+> [!NOTE]
+> Kaikkien tapahtumien näkyviin tuleminen voi kestää 24 tuntia, mutta täydelliset tiedot ovat yleensä käytettävissä paljon aikaisemmin.
+>
+>
 ### <a name="get-powerbiactivityevent-cmdlet"></a>Get-PowerBIActivityEvent-cmdlet
 
-Toimintotapahtumat voi ladata itselleen helposti PowerShellin Power BI ‑cmdlet-hallintakomennoilla, kuten **Get-PowerBIActivityEvent**-cmdlet-komennolla, joka käsittelee jatkumistunnuksen automaattisesti puolestasi. **Get-PowerBIActivityEvent**-cmdlet-komennossa StartDateTime- ja EndDateTime-parametreja koskevat samat rajoitukset kuin **ActivityEvents** REST API ‑ohjelmointirajapinnassa. Toisin sanoen alku- ja loppupäivämäärän on viitattava samaan päivämääräarvoon, koska voit noutaa kerrallaan toimintotiedot vain yhdeltä päivältä.
+Lataa toimintatapahtumat PowerShellin Power BI Management ‑cmdletien avulla. **Get-PowerBIActivityEvent**-cmdlet  käsittelee jatkuvuustunnuksen automaattisesti. **Get-PowerBIActivityEvent**-cmdlet-komennossa StartDateTime- ja EndDateTime-parametreja koskevat samat rajoitukset kuin **ActivityEvents** REST API ‑ohjelmointirajapinnassa. Toisin sanoen alku- ja loppupäivämäärän on viitattava samaan päivämääräarvoon, koska voit noutaa kerrallaan toimintotiedot vain yhdeltä päivältä.
 
-Seuraava komentosarja havainnollistaa, miten voit ladata kaikki Power BI ‑toiminnot. Komento muuntaa JSON-tulokset .NET-objekteiksi, jolloin pääset helposti tarkastelemaan yksittäisen toiminnon ominaisuuksia.
+Seuraava komentosarja havainnollistaa, miten voit ladata kaikki Power BI ‑toiminnot. Komento muuntaa JSON-tulokset .NET-objekteiksi, jolloin pääset helposti tarkastelemaan yksittäisen toiminnon ominaisuuksia. Näissä esimerkeissä näytetään päivän pienin ja suurin mahdollinen aikaleima, jotta yksikään tapahtuma ei jää huomaamatta.
 
 ```powershell
 Login-PowerBI
@@ -111,11 +114,11 @@ Seuraavat vaatimukset on täytettävä valvontalokien käyttämistä varten:
 
 - Sinun on oltava yleinen järjestelmänvalvoja tai sinulla on oltava Exchange Onlinessa rooli, joka sallii valvontalokien käytön tai tarkastelun, jotta pääset näkemään valvontalokin. Oletusarvoisesti kyseiset roolit määritetään Yhteensopivuuden hallinta- ja Organisaation hallinta -rooliryhmille valmiiksi Exchangen hallintakeskuksen **Käyttöoikeudet**-sivulla.
 
-    Jos haluat antaa valvontalokin käyttöoikeuden muulle kuin järjestelmänvalvojatilille, sinun on lisättävä kyseinen käyttäjä jompaankumpaan edellä mainituista rooliryhmistä. Vaihtoehtoisesti voit luoda Exchangen hallintakeskuksessa mukautetun rooliryhmän, jolle määrität valvontalokien käytön tai tarkastelun sallivan roolin ja johon sitten lisäät kyseisen tilin. Lisätietoja saat [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups) (Rooliryhmien hallinta Exchange Onlinessa) -ohjeartikkelista.
+    Jos haluat antaa valvontalokin käyttöoikeuden muulle kuin järjestelmänvalvojatilille, lisää kyseinen käyttäjä jompaankumpaan edellä mainituista rooliryhmistä. Vaihtoehtoisesti voit luoda Exchangen hallintakeskuksessa mukautetun rooliryhmän, jolle määrität valvontalokien käytön tai tarkastelun sallivan roolin ja johon sitten lisäät kyseisen tilin. Lisätietoja saat [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups) (Rooliryhmien hallinta Exchange Onlinessa) -ohjeartikkelista.
 
     Jos et pääse Exchangen hallintakeskukseen Microsoft 365 -hallintakeskuksesta, siirry osoitteeseen https://outlook.office365.com/ecp ja kirjaudu sisään tunnistetiedoillasi.
 
-- Jos pääset valvontalokiin, mutta et ole yleinen järjestelmänvalvoja tai Power BI -palvelun järjestelmänvalvoja, et voi käyttää Power BI -hallintaportaalia. Tässä tapauksessa sinun on käytettävä suoraa linkkiä [Office 365:n tietoturva- ja yhteensopivuuskeskukseen](https://sip.protection.office.com/#/unifiedauditlog).
+- Jos pääset valvontalokiin, mutta et ole yleinen järjestelmänvalvoja tai Power BI -palvelun järjestelmänvalvoja, et voi käyttää Power BI -hallintaportaalia. Tässä tapauksessa käytä suoraa linkkiä [Office 365:n tietoturva- ja yhteensopivuuskeskukseen](https://sip.protection.office.com/#/unifiedauditlog).
 
 ### <a name="access-your-audit-logs"></a>Valvontalokien käyttö
 
@@ -258,7 +261,7 @@ Seuraavat toiminnot ovat käytettävissä sekä valvonta- että toimintolokeissa
 | Luotu Power BI -kansio                           | CreateFolder                                |                                          |
 | Luotu Power BI -yhdyskäytävä                          | CreateGateway                               |                                          |
 | Luotu Power BI -ryhmä                            | CreateGroup                                 |                                          |
-| Luotu Power BI -raportti                           | CreateReport                                |                                          |
+| Luotu Power BI -raportti                           | CreateReport <sup>1</sup>                                |                                          |
 | Tietovuo siirretty ulkoiselle tallennustilille     | DataflowMigratedToExternalStorageAccount    | Ei tällä hetkellä käytössä                       |
 | Lisätty tietovuon käyttöoikeudet                        | DataflowPermissionsAdded                    | Ei tällä hetkellä käytössä                       |
 | Poistettu tietovuon käyttöoikeudet                      | DataflowPermissionsRemoved                  | Ei tällä hetkellä käytössä                       |
@@ -294,7 +297,7 @@ Seuraavat toiminnot ovat käytettävissä sekä valvonta- että toimintolokeissa
 | Kirjoitettu Power BI -kommentti                           | PostComment                                 |                                          |
 | Tulostettu Power BI -koontinäyttö                        | PrintDashboard                              |                                          |
 | Tulostettu Power BI -raporttisivu                      | PrintReport                                 |                                          |
-| Julkaistu Power BI -raportti verkkoon                  | PublishToWebReport                          |                                          |
+| Julkaistu Power BI -raportti verkkoon                  | PublishToWebReport <sup>2</sup>                         |                                          |
 | Vastaanotettu salainen Power BI -tietovuo Key Vaultista  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Poistettu tietolähde Power BI -yhdyskäytävästä         | RemoveDatasourceFromGateway                 |                                          |
 | Poistettu Power BI -ryhmän jäsenet                    | DeleteGroupMembers                          |                                          |
@@ -333,6 +336,10 @@ Seuraavat toiminnot ovat käytettävissä sekä valvonta- että toimintolokeissa
 | Tarkasteltu Power BI -ruutu                              | ViewTile                                    |                                          |
 | Tarkastellut Power BI -käyttötiedot                     | ViewUsageMetrics                            |                                          |
 |                                                   |                                             |                                          |
+
+<sup>1</sup> Julkaiseminen Power BI Desktopista palveluun on palvelussa CreateReport-tapahtuma.
+
+<sup>2</sup> PublishtoWebReport viittaa [Julkaise verkkoon](service-publish-to-web.md) ‑ominaisuuteen.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
