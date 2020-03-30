@@ -100,7 +100,7 @@
               href: ../service-encryption-byok.md
             - name: Käynnistä Premium-kapasiteetti uudelleen
               href: ../service-admin-premium-restart.md
-            - name: Tietojoukkoihin yhdistäminen asiakassovelluksilla ja -työkaluilla
+            - name: Tietojoukon liitettävyys XMLA-päätepisteeseen (esikatselu)
               href: ../service-premium-connect-tools.md
     - name: Viittaus
       items:

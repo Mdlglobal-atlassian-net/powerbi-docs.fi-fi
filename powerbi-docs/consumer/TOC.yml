@@ -102,12 +102,12 @@
               href: end-user-favorite.md
             - name: 'Koontinäytön tulostaminen, koontinäyttöruudun tulostaminen, raporttisivun tulostaminen'
               href: end-user-print.md
+            - name: Näytä kanssani jaettu sisältö
+              href: end-user-shared-with-me.md
             - name: Tarkastele aiheeseen liittyvää sisältöä
               href: end-user-related.md
             - name: Tarkastele viimeisintä sisältöä
               href: end-user-recent.md
-            - name: Tarkastele sisältöä Jaettu kanssani -säilössä
-              href: end-user-shared-with-me.md
             - name: Raportin tai koontinäytön tilaaminen
               href: end-user-subscribe.md
             - name: 'Hae ja lajittele sisältöä Power BI:ssä'
