@@ -18,10 +18,8 @@
     - name: Mallit
       expanded: true
       items:
-        - name: Power BI -mallitietojen hakeminen
+        - name: 'Hanki Power BI:n malleja'
           href: ../sample-datasets.md
-        - name: Mallipakettien tuominen ja avaaminen
-          href: ../sample-tutorial-connect-to-the-samples.md
         - name: Asiakkaan tuottavuuden malli
           href: ../sample-customer-profitability.md
         - name: IT-kulutusanalyysimalli
@@ -34,6 +32,8 @@
           href: ../sample-procurement.md
         - name: Jälleenmyyntianalyysimalli
           href: ../sample-retail-analysis.md
+        - name: Tutustu jälleenmyyntianalyysimalliin
+          href: ../sample-tutorial-connect-to-the-samples.md
         - name: Myynti- ja markkinointimalli
           href: ../sample-sales-and-marketing.md
         - name: Toimittajan laatuanalyysimalli
