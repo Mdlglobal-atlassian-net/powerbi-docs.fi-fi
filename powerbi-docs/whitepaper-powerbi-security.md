@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 50c8416573b995c34d62129d11926e70d9d4242d
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 88c32a3d32a8d6c6653fa9badcf728bad0ee2c54
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381395"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404570"
 ---
 # <a name="power-bi-security-whitepaper"></a>Power BI:n suojausraportti
 
@@ -135,7 +135,7 @@ Käyttäjän todennus Power BI -palveluun koostuu sarjasta pyyntöjä, vastauksi
 
 Power BI -palvelun käyttäjän todentamisjakso tapahtuu seuraavissa vaiheissa kuvatulla tavalla, ja vaiheet on kuvattu seuraavissa kuvissa.
 
-1. Käyttäjä käynnistää yhteyden Power BI-palveluun selaimesta joko kirjoittamalla osoiteriville Power BI-osoitteen (kuten https://app.powerbi.com) tai valitsemalla Power BI -aloitussivulla vaihtoehdon _Kirjaudu sisään_ (https://powerbi.microsoft.com). Yhteys muodostetaan TLS 1.2 -suojauksella ja HTTPS-yhteysprotokollalla, ja kaikkeen seuraavaan tietoliikenteeseen selaimen ja Power BI -palveluun käytetään HTTPS-yhteyttä. Pyyntö lähetetään **Azure-liikennehallintaan**.
+1. Käyttäjä aloittaa yhteyden Power BI-palvelu selaimesta joko kirjoittamalla osoite riville Power BI osoitteen (kuten `https://app.powerbi.com`) tai valitsemalla _Kirjaudu_ sisään Power BI aloitus sivulta (https://powerbi.microsoft.com). Yhteys muodostetaan TLS 1.2 -suojauksella ja HTTPS-yhteysprotokollalla, ja kaikkeen seuraavaan tietoliikenteeseen selaimen ja Power BI -palveluun käytetään HTTPS-yhteyttä. Pyyntö lähetetään **Azure-liikennehallintaan**.
 
 2. **Azure-liikennehallinta** tarkistaa käyttäjän DNS-tietueen ja määrittää lähimmän tietokeskuksen, jossa Power BI on käytössä, minkä jälkeen se vastaa DNS-tietueeseen sen WFE-klusterin IP-osoitteella, johon käyttäjä tulee lähettää.
 
