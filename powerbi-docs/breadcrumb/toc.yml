@@ -19,6 +19,16 @@
             - name: Kehittäjä
               tocHref: /power-bi/developer/
               topicHref: /power-bi/developer/index
+              items:
+                - name: Upotettu analytiikka
+                  tocHref: /power-bi/developer/embedded/
+                  topicHref: /power-bi/developer/embedded/
+                - name: 'Power BI:n visualisoinnit'
+                  tocHref: /power-bi/developer/visuals/
+                  topicHref: /power-bi/developer/visuals/
+                - name: Automaatio
+                  tocHref: /power-bi/developer/automation/
+                  topicHref: /power-bi/developer/automation/
             - name: Ohjattu oppiminen
               tocHref: /power-bi/guided-learning/
               topicHref: /power-bi/guided-learning/
