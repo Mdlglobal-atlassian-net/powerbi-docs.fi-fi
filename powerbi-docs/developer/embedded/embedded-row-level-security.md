@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 80b97757ab0ab8fefa23f4481abb2d8bc02de78d
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 66a1253233ab623ff2332a7b112575a7509c0e3c
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79492487"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403697"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Rivitason suojaus Power BI Embeddedissä
 
@@ -217,7 +217,7 @@ Voit alkaa määrittää CustomData()-ominaisuutta Power BI Embedded -sovellukse
 
 7. Power BI -ohjelmointirajapintojen avulla voit käyttää CustomData-ominaisuutta sovelluksessasi.  Sinulla on oltava käyttäjänimi CustomData-ominaisuuden sisältävää tunnusta luotaessa. Käyttäjänimen on oltava sama kuin pääkäyttäjän täydellinen käyttäjätunnus. Pääkäyttäjän on oltava luomasi roolin jäsen. Jos rooleja ei määritetä, kaikkia rooleja, joiden jäsen pääkäyttäjä on, käytetään rivitason suojauksen arviointiin.
 
-    Kun käsittelet [palvelun päänimeä](embed-service-principal.md), sinun on suoritettava yllä olevat vaiheet päätilin käytön sijaan. Kun muodostetaan upotustunnusta, käytä [palvelun päänimen objektitunnusta](embed-service-principal.md#how-to-get-the-service-principal-object-id) käyttäjänimenä.
+    Kun käsittelet [palvelun päänimeä](embed-service-principal.md), sinun on suoritettava yllä olevat vaiheet päätilin käytön sijaan. Kun muodostetaan upotustunnusta, käytä [palvelun päänimen objektitunnusta](embed-service-principal.md) käyttäjänimenä.
 
     > [!Note]
     > Kun olet valmis ottamaan sovelluksesi tuotantoon, pääkäyttäjän tili -kentän tai -vaihtoehdon ei pitäisi näkyä käyttäjälle.

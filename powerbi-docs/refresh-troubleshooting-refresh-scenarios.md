@@ -9,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 09/13/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: dcf8f3ca104e4caf749070b45cd47b0ca03f0dbd
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 62159b9dec4f82cfad3eecbc13b1d3a2c3b68f17
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699586"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404859"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Päivitystilanteiden vianmääritys
 
@@ -79,11 +79,11 @@ Jos ajoitettu päivitys epäonnistuu neljä kertaa peräkkäin, Power BI poistaa
 
 ## <a name="access-to-the-resource-is-forbidden"></a>Resurssin käyttö on kielletty  
 
-Tämä virhe voi johtua välimuistissa olevista vanhentuneista tunnistetiedoista. Tyhjennä internet-selaimen välimuisti kirjautumalla Power BI:hin ja siirtymällä kohtaan https://app.powerbi.com?alwaysPromptForContentProviderCreds=true. Tämä pakottaa tunnistetietojen päivityksen.
+Tämä virhe voi johtua välimuistissa olevista vanhentuneista tunnistetiedoista. Tyhjennä internet-selaimen välimuisti kirjautumalla Power BI:hin ja siirtymällä kohtaan `https://app.powerbi.com?alwaysPromptForContentProviderCreds=true`. Tämä pakottaa tunnistetietojen päivityksen.
 
 ## <a name="data-refresh-failure-because-of-password-change-or-expired-credentials"></a>Tietojen päivittämisen epäonnistuminen salasanan vaihtamisen tai vanhentuneiden tunnistetietojen vuoksi
 
-Tietojen päivittäminen voi epäonnistua myös vanhentuneiden välimuistissa olevien tunnistetietojen vuoksi. Tyhjennä internet-selaimen välimuisti kirjautumalla Power BI:hin ja siirtymällä kohtaan https://app.powerbi.com?alwaysPromptForContentProviderCreds=true. Tämä pakottaa tunnistetietojen päivityksen.
+Tietojen päivittäminen voi epäonnistua myös vanhentuneiden välimuistissa olevien tunnistetietojen vuoksi. Tyhjennä internet-selaimen välimuisti kirjautumalla Power BI:hin ja siirtymällä kohtaan `https://app.powerbi.com?alwaysPromptForContentProviderCreds=true`. Tämä pakottaa tunnistetietojen päivityksen.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

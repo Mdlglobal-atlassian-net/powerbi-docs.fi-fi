@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 6dd5b7838a1f59971e11a4674853abead7af0b90
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 0042c7db70cac103d04d1c48d06c12b71634b541
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79492786"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403661"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
@@ -96,7 +96,7 @@ Käyttäjä voi ratkaista tämän ongelman [refreshUserPermissions-ohjelmointira
 
 Voit selvittää PBI-vuokraajan alueesi PBI-portaalin avulla.
 
-[https://app.powerbi.com/](https://app.powerbi.com/ ) > ? > Tietoja Power BI:stä
+[https://app.powerbi.com/](`https://app.powerbi.com/`) > ? > Tietoja Power BI:stä
 
 ![Tietoja Power BI:stä](media/embedded-faq/about-01.png)
 ![Vuokraajan alue](media/embedded-faq/tenant-location-01.png)
@@ -200,7 +200,7 @@ Tällä on merkitystä, kun lisäät palvelun päänimen **järjestelmänvalvoja
 
 **[Sovellustunnuksella](embed-sample-for-customers.md#application-id)** luodaan käyttöoikeustietue, kun sovellustunnus välitetään todennettavaksi.
 
-Jos haluat viitata palvelun päänimeen toiminnoissa tai tehdä muutoksia, käytä **[palvelun päänimen objektitunnusta](embed-service-principal.md#how-to-get-the-service-principal-object-id)** (ottaa esimerkiksi palvelun päänimen käyttöön työtilan järjestelmänvalvojana).
+Jos haluat viitata palvelun päänimeen toiminnoissa tai tehdä muutoksia, käytä **[palvelun päänimen objektitunnusta](embed-service-principal.md)** (ottaa esimerkiksi palvelun päänimen käyttöön työtilan järjestelmänvalvojana).
 
 ### <a name="can-you-manage-an-on-premises-data-gateway-with-service-principal"></a>Voinko hallita paikallista tietoyhdyskäytävää palvelun päänimellä?
 

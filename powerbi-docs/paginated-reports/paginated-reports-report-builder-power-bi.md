@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/27/2019
-ms.openlocfilehash: 29a6e9f67258d4babc58d8195dda59afe97554c6
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 7ab9ac60e416502f69401fcea87a697f53176448
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79205224"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404773"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Mitä ovat sivutetut raportit Power BI Premiumissa?
 
@@ -25,7 +25,7 @@ Kokeile [Käytännön labratyötä: Sivutetun Microsoft Power BI -raportin luomi
 
 ![Sivutettu](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-Voit esikatsella raporttisi raportin muodostimessa ja julkaista sen Power BI -palvelussa, https://app.powerbi.com. Tarvitset Power BI Pro -käyttöoikeuden raportin julkaisemiseksi palveluun. Voit julkaista ja jakaa sivutettuja raportteja omassa työtilassasi tai työtiloissa niin kauan kuin työtila on Power BI Premium -kapasiteetissa. Lisäksi Power BI -järjestelmänvalvojan on otettava sivutetut raportit käyttöön Power BI -hallintaportaalin [Premium-kapasiteettiosiosta](../service-admin-premium-workloads.md#paginated-reports). 
+Voit esikatsella raporttisi raportin muodostimessa ja julkaista sen Power BI -palvelussa, `https://app.powerbi.com`. Tarvitset Power BI Pro -käyttöoikeuden raportin julkaisemiseksi palveluun. Voit julkaista ja jakaa sivutettuja raportteja omassa työtilassasi tai työtiloissa niin kauan kuin työtila on Power BI Premium -kapasiteetissa. Lisäksi Power BI -järjestelmänvalvojan on otettava sivutetut raportit käyttöön Power BI -hallintaportaalin [Premium-kapasiteettiosiosta](../service-admin-premium-workloads.md#paginated-reports). 
 
 ## <a name="create-reports-in-power-bi-report-builder"></a>Raporttien luominen Power BI:n raportin muodostimessa
 
@@ -61,7 +61,7 @@ Koko sivutetun raportin sisällöllä itse raportista jokaiseen tekstiruutuun, k
 
 ## <a name="creating-a-report-definition"></a>Raportin määrityksen luominen
 
-Kun suunnittelet sivutetun raportin, luot tosiasiassa *raportin määrityksen*. Se ei sisällä tietoja. Se määrittää, mistä tiedot haetaan, mitkä tiedot haetaan ja miten tiedot näytetään. Kun raportti suoritetaan, raportin käsittely käyttää määrittämääsi raportin määritystä, noutaa tiedot ja yhdistää ne raportin asetteluun raportin luomiseksi. Lataat raportin määrityksen Power BI -palveluun, https://app.powerbi.com, omaan työtilaasi tai työtovereiden kanssa jakamaasi työtilaan. Jos raportin tietolähde on paikallinen, raportin lataamisen jälkeen ohjaat tietolähdeyhteyden uudelleen yhdyskäytävän kautta. 
+Kun suunnittelet sivutetun raportin, luot tosiasiassa *raportin määrityksen*. Se ei sisällä tietoja. Se määrittää, mistä tiedot haetaan, mitkä tiedot haetaan ja miten tiedot näytetään. Kun raportti suoritetaan, raportin käsittely käyttää määrittämääsi raportin määritystä, noutaa tiedot ja yhdistää ne raportin asetteluun raportin luomiseksi. Lataat raportin määrityksen Power BI -palveluun, `https://app.powerbi.com`, omaan työtilaasi tai työtovereiden kanssa jakamaasi työtilaan. Jos raportin tietolähde on paikallinen, raportin lataamisen jälkeen ohjaat tietolähdeyhteyden uudelleen yhdyskäytävän kautta. 
 
 ## <a name="view-your-paginated-report"></a>Sivutetun raportin tarkasteleminen
 Voit tarkastella sivutettua raporttia Power BI -palvelussa selaimella ja myös Power BI -mobiilisovelluksissa. Power BI -palvelusta käsin voit viedä raportin eri muodoissa, esimerkiksi HTML:nä, MHTML:nä, PDF:nä, XML:nä, CSV:nä, TIFF:nä, Wordinä ja Excelinä. Voit myös jakaa sen muiden kanssa.  

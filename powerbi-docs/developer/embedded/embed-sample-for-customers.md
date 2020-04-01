@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/12/2019
-ms.openlocfilehash: 37f8858d3581f58fc82fcbd1f3a1718ca56b6d72
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 4eca0a799440da57cdb37a603447ba2b0d0c99c8
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79494028"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403818"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseen asiakkaille
 
@@ -438,7 +438,7 @@ Kun olet luonut varatun kapasiteetin, voit määrittää työtilan kyseiselle va
 
 Kaikki työtilat, jotka sisältävät upotettuun sisältöön (mukaan lukien tietojoukot, raportit ja koontinäytöt) liittyviä Power BI -resursseja, on määritettävä varattuihin kapasiteetteihin. Jos esimerkiksi upotettu raportti ja siihen sidottu tietojoukko sijaitsevat eri työtiloissa, molemmat työtilat on määritettävä varattuun kapasiteettiin.
 
-Jos haluat määrittää varatun kapasiteetin työtilalle [palvelun päänimellä](embed-service-principal.md), käytä [Power BI REST -ohjelmointirajapintaa](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). Kun käytät Power BI REST -ohjelmointirajapintoja, muista käyttää [palvelun päänimen objektitunnusta](embed-service-principal.md#how-to-get-the-service-principal-object-id).
+Jos haluat määrittää varatun kapasiteetin työtilalle [palvelun päänimellä](embed-service-principal.md), käytä [Power BI REST -ohjelmointirajapintaa](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). Kun käytät Power BI REST -ohjelmointirajapintoja, muista käyttää [palvelun päänimen objektitunnusta](embed-service-principal.md).
 
 Voit määrittää varatun kapasiteetin työtilalle **päätilillä** alla annettujen ohjeiden mukaisesti.
 

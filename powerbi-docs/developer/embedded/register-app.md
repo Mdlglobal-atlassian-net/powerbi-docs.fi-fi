@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/02/2019
-ms.openlocfilehash: 123dde6621cee901dc788476b3554fc9584ed0e5
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: e47cb22ba4c30c8090e2e9552e1994a5c545b47b
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114355"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404020"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Azure AD -sovelluksen rekisteröinti Power BI:ssä käytettäväksi
 
@@ -94,7 +94,7 @@ Kun rekisteröit sovelluksen, saat [sovellustunnuksen](embed-sample-for-customer
 
 ## <a name="how-to-get-the-service-principal-object-id"></a>Palvelun päänimen objektitunnuksen hakeminen
 
-Kun käytät [Power BI -ohjelmointirajapintoja](https://docs.microsoft.com/rest/api/power-bi/), muista määrittää toiminnot [palvelun päänimen objektitunnuksella](embed-service-principal.md#how-to-get-the-service-principal-object-id) siten, että toiminnot viittaavat palvelun päänimeen (ota esimerkiksi palvelun päänimi käyttöön työtilan järjestelmänvalvojana).
+Kun käytät [Power BI -ohjelmointirajapintoja](https://docs.microsoft.com/rest/api/power-bi/), muista määrittää toiminnot [palvelun päänimen objektitunnuksella](embed-service-principal.md) siten, että toiminnot viittaavat palvelun päänimeen (ota esimerkiksi palvelun päänimi käyttöön työtilan järjestelmänvalvojana).
 
 ## <a name="apply-permissions-to-your-application-within-azure-ad"></a>Käyttöoikeuksien soveltaminen sovellukseen Azure AD:ssä
 

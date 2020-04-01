@@ -8,19 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
-ms.openlocfilehash: a013053e3a7948f340b8c27e154cc7578cdea672
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 149b4f8663838c0a87609a1ec24358fb9ee9727e
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79079136"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403626"
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Vaihe 3: Tietojoukon luominen Power BI:ssä
 Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot työnnetään tietojoukkoon](walkthrough-push-data.md).
 
 Tietojen tietojoukkoon työntämisen **vaiheessa 2**, [Todennustunnuksen hankkiminen](walkthrough-push-data-get-token.md), sait tunnuksen **Microsoft Azure Active Directoryyn** todentamista varten. Tässä vaiheessa tunnusta käytetään [Julkaise tietojoukko](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) -toiminnon kutsumiseen.
 
-REST-resurssin kutsumista varten käytät URL-osoitetta, jossa resurssi sijaitsee, ja lähetät JavaScript Object Notation (JSON) -merkkijonon, joka kuvailee tietojoukon, Power BI -palvelun resurssiin. REST-resurssi yksilöi käsiteltävän Power BI -palvelun osan. Tietojen työntämiseksi tietojoukkoon kohderesurssi on **Tietojoukko**. Tietojoukon tunnistava URL-osoite on https://api.PowerBI.com/v1.0/myorg/datasets. Jos olet työntämässä tietoja ryhmässä, URL-osoite on https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets.
+REST-resurssin kutsumista varten käytät URL-osoitetta, jossa resurssi sijaitsee, ja lähetät JavaScript Object Notation (JSON) -merkkijonon, joka kuvailee tietojoukon, Power BI -palvelun resurssiin. REST-resurssi yksilöi käsiteltävän Power BI -palvelun osan. Tietojen työntämiseksi tietojoukkoon kohderesurssi on **Tietojoukko**. Tietojoukon tunnistava URL-osoite on `https://api.PowerBI.com/v1.0/myorg/datasets`. Jos olet työntämässä tietoja ryhmässä, URL-osoite on `https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets`.
 
 Power BI:n REST-toiminnon todentamiseksi lisäät [Todennustunnuksen hankkiminen](walkthrough-push-data-get-token.md) -vaiheessa saamasi tunnuksen pyynnön otsikkoon:
 
