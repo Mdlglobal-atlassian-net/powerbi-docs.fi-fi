@@ -1,0 +1,54 @@
+- name: Power BI -automaation ohjeet
+  href: index.yml
+  expanded: true
+  items:
+    - name: Yleiskatsaus
+      expanded: true
+      items:
+        - name: 'Mitä voin tehdä Power BI:n ohjelmointirajapinnalla?'
+          href: overview-of-power-bi-rest-api.md
+    - name: Opetusohjelmat
+      expanded: true
+      items:
+        - name: Tietojen työntäminen tietojoukkoon
+          href: walkthrough-push-data.md
+        - name: Todennustunnuksen hankkiminen
+          href: walkthrough-push-data-get-token.md
+        - name: Tietojoukon luominen
+          href: walkthrough-push-data-create-dataset.md
+        - name: Tietojoukon hakeminen rivien lisäämiseksi
+          href: walkthrough-push-data-get-datasets.md
+        - name: Rivien lisääminen taulukkoon
+          href: walkthrough-push-data-add-rows.md
+    - name: Käsitteet
+      items:
+        - name: Automaattinen reaaliaikaisten tietojen säilytyskäytäntö
+          href: api-automatic-retention-policy-for-real-time-data.md
+        - name: Tietojen lähettäminen
+          items:
+            - name: Power BI REST -ohjelmointirajapinnan rajoitukset
+              href: api-rest-api-limitations.md
+            - name: Tietojoukon ominaisuudet
+              href: api-dataset-properties.md
+            - name: Tietomallin versiointi
+              href: api-data-model-versioning.md
+    - name: Ohjeet
+      items:
+        - name: Tunnistetietojen määrittäminen
+          href: configure-credentials.md
+    - name: Viittaus
+      items:
+        - name: REST-ohjelmointirajapinnat
+          href: 'https://docs.microsoft.com/rest/api/power-bi'
+        - name: 'Power BI:n REST-ohjelmointirajapinnan viite'
+          href: rest-api-reference.md
+        - name: Kattava koodiluettelo
+          href: walkthrough-push-data-complete-code.md
+    - name: Resurssit
+      items:
+        - name: Kehityskeskus
+          href: 'https://powerbi.microsoft.com/en-us/developers/'
+        - name: 'Power BI C# Git Repo'
+          href: 'https://go.microsoft.com/fwlink/?linkid=848273'
+        - name: '.NET SDK: lataaminen'
+          href: 'https://go.microsoft.com/fwlink/?linkid=848274'

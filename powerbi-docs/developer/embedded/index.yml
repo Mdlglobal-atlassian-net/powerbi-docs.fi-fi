@@ -1,0 +1,83 @@
+### YamlMime:Landing
+title: Upotetun Power BI -analytiikan ohjeet
+summary: Opi käyttämään kahta upotettua analytiikkaratkaisua, Power BI Embedded -palvelua sekä upottamista Power BI Premiumin avulla.
+metadata:
+  title: Upotetun Power BI -analytiikan ohjeet
+  description: Opi käyttämään kahta upotettua analytiikkaratkaisua, Power BI Embedded -palvelua sekä upottamista Power BI Premiumin avulla.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page
+  ms.collection: collection
+  author: KesemSharabi
+  ms.author: kesharab
+  ms.date: 31/03/2020
+  ms.openlocfilehash: 3f7bf1ebb51e7f9e5916e16280a2e10d7339df73
+  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 04/01/2020
+  ms.locfileid: "80516257"
+landingContent:
+- title: Aloittaminen
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Mitä on upottaminen Power BI:n avulla?
+      url: embedding.md
+    - text: Mikä on Power BI Embedded Azuressa?
+      url: azure-pbie-what-is-power-bi-embedded.md
+    - text: Usein kysyttyjä kysymyksiä
+      url: embedded-faq.md
+- title: Upota raportteja tai koontinäyttöjä
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 'Opetusohjelma: Power BI -sisällön upottaminen sovellukseen asiakkaille'
+      url: embed-sample-for-customers.md
+    - text: 'Opetusohjelma: Power BI -sisällön upottaminen sovellukseen organisaatiolle'
+      url: embed-sample-for-your-organization.md
+    - text: 'Opetusohjelma: Power BI:n sivutetun raportin upottaminen sovellukseen asiakkaitasi varten'
+      url: embed-paginated-reports-customers.md
+    - text: 'Opetusohjelma: Power BI -sisällön upottaminen sovellukseesi kansallisissa pilvipalveluissa'
+      url: embed-sample-for-customers-national-clouds.md
+  - linkListType: reference
+    links:
+    - text: Upottamisen määritystyökalu
+      url: https://app.powerbi.com/embedsetup
+    - text: Kehittäjien mallit ja komentosarjat
+      url: https://github.com/Microsoft/PowerBI-Developer-Samples
+- title: Tuotannon suunnitteleminen
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Kapasiteetti ja SKU
+      url: embedded-capacity.md
+    - text: Kapasiteetin suunnittelu
+      url: embedded-capacity-planning.md
+  - linkListType: concept
+    links:
+    - text: Suorituskykyä parantavat parhaat käytännöt
+      url: embedded-performance-best-practices.md
+    - text: Power BI -käyttöoikeudet
+      url: power-bi-permissions.md
+    - text: Kysymyksiä ja vastauksia
+      url: qanda.md
+    - text: Upotetun sovelluksen vianmääritys
+      url: embedded-troubleshoot.md
+- title: Viittaukset ja resurssit
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Power BI REST-ohjelmointirajapinnat
+      url: https://docs.microsoft.com/rest/api/power-bi/
+    - text: Power BI:n REST-ohjelmointirajapinnan viite
+      url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
+    - text: Kehittäjäkeskus
+      url: https://powerbi.microsoft.com/developers/
+    - text: Power BI -kirjastot
+      url: https://www.nuget.org/profiles/powerbi
+    - text: Playground
+      url: https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html
+    - text: JavaScript-wiki
+      url: https://github.com/Microsoft/powerbi-javascript/wiki

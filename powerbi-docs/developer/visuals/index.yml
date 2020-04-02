@@ -1,0 +1,59 @@
+### YamlMime:Landing
+title: Power BI -visualisointien ohjeet
+summary: Kehitä oma Power BI -visualisointi, jota sinä, organisaatiosi tai koko Power BI -yhteisö voitte käyttää. Ohjeista löydät tarvitsemasi tiedot.
+metadata:
+  title: Power BI -visualisointien ohjeet
+  description: Kehitä oma Power BI -visualisointi, jota sinä, organisaatiosi tai koko Power BI -yhteisö voitte käyttää. Ohjeista löydät tarvitsemasi tiedot.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page
+  ms.collection: collection
+  author: KesemSharabi
+  ms.author: kesharab
+  ms.date: 31/03/2020
+  ms.openlocfilehash: d68b08f941ebe04c41e29f1260332e6f2b0d332c
+  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 04/01/2020
+  ms.locfileid: "80516234"
+landingContent:
+- title: Aloittaminen
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Visualisoinnit Power BI:ssä
+      url: power-bi-custom-visuals.md
+    - text: Power BI -visualisoinnin projektirakenne
+      url: visual-project-structure.md
+    - text: Usein kysyttyjä kysymyksiä
+      url: power-bi-custom-visuals-faq.md
+- title: Power BI -visualisoinnin kehittäminen
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 'Opetusohjelma: Power BI -visualisoinnin kehittäminen'
+      url: custom-visual-develop-tutorial.md
+    - text: 'Opetusohjelma: Muotoiluasetusten lisääminen Power BI -visualisointiin'
+      url: custom-visual-develop-tutorial-format-options.md
+  - linkListType: concept
+    links:
+    - text: Power BI -visualisointien ohjeet
+      url: guidelines-powerbi-visuals.md
+- title: Power BI -visualisointien julkaiseminen
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Power BI -visualisointien julkaiseminen kumppanikeskuksessa
+      url: office-store.md
+    - text: Sertifioinnin hankkiminen Power BI -visualisoinnille
+      url: power-bi-custom-visuals-certified.md
+- title: Viittaukset ja resurssit
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Power BI -visualisointien mallit
+      url: https://microsoft.github.io/PowerBI-visuals/samples/
+    - text: Git-säilö
+      url: https://github.com/Microsoft/PowerBI-visuals

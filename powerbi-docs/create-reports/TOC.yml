@@ -20,6 +20,8 @@
       items:
         - name: 'Hanki Power BI:n malleja'
           href: ../sample-datasets.md
+        - name: COVID-19 Yhdysvallat -malli
+          href: sample-covid-19-us.md
         - name: Asiakkaan tuottavuuden malli
           href: ../sample-customer-profitability.md
         - name: IT-kulutusanalyysimalli

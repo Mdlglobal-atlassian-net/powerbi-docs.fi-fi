@@ -1,0 +1,65 @@
+### YamlMime:Landing
+title: Power BI -automaation ohjeet
+summary: Power BI -automaation avulla voit suorittaa hallintatehtäviä Power BI -objekteissa, kuten raporteissa, tietojoukoissa ja työtiloissa.
+metadata:
+  title: Power BI -automaation ohjeet
+  description: Power BI -automaation avulla voit suorittaa hallintatehtäviä Power BI -objekteissa, kuten raporteissa, tietojoukoissa ja työtiloissa.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page
+  ms.collection: collection
+  author: KesemSharabi
+  ms.author: kesharab
+  ms.date: 31/03/2020
+  ms.openlocfilehash: 33f3caa20bc29c41b9d2c43f6727947ce9b7d446
+  ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 04/01/2020
+  ms.locfileid: "80516395"
+landingContent:
+- title: Aloittaminen
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Lue, mitä voit tehdä Power BI -ohjelmointirajapinnalla
+      url: overview-of-power-bi-rest-api.md
+  - linkListType: tutorial
+    links:
+    - text: 'Opetusohjelma: Tietojen työntäminen tietojoukkoon'
+      url: walkthrough-push-data.md
+    - text: 'Opetusohjelma: Todennustunnuksen hankkiminen'
+      url: walkthrough-push-data-get-token.md
+    - text: 'Opetusohjelma: Luo tietojoukko'
+      url: walkthrough-push-data-create-dataset.md
+    - text: Tietojoukon hakeminen rivien lisäämiseksi
+      url: walkthrough-push-data-get-datasets.md
+    - text: Rivien lisääminen Power BI -taulukkoon
+      url: walkthrough-push-data-add-rows.md
+- title: Tietojen käsittely
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Automaattinen reaaliaikaisten tietojen säilytyskäytäntö
+      url: api-automatic-retention-policy-for-real-time-data.md
+    - text: Power BI REST -ohjelmointirajapinnan rajoitukset
+      url: api-rest-api-limitations.md
+    - text: Tietojoukon ominaisuudet
+      url: api-dataset-properties.md
+  - linkListType: how-to-guide
+    links:
+    - text: Tunnistetietojen määrittäminen
+      url: configure-credentials.md
+- title: Viittaukset ja resurssit
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Power BI REST-ohjelmointirajapinnat
+      url: https://docs.microsoft.com/rest/api/power-bi/
+    - text: Power BI:n REST-ohjelmointirajapinnan viite
+      url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
+    - text: Kehittäjäkeskus
+      url: https://powerbi.microsoft.com/developers/
+    - text: Power BI -kirjastot
+      url: https://www.nuget.org/profiles/powerbi

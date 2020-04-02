@@ -1,0 +1,120 @@
+- name: Power BI -visualisointien ohjeet
+  href: index.yml
+  expanded: true
+  items:
+    - name: Yleiskatsaus
+      expanded: true
+      items:
+        - name: 'Visualisoinnit Power BI:ssä'
+          href: power-bi-custom-visuals.md
+    - name: Opetusohjelmat
+      expanded: true
+      items:
+        - name: Power BI -visualisoinnin kehittäminen
+          href: custom-visual-develop-tutorial.md
+        - name: Muotoiluasetusten lisääminen
+          href: custom-visual-develop-tutorial-format-options.md
+        - name: Yksikkötestausten lisääminen visualisointiprojektiin
+          href: unit-tests-introduction.md
+    - name: Käsitteet
+      items:
+        - name: Power BI -visualisoinnin projektirakenne
+          href: visual-project-structure.md
+        - name: Visualisointien käsitteet
+          href: power-bi-visuals-concept.md
+        - name: 'Organisaatioiden visualisoinnit Power BI:ssä'
+          href: power-bi-custom-visuals-organization.md
+        - name: Power BI -visualisointien ohjeet
+          href: guidelines-powerbi-visuals.md
+        - name: Visualisointien UKK
+          href: power-bi-custom-visuals-faq.md
+        - name: Ominaisuuksien käyttö
+          href: capabilities.md
+        - name: Tietonäkymän yhdistämismääritykset
+          href: dataview-mappings.md
+        - name: Objektit ja ominaisuudet
+          href: objects-properties.md
+        - name: Muokkaustilan lisäasetukset
+          href: advanced-edit-mode.md
+    - name: Ohjeet
+      items:
+        - name: Sertifioinnin hankkiminen Power BI -visualisoinnille
+          href: power-bi-custom-visuals-certified.md
+        - name: Power BI -visualisointien julkaiseminen AppSourceen
+          href: office-store.md
+        - name: 'R:ää hyödyntävien Power BI -visualisointien käyttö Power BI:ssä'
+          href: ../../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
+        - name: Visualisointitoimet
+          href: visuals-interactions.md
+        - name: Valintojen lisääminen
+          href: selection-api.md
+        - name: Visualisointien työkaluvihjeiden lisääminen
+          href: add-tooltips.md
+        - name: Analytiikkaruudun lisääminen
+          href: analytics-pane.md
+        - name: Visualisointien suodattaminen
+          href: filter-api.md
+        - name: Lisätietojen noutaminen
+          href: fetch-more-data.md
+        - name: Kirjanmerkkituen lisääminen
+          href: bookmarks-support.md
+        - name: Pikavalikon tuen lisäminen
+          href: context-menu.md
+        - name: Lisää alaspäin porautumisen tuki
+          href: drill-down-support.md
+        - name: Tietojen korostaminen visualisoinneissa
+          href: highlight.md
+        - name: Suuren kontrastin tilan tuen lisääminen
+          href: high-contrast-support.md
+        - name: Osittajien synkronoinnin käyttöönotto
+          href: enable-sync-slicers.md
+        - name: Visualisointien virheiden korjaus
+          href: visuals-how-to-debug.md
+        - name: Power BI -visualisointien vianmääritys
+          href: power-bi-custom-visuals-troubleshoot.md
+    - name: Viittaus
+      items:
+        - name: Aloitussivu
+          href: landing-page.md
+        - name: 'URL:n käynnistäminen'
+          href: launch-url.md
+        - name: Paikallisen tallennustilan ohjelmointirajapinta
+          href: local-storage.md
+        - name: Tapahtumien hahmontaminen
+          href: event-service.md
+        - name: Lajittelu
+          href: sort-options.md
+        - name: Lokalisointi
+          href: localization.md
+        - name: Power BI Visual -apuohjelmat
+          items:
+            - name: Ulkoisten kirjastojen lisääminen
+              href: adding-external-libraries.md
+            - name: Vuorovaikutteisuuden apuohjelmat
+              href: utils-interactivity-selections.md
+            - name: Muotoilun apuohjelmat
+              href: utils-formatting.md
+            - name: Tietonäkymäapuohjelmat
+              href: utils-dataview.md
+            - name: Kaavioapuohjelmat
+              href: utils-chart.md
+            - name: Väriapuohjelmat
+              href: utils-color.md
+            - name: SVG-apuohjelmat
+              href: utils-svg.md
+            - name: Tyyppiapuohjelmat
+              href: utils-type.md
+            - name: Työkaluvihjeiden apuohjelmat
+              href: utils-tooltip.md
+            - name: Tietonäkymäapuohjelmat
+              href: utils-dataview.md
+    - name: Resurssit
+      items:
+        - name: Kehityskeskus
+          href: 'https://powerbi.microsoft.com/developers/'
+        - name: Power BI -visualisointien mallit
+          href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
+        - name: Power BI -visualisointien Git‑säilö
+          href: 'https://go.microsoft.com/fwlink/?linkid=848277'
+        - name: SSL-varmenteen luominen
+          href: create-ssl-certificate.md
