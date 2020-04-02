@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: dc429e4147016df07d339468090ad50bb6f14842
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 52f840d5806c10de088838cf64187b953f36aa54
+ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79493890"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80550936"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseesi kansallisissa pilvipalveluissa
 
@@ -116,7 +116,7 @@ Tässä artikkelissa näytetään koodi, jota käytetään GitHubin [App Owns Da
 
 * Power BI for kiina cloud -parametrit
 
-1. Korvaa tiedosto Cloud.config [Power BI for China](https://github.com/Microsoft/PowerBI-Developer-Samples/blob/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config) Cloud -sisällöllä.
+1. Korvaa tiedosto Cloud.config [Power BI for China](https://github.com/microsoft/PowerBI-Developer-Samples/blob/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config) Cloud -sisällöllä.
 
 2. Päivitä applicationId (natiivisovelluksen sovellustunnus), workspaceId, user (pääkäyttäjä) ja password tiedostossa Web.config.
 
@@ -143,7 +143,7 @@ Rekisteröi sovellus Azure AD:ssä REST-ohjelmointirajapinnan kutsujen tekemisek
 
 * Power BI for China cloud: ```https://app.powerbi.cn/apps```
 
-Jos latasit [Asiakkaan mallin upottaminen](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), voit todentaa mallin Azure AD:hen saamasi **sovellustunnuksen** avulla. Voit määrittää mallin muuttamalla **applicationId**-arvoa *web.config*-tiedostossa.
+Jos latasit [Asiakkaan mallin upottaminen](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData), voit todentaa mallin Azure AD:hen saamasi **sovellustunnuksen** avulla. Voit määrittää mallin muuttamalla **applicationId**-arvoa *web.config*-tiedostossa.
 
 ## <a name="step-2---get-an-access-token-from-azure-ad"></a>Vaihe 2 – hanki käyttöoikeustietue Azure AD:stä
 
@@ -187,7 +187,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 
 Power BI -asiakasohjelmaobjektin avulla voit noutaa viitteen upotettavalle kohteelle. Voit upottaa koontinäyttöjä, ruutuja tai raportteja. Tässä on esimerkki siitä, miten voit noutaa ensimmäisen koontinäytön, ruudun tai raportin tietystä työtilasta.
 
-Malli on saatavilla [App Owns Data -mallin](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) kohdasta **Controllers\HomeController.cs**.
+Malli on saatavilla [App Owns Data -mallin](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) kohdasta **Controllers\HomeController.cs**.
 
 #### <a name="reports"></a>Raportit
 
@@ -243,7 +243,7 @@ Upotustunnuksen voi luoda JavaScript-ohjelmointirajapinnan avulla. Upotustunnus 
 > [!IMPORTANT]
 > Koska upotustunnukset on tarkoitettu vain kehitystestaukseen, Power BI -päätilin luomien upotustunnusten määrää on rajoitettu. [Sinun on ostettava kapasiteettia](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical), jos haluat toteuttaa upotusskenaarioita hyötykäytössä. Kun ostat kapasiteettia, voit luoda upotustunnuksia rajattomasti.
 
-Malli on saatavilla artikkelin [Organisaation mallin upotus](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) kohdasta **Controllers\HomeController.cs**.
+Malli on saatavilla artikkelin [Organisaation mallin upotus](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) kohdasta **Controllers\HomeController.cs**.
 
 Luokka luodaan kohteille **EmbedConfig** ja **TileEmbedConfig**. Malli on saatavilla kohdissa **Models\EmbedConfig.cs** ja **Models\TileEmbedConfig.cs**.
 
@@ -309,7 +309,7 @@ var embedConfig = new TileEmbedConfig()
 
 JavaScriptin avulla voit ladata koontinäytön verkkosivun jakoelementtiin. Malli käyttää EmbedConfig/TileEmbedConfig-mallia yhdessä koontinäytön, ruudun tai raportin näkymien kanssa. Jos haluat täydellisen mallin JavaScript-ohjelmointirajapinnan käytöstä, voit käyttää [Microsoft Power BI:n upotettua mallia](https://microsoft.github.io/PowerBI-JavaScript/demo).
 
-Sovellusmalli on saatavilla artikkelista [Organisaation mallin upotus](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
+Sovellusmalli on saatavilla artikkelista [Organisaation mallin upotus](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData).
 
 ### <a name="viewshomeembeddashboardcshtml"></a>Views\Home\EmbedDashboard.cshtml
 
@@ -436,7 +436,7 @@ Sovellusmalli on saatavilla artikkelista [Organisaation mallin upotus](https://g
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* GitHubissa on saatavilla mallisovellus, jota voit hyödyntää. Edellä olevat esimerkit perustuvat tähän malliin. Katso lisätietoja artikkelista [Organisaation mallin upotus](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
+* GitHubissa on saatavilla mallisovellus, jota voit hyödyntää. Edellä olevat esimerkit perustuvat tähän malliin. Katso lisätietoja artikkelista [Organisaation mallin upotus](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData).
 
 * Saat lisätietoja JavaScript-ohjelmointirajapinnasta artikkelista [Power BI JavaScript -ohjelmointirajapinta](https://github.com/Microsoft/PowerBI-JavaScript).
 
