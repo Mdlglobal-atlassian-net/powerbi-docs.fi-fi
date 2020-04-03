@@ -317,8 +317,6 @@
               href: ../desktop-accessibility-keyboard-shortcuts.md
         - name: Sivutetut raportit
           items:
-            - name: 'Käytännön labratyö: Luo sivutettu raportti'
-              href: 'https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208'
             - name: Anna tiedot suoraan sivutettuun raporttiin
               href: ../paginated-reports/paginated-reports-enter-data.md
             - name: Upotetun tietolähteen luominen
