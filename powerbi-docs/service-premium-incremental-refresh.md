@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 03/27/2020
 ms.author: davidi
 LocalizationGroup: Premium
-ms.openlocfilehash: 852bdcdeb71f6dae555c37467145bad6b584e324
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.openlocfilehash: 1208a598c08b87d0e479e4d8901f880a5dfa6900
+ms.sourcegitcommit: dc18209dccb6e2097a92d87729b72ac950627473
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527616"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80361817"
 ---
 # <a name="incremental-refresh-in-power-bi"></a>Lisäävää päivitys Power BI:ssä
 
@@ -136,7 +136,7 @@ Power BI -palvelun ensimmäinen päivitys saattaa kestää kauemmin kaikkien vii
 >
 > Vähennä tarkkuus tasolle, joka on hyväksyttävä päivitystaajuutta koskevien vaatimustesi mukaisesti.
 >
-> Mukautettujen kyselyjen määrittäminen tietojen muutosten havaitsemiseksi aiotaan sallia myöhemmin. Tällöin voidaan välttää kaikkien sarakkeen arvojen säilyttäminen.
+> Määritä mukautettu kysely tietojen muutosten havaitsemiseksi XMLA-päätepisteen avulla ja vältä sarakearvon säilyttäminen kokonaan. Saat lisätietoja alla olevasta Tietojen muutosten havaitseminen mukautetuilla kyselyillä -kohdasta.
 
 #### <a name="only-refresh-complete-periods"></a>Vain täysien jaksojen päivittäminen
 
@@ -155,7 +155,7 @@ Voit nyt päivittää mallin. Ensimmäinen päivitys saattaa kestää kauemmin h
 
 ## <a name="query-timeouts"></a>Kyselyn aikakatkaisut
 
-[Vianmäärityksen päivitys](https://docs.microsoft.com/power-bi/refresh-troubleshooting-refresh-scenarios) -artikkelissa kerrotaan, että Power BI -palvelussa päivitystoiminnot voidaan aikakatkaista. Tietolähteen oletusaikakatkaisu voi myös rajoittaa kyselyjä. Useimmat suhteelliset lähteet sallivat aikakatkaisujen ohittamisen M-lausekkeessa. Esimerkiksi alla olevassa lausekkeessa sen kestoksi määritetään kaksi tuntia [SQL Serverin tietojen käytön funktion](https://msdn.microsoft.com/query-bi/m/sql-database) avulla. Kukin käytäntöalueiden määrittämä jakso lähettää kyselyn, joka noudattaa komennon aikakatkaisua.
+[Vianmäärityksen päivitys](refresh-troubleshooting-refresh-scenarios.md) -artikkelissa kerrotaan, että Power BI -palvelussa päivitystoiminnot voidaan aikakatkaista. Tietolähteen oletusaikakatkaisu voi myös rajoittaa kyselyjä. Useimmat suhteelliset lähteet sallivat aikakatkaisujen ohittamisen M-lausekkeessa. Esimerkiksi alla olevassa lausekkeessa sen kestoksi määritetään kaksi tuntia [SQL Serverin tietojen käytön funktion](https://docs.microsoft.com/powerquery-m/sql-database) avulla. Kukin käytäntöalueiden määrittämä jakso lähettää kyselyn, joka noudattaa komennon aikakatkaisua.
 
 ```powerquery-m
 let
@@ -166,7 +166,89 @@ in
     #"Filtered Rows"
 ```
 
-## <a name="limitations"></a>Rajoitukset
+## <a name="xmla-endpoint-benefits-for-incremental-refresh"></a>XLMA-päätepisteiden edut lisäävässä päivityksessä
 
-Tällä hetkellä [yhdistelmämallien](desktop-composite-models.md) asteittaista päivittämistä tuetaan vain SQL Server-, Azure SQL -tietokanta-, SQL Data Warehouse-, Oracle- ja Teradata-tietolähteillä.
+Premium-kapasiteetin tietojoukkojen [XMLA-päätepisteessä](service-premium-connect-tools.md) voidaan ottaa käyttöön luku- ja kirjoitustoiminnot. Tämä voi tarjota merkittäviä etuja lisääville päivityksille. XMLA-päätepisteen kautta suoritettuja päivitystoimintoja ei ole rajoitettu [48 päivitykseen päivässä](refresh-data.md#data-refresh) eikä [ajoitettujen päivitysten aikakatkaisua](refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) käytetä. Tästä voi olla hyötyä lisäävien päivitysten tilanteissa.
 
+### <a name="refresh-management-with-sql-server-management-studio-ssms"></a>Päivitysten hallinta SQL Server Management Studiolla (SSMS)
+
+Kun XMLA-päätepisteen luku- ja kirjoitustoiminnot ovat käytössä, SSMS:llä voidaan tarkastella ja hallita osioita, jotka luodaan lisäävän päivityksen käytännöillä.
+
+![Osiot SSMS:ssä](media/service-premium-incremental-refresh/ssms-partitions.png)
+
+#### <a name="refresh-historical-partitions"></a>Päivitysten historialliset osiot
+
+Tällä tavalla voidaan esimerkiksi päivittää tietty historiallinen osio, joka ei ole lisäävällä alueella. Näin voidaan suorittaa takautuvat päivitys ilman kaikkien historiallisten tietojen päivitystä.
+
+#### <a name="override-incremental-refresh-behavior"></a>Lisäävän päivityksen toiminnan kumoaminen
+
+SSMS:n avulla voit hallita paremmin, miten lisääviä päivityksiä kutsutaan [TMSL:n (taulukkomallin komentosarjakieli, Tabular Model Scripting Language)](https://docs.microsoft.com/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current) ja [TOM:n (taulukko-objektimalli, Tabular Object Model)](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current) avulla. Napsauta esimerkiksi SSMS:n Object Explorerissa taulukkoa hiiren kakkospainikkeella ja valitse sitten valikosta **Process Table**. Luo sitten TMSL-päivityskomento napsauttamalla **Script**-painiketta.
+
+![Process Table -valintaikkunan Script-painike](media/service-premium-incremental-refresh/ssms-process-table.png)
+
+Voit lisätä TMSL-päivityskomentoon seuraavat parametrit, joilla voit kumota lisäävän päivityksen oletustoiminnan.
+
+- **applyRefreshPolicy**: Jos taulukolle on määritetty lisäävän päivityksen käytäntö, applyRefreshPolicy määrittää, käytetäänkö sitä vai ei. Jos käytäntöä ei käytetä, prosessin koko toiminto jättää osion määritelmät muuttumatta, jolloin taulukon kaikki osiot päivitetään täysin. Oletusarvo on true.
+
+- **effectiveDate**: Jos lisäävän päivityksen käytäntöä käytetään, sen täytyy tietää nykyinen päivämäärä, jotta se voi tarkistaa muuttuvat aikavälit historiallisille aikaväleille ja lisäävän aikavälin. effectiveDate-parametrillä voit kumota nykyisen päivämäärän. Tästä on hyötyä testauksessa, demoissa ja käyttötarkoituksissa, joissa tietoja päivitetään lisäävästi tiettyyn menneeseen tai tulevaan päivään saakka (esimerkiksi tulevat budjetit). Oletusarvo on [nykyinen päivämäärä](#current-date).
+
+```json
+{ 
+  "refresh": {
+    "type": "full",
+
+    "applyRefreshPolicy": true,
+    "effectiveDate": "12/31/2013",
+
+    "objects": [
+      {
+        "database": "IR_AdventureWorks", 
+        "table": "FactInternetSales" 
+      }
+    ]
+  }
+}
+```
+
+### <a name="custom-queries-for-detect-data-changes"></a>Tietojen muutosten havaitseminen mukautetuilla kyselyillä
+
+TMSL:n ja/tai TOM:n avulla voit kumota tunnistettujen tietomuutosten toiminnan. Tällä voit paitsi välttää säilyttämästä viimeisimmän päivityksen saraketta välimuistissa, mutta myös hyödyntää käyttötilanteita, joissa määritys tai ohjetaulukko valmistellaan ETL-prosesseilla merkitsemään vain ne osiot, jotka täytyy päivittää. Tällä tavalla voidaan luoda tehokkaampi lisäävän päivityksen prosessi, jossa vain vaadittavat jaksot päivitetään riippumatta siitä, kuinka pitkä aika tietojen päivittämisestä on.
+
+pollingExpression-lausekkeen tulisi olla kevyt M-lauseke tai toisen M-kyselyn nimi. Sen täytyy palauttaa skalaariarvo ja se suoritetaan jokaiselle osiolle. Jos arvo palautti eri arvon kuin edellisen lisäävän päivityksen yhteydessä, osio merkitään täyttä käsittelyä varten.
+
+Seuraava esimerkki kattaa kaikki 120 kuukautta historialliselta ajanjaksolta takautuville muutoksille. 120 kuukauden määrittäminen 10 vuoden asemesta tarkoittaa sitä, että tietojen pakkaus ei ole ehkä yhtä tehokasta, mutta tällä tavalla voidaan välttää koko historiallisen vuoden päivittäminen, mikä olisi työläämpää, kun yhden kuukauden päivittäminen riittää takautuvalle muutokselle.
+
+```json
+"refreshPolicy": {
+    "policyType": "basic",
+    "rollingWindowGranularity": "month",
+    "rollingWindowPeriods": 120,
+    "incrementalGranularity": "month",
+    "incrementalPeriods": 120,
+    "pollingExpression": "<M expression or name of custom polling query>",
+    "sourceExpression": [
+    "let ..."
+    ]
+}
+```
+
+## <a name="metadata-only-deployment"></a>Pelkkien metatietojen käyttöönotto
+
+Kun julkaiset PBIX-tiedoston uuden version Power BI Desktopista Power BI -palvelun työtilaan ja samanniminen tietojoukko on jo olemassa, sinua kehotetaan korvaamaan olemassa oleva tietojoukko.
+
+![Korvaa tietojoukko -kehote](media/service-premium-incremental-refresh/replace-dataset-prompt.png)
+
+Joissakin tapauksissa et ehkä halua korvata tietojoukkoa, varsinkaan lisäävän päivityksen yhteydessä. Power BI Desktopin tietojoukko voi olla paljon pienempi kuin palvelussa. Jos palvelun tietojoukossa on käytössä lisäävän päivityksen käytäntö, se voi sisältää useiden vuosien historiallisia tietoja, jotka menetät, jos korvaat tietojoukon. Kaikkien historiallisten tietojen päivittäminen voi kestää tunteja ja aiheuttaa käyttäjille järjestelmän käyttökatkoja.
+
+Sen sijaan on parempi suorittaa vain metatietojen käyttöönotto. Tällä tavalla voit ottaa käyttöön uudet objektit menettämättä historiallisia tietoja. Jos olet esimerkiksi lisännyt joitain mittareita, voit ottaa käyttöön vain ne ilman tietojen päivitystä, mikä säästää paljon aikaa.
+
+Kun XMLA-päätepiste on määritetty kirjoitus- ja lukutoiminnoille, se tarjoaa yhteensopivuuden sellaisille työkaluille, joilla tämä on mahdollista. ALM Toolkit esimerkiksi on rakenne-eroavaisuustyökalu Power BI -tietojoukoille: sillä voit ottaa käyttöön pelkät metatiedot.
+
+Lataa ja asenna ALM Toolkitin uusin versio [Analysis Services Git -säilöstä](https://github.com/microsoft/Analysis-Services/releases). Käyttöohjeiden linkit ja tiedot tuesta ovat saatavilla Ohje-valintanauhan kautta. Jos haluat suorittaa pelkkien metatietojen käyttöönoton, suorita vertailu ja valitse lähteeksi käynnissä oleva Power BI -esiintymä ja kohteeksi olemassa oleva tietojoukko palvelussa. Ota huomioon näytetyt erot ja ohita lisäävän päivityksen osiot sisältävän taulukon päivitys. Asetusten valintaikkunassa voit myös säilyttää osiot taulukkopäivityksille. Vahvista valinta ja varmista kohdemallin eheys. Suorita sitten päivitys.
+
+![ALM Toolkit](media/service-premium-incremental-refresh/alm-toolkit.png)
+
+## <a name="see-also"></a>Muuta aiheeseen liittyvää
+
+[Tietojoukon liitettävyys XMLA-päätepisteeseen](service-premium-connect-tools.md)   
+[Päivitystilanteiden vianmääritys](refresh-troubleshooting-refresh-scenarios.md)   

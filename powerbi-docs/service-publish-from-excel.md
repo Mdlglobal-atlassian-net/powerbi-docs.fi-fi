@@ -1,91 +1,96 @@
 ---
-title: Julkaiseminen Power BI:stä Excel 2016:een
+title: Julkaiseminen Power BI:hin Microsoft Excelistä
 description: Opi julkaisemaan Excel-työkirja Power BI -sivustoon.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 03/26/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 81bc53bae43cb16af92a9ecaf20c26c594a24368
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e503d2c68b4b726ab44c3bec0fad7001da33e184
+ms.sourcegitcommit: 8267a7383d6506dae42f87e4f4a2362b875b2911
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881126"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80329624"
 ---
-# <a name="publish-to-power-bi-from-excel-2016"></a>Julkaiseminen Power BI:stä Excel 2016:een
-Excel 2016:n avulla voit julkaista Excel-työkirjat suoraan [Power BI](https://powerbi.microsoft.com) -sivustoon, jossa voit luoda erittäin vuorovaikutteisia raportteja ja koontinäyttöjä työkirjan tietojen perusteella. Voit sitten jakaa merkityksellisiä tietoja muiden kanssa organisaatiossasi.
+# <a name="publish-to-power-bi-from-microsoft-excel"></a>Julkaiseminen Power BI:hin Microsoft Excelistä
+Microsoft Excel 2016:n tai uudemman version avulla voit julkaista Excel-työkirjat suoraan [Power BI](https://powerbi.microsoft.com) -työtilaan, jossa voit luoda erittäin vuorovaikutteisia raportteja ja koontinäyttöjä työkirjan tietojen perusteella. Voit sitten jakaa merkityksellisiä tietoja muiden kanssa organisaatiossasi.
 
-Ennen kuin siirrymme eteenpäin, tässä on joitakin asioita, jotka kannattaa pitää mielessä:
+![Julkaise työkirja Power BI:hin](media/service-publish-from-excel/pbi_uploadexport2.png)
 
-* Ennen kuin voit julkaista Power BI:hin, työkirjasi on tallennettava OneDrive for Businessiin.
-* Tilin, jota käytät kirjautuessasi Officeen, OneDrive for Businessiin ja Power BI:n, on oltava sama tili.
+Kun julkaiset työkirjan Power BI:hin, ota huomioon muutama asia:
+
+* Tilin, jota käytät kirjautuessasi Officeen, OneDrive for Businessiin (jos käytät siihen tallennettuja työkirjoja) ja Power BI:hin, on oltava sama tili.
 * Et voi julkaista tyhjää työkirjaa tai työkirjaa, joka ei sisällä Power BI:n tukemaa sisältöä.
 * Et voi julkaista salattuja tai salasanalla suojattuja työkirjoja tai työkirjoja Information Protection -hallinnalla.
 * Power BI:hin julkaiseminen edellyttää, että moderni todentaminen on käytössä (oletus). Jos se ei ole käytössä, Julkaise-vaihtoehto ei ole käytettävissä Tiedosto-valikon kautta.
 
-## <a name="to-publish-your-excel-workbook"></a>Excel-työkirjan julkaiseminen
-Valitse Excelissä **Tiedosto** > **Julkaise**.
+## <a name="publish-your-excel-workbook"></a>Excel-työkirjan julkaiseminen
+Kun haluat julkaista Excel-työkirjasi, valitse Excelissä **Tiedosto** > **Julkaise** ja valitse joko **Lataa** tai **Vie**.
+
+Jos **lataat** työkirjasi Power BI:hin, voit käsitellä työkirjaa samalla tavalla kuin käyttäessäsi Excel Onlinea. Voit myös kiinnittää työkirjan valintoja Power BI:n koontinäyttöihin ja jakaa työkirjasi tai sen valitut osat muille Power BI:n kautta.
+
+Jos valitset **Vie**, voit viedä taulukon tiedot ja sen tietomallin Power BI:n tietojoukkoon, jonka avulla voit sitten luoda Power BI -raportteja ja -koontinäyttöjä.
 
 ### <a name="local-file-publishing"></a>Paikallisen tiedoston julkaiseminen
-Helmikuun 2017 päivityksestä alkaen Excel 2016 tukee paikallisten Excel-tiedostojen julkaisua. Niitä ei tarvitse tallentaa OneDrive for Businessiin tai SharePoint Onlineen.
+Excel tukee paikallisten Excel-tiedostojen julkaisemista. Niitä ei tarvitse tallentaa OneDrive for Businessiin tai SharePoint Onlineen.
 
 > [!IMPORTANT]
-> Vain Excel 2016 Office 365 -tilauksella sisältää paikallisten tiedostojen julkaisun käyttökokemuksen. Excel 2016:n erillisasennuksella on edelleen vain ”Julkaise”-toiminto, joka edellyttää, että Excel-työkirja tallennetaan OneDrive for Businessiin tai SharePoint Onlineen.
+> Voit julkaista paikallisia tiedostoja vain, jos käytössäsi on Excel 2016 (tai uudempi versio) ja Office 365 -tilaus. Erilliset Excel 2016 -asennukset voivat julkaista Power BI:hin, mutta vain silloin, kun työkirja on tallennettu OneDrive for Businessiin tai SharePoint Onlineen.
 > 
-> 
 
-Kun valitset **Julkaise**, voit valita työtilan, johon haluat julkaista. Tämä voi olla henkilökohtainen tai ryhmän työtila, johon sinulla on käyttöoikeus.
+Kun valitset **Julkaise**, voit valita työtilan, johon haluat julkaista. Työtila voi olla henkilökohtainen työtilasi tai ryhmän työtila, johon sinulla on käyttöoikeus, kuten seuraavassa kuvassa on esitetty.
 
-![](media/service-publish-from-excel/pbi_choose_workspace.png)
+![Julkaise Power BI:hin](media/service-publish-from-excel/pbi_choose_workspace.png)
 
-Näkyviin tulee kaksi vaihtoehtoa, miten saat työkirjasi Power BI:hin.
+Kaksi vaihtoehtoa, miten saat työkirjasi Power BI:hin.
 
-![](media/service-publish-from-excel/pbi_uploadexport3.png)
+![Julkaise Power BI:hin](media/service-publish-from-excel/pbi_uploadexport3.png)
 
-Julkaisun jälkeen sitä säilytetään kopiona Power BI:ssä erillään paikallisesta tiedostosta. Jos haluat päivittää tiedoston Power BI:ssä, sinun on julkaistava päivitetty versio uudelleen. Voit päivittää tiedot ja määrittää ajoitetun päivityksen työkirjaan tai tietojoukkoon Power BI:ssä.
+Julkaisemisen jälkeen julkaistava työkirjan sisältö tuodaan Power BI:hin erilleen paikallisesta tiedostosta. Jos haluat päivittää tiedoston Power BI:ssä, sinun on julkaistava päivitetty versio uudelleen, tai voit myös päivittää tiedot määrittämällä ajoitetun päivityksen työkirjalle tai Power BI -tietojoukolle.
 
-### <a name="publishing-from-excel-standalone"></a>Julkaiseminen erillisestä Excelistä
-Jos työkirjaasi ei ole vielä tallennettu OneDriveen, sinun tulee tallentaa se sinne ensin. Valitse Tallenna pilvipalveluun ja valitse sijainti OneDrive for Businessissa.
+### <a name="publishing-from-a-standalone-excel-installation"></a>Julkaiseminen erillisestä Excel-asennuksesta
+Kun julkaiset erillisestä Excel-asennuksesta, työkirja on tallennettava OneDrive for Businessiin. Valitse **Tallenna pilvipalveluun** ja valitse sijainti OneDrive for Businessissa.
 
-![](media/service-publish-from-excel/pbi_savetoonedrive2.png)
+![Tallenna OneDrive for Businessiin](media/service-publish-from-excel/pbi_savetoonedrive2.png)
 
-Kun työkirja on tallennettu OneDriveen, kun valitset **Julkaise**, näkyviin tulee kaksi vaihtoehtoa, joilla saat työkirjasi Power BI:hin.
+Kun työkirja on tallennettu OneDrive for Businessiin ja valitset **Julkaise**, näkyviin tulee kaksi vaihtoehtoa, joilla saat työkirjasi Power BI:hin, eli **Lataa** ja **Vie**:
 
-![](media/service-publish-from-excel/pbi_uploadexport2.png)
+![Power BI -vaihtoehdot](media/service-publish-from-excel/pbi_uploadexport2.png)
 
 #### <a name="upload-your-workbook-to-power-bi"></a>Työkirjan lataaminen Power BI:hin
-Kun valitset tämän vaihtoehdon, työkirjasi näkyy Power BI:ssä aivan samalla tavalla kuin se näkyisi Excel Onlinessa. Mutta toisin kuin Excel Onlinessa, käytettävissäsi on käteviä ominaisuuksia, joilla voit kiinnittää laskentataulukoiden elementtejä koontinäyttöihin.
+Kun valitset **Lataa**-vaihtoehdon, työkirjasi näkyy Power BI:ssä aivan samalla tavalla kuin se näkyisi Excel Onlinessa. Excel Onlinesta poiketen käytettävissäsi on kuitenkin käteviä ominaisuuksia, joilla voit kiinnittää laskentataulukoiden elementtejä koontinäyttöihin.
 
-Et voi muokata työkirjaa, kun se on avoinna Power BI:ssä, mutta jos muutoksia on tehtävä, voit valita **Muokkaa**-vaihtoehdon ja sitten työkirjan muokkaamisen joko Excel Onlinessa tai tietokoneesi Excelissä. Tekemäsi muutokset tallennetaan työkirjaan OneDrivessa.
+Työkirjaa ei voi muokata Power BI:ssä. Jos haluat muuttaa tietoja, voit valita **Muokkaa**-vaihtoehdon ja sitten työkirjan muokkaamisen joko Excel Onlinessa tai tietokoneesi Excelissä. Tekemäsi muutokset tallennetaan työkirjaan OneDrive for Businessiin.
 
-Latauksen aikana Power BI:ssä ei luoda mitään tietojoukkoja. Työkirja näkyy työtilan siirtymisruudussa Raportit-kohdassa. Power BI:hin ladatuilla työkirjoilla on erityinen Excel-kuvake, jotka merkitsevät ne ladatuiksi Excel-työkirjoiksi.
+kun valitset **Lataa**-vaihtoehdon, Power BI:ssä ei luoda mitään tietojoukkoja. Työkirja näkyy työtilan siirtymisruudussa Raportit-kohdassa. Power BI:hin ladatuilla työkirjoilla on erityinen Excel-kuvake, jotka merkitsevät ne ladatuiksi Excel-työkirjoiksi.
 
-Valitse tämä vaihtoehto, jos sinulla on vain tietoja laskentataulukoissa tai sinulla Pivot-taulukoita ja kaavioita, jotka haluat nähdä Power BI:ssä.
-Lataus-toiminnon käyttäminen Julkaise Power BI:hin -kohdasta Excelissä on melko sama, kuin jos valitset selaimen Power BI:ssä Nouda tiedot > Tiedosto > OneDrive for Business > Yhdistä, hallitse ja näytä Excel Power BI:ssä.
+Valitse **Lataa**-vaihtoehto, jos sinulla on vain tietoja laskentataulukoissa tai sinulla Pivot-taulukoita ja kaavioita, jotka haluat nähdä Power BI:ssä.
+
+Lataus-toiminnon käyttäminen Julkaise Power BI:hin -kohdasta Excelissä on samantapaista kuin jos valitsisit selaimen Power BI:ssä **Nouda tiedot > Tiedosto > OneDrive for Business > Yhdistä, hallitse ja näytä Excel Power BI:ssä**.
 
 #### <a name="export-workbook-data-to-power-bi"></a>Työkirjan tietojen vieminen Power BI:hin
-Kun valitset tämän vaihtoehdon, taulukoissa ja/tai tietomallissa tuetut tiedot viedään uuteen tietojoukkoon Power BI:ssä. Jos sinulla on Power View -taulukoita, ne luodaan uudelleen Power BI:ssä raportteina.
+Kun valitset **Vie**-vaihtoehdon, taulukoissa ja/tai tietomallissa tuetut tiedot viedään uuteen tietojoukkoon Power BI:ssä. Työkirjassa olevat Power View -taulukot luodaan uudelleen Power BI:ssä raportteina.
 
-Voit jatkaa työkirjan muokkaamista. Kun tekemäsi muutokset tallennetaan, ne synkronoidaan Power BI:n tietojoukon kanssa yleensä tunnin kuluessa. Jos tarvitset tuloksia nopeammin, voit valita Julkaise uudelleen, jolloin muutokset viedään heti. Myös raporteissa ja raporttinäkymissä olevat visualisoinnit päivitetään.
+Voit jatkaa työkirjan muokkaamista. Kun tekemäsi muutokset tallennetaan, ne synkronoidaan Power BI:n tietojoukon kanssa yleensä noin tunnin kuluessa. Jos tarvitset enemmän välittömiä päivityksiä, voit valita **Julkaise** uudelleen Excelistä, jolloin tekemäsi muutokset viedään heti. Raporttien ja koontinäyttöjen visualisoinnit päivitetään myös.
 
-Valitse tämä vaihtoehto, jos olet ladannut tiedot tietomalliin Hae ja muunna -ominaisuuden tai Power Pivotin avulla tai jos työkirjassa on visualisointeja sisältäviä Power View -taulukoita, jotka haluat nähdä Power BI:ssä.
+Valitse **Julkaise**-vaihtoehto, jos olet ladannut tiedot tietomalliin Hae ja muunna -toiminnolla tai Power Pivotin toiminnoilla tai jos työkirjassa on visualisointeja sisältäviä Power View -taulukoita, jotka haluat nähdä Power BI:ssä.
 
-Vie-toiminnon käyttäminen Julkaise Power BI:hin -kohdasta Excelissä on melko sama, kuin jos valitset selaimen Power BI:ssä Nouda tiedot > Tiedosto > OneDrive for Business > Vie Excel-tiedon Power BI:hin.
+**Vie**-toiminnon käyttäminen on hyvin samantapaista kuin jos valitsisit selaimen Power BI:ssä **Nouda tiedot > Tiedosto > OneDrive for Business > Vie Excel-tiedon Power BI:hin**.
 
 ## <a name="publishing"></a>Julkaiseminen
-Kun valitset jommankumman vaihtoehdon, Excel kirjautuu Power BI:hin nykyiseltä tililtäsi ja sitten julkaisee työkirjan Power BI -sivustoon. Pidä silmällä Excelin tilariviä. Se näyttää yleistilanteen.
+Kun valitset jommankumman vaihtoehdon, Excel kirjautuu Power BI:hin nykyiseltä tililtäsi ja sitten julkaisee työkirjan Power BI -työtilaan. Voit seurata julkaisuprosessin etenemistä Excelin tilariviltä.
 
-![](media/service-publish-from-excel/pbi_publishingstatus.png)
+![tilarivi Power BI:hin julkaisemista varten](media/service-publish-from-excel/pbi_publishingstatus.png)
 
-Kun toiminto on valmis, voit jatkaa Power BI:hin suoraan Excelistä.
+Kun toiminto on valmis, voit siirtyä Power BI:hin suoraan Excelistä.
 
-![](media/service-publish-from-excel/pbi_gotopbi.png)
+![siirry Power BI:hin](media/service-publish-from-excel/pbi_gotopbi.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Excel-tiedot Power BI:ssä](service-excel-workbook-files.md)  
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

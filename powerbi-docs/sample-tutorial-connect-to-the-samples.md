@@ -1,37 +1,37 @@
 ---
-title: Yhteyden muodostaminen malleihin Power BI -palvelussa
-description: Opi asentamaan ja tutkimaan malleja Power BI -palvelussa.
+title: Jälleenmyyntianalyysimalliin tutustuminen
+description: Opi asentamaan Jälleenmyyntianalyysimalli ja tutkimaan sitä Power BI -palvelussa ja Power BI Desktopissa.
 author: maggiesMSFT
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2019
+ms.date: 03/27/2020
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: c1fbd57f1c92c9900178eb212a1369d25fdf838a
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.openlocfilehash: f18ec650167b7872cb332bc9ccd606f7ea1f7500
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75762159"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404604"
 ---
-#  <a name="import-and-open-sample-packs-for-power-bi"></a>Power BI:n mallipakettien tuominen ja avaaminen
+# <a name="explore-the-retail-analysis-sample"></a>Jälleenmyyntianalyysimalliin tutustuminen
 
 Tässä opetusohjelmassa opit 
-- tuomaan mallisisältöpaketin, lisäämään sen Power BI -palveluun ja avaamaan paketin sisällön. *Sisältöpaketti* on mallityyppi, jossa tietojoukko on niputettu yhteen koontinäytön ja raportin kanssa. 
-- avaamaan .pbix-mallitiedoston Power BI Desktop -versiossa.
+- tuomaan Jälleenmyyntianalyysimalli-mallisisältöpaketin, lisäämään sen Power BI -palveluun ja avaamaan paketin sisällön. *Sisältöpaketti* on mallityyppi, jossa tietojoukko on niputettu yhteen koontinäytön ja raportin kanssa. 
+- Avaa jälleenmyyntianalyysin .pbix-mallitiedosto Power BI Desktopissa.
 
 Jos haluat lisää taustatietoja, tutustu kohtaan [Mallitietojoukkoja Power BI:lle](sample-datasets.md). Artikkelin avulla opit kaiken malleista, kuten niiden hakemisesta, tallentamisesta ja käyttämisestä, ja voit tutustua joihinkin mallien kertomiin tarinoihin. 
 
 ## <a name="prerequisites"></a>Edellytykset
-Mallit ovat käytettävissä Power BI -palvelun ja Power BI Desktop -version kautta. Käytämme esimerkkinä Jälleenmyyntianalyysimallia.
+Mallit ovat käytettävissä Power BI -palvelun ja Power BI Desktop -version kautta. Käytämme jälleenmyyntianalyysimallia, jos haluat seurata mukana.
 
 Tässä opetusohjelmassa käytettävän *Jälleenmyyntianalyysin* mallisisältöpaketti koostuu koontinäytöstä, raportista ja tietojoukosta.
 Ennen aloittamista voit tutustua tähän kyseiseen sisältöpakettiin ja sen skenaarioon kohdassa [Jälleenmyyntianalyysimalli Power BI:lle: esittely](sample-retail-analysis.md).
 
-## <a name="samples-in-the-power-bi-service"></a>Mallit Power BI -palvelussa
+## <a name="import-the-sample-in-the-power-bi-service"></a>Mallin tuominen Power BI -palveluun
 
 1. Avaa Power BI -palvelu (app.powerbi.com), kirjaudu sisään ja avaa työtila, johon haluat tallentaa mallin. 
 
@@ -94,7 +94,7 @@ Tutustu nyt itsenäisesti koontinäyttöön, tietojoukkoon ja raporttiin. Omiin 
      
     ![Merkityksellisiä tietoja -raportti](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
-## <a name="samples-in-power-bi-desktop"></a>Mallit Power BI Desktopissa 
+## <a name="download-the-sample-in-power-bi-desktop"></a>Mallin lataaminen Power BI Desktopissa 
 Kun avaat .pbix-mallitiedoston Power BI Desktopissa, se avautuu Raportti-näkymään, jossa voit tutustua visualisointeja sisältäviin raporttisivuihin ja luoda tai muokata niitä. Raportti-näkymä on rakenteeltaan pääpiirteittäin sama kuin raportin muokkausnäkymä Power BI -palvelussa. Voit esimerkiksi siirtää, kopioida ja liittää sekä yhdistää visualisointeja jne. 
 
 Power BI -palvelun raportin muokkauksesta poiketen Power BI Desktopissa voit työstää kyselyitäsi ja mallintaa tietosi, jotta ne varmasti tukevat raporttiesi parhaita merkityksellisiä tietoja. Voit sen jälkeen tallentaa Power BI Desktop -tiedoston minne tahansa, esimerkiksi paikalliselle asemalle tai pilvipalveluun.

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 156b00c7f7287f12397afea422a38f3870d6c399
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 51c9b8a570abf2686abe9b26a4d9e111e8ef022a
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858421"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404650"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Toimittajan laatuanalyysimalli Power BI:lle: aloita esittely
 
@@ -62,7 +62,7 @@ Vaihtoehtoisesti voit ladata toimittajan laatuanalyysimallin [.pbix-tiedostona](
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän näytteen Excel-työkirja
 
-Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](https://go.microsoft.com/fwlink/?LinkId=529779). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
+Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](https://go.microsoft.com/fwlink/?LinkId=529779). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#explore-excel-samples-inside-excel) lisätietoihin.
 
 ## <a name="downtime-caused-by-defective-materials"></a>Viallisten materiaalien aiheuttamat käyttökatkot
 Analysoidaan viallisten materiaalien aiheuttamia käyttökatkoja ja katsotaan, mitkä toimittajat ovat vastuussa niistä.  
@@ -161,7 +161,7 @@ Katsotaan toista koontinäytön ruutua, joka liittyy vikojen kokonaismäärään
     Katsotaan, aiheuttiko tämä vikamäärän kasvu vastaavan kasvun käyttökatkoajassa.  
 2. Kirjoita kysymysruutuun *käyttökatkoaika minuutteina kuukauden ja vuoden mukaan viivakaaviona*.  
 
-   ![Q&A-kysymys: Käyttökatkoaika minuutteina kuukauden ja vuoden mukaan viivakaaviona](media/sample-supplier-quality/supplier15.png)
+   ![Kysymysosion kysymys: Käyttökatkoaika minuutteina kuukauden ja vuoden mukaan viivakaaviona](media/sample-supplier-quality/supplier15.png)
 
    Käyttökatkoajassa oli hyppy kesäkuun ja lokakuun aikana, mutta muilta osin vikojen määrän kasvu ei aiheuttanut merkittävää lisäystä käyttökatkoissa. Tämä tulos osoittaa, että vikoja hallitaan hyvin.  
 3. Jos haluat kiinnittää kaavion raporttinäkymään, valitse Kiinnitä-kuvake ![Kiinnitä-kuvake](media/sample-supplier-quality/pin.png) kysymysruudun yläpuolella.  

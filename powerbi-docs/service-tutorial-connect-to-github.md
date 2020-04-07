@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 08/07/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 986f35cd1c4f612b16374107487d0ca20c9c607e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a3c87a700df1c35596b6520cc64d9b580ccb74eb
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871262"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403394"
 ---
 # <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Opetusohjelma: Yhteyden muodostaminen GitHub-säilöön Power BI:llä
 Tässä opetusohjelmassa yhdistät Power BI:n GitHub-palvelun oikeisiin tietoihin, jolloin Power BI luo automaattisesti koontinäyttöjä ja raportteja. Muodostat yhteyden Power BI:n sisällön julkiseen säilöön (eli *säilöön*) ja näet vastauksen seuraavanlaisiin kysymyksiin: kuinka moni henkilö osallistuu Power BI:n julkiseen sisältöön? Kuka osallistuu eniten? Minä viikonpäivänä on eniten osallistumisia? Ja muita kysymyksiä. 
@@ -43,7 +43,7 @@ Tarvitset tämän opetusohjelman suorittamiseen GitHub-tilin, jos sinulla ei ole
 
 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
-1. Kirjaudu sisään Power BI -palveluun (https://app.powerbi.com). 
+1. Kirjaudu sisään Power BI -palveluun (`https://app.powerbi.com`). 
 2. Valitse siirtymisruudussa **Sovellukset** ja sitten **Hanki sovelluksia**.
    
    ![Power BI Hanki sovelluksia](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
@@ -64,7 +64,7 @@ Tarvitset tämän opetusohjelman suorittamiseen GitHub-tilin, jos sinulla ei ole
 
 5. Anna luomasi GitHub-tunnistetiedot. Power BI saattaa ohittaa tämän vaiheen, jos olet jo kirjautuneena GitHubiin selaimessa. 
 
-6. Pidä **Todennusmenetelmäksi** valittuna **oAuth2** \> **Kirjaudu sisään**.
+6. Pidä valittuna **todennusmenetelmänä** **oAuth2** ja\> **Kirjaudu sisään**.
 
 7. Noudata GitHubin todennusnäyttöjä. Anna Power BI:lle GitHub-tietojen käyttöoikeus.
    
@@ -124,7 +124,7 @@ Tarvitset tämän opetusohjelman suorittamiseen GitHub-tilin, jos sinulla ei ole
 
     Ilmeisesti tiistai kello 15 on yleisin viikonpäivä ja aika *vahvistuksille*, kun käyttäjät kuittaavat työnsä.
 
-## <a name="clean-up-resources"></a>Resurssien tyhjentäminen
+## <a name="clean-up-resources"></a>Puhdista resurssit
 
 Nyt kun olet suorittanut opetusohjelman, voit poistaa GitHub-sovelluksen. 
 

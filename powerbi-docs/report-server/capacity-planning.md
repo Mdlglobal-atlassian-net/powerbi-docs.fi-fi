@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: parshah
-ms.openlocfilehash: ecb4f9540651b52f28626f8baa88854ff133b9d0
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.openlocfilehash: 8b30089fe04c832734bd418cc58fabb7b574a082
+ms.sourcegitcommit: dc18209dccb6e2097a92d87729b72ac950627473
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78401993"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80361770"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimella
 Power BI -raporttipalvelin on omatoiminen liiketoiminta- ja yritystietojen raportointiratkaisu, jota asiakkaat voivat käyttää paikallisesti yrityksensä palomuurin suojaamana. Siinä yhdistyvät Power BI Desktopin vuorovaikutteinen raportointiominaisuus ja paikallinen SQL Server Reporting Services -palvelinympäristö. Yritysten raskas ja kasvava analytiikan käyttö ja raportointi ja yrityksen käyttäjäkannan skaalaamiseen tarvittavan laitteisto-infrastruktuurin ja ohjelmistolisenssien budjetointi voi olla haastavaa. Tämän artikkelin tarkoituksena on antaa ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimen avulla jakamalla eri kuormituksille tehtyjen erilaisten kuormitustestien tuloksia. Organisaatioiden raportit, kyselyt ja käyttötavat vaihtelevat suuresti, mutta tässä artikkelissa esitetyt tulokset yhdessä varsinaisten testien ja niiden suoritustapojen yksityiskohtaisen kuvauksen kanssa toimivat vertailukohtana kaikille, jotka ovat aloittamassa suunnittelua Power BI -raporttipalvelimen käyttöönottamiseksi.
@@ -116,7 +116,7 @@ Tässä artikkelissa esitetyt tulokset saatiin suorittamalla tietty raporttijouk
 ### <a name="1-topology"></a>1 Topologia
 **1.1 Power BI -raporttipalvelimen topologia**
 
-Jotta voitiin keskittyä pelkästään Power BI -raporttipalvelimen toimintaan eri kokoonpanoissa, jokaisen konetyypin (Power BI -raporttipalvelinta isännöivää konetta lukuun ottamatta) näennäiskonekokoonpano oli kiinteä. Jokainen kone valmisteltiin toisen sukupolven (v2) D-sarjan koneiden mukaisesti, joissa on Premium-tallennuslevyt. Löydät kunkin näennäiskoneen lisätiedot Yleiskäsittely-osiosta kohdasta https://azure.microsoft.com/pricing/details/virtual-machines/windows/.
+Jotta voitiin keskittyä pelkästään Power BI -raporttipalvelimen toimintaan eri kokoonpanoissa, jokaisen konetyypin (Power BI -raporttipalvelinta isännöivää konetta lukuun ottamatta) näennäiskonekokoonpano oli kiinteä. Jokainen kone valmisteltiin toisen sukupolven (v2) D-sarjan koneiden mukaisesti, joissa on Premium-tallennuslevyt. Löydät jokaisen näennäiskoneen koon lisätiedot [Yleiskäsittely-osiosta ](https://azure.microsoft.com/pricing/details/virtual-machines/windows/).
 
 | Näennäiskoneen tyyppi | Suoritin | Muisti | Azure-näennäiskoneen koko |
 | --- | --- | --- | --- |
@@ -126,7 +126,7 @@ Jotta voitiin keskittyä pelkästään Power BI -raporttipalvelimen toimintaan e
 
 **1.2 Power BI -raporttipalvelimen näennäiskonekokoonpano** 
 
-Power BI -raporttipalvelinta isännöivässä näennäiskoneessa käytettiin erilaisia suoritin- ja muistikokoonpanoja. Toisin kuin muut näennäiskoneet, tämä kone valmisteltiin kolmannen sukupolven (v3) D-sarjan koneiden mukaisesti, joissa on Premium-tallennuslevyt. Löydät tämän näennäiskoneen lisätiedot Yleiskäsittely-osiosta kohdasta https://azure.microsoft.com/pricing/details/virtual-machines/windows/.
+Power BI -raporttipalvelinta isännöivässä näennäiskoneessa käytettiin erilaisia suoritin- ja muistikokoonpanoja. Toisin kuin muut näennäiskoneet, tämä kone valmisteltiin kolmannen sukupolven (v3) D-sarjan koneiden mukaisesti, joissa on Premium-tallennuslevyt. Löydät tämän näennäiskoneen koon lisätiedot [Yleiskäsittely-osiosta ](https://azure.microsoft.com/pricing/details/virtual-machines/windows/.)
 
 | Näennäiskone | Suoritin | Muisti | Azure-näennäiskoneen koko |
 | --- | --- | --- | --- |

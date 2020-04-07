@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: aa916afbf439beb7019bd6f0af30cc56ad903704
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 17742c48d9ac5cb49b6d04fe6fe4674e7f6c7ac9
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207225"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404875"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Opetusohjelma: Sivutetun raportin luominen ja lataaminen Power BI -palveluun
 
@@ -286,7 +286,7 @@ Tehdään muotoiluun vielä yksi parannus ennen raportin julkaisemista Power BI 
 
 Nyt kun olet luonut tämän sivutetun raportin, voit ladata sen Power BI -palveluun.
 
-1. Valitse Power BI -palvelussa (https://app.powerbi.com) valitse siirtymisruudusta **Työtilat** > **Luo työtila**.
+1. Valitse Power BI -palvelun (`https://app.powerbi.com`) siirtymisruudusta **Työtilat** > **Luo työtila**.
 
 2. Anna työtilan nimeksi **Azure AW** tai muu yksilöllinen nimi. Olet toistaiseksi ainoa jäsen. 
 

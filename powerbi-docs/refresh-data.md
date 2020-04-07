@@ -6,15 +6,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 03/26/2020
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 810077e8c651d3d6faf91eecb6fd320c24a69d2f
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 63275e882d71cd5c47a9a10baf4f0975abc2a845
+ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488794"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80302471"
 ---
 # <a name="data-refresh-in-power-bi"></a>Tietojen päivittäminen Power BI:ssä
 
@@ -92,7 +92,7 @@ Power BI:n päivitystoiminto voi koostua useista päivitystyypeistä, mukaan luk
 
 #### <a name="data-refresh"></a>Tietojen uudelleenlataus
 
-Power BI -käyttäjille tietojen päivittäminen tarkoittaa yleensä tietojen tuomista alkuperäisistä tietolähteistä tietojoukkoon joko ajoitetun päivityksen perusteella tai pyydettäessä. Voit suorittaa useita tietojoukkojen päivityksiä päivittäin. Tämä saattaa olla tarpeen, jos pohjana olevat tiedot muuttuvat usein. Power BI:ssä jaettujen kapasiteettien tietojoukot voidaan päivittää päivän aikana enintään kahdeksan kertaa. Jos tietojoukko on Premium-kapasiteetissa, voit ajoittaa päivityksen enintään 48 kertaa päivässä tietojoukon asetuksissa. Katso lisätietoja [Ajoitettu päivitys](#configure-scheduled-refresh) -kohdasta alempana tässä artikkelissa.
+Power BI -käyttäjille tietojen päivittäminen tarkoittaa yleensä tietojen tuomista alkuperäisistä tietolähteistä tietojoukkoon joko ajoitetun päivityksen perusteella tai pyydettäessä. Voit suorittaa useita tietojoukkojen päivityksiä päivittäin. Tämä saattaa olla tarpeen, jos pohjana olevat tiedot muuttuvat usein. Power BI:ssä jaettujen kapasiteettien tietojoukot voidaan päivittää päivän aikana enintään kahdeksan kertaa. Jos tietojoukko on Premium-kapasiteetissa, voit ajoittaa päivityksen enintään 48 kertaa päivässä tietojoukon asetuksissa. Katso lisätietoja [Ajoitettu päivitys](#configure-scheduled-refresh) -kohdasta alempana tässä artikkelissa. Tietojoukot Premium-kapasiteetissa, jossa on käytössä [XMLA](service-premium-connect-tools.md)-päätepiste lukemiselle ja kirjoittamiselle, tukevat rajoittamatonta määrää päivitystoimintoja, kun ne on määritetty ohjelmallisesti TMSL:llä tai PowerShellillä.
 
 Huomaa, että päivittäisten päivitysten jaetun kapasiteetin rajoitus koskee sekä ajoitettujen päivitysten että ohjelmointirajapintapäivitysten määrää yhteensä. Voit myös käynnistää pyydetyn päivityksen valitsemalla **Päivitä nyt** tietojoukon valikosta seuraavassa näyttökuvassa esitetyllä tavalla. Pyydetyt päivitykset eivät sisälly päivitysrajoitukseen. Huomaathan myös, että Premium-kapasiteetissa olevat tietojoukot eivät aseta rajoituksia ohjelmointirajapintapäivityksille. Jos olet kiinnostunut oman päivitysratkaisusi kehittämisestä Power BI REST API:n avulla, katso kohta [Tietojoukot – Tietojoukkojen päivittäminen](/rest/api/power-bi/datasets/refreshdataset).
 

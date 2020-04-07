@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/13/2020
+ms.date: 03/31/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3812f16489d304912ec9574352897e1effb29d4a
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 54c3622b0a4dd6c690c2f22a0b93aed39e9d2799
+ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79201397"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80464639"
 ---
 # <a name="using-enhanced-dataset-metadata-preview"></a>Parannettujen tietojoukon metatietojen käyttäminen (esiversio)
 
@@ -24,6 +24,8 @@ Monet näistä rajoituksista poistuvat **parannettujen tietojoukon metatietojen*
 
 
 **Parannettujen tietojoukon metatietojen** ominaisuus on strateginen ja perusluonteinen, koska tulevat Power BI -ominaisuudet kehitetään sen metatietoja käyttäen. Eräitä lisäominaisuuksia, jotka hyötyvät parannetuista tietojoukon metatiedoista, ovat [XMLA-luku/kirjoitus](https://docs.microsoft.com/power-platform-release-plan/2019wave2/business-intelligence/xmla-readwrite) Power BI -tietojoukkojen hallintaan, sekä Analysis Services -kuormitusten siirtäminen Power BI:hin, joka hyötyy seuraavan sukupolven ominaisuuksista.
+
+
 
 ## <a name="enable-enhanced-dataset-metadata"></a>Parannettujen tietojoukon metatietojen käyttöönotto
 
@@ -36,6 +38,9 @@ Sinua pyydetään käynnistämään Power BI Desktop uudelleen.
 ![Uudelleenkäynnistyspyyntö](media/desktop-enhanced-dataset-metadata/enhanced-dataset-metadata-02.png)
 
 Kun esikatselutoiminto on käytössä, Power BI Desktop yrittää päivittää PBIX- ja PBIT-tiedostot, joissa käytetään aikaisempaa metatietomuotoa. 
+
+> [!IMPORTANT]
+> **Parannettujen tietojoukon metatietojen** käyttöönotto aiheuttaa peruuttamattoman päivityksen raportteihin. Power BI raportit, jotka on ladattu tai Power BI Desktopilla **parannettujen tietojoukon metatietojen** käyttöönoton jälkeen, muunnetaan peruuttamattomasti tietojoukkojen parannettujen metatietojen muotoon.
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 

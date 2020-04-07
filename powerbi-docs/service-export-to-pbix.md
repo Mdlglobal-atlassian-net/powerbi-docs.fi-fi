@@ -6,20 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 04/01/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: de7a01f70d179237c45205447f564b3833db2156
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 15a4d88ac9de5d50caeb975afa8ad1758246031f
+ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881832"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80551077"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Raportin lataaminen Power BI -palvelusta Power BI Desktopiin (esikatselu)
 Voit julkaista Power BI Desktopissa raportin ( *.pbix*-tiedoston) paikallisesta tietokoneesta Power BI -palveluun. Power BI -raportit voivat myös siirtyä toiseen suuntaan: Voit ladata raportin Power BI -palvelusta Power BI Desktop -tiedostoon. Power BI -raportin tiedostotunniste on kummassakin tapauksessa .pbix.
 
-Tähän liittyy tiettyjä rajoituksia ja huomioitavia asioita, joita käsitellään tuonnempana tässä artikkelista.
+Tähän liittyy tiettyjä rajoituksia, joita käsitellään tämän artikkelin [Huomioon otettavat seikat ja vianmääritys](#considerations-and-troubleshooting) -osiossa.
 
 ![Tiedoston avattava valikko](media/service-export-to-pbix/power-bi-file-export.png)
 
@@ -55,6 +55,7 @@ On muutamia tärkeitä huomioon otettavia seikkoja ja rajoituksia, jotka liittyv
 * Käytä aina Power BI Desktopin uusinta versiota, kun avaat ladattuja tiedostoja. Ladatut .pbix-tiedostot eivät välttämättä avaudu muissa kuin nykyisissä Power BI Desktopin versioissa.
 * Jos järjestelmänvalvojasi on poistanut käytöstä mahdollisuuden ladata tietoja, tämä ominaisuus ei ole näkyvissä Power BI -palvelussa.
 * Tietojoukkoa, jossa on lisäävä päivitys, ei voi ladata .pbix-tiedostoon.
+* Jos luot Power BI raportin tietojoukon perusteella yhdessä työtilassa ja julkaiset sen eri työtilassa, sinä ja käyttäjäsi ette voi ladata sitä. Lataustoimintoa ei tällä hetkellä tueta tällaisessa tilanteessa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Näytä minuutin **Kaveri kuutiossa** -video tästä ominaisuudesta:

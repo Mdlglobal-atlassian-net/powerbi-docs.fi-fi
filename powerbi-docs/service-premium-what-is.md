@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 03/26/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1caa68ac00f9821979f741bf3266514fcb33c36a
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: f53f7a1e51ce1cb17c337569ba770ac2b5643d19
+ms.sourcegitcommit: 8267a7383d6506dae42f87e4f4a2362b875b2911
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381165"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80329657"
 ---
 # <a name="what-is-power-bi-premium"></a>Mikä on Power BI Premium?
 
-Power BI Premium tarjoaa organisaatiollesi varatut ja parannetut resurssit Power BI -palvelun käyttämiseen. Esimerkki:
+Power BI Premiumin avulla voit hankkia organisaatiollesi erillisiä ja parannettuja resursseja, joiden avulla organisaatiosi käyttäjät voivat käyttää Power BI -palvelua tavallista suorituskykyisempänä ja reagoivampana. Esimerkiksi Power BI Premium -tilauksen avulla sinä ja organisaatiosi käyttäjät saatte käyttöönne seuraavat:
 
 > [!div class="checklist"]
 > * Parempi skaalautuvuus ja suorituskyky
@@ -29,13 +29,16 @@ Power BI Premium tarjoaa organisaatiollesi varatut ja parannetut resurssit Power
 > * Tietojen sijainnin tuki alueen mukaan (Multi-Geo)
 > * Jaa tietoja kenen kanssa tahansa ilman käyttäjäkohtaisen käyttöoikeuden ostoa
 
+
+![Hallintaportaali](media/service-premium-what-is/premium-admin-portal.png) 
+
 Tässä artikkelissa esitellään Power BI Premiumin tärkeimmät ominaisuudet. Tarvittaessa annetaan linkkejä tarkempia tietoja sisältäviin artikkeleihin. Lisätietoja Power BI Prosta ja Power BI Premiumista on [Power BI:n hinnoittelusivulla](https://powerbi.microsoft.com/pricing/) kohdassa _Power BI:n ominaisuuksien vertailu_.
 
 ## <a name="subscriptions-and-licensing"></a>Tilaukset ja lisenssit
 
 Power BI Premium on vuokraajatason Office 365: n tilaus, joka on saatavilla kahdesta SKU- eli varastointiyksikköperheestä:
 
-- **P**-varastointiyksiköt (P1–P3) upottamiseen yritysominaisuudet, vaatii kuukausi- tai vuosisitoumuksen, laskutetaan kuukausittain ja sisältää oikeuden asentaa paikallinen Power BI -raporttipalvelin.
+- **P**-varastointiyksiköt (P1–P5) upottamista ja yritysominaisuuksia varten, vaatii kuukausi- tai vuositilauksen, laskutetaan kuukausittain ja sisältää oikeuden asentaa paikallinen Power BI -raporttipalvelin.
 
 - **EM**-varastointiyksiköt (EM1–EM3) _organisaatiotason_ upottamiseen, vaatii vuosisitoumuksen, laskutetaan kuukausittain. EM1- ja EM2-varastointiyksiköt ovat käytettävissä vain volyymikäyttöoikeuspalvelupakettien kautta. Niitä ei voi ostaa suoraan.
 
@@ -81,6 +84,8 @@ Kunkin Premium-SKU:n (ja yhtä suuren A-SKU:n) resurssit ja rajoitukset on kuvat
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
+| P4 | 64 | 32 | 200 | 32 | 240 | 48 |
+| P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
 > [!NOTE]
@@ -229,13 +234,14 @@ Lisätietoja on artikkelissa [Power BI-käyttöoikeudet](service-admin-licensing
 
 ## <a name="analysis-services-in-power-bi-premium-preview"></a>Analysis Services Power BI Premiumissa (esikatselu)
 
-Kulissien takana Power BI -tietojoukot käyttävät yrityksille sopivaa Microsoft **Analysis Services Vertipaq -moduulia**. Analysis Services tarjoaa ohjelmoitavuusominaisuuden ja asiakassovellus- ja työkalutuen avoimen standardin XMLA-protokollaa tukevien asiakaskirjastojen ja ohjelmointirajapintojen kautta. Tällä hetkellä Power BI Premium -tietojoukot tukevat Microsoftin ja kolmansien osapuolten sovellusten ja työkalujen *vain luku* -toimintoja **XMLA-päätepisteiden** kautta. 
+Kulissien takana Power BI Premium -työtilat ja -tietojoukot käyttävät yrityksille sopivaa Microsoft **Analysis Services Vertipaq -moduulia**. Analysis Services tarjoaa ohjelmoitavuusominaisuuden ja asiakassovellus- ja työkalutuen avoimen standardin XMLA-protokollaa tukevien asiakaskirjastojen ja ohjelmointirajapintojen kautta. Oletusarvoisesti Power BI Premium -tietojoukkojen kapasiteettikuormitukset tukevat Microsoftin ja kolmansien osapuolten asiakassovellusten *vain luku* -toimintoja **XMLA-päätepisteen** kautta. Kapasiteetin järjestelmänvalvojat voivat myös estää tai sallia *luku- ja kirjoitus*toimintoja päätepisteen kautta.
 
-Microsoft-työkalut, kuten SQL Server Management Studio ja SQL Serverin profilointi, ja kolmansien osapuolten sovellukset, kuten DAX Studio ja tietojen visualisoinnin sovellukset, voivat muodostaa yhteyden ja tehdä kyselyn Premium-tietojoukkoihin XMLA:ta, DAX:ää, MDX:ää, DMV:itä ja tapahtumien jäljitystä käyttämällä. 
+Vain luku -käyttöoikeuden avulla Microsoft-työkalut, kuten SQL Server Management Studio (SSMS) ja SQL Serverin profilointi, ja kolmansien osapuolten sovellukset, kuten DAX Studio ja tietojen visualisoinnin sovellukset, voivat muodostaa yhteyden ja tehdä kyselyn Premium-tietojoukkoihin XMLA:ta, DAX:ää, MDX:ää, DMV:itä ja tapahtumien jäljitystä käyttämällä. Luku/kirjoitus-käyttöoikeuden avulla suuryritystason tietojenmallinnustyökalut, kuten Visual Studio ja Analysis Services -projektilaajennus tai avoimen lähdekoodin Tabular Editor, voivat ottaa taulukkomallit käyttöön Premium-työtilan tietojoukkona. Järjestelmänvalvojat voivat SSMS:n ja muiden työkalujen avulla käyttää TMSL (Tabular Model Scripting Language) -kieltä metatietoja muuttavien komentosarjojen luomiseen ja kehittyneisiin tietojenpäivitysskenaarioihin. 
+
+Lisätietoja on artikkelissa [Tietojoukon liitettävyys XMLA-päätepisteeseen](service-premium-connect-tools.md).
 
 ![SSMS](media/service-premium-what-is/connect-tools-ssms-dax.png)
 
-Lisätietoja on artikkelissa [Tietojoukkoihin yhdistäminen asiakassovelluksilla ja -työkaluilla](service-premium-connect-tools.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

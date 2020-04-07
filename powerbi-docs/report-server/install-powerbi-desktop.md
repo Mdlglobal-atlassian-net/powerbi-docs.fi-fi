@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/13/2020
-ms.openlocfilehash: 74e2c60bfe0d6d494fc1175fb001b4b4b7eb24fa
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: dfb6c313e989514da2aa04facd6c6136a0eadc1a
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381119"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404197"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Asenna Power BI -raporttipalvelimelle optimoitu Power BI Desktop
 
@@ -62,7 +62,7 @@ Power BI -raportin muokkaaminen Power BI -raporttipalvelimesta tai uuden Power B
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
-Power BI -raporttipalvelimen Power BI -raportit Power BI -palvelussa (https://app.powerbi.com), ja Power BI -mobiilisovelluksissa toimivat lähes täsmälleen samoin, mutta jotkut ominaisuudet ovat erilaisia.
+Power BI -raporttipalvelimen Power BI -raportit Power BI -palvelussa (`https://app.powerbi.com`), ja Power BI -mobiilisovelluksissa toimivat lähes täsmälleen samoin, mutta jotkut toiminnot ja ominaisuudet ovat erilaisia.
 
 ### <a name="selecting-a-language"></a>Kielen valitseminen
 

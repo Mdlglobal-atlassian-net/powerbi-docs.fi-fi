@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d871fa15c999e5b6c83b0334d6c978b2ba3c9870
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4863bfe3d99a63fbf4ad49834e66ecb8fcaf5525
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73858698"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404136"
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Mahdollisuusanalyysimalli Power BI:lle: aloita esittely
 
@@ -22,7 +22,7 @@ Mahdollisuusanalyysimallin sisältöpaketti sisältää koontinäytön, raportin
 
 Tämä malli käyttää kahta tuottoa koskevaa mittaria:
 
-* Tuotto: Myyjän arvio siitä, mikä tuotto on.
+* Tuotto: tämä on myyjän arvio siitä, mikä tuotto on.
 * Laskutettu tuotto: Lasketaan kaavalla tuotto × todennäköisyysprosentti, ja sen hyväksytään olevan tarkempi ennuste todellisesta myyntituotosta. Todennäköisyyden määrittää kaupan senhetkinen *myynnin vaihe*:
   * Liidi: 10 %  
   * Kvalifioidut: 20 %  
@@ -66,7 +66,7 @@ Vaihtoehtoisesti voit ladata mahdollisuusanalyysimallin [.pbix-tiedostona](https
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän näytteen Excel-työkirja
 
-Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](https://go.microsoft.com/fwlink/?LinkId=529782). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
+Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](https://go.microsoft.com/fwlink/?LinkId=529782). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#explore-excel-samples-inside-excel) lisätietoihin.
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Mitä koontinäyttö kertoo?
 Myyntipäällikkö on luonut koontinäytön itselleen tärkeimpien arvojen seuraamista varten. Kun hän näkee jotakin mielenkiintoista, hän voi valita ruudun ja perehtyä tietoihin tarkemmin:

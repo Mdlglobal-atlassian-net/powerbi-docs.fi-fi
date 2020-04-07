@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 0998ebec15a4e02262ab54a3b08593a65f37af4e
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 8ee77485da03cb8e507d30d511c08aa869c3e4ba
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73873866"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404678"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Hankinta-analyysimalli Power BI:lle: aloita esittely
 
@@ -61,7 +61,7 @@ Vaihtoehtoisesti voit ladata hankinta-analyysimallin [.pbix-tiedostona](https://
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän näytteen Excel-työkirja
 
-Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](https://go.microsoft.com/fwlink/?LinkId=529784). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) lisätietoihin.
+Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](https://go.microsoft.com/fwlink/?LinkId=529784). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#explore-excel-samples-inside-excel) lisätietoihin.
 
 
 ## <a name="spending-trends"></a>Kulutuksen trendit
@@ -104,7 +104,7 @@ Tutustutaan Meksikon kulutusalueisiin.
 Voimme arvioida eri kaupunkeja korostuksen avulla.
 
 1. Valitse koontinäytön ruutu, **Lasku yhteensä, alennusprosentti kuukauden mukaan**, joka avaa **Hankinta-analyysimalli** -raportin **Alennusanalyysi**-sivun.
-2. Vertaile kaupunkeja valitsemalla kukin niistä vuorollaan **Laskut yhteensä kaupungin mukaan** -puukartasta. Huomaa, että lähes kaikki Miamin laskut ovat 1. tason toimittajilta.
+2. Vertaile kaupunkeja valitsemalla kukin niistä vuorollaan **Laskut yhteensä kaupungin mukaan** -puukartasta. Näet, että lähes kaikki Miamin laskut ovat 1. tason toimittajilta.
 
    ![Kaupunki vs. alennusprosentti tason mukaan](media/sample-procurement/pbi_procsample_miamitreemap2.png)
 

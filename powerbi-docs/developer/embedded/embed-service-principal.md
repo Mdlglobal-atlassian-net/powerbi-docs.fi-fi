@@ -1,167 +1,191 @@
 ---
 title: Palvelun päänimi ja Power BI
-description: Lue ohjeet siihen, miten voit rekisteröidä sovelluksen Azure Active Directoryssä palvelun päänimellä Power BI -sisällön upottamiseksi.
+description: Lue ohjeet siihen, miten voit rekisteröidä sovelluksen Azure Active Directoryssa palvelun päänimellä ja sovelluksen salauskoodilla Power BI -sisällön upottamista varten.
 author: KesemSharabi
 ms.author: kesharab
-ms.reviewer: nishalit
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/12/2019
-ms.openlocfilehash: ce72abc3f3b60423344c2b28f39d9bdbfbcee7cd
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.date: 03/30/2020
+ms.openlocfilehash: 9ec08ebe583110b2775f107be0ace2a03929c72d
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79493499"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80403550"
 ---
-# <a name="service-principal-with-power-bi"></a>Palvelun päänimi ja Power BI
+# <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Power BI sisällön upottaminen palvelun päänimeen ja sovelluksen salauskoodiin
 
-**Palvelun päänimellä** voit upottaa Power BI -sisältöä sovellukseen ja hyödyntää Power BI -automaatiota. Tämä on mahdollista **sovellustunnuksen** avulla. Palvelun päänimestä on hyötyä, kun käytät **Power BI Embeddediä** tai **automatisoit Power BI:n tehtäviä ja prosesseja**.
+Palvelun päänimi todentamismenetelmä, jonka avulla Azure AD -sovellus voi käyttää Power BI -palvelun sisältöä ja ohjelmointi rajapintoja.
 
-Kun käytät Power BI Embeddediä, palvelun päänimen käytöllä on monia etuja. Suurin hyöty on se, että et tarvitset sovellukseen todentautumiseen päätiliä (Power BI Pro -käyttöoikeus, joka on käytännössä käyttäjänimi ja salasana, joilla kirjaudutaan sisään). Palvelun päänimi todennetaan sovellukseen sovellustunnuksella ja sovellussalaisuudella.
+Kun luot Azure Active Directory (Azure AD) -sovelluksen, luodaan [palvelun pääobjekti](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object). Palvelun pääobjekti, jota kutsutaan myös *palvelun päänimeksi*, antaa Azure AD:lle oikeuden sovelluksesi todentamiseen. Kun sovellus on todennettu, se voi käyttää Azure AD:n vuokraajaresursseja.
 
-Kun automatisoit Power BI -tehtäviä, voit luoda komentosarjoja, joilla voit käsitellä ja hallita palvelun päänimiä suuressa mittakaavassa.
+Todentamisessa palvelun päänimi käyttää Azure AD -sovelluksen *sovellustunnusta* ja jotakin seuraavista:
+* Sovellussalaisuus
+* Varmenne
 
-## <a name="application-and-service-principal-relationship"></a>Sovelluksen ja palvelun päänimen suhde
+Tässä artikkelissa kuvataan todentaminen palvelun päänimellä *sovellustunnuksen* ja *sovelluksen salauskoodin* avulla. Jos haluat käyttää todennuksessa palvelun päänimeä ja varmennetta, katso [Power BI:n varmennepohjainen todentaminen]().
 
-Jos haluat käyttää resursseja, jotka suojaavat Azure AD -vuokraajan, taho, joka edellyttää käyttöoikeutta, on suojausobjekti. Tämä koskee sekä käyttäjiä (täydellinen käyttäjätunnus) että sovelluksia (palvelun päänimi).
+## <a name="method"></a>Menetelmä
 
-Suojausobjekti määrittää käyttöoikeuskäytännön ja käyttöoikeudet käyttäjille sekä sovelluksille Azure AD -vuokraajassa. Tämä käyttöoikeuskäytäntö ottaa käyttöön ydintoiminnot, esimerkiksi käyttäjien ja sovellusten todennuksen kirjautumisen yhteydessä sekä valtuutuksen resurssien käytön yhteydessä. Saat lisätietoja ohjeartikkelista, jossa käsitellään [sovelluksia ja palvelun päänimiä Azure Active Directoryssa (AAD)](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
+Jos haluat käyttää palvelun päänimeä ja sovellustunnusta upotetussa analyysissa, toimi seuraavasti:
 
-Kun rekisteröit Azure AD -sovelluksen Azure-portaalissa, Azure AD -vuokraajaasi luodaan kaksi objektia:
+1. Luo [Azure AD -sovellus](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-management).
 
-* [sovellusobjekti](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#application-object)
-* [palvelun päänimen objekti.](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object)
+    1. Luo Azure AD -sovellus.
+    
+    2. Hanki sovelluksen *sovellustunnus* ja *sovelluksen salauskoodi*.
 
-Sovellusobjekti on *yleinen* objekti sovelluksestasi, jota käytetään kaikissa vuokraajissa, kun palvelun päänimen objekti taas on *paikallinen* objekti, jota käytetään tietyssä vuokraajassa.
+    >[!NOTE]
+    >Nämä vaiheet on kuvattu **vaiheessa 1**. Lisätietoja Azure AD -sovelluksen luomisesta on artikkelissa [Azure AD-sovelluksen luominen](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal).
 
-Sovellusobjekti tarjotaan mallina, josta yleiset ominaisuudet ja oletusominaisuudet *johdetaan*, jotta niitä voidaan käyttää vastaavien palvelun päänimien objektien luomiseen.
+2. Luo Azure AD:n käyttöoikeusryhmä.
 
-Palvelun päänimi edellytetään vuokraajakohtaisesti, kun sovellusta käytetään. Tämän avulla se voi luoda sellaiset käyttäjätiedot kirjautumista ja resurssien käyttöä varten, jotka vuokraaja suojaa. Yhden vuokraajan sovelluksella on vain yksi palvelun päänimi (sen kotivuokraajassa), joka luodaan ja jolle annetaan käyttöoikeus sovelluksen rekisteröinnin yhteydessä.
+3. Ota Power BI -palvelun järjestelmänvalvojan asetukset käyttöön.
 
-## <a name="service-principal-with-power-bi-embedded"></a>Palvelun päänimi ja Power BI Embedded
+4. Lisää palvelun päänimi työtilaasi.
 
-Palvelun päänimellä voit piilottaa päätilitietosi sovelluksessasi, kun käytät sovellustunnusta ja sovellussalaisuutta. Sinun ei tarvitse koodata päätiliä sovellukseesi todennusta varten.
+5. Upota sisältö.
 
-Koska **Power BI -ohjelmointirajapinnat** ja **Power BI .NET SDK** tukevat nyt kutsuja palvelun päänimellä, voit käyttää [Power BI REST -ohjelmointirajapintoja](https://docs.microsoft.com/rest/api/power-bi/) palvelun päänimen kanssa. Voit esimerkiksi tehdä muutoksia työtiloihin: luoda työtiloja, lisätä ja poistaa työtilojen käyttäjiä sekä tuoda sisältöä työtiloihin.
+> [!IMPORTANT]
+> Kun otat palvelun päänimen käyttöön käytettäväksi Power BI:n kanssa, sovelluksen AD-käyttöoikeudet eivät ole enää voimassa. Sovelluksen käyttöoikeuksia hallitaan tässä tapauksessa Power BI -hallintaportaalissa.
 
-Voit käyttää palvelun päänimeä vain, jos Power BI -artefaktisi ja resurssisi tallennetaan [uuteen Power BI -työtilaan](../../service-create-the-new-workspaces.md).
+## <a name="step-1---create-an-azure-ad-app"></a>Vaihe 1 – Luo Azure AD -sovellus
 
-## <a name="service-principal-vs-master-account"></a>Palvelun päänimi ja päätili
+Luo Azure AD -sovellus seuraavasti:
+* Luo sovellus [Microsoft Azure -portaalissa](https://ms.portal.azure.com/#allservices)
+* Luo sovellus käyttämällä [PowerShelliä](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
 
-Todentaminen palvelun päänimellä ja tavallisella päätilillä (Power BI Pro -käyttöoikeus) eroavat toisistaan. Alla olevaan taulukkoon on koottu joitain merkittävimpiä eroja.
+### <a name="creating-an-azure-ad-app-in-the-microsoft-azure-portal"></a>Sovelluksen luominen Microsoft Azure -portaalissa
 
-| Funktio | Pääkäyttäjätili <br> (Power BI Pro -käyttöoikeus) | Palvelun päänimi <br> (sovellustunnus) |
-|------------------------------------------------------|---------------------|-------------------|
-| Voi kirjautua Power BI -palveluun  | Kyllä | Ei |
-| Käytössä Power BI -hallintaportaalissa | Ei | Kyllä |
-| [Toimii työtilojen (v1) kanssa](../../service-create-workspaces.md) | Kyllä | Ei |
-| [Toimii uusien työtilojen (v2) kanssa](../../service-create-the-new-workspaces.md) | Kyllä | Kyllä |
-| Edellyttää järjestelmänvalvojan oikeuksia työtilaan, jos käytetään Power BI Embeddedin kanssa | Kyllä | Kyllä |
-| Voi käyttää Power BI REST -ohjelmointirajapintoja | Kyllä | Kyllä |
-| Luomiseen edellytetään yleisen järjestelmänvalvojan oikeuksia | Kyllä | Ei |
-| Voi asentaa paikallisen tietoyhdyskäytävän ja hallita sitä | Kyllä | Ei |
+1. Kirjaudu [Microsoft Azureen](https://ms.portal.azure.com/#allservices).
 
-## <a name="get-started-with-a-service-principal"></a>Palvelun päänimen käytön aloittaminen
+2. Etsi **Sovelluksen rekisteröinnit** ja napsauta **Sovelluksen rekisteröinnit** -linkkiä.
 
-Palvelun päänimen (sovellustunnus) käyttö eroaa tavallisen päätilin käytöstä, joten se edellyttää tiettyjä määritystoimia. Jos haluat aloittaa palvelun päänimen (sovellustunnus) käytön, sinun täytyy määrittää ja ottaa käyttöön oikeanlainen ympäristö.
+    ![azure-sovelluksen rekisteröinti](media/embed-service-principal/azure-app-registration.png)
 
-1. [Rekisteröi palvelinpuolen verkkosovellus](register-app.md) Azure Active Directoryssä Power BI:n kanssa käytettäväksi. Kun olet rekisteröinyt sovelluksen, saat sovellustunnuksen, sovellussalaisuuden ja palvelun päänimen objektitunnuksen, joiden avulla voit käyttää Power BI -sisältöäsi. Voit luoda palvelun päänimen [PowerShellillä](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+3. Napsauta **Uusi rekisteröinti**.
 
-    Alla on esimerkkikomentosarja, jolla luodaan uusi Azure Active Directory -sovellus.
+    ![uusi rekisteröinti](media/embed-service-principal/new-registration.png)
 
-    ```powershell
-    # The app id - $app.appid
-    # The service principal object id - $sp.objectId
-    # The app key - $key.value
+4. Täytä tarvittavat tiedot:
+    * **Nimi** – Anna nimi sovelluksellesi
+    * **Tuetut tilityypit** – Valitse tuetut tilityypit
+    * (Valinnainen) **Uudelleenohjauksen URI** – Anna URI tarvittaessa
 
-    # Sign in as a user that is allowed to create an app.
-    Connect-AzureAD
+5. Valitse **Rekisteröi**.
 
-    # Create a new AAD web application
-    $app = New-AzureADApplication -DisplayName "testApp1" -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
+6. Rekisteröinnin jälkeen *Sovellustunnus* on käytettävissä **Yleiskatsaus**-välilehdessä. Kopioi ja tallenna *sovellustunnus* myöhempää käyttöä varten.
 
-    # Creates a service principal
-    $sp = New-AzureADServicePrincipal -AppId $app.AppId
+    ![sovellustunnus](media/embed-service-principal/application-id.png)
 
-    # Get the service principal key.
-    $key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
-    ```
+7. Napsauta **Varmenteet ja salasanat** -välilehteä.
 
-   > [!Important]
-   > Kun otat palvelun päänimen käyttöön käytettäväksi Power BI:n kanssa, sovelluksen AD-käyttöoikeudet eivät ole enää voimassa. Sovelluksen käyttöoikeuksia hallitaan tässä tapauksessa Power BI -hallintaportaalissa.
+     ![sovellustunnus](media/embed-service-principal/certificates-and-secrets.png)
 
-2.  **Suositus**: luo käyttöoikeusryhmä Azure Active Directoryssa (AAD) ja lisää luomasi [sovellus](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) tähän käyttöoikeusryhmään. Voit luoda AAD-käyttöoikeusryhmän [PowerShellillä](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+8. Napsauta **Uusi asiakasohjelman salasana**
 
-    Alla on esimerkkikomentosarja, jolla luodaan uusi käyttöoikeusryhmä ja lisätään sovellus tähän käyttöoikeusryhmään.
+    ![uusi asiakasohjelman salasana](media/embed-service-principal/new-client-secret.png)
 
-    ```powershell
-    # Required to sign in as a tenant admin
-    Connect-AzureAD
+9. Kirjoita *Lisää asiakasohjelman salasana* -ikkunaan kuvaus, määritä asiakasohjelman salasanan vanhenemisajankohta ja napsauta **Lisää**.
 
-    # Create an AAD security group
-    $group = New-AzureADGroup -DisplayName <Group display name> -SecurityEnabled $true -MailEnabled $false -MailNickName notSet
+10. Kopioi ja tallenna *Asiakasohjelman salasana* -arvo.
 
-    # Add the service principal to the group
-    Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
-    ```
+    ![asiakasohjelman salasana -arvo](media/embed-service-principal/client-secret-value.png)
 
-3. Power BI -järjestelmänvalvojana sinun täytyy ottaa palvelun päänimi käyttöön Power BI -hallintaportaalin **kehittäjäasetuksissa**. Lisää Azure Active Directoryssa luomasi käyttöoikeusryhmä **kehittäjäasetusten** tietyn käyttöoikeusryhmän osiossa. Voit myös ottaa käyttöön täydelliset käyttöoikeudet koko organisaation tasolla. Jos teet niin, vaihe 2 on tarpeeton.
+    >[!NOTE]
+    >Kun poistut tästä ikkunasta, asiakasohjelman salasanan arvo piilotetaan etkä pysty lukemaan etkä kopioimaan sitä uudelleen.
 
-   > [!Important]
-   > Palvelun päänimet voivat käyttää kaikkia vuokraaja-asetuksia, jotka on otettu käyttöön koko organisaatiolle tai käyttöoikeusryhmille, joihin palvelun päänimet kuuluvat. Jos haluat rajoittaa palvelun päänimen käyttöä tietyissä vuokraaja-asetuksissa, salli vain tiettyjen käyttöoikeusryhmien käyttö tai luo erillinen käyttöoikeusryhmä palvelun päänimille ja jätä se pois.
+### <a name="creating-an-azure-ad-app-using-powershell"></a>Azure AD -sovelluksen luominen PowerShellin avulla
 
-    ![Hallintaportaali](media/embed-service-principal/admin-portal.png)
+Tässä osiossa on mallikomentosarja, jolla voit luoda uuden Azure AD -sovelluksen [PowerShellin](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0) avulla.
 
-4. Määritä [Power BI -ympäristösi](embed-sample-for-customers.md#set-up-your-power-bi-environment).
+```powershell
+# The app ID - $app.appid
+# The service principal object ID - $sp.objectId
+# The app key - $key.value
 
-5. Lisää palvelun päänimi **järjestelmänvalvojaksi** uuteen luomaasi työtilaan. Voit hallita tätä [ohjelmointirajapinnoilla](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) tai Power BI -palvelussa.
+# Sign in as a user that's allowed to create an app
+Connect-AzureAD
 
-    ![Palvelun päänimen lisääminen järjestelmänvalvojaksi työtilaan](media/embed-service-principal/add-service-principal-in-the-UI.png)
+# Create a new Azure AD web application
+$app = New-AzureADApplication -DisplayName "testApp1" -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
 
-6. Nyt voit upottaa sisältöä mallisovellukseen tai omaan sovellukseesi.
+# Creates a service principal
+$sp = New-AzureADServicePrincipal -AppId $app.AppId
 
-    * [Sisällön upottaminen mallisovelluksen avulla](embed-sample-for-customers.md#embed-content-using-the-sample-application)
-    * [Sisällön upottaminen oman sovelluksen avulla](embed-sample-for-customers.md#embed-content-within-your-application)
+# Get the service principal key
+$key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
+```
 
-7. Nyt olet valmis [siirtymään hyötykäyttöön](embed-sample-for-customers.md#move-to-production).
+## <a name="step-2---create-an-azure-ad-security-group"></a>Vaihe 2 – Luo Azure AD:n käyttöoikeusryhmä
 
-## <a name="migrate-to-service-principal"></a>Palvelun päänimeen siirtyminen
+Palvelun päänimellä ei ole käyttöoikeutta mihinkään Power BI -sisältöihisi eikä ohjelmointirajapintoihisi. Kun haluat antaa palvelun päänimelle käyttöoikeuden, luo käyttöoikeusryhmä Azure AD:ssä ja lisää luomasi palvelun päänimi kyseiseen käyttöoikeusryhmään.
 
-Voit siirtyä palvelun päänimeen, jos käytät tällä hetkellä päätiliä Power BI:ssä tai Power BI Embeddedissä.
+Azure AD -käyttöoikeusryhmän luomiseen on kaksi tapaa:
+* Manuaalinen (Azuressa)
+* PowerShellin käyttäminen
 
-Suorita kolme ensimmäistä vaihetta osiosta [Palvelun päänimen käytön aloittaminen](#get-started-with-a-service-principal). Kun olet tehnyt tämän, toimi alla annettujen ohjeiden mukaisesti.
+### <a name="create-a-security-group-manually"></a>Käyttöoikeusryhmän luominen manuaalisesti
 
-Jos käytät jo [uusia työtiloja](../../service-create-the-new-workspaces.md) Power BI:ssä, lisää palvelun päänimi **järjestelmänvalvojaksi** työtiloihin, jotka sisältävät Power BI -artefaktisi. Jos taas käytät [perinteisiä työtiloja](../../service-create-workspaces.md), kopioi tai siirrä Power BI -artefaktit ja -resurssit uusiin työtiloihin ja lisää sitten palvelun päänimi **järjestelmänvalvojaksi** näihin työtiloihin.
+Jos haluat luoda Azure-käyttöoikeusryhmän manuaalisesti, noudata ohjeita artikkelissa [Perusryhmän luominen ja jäsenten lisääminen Azure Active Directoryssa](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
-Power BI -artefaktien ja -resurssien siirtämiseen työtilasta toiseen ei ole tarjolla käyttöliittymää, joten sinun täytyy tehdä tämä [ohjelmointirajapinnoilla](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/). Kun käytät ohjelmointirajapintoja palvelun päänimen kanssa, tarvitset palvelun päänimen objektitunnuksen.
+### <a name="create-a-security-group-using-powershell"></a>Käyttöoikeusryhmän luominen PowerShellin avulla
 
-### <a name="how-to-get-the-service-principal-object-id"></a>Palvelun päänimen objektitunnuksen hakeminen
+Alla on esimerkkikomentosarja, jolla luodaan uusi käyttöoikeusryhmä ja lisätään sovellus tähän käyttöoikeusryhmään.
 
-Jos haluat määrittää palvelun päänimen uuteen työtilaan, voit tehdä sen [Power BI REST -ohjelmointirajapinnoilla](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). Jos haluat viitata palvelun päänimeen toiminnoissa tai tehdä muutoksia, käytä **palvelun päänimen objektitunnusta** (ottaa esimerkiksi palvelun päänimen käyttöön työtilan järjestelmänvalvojana).
+>[!NOTE]
+>Jos haluat ottaa käyttöön täydelliset käyttöoikeudet koko organisaation tasolla, ohita tämä vaihe.
 
-Ohjeet palvelun päänimen objektitunnuksen hakemiseen Azure-portaalista annetaan alla.
+```powershell
+# Required to sign in as a tenant admin
+Connect-AzureAD
 
-1. Luo uusi sovellusrekisteröinti Azure-portaalissa.  
+# Create an Azure AD security group
+$group = New-AzureADGroup -DisplayName <Group display name> -SecurityEnabled $true -MailEnabled $false -MailNickName notSet
 
-2. Valitse sitten **Hallittu sovellus paikallisessa hakemistossa** -kohdassa luomasi sovellus.
+# Add the service principal to the group
+Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
+```
 
-   ![Hallittu sovellus paikallisessa hakemistossa](media/embed-service-principal/managed-application-in-local-directory.png)
+## <a name="step-3---enable-the-power-bi-service-admin-settings"></a>Vaihe 3 – Ota Power BI -palvelun järjestelmänvalvojan asetukset käyttöön
 
-    > [!NOTE]
-    > Yllä olevassa kuvassa oleva objektitunnus ei ole se tunnus, jota käytetään palvelun päänimen kanssa.
+Jotta Azure AD -sovellus voi käyttää Power BI -sisältöä ja ohjelmointirajapintoja, Power BI -järjestelmänvalvojan on otettava käyttöön palvelun päänimen käyttöoikeus Power BI -hallintaportaalissa.
 
-3. Näet objektitunnuksen valitsemalla **Ominaisuudet**.
+Lisää Azure Active Directoryssa luomasi käyttöoikeusryhmä **kehittäjäasetusten** tietyn käyttöoikeusryhmän osiossa.
 
-    ![Palvelun päänimen objektitunnuksen ominaisuudet](media/embed-service-principal/service-principal-object-id-properties.png)
+>[!IMPORTANT]
+>Palvelun päänimillä on käyttöoikeus kaikkiin asetuksiin, jotka niille on otettu käyttöön. Järjestelmänvalvojan asetusten mukaan tämä sisältää tietyt käyttöoikeusryhmät tai koko organisaation.
+>
+>Jos haluat rajoittaa palvelun päänimen käyttöoikeuksia tiettyihin vuokraajan asetuksiin, salli käyttö vain tietyille käyttöoikeusryhmille. Vaihtoehtoisesti voit luoda erityisen käyttöoikeusryhmän palvelun päänimiä varten ja jättää sen pois halutuista vuokraajan asetuksista.
 
-Alla on esimerkkikomentosarja, jolla voit hakea palvelun päänimen objektitunnuksen PowerShellissä.
+![Hallintaportaali](media/embed-service-principal/admin-portal.png)
 
-   ```powershell
-   Get-AzureADServicePrincipal -Filter "DisplayName eq '<application name>'"
-   ```
+## <a name="step-4---add-the-service-principal-as-an-admin-to-your-workspace"></a>Vaihe 4 – Lisää palvelun päänimi järjestelmänvalvojaksi työtilaasi
+
+Jos haluat Azure AD -sovelluksesi voivan käyttää Power BI -palvelussa artefakteja, kuten raportteja, koontinäyttöjä ja tietojoukkoja, lisää palvelun pääentiteetti jäseneksi tai järjestelmänvalvojaksi työtilaasi.
+
+>[!NOTE]
+>Tässä osiossa on käyttöliittymän ohjeet. Voit lisätä palvelun päänimen työtilaan myös valitsemalla [Ryhmät – Lisää ryhmän käyttäjän ohjelmointirajapinta](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser).
+
+1. Siirry sen työtilan kohdalle, jonka käyttöoikeuden haluat ottaa käyttöön, ja valitse **Lisää**-valikosta **Työtilan käyttöoikeus**.
+
+    ![Työtilan asetukset](media/embed-service-principal/workspace-access.png)
+
+2. Lisää palvelun päänimi **järjestelmänvalvojaksi** tai **jäseneksi** työtilaan.
+
+    ![Työtilan järjestelmänvalvoja](media/embed-service-principal/add-service-principal-in-the-UI.png)
+
+## <a name="step-5---embed-your-content"></a>Vaihe 5 – Upota sisältö
+
+Voit upottaa sisältöä mallisovellukseen tai omaan sovellukseesi.
+
+* [Sisällön upottaminen mallisovelluksen avulla](embed-sample-for-customers.md#embed-content-using-the-sample-application)
+* [Sisällön upottaminen oman sovelluksen avulla](embed-sample-for-customers.md#embed-content-within-your-application)
+
+Kun sisältösi on upotettu, olet valmis [siirtymään tuotantoon](embed-sample-for-customers.md#move-to-production).
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
@@ -178,7 +202,8 @@ Alla on esimerkkikomentosarja, jolla voit hakea palvelun päänimen objektitunnu
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* [Sovelluksen rekisteröiminen](register-app.md)
 * [Power BI Embedded asiakkaillesi](embed-sample-for-customers.md)
-* [Sovellusobjektit ja palvelun päänimen objektit Azure Active Directoryssa](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+
 * [Paikallista tietoyhdyskäytävää ja palvelun päänimeä käyttävä rivitason suojaus](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+
+* [Power BI sisällön upottaminen palvelun päänimeen ja varmenteeseen]()

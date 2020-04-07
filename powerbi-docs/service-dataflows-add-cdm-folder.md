@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5b6b8658e4480173c32a591c2fc763a238cfd13a
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: f1e48fb2f20c531f4dc66e86d13b76f54165b81c
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "73872705"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404756"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Lisää CDM-kansio Power BI:hin tietovuona (esikatselu)
 
@@ -24,6 +24,7 @@ Voit lisätä Power BI:ssä organisaation Azure Data Lake Storage Gen2:en tallen
 
 Tietovoiden luomiseen CDM-kansioista on muutamia vaatimuksia, kuten seuraavassa luettelossa kuvataan:
 
+* Järjestelmänvalvojan on linkitettävä ADLS Gen2 -tallennustili Power BI:ssä, ennen kuin sitä voi käyttää. Saat ohjeet ADLS Gen2 -tilin Power BI:hin yhdistämiseen ohjeartikkelista [Yhdistä Azure Data Lake Storage Gen2 tietovuotallennusta varten](service-dataflows-connect-azure-data-lake-storage-gen2.md).
 * Tietovoiden luominen CDM-kansioista on käytettävissä *vain*[uudessa työtilakokemuksessa](service-create-the-new-workspaces.md). 
 * CDM-kansion lisääminen Power BI:hin edellyttää, että kansion lisäävällä käyttäjällä on [CDM-kansion ja sen tiedostojen käyttöoikeus](https://go.microsoft.com/fwlink/?linkid=2029121).
 * Sinulla on oltava luku- ja käyttöoikeudet kaikkiin CDM-kansiossa oleviin tiedostoihin ja kansioihin, jotta ne voi lisätä Power BI:hin.
@@ -73,11 +74,11 @@ Muita harkittavia seikkoja on seuraavassa luettelossa:
 
 **Power BI Desktop** -asiakas ei voi käyttää Azure Data Lake Storage Gen2 -tiliin tallennettuja tietovoita, jos hän ei ole tietovuon omistaja tai jos hänelle ei ole myönnetty nimenomaista oikeutta käyttää tietovuon CDM-kansiota. Katso seuraavaa esimerkkiä:
 
-1.  Anna luo uuden työtilan ja määrittää sen tallentamaan tietovuot CDM-kansioon.
-2.  Ben, joka on myös jäsen Annan luomassa työtilassa, haluaa noutaa tietoja Annan luomasta tietovuosta Power BI Desktopin ja tietovuon liittimen avulla.
-3.  Ben saa virheen, koska häntä ei ole lisätty tietovuon CDM-kansion valtuutetuksi käyttäjäksi Data Lake -järjestelmässä.
+1.    Anna luo uuden työtilan ja määrittää sen tallentamaan tietovuot CDM-kansioon.
+2.    Ben, joka on myös jäsen Annan luomassa työtilassa, haluaa noutaa tietoja Annan luomasta tietovuosta Power BI Desktopin ja tietovuon liittimen avulla.
+3.    Ben saa virheen, koska häntä ei ole lisätty tietovuon CDM-kansion valtuutetuksi käyttäjäksi Data Lake -järjestelmässä.
 
-    ![Virhe yritettäessä käyttää tietovuota](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
+  ![Virhe yritettäessä käyttää tietovuota](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
 Tämän ongelman ratkaisemiseksi Benin on saatava CDM-kansion ja sen tiedostojen lukuoikeudet. Lisätietoja oikeuksien myöntämisestä CDM-kansioon on [tässä artikkelissa](https://go.microsoft.com/fwlink/?linkid=2029121).
 

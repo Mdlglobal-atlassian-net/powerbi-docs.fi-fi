@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 9338bc914c7f4e4afd826bcd3e3452e7c7a3ef35
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.openlocfilehash: 403537f8cd18948c99cc4dffb911009771a8b806
+ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76040437"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80404749"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Tietovoiden luominen ja käyttäminen Power BI:ssä
 
@@ -32,7 +32,7 @@ Tietovuon käyttämisessä on kolme ensisijaista vaihetta:
 2. Tietovuohon tuotavien tietojen päivitystiheyden määrittäminen
 3. Tietojoukon luominen tietovuon ja Power BI Desktopin avulla 
 
-Seuraavissa osioissa tarkastellaan näitä vaiheita ja tutustutaan kunkin vaiheen suorittamisessa tarvittaviin työkaluihin. Aloitetaanpa.
+Seuraavissa osioissa tarkastellaan näitä vaiheita ja tutustutaan kunkin vaiheen suorittamisessa tarvittaviin työkaluihin. Aloitetaan.
 
 ## <a name="creating-a-dataflow"></a>Tietovuon luominen
 Luo tietovuo käynnistämällä Power BI -palvelu selaimessa ja valitsemalla **työtila** (tietovuot eivät ole käytettävissä *omassa työtilassa* Power BI -palvelussa) vasemmasta siirtymisruudusta seuraavan kuvan mukaisesti. Voit myös luoda uuden työtilan, jossa luot uuden tietovuon. 
@@ -150,9 +150,9 @@ Joskus voi käydä niin, että tietovuon yhteyden muodostamisessa tietolähteese
 
 * **Salesforce-liitin** – Salesforce-kokeilutilin ja tietovuon käyttö on aiheuttanut yhteysvirheen eikä mitään tietoja ole annettu. Voit ratkaista ongelman käyttämällä tuotannon Salesforce-tiliä tai kehittäjätiliä testaamiseen.
 
-* **SharePoint-liitin** – Varmista, että annat SharePoint-sivuston pääosoitteen ilman alikansioita tai tiedostoja. Käytä esimerkiksi seuraavankaltaista linkkiä: https://microsoft.sharepoint.com/teams/ObjectModel/ 
+* **SharePoint-liitin** – Varmista, että annat SharePoint-sivuston pääosoitteen ilman alikansioita tai tiedostoja. Käytä esimerkiksi seuraavankaltaista linkkiä: `https://microsoft.sharepoint.com/teams/ObjectModel/` 
 
-* **JSON-tiedostoyhdistin** – tällä hetkellä voit muodostaa yhteyden JSON-tiedostoon vain perustodentamista.  Yhdistämistä JSON-tiedostoon antamalla tunnistetiedot URL-osoitteessa (esimerkiksi https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg...) **ei** tällä hetkellä tueta.  
+* **JSON-tiedostoyhdistin** – tällä hetkellä voit muodostaa yhteyden JSON-tiedostoon vain perustodentamista.  Yhdistämistä JSON-tiedostoon antamalla tunnistetiedot URL-osoitteessa (esimerkiksi `https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg`.) **ei** tällä hetkellä tueta.  
 
 * **Azure SQL Data Warehouse** – tietovuot eivät tällä hetkellä tue Azure SQL Data Warehousen Azure Active Directory (AAD) -todentamista. Käytä tähän skenaarioon perustodentamista.
 

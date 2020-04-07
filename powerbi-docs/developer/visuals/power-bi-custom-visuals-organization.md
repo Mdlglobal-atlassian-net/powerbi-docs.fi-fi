@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ab2aa7f1771c09a7ec725f9cc533717e7daf11a0
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 52ebb1bf049024051846936237d35b202f00d630
+ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79383501"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80464589"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Organisaation visualisoinnit Power BI:ssä
 
@@ -35,7 +35,7 @@ Lisätietoja siitä, miten voit käyttää organisaation Power BI -visualisointe
 Lisätietoja organisaation Power BI -visualisointien käyttöönotosta ja hallinnasta organisaatiossasi on seuraavassa artikkelissa: [Lisätietoja organisaation Power BI -visualisointien käyttöönotosta ja hallinnasta](https://go.microsoft.com/fwlink/?linkid=866790).
 
 > [!WARNING]
-> Mukautettu visualisointi voi sisältää koodia, joka aiheuttaa suojaus- tai tietosuojariskejä. Varmista, että luotat mukautetun visualisoinnin tekijään ja lähteeseen, ennen kuin se otetaan käyttöön organisaation säilössä.
+> Tiedostosta asennettu Power BI -visualisointi voi sisältää koodia, jossa on suojaus- tai tietosuojariskejä. Varmista, että luotat Power BI -visualisointitiedoston tekijään ja lähteeseen, ennen kuin otat sen käyttöön organisaation säilössä.
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
@@ -45,7 +45,9 @@ Järjestelmänvalvoja:
 
 * Vanhoja Power BI -visualisointeja (esimerkiksi Power BI -visualisointeja, joita ei ole luotu uusilla ohjelmointirajapintojen versioilla) ei tueta
 
-* Jos mukautettu visualisointi poistetaan säilöstä, poistettua visualisointia käyttäviä aiemmin luotuja raportteja ei enää hahmonneta. Säilöstä poistamista ei voi kumota. Voit poistaa mukautetun visualisoinnin tilapäisesti käytöstä Poista käytöstä -ominaisuuden avulla.
+* Jos AppSourcesta tai tiedostosta peräisin oleva Power BI -visualisointi poistetaan säilöstä, poistettua visualisointia käyttäviä aiemmin luotuja raportteja ei enää näytetä. Säilöstä poistamista ei voi kumota. Jos haluat poistaa AppSourcesta tai tiedostosta peräisin oleva Power BI -visualisoinnin käytöstä tilapäisesti, käytä Poista käytöstä toimintoa.
+
+* Organisaation Power BI -visualisointeja ei tueta Power BI -raporttipalvelimessa.
 
 Käyttäjä:
 

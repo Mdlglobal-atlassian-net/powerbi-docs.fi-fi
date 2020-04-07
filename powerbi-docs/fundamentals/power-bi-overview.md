@@ -8,12 +8,12 @@ ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 5ad960560ba6c99228ba63ee0041789b9ec6ff7d
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: c3218e20274c0607c2bbec86e961685ccd276659
+ms.sourcegitcommit: 9ecd7cadb9ff47f0fc0e400730777cc4dadbd80d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79114981"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80487760"
 ---
 # <a name="what-is-power-bi"></a>Mikä Power BI on?
 **Power BI** on kokoelma ohjelmistopalveluja, sovelluksia ja yhdistimiä, jotka yhdessä muuntavat toisiinsa liittymättömistä lähteistä peräisin olevan tiedon johdonmukaisiksi, visuaalisesti vaikuttaviksi ja vuorovaikutteisiksi näkemyksiksi. Tiedot voivat olla Excel-laskentataulukossa tai joukossa pilvipohjaisia ja paikallisia hybriditietovarastoja. Power BI:n avulla voit helposti muodostaa yhteyden tietolähteisiin, visualisoida ja löytää tärkeitä asioita sekä jakaa niitä kenen kanssa haluat.
@@ -44,8 +44,12 @@ Power BI:n käyttötapasi voi riippua siitä, mikä Power BI:n toiminto tai palv
 Tutustu rooliasi vastaaviin dokumentteihin:
 - Power BI Desktop [*suunnittelijoille*](../desktop-what-is-desktop.md)
 - Power BI [*kuluttajille*](../consumer/end-user-consumer.md)
-- Power BI [*kehittäjille*](../developer/what-can-you-do.md)
 - Power BI [*järjestelmänvalvojille*](../service-admin-administering-power-bi-in-your-organization.md)
+- Power BI *kehittäjille*
+    * [Upotettu analysointi Power BI:n avulla](../developer/embedded/embedding.md)
+    * [Mikä on Power BI Embedded Azuressa?](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md)
+    * [Visualisoinnit Power BI:ssä](../developer/visuals/power-bi-custom-visuals.md)
+    * [Mitä kehittäjät voivat tehdä Power BI -ohjelmointirajapinnalla?](../developer/automation/overview-of-power-bi-rest-api.md)
 
 ## <a name="the-flow-of-work-in-power-bi"></a>Työnkulut Power BI:ssä
 Tyypillinen Power BI -työnkulku alkaa yhteyden ottamisesta tietolähteisiin ja raportin luomisesta Power BI Desktopissa. Sen jälkeen julkaiset kyseisen raportin Power BI Desktopista Power BI -palveluun ja jaat sen, jotta Power BI -palvelua ja mobiililaitteita käyttävät loppukäyttäjät voivat tarkastella ja käsitellä raporttia.

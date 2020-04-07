@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/03/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 5208c72016a148f86a119bdddd2bbd1f69d3456b
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 0804650149f98d7f63315025ffe3f8a1771ac2ef
+ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381027"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80302741"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Power BI -palvelun raporttien ja koontinäyttöjen tilaaminen itsellesi ja muille
 
@@ -96,7 +96,7 @@ Tilaus päättyy, jos Pro-käyttöoikeus umpeutuu, omistaja poistaa koontinäyt�
 * Raporttisivujen tilaukset on sidottu raporttisivun nimeen. Jos tilaat raporttisivun ja nimeät sen uudelleen, sinun on luotava myös tilaus uudelleen.
 * Tietyt organisaatiosi Azure Active Directoryyn määrittämät asetukset voivat rajoittaa sähköpostitilausten käyttämistä Power BI:ssä.  Tällaisia rajoituksia voivat olla esimerkiksi monimenetelmäinen todentaminen tai IP-aluerajoitukset resursseja käytettäessä.
 * Tällä hetkellä raporttien/koontinäyttöjen sähköpostitilauksia, jotka käyttävät reaaliaikaisia tietojoukkoyhteyksiä, ei tueta, kun tilataan muille käyttäjille kuin itsellesi, ellei käytössä ole sivutettu raportti, joka sallii tilauksen lähettämisen muille suojauskontekstin puitteissa.
-* Sähköpostitilaukset eivät tue suurinta osaa [Power BI -visualisoinneista](developer/visuals/power-bi-custom-visuals.md).  Poikkeuksena ovat mukautetut Power BI -visualisoinnit, jotka on [sertifioitu](developer/visuals/power-bi-custom-visuals-certified.md).  
+* Vain oletusvisualisointeja ja [sertifioituja Power BI -visualisointeja](developer/visuals/power-bi-custom-visuals.md) tuetaan sähköpostitilauksissa.  
 * Sähköpostitilaukset eivät tue R:ää hyödyntäviä Power BI -visualisointeja tällä hetkellä.  
 * Sähköpostitilaukset lähetetään käyttäen raportin oletusarvoista suodatin- ja osittajatilaa. Oletusarvoihin tilauksen jälkeen tehdyt muutokset eivät näy sähköpostiviestissä.  Sivutetut raportit tukevat tätä ominaisuutta, ja niiden avulla voit valita kullekin tilaukselle määritetyt parametriarvot.
 * Erityisesti koontinäyttötilausten osalta tiettyjä ruututyyppejä ei vielä tueta.  Sellaisia ovat esimerkiksi suoratoisto-, video- ja mukautetut verkkosisältöruudut.     

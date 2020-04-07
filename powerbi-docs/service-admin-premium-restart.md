@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/12/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 8bb95da5383eedac57fb705f697a8481e934e379
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: ccc14cb041c5131d2cb06a8ad362b7054bcde857
+ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79202018"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80464698"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Power BI Premium -kapasiteetin uudelleenkäynnistäminen
 
@@ -30,7 +30,7 @@ Power BI parantaa jatkuvasti sitä, miten se suojaa Premium-kapasiteetin käytt�
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Onko uudelleenkäynnistysprosessi turvallinen? Menetänkö joitakin tietoja?
 
-Kaikki kapasiteetin tallennetut tiedot, määritykset, raportit ja koontinäytöt säilyvät täysin samoina uudelleenkäynnistyksen jälkeen. Kun käynnistät kapasiteetin uudelleen, päivitysmoduuli useimmiten pysäyttää käynnissä olevat ajoitetut ja tilapäiset päivitykset väliaikaisesti. Sen jälkeen ne käynnistetään uudelleen Power BI:n sisäisen päivityksen uudelleenyrityslogiikan mukaan. Palvelu yrittää uudelleen kaikkia vaikutuksen kohteina olleita päivityksiä, kun kapasiteetti on taas käytettävissä. Päivitysten tila käyttöliittymässä ei ehkä muutu uudelleenkäynnistysprosessin aikana. 
+Kaikki kapasiteetin tallennetut tiedot, määritykset, raportit ja koontinäytöt säilyvät täysin samoina uudelleenkäynnistyksen jälkeen. Kun käynnistät kapasiteetin uudelleen, päivitysmoduuli useimmiten pysäyttää käynnissä olevat ajoitetut ja tilapäiset päivitykset väliaikaisesti. Tämän jälkeen ne käynnistetään uudelleen Power BI:n oman päivitysten uudelleenyrityslogiikan mukaisesti. Palvelu yrittää uudelleen kaikkia vaikutuksen kohteina olleita päivityksiä, kun kapasiteetti on taas käytettävissä. Päivitysten tila käyttöliittymässä ei ehkä muutu uudelleenkäynnistysprosessin aikana. 
 
 Kapasiteettia käsittelevät käyttäjät menettävät tallentamattomat työt uudelleenkäynnistysprosessin aikana. Käyttäjien on päivitettävä selaimensa, kun uudelleenkäynnistys on suoritettu loppuun.
 
@@ -40,7 +40,7 @@ Voit käynnistää kapasiteetin uudelleen seuraavien vaiheiden mukaisesti.
 
 1. Siirry Power BI -hallintaportaalin **Kapasiteetin asetukset** -välilehdessä haluamaasi kapasiteettiin. 
 
-1. Lisää **CapacityRestart** *-toimintomerkintä* kapasiteetin URL-osoitteeseen: https://app.powerbi.com/admin-portal/capacities/<YourCapacityId>?capacityRestartButton=true.
+1. Lisää **CapacityRestart** *-toimintomerkintä* kapasiteetin URL-osoitteeseen: `https://app.powerbi.com/admin-portal/capacities/<YourCapacityId>?capacityRestartButton=true`.
 
 1. Valitse **Lisäasetukset** > **KAPASITEETIN UUDELLEENKÄYNNISTYS**, valitse **Käynnistä kapasiteetti uudelleen**.
 

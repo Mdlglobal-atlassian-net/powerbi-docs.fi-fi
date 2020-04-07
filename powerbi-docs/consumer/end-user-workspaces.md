@@ -6,22 +6,26 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/05/2020
+ms.date: 03/10/2020
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 0f0957962a761623262268f8c84c338000ba56f2
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.openlocfilehash: 6886bc628add44f94c91b77cada97abf81635e78
+ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79078975"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80302281"
 ---
 # <a name="collaborate-in-workspaces"></a>Yhteistyö työtiloissa
 
  *Työtiloissa* voit käyttää tiettyä sisältöä yhdessä työtovereiden kanssa. Power BI -*suunnittelijat* luovat työtiloja koontinäyttö-, raportti- ja sovelluskokoelmia varten. 
 
+## <a name="types-of-workspaces"></a>Työtilojen tyypit
+**Oma työtila** -sijaintiin voit tallentaa kaiken omistamasi ja luomasi sisällön. Ajattele sitä oman sisältösi henkilökohtaisena eristyksenä tai työskentelyalueena. Monilla Power BI -kuluttajilla**Oma työtila** pysyy tyhjänä, koska heidän työnsä ei edellytä uuden sisällön luontia. Kuluttajat kuluttavat, eli käyttävät, muiden luomia tietoja ja tekevät liiketoimintapäätöksiä näiden tietojen avulla. Jos luotkin sisältöä, lue sen sijaan [suunnittelijoille tarkoitetut Power BI -artikkelit](../create-reports/index.yml).
 
-<art showing different wss>
+**Sovelluksen työtila** sisältää kaiken sisällön tiettyä sovellusta varten. Kun *suunnittelija* luo sovelluksen, hän niputtaa yhteen kaiken sisällön, jota tarvitaan kyseisen sovelluksen käytössä. Sisältö voi olla koontinäyttöjä, raportteja, sovelluksia ja tietojoukkoja. Kaikki sovellukset eivät sisällä näitä neljää sisältöä. Sovelluksessa saattaa olla vain yksi koontinäyttö tai kolme kappaletta jokaista sisältötyyppiä tai jopa kaksikymmentä raporttia. Kaikki riippuu siitä, mitä *suunnittelija* sisällyttää sovellukseen. Yleensä *kuluttajien* sovellusten työtilat eivät sisällä tietojoukkoja.
+
+<!--<art showing different wss> -->
 
 ## <a name="roles-in-the-workspaces"></a>Työtilojen roolit
 
@@ -42,3 +46,16 @@ Joissakin tilanteissa sinut saatetaan kutsua organisaatiosi ulkopuoliseen työti
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Sovellukset Power BI:ssä](end-user-apps.md)    
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+
+
+
+
+
+
+
+
+
+
+
+
+
