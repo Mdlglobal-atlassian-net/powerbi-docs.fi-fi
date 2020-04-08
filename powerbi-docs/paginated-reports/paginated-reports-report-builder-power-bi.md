@@ -8,20 +8,18 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/27/2019
-ms.openlocfilehash: 7ab9ac60e416502f69401fcea87a697f53176448
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: 924c2850efe1e9e09a8f6f350be616695ab061ea
+ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80404773"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80621543"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Mitä ovat sivutetut raportit Power BI Premiumissa?
 
 Sivutetut raportit, SQL Server Reporting Servicesin vakioraporttimuoto, ovat nyt käytettävissä Power BI -palvelussa. Nämä raportit voidaan tulostaa tai jakaa. Niitä kutsutaan ”sivutetuiksi”, koska ne on muotoiltu sopimaan hyvin sivulle. Niissä kaikki tiedot näytetään taulukossa, vaikka taulukko olisi useita sivuja pitkä. Niitä kutsutaan joskus pikselintarkasti täydellisiksi, koska voit hallita tarkasti niiden asettelua raportin sivulla. Sivutetut raportit perustuvat SQL Server Reporting Servicesin RDL-raporttitekniikkaan. Raportin muodostin on erillinen työkalu sivutettujen raporttien luomiseen. 
 
 Sivutetuissa raporteissa voi olla useita sivuja. Esimerkiksi tässä raportissa on 563 sivua. Jokainen sivu on aseteltu tarkasti yksi sivu laskua kohti -muotoon, ja ylä- ja alatunnisteet toistuvat kaikissa.
-
-Kokeile [Käytännön labratyötä: Sivutetun Microsoft Power BI -raportin luominen](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 
 ![Sivutettu](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
@@ -87,5 +85,4 @@ Tässä on joitakin muita ominaisuuksia, joita ei tueta ensimmäisessä julkaisu
 - [Asenna Power BI:n raportin muodostin Microsoft Download Centeristä](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Opetusohjelma: Luo sivutettu raportti](paginated-reports-quickstart-aw.md)
 - [Anna tiedot suoraan sivutettuun raporttiin](paginated-reports-enter-data.md)
-- [Käytännön labratyö: Sivutetun Microsoft Power BI -raportin luominen](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
-- [Opetusohjelma: Power BI:n sivutetun raportin upottaminen sovellukseen asiakkaitasi varten ](../developer/embed-paginated-reports-customers.md).
+- [Opetusohjelma: Power BI:n sivutetun raportin upottaminen sovellukseen asiakkaitasi varten ](../developer/embed-paginated-reports-customers.md)
