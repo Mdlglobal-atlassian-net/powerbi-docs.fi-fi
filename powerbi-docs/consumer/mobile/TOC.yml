@@ -60,6 +60,8 @@
               href: mobile-apps-view-phone-report.md
             - name: Paikallisten raporttien tarkastelu mobiilisovelluksissa
               href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+            - name: 'Suojautuminen Face ID:n, Touch ID:n, tunnuskoodin tai sormenjälkitunnuksen avulla'
+              href: mobile-native-secure-access.md
             - name: Sisällön käyttäminen ulkoisesta organisaatiosta (B2B)
               href: mobile-apps-b2b.md
             - name: Power BI QR-koodin lukeminen puhelimella
@@ -76,8 +78,6 @@
           items:
             - name: iOS-sovelluksen käytön aloittaminen
               href: mobile-iphone-app-get-started.md
-            - name: 'Suojautuminen Face ID:n, Touch ID:n tai tunnuskoodin avulla'
-              href: mobile-ios-native-secure-access.md
             - name: Q&A virtuaalinen analyytikko iOS-mobiilisovelluksissa
               href: mobile-apps-ios-qna.md
             - name: Power BI -mobiilisovelluksen integrointi Siri-pikakuvakkeiden kanssa
@@ -90,6 +90,10 @@
           items:
             - name: Android-sovelluksen käytön aloittaminen
               href: mobile-android-app-get-started.md
+            - name: Android-sovelluksen pikanäppäinten käyttäminen
+              href: mobile-app-quick-access-shortcuts.md
+            - name: Sisällön etsiminen ja käyttäminen Google-haun avulla
+              href: mobile-app-find-access-google-search.md
             - name: Yrityksen SSL-varmenteeseen ei luoteta -ongelman korjaaminen
               href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
             - name: Android System Webview pitää päivittää -ongelman korjaaminen
