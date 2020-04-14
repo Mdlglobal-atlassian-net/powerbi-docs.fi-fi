@@ -9,24 +9,18 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/30/2020
-ms.openlocfilehash: 9ec08ebe583110b2775f107be0ace2a03929c72d
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: 7ae2752627e24c5de2feed372009061e523a3fc8
+ms.sourcegitcommit: 34cca70ba84f37b48407d5d8a45c3f51fb95eb3c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80403550"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80751621"
 ---
 # <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Power BI sisällön upottaminen palvelun päänimeen ja sovelluksen salauskoodiin
 
-Palvelun päänimi todentamismenetelmä, jonka avulla Azure AD -sovellus voi käyttää Power BI -palvelun sisältöä ja ohjelmointi rajapintoja.
+[!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
 
-Kun luot Azure Active Directory (Azure AD) -sovelluksen, luodaan [palvelun pääobjekti](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object). Palvelun pääobjekti, jota kutsutaan myös *palvelun päänimeksi*, antaa Azure AD:lle oikeuden sovelluksesi todentamiseen. Kun sovellus on todennettu, se voi käyttää Azure AD:n vuokraajaresursseja.
-
-Todentamisessa palvelun päänimi käyttää Azure AD -sovelluksen *sovellustunnusta* ja jotakin seuraavista:
-* Sovellussalaisuus
-* Varmenne
-
-Tässä artikkelissa kuvataan todentaminen palvelun päänimellä *sovellustunnuksen* ja *sovelluksen salauskoodin* avulla. Jos haluat käyttää todennuksessa palvelun päänimeä ja varmennetta, katso [Power BI:n varmennepohjainen todentaminen]().
+Tässä artikkelissa kuvataan todentaminen palvelun päänimellä *sovellustunnuksen* ja *sovelluksen salauskoodin* avulla.
 
 ## <a name="method"></a>Menetelmä
 
@@ -55,12 +49,12 @@ Jos haluat käyttää palvelun päänimeä ja sovellustunnusta upotetussa analyy
 ## <a name="step-1---create-an-azure-ad-app"></a>Vaihe 1 – Luo Azure AD -sovellus
 
 Luo Azure AD -sovellus seuraavasti:
-* Luo sovellus [Microsoft Azure -portaalissa](https://ms.portal.azure.com/#allservices)
+* Luo sovellus [Microsoft Azure -portaalissa](https://portal.azure.com/#allservices)
 * Luo sovellus käyttämällä [PowerShelliä](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
 
 ### <a name="creating-an-azure-ad-app-in-the-microsoft-azure-portal"></a>Sovelluksen luominen Microsoft Azure -portaalissa
 
-1. Kirjaudu [Microsoft Azureen](https://ms.portal.azure.com/#allservices).
+1. Kirjaudu [Microsoft Azureen](https://portal.azure.com/#allservices).
 
 2. Etsi **Sovelluksen rekisteröinnit** ja napsauta **Sovelluksen rekisteröinnit** -linkkiä.
 
@@ -72,7 +66,7 @@ Luo Azure AD -sovellus seuraavasti:
 
 4. Täytä tarvittavat tiedot:
     * **Nimi** – Anna nimi sovelluksellesi
-    * **Tuetut tilityypit** – Valitse tuetut tilityypit
+    * **Tuetut tilityypit** – Valitse tarvittava Azure AD -tili
     * (Valinnainen) **Uudelleenohjauksen URI** – Anna URI tarvittaessa
 
 5. Valitse **Rekisteröi**.
@@ -205,5 +199,3 @@ Kun sisältösi on upotettu, olet valmis [siirtymään tuotantoon](embed-sample-
 * [Power BI Embedded asiakkaillesi](embed-sample-for-customers.md)
 
 * [Paikallista tietoyhdyskäytävää ja palvelun päänimeä käyttävä rivitason suojaus](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
-
-* [Power BI sisällön upottaminen palvelun päänimeen ja varmenteeseen]()

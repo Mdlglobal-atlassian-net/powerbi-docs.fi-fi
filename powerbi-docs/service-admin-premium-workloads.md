@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/24/2020
+ms.date: 04/08/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: d468ab70f47edcd5487b548596f4aea4080cd994
-ms.sourcegitcommit: 8267a7383d6506dae42f87e4f4a2362b875b2911
+ms.openlocfilehash: aa44f0c8c11cb26ecfc7763ec127ca8a8505536a
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80329643"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979910"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Premium-kapasiteettien kuormitusten määrittäminen
 
@@ -65,7 +65,7 @@ Tietojoukkojen kuormitus on oletuksena käytössä, eikä sitä voi poistaa käy
 | **Muistin enimmäismäärä (%)** | Tietojoukkojen käytettävissä olevan muistin enimmäismäärä prosentteina kapasiteetissa. |
 | **XMLA:n päätepiste** | Tämä määrittää, että asiakassovelluksista tulevissa yhteyksissä noudatetaan työtilan ja sovelluksen tasoilla määritettyä suojausryhmän jäsenyyttä. Lisätietoja on artikkelissa [Tietojoukkoihin yhdistäminen asiakassovelluksilla ja -työkaluilla](service-premium-connect-tools.md). |
 | **Välirivien enimmäismäärä** | DirectQueryn palauttamien välirivien enimmäismäärä. Oletusarvo on 1000000 ja sallittu alue on 100000–2147483647. |
-| **Offline-tietojoukon enimmäiskoko (Gt)** | Muistissa olevan offline-tietojoukon enimmäiskoko. Tämä on pakattu koko levyllä. Oletusarvon asettaa SKU ja sallittu alue on 0,1–10 Gt. |
+| **Offline-tietojoukon enimmäiskoko (Gt)** | Muistissa olevan offline-tietojoukon enimmäiskoko. Tämä on pakattu koko levyllä. Oletusarvo on 0, joka on suurin varastointiyksikön määrittämä enimmäisarvo. Sallittu alue on 0 – kapasiteetin kokoraja. |
 | **Tulosrivien enimmäismäärä** | DAX-kyselyssä palautettavien rivien enimmäismäärä. Oletusarvo on -1 (ei rajaa) ja sallittu alue on 100000–2147483647. |
 | **Kysely muistiraja (%)** | Käytettävissä olevan muistin enimmäismäärä kuormituksessa, jota voidaan käyttää MDX- tai DAX-kyselyn suorittamiseen. Oletusarvo on 0, minkä vuoksi SKU-kohtainen automaattinen kyselyn muistin enimmäismäärä otetaan käyttöön. |
 | **Kyselyn aikakatkaisu (sekuntia)** | Kyselyn aikakatkaisuajan suurin mahdollinen aika. Oletusarvo on 3600 sekuntia (1 tunti). Arvo 0 määrittää, että kyselyissä ei ole aikakatkaisua. |
@@ -203,6 +203,9 @@ Kuormituksia voidaan ottaa käyttöön ja määrittää kapasiteetille käyttäm
 ## <a name="monitoring-workloads"></a>Kuormitusten valvonta
 
 [Power BI Premium Capacity Metrics -sovellus](service-admin-premium-monitor-capacity.md) tarjoaa tietojoukkojen, tietovoiden ja sivutettujen raporttien mittareita, joiden avulla voit valvoa kapasiteeteissasi käyttöön otettuja kuormituksia. 
+
+> [!IMPORTANT]
+> Jos Power BI Premium -kapasiteetissasi on resurssien runsaan käytön aiheuttamia suorituskyky- tai luotettavuusongelmia, voit saada sähköpostiviesteinä ilmoituksia, joiden avulla voit tunnistaa ja ratkaista ongelmat. Lisätietoja on artikkelissa [Kapasiteetin ja luotettavuuden ilmoitukset](service-interruption-notifications.md#capacity-and-reliability-notifications).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

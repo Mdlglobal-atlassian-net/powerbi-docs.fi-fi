@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 04/03/2020
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: c5105d038480bbee3e534574add91203f54e3119
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 72c285fd57af21fcb3d1a4568a5ff2e83016072f
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609836"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979864"
 ---
 # <a name="create-power-bi-visuals-by-using-python"></a>Power BI -visualisointien luominen Pythonin avulla
 
@@ -155,9 +155,9 @@ Kun valitset **Suorita**-komentosarjapainikkeen, luodaan seuraava palkkikaavio:
 > **Python-komentosarjojen suojaus:** Python-visualisoinnit luodaan Python-komentosarjoista, joiden koodi voi sisältää suojaus- tai tietosuojariskejä. Kun yrität tarkastella tai käsitellä Python-visualisointia ensimmäistä kertaa, käyttäjälle esitetään suojauksen varoitussanoma. Ota Python-visualisoinnit käyttöön vain, jos luotat tekijään ja lähteeseen, tai sen jälkeen, kun olet tarkastanut Python-komentosarjan ja tutustunut siihen.
 >  
 
-## <a name="more-information-about-plotting-with-matprolib-pandas-and-python"></a>Lisätietoja piirtämisestä Matprolibin, Pandasin ja Pythonin avulla
+## <a name="more-information-about-plotting-with-matplotlib-pandas-and-python"></a>Lisätietoja piirtämisestä Matplotlibin, Pandasin ja Pythonin avulla
 
-Tämä opetusohjelma on suunniteltu helpottamaan visualisointien luomisen aloittamista Pythonin avulla Power BI Desktopissa. Se sisältää perustiedot monista toiminnoista ja ominaisuuksista, jotka liittyvät visualisointien luomiseen Python-, Pandas- ja Matprolib-kirjastojen. Olemassa on paljon lisätietoja, ja tässä on muutamia linkkejä, joiden avulla pääset alkuun.
+Tämä opetusohjelma on suunniteltu helpottamaan visualisointien luomisen aloittamista Pythonin avulla Power BI Desktopissa. Se sisältää perustiedot monista toiminnoista ja ominaisuuksista, jotka liittyvät visualisointien luomiseen Python-, Pandas- ja Matplotlib-kirjastojen avulla. Olemassa on paljon lisätietoja, ja tässä on muutamia linkkejä, joiden avulla pääset alkuun.
 
 - Dokumentaatio [Matplotlib](https://matplotlib.org/)-sivustossa. 
 - [Matplotlib Tutorial : A Basic Guide to Use Matplotlib with Python](https://www.datasciencelearner.com/matplotlib-tutorial-complete-guide-to-use-matplotlib-with-python/) 
@@ -177,6 +177,7 @@ Python-visualisoinneilla Power BI Desktopissa on joitakin rajoituksia:
 - Python-visualisoinnit päivitetään tietojen päivittämisen, suodattamisen ja korostamisen yhteydessä. Kuitenkin itse kuva ei ole vuorovaikutteinen, eikä sitä voi käyttää ristiinsuodatuksen lähteenä.
 - Python-visualisoinnit reagoivat muiden visualisointien korostamiseen, mutta et voi napsauttaa Python-visualisointien elementtejä ristiinsuodattaaksesi muita elementtejä.
 - Vain piirrot, jotka on piirretty Pythonin oletusarvoiseen näyttölaitteeseen, näkyvät oikein piirtoalustalla. Vältä nimenomaisesti eri Python-näyttölaitteen käyttämistä.
+- Python-visualisoinnit eivät tue syötesarakkeiden uudelleennimeämistä. Sarakkeisiin viitataan niiden alkuperäisen nimen perusteella komentosarjan suorituksen aikana.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

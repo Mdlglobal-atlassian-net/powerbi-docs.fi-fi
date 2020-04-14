@@ -7,20 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 04/06/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: a61288c9792d562e9a5efecd43d879d6df6d1782
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 268aa73506be5cc025645672f402b88646497b1c
+ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698873"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80813071"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Premium-kapasiteettien valvonta sovelluksen avulla
 
 Kapasiteettien valvonta on tärkeää, jotta voit tehdä järkeviä päätöksiä Premium-kapasiteettien resurssien hyödyntämisen suhteen. Voit valvoa kapasiteetteja hallintaportaalissa tai **Power BI Premium -kapasiteetin mittausarvot** -sovelluksella. Tässä artikkelissa annetaan ohjeet Power BI Premium -kapasiteetin mittausarvot -sovelluksen käyttöön. Sovellus tarjoaa tarkimmat tiedot kapasiteettiesi toiminnasta ja suorituskyvystä. Jos haluat yleisempiä keskiarvotietoja seitsemän edellisen päivän ajalta, voit käyttää hallintaportaalia. Jos haluat lisätietoja valvonnasta portaalissa, lue ohjeartikkeli [Premium-kapasiteettien valvonta hallintaportaalissa](service-admin-premium-monitor-portal.md).
 
 Sovellusta päivitetään säännöllisesti uusin toiminnoin. Varmista, että käytät uusinta versiota. Jos sinulla on asennettuna sovelluksen vanhempi versio, sinun kannattaa poistaa se sovelluksista. Kun olet tehnyt tämän, tee päivitys painamalla CTRL+F5.
+
+> [!IMPORTANT]
+> Jos Power BI Premium -kapasiteetissasi on resurssien runsaan käytön aiheuttamia suorituskyky- tai luotettavuusongelmia, voit saada sähköpostiviesteinä ilmoituksia, joiden avulla voit tunnistaa ja ratkaista ongelmat. Tämä voi olla yksinkertainen tapa ratkaista kapasiteettien ylikuormitus. Lisätietoja on artikkelissa [Kapasiteetin ja luotettavuuden ilmoitukset](service-interruption-notifications.md#capacity-and-reliability-notifications).
 
 ## <a name="install-the-app"></a>Sovelluksen asentaminen
 
@@ -60,7 +63,7 @@ Koontinäyttö sisältää seuraavat mittausarvot:
 
 #### <a name="top"></a>Ylin
 
-| Tieto | Kuvaus |
+| Arvo | Kuvaus |
 | --- | --- |
 | Versio | Sovellusversio. | 
 | Kapasiteetit | Niiden kapasiteettien määrä, joiden järjestelmänvalvoja olet. | 
@@ -69,7 +72,7 @@ Koontinäyttö sisältää seuraavat mittausarvot:
 
 #### <a name="system-summary"></a>Järjestelmän yhteenveto
 
-| Tieto | Kuvaus |
+| Arvo | Kuvaus |
 | --- | --- |
 | Suorittimen suurimman käytön kapasiteetti | Kapasiteetti, jossa suoritin useimmiten ylitti 80 prosenttia raja-arvoista seitsemän viime päivän aikana. |
 | Suorittimen suurimman käytön määrä | Kuinka monta kertaa nimetty kapasiteetti ylitti 80 prosenttia raja-arvoista seitsemän viime päivän aikana. | 
@@ -79,7 +82,7 @@ Koontinäyttö sisältää seuraavat mittausarvot:
 
 #### <a name="dataset-summary"></a>Tietojoukon yhteenveto
 
-| Tieto | Kuvaus |
+| Arvo | Kuvaus |
 | --- | --- |
 | Tietojoukot | Kapasiteettiesi kaikkien työtilojen tietojoukkojen kokonaismäärä.|
 | Tietojoukkojen keskikoko (Mt) | Kapasiteettiesi kaikkien työtilojen tietojoukkojen keskikoko.|  
@@ -106,7 +109,7 @@ Koontinäyttö sisältää seuraavat mittausarvot:
 
 #### <a name="dataflow-summary"></a>Tietovuon yhteenveto
 
-| Tieto | Kuvaus |
+| Arvo | Kuvaus |
 | --- | --- |
 | Tietovuot |  Kapasiteettiesi kaikkien työtilojen tietovoiden kokonaismäärä.|
 | Päivitykset yhteensä | Päivitysten kokonaismäärä seitsemän viime päivän aikana.|  
@@ -120,7 +123,7 @@ Koontinäyttö sisältää seuraavat mittausarvot:
 
 #### <a name="paginated-report-summary"></a>Sivutetun raportin yhteenveto
 
-| Tieto | Kuvaus |
+| Arvo | Kuvaus |
 | --- | --- |
 | Sivutetut raportit |  Kapasiteettiesi kaikkien työtilojen sivutettujen raporttien kokonaismäärä. |
 | Näkymiä yhteensä | Kaikkien raporttien katselukertojen kokonaismäärä. | 
@@ -134,7 +137,7 @@ Koontinäyttö sisältää seuraavat mittausarvot:
 
 #### <a name="ai-summary"></a>Tekoälyn yhteenveto
 
-| Tieto | Kuvaus |
+| Arvo | Kuvaus |
 | --- | --- |
 | Tekoälytoimintojen suoritus | Tämä on suoritusten kokonaismäärä seitsemän edellisen päivän aikana. |
 | Tekoälytoimintojen suoritusten luotettavuus (%) | Tämä on onnistuneiden suoritusten määrä jaettuna suoritusten kokonaismäärällä seitsemän edellisen päivän aikana. |

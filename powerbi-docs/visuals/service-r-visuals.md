@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 60432c110df7c20aa13969d70ed7c2a90d0ef575
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: 9f9b0ec77d0273374d940332abd5d186c2604866
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114838"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979818"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>R-visualisointien luominen ja käyttö Power BI:ssa
 R-visualisointeja voidaan tällä hetkellä luoda vain **Power BI Desktopissa**, ja sen jälkeen ne julkaistaan Power BI -palveluun. Katso lisätietoja R-visualisointien luomisesta kohdasta [Power BI -visualisointien luominen R:n avulla](../desktop-r-visuals.md).
@@ -94,6 +94,7 @@ R-visualisoinneilla Power BI -palvelussa on joitakin rajoituksia:
 * R-visualisoinnit reagoivat muiden visualisointien korostamiseen, mutta et voi napsauttaa R-visualisointien elementtejä ristiinsuodattaaksesi muita elementtejä.
 * R-visualisointeja ei tällä hetkellä tueta *Aika*-tietotyypissä. Käytä sen sijaan Päivämäärä ja aika -tietotyyppiä.
 * R-visualisoinnit eivät näy käytettäessä **Julkaise verkkoon** -arvoa.
+* R-visualisoinnit eivät tue syötesarakkeiden uudelleennimeämistä. Sarakkeisiin viitataan niiden alkuperäisen nimen perusteella komentosarjan suorituksen aikana.
 * R-visualisointeja ei tällä hetkellä voi tulostaa koontinäytön ja raporttien tulostamisella
 * R-visualisointeja ei tueta tällä hetkellä Analysis Servicesin DirectQuery-tilassa
 * R-visualisoinneilla on kyky muuntaa tekstiotsikoita graafisiksi elementeiksi. Tämän tekeminen Power BI -palvelussa edellyttää seuraavaa lisävaihetta:

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/04/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 729a50e251a9c2ae083375e187ff133022f3ce91
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: 061a2a99ad4cc812aac0d66ec4993001187179a0
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114861"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979887"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Power BI -visualisointien luominen R:n avulla
 Power BI Desktopissa voit visualisoida tietojasi *R*:n avulla. [R](https://mran.revolutionanalytics.com/documents/what-is-r) on kieli ja ympäristö tilastolliselle tietojenkäsittelylle ja grafiikalle.
@@ -142,6 +142,8 @@ Power BI Desktopin R-visualisoinneilla on seuraavat rajoitukset:
 * Korostukset: R-visualisoinnit reagoivat muiden visualisointien korostamiseen, mutta et voi ristiinsuodattaa muita elementtejä valitsemalla R-visualisoinnin elementtejä.
 
 * Näyttölaitteet: Vain piirrot, jotka on piirretty R:n oletusarvoiseen näyttölaitteeseen, näkyvät oikein piirtoalustalla. Vältä nimenomaisesti eri R-näyttölaitteen käyttämistä.
+
+* Sarakkeen uudelleennimeäminen: R-visualisoinnit eivät tue syötesarakkeiden uudelleennimeämistä. Sarakkeisiin viitataan niiden alkuperäisen nimen perusteella komentosarjan suorituksen aikana.
 
 * RRO-asennukset: Tässä versiossa RRO-asennuksia ei automaattisesti tunnisteta Power BI Desktopin 32-bittisessä versiossa, joten sinun on määritettävä manuaalisesti R-asennuskansion polku kohdassa **Asetukset ja vaihtoehdot** > **Asetukset** > **R-komentosarja**.
 

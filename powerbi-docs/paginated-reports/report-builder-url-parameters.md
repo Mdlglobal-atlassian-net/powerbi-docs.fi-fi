@@ -8,13 +8,13 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cfinlan
 ms.custom: ''
-ms.date: 09/10/2019
-ms.openlocfilehash: 35df214da19d5f35130408ce8128643f52682428
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.date: 04/02/2020
+ms.openlocfilehash: df59d09a1e8557842904b46eded0a83c86448224
+ms.sourcegitcommit: e0833ec22b263f919025acae88551570b4def0cd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78922225"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80647705"
 ---
 # <a name="url-parameters-in-paginated-reports-in-power-bi"></a>URL-parametrit Power BI:n sivutetuissa raporteissa
 
@@ -78,6 +78,14 @@ Voit käyttää seuraavia parametreja URL-osoitteen osana ja määrittää niide
 - CSV 
 - PDF 
 - XML 
+
+**Parametripaneelin tila** Määrittää, onko parametripaneeli suljettuna vai avoimena, kun raportti latautuu, vai onko se piilotettu kokonaan.
+
+-   rdl:parameterPanelState
+
+    - 'collapsed': lataa raportti, kun parametripaneeli on suljettu. Parametripainike on käytössä, jolloin käyttäjät voivat laajentaa napsauttamalla painiketta;
+    - 'hidden': lataa raportti parametripaneeli suljettuna ja parametripainike poistettuna käytöstä;
+    - 'expanded' (oletus): lataa raportti parametripaneeli avoimena ja parametripainike käytössä;
 
 **Laitteen tiedot** Voit määrittää lisää tulosparametreja seuraaville vientimuodoille. 
 

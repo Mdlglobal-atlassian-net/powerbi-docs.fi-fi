@@ -7,19 +7,19 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/31/2020
+ms.date: 04/06/2020
 ms.author: lukaszp
 LocalizationGroup: Samples
-ms.openlocfilehash: 432312b5ceb7632e0249d1d7dda6158bf97d0224
-ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
+ms.openlocfilehash: 66e76c21e7d5171d24ff1518745a35947aa7ca42
+ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80472056"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80979772"
 ---
 # <a name="covid-19-tracking-sample-for-us-state-and-local-governments"></a>COVID-19-seurantamalli Yhdysvaltain viranomaisille
 
-Power BI -tiimi on luonut COVID-19-seurantamallin, jonka avulla Yhdysvaltain viranomaiset voivat julkaista ja räätälöidä vuorovaikutteisia raportteja COVID-19-tilanteesta. Power BI Desktopilla viranomaiset voivat analysoida ja visualisoida COVID-19-tietoja ja pitää yhteisönsä ajan tasalla kaupunki-, piirikunta-, osavaltio- ja maatasolla. Power BI:n Julkaise verkkoon -toiminnolla he voivat jakaa raportin suoraan kansalaisten tiedoksi. Tässä artikkelissa esitellään kolme eri tapaa käyttää Power BI:n vuorovaikutteisia visualisointeja julkisessa tarinassa, blogissa tai verkkosivustossa.
+Power BI -tiimi on luonut COVID-19-seurantamallin, jonka avulla Yhdysvaltain viranomaiset voivat julkaista ja räätälöidä vuorovaikutteisia raportteja COVID-19-tilanteesta. Power BI Desktopilla viranomaiset voivat analysoida ja visualisoida COVID-19-tietoja ja pitää yhteisönsä ajan tasalla kaupunki-, piirikunta-, osavaltio- ja maatasolla. Power BI:n Julkaise verkkoon -toiminnolla he voivat jakaa raportin suoraan kansalaisten tiedoksi. Tässä artikkelissa esitellään eri tapoja käyttää Power BI:n vuorovaikutteisia visualisointeja julkisessa tarinassa, blogissa tai verkkosivustossa.
 
 :::image type="content" source="media/sample-covid-19-us/covid-19-us-tracking-sample.png" alt-text="COVID-19-malli ja tietoja Yhdysvalloista":::
 
@@ -38,19 +38,19 @@ Sinun täytyy täyttää seuraavat edellytykset, ennen kuin voit aloittaa tarina
 - Lataa maksuton [Power BI Desktop](https://powerbi.microsoft.com/desktop/) -sovellus.
 - Rekisteröidy [Power BI -palveluun](https://powerbi.microsoft.com/get-started/).
 
-## <a name="option-1-pre-built-embed-code"></a>Tapa 1: valmis upotuskoodi
+## <a name="option-1-pre-built-embed-code"></a>Vaihtoehto 1: valmis upotuskoodi
 
 Microsoft on julkaissut malliraportin ja verkkoon julkaisemisen upotuskoodin. Upotuskoodilla voit upottaa koko mallin, koko maan näkymä mukaan lukien, sekä porautua osavaltio- ja piirikuntatasolle omassa verkkosivustossasi. Suosittelemme, että tutustut tämän artikkelin [vastuuvapauslausekkeisiin](#disclaimers) ennen näiden tietojen julkaisemista.
 
 Jos haluat sisällyttää vuorovaikutteisen grafiikan sivustoosi, kopioi ja liitä seuraava upotuskoodi siihen kohtaan, jossa haluat näyttää grafiikan verkkosivullasi.  
 
 ```
-<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
+<iframe width="1600" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
 ```
 
-Upotuskoodi on HTML iFrame -elementti, jonka voit lisätä mille tahansa HTML-sivulle. Säädä iFramen leveys ja korkeus sivustoosi sopivaksi. Malliraportti on tehty 16:9-kuvasuhteelle, joten valitse koko, joka säilyttää tämän kuvasuhteen. Oikein toteutettuna grafiikka näkyy ilman ylimääräisiä harmaita reunoja. Tutustu [iFramen koon muokkaamiseen vinkkeihin](https://docs.microsoft.com/power-bi/service-publish-to-web#tips-and-tricks-for-iframe-height-and-width), kun teet näitä muutoksia.
+Upotuskoodi on HTML iFrame -elementti, jonka voit lisätä mille tahansa HTML-sivulle. Säädä iFramen leveys ja korkeus sivustoosi sopivaksi. Malliraportti on tehty 16:9-kuvasuhteelle, joten valitse koko, joka säilyttää tämän kuvasuhteen. Oikein toteutettuna grafiikka näkyy ilman ylimääräisiä harmaita reunoja. Tutustu [iFramen koon muokkaamiseen vinkkeihin](../service-publish-to-web.md#tips-and-tricks-for-iframe-height-and-width), kun teet näitä muutoksia.
 
-## <a name="option-2-customize-the-sample-power-bi-file"></a>Tapa 2: muokkaa Power BI -mallitiedostoa
+## <a name="option-2-customize-the-sample-power-bi-file"></a>Vaihtoehto 2: muokkaa Power BI -mallitiedostoa
 
 Power BI -tiedosto sisältää tiedot ja vuorovaikutteisen grafiikan .pbix-tiedostomuodossa, jota voit muokata Power BI Desktopissa.  
 
@@ -106,7 +106,7 @@ Kun toimit ohjeiden mukaisesti, valitse seuraavat asetukset:
 
 Testaa päivitysasetus valitsemalla [Päivitä nyt](../refresh-data.md#data-refresh) -toiminto tietojoukkokohteessa.
 
-Päivitetyt tiedot ladataan aina, kun päivitys suoritetaan aikataulun mukaisesti. Muista, että taustatiedot tarjoaa USAFacts ja että ne eivät välttämättä päivity yhtä usein kuin päivitysaikataulussasi on määritetty. Tarkista [USAFactsin verkkosivustosta](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) taustatietojen edellisen päivityksen ajankohta. 
+Päivitetyt tiedot ladataan aina, kun päivitys suoritetaan aikataulun mukaisesti. Taustatiedot tarjoaa USAFacts, ja ne eivät välttämättä päivity yhtä usein kuin päivitysaikataulussasi on määritetty. Tarkista [USAFactsin verkkosivustosta](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) taustatietojen edellisen päivityksen ajankohta. 
 
 Jos aiot julkaista muokatun raportin verkkosivustossasi, sinun kannattaa määrittää päivitysaikataulu USAFacts-tietojen päivittämisen mukaisesti. Koska USAFacts saattaa päivittää tietoja eri aikaan joka päivä, sinun kannattaa ehkä määrittää useita päivityskertoja kullekin päivälle. 
 
@@ -147,6 +147,11 @@ Voit yhdistää tämän raportin tietoja myös toisesta lähteestä peräisin ol
     
 Tämän jälkeen voit visualisoida tietoja Power BI Desktopilla. Toimi lopuksi **tavan 2** [(Julkaise raportti Power BI -palveluun)](#publish-your-report-to-the-power-bi-service) ohjeiden mukaisesti ja julkaise raportti sekä luo muokattu upotuskoodi. 
 
+## <a name="option-4-use-the-covid-19-us-tracking-template-app"></a>Vaihtoehto 4: käytä COVID-19 US Tracking -mallisovellusta
+
+Power BI -työryhmä on luonut lisävaihtoehdoksi COVID-19 US Tracking *-mallisovelluksen*, jonka avulla pääset alkuun heti. Mallisovellukset ovat tiettyyn tietolähteeseen liittyviä raportti-, koontinäyttö- ja tietojoukkopaketteja. Voit ladata ne AppSourcesta, käyttää niitä tai muokata tarpeidesi mukaan ja jaella niitä työtovereillesi. 
+
+Tämä COVID-19 US Tracking -mallisovellus sisältää valmiin COVID-19-mittausraportin, jota voi käyttää sellaisenaan, jota voi mukauttaa suoraan Power BI -palvelussa tai jonka voi ladata tarvittaessa muiden tietolähteiden lisäykseksi. Lue tiedot [COVID-19 US Tracking -mallisovelluksen asentamisesta](../connect-data/service-connect-to-covid-19-tracking.md) ja käytön aloittamisesta heti.
 
 ## <a name="about-the-data-source-for-this-report"></a>Tietoja tämän raportin tietolähteestä
 Tämä vuorovaikutteinen raportti koostaa yhteen tietoja CDC:ltä (Centers for Disease Control and Prevention) sekä osavaltio- ja paikallistason terveydenhuoltoviranomaisilta. Piirikuntatason tiedot on vahvistettu viittaamalla suoraan osavaltio- ja paikallistason viranomaisiin (linkki).

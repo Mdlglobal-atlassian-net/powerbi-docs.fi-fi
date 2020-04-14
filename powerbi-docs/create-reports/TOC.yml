@@ -49,15 +49,15 @@
           items:
             - name: Raporttinäkymän käyttö
               href: ../desktop-report-view.md
-            - name: Power BI -raporttien suodatintyypit
+            - name: Suodatintyypit raporteissa
               href: ../power-bi-report-filter-types.md
             - name: Suodattimet ja korostaminen raporteissa
               href: ../power-bi-reports-filters-and-highlighting.md
             - name: Suuren tiheyden viivaotanta
               href: ../desktop-high-density-sampling.md
-            - name: Tietoja Power BI Q&A -visualisoinneista
+            - name: Tietoja Q&A-visualisoinneista
               href: ../visuals/power-bi-visualization-q-and-a.md
-            - name: 'Tietoja Power BI:n helppokäyttötoiminnoista'
+            - name: Tietoja helppokäyttötoiminnoista
               href: ../desktop-accessibility-overview.md
             - name: Luonnollisen kielen Q&A
               items:
@@ -125,7 +125,7 @@
               href: ../desktop-bookmarks.md
             - name: Raporttiteemojen käyttö
               href: ../desktop-report-themes.md
-            - name: Suodattimien käyttö Power BI -raporteissa
+            - name: Suodattimien käyttö raporteissa
               href: ../power-bi-report-filter.md
             - name: Porautumistoiminnon käyttäminen
               href: ../desktop-drillthrough.md
@@ -139,7 +139,7 @@
               href: ../desktop-r-powered-custom-visuals.md
             - name: Ruudukoiden ja ruudukkoon kohdistamisen käyttö
               href: ../desktop-gridlines-snap-to-grid.md
-            - name: Sivun näyttöasetusten käyttö Power BI -raporteissa
+            - name: Sivun näyttöasetusten käyttö raporteissa
               href: ../power-bi-report-display-settings.md
             - name: Sarakkeen lisääminen esimerkistä
               href: ../desktop-add-column-from-example.md
@@ -147,12 +147,16 @@
               href: ../desktop-add-custom-column.md
             - name: Sidottujen hierarkiaselitteiden käyttö
               href: ../desktop-inline-hierarchy-labels.md
-            - name: Numeerisen alueen osittajan käyttö
+            - name: Osittajat
+              href: ../visuals/power-bi-visualization-slicers.md
+            - name: Numeerisen alueen osittajat
               href: ../desktop-slicer-numeric-range.md
-            - name: Suhteellisen päivämääräosittajan ja suodattimen käyttö
-              href: ../desktop-slicer-filter-date-range.md
+            - name: Suhteelliset päivämääräosittajat ja suodattimet
+              href: ../visuals/desktop-slicer-filter-date-range.md
             - name: Kooltaan muokattavan osittajan luominen
               href: ../power-bi-slicer-filter-responsive.md
+            - name: Useiden kenttien lisääminen osittajaan
+              href: power-bi-slicer-hierarchy-multiple-fields.md
             - name: Tietojen käytön rajoittaminen rivitason suojauksen avulla
               href: ../desktop-rls.md
             - name: Työkaluvihjeiden mukauttaminen
@@ -205,17 +209,17 @@
               href: ../desktop-upload-desktop-files.md
         - name: Visualisoinnit
           items:
-            - name: Visualisointien lisääminen Power BI -raporttiin (osa 1)
+            - name: Visualisointien lisääminen raporttiin (osa 1)
               href: ../visuals/power-bi-report-add-visualizations-i.md
-            - name: Visualisointien lisääminen Power BI -raporttiin (osa 2)
+            - name: Visualisointien lisääminen raporttiin (osa 2)
               href: ../visuals/power-bi-report-add-visualizations-ii.md
-            - name: Visualisointien lisääminen Power BI -raportteihin
+            - name: Visualisointien lisääminen raportteihin
               href: ../visuals/power-bi-report-visualizations.md
-            - name: Visualisointien muokkaaminen Power BI -raporteissa
+            - name: Visualisointien muuttaminen raporteissa
               href: ../visuals/power-bi-report-change-visualization-type.md
             - name: 'Visualisoinnin otsikoiden, taustojen ja selitteiden mukauttaminen'
               href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
-            - name: 'Power BI:n Näytä kohteet, joilla ei ole tietoja -ominaisuus'
+            - name: 'Näytä kohteet, joilla ei ole tietoja'
               href: ../desktop-show-items-no-data.md
             - name: Arvopisterajojen ja strategioiden käyttö visualisointityypin mukaan
               href: ../visuals/power-bi-data-points.md
@@ -233,7 +237,7 @@
               href: ../visuals/power-bi-visualization-move-and-resize.md
             - name: Visualisointien toimintatapojen muokkaaminen raportissa
               href: ../service-reports-visual-interactions.md
-            - name: Vinkkejä Power BI -karttavisualisoinneille
+            - name: Vinkkejä karttavisualisoinneille
               href: ../visuals/power-bi-map-tips-and-tricks.md
             - name: X- ja Y-akselin ominaisuuksien muokkaaminen
               href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
@@ -241,47 +245,45 @@
               href: ../visuals/power-bi-visualizations-arcgis.md
             - name: ArcGIS-karttojen luominen Power BI -visualisoinneille
               href: ../visuals/power-bi-visualization-arcgis.md
-            - name: Perusaluekaavioiden luominen ja käyttäminen
+            - name: Perusaluekaaviot
               href: ../visuals/power-bi-visualization-basic-area-chart.md
             - name: Korttivisualisointien (suurten lukujen ruudut) luominen
               href: ../visuals/power-bi-visualization-card.md
-            - name: Yhdistelmäkaavioiden luominen ja käyttäminen
+            - name: Yhdistelmäkaaviot
               href: ../visuals/power-bi-visualization-combo-chart.md
-            - name: Hajotuspuun visualisointien luominen ja käyttäminen (esiversio)
+            - name: Hajotuspuun visualisoinnit (esiversio)
               href: ../visuals/power-bi-visualization-decomposition-tree.md
-            - name: Rengaskaavioiden luominen ja käyttäminen
+            - name: Rengaskaaviot
               href: ../visuals/power-bi-visualization-doughnut-charts.md
-            - name: Täytettyjen karttojen (koropleettikartat) luominen ja käyttäminen
+            - name: Täytetyt kartat (Choropleth-kartat)
               href: ../visuals/power-bi-visualization-filled-maps-choropleths.md
-            - name: Suppilokaavioiden luominen ja käyttäminen
+            - name: Suppilokaaviot
               href: ../visuals/power-bi-visualization-funnel-charts.md
-            - name: Tärkeiden vaikuttajien visualisointien luominen ja käyttäminen
+            - name: Tärkeimpien vaikuttajien visualisoinnit
               href: ../visuals/power-bi-visualization-influencers.md
-            - name: Suorituskykyilmaisinvisualisointien luominen ja käyttäminen
+            - name: Suorituskykyilmaisimien visualisoinnit
               href: ../visuals/power-bi-visualization-kpi.md
-            - name: Matriisivisualisointien luominen ja käyttäminen
+            - name: Matriisin visualisoinnit
               href: ../visuals/desktop-matrix-visual.md
-            - name: Power Apps -visualisointien luominen ja käyttäminen
+            - name: Power Apps -visualisoinnit
               href: ../visuals/power-bi-visualization-powerapp.md
-            - name: R-visualisointien luominen ja käyttäminen
+            - name: R-visualisoinnit
               href: ../visuals/service-r-visuals.md
-            - name: Viisarimittarikaavioiden luominen ja käyttäminen
+            - name: Viisarimittarikaaviot
               href: ../visuals/power-bi-visualization-radial-gauge-charts.md
-            - name: Nauhakaavioiden luominen ja käyttäminen
+            - name: Nauhakaaviot
               href: ../visuals/desktop-ribbon-charts.md
-            - name: 'Piste-, kupla- ja pistetulostuskaavioiden luominen ja käyttäminen'
+            - name: 'Piste-, kupla- ja pistetulostuskaaviot'
               href: ../visuals/power-bi-visualization-scatter.md
             - name: Suuren tiheyden pistekaavioiden luominen ja käyttäminen
               href: ../visuals/desktop-high-density-scatter-charts.md
-            - name: Muotokarttavisualisointien luominen ja käyttäminen (esiversio)
+            - name: Muotokarttavisualisoinnit (esiversio)
               href: ../visuals/desktop-shape-map.md
-            - name: Osittajien luominen ja käyttäminen
-              href: ../visuals/power-bi-visualization-slicers.md
-            - name: Taulukoiden luominen ja käyttäminen Power BI -raporteissa ja -koontinäytöissä
+            - name: Taulukot raporteissa ja koontinäytöissä
               href: ../visuals/power-bi-visualization-tables.md
-            - name: Puukarttojen luominen ja käyttäminen
+            - name: Puukartat
               href: ../visuals/power-bi-visualization-treemaps.md
-            - name: Vesiputouskaavioiden luominen ja käyttäminen
+            - name: Vesiputouskaaviot
               href: ../visuals/power-bi-visualization-waterfall-charts.md
         - name: Luonnollisen kielen Q&A
           items:
@@ -301,17 +303,17 @@
               href: ../service-q-and-a-create-featured-questions.md
             - name: 'Q&A:n käyttäminen reaaliaikaisten yhteyksien kautta'
               href: ../service-q-and-a-direct-query.md
-            - name: 'Nopeat merkitykselliset tiedot Power BI:ssä'
+            - name: Nopeat merkitykselliset tiedot
               href: ../service-insights.md
             - name: Tietojen optimointi nopeille merkityksellisille tiedoille
               href: ../service-insights-optimize.md
         - name: Helppokäyttötoiminnot
           items:
-            - name: Helppokäyttöisten Power BI -raporttien suunnittelu
+            - name: Helppokäyttöisten raporttien suunnittelu
               href: ../desktop-accessibility-creating-reports.md
-            - name: Power BI -raporttien luominen helppokäyttötoimintojen työkalujen avulla
+            - name: Raporttien luominen helppokäyttötoimintojen työkalujen avulla
               href: ../desktop-accessibility-creating-tools.md
-            - name: Power BI -raporttien käyttäminen helppokäyttötoimintojen avulla
+            - name: Raporttien käyttö helppokäyttötoimintojen avulla
               href: ../desktop-accessibility-consuming-tools.md
             - name: Pikanäppäimet Power BI Desktopissa
               href: ../desktop-accessibility-keyboard-shortcuts.md
@@ -351,7 +353,7 @@
               href: ../service-dashboard-pin-tile-from-q-and-a.md
             - name: Koko raporttisivun kiinnittäminen koontinäyttöön
               href: ../service-dashboard-pin-live-tile-from-report.md
-            - name: Power BI -palvelun tietoilmoitukset
+            - name: Tietoilmoitukset palvelussa
               href: ../service-set-data-alerts.md
             - name: 'Kuvan, tekstiruudun, videon tai koodin lisääminen koontinäyttöön'
               href: ../service-dashboard-add-widget.md
@@ -369,9 +371,9 @@
               href: ../service-dashboard-themes.md
         - name: Muut tehtävät
           items:
-            - name: 'Sisällön uudelleennimeäminen Power BI:llä'
+            - name: Sisällön uudelleen nimeäminen
               href: ../service-rename.md
             - name: Kohteen yhteystietojen asettaminen
               href: ../service-item-contact.md
-            - name: 'Poista melkein mitä tahansa Power BI:ssä'
+            - name: Lähes kaiken poistaminen
               href: ../service-delete.md

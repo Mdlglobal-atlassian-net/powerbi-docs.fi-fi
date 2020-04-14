@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/09/2020
 ms.author: painbar
-ms.openlocfilehash: 6885f635f96da3bbea039f445e83cd7cada144ce
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.openlocfilehash: af9a1ad5dd13f4f57947b0ca92459e7691eab5fd
+ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79435969"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80802091"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -24,6 +24,20 @@ Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 
 >[!NOTE]
 >Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** lopetetaan 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## <a name="march-2020"></a>Maaliskuu 2020
+
+### <a name="use-shortcuts-and-google-search-to-launch-your-content-android"></a>Sisällön käynnistäminen pikakuvakkeiden ja Google-haun avulla (Android)
+Olemme helpottaneet tietojen löytämistä ja avaamista integroimalla sekä pikakuvakkeet että Google-haun Power BI -sovelluksella. Luo pikakuvakkeita, joiden avulla voit helposti käyttää suosikkiraporttejasi ja -koontinäyttöjäsi suoraan laitteesi aloitusnäytöstä. Voit myös etsiä ja avata Power BI -sisältöäsi nopeasti Google-haun avulla. Lue lisää [Android-sovelluksen pikakuvakkeista](mobile-app-quick-access-shortcuts.md) ja [Google-haku](mobile-app-find-access-google-search.md)!
+
+### <a name="enhanced-security-using-device-protection-preview-android"></a>Tehostettu suojaus käyttäen laitteen suojausta (esikatselu) (Android)
+Laitteesi sisäisten suojaus toimintojen avulla voit suojata Power BI -sovelluksesi ja saada tarvitsemasi tietosuojan. Biometrisen todentamisen (sormenjälkitunnuksen) vaatiminen Power BI -sovelluksen käyttöä varten varmistaa, että tietosi pysyvät yksityisinä ja että vain sinä voit nähdä ne. [Lue natiivista suojatusta käytöstä](mobile-native-secure-access.md)
+
+### <a name="scanning-is-now-available-on-ipad"></a>Skannaaminen on nyt käytettävissä iPadissa
+Voit nyt suodattaa raporttisi skannaamalla viivakoodit suoraan iPadistasi, ja avata raportit nopeasti QR-koodien avulla.  
+
+### <a name="updated-filtering-experience"></a>Päivitetty suodatuskokemus
+Power BI -sovelluksen suodattimilla on uusia toimintoja ja uusi rakenne. Tämä sisältää raporttien visualisointeihin käytettyjen suodattimien parannetun näkyvyyden sekä mahdollisuuden lukita ja jopa piilottaa suodattimia. Nämä muutokset parantavat myös yhteensopivuutta Power BI -palvelun suodatuksen kanssa.
 
 ## <a name="february-2020"></a>Helmikuu 2020
 

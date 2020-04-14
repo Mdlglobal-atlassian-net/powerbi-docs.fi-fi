@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: ba1909c5fc75abdf7338572c646d98fca83595b0
-ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
+ms.openlocfilehash: a2e53d27a8ca49e9fc318fd25cc20acbb7bacc38
+ms.sourcegitcommit: 34cca70ba84f37b48407d5d8a45c3f51fb95eb3c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79133262"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80751610"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä
 
@@ -75,7 +75,7 @@ Mittareiden luomiseen on kuitenkin kolme vakuuttavaa syytä myös yksinkertaisis
 
 - Kun tiedät, että raportin tekijät tekevät kyselyn malliin [MDX](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017)-lausekkeella, mallissa on oltava _eksplisiittisiä mittareita_. Eksplisiittiset mittarit määritetään DAX:llä. Tämä mallilähestymistapa on erityisen sovelias, kun Power BI -tietojoukkoon tehdään kyselyitä MDX:llä, koska MDX ei tue sarakearvojen yhteenvetoja. MDX:ää käytetään etenkin [Analysoi Excelissä](https://docs.microsoft.com/power-bi/service-analyze-in-excel) -toimintoa käytettäessä, koska Pivot-taulukot tekevät MDX-kyselyitä.
 - Kun tiedät, että raportin tekijät luovat Power BI:n sivutettuja raportteja MDX-kyselyjen suunnittelutyökalulla, mallissa on oltava eksplisiittiset mittarit. Vain MDX-kyselyjen suunnittelutyökalu tukee [palvelimen koosteita](/sql/reporting-services/report-design/report-builder-functions-aggregate-function). Jos Power BI:n on arvioitava raportin tekijöiden mittarit (sivutettujen raporttien moduulin sijaan), heidän on käytettävä MDX-kyselyjen suunnittelutyökalua.
-- Jos haluat varmistaa, että raportin tekijät voivat tehdä yhteenvedon sarakkeista vain tietyllä tavalla. Esimerkiksi jälleenmyyjämyynnin **Yksikköhinta**-sarakkeesta (joka on yksikkökohtainen hinta) voidaan tehdä yhteenveto, mutta vain käyttämällä määrättyjä koostamisfunktioita. Sitä ei tule koskaan laskea yhteen, mutta se voidaan vetää yhteen käyttämällä muita koostamisfunktioita (minimi, maksimi, keskiarvo jne.). Tässä esiintymässä mallintaja voi piilottaa **Yksikköhinta**-sarakkeen ja luoda mittareita kaikille sopiville koostamisfunktioille.
+- Kun haluat varmistaa, että raportin tekijät voivat tehdä yhteenvedon sarakkeista vain tietyllä tavalla. Esimerkiksi jälleenmyyjämyynnin **Yksikköhinta**-sarakkeesta (joka on yksikkökohtainen hinta) voidaan tehdä yhteenveto, mutta vain käyttämällä määrättyjä koostamisfunktioita. Sitä ei tule koskaan laskea yhteen, mutta se voidaan vetää yhteen käyttämällä muita koostamisfunktioita (kuten minimi, maksimi tai keskiarvo). Tässä esiintymässä mallintaja voi piilottaa **Yksikköhinta**-sarakkeen ja luoda mittareita kaikille sopiville koostamisfunktioille.
 
 Tämä rakennemenetelmä toimii hyvin Power BI -palvelussa ja Q&A:ssa laadituille raporteille. Power BI Desktopin live-yhteyksien avulla raporttien tekijät voivat näyttää **Kentät**-ruudussa piilotetut kentät, minkä ansiosta tämä rakennemenetelmä voidaan kiertää.
 
@@ -188,7 +188,7 @@ Power BI -mallissa myyntitilauksen numeron sarake voi olla syytä lisätä fakta
 
 ![Johdetun dimension esimerkki](media/star-schema/degenerate-dimension.png)
 
-Lisätietoja on artikkelissa [Yksi-yhteen-suhteen ohjeet (Johdetut dimensiot)](relationships-one-to-one.md#degenerate-dimensions).
+Jos Adventure Works -jälleenmyyjien myyntitaulukossa on tilausnumero _ja_ tilausrivin numerosarakkeet ja niitä tarvitaan suodattamiseen, johdettu dimensiotaulukko olisi kuitenkin hyvä rakenne. Lisätietoja on artikkelissa [Yksi-yhteen-suhteen ohjeet (Johdetut dimensiot)](relationships-one-to-one.md#degenerate-dimensions).
 
 ## <a name="factless-fact-tables"></a>Faktattomat faktataulukot
 
@@ -196,7 +196,7 @@ Lisätietoja on artikkelissa [Yksi-yhteen-suhteen ohjeet (Johdetut dimensiot)](r
 
 Faktaton faktataulukko voi tallentaa dimensioavainten määrittämät havainnot. Esimerkiksi tietty asiakas on kirjautunut verkkosivustoon tiettynä päivänä ja tiettyyn aikaan. Voit määrittää mittarin, joka laskee faktattoman faktataulukon rivit sen analysoimiseksi, milloin asiakkaat ovat kirjautuneet ja kuinka moni asiakas on kirjautunut.
 
-Vakuuttava syy käyttää faktatonta faktataulukkoa on dimensioiden välisten yhteyksien tallentaminen. Tässä Power BI -mallirakenteessa suosittelemme monta-moneen-dimensioyhteyksien määrittämistä. Monta-moneen-dimensioyhteyden rakenteessa faktatonta faktataulukkoa kutsutaan _välitaulukoksi_.
+Vakuuttava syy käyttää faktatonta faktataulukkoa on dimensioiden välisten yhteyksien tallentaminen. Tässä Power BI -mallirakenteessa suosittelemme monta-moneen-dimensioyhteyksien määrittämistä. [Monta-moneen-dimensioyhteyden rakenteessa](relationships-many-to-many.md#relate-many-to-many-dimensions) faktatonta faktataulukkoa kutsutaan _välitaulukoksi_.
 
 Esimerkiksi myyjille voidaan määrittää yksi _tai useampi_ myyntialue. Välitaulukko voidaan suunnitella faktattomana faktataulukkona, joka koostuu kahdesta sarakkeesta: myyjäavaimesta ja alueavaimesta. Arvojen kaksoiskappaleet voidaan tallentaa kumpaankin sarakkeeseen.
 

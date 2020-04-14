@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/19/2019
+ms.date: 04/06/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: ae11ec64a0bffbd3e64c0fd677a7225c2b31f521
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: c15576ac6ab9b20a3492341c05d2f9d8eb42e107
+ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488679"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80813048"
 ---
 # <a name="power-bi-premium-metrics-app"></a>Power BI Premium Metrics -sovellus
 
@@ -27,6 +27,9 @@ Voit käyttää **Power BI Premium Metrics -sovellusta** Power BI Premium -tilau
 ![Power BI Premium Metrics -sovellus](media/service-premium-metrics-app/premium-metrics-app-00.png)
 
 Seuraavat osat kuvaavat yksityiskohtaisesti aloitussivua ja kolmea mittariraporttisivua. 
+
+> [!IMPORTANT]
+> Jos Power BI Premium -kapasiteetissasi on resurssien runsaan käytön aiheuttamia suorituskyky- tai luotettavuusongelmia, voit saada sähköpostiviesteinä ilmoituksia, joiden avulla voit tunnistaa ja ratkaista ongelmat. Lisätietoja on artikkelissa [Kapasiteetin ja luotettavuuden ilmoitukset](service-interruption-notifications.md#capacity-and-reliability-notifications).
 
 ## <a name="premium-capacity-health-center"></a>Premium-kapasiteettikuntokeskus
 

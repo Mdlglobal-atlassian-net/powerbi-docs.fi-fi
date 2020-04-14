@@ -7,21 +7,21 @@ featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 04/02/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 8f5d11b53526c5d266b96a8f21c42fecc66d3795
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: a67d983d11ae8fa2f82a540c0649c2da475d5249
+ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74163759"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80621621"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Tietoilmoitukset Power BI -palvelussa
 
 Aseta ilmoituksia ilmoittamaan sinulle, kun koontinäyttösi tiedot muuttuvat asettamiesi rajojen ulkopuolelle.
 
-Voit määrittää ilmoituksia ruuduille, jos sinulla on Power BI:n Pro-käyttöoikeus. Voit myös määrittää ilmoituksia, jos joku jakaa koontinäytön, joka on [Premium-kapasiteetissa](service-premium-what-is.md). Ilmoitukset voidaan määrittää vain ruuduille, jotka on kiinnitetty raportin visualisoinneista, ja vain mittareissa, suorituskykyilmaisimissa ja korteissa. Ilmoituksia voidaan määrittää visualisoinneille, jotka on tehty virtautettavista tietojoukoista, jotka kiinnitetään raportista koontinäyttöön. Ilmoituksia ei voi määrittää virtautettaville ruuduille, jotka on tehty suoraan koontinäytössä valitsemalla **Lisää-ruutu** > **Mukautetut virtautettavat tiedot**.
+Voit asettaa hälytyksiä ruutuihin omassa työtilassasi. Voit myös määrittää ilmoituksia, jos joku jakaa koontinäytön, joka on [Premium-kapasiteetissa](service-premium-what-is.md). Jos sinulla on Power BI:n Pro-käyttöoikeus, voit määrittää ilmoituksia ruuduille myös missä tahansa muussa työtilassa. Ilmoitukset voidaan määrittää vain ruuduille, jotka on kiinnitetty raportin visualisoinneista, ja vain mittareissa, suorituskykyilmaisimissa ja korteissa. Ilmoituksia voidaan määrittää visualisoinneille, jotka on tehty virtautettavista tietojoukoista, jotka kiinnitetään raportista koontinäyttöön. Ilmoituksia ei voi määrittää virtautettaville ruuduille, jotka on tehty suoraan koontinäytössä valitsemalla **Lisää-ruutu** > **Mukautetut virtautettavat tiedot**.
 
 Vain sinä näet asettamasi hälytykset, vaikka jakaisit koontinäyttösi. Edes koontinäytön omistaja ei näe ilmoituksia, jotka määritit koontinäytön näkymälle. Tietoilmoitukset synkronoidaan täysin kaikissa ympäristöissä. Määritä ja tarkastele tietoilmoituksia [Power BI -mobiilisovelluksissa](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) ja Power BI -palvelussa. Ne eivät ole käytettävissä Power BI Desktopissa. Voit myös automatisoida ja integroida ilmoituksia Power Automatella. Voit kokeilla tätä itse tässä [Power Automate ja Power BI](service-flow-integration.md) -artikkelissa.
 
