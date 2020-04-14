@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: ee3cfec0c735ad52f9a036e75f61c1ab0400567b
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.openlocfilehash: 043f27a2fb695811ac867689b4a63efdefded2e6
+ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75217804"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80802045"
 ---
 # <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Viivakoodin lukeminen laitteella Power BI -mobiilisovelluksesta
 Voit skannata viivakoodeja todellisessa maailmassa ja siirtyä suoraan suodatettuihin BI-tietoihin Power BI -mobiilisovelluksessa.
@@ -21,9 +21,9 @@ Voit skannata viivakoodeja todellisessa maailmassa ja siirtyä suoraan suodatett
 
 Koskee seuraavia:
 
-| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![Android-](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | 
-|:--- |:--- |
-| iPhone | Android (puhelin ja tabletti) | 
+| ![iPhone](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![iPadit](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![Android-puhelin](././media/mobile-apps-qr-code/android-logo-40-px.png) | ![Android-tabletti](././media/mobile-apps-qr-code/android-logo-40-px.png) |
+|:--- |:--- |:--- |:--- |
+|iPhonet |iPadit |Android-puhelimet |Android-tabletit |
 
 Työtoverisi on saattanut esimerkiksi [merkitä viivakoodikentän raporttiin Power BI Desktopissa](../../desktop-mobile-barcodes.md) ja jakaa raportin kanssasi. 
 
@@ -59,7 +59,7 @@ Seuraavassa on joitakin sanomia, joita näyttöön saattaa tulla, kun skannaat t
 Raportti, jonka haluat suodattaa, perustuu tietomalliin, joka ei sisällä tätä viivakoodiarvoa. Esimerkiksi tuote ”kivennäisvesi” ei sisälly raporttiin.  
 
 ### <a name="allsome-of-the-visuals-in-the-report-dont-contain-any-value"></a>Raportin kaikki tai jotkin visualisoinnit eivät sisällä mitään arvoa
-Skannattu viivakoodiarvo on olemassa mallissa, mutta raportin kaikki tai jotkin visualisoinnit eivät sisällä tätä arvoa ja siksi suodatus palauttaa tyhjän tilan. Yritä tarkastella raportin muita sivuja arvon osalta tai muokata raporttejasi Power BI Desktopissa 
+Skannattu viivakoodiarvo on olemassa mallissa, mutta raportin kaikki tai jotkin visualisoinnit eivät sisällä tätä arvoa, ja siksi suodatus palauttaa tyhjän tilan. Yritä tarkastella raportin muita sivuja arvon osalta tai muokata raporttejasi Power BI Desktopissa 
 
 ### <a name="looks-like-you-dont-have-any-reports-that-can-be-filtered-by-barcodes"></a>”Vaikuttaa siltä, ettei sinulla ole raportteja, jotka voidaan suodattaa viivakoodien avulla.”
 Tämä tarkoittaa, että sinulla ei ole viivakoodia käyttäviä raportteja. Viivakoodiskanneri voi suodattaa vain raportteja, joissa on **Viivakoodi**-sarake.  
