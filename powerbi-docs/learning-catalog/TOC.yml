@@ -1,0 +1,21 @@
+- name: Oppimishakemisto
+  href: index.yml
+  items:
+    - name: Yritysten päätöksentekijät
+      href: learning-catalog-bdm.md
+    - name: Kuluttajat
+      href: learning-catalog-consumer.md
+    - name: Raporttien luojat
+      href: learning-catalog-report-creator.md
+    - name: Tietoanalyytikot
+      href: learning-catalog-data-analyst.md
+    - name: Järjestelmänvalvojat
+      href: learning-catalog-administrator.md
+    - name: Kehittäjät
+      href: learning-catalog-developer.md
+    - name: Kumppanin myyntiä edeltävät roolit
+      href: learning-catalog-presales.md
+    - name: Toiminnalliset konsultit
+      href: learning-catalog-functional-consultant.md
+    - name: Ratkaisuarkkitehdit
+      href: learning-catalog-solution-architect.md

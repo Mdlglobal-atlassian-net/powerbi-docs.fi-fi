@@ -48,6 +48,8 @@
           href: embed-from-apps.md
         - name: Raportin vieminen tiedostoon
           href: export-to.md
+        - name: Sivutetun raportin vienti tiedostoon
+          href: export-paginated-report.md
         - name: Sovellusten automaattinen asentaminen
           href: embed-auto-install-app.md
         - name: Azure Active Directory -vuokraajan luominen

@@ -1,0 +1,132 @@
+### YamlMime:Landing
+title: Power BI:n oppimishakemisto
+summary: Löydä kaikki opetusvaihtoehdot Power BI:lle
+metadata:
+  title: Power BI:n oppimishakemisto
+  description: Selvitä organisaatiosi rooleille sopivat Power BI:n opetusvaihtoehdot.
+  ms.service: powerbi
+  ms.topic: landing-page
+  author: loreleishannonmsft
+  ms.author: v-lshann
+  ms.date: 04/08/2020
+  ms.openlocfilehash: aff1866616a10e5df124619261d8398bda5c51a3
+  ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+  ms.translationtype: HT
+  ms.contentlocale: fi-FI
+  ms.lasthandoff: 04/13/2020
+  ms.locfileid: "81269037"
+landingContent:
+- title: Yritysten päätöksentekijät
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Liiketoiminnan ja teknologian päätöksentekijän oppimishakemisto
+      url: learning-catalog-bdm.md#
+- title: Kuluttajat
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Kuluttajien oppimishakemisto
+      url: learning-catalog-consumer.md#
+- title: Raporttien luojat
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Raporttien luojien oppimishakemisto
+      url: learning-catalog-report-creator.md#
+    - text: Aloittaminen
+      url: learning-catalog-report-creator.md#get-started
+    - text: Koontinäytöt
+      url: learning-catalog-report-creator.md#dashboards
+    - text: Raportin suunnittelu
+      url: learning-catalog-report-creator.md#report-design
+    - text: Visualisointi
+      url: learning-catalog-report-creator.md#visualization
+    - text: Integrointi
+      url: learning-catalog-report-creator.md#integration
+- title: Tietoanalyytikot
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Tietoanalyytikkojen oppimishakemisto
+      url: learning-catalog-data-analyst.md#
+    - text: Aloittaminen
+      url: learning-catalog-data-analyst.md#get-started
+    - text: Parhaat käytännöt
+      url: learning-catalog-data-analyst.md#best-practices
+    - text: Tapaustutkimukset
+      url: learning-catalog-data-analyst.md#case-studies
+    - text: Koontinäytöt
+      url: learning-catalog-data-analyst.md#dashboards
+    - text: Visualisoinnit
+      url: learning-catalog-data-analyst.md#visualizations
+    - text: Hallinta ja käyttöönotto
+      url: learning-catalog-data-analyst.md#governance-deployment
+    - text: Integrointi
+      url: learning-catalog-data-analyst.md#integration
+    - text: Suojaus
+      url: learning-catalog-data-analyst.md#security
+- title: Järjestelmänvalvojat
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Järjestelmänvalvojan oppimishakemisto
+      url: learning-catalog-administrator.md
+    - text: Aloittaminen
+      url: learning-catalog-administrator.md#get-started
+    - text: Käyttöönotot
+      url: learning-catalog-administrator.md#deploy
+- title: Kehittäjät
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Kehittäjän oppimishakemisto
+      url: learning-catalog-developer.md
+    - text: Aloittaminen
+      url: learning-catalog-developer.md#get-started
+    - text: Upotettu
+      url: learning-catalog-developer.md#embedded
+    - text: DAX
+      url: learning-catalog-developer.md#dax
+    - text: Kehitys
+      url: learning-catalog-developer.md#development
+- title: Kumppanin myyntiä edeltävät roolit
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Kumppanin myyntiä edeltävä oppimishakemisto
+      url: learning-catalog-presales.md#
+- title: Toiminnalliset konsultit
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Toiminnallisen sovelluskonsultin oppimishakemisto
+      url: learning-catalog-functional-consultant.md
+    - text: Aloittaminen
+      url: learning-catalog-functional-consultant.md#get-started
+    - text: Parhaat käytännöt
+      url: learning-catalog-functional-consultant.md#best-practices
+    - text: Tapaustutkimukset
+      url: learning-catalog-functional-consultant.md#case-studies
+    - text: Koontinäytöt
+      url: learning-catalog-functional-consultant.md#dashboards
+    - text: Hallinta ja käyttöönotto
+      url: learning-catalog-functional-consultant.md#governance-deployment
+    - text: Integrointi
+      url: learning-catalog-functional-consultant.md#integration
+    - text: Suojaus
+      url: learning-catalog-functional-consultant.md#security
+    - text: Visualisoinnit
+      url: learning-catalog-functional-consultant.md#visualizations
+- title: Ratkaisuarkkitehdit
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Ratkaisuarkkitehtien oppimisluettelo
+      url: learning-catalog-solution-architect.md
+    - text: Aloittaminen
+      url: learning-catalog-solution-architect.md#get-started
+    - text: Tapaustutkimukset
+      url: learning-catalog-solution-architect.md#case-studies
+    - text: Suorituskyky
+      url: learning-catalog-solution-architect.md#performance

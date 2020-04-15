@@ -76,6 +76,8 @@
               href: service-security-data-protection-metrics-report.md
         - name: Rivitason suojaus
           href: ../service-admin-rls.md
+        - name: Tietojoukkojen ja tietovoiden sertifioinnin määrittäminen
+          href: service-admin-setup-certification.md
         - name: Mobiilisovellusten määrittäminen Intunella
           href: ../service-admin-mobile-intune.md
         - name: Power BI Premium
