@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 9aaa26b4798a0632b0ad751bc30e8496f6103fb1
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 75926d3e59615c592f07e93859122ff453c17a31
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75223770"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006752"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi"></a>Automaattianalyysipalveluiden integrointi Power BI:ssä
 
@@ -63,11 +63,11 @@ Tässä artikkelissa kuvataan, kuinka Power BI -käyttäjälle myönnetään kä
 7. Toista vaiheet kolmesta kuuteen ja myönnä käyttäjälle **Lukija**-käyttöoikeus tiettyyn Automaattianalyysistudion (perinteinen) verkkopalveluun *tai* Automaattianalyysipalveluiden työtilaan, joka isännöi mallia.
 
 
-## <a name="schema-discovery-for-machine-learning-models"></a>Koneoppimismallien skeeman luonti
+## <a name="schema-discovery-for-machine-learning-models"></a>Rakenteen etsiminen Automaattianalyysipalveluiden malleille
 
 Datatieteilijät käyttävät ensisijaisesti Pythonia kehittäessään ja jopa ottaessaan käyttöön koneoppimismalleja automaattianalyysipalveluihin.  Toisin kuin automaattianalyysistudiossa (perinteinen), joka auttaa automatisoimaan skeematiedoston luonnin mallia varten, automaattianalyysipalveluiden tapauksessa datatieteilijän tulee erikseen luoda rakennetiedosto Pythonia käyttämällä.
 
-Tämä skeematiedosto on sisällytettävä käyttöön otettuun automaattianalyysipalvelumallien verkkopalveluun. Jos haluat luoda verkkopalvelun rakenteen automaattisesti, sinun on lisättävä esimerkki syöteestä/tulosteesta käyttöönotetun mallin käynnistyskomentosarjaan. Lue dokumentaation [Mallien käyttöönotto Azuren koneoppimispalvelulla alakohta (Valinnainen) Automaattinen Swagger-skeeman luominen](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where#optional-automatic-schema-generation). Linkki sisältää esimerkkikäynnistyskomentosarjan, jossa on lausekkeet skeeman luontia varten. 
+Tämä skeematiedosto on sisällytettävä käyttöön otettuun automaattianalyysipalvelumallien verkkopalveluun. Jos haluat luoda verkkopalvelun rakenteen automaattisesti, sinun on lisättävä esimerkki syöteestä/tulosteesta käyttöönotetun mallin käynnistyskomentosarjaan. Lue dokumentaation [Mallien käyttöönotto Azuren koneoppimispalvelulla alakohta (Valinnainen) Automaattinen Swagger-skeeman luominen](https://docs.microsoft.com/azure/machine-learning/how-to-deploy-and-where#optional-define-model-web-service-schema). Linkki sisältää esimerkkikäynnistyskomentosarjan, jossa on lausekkeet skeeman luontia varten. 
 
 Tarkalleen ottaen käynnistyskomentosarjan *\@input_schema*- ja *output_schema\@* -funktiot viittaavat syöte- ja tulostemallien muotoihin *input_sample*- ja *output_sample*-muuttujissa ja käyttävät näitä malleja luodakseen OpenAPI (Swagger) -määrityksen verkkopalvelulle käyttöönoton aikana.
 

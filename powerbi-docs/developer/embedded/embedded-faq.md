@@ -96,7 +96,7 @@ Käyttäjä voi ratkaista tämän ongelman [refreshUserPermissions-ohjelmointira
 
 Voit selvittää PBI-vuokraajan alueesi PBI-portaalin avulla.
 
-[https://app.powerbi.com/](`https://app.powerbi.com/`) > ? > Tietoja Power BI:stä
+`https://app.powerbi.com/` > ? > Tietoja Power BI:stä
 
 ![Tietoja Power BI:stä](media/embedded-faq/about-01.png)
 ![Vuokraajan alue](media/embedded-faq/tenant-location-01.png)
