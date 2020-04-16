@@ -32,6 +32,9 @@
             - name: Ohjattu oppiminen
               tocHref: /power-bi/guided-learning/
               topicHref: /power-bi/guided-learning/
+            - name: Oppimishakemisto
+              tocHref: /power-bi/learning-catalog/
+              topicHref: /power-bi/learning-catalog/index
             - name: Raporttipalvelin
               tocHref: /power-bi/report-server/
               topicHref: /power-bi/report-server/index
