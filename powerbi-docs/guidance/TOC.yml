@@ -64,6 +64,8 @@
               href: dax-avoid-avoid-filter-as-filter-argument.md
         - name: Power BI -raportit
           items:
+            - name: Erota raportit malleista
+              href: report-separate-from-model.md
             - name: Visualisointien laajentaminen raporttisivun työkaluvihjeiden avulla
               href: report-page-tooltips.md
             - name: Raporttisivun porautumisen käyttäminen

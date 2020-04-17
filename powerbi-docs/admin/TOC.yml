@@ -16,14 +16,24 @@
       items:
         - name: 'Järjestelmänvalvojarooli Office 365:ssä'
           href: ../service-admin-role.md
+        - name: Käyttöoikeudet organisaatiollesi
+          href: ../service-admin-licensing-organization.md
+        - name: Power BI Pro Yhdysvaltain julkishallinnolle
+          items:
+            - name: Power BI Pro Yhdysvaltain julkishallinnolle
+              href: ../service-govus-overview.md
+            - name: Rekisteröi Yhdysvaltain julkishallinnon organisaatio
+              href: ../service-govus-signup.md
+        - name: Power BI ja alueelliset pilvipalvelut
+          items:
+            - name: Siirtyminen saksalaisille Go Local -alueille
+              href: service-admin-migrate-data-germany.md
+            - name: Usein kysyttyjä kysymyksiä saksalaisille pilviasiakkaille
+              href: ../service-govde-faq.md
         - name: Usein kysytyt kysymykset
           href: ../service-admin-faq.md
         - name: Korkean käytettävyyden ja vikasietoisuuden usein kysytyt kysymykset
           href: ../service-admin-failover.md
-        - name: Siirtyminen saksalaisille Go Local -alueille
-          href: service-admin-migrate-data-germany.md
-        - name: Usein kysyttyjä kysymyksiä saksalaisille pilviasiakkaille
-          href: ../service-govde-faq.md
         - name: Power BI Premium
           items:
             - name: Premium-kapasiteettien hallinta
@@ -38,14 +48,14 @@
       items:
         - name: Käyttöoikeudet ja rekisteröityminen
           items:
-            - name: Käyttöoikeudet organisaatiollesi
-              href: ../service-admin-licensing-organization.md
+            - name: Hanki Power BI organisaatiolle
+              href: service-admin-org-subscription.md
             - name: Osta Power BI Pro
               href: ../service-admin-purchasing-power-bi-pro.md
-            - name: Power BI Pro Yhdysvaltain julkishallinnolle
-              href: ../service-govus-overview.md
-            - name: Rekisteröi Yhdysvaltain julkishallinnon organisaatio
-              href: ../service-govus-signup.md
+            - name: Poista omatoiminen rekisteröinti käytöstä
+              href: service-admin-disable-self-service.md
+            - name: Tarkastele ja hallitse käyttäjien käyttöoikeuksia
+              href: service-admin-manage-licenses.md
             - name: Rekisteröityminen Microsoft 365 -kokeiluversion kanssa
               href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
             - name: 'Power BI:n lisääminen Microsoft 365 -kumppanin kanssa'

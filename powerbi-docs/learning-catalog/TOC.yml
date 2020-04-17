@@ -19,3 +19,5 @@
       href: learning-catalog-functional-consultant.md
     - name: Ratkaisuarkkitehdit
       href: learning-catalog-solution-architect.md
+    - name: Johdanto DAXiin
+      href: ../guided-learning/introductiontodax.yml?tutorial-step=1
