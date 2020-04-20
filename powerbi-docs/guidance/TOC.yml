@@ -108,6 +108,8 @@
               href: gateway-onprem-sizing.md
             - name: Raportin suorituskyvyn valvominen
               href: monitor-report-performance.md
+            - name: Raportin suorituskyvyn vianmääritys
+              href: report-performance-troubleshoot.md
     - name: Raportit
       items:
         - name: Raporttien yleiskatsaus

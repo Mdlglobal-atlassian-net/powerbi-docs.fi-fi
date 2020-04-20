@@ -23,6 +23,8 @@
           items:
             - name: Uusien työtilojen luominen
               href: ../service-create-the-new-workspaces.md
+            - name: Työtilojen uuden ulkoasun ottaminen käyttöön
+              href: service-workspaces-new-look.md
             - name: Perinteisten työtilojen päivittäminen
               href: ../designer/service-upgrade-workspaces.md
             - name: Työtilojen luominen
@@ -65,8 +67,6 @@
               href: ../service-publish-to-web.md
             - name: OneDriveen tallennettuun Excel-työkirjaan linkittävän koontinäytön jakaminen
               href: ../service-share-dashboard-that-links-to-excel-onedrive.md
-            - name: Power BI Publisher for Excel
-              href: ../publisher-for-excel.md
         - name: 'Power BI:n laajentaminen'
           items:
             - name: Analysoi Excelissä
