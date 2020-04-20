@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 04/08/2020
-ms.openlocfilehash: ff63e38e52a3c8970edfa5b6d9e2ccabeff2e16a
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.openlocfilehash: abe0b97a4c4f593f8bb22be8b72c12295d0f656c
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80979795"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006453"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Power BI -raporttipalvelimen muutosloki
 
@@ -29,7 +29,7 @@ Lisätietoja uusista ominaisuuksista on artikkelissa [Power BI -raporttipalvelin
            -  Olemme korjanneet Power BI -raporttien ongelman, joka esti latauksen tiettyihin tietolähteisiin.
            -  Olemme korjanneet Power BI -raporttipalvelimen työpöytälinkin latauskohteen portaalista.
            -  Olemme korjanneet DynamicImageDPI for Excel -hahmontamisen.
-           -  Olemme korjanneet Oracle-yhteyksiin liittyvän ongelman, jossa yhteydet käyttivät väärää säikeen maa-asetusta tietyissä monen käyttäjän skenaarioissa (lisätietoja on [UseInstalledUICulture-ohjeissa] (https://docs.microsoft.com/power-bi/report-server/connect-data-sources) )
+           -  Olemme korjanneet Oracle-yhteyksiin liittyvän ongelman, jossa yhteydet käyttivät väärää säikeen maa-asetusta tietyissä monen käyttäjän skenaarioissa (lisätietoja on [UseInstalledUICulture-ohjeissa](https://docs.microsoft.com/power-bi/report-server/connect-data-sources))
            -  Olemme korjanneet tilanteen, jossa CustomHeaders-oletusarvo aiheutti virheitä raportin upotuksessa.
            -  Olemme korjanneet ongelman, jossa SQL-parametrien nimet luotiin tietyissä tapauksissa virheellisesti.
     - *Versio: 1.6.7327.3007 (koontiversio 15.0.1102.759), julkaistu: 23. tammikuuta 2020*

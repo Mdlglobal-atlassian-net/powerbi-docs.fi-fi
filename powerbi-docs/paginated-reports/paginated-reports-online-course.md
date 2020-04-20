@@ -9,16 +9,16 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 4df77ee94ee72e2104b7964f1835b446bde6b676
-ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
+ms.openlocfilehash: 325e62bbf326e9f30d4c41299998c61cc5d7f487
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80621479"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267591"
 ---
 # <a name="online-course-power-bi-paginated-reports-in-a-day"></a>Verkkokurssi: Power BI:n sivutetut raportit päivässä
 
-**Power BI:n sivutetut raportit päivässä** -verkkokurssin tarkoituksena on antaa raporttien tekijöille tekninen tietämys, jota tarvitaan Power BI:n sivutettujen raporttien luomiseen, julkaisemiseen ja jakelemiseen. Se sisältää lähes 4 tuntia 20 minuuttia katseltavaa sisältöä – käytettävissä tarvittaessa ja maksutta.
+**Power BI:n sivutetut raportit päivässä** -verkkokurssin tarkoituksena on antaa raporttien tekijöille tekninen tietämys, jota tarvitaan Power BI:n sivutettujen raporttien luomiseen, julkaisemiseen ja jakelemiseen. Se sisältää lähes 4 tuntia 20 minuuttia katseltavaa sisältöä – käytettävissä tarvittaessa ja maksutta. Mukana on myös [itseopiskelupaketti](#self-study-kit), jonka voit ladata ja jota voit käyttää kahdeksan käytännönläheisen laboratorion suorittamiseen.
 
 Kurssi on tarkoitettu erityisesti
 
@@ -39,7 +39,7 @@ Kun olet suorittanut kurssin, osaat tehdä seuraavat toimet:
 
 Aloita kurssi katsomalla tervetulotoivotus ja esittelyvideo.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DN1t5p9aui0" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/DN1t5p9aui0]
 
 ## <a name="course-outline"></a>Kurssin jäsennys
 
@@ -79,9 +79,32 @@ Aloita kurssi katsomalla tervetulotoivotus ja esittelyvideo.
   - Video 23: [Bonussisältö: Sivutetun raportoinnin kehitys](https://www.youtube.com/watch?v=pevpai65MvY&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Video 24: [Bonussisältö: Pääsyn esteiden laskeminen](https://www.youtube.com/watch?v=vu32LfckCt8&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 
-## <a name="additional-content"></a>Muu sisältö
+## <a name="self-study-kit"></a>Itseopiskelupaketti
 
-Julkaisemme pian PowerPoint-esityksen ja käytännönläheiset laboratoriot itseopiskelupakettina. Palaa tähän artikkeliin myöhemmin ja etsi latauslinkit.
+Voit ladata ja määrittää itseopiskelupaketin, joka koostuu esityssisällöstä ja kahdeksasta käytännönläheistä laboratorioista:
+
+1. Lataa itseopiskelupaketti (.zip) [tämän linkin kautta ](https://aka.ms/priad-ilt-student) paikallisesti tietokoneeseesi.
+1. Avaa tiedoston ominaisuudet ja valitse eston poisto (Windows voi merkitä tiedoston mahdollisesti ei-luotetuksi).
+1. Pura tiedoston sisältö johonkin tiedostojärjestelmän kansioon. Suosittelemme, että luot helposti löytyvän kansion. Anna nimeksi esimerkiksi **Koulutus**. Laboratoriotiedostot viittaavat tähän sijaintiin nimellä **&lt;CourseFolder&gt;** .
+
+Kun olet purkanut sisällön, sinulla on **PowerBIPRIAD**-kansio ja sen sisällä seuraavat kansiot:
+
+- **Lab01A** (ja kaikki muut laboratoriokansiot). Laboratoriokansiot sisältävät laboratoriotiedoston ja laboratorioresurssit, jotka voivat olla resurssi- ja ratkaisutiedostoja.
+- **MySolution**: Tähän kansioon tallennetaan ratkaisutiedostosi. Laboratorio-ohjeissa kerrotaan, milloin sitä tulisi käyttää.
+- **Presentation**: Tämä kansio sisältää kurssiesitystiedoston, joka on käytettävissä PDF-tiedostona.
+
+### <a name="getting-started"></a>Aloittaminen
+
+Suosittelemme, että katsot verkkokurssin ensin. Voit palata esitysteoriaan avaamalla tiedoston **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf**. Esityksessä on kahdeksan laboratoriodiaa, jotka ilmaisevat, milloin on aika siirtää teoria käytäntöön. Se sisältää myös useita resurssilinkkejä, joiden avulla löydät aiheeseen liittyvää sisältöä.
+
+Kun olet valmis aloittamaan ensimmäisen laboratorion, avaa tiedosto **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf**. Tämä tiedosto opastaa sinua kirjautumaan Power BI -palveluun, lataamaan tietojoukon ja asentamaan sitten [Power BI:n Raportin muodostimen](report-builder-power-bi.md).
+
+> [!NOTE]
+> Vastaat itse siitä, että sinulla on oma Power BI -tili. Jos sinulla ei vielä ole tiliä, katso [Rekisteröityminen Power BI:hin yksityishenkilönä](../service-self-service-signup-for-power-bi.md).
+>
+> Sinun on kirjauduttava Power BI:n, jotta voit julkaista Power BI Desktop -tiedoston työtilaan. Julkaisu antaa tulokseksi tietojoukon, jota käytetään raportin tietolähteenä. Et tarvitse Power BI Pro -käyttöoikeutta etkä Power BI Premium -tilausta tietojoukon käyttämiseen raportin tietolähteenä.
+>
+> Jotkin laboratoriotehtävät edellyttävät kuitenkin sivutetun raportin julkaisemista työtilaan. Voit avata sivutetun raportin vain, kun se on tallennettu työtilaan [erilliseen kapasiteettiin](../service-premium-what-is.md#dedicated-capacities), jossa sivutettujen raporttien työkuorma on otettu käyttöön. Jos sinulla ei ole käyttöoikeutta sopivaan työtilaan, saat sen sijaan linkin, jonka avulla voit katsoa raportin julkaisemista esittelevän videon.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

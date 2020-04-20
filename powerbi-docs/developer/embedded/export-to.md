@@ -7,36 +7,36 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 03/24/2020
-ms.openlocfilehash: 35b5c5f05a9c0ae5a36875671a919df12843e295
-ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
+ms.openlocfilehash: 472797cf30d6b88a59af5b3846e9b710bf4607c7
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273290"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267499"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Power BI ‑raportin vieminen tiedostoon (esikatselu)
 
 `exportToFile`-ohjelmointirajapinta mahdollistaa Power BI -raportin viemisen REST-kutsun avulla. Seuraavia tiedostomuotoja tuetaan:
-* **PPTX** (PowerPoint)
-* **PDF**
-* **PNG**
-    * PNG-tiedostoon vietäessä useita sivuja sisältävä raportti pakataan zip-tiedostoksi
-    * Kukin PNG-paketin tiedosto edustaa yhtä raportin sivua
+* **.pptx** (PowerPoint)
+* **.pdf**
+* **.png**
+    * .png-tiedostoon vietäessä useita sivuja sisältävä raportti pakataan .zip-tiedostoksi
+    * Jokainen .zip-paketin tiedosto edustaa yhtä raportin sivua
     * Sivujen nimet ovat samat kuin [Hae sivuja](https://docs.microsoft.com/rest/api/power-bi/reports/getpages)- tai [Hae sivuja ryhmästä](https://docs.microsoft.com/rest/api/power-bi/reports/getpagesingroup) -ohjelmointirajapintojen palautusarvot
 
 ## <a name="usage-examples"></a>Käyttöesimerkit
 
 Voit käyttää vientiominaisuutta monella eri tavalla. Tässä on pari esimerkkiä:
 
-* **Lähetä tulostukseen -painike** – Luo sovelluksessa painike, joka käynnistää napsautettaessa vientityön. Työ voi viedä esillä olevan raportin PDF- tai PPTX-muodossa, ja kun vienti on valmis, käyttäjä voi vastaanottaa tiedoston latauksena. Kirjanmerkkien avulla raportin voi viedä tietyssä tilassa, mukaan lukien määritetyt suodattimet, osittajat ja lisäasetukset. Koska ohjelmointirajapinta on asynkroninen, saattaa kestää jonkin aikaa, ennen kuin tiedosto on käytettävissä.
+* **Lähetä tulostukseen -painike** – Luo sovelluksessa painike, joka käynnistää napsautettaessa vientityön. Työ voi viedä esillä olevan raportin .pdf- tai .pptx-muodossa, ja kun vienti on valmis, käyttäjä voi vastaanottaa tiedoston latauksena. Kirjanmerkkien avulla raportin voi viedä tietyssä tilassa, mukaan lukien määritetyt suodattimet, osittajat ja lisäasetukset. Koska ohjelmointirajapinta on asynkroninen, saattaa kestää jonkin aikaa, ennen kuin tiedosto on käytettävissä.
 
-* **Sähköpostin liite** – Lähetä määritetyin väliajoin automatisoitu sähköpostiviesti, jossa on liitteenä PDF-raportti. Tästä skenaariosta voi olla hyötyä, jos haluat automatisoida viikkoraportin lähettämisen johtoportaalle.
+* **Sähköpostin liite** – Lähetä määritetyin väliajoin automatisoitu sähköpostiviesti, jossa on liitteenä .pdf-raportti. Tästä skenaariosta voi olla hyötyä, jos haluat automatisoida viikkoraportin lähettämisen johtoportaalle.
 
 ## <a name="using-the-api"></a>Ohjelmointirajapinnan käyttäminen
 
 Varmista ennen ohjelmointirajapinnan käyttämistä, että seuraavat [järjestelmänvalvojan vuokraajan asetukset](../../service-admin-portal.md#tenant-settings) ovat käytössä:
 * **Vie raportit PowerPoint-esityksinä tai PDF-tiedostoina** – oletusarvoisesti käytössä.
-* **Vie raportit kuvatiedostoina** – Pakollinen vain PNG-tiedostoille ja oletusarvoisesti poissa käytöstä.
+* **Vie raportit kuvatiedostoina** – Pakollinen vain *.png*-tiedostoille ja oletusarvoisesti poissa käytöstä.
 
 Ohjelmointirajapinta on asynkroninen. Kun [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile)-ohjelmointirajapintaa kutsutaan, vientityö käynnistyy. Kun vientityö on käynnistetty, voit seurata työtä [kyselyllä](https://docs.microsoft.com/rest/api/power-bi/reports/getexporttofilestatus), kunnes työ on valmis.
 
@@ -73,9 +73,9 @@ Jos haluat viedä RLS:n avulla, sinulla on oltava seuraavat oikeudet:
 
 ### <a name="data-protection"></a>Tietojen suojaus
 
-PDF- ja PPTX-muodot tukevat [luottamuksellisuustunnisteita](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). Jos viet luottamuksellisuustunnisteen sisältävän raportin PDF- tai PPTX-tiedostoon, viety tiedosto näyttää raportin luottamuksellisuustunnisteineen.
+.pdf- ja .pptx-muodot tukevat [luottamuksellisuustunnisteita](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). Jos viet luottamuksellisuustunnisteen sisältävän raportin .pdf- tai .pptx-tiedostoon, viety tiedosto näyttää raportin luottamuksellisuustunnisteineen.
 
-Luottamuksellisuustunnisteella merkittyä raporttia ei voi viedä PDF- tai PPTX-muotoon [palvelun päänimen](embed-service-principal.md) avulla.
+Luottamuksellisuustunnisteella merkittyä raporttia ei voi viedä .pdf- tai .pdf-muotoon [palvelun päänimen](embed-service-principal.md) avulla.
 
 ### <a name="localization"></a>Lokalisointi
 
@@ -102,8 +102,8 @@ Työ, joka ylittää samanaikaisten pyyntöjen määrän, ei pääty. Jos esimer
 * Vietävän raportin tietojoukon on sijaittava Premium- tai Embedded-kapasiteetissa.
 * Julkisen esikatselun tunnissa vietävien Power BI -raporttisivujen kapasiteettikohtainen rajoitus on 50.
 * Vietyjen raporttien tiedostokoko ei voi olla yli 250 Mt.
-* Luottamuksellisuusselitteitä ei tueta PNG-tiedostoon vietäessä.
-* Luottamuksellisuustunnisteella merkittyä raporttia ei voi viedä PDF- tai PPTX-muotoon [palvelun päänimen](embed-service-principal.md) avulla.
+* Luottamuksellisuusselitteitä ei tueta .png-tiedostoon vietäessä.
+* Luottamuksellisuustunnisteella merkittyä raporttia ei voi viedä .pdf- tai .pdf-muotoon [palvelun päänimen](embed-service-principal.md) avulla.
 * Vietyyn raporttiin voi sisällyttää 30 sivua. Jos raportissa on enemmän sivuja, ohjelmointirajapinta palauttaa virheen ja vientityö peruutetaan.
 * [Henkilökohtaisia kirjanmerkkejä](../../consumer/end-user-bookmarks.md#personal-bookmarks) ja [pysyviä suodattimia](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) ei tueta.
 * Alla lueteltuja Power BI -visualisointeja ei tueta. Kun näitä visualisointeja sisältävä raportti viedään, raportin visualisointeja sisältäviä osia ei hahmonneta, ja ne näyttävät virhesymbolin.
@@ -263,6 +263,9 @@ private async Task<ExportedFile> ExportPowerBIReport(
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 Lue, miten voit upottaa asiakkaille ja organisaatiolle tarkoitettua sisältöä:
+
+> [!div class="nextstepaction"]
+>[Sivutetun raportin vienti tiedostoon](export-paginated-report.md)
 
 > [!div class="nextstepaction"]
 >[Upottaminen asiakkaillesi](embed-sample-for-customers.md)

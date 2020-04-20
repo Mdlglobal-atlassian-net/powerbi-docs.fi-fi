@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/10/2020
+ms.date: 04/09/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dedbe3800dc4a6b1088ca5a4037bc8451c61d986
-ms.sourcegitcommit: 578d43aeb7cebf40f3caf03a614bc885cc039488
+ms.openlocfilehash: 0f2d6bae607383eb8934b3f395add540c6754690
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77076655"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006706"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>Tietoja DirectQueryn käytöstä Power BI:ssä
 
@@ -98,7 +98,7 @@ Seuraavassa taulukossa kuvataan tilanteita, joissa yhdistäminen DirectQueryyn v
 
 | Rajoitus | Kuvaus |
 | --- | --- |
-| Tiedot muuttuvat toistuvasti, joten tarvitaan miltei reaaliaikaista raportointia. |Tuotuja tietoja sisältävät mallit voi päivittää tiheimmillään kerran tunnissa. Jos tiedot muuttuvat jatkuvasti ja raporttien täytyy näyttää uusimmat tiedot, tietojen tuominen ja ajoitetut päivitykset eivät ehkä täytä tarpeita. Tiedot voi myös suoratoistaa suoraan Power BI:hin, mutta tässä tapauksessa tuettujen tietojen määrällä on rajoituksia. <br/> <br/> DirectQueryn käyttö sitä vastoin tarkoittaa, että raportin tai koontinäytön avaaminen tai päivittäminen näyttää aina uusimmat tiedot lähteestä. Lisäksi koontinäytön ruutuja voi päivittää useammin, jopa 15 minuutin välein. |
+| Tiedot muuttuvat toistuvasti, joten tarvitaan miltei reaaliaikaista raportointia. |Mallit, joissa on tuotuja tietoja, voidaan päivittää enintään kerran tunnissa (useammin Power BI Pro- tai Power BI Premium -tilauksella). Jos tiedot muuttuvat jatkuvasti ja raporttien täytyy näyttää uusimmat tiedot, tietojen tuominen ja ajoitetut päivitykset eivät ehkä täytä tarpeita. Tiedot voi myös suoratoistaa suoraan Power BI:hin, mutta tässä tapauksessa tuettujen tietojen määrällä on rajoituksia. <br/> <br/> DirectQueryn käyttö sitä vastoin tarkoittaa, että raportin tai koontinäytön avaaminen tai päivittäminen näyttää aina uusimmat tiedot lähteestä. Lisäksi koontinäytön ruutuja voi päivittää useammin, jopa 15 minuutin välein. |
 | Tietoja on erittäin paljon. |Jos tietoja on erittäin paljon, kaikkien tietojen tuominen ei ole järkevää. DirectQuery sitä vastoin ei vaadi suuren tietomäärän siirtämistä, koska tiedot pysyvät paikoillaan, niille vain tehdään kyselyitä. <br/> <br/> Jos tietoja on erittäin paljon, tämä voi kuitenkin tarkoittaa myös sitä, että taustalla olevaan tietolähteeseen tehdyt kyselyt toimivat liian hitaasti. Tätä käsitellään tarkemmin kohdassa [DirectQueryn käytössä huomioitavia seikkoja](#implications-of-using-directquery). Sinun ei aina tarvitse tuoda kaikkia yksityiskohtaisia tietoja. Sen sijaan tietoja voidaan esikoostaa tuonnin aikana. *Kyselyeditorin* avulla tietoja on helppo esikoostaa tuonnin aikana. Äärimmäisessä tapauksessa voit jopa tuoda vain juuri ne koostetiedot, joita kussakin visualisoinnissa tarvitaan. Vaikka DirectQuery on yksinkertaisin tapa, kun tietoja on paljon, koostetietojen tuominen voi olla ratkaisu, jos taustalla oleva tietolähde on liian hidas. |
 | Taustalla olevassa tietolähteessä on määritetty suojaussääntöjä. |Kun tiedot tuodaan, Power BI muodostaa yhteyden tietolähteeseen nykyisen käyttäjän tunnistetiedoilla, jotka ovat peräisin Power BI Desktopista, tai tunnistetiedoilla, jotka on määritetty ajoitetulle päivitykselle. Tässä tapauksessa tunnistetiedot ovat peräisin Power BI -palvelusta. Kun tällainen raportti julkaistaan ja jaetaan, varmista, että jaat raportin vain niille käyttäjille, joilla on oikeudet tarkastella tietoja. Voit myös määrittää rivitason suojauksen osana tietojoukkoa. <br/> <br/> Koska DirectQuery tekee aina kyselyn taustalla olevaan lähteeseen, tämä kokoonpano mahdollistaa taustalla olevan lähteen suojausasetusten noudattamisen, mikä on yleensä toivottua. Tällä hetkellä Power BI kuitenkin muodostaa aina yhteyden taustalla olevaan tietolähteeseen samoilla tunnistetiedoilla, joita käytetään tuonnissa. <br/> <br/> Siihen saakka, kunnes Power BI mahdollistaa raportin käyttäjän henkilöllisyyden välittämisen taustalla olevaan lähteeseen, DirectQuery ei tarjoa mitään etuja tietolähteen suojaukseen. |
 | Voimassa on tietojen suvereniteettirajoituksia. |Joillain organisaatioilla on käytäntöjä tietojen suvereniteettiin liittyen, mikä tarkoittaa sitä, että tietoja ei voi siirtää organisaation ulkopuolelle. Tuontiin perustuva ratkaisu on tässä tapauksessa tietysti ongelmallinen. DirectQueryä käytettäessä tiedot sitä vastoin pysyvät taustalla olevassa lähteessä. <br/> <br/> Myös DirectQueryä käytettäessä joitain visualisointitason tietoja kuitenkin tallennetaan Power BI -palvelun välimuistiin ruutujen ajoitetun päivityksen vuoksi. |

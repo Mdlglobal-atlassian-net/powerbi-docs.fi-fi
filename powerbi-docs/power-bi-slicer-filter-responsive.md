@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/04/2018
+ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: aa7dc612d7a1b16fdc02fb1b40c98257cda3183d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 2feb20907bbcffcb8aa395705b34604ebbedb682
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877596"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006499"
 ---
 # <a name="create-a-responsive-slicer-you-can-resize-in-power-bi"></a>Kooltaan muokattavan reagoivan osittajan luominen Power BI:ssa
+
+[!INCLUDE [applies-to](includes/applies-to.md)] [!INCLUDE [yes-desktop](includes/yes-desktop.md)] [!INCLUDE [yes-service](includes/yes-service.md)]
 
 Reagoivien osittajien kokoa voidaan muuttaa mihin tahansa raportin tilaan sopivaksi. Reagoivan osittajan avulla, voit muuttaa niiden kokoa eri kokoihin ja muotoihin, vaakasuuntaisesta pystysuuntaiseksi ja nelikulmaiseksi, ja osittajan arvot järjestävät itsensä kuin sinä. Power BI Desktopin ja Power BI -palvelun avulla voit saada aikaan vaakasuuntaisia osittajia ja reagoivia päivämäärä/alueosittajia. Päivämäärä-/alueosittajilla on myös parannetut kosketusalueet, joten niiden muuttaminen on helpompaa sormenpäällä. Voit tehdä reagoivista osittajista niin pieni tai suuria kuin haluat. Ne myös muuttuvat kooltaan automaattisesti sopimaan hyvin raportteihin Power BI -palvelussa ja Power BI -mobiilisovelluksissa. 
 
@@ -26,7 +28,7 @@ Reagoivien osittajien kokoa voidaan muuttaa mihin tahansa raportin tilaan sopiva
 
 Ensimmäinen vaihe dynaamisen osittajan luomisessa on perusosittajan luominen. 
 
-1. Valitse **Osittaja**-kuvake ![](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer-icon.png) **Visualisoinnit**-ruudusta.
+1. Valitse **Osittaja**-kuvake ![](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer-icon.png)**Visualisoinnit**-ruudusta.
 2. Vedä kenttä, jonka haluat suodattaa, kohtaan **Kenttä**.
 
     ![Kentän lisääminen osittajaan](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-1-create.png)

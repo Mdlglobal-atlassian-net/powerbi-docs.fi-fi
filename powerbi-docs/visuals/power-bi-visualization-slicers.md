@@ -1,31 +1,35 @@
 ---
 title: Osittajat Power BI:ssä
 description: Power BI -osittaja on vaihtoehtoinen suodatustapa, jolla voit rajoittaa tietojoukon osaa, joka näkyy muissa raportin visualisoinneissa.
-author: v-thepet
+author: maggiesMSFT
 ms.reviewer: ''
-featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: tutorial
-ms.date: 11/04/2019
-ms.author: mihart
+ms.topic: conceptual
+ms.date: 04/06/2020
+ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 97ad95346715cd5ad38f41d6e7b9df3cc7493f40
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 105a9afe7292412227f67ef80e15eb23eb7d5f71
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265359"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006784"
 ---
 # <a name="slicers-in-power-bi"></a>Osittajat Power BI:ssä
 
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
-Oletetaan, että haluat, että raportin lukijat voivat tarkastella yleisiä myyntitilastoja, mutta myös korostaa yksittäisten aluepäälliköiden suorituskykyä ja eri aikavälejä. Voit luoda erillisiä raportteja tai vertailukaavioita. Voit myös käyttää osittajia. Osittaja on vaihtoehtoinen suodatustapa, jolla voit rajoittaa tietojoukon osaa, joka näkyy muissa raportin visualisoinneissa. 
-
-Tässä opetusohjelmassa käytetään maksutonta [jälleenmyyntianalyysimallia](../sample-retail-analysis.md), ja opit luomaan, muotoilemaan ja käyttämään luettelon ja päiväyksen alueosittajia. Pidä hauskaa opetellessasi uusia tapoja muotoilla ja käyttää osittajia. 
+Oletetaan, että haluat, että raportin lukijat voivat tarkastella yleisiä myyntitilastoja, mutta myös korostaa yksittäisten aluepäälliköiden suorituskykyä ja eri aikavälejä. Voit luoda erillisiä raportteja tai vertailukaavioita. Voit myös käyttää *osittajia*. Osittaja on vaihtoehtoinen suodatustapa, jolla voit rajoittaa tietojoukon osaa, joka näkyy muissa raportin visualisoinneissa. 
 
 ![Osittaja-animaatio](media/power-bi-visualization-slicers/slicer2.gif)
+
+Tässä artikkelissa käydään läpi perusosittajan luominen ja muotoileminen käyttämällä maksutonta [Jälleenmyyntianalyysimallia](../sample-retail-analysis.md). Se myös esittelee, miten voit määrittää, mihin visualisointeihin osittaja vaikuttaa, ja miten voit synkronoida sen muilla sivuilla olevien osittajien kanssa. Seuraavassa on joitakin muita artikkeleita, joissa selitetään, miten voit tehdä tietyntyyppisiä osittajia:
+
+- [Numeerisen alueen osittajat](../desktop-slicer-numeric-range.md).
+- [Suhteelliset päivämääräosittajat](desktop-slicer-filter-date-range.md).
+- Reagoivat, [koonmuuttokelpoiset osittajat](../power-bi-slicer-filter-responsive.md).
+- [Hierarkiaosittajat](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md), joissa on useita kenttiä.
 
 ## <a name="when-to-use-a-slicer"></a>Osittajan käyttäminen
 Osittajia kannattaa käyttää seuraavissa tilanteissa:
@@ -40,14 +44,11 @@ Power BI -osittajat eivät tue
 - syötekenttiä
 - porautumista.
 
+## <a name="create-a-slicer"></a>Osittajan luominen
 
-## <a name="create-slicers"></a>Osittajien luominen
+Tämä osittaja suodattaa tiedot alueen esimiehen mukaan. Jos haluat noudattaa tätä menettelyä, lataa [Jälleenmyyntianalyysimalli-PBIX-tiedosto](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-**Luo uusi osittaja tietojen suodattamiseksi aluejohtajan mukaan**
-
-1. Lataa [Jälleenmyyntianalyysimallin PBIX-tiedosto](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
-
-1. Valitse Power BI Desktopin valikkoriviltä **Tiedosto** > **Avaa**.
+1. Avaa Power BI Desktop ja valitse valikkorivillä **Tiedosto** > **Avaa**.
    
 1. Etsi **Jälleenmyyntianalyysimalli.pbix**-tiedosto selaamalla ja valitse sitten **Avaa**.
 
@@ -73,36 +74,6 @@ Power BI -osittajat eivät tue
 
    >[!TIP]
    >Osittajan luettelokohteet lajitellaan oletusarvoisesti nousevassa järjestyksessä. Jos haluat muuttaa lajittelujärjestyksen laskevaksi, valitse osittajan oikeasta yläkulmasta kolme pistettä ( **...** ) ja valitse **Lajittele laskevasti**.
-
-**Luo uusi osittaja tietojen suodattamiseksi päivämääräalueen mukaan**
-
-1. Valitse raportin **Yleiskatsaus**-sivu. Kun raporttipohjassa ei ole mitään valittuna, valitse **Kentät**-ruudusta **Myymälä** >  **Avauspäivä**.
-
-    Tämä toiminto täyttää **Visualisoinnit**-ruudun **Arvot**-ruutuun tietoja uuden visualisoinnin luomiseksi.
-
-1. Kun uusi visualisointi on valittuna raportissa, muuta se osittajaksi valitsemalla **Visualisoinnit**-ruudusta **Osittaja**-kuvake. Tämä **Avauspäivä**-osittaja on liukusäädin, johon on täytetty päivämääräalue.
-    
-    ![Luo Avauspäivä-visualisointi](media/power-bi-visualization-slicers/power-bi-date-slicer.png)
-
-1. Muuta osittajan kokoa ja vedä sitä ja muita alustan elementtejä tehdäksesi tilaa osittajalle. Vaikka liukusäädin muuttaa osittajan kokoa, se katoaa ja päivämäärät leikkautuvat pois, jos muutat osittajan koon liian pieneksi. 
-
-1. Valitse liukusäätimellä eri päivämääräalue tai valitse päivämääräkenttä ja anna päivämäärä. Voit antaa tarkan päivämäärän myös kalenteriponnahdusikkunan avulla. Huomaa vaikutukset muihin sivulla oleviin visualisointeihin.
-    
-    >[!NOTE]
-    >Numeerinen ja päivämäärä/kellonaika-tietotyypit muodostavat alueen liukusäätimen osittajat oletusarvoisesti. Helmikuun 2018 Power BI -päivityksestä alkaen kokonaisluvun tietotyypin alueen liukusäätimet kohdistavat nyt kokonaislukuarvoihin desimaalien sijaan. 
-
-1. Kun osittaja on valittuna, voit muuttaa sen tyyppiä siirtämällä kohdistimen osittajan oikeaan yläkulmaan, valitsemalla esiin tulevan merkin ja valitsemalla haluamasi asetuksen, esimerkiksi **Luettelo** tai **Ennen**. Huomaa, miten osittajan ulkoasun ja valinnan vaihtoehdot muuttuvat. 
- 
-    ![Osittajan uusi alue](media/power-bi-visualization-slicers/power-bi-between-slicer.png)
-
-
-Jos haluat lisätietoja alueen päivämäärä- ja numeroalueen liukusäätimien luomisesta, katso seuraava video ja lue ohjeartikkeli [Numeerisen alueen osittajan käyttö Power BI Desktopissa](../desktop-slicer-numeric-range.md).
-   > [!NOTE]
-   > Tässä videossa käytetään Power BI Desktopin vanhempaa versiota.
-   > 
-   > 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
 
 ## <a name="control-which-page-visuals-are-affected-by-slicers"></a>Määrittää, millä sivulla osittajat vaikuttavat visualisointeihin
 Osittajat raporttisivuilla vaikuttavat oletusarvoisesti kaikkiin muihin sivulla oleviin visualisointeihin toisensa mukaan lukien. Kun valitset luettelosta arvot ja juuri luomasi päivämääräliukusäätimet, huomaat vaikutukset muihin visualisointeihin. Suodatetut tiedot ovat molemmissa liukusäätimissä valittujen arvojen leikkauspiste. 
@@ -208,7 +179,7 @@ Jos haluat lisätietoja vaaka-asettelusta ja reagoivasta asettelusta, lue ohjear
 
 ### <a name="title-options"></a>Otsikon asetukset
 **Otsikko** on oletusarvoisesti **käytössä**. Tässä valinnassa näytetään tietokentän nimi osittajan yläreunassa. 
-- Muotoile otsikkoteksti tässä opetusohjelmassa seuraavasti: 
+- Muotoile otsikkoteksti tätä artikkelia varten seuraavasti: 
    - **Fontin väri**: punainen
    - **Tekstin koko**: **14 pt**
    - **Tasaus**: **Keskitetty**
@@ -216,7 +187,7 @@ Jos haluat lisätietoja vaaka-asettelusta ja reagoivasta asettelusta, lue ohjear
 
 
 ### <a name="items-options-list-slicers-only"></a>Kohteiden asetukset (vain luettelo-osittajat)
-1. Muotoile **kohteiden** asetukset tässä opetusohjelmassa seuraavasti:
+1. Muotoile **kohteiden** asetukset tätä artikkelia varten seuraavasti:
     - **Fontin värin**: musta
     - **Tausta**: vaalea punainen
     - **Tekstin koko**: **10 pt**

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/13/2020
-ms.openlocfilehash: dfb6c313e989514da2aa04facd6c6136a0eadc1a
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: dfb57d6344e6a8e020404f9cd23c957967b960f7
+ms.sourcegitcommit: a9ebab692c670192b62a31bfe99447908506251b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80404197"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "81122249"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Asenna Power BI -raporttipalvelimelle optimoitu Power BI Desktop
 
@@ -96,6 +96,10 @@ Power BI -raporttipalvelimen raportit eivät tue näitä ominaisuuksia Power BI 
 ### <a name="custom-security"></a>Mukautettu suojaus
 
 Power BI -raporttipalvelimelle optimoitu Power BI Desktop ei tue mukautettua suojausta. Jos Power BI ‑raporttipalvelimeen on määritetty mukautettu suojauslaajennus, et voi tallentaa Power BI ‑raporttia Power BI Desktopista (optimoitu Power BI ‑raporttipalvelimelle) Power BI ‑raporttipalvelimen esiintymään. Sinun täytyy tallentaa .pbix-raporttitiedosto Power BI Desktopista ja ladata se Power BI ‑raporttipalvelimen portaalisivustoon.
+
+### <a name="saving-reports-to-a-power-bi-report-server-in-a-different-domain"></a>Raporttien tallentaminen Power BI -raporttipalvelin eri toimialueessa
+
+Kun tallennat Power BI -raportin Power BI -raporttipalvelimeen, Windows-tunnistetietojasi käytetään. Tallentamista suoraan toiseen, Windows-tunnistetiedoistasi poikkeavalla toimialueella olevaan raporttipalvelimeen, ei tueta. Voit tarkastella raporttipalvelinta selaimella ja sen sijaan ladata tiedoston manuaalisesti tietokoneestasi.
 
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop Power BI -raporttipalvelimen aiempiin versioihin
 

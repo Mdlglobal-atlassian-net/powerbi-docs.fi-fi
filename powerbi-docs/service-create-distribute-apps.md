@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 03/23/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0b420a41474349f86be682987ff9f8144debab11
-ms.sourcegitcommit: 075a0ade4134d28f578fda78996595e8cd9f3555
+ms.openlocfilehash: 93cb384c06fc78f8d006aed02aef323bf3a72d31
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80147373"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006317"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Julkaise sovellus Power BI:ssä
 
@@ -43,25 +43,26 @@ Kun työtilasi raporttinäkymät ja raportit ovat valmiita, voit valita, mitkä 
 
 1. Määritä työtilan luettelonäkymässä, mitkä koontinäytöt ja raportit haluat **sisällyttää sovellukseen**.
 
-     ![Julkaistavan koontinäytön valinta](media/service-create-distribute-apps/power-bi-apps-incude-dashboard.png)
+    ![Julkaistavan koontinäytön valinta](media/service-create-distribute-apps/power-bi-apps-incude-dashboard.png)
 
-     Jos päätät olla sisällyttämättä raporttia, jossa on siihen liittyvä koontinäyttö, näet raportin vieressä varoituksen. Voit silti julkaista sovelluksen, mutta siihen liittyvässä koontinäytössä ei ole kyseisen raportin ruutuja.
+    Jos päätät olla sisällyttämättä raporttia, jossa on siihen liittyvä koontinäyttö, näet raportin vieressä varoituksen. Voit silti julkaista sovelluksen, mutta siihen liittyvässä koontinäytössä ei ole kyseisen raportin ruutuja.
 
-     ![Työhön liittyvää koontinäyttöä koskeva varoitus](media/service-create-distribute-apps/power-bi-apps-report-warning.png)
+    ![Työhön liittyvää koontinäyttöä koskeva varoitus](media/service-create-distribute-apps/power-bi-apps-report-warning.png)
 
 2. Valitse **Julkaise sovellus** -painike työtilan oikeasta yläkulmasta, jos haluat luoda ja julkaista sovelluksen kyseisestä työtilasta.
    
-     ![Julkaise sovellus](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
+    ![Julkaise sovellus](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
 
 3. Kirjoita **Asennus**-kohtaan nimi ja kuvaus, jotta ihmisten on helpompi löytää sovellus. Voit mukauttaa sovellusta määrittämällä sille haluamasi teemavärin. Voit myös lisätä linkin tukisivustoon.
    
-     ![Sovelluksen luominen](media/service-create-distribute-apps/power-bi-apps-build-your-apps.png)
+    ![Sovelluksen luominen](media/service-create-distribute-apps/power-bi-apps-build-your-apps.png)
 
 4. Kohdassa **Siirtyminen** valitset sovelluksen osana julkaistavan sisällön. Sitten lisäät sovelluksen siirtymisen järjestääksesi sisällön osiin. Lue lisätietoja tämän artikkelin kohdasta [Suunnittele sovelluksen siirtymistoiminnot](#design-the-navigation-experience).
    
-     ![Siirtyminen sovelluksessa](media/service-create-distribute-apps/power-bi-apps-navigation.png)
+    ![Siirtyminen sovelluksessa](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
 5. **Käyttöoikeus**-kohdassa päätät, keillä on sovelluksen käyttöoikeus ja mitä he voivat sovelluksella tehdä. 
+
     - [Perinteisissä työtiloissa](service-create-workspaces.md): kaikki organisaatiosi henkilöt, tietyt henkilöt tai Azure Active Directory:n (AAD)käyttöoikeusryhmät.
     - [Uusissa työtilakokemuksissa](service-create-the-new-workspaces.md): tietyt henkilöt, AAD-käyttöoikeusryhmät ja jakeluluettelot ja Office 365 -ryhmät. Kaikille työtilan käyttäjille annetaan automaattisesti työtilan sovelluksen käyttöoikeudet.
     - Voit antaa sovelluksen käyttäjien muodostaa yhteyden sovelluksen pohjana oleviin tietojoukkoihin muodostamisoikeuden avulla. He näkevät nämä tietojoukot etsiessään jaettuja tietojoukkoja. Lisätietoja [luvan myöntämisestä käyttäjille sovelluksen tietojoukkoihin yhdistämistä varten](#allow-users-to-connect-to-datasets) on tässä artikkelissa.
@@ -73,11 +74,11 @@ Kun työtilasi raporttinäkymät ja raportit ovat valmiita, voit valita, mitkä 
 
 6. Voit asentaa sovelluksen automaattisesti vastaanottajille, jos Power BI -järjestelmänvalvojasi on ottanut asetuksen käyttöön sinulle Power BI -hallintaportaalissa. Lue lisää [sovelluksen asentamisesta automaattisesti](#automatically-install-apps-for-end-users) tästä artikkelista.
 
-     ![Sovelluskäyttöoikeudet](media/service-create-distribute-apps/power-bi-apps-permissions.png)
+    ![Sovelluskäyttöoikeudet](media/service-create-distribute-apps/power-bi-apps-permissions.png)
 
 7. Kun valitset kohdan **Julkaise sovellus**, näet sanoman, että sovellus on valmis julkaistavaksi. **Jaa sovellus** -valintaikkunassa voit kopioida URL-osoitteen, joka on suora linkki tähän sovellukseen.
    
-     ![Sovellus on valmis](media/service-create-distribute-apps/power-bi-apps-success.png)
+    ![Sovellus on valmis](media/service-create-distribute-apps/power-bi-apps-success.png)
 
 Voit lähettää kyseisen suoran linkin henkilöille, joille olet jakanut sen, tai he voivat löytää sovelluksesi Sovellukset-välilehdestä siirtymällä kohtaan **Lataa ja etsi lisää sovelluksia AppSourcesta**. Lisätietoja [sovellusominaisuudesta yrityskäyttäjille](consumer/end-user-apps.md).
 
@@ -86,11 +87,11 @@ Kun olet julkaissut sovelluksesi, voit halutessasi muuttaa tai päivittää sit�
 
 1. Avaa kyseistä sovellusta vastaava työtila. 
    
-     ![Työtilan avaaminen](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
+    ![Työtilan avaaminen](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
 
 2. Tee koontinäytöihin tai raportteihin haluamasi muutokset.
  
-     Työtila on valmistelualueesi, joten tekemiäsi muutoksia ei lähetetä reaaliaikaisesti sovellukseen ennen sen julkaisemista uudelleen. Tämän avulla voit tehdä muutoksia ilman, että ne vaikuttaisivat julkaistuun sovellukseen.  
+    Työtila on valmistelualueesi, joten tekemiäsi muutoksia ei lähetetä reaaliaikaisesti sovellukseen ennen sen julkaisemista uudelleen. Tämän avulla voit tehdä muutoksia ilman, että ne vaikuttaisivat julkaistuun sovellukseen.  
  
     > [!IMPORTANT]
     > Jos poistat raportin ja päivität sovellusta ja vaikka lisäisit raportin takaisin sovellukseen, sovelluksen kuluttajat menettävät kaikki mukautukset, kuten kirjanmerkit, kommentit ja niin edelleen.  
@@ -111,6 +112,7 @@ Kun otat käyttöön **Uusi siirtymisen muodostin** -asetuksen, voit suunnitella
 ![Siirtyminen sovelluksessa](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
 Voit mukauttaa sovelluksessa siirtymistä seuraavilla tavoilla:
+
 * Nimikkeiden uudelleen järjestäminen ylös- ja alas-nuolta käyttämällä. 
 * Kohteiden nimeäminen uudelleen kohdissa **Raportin tiedot**, **Koontinäytön tiedot**, ja **Työkirjan tiedot**.
 * Eräiden kohteiden piilottaminen siirtymisruudusta.
@@ -121,16 +123,20 @@ Kun lisäät **linkin** kohdassa **Linkin tiedot**, voit valita, mihin linkki av
 
 ### <a name="considerations-for-using-the-new-navigation-builder-option"></a>Huomioitavaa uuden siirtymisen muodostimen käytöstä
 Tässä yleisiä asioita, jotka tulisi pitää mielessä uutta siirtymisen muodostinta käytettäessä:
-* Raporttisivut näkyvät sovelluksen siirtymisalueella laajennettavana osana
+
+* Raporttisivut näkyvät sovelluksen siirtymisalueella laajennettavana osana. Kun raportissa on yksi näkyvä sivu, vain raportin nimi näytetään. Raportin nimen napsauttaminen siirtymisruudussa avaa raportin ensimmäisen sivun. 
+
+    > [!NOTE]
+    > Raportissasi voi olla vain yksi näkyvä sivu, koska olet määrittänyt siirtymisen muille sivuille, joilla on painikkeita tai porautumistoimintoja.
+
 * Jos otat uuden siirtymisen muodostimen pois käytöstä ja sitten julkaiset tai päivität sovelluksen, menetät tekemäsi mukautukset. Esimerkiksi osat, järjestykset, linkit ja mukautetut siirtymiskohteiden nimet menetetään.
+* Käytettävissä on vaihtoehto, jolla sovelluksen muodostin jätetään käyttämättä.
 
 Kun lisäät linkkejä sovelluksen siirtymisruutuun ja valitset Sisältöalue-asetuksen:
 * Varmista, että linkki voidaan upottaa. Jotkin palvelut estävät sisältöjensä upottamisen kolmansien osapuolten sivustoihin, kuten Power BI:hin.
 * Power BI -palvelun sisällön kuten raporttien tai koontinäyttöjen upottamista muihin työtiloihin ei tueta. 
 * Upota Power BI -raporttipalvelimen sisältö sen alkuperäisen upotus-URL-osoitteen kautta paikallisesta käyttöönotosta. Hanki URL-osoite seuraamalla artikkelissa [Power BI -raporttipalvelimen URL:n luominen](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#create-the-power-bi-report-url) kerrottuja vaiheita. Huomaa, että normaalit todentamissäännöt ovat voimassa, joten sisällön tarkasteleminen vaatii VPN-yhteyden paikalliseen palvelimeen. 
 * Upotetun sisällön yläosassa näytetään suojausvaroitus, joka ilmaisee, ettei sisältö ole Power BI:ssä.
-
-
 
 ## <a name="automatically-install-apps-for-end-users"></a>Sovellusten asentaminen automaattisesti käyttäjille
 Jos järjestelmänvalvoja antaa sinulle oikeudet, voit asentaa sovelluksia automaattisesti *työntämällä* ne käyttäjille. Työntötoiminto helpottaa oikeiden sovellusten jakamista oikeille henkilöille tai ryhmille. Sovelluksesi tulee näkyviin automaattisesti käyttäjien Sisältösovellukset-luetteloon. Heidän ei tarvitse etsiä sovellusta Microsoft AppSourcesta tai napsauttaa asennuslinkkiä. Katso Power BI -hallintaportaalin artikkelista, miten järjestelmänvalvojat ottavat käyttöön [sovellusten työntämisen käyttäjille](service-admin-portal.md#push-apps-to-end-users).
@@ -181,22 +187,28 @@ Kuka tahansa työtilan jäsen voi peruuttaa sovelluksen julkaisun.
 
 * Valitse työtilassa kolme pistettä ( **...** ) oikeasta yläkulmasta > **Peruuta sovelluksen julkaisu**.
   
-     ![Peruuta sovelluksen julkaisu](media/service-create-distribute-apps/power-bi-app-unpublish.png)
+    ![Peruuta sovelluksen julkaisu](media/service-create-distribute-apps/power-bi-app-unpublish.png)
 
 Tämä toiminto poistaa sovelluksen asennuksen kaikilta, joille se on julkaistu eivätkä he enää pysty käyttämään sitä. Se ei poista työtilaa tai sen sisältöä.
 
 ## <a name="view-your-published-app"></a>Julkaistun sovelluksen tarkasteleminen
 
-Kun sovelluksen kuluttajat avaavat sovelluksesi, he näkevät luomasi siirtymisruudun Power BI:n siirtymisruudun sijaan. Sovelluksen siirtymäruutu luetteloi määrittämiesi osien raportit ja koontinäytöt. Siinä luetellaan myös jokaisen raportin yksittäiset sivut pelkän raportin nimen sijaan.
+Kun sovelluksen kuluttajat avaavat sovelluksesi, he näkevät luomasi siirtymisruudun Power BI:n siirtymisruudun sijaan. Sovelluksen siirtymäruutu luetteloi määrittämiesi osien raportit ja koontinäytöt. Siinä luetellaan myös jokaisen raportin yksittäiset sivut pelkän raportin nimen sijaan. Voit laajentaa ja kutistaa vasemman navigointiruudun valikkorivin nuolten avulla.
 
 ![Sovellus, jossa voi siirtyä](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
+
+Koko näytön tilassa voit näyttää tai piilottaa siirtymisruudun valitsemalla vaihtoehdon kulmassa.
+
+![Siirtyminen koko näytön tilassa](media/service-create-distribute-apps/full-screen-app-show-navigation.png)
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 Sovellusten julkaisemisessa muistettavat asiat:
 
+* Käyttöoikeussivu ei muuta muiden työtilojen tietojoukkojen käyttöoikeuksia. Näyttöön tulee varoitus, joka muistuttaa sinua kyseisten tietojoukkojen käyttöoikeuksien myöntämisestä erikseen. Paras käytäntö on ottaa yhteyttä tietojoukon omistajaan ennen sovelluksen luomista. Siten voit varmistaa, että kyseisen tietojoukon käyttöoikeuksien antaminen kaikille sovelluksesi käyttäjille sopii omistajalle. 
 * Sovelluksen käyttöoikeusluettelossa voi olla enintään 100 käyttäjää tai ryhmää. Voit silti antaa yli 100 käyttäjälle sovelluksen käyttöoikeuden. Voit tehdä tämän käyttämällä vähintään kahta käyttäjäryhmää, jotka sisältävät kaikki halutut käyttäjät.
 * Työtilan uusi käyttökokemus on, että jos sovelluksen käyttöoikeusluetteloon lisätyllä käyttäjällä on jo sovelluksen käyttöoikeus työtilan kautta, häntä näy sovelluksen käyttöoikeusluettelossa.  
-
+* Kun käytät Power BI -palvelun uutta ulkoasua, tukisivuston URL-osoite näkyy kohteen tietokortissa. Lue lisää [Power BI:n uudesta ulkoasusta](service-new-look.md).
+* Sovelluksissa on asetus, joka sallii käyttäjien jakaa sovelluksen ja sovelluksen pohjana olevat tietojoukot jakamisoikeuden avulla. Uusissa sovelluksissa tämä asetus on oletusarvoisesti poissa käytöstä. Suosittelemme, että otat tämän asetuksen pois käytöstä olemassa olevissa sovelluksissasi ja päivität pohjana olevien tietojoukkojen käyttöoikeudet. Asetus on otettu käyttöön olemassa olevia sovelluksia varten, koska sovellukset suunniteltiin alun perin korvaamaan sisältöpaketteja, joilla oli tämä toiminto.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Luo työtila](service-create-workspaces.md)

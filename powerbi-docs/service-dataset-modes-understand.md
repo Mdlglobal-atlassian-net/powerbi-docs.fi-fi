@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: be8716cebb091dafcc927b4bd1ecd0942ad88b47
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: cd2086facbeb581a4418a3358a79cca0e80140ff
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79208053"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267338"
 ---
 # <a name="dataset-modes-in-the-power-bi-service"></a>Tietojoukkojen tilat Power BI -palvelussa
 
@@ -77,19 +77,10 @@ DirectQuery-malleihin liittyy useita etuja:
 - Reaaliaikaisia raportteja voidaan kehittää käyttämällä [Automaattinen sivun päivitys](desktop-automatic-page-refresh.md) -toimintoa
 - DirectQuery-malleihin perustuvat koontinäytön ruudut voivat päivittyä automaattisesti 15 minuutin välein
 
-DirectQuery-malleihin liittyy kuitenkin useita haittoja ja rajoituksia:
+DirectQuery-malleilla on kuitenkin tiettyjä rajoituksia:
 
-- Mallin täytyy perustua yhteen tuettuun tietolähteeseen. Näin ollen tietojen integrointi täytyy suorittaa jo tietolähteessä. Tuetut tietolähteet ovat relaatio- ja analyysijärjestelmiä, jotka tukevat lukuisia suosittuja tietosäilöjä.
-
-    > [!TIP]
-    > Useita Microsoftin tietolähteitä tuetaan. Microsoftin tietolähteitä ovat SQL Server, Azure Data Bricks, Azure HDInsight Spark (Beta), Azure SQL Database ja Azure SQL Data Warehouse. Lisätietoja on artikkelissa [DirectQueryn tukemat tietolähteet Power BI:ssä](desktop-directquery-data-sources.md).
-
-- Suorituskyky voi hidastua, mikä saattaa haitata Power BI -palvelun toimintaa. Tämä ongelma saattaa ilmetä, koska jotkin kyselyt vaativat Power BI -palvelulta paljon suoritintehoa. Syynä saattaa olla myös se, ettei tietolähdettä ole optimoitu Power BI:n lähettämille kyselyille.
-- Power Query -kyselyiden on oltava taitettavia. Tämän vaatimuksen vuoksi Power Query -logiikka ei voi olla kovin monimutkaista. Logiikka on myös rajoitettava käyttämään M-lausekkeita ja funktioita, jotka voidaan transponoida alkuperäisiksi kyselyiksi, jotka tietolähde ymmärtää.
-- DAX-kaavat on rajoitettu käyttämään vain funktioita, jotka voidaan transponoida alkuperäisiksi kyselyiksi, jotka tietolähde ymmärtää. Laskettuja taulukoita tai DAX-aikatietojen funktioita ei myöskään tueta.
-- Mallikyselyt, jotka vaativat yli miljoonan rivin noutoa, epäonnistuvat
-- Raportit ja koontinäytöt, joissa on useita visualisointeja, saattavat esittää ristiriitaisia tuloksia, varsinkin jos tietolähde on epävakaa
-- Q&A- ja Nopeat merkitykselliset tiedot -toimintoja ei tueta
+- DAX-kaavat on rajoitettu käyttämään vain funktioita, jotka voidaan transponoida alkuperäisiksi kyselyiksi, jotka tietolähde ymmärtää. Laskettuja taulukoita ei tueta.
+- Q&A- ja Nopeat merkitykselliset tiedot -toimintoja ei tueta.
 
 Power BI -palvelun resurssien näkökulmasta DirectQuery-mallit vaativat:
 

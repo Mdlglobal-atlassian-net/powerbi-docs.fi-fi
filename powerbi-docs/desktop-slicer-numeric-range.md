@@ -1,28 +1,41 @@
 ---
-title: Numeerisen alueen osittajan käyttö Power BI Desktopissa
-description: Opi käyttämään osittajaa numeerisiin alueisiin rajaamiseksi Power BI Desktopissa
+title: Numeerisen alueen osittajan käyttö Power BI:ssä
+description: Opi käyttämään osittajaa numeerisiin alueisiin rajaamiseksi Power BI:ssä.
 author: davidiseminger
 ms.reviewer: ''
+featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 04/06/2020
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0fcc666febb4444b5ee83a1646e1e0c3ef9c6d82
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: bd5f937154edf9f8b6a86fb7f53690943a7f3a53
+ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76539298"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81006637"
 ---
-# <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Numeerisen alueen osittajan käyttö Power BI Desktopissa
+# <a name="use-the-numeric-range-slicer-in-power-bi"></a>Numeerisen alueen osittajan käyttö Power BI:ssä
+
+[!INCLUDE [applies-to](includes/applies-to.md)] [!INCLUDE [yes-desktop](includes/yes-desktop.md)] [!INCLUDE [yes-service](includes/yes-service.md)]
 
 Numeerisen alueen osittajan avulla voit käyttää kaikenlaisia suodattimia mihin tahansa tietomallisi numeeriseen sarakkeeseen. Numeeristen tietojen suodattamiseen on kolme vaihtoehtoa: lukujen välillä, pienempi tai yhtä suuri kuin luku ja suurempi tai yhtä suuri kuin luku. Tämä yksinkertainen tekniikka on tehokas tapa suodattaa tietojasi.
 
 ![Numeerisen alueen osittajan visualisointi](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-0.png)
 
-## <a name="use-the-numeric-range-slicer"></a>Numeerisen alueen osittajan käyttö
+## <a name="video"></a>Video
+
+Tässä videossa Will esittelee numeerisen alueen osittajan luomisen.
+
+> [!NOTE]
+> Tässä videossa käytetään Power BI Desktopin vanhempaa versiota.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
+
+
+## <a name="add-a-numeric-range-slicer"></a>Numeerisen alueen osittajan lisääminen
 
 Voit käyttää numeerisen alueen osittajaa kuten mitä tahansa muuta osittajaa. Luo vain **osittajan** visualisointi raportillesi ja valitse sitten numeerinen arvo **kentän** arvoksi. Seuraavassa kuvassa valittuna on **LineTotal**-kenttä.
 

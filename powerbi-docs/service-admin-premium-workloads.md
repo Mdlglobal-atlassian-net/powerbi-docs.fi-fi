@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/08/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: aa44f0c8c11cb26ecfc7763ec127ca8a8505536a
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.openlocfilehash: a252c10b247ad5fc06565139bc69fc43a9add467
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80979910"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267476"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Premium-kapasiteettien kuormitusten määrittäminen
 
@@ -24,23 +24,13 @@ Tässä artikkelissa kuvaillaan, miten voit ottaa käyttöön ja määrittää P
 
 Kyselyn kuormitukset on optimoitu Premium-kapasiteetin SKU:lle, jonka resurssit määrittävät kuormitusten rajat. Premium-kapasiteetit tukevat myös muita kuormituksia, jotka voivat käyttää oman kapasiteettisi resursseja. Näiden kuormitusten oletusmuistiarvot perustuvat SKU:n käytettävissä oleviin kapasiteetin solmuihin. Enimmäismuistiasetukset eivät ole kumulatiivisia. Enintään enimmäisarvoa vastaava muistimäärä varataan AI:lle ja tietovuolle dynaamisesti, mutta sivutetuille raporteille staattisesti.
 
-### <a name="microsoft-office-skus-for-software-as-a-service-saas-scenarios"></a>Microsoft Office -varastointiyksiköt Software as a Service (SaaS) -skenaarioille
-
-|                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
-|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| Tekoäly | Oletus 40 %, vähintään 40 % | Oletus 20 %, vähintään 20 % | Oletus 20 %, vähintään 8 % | Oletus 20 %, vähintään 4 % | Oletus 20 %, vähintään 2 % |
-| Tietovuot | – |Oletus 20 %, vähintään 12  | Oletus 20 %, vähintään 5 %  | Oletus 20 %, vähintään 3 % | Oletus 20 %, vähintään 2 %  |
-| Sivutetut raportit | – |– | Oletus 20 %, vähintään 10 % | Oletus 20 %, vähintään 5 % | Oletus 20 %, vähintään 2,5 % |
-| | | | | | |
-
-### <a name="microsoft-azure-skus-for-platform-as-a-service-paas-scenarios"></a>Microsoft Azure -varastointiyksiköt Platform as a Service (PaaS) -skenaarioille
-
-|                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
-|-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| Tekoäly | –  | Oletus 40 %, vähintään 40 %  | Oletus 20 %, vähintään 20 % | Oletus 20 %, vähintään 8 % | Oletus 20 %, vähintään 4 % | Oletus 20 %, vähintään 2 % |
-| Tietovuot         | Oletus 40 %, vähintään 40 % | Oletus 24 %, vähintään 24 % | Oletus 20 %, vähintään 12 % | Oletus 20 %, vähintään 5 %  | Oletus 20 %, vähintään 3 % | Oletus 20 %, vähintään 2 %   |
-| Sivutetut raportit | –                      | –                      | –                     | Oletus 20 %, vähintään 10 % | Oletus 20 %, vähintään 5 % | Oletus 20 %, vähintään 2,5 % |
-| | | | | | |
+|                   | EM1/A1                  | EM2/A2                  | EM3/A3                  | P1/A4                  | P2/A5                  | P3/A6                   |
+|-------------------|---------------------------|---------------------------|---------------------------|--------------------------|--------------------------|---------------------------|
+| Tekoäly                | Ei tuettu               | Oletus 40 %, vähintään 40 %  | Oletus 20 %, vähintään 20 %  | Oletus 20 %, vähintään 8 %  | Oletus 20 %, vähintään 4 %  | Oletus 20 %, vähintään 2 %   |
+| Tietojoukot          | Oletus 100 %, vähintään 67 % | Oletus 100 %, vähintään 40 % | Oletus 100 %, vähintään 20 % | Oletus 100 %, vähintään 8 % | Oletus 100 %, vähintään 4 % | Oletus 100 %, vähintään 2 %  |
+| Tietovuot         | Oletus 40 %, vähintään 40 %  | Oletus 24 %, vähintään 24 %  | Oletus 20 %, vähintään 12 %  | Oletus 20 %, vähintään 5 %  | Oletus 20 %, vähintään 3 %  | Oletus 20 %, vähintään 2 %   |
+| Sivutetut raportit | Ei tuettu               | Ei tuettu               | Ei tuettu               | Oletus 20 %, vähintään 10 % | Oletus 20 %, vähintään 5 %  | Oletus 20 %, vähintään 2,5 % |
+|                   |                           |                           |                           |                          |                          |                           |
 
 ## <a name="workload-settings"></a>Kuormitusasetukset
 
@@ -83,9 +73,16 @@ Ota huomioon, että tämä asetus vaikuttaa vain DirectQuery-kyselyihin, kun taa
 
 #### <a name="max-offline-dataset-size"></a>Offline-tietojoukon enimmäiskoko
 
-Tämän asetuksen avulla voi estää raportin tekijöiltä kapasiteettiin kielteisesti vaikuttavan suuren tietojoukon julkaisemisen. Huomaa, että Power BI ei pysty määrittämään todellista muistissa olevaa kokoa ennen kuin tietojoukko on ladattu muistiin. On mahdollista, että tietojoukko, jolla on pienempi offline-koko, voi sisältää suuremman muistijalanjäljen kuin tietojoukko, jolla on suurempi offline-koko.
+Tämän asetuksen avulla voi estää raportin tekijöiltä kapasiteettiin kielteisesti vaikuttavan suuren tietojoukon julkaisemisen. Huomaa, että Power BI ei voi määrittää todellista muistissa olevaa kokoa, ennen kuin tietojoukko on ladattu muistiin. On mahdollista, että tietojoukko, jolla on pienempi offline-koko, voi sisältää suuremman muistijalanjäljen kuin tietojoukko, jolla on suurempi offline-koko.
 
-Jos sinulla on aiemmin luotu tietojoukko, joka on suurempi kuin tälle asetukselle määrittämäsi koko, tietojoukon lataaminen epäonnistuu, kun käyttäjä yrittää käyttää sitä.
+Jos sinulla on aiemmin luotu tietojoukko, joka on suurempi kuin tälle asetukselle määrittämäsi koko, tietojoukon lataaminen epäonnistuu, kun käyttäjä yrittää käyttää sitä. Tietojoukon lataaminen voi epäonnistua myös, jos se on suurempi kuin tieto joukkojen kuormitusta varten määritetty muistin enimmäismäärä.
+
+Järjestelmän suorituskyvyn turvaamiseksi offline-tietojoukon enimmäiskokoa rajoitetaan SKU-kohtaisella, määritetystä arvosta riippumattoman kiinteän raja-arvon avulla. Tämä kiinteä raja-arvo ei koske Power BI -tietojoukkoja, jotka on optimoitu suuria tietokokoja varten. Lisätietoja on kohdassa [Suuret mallit Power BI Premiumissa](service-premium-large-models.md).
+
+|                                           | EM1/A1 | EM2/A2 | EM3/A3 | P1/A4 | P2/A5 | P3/A6 |   
+|-------------------------------------------|----------|----------|----------|---------|---------|---------|
+| Offline-tietojoukon enimmäiskoon kiinteä raja-arvo | 3 Gt     | 5 Gt     | 6 Gt     | 10 Gt   | 10 Gt   | 10 Gt   |
+|                                           |          |          |          |         |         |         |
 
 #### <a name="max-result-row-set-count"></a>Tulosrivien enimmäismäärä
 
@@ -110,6 +107,7 @@ Oletusasetus on 0, minkä vuoksi seuraava SKU-kohtainen automaattinen kyselyn mu
 | Automaattinen kyselyn muistin enimmäismäärä | 1 GT     | 2 Gt     | 2 Gt     | 6 Gt    | 6 Gt    | 10 Gt   |
 |                              |          |          |          |         |         |         |
 
+Järjestelmän suorituskyvyn turvaamiseksi kaikkiin Power BI -raporttien suorittamiin kyselyihin käytetään 10 Gt:n kiinteää raja-arvoa, joka on riippumaton käyttäjän määrittämästä kyselyn muistin enimmäismäärästä. Tämä kiinteä raja-arvo yläraja ei koske Analysis Services -protokollan (eli XMLA:n) tai muiden työkalujen suorittamia kyselyjä. Käyttäjien tulee harkita kyselyn tai sen laskutoimitusten yksinkertaistamista, jos kysely vie liikaa muistia.
 
 #### <a name="query-timeout"></a>Kyselyn aikakatkaisu
 
@@ -132,8 +130,8 @@ Huomaa, että Power BI -raportit ohittavat tämän oletusarvon niin, että kapas
 
 Kun automaattinen sivun päivitys on käytössä, Premium-kapasiteetin käyttäjien sivut päivitetään automaattisesti tietyin välein DirectQuery-lähteistä. Kapasiteetin järjestelmänvalvojana voit toimia seuraavasti:
 
-1.  Voit ottaa automaattisen sivun päivityksen käyttöön ja poistaa sen käytöstä.
-2.  Voit määrittää pienimmän päivitysvälin.
+- Voit ottaa automaattisen sivun päivityksen käyttöön ja poistaa sen käytöstä.
+- Voit määrittää pienimmän päivitysvälin.
 
 Seuraavasta kuvasta näet automaattisen päivitysvälin asetuksen sijainnin:
 

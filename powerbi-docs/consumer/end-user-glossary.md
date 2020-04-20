@@ -6,14 +6,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 04/07/2020
 ms.author: mihart
-ms.openlocfilehash: 19a3b1bbf5f2ea3043b92d97a66196ca3e32118c
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 2e5b8cf174e5e2180a42d2ccb3d2b43ba31b2d38
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79377232"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267223"
 ---
 # <a name="glossary-for-power-bi-service"></a>Power BI -palvelun sanasto
 Power BI -palvelussa saattaa olla ennestään tuntematonta tai sekavalta vaikuttavaa terminologiaa. Sanasto on hyvä paikka termien hakuun, joten se on hyvä lisätä suosikkeihin. Toinen hyvä resurssi lisätietojen saamiseen Power BI -palvelun muodostavista rakenneosista ovat [peruskäsitteet](end-user-basic-concepts.md). Peruskäsitteet tarjoavat korkean tason yleiskatsauksen Power BI:n *osiin* ja niiden yhteyksiin.
@@ -36,8 +36,7 @@ Tämä sanasto on yhteisön luoma.  Etkö näe etsimääsi sanaa? Pyydä meitä 
 
 **annotate (lisätä huomautus)** Voit kirjoittaa rivejä, tekstiä tai leimoja ruudun, raportin tai visualisoinnin tilannevedokseen Power BI -mobiilisovelluksessa iOS-ja Android-laitteissa.
 
-**app, apps (sovellus, sovellukset)** 
-
+**sovellus, sovellukset** Nippu koontinäyttöjä, raportteja ja tietojoukkoja. Termi tarkoita myös mobiilisovelluksia, jotka on tarkoitettu sisällön kuluttamiseen, kuten Power BI-sovellus iOS:lle.
 
 **AppSource** Keskitetty verkkosäilö, jossa voit selata ja tarkastella ladattavia koontinäyttöjä, raportteja, tietojoukkoja ja sovelluksia.
 
@@ -203,7 +202,7 @@ Esimerkki: siirtymisruutu Seuraavat maininnat tai vähäinen tila: siirtymäruut
 
 **OneDrive for Business** vs. **OneDrive** OneDrive on henkilökohtainen tili ja OneDrive for Business on työtilejä varten.  
 
-**On-premises (Paikallinen)** Termi, jota käytetään erottamaan paikallinen tietojenkäsittely (jossa tietojenkäsittelyresurssit sijaitsevat asiakkaan omissa tiloissa) pilvitietojenkäsittelystä.
+**Paikallinen** Termi, jota käytetään erottamaan paikallinen tietojenkäsittely (jossa tietojenkäsittelyresurssit sijaitsevat asiakkaan omissa tiloissa) pilvitietojenkäsittelystä.
 
 
 ## <a name="p"></a>P

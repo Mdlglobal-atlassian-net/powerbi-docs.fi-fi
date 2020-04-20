@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.date: 02/27/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: cb58b71d4fe15458516dc0b1d3f25d79e6ef1a62
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.openlocfilehash: 165651beab2e20f033d20480e78a3876931ea806
+ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79126048"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81267269"
 ---
 # <a name="data-lineage-preview"></a>Tietojen historiatiedot (esiversio)
-Moderneissa liiketoimintatietojen projekteissa tietovirran ymmärtäminen tietolähteestä kohteeseen voi olla haastavaa. Haaste on vieläkin suurempi, jos olet luonut edistyneitä analyysiprojekteja, jotka kattavat useita tietolähteitä, artefakteja ja riippuvuuksia. Esimerkiksi kysymyksiin ”Mitä tapahtuu, jos muutan näitä tietoja?” tai ”Miksi tämä raportti ei ole ajan tasalla?” voi olla vaikea vastata. Niiden ymmärtäminen voi vaatia asiantuntijaryhmän tai syvällistä tutkintaa. Olemme suunnitelleet historiatietonäkymän, jonka avulla näihin kysymyksiin voi vastata.
+Moderneissa liiketoimintatietojen projekteissa tietovirran ymmärtäminen tietolähteestä kohteeseen voi olla haastavaa. Haaste on vieläkin suurempi, jos olet luonut edistyneitä analyysiprojekteja, jotka kattavat useita tietolähteitä, artefakteja ja riippuvuuksia. Esimerkiksi seuraaviin kysymyksiin: Mitä tapahtuu, jos muutan näitä tietoja? Miksi tämä raportti ei ole ajan tasalla? voi olla vaikea vastata. Niiden ymmärtäminen voi vaatia asiantuntijaryhmän tai syvällistä tutkintaa. Olemme suunnitelleet historiatietonäkymän, jonka avulla näihin kysymyksiin voi vastata.
 
 ![Power BI:n historiatietonäkymä](media/service-data-lineage/service-data-lineage-view.png)
  
@@ -93,3 +93,4 @@ Tietojen historiatietojen näkymä on vuorovaikutteinen pohja. Voit käyttää h
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * [Johdanto tietojoukkojen käyttöön eri työtiloissa (esikatselu)](../service-datasets-across-workspaces.md)
+* [Tietojoukkojen vaikutusanalyysi](service-dataset-impact-analysis.md)
