@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 03/18/2020
-ms.openlocfilehash: 885c6b98e66a6ce2fd8069cc86bf50440cb94b4b
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.date: 04/21/2020
+ms.openlocfilehash: dcf154105b8940bd400fbb4e630a1d1cfd00ddf0
+ms.sourcegitcommit: 8775168ed916c517c57c696ebe45699e638b86e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80113602"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81766273"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sivutetut raportit Power BI:ssä: Usein kysytyt kysymykset 
 
@@ -88,6 +88,8 @@ Sivutetut raportit sopivat parhaiten skenaarioihin, jotka edellyttävät pitkäl
 
 Power BI -raportit on optimoitu tutkimista ja vuorovaikutteisuutta varten.  Myyntiraportti, jossa eri myyjät haluavat osittaa tietoja samassa raportissa tietyille alueilleen/toimialoilleen/asiakkailleen ja nähdä, miten luvut muuttuvat, kannattaa laatia Power BI -raporttina.
 
+Saat lisätietoja ohjeartikkelista [Milloin sivutettuja raportteja kannattaa käyttää Power BI:ssä?](../guidance/report-paginated-or-power-bi.md)
+
 ### <a name="the-documentation-says-power-bi-report-builder-is-the-preferred-authoring-tool-can-i-create-paginated-reports-in-sql-server-data-tools-for-power-bi"></a>Dokumentaation mukaan Power BI:n raportin muodostin on ensisijainen luontityökalu. Voinko luoda sivutettuja raportteja Power BI:n SQL Server Data Toolsissa?
 
 Kyllä, mutta Power BI -palvelu mahdollistaa vain yhden kohteen lataamisen kerrallaan, joten monia skenaarioita, joita tekijät käyttävät SQL Server Data Toolsin (SSDT) kanssa, ei vielä tueta. Täydellinen [tukemattomien ominaisuuksien luettelo](#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) on jäljempänä näissä usein kysytyissä kysymyksissä.  
@@ -110,10 +112,8 @@ Tällä hetkellä sivutetut raportit eivät tue seuraavia kohteita:
 
 - Jaetut tietolähteet
 - Jaetut tietojoukot
-- Aliraportit
 - Porautuminen ja napsauttaminen muihin raportteihin
 - Linkitetyt raportit
-- Bing-karttakerrokset
 - Mukautetut fontit
 
 Saat virheviestin, jos yrität ladata tiedoston, jolla on tukematon ominaisuus Power BI -palvelussa (muu kuin vaihto/lajittelu).

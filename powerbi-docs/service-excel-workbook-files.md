@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 45f3ff801b2f1bffd2396fe9f59ea32dd4b11ffb
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a6dd3040fd765010c5d6baaf76991f7d1be4cfa7
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877057"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637904"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Tietojen noutaminen Excel-työkirjatiedostoista
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -41,7 +41,7 @@ Jos muodostat yhteyden ulkoiseen tietolähteeseen Excelin avulla, sen jälkeen k
 ### <a name="workbooks-with-power-view-sheets-pivottables-and-charts"></a>Power View -taulukoita, pivot-taulukoita ja kaavioita sisältävät työkirjat
 PowerView-taulukoiden, pivot-taulukoiden ja kaavioiden näkyminen Power BI:ssä riippuu siitä, minne työkirjatiedosto on tallennettu ja miten saat sen Power BI:hin. Lisätietoja tästä on alla.
 
-## <a name="data-types"></a>Tietotyypit
+## <a name="data-types"></a>Tietotyyppi
 Power BI tukee seuraavia tietotyyppejä: kokonaisluku, desimaaliluku, valuutta, päivämäärä, tosi/epätosi, teksti. Tietojen merkitseminen tietyiksi tietotyypeiksi Excelissä parantaa Power BI -kokemusta.
 
 ## <a name="prepare-your-workbook-for-power-bi"></a>Työkirjan valmisteleminen Power BI:tä varten
@@ -63,7 +63,7 @@ Jos tallennat työkirjatiedostot **OneDriveen**, voit tarkastella tietojasi Powe
 
 ![](media/service-excel-workbook-files/excel_import_connect.png)
 
-### <a name="import-excel-data-into-power-bi"></a>Excel-tietojen tuominen Power BI:hin
+### <a name="import-excel-data-into-power-bi"></a>Tuo Excel-tietoja Power BI:hin
 Kun valitset **Tuo**, taulukoissa ja/tai tietomallissa tuetut tiedot tuodaan uuteen tietojoukkoon Power BI:ssä. Jos sinulla on Power View -taulukoita, ne luodaan uudelleen Power BI:ssä raportteina.
 
 Voit jatkaa työkirjan muokkaamista. Kun tekemäsi muutokset tallennetaan, ne synkronoidaan Power BI:n tietojoukon kanssa yleensä tunnin kuluessa. Jos tarvitset tuloksia nopeammin, voit valita Julkaise uudelleen, jolloin muutokset viedään heti. Myös raporteissa ja raporttinäkymissä olevat visualisoinnit päivitetään.
@@ -124,8 +124,6 @@ Tällä hetkellä kun valitset Tuo-vaihtoehdon, Power BI tuo vain tiedot, jotka 
 **Ajoita päivitys** – Jos Excel-työkirjatiedosto on yhdistetty ulkoisiin tietolähteisiin, tai olet tuonut paikallisesta asemasta, voit määrittää ajoitetun päivityksen sen varmistamiseksi, että tietojoukko tai raportti on aina ajan tasalla. Useimmiten ajoitetun päivityksen määrittäminen on varsin helppoa, mutta tämä artikkeli ei sisällä tarkkoja ohjeita. Lue lisää artikkelista [Tietojen päivittäminen Power BI:ssä](refresh-data.md).
 
 [Julkaiseminen Excel 2016:sta Power BI:hin](service-publish-from-excel.md)
-
-[Power BI Publisher for Excel](publisher-for-excel.md)
 
 [Tietojen päivittäminen Power BI:ssä](refresh-data.md)
 

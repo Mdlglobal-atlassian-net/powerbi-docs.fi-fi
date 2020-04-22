@@ -9,12 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/06/2020
 LocalizationGroup: Premium
-ms.openlocfilehash: 7f300cca6614f638f88886a913b30a93d0f52cfd
-ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
+ms.openlocfilehash: 18ae8828ce5811b4f06038b18ff6b423562c335b
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80813002"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637702"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Kapasiteettien valvonta hallintaportaalissa
 
@@ -24,8 +24,9 @@ ms.locfileid: "80813002"
 
 Jos tarvitset kattavampia mittareita, käytä [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md)-sovellusta. Sovellus tarjoaa porautumisen ja suodatuksen sekä yksityiskohtaisimmat mittarit kapasiteetin suorituskykyyn vaikuttavista kaikista seikoista. Lue lisää kohdasta[Premium-kapasiteettien valvonta sovelluksen avulla](service-admin-premium-monitor-capacity.md).
 
-> [!IMPORTANT]
-> Jos Power BI Premium -kapasiteetissasi on resurssien runsaan käytön aiheuttamia suorituskyky- tai luotettavuusongelmia, voit saada sähköpostiviesteinä ilmoituksia, joiden avulla voit tunnistaa ja ratkaista ongelmat. Lisätietoja on artikkelissa [Kapasiteetin ja luotettavuuden ilmoitukset](service-interruption-notifications.md#capacity-and-reliability-notifications).
+
+
+
 
 ## <a name="system-metrics"></a>Järjestelmän mittarit
 

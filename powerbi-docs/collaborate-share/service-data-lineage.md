@@ -1,5 +1,5 @@
 ---
-title: Tietojen historiatiedot (esiversio)
+title: Tietojen historiatiedot
 description: Moderneissa liiketoimintatietojen projekteissa tietovirran ymmärtäminen tietolähteestä kohteeseen on tärkeä haaste monille asiakkaille.
 author: paulinbar
 ms.reviewer: ''
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.date: 02/27/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 165651beab2e20f033d20480e78a3876931ea806
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: fc1f55fbadfaa6c25dd9140a41064eaa876013df
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267269"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525395"
 ---
-# <a name="data-lineage-preview"></a>Tietojen historiatiedot (esiversio)
-Moderneissa liiketoimintatietojen projekteissa tietovirran ymmärtäminen tietolähteestä kohteeseen voi olla haastavaa. Haaste on vieläkin suurempi, jos olet luonut edistyneitä analyysiprojekteja, jotka kattavat useita tietolähteitä, artefakteja ja riippuvuuksia. Esimerkiksi seuraaviin kysymyksiin: Mitä tapahtuu, jos muutan näitä tietoja? Miksi tämä raportti ei ole ajan tasalla? voi olla vaikea vastata. Niiden ymmärtäminen voi vaatia asiantuntijaryhmän tai syvällistä tutkintaa. Olemme suunnitelleet historiatietonäkymän, jonka avulla näihin kysymyksiin voi vastata.
+# <a name="data-lineage"></a>Tietojen historiatiedot
+Moderneissa liiketoimintatietojen projekteissa tietovirran ymmärtäminen tietolähteestä kohteeseen voi olla haastavaa. Haaste on vieläkin suurempi, jos olet luonut edistyneitä analyysiprojekteja, jotka kattavat useita tietolähteitä, artefakteja ja riippuvuuksia. Esimerkiksi kysymyksiin ”Mitä tapahtuu, jos muutan näitä tietoja?” Miksi tämä raportti ei ole ajan tasalla? voi olla vaikea vastata. Niiden ymmärtäminen voi vaatia asiantuntijaryhmän tai syvällistä tutkintaa. Olemme suunnitelleet historiatietonäkymän, jonka avulla näihin kysymyksiin voi vastata.
 
 ![Power BI:n historiatietonäkymä](media/service-data-lineage/service-data-lineage-view.png)
  

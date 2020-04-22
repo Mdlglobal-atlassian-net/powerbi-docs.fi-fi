@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: 52f840d5806c10de088838cf64187b953f36aa54
-ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
+ms.openlocfilehash: 3277bba0a4351f17d671adf9a70aae4adb7ddbac
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80550936"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525372"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-national-clouds"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseesi kansallisissa pilvipalveluissa
 
@@ -63,7 +63,7 @@ Tässä artikkelissa näytetään koodi, jota käytetään GitHubin [App Owns Da
 3. Muokkaa tiedoston web.config GCC-parametreja seuraavasti.
 
 ```xml
-<add key="authorityUrl" value="https://login.microsoftonline.net/common/" />
+<add key="authorityUrl" value="https://login.microsoftonline.com/common/" />
 <add key="resourceUrl" value="https://analysis.usgovcloudapi.net/powerbi/api" />
 <add key="apiUrl" value="https://api.powerbigov.us/" />
 <add key="embedUrlBase" value="https://app.powerbigov.us" />

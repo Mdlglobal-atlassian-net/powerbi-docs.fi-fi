@@ -1,20 +1,20 @@
 ---
 title: Raporttien välillä porautumisen käyttäminen Power BI Desktopissa
 description: Katso, miten voit porautua raportista toiseen Power BI Desktopissa
-author: davidiseminger
+author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/16/2019
-ms.author: davidi
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: e500cb29bcc4472c59e7e8215fc0a7e7e728ea0d
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.openlocfilehash: 33d0b7850b5e396d8f03e80cbcb32768fb26bf6d
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76538824"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439798"
 ---
 # <a name="use-cross-report-drillthrough-in-power-bi"></a>Raporttien välillä porautuminen Power BI:ssä
 
@@ -74,7 +74,7 @@ Siinä kaikki! Raporttisi ovat valmiita raporttien välillä porautumiseen.
 
 ## <a name="use-cross-report-drillthrough"></a>Raporttien välillä porautumisen käyttö
 
-Raporttien välillä porautumisen käyttämiseksi valitse lähderaportti Power BI -palvelusta ja valitse sitten visualisointi, joka käyttää porautumiskenttää kuten olet määrittänyt kohdesivua määrittäessäsi. Napsauta arvopistettä hiiren kakkospainikkeella visualisointien pikavalikon avaamiseksi, valitse **Porautuminen** ja valitse sitten porautumiskohde. Raporttien välisen porautumisen kohteet esitetään muodossa **Sivun nimi [Raportin nimi]**.
+Raporttien välillä porautumisen käyttämiseksi valitse lähderaportti Power BI -palvelusta ja valitse sitten visualisointi, joka käyttää porautumiskenttää kuten olet määrittänyt kohdesivua määrittäessäsi. Napsauta arvopistettä hiiren kakkospainikkeella visualisointien pikavalikon avaamiseksi, valitse **Porautuminen** ja valitse sitten porautumiskohde. Raporttien välisen porautumisen kohteet esitetään muodossa **Sivun nimi [Raportin nimi]** .
 
 ![Power BI:n raporttien välillä porautumisen asetus](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
 

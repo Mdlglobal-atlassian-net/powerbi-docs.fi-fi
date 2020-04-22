@@ -1,5 +1,5 @@
 ---
-title: Tietojoukkojen vaikutusanalyysi (esiversio)
+title: Tietojoukkojen vaikutusanalyysi
 description: Visualisoi ja analysoi tietojoukkojen muutosten vaikutusta jatkossa.
 author: paulinbar
 ms.reviewer: ''
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.date: 04/13/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 016c555c6df65a45a9d429c25db93110022d9d8f
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: d6d62583d6ef6bd1fcc1630b46bdb5d97c221f16
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81268025"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525326"
 ---
-# <a name="dataset-impact-analysis-preview"></a>Tietojoukkojen vaikutusanalyysi (esiversio)
+# <a name="dataset-impact-analysis"></a>Tietojoukkojen vaikutusanalyysi
 
 Kun teet muutoksia tietojoukkoon tai harkitset niitä, on tärkeää kyetä arvioimaan niiden vaikutusta kyseistä tietojoukkoa käyttävissä raporteissa ja koontinäytöissä. **Tietojoukkojen vaikutusanalyysi** tarjoaa tietoja näihin arviointeihin.
 * Siitä näet, moneenko työtilaan, raporttiin ja koontinäyttöön muutoksesi saattaa vaikuttaa. Vaikutusanalyysista voit myös siirtyä helposti työtiloihin, joissa kyseiset raportit ja koontinäytöt ovat, jotta voit tutkia asiaa tarkemmin.

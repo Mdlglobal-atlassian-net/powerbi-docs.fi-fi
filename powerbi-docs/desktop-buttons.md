@@ -1,20 +1,20 @@
 ---
 title: Painikkeiden käyttäminen Power BI:ssä
 description: Voit lisätä Power BI -raportteihin painikkeita, joiden avulla raportit toimivat sovellusten tavoin ja jotka auttavat syventämään käyttäjien kiinnostusta.
-author: davidiseminger
+author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/12/2020
-ms.author: davidi
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6629165ec031fea0d1c1af443e1d7b311bc743aa
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: c703a4b67b642af5199413e80ff1e140905a2338
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79201606"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439821"
 ---
 # <a name="use-buttons-in-power-bi"></a>Painikkeiden käyttäminen Power BI:ssä
 Power BI:n **painikkeiden** avulla voit luoda raportteja, jotka toimivat sovellusten tavoin ja jotka luovat siten kiinnostavan ympäristön. Siinä käyttäjät voivat osoittaa ja valita Power BI -sisältöä hiirellä ja olla vuorovaikutuksessa sen kanssa muilla tavoilla. Voit lisätä painikkeita raportteihin **Power BI Desktopissa** ja **Power BI -palvelussa**. Kun jaat raporttisi Power BI -palvelussa, ne tarjoavat käyttäjillesi sovelluksen kaltaisen käyttökokemuksen.

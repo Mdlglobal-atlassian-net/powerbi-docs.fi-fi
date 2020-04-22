@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/06/2020
+ms.date: 04/17/2020
 ms.author: kfollis
-ms.openlocfilehash: 984991d8640df04c19b6461f5f0faaf0a50fe4ed
-ms.sourcegitcommit: 2b93c1cc29aaf199ab7441a04c8e5ae49ffca5d6
+ms.openlocfilehash: 85b26b68c4943e0bc100be7a298730cec34cfc78
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80812962"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637765"
 ---
 # <a name="service-interruption-notifications"></a>Palvelun keskeytymisilmoitukset
 
@@ -32,26 +32,8 @@ Ilmoituksia lähetetään silloin, kun toiminnoissa, kuten raporttien avaamisess
 > [!NOTE]
 > Tämä ominaisuus on tällä hetkellä käytettävissä vain Power BI Premiumin varatuissa kapasiteeteissa. Se ei ole käytettävissä jaetussa tai upotetussa kapasiteetissa.
 
-## <a name="capacity-and-reliability-notifications"></a>Kapasiteetin ja luotettavuuden ilmoitukset
-
-Kun Power BI Premium -kapasiteetilla on pitkiä resurssien runsaan käytön jaksoja, jotka saattavat vaikuttaa luotettavuuteen, lähetetään ilmoitussähköpostiviesti. Tällaisia vaikutuksia ovat esimerkiksi pitkät viiveet toiminnoissa, kuten raportin avaamisessa, tietojoukon päivittämisessä ja kyselyjen suorittamisessa. 
-
-Ilmoitussähköpostiviestissä on tietoja resurssien runsaan käytön syystä, esimerkiksi seuraavat tiedot:
-
-* vastaavan tietojoukon tunnus
-* toiminnon tyyppi
-* resurssien runsaaseen käyttöön liittyvä suoritinaika.
-
-Power BI lähettää sähköposti-ilmoituksia myös, kun Power BI Premium -kapasiteetissa havaitaan ylikuormitus. Sähköpostiviestissä selitetään ylikuormituksen todennäköinen syy, mitkä toiminnot aiheuttivat kuormituksen edellisen kymmenen minuutin aikana ja miten paljon kuormaa eri toiminnot loivat. 
-
-Jos sinulla on vähintään kaksi Premium-kapasiteettia, sähköpostiviestissä on tietoja kyseisistä kapasiteeteista ylikuormitusjakson aikana, jolloin voit harkita resursseja runsaasti käyttävien työtilojen siirtämistä kapasiteetteihin, joissa on vähiten kuormitusta.
-
-Ylikuormituksesta kertovia sähköposti-ilmoituksia lähetetään vain, kun ylikuormituskynnys ylitetään. Et saa toista sähköpostiviestiä, kun kyseisen Premium-kapasiteetin kuorma palautuu ylikuormittumattomalle tasolle.
-
-Seuraavassa kuvassa on esimerkki ilmoitussähköpostiviestistä:
 
 
-![ylikuormitettua kapasiteettia koskeva ilmoitussähköpostiviesti](media/service-interruption-notifications/refresh-notification-email-2.png)
 
 
 ## <a name="enable-notifications"></a>Ota ilmoitukset käyttöön

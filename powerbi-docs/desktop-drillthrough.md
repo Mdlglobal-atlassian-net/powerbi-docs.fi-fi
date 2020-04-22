@@ -1,20 +1,20 @@
 ---
 title: Porautumisen määrittäminen Power BI -raporteissa
 description: Lue, miten voit porautua tietoihin uudella raporttisivulla Power BI -raporteissa
-author: davidiseminger
+author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/12/2020
-ms.author: davidi
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5a494341ff6ee9c5fe4b2c2119749f58f2fd540d
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 5e415fb46f845312253f37d8549a4eecb5b10ae7
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79201449"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439775"
 ---
 # <a name="set-up-drill-through-in-power-bi-reports"></a>Porautumisen määrittäminen Power BI -raporteissa
 Power BI -raporttien *porautumisen* avulla voit luoda raporttisivun, jolla keskitytään tiettyyn entiteettiin, kuten toimittajaan, asiakkaaseen tai valmistajaan. Kun raporttiesi lukijat käyttävät porautumista, he napsauttavat kakkospainikkeella arvopistettä toisella raporttisivulla ja porautuvat sitten kohdistettuun sivuun. Näin saat lisätietoja, jotka on suodatettu kyseisen kontekstin mukaisesti. Voit myös [luoda painikkeen, joka porautuu](desktop-drill-through-buttons.md) tietoihin, kun lukijat napsauttavat sitä.
