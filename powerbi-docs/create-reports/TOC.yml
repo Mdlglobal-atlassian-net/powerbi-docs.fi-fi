@@ -197,8 +197,6 @@
               href: ../service-interact-with-a-report-in-editing-view.md
             - name: Analysoi Excelissä
               href: ../service-analyze-in-excel.md
-            - name: Vinkkejä raporttien luomiseen
-              href: ../power-bi-reports-tips-and-tricks-for-creating.md
             - name: Koosteiden käsitteleminen palvelussa
               href: ../service-aggregates.md
             - name: Raportin QR-koodin luominen
@@ -257,7 +255,7 @@
               href: ../visuals/power-bi-visualization-doughnut-charts.md
             - name: Täytetyt kartat (Choropleth-kartat)
               href: ../visuals/power-bi-visualization-filled-maps-choropleths.md
-            - name: Suppilokaaviot
+            - name: Suppilokaavio
               href: ../visuals/power-bi-visualization-funnel-charts.md
             - name: Tärkeimpien vaikuttajien visualisoinnit
               href: ../visuals/power-bi-visualization-influencers.md
