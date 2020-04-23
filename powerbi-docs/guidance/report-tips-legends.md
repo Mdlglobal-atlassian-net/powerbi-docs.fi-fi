@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/15/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 5c026e2b7625a2306092f04e11aa77cb275c1f5f
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.openlocfilehash: 098c01aacca7fca0621efe12367f2f66cd0d9d96
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "81006085"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82066103"
 ---
 # <a name="tips-to-format-and-implement-legends-in-power-bi-reports"></a>Vinkkejä selitteiden muotoiluun ja toteuttamiseen Power BI -raporteissa
 
@@ -39,7 +39,7 @@ Kuusi parasta vinkkiä selitteiden muotoiluun ja toteuttamiseen Power BI -raport
 
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
-- [Vinkkejä tyylikkäiden raporttien luomiseen](../power-bi-reports-tips-and-tricks-for-creating.md)
+- [Vinkkejä tyylikkäiden raporttien luomiseen](../desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine-video: [Kuusi parasta vinkkiä selitteiden muotoiluun ja toteuttamiseen Power BI:ssä](https://www.youtube.com/watch?v=r9XnHmuWkZQ)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com)
