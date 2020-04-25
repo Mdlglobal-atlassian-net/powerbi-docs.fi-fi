@@ -1,5 +1,5 @@
 ---
-title: Usein kysyttyjä kysymyksiä – Power BI:n visualisoinnit
+title: Usein kysyttyjä kysymyksiä – Power BI -visualisoinnit
 description: Selaa Power BI -visualisointeja koskevien usein kysyttyjen kysymysten ja vastausten luetteloa
 author: KesemSharabi
 ms.author: kesharab
@@ -20,11 +20,11 @@ ms.locfileid: "79383294"
 
 ## <a name="organizational-power-bi-visuals"></a>Organisaation Power BI -visualisoinnit
 
-Hallintaportaalissa voi hallita organisaation Power BI:n visualisointeja.
+Hallintaportaalissa voi hallita organisaation Power BI -visualisointeja.
 
 ### <a name="how-can-the-admin-manage-organizational-power-bi-visuals"></a>Miten järjestelmänvalvoja voi hallita organisaation Power BI -visualisointeja?
 
-Hallintaportaalin *Organisaation visualisoinnit* -välilehdessä järjestelmänvalvoja voi nähdä ja [hallita kaikkia organisaation Power BI -visualisointeja](../../service-admin-portal.md#organizational-visuals). Hallitseminen sisältää Power BI ‑visualisointien lisäämisen ja poistamisen sekä niiden käyttöön ottamisen ja käytöstä poistamisen.
+Hallintaportaalin *Organisaation visualisoinnit* -välilehdessä järjestelmänvalvoja voi nähdä ja [hallita kaikkia organisaation Power BI -visualisointeja](../../service-admin-portal.md#organizational-visuals). Hallitseminen sisältää Power BI -visualisointien lisäämisen ja poistamisen sekä niiden käyttöön ottamisen ja käytöstä poistamisen.
 
 Organisaation käyttäjät voivat helposti löytää Power BI ‑visualisointeja ja tuoda niitä raportteihinsa suoraan Power BI Desktopista tai ‑palvelusta.
 
