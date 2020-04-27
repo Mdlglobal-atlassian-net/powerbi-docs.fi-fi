@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: b1ab74ec7f7f6594450ec2cf95528d06dc45f613
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 2962d5f8504b7214cb685457c59b11f1d9d7b85e
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77610014"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525533"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Raportin suorituskyvyn valvominen Power BI:ssä
 
@@ -23,7 +23,7 @@ Valvo raportin suoritustehoa Power BI Desktopissa käyttämällä [Power BI Prem
 Suorituskyvyn valvonta on oleellista seuraavissa tilanteissa:
 
 - tietojen tuontimallin päivitys on hidasta
-- DirectQueryn tai reaaliaikaisen yhteyden raportit ovat hitaita
+- DirectQueryn tai reaaliaikaisen yhteyden raportit ovat hitaita.
 - mallin laskelmat ovat hitaita.
 
 Hitaiden kyselyjen tai raporttien visualisointien tulee olla jatkuvan optimoinnin keskipisteessä.
@@ -85,6 +85,7 @@ Saat lisätietoja tästä artikkelista tutustumalla seuraaviin resursseihin:
 
 - [Kyselydiagnostiikka](/power-query/QueryDiagnostics)
 - [Suorituskyvyn analysointi](../desktop-performance-analyzer.md)
+- [Raportin suorituskyvyn vianmääritys Power BI:ssä](report-performance-troubleshoot.md)
 - [Power BI Premium Metrics -sovellus](../service-premium-metrics-app.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)

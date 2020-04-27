@@ -1,128 +1,79 @@
 ---
 title: Power BI Yhdysvaltain valtionhallinnon asiakkaille - Rekisteröityminen
-description: Yhdysvaltain valtionhallinnon asiakkaat voivat nyt tutustua siihen, miten he voivat rekisteröidä Yhdysvaltain valtionhallinnon organisaation Power BI:n Yhdysvaltain valtionhallinnon palveluun
+description: Yhdysvaltain valtionhallinnon asiakkaat saavat lisätietoa rekisteröitymisestä Power BI:hin valtionhallinnon yhteisöpilvipalvelusta.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
-ms.author: davidi
+ms.date: 04/07/2020
+ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 7edfe46173b1d9b2537c5fd980b245af09fd1f53
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: 3f001c91c89b18b43c953669272b4d5be37dd154
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74178274"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81436255"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Rekisteröi Yhdysvaltain valtionhallinnon organisaatio Power BI -palveluun
-**Power BI-palvelulla** on versio, joka on saatavilla Yhdysvaltain valtionhallinnon asiakkaille osana **Office 365 US Government Community** -tilauksia. Tässä artikkelissa kuvattu **Power BI -palvelun** versio on suunniteltu Yhdysvaltain valtionhallinnon asiakkaille ja on erillinen ja erilainen kuin **Power BI -palvelun** kaupallinen versio.
 
-Saat lisätietoja **Power BI -palvelusta** Yhdysvaltain valtiohallinnolle, sen ominaisuudet ja rajoitukset mukaan lukien, tutustumalla ohjeartikkeliin [Power BI Yhdysvaltain valtionhallinnon asiakkaille – Yleiskuvaus](service-govus-overview.md).
+Power BI -palvelusta on versio osana [Office 365 Government -palvelupaketteja](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans?rtc=1). Tämä artikkeli on suunniteltu Yhdysvaltain valtionhallinnon asiakkaille, ja tässä kuvattu rekisteröintiprosessi poikkeaa Power BI -palvelun kaupallisesta versiosta.
+
+Saat lisätietoja Power BI -palvelusta Yhdysvaltain valtiohallinnolle tutustumalla ohjeartikkeliin [Power BI Yhdysvaltain valtionhallinnon asiakkaille – Yleiskuvaus](service-govus-overview.md).
 
 > [!NOTE]
 > Tämä artikkeli on tarkoitettu järjestelmänvalvojille, joilla on valtuudet rekisteröidä Yhdysvaltain valtionhallinnon organisaationsa Power BI -käyttöä varten. Jos olet käyttäjä, ota yhteyttä järjestelmänvalvojaan, jos haluat tietoja Yhdysvaltain valtionhallinnon Power BI -tilauksesta.
 > 
 > 
 
-![](media/service-govus-signup/service_govus_signup_1.png)
+## <a name="select-the-right-sign-up-process-for-your-us-government-organization"></a>Valitse oikea rekisteröintiprosessi Yhdysvaltain valtionhallinnon organisaatiollesi
 
-## <a name="select-the-right-sign-up-process-for-your-us-government-organization"></a>Valitse oikealle rekisteröintiprosessi Yhdysvaltain valtionhallinnon organisaatiollesi
-Yhdysvaltain valtionhallinnon organisaatiosi voi olla käyttämässä ensimmäistä kertaa **Office Government -pilvipalvelua**, tai sillä saattaa jo olla tilaus. Seuraavissa osioissa kerrotaan rekisteröitymisvaiheet sen perusteella, missä vaiheessa olet Office Government -pilvipalvelun ja Power BI:n käytössä, ja ne riippuvat olemassa olevasta tilauksestasi.
+Yhdysvaltain valtionhallinnon organisaatiosi voi olla käyttämässä ensimmäistä kertaa valtionhallinnon yhteisöpilvipalvelua tai sillä saattaa jo olla tilaus. Seuraavissa osioissa kerrotaan rekisteröitymisvaiheet sen perusteella, missä vaiheessa olet Office 365 Government -palvelupakettien ja Power BI:n käytössä. Vaiheet riippuvat olemassa olevasta tilauksestasi.
 
-Kun olet rekisteröitynyt Yhdysvaltain valtionhallinnon Power BI -käyttäjäksi, jotkin ominaisuudet eivät välttämättä toimi, ennen kuin myyntiedustaja tai tukihenkilö saa perehdytysprosessisi valmiiksi. Lisätietoja näistä ominaisuuksista on artikkelissa [Power BI Yhdysvaltain valtionhallinnon asiakkaille – Yleiskuvaus](service-govus-overview.md). Jotta voit suorittaa perehdytysprosessin loppuun näiden ominaisuuksien ottamiseksi käyttöön, ota yhteyttä myyntiedustajaan tai tukihenkilöön.
+Kun olet rekisteröitynyt Power BI:n Yhdysvaltain valtionhallinnon käyttäjäksi, aloita yhdessä tilitiimisi kanssa tässä artikkelissa kuvattu [*sallittujen luetteloon lisäämisen* prosessi](#additional-signup-information). Tämä vaihe tarvitaan, jotta organisaatiosi voidaan ottaa täysimääräisesti käyttöön valtionhallinnon yhteisöpilvipalvelussa.
 
-### <a name="us-government-organizations-that-are-new-office-cloud-customers"></a>Yhdysvaltain valtionhallinnon organisaatiot, jotka ovat uusia Officen pilvipalvelun asiakkaita
-Jos organisaatiosi on uusi **Office Government -pilvipalvelun** asiakas, toimi seuraavasti:
+## <a name="sign-up-for-a-new-office-365-government-plan"></a>Rekisteröi uusi Office 365 Government -palvelupaketti
 
-> [!NOTE]
-> Portaalin järjestelmänvalvojan tulisi suorittaa nämä vaiheet.
->
-
-1. Siirry osoitteeseen [https://products.office.com/government/office-365-web-services-for-government](https://products.office.com/government/office-365-web-services-for-government).
-
->[!NOTE]
->Jos et halua tällä hetkellä rekisteröityä Office Government -pilvipalveluun, ota yhteyttä myyntiedustajaasi.
->
-
-2. Valitse Office G3 ja täytä lomake Office-kokeiluversiota varten
-3. Kun olet Officen pilvipalvelun asiakas, jatka alla olevilla Nykyiset Office Government -pilvipalvelun asiakkaat -kohdan vaiheilla
-
-### <a name="existing-office-government-cloud-customers"></a>Nykyiset Office Government -pilvipalvelun asiakkaat
-Jos organisaatio on **Office Government -pilvipalvelun** nykyinen asiakas, mutta sinulla ei ole **Power BI** -tilausta (maksutonta tai muuta), toimi seuraavasti:
+Jos organisaatiosi on uusi julkishallinnon pilvipalveluyhteisön asiakas, hanki Office 365 Government -palvelupaketti noudattamalla seuraavia ohjeita:
 
 > [!NOTE]
-> Portaalin järjestelmänvalvojan tulisi suorittaa nämä vaiheet.
+> Yleisen järjestelmänvalvojan tulisi suorittaa nämä vaiheet.
+>
+
+1. Siirry [Office 365 Government -palvelupaketteihin](https://products.office.com/government/office-365-web-services-for-government).
+2. Valitse **Aloita ilmainen kokeiluversio**.
+3. Kerro meille organisaatiostasi täyttämällä lomake. Valitse organisaatiosi tyyppi avattavasta luettelosta.
+
+   ![Organisaation tyypin valitseminen kokeiluversion rekisteröinnin yhteydessä](media/service-govus-signup/gcc-trial-signup.png)
+
+4. Aloita käyttöönottoprosessi lähettämällä lomake. Microsoftin edustajasi tai kumppanisi voi auttaa kaikissa kysymyksissä.
+
+Kun tämä prosessi on valmis, voit lisätä Power BI -tilauksen noudattamalla nykyisille Office 365 Government -asiakkaille suunnattuja ohjeita.
+
+## <a name="add-power-bi-to-an-office-365-government-plan"></a>Power BI:n lisääminen Office 365 Government -palvelupakettiin
+
+Jos organisaatiollasi on jo Office 365 Government -palvelupaketti, lisää Power BI -tilaus noudattamalla seuraavia ohjeita:
+
+> [!NOTE]
+> Yleisen järjestelmänvalvojan tulisi suorittaa nämä vaiheet.
 > 
 > 
 
-1. Kirjaudu sisään olemassa olevaan Office Government -pilvipalvelun tiliisi ja siirry hallintaportaaliin
-2. Valitse **Laskutus**.
-3. Valitse **Ostopalvelut**.
-4. Valitse Power BI Pro Government -vaihtoehto ja valitse joko **Kokeile** tai **Osta nyt**
-5. Viimeistele tilaus
-6. Määritä käyttäjiä tilille.
-   
-   ![](media/service-govus-signup/service_govus_signup_5.png)
-7. Kirjaudu sisään **Power BI -palveluun** Yhdysvaltain valtionhallinnon asiakkaille osoitteessa [https://app.powerbigov.us](https://app.powerbigov.us)
+1. Kirjaudu sisään Microsoft 365 -hallintakeskukseen käyttämällä yleisen tai laskutuksen järjestelmänvalvojan tunnistetietojasi.
+2. Valitse **Laskutus** > **Ostopalvelut**.
+4. Etsi Power BI Pro Government -tarjous suorittamalla haku tai vierittämällä ja valitse **Kokeile** tai **Osta nyt**.
+5. Viimeistele tilaus.
+6. Määritä käyttöoikeudet käyttäjätileille.
 
 ## <a name="additional-signup-information"></a>Lisätietoa rekisteröitymisestä
-Alla on lisätietoja rekisteröitymisestä **Yhdysvaltain valtionhallinnon Power BI** -palveluun eri käyttöoikeuksien siirtotapauksissa.
 
-### <a name="direct-power-bi-trial-to-pro-customer-onboarding"></a>Suora Power BI -kokeiluversio Pro-asiakkaan perehdytykseen
-* Valitse Laskutus > Osta palvelu > Power BI Pro Gov ja valitse osto kokeiluversion sijaan
-* Täytä tarvittavat tiedot ja hanki käyttöoikeudet
-* Poista Power BI Pro -kokeiluversio tai poista vanhat käyttöoikeudet ja määritä käyttäjille uudet
-* Kirjaudu sisään osoitteessa [https://app.powerbigov.us](https://app.powerbigov.us)
+Ennen kuin voit käyttää Yhdysvaltain valtionhallinnon Power BI -palveluita, sinun on tehtävä yhteistyötä Microsoft-tilitiimisi kanssa käynnistääksesi *sallittujen luetteloon lisäämisen* organisaatiollesi. Sallittujen luetteloon lisääminen on prosessi, jota Power BI:n teknikkojen työryhmä käyttää asiakkaiden siirtämiseksi kaupallisesta pilvipalveluympäristöstä suojattuun valtionhallinnon yhteisöpilvipalveluun. Tämä vaihe takaa sen, että Yhdysvaltain valtionhallinnon pilvipalvelun ominaisuudet toimivat odotetulla tavalla. 
 
-### <a name="reseller-power-bi-trial-to-pro-customer-onboarding"></a>Jälleenmyyjän Power BI -kokeiluversio Pro-asiakkaan perehdytykseen
-Valitse **Laskutus > Tilaukset** ja valitse **Power BI Pro julkishallinnolle** -tilaus. Näytössä näkyy:
+Jos haluat aloittaa sallittujen luetteloon lisäämisen, lisätietoja saat ottamalla yhteyttä Microsoft-tilitiimiisi. Vain järjestelmänvalvojat voivat pyytää sallittujen luetteloon lisäämistä. Prosessi kestää noin kolme viikkoa. Tänä aikana Power BI:n teknikkojen työryhmä tekee tarvittavat muutokset varmistaakseen, että vuokraaja toimii oikein Yhdysvaltain valtionhallinnon pilvipalvelussa.
 
-* Käytettävissä
-* Määritetty
-* Määritä käyttäjille -linkit
-* Jos sinulla on yhä kokeiluversio määritettynä:
-  * Napsauta **Määritetty** kokeiluversion tilauksen kohdalla ja poista käyttäjät, jotka haluat lisätä maksulliseen tilaukseen
-  * Siirry Maksettu tilaus -kohtaan ja määritä kyseiset käyttäjät
-
-### <a name="whitelisting-instructions"></a>Ohjeet sallittujen luetteloon lisäämiseksi
-*Sallittujen luetteloon lisääminen* on prosessi, jota Power BI:n teknikkojen työryhmä käyttää asiakkaiden siirtämiseksi kaupallisesta pilvipalveluympäristöstä suojattuun valtionhallinnon pilvipalveluympäristöön. Tämä takaa sen, että Yhdysvaltain valtionhallinnon pilvipalvelun ominaisuudet toimivat odotetulla tavalla. Kaikkien nykyisten (tai uusien) Yhdysvaltain valtionhallinnon asiakkaiden, jotka ostavat Yhdysvaltain valtionhallinnon **Power BI** -palveluita ensimmäistä kertaa, *täytyy* aloittaa seuraava sallittujen luetteloon lisäämisprosessi. Prosessi on tehtävä ennen asennusta tai siirtoa Yhdysvaltain valtionhallinnon **Power BI** -palveluihin. 
-
-Jos haluat, että vuokraajasi on lisätty *sallittujen luetteloon* Yhdysvaltain valtionhallinnon pilvipalvelussa, pyydä Microsoft-tilitiimiltä apua tähän liittyen. Vain järjestelmänvalvojat voivat tehdä tämän pyynnön. *Sallittujen luetteloon lisääminen* kestää noin kolme viikkoa, jonka aikana Power BI:n teknikkojen työryhmä tekee tarvittavat muutokset varmistaakseen, että vuokraaja toimii oikein Yhdysvaltain valtionhallinnon pilvipalvelussa.
-
-Asiakkaat, jotka siirtyvät Power BI:n **maksuttomista** käyttöoikeuksista **Yhdysvaltain valtionhallinnon Power BI** -käyttäjiksi (ja siten siirtyvät liittyviin **Pro**-käyttöoikeuden ominaisuuksiin, jotka on kuvattu aiemmin tässä artikkelissa) kohtaavat tämän artikkelin seuraavassa osassa kuvattuja ongelmia, kunnes Power BI:n teknikkojen työryhmä on lisännyt heidän vuokraajansa *sallittujen luetteloon*.
-
-### <a name="mixed-free-and-pro-licenses-in-us-government-tenants"></a>Sekä maksuttomat että Pro-käyttöoikeudet Yhdysvaltain valtionhallinnon vuokraajissa
-Jos vuokraajassasi on sekä maksuttomat että Yhdysvaltain valtionhallinnon Pro-käyttöoikeudet, kummatkin käyttöoikeudet pysyvät näkyvissä, mutta jompi kumpi käyttöoikeustyyppi ei toimi oikein. Jos vuokraaja läpäisee onnistuneesti *sallittujen luetteloon lisäämisen*, tapahtuu seuraavaa:
-
-* Maksuttoman käyttöoikeuden käyttäjät eivät enää voi kirjautua Power BI:hin käyttämällä **Power BI Desktopia**, ja he saattavat kokea aukkoja toiminnoissa seuraavassa osassa kuvatulla tavalla.
-* Kaikki asiakkaat, joille on määritetty Yhdysvaltain valtionhallinnon Pro-käyttöoikeudet, voivat käyttää toimintoja odotetulla tavalla, mukaan lukien yhdyskäytävät, Power BI Desktop ja mobiilisovellukset.
-
-Kun käytössäsi on samanaikaisesti maksuttomat ja Pro-käyttöoikeudet Yhdysvaltain valtionhallinnon vuokraajassa ja *sallittujen luetteloon lisäämisen* prosessi on käynnissä, seuraavat tapahtumat ovat mahdollisia:
-
-**Ennen _lisäämistä sallittujen luetteloon_** :
-
-* Käyttäjät, joilla on maksuttomat käyttöoikeudet, suoritetaan kaupallisessa pilvipalvelussa
-* Yhdysvaltain valtionhallinnon Pro-käyttöoikeudet näkyvät portaalissa, ja järjestelmänvalvoja voi määrittää näitä käyttöoikeuksia käyttäjille. Yhdysvaltain valtionhallinnon Pro-käyttäjät eivät menetä tietoja maksuttomista käyttöoikeuksistaan, kun järjestelmänvalvoja on määrittänyt Yhdysvaltain valtionhallinnon Pro-käyttöoikeuden. Määritetyt käyttäjät voivat käyttää Power BI Pro -toimintoja Yhdysvaltain valtionhallinnon asiakkaille, mutta seuraavassa luettelossa mainitut toimintojen aukot ovat olemassa, kunnes vuokraaja on onnistuneesti *lisätty sallittujen luetteloon*:
-  
-  * Yhdyskäytävä, mobiili ja Power BI Desktop eivät voi todentaa.
-  * Et voi käyttää Azuren kaupallisia tietolähteitä.
-  * PBIX-tiedostot on ladattava manuaalisesti kaupallisesta Power BI -palvelusta.
-  * Power BI -mobiilisovellukset eivät ole käytettävissä.
-
-**_Sallittujen luetteloon lisäämisen_ jälkeen**:
-
-* Kaupallisessa Power BI -palvelussa olevat maksuttomat käyttäjät voivat jatkaa suorittamista, mutta ne lakkaavat todentamasta odotetulla tavalla.
-* Yhdysvaltain valtionhallinnon pilvipalvelussa olevat Pro-käyttäjät voivat käyttää **Power BI Yhdysvaltain valtionhallinnon asiakkaille** -palvelua odotetulla tavalla.
-
-Tunnistaakseen vuokraajassa olevat käyttäjät, joilla on käytössään Power BI:n maksuton käyttöoikeus, järjestelmänvalvojat voivat suorittaa käyttöoikeuksien raportin, minkä jälkeen maksuttoman käyttöoikeuden käyttäjät näkyvät **Power BI:n vakiokäyttäjinä**.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Voit tehdä Power BI:llä kaikenlaista. Saat lisätietoja ja kursseja, mukaan lukien artikkelin, jossa näytetään, miten voit rekisteröityä palveluun, tutustumalla seuraaviin resursseihin:
 
 * [Power BI Yhdysvaltain valtionhallinnolle – Yleiskuvaus](service-govus-overview.md)
-* [Power BI:n ohjattu oppiminen](guided-learning/index.yml)
-* [Power BI -palvelun käytön aloittaminen](service-get-started.md)
-* [Mikä on Power BI Desktop?](desktop-what-is-desktop.md)
-
+- [Miten voin ostaa Microsoft 365 Governmentin?](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy#how-do-i-buy-microsoft-365-government)

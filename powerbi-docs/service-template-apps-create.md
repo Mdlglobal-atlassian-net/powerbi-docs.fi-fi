@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 6b7b472b0c16c47ae2497c5dc8c74cc1c4d778d4
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.openlocfilehash: 4062cb8a417ce20f4d6823a3e68d26ad12b9a6c9
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436015"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82066344"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Mallisovelluksen luominen Power BI:ssä
 
@@ -166,7 +166,7 @@ Käydään seuraavaksi vaiheet läpi:
 
     Jos et näe tätä asetusta, ota yhteyttä Power BI-järjestelmänvalvojaasi ja pyydä häntä myöntämään [mallisovellusten kehitysoikeudet](service-admin-portal.md#template-apps-settings) hallintaportaalissa.
 11. Vahvista valintasi valitsemalla **Ylennä**.
-12. Kopioi tämä uusi URL-osoite, niin voit jakaa sen oman vuokraajasi ulkopuolelle testausta varten. Tämän linkin lähettämällä voit myös aloittaa sovelluksesi jakamisen AppSourcessa luomalla [uuden tarjouksen pilvikumppaniportaaliin](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Lähetä vain esituotannon linkkejä pilvikumppaniportaaliin. Vasta kun sovellus on hyväksytty ja saat ilmoituksen, että se on julkaistu AppSourcessa, voit korottaa kyseisen paketin tuotantoon Power BI:ssä.
+12. Kopioi tämä uusi URL-osoite, niin voit jakaa sen oman vuokraajasi ulkopuolelle testausta varten. Tämän linkin lähettämällä voit myös aloittaa sovelluksesi jakamisen AppSourcessa luomalla [uuden tarjouksen kumppanikeskukseen](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Lähetä vain esituotannon linkkejä kumppanikeskukseen. Vasta kun sovellus on hyväksytty ja saat ilmoituksen, että se on julkaistu AppSourcessa, voit korottaa kyseisen paketin tuotantoon Power BI:ssä.
 13. Kun sovelluksesi on valmis tuotantoon tai jaettavaksi AppSourcen kautta, palaa takaisin **Julkaisuhallinta**-ruutuun ja valitse **Esituotanto**-kohdan vierestä **Ylennä sovellus**.
 14. Vahvista valintasi valitsemalla **Ylennä**.
 
@@ -174,10 +174,10 @@ Käydään seuraavaksi vaiheet läpi:
 
     ![Sovellus tuotannossa](media/service-template-apps-create/power-bi-template-app-production.png)
 
-Jos haluat saada sovelluksesi tuhansien Power BI -käyttäjien saataville maailmanlaajuisesti, kannustamme sinua lähettämään sen AppSourceen. Lisätietoja on kohdassa [Power BI -sovellustarjous](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
+Jos haluat saada sovelluksesi tuhansien Power BI -käyttäjien saataville maailmanlaajuisesti, kannustamme sinua lähettämään sen AppSourceen. Lisätietoja on kohdassa [Power BI -sovellustarjous](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 Ohjeaiheessa [Mallisovellusten asentaminen, mukauttaminen ja jakaminen organisaatiossa](service-template-apps-install-distribute.md) voit selvittää, miten asiakkaasi käsittelevät mallisovellusta.
 
-Lisätietoja sovelluksen jakamisesta on kohdassa [Power BI -sovellustarjous](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
+Lisätietoja sovelluksen jakamisesta on kohdassa [Power BI -sovellustarjous](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).

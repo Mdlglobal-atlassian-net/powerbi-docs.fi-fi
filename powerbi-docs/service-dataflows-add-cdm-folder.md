@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: f1e48fb2f20c531f4dc66e86d13b76f54165b81c
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: cc47820e5903426d4f3635c78e0dc108049f897e
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80404756"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439338"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Lisää CDM-kansio Power BI:hin tietovuona (esikatselu)
 
@@ -30,6 +30,12 @@ Tietovoiden luomiseen CDM-kansioista on muutamia vaatimuksia, kuten seuraavassa 
 * Sinulla on oltava luku- ja käyttöoikeudet kaikkiin CDM-kansiossa oleviin tiedostoihin ja kansioihin, jotta ne voi lisätä Power BI:hin.
 
 Seuraavissa osissa kuvataan tietovuon luominen CDM-kansiosta.
+
+## <a name="authorizing-users-for-cdm-folders-to-create-a-dataflow"></a>Tietovuon luomisen salliminen CDM-kansioiden käyttäjille
+
+Jotta voit luoda tietovuon CDM-kansiosta, seuraavat käyttöoikeudet on lisättävä:
+* Käyttäjän, joka käyttää CDM-kansiota Power BI:n kautta, on oltava luetteloituna tallennustilin  **Säilön Blob-tietojen omistaja** -roolissa.
+* Käyttäjällä, joka käyttää CDM-kansiota Power BI:n kautta, on oltava **Luku**- ja **Suoritus-käyttöoikeuden** käyttöoikeusluettelot sekä itse CDM-kansiossa että siinä sijaitsevissa tiedostoissa ja kansioissa. 
 
 ## <a name="create-a-dataflow-from-a-cdm-folder"></a>Tietovuon luominen CDM-kansiosta
 

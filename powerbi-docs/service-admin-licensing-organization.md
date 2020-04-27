@@ -1,158 +1,106 @@
 ---
 title: Power BI -käyttöoikeudet organisaatiossasi
-description: 'Tutustu eri käyttöoikeustyyppeihin, jotka ovat käytettävissä Power BI:ssä: maksuttomat käyttöoikeudet, Power BI Pro ja Power BI Premium.'
+description: Yleiskatsaus Power BI:ssä käytettävissä olevista käyttöoikeustyypeistä sekä siitä, miten järjestelmänvalvojat ostavat ja hallinnoivat organisaationsa käyttöoikeuksia.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 04/08/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 7a2cc9a1deb87e94c0887b1ae00174d6791cf712
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: a41e9453158c38a208fe7f4ac937b4e86a515f4b
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74700023"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81436318"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI -käyttöoikeudet organisaatiossasi
 
-[!INCLUDE [license-capabilities](includes/license-capabilities.md)]
+Käyttäjälle mahdolliset toiminnot Power BI -palvelussa määräytyvät sen mukaan, mikä heidän käyttäjäkohtainen käyttöoikeutensa on ja onko heidän käsittelemänsä sisältö Power BI Premium -kapasiteettiin määritetyssä työtilassa. Kaikilla Power BI -palvelun käyttäjillä on oltava käyttöoikeus.
 
-Tässä artikkelissa keskitytään käyttäjäkohtaiseen käyttöoikeuteen järjestelmänvalvojan näkökulmasta.
+Käyttäjät voivat hankkia käyttöoikeuden kahdella tavalla. Käyttäjät voivat hankkia oman maksuttoman käyttöoikeuden tai Pro-käyttöoikeuden käyttämällä omatoimisen rekisteröitymisen ja työpaikan tai oppilaitoksen tilinsä avulla. Vaihtoehtoisesti järjestelmänvalvojat voivat hankkia Power BI -tilauksen ja määrittää käyttöoikeudet käyttäjille.
 
-## <a name="manage-power-bi-pro-licenses"></a>Power BI Pro- käyttöoikeuksien hallinta
+Tässä artikkelissa keskitytään palvelujen ostamiseen käyttäjäkohtaiseen käyttöoikeuteen järjestelmänvalvojan näkökulmasta. Lisätietoja siitä, miten käyttäjät voivat hankkia oman käyttöoikeutensa, on artikkelissa [Rekisteröityminen Power BI:tä varten yksityishenkilönä](service-self-service-signup-for-power-bi.md).
 
-Järjestelmänvalvojana voit ostaa ja määrittää Power BI Pro -käyttöoikeuksia, ja voit myös rekisteröidä Power BI Pro -kokeiluversion organisaatiollesi. Yksittäiset käyttäjät voivat myös rekisteröityä Power BI Pro -kokeiluversion käyttäjäksi.
+## <a name="who-can-purchase-and-assign-licenses"></a>Kuka voi ostaa ja määrittää käyttöoikeuksia?
 
-### <a name="purchase-power-bi-pro-licenses"></a>Power BI Pro- käyttöoikeuksien ostaminen
+Sinulla on oltava määritetty järjestelmänvalvojarooli, jotta voit ostaa tai määrittää käyttöoikeuksia organisaatiossasi. Järjestelmänvalvojaroolit määritetään Azure Active Directory -hallintakeskuksen tai Microsoft 365 -hallintakeskuksen avulla. Seuraavasta taulukosta näet, mikä rooli vaaditaan ostamiseen ja käyttöoikeuksiin liittyvissä tehtävissä. Lisätietoja Azure Active Directoryn järjestelmänvalvojarooleista on artikkelissa [Järjestelmänvalvojaroolien tarkasteleminen ja määrittäminen Azure Active Directoryssa](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal). Lisätietoja Microsoft 365:n järjestelmänvalvojarooleista ja parhaista käytännöistä on artikkelissa [Tietoja järjestelmänvalvojarooleista](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
-Järjestelmänvalvojana voit ostaa Power BI Pro -käyttöoikeudet Microsoft 365:n tai sertifioidun Microsoft-kumppanin kautta. Kun olet ostanut käyttöoikeudet, voit määrittää ne yksittäisille käyttäjille. Jos haluat lisätietoja, katso kohta [Power BI Pro -käyttöoikeuksien hankinta ja määritys](service-admin-purchasing-power-bi-pro.md).
+| Kuka voi ostaa palveluja ja käyttöoikeuksia? | Kuka voi hallita käyttöoikeuksia? |
+| --------------- | --------------- |
+| Laskutuksen järjestelmänvalvoja | Käyttöoikeuksien järjestelmänvalvoja |
+| Yleinen järjestelmänvalvoja | Käyttäjäjärjestelmänvalvoja |
+|  | Yleinen järjestelmänvalvoja |
+
+Näillä rooleilla hallinnoidaan organisaatiota. Jos haluat tietoja Power BI -palvelun järjestelmänvalvojarooleista, lue artikkeli [Power BI -järjestelmänvalvojaroolien kuvaus](service-admin-role.md).
+
+## <a name="get-power-bi-for-your-organization"></a>Hanki Power BI organisaatiolle
+
+Yleinen järjestelmänvalvoja tai laskutuksen järjestelmänvalvoja voi rekisteröityä Power BI -palveluun ja ostaa käyttöoikeuksia organisaationsa käyttäjille. Jos et ole vielä valmis ostamaan, valitse Power BI Pro -kokeilutilaus. Saat 25 käyttöoikeutta, joita voidaan käyttää yhden kuukauden ajan. Jos haluat vaiheittaiset ohjeet rekisteröitymiseen, lue artikkeli [Power BI -tilauksen hankkiminen organisaatiollesi](admin/service-admin-org-subscription.md).
+
+## <a name="about-self-service-sign-up"></a>Tietoja omatoimisesta kirjautumisesta
+
+Yksittäiset käyttäjät voivat hankkia oman Power BI -käyttöoikeutensa rekisteröitymällä työpaikan tai oppilaitoksen tilinsä avulla. Maksuttoman käyttöoikeuden avulla käyttäjät voivat tutustua Power BI:n henkilökohtaisten tietojen analysointiin ja visualisointiin Oman työtilan avulla, mutta he eivät voi tehdä yhteistyötä muiden käyttäjien kanssa. Sisällön jakamiseen tarvitaan Power BI Pro -käyttöoikeus. Käyttäjät voivat päivittää käyttöoikeustyyppinsä Pro-versioksi tai rekisteröityä suoraan Pro-käyttöoikeuteen, jos organisaatiossa käytetään kaupallista pilvipalvelua. Pro-käyttöoikeuden suora ostaminen tai siihen päivittäminen ei ole käytettävissä opetusorganisaatioilla tai organisaatioilla, jotka on otettu käyttöön valtionhallinnon tai itsenäisen pilvipalvelun esiintymissä.
+
+Jos et halua, että omatoiminen rekisteröityminen on organisaatiosi käyttäjien käytettävissä, katso artikkelista [Omatoimisen rekisteröitymisen ottaminen käyttöön tai poistaminen käytöstä](admin/service-admin-disable-self-service.md) ohjeet sen käytöstä poistamiseen.
+
+Jos haluat nähdä, keillä organisaatiosi käyttäjillä saattaa jo olla käyttöoikeus, katso ohjeet artikkelista [Käyttäjien käyttöoikeuksien tarkasteleminen ja hallinta](admin/service-admin-manage-licenses.md).
+
+## <a name="license-types-and-capabilities"></a>Käyttöoikeustyypit ja toiminnot
+
+Käyttäjäkohtaisia Power BI -käyttöoikeuksia on kahdentyyppisiä: maksuttomia käyttöoikeuksia ja Pro-käyttöoikeuksia. Käyttäjän tarvitsema käyttöoikeustyyppi määräytyy sen mukaan, minne sisältö tallennetaan ja miten käyttäjä käyttää sisältöä. Sisällön mahdolliset tallennussijainnit määräytyvät organisaatiosi [tilaustyypin](#subscription-types) mukaan.
+
+Yksi tilaustyyppi, [Power BI Premium](service-admin-premium-purchase.md), sallii maksuttoman käyttöoikeuden käyttäjien käsitellä Premium-kapasiteettiin varattujen työtilojen sisältöä. Premium-kapasiteetin ulkopuolella käyttäjä, jolla on maksuton käyttöoikeus, voi käyttää Power BI -palvelua vain yhteyden muodostamiseen tietoihin ja raporttien ja koontinäyttöjen luomiseen henkilökohtaisessa työtilassa. Hän ei voi vaihtaa sisältöä muiden kanssa eikä julkaista sisältöä sovellustyötiloihin.
+
+Power BI -vakiotilaus käyttää jaettua kapasiteettia. Kun sisältö tallennetaan jaettuun kapasiteettiin, käyttäjät, joille on määritetty Power BI Pro -käyttöoikeus, voivat tehdä yhteistyötä vain muiden Power BI Pro -käyttäjien kanssa. He voivat kuluttaa muiden käyttäjien julkaisemaa sisältöä, julkaista sisältöä sovelluksen työtiloihin, jakaa koontinäyttöjä sekä tilata koontinäyttöjä ja raportteja.  Kun työtilat ovat Premium-kapasiteetissa, Pro-käyttäjät voivat jakaa sisältöä käyttäjille, joilla ei ole Power BI Pro -käyttöoikeutta.
+
+Alla olevassa taulukossa on yhteenveto eri käyttöoikeustyyppien perustoiminnoista. Yksityiskohtainen erittely käyttöoikeustyyppikohtaisista ominaisuuksien käytettävyydestä on artikkelissa [Ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md).
+
+| Käyttöoikeustyyppi | Toiminnot, kun työtila on jaetussa kapasiteetissa | Lisätoiminnot, kun työtila on Premium-kapasiteetissa |
+| --------- | ----------- | ----------- |
+| Power BI (ilmainen) | Sisällön käyttö Omassa työtilassa | Muiden kanssa jaetun sisällön kuluttaminen |
+| Power BI Pro | Sisällön julkaiseminen sovellustyötiloihin, koontinäyttöjen ja raporttien jakaminen sekä jakaminen käyttäjille, joilla on Pro-käyttöoikeus | Jakaminen käyttäjille, joilla on maksuton käyttöoikeus |
+
+## <a name="subscription-types"></a>Tilaustyypit
+
+Kaikki Microsoftin käyttäjäpohjaiset kaupalliset käyttöoikeustilaukset perustuvat Azure Active Directory -käyttäjätietoihin. Tämä tarkoittaa sitä, että sinun on kirjauduttava sisään käyttäjätiedoilla, joita Azure Active Directory tukee kaupallisissa käyttöoikeuksissa. Voit lisätä Power BI -tilauksen mihin tahansa Microsoft-tilaukseen, joka käyttää Azure Active Directoryn tunnistetietopalveluja. Jotkin tilaukset, kuten Office 365 E5, sisältävät Power BI Pro -käyttöoikeuden, joten erillistä Power BI -rekisteröitymistä ei tarvita.
+
+Organisaatioita varten on kahdentyyppisiä Power BI -tilauksia: omatoiminen Power BI ja Power BI Pro sekä edistynyt analytiikka Power BI Premiumin kanssa.
+
+Omatoimisessa Power BI Pro -vakiotilauksessa järjestelmänvalvojat määrittävät käyttäjäkohtaiset käyttöoikeudet. Power BI Pro -käyttöoikeuksissa on käyttäjäkohtainen kuukausimaksu, joka mahdollistaa yhteistyön, julkaisemisen, jakamisen ja ad hoc -analyysin. Sisältö tallennetaan jaettuun tallennuskapasiteettiin, joka on täysin Microsoftin hallitsema.
+
+Power BI Premium -tilaus varaa organisaatiolle erillisen kapasiteetin. Premium sopii suuryrityksen liiketoimintatiedoille, massadatan analysointiin, pilviraportointiin ja paikalliseen raportointiin ja sisältää edistyneet hallinnan ja käyttöönoton ohjaustoiminnot. Organisaation kapasiteetin järjestelmänvalvojat hallinnoivat erillisiä käsittely- ja tallennus resursseja. Tästä erillisestä ympäristöstä veloitetaan kuukausimaksu. Muiden Premium-etujen lisäksi Premium-kapasiteettiin tallennettua sisältöä voi käyttää ja jakaa käyttäjille, joilla ei ole Power BI Pro -käyttöoikeutta. Vähintään yhdellä käyttäjällä on oltava Power BI Pro -käyttöoikeus, joka on määritetty käyttämään Premiumia, ja sisällöntuottajat ja kehittäjät tarvitsevat silti Power BI Pro -käyttöoikeuden.
+
+Nämä kaksi tilaustyyppiä eivät ole toisiaan poissulkevia. Samalla käyttäjällä voi olla sekä Power BI Premium- että Power BI Pro -käyttöoikeus. Tällöin Premium-kapasiteettiin tallennettu sisältö voidaan jakaa kaikkien käyttäjien kanssa, ja myös jaettu kapasiteetti on käytettävissä. Lisätietoja kapasiteetti rajoituksista on artikkelissa [Tietojen tallennustilan hallinta Power BI -työtiloissa](service-admin-manage-your-data-storage-in-power-bi.md).
+
+Jos haluat vertailla tuotteiden ominaisuuksia ja hinnoittelua, lue artikkeli [Power BI -hinnat](https://powerbi.microsoft.com/pricing).
+
+## <a name="guest-user-access"></a>Vieraskäyttöoikeus
+
+Haluat ehkä jakaa sisältöä käyttäjille, jotka ovat organisaatiosi ulkopuolella. Sisältöä voi käyttää ulkopuolisten käyttäjien kanssa kutsumalla heidät tarkastelemaan sisältöä vieraina. Azure Active Directory Business-to-Business (Azure AD B2B) mahdollistaa sisällön jakamisen ulkopuolisten vieraskäyttäjien kanssa. Jakaminen ulkoisten käyttäjien kanssa vaatii seuraavien edellytysten täyttymistä:
+
+- Mahdollisuus vaihtaa sisältöä ulkoisten käyttäjien kanssa on otettava käyttöön.
+
+- Vieraskäyttäjällä on oltava tarvittavat käyttöoikeudet, jotta hän voi tarkastella jaettua sisältöä.
+
+Lisätietoja vieraskäyttöoikeudesta on artikkelissa [Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla](service-admin-azure-ad-b2b.md).
+
+## <a name="purchase-power-bi-pro-licenses"></a>Power BI Pro- käyttöoikeuksien ostaminen
+
+Järjestelmänvalvojana voit ostaa Power BI Pro -käyttöoikeudet Microsoft 365:n tai Microsoft-kumppanin kautta. Kun olet ostanut käyttöoikeudet, voit määrittää ne yksittäisille käyttäjille. Jos haluat lisätietoja, katso kohta [Power BI Pro -käyttöoikeuksien hankinta ja määritys](service-admin-purchasing-power-bi-pro.md).
 
 ### <a name="power-bi-pro-license-expiration"></a>Power BI Pro -käyttöoikeuden vanhentuminen
 
-Power BI Pro -käyttöoikeuden päätyttyä alkaa lisäaika. Jos kyseessä on volyymikäyttöoikeushankinta, lisäaika on 90 päivää. Jos kyseessä on suoraan hankittu käyttöoikeus, lisäaika on 30 päivää.
+Power BI Pro -käyttöoikeuden päätyttyä alkaa lisäaika. Jos kyseessä on volyymikäyttöoikeushankinta, lisäaika on 90 päivää. Jos kyseessä on suoraan ostettu käyttöoikeus, lisäaika on 30 päivää.
 
 Power BI Pro -tilauksen elinkaari on sama kuin Office 365:llä. Lisätietoja on artikkelissa [Mitä tiedoilleni ja käyttöoikeudelleni tapahtuu, kun Office 365 for Business -tilaus päättyy?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
 
-### <a name="power-bi-pro-trial-for-individuals"></a>Power BI Pron kokeiluversio yksittäisille käyttäjille
-
-Yksittäiset käyttäjät organisaatiossasi voivat rekisteröityä Power BI Pro -kokeiluversion käyttäjäksi. Jos haluat lisätietoja, katso kohta [Rekisteröityminen Power BI:hin yksityishenkilönä](service-self-service-signup-for-power-bi.md).
-
-Käyttäjät, jotka hyödyntävät tätä tuotekohtaista Power BI Pro -kokeiluversiota yksityishenkilöille, eivät näy Microsoft 365 -hallintakeskuksessa Power BI Pro Trial -käyttäjinä (he näkyvät Power BI:n ilmaiskäyttäjinä). He näkyvät kuitenkin Power BI Pro -kokeiluversion käyttäjinä Power BI:n tallennussivun hallinnassa.
-
-### <a name="power-bi-pro-trial-for-organizations"></a>Power BI Pron kokeiluversio organisaatioille
-
-Jos haluat hankkia ja ottaa käyttöön Power BI -kokeilujakson käyttöoikeudet useille organisaation käyttäjille siten, ettei yksittäisiltä käyttäjiltä edellytetä käyttöehtojen hyväksymistä, voit rekisteröidä Power BI Pro -kokeiluversion organisaatiollesi.
-
-Pidä mielessä seuraavat asiat ennen rekisteröitymistä:
-
-* Jotta voit rekisteröityä, sinulla on oltava [**Yleinen järjestelmänvalvoja**- tai **Laskutuksen järjestelmänvalvoja**](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) -rooli Microsoft 365:ssä.
-
-* Jokaista vuokraajaa kohti on rajattu vain yksi organisaatiokohtainen kokeiluversio. Tämä tarkoittaa sitä, että jos vuokraajallasi on jo käytössä Power BI Pro -kokeiluversio, et voi enää hankkia sitä uudelleen. Jos tarvitset apua, ota yhteyttä [Office 365:n laskutustukeen](https://support.office.microsoft.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671).
-
-1. Siirry [Microsoft 365 -hallintakeskukseen](https://portal.office.com/adminportal/home#/homepage).
-
-1. Valitse siirtymisruudussa **Laskutus** ja sitten **Tilaukset**.
-
-   ![Laskutus ja tilaukset](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-05.png)
-
-1. Valitse oikealta puolelta **Lisää tilauksia**.
-
-   ![Lisää tilauksia](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-06.png)
-
-1. **Muut palvelupaketit** -kohdan alla siirrä hiiren osoitin Power BI Pron kolmen pisteen ( **. . .** ) päälle ja valitse **Aloita ilmaisen kokeiluversion käyttö**.
-
-   ![Aloita ilmainen kokeilu](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-07.png) 
-
-1. Valitse tilauksen vahvistusnäytöllä **Kokeile nyt**.
-
-1. Valitse tilausvahvistuksessa **Jatka**.
-
-Voit nyt [määrittää käyttöoikeuksia Office 365:ssä](https://support.office.com/article/assign-licenses-to-users-in-office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
-
-## <a name="manage-power-bi-free-licenses"></a>Maksuttomien Power BI- käyttöoikeuksien hallinta
-
-Organisaatiosi käyttäjät voivat saada pääsyn maksuttomiin Power BI -käyttöoikeuksiin kahdella eri tavalla:
-
-* Voit antaa heille Power BI -lisenssin Microsoft 365 -hallintakeskuksessa.
-
-* Jos käyttäjä [rekisteröityy Power BI -tilin](service-self-service-signup-for-power-bi.md) käyttäjäksi, käyttäjälle määritetään maksuton käyttöoikeus.
-
-### <a name="requesting-and-assigning-free-licenses"></a>Maksuttomien käyttöoikeuksien pyytäminen ja määrittäminen
-
-Jos aiot hallita käyttöoikeuspyyntöjä ja määrityksiä keskitetysti, tarkista ensin, onko sinulla jo rajoittamaton Power BI (ilmainen) -käyttöoikeuslohko vuokraajassasi.
-
-Tämä käyttöoikeuslohko tulee näkyviin sen jälkeen, kun joku rekisteröityy ensimmäistä kertaa Power BI:hin yksittäisenä käyttäjänä. Prosessin aikana tämä käyttöoikeuslohko kiinnittyy organisaatioosi ja käyttöoikeus määritetään rekisteröityvälle käyttäjälle.
-
-1. Microsoft 365 -hallintakeskuksen kohdassa **Laskutus** > **Käyttöoikeudet** valitse **rajoittamaton**.
-
-    ![Ilmainen rajoittamaton käyttöoikeuslohko](media/service-admin-licensing-organization/unlimited-licenses.png)
-
-1. Jos lohko on käytettävissä, voit nyt [määrittää käyttöoikeuksia Office 365:ssä](https://support.office.com/article/assign-licenses-to-users-in-office-365-for-business-997596b5-4173-4627-b915-36abac6786dc). Jos lohko ei ole käytettävissä, jos sinulla on kaksi vaihtoehtoa:
-
-    * Organisaatiosi jäsen voi rekisteröityä erikseen, jolloin rajoittamattoman lohkon luominen käynnistyy.
-
-    * Voit siirtyä seuraavaan vaiheeseen, jossa voit rekisteröidä kiinteän määrän käyttöoikeuksia.
-
-Jos rajoittamaton Power BI (ilmainen) -käyttöoikeuslohko ei ole käytettävissä etkä halua tehdä yksittäisiä rekisteröintejä, noudata näitä ohjeita.
-
-1. Siirry [Microsoft 365 -hallintakeskukseen](https://portal.office.com/admin/default.aspx).
-
-1. Valitse siirtymisruudusta **Laskutus** > **Tilaukset**.
-
-1. Valitse oikealta puolelta **Lisää tilauksia +** .
-
-1. **Muut palvelupaketit** -kohdan alla siirrä hiiren osoitin Power BI (ilmainen) -version kolmen pisteen ( **. . .** ) päälle ja valitse **Osta nyt**.
-
-    ![Osta nyt – Power BI (ilmainen)](media/service-admin-licensing-organization/buy-powerbi-free.png)
-
-1. Syötä lisättävien käyttöoikeuksien määrä ja valitse sitten **Siirry maksamaan** tai **Lisää ostoskoriin**.
-
-1. Anna tarvittavat tiedot uloskuittaus-työnkulkuun.
-
-    Tämä menetelmä ei vaadi maksua, vaikka luottokorttitiedot tuleekin syöttää pyydettäessä tai valita maksutavaksi lasku.
-
-1. Voit nyt [määrittää käyttöoikeuksia Office 365:ssä](https://support.office.com/article/assign-licenses-to-users-in-office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
-
-1. Jos haluat lisätä uusia käyttöoikeuksia myöhemmin, palaa takaisin **Lisää tilauksia** -kohtaan ja valitse sitten (ilmainen) Power BI **Muuta käyttöoikeuksien määrää**.
-
-    ![Muokkaa käyttöoikeuksien määrää](media/service-admin-licensing-organization/change-license-quantity.png)
-
-### <a name="enable-or-disable-individual-user-sign-up-in-azure-active-directory"></a>Ota yksittäisten käyttäjien rekisteröityminen käyttöön tai poista se käytöstä Azure Active Directorysta
-
-Voit järjestelmänvalvojana joko ottaa käyttöön yksittäisten käyttäjien rekisteröitymisen tai poistaa sen käytöstä Azure Active Directoryn (AAD) kautta. Tässä artikkelin osassa kerrotaan, miten voit hallita rekisteröitymisiä PowerShell-komennoilla. Katso lisätietoja Azure PowerShellistä kohdasta [Azure PowerShellin yleiskatsaus](/powershell/azure/overview).
-
-Rekisteröitymistä ohjaava Azure Active Directory -asetus on **AllowAdHocSubscriptions**. Useimmissa vuokraajissa tämä asetus on *true* (tosi), mikä tarkoittaa, että se on käytössä. Jos hankit Power BI:n kumppanin kautta, asetuksena saattaa olla *false* (epätosi), mikä tarkoittaa, että se on poistettu käytöstä. Jos muutat asetusta arvosta *true* arvoon *false*, organisaatiosi uusien käyttäjien rekisteröityminen erikseen on estetty. Käyttäjät, jotka rekisteröityivät Power BI:hin ennen asetuksen muutosta, säilyttävät käyttöoikeutensa. Huomaa, että jos asetuksena on *false*, käyttäjät, joilla on Power BI (ilmainen) -käyttöoikeus, voivat yhä rekisteröityä yksityishenkilölle tarkoitettuun Power BI Pro -kokeiluversioon.
-
-1. Kirjaudu Azure Active Directoryyn käyttämällä Microsoft 365 -tunnistetietojasi. PowerShell-komentosarjan ensimmäinen rivi kehottaa antamaan tunnistetiedot. Toinen rivi muodostaa yhteyden Azure Active Directoryyn.
-
-    ```powershell
-     $msolcred = get-credential
-     connect-msolservice -credential $msolcred
-    ```
-
-   ![Sisäänkirjautuminen Azure Active Directoryyn](media/service-admin-licensing-organization/azure-ad-sign-in.png)
-
-1. Kun olet kirjautunut sisään, suorita seuraava komento, jotta näet, mikä asetus vuokraajalla on tällä hetkellä määritettynä. (Huomioi, että alla ”fl” sisältää l-kirjaimen, ei numeroa 1.)
-
-    ```powershell
-     Get-MsolCompanyInformation | fl AllowAdHocSubscriptions 
-    ```
-1. Suorittamalla seuraavan komennon voit ottaa käyttöön ($true) tai poistaa käytöstä ($false) **AllowAdHocSubscriptions**-asetuksen.
-
-    ```powershell
-     Set-MsolCompanySettings -AllowAdHocSubscriptions $true
-    ```
-
-> [!NOTE]
-> AllowAdHocSubscriptions-lippua käytetään useiden käyttäjäominaisuuksien ohjaamiseen organisaatiossa. Sillä ohjataan muun muassa käyttäjien mahdollisuutta rekisteröityä Azure Rights Management -palveluun. Tämän lipun muuttaminen vaikuttaa kaikkiin näihin ominaisuuksiin.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Omatoiminen kirjautuminen Power BI:hin](service-self-service-signup-for-power-bi.md)  
-
-[Power BI Pro -käyttöoikeuksien hankinta ja määritys](service-admin-purchasing-power-bi-pro.md)
-
-Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+- [Power BI Pro -käyttöoikeuksien hankinta ja määritys](service-admin-purchasing-power-bi-pro.md)
+- [Microsoft 365 Businessin tilausten ja laskutuksen dokumentaatio](https://docs.microsoft.com/microsoft-365/commerce/?view=o365-worldwide)
+- [Kirjautuneiden Power BI -käyttäjien etsiminen](service-admin-access-usage.md)
+- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

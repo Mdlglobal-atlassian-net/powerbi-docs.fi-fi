@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/13/2020
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: a142b950375014c4d1adba917cceb2c6d9af4825
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: df905c4174c366f64b58d257786f002c607f3edb
+ms.sourcegitcommit: 1f768dfef27cd8887318671f91427f72d02370c6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427687"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81675677"
 ---
 # <a name="analyze-in-excel"></a>Analysoi Excelissä
 Joskus saatat haluta tarkastella ja käsitellä Power BI:ssä olevaa tietojoukkoa Excelillä. **Analysoi Excelissä** -toiminnon avulla voit tehdä niin ja käyttää pivot-taulukko-, kaavio- ja osittajaominaisuuksia Excelissä Power BI:ssä olevan tietojoukon perusteella.
@@ -68,9 +68,7 @@ Vaikka olet kirjautunut sisään Power BI:hin selaimessa, ensimmäisellä kerral
 ### <a name="users-with-multiple-power-bi-accounts"></a>Käyttäjät, joilla on useita Power BI -tilejä
 Joillakin käyttäjillä on useita Power BI -tilejä, ja tällaiset käyttäjät saattavat kohdata tilanteen, jossa he ovat kirjautuneet Power BI:hin yhdellä tilillä mutta tili, jolla on Analysoi Excelissä -toiminnossa käytettävän tietojoukon käyttöoikeudet, on eri tili. Saatat näissä tilanteissa saada **Kielletty**-virheen tai kirjautumisvirheen, kun yrität käyttää Analysoi Excelissä -työkirjassa käytettävää tietojoukkoa.
 
-Saat mahdollisuuden kirjautua sisään uudelleen, jolloin voit kirjautua sisään Power BI -tilillä, jolla voidaan käyttää Analysoi Excelissä -toiminnon käyttämää tietojoukkoa. Voit myös valita Excelin **Power BI** -valintanauhan välilehdeltä **Profiili**, joka yksilöi tilin, jolla olet parhaillaan kirjautuneena, ja antaa linkin, jonka avulla voit kirjautua ulos (ja kirjautua sen jälkeen sisään käyttäen eri tiliä). Voit [ladata Power BI Publisher for Excelin](https://www.microsoft.com/download/details.aspx?id=50729) , jos sitä ei ole vielä asennettu. Power BI -valintanauha asennetaan Exceliin siten.
-
-![Profiilin näyttäminen](media/service-analyze-in-excel/pbi_anlz_excel_profile.png)
+Saat mahdollisuuden kirjautua sisään uudelleen, jolloin voit kirjautua sisään Power BI -tilillä, jolla voidaan käyttää Analysoi Excelissä -toiminnon käyttämää tietojoukkoa. Voit myös valita nimesi Excelin ylimmässä valintanauhassa, jossa näytetään tili, johon olet parhaillaan kirjautuneena. Kirjaudu ulos ja kirjaudu sisään eri tilillä.
 
 ### <a name="enable-data-connections"></a>Tietoyhteyksien käyttöönotto
 Jotta voit analysoida Power BI -tietojasi Excelissä, sinua kehotetaan vahvistamaan .odc-tiedoston tiedostonimi ja polku. Valitse sitten **Ota käyttöön**.

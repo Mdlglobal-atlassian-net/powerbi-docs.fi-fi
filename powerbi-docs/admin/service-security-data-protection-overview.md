@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/22/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: e2c742abe5db21ef567d07cf88755eb459d8e091
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.openlocfilehash: 97e7bf44233e0986459be9edf719cd21cd3d7a01
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "81006614"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637595"
 ---
 # <a name="data-protection-in-power-bi-preview"></a>Tietojen suojaus Power BI:ssä (esiversio)
 
@@ -105,7 +105,7 @@ Seuraavassa on lueteltu joitakin luottamuksellisuustunnisteiden rajoituksia Powe
 * [HYOK-suojausta](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) ei tueta Power BI:ssä käytetyille luottamuksellisuustunnisteille.
 * Tunnisteiden tarkastelu ja käyttö Office-sovelluksissa vaatii tiettyjä [käyttöoikeuksia](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels).
 * Luottamuksellisuustunnisteita tuetaan vain yleisten (julkisten) pilvipalveluiden vuokraajille. Luottamuksellisuustunnisteita ei tueta muiden pilvipalveluiden vuokraajille.
-* Tietojen luottamuksellisuustunnisteita ei tueta mallisovellusten tapauksessa.
+* Tietojen luottamuksellisuustunnisteita ei tueta mallisovellusten tapauksessa. Mallisovelluksen tekijän asettamat luottamuksellisuustunnisteet poistetaan, kun sovellus poimitaan ja asennetaan. Lisäksi sovelluksen käyttäjän artefakteihin lisäämät luottamuksellisuustunnisteet asennetussa mallisovelluksessa menetetään (eivät palaudu mihinkään), kun sovellus päivitetään.
 * Power BI ei tue luottamuksellisuustunnisteita **Ei lähetetä edelleen**- ja**Ad-Hoc**-suojaustyyppien tapauksessa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

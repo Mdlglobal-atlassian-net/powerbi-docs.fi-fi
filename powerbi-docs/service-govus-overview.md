@@ -1,23 +1,23 @@
 ---
 title: Power BI Yhdysvaltain valtionhallinnon asiakkaille – katsaus
-description: Yhdysvaltain valtionhallinnon asiakkaat voivat lisätä Power BI Pro -tilauksen Office 365 Government -palvelupakettiinsa. Lue tästä palvelun kuvauksesta, miten voit rekisteröityä ja tarkastella ominaisuuksien saatavuutta.
+description: Yhdysvaltain valtionhallinnon asiakkaat voivat lisätä Power BI Pro -tilauksen Microsoft 365 Government -palvelupakettiinsa. Lue tästä palvelun kuvauksesta, miten voit rekisteröityä ja tarkastella ominaisuuksien saatavuutta.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/13/2020
+ms.date: 04/07/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 14c01eb3041964a858b1aeeaeaa471f0d839898e
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.openlocfilehash: 8a6351c96a2d2bef596cbdd693b4b7035fc16e14
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80404814"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81436341"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI Yhdysvaltain valtionhallinnon asiakkaille
-Tämä artikkeli on tarkoitettu Yhdysvaltain valtionhallinnon asiakkaille, jotka ottavat Power BI:n käyttöön osana Office 365 Government -palvelupakettia. Government-palvelupaketit on suunniteltu sellaisten organisaatioiden ainutlaatuisiin tarpeisiin, joiden pitää olla yhteensopivia Yhdysvaltain valtionhallinnon vaatimusten ja suojausstandardien kanssa. Yhdysvaltain valtionhallinnon asiakkaille suunniteltu Power BI-palvelu eroaa Power BI-palvelu kaupallisesta versiosta. Nämä ominaisuuksien erot ja ominaisuudet kuvataan seuraavissa osissa.
+Tämä artikkeli on tarkoitettu Yhdysvaltain valtionhallinnon asiakkaille, jotka ottavat Power BI:n käyttöön osana Office 365 Government -palvelupakettia. Government-palvelupaketit on suunniteltu sellaisten organisaatioiden ainutlaatuisiin tarpeisiin, joiden pitää olla yhteensopivia Yhdysvaltain valtionhallinnon vaatimusten ja suojausstandardien kanssa. Yhdysvaltain valtionhallinnon asiakkaille suunniteltu Power BI-palvelu eroaa Power BI -palvelun kaupallisesta versiosta. Nämä ominaisuuksien erot ja ominaisuudet kuvataan seuraavissa osissa.
 
 ## <a name="add-power-bi-to-your-office-365-government-plan"></a>Power BI:n lisääminen Office 365 Government -palvelupakettiin
 
@@ -31,8 +31,7 @@ Jos olet uusi asiakas, sinun on ennen valtionhallinnon palvelupakettiin rekister
 > Jos olet jo ottanut käyttöön Power BI:n kaupallisessa ympäristössä ja haluat siirtää sen Yhdysvaltain valtionhallinnon pilveen, sinun on lisättävä uusi Power BI Pro -tilaus Office 365 Government -palvelupakettiisi. Replikoi sitten kaupalliset tiedot Yhdysvaltain valtionhallinnon Power BI -palveluun, poista kaupalliset käyttöoikeusmääritykset käyttäjätileiltä ja määritä sitten käyttäjätileille Power BI Pro Government -käyttöoikeudet.
 >
 >
-
-### <a name="government-cloud-instances"></a>Valtionhallinnon pilviesiintymät
+## <a name="government-cloud-instances"></a>Valtionhallinnon pilviesiintymät
 Office 365 järjestää eri ympäristöjä valtion virastoille vaihtelevien yhteensopivuusvaatimusten täyttämiseksi. Lisätietoja kunkin ympäristön ominaisuuksista saat linkitettyjen palvelujen kuvauksista.
 
 * [Office 365 Government Community Cloud (GCC)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) on tarkoitettu liittovaltion, osavaltion ja paikallistason hallinnolle.
@@ -41,24 +40,24 @@ Office 365 järjestää eri ympäristöjä valtion virastoille vaihtelevien yhte
 
 * [Office 365 DoD -ympäristö](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) on suunniteltu yksinomaan Yhdysvaltain puolustusministeriön tarpeisiin. 
 
-### <a name="purchase-a-power-bi-pro-government-subscription"></a>Osta Power BI Pro Government -paketti
+## <a name="connect-to-power-bi-for-us-government"></a>Yhteyden muodostaminen Yhdysvaltain valtionhallinnon Power BI:hin
 
-Kun olet ottanut käyttöön Office 365:n, voit lisätä Power BI -tilauksen. Osta Power BI Pro Government -palvelu suorittamalla vaiheittaiset ohjeet kohdassa [Rekisteröi Yhdysvaltain julkishallinnon organisaatio](service-govus-signup.md#existing-office-government-cloud-customers). Osta riittävästi käyttöoikeuksia kaikille käyttäjille, joiden tarvitsee päästä käyttämään Power BI:tä, ja määritä sitten käyttöoikeudet yksittäisille käyttäjätileille.
+Käytät eri osoitetta yhteyden luomiseen Yhdysvaltain valtionhallinnon Power BI:hin kuin kaupalliset käyttäjät. Kirjaudu sisään Power BI:hin käyttämällä seuraavia URL-osoitteita:
+
+| Kaupallinen versio  | GCC  | GCC High | DoD |
+| --- | --- | --- | --- |
+| [https://app.powerbi.com/](https://app.powerbi.com) |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) | [https://app.mil.powerbigov.us](https://app.mil.powerbigov.us) |
+
+Tilisi voidaan valmistella useampaan kuin yhteen pilvipalveluun. Siinä tapauksessa voit Power BI:tä käyttäessäsi valita, mihin pilveen luot yhteyden kirjoittautuessasi.
+
+## <a name="purchase-a-power-bi-pro-government-subscription"></a>Osta Power BI Pro Government -paketti
+
+Kun olet ottanut käyttöön Office 365:n, voit lisätä Power BI -tilauksen. Osta Power BI Pro Government -palvelu suorittamalla vaiheittaiset ohjeet kohdassa [Rekisteröi Yhdysvaltain julkishallinnon organisaatio](service-govus-signup.md). Osta riittävästi käyttöoikeuksia kaikille käyttäjille, joiden tarvitsee päästä käyttämään Power BI:tä, ja määritä sitten käyttöoikeudet yksittäisille käyttäjätileille.
 
 > [!IMPORTANT]
 > Power BI US Government ei ole saatavissa ilmaisena käyttöoikeutena. Kaikille käyttäjille on määritettävä Pro-käyttöoikeudet, jotta he saavat käyttää valtionhallinnon yhteisöpilveä. Jos käyttäjän tilille on määritetty ilmainen käyttöoikeus, hän saa käyttää ainoastaan kaupallisia pilvipalveluja ja hänelle tulee todennus- ja käyttöoikeusongelmia. Jos olet ostanut Power BI Premiumin, sinun ei tarvitse määrittää Pro-käyttöoikeuksia käytön mahdollistamiseksi.  Kuka tahansa organisaation käyttäjä voi käyttää hänen kanssaan jaettuja raportteja, kunhan raportti julkaistaan Premium-kapasiteettiin. Jos haluat tarkastella eri käyttöoikeustyyppien välisiä eroja, katso kohtaa [Power BI -palvelun ominaisuudet käyttöoikeustyypin mukaan](service-features-license-type.md).
 >
 >
-
-## <a name="connect-to-power-bi-for-us-government"></a>Yhteyden muodostaminen Yhdysvaltain valtionhallinnon Power BI:hin
-
-Käytät eri osoitetta yhteyden luomiseen Yhdysvaltain valtionhallinnon Power BI:hin kuin kaupalliset käyttäjät. Kirjaudu sisään Power BI:hin käyttämällä seuraavia URL-osoitteita:
-
-| Kaupallisen version URL-osoite | Yhdysvaltain julkisen hallinnon version URL-osoite | Yhdysvaltain julkisen hallinnon GCC High -URL-osoite |
-| --- | --- | --- |
-| `https://app.powerbi.com/` |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
-
-Tilisi voidaan valmistella useampaan kuin yhteen pilvipalveluun. Siinä tapauksessa voit Power BI:tä käyttäessäsi valita, mihin pilveen luot yhteyden kirjoittautuessasi.
 
 ## <a name="connectivity-between-government-and-global-azure-cloud-services"></a>Valtionhallinnon ja yleisten Azure Cloud -palveluiden välinen yhteys
 

@@ -10,18 +10,18 @@ ms.author: kfollis
 ms.date: 12/05/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: bfcb88354d542416268ab145a056644db5042b21
-ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
+ms.openlocfilehash: 831c6f1d2cecfa51b64c8ff77f14ead9f644bcc7
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882843"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439982"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Rivitason suojaus (RLS) Power BI:ssä
 
 Power BI:n rivitason suojauksen (RLS) avulla voidaan rajoittaa tietojen käyttöä tietyille käyttäjille. Suodattimet rajoittavat tietojen käyttöä rivitasolla ja voit määrittää roolien sisäisiä suodattimia. Huomioi, että Power BI -palvelussa työtilan jäsenillä on pääsy työtilan tietojoukkoihin. Rivitason suojaus ei rajoita näiden tietojen käyttöoikeuksia.
 
-Voit määrittää rivitason suojauksen Power BI:hin tuoduille tietomalleille Power BI Desktopin avulla. Voit myös määrittää rivitason suojauksen tietojoukoille, jotka käyttävät DirectQueryä, kuten SQL Serveriä. Aiemmin pystyit ottamaan rivitason suojauksen käyttöön vain paikallisissa Analysis Services -malleissa Power BI:n ulkopuolella. Määrität rivitason suojauksen paikalliselle mallille Analysis Servicesin reaaliaikaisia yhteyksiä varten. Suojausvaihtoehtoa ei näy reaaliaikaisen yhteyden tietojoukoille.
+Voit määrittää rivitason suojauksen Power BI:hin tuoduille tietomalleille Power BI Desktopin avulla. Voit myös määrittää rivitason suojauksen tietojoukoille, jotka käyttävät DirectQueryä, kuten SQL Serveriä. Aiemmin pystyit ottamaan rivitason suojauksen käyttöön vain paikallisissa Analysis Services -malleissa Power BI:n ulkopuolella. Reaaliaikaisia Analysis Services- tai Azure Analysis Services -yhteyksiä varten rivitason suojaus määritetään mallissa, ei Power BI Desktopissa. Suojausvaihtoehtoa ei näy reaaliaikaisen yhteyden tietojoukoille.
 
 [!INCLUDE [include-short-name](./includes/rls-desktop-define-roles.md)]
 
@@ -104,4 +104,4 @@ Jos julkaiset Power BI Desktop -raportin työtilassa Power BI -palvelussa, rooli
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Rivitason suojaus (RLS) Power BI Desktopissa](desktop-rls.md)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

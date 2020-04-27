@@ -6,33 +6,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 04/08/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: eefae2b230bf087635b79ed4645a9297b7194edd
-ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
+ms.openlocfilehash: 410058cad59fdf134b54b45754ef06c0d382c4ef
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79525633"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439936"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Power BI Pro -käyttöoikeuksien hankinta ja määritys
 
 >[!IMPORTANT]
->Ovatko käyttäjäsi valmiita päivittämään Power BI Pro -käyttöoikeuteen? Voit määrittää tilisi siirtymällä suoraan [Power BI Pro:n käytön aloittaminen](https://go.microsoft.com/fwlink/?LinkId=2106428&clcid=0x409&cmpid=pbidocs-purchasing-power-bi-pro) -kohtaan.
+>Tämä artikkeli on tarkoitettu järjestelmänvalvojille. Ovatko käyttäjäsi valmiita päivittämään Power BI Pro -käyttöoikeuteen? Voit määrittää tilisi siirtymällä suoraan [Power BI Pro:n käytön aloittaminen](https://go.microsoft.com/fwlink/?LinkId=2106428&clcid=0x409&cmpid=pbidocs-purchasing-power-bi-pro) -kohtaan.
 
-Power BI Pro on yksilöllinen käyttöoikeus, jonka avulla käyttäjät voivat lukea ja käsitellä raportteja ja koontinäyttöjä, joita muut käyttäjät ovat julkaisseet Power BI -palvelussa. Käyttäjät, joilla on tämä käyttöoikeustyyppi, voivat jakaa sisältöä ja tehdä yhteistyötä muiden Power BI Pro -käyttäjien kanssa. Vain Power BI Pro -käyttäjät voivat julkaista tai jakaa sisältöä muiden käyttäjien kanssa tai käyttää muiden luomaa sisältöä, ellei Power BI Premium -kapasiteetissa isännöidä tätä sisältöä. Lisätietoja on [Power BI:n hinnoittelusivulla](https://powerbi.microsoft.com/pricing/) kohdassa _Power BI:n ominaisuuksien vertailu_.
+Power BI Pro on yksilöllinen käyttöoikeus, jonka avulla käyttäjät voivat lukea ja käsitellä raportteja ja koontinäyttöjä, joita muut käyttäjät ovat julkaisseet Power BI -palvelussa. Käyttäjät, joilla on tämä käyttöoikeustyyppi, voivat jakaa sisältöä ja tehdä yhteistyötä muiden Power BI Pro -käyttäjien kanssa. Vain Power BI Pro -käyttäjät voivat julkaista tai jakaa sisältöä muiden käyttäjien kanssa tai käyttää muiden luomaa sisältöä, ellei Power BI Premium -kapasiteetissa isännöidä tätä sisältöä. Lisätietoja käytettävissä olevista käyttöoikeustyypeistä ja tilauksista on kohdassa [Power BI -käyttöoikeudet organisaatiossasi](service-admin-licensing-organization.md).
 
 ## <a name="purchase-power-bi-pro-user-licenses"></a>Power BI Pro- käyttöoikeuksien ostaminen
 
 Tässä artikkelissa kerrotaan, miten voit ostaa Power BI Pro -käyttöoikeuksia Microsoft 365 -hallintakeskuksessa. Kun olet ostanut käyttöoikeudet, voit määrittää ne käyttäjille joko Microsoft 365 -hallintakeskuksessa tai Azure-portaalissa.
 
 > [!NOTE]
-> 14. tammikuuta 2020 alkaen Power Platform -tuotteiden (Power BI, Power Apps ja Power Automate) itsepalveluostot, tilaukset ja käyttöoikeuksien hallintatoiminnot ovat käytettävissä kaupallisille pilvipalveluasiakkaille. Lisätietoja siitä, miten voit ottaa itsepalveluostot käyttöön tai poistaa ne käytöstä organisaatiossasi, on artikkelissa [Itsepalveluostojen usein kysytyt kysymykset](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
+> 14. tammikuuta 2020 alkaen Power Platform -tuotteiden (Power BI, Power Apps ja Power Automate) itsepalveluostot, tilaukset ja käyttöoikeuksien hallintatoiminnot ovat käytettävissä kaupallisille pilvipalveluasiakkaille. Lisätietoja on kohdassa [Omaehtoisen ostamisen usein kysytyt kysymykset](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq). Lisätietoja omatoimisen ostamisen ottamisesta käyttöön ja poistamisesta käytöstä on kohdassa [Omatoimisen rekisteröitymisen ja ostamisen ottaminen käyttöön tai poistaminen käytöstä](admin/service-admin-disable-self-service.md).
 
 ### <a name="prerequisites"></a>Edellytykset
 
-Jotta voit ostaa ja määrittää käyttöoikeuksia Microsoft 365 -hallintakeskuksessa, sinun on oltava **[yleisen järjestelmänvalvojan tai laskutuksen järjestelmänvalvojan](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)** roolissa Microsoft 365:ssä.
+Jotta voit ostaa ja määrittää käyttöoikeuksia Microsoft 365 -hallintakeskuksessa, sinun on oltava [yleisen järjestelmänvalvojan tai laskutuksen järjestelmänvalvojan](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) roolissa Microsoft 365:ssä.
 
 Jos haluat määrittää käyttöoikeudet Azure-portaalissa, sinulla on oltava Azure-tilaus, jota Power BI käyttää Azure Active Directory -hauissa.
 
@@ -80,10 +80,10 @@ Voit määrittää Power BI Pro -käyttöoikeuksia yksittäisille käyttäjätil
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Nyt kun olet määrittänyt käyttöoikeudet, lue lisää Power BI Prosta.
+- [Power BI -käyttöoikeudet organisaatiossasi](service-admin-licensing-organization.md)
 
-[Power BI -käyttöoikeudet organisaatiossasi](service-admin-licensing-organization.md)
+ - [Kirjautuneena olevien Power BI -käyttäjien etsiminen](service-admin-access-usage.md)
 
-[Kirjautuneena olevien Power BI -käyttäjien etsiminen](service-admin-access-usage.md)
+ - [Rekisteröityminen Power BI:hin yksityishenkilönä](service-self-service-signup-for-power-bi.md)
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

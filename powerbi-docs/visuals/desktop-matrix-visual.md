@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6a45dcc195514bc1af71470beeead9f73a798942
-ms.sourcegitcommit: 4d98274aa0b9aa09db99add2dda91a3ba8fed40b
+ms.openlocfilehash: c091295d50bac576af411d967b9902d6804f82be
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576831"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637862"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Matriisivisualisoinnin luominen Power BI:ssä
 
@@ -57,7 +57,8 @@ Matriisin laajennustila tallennetaan raporttisi kanssa. Matriisi voidaan kiinnit
 
 ![](media/desktop-matrix-visual/power-bi-expand3.png)
 
-
+> [!NOTE]
+> Jos luot raportin moniulotteisen Analysis Services -mallin pohjalta, laajentamiseen ja kutistamiseen liittyy joitakin lisähuomioita, jos mallissa käytetään Oletusjäsen-ominaisuutta. Lisätietoja on artikkelissa [Power BI:n monidimensiomallien käyttö](../desktop-default-member-multidimensional-models.md)
 
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Alaspäin porautumisen käyttö matriisivisualisoinnin kanssa
 Matriisivisualisoinnilla voit tehdä erilaisia alaspäin porautumisen toimintoja, jotka eivät ennen olleet käytettävissä. Voit porata rivejä, sarakkeita ja jopa yksittäisiä osioita ja soluja. Niiden toiminta on kuvattu alla.

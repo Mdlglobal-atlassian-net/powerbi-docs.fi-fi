@@ -10,12 +10,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 03/24/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: bfec81aaa47f210855c4db4c8c97ab259b685110
-ms.sourcegitcommit: bcc42e938fa28abe433287fecb9abb28c253b6bb
+ms.openlocfilehash: 10d1e87fabc54c5886930c52ce60ed4a62479847
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80302447"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525439"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Raportin tai koontinäytön tilaaminen Power BI -palvelussa 
 
@@ -33,7 +33,7 @@ Kun saat sähköpostiviestin, siinä on mukana linkki, jonka kautta voit siirty�
 
 
 ## <a name="requirements"></a>Vaatimukset
-Tilauksen **luominen** itselle edellyttää tietyn tyyppistä [käyttöoikeutta](end-user-license.md). Jos et pysty luomaan tilausta, ota yhteyttä Power BI -järjestelmänvalvojaan. **Muille tilaamista** voi käyttää vain koontinäytön tai raportin omistaja. Sivutettujen raporttien tilaaminen on hieman erilaista. Lisätietoja on artikkelissa  [Power BI -palvelun sivutettujen raporttien tai koontinäyttöjen tilaaminen itsellesi ja muille](paginated-reports-subscriptions.md) . 
+Tilauksen **luominen** itselle edellyttää tietyn tyyppistä [käyttöoikeutta](end-user-license.md). Jos et pysty luomaan tilausta, ota yhteyttä Power BI -järjestelmänvalvojaan. **Muille tilaamista** voi käyttää vain koontinäytön tai raportin omistaja. Sivutettujen raporttien tilaaminen on hieman erilaista. Saat lisätietoja ohjeartikkelista [Power BI -palvelun sivutettujen raporttien tai koontinäyttöjen tilaaminen itsellesi ja muille](paginated-reports-subscriptions.md). 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>Koontinäytön tai raporttisivun tilaaminen
 Koontinäytön ja raportin tilausprosessit ovat samankaltaiset. Samaa painiketta painamalla voit tilata Power BI -palvelun koontinäyttöjä ja raportteja.
@@ -55,9 +55,9 @@ Koontinäytön ja raportin tilausprosessit ovat samankaltaiset. Samaa painiketta
 
     c. Halutessasi voit lisätä aiheen ja sähköpostiviestin tiedot. 
 
-    d. Valitse tilauksesi **tiheys**.  Voit valita Päivittäin, Viikoittain tai Tietojen päivittämisen jälkeen (päivittäin).  Jos haluat saada tilauksen sähköpostit vain tiettyinä päivinä, valitse **Viikoittain** ja valitse sitten, minä päivinä haluat saada sähköposteja.  Jos haluat saada tilauksen sähköpostit esimerkiksi vain arkipäivinä, valitse tiheydeksi **Viikoittain** ja poista lauantain ja sunnuntain valintaruutujen valinnat. Jos valitset  **Kuukausittain**, kirjoita ne kuukauden päivät, jolloin haluat saada tilauksen sähköpostiviestit.   
+    d. Valitse tilauksesi **tiheys**.  Voit valita Päivittäin, Viikoittain tai Tietojen päivittämisen jälkeen (päivittäin).  Jos haluat saada tilauksen sähköpostit vain tiettyinä päivinä, valitse **Viikoittain** ja valitse sitten, minä päivinä haluat saada sähköposteja.  Jos haluat saada tilauksen sähköpostit esimerkiksi vain arkipäivinä, valitse tiheydeksi **Viikoittain** ja poista lauantain ja sunnuntain valintaruutujen valinnat. Jos valitset **Kuukausittain**, kirjoita ne kuukauden päivät, jolloin haluat saada tilauksen sähköpostit.   
 
-    e. Voit valita sähköpostiviestien lähetyskellonajan valitsemalla tiheydeksi Päivittäin, Tunneittain, Kuukausittain tai Viikoittain ja määrittämällä sitten tilaukselle ajoitetun ajan. Viestit voidaan lähettää tasatunnein tai 15, 30 tai 45 minuuttia yli tasatunnin. Valitse AM tai PM (12 tunnin kellon mukaisesti). Voit määrittää myös aikavyöhykkeen. Jos valitset Tunneittain, valitse Ajoitettu aika, jolloin haluat tilauksen alkavan, ja se suoritetaan tunnin välein sen jälkeen.  
+    e. Jos valitset Päivittäin, Tunneittain, Kuukausittain tai Viikoittain, voit määrittää tilaukselle myös ajoitetun ajan. Viestit voidaan lähettää tasatunnein tai 15, 30 tai 45 minuuttia yli tasatunnin. Valitse AM tai PM (12 tunnin kellon mukaisesti). Voit määrittää myös aikavyöhykkeen. Jos valitset Tunneittain, valitse ajoitettu aika, jolloin haluat tilauksen alkavan, ja se suoritetaan tunnin välein sen jälkeen.  
 
     f. Määritä alkamis- ja päättymispäivät päivämääräkenttiin. Tilauksesi alkamisaika on oletusarvoisesti tilauksen luomispäivä ja päättymispäivä on oletusarvoisesti vuoden päässä. Voit vaihtaa päivämääräksi minkä tahansa tulevaisuudessa olevan päivämäärän (aina vuoteen 9999 saakka) milloin tahansa ennen tilauksen päättymistä. Tilaus lopetetaan päättymispäivänä, jos et ota sitä uudelleen käyttöön.  Saat ennen tilauksen päättymistä ilmoituksia, jossa kysytään, haluatko jatkaa tilausta.     
 
@@ -73,7 +73,7 @@ Koontinäytön ja raportin tilausprosessit ovat samankaltaiset. Samaa painiketta
 
 
 ## <a name="manage-your-subscriptions"></a>Tilausten hallinta
-Vain sinä itse voit hallita luomiasi tilauksia. Valitse uudelleen **Tilaa** ja valitse vasemmasta alakulmasta **Kaikkien tilausten hallinta** (katso yllä olevat näyttökuvat). Näytettävät tilaukset riippuvat siitä, mikä työtila on sillä hetkellä aktiivisena. Jos haluat nähdä kaikkien työtilojen kaikki tilaukset kerralla, varmista, että  **Oma työtila**  on aktiivisena. Työtilojen toiminnasta on lisätietoja artikkelissa  [Työtilat Power BI:ssä](end-user-workspaces.md). 
+Vain sinä itse voit hallita luomiasi tilauksia. Valitse uudelleen **Tilaa** ja valitse vasemmasta alakulmasta **Kaikkien tilausten hallinta** (katso yllä olevat näyttökuvat). Näytettävät tilaukset riippuvat siitä, mikä työtila on sillä hetkellä aktiivisena. Jos haluat nähdä kaikkien työtilojen kaikki tilaukset kerralla, varmista, että aktiivisena on **Oma työtila**. Työtilojen toiminnasta saat lisätietoa artikkelista [Työtilat Power BI:ssä](end-user-workspaces.md). 
 
 ![kaikkien tilausten tarkastelu Omassa työtilassa](./media/end-user-subscribe/power-bi-manage-subscriptions.png)
 

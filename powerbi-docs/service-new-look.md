@@ -6,19 +6,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2019
+ms.date: 04/15/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: c69e0247ecde7d6bd1cf158761a2ff9efd31d2d3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: de30da9c5cf6ad2046a99fb327cdad825725a14d
+ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881381"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "81637837"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Power BI -palvelun uusi ulkoasu
 
-Power BI -palvelussa (app.powerbi.com) on uusi ulkoasu, jonka ansiosta raportteja on helpompi tarkastella ja käyttää. Uusi ulkoasu on yksinkertaisempi ja se perustuu muiden Microsoft-tuotteiden tuntemukseesi. Olemme painottaneet koko Power BI -palvelussa raportin sisältöä vaihtamalla vaaleampaan väriteemaan ja päivittämällä kuvakkeita. Seuraavassa on yleiskatsaus siitä, mitä uutta uudessa ulkoasussa on. Lisätietoja on numeroiduissa osioissa:
+Power BI -palvelussa (app.powerbi.com) on uusi ulkoasu, jonka ansiosta raportteja on helpompi tarkastella ja käyttää. Uusi ulkoasu on yksinkertaisempi ja se perustuu muiden Microsoft-tuotteiden tuntemukseesi. Olemme painottaneet koko Power BI -palvelussa raportin sisältöä vaihtamalla vaaleampaan väriteemaan ja päivittämällä kuvakkeita. 
+
+Etsitkö tietoja **Power BI Desktopin** uudesta ulkoasusta? Katso [Power BI Desktopin päivitetyn valintanauhan käyttäminen](desktop-ribbon.md).
+
+Seuraavassa on yleiskatsaus siitä, mitä uutta uudessa ulkoasussa on. Lisätietoja on numeroiduissa osioissa:
 
 ![Yleiskatsaus uuden ulkoasun muutoksista](media/service-new-look/power-bi-new-look-changes.png)
 
@@ -36,7 +40,7 @@ Kaikki Power BI -palvelun käyttäjät voivat valita uuden ulkoasun. Siirrä vai
 
 ![Uuden ulkoasun ottaminen käyttöön](media/service-new-look/power-bi-new-look-off.png)
 
-Jos sinun on palattava vanhaan näkymään, siirrä valitsin takaisin kohtaan **pois käytöstä** ![Uusi ulkoasu käytössä](media/service-new-look/power-bi-new-look-toggle-on.png). Jos et näe sitä, valitse oikeasta yläkulmasta kolme pistettä -valikko.
+Jos haluat palata vanhaan näkymään, siirrä valitsin takaisin kohtaan **ei käytössä** ![Uusi ulkoasu käytössä](media/service-new-look/power-bi-new-look-toggle-on.png). Jos et näe sitä, valitse oikeasta yläkulmasta kolme pistettä -valikko.
 
 ![Uuden ulkoasun poistaminen käytöstä](media/service-new-look/power-bi-new-look-on.png)
 
@@ -87,4 +91,6 @@ Muokkaus toimii suunnilleen samalla tavalla kuin Desktopissakin. Uudet ulkoasumu
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Power BI kuluttajille](consumer/end-user-consumer.md)
+- [Power BI Desktopin päivitetyn valintanauhan käyttäminen](desktop-ribbon.md)
+- [Työtilojen uuden ulkoasun ottaminen käyttöön](collaborate-share/service-workspaces-new-look.md)
+- [Power BI kuluttajille](consumer/end-user-consumer.md)

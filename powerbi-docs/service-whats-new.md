@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/22/2019
+ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 878e4a2e033d33e8c6bb027f35976c19e8b108c9
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 014e3963c0297adb4b77a71f1267f7f132944094
+ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488840"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81439844"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
 Tarkista tältä sivulta **Power BI -palvelun** tunnetut ongelmat ja hiljattain julkaistut ominaisuudet. Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -29,11 +29,41 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Kaveri kuutiossa (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
+### <a name="april-2020"></a>Huhtikuu 2020
+* Power BI -palvelun työtilojen uuden ulkoasun julkinen esikatselu.
+* Mukautettujen siirtymistoimintojen suunnitteleminen [Power BI -sovelluksille](service-create-distribute-apps.md) yleisesti saatavilla.
+
+## <a name="previous-months-2020"></a>Edelliset kuukaudet (2020)
+### <a name="march-2020"></a>Maaliskuu 2020
+* Raporttien vieminen PDF-, PPTX- ja PNG-tiedostoihin Power BI:n REST-ohjelmointirajapintojen avulla.
+* Uusi ja uudistettu yleinen hakukokemus Power BI -palvelussa.
+* [Multi-Geo-premium-kapasiteettien](service-admin-premium-multi-geo.md) suorituskykyparannukset.
+* [Luku/kirjoitus-XMLA-päätepisteiden](service-premium-connect-tools.md) julkinen esikatselu Power BI Premiumissa.
+
+### <a name="february-2020"></a>Helmikuu 2020
+* Mahdollisuus korottaa koontinäyttöjä, raportteja ja sovelluksia Power BI -aloitussivulla.
+* Raporttien upottaminen uuden [Power BI -välilehden](service-embed-report-microsoft-teams.md) avulla Microsoft Teamsissa.
+* Power BI Pro -käyttäjiä tukeva [lisäävä päivitys](service-premium-incremental-refresh.md) yleisesti käytettävissä.
+* Sähköpostitilausten tuki ulkoisille sähkö postiosoitteille.
+* Power BI Premiumin [Bring Your Own Key (BYOK)](service-encryption-byok.md) -ominaisuus yleisesti käytettävissä.
+
+### <a name="january-2020"></a>Tammikuu 2020
+* Uudet ja parannetut [käyttömittarit](service-usage-metrics.md) Power BI:n työtilakokemuksessa.
+
+## <a name="2019"></a>2019
+### <a name="december-2019"></a>Joulukuu 2019
+* Uusi toimintolokin ohjelmointirajapinta, jonka avulla Power BI -palvelun järjestelmänvalvojat voivat seurata käyttäjä- ja järjestelmänvalvojatoimintoja vuokraajassaan.
+
+### <a name="november-2019"></a>Marraskuu 2019
+* Julkinen esikatselu [Power BI Premiumin suuret mallit] (service-premium-large-models.md].
+* Julkinen esikatselu Microsoft Cloud App Securityn hallinnan käyttämisestä Power BI:ssä (esikatselu).
+
 ### <a name="october-2019"></a>Lokakuu 2019
 * Uusi Power Automate -toiminto Power BI -tietojoukkojen päivittämiseen.
 * Power BI -palvelun raporttien ja koontinäyttöjen [yhteystietoluettelo](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/).
+* Yleinen saatavuus [automatisoitu koneoppiminen](service-machine-learning-automated
+* Power BI -tietojen historianäkymän julkinen esikatselu.
 
-## <a name="previous-months-2019"></a>Edelliset kuukaudet (2019)
 ### <a name="september-2019"></a>Syyskuu 2019
 * Päivitykset [mallisovellusten](service-template-apps-overview.md) yhteyden määrittämiseen.
 

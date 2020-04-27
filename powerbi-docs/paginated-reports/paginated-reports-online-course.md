@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 325e62bbf326e9f30d4c41299998c61cc5d7f487
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: 5ff7891ce704ebaf8677df6f0872396ffa1b04a2
+ms.sourcegitcommit: 1f768dfef27cd8887318671f91427f72d02370c6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267591"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81675653"
 ---
 # <a name="online-course-power-bi-paginated-reports-in-a-day"></a>Verkkokurssi: Power BI:n sivutetut raportit päivässä
 
@@ -83,7 +83,7 @@ Aloita kurssi katsomalla tervetulotoivotus ja esittelyvideo.
 
 Voit ladata ja määrittää itseopiskelupaketin, joka koostuu esityssisällöstä ja kahdeksasta käytännönläheistä laboratorioista:
 
-1. Lataa itseopiskelupaketti (.zip) [tämän linkin kautta ](https://aka.ms/priad-ilt-student) paikallisesti tietokoneeseesi.
+1. Lataa itseopiskelupaketti (.zip) [tämän linkin kautta ](https://aka.ms/priad-student) paikallisesti tietokoneeseesi.
 1. Avaa tiedoston ominaisuudet ja valitse eston poisto (Windows voi merkitä tiedoston mahdollisesti ei-luotetuksi).
 1. Pura tiedoston sisältö johonkin tiedostojärjestelmän kansioon. Suosittelemme, että luot helposti löytyvän kansion. Anna nimeksi esimerkiksi **Koulutus**. Laboratoriotiedostot viittaavat tähän sijaintiin nimellä **&lt;CourseFolder&gt;** .
 
@@ -105,6 +105,10 @@ Kun olet valmis aloittamaan ensimmäisen laboratorion, avaa tiedosto **&lt;Cours
 > Sinun on kirjauduttava Power BI:n, jotta voit julkaista Power BI Desktop -tiedoston työtilaan. Julkaisu antaa tulokseksi tietojoukon, jota käytetään raportin tietolähteenä. Et tarvitse Power BI Pro -käyttöoikeutta etkä Power BI Premium -tilausta tietojoukon käyttämiseen raportin tietolähteenä.
 >
 > Jotkin laboratoriotehtävät edellyttävät kuitenkin sivutetun raportin julkaisemista työtilaan. Voit avata sivutetun raportin vain, kun se on tallennettu työtilaan [erilliseen kapasiteettiin](../service-premium-what-is.md#dedicated-capacities), jossa sivutettujen raporttien työkuorma on otettu käyttöön. Jos sinulla ei ole käyttöoikeutta sopivaan työtilaan, saat sen sijaan linkin, jonka avulla voit katsoa raportin julkaisemista esittelevän videon.
+
+## <a name="instructor-kit"></a>Opettajan paketti
+
+Lataa opettajan paketti (.zip) [tämän linkin kautta ](https://aka.ms/priad-instructor) paikallisesti tietokoneeseesi.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

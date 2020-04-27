@@ -7,14 +7,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/31/2020
+ms.date: 04/22/2020
 ms.author: davidi
-ms.openlocfilehash: d3733b651ac8b9687d3b0547cc2f76c04a0d0823
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.openlocfilehash: 95492b8561c37b52e77fbd8b16ce5e1e2ec4e4e1
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77427250"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82066219"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Vinkkejä raporttien luomiseen Power BI Desktopissa
 Joskus voi tarvita hieman ylimääräistä apua, jotta tiedoista saa kaiken hyödyn irti. Olemme koonneet yhteen muutamia vinkkejä, joita voit hyödyntää, kun luot raportteja Microsoftin Power BI Desktopissa *ja* Microsoft Excel 2016:ssa. Niistä on hyötyä myös Excel 2013 Pro Plus -versioissa, joissa Power Pivot -apuohjelma on otettu käyttöön sekä Power Query asennettuna ja käytössä. 
@@ -87,7 +87,7 @@ Varmista, että koostesarakkeen tietotyyppi on numero. Nyt voit käyttää yksin
 
 Sivellintä tukevan histogrammin määrittäminen – Sivellintoiminnolla tarkoitetaan linkitetyissä visualisoinneissa sitä, että kun käyttäjä valitsee yhden tietopisteen yhdessä visualisoinnissa, raporttisivun muissa visualisoinneissa korostetaan tai suodatetaan valittuun tietopisteeseen liittyvät tietopisteet. Koska käsittelemme tietoa kyselyhetkellä, meidän on luotava yhteys taulukoiden välille ja varmistettava, mikä tietokohde liittyy jakaumaan histogrammissa ja päinvastoin.
 
-Aloita prosessi valitsemalla Viittaus-asetus siinä kyselyssä, jonka pohjalta haluat luoda histogrammin. Anna uudelle kyselylle nimeksi Jakaumat. Tässä esimerkissä annetaan alkuperäiselle kyselylle nimeksi Tiedot. Poista seuraavaksi kaikki sarakkeet lukuun ottamatta sitä, jota käytetään histogrammin jakaumana. Käytä sitten kyselyn Poista kaksoiskappaleet -toimintoa, jolloin sarakkeeseen jää jäljelle vain ainutkertaisia arvoja. Löydät toiminnon napsauttamalla saraketta hiiren kakkospainikkeella. Jos tiedoissa on desimaalilukuja, voit ensin käyttää jakaumien määrittämisen vinkkiä, jonka avulla voit luoda histogrammin helposti hallittavasta jakaumajoukosta. Tarkista nyt kyselyn esikatselussa näkyvät tiedot. Jos näet tyhjiä arvoja tai null-arvoja, ne on korjattava ennen suhteiden muodostamista. Lisätietoja on artikkelissa Suhteen luominen tyhjiä tai null-arvoja sisältävillä tiedoilla. Tämä lähestymistapa voi olla ongelmallinen lajittelutarpeen vuoksi. Jakaumien lajittelemisesta oikein on lisätietoja artikkelissa Lajittelujärjestys: luokkien näkyminen halutussa järjestyksessä. 
+Aloita prosessi valitsemalla Viittaus-asetus siinä kyselyssä, jonka pohjalta haluat luoda histogrammin. Anna uudelle kyselylle nimeksi Jakaumat. Tässä esimerkissä annetaan alkuperäiselle kyselylle nimeksi "Tiedot". Poista seuraavaksi kaikki sarakkeet lukuun ottamatta sitä, jota käytetään histogrammin jakaumana. Käytä sitten kyselyn Poista kaksoiskappaleet -toimintoa, jolloin sarakkeeseen jää jäljelle vain ainutkertaisia arvoja. Löydät toiminnon napsauttamalla saraketta hiiren kakkospainikkeella. Jos tiedoissa on desimaalilukuja, voit ensin käyttää jakaumien määrittämisen vinkkiä, jonka avulla voit luoda histogrammin helposti hallittavasta jakaumajoukosta. Tarkista nyt kyselyn esikatselussa näkyvät tiedot. Jos näet tyhjiä arvoja tai null-arvoja, ne on korjattava ennen suhteiden muodostamista. Lisätietoja on artikkelissa Suhteen luominen tyhjiä tai null-arvoja sisältävillä tiedoilla. Tämä lähestymistapa voi olla ongelmallinen lajittelutarpeen vuoksi. Jakaumien lajittelemisesta oikein on lisätietoja artikkelissa Lajittelujärjestys: luokkien näkyminen halutussa järjestyksessä. 
 
 >[!NOTE]
 >Lajittelujärjestystä kannattaa miettiä ennen visualisointien luomista. 
@@ -148,7 +148,7 @@ Nyt sinulla on dimensiotaulukko, jota voit käyttää viittaamaan CustomerIndice
 Kyselyeditori on hyvin tehokas työkalu tietojen muokkaamiseen ja puhdistamiseen visualisointia ja mallintamista varten. Käyttäjän on kuitenkin hyvä tietää editorin muutamista toimintamalleista.
 
 ### <a name="temporary-columns-can-be-deleted-after-computing-a-result"></a>Tilapäisiä sarakkeita voidaan poistaa tuloksen laskemisen jälkeen.
-Power BI Desktopissa on usein luotava laskutoimitus, joka muuntaa tietoja useista sarakkeista yksittäiseen uuteen sarakkeeseen. Tämä voi olla monimutkaista. Yksi helppo tapa ratkaista ongelma on purkaa prosessi vaiheisiinsa. Aloita kopioimalla alkuperäiset sarakkeet. Luo sitten tilapäiset sarakkeet ohjeiden mukaan. Luo seuraavaksi sarake lopullista tulosta varten. Voit sitten poistaa väliaikaiset sarakkeet, niin ne eivät häiritse lopullista tietojoukkoa. Tämä on mahdollista, koska Kysely-välilehti suorittaa vaiheet järjestyksessä. 
+Power BI Desktopissa on usein luotava laskutoimitus, joka muuntaa tietoja useista sarakkeista yksittäiseen uuteen sarakkeeseen. Tämä voi olla monimutkaista. Yksi helppo tapa ratkaista ongelma on purkaa prosessi vaiheisiinsa. Aloita kopioimalla alkuperäiset sarakkeet. Luo sitten tilapäiset sarakkeet. Luo seuraavaksi sarake lopullista tulosta varten. Voit sitten poistaa väliaikaiset sarakkeet, niin ne eivät häiritse lopullista tietojoukkoa. Tämä on mahdollista, koska Kysely-välilehti suorittaa vaiheet järjestyksessä. 
 
 ### <a name="duplicate-or-reference-queries-followed-by-merge-to-original-query"></a>Kaksoiskappale- tai viittauskyselyt ja niitä seuraava yhdistäminen alkuperäiseen kyselyyn
 Toisinaan on hyödyllistä laskea tietojoukolle yhteenvetotilastot. Helppo tapa siihen on luoda kyselystä kaksoiskappale tai viitata siihen Kysely-välilehdellä. Käytä sitten **Ryhmittelyperuste**-toimintoa yhteenvetotilastojen laskemiseen. Yhteenvetotilastot auttavat normalisoimaan alkuperäistietojen tiedot, jotta niistä saadaan vertailukelpoisempia. Tämä on erityisen hyödyllinen verrattaessa yksittäisiä arvoja kokonaisuuteen. Voit tehdä tämän siirtymällä alkuperäiseen kyselyyn ja valitsemalla Yhdistä-vaihtoehdon. Yhdistä sitten asianmukaisia tunnisteita vastaavat tiedot yhteenvetotilaston kyselystä. Nyt olet valmis tietojen normalisointiin analyysin tarpeiden mukaisesti.
@@ -161,3 +161,64 @@ DAX on Power BI Desktopissa käytettävä laskutoimitusten kaavakieli. Se on opt
 [Data Analysis Expressions (DAX) -viittaukset](https://msdn.microsoft.com/library/gg413422.aspx)
 
 [DAX Resource Center](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+
+## <a name="power-bi-service-and-power-bi-desktop"></a>Power BI -palvelu *ja* Power BI Desktop
+
+### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Lue ja/tai katso Visuaalisesti upeiden raporttien (ja koontinäyttöjen) suunnittelu Power BI:ssä
+Yhteisön jäsen Miguel Myers on tietojenkäsittelyasiantuntija sekä graafinen suunnittelija.
+
+![Power BI -raportti](media/desktop-tips-and-tricks-for-creating-reports/power-bi-reports.png)
+
+* [Lue blogia](https://powerbi.microsoft.com/blog/how-to-design-visually-stunning-reports/)
+* [Katso verkkoseminaari](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-19-Design-Reports-in-PowerBI-Registration.html)
+
+### <a name="consider-your-audience"></a>Mieti yleisöäsi
+Mitä ovat tärkeimpiä mittareita, jotka auttavat heitä tekemään päätöksiä? Miten raporttia käytetään? Mitkä opitut tai kulttuuriset olettamat saattavat vaikuttaa visualisointivalintoihin? Mitä tietoja yleisö tarvitsee onnistumiseen ja menestymiseen?
+
+Missä raporttia näytetään? Jos raporttia näytetään suurikokoisessa näytössä, siihen voi lisätä paljon sisältöä. Jos katsojat tarkastelevat sitä tableteillaan, pienempi määrä visualisointeja parantaa luettavuutta.
+
+### <a name="tell-a-story-and-keep-it-to-one-screen"></a>Tiivistä tarinasi yhteen näyttöön
+Kunkin raporttisivun pitäisi kertoa tarina yhdellä silmäyksellä. Voitko välttää vierityspalkkien käyttämisen sivuillasi? On raportti sekava tai täyteen ahdettu?  Poista kaikki muut paitsi olennaisimmat tiedot, joita voi lukea ja tulkita helposti.
+
+### <a name="make-the-most-important-information-biggest"></a>Näytä tärkeimmät tiedot suurimmassa koossa
+Jos raporttisivun teksti ja visualisoinnit ovat kaikki samaa kokoa, lukijan on vaikea keskittyä tärkeimpään asiaan. Esimerkiksi korttivisualisoinnit ovat hyvä tapa esittää tärkeitä lukuja näkyvästi:  
+![Korttivisualisointi](media/service-dashboards-design-tips/pbi_card.png)
+
+### <a name="but-be-sure-to-provide-context"></a>Muista tarjota konteksti  
+
+Lisää kontekstia visualisointeihin käyttämällä tekstiruutuja ja työkaluvihjeitä.
+
+### <a name="put-the-most-important-information-in-the-upper-corner"></a>Sijoita tärkeimmät tiedot yläkulmaan
+Useimmat henkilöt lukevat ylhäältä alas, joten sijoita tärkein tieto ylös ja näytä lisää yksityiskohtia katsojan lukusuunnan mukaisesti (vasemmalta oikealle, oikealta vasemmalle).
+
+### <a name="use-the-right-visualization-for-the-data-and-format-it-for-easy-reading"></a>Käytä tiedolle juuri oikeaa visualisointia ja muotoile se vaivattomasti luettavaksi
+Vältä erilaisten visualisointien lisäämistä vain vaihtelun vuoksi.  Visualisointien pitäisi maalata tietty kuva, joka on helppo sisäistää ja ymmärtää.  Joillekin tiedoille ja visualisoinneille riittää hyvin yksinkertainen grafiikka. Jotkin muut tiedot edellyttävät monimutkaisempaa visualisointia. Muista silloin käyttää otsikoita, nimiä ja muita lukijaa auttavia mukautuksia.  
+
+* Suhtaudu varoen todellisuutta vääristäviin kaavioihin, kuten 3D-kaavioihin, ja kaavioihin, jotka eivät ala nollasta. Pidä mielessä, että ympyrämuotojen tulkitseminen on ihmisaivoille vaativaa. Ympyräkaaviot, rengaskaaviot, mittarit ja muut pyöreät kaaviotyypit ovat hienoja, mutta voisiko ne korvata toisilla visualisoinneilla?    
+* Käytä akselien asteikkoja, ulottuvuuksien järjestystä ja dimensioarvoja kuvaavia värejä johdonmukaisesti kaaviosta toiseen.    
+* Esitä kvantitatiiviset tiedot kompaktisti ja siististi. Älä käytä luvuissa yli kolmea tai neljää numeroa. Vältä runsasta desimaalien käyttöä ja skaalaa luvut mahdollisimman suuriin mittareihin, kuten tuhansista miljooniin: ”3,4 miljoonaa” mieluummin kuin ”3 400 000”.    
+* Yritä välttää erilaisten tarkkuus- ja aikatasojen sekoittamista. Varmista, että käytetyt ajanjaksot on helppo käsittää.  Älä esimerkiksi laita samaan visualisointiin viime kuukautta kuvaavaa kaaviota ja suodatettuja kaavioita vuoden joltain muulta kuukaudelta rinnakkain.    
+* Yritä myös välttää suurten ja pienten mittarien yhdistelemistä samalle asteikolle esimerkiksi viivakaaviona ja palkkikaaviona.  Esimerkki tällaisesta on, että yksi mittari on miljoonia ja toinen tuhansia.  Tällöin tuhansia mittaavan kaavion eroja voi olla vaikea havaita.  Jos yhdistely on välttämätöntä, valitse visualisoinniksi esimerkiksi yhdistelmäkaavio, jossa voi käyttää toista akselia.    
+* Vältä kaavioiden täyttämistä arvopisteiden nimillä, jotka eivät ole välttämättömiä. ***Riittävän suuressa*** palkkikaavioissa arvot ovat yleensä helposti ymmärrettävissä ilman varsinaisia lukuja.   
+* Kiinnitä huomiota [kaavioiden lajitteluun](consumer/end-user-change-sort.md). Jos haluat kiinnittää huomiota suurimpaan tai pienimpään lukuun, lajittele mittarin mukaan. Jos haluat, että tietty luokka on nopeasti löydettävissä useiden muiden joukosta, lajittele akselin mukaan.  
+* Ympyräkaaviot ovat parhaimmillaan, kun niissä on alle kahdeksan luokkaa. Koska arvoja ei voi tarkastella rinnakkain ympyräkaaviossa, niiden vertaaminen on vaikeampaa kuin palkki- ja pylväskaavioissa. Ympyräkaaviot toimivat parhaiten, kun osien vertailun sijaan tarkastellaan tietyn osan suhdetta kokonaisuuteen. Mittarikaaviot puolestaan ovat hyviä nykyisen tilanteen esittämisessä suhteessa tavoitteeseen.    
+
+Lisää visualisointikohtaisia ohjeita on artikkelissa [Visualisointityypit Power BI:ssä](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
+
+### <a name="learn-more-about-best-practice-dashboard-design"></a>Lue lisätietoja parhaiden käytäntöjen mukaisesta koontinäyttörakenteesta
+Suosittelemiamme teoksia:
+
+* Cole Nussbaumer Knafic: *Storytelling with Data*
+* Nathan Yau: *Data Points*
+* Alberto Cairo: *The Truthful Art*
+* Stephen Few: *Now You See It*  
+* Edward Tufte: *Envisioning Information*  
+* Andrew Abela: *Advanced Presentations Design*   
+
+## <a name="next-steps"></a>Seuraavat vaiheet
+* [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
+* [Raportit Power BI:ssä](consumer/end-user-reports.md)
+
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+
+

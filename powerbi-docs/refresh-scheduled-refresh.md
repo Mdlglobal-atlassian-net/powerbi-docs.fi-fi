@@ -1,20 +1,20 @@
 ---
 title: Ajoitetun päivityksen määrittäminen
 description: Tämä kattaa vaiheet yhdyskäytävän valintaan ja ajoitetun päivityksen määrittämiseen.
-author: maggiesMSFT
+author: davidiseminger
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.author: maggies
+ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 622273ed4c8d6f2faee46d3cc84d981f86bd8c92
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.openlocfilehash: cc0527d093118fdb585800d0038f824223098119
+ms.sourcegitcommit: 1f768dfef27cd8887318671f91427f72d02370c6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "74958398"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81675690"
 ---
 # <a name="configure-scheduled-refresh"></a>Ajoitetun päivityksen määrittäminen
 
@@ -38,11 +38,11 @@ Jos yhdyskäytävää ei ole käytettävissä, näet **Yhdyskäytäväyhteys**-k
 
 ![Yhdyskäytävää ei määritetty](media/refresh-scheduled-refresh/gateway-not-configured.png)
 
-Jos sinulla on henkilökohtainen yhdyskäytävä määritettynä, voi valita sen, jos se on online-tilassa. Se näkyy offline-tilassa, jos se ei ole käytettävissä.
+Jos sinulla on henkilökohtainen yhdyskäytävä määritettynä ja online-tilassa, voit valita sen. Se näkyy offline-tilassa, jos se ei ole käytettävissä.
 
 ![Yhdyskäytäväyhteys](media/refresh-scheduled-refresh/gateway-connection.png)
 
-Voit myös valita yritysyhdyskäytävän, jos sellainen on käytettävissäsi. Näkyviin tulee vain yritysyhdyskäytävä, joka on käytettävissä, jos tilisi on luettelossa tietolähteen **Käyttäjät**-välilehdellä kyseisen yhdyskäytävän kohdalla.
+Voit myös valita yritysyhdyskäytävän, jos sellainen on käytettävissäsi. Näkyviin tulee vain yritysyhdyskäytävä, joka on käytettävissä, jos tilisi on luettelossa tietolähteen **Käyttäjät**-välilehdessä kyseisen yhdyskäytävän kohdalla.
 
 ## <a name="data-source-credentials"></a>Tietolähteen tunnistetiedot
 
@@ -52,10 +52,10 @@ Jos käytät henkilökohtaista yhdyskäytävää tietojen päivittämiseen, sinu
 
 ![Tietolähteen tunnistetiedot](media/refresh-scheduled-refresh/data-source-credentials-pgw.png)
 
-Sinua pyydetään kirjautumaan tietolähteeseen vain kun päivität kyseisen tietojoukon ensimmäistä kertaa. Kun tunnistetiedot on syötetty, kyseiset tunnistetiedot säilyvät tietojoukossa.
+Sinua pyydetään kirjautumaan tietolähteeseen vain, kun päivität kyseisen tietojoukon ensimmäistä kertaa. Kun tunnistetiedot on syötetty, kyseiset tunnistetiedot säilyvät tietojoukossa.
 
 > [!NOTE]
-> Jotkin todennusmenetelmät, jos käytät kirjautuessasi tietolähteeseen vanhentunutta salasanaa tai ne on muutettu, edellyttävät sen muuttamista tietolähteeseen **Tietolähteen tunnistetiedoissa**.
+> Jos käytät tietolähteeseen kirjautuessasi vanhentunutta salasanaa tai salasana on vaihdettu, jotkin todennusmenetelmät edellyttävät sen vaihtamista tietolähdettä varten myös **Tietolähteen tunnistetiedot** -toiminnolla.
 
 Jos ilmenee ongelmia, ongelmalla on yleensä jotain tekemistä sen kanssa, että yhdyskäytävä on offline-tilassa, koska sitä ei voitu kirjata sisään Windowsiin ja palvelua käynnistää tai Power BI ei voinut kirjautua tietolähteisiin tietojen päivittämistä koskevaa kyselyä varten. Jos päivitys epäonnistuu, tarkista tietojoukon asetukset. Jos yhdyskäytäväpalvelu on offline-tilassa, näet virheen **Tila**-kohdassa. Jos Power BI ei voi kirjautua sisään tietolähteeseen, näet virheen Tietolähteen tunnistetiedot -kohdassa.
 
@@ -82,7 +82,11 @@ Aseta **Pidä tietosi ajan tasalla** -liukusäätimen asetukseksi **Kyllä**, jo
 > [!NOTE]
 > Tietojoukon ajoitettu päivitys keskeytetään kahden kuukauden käyttämättömyyden jälkeen. Tietojoukkoa pidetään epäaktiivisena, kun kukaan käyttäjä ei ole käynyt koontinäytössä tai sille rakennetussa raportissa. Samaan aikaan tietojoukon omistajalle lähetetään sähköpostiviesti, joka ilmaisee, että ajoitettu päivitys on keskeytetty. Tietojoukon päivitysaikataulu näkyy silloin **poistettuna käytöstä**. Jatka ajoitettua päivitystä käymällä millä tahansa koontinäytöllä tai raportissa, joka on rakennettu tietojoukkoon.
 
-## <a name="whats-supported"></a>Tuetut toiminnot:
+## <a name="whats-supported"></a>Tuetut toiminnot
+
+
+> [!NOTE]
+> Ajoitettu päivitys poistetaan käytöstä automaattisesti myös neljä peräkkäisen virheen jälkeen.
 
 Tiettyjä tietojoukkoja tuetaan ajoitettua päivitystä varten eri yhdyskäytäviä vastaan. Seuraavassa kerrotaan, mitä on saatavana.
 
@@ -90,8 +94,8 @@ Tiettyjä tietojoukkoja tuetaan ajoitettua päivitystä varten eri yhdyskäytäv
 
 **Power BI Desktop**
 
-* Kaikki online-tietolähteet, jotka näkyvät Power BI Desktopin kohdassa **Nouda tiedot** ja Kyselyeditorissa.
-* Kaikki paikalliset tietolähteet, jotka näkyvät Power BI Desktopin **Nouda tiedot** -kohdassa ja Kyselyeditorissa lukuun ottamatta Hadoop-tiedostoa (HDFS) ja Microsoft Exchangea.
+* Kaikki online-tietolähteet, jotka näkyvät Power BI Desktopin **Nouda tiedot** -kohdassa ja Kyselyeditorissa.
+* Kaikki paikalliset tietolähteet, jotka näkyvät Power BI Desktopin **Nouda tiedot**  -kohdassa ja Kyselyeditorissa, lukuun ottamatta Hadoop-tiedostoa (HDFS) ja Microsoft Exchangea.
 
 **Excel**
 

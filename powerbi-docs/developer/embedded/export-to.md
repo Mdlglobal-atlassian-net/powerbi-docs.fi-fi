@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 03/24/2020
-ms.openlocfilehash: 472797cf30d6b88a59af5b3846e9b710bf4607c7
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: db907897256ef4afc0bdb9a253a23880b6e79f53
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267499"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525464"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Power BI ‑raportin vieminen tiedostoon (esikatselu)
 
@@ -30,7 +30,7 @@ Voit käyttää vientiominaisuutta monella eri tavalla. Tässä on pari esimerkk
 
 * **Lähetä tulostukseen -painike** – Luo sovelluksessa painike, joka käynnistää napsautettaessa vientityön. Työ voi viedä esillä olevan raportin .pdf- tai .pptx-muodossa, ja kun vienti on valmis, käyttäjä voi vastaanottaa tiedoston latauksena. Kirjanmerkkien avulla raportin voi viedä tietyssä tilassa, mukaan lukien määritetyt suodattimet, osittajat ja lisäasetukset. Koska ohjelmointirajapinta on asynkroninen, saattaa kestää jonkin aikaa, ennen kuin tiedosto on käytettävissä.
 
-* **Sähköpostin liite** – Lähetä määritetyin väliajoin automatisoitu sähköpostiviesti, jossa on liitteenä .pdf-raportti. Tästä skenaariosta voi olla hyötyä, jos haluat automatisoida viikkoraportin lähettämisen johtoportaalle.
+* **Sähköpostin liite**: lähetä määritetyin väliajoin automatisoitu sähköpostiviesti, jossa on liitteenä .pdf-raportti. Tästä skenaariosta voi olla hyötyä, jos haluat automatisoida viikkoraportin lähettämisen johtoportaalle.
 
 ## <a name="using-the-api"></a>Ohjelmointirajapinnan käyttäminen
 
@@ -106,6 +106,7 @@ Työ, joka ylittää samanaikaisten pyyntöjen määrän, ei pääty. Jos esimer
 * Luottamuksellisuustunnisteella merkittyä raporttia ei voi viedä .pdf- tai .pdf-muotoon [palvelun päänimen](embed-service-principal.md) avulla.
 * Vietyyn raporttiin voi sisällyttää 30 sivua. Jos raportissa on enemmän sivuja, ohjelmointirajapinta palauttaa virheen ja vientityö peruutetaan.
 * [Henkilökohtaisia kirjanmerkkejä](../../consumer/end-user-bookmarks.md#personal-bookmarks) ja [pysyviä suodattimia](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) ei tueta.
+* Maakohtaisia pilvipalveluja ei tueta.
 * Alla lueteltuja Power BI -visualisointeja ei tueta. Kun näitä visualisointeja sisältävä raportti viedään, raportin visualisointeja sisältäviä osia ei hahmonneta, ja ne näyttävät virhesymbolin.
     * Sertifioimattomat Power BI -visualisoinnit
     * R-visualisoinnit

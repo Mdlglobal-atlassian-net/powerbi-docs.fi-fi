@@ -1,5 +1,5 @@
 ---
-title: Ilmaiskäyttäjien käytettävissä olevat ominaisuudet
+title: Ominaisuuksien saatavuus käyttäjille, joilla on maksuttomat käyttöoikeudet
 description: Selitys ja taulukko, jossa näkyvät kuluttajien ja ilmaiskäyttäjien käytettävissä olevat ominaisuudet.
 author: mihart
 ms.reviewer: ''
@@ -7,17 +7,17 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 04/05/2020
+ms.date: 04/17/2020
 ms.author: mihart
 LocalizationGroup: consumers
-ms.openlocfilehash: 60ac58c2d1cb815ca322abf6806d9e866f719660
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: 4c4b923199ccd35433b7bf743314395fc70bbe30
+ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81268002"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82065722"
 ---
-# <a name="power-bi-feature-list-for-consumers-and-other-free-users"></a>Power BI:n ominaisuusluettelo *kuluttajille* ja muille ilmaiskäyttäjille
+# <a name="power-bi-feature-list-for-consumers-and-others-with-free-licenses"></a>Power BI:n ominaisuusluettelo *kuluttajille* ja muille ilmaiskäyttäjille
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
@@ -27,40 +27,47 @@ Suunnittelijat voivat jakaa sisältöä monella eri tavalla. Tämä artikkeli on
 
 ![Power BI:n siirtymisruutu](media/end-user-features/power-bi-share.png)
 
-[Edellisessä artikkelissa](end-user-license.md) on kuvattu erityyppiset Power BI -käyttö oikeudet (maksuton ja Pro) sekä tilaukset (Premium) ja selostettu, miten voit etsiä käyttämäsi käyttöoikeuden ja tilauksen. Tässä artikkelissa on luettelo Power BI:n ominaisuuksista, jotka ovat käytettävissäsi käyttöoikeutesi ja tilauksesi perusteella.   
+[Edellisessä artikkelissa](end-user-license.md) kerrottiin, että se, mitä voit tehdä koontinäyttöjen, raporttien ja sovellusten (sisällön) avulla Power BI -palvelussa, riippuu kolmesta asiasta: käyttöoikeuksistasi, rooleistasi ja oikeuksistasi sekä sisällön tallennuspaikasta.
+
+Tässä artikkelissa luetellaan, mitkä Power BI -palvelun ominaisuudet ovat kaltaisesi *kuluttajan* käytettävissä. Määrittelyn mukaan *kuluttajat* käyttävät maksutonta käyttöoikeutta työskentelyyn Power BI -palvelussa (ei Power BI Desktopissa), ja he ovat sellaisten organisaatioiden jäseniä, joilla on Premium-kapasiteetti.
 
 <art>
 
 ## <a name="quick-review-of-terminology"></a>Nopea terminologiakatsaus
-Tarkastellaanpa joitakin Power BI:n käsitteitä ennen luetteloon siirtymistä. Tämä on nopea katsaus, ja jos tarvitset lisätietoja, katso [Kuluttajien käyttöoikeudet ja tilaukset](end-user-license.md) tai [Power BI:n peruskäsitteet](end-user-basic-concepts.md).
+Tarkastellaanpa joitakin Power BI:n käsitteitä ennen luetteloon siirtymistä. Tämä on nopea katsaus, ja jos tarvitset lisätietoja, katso [Kuluttajien käyttöoikeudet](end-user-license.md) tai [Power BI:n peruskäsitteet](end-user-basic-concepts.md).
 
 ### <a name="workspaces-and-roles"></a>Työtilat ja roolit
-Työtiloja on kahdenlaisia: **Oma työtila** ja sovellustyötilat. Vain sinulla on käyttöoikeus **Omaan työtilaasi**. Yhteiskäyttö ja jakaminen edellyttävät, että sisällön suunnittelija käyttää sovellustyötilaa. 
+Työtiloja on kahdenlaisia: **Oma työtila** ja sovellustyötilat. Vain sinulla on käyttöoikeus **omaan työtilaasi**. Yhteiskäyttö ja jakaminen edellyttävät, että sisällön *suunnittelijat*, joilla on Pro-käyttöoikeudet, käyttävät sovellustyötilaa. 
 
-Työtilan *roolien* avulla Power BI -suunnittelijat voivat hallita, kuka voi tehdä mitäkin työtilassa. *Kuluttajille* määritetään **Katselija**-rooli. 
+Sovellustyötiloissa suunnittelijat voivat määrittää *rooleja* ja näin hallita sitä, mitä kukin voi kyseisessä työtilassa tehdä. *Kuluttajille* määritetään **Katselija**-rooli. 
 
-### <a name="premium-capacity-subscription"></a>Premium-kapasiteettitilaus
-Kun organisaatiolla on Premium-kapasiteettitilaus, järjestelmänvalvojat ja Pro-käyttäjät voivat varata työtiloja *Premium-kapasiteettiin*. Premium-kapasiteetin työtila on tila, jossa Pro-käyttäjät voivat jakaa ja tehdä yhteistyötä maksuttoman version käyttäjien kanssa ilman, että heidän täytyisi hankkia Pro-käyttöoikeuksia. Maksuttomilla käyttäjillä on näissä työtiloissa laajennetut käyttöoikeudet (katso seuraava luettelo). 
+### <a name="premium-capacity"></a>Premium-kapasiteetti
+Kun organisaatiolla on Premium-kapasiteettitilaus, järjestelmänvalvojat ja Pro-käyttäjät voivat varata työtiloja *varattuun kapasiteettiin*. Varatun kapasiteetin työtila on tila, jossa Pro-käyttäjät voivat jakaa ja tehdä yhteistyötä maksuttoman version käyttäjien kanssa ilman, että heidän täytyisi hankkia Pro-käyttöoikeuksia. Maksuttomilla käyttäjillä on näissä työtiloissa laajennetut käyttöoikeudet (katso seuraava luettelo). 
 
 ### <a name="licenses"></a>Käyttöoikeudet 
-Jokaisella Power BI -palvelun käyttäjällä on joko maksuton käyttöoikeus tai Pro-käyttöoikeus. Jotkin ominaisuudet ja toiminnot on rajoitettu käyttäjille, joilla on Pro-käyttöoikeus.
+Jokaisella Power BI -palvelun käyttäjällä on joko maksuton käyttöoikeus tai Pro-käyttöoikeus. *Kuluttajilla* on maksuttomia käyttöoikeuksia.
 
-- **Maksuton käyttöoikeus** – Annetaan yleensä organisaation sisäisille *kuluttajille*. Myös kaikki, jotka rekisteröityvät Power BI:tä varten yksilönä ja haluavat kokeilla [Power BI -palvelua erillisessä tilassa](../service-self-service-signup-for-power-bi.md).  
-- **Pro-käyttöoikeus** – Annetaan yleensä organisaation sisäisille suunnittelijoille, analyytikoille ja kehittäjille.   
-- **Maksuton käyttöoikeus ja Premium-kapasiteetti** – Sallii ilmaiskäyttäjien (*kuluttajien*) tarkastella ja käsitellä sisältöä, jonka Pro-käyttäjät ovat luoneet Premium-kapasiteetissa ja jakaneet. Näin Pro-käyttäjät voivat tehdä yhteistyötä ilmaiskäyttäjien kanssa työtilassa tai käyttämällä **Jaettu kanssani** -toimintoa.
+- **Maksuton käyttöoikeus** – Annetaan yleensä organisaation sisäisille *kuluttajille* (katso ensimmäinen kuva alla). Määritetään myös kaikille, jotka rekisteröityvät Power BI -palveluun yksilönä ja haluavat kokeilla [Power BI -palvelua erillisessä tilassa](../service-self-service-signup-for-power-bi.md) (katso toinen kuva alla). 
 
-Ilmaiskäyttäjillä, jotka ovat Premium-kapasiteetin tilanneen organisaation jäseniä, on laajat oikeudet. Kunhan Pro-käyttäjät käyttävät Premium-kapasiteetin työtiloja sisällön jakamiseen, ilmaiskäyttäjät voivat tarkastella kyseisten Pro-käyttäjien töitä ja tehdä yhteistyötä heidän kanssaan.  **Näin ilmaiskäyttäjästä tulee Power BI -*kuluttaja*, joka voi vastaanottaa ja jakaa sisältöä liiketoimintapäätösten tekemistä varten.** 
+    ![näyttö, jossa näkyy ilmaiskäyttäjä](media/end-user-features/power-bi-free-organization.png)
+
+    Ilmaiskäyttäjillä, jotka ovat jäseniä organisaatiossa, jolla on Premium-kapasiteetti, on laajat oikeudet. Kunhan Pro-käyttäjät käyttävät Premium-kapasiteetin työtiloja sisällön jakamiseen, ilmaiskäyttäjät voivat tarkastella kyseisten Pro-käyttäjien töitä ja tehdä yhteistyötä heidän kanssaan.  **Näin ilmaiskäyttäjästä tulee Power BI -*kuluttaja*, joka voi vastaanottaa ja jakaa sisältöä liiketoimintapäätösten tekemistä varten.** 
+ 
+    ![näyttö, jossa näkyy ilmaiskäyttäjä](media/end-user-features/power-bi-free-user.png)
+
+
+   
 
 ## <a name="power-bi-feature-list-for-consumers-and-free-users"></a>Power BI:n ominaisuusluettelo *kuluttajille* ja ilmaiskäyttäjille
-Seuraavassa taulukossa on lueteltu, mitä tehtäviä voi suorittaa *kuluttaja* organisaatiossa, jolla on Premium-tilaus.    
+Seuraavassa kaaviossa määritellään, mitä tehtäviä *kuluttaja* voi suorittaa käsitellessään sisältöä Premium-kapasiteetissa ja jaetussa kapasiteetissa.    
 
-Ensimmäinen sarake edustaa ilmaiskäyttäjää, joka käsittelee sisältöä **Omassa työtilassa**. Tämä käyttäjä ei voi tehdä yhteistyötä työtovereiden kanssa työtiloissa. Työtoverit eivät voi suoraan jakaa sisältöä tämän käyttäjän kanssa, eikä tämä käyttäjä voi jakaa sisältöä **Oma työtilastaan**. 
+Ensimmäinen sarake edustaa ilmaiskäyttäjää, joka käsittelee sisältöä **Omassa työtilassa**. Tämä käyttäjä ei voi tehdä yhteistyötä työtovereiden kanssa Power BI -palvelussa. Työtoverit eivät voi suoraan jakaa sisältöä tämän käyttäjän kanssa, eikä tämä käyttäjä voi jakaa sisältöä **Oma työtilastaan**. 
 
 Toinen sarake edustaa *kuluttajaa*.  Kuluttaja:
 
 - on saanut maksuttoman käyttöoikeuden
 - on osa organisaatiota, jolla on Premium-kapasiteetin tilaus
-- saa sisältöä (sovelluksia, koontinäyttöjä, raportteja) Pro-käyttäjiltä, jotka jakavat kyseisen sisällön Premium-kapasiteetin sovellustyötilojen avulla
+- saa sisältöä (sovelluksia, koontinäyttöjä, raportteja) Pro-käyttäjiltä, jotka jakavat kyseisen sisällön varatun kapasiteetin sovellustyötilojen avulla
 - saa **Lukija**-roolin kyseisiin sovellustyötiloihin. 
 
 ### <a name="legend"></a>Selite
@@ -72,7 +79,7 @@ Toinen sarake edustaa *kuluttajaa*.  Kuluttaja:
 
 ### <a name="feature-list"></a>Ominaisuusluettelo
 
-|Ominaisuudet   | Skenaario 1: Maksuttoman Power BI:n käyttäjä, jolla ei ole käyttöoikeuksia premium-kapasiteetissa isännöitävään sisältöön.    | Skenaario 2: Maksuttoman Power BI:n käyttäjä, jolla on **Lukija**-käyttöoikeudet premium-kapasiteettiin tallennettuun sisältöön. Tämä henkilö on Power BI -*kuluttaja*. |
+|Ominaisuudet   | Skenaario 1: Maksuttoman Power BI:n käyttäjä, jolla ei ole käyttöoikeuksia varatussa kapasiteetissa isännöitävään sisältöön.    | Skenaario 2: Maksuttoman Power BI:n käyttäjä, jolla on **Lukija**-käyttöoikeudet varattuun kapasiteettiin tallennettuun sisältöön. Tämä henkilö on Power BI -*kuluttaja*. |
 |---|---|---|
 |**Sovellukset** 
 |Asentuu automaattisesti | ![orange x](media/end-user-features/orange-x.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)*| 

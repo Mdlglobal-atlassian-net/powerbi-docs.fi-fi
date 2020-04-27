@@ -6,19 +6,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2019
+ms.date: 04/15/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 2216fb2b18fd0f35fe9ece25ae2bfeea26672a66
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 69b42452af53b8929f49a6bde6b47b0cf3cc152e
+ms.sourcegitcommit: 5ece366fceee9832724dae40eacf8755e1d85b04
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872038"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81525556"
 ---
 # <a name="the-new-look-where-did-the-actions-go"></a>Uusi ulkoasu: Minne toiminnot ovat kadonneet?
 
 Power BI -palvelussa (app.powerbi.com) on uusi ulkoasu, jonka ansiosta raportteja on helpompi tarkastella ja käyttää. Tämän seurauksena monet valikkotoiminnot ovat siirtyneet. Tämän artikkelin taulukoissa näkyvät sekä vanhat että uudet sijainnit. Taustatietoja löytyy artikkelista [Power BI -palvelun uusi ulkoasu](service-new-look.md).
+
+Etsitkö tietoja **Power BI Desktopin** uudesta ulkoasusta? Katso [Power BI Desktopin päivitetyn valintanauhan käyttäminen](desktop-ribbon.md).
 
 ## <a name="report-actions-in-the-new-look"></a>Raporttitoiminnot uudessa ulkoasussa
 
