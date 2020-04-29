@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: 8a6351c96a2d2bef596cbdd693b4b7035fc16e14
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.openlocfilehash: a9a5f3fd5304e64209b6069741dffcc3fa9b07c8
+ms.sourcegitcommit: c772c544ce2e1e2a147b9b62e5579ac3cb59d54c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81436341"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82256154"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI Yhdysvaltain valtionhallinnon asiakkaille
 Tämä artikkeli on tarkoitettu Yhdysvaltain valtionhallinnon asiakkaille, jotka ottavat Power BI:n käyttöön osana Office 365 Government -palvelupakettia. Government-palvelupaketit on suunniteltu sellaisten organisaatioiden ainutlaatuisiin tarpeisiin, joiden pitää olla yhteensopivia Yhdysvaltain valtionhallinnon vaatimusten ja suojausstandardien kanssa. Yhdysvaltain valtionhallinnon asiakkaille suunniteltu Power BI-palvelu eroaa Power BI -palvelun kaupallisesta versiosta. Nämä ominaisuuksien erot ja ominaisuudet kuvataan seuraavissa osissa.
@@ -88,7 +88,7 @@ Jotta valtionhallinnon pilvipalveluasiakkaiden tarpeet saadaan täytettyä, valt
 |Raportin luominen|Koontinäyttöjen ja raporttien luominen ja tarkasteleminen|Käytettävissä|Käytettävissä|Käytettävissä|
 |  |Ajoitettu tietojen päivittäminen|Käytettävissä|Käytettävissä|Käytettävissä|
 |  |Päivitettävät työryhmän koontinäytöt|Käytettävissä|Käytettävissä|Käytettävissä|
-|  |Sivutetut raportit|Käytettävissä|Käytettävissä|Toteutussuunnitelmassa|
+|  |Sivutetut raportit|Käytettävissä|Toteutussuunnitelmassa|Toteutussuunnitelmassa|
 |  |Mallisovellukset|Ei käytettävissä|Ei käytettävissä|Ei käytettävissä|
 |Tietoihin yhdistäminen|Tietojen ja raporttien tuominen Excelistä|Käytettävissä|Käytettävissä|Käytettävissä|
 |  |Tietojen tuominen CSV-tiedostoista|Käytettävissä|Käytettävissä|Käytettävissä|
