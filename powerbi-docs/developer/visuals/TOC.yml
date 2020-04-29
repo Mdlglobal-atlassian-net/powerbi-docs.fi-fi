@@ -26,6 +26,8 @@
           href: power-bi-custom-visuals-organization.md
         - name: Power BI -visualisointien ohjeet
           href: guidelines-powerbi-visuals.md
+        - name: Suorituskykyvihjeitä
+          href: performance-tips.md
         - name: Visualisointien UKK
           href: power-bi-custom-visuals-faq.md
         - name: Ominaisuuksien käyttö
@@ -70,6 +72,8 @@
           href: enable-sync-slicers.md
         - name: Visualisointien virheiden korjaus
           href: visuals-how-to-debug.md
+        - name: Mobiilikehitys
+          href: mobile-development.md
         - name: Power BI -visualisointien vianmääritys
           href: power-bi-custom-visuals-troubleshoot.md
     - name: Viittaus
@@ -104,6 +108,8 @@
               href: utils-svg.md
             - name: Tyyppiapuohjelmat
               href: utils-type.md
+            - name: Testiapuohjelmat
+              href: utils-test.md
             - name: Työkaluvihjeiden apuohjelmat
               href: utils-tooltip.md
             - name: Tietonäkymäapuohjelmat
