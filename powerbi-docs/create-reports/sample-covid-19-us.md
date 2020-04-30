@@ -2,20 +2,20 @@
 title: COVID-19-seurantamalli Yhdysvaltain viranomaisille
 description: Lataa muokattavaksi malliraportti, joka sisältää Yhdysvaltain osavaltiotason ja paikallistason tietoja COVID-19-pandemiasta.
 author: LukaszPawlowski-MS
-ms.reviewer: ''
+ms.reviewer: maggies
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/06/2020
+ms.date: 04/28/2020
 ms.author: lukaszp
 LocalizationGroup: Samples
-ms.openlocfilehash: 66e76c21e7d5171d24ff1518745a35947aa7ca42
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.openlocfilehash: 8cdc4a9a78c20c7c4e6986b63a3af61a319df1b6
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80979772"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584937"
 ---
 # <a name="covid-19-tracking-sample-for-us-state-and-local-governments"></a>COVID-19-seurantamalli Yhdysvaltain viranomaisille
 
@@ -48,7 +48,7 @@ Jos haluat sisällyttää vuorovaikutteisen grafiikan sivustoosi, kopioi ja liit
 <iframe width="1600" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
 ```
 
-Upotuskoodi on HTML iFrame -elementti, jonka voit lisätä mille tahansa HTML-sivulle. Säädä iFramen leveys ja korkeus sivustoosi sopivaksi. Malliraportti on tehty 16:9-kuvasuhteelle, joten valitse koko, joka säilyttää tämän kuvasuhteen. Oikein toteutettuna grafiikka näkyy ilman ylimääräisiä harmaita reunoja. Tutustu [iFramen koon muokkaamiseen vinkkeihin](../service-publish-to-web.md#tips-and-tricks-for-iframe-height-and-width), kun teet näitä muutoksia.
+Upotuskoodi on HTML iFrame -elementti, jonka voit lisätä mille tahansa HTML-sivulle. Säädä iFramen leveys ja korkeus sivustoosi sopivaksi. Malliraportti on tehty 16:9-kuvasuhteelle, joten valitse koko, joka säilyttää tämän kuvasuhteen. Oikein toteutettuna grafiikka näkyy ilman ylimääräisiä harmaita reunoja. Tutustu [iFramen koon muokkaamiseen vinkkeihin](../service-publish-to-web.md#tips-for-iframe-height-and-width), kun teet näitä muutoksia.
 
 ## <a name="option-2-customize-the-sample-power-bi-file"></a>Vaihtoehto 2: muokkaa Power BI -mallitiedostoa
 
@@ -112,7 +112,7 @@ Jos aiot julkaista muokatun raportin verkkosivustossasi, sinun kannattaa määri
 
 ### <a name="create-a-publish-to-web-embed-code"></a>Luo verkkoon julkaisemisen upotuskoodi 
 
-Jos haluat upottaa muokatun raportin omaan verkkosivustoosi, [luo oma verkkoon julkaisemisen upotuskoodi ohjeiden mukaisesti](../service-publish-to-web.md#how-to-use-publish-to-web).
+Jos haluat upottaa muokatun raportin omaan verkkosivustoosi, [luo oma verkkoon julkaisemisen upotuskoodi ohjeiden mukaisesti](../service-publish-to-web.md#create-embed-codes-with-publish-to-web).
 
 Kun julkaiset upotuskoodin, upotat tiedot sivustoosi vahvistusvalintaikkunan iFramen avulla.
 
