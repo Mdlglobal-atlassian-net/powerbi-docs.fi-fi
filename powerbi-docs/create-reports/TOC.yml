@@ -327,6 +327,10 @@
               href: ../paginated-reports/report-builder-shared-datasets.md
             - name: Parametrien luominen
               href: ../paginated-reports/paginated-reports-parameters.md
+            - name: Aliraportit
+              href: ../paginated-reports/subreports.md
+            - name: Aliraporttien vianmääritys
+              href: ../paginated-reports/subreports-troubleshoot.md
             - name: Raporttiparametrin välittäminen URL-osoitteessa
               href: ../paginated-reports/report-builder-url-pass-parameters.md
             - name: Sivutetun raportin julkaiseminen
