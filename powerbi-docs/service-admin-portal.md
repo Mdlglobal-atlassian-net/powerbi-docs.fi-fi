@@ -6,16 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/16/2020
+ms.date: 04/27/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 48f26229ea77bbe26ee07d46925d41cadcce7c12
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: e44a50a6e44006c0b23b0d57917f16260fdbe2f8
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80114438"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585401"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Power BI:n hallinta hallintaportaalissa
 
@@ -203,30 +203,28 @@ Seuraavassa kuvassa näet esiin tulevan ilmoituksen, kun jaat ulkoiselle käytt�
 
 ### <a name="publish-to-web"></a>Julkaise verkkoon
 
-Organisaation käyttäjät voivat julkaista raportteja verkossa. [Lisätietoja](service-publish-to-web.md). Tämä tuo raportin ja sen sisältämät tiedot kaikkien saataville verkossa.
+Power BI -vuokraajan järjestelmänvalvojana **Julkaise verkkoon** -asetus tarjoaa sinulle vaihtoehtoja, joiden avulla käyttäjät voivat luoda upotuskoodeja ja julkaista niiden avulla raportteja verkossa. Tämä toiminto tuo raportin ja sen tiedot kaikkien saataville verkossa. Lue lisää [verkossa julkaisemisesta](service-publish-to-web.md).
 
 > [!NOTE]
-> Power BI -järjestelmänvalvojan on sallittava uusien Julkaise verkkoon -upotuskoodien luominen. Organisaatioilla saattaa olla olemassa olevia upotuskoodeja. Voit tarkastella julkaistuja raportteja [Upotuskoodit](service-admin-portal.md#embed-codes)-sivulla.
+> Vain Power BI -järjestelmänvalvojat voivat sallia uusien Julkaise verkkoon -upotuskoodien luomisen. Organisaatioilla voi olla olemassa olevia upotuskoodeja. Voit tarkistaa parhaillaan julkaistavat raportit hallintaportaalin [Upotuskoodit](service-admin-portal.md#embed-codes)-osasta.
 
-Seuraavassa kuvassa näkyy raportin **Tiedosto**-valikko, kun **Julkaise verkkoon** -asetus on käytössä.
+Seuraavassa kuvassa näkyy raportin **Lisää vaihtoehtoja (...)** -valikko, kun **Julkaise verkkoon** -asetus on käytössä.
 
-![Verkkoon julkaiseminen tiedostovalikossa](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+![Lisää vaihtoehtoja -valikon Julkaise verkkoon -vaihtoehto](media/service-admin-portal/power-bi-more-options-publish-web.png)
 
-**Julkaise verkkoon** -asetus sisältää vaihtoehtoja upotuskoodien luomiseen.
+Hallintaportaalin **Julkaise verkkoon** -asetus sisältää vaihtoehtoja upotuskoodien luomiseen.
 
 ![Julkaise verkkoon -asetus](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
 
-
-Käyttäjiä kehotetaan ottamaan yhteyttä Power BI -järjestelmänvalvojaan ja pyytämään upotuskoodien luomisen sallimista, kun **Valitse, miten upotuskoodit toimivat** -asetuksena on **Salli vain olemassa olevat upotuskoodit** ja **Julkaise verkkoon** -asetuksena on **Käytössä**.
+Järjestelmänvalvojat voivat määrittää, **Julkaise verkko** -asetukseksi**Käytössä**-vaihtoehdon ja **Valitse, miten upotuskoodit toimivat** -asetukseksi vaihtoehdon**Salli vain olemassa olevat upotuskoodit**. Tällöin käyttäjät voivat luoda upotuskoodeja, mutta heidän on sitä varten otettava yhteyttä Power BI -järjestelmänvalvojaan.
 
 ![Julkaise verkkoon -kehote](media/service-publish-to-web/publish_to_web_admin_prompt.png)
-
 
 Käyttäjät näkevät käyttöliittymässä eri asetuksia sen mukaan, mikä heidän **Julkaise verkkoon** -asetuksensa on.
 
 |Ominaisuus |Otettu käyttöön koko organisaatiolle |Otettu käyttöön koko organisaatiolle |Tietyt käyttöoikeusryhmät   |
 |---------|---------|---------|---------|
-|Raportin **Tiedosto**-valikon **Julkaise verkkoon** -toiminto|Käytössä kaikille|Ei näkyvissä kaikille|Näkyvissä vain valtuutetuille käyttäjille tai ryhmille.|
+|Raportin **Tiedosto**-valikon **Lisää vaihtoehtoja (...)** -toiminto|Käytössä kaikille|Ei näkyvissä kaikille|Näkyvissä vain valtuutetuille käyttäjille tai ryhmille.|
 |**Asetukset**-valikon **Upotuskoodien hallinta**|Käytössä kaikille|Käytössä kaikille|Käytössä kaikille<br><br>* **Poista**-vaihtoehto vain valtuutetuille käyttäjille tai ryhmille.<br>* **Hae koodit** käytössä kaikille.|
 |**Upotuskoodit** hallintaportaalissa|Tila ilmaisee jotain seuraavista:<br>* Aktiivinen<br>* Ei tuettu<br>* Estetty|Tilana näytetään **Ei käytössä**|Tila ilmaisee jotain seuraavista:<br>* Aktiivinen<br>* Ei tuettu<br>* Estetty<br><br>Jos käyttäjälle ei ole annettu oikeuksia vuokraaja-asetuksissa, tilana näytetään **Loukannut**.|
 |Aiemmin luodut julkaistut raportit|Kaikki käytössä|Kaikki poissa käytöstä|Raportit näytetään jatkossakin kaikille.|

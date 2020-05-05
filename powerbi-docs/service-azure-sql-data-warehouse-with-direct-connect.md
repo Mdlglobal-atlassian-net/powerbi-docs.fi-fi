@@ -1,6 +1,6 @@
 ---
 title: Azure SQL Data Warehouse ja DirectQuery
-description: Azure SQL Data Warehouse ja DirectQuery
+description: Azure SQL -tietovarasto ja DirectQuery
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
@@ -8,16 +8,16 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.custom: ''
-ms.date: 06/20/2018
+ms.date: 04/28/2020
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 932c13b84184ad237879e33e943d85020640dd4c
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 472eacea2a84d1f4a71d6869406e17f2ffd03e6b
+ms.sourcegitcommit: c772c544ce2e1e2a147b9b62e5579ac3cb59d54c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698305"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82255869"
 ---
-# <a name="azure-sql-data-warehouse-with-directquery"></a>Azure SQL Data Warehouse ja DirectQuery
+# <a name="azure-sql-data-warehouse-with-directquery"></a>Azure SQL -tietovarasto ja DirectQuery
 
 Azure SQL Data Warehouse ja DirectQueryn avulla voit luoda dynaamisia raportteja niiden tietojen ja arvojen perusteella, joita sinulla jo on Azure SQL Data Warehousessa. DirectQueryn avulla kyselyt lähetetään takaisin Azure SQL Data Warehouseen reaaliaikaisesti tutkiessasi tietoja. Reaaliaikaiset kyselyt yhdessä SQL Data Warehousen skaalattavuuden kanssa mahdollistavat sen, että käyttäjät voivat luoda dynaamisia raportteja muutamassa minuutissa useista teratavuista tietoja. Lisäksi **Avaa Power BI:ssä** -painikkeen käyttöönoton avulla käyttäjät voivat muodostaa yhdistää Power BI:n suoraan SQL Data Warehouseen ilman, että heidän tarvitsee määrittää manuaalisesti tietoja.
 
@@ -61,7 +61,7 @@ SQL Data Warehouse näkyy myös Power BI:n Nouda tiedot -sivulla.
 
     ![Tietokannat](media/service-azure-sql-data-warehouse-with-direct-connect/databases.png)
 
-3. Valitse **SQL Data Warehouse** \> **Yhdistä**.
+3. Valitse **SQL-tietovarasto** \> **Yhdistä**.
 
     ![Azure SQL DW ja suora yhteys](media/service-azure-sql-data-warehouse-with-direct-connect/azuresqldatawarehouseconnect.png)
 
@@ -101,4 +101,4 @@ Täydellinen palvelimen nimi ja tietokannan nimi löytyvät Azure-portaalista. O
 * [Tietojen noutaminen Power BI:hin](service-get-data.md)  
 * [Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is/)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)

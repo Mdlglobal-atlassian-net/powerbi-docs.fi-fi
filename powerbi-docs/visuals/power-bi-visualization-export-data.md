@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 04/28/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9823e35fb2ddb99cf2932fa83e92598ba40f6690
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: f82bde423d910cb5622e5e709890502e96daab36
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381372"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585390"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Visualisoinnin lähdetietojen vieminen
 
@@ -242,7 +242,7 @@ Nämä rajoitukset ja huomioitavat asiat koskevat Power BI Desktopia ja Power BI
 
 - *Pohjana olevien tietojen* vienti ei toimi, jos *Näytä kohteet, joilla ei ole tietoja* -asetus on käytössä visualisoinnissa, jota Power BI on viemässä.
 
-- Käytettäessä DirectQueryä Power BI voi viedä enintään 16 Mt pakkaamattomia tietoja. Odottamaton tulos saattaa olla, että viet vähemmän kuin rivien enimmäismäärän. Tämä on todennäköistä, jos:
+- Käytettäessä DirectQueryä Power BI voi viedä enintään 16 Mt pakkaamattomia tietoja. Odottamaton tulos saattaa olla, että viet vähemmän kuin rivien enimmäismäärän, eli 150 000. Tämä on todennäköistä, jos:
 
     - Sarakkeita on useita.
 

@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/19/2020
+ms.date: 04/19/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: fd11e6fd45a3978eb301adabc15ac8941e7824bf
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: 1b23f76425fdf7ceb245b25bcc2b7551dabf0600
+ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496701"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82120237"
 ---
 # <a name="apps-in-power-bi"></a>Sovellukset Power BI:ssä
 
@@ -29,8 +29,8 @@ Sovellukset on järjestetty **Sovellukset**-sisältöluetteloon. Näytä sovellu
 
 ![Sovellukset Power BI:ssä](./media/end-user-apps/power-bi-apps.png)
 
-> [!NOTE]
-> Sovellusominaisuuden käyttö edellyttää Power BI Pro -käyttöoikeutta. [Hae käyttöoikeustyyppisi](end-user-license.md)
+
+Sovellukset-ominaisuuden käyttäminen edellyttää Power BI Pro -käyttöoikeutta tai sovelluksen tallentamista Premium-kapasiteettiin. Lisätietoja käyttöoikeuksista ja Premium-kapasiteetista on artikkelissa [Kuluttajien käyttöoikeudet](end-user-license.md).
 
 ## <a name="app-designers-and-app-consumers"></a>Sovelluksen *suunnittelijat* ja sovelluksen *kuluttajat*
 Roolistasi riippuen saatat olla henkilö, joka luo sovelluksia (*suunnittelija*) omaan käyttöönsä tai jakaa niitä työtovereidensa kanssa. Vaihtoehtoisesti voit olla henkilö, joka vastaanottaa ja lataa muiden luomia sovelluksia (*kuluttaja*). Tämä artikkeli on tarkoitettu sovellusten *kuluttajille*.
@@ -44,8 +44,8 @@ Kun käytät sovelluksia,näet muutokset automaattisesti aina, kun sovelluksen t
 ## <a name="get-a-new-app"></a>Uuden sovelluksen hankkiminen
 Voit hankkia sovelluksia muutamilla eri tavoilla. Joitakin tapoja on lueteltu alla.  Yksityiskohtaiset ohjeet sovelluksen hakemiseen ja käyttämiseen on artikkelissa [Sovelluksen avaaminen ja käyttäminen](end-user-app-view.md).
 
-- Sovelluksen suunnittelija voi asentaa sovelluksen automaattisesti Power BI -tilillesi, jolloin näet uuden sovelluksen **Sovellukset**-sisältöluettelossa, kun avaat Power BI:n seuraavan kerran. 
-- Sovelluksen suunnittelija voi lähettää sinulle sähköpostilla suoran linkin sovellukseen. Kun valitset linkin, sovellus avautuu Power BI:ssä.
+- Sovelluksen suunnittelija voi asentaa sovelluksen automaattisesti Power BI -tilillesi, jolloin näet uuden sovelluksen **Sovellukset**-sisältöluettelossa, kun avaat Power BI -palvelun seuraavan kerran. 
+- Sovelluksen suunnittelija voi lähettää sinulle sähköpostilla suoran linkin sovellukseen. Kun valitset linkin, sovellus avautuu Power BI -palvelussa.
 - Jos käytät Power BI:tä mobiililaitteella, et voi asentaa sovellusta AppSourcen kautta vaan tarvitset suoran linkin. Jos sovelluksen tekijä asentaa sovelluksen automaattisesti, näet sen sovellusluettelossa.
 - Voit hakea sovelluksia [AppSourcesta](https://appsource.microsoft.com). AppSourcessa on yrityksen sisäisten ja ulkopuolisten raporttien suunnittelijoiden julkaisemia sovelluksia. AppSourcessa voi esimerkiksi olla jo käyttämäsi palvelun sovellus, kuten Google Analytics, GitHub tai Microsoft Dynamics. Siellä on myös sovelluksia, jotka ovat malleja, joiden avulla voit opetella Power BI:n käyttöä.  
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 105a9afe7292412227f67ef80e15eb23eb7d5f71
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.openlocfilehash: 1ba284aa3c925ef0679572ca55cad9e5267d3f21
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "81006784"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585057"
 ---
 # <a name="slicers-in-power-bi"></a>Osittajat Power BI:ssä
 
@@ -131,6 +131,11 @@ Nykyisen raportin **Alueen kuukausimyynti** -sivulla on myös **Aluejohtaja**-os
     >[!NOTE]
     >Jos synkronoit osittajan sivulle, mutta et määritä sitä näkyviin sivulla, muilla sivuilla tehdyt osittajan valinnat suodattavat edelleen tietoja sivulla.
  
+## <a name="filtering-slicers"></a>Osittajien suodattaminen
+Voit käyttää osittajille visualisointitason suodattimia, joilla voit lyhentää osittajassa näkyvien arvojen luetteloa. Voit esimerkiksi suodattaa pois tyhjät arvot luettelon osittajasta tai suodattaa pois tietyt päivämäärät alueen osittajasta. Kun teet tämän, se vaikuttaa vain *osittajassa näytettäviin arvoihin*, ei *suodattimeen, jota osittaja käyttää muihin visualisointeihin*, kun teet valinnan. Oletetaan esimerkiksi, että käytät suodatinta alueen osittajassa niin, että vain tietyt päivämäärät näkyvät. Osittajan valinta näyttää vain kyseisen alueen ensimmäisen ja viimeisen päivämäärän, mutta voit silti nähdä muita päivä määriä muissa visualisoinneissasi. Kun muutat valittua aluetta osittajassa, näet muiden visualisointien päivittyvän. Osittajan tyhjentäminen näyttää kaikki päivämäärät uudelleen.
+
+Artikkelissa [Suodatintyypit](../power-bi-report-filter-types.md) on lisätietoja visualisointitason suodattimista.
+
 ## <a name="format-slicers"></a>Osittajien muotoilu
 Käytettävissä on erilaisia muotoiluasetuksia osittajan tyypin mukaan. Käyttämällä **Vaaka**-suuntaa **Reagoiva**-asettelua ja **Nimi**-väriä, voit luoda painikkeita tai ruutuja standardiluettelonimikkeiden sijaan ja muuttaa osittajan kohteiden kokoa sopimaan eri näyttöjen ja asettelujen kokoon.  
 

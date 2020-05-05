@@ -7,14 +7,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 04/27/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 58f9a56d41bd35987f7c258fafdbff26aedf5df1
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 4be8a1ce88d50461ca51bb65278b823046459e30
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488817"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585042"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Raportin upottaminen turvalliseen portaaliin tai sivustoon
 
@@ -22,11 +22,13 @@ Uuden Power BI -raporttien **Upotus**-ominaisuuden avulla voit antaa käyttäjil
 
 **Upota**-asetus tukee [URL-suodattimia](service-url-filters.md) ja URL-asetuksia. Voit integroida sisältöä portaaleihin ilman työlästä koodausta: perustiedot HTML:stä ja JavaScriptista riittävät.
 
-## <a name="how-to-embed-power-bi-reports-into-portals"></a>Power BI -raporttien **upottaminen** portaaleihin
+## <a name="how-to-embed-power-bi-reports-into-portals"></a>Power BI -raporttien upottaminen portaaleihin
 
-1. Uusi **Upota**-vaihtoehto näkyy kaikkien Power BI -palvelussa olevien raporttien **Tiedosto**-valikossa.
+1. Avaa raportti Power BI -palvelussa.
 
-    ![Avattavan luettelon Turvallinen upotus -vaihtoehto](media/service-embed-secure/secure-embed-drop-down-menu.png)
+2. Valitse **Lisää asetuksia (...)** -valikosta **Upota** >  **Sivusto tai portaali**.
+
+    ![Sivusto tai portaali -vaihtoehto](media/service-embed-secure/power-bi-more-options-website.png)
 
 2. Valitse **Upota**-vaihtoehto. Näkyviin tulee valintaikkuna, jossa on linkki sekä iFrame, jota käytetään raportin turvalliseen upottamiseen.
 

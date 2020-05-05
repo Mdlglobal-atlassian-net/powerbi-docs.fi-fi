@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3f263e67b866f6d6a3ea76257c64bbb2308a25d2
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.openlocfilehash: 281cb03e8d22688b23970c66b0fbc5a5bec1e15d
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75729709"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584757"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Tietotyypit Power BI Desktopissa
 Tässä artikkelissa kuvataan tietotyypit, joita Power BI Desktop ja Data Analysis Expressions (DAX) tukevat. 
@@ -35,6 +35,8 @@ Power BI Desktopissa voit selvittää ja määrittää sarakkeen tietotyypin kys
 ![](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
 Kyselyeditorin avattavassa tietotyyppiluettelossa on kaksi tietotyyppiä, joita ei tällä hetkellä ole tieto- tai raporttinäkymässä: **päivämäärä/aika/aikavyöhyke** ja **kesto**. Kun näitä tietotyyppejä sisältävä sarake ladataan malliin ja sitä tarkastellaan tieto- tai raporttinäkymässä, sarakkeen päivämäärä/aika/aikavyöhyke-tietotyyppi muunnetaan päivämääräksi/ajaksi ja kesto-tietotyypin sisältävä sarake muunnetaan desimaaliluvuksi.
+
+**Binaarista** tietotyyppiä ei tueta tällä hetkellä Kyselyeditorin ulkopuolella. Kyselyeditorin sisällä voit käyttää sitä binaaritiedostojen lataamisessa, jos muunnat sen muihin tietotyyppeihin ennen sen lataamista Power BI -malliin. Se on Tietonäkymä- ja Raporttinäkymä-valikoissa yhteensopivuussyistä, mutta jos yrität ladata binaarisarakkeita Power BI -malliin, saattaa ilmetä virheitä.  
 
 ### <a name="number-types"></a>Lukutyypit
 Power BI Desktop tukee kolmea lukutyyppiä:
@@ -72,6 +74,16 @@ Power BI Desktop tukee viittä päivämäärä/aika-tietotyyppiä kyselynäkymä
 ### <a name="blanksnulls-type"></a>Tyhjät/nolla-arvot-tyyppi
 **Tyhjä** – DAX-kaavan tietotyyppi, joka vastaa SQL-kielen tyhjäarvoja ja korvaa ne. Voit luoda tyhjän käyttämällä [TYHJÄ](https://msdn.microsoft.com/library/ee634820.aspx)-funktiota ja testata tyhjät käyttämällä loogista funktiota [ONTYHJÄ](https://msdn.microsoft.com/library/ee634204.aspx).
 
+### <a name="binary-data-type"></a>Binaarinen tietotyyppi
+
+Binaaritietotyyppiä voidaan käyttää edustamaan muita binaarimuotoisia tietoja. Kyselyeditorin sisällä voit käyttää sitä binaaritiedostojen lataamisessa, jos muunnat sen muihin tietotyyppeihin ennen sen lataamista Power BI -malliin. Binaarisarakkeita ei tueta Power BI -tietomallissa. Se on Tietonäkymä- ja Raporttinäkymä-valikoissa yhteensopivuussyistä, mutta jos yrität ladata binaarisarakkeita Power BI -malliin, saattaa ilmetä virheitä.
+
+
+> [!NOTE]
+>  Jos binaarisarake on kyselyn vaiheiden tulosteessa, tietojen päivityksen yrittäminen yhdyskäytävän kautta saattaa aiheuttaa virheitä. On suositeltavaa, että poistat kaikki binaarisarakkeet kyselyiden viimeisenä vaiheena.    
+> 
+>
+
 ### <a name="table-data-type"></a>Taulukko-tietotyyppi
 DAX käyttää taulukko-tietotyyppiä monissa funktioissa, kuten koostamisissa ja aikatietojen laskutoimituksissa. Jotkin funktiot edellyttävät viittausta taulukkoon. Muut funktiot palauttavat taulukon, jota voidaan käyttää syötteenä muihin funktioihin. Joissakin funktioissa, jotka edellyttävät taulukkoa syötteeksi, voit määrittää lausekkeen, joka antaa taulukkoon arvon. Osa funktioista edellyttää viittausta perustaulukkoon. Lisätietoja tiettyjen funktioiden vaatimuksista saat [DAX Function Reference](https://msdn.microsoft.com/library/ee634396.aspx) -artikkelista.
 
@@ -95,10 +107,10 @@ Suoritettavan muunnoksen tyyppi määräytyy operaattorin mukaan. Operaattori mu
 
 **Yhteenlasku (+)**
 
-| Operaattori (+) | KOKONAISLUKU | VALUUTTA | REAALI | Päivämäärä/kellonaika |
+| Operaattori (+) | KOKONAISLUKU | CURRENCY | REAALI | Päivämäärä/kellonaika |
 | --- | --- | --- | --- | --- |
-| KOKONAISLUKU |KOKONAISLUKU |VALUUTTA |REAALI |Päivämäärä/kellonaika |
-| VALUUTTA |VALUUTTA |VALUUTTA |REAALI |Päivämäärä/kellonaika |
+| KOKONAISLUKU |KOKONAISLUKU |CURRENCY |REAALI |Päivämäärä/kellonaika |
+| CURRENCY |CURRENCY |VALUUTTA |REAALI |Päivämäärä/kellonaika |
 | REAALI |REAALI |REAALI |REAALI |Päivämäärä/kellonaika |
 | Päivämäärä/kellonaika |Päivämäärä/kellonaika |Päivämäärä/kellonaika |Päivämäärä/kellonaika |Päivämäärä/kellonaika |
 
@@ -108,10 +120,10 @@ Jos esimerkiksi reaalilukua käytetään yhteenlaskussa yhdessä valuuttatietoje
 
 Seuraavassa taulukossa riviotsikko on vähennettävä (vasen puoli) ja sarakeotsikko on vähentäjä (oikea puoli).
 
-| Operaattori (–) | KOKONAISLUKU | VALUUTTA | REAALI | Päivämäärä/kellonaika |
+| Operaattori (–) | KOKONAISLUKU | CURRENCY | REAALI | Päivämäärä/kellonaika |
 | --- | --- | --- | --- | --- |
-| KOKONAISLUKU |KOKONAISLUKU |VALUUTTA |REAALI |REAALI |
-| VALUUTTA |VALUUTTA |VALUUTTA |REAALI |REAALI |
+| KOKONAISLUKU |KOKONAISLUKU |CURRENCY |REAALI |REAALI |
+| CURRENCY |CURRENCY |VALUUTTA |REAALI |REAALI |
 | REAALI |REAALI |REAALI |REAALI |REAALI |
 | Päivämäärä/kellonaika |Päivämäärä/kellonaika |Päivämäärä/kellonaika |Päivämäärä/kellonaika |Päivämäärä/kellonaika |
 
@@ -124,11 +136,11 @@ Jos esimerkiksi päivämäärää käytetään vähennyslaskussa yhdessä minkä
 
 **Kertolasku (*)**
 
-| Operaattori (*) | KOKONAISLUKU | VALUUTTA | REAALI | Päivämäärä/kellonaika |
+| Operaattori (*) | KOKONAISLUKU | CURRENCY | REAALI | Päivämäärä/kellonaika |
 | --- | --- | --- | --- | --- |
-| KOKONAISLUKU |KOKONAISLUKU |VALUUTTA |REAALI |KOKONAISLUKU |
-| VALUUTTA |VALUUTTA |REAALI |VALUUTTA |VALUUTTA |
-| REAALI |REAALI |VALUUTTA |REAALI |REAALI |
+| KOKONAISLUKU |KOKONAISLUKU |CURRENCY |REAALI |KOKONAISLUKU |
+| CURRENCY |VALUUTTA |REAALI |CURRENCY |VALUUTTA |
+| REAALI |REAALI |CURRENCY |REAALI |REAALI |
 
 Jos esimerkiksi kokonaislukua käytetään kertolaskussa yhdessä reaaliluvun kanssa, molemmat luvut muunnetaan reaaliluvuiksi. Palautusarvo on myös REAALI.
 
@@ -136,10 +148,10 @@ Jos esimerkiksi kokonaislukua käytetään kertolaskussa yhdessä reaaliluvun ka
 
 Seuraavassa taulukossa riviotsikko on osoittaja ja sarakeotsikko on nimittäjä.
 
-| Operaattori (/) (rivi/sarake) | KOKONAISLUKU | VALUUTTA | REAALI | Päivämäärä/kellonaika |
+| Operaattori (/) (rivi/sarake) | KOKONAISLUKU | CURRENCY | REAALI | Päivämäärä/kellonaika |
 | --- | --- | --- | --- | --- |
-| KOKONAISLUKU |REAALI |VALUUTTA |REAALI |REAALI |
-| VALUUTTA |VALUUTTA |REAALI |VALUUTTA |REAALI |
+| KOKONAISLUKU |REAALI |CURRENCY |REAALI |REAALI |
+| CURRENCY |VALUUTTA |REAALI |CURRENCY |REAALI |
 | REAALI |REAALI |REAALI |REAALI |REAALI |
 | Päivämäärä/kellonaika |REAALI |REAALI |REAALI |REAALI |
 
@@ -158,10 +170,10 @@ Seuraavat DAX-lausekkeet kuvaavat tätä toimintoa:
 
 Muunnokset suoritetaan implisiittisesti numeerisille tyypeille tai päivämäärä-/kellonaikatyypeille seuraavan taulukon mukaisesti:
 
-| Vertailuoperaattori | KOKONAISLUKU | VALUUTTA | REAALI | Päivämäärä/kellonaika |
+| Vertailuoperaattori | KOKONAISLUKU | CURRENCY | REAALI | Päivämäärä/kellonaika |
 | --- | --- | --- | --- | --- |
-| KOKONAISLUKU |KOKONAISLUKU |VALUUTTA |REAALI |REAALI |
-| VALUUTTA |VALUUTTA |VALUUTTA |REAALI |REAALI |
+| KOKONAISLUKU |KOKONAISLUKU |CURRENCY |REAALI |REAALI |
+| CURRENCY |CURRENCY |VALUUTTA |REAALI |REAALI |
 | REAALI |REAALI |REAALI |REAALI |REAALI |
 | Päivämäärä/kellonaika |REAALI |REAALI |REAALI |Päivämäärä ja aika |
 

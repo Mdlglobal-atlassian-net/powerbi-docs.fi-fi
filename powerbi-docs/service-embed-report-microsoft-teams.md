@@ -1,5 +1,5 @@
 ---
-title: Raporttien upottaminen Microsoft Teamsin Power BI -välilehden avulla
+title: Raporttien upottaminen Microsoft Teamsissa
 description: Microsoft Teamsin Power BI ‑välilehden avulla voit helposti upottaa vuorovaikutteisia raportteja kanaviin ja keskusteluihin.
 author: LukaszPawlowski-MS
 ms.author: lukaszp
@@ -9,33 +9,37 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 03/12/2020
-ms.openlocfilehash: fe8b5ed0e3cdf0003986ffe6eab18e97e83f3dec
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.date: 04/27/2020
+ms.openlocfilehash: b3fd881a552e3594cbf2172d7b88bbbf9a13f1b9
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79381200"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585124"
 ---
-# <a name="embed-report-with-the-power-bi-tab-for-microsoft-teams"></a>Raporttien upottaminen Microsoft Teamsin Power BI ‑välilehden avulla
+# <a name="embed-reports-in-microsoft-teams-with-the-power-bi-tab"></a>Raporttien upottaminen Microsoft Teamsissa Power BI -välilehden avulla
 
-Microsoft Teamsin päivitetyllä Power BI ‑välilehden avulla voit helposti upottaa vuorovaikutteisia raportteja Microsoft Teamsin kanaviin ja keskusteluihin.
-
-Microsoft Teamsin Power BI ‑välilehden avulla työtoverisi voivat löytää tiimisi käyttämät tiedot helposti ja keskustella niistä tiimin kanavilla.
+Microsoft Teamsin päivitetyllä Power BI ‑välilehden avulla voit helposti upottaa vuorovaikutteisia raportteja Microsoft Teamsin kanaviin ja keskusteluihin. Microsoft Teamsin Power BI ‑välilehden avulla työtoverisi voivat löytää tiimisi käyttämät tiedot helposti ja keskustella niistä tiimin kanavilla.  Kun liität Microsoft Teamsin sanomaruutuun linkin raportteihisi, koontinäyttöihisi ja sovelluksiisi, linkin esikatselu näyttää tietoja niistä. Käyttäjät voivat tavallista helpommin ymmärtää, mihin kohteeseen linkki johtaa.
 
 ## <a name="requirements"></a>Vaatimukset
 
-**Microsoft Teamsin Power BI ‑välilehden** toiminta edellyttää seuraavaa:
+Jotta **Microsoft Teamsin Power BI -välilehti** toimii, varmista seuraavat asiat:
 
-- Power BI Pro ‑käyttöoikeus tai raportin tallentaminen [Power BI Premium ‑kapasiteettiin (EM tai P SKU)](service-premium-what-is.md) Power BI ‑käyttöoikeudella.
-- Microsoft Teamsin Power BI ‑välilehti.
-- Käyttäjän on kirjauduttava sisään Power BI -palveluun ja aktivoitava Power BI -käyttöoikeutensa, jotta hän voi käyttää raporttia.
-- Käyttäjällä on oltava raportin katseluoikeus.
+- Käyttäjillä on Power BI Pro -käyttöoikeus tai raportti sisältyy [Power BI Premium -kapasiteettiin (EM tai P SKU)](service-premium-what-is.md) Power BI -käyttöoikeudella.
+- Microsoft Teamsissa on Power BI -välilehti.
+- Käyttäjät ovat kirjautuneet sisään Power BI -palveluun ja aktivoineet Power BI -käyttöoikeutensa raportin käyttämistä varten.
+- Käyttäjillä on oltava raportin katseluoikeus.
+
+Jotta **linkin esikatselut** toimivat, varmista lisäksi seuraavat:
+- Käyttäjät täyttävät vaatimuksen käyttää Microsoft Teamsin Power BI -välilehteä.
+- Käyttäjät ovat kirjautuneet sisään Power BI Bot -palveluun. 
+
 
 ## <a name="embed-your-report"></a>Upota raportti
-Jos haluat upottaa raportin Microsoft Teams ‑kanavaan tai ‑keskusteluun, lisää se alla kuvatulla tavalla.
 
-1. Avaa haluamasi kanava tai keskustelu Microsoft Teamsissa ja valitse **+** -kuvake.
+Voit upottaa raportin Microsoft Teams -kanavaan tai -keskusteluun seuraavasti.
+
+1. Avaa kanava tai keskustelu Microsoft Teamsissa ja valitse **+** -kuvake.
 
     ![Välilehden lisääminen kanavaan tai keskusteluun](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-add.png)
 
@@ -43,7 +47,7 @@ Jos haluat upottaa raportin Microsoft Teams ‑kanavaan tai ‑keskusteluun, lis
 
     ![Microsoft Teamsin välilehtiluettelo, jossa Power BI näkyy](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab.png)
 
-3. Valitse annettujen asetusten avulla raportti työtilasta, kanssasi jaetuista tai Power BI ‑sovelluksesta
+3. Valitse annettujen asetusten avulla raportti työtilasta, kanssasi jaetuista kohteista tai Power BI -sovelluksesta.
 
     ![Microsoft Teamsin Power BI ‑välilehden asetukset](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab-settings.png)
 
@@ -51,23 +55,56 @@ Jos haluat upottaa raportin Microsoft Teams ‑kanavaan tai ‑keskusteluun, lis
 
 5. Paina **Tallenna**.
 
-## <a name="supported-reports"></a>Tuetut raportit
+## <a name="supported-reports-for-embedding-the-power-bi-tab"></a>Power BI -välilehden upottamisessa tuetut raportit
+Voit upottaa seuraavantyyppisiä raportteja Power BI -välilehteen:
 
-Välilehti mahdollistaa seuraavien raporttien upottamisen:
+- vuorovaikutteiset ja sivutetut raportit
+- omassa työtilassa, uudenlaisissa työtiloissa ja perinteisissä työtiloissa ovat raportit
+- Power BI -sovelluksissa olevat raportit.
 
-- Vuorovaikutteiset ja sivutetut raportit
-- Raportit omassa työtilassa, uudenlaisissa työtiloissa ja perinteisissä työtiloissa
-- Raportit Power BI -sovelluksissa
+## <a name="get-a-link-preview"></a>Linkin esikatselun hakeminen
+
+Saat linkin esikatselun Power BI -palvelussa olevaa sisältöä varten noudattamalla seuraavia ohjeita.
+
+1. Kopioi linkki raporttiin, koontinäyttöön tai sovellukseen Power BI -palvelussa. Kopioi esimerkiksi URL-osoite selaimen osoiteriviltä.
+
+2. Liitä linkki Microsoft Teamsin sanomaruutuun. Kirjaudu pyydettäessä sisään linkin esikatselupalveluun. Sinun on ehkä odotettava linkin esikatselun latautumista muutama sekunti.
+
+    ![Kirjautuminen Power BI Botiin](media/service-embed-report-microsoft-teams/service-teams-link-preview-sign-in-needed.png)
+
+3. Linkin perusesikatselu tulee näkyviin onnistuneen sisäänkirjautumisen jälkeen.
+
+    ![Linkin perusesikatselu](media/service-embed-report-microsoft-teams/service-teams-link-preview-basic.png)
+
+4. Näytä monipuolinen esikatselukortti valitsemalla laajennuskuvake.
+
+    ![Laajenna-kuvake](media/service-embed-report-microsoft-teams/service-teams-link-preview-expand-icon.png)
+
+5. Monipuolinen esikatselukortti näyttää linkin ja tarvittavat toiminto painikkeet
+
+    ![Linkin monipuolinen esikatselukortti](media/service-embed-report-microsoft-teams/service-teams-link-preview-nice-card.png)
+
+6. Lähetä viesti.
+
 
 
 ## <a name="grant-access-to-reports"></a>Raporttien käyttöoikeuksien myöntäminen
 
-Kun raportti upotetaan Microsoft Teamsiin, käyttäjät eivät saa automaattisesti raportin tarkasteluoikeuksia. Sinun on [annettava käyttäjille raportin katseluoikeudet Power BI:ssä](service-share-dashboards.md). Tämä on helpompaa, jos käytät Office 365 ‑ryhmää. 
+Kun raportti upotetaan Microsoft Teamsiin tai kohteen linkki lähetetään, käyttäjät eivät saa automaattisesti raportin tarkasteluoikeuksia. Sinun on [annettava käyttäjille raportin katseluoikeudet Power BI:ssä](service-share-dashboards.md). Tämä on helpompaa, jos käytät Office 365 ‑ryhmää. 
 
 > [!IMPORTANT]
 > Katso Power BI -palvelussa, kuka saa nähdä raportin, ja myönnä käyttöoikeudet niille, jotka eivät ole luettelossa.
 
-Voit varmistaa, että kaikki ryhmäsi jäsenet voivat käyttää upottamiasi raportteja, esimerkiksi sijoittamalla ne yksittäiseen Power BI:n työtilaan ja antamalla tiimin Office 365 ‑ryhmälle työtilan käyttöoikeudet.
+Voit varmistaa, että kaikki ryhmäsi jäsenet voivat käyttää raportteja, esimerkiksi sijoittamalla raportit yksittäiseen Power BI:n työtilaan ja antamalla tiimin Office 365 -ryhmälle työtilan käyttöoikeudet.
+
+## <a name="link-previews"></a>Linkkien esikatselut 
+
+Linkkien esikatselut tarjotaan Power BI:ssä seuraaville kohteille:
+- Raportit
+- Koontinäytöt
+- Sovellukset
+
+Linkin esikatselupalvelu edellyttää, että käyttäjät kirjautuvat sisään. Kun haluat kirjautua ulos, valitse Power BI -kuvake sanomaruudun alareunassa ja valitse sitten Kirjaudu ulos.
 
 ## <a name="start-a-conversation"></a>Aloita keskustelu
 
@@ -84,12 +121,14 @@ Kun lisäät Power BI -raportin välilehden Teamsiin, Teams luo automaattisesti 
 ## <a name="known-issues-and-limitations"></a>Tunnetut ongelmat ja rajoitukset
 
 - Power BI ei tue samoja lokalisoituja kieliä kuin Microsoft Teams. Sen vuoksi et välttämättä näe oikeaa lokalisointia upotetussa raportissa.
-- Power BI:n raporttinäkymiä ei voi upottaa Microsoft Teamsin Power BI ‑välilehteen.
-- Käyttäjä, jolla ei ole Power BI:n tai raportin käyttöoikeutta, saa ”Sisältö ei ole käytettävissä” ‑sanoman.
+- Power BI:n koontinäyttöjä ei voi upottaa Microsoft Teamsin Power BI -välilehteen.
+- Käyttäjä, jolla ei ole Power BI:n tai raportin käyttöoikeutta, saa Sisältö ei ole käytettävissä -sanoman.
 - Ongelmia saattaa ilmetä, jos käytät Internet Explorer 10:tä. <!--You can look at the [browsers support for Power BI](consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
-- [URL-suodattimia](service-url-filters.md) ei tueta Microsoft Teamsin Power BI ‑välilehdellä.
-- Power BI:n uusi välilehti ei ole käytettävissä kansallisissa pilvipalveluissa. Käytettävissä saattaa olla vanhempi versio, joka ei tue uudenlaisia työtiloja tai raportteja Power BI ‑sovelluksissa. 
-- Kun välilehti on tallennettu, välilehden nimeä ei voi muuttaa välilehden asetuksista. Voit muuttaa välilehden nimen Nimeä uudelleen ‑toiminnolla.
+- [URL-suodattimia](service-url-filters.md) ei tueta Microsoft Teamsin Power BI -välilehdessä.
+- Uusi Power BI -välilehti ei ole käytettävissä kansallisissa pilvipalveluissa. Käytettävissä voi olla vanhempi versio, joka ei tue uutta työtilakokemusta työtilaa tai raportteja Power BI -sovelluksissa. 
+- Kun olet tallentanut välilehden, et voi muuttaa välilehden nimeä välilehtiasetuksissa. Voit muuttaa välilehden nimen Nimeä uudelleen ‑toiminnolla.
+- Kertakirjautumista ei tueta linkin esikatselupalvelussa.
+- Linkin esikatselut eivät toimi kokouskeskusteluissa eivätkä yksityisissä kanavissa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 - [Koontinäytön jakaminen työtovereille ja muille](service-share-dashboards.md)  

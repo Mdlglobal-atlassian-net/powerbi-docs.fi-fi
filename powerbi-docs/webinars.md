@@ -1,21 +1,22 @@
 ---
 title: Power BI -verkkoseminaarit
 description: Power BI -verkkoseminaarit
-author: v-tatero
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/01/2019
+ms.date: 04/23/2020
 ms.author: kfollis
-ms.openlocfilehash: 08e1303d0f1a5ee9e0e3e4e778e3f81e0a183df5
-ms.sourcegitcommit: 81407c9ccadfa84837e07861876dff65d21667c7
+ms.openlocfilehash: cfdb4f380cd8ad9655593798f591a4c915988c43
+ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81267545"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82120087"
 ---
 # <a name="power-bi-webinars"></a>Power BI -verkkoseminaarit
+[//]: # "Tatevik Tatero on toimittaja, joka yhdessä Chauncy Freelsin kanssa auttaa ylläpitämään tätä luetteloa verkkoseminaareista"
 
 Rekisteröidy tuleviin reaaliaikaisiin verkkoseminaareihin tai katso nauhoitettuja seminaareja.
 
@@ -164,10 +165,6 @@ Katso tallennetut istuntoja milloin tahansa
 <br>tekijät: Stephen Cracknell ja Stuart Macanliss US Medical IT:stä
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
-**Sovelletut tiedot myynnissä ja palveluissa**
-<br>tekijä: Ed Bobrin Avanadesta
-<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
-
 **Valmistajat: Ala käy läpi digitaalista muutosta – säilytä johtajuus hyödyntämällä analyyseja kannattavuuden maksimoimiseen**
 <br>tekijät: Jon Thompson Blue Marginista ja Jim Pastor Elgin Fastener Groupista
 <br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/digital-transformation-in-manufacturing.html?Is=Website)
@@ -210,14 +207,14 @@ Katso tallennetut istuntoja milloin tahansa
 <br>tekijä Ted Pattison
 <br>[Katso nyt](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
-### <a name="advanced-topics"></a>Edistyneitä aiheita ###
+### <a name="advanced-topics"></a>Edistyneitä aiheita
 
 **Kehittynyt analytiikka Excelissä ja Power BI:ssä**
 <br>tekijät: Nagasaikiran Kambhampati ja Miguel Martinez
 <br>[Rekisteröidy ja katso](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
 <br>[Lataa Advanced Analytics Starter Kit, jotta pysyt mukana](https://aka.ms/pbiaawebinar)
 
-**[Power BI:n käyttöönoton viitekehys – verkkoseminaarisarja](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
+**Power BI:n käyttöönoton viitekehys -verkkoseminaarisarja**
 <br>tekijät: Manu Kanwarpal ja Paul Henwood
 <br>[Rekisteröidy ja katso nyt – osa 1 – omaksuminen: Aineistopohjaisen kulttuurin omaksuminen](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
 <br>[Rekisteröidy ja katso nyt – osa 2 – hallinta: Power BI:n käytön hallinta](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
@@ -225,36 +222,13 @@ Katso tallennetut istuntoja milloin tahansa
 <br>[Rekisteröidy ja katso nyt – osa 4 – suojaus: Tietojen suojaaminen Power BI:n avulla](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
 <br>[Rekisteröidy ja katso nyt – osa 5 – käyttöönotto: Power BI:n onnistunut käyttöönotto](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
 
-**Office 365:n rahoitusalan ammattilaisten verkkoseminaarisarja**
-<br>tekijät: Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky ja Miguel Martinez
-<br>Vihjeitä, vinkkejä ja parhaita käytäntöjä päivittäiseen työskentelyyn Office 365:n kanssa.
-<br>[Rekisteröidy ja katso nyt](https://aka.ms/Office365FinanceProsPBI)
-
 **Ryhdy Full Stack Power BI -jediritariksi – Power BI:n kehittyneimpien ominaisuuksien esittely Tähtien Sodan tietojen kautta**
 <br>tekijä: Gil Raviv
 <br>[Katso nyt](https://www.youtube.com/watch?v=r0Qk5V8dvgg)
 
-**Menestyvän tietojen hallintastrategian ottaminen käyttöön organisaation suojauksen vahvistamiseksi**
-<br>tekijä: Ajay Anandan
-<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/powerbi-data-governance-strategy-ondemand.html?Is=Website)
-
-**Modernin BI-käyttöönoton nopeuttaminen Power BI Premiumilla**
-<br>tekijät: Sirui Sun ja Miguel Martinez
-<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/powerbi-premium-webinar-ondemand.html?Is=Website)
-
-**Power BI -raporttipalvelinten uudet ja mielenkiintoiset ominaisuudet**
-<br>tekijät: Riccardo Muti, Chris Finlan ja Chinmay Joshi
-<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/whats-new-powerbi-report-server.html?Is=Website)
-
-**Miten Microsoft käyttää Power BI:tä**
-<br>tekijä: Kirkland Barrett
-<br>[Rekisteröidy ja katso nyt](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-29-BIATMIcrosoft274828_01Registration-ForminBody.html?Is=Website)
-
 ## <a name="see-also"></a>Muuta aiheeseen liittyvää
 
 - [Power BI:n tekniset raportit](whitepapers.md)
-
-- [Microsoft Data Insights Summit 2017:n nauhoitetut istunnot](https://community.powerbi.com/t5/Data-Insights-Summit-2017-On/bd-p/DataInsightsSummit2017OnDemand?Is=Website)
 
 - [Mikä on Power BI?](fundamentals/power-bi-overview.md)
 

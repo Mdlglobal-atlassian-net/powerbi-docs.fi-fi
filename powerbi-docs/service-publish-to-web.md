@@ -1,6 +1,6 @@
 ---
 title: Power BI:n Julkaise verkkoon -toiminto
-description: Voit Power BI:n Julkaise verkkoon -toiminnon avulla helposti upottaa verkossa interaktiivisia Power BI -visualisointeja, kuten blogiposteja ja verkkosivustoja, sähköpostiviestien tai sosiaalisen median kautta kaikilla laitteilla.
+description: Power BI:n Julkaise verkkoon -toiminnolla voit helposti upottaa vuorovaikutteisia Power BI -visualisointeja blogijulkaisuihin, sivustoihin, sähköpostiviesteihin tai sosiaaliseen mediaan.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -9,24 +9,24 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/25/2020
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0876d5ecd1d58c909242bbc05be213780d3aefdc
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 1a3d4c264e343382422cbe2a881b5fcedaa19e13
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488771"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585238"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Power BI:n Julkaise verkkoon -toiminto
 
-Power BI:n **Julkaise verkkoon** -toiminnolla voit helposti upottaa verkossa interaktiivisia Power BI -visualisointeja, kuten blogijulkaisuja ja verkkosivustoja, sähköpostiviestien tai sosiaalisen median kautta. Se onnistuu lisäksi laitteesta riippumatta. Voit myös helposti muokata, päivittää ja ladata uudelleen julkaistuja visualisointeja tai lopettaa niiden jakamisen.
+Power BI:n **Julkaise verkkoon** -toiminnolla voit helposti upottaa vuorovaikutteisia Power BI -visualisointeja blogijulkaisuihin, sivustoihin, sähköpostiviesteihin tai sosiaaliseen mediaan. Voit myös helposti muokata, päivittää ja ladata uudelleen julkaistuja visualisointeja tai lopettaa niiden jakamisen.
 
 > [!WARNING]
-> Kun käytät **Julkaise verkkoon** -toimintoa, kuka tahansa Internetissä voi tarkastella julkaisemaasi raporttia tai visualisointia. Siihen ei vaadita todennusta. Lisäksi kaikki näkevät raporttiesi koostamien tietojen tarkkuustason. Varmista ennen raportin julkaisemista, että sinulla on oikeus jakaa tiedot ja visualisoinnit julkisesti. Älä julkaise luottamuksellisia tai omistusoikeudellisia tietoja. Jos olet epävarma, tarkista organisaatiosi käytännöt ennen julkaisemista.
+> Kun käytät **Julkaise verkkoon** -toimintoa, kuka tahansa Internetissä voi tarkastella julkaisemaasi raporttia tai visualisointia. Katseleminen ei edellytä todentamista. Tämä sisältää raportteihin yhdistetyt yksityiskohtaisen tason tiedot. Varmista ennen raportin julkaisemista, että sinulla on oikeus jakaa tiedot ja visualisoinnit julkisesti. Älä julkaise luottamuksellisia tai omistusoikeudellisia tietoja. Jos olet epävarma, tarkista organisaatiosi käytännöt ennen julkaisemista.
 
 >[!Note]
->Voit upottaa sisältöä turvallisesti sisäiseen portaaliin tai sivustoon [Upota](service-embed-secure.md)- ja [Upota SharePoint Onlineen](service-embed-report-spo.md) -asetusten avulla. Näin varmistat, että kaikkien oikeuksien ja tietosuojan soveltaminen pakotetaan, kun käyttäjät tarkastelevat sisäisiä tietoja.
+>Voit upottaa sisältösi turvallisesti sisäiseen portaaliin tai sivustoon. Käytä [Upota](service-embed-secure.md)- tai [Upota SharePoint Onlinessa](service-embed-report-spo.md) -asetuksia. Nämä asetukset varmistavat, että kaikkien oikeuksien ja tietosuojan soveltaminen pakotetaan, kun käyttäjät tarkastelevat sisäisiä tietoja.
 
-## <a name="how-to-use-publish-to-web"></a>Julkaise verkkoon -toiminnon käyttäminen
+## <a name="create-embed-codes-with-publish-to-web"></a>Upotuskoodien luominen Julkaise verkkoon -toiminnolla
 
 **Julkaise verkkoon** -toiminto on käytettävissä henkilökohtaisessa työtilassasi ja ryhmän työtiloissa raporteille, joita voit muokata.  Se ei ole käytettävissä raporteissa, jotka on jaettu kanssasi tai joissa tiedot suojataan rivitason suojauksella. Katso alla olevasta [**Rajoitukset**](#limitations)-osiosta täydellinen luettelo tapauksista, joissa **Julkaise verkkoon** -toimintoa ei tueta. Tutustu tässä artikkelissa aiemmin mainittuun **varoitukseen**, ennen kuin käytät **Julkaise verkkoon** -toimintoa.
 
@@ -36,36 +36,36 @@ Seuraavasta lyhyestä videosta, näet miten tämä toiminto toimii. Kokeile sit�
 
 Seuraavissa vaiheissa kuvataan, miten voit käyttää **Julkaise verkkoon** -toimintoa.
 
-1. Avaa työtilassasi raportti, jota voit muokata, ja valitse **Tiedosto > Julkaise verkkoon**.
+1. Avaa työtilassasi raportti, jota voit muokata, ja valitse **Lisää vaihtoehtoja (...)**   > **Upota** >  **Julkaise verkkoon (julkinen)** .
 
-   ![PtW1](media/service-publish-to-web/publish_to_web1.png)
+   ![Lisää vaihtoehtoja -valikon Julkaise verkkoon -vaihtoehto](media/service-publish-to-web/power-bi-more-options-publish-web.png)
    
-2. Ota yhteyttä [Power BI -järjestelmänvalvojaasi](service-admin-role.md), jos sinulla ei ole oikeutta luoda upotuskoodeja.
+2. Jos Power BI -järjestelmänvalvojasi ei ole sallinut sinun luoda upotuskoodeja, sinun on ehkä otettava häneen yhteyttä.
 
-   ![PtW1](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+   ![Yhteyden ottaminen Power BI -järjestelmänvalvojaan](media/service-publish-to-web/publish_to_web_admin_prompt.png)
    
-   [Näiden vinkkien avulla](#how-to-find-your-power-bi-administrator) voit selvittää, kuka mahdollistaa julkaisemisen verkkoon organisaatiossasi.
+   Jos haluat ohjeita sen henkilön löytämiseen, joka voi ottaa Julkaise verkkoon -toiminnon käyttöön organisaatiossasi, katso kohtaa [Yhteyden ottaminen Power BI -järjestelmänvalvojaasi](#find-your-power-bi-administrator) jäljempänä tässä artikkelissa.
 
 3. Tarkista valintaikkunan sisältö ja valitse **Luo upotuskoodi**.
 
-   ![PtW2](media/service-publish-to-web/publish_to_web2_ga.png)
+   ![Tarkista upottaminen julkiseen sivustoon](media/service-publish-to-web/publish_to_web2_ga.png)
 
 4. Tarkista varoitus (joka näkyy tässä) ja varmista, että tiedot voidaan upottaa julkiselle verkkosivustolle. Jos näin on, valitse **Julkaise**.
 
-   ![PtW3](media/service-publish-to-web/publish_to_web3_ga.png)
+   ![Tarkista varoitus](media/service-publish-to-web/publish_to_web3_ga.png)
 
-5. Näyttöön avautuu valintaikkuna, jossa on linkki. Voit lähettää tämän linkin sähköpostitse, upottaa sen koodiin (esimerkiksi iFrame) tai liittää sen suoraan verkkosivulle tai blogiin.
+5. Näyttöön avautuu valintaikkuna, jossa on linkki. Valitse sähköpostitse lähetettävä linkki tai kopioi HTML-tiedosto. Voit upottaa sen koodiin (esimerkiksi iFrame) tai liittää sen suoraan verkkosivulle tai blogiin.
 
-   ![PtW4](media/service-publish-to-web/publish_to_web4.png)
+   ![Onnistui: linkki ja HTML](media/service-publish-to-web/publish_to_web4.png)
 
 6. Jos loit aiemmin raportille upotuskoodin ja valitset **Julkaise verkkoon**, et näe valintaikkunoita vaiheissa 2–4. Näet sen sijaan **upotuskoodin** valintaikkunan:
 
-   ![PtW5](media/service-publish-to-web/publish_to_web5.png)
+   ![Upotuskoodi-valintaikkuna](media/service-publish-to-web/publish_to_web5.png)
 
    Voit luoda vain yhden upotuskoodin kullekin raportille.
 
 
-## <a name="tips-and-tricks-for-view-modes"></a>Vihjeitä ja vinkkejä näyttötiloihin
+### <a name="tips-for-view-modes"></a>Vihjeitä näkymätiloja varten
 
 Kun upotat sisältöä blogitekstiin, sinun on yleensä sovitettava se tiettyyn näyttökokoon.  Voit muokata leveyttä ja korkeutta iFrame-tunnisteella tarvittaessa. Sinun on kuitenkin myös varmistettava, että raporttisi mahtuu iFramelle varatulle alueelle, ja määritettävä siten asianmukainen näyttötila raporttia muokattaessa.
 
@@ -77,7 +77,7 @@ Seuraavassa taulukossa on ohjeita näyttötilasta ja siitä, miten se tulee näk
 | ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Todellinen koko** varmistaa, että raportin koko säilyy siten kuin se on määritetty raporttisivulle. Tämän vuoksi iFramessa voi olla vierityspalkkeja. Määritä iFramen korkeus ja leveys siten, että vältät vierityspalkit. |
 | ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Sovita leveyteen** -komento varmistaa, että sisältö mahtuu iFramen vaakasuuntaiselle alueelle. Reuna näkyy edelleen, mutta sisältö skaalataan siten, että se käyttää kaikkea saatavilla olevaa vaakasuuntaista tilaa. |
 
-## <a name="tips-and-tricks-for-iframe-height-and-width"></a>Vihjeitä ja vinkkejä iFramen korkeuteen ja leveyteen
+### <a name="tips-for-iframe-height-and-width"></a>Vihjeitä iFramen korkeuteen ja leveyteen
 
 **Julkaise verkkoon** -upotuskoodi näyttää tältä:
 
@@ -102,7 +102,7 @@ Kun olet luonut **Julkaise verkkoon** -upotuskoodin, voit hallita koodeja Power 
 
 1. Voit hallita omia **Julkaise verkkoon** -upotuskoodeja avaamalla **Asetukset**-rataskuvakkeen ja valitsemalla **Hallitse upotuskoodeja**.
 
-   ![PtW8](media/service-publish-to-web/publish_to_web8.png)
+   ![Hallitse upotuskoodeja](media/service-publish-to-web/publish_to_web8.png)
 
 2. Näet upotuskoodisi.
 
@@ -120,55 +120,18 @@ Kun olet luonut **Julkaise verkkoon** -upotuskoodin, voit hallita koodeja Power 
 
 Kun olet luonut oman **Julkaise verkkoon** -upotuskoodin ja jakanut sen, raporttiin päivitetään kaikki tekemäsi muutokset. Lisäksi upotuskoodilinkki on heti käytettävissä. Kuka tahansa linkin avaava näkee sisällön. Tämän ensimmäisen toiminnon jälkeen raporttien ja visualisointiesi päivitysten näkyminen käyttäjille saattaa kuitenkin kestää kahdesta kolmeen tuntia. Saat lisätietoja tässä artikkelissa olevasta [**Miten se toimii**](#howitworks) -osiosta. 
 
-## <a name="data-refresh"></a>Tietojen uudelleenlataus
+### <a name="data-refresh"></a>Tietojen uudelleenlataus
 
 Tietojen uudelleenlataukset näkyvät automaattisesti upotetussa raportissa tai visualisoinnissa. Päivitettyjen tietojen näkyminen upotuskoodeissa voi kestää noin tunnin. Voit poistaa automaattisen päivityksen käytöstä valitsemalla raportin käyttämän tietojoukon aikataulussa **Älä päivitä**.  
 
 ## <a name="power-bi-visuals"></a>Power BI:n visualisoinnit
 
-Power BI -visualisointeja tuetaan **Julkaise verkkoon** -toiminnossa. Kun käytät **Julkaise verkkoon** -toimintoa, niiden käyttäjien, joiden kanssa jaat julkaistun visualisoinnin, ei tarvitse ottaa käyttöön Power BI -visualisointeja raportin tarkastelemiseksi.
-
-## <a name="limitations"></a>Rajoitukset
-
-**Julkaise verkkoon** -toimintoa tuetaan useimmissa tietolähteissä ja raporteissa Power BI -palvelussa. **Julkaise verkkoon** -toimintoa ei kuitenkaan tällä hetkellä tueta tai se ei ole saatavilla seuraavien raporttien tapauksessa:
-
-- Raportit, jotka käyttävät rivitason suojausta.
-- Raportit, jotka käyttävät reaaliaikaisen yhteyden tietolähdettä, mukaan lukien paikallisesti isännöity Analysis Services Tabular, Analysis Services Multidimensional ja Azure Analysis Services.
-- Raportit, jotka käyttävät [jaettua tietojoukkoa](service-datasets-across-workspaces.md), joka on tallennettu eri työtilaan kuin raportti.
-- Raportit jaetaan sinulle suoraan tai organisaation sisältöpaketin kautta.
-- Raportit ryhmässä, jonka muokkausjäsen et ole.
-- R-visualisointeja ei tällä hetkellä tueta **Julkaise verkkoon** -raporteissa.
-- Tietojen viemistä visualisoinneista raportissa, joka on julkaistu verkkoon, ei tueta.
-- Power BI -visualisointien ArcGIS Maps -karttoja ei tueta.
-- Raportit, jotka sisältävät raporttitason DAX-mittareita, ei tueta.
-- Kertakirjautumista tietokyselymalleissa ei tueta.
-- Luottamuksellisia tai omistusoikeudellisia tietoja ei tueta.
-- [Jaettuja ja sertifioituja tietojoukkoja ei tueta](service-datasets-share.md).
-- **Upota**-vaihtoehdon tarjoama automaattisen todentamisen mahdollisuus ei toimi Power BI:n JavaScript-ohjelmointirajapinnan kanssa. Jos käytät Power BI:n JavaScript-ohjelmointirajapintaa, käytä upotuksessa [käyttäjä omistaa tiedot](developer/embedded/embed-sample-for-your-organization.md) -menetelmää.
-
-## <a name="tenant-setting"></a>Vuokraaja-asetukset
-
-**Julkaise verkkoon** -asetus sisältää vaihtoehtoja upotuskoodien luomiseen.
-
-![Julkaise verkkoon -asetus](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
-
-Sinua pyydetään ottamaan yhteyttä Power BI -järjestelmänvalvojaasi upotuskoodin luomista varten, kun **Valitse, miten upotuskoodit toimivat** -asetuksena on **Salli vain olemassa olevat upotuskoodit** ja **Julkaise verkkoon** -asetuksena on **Käytössä**.
-
-![Julkaise verkkoon -kehote](media/service-publish-to-web/publish_to_web_admin_prompt.png)
-
-Power BI:n järjestelmänvalvojat voivat ottaa **Julkaise verkkoon** -toiminnon käyttöön tai poistaa sen käytöstä. He voivat myös rajoittaa käytön tietyille ryhmille. Tämä voi vaikuttaa siihen, voitko luoda upotuskoodia. Näet käyttöliittymässä eri asetuksia sen mukaan, mikä **Julkaise verkkoon** -asetuksena on.
-
-|Ominaisuus |Otettu käyttöön koko organisaatiolle |Otettu käyttöön koko organisaatiolle |Tietyt käyttöoikeusryhmät   |
-|---------|---------|---------|---------|
-|Raportin **Tiedosto**-valikon **Julkaise verkkoon** -toiminto|Käytössä kaikille|Ei näkyvissä kaikille|Näkyvissä vain valtuutetuille käyttäjille tai ryhmille.|
-|**Asetukset**-valikon **Upotuskoodien hallinta**|Käytössä kaikille|Käytössä kaikille|Käytössä kaikille<br><br>* **Poista**-vaihtoehto vain valtuutetuille käyttäjille tai ryhmille.<br>* **Hae koodit** käytössä kaikille.|
-|**Upotuskoodit** hallintaportaalissa|Tila ilmaisee jotain seuraavista tiloista:<br>* Aktiivinen<br>* Ei tuettu<br>* Estetty|Tilana näytetään **Ei käytössä**|Tila ilmaisee jotain seuraavista tiloista:<br>* Aktiivinen<br>* Ei tuettu<br>* Estetty<br><br>Jos käyttäjälle ei ole annettu oikeuksia vuokraaja-asetuksissa, tilana näytetään **Loukannut**.|
-|Aiemmin luodut julkaistut raportit|Kaikki käytössä|Kaikki poissa käytöstä|Raportit näytetään jatkossakin kaikille.|
+Power BI -visualisointeja tuetaan **Julkaise verkkoon** -toiminnossa. Kun käytät **Julkaise verkkoon** -toimintoa, niiden käyttäjien, joiden kanssa jaat julkaistun visualisoinnin, ei tarvitse ottaa käyttöön Power BI -visualisointeja raportin tarkastelemista varten.
 
 ## <a name="understanding-the-embed-code-status-column"></a>Upotuskoodin tilan sarakkeen ymmärtäminen
 
 >[!Note]
->Tarkista julkaisemasi upotuskoodit säännöllisesti ja poista sellaiset, joiden ei enää tarvitse olla julkisesti saatavilla. 
+>Tarkista usein julkaistut upotuskoodit. Poista ne, joiden ei enää tarvitse olla julkisesti käytettävissä.
 
 **Hallitse upotuskoodeja** -sivulla on tilasarake. Upotuskoodit ovat oletusarvoisesti **aktiivisia**, mutta tila voi olla myös jokin alla luetelluista.
 
@@ -177,30 +140,30 @@ Power BI:n järjestelmänvalvojat voivat ottaa **Julkaise verkkoon** -toiminnon 
 | **Aktiivinen** |Internet-käyttäjät voivat tarkastella ja käsitellä raporttia. |
 | **Estetty** |Raportin sisältö rikkoo [Power BI:n käyttöehtoja](https://powerbi.microsoft.com/terms-of-service). Microsoft on estänyt sen. Ota yhteyttä tukeen, jos uskot, että sisältö on estetty virheellisesti. |
 | **Ei tueta** |Raportin tietojoukko käyttää rivitason suojausta tai muuta määritystä, jota ei tueta. Katso täydellinen luettelo [**Rajoitukset**](#limitations)-osiosta. |
-| **Loukannut** |Upotuskoodi on määritetyn vuokraajan käytännön ulkopuolella. Näin tapahtuu yleensä, kun vuokraajan **Julkaise verkkoon** -asetusta muutetaan upotuskoodin luomisen jälkeen sulkemalla ulkopuolelle käyttäjä, joka omistaa upotuskoodin. Jos vuokraaja-asetus on poistettu käytöstä tai käyttäjä ei enää voi luoda upotuskoodeja, aiemmin luotujen upotuskoodien tilana on **Loukannut**. |
+| **Loukannut** |Upotuskoodi on määritetyn vuokraajan käytännön ulkopuolella. Tämä tila ilmenee yleensä, kun vuokraajan **Julkaise verkkoon** -asetusta muutetaan upotuskoodin luomisen jälkeen sulkemalla ulkopuolelle käyttäjä, joka omistaa upotuskoodin. Jos vuokraaja-asetus on poistettu käytöstä tai käyttäjä ei enää voi luoda upotuskoodeja, aiemmin luotujen upotuskoodien tilana on **Loukannut**. Katso lisätietoja tämän artikkelin kohdasta kohdasta [Yhteyden ottaminen Power BI -järjestelmänvalvojaasi](#find-your-power-bi-administrator). |
 
-## <a name="how-to-report-a-concern-with-publish-to-web-content"></a>Miten voit ilmoittaa Julkaise verkkoon -sisältöä koskevan huolenaiheen
+## <a name="report-a-concern-with-publish-to-web-content"></a>Julkaise verkkoon -sisältöä koskevasta huolenaiheesta ilmoittaminen
 
-Voit ilmoittaa verkkosivustoon tai blogiin upotettua **Julkaise verkkoon** -sisältöä koskevan huolenaiheen alapalkissa olevalla **Lippu**-kuvakkeella seuraavassa kuvassa esitetyllä tavalla. Sinua pyydetään lähettämään Microsoftille sähköpostiviesti, jossa selität huolenaiheen. Microsoft arvioi sitten sisällön Power BI:n käyttöehtojen mukaisesti ja ryhtyy asianmukaisiin toimenpiteisiin.
-
-Voit ilmoittaa huolenaiheesta valitsemalla **Lippu**-kuvakkeen näkemäsi **Julkaise verkkoon** -raportin alapalkista.
+Voit ilmoittaa sivustoon tai blogiin upotettua **Julkaise verkkoon** -sisältöä koskevan huolenaiheen valitsemalla **Julkaise verkkoon** -raportin alapalkissa olevan **Lippu**-kuvakkeen.
 
 ![PtW12](media/service-publish-to-web/publish_to_web12_ga.png)
 
-## <a name="licensing-and-pricing"></a>Käyttöoikeudet ja hinnoittelu
+Sinua pyydetään lähettämään Microsoftille sähköpostiviesti, jossa selität huolenaiheen. Microsoft arvioi sitten sisällön [Power BI:n käyttöehtojen](https://powerbi.microsoft.com/terms-of-service) mukaisesti ja ryhtyy asianmukaisiin toimenpiteisiin.
+
+## <a name="licensing"></a>Käyttöoikeudet
 
 Sinun on oltava Microsoft Power BI:n käyttäjä, jotta voit käyttää **Julkaise verkkoon** -toimintoa. Raporttisi käyttäjien ei tarvitse olla Power BI:n käyttäjiä.
 
 <a name="howitworks"></a>
 ## <a name="how-it-works-technical-details"></a>Miten se toimii (tekniset tiedot)
 
-Kun luot upotuskoodin **Julkaise verkkoon** -toiminnolla, käyttäjät Internetissä näkevät raportin. Se on yleisesti saatavilla, joten käyttäjät voivat helposti jakaa raportin sosiaalisessa mediassa jatkossa. Kun käyttäjät tarkastelevat raporttia joko avaamalla suoran julkisen URL-osoitteen tai tarkastelemalla sitä upotettuna verkkosivulle tai blogiin, Power BI piilottaa raportin määritelmän ja raportin tarkasteluun vaadittujen pyyntöjen tulokset. Tämän ansiosta tuhannet käyttäjät voivat tarkastella raporttia samanaikaisesti suorituskyvyn kärsimättä.
+Kun luot upotuskoodin **Julkaise verkkoon** -toiminnolla, käyttäjät Internetissä näkevät raportin. Se on yleisesti saatavilla, joten käyttäjät voivat helposti jakaa raportin sosiaalisessa mediassa jatkossa. Kun käyttäjät tarkastelevat raporttia joko avaamalla suoran julkisen URL-osoitteen tai tarkastelemalla sitä upotettuna verkkosivulle tai blogiin, Power BI piilottaa raportin määritelmän ja raportin tarkasteluun vaadittujen pyyntöjen tulokset. Tämän välimuistin ansiosta tuhannet käyttäjät voivat tarkastella raporttia samanaikaisesti suorituskyvyn kärsimättä.
 
-Välimuisti on pitkäkestoinen, joten jos päivität raportin määritelmää (esimerkiksi muuttamalla sen näyttötilaa) tai lataat uudelleen raporttitietoja, voi kestää noin tunnin, ennen kuin muutokset näkyvät käyttäjien tarkastelemassa raportin versiossa. Suosittelemme siksi, että suunnittelet työsi etukäteen, ja luot **Julkaise verkkoon** -upotuskoodin vain, kun olet tyytyväinen asetuksiin.
+Välimuisti on pitkäkestoinen. Jos päivität raportin määritelmää (esimerkiksi muuttamalla sen näyttötilaa) tai lataat uudelleen raporttitietoja, voi siksi kestää noin tunnin, ennen kuin muutokset näkyvät käyttäjien tarkastelemassa raportin versiossa. Siksi suosittelemme, että suunnittelet työsi etukäteen, ja luot **Julkaise verkkoon** -upotuskoodin vain, kun olet tyytyväinen asetuksiin.
 
-## <a name="how-to-find-your-power-bi-administrator"></a>Miten saat yhteyden Power BI -järjestelmänvalvojaasi
+## <a name="find-your-power-bi-administrator"></a>Yhteyden ottaminen Power BI -järjestelmänvalvojaasi
 
-[Julkaise verkkoon -vuokraaja-asetuksen](#tenant-setting) muuttaminen edellyttää organisaatiosi [Power BI -järjestelmänvalvojan](service-admin-role.md) apua.
+Power BI -hallintaportaalissa on asetuksia, jotka ohjaavat sitä, kuka voi julkaista verkkoon. Hallintaportaalin [Julkaise verkkoon -vuokraaja-asetusten](service-admin-portal.md#publish-to-web) muuttaminen edellyttää organisaatiosi [Power BI -järjestelmänvalvojan](service-admin-role.md) apua.
 
 Jos olet Power BI:tä käyttävä yksityishenkilö tai jos organisaatio on pieni, Power BI -järjestelmänvalvojaa ei ehkä ole määritetty. Seuraa [vuokraajan järjestelmänvalvojan haltuunoton](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover) ohjeita. Kun Power BI -järjestelmänvalvoja on määritetty, hän voi antaa sinulle oikeudet luoda upotuskoodeja.
 
@@ -210,8 +173,25 @@ Vakiintuneissa organisaatioissa on yleensä Power BI -järjestelmänvalvoja entu
 - Azure Active Directory -järjestelmänvalvojat
 - Käyttäjät, joilla on Power BI -palvelun järjestelmänvalvojan rooli Azure Active Directoryssä
 
-Etsi [jokin näistä organisaatiosi henkilöistä](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) ja pyydä häntä päivittämään asetus.
+Sinun pitää [löytää joku näistä henkilöistä](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) organisaatiossasi ja pyytää häntä päivittämään [Julkaise verkkoon -vuokraaja-asetukset](service-admin-portal.md#publish-to-web) hallintaportaalissa.
 
+## <a name="limitations"></a>Rajoitukset
+
+**Julkaise verkkoon** -toimintoa tuetaan suurimmassa osassa tietolähteitä ja raportteja Power BI -palvelussa. Seuraavan kaltaisia raportteja ei kuitenkaan tällä hetkellä tueta tai ne eivät ole käytettävissä **Julkaise verkkoon** -toiminnossa:
+
+- Raportit, jotka käyttävät rivitason suojausta.
+- Raportit, jotka käyttävät reaaliaikaisen yhteyden tietolähdettä, mukaan lukien paikallisesti isännöity Analysis Services Tabular, Analysis Services Multidimensional ja Azure Analysis Services.
+- Raportit, jotka käyttävät [jaettua tietojoukkoa](service-datasets-across-workspaces.md), joka on tallennettu eri työtilaan kuin raportti.
+- [Jaettuja ja sertifioituja tietojoukkoja ei tueta](service-datasets-share.md).
+- Raportit jaetaan sinulle suoraan tai organisaation sisältöpaketin kautta.
+- Raportit työtilassa, jonka muokkausjäsen et ole.
+- R-visualisointeja ei tällä hetkellä tueta **Julkaise verkkoon** -raporteissa.
+- Tietojen viemistä visualisoinneista raportissa, joka on julkaistu verkkoon, ei tueta.
+- Power BI -visualisointien ArcGIS Maps -karttoja ei tueta.
+- Raportit, jotka sisältävät raporttitason DAX-mittareita, ei tueta.
+- Kertakirjautumista tietokyselymalleissa ei tueta.
+- Luottamuksellisia tai omistusoikeudellisia tietoja ei tueta.
+- **Upota**-vaihtoehdon tarjoama automaattisen todentamisen mahdollisuus ei toimi Power BI:n JavaScript-ohjelmointirajapinnan kanssa. Jos käytät Power BI:n JavaScript-ohjelmointirajapintaa, käytä upotuksessa [käyttäjä omistaa tiedot](developer/embedded/embed-sample-for-your-organization.md) -menetelmää.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

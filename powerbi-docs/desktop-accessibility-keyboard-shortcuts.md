@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8c4db4d659c64fba8b7a79e6e36a5f27d8dd5d34
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 986c09e404e0190a3efee8480d413d49cbd49186
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73869368"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584807"
 ---
 # <a name="keyboard-shortcuts-in-power-bi-desktop"></a>Pikanäppäimet Power BI Desktopissa
 
@@ -56,6 +56,7 @@ Pyrkimyksissämme parantaa helppokäyttötoimintoja yllä olevan luettelon kokem
 | Valitse useita | **Ctrl + Enter** tai **Ctrl + välilyönti** |
 | Napsauta hiiren kakkospainikkeella | <ul><li>Windows-näppäimistö: **Windows-kontekstinäppäin + F10**. Windows-kontekstiavain on vasemman Alt-näppäimen ja vasemman nuolinäppäimen välissä</li><li>Muu näppäimistö: **Vaihto + F10**</li></ul> |
 | Tyhjennä valinta | **Ctrl + vaihto + C** |
+| Näytä tai piilota työkaluvihje | **Ctrl + H** |
 
 ## <a name="table-and-matrix-navigation"></a>Taulukossa ja matriisissa siirtyminen
 | Toiminnon suorittaminen          | Paina                |

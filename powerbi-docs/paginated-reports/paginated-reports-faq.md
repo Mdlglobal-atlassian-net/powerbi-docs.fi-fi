@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/21/2020
-ms.openlocfilehash: dcf154105b8940bd400fbb4e630a1d1cfd00ddf0
-ms.sourcegitcommit: 8775168ed916c517c57c696ebe45699e638b86e8
+ms.date: 04/29/2020
+ms.openlocfilehash: 3677e29e4ca9bc13bf0c7397d854dea62ec5f70f
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81766273"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585006"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sivutetut raportit Power BI:ssä: Usein kysytyt kysymykset 
 
@@ -173,6 +173,11 @@ Ei, raporttien katseluohjelman hallintaa ei tällä hetkellä ole saatavilla.
 ### <a name="can-you-search-for-paginated-reports-from-the-new-home-experience-in-the-power-bi-service"></a>Voidaanko sivutettuja raportteja hakea Power BI -palvelun uudesta Aloitus-kohdasta?
 
 Kyllä, voit nyt hakea sivutettuja raportteja Aloitus-kohdasta.  Näet ne myös uuden Aloitus-kohdan muissa osissa.
+
+## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
+Seuraava asia kannattaa pitää mielessä käsiteltäessä sivutettujen raporttien DateTime-kenttiä.
+
+- DateTime-parametreihin liittyy tällä hetkellä joitakin globalisointirajoituksia. Kaikki Power BI -palvelun DateTime-parametrit noudetaan yhdysvaltalaisessa muodossa (KK/PP/VVVV) riippumatta siitä, millä tavalla DataTime suunnitellaan Power BI -raportin muodostimessa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

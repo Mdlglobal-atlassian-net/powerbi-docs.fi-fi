@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/31/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 54c3622b0a4dd6c690c2f22a0b93aed39e9d2799
-ms.sourcegitcommit: 3c51431d85793b71f378c4b0b74483dfdd8411b3
+ms.openlocfilehash: 301d6397e4a3ae4498234bae3ad8a49aa7552722
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80464639"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584678"
 ---
 # <a name="using-enhanced-dataset-metadata-preview"></a>Parannettujen tietojoukon metatietojen käyttäminen (esiversio)
 
@@ -46,6 +46,7 @@ Kun esikatselutoiminto on käytössä, Power BI Desktop yrittää päivittää P
 
 Esikatseluversiossa ovat voimassa seuraavat rajoitukset, kun esikatselutoiminto on otettu käyttöön.
 
+### <a name="unsupported-features-and-connectors"></a>Ominaisuudet ja liittimet, joita ei tueta
 Kun avaat aiemman, päivittämättömän PBIX- tai PBIT-tiedoston, päivitys epäonnistuu, jos tietojoukko sisältää jonkin seuraavista ominaisuuksista tai liittimistä. Jos sellainen epäonnistuminen tapahtuu, sillä ei pitäisi olla välitöntä vaikutusta käyttökokemukseen, ja Power BI Desktop jatkaa aikaisemman metatietomuodon käyttöä.
 
 * Python-komentosarjat
@@ -67,6 +68,8 @@ Kun avaat aiemman, päivittämättömän PBIX- tai PBIT-tiedoston, päivitys ep�
 
 Lisäksi PBIX- ja PBIT-tiedostot, jotka on jo onnistuneesti päivitetty käyttämään **parannettuja tietojoukon metatietoja**, *eivät* voi käyttää yllä olevia ominaisuuksia tai liittimiä nykyisessä versiossa.
 
+### <a name="lineage-view"></a>Historiatietonäkymä
+Uutta metatietomuotoa käyttävät tietojoukot eivät tällä hetkellä näytä linkkejä tietovuokohteisiin, jotka ovat Power BI -palvelun historianäkymässä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

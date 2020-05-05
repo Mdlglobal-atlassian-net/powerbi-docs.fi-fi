@@ -1,38 +1,62 @@
 ---
-title: Power BI:n rekisteröinti uudessa Office 365 -kokeilussa
-description: Power BI:n rekisteröinti uudessa Office 365 -kokeilussa
+title: Power BI:n rekisteröinti uudessa Microsoft 365 -kokeilussa
+description: Power BI:n rekisteröinti uudessa Microsoft 365 -kokeilussa
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
-ms.author: kfollis
+ms.date: 04/24/2020
+ms.author: mihart
 LocalizationGroup: Administration
-ms.openlocfilehash: aab3c01abc970261164c5cc225d89db09ce63d12
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 667c20c0e904ca9a91aed3c0566f722e54336a9f
+ms.sourcegitcommit: c772c544ce2e1e2a147b9b62e5579ac3cb59d54c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698436"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82256228"
 ---
-# <a name="signing-up-for-power-bi-with-a-new-office-365-trial"></a>Power BI:n rekisteröinti uudessa Office 365 -kokeilussa
+# <a name="signing-up-for-power-bi-with-a-new-microsoft-365-trial"></a>Power BI:n rekisteröinti uudessa Microsoft 365 -kokeilussa
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gbSuFST-Nx4?showinfo=0" frameborder="0" allowfullscreen></iframe>
+Tässä artikkelissa kuvataan vaihtoehtoinen tapa rekisteröityä Power BI:hin, jos sinulla ei vielä ole työpaikan tai oppilaitoksen sähköpostitiliä. 
 
-Tässä artikkelissa kuvataan vaihtoehtoinen tapa rekisteröityä Power BI:n käyttäjäksi Office 365 -kokeilun avulla. Jos sinulla on ongelmia rekisteröitymisessä Power BI:n käyttäjäksi työsähköpostiosoitteellasi, varmista ensin, että tätä [sähköpostiosoitetta voi käyttää Power BI:n kanssa](service-self-service-signup-for-power-bi.md#supported-email-addresses). Jos tämä ei onnistu, yritä rekisteröityä ensin Office 365 -kokeilun käyttäjäksi ja vasta sitten Power BI:n käyttäjäksi. Voit käyttää Power BI:tä jopa Office 365 -kokeilujakson päättymisen jälkeen.
+Jos sinulla on ongelmia rekisteröitymisessä Power BI:n käyttäjäksi sähköpostiosoitteellasi, varmista ensin, että tätä [sähköpostiosoitetta voi käyttää Power BI:n kanssa](service-self-service-signup-for-power-bi.md#supported-email-addresses). Jos tämä ei onnistu, rekisteröidy Microsoft 365 -kokeiluversioon ja luo työpaikan tili. Rekisteröidy sitten Power BI -palveluun kyseisen uuden työtilin avulla. Voit käyttää Power BI:tä jopa Microsoft 365 -kokeilujakson päättymisen jälkeen.
 
-1. Rekisteröidy Office 365 -kokeilun käyttäjäksi [Office 365 -sivustossa](https://go.microsoft.com/fwlink/p/?LinkID=403802).
+> [!NOTE]
+> Office 365 on hiljattain nimetty uudelleen Microsoft 365:ksi. Siihen saatetaan edelleen viitata nimellä Office 365, kunnes kaikki artikkelimme on päivitetty.
 
-1. Kun olet rekisteröitynyt kokeilun käyttäjäksi, saat uuden kirjautumisnimen, joka näyttää tältä: you@yourcompany.onmicrosoft.com. Tämä on kirjautumisnimi, jota käytät Power BI:n kanssa.
+1. Rekisteröidy Microsoft 365 -kokeiluversioon [Microsoft 365 -sivustossa](https://www.microsoft.com/en-us/microsoft-365/business/compare-more-office-365-for-business-plans).
 
-1. Rekisteröidy Power BI:n käyttäjäksi [tästä linkistä](https://app.powerbi.com/signupredirect?pbi_source=web). Kirjaudu pyydettäessä sisään kirjautumisnimellä ja salasanalla, jotka valitsit Office 365:lle edellisessä vaiheessa.
+    ![aloitussivu](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-now.png)
 
-1. Siinä kaikki! Kun olet valmis, sinut ohjataan Power BI:hin. Jos sinulla on ongelmia kirjautua sisään uudella tilillä, kokeile yksityistä selainistuntoa.
+    ![Valitse rekisteröityminen uuteen tiliin](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-existing.png)
+
+    ![luo työpaikan tai oppilaitoksen tili](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-email.png)
+
+    ![Valitse rekisteröityminen uuteen tiliin](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-no-email.png)
+
+    ![anna yhteystietosi](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-welcome-you.png)
+
+    
+
+1. Luo uusi työpaikan kirjautumisnimesi, joka on muodossa you@yourcompany.onmicrosoft.com. Tämä on kirjautumisnimi, jota käytät Power BI:n kanssa.
+
+    ![luo työpaikan osoite](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-address.png)
+
+    ![hanki koodi tekstiviestinä](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-robot.png)    
+
+1. Saatat joutua odottamaan uuden vuokraajasi luomista. 
+
+Siinä kaikki!  Sinulla on nyt sähköpostiosoite, jonka avulla voit rekisteröityä Power BI:hin. Siirry artikkeliin [Rekisteröityminen Power BI:hin yksityishenkilönä](service-self-service-signup-for-power-bi.md)
+
+
+
+
 
 ## <a name="important-considerations"></a>Huomioitavaa
+Jos sinulla on ongelmia kirjautua sisään uudella tilillä, kokeile yksityistä selainistuntoa.    
 
-Kun käytät tätä kirjautumismenetelmää, luot uuden organisaation vuokraajan ja sinusta tulee vuokraajan järjestelmänvalvoja. Katso lisätietoja artikkelista [Mitä on Power BI:n hallinta?](service-admin-administering-power-bi-in-your-organization.md). Voit lisätä uusia käyttäjiä vuokraajaan ja jakaa sitten heidän kanssaan [Office 365:n järjestelmänvalvojan ohjeissa](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) kuvatulla tavalla.
+Kun käytät tätä kirjautumismenetelmää, luot uuden organisaation vuokraajan ja sinusta tulee vuokraajan järjestelmänvalvoja. Katso lisätietoja artikkelista [Mitä on Power BI:n hallinta?](service-admin-administering-power-bi-in-your-organization.md). Voit lisätä uusia käyttäjiä vuokraajaan ja jakaa sitten heidän kanssaan [Microsoft 365:n järjestelmänvalvojan ohjeissa](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) kuvatulla tavalla.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

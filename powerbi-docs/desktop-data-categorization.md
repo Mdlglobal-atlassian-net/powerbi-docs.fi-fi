@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 218a05c41c3befed8f8600f6a584560f5be92a1f
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.openlocfilehash: 4ce9946672514d3d3f181c573789b256888a4372
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76709552"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82584830"
 ---
 # <a name="specify-data-categories-in-power-bi-desktop"></a>Tietoluokkien määrittäminen Power BI Desktopissa
 Power BI Desktopissa voit määrittää sarakkeen *tietoluokan*, jolloin Power BI Desktop tietää, miten sen on käsiteltävä kyseisen sarakkeen arvoja visualisoinnissa.
@@ -33,7 +33,7 @@ Tuleeko Power BI Desktopin näyttää kuva maailmasta, jossa maat ovat korostett
 **Tietoluokan määrittäminen**
 
 1. Valitse **raportti**näkymässä tai **tieto**näkymässä olevasta **Kentät**-luettelosta kenttä, jonka haluat lajiteltavan eri luokittelun mukaan.
-2. Valitse valintanauhan **Mallinnus**-välilehden **Ominaisuudet**-alueella avausnuoli kohdan **Tietoluokka**vieressä.  Luettelossa näkyvät tietoluokat, jotka voit sarakkeellesi valita. Jotkut valinnat voi olla poistettu käytöstä, jos ne eivät toimi sarakkeesi tämänhetkisen tietotyypin kanssa.  Esimerkiksi jos sarake on binaarista tietotyyppiä, Power BI Desktop ei anna sinun valita maantieteellisten tietojen luokkia. 
+2. Valitse valintanauhan **Mallinnus**-välilehden **Ominaisuudet**-alueella avausnuoli kohdan **Tietoluokka**vieressä.  Luettelossa näkyvät tietoluokat, jotka voit sarakkeellesi valita. Jotkut valinnat voi olla poistettu käytöstä, jos ne eivät toimi sarakkeesi tämänhetkisen tietotyypin kanssa.  Jos sarake on esimerkiksi päivämäärä- tai aikatyyppinen, Power BI Desktop ei anna sinun valita maantieteellisten tietojen luokkia. 
 3. Valitse haluamasi luokka.
 
    ![](media/desktop-data-categorization/desktop-data-categorization.png)

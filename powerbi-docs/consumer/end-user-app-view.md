@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f42455033a0853cc9a962d3167ed8a69a0f42c4e
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.openlocfilehash: 3b8985158092227fde5eb64eddabc9990d0606f6
+ms.sourcegitcommit: 9ec2c608b90bf651df613f0714addd251a885039
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77496921"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82120271"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Koontinäyttöjä ja raportteja hyödyntävien sovellusten asentaminen ja käyttäminen Power BI:ssä
 
@@ -28,6 +28,11 @@ Nyt sinulla on [perustiedot sovelluksista](end-user-apps.md), joten voimme opete
 Voit hankkia uuden sovelluksen usealla eri tavalla. Raportin suunnittelija voi asentaa sovelluksen automaattisesti Power BI -tilillesi tai lähettää sinulle suoran linkin sovellukseen. Vaihtoehtoisesti voit siirtyä AppSourceen ja etsiä sieltä käytettävissä olevia, yrityksen sisäisten tai ulkopuolisten suunnittelijoiden luomia sovelluksia. 
 
 Jos käytät Power BI:tä mobiililaitteella, et voi asentaa sovellusta AppSourcen kautta vaan tarvitset suoran linkin. Jos sovelluksen suunnittelija asentaa sovelluksen automaattisesti, näet sen sovellusluettelossa.
+
+## <a name="apps-and-licenses"></a>Sovellukset ja käyttöoikeudet
+Kaikki Power BI -käyttäjät eivät voi tarkastella ja käsitellä sovelluksia. 
+- Jos sinulla on maksuton käyttöoikeus, voit avata sovelluksia, jotka on jaettu kanssasi ja jotka on tallennettu Premium-kapasiteetin työtilaan.
+- Jos sinulla on Pro-käyttöoikeus, voit avata sovelluksia, jotka on jaettu kanssasi.
 
 ## <a name="install-an-app-from-a-direct-link"></a>Sovelluksen asentaminen suoran linkin kautta
 Helpoin tapa asentaa uusi sovellus omatoimisesti on saada sovelluksen suunnittelijalta sähköpostitse suora linkki.  
@@ -45,7 +50,10 @@ Kun napsautat sähköpostissa olevaa linkkiä mobiililaitteessa, sovellus asentu
 ![Sovelluksen sisältöluettelo mobiililaitteessa](./media/end-user-app-view/power-bi-ios.png)
 
 ## <a name="get-the-app-from-microsoft-appsource"></a>Sovelluksen hakeminen Microsoft AppSourcesta
-Voit etsiä ja asentaa sovelluksia myös Microsoft AppSourcesta. Näet vain ne sovellukset, joihin sinulla on käyttöoikeus (eli joihin sovelluksen tekijä on antanut sinulle tai kaikille käyttöoikeuden).
+Voit etsiä ja asentaa sovelluksia myös Microsoft AppSourcesta. Näet vain ne sovellukset, joihin sinulla on käyttöoikeus (eli joihin sovelluksen tekijä on antanut sinulle tai kaikille käyttöoikeuden). 
+
+> [!NOTE]
+> Jos käytät maksutonta käyttöoikeutta, voit ladata sovelluksia, mutta et voi tarkastella niitä, ellet päivitä tiliäsi Power BI Pro -tiliksi tai ellei sovellusta tallenneta Premium-kapasiteettiin. Lisätietoja on artikkelissa [Kuluttajien käyttöoikeudet](end-user-license.md).
 
 1. Valitse **Sovellukset**  > **Hanki sovelluksia**. 
    
@@ -79,7 +87,12 @@ Tässä esimerkissä avataan jokin Microsoft-mallisovelluksista. AppSourcesta l�
 
 5. Power BI -palvelu näyttää onnistumisilmoituksen, kun sovellus on asennettu. Avaa sovellus valitsemalla **Siirry sovellukseen**. Näkyviin tulee joko sovelluksen koontinäyttö tai sovelluksen raportti riippuen siitä, miten suunnittelija on luonut sovelluksen.
 
+
+
     ![Sovelluksen asennus onnistui ](./media/end-user-apps/power-bi-app-ready.png)
+
+    > [!NOTE]
+    > Jos käytät maksutonta käyttöoikeutta, voit ladata sovelluksia, mutta et voi tarkastella niitä, ellet päivitä tiliäsi Power BI Pro -tiliksi. 
 
     Voit avata sovelluksen myös suoraan sovelluksen sisältöluettelosta valitsemalla **Sovellukset** ja **Myynti ja markkinointi**.
 
@@ -123,8 +136,6 @@ Sovellusten luojat voivat ajoittain julkaista sovelluksistaan uusia versioita. U
     > Uuden version asentaminen korvaa raportteihin ja koontinäyttöihin mahdollisesti tekemäsi muutokset. Jos haluat säilyttää päivitetyt raporttisi ja koontinäyttösi, voit tallentaa ne eri nimellä tai eri sijaintiin ennen asentamista. 
 
     4. Kun olet asentanut päivitetyn version, viimeistele päivitysprosessi valitsemalla **Päivitä sovellus**. 
-
-    <!--![Update app](./media/end-user-app-view/power-bi-new-app-version-update-app.png) -->
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

@@ -1,23 +1,23 @@
 ---
-title: Upota raportin verkko-osa SharePoint Onlinessa
+title: Raportin WWW-osan upottaminen SharePoint Onlinessa
 description: Power BI:n uuden, SharePoint Onlineen tarkoitetun raportin verkko-osan avulla voit helposti upottaa vuorovaikutteisia Power BI -raportteja SharePoint Onlinen sivuille.
-author: KesemSharabi
-ms.author: kesharab
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 12/18/2019
-ms.openlocfilehash: d1ac9238e361a0889e52838eb0b3c3889c1cccf7
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.date: 04/27/2020
+ms.openlocfilehash: 5b726137fae0087701833b2d713cf7b5a329f899
+ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75221708"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "82585207"
 ---
-# <a name="embed-with-report-web-part-in-sharepoint-online"></a>Upota raportin verkko-osa SharePoint Onlinessa
+# <a name="embed-a-report-web-part-in-sharepoint-online"></a>Raportin WWW-osan upottaminen SharePoint Onlinessa
 
 Power BI:n uuden, SharePoint Onlineen tarkoitetun raportin verkko-osan avulla voit helposti upottaa vuorovaikutteisia Power BI -raportteja SharePoint Onlinen sivuille.
 
@@ -38,9 +38,9 @@ Jos haluat upottaa raporttisi SharePoint Onlineen, sinun täytyy hankkia raporti
 
 1. Avaa raportti Power BI:ssä.
 
-2. Valitse avattavasta **Tiedosto**-valikosta **Upota SharePoint Onlinessa**.
+2. Valitse avattavasta **Lisää vaihtoehtoja (...)** -valikosta **Upota** > **SharePoint Online**.
 
-    ![Tiedosto-valikko](media/service-embed-report-spo/powerbi-file-menu.png)
+    ![Lisää vaihtoehtoja -valikko, SharePoint Online](media/service-embed-report-spo/power-bi-more-options-sharepoint-online.png)
 
 3. Kopioi raportin URL-osoite valintaikkunasta.
 
