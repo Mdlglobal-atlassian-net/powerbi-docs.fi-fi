@@ -11,10 +11,10 @@ ms.custom: ''
 ms.date: 08/10/2017
 LocalizationGroup: Data from databases
 ms.openlocfilehash: 00b7c98236f37505fbb0ddec81a45b65bf3e3ee6
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871179"
 ---
 # <a name="sql-server-analysis-services-live-data-in-power-bi"></a>SQL Server Analysis Servicesin reaaliaikaiset tiedot Power BI:ssä
@@ -58,7 +58,7 @@ Jos kiinnität visualisointeja raportista koontinäyttöön, kiinnitetyt ruudut 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* [On-premises data gateway (Paikallinen tietoyhdyskäytävä)](service-gateway-onprem.md)  
+* [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md)  
 * [Analysis Services -tietolähteiden hallinta](service-gateway-enterprise-manage-ssas.md)  
 * [Paikallisen tietoyhdyskäytävän vianmääritys](service-gateway-onprem-tshoot.md)  
 

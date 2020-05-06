@@ -11,10 +11,10 @@ ms.date: 09/11/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 95b1dc1be3421f19fa8220629ca2003469658480
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874477"
 ---
 # <a name="display-images-in-a-table-matrix-or-slicer-in-a-report"></a>Kuvien näyttäminen raportin taulukoissa, matriiseissa ja osittajissa
@@ -35,7 +35,7 @@ Voit parantaa raporttejasi merkittävästi lisäämällä niihin kuvia. Sivun st
 
     ![Osittaja, jossa on kuvia](media/power-bi-images-tables/power-bi-url-images-slicer.png)
 
-## <a name="considerations"></a>Huomioitavaa
+## <a name="considerations"></a>Huomioon otettavia seikkoja
 
 - Kuvan on oltava jossakin seuraavista tiedostomuodoista: .bmp, .jpg, .jpeg, .gif, .png tai .svg
 - URL-osoitteen on oltava käytettävissä anonyymisti. Se ei voi olla SharePointissa tai muulla sivustolla, joka edellyttää kirjautumista. Jos kuvia kuitenkin isännöidään SharePointissa tai OneDrivessa, voit ehkä saada upotuskoodin, joka osoittaa suoraan kyseisiin kuviin. 

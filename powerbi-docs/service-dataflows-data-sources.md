@@ -10,10 +10,10 @@ ms.date: 09/20/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 650fb243152d9bf2ca2ecfc37143145d734b78fe
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872674"
 ---
 # <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Yhteyden muodostaminen Power BI -tietovoiden tietolähteisiin
@@ -49,18 +49,18 @@ Voit tarkastella saatavilla olevia tietolähteitä valitsemalla **Nouda tiedot**
 Tietovoiden tietolähteet on järjestetty seuraaviin luokkiin, jotka ilmestyvät **Nouda tiedot** -valintaikkunan yläosaan:
 
 * Kaikki luokat
-* Tiedosto
+* tiedosto
 * Tietokanta
 * Power BI
 * Azure
 * Online-palvelut
-* Muut
+* Muu
 
 **Kaikki luokat** -luokka sisältää kaikki tietolähteet kaikista luokista. 
 
 **Tiedosto**-luokka sisältää seuraavat saatavilla olevat tietovoiden tietoyhteydet:
 
-* Käyttöoikeudet
+* Käytä
 * Excel
 * JSON
 * Teksti/CSV
@@ -85,14 +85,14 @@ Tietovoiden tietolähteet on järjestetty seuraaviin luokkiin, jotka ilmestyvät
 
 * Azuren blob-objektit
 * Azure Data Explorer
-* Azure SQL Data Warehouse
-* Azuren SQL-tietokanta
+* Azure SQL -tietovarasto
+* Azure SQL Database
 * Azuren taulukot
 
 **Online-palvelut** sisältää seuraavat saatavilla olevat tietovoiden tietoyhteydet:
 
 * Amazon Redshift
-* Common Data Service for Apps
+* Common Data Service sovelluksia varten
 * Microsoft Exchange Online
 * Salesforce-objektit
 * Salesforce-raportit
