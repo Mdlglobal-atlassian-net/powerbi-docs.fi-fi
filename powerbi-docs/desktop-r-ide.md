@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 4440db5888eeeab638eab4ea3819107d37bdbdbd
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75223459"
 ---
 # <a name="use-an-external-r-ide-with-power-bi"></a>Ulkoisen R IDE:n käyttö Power BI:n kanssa
@@ -35,15 +35,15 @@ Jos haluat käyttää tätä ominaisuutta, sinun on asennettava **integroitu R-k
 * Voit myös asentaa muun integroidun R-kehitysympäristön ja saada **Power BI Desktopin** käynnistämään kyseinen **integroitu R-kehitysympäristö** tekemällä jokin seuraavista:
   
   * Voit liittää **. R**-tiedostoihin ulkoisen integroidun kehitysympäristön, jonka haluat **Power BI Desktopin** käynnistävän.
-  * Voit määrittää .exe-tiedoston, joka **Power BI Desktopin** on käynnistettävä, valitsemalla **Asetukset**-valintaikkunan **R-komentosarja-asetukset**-osiosta *Muu*. Voit tuoda **Asetukset**-valintaikkunan esiin valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset**.
+  * Voit määrittää .exe-tiedoston, joka **Power BI Desktopin** on käynnistettävä, valitsemalla *Asetukset*-valintaikkunan **R-komentosarja-asetukset**-osiosta **Muu**. Voit tuoda **Asetukset**-valintaikkunan esiin valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset**.
     
     ![](media/desktop-r-ide/r-ide_1b.png)
 
-Jos sinulla on useita integroituja R-kehitysympäristöjä asennettuna, voit määrittää, mikä käynnistetään, valitsemalla sen **Asetukset**-valintaikkunan avattavasta *Havaitut integroidut R-kehitysympäristöt* -luettelosta.
+Jos sinulla on useita integroituja R-kehitysympäristöjä asennettuna, voit määrittää, mikä käynnistetään, valitsemalla sen *Asetukset*-valintaikkunan avattavasta **Havaitut integroidut R-kehitysympäristöt** -luettelosta.
 
 Oletusarvoisesti **Power BI Desktop** käynnistää **R Studion** ulkoisena integroituna R-kehitysympäristönä paikallisessa tietokoneessasi. Jos **R Studiota** ei ole asennettu ja sinulla on **Visual Studio 2015** ja **R Tools for Visual Studio**, se käynnistetään R Studion sijaan. Jos kumpaakaan kyseisistä integroiduista R-kehitysympäristöistä ei ole asennettu, käynnistetään **.R**-tiedostoihin liittyvä sovellus.
 
-Jos **. R**-tiedostokytkentää ei ole tehty, on mahdollista määrittää polku mukautettuun integroituun kehitysympäristöön **Asetukset**-valintaikkunan *Selaa haluamaasi integroituun R-kehitysympäristöön* -osiossa. Voit myös käynnistää muun integroidun R-kehitysympäristön valitsemalla **Asetukset**-rataskuvakkeen **Käynnistä integroitu R-kehitysympäristö** -nuolikuvakkeen vieressä **Power BI Desktopissa**.
+Jos **. R**-tiedostokytkentää ei ole tehty, on mahdollista määrittää polku mukautettuun integroituun kehitysympäristöön *Asetukset*-valintaikkunan **Selaa haluamaasi integroituun R-kehitysympäristöön** -osiossa. Voit myös käynnistää muun integroidun R-kehitysympäristön valitsemalla **Asetukset**-rataskuvakkeen **Käynnistä integroitu R-kehitysympäristö** -nuolikuvakkeen vieressä **Power BI Desktopissa**.
 
 ## <a name="launch-an-r-ide-from-power-bi-desktop"></a>Integroidun R-kehitysympäristön käynnistäminen Power BI Desktopista
 Käynnistä integroitu R-kehitysympäristö **Power BI Desktopista** seuraavasti:

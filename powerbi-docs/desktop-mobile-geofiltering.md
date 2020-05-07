@@ -9,10 +9,10 @@ ms.date: 01/16/2018
 ms.author: maggies
 LocalizationGroup: Model your data
 ms.openlocfilehash: b30310f78dca919474baf6d5870294bfc05dcacf
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75760992"
 ---
 # <a name="set-geographic-filters-in-power-bi-desktop-for-use-in-the-mobile-app"></a>Maantieteellisten suodattimien määrittäminen Power BI Desktopissa käytettäviksi mobiilisovelluksissa
@@ -41,7 +41,7 @@ Oletetaan esimerkiksi, että olet myyntipäällikkö matkalla tapaamaan asiakkai
    > 
 
 ## <a name="create-visuals-with-your-geographic-data"></a>Luo visualisointeja maantieteellisillä tiedoilla
-1. Siirry raporttinäkymään ![Raporttinäkymäkuvake](media/desktop-mobile-geofiltering/power-bi-desktop-report-icon.png)ja luo visualisointeja, jotka käyttävät tietojesi maantieteellisiä kenttiä. 
+1. Siirry raporttinäkymään ![Raporttinäkymän kuvake](media/desktop-mobile-geofiltering/power-bi-desktop-report-icon.png)ja luo visualisointeja, jotka käyttävät tietojesi maantieteellisiä kenttiä. 
    
     ![Raportti, jossa kartta](media/desktop-mobile-geofiltering/power-bi-desktop-geo-report.png)
    
@@ -60,5 +60,5 @@ Lue lisää aiheesta [raportin suodattaminen sijainnin mukaan Power BI -mobiilis
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Tietojen luokittelu Power BI Desktopissa](desktop-data-categorization.md)  
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

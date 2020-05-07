@@ -1,5 +1,5 @@
 ---
-title: Yhteyden muodostaminen Amazon Redshift -tietokantaan Power BI Desktopissa
+title: Amazon Redshift -tietokantaan yhdistäminen Power BI Desktopissa
 description: Helppo yhteyden muodostaminen Amazon Redshift -tietokantaan Power BI Desktopissa ja tietokannan käyttäminen
 author: davidiseminger
 ms.reviewer: ''
@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: c303bbd3fe229ea48dbad3da9d003851f7441956
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761630"
 ---
 # <a name="connect-to-an-amazon-redshift-database-in-power-bi-desktop"></a>Amazon Redshift -tietokantaan yhdistäminen Power BI Desktopissa
@@ -24,11 +24,11 @@ Jos haluat muodostaa yhteyden **Amazon Redshift** ‑tietokantaan, valitse Power
 
 ![](media/desktop-connect-redshift/connect_redshift_3.png)
 
-Kirjoita tai liitä näytölle avautuvan **Amazon Redshift** -ikkunan tekstikenttään halutun **Amazon Redshift** ‑palvelimen ja tietokannan nimi. Käyttäjät voivat *Palvelin*-kentän osana määrittää portin seuraavassa muodossa: *ServerURL:Port*
+Kirjoita tai liitä näytölle avautuvan **Amazon Redshift** -ikkunan tekstikenttään halutun **Amazon Redshift** ‑palvelimen ja tietokannan nimi. Käyttäjä voi määrittää *Palvelin*-kenttään haluamansa portin seuraavassa muodossa: *palvelinURL:portti*
 
 ![](media/desktop-connect-redshift/connect_redshift_4.png)
 
-Kirjoita käyttäjänimesi ja salasanasi pyydettäessä. Käytä palvelimella virheiden välttämiseksi nimeä, joka vastaa tarkasti SSL-varmennetta. 
+Kirjoita näytölle avautuvaan kehoteikkunaan käyttäjänimesi ja salasanasi. Käytä palvelimella virheiden välttämiseksi nimeä, joka vastaa tarkasti SSL-varmennetta. 
 
 ![](media/desktop-connect-redshift/connect_redshift_5.png)
 

@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: c3b1b7288d0d277fc866ea47887335d10279c6cc
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73799807"
 ---
 DAX sisältää runsaan joukon funktioita, joilla voit jäsentää, muotoilla ja analysoida tietojasi. Nämä funktiot voidaan jakaa muutamaan luokkaan:
@@ -52,8 +52,8 @@ Ne laskevat eri asioita, esimerkiksi erillisiä arvoja, ei-tyhjiä arvoja ja tau
 ## <a name="logical-functions"></a>Loogiset funktiot
 DAX sisältää esimerkiksi seuraavat **loogiset** funktiot:
 
-* AND
-* OR
+* JA
+* TAI
 * NOT
 * IF
 * IFERROR.

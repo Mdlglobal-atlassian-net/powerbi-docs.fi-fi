@@ -10,10 +10,10 @@ ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a655c55520d76bfaeb51318d09244ea663ccc192
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872644"
 ---
 # <a name="using-computed-entities-on-power-bi-premium"></a>Laskettujen entiteettien käyttäminen Power BI Premiumissa
@@ -82,7 +82,7 @@ Kun suoritat laskutoimituksia tiedoista, joihin on yhdistetty paikallisia tietoj
 
 Tässä artikkelissa käsiteltiin laskettuja entiteettejä ja tietovoita, jotka ovat käytettävissä Power BI -palvelussa. Seuraavassa on lisää artikkeleita, joista voi olla hyötyä.
 
-* [Omatoiminen tietojen valmistelu tietovoiden avulla](service-dataflows-overview.md)
+* [Omatoiminen tietojen valmisteleminen tietovoiden avulla](service-dataflows-overview.md)
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
 * [Tietovoiden käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
 * [Kehittäjien resurssit Power BI -tietovoille](service-dataflows-developer-resources.md)

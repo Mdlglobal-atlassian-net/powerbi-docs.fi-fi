@@ -12,10 +12,10 @@ ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 5f571cabcc413947713cd232863b3ecad910436d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872241"
 ---
 # <a name="generate-data-insights-automatically-with-power-bi"></a>Merkityksellisten tietojen luominen automaattisesti Power BI:llä
@@ -41,7 +41,7 @@ Nyt on sinun vuorosi. Tutustu merkityksellisiin tietoihin [toimittajan laatuanal
    
     ![Tietojoukot-välilehti](media/service-insights/power-bi-ellipses.png)
    
-    ![Kolme pistettä -valikko](media/service-insights/power-bi-tab.png)
+    ![Ellipsivalikko](media/service-insights/power-bi-tab.png)
 2. Power BI hakee tietojoukostasi trendejä [erilaisten algoritmien](service-insight-types.md) avulla.
    
     ![Haetaan merkityksellisiä tietoja -valintaikkuna](media/service-insights/pbi_autoinsightssearching.png)

@@ -11,17 +11,17 @@ ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: b2a05f3112a9272d5e41cff20729c445c7a0ae39
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76038557"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Päivitä Onedriveen tai SharePoint Onlineen tallennettuja tietojoukkoja
 Tiedostojen tuominen OneDrivesta tai SharePoint Onlinesta Power BI -palveluun on mainio tapa varmistaa, että Power BI Desktop -työsi synkronoidaan Power BI -palvelun kanssa.
 
 ## <a name="advantages-of-storing-a-power-bi-desktop-file-on-onedrive-or-sharepoint-online"></a>Power BI Desktop -tiedoston tallennuksesta OneDriveen tai SharePoint Onlineen saatavat edut
-Kun tallennat Power BI Desktop -tiedoston OneDriveen tai SharePoint Onlineen, tiedoston malliin lataamasi kaikki tiedot tuodaan tietojoukkoon. Tiedostoon luomasi kaikki raportit ladataan **Raportit**-kohtaan Power BI -palvelussa. Oletetaan, että teet muutoksia tiedostoosi OneDrivessa tai SharePoint Onlinessa. Nämä muutokset voivat sisältää uusien mittayksiköiden lisäämisen, sarakkeiden nimien muuttamisen tai visualisointien muokkaamisen. Kun tiedosto on tallennettu, Power BI -palvelu synkronoi myös nämä muutokset yleensä noin tunnin kuluessa.
+Kun tallennat Power BI Desktop -tiedoston OneDriveen tai SharePoint Onlineen, tiedoston malliin lataamasi kaikki tiedot tuodaan tietojoukkoon.  Tiedostoon luomasi kaikki raportit ladataan **Raportit**-kohtaan Power BI -palvelussa. Oletetaan, että teet muutoksia tiedostoosi OneDrivessa tai SharePoint Onlinessa. Nämä muutokset voivat sisältää uusien mittayksiköiden lisäämisen, sarakkeiden nimien muuttamisen tai visualisointien muokkaamisen. Kun tiedosto on tallennettu, Power BI -palvelu synkronoi myös nämä muutokset yleensä noin tunnin kuluessa.
 
 Voit suorittaa manuaalisen kertapäivityksen suoraan Power BI Desktopissa valitsemalla **Aloitus**-valintanauhasta **Päivitä**. Kun valitset **Päivitä**, päivität tiedoston malliin päivitetyt tiedot alkuperäisestä tietolähteestä. Tällainen päivitys tapahtuu kokonaan itse Power BI Desktop -sovelluksesta. Se poikkeaa Power BI:n manuaalisesta tai ajoitetusta päivityksestä, ja on tärkeää ymmärtää niiden ero.
 
@@ -52,7 +52,7 @@ Power BI tukee **Päivitä**- ja **Ajoita päivitys** -komentoja tietojoukoille,
 > 
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive vai OneDrive for Business? Mikä niiden ero on?
-Jos sinulla on sekä henkilökohtainen OneDrive että OneDrive for Business, sinun kannattaa säilyttää tiedostot, jotka haluat tuoda Power BI:hin OneDrive for Businessissa. Syynä on se, että käytät todennäköisesti kahta eri tiliä niille kirjautumista varten.
+Jos sinulla on sekä henkilökohtainen OneDrive että OneDrive for Business, sinun kannattaa säilyttää tiedostot, jotka haluat tuoda Power BI:hin OneDrive for Businessissa. Syynä on se, että todennäköisesti käytät kahta eri tiliä niille kirjautumista varten.
 
 Kun muodostat yhteyden OneDrive for Businessiin Power BI:ssä, yhteyden muodostaminen on helppoa, koska Power BI -tili on usein sama tili kuin OneDrive for Business -tili. Voit henkilökohtaisen OneDriven avulla yleensä kirjautua sisään eri [Microsoft-tilillä](https://account.microsoft.com).
 
@@ -81,5 +81,5 @@ Joskus tietojen päivittäminen ei mene odotetulla tavalla. Kohtaat yleensä tie
 
 [Power BI -yhdyskäytävän vianmääritys – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-Onko sinulla kysyttävää? Voit esittää kysymyksiä [Power BI -yhteisössä](https://community.powerbi.com/).
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/).
 

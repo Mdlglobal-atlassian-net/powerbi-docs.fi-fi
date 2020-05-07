@@ -10,10 +10,10 @@ ms.date: 01/10/2020
 ms.author: davidi
 LocalizationGroup: quickstart
 ms.openlocfilehash: 5aed52ec232d3e603d69bfe93640187401279ff6
-ms.sourcegitcommit: 801d2baa944469a5b79cf591eb8afd18ca4e00b1
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75885229"
 ---
 # <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Pikaopas: Tietoihin yhdistäminen Power BI Desktopissa
@@ -38,7 +38,7 @@ Kun olet asentanut Power BI Desktopin, käynnistä se paikallisessa tietokoneess
 
 ![Power BI Desktop ja tyhjä pohja](media/desktop-quickstart-connect-to-data/qs-connect-data_01.png)
 
-## <a name="connect-to-data"></a>Tietoihin yhdistäminen
+## <a name="connect-to-data"></a>tietoihin yhdistäminen
 
 Power BI Desktopilla voit yhdistää moniin erityyppisiin tietoihin. Voit yhdistää perustietolähteisiin, esimerkiksi Microsoft Excel -tiedostoon. Voit yhdistää monenlaisia tietoja sisältäviin verkkopalveluihin, kuten Salesforceen, Microsoft Dynamicsiin, Azure Blob -säilöön ja moniin muihin.
 
@@ -74,4 +74,4 @@ Siinä kaikki. Olet muodostanut yhteyden tietoihin Power BI Desktopissa ja ladan
 
 Kun olet muodostanut yhteyden tietoihin, voit tehdä Power BI Desktopilla monia asioita. Voit esimerkiksi luoda visualisointeja ja raportteja. Lisätietoja saat seuraavista resursseista:
 
-* [Aloita Power BI Desktopin käyttö](desktop-getting-started.md)
+* [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md)

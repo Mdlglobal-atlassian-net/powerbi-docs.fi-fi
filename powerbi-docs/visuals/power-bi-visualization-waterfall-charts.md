@@ -11,10 +11,10 @@ ms.date: 12/5/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 6abca661a1553bfabc3da35fe714ff9bced5555a
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74907630"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vesiputouskaaviot Power BI:ssä
@@ -56,7 +56,7 @@ Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedost
 
 1. Avaa **Jälleenmyyntianalyysimallin PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
+1. Select ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
 
 
 ## <a name="create-a-waterfall-chart"></a>Vesiputouskaavion luominen
@@ -73,7 +73,7 @@ Luot vesiputouskaavion, joka näyttää myynnin vaihtelun (arvioitu myynti vs. t
 
     ![Visualisointimallit](media/power-bi-visualization-waterfall-charts/convert-waterfall.png)
 
-1. Valitse **Aika** > **FiscalMonth** sen lisäämiseksi **Luokka**-säilöön.
+1. Valitse **Aika** > **FiscalMonth** ja lisää se **Luokka**-kohtaan.
 
     ![vesiputous](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-month.png)
 

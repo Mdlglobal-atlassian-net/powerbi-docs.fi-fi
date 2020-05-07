@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 33fc0faf92d1730c1d08f91eabc276cdafadfffb
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761107"
 ---
 # <a name="apply-insights-in-power-bi-desktop-to-discover-where-distributions-vary-preview"></a>Eriävien jakaumien etsiminen Power BI Desktopin merkityksellisillä tiedoilla (esiversio)
@@ -98,7 +98,7 @@ Näytettävistä visualisoinneista on tarkoitus näkyä selvästi kokonaisjakaum
 
 Lisättävien mittarien, kuten edellisessä esimerkissä *myynnin* ollessa kyseessä, käytetään pylväs- ja viivakaavioita, joissa asianmukaisesti skaalattu kaksoisakseli tekee suhteellisten arvojen vertailusta helppoa. Sarakkeissa näkyvät suodattimen mukaiset arvot ja rivillä kokonaisarvo (normaalisti sarakeakseli vasemmalla ja riviakseli oikealla). Rivi näytetään *porrastetulla* tyylillä, jossa on katkoviiva ja harmaa täyttö. Edelliseen esimerkkiin viitaten, jos sarakeakselin enimmäisarvo on 4 ja riviakselin enimmäisarvo on 20, tekee se USA:n ja Kanada suodatettujen kokonaisarvojen suhteellisten arvojen vertailun helpoksi. 
 
-Samalla tavalla ei-lisättäville mittareille, kuten edellisen esimerkin *katteelle* käytetään pylväs- ja viivakaaviota, jossa yksittäisen akselin absoluuttiset arvot ovat helposti vertailtavissa. Viiva (harmaalla täytetty) näyttää taas kokonaisarvon. Vertailtiinpa sitten todellisia tai suhteellisia arvoja, jakaumien eroavaisuuden määrittäminen ei ole yksinkertaisesti vain arvojen eroavaisuuksien laskemista. Esimerkki:
+Samalla tavalla ei-lisättäville mittareille, kuten edellisen esimerkin *katteelle* käytetään pylväs- ja viivakaaviota, jossa yksittäisen akselin absoluuttiset arvot ovat helposti vertailtavissa. Viiva (harmaalla täytetty) näyttää taas kokonaisarvon. Vertailtiinpa sitten todellisia tai suhteellisia arvoja, jakaumien eroavaisuuden määrittäminen ei ole yksinkertaisesti vain arvojen eroavaisuuksien laskemista. Esimerkiksi:
 
 * Populaation koko otetaan huomioon, koska eroavaisuus on vähemmän tilastollisesti merkittävä ja mielenkiintoinen kun sitä sovelletaan kokonaispopulaation pienempään osuuteen. Esimerkiksi myyntijakauma eri maiden välillä saattaa olla hyvin erilainen jollekin tietylle tuotteelle. Tätä ei pidetä kiinnostavana jos kyseessä on tuhansia eri tuotteita, koska yksittäinen tuote muodostaa vain pienen prosenttiosuuden kokonaismyynnistä.
 

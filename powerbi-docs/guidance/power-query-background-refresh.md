@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: v-pemyer
 ms.openlocfilehash: 59cb62a9186da03a265fc3a8711d7275c3772af3
-ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75623057"
 ---
 # <a name="disable-power-query-background-refresh"></a>Poista Power Query -taustalataus käytöstä
@@ -43,4 +43,4 @@ Esikatseluvälimuistin voi aina päivittää. Voit päivittää sen yksittäises
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
 - [Power Queryn ohjeet](/power-query/)
-- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+- Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: c63b84b506b872831c1a5ce00f6ef0e79f993849
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761653"
 ---
 # <a name="connect-to-excel-workbooks-in-power-bi-desktop"></a>Excel-työkirjoihin yhdistäminen Power BI Desktopissa
@@ -41,7 +41,7 @@ Kun lataus on valmis, Power BI Desktop näyttää Excel-työkirjasta tuodut taul
 
 ![](media/desktop-connect-excel/connect_to_excel_5.png)
 
-Siinä kaikki.
+Siinä kaikki!
 
 Nyt voit käyttää Excel-työkirjasta tuotuja tietoja Power BI Desktopissa ja luoda niiden avulla visualisointeja ja raportteja. Voit myös käsitellä muita tietoja, joihin haluat ehkä yhdistää tai jotka haluat ehkä tuoda Excel-työkirjoista, tietokannoista tai muista tietolähteistä.
 

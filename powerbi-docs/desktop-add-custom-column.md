@@ -10,10 +10,10 @@ ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 443053bc973005d3e2a655b1222d049a4251e7d7
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73878866"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Mukautettujen sarakkeiden lisääminen Power BI Desktopissa
@@ -49,7 +49,7 @@ Jos haluat aloittaa mukautetun sarakkeen luomisen, toimi seuraavasti:
 
 - Mukautetun sarakkeen alkuperäinen nimi **Uuden sarakkeen nimi** -ruudussa. Voit nimetä tämän sarakkeen uudelleen.
 
-- [PowerQuery M -kaavakyselyt](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference) **Mukautettu sarakekaava** -ruudussa. Voit luoda nämä kyselyt luomalla kaavan, johon uusi mukautettu sarakkeesi on määritetty. 
+- [PowerQuery M -kaavakyselyt](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference)**Mukautettu sarakekaava** -ruudussa. Voit luoda nämä kyselyt luomalla kaavan, johon uusi mukautettu sarakkeesi on määritetty. 
 
    ![Lisää mukautettu sarake -sivu](media/desktop-add-custom-column/add-custom-column_03.png)
 

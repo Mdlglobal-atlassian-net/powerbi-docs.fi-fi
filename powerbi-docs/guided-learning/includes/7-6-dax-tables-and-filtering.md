@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 5bc0d3bbfb2c2b67b56e6406646f6131a360b97d
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73799808"
 ---
 **DAX**- ja Excel-kaavakielien yksi merkittävimmistä eroista on se, että DAX mahdollistaa *kokonaisten taulukoiden* välittämisen lausekkeiden välillä (eli tätä ei ole rajoitettu yhteen arvoon). Tämän ansiosta DAX-lausekkeet tarjoavat mahdollisuuden suodattaa taulukoita ja käsitellä sitten suodatettuja arvojoukkoja.
@@ -19,7 +19,7 @@ DAX sisältää laajan valikoiman **taulukkofunktioita**. Käytettävissä ovat 
 * ALL
 * VALUES
 * DISTINCT
-* RELATEDTABLE
+* RELATEDTABLE.
 
 Nämä funktiot palauttavat yksittäisen arvon asemesta koko taulukon. Yleensä **taulukkofunktion** tuloksia käytetään jatkoanalysoinnissa osana laajempaa lauseketta (sen sijaan, että käyttäisit palautettua taulukkoa lopullisena arvona). On tärkeää muistaa se, että kun käytät taulukkofunktiota, tulokset perivät sarakkeidensa suhteet.
 

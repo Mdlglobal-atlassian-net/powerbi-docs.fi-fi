@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 11/19/2019
 ms.author: mohaali
 ms.openlocfilehash: a17f98859e637621fbae037610359c8f29391a98
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75762274"
 ---
 # <a name="introduction-to-power-bi-qa-visualizations"></a>Johdatus Power BI:n Q&A-visualisointeihin
@@ -45,7 +45,7 @@ Q&A-visualisointi koostuu neljästä ydinosasta:
 
 1. Avaa tiedosto raporttinäkymään ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
+1. Select ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
 
 
 Jos näyttöön tulee virhe Q&A-visualisointia luotaessa, tarkista [rajoitukset](../natural-language/q-and-a-limitations.md)-osiosta, tuetaanko tietolähdemääritystä.
