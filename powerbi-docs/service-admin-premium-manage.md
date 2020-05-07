@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 04/17/2020
 LocalizationGroup: Premium
 ms.openlocfilehash: 9dbbf38b69d71811de4dd599951529234068b178
-ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81637916"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Kapasiteettien määrittäminen ja hallinta Power BI Premiumissa
@@ -126,7 +126,7 @@ Kapasiteetin järjestelmänvalvojat sekä Power BI -järjestelmänvalvojat ja Of
 
     ![Määritä työtilat](media/service-admin-premium-manage/assign-workspaces.png)
 
-   | Valinta | Kuvaus |
+   | Valinta | Description |
    | --- | --- |
    | **Työtilat käyttäjien mukaan** | Kun määrität työtiloja käyttäjän tai ryhmän mukaan, kaikki kyseisten käyttäjien omistamat työtilat määritetään Premium-kapasiteettiin, mukaan lukien käyttäjän oma työtila. Kyseiset käyttäjät saavat automaattisesti työtilan määrittämisen käyttöoikeudet.<br>Tämä sisältää työtilat, jotka on jo määritetty eri kapasiteettiin. |
    | **Määritetyt työtilat** | Syötä sen työtilan nimi, joka tullaan määrittämään valitulle kapasiteetille. |
@@ -159,7 +159,7 @@ Power BI -raporttipalvelimen tuoteavain on saatavilla Power BI -hallintaportaali
 
 ![Power BI -raporttipalvelimen avain kapasiteettiasetuksissa](media/service-admin-premium-manage/pbirs-product-key.png)
 
-Voit avata tuoteavaimen sisältävän valintaikkunan valitsemalla **Power BI -raporttipalvelimen avain** -kohdan. Voit kopioida sen ja käyttää sitä asennuksessa.
+Voit avata tuoteavaimen sisältävän valintaikkunan valitsemalla **Power BI -raporttipalvelimen avain** -kohdan. Voit kopioida avaimen ja käyttää sitä asennuksessa.
 
 ![Power BI -raporttipalvelimen tuoteavain](media/service-admin-premium-manage/pbirs-product-key-dialog.png)
 

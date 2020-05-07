@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/05/2017
 ms.openlocfilehash: eac019bc31396359b7520e057f2384adce386a96
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73873949"
 ---
 # <a name="upgrade-power-bi-report-server"></a>Päivitä Power BI -raporttipalvelin
@@ -22,7 +22,7 @@ Opi päivittämään Power BI -raporttipalvelin.
 
  **Lataa** ![lataa](media/upgrade/download.png "lataa")
 
-Lataa Power BI -raporttipalvelin ja Power BI -raporttipalvelimelle optimoitu Power BI Desktop tutustumalla ohjeaiheeseen [Paikallinen raportointi Power BI -raporttipalvelimella](https://powerbi.microsoft.com/report-server/).
+Voit ladata Power BI -raporttipalvelimen ja Power BI-raporttipalvelimille optimoidun Power BI Desktopin [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/) -kohdasta.
 
 ## <a name="before-you-begin"></a>Alkutoimet
 
@@ -89,4 +89,4 @@ Kun raporttipalvelin on päivitetty, kannattaa varmistaa, että kaikki Power BI 
 * [Windowsin palvelutilien ja käyttöoikeuksien määrittäminen](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
 * [Power BI -raporttipalvelimen selaintuki](browser-support.md)
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

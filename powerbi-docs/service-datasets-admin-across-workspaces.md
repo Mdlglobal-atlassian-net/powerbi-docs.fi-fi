@@ -10,10 +10,10 @@ ms.date: 05/31/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: d1ad29bebc148d9f30e8d22240dd149787251a0a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872574"
 ---
 # <a name="control-the-use-of-datasets-across-workspaces-preview"></a>Tietojoukkojen käytön hallinta työtiloissa (esikatselu)
@@ -39,4 +39,4 @@ Vuokraajan järjestelmänvalvojana voit antaa **Lisätietoja**-linkin URL-osoitt
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 - [Tietojoukkojen käyttö eri työtiloissa (esikatselu)](service-datasets-across-workspaces.md)
-- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+- Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.openlocfilehash: 9b8e795c4a55f9efd6fd534d92d95b36c93cf2c0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874066"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Power BI -raporttipalvelimen REST-ohjelmointirajapintojen käyttö ohjelmankehityksessä
@@ -32,7 +32,7 @@ REST-ohjelmointirajapinnan pyyntö/vastaus-pari voidaan jakaa viiteen osaan:
   * URI-protokolla: ilmaisee pyynnön välittämiseen käytetyn protokollan. Esimerkiksi `http` tai `https`.
   * URI-isäntä: määrittää toimialuenimen tai palvelimen IP-osoitteen, jossa REST-palvelupäätepiste sijaitsee, kuten `myserver.contoso.com`.
   * Resurssipolku: määrittää resurssin tai resurssikokoelman ja saattaa sisältää useita segmenttejä, joita palvelu käyttää kyseisten resurssien valinnassa. Esimerkiksi: `CatalogItems(01234567-89ab-cdef-0123-456789abcdef)/Properties` soveltuu CatalogItemin määriteltyjen ominaisuuksien hakemiseen.
-  * Kyselyn merkkijono (valinnainen): tarjoaa yksinkertaisia parametreja, kuten ohjelmointirajapinnan version tai resurssinvalinnan ehdot.
+  * Kyselyn merkkijono (valinnainen): tarjoaa yksinkertaisia parametreja, kuten ohjelmointirajapinnan versio- tai resurssinvalintaehdot.
 * HTTP-pyyntöviestin otsikkokentät:
   
   * Pakollinen [HTTP-menetelmä](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) (tunnetaan myös nimellä toiminto tai verbitoiminto), joka kertoo palvelulle minkä tyyppinen pyytämäsi toiminnon on. Reporting Services REST-ohjelmointirajapinnat tukevat menetelmiä DELETE, GET, HEAD, PUT, POST ja PATCH.
@@ -60,4 +60,4 @@ Selaa [SwaggerHubissa](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0) k
 
 Esimerkkejä ovat käytettävissä [GitHubissa](https://github.com/Microsoft/Reporting-Services). Malleihin lukeutuu TypeScriptillä, Reactillä ja verkkopaketilla rakennettu HTML5-sovellus sekä PowerShell-esimerkki.
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

@@ -10,10 +10,10 @@ ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Data from files
 ms.openlocfilehash: c2a4719a03e37569e40d4247939a9f2c73379e52
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872508"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-the-power-bi-service"></a>Excel-työkirjasta upeaksi raportiksi Power BI -palvelussa
@@ -60,7 +60,7 @@ Power BI -palvelu muodostaa yhteyden useisiin tietolähteisiin, kuten tietokonee
 
 5. Valitse **Nouda tiedot** -sivun **Tiedostot**-ruudusta **Luo uutta sisältöä** -kohdan alta **Nouda**.
 
-   ![Tietojen noutaminen tiedostoista](media/service-from-excel-to-stunning-report/pbi_get_files.png)
+   ![Tietojen hakeminen tiedostoista](media/service-from-excel-to-stunning-report/pbi_get_files.png)
 
 6. Valitse **Tiedostot**-sivulla **Paikallinen tiedosto**. Siirry tietokoneella olevan Excel-työkirjatiedoston kohdalle ja valitse se ladattavaksi Power BI -palveluun valitsemalla **Avaa**. 
 
@@ -136,7 +136,7 @@ Oletetaan, että haluat jakaa koontinäytön esimiehellesi. Voit jakaa koontinä
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * [Power BI -palvelun käytön aloittaminen](service-get-started.md)
-* [Aloita Power BI Desktopin käyttö](desktop-getting-started.md)
+* [Power BI Desktopin käytön aloittaminen](desktop-getting-started.md)
 * [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/).

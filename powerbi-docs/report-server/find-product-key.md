@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
 ms.openlocfilehash: f6eba8e1138f3c7e934de7152acf52a020c19f07
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73859694"
 ---
 # <a name="how-to-find-your-report-server-product-key"></a>Raporttipalvelimen tuoteavaimen löytäminen
@@ -29,12 +29,12 @@ Jos olet ostanut Power BI Premiumin, löydät Power BI -raporttipalvelimen tuote
 
 ![Power BI -raporttipalvelimen avain Premiumin asetuksissa](media/find-product-key/pbirs-product-key.png)
 
-Voit avata tuoteavaimen sisältävän valintaikkunan valitsemalla **Power BI -raporttipalvelimen avain** -kohdan. Voit kopioida sen ja käyttää sitä asennuksessa.
+Voit avata tuoteavaimen sisältävän valintaikkunan valitsemalla **Power BI -raporttipalvelimen avain** -kohdan. Voit kopioida avaimen ja käyttää sitä asennuksessa.
 
 ![Power BI -raporttipalvelimen tuoteavain](media/find-product-key/pbirs-product-key-dialog.png)
 
 ## <a name="purchased-software-assurance-agreement"></a>Ostit Software Assurance -sopimuksen
-Jos sinulla on SQL Server Enterprise SA -sopimus, saat tuoteavaimen [volyymikäyttöoikeuskeskuksesta](https://www.microsoft.com/Licensing/servicecenter/). Katson uusin SQL-palvelimen uusin versio viimeisimmästä palvelupaketista. Jos sitä ei näy paketissa, katso viimeisimmän SQL-palvelin version RTM-versiota.
+Jos sinulla on SQL Server Enterprise SA -sopimus, saat tuoteavaimen [voluumikäyttöoikeuskeskuksesta](https://www.microsoft.com/Licensing/servicecenter/). Katson uusin SQL-palvelimen uusin versio viimeisimmästä palvelupaketista. Jos sitä ei näy paketissa, katso viimeisimmän SQL-palvelin version RTM-versiota.
 
 > [!NOTE]
 > Sinun täytyy katsoa lataukset-kohdasta. Älä katso avaimet-osiota.
@@ -49,5 +49,5 @@ Jos sinulla on SQL Server Enterprise SA -sopimus, saat tuoteavaimen [volyymikäy
 [Raportin muodostimen lataaminen](https://www.microsoft.com/download/details.aspx?id=53613)  
 [SQL Server Data Tools (SSDT) -työkalujen lataaminen](https://go.microsoft.com/fwlink/?LinkID=616714)
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

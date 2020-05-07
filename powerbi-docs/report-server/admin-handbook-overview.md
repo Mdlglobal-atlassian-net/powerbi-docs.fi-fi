@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: maggies
 ms.openlocfilehash: a93b3def115aaadbc33f6d0985aeea424558f248
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73860217"
 ---
 # <a name="admin-overview-power-bi-report-server"></a>Hallinnan yhteenveto, Power BI -raporttipalvelin
@@ -50,5 +50,5 @@ Tietoturva ja suojaus ovat tärkeitä jokaiselle organisaatiolle. Saat lisätiet
 [Raportin muodostimen lataaminen](https://www.microsoft.com/download/details.aspx?id=53613)  
 [SQL Server Data Tools (SSDT) -työkalujen lataaminen](https://go.microsoft.com/fwlink/?LinkID=616714)
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

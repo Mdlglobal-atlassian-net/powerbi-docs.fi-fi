@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/05/2018
 ms.author: maggies
 ms.openlocfilehash: 49fe816e4920443ca101fc2f463fa23eae1ce765
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73860551"
 ---
 # <a name="accessing-shared-datasets-as-odata-feeds-in-power-bi-report-server"></a>Jaettujen tietojoukkojen käyttö OData-syötteinä Power BI-raporttipalvelimessa
@@ -32,5 +32,5 @@ Muista ottaa käyttöön **Lisäasetukset**, niin voit ottaa käyttöön avoimen
 
 Lue lisää [yhteyden muodostamisesta OData-syötteisiin Power BI Desktopissa](../desktop-connect-odata.md).
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 
