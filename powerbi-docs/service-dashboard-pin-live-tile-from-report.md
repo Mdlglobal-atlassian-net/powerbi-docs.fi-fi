@@ -11,10 +11,10 @@ ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: d620c1def289cea39a90092876ce275eea8ee699
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73853068"
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Koko raporttisivun kiinnittäminen tapahtumaruutuna Power BI:n koontinäyttöön
@@ -37,10 +37,10 @@ Katso, miten Amanda kiinnittää reaaliaikaisen raporttisivun koontinäyttöön.
 2. Kun visualisointeja ei ole valittuna, valitse valikkopalkista **Kiinnitä reaaliaikainen sivu**.
    
    ![Kiinnitä reaaliaikainen sivu -kuvake](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page.png) 
-3. Kiinnitä ruutu aiemmin luotuun koontinäyttöön tai uuteen koontinäyttöön. Huomaa korostettu teksti: *Kiinnitä reaaliaikainen sivu -vaihtoehto mahdollistaa raporttien muutosten näkymisen raporttinäkymäruudussa, kun sivu päivitetään.*
+3. Kiinnitä ruutu aiemmin luotuun raporttinäkymään tai uuteen raporttinäkymään. Huomaa korostettu teksti: *Kiinnitä reaaliaikainen sivu -vaihtoehto mahdollistaa raporttien muutosten näkymisen koontinäyttöruudussa, kun sivu päivitetään.*
    
    * Aiemmin luotu koontinäyttö: valitse avattavasta luetteloruudusta koontinäytön nimi. Kanssasi jaetut koontinäytöt eivät näy avattavassa luetteloruudussa.
-   * Uusi koontinäyttö: anna nimi uudelle koontinäytölle.
+   * Uusi raporttinäkymä: anna nimi uudelle raporttinäkymälle.
      
      ![Kiinnitä koontinäyttöön -valintaikkuna](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page-dialog.png)
 4. Valitse **Kiinnitä reaaliaikainen**. Onnistumissanoma (oikean yläkulman lähellä) ilmaisee, että visualisointi lisättiin ruutuna koontinäyttöön.
@@ -54,5 +54,5 @@ Katso, miten Amanda kiinnittää reaaliaikaisen raporttisivun koontinäyttöön.
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Koontinäytöt Power BI:ssä](consumer/end-user-dashboards.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

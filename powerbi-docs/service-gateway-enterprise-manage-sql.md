@@ -1,6 +1,6 @@
 ---
 title: Tietolähteen hallinta – SQL
-description: Paikallisen tietoyhdyskäytävän ja kyseiseen yhdyskäytävään kuuluvien tietolähteiden hallinta.
+description: Paikallisen yhdyskäytävän ja kyseiseen yhdyskäytävään kuuluvien tietolähteiden hallinta.
 author: arthiriyer
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: c0dc3b9eeb7932ca0cb6784fd6a46857821d1b12
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698114"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Tietolähteen hallinta – SQL Server
@@ -80,5 +80,5 @@ Jos sinut on lisätty yhdyskäytävän sisällä määritellyn tietolähteen **K
 * [Yhdyskäytävien vianmääritys – Power BI](service-gateway-onprem-tshoot.md)
 * [Kerberoksen käyttäminen kertakirjautumista (SSO) varten Power BI:stä paikallisiin tietolähteisiin](service-gateway-sso-kerberos.md)
 
-Onko sinulla kysyttävää? Voit esittää kysymyksiä [Power BI -yhteisössä](https://community.powerbi.com/).
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/).
 
