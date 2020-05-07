@@ -10,10 +10,10 @@ ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: b766cc4eae71b94a28e12ba989f85542fec2ab83
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871984"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Power BI:n organisaation sisältöpakettien esittely
@@ -21,7 +21,7 @@ ms.locfileid: "73871984"
 > Et voi luoda organisaation sisältöpaketteja tai asentaa niitä uudessa työtilakokemuksessa. Nyt on hyvä aika päivittää sisältöpaketit sovelluksiin, jos et ole vielä aloittanut päivittämistä. Lue [lisätietoja uudesta työtilakokemuksesta](service-create-the-new-workspaces.md).
 > 
 
-Jaatko säännöllisesti raportteja sähköpostitse työryhmällesi? Kokeile seuraavaa: Pakkaa raporttinäkymät, raportit, Excel-työkirjat ja tietojoukot ja julkaise ne työryhmällesi *organisaation sisältöpakettina*. Työryhmäsi löytää sisältöpakettisi helposti – ne ovat kaikki saatavilla AppSourcessa. Koska ne ovat osa Power BI:tä, ne hyödyntävät kaikkia Power BI -ominaisuuksia, mukaan lukien vuorovaikutteinen tietojen tarkasteleminen, uudet visualisoinnit, Q&A, integrointi muihin tietolähteisiin ja tietojen päivittäminen.
+Jaatko säännöllisesti raportteja sähköpostitse työryhmällesi? Kokeile seuraavaa: Pakkaa koontinäytöt, raportit, Excel-työkirjat ja tietojoukot ja julkaise ne työryhmällesi *organisaation sisältöpakettina*. Työryhmäsi löytää sisältöpakettisi helposti – ne ovat kaikki saatavilla AppSourcessa. Koska ne ovat osa Power BI:tä, ne hyödyntävät kaikkia Power BI -ominaisuuksia, mukaan lukien vuorovaikutteinen tietojen tarkasteleminen, uudet visualisoinnit, Q&A, integrointi muihin tietolähteisiin ja tietojen päivittäminen.
 
 ![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 
@@ -73,7 +73,7 @@ Kaikilla jakeluryhmän jäsenillä on samat tietojen käyttöoikeudet kuin sisä
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Organisaation sisältöpaketin luominen ja julkaiseminen](service-organizational-content-pack-create-and-publish.md)
-* [Sovelluksen luominen ja jakaminen Power BI:ssä](service-create-distribute-apps.md) 
+* [Sovelluksen luonti ja jakaminen Power BI:ssä](service-create-distribute-apps.md) 
 * [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)
 * Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

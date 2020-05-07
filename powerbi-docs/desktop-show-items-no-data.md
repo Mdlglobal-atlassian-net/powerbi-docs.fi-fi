@@ -10,10 +10,10 @@ ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a8d99a041edbbe353badbb580940e918b30a0a9d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73879722"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Power BI:n Näytä kohteet, joilla ei ole tietoja -ominaisuus
@@ -31,7 +31,7 @@ Yksinkertaisen taulukkoesimerkin avulla on helppo alkaa tutustua tapaan, jolla P
 |*Product[Color]*  |*Product[Size]*  |
 |---------|---------|
 |Sininen     |Suuri         |
-|Sininen     |Keskikokoinen         |
+|Sininen     |Keskitaso         |
 |Sininen     |Pieni         |
 |Punainen     |Suuri         |
 
@@ -99,7 +99,7 @@ Näkymä, kun **Näytä kohteet, joilla ei ole tietoja** -ominaisuus ei ole käy
 
 |*Product[Color]*  |*Product[Size]*  |*[SumQuantity]*  |
 |---------|---------|---------|
-|Sininen     |Keskikokoinen         |15         |
+|Sininen     |Keskitaso         |15         |
 |Sininen     |Pieni         |10         |
 
 Näkymä, kun **Näytä kohteet, joilla ei ole tietoja** -ominaisuus on käytössä:
@@ -107,7 +107,7 @@ Näkymä, kun **Näytä kohteet, joilla ei ole tietoja** -ominaisuus on käytös
 |*Product[Color]*  |*Product[Size]*  |*[SumQuantity]*  |
 |---------|---------|---------|
 |Sininen     |Suuri         |         |
-|Sininen     |Keskikokoinen         |15         |
+|Sininen     |Keskitaso         |15         |
 |Sininen     |Pieni         |10         |
 |Punainen     |Suuri         |         |
 
@@ -163,7 +163,7 @@ Jos esimerkiksi matriisivisualisoinnissa on neljä kenttää **Rivit**-säilöss
 
 ![Saman visualisoinnin kentät ottavat automaattisesti käyttöön Näytä kohteet, joilla ei ole tietoja](media/desktop-show-items-no-data/show-items-no-data-05.png)
 
-Sitä vastoin **Sarakkeet**-säilön *Maanosa*-kentässä **Näytä kohteet, joilla ei ole tietoja** *ei* ole automaattisesti käytössä. 
+Sitä vastoin **Sarakkeet**-säilön *Maanosa*-kentässä **Näytä kohteet, joilla ei ole tietoja***ei* ole automaattisesti käytössä. 
 
 Tätä visuaalista toimintaa nähdään usein, kun visualisointi muunnetaan eri tyypiksi, esimerkiksi matriisivisualisointi muunnetaan taulukkovisualisoinniksi. Tällaisissa muunnoksissa **Näytä kohteet, joilla ei ole tietoja** otetaan automaattisesti käyttöön kaikissa kentissä, jotka siirretään säilöön, jonka jossakin kentässä kyseinen toiminto on käytössä. Jos edellisessä esimerkissä *toimittajan tunnuksessa* on **Näytä kohteet, joilla ei ole tietoja** -ominaisuus käytössä ja visualisointi muunnetaan taulukoksi, *Maanosa*-kenttä **Sarakkeet**-säilöstä siirretään (**Rivit**-säilön kenttien kanssa) taulukon visualisoinnissa käytettävään ainoaan säilöön eli **Arvot**-säiliöön. Näin ollen kaikissa **Arvot**-säilön kentissä on käytössä **Näytä kohteet, joilla ei ole tietoja** -ominaisuus.
 
@@ -183,7 +183,7 @@ Tämä osio sisältää esimerkkitietomallin, jota on käytetty artikkelin esime
 |Product[ProductId]|    Product[ProductName]|   Product[Color]| Product[Size]|  Product[CategoryId]|    Product[StyleId]|
 |---------|---------|---------|---------|---------|---------|
 |1  |Tuote1  |Sininen   |Pieni  |1  |1 |
-|2  |Tuote2  |Sininen   |Keskikokoinen |2  |2 |
+|2  |Tuote2  |Sininen   |Keskitaso |2  |2 |
 |3  |Tuote3  |Punainen    |Suuri  |1  |1 |
 |4  |Tuote4  |Sininen   |Suuri  |2  |2 |
 

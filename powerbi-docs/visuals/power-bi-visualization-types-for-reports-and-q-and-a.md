@@ -10,10 +10,10 @@ ms.date: 01/14/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 12c2d839c14a4a982505f56b7d605bacc5edc728
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79381418"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualisointityypit Power BI:ssä
@@ -41,7 +41,7 @@ Lisätietoja on artikkelissa [Perusaluekaavio](power-bi-visualization-basic-area
 >[!TIP]
 >Palkkikaaviot ovat vakiomuotoisia katseltaessa tiettyä arvoa eri luokkien välillä.
 
-### <a name="cards-multi-row"></a>Kortit: Moniriviset
+### <a name="cards-multi-row"></a>Kortit: Multi-rivi
 ![monirivinen kortti](media/power-bi-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
 
 ### <a name="cards-single-number"></a>Kortit: Yksittäinen luku
@@ -88,7 +88,7 @@ Tärkeimpien vaikuttajien kaaviossa näytetään valittuun tulokseen tai arvoon 
 
 Lisätietoja on artikkelissa [Power BI:n tärkeimpien vaikuttajien kaaviot](power-bi-visualization-influencers.md).
 
-### <a name="kpis"></a>Suorituskyvyn mittarit
+### <a name="kpis"></a>Suorituskykyilmaisimet
 ![Suorituskyvyn mittareiden kaavio](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
 
 >[!TIP]
@@ -212,7 +212,7 @@ Lisätietoja on artikkelissa [Lisää kuvan pienoissovellus raporttinäkymään]
 Lisätietoja on artikkelissa [Power BI:n taulukoiden käsitteleminen](power-bi-visualization-tables.md).
 
 ### <a name="treemaps"></a>Puukartat
-![puukartta](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_tree.png)
+![treemap](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_tree.png)
 
 Lisätietoja on artikkelissa [Puukartat Power BI:ssä](power-bi-visualization-treemaps.md).
 
@@ -228,7 +228,7 @@ Lisätietoja on artikkelissa [Puukartat Power BI:ssä](power-bi-visualization-tr
 Lisätietoja on artikkelissa [Power BI -vesiputouskaaviot](power-bi-visualization-waterfall-charts.md).
 
 ## <a name="tell-qa-which-visualization-to-use"></a>Kerro Q&A:llen minkä visualisoinnin haluat
-Power BI Q&A:lla kirjoitettaessa kyselyjä luonnollisella kielellä voit määrittää visualisointityypin kyselyssäsi.  Esimerkki:
+Power BI Q&A:lla kirjoitettaessa kyselyjä luonnollisella kielellä voit määrittää visualisointityypin kyselyssäsi.  Esimerkiksi:
 
 ”***myynti osavaltioittain puukarttana***”
 

@@ -10,10 +10,10 @@ ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: 10540ed49064b9e28543ce46b43d8bb2d9ca6cf7
-ms.sourcegitcommit: 57ec4d51744b89bd695e6c62184c21342f2eae83
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74178265"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 vinkkiä ohjeiden saamiseen, kun sinulla on Power BI:tä koskevia kysymyksiä
@@ -29,7 +29,7 @@ Asiantuntijat, jotka tarvitsevat Power BI:tä koskevia vastauksia, käyttävät 
 Power BI -tiimi päivittää ja parantaa Power BI -ohjeita ja -koulutusta jatkuvasti. Voit löytää todella hyödyllistä sisältöä, kuten tallenteita verkkoseminaareista, julkaisuja, ohjatun oppimisen sisältöä sekä linkkejä uusimpia ominaisuuksia käsitteleviin blogikirjoituksiin.
 
 ## <a name="3-read-the-power-bi-blog-for-the-latest-news"></a>3 Lue uusimmat uutiset Power BI -blogista
-Power BI -tiimi esittelee kaikki uudet ominaisuudet säännöllisesti julkaistavissa [Power BI -blogikirjoituksissa](https://powerbi.microsoft.com/blog/). Niistä löydät kaikki Power BI:n uudet ominaisuudet – Power BI Desktopista Power BI -mobiilisovelluksiin. Käy säännöllisin väliajoin tarkastamassa uudet ominaisuudet: Käytä muutama minuutti viikosta blogien tutkimiseen. Et voi koskaan tietää, milloin voit hyödyntää tiedonpalasta, jonka huomasit kuukausia sitten.
+Power BI -tiimi esittelee kaikki uudet ominaisuudet säännöllisesti julkaistavissa [Power BI -blogikirjoituksissa](https://powerbi.microsoft.com/blog/). Niistä löydät kaikki Power BI:n uudet ominaisuudet – Power BI Desktopista Power BI -mobiilisovelluksiin. Ota tavaksesi tarkistaa uutuudet tihein välein: käytä joka viikko muutama minuutti blogien läpikäymiseen. Et voi koskaan tietää, milloin voit hyödyntää tiedonpalasta, jonka huomasit kuukausia sitten.
 
 ## <a name="4-try-twitter"></a>4 Kokeile Twitteriä
 Monet Power BI -asiakkaat ja -asiantuntijat ovat Twitterissä. Voit siis esittää kysymyksesi twiittinä. Lisää aihetunnisteet #powerbi ja #powerbihelp, niin asiantuntijat näkevät twiittisi.

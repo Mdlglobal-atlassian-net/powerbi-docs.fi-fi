@@ -1,6 +1,6 @@
 ---
 title: Tietolähteen hallinta – tuonti ja ajoitettu päivitys
-description: Paikallisen tietoyhdyskäytävän ja kyseiseen yhdyskäytävään kuuluvien tietolähteiden hallinta. Tämä artikkeli käsittelee erityisesti tietolähteitä, joita voidaan käyttää tuonnissa ja ajoitetussa päivityksessä.
+description: Paikallisen yhdyskäytävän ja kyseiseen yhdyskäytävään kuuluvien tietolähteiden hallinta. Tämä artikkeli käsittelee erityisesti tietolähteitä, joita voidaan käyttää tuonnissa ja ajoitetussa päivityksessä.
 author: arthiriyer
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: 13d8cd9838cdcb035e7dd30a1180ac77957441ea
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79207409"
 ---
 # <a name="manage-your-data-source---importscheduled-refresh"></a>Tietolähteen hallinta – tuonti ja ajoitettu päivitys

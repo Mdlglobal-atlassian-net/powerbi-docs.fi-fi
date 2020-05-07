@@ -10,10 +10,10 @@ ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
 ms.openlocfilehash: dbdd4076c9944cf0335ed1f6b6aa43a2a3887189
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73865980"
 ---
 # <a name="use-an-external-python-ide-with-power-bi"></a>Ulkoisen Python IDE:n käyttö Power BI:n kanssa
@@ -34,15 +34,15 @@ Jos haluat käyttää tätä ominaisuutta, sinun on asennettava **integroitu Pyt
 * Voit myös asentaa muun integroidun Python-kehitysympäristön ja saada **Power BI Desktopin** käynnistämään kyseinen **integroitu Python-kehitysympäristö** tekemällä jokin seuraavista:
   
   * Voit liittää **. PY**-tiedostoihin ulkoisen integroidun kehitysympäristön, jonka haluat **Power BI Desktopin** käynnistävän.
-  * Voit määrittää .exe-tiedoston, joka **Power BI Desktopin** on käynnistettävä, valitsemalla **Asetukset**-valintaikkunan **Python-komentosarja-asetukset**-osiosta *Muu*. Voit tuoda **Asetukset**-valintaikkunan esiin valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset**.
+  * Voit määrittää .exe-tiedoston, joka **Power BI Desktopin** on käynnistettävä, valitsemalla *Asetukset*-valintaikkunan **Python-komentosarja-asetukset**-osiosta **Muu**. Voit tuoda **Asetukset**-valintaikkunan esiin valitsemalla **Tiedosto > Asetukset ja vaihtoehdot > Asetukset**.
     
     ![](media/desktop-python-ide/python-ide-2.png)
 
-Jos sinulla on useita integroituja Python-kehitysympäristöjä asennettuna, voit määrittää, mikä käynnistetään, valitsemalla sen **Asetukset**-valintaikkunan avattavasta *Havaitut integroidut Python-kehitysympäristöt* -luettelosta.
+Jos sinulla on useita integroituja Python-kehitysympäristöjä asennettuna, voit määrittää, mikä käynnistetään, valitsemalla sen *Asetukset*-valintaikkunan avattavasta **Havaitut integroidut Python-kehitysympäristöt** -luettelosta.
 
 Oletusarvoisesti **Power BI Desktop** käynnistää **Visual Studio Coden** ulkoisena integroituna Python-kehitysympäristönä paikallisessa tietokoneessasi. Jos **Visual Studio Codea** ei ole asennettu ja sinulla on **Visual Studio**, se käynnistetään Visual Studio Coden sijaan. Jos kumpaakaan kyseisistä integroiduista Python-kehitysympäristöistä ei ole asennettu, käynnistetään **.PY**-tiedostoihin liittyvä sovellus.
 
-Jos **.PY**-tiedostokytkentää ei ole tehty, on mahdollista määrittää polku mukautettuun integroituun kehitysympäristöön **Asetukset**-valintaikkunan *Selaa haluamaasi integroituun Python-kehitysympäristöön* -osiossa. Voit myös käynnistää muun integroidun Python-kehitysympäristön valitsemalla **Asetukset**-rataskuvakkeen **Käynnistä integroitu Python-kehitysympäristö** -nuolikuvakkeen vieressä **Power BI Desktopissa**.
+Jos **.PY**-tiedostokytkentää ei ole tehty, on mahdollista määrittää polku mukautettuun integroituun kehitysympäristöön *Asetukset*-valintaikkunan **Selaa haluamaasi integroituun Python-kehitysympäristöön** -osiossa. Voit myös käynnistää muun integroidun Python-kehitysympäristön valitsemalla **Asetukset**-rataskuvakkeen **Käynnistä integroitu Python-kehitysympäristö** -nuolikuvakkeen vieressä **Power BI Desktopissa**.
 
 ## <a name="launch-a-python-ide-from-power-bi-desktop"></a>Integroidun Python-kehitysympäristön käynnistäminen Power BI Desktopista
 Käynnistä integroitu Python-kehitysympäristö **Power BI Desktopista** seuraavasti:

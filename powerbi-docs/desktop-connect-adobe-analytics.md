@@ -10,10 +10,10 @@ ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 097c3e5be411c05a99df75bca5ec3e7abe0b19e0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73878658"
 ---
 # <a name="connect-to-adobe-analytics-in-power-bi-desktop"></a>Adobe Analyticsiin yhdistäminen Power BI Desktopissa 
@@ -30,11 +30,11 @@ Valitse avautuvasta **Adobe Analytics** -ikkunasta **Kirjaudu sisään** -painik
 
 ![Adobe Analyticsiin kirjautuminen](media/desktop-connect-adobe-analytics/connect-adobe-analytics_03.png)
 
-Kirjoita käyttäjänimesi ja salasanasi pyydettäessä. Kun yhteys on muodostettu, voit esikatsella ja valita useita dimensioita ja mittareita Power BI:n **Siirtymistoiminto**-valintaikkunassa ja luoda sitten yksittäisen taulukkotulosteen. Voit myös antaa kaikki tarvittavat valittujen kohteiden edellyttämät syöteparametrit. 
+Kirjoita näytölle avautuvaan kehoteikkunaan käyttäjänimesi ja salasanasi. Kun yhteys on muodostettu, voit esikatsella ja valita useita dimensioita ja mittareita Power BI:n **Siirtymistoiminto**-valintaikkunassa ja luoda sitten yksittäisen taulukkotulosteen. Voit myös antaa kaikki tarvittavat valittujen kohteiden edellyttämät syöteparametrit. 
 
 ![Tietojen valitseminen siirtymistoiminnon avulla](media/desktop-connect-adobe-analytics/connect-adobe-analytics_04.png)
 
-Voit **ladata** valitun taulukon, jolloin koko taulukko tuodaan **Power BI Desktopiin**, tai voit **muokata** kyselyä, joka avautuu **kyselyeditoriin**. Näin voit suodattaa ja tarkentaa käytettävää tietojoukkoa ja ladata sitten tarkennetun tietojoukon **Power BI Desktopiin**.
+Voit myös **ladata** valitun taulukon, joka tuo koko taulukon **Power BI Desktopiin**, tai voit **muokata** kyselyä, joka avautuu **kyselyeditoriin**, jolloin voit suodattaa ja tarkentaa tietojoukkoa, jota haluat käyttää, ja ladata tarkennetun tietojoukon **Power BI Desktopiin**.
 
 ![Tietojen lataaminen tai muokkaaminen siirtymistoiminnossa](media/desktop-connect-adobe-analytics/connect-adobe-analytics_05.png)
 

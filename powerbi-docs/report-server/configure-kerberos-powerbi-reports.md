@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maggies
 ms.openlocfilehash: 6e341f80e3631228c28590ccf0a7711e0b624f2c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874232"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Kerberoksen määrittäminen Power BI -raporttien käyttöön
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Opi määrittämään raporttipalvelimen Kerberos-todennus hajautetun ympäristön Power BI -raporteissa käytettyjä tietolähteitä varten.
+Opi määrittämään raporttipalvelimen Kerberos-todennus hajautetun ympäristön Power BI-raporteissa käytettyjä tietolähteitä varten.
 
 Power BI -raporttipalvelin sisältää mahdollisuuden isännöidä Power BI -raportteja. Raporttipalvelin tukee useita eri tietolähteitä. Vaikka tässä artikkelissa keskitytään erityisesti SQL Server Analysis Servicesiin, voit käyttää konsepteja ja soveltaa niitä muihin tietolähteisiin, kuten SQL Serveriin.
 
@@ -134,7 +134,7 @@ Analysis Servicesiä varten käytämme MSOLAPSvc.3-palvelua. Määritämme esiin
 
 Analysis Servicesin palvelun päänimi voi näyttää esimerkiksi seuraavalta.
 
-| Tyyppi | Muoto |
+| Tyyppi. | Muotoile |
 | --- | --- |
 | Oletusesiintymä |MSOLAPSvc.3/ContosoAS.contoso.com<br>MSOLAPSvc.3/ContosoAS |
 | Nimetty esiintymä |MSOLAPSvc.3/ContosoAS.contoso.com:INSTANCENAME<br>MSOLAPSvc.3/ContosoAS:INSTANCENAME |
@@ -194,7 +194,7 @@ Rajoitettu delegointi on määritettävä protokollan siirtämisellä. Rajoitett
 6. Valitse uudessa valintaikkunassa **Käyttäjät tai tietokoneet**.
 7. Anna Analysis Services -palvelun palvelutili ja valitse **Ok**.
 8. Valitse palvelun päänimi, jonka loit. Sen alussa on `MSOLAPSvc.3`. Jos olet lisännyt sekä FQDN:n että NetBIOSin palvelun päänimen, molemmat on valittuna. Saatat nähdä vain toisen.
-9. Valitse **OK**.  Palvelun päänimen pitäisi näkyä nyt luettelossa.
+9. Valitse **OK**.  SPN:n pitäisi näkyä nyt luettelossa.
 10. Voit myös valita **Laajennettu**, jolloin sekä FQDN:n että NetBIOSin palvelun päänimet näkyvät luettelossa.
 11. Valitse **Lisää** uudelleen. Nyt lisäämme SQL Browserin palvelun päänimen.
 12. Valitse uudessa valintaikkunassa **Käyttäjät tai tietokoneet**.

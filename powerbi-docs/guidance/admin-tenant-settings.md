@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
 ms.openlocfilehash: fdd7504823f088ed0e88657a6fcccaeb9a5a36d0
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79487805"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Vuokraajan järjestelmänvalvojan asetuksia koskevat ohjeet
@@ -86,7 +86,7 @@ Suosittelemme, että määrität vähintään yhden käyttöoikeusryhmän. Näil
 
 ![Kuvassa näytetään ”Jaa sisältöä ulkoisten käyttäjien kanssa” -asetus.](media/admin-tenant-settings/share-content-with-external-users.png)
 
-### <a name="publish-to-web"></a>Julkaise verkkoon
+### <a name="publish-to-web"></a>Verkkoon julkaiseminen
 
 [Julkaise verkkoon](../service-publish-to-web.md) -ominaisuuden avulla voit julkaista julkisia raportteja verkossa. Jos sitä käytetään väärin, on olemassa riski siitä, että luottamukselliset tiedot asetetaan saataville verkossa.
 
@@ -100,7 +100,7 @@ Lisäksi voit valita, miten upotetut koodisi toimivat. Oletusarvoinen asetus on 
 
 Suosittelemme myös tarkistamaan [Julkaise verkkoon -asetuksen upotetut koodit](https://app.powerbi.com/admin-portal/embedCodes) säännöllisesti. Poista koodit, jos ne johtavat yksityisten tai luottamuksellisten tietojen julkaisemiseen.
 
-### <a name="export-data"></a>Vie tiedot
+### <a name="export-data"></a>Tietojen vieminen
 
 Voit rajoittaa käyttäjiä viemästä tietoja koontinäytön ruuduista tai raportin visualisoinneista.
 
@@ -143,5 +143,5 @@ Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resurssei
 
 - [Mitä on Power BI:n hallinta?](../service-admin-administering-power-bi-in-your-organization.md)
 - [Power BI:n hallinta hallintaportaalissa](../service-admin-portal.md)
-- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+- Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com)

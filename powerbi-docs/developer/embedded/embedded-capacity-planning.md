@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/03/2020
 ms.openlocfilehash: f437b1d1fbfc1e905878fbb99875f1fc455e7b14
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79493246"
 ---
 # <a name="capacity-planning-in-power-bi-embedded-analytics"></a>Kapasiteetin suunnittelu Power BI Embedded -analytiikassa
@@ -51,7 +51,7 @@ Tässä on joitain esimerkkejä siitä, miten voit käyttää suunnittelutyökal
 
 Voit tarkistaa kuormitustestin tulokset testin suorittamisen jälkeen mittarisovelluksessa alla annettujen ohjeiden mukaisesti. Kuormituksen luomisen alkamisen jälkeen voi kulua jopa 15 minuuttia, ennen kuin kuormitus näkyy mittareissa.
 
-1. Laajenna [mittarisovelluksen**aloitussivun**tietojoukkojen](../../service-admin-premium-monitor-capacity.md) välilehti.
+1. Laajenna **mittarisovelluksen** aloitussivun [tietojoukkojen](../../service-admin-premium-monitor-capacity.md) välilehti.
 2. Napsauta **Päivitä nyt**. Järjestelmänvalvojien tulisi toimia näin.
 
     ![Power BI Premium -kapasiteettiarvot](media/embedded-capacity-planning/embedded-capacity-planning.png)

@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: db86fee2303759d30b2ff64dc59b56314f220474
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73867346"
 ---
 # <a name="use-inline-hierarchy-labels-in-power-bi-desktop"></a>Sidottujen hierarkiaselitteiden käyttö Power BI Desktopissa
@@ -71,7 +71,7 @@ Vaiheet, joilla visualisoinnit saattavat jäädä jumiin laajennetussa tilassa:
 1. Otat käyttöön **sidotun hierarkiaselitteen** ominaisuuden
 2. Luot visualisointeja hierarkioita käyttämällä
 3. Sitten valitset **Laajenna kaikki** ja tallennat tiedoston
-4. Sen jälkeen *poistat käytöstä* **sidotun hierarkiaselitteen** toiminnon ja käynnistät Power BI Desktopin uudelleen
+4. Sen jälkeen *poistat käytöstä***sidotun hierarkiaselitteen** toiminnon ja käynnistät Power BI Desktopin uudelleen
 5. Sitten avaat tiedoston uudelleen
 
 Jos suoritat nämä vaiheet ja visualisoinnit ovat jumissa laajennetussa tilassa, voit suorittaa vianmäärityksen seuraavalla tavalla:

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 05/24/2018
 ms.author: maggies
 ms.openlocfilehash: ecc33c6176214cb8178e55d716294bf9446a7b1d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73859473"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Hallitse sisältöä verkkoportaalissa 
@@ -48,7 +48,7 @@ Verkkoportaalisovellus toimii selaimessa. Kun käynnistät verkkoportaalin, näk
    * Sivutetut raportit
    * Power BI Desktop -raportit
    * Excel-työkirjat
-   * Tietojoukot
+   * tietojoukot
    * Tietolähteet
    * Resurssit
 

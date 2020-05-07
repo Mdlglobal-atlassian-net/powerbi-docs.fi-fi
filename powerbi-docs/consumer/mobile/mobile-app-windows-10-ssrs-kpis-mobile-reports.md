@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 03/09/2020
 ms.author: painbar
 ms.openlocfilehash: 67daafc0938216b135b31d3190c191402e9a10de
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435371"
 ---
 # <a name="view-on-premises-reports-and-kpis-in-the-power-bi-windows-app"></a>Paikallisten raporttien ja suorituskykyilmaisimien tarkastelu Power BI:n Windows-sovelluksessa
@@ -79,7 +79,7 @@ Reporting Services -mobiiliraportit, suorituskykyilmaisimet ja Power BI -raporti
   
     ![Reporting Servicesin mobiiliraportit](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report.png)
 
-## <a name="view-your-favorite-kpis-and-reports"></a>Suosikkisuorituskykymittareiden ja -raporttien tarkastelu
+## <a name="view-your-favorite-kpis-and-reports"></a>Suosikkisuorituskykyilmaisinten ja -raporttien tarkastelu
 Voit merkitä suorituskykymittareita, mobiiliraportteja ja Power BI -raportteja suosikeiksi Reporting Services -verkkoportaalissa ja tarkastella niitä yhdessä kätevässä kansiossa Windows 10 -laitteessasi Power BI -suosikkikoontinäyttöjesi ja raporttien kera.
 
 * Napauta **Suosikit**.
@@ -108,5 +108,5 @@ Reporting Services -suorituskykymittareita ja mobiiliraportteja ei luoda Power B
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Windows 10:n Power BI -mobiilisovelluksen käytön aloittaminen](mobile-windows-10-phone-app-get-started.md)  
 * [Mikä on Power BI?](../../fundamentals/power-bi-overview.md)  
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/08/2020
 ms.author: painbar
 ms.openlocfilehash: 58ef9c6760194e3f11374bdb0663552fd11ce285
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79377371"
 ---
 # <a name="configure-report-interaction-settings"></a>Raportin käsittelyasetusten määrittäminen
@@ -38,7 +38,7 @@ Käsittelyasetukset on kuvattu alla olevissa osissa.
 ## <a name="interaction-settings"></a>Käsittelyasetukset
 
 ### <a name="single-tap"></a>Napautus
-Kun lataat Power BI -mobiilisovelluksen, se on määritetty käsittelyyn yhdellä napsautuksella. Tämä tarkoittaa sitä, että kun napautat visualisointia osittajatoiminnon, ristiinkorostamisen, linkin tai painikkeen napsauttamisen tai muun toiminnon suorittamista varten, napautus sekä valitsee visualisoinnin että suorittaa haluamasi toiminnon.
+Kun lataat Power BI -mobiilisovelluksen, se on määritetty käsittelyyn yhdellä napautuksella. Tämä tarkoittaa sitä, että kun napautat visualisointia osittajatoiminnon, ristiinkorostamisen, linkin tai painikkeen napsauttamisen tai muun toiminnon suorittamista varten, napautus sekä valitsee visualisoinnin että suorittaa haluamasi toiminnon.
 
 Halutessasi voit poistaa käytöstä käsittelyn yhdellä napautuksella. Sen jälkeen käsittelyssä käytetään kaksoisnapautusta. Kun käsittely kaksoisnapautuksella on käytössä, valitset visualisoinnin ensin napauttamalla sitä ja suoritat sitten haluamasi toiminnon napauttamalla visualisointia uudelleen.
 

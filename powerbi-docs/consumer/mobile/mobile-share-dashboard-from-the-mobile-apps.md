@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: c757534ba0d93fb5eb04f10ee7b8792c8c9e4af3
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435785"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Koontinäytön tai raportin jakaminen Power BI -mobiilisovelluksista
@@ -56,7 +56,7 @@ Voit poistaa jakamisen vain, jos olet omistaja.
 
 ## <a name="share-from-your-android-device"></a>Jakaminen Android-laitteesta
 1. Voit jakaa koontinäytön tai raportin joko koontinäytöstä tai raportista itsestään tai koontinäytön tai raportin aloitussivulta:
-    *  Napauta koontinäytössä tai raportissa **Lisää vaihto ehtoja** (...) koontinäytön tai raportin yläreunassa ja valitse **Kutsu työtoveri**.
+    *  Napauta koontinäytössä tai raportissa **Lisää vaihtoehtoja** (...) koontinäytön tai raportin yläreunassa ja valitse **Kutsu työtoveri**.
     *  Napauta koontinäytön tai raportin aloitussivulla **Lisää vaihtoehtoja** (...) koontinäytön tai raportin nimen vieressä, ja napauta sitten näyttöön tulevassa Tiedot-välilehdessä **Jaa**-kuvaketta ![Kutsu-kuvake](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon-ss.png).
  
 2. Kirjoita sähköpostiosoitteet ja haluamasi viesti koontinäyttökutsusi mukaan. Muussa tapauksessa Power BI lähettää oletusarvoisen viestin. Jos haluat sallia uudelleenjakamisen, jätä **Salli vastaanottajien jakaa tämä koontinäyttö** valituksi. Uudelleenjakamisen ansiosta työtoverisi voivat lähettää sähköpostikutsun edelleen muille organisaatiossa, joko selaimen tai mobiilisovellusten kautta.
@@ -102,5 +102,5 @@ Voit poistaa jakamisen vain, jos olet omistaja.
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Jaa tilannevedos ruudusta, raportista tai visualisoinnista ja lisää niihin merkintöjä mobiilisovelluksissa](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
 * [Jaa koontinäyttö tai raportti Power BI:ssä](../../service-share-dashboards.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

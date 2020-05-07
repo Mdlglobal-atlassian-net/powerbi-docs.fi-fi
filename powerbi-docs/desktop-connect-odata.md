@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 3f825c3c7247cba41d574dccde2fc5eda49e70a2
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73876445"
 ---
 # <a name="connect-to-odata-feeds-in-power-bi-desktop"></a>OData-syötteisiin yhdistäminen Power BI Desktopissa
@@ -42,7 +42,7 @@ Kun toiminto on valmis, Power BI Desktop tuo valitut taulukot ja muut tietoeleme
 
 ![](media/desktop-connect-odata/connect-to-odata_5.png)
 
-Siinä kaikki.
+Siinä kaikki!
 
 Olet nyt valmis käyttämään OData-syötteestä tuotuja tietoja Power BI Desktopissa visualisointien tai raporttien luomiseen tai vuorovaikutukseen muiden tietojen kanssa, joihin ehkä haluat olla yhteydessä ja joita tuot, kuten Excel-työkirjat, tietokannat tai muut tietolähteet.
 

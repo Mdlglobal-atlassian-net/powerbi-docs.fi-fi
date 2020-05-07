@@ -11,10 +11,10 @@ ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: d0f258af383327fb25c8f0e896677bbd19eca6c4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73877419"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Ruudun kiinnittäminen Power BI -raporttinäkymään Excelistä
@@ -53,10 +53,10 @@ Uusi [raporttinäkymän ruutu](consumer/end-user-tiles.md) voidaan lisätä Exce
 1. Korosta solut, jotka haluat kiinnittää raporttinäkymään.
    
     ![Solujen valitseminen Excel-työkirjassa](media/service-dashboard-pin-tile-from-excel/pbi_selectrange.png)
-2. Valitse Kiinnitä ![kiinnitä-kuvake](media/service-dashboard-pin-tile-from-excel/pbi_pintile_small.png) -kuvake. 
+2. Valitse Kiinnitä ![kiinnitä-kuvake](media/service-dashboard-pin-tile-from-excel/pbi_pintile_small.png) kuvake. 
 3. Kiinnitä ruutu aiemmin luotuun raporttinäkymään tai uuteen raporttinäkymään. 
    
-   * Aiemmin luotu raporttinäkymä: valitse raporttinäkymän nimi avattavasta luettelosta.
+   * Aiemmin luotu koontinäyttö: valitse avattavasta luetteloruudusta koontinäytön nimi.
    * Uusi raporttinäkymä: anna nimi uudelle raporttinäkymälle.
    
      ![Kiinnitä koontinäyttöön -valintaikkuna](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
@@ -80,12 +80,12 @@ Työkirjan ruudun valitseminen avaa linkitetyn työkirjan Power BI:ssä. Koska t
  ![video](media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-Ominaisuudet, joita ei tueta: Power BI käyttää Excel Servicesiä työkirjan ruutujen noutamiseen. Näin ollen koska joitakin Excelin ominaisuuksia ei tueta Excel Servicesin REST-ohjelmointirajapinnassa, ne eivät näy Power BI:n ruuduissa. Esimerkki: sparkline-kaaviot, kuvakejoukon ehdollinen muotoilu ja aikaosittajat. Täydellinen luettelo ominaisuuksista, joita ei tueta, on artikkelissa [Excel Servicesin REST-ohjelmointirajapinnan ominaisuudet, joita ei tueta](https://msdn.microsoft.com/library/office/ff394477.aspx)
+Ominaisuudet, joita ei tueta: Power BI käyttää Excel Servicesiä työkirjan ruutujen noutamiseen. Näin ollen koska joitakin Excelin ominaisuuksia ei tueta Excel Servicesin REST-ohjelmointirajapinnassa, ne eivät näy Power BI:n ruuduissa. Esimerkkejä: sparkline-kaaviot, kuvakejoukon ehdollinen muotoilu ja aikaosittajat. Täydellinen luettelo ominaisuuksista, joita ei tueta, on artikkelissa [Excel Servicesin REST-ohjelmointirajapinnan ominaisuudet, joita ei tueta](https://msdn.microsoft.com/library/office/ff394477.aspx)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Excel-työkirjaan linkittävän raporttinäkymän jakaminen](service-share-dashboard-that-links-to-excel-onedrive.md)
 
 [Tietojen noutaminen Excel-työkirjoista](service-excel-workbook-files.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 
