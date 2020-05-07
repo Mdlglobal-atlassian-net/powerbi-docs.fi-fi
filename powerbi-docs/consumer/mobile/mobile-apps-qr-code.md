@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
 ms.openlocfilehash: 55b71508380a424ba48e4d24ac6c6fc70d9a570d
-ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80802068"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Power BI:n QR-koodin lukeminen mobiililaitteella
@@ -78,5 +78,5 @@ Jos työtoverisi ei ole jakanut koontinäyttöä tai raporttia sinulle, voit pyy
 * [Ruudun QR-koodin luominen Power BI -palvelussa](../../service-create-qr-code-for-tile.md)
 * [Raportin QR-koodin luominen Power BI -palvelussa](../../service-create-qr-code-for-report.md)
 * Voit myös [lukea QR-koodin Power BI ja tehostettu todellisuus -sovelluksessa](mobile-mixed-reality-app.md).
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

@@ -2,7 +2,7 @@
   href: index.yml
   expanded: true
   items:
-    - name: Yleiskatsaus
+    - name: Yhteenveto
       expanded: true
       items:
         - name: Mitä mobiilisovellukset ovat?
@@ -11,7 +11,7 @@
           href: mobile-whats-new-in-the-mobile-apps.md
         - name: Aloitussivun esittely
           href: mobile-apps-home-page.md
-    - name: Pika-aloitus
+    - name: Pika-aloitukset
       expanded: true
       items:
         - name: Tutustu raporttinäkymiin ja raportteihin

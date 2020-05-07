@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: 269fe87a61df3470a8d11e4934ff1fca4bde7e86
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114654"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded"></a>Power BI Embeddedin Multi-Geo-tuki
@@ -71,7 +71,7 @@ Jotta voidaan tukea kapasiteettien hallintaa Multi-Geossa ohjelmointirajapinnan 
 
 3. **[Azure Resource Manager -ohjelmointirajapinta](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities)** – Kaikki Azure Resource Manager -ohjelmointirajapinnan toiminnot, mukaan lukien *luominen* ja *poistaminen*, tukevat Multi-Geoa.
 
-## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
+## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioon otettavat seikat
 
 * Vahvista, että kaikki aloittamasi alueiden väliset siirtymät noudattavat kaikkia yrityksen ja julkishallinnon edellyttämiä vaatimustenmukaisuusehtoja ennen tiedonsiirron aloittamista.
 

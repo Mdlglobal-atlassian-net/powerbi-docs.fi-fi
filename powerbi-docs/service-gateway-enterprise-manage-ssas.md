@@ -1,6 +1,6 @@
 ---
 title: Tietolähteen hallinta - Analysis Services
-description: Paikallisen tietoyhdyskäytävän ja kyseiseen yhdyskäytävään kuuluvien tietolähteiden hallinta. Tämä koskee Analysis Services -palveluita sekä monidimensioisessa että taulukkotilassa.
+description: Paikallisen yhdyskäytävän ja kyseiseen yhdyskäytävään kuuluvien tietolähteiden hallinta. Tämä koskee Analysis Services -palveluita sekä monidimensioisessa että taulukkotilassa.
 author: arthiriyer
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: ea6d4186d2f02665201f2161f50e06ad8f0f45a6
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74699402"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Tietolähteen hallinta - Analysis Services
@@ -154,7 +154,7 @@ Yhdyskäytävän määrittäminen Active Directory -haun suorittamiseen:
 
 Voit luoda yhdistämissäännön kirjoittamalla **Alkuperäisen nimen** ja **Uuden nimen** arvot ja valitsemalla sitten **Lisää**.
 
-| Kenttä | Kuvaus |
+| Kenttä | Description |
 | --- | --- |
 | Korvaa (alkuperäinen nimi) |Sähköpostiosoite, jota käytit Power BI:hin kirjautumiseen. |
 | Korvaava (uusi nimi) |Korvaava arvo. Korvaamisen tulos lähetetään EffectiveUserName-arvona Analysis Services -yhteyttä muodostettaessa. |

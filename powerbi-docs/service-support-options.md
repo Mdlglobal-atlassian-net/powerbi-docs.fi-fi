@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 09/17/2019
 ms.author: kfollis
 ms.openlocfilehash: 690f69f584b4b185929ad465cf4ddd75e26c1011
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74696529"
 ---
 # <a name="power-bi-pro-and-power-bi-premium-support-options"></a>Power BI Pron ja Power BI Premiumin tukivaihtoehdot
@@ -23,9 +23,9 @@ Tässä artikkelissa kuvataan tukivaihtoehtoja, jotka ovat käytettävissä Powe
 | --- | --- | --- | --- | --- | --- |
 | **Yhteisön tuki**: Verkon keskustelupalstat, joista käyttäjät saavat vertaistukea, ohjeita ja parhaita käytäntöjä, vastauksia antaa Power BI -asiantuntijoista ja Microsoftin työntekijöistä koostuva maailmanlaajuinen yhteisö. | X |   |   | Ei määritetty, yhteydenotto mahdollisuuksien mukaan. | [Power BI -yhteisö](https://community.powerbi.com) |
 | **Power BI Pro -käyttäjätuki**: Perustason tekninen tuki käyttäjille, jotka luovat ja käyttävät Power BI -sisältöä. | X |   |   | Yksi arkipäivä. | [Power BI -tukisivusto](https://support.powerbi.com)  |
-| **Power BI Premium -tason tuki järjestelmänvalvojille**: Tekninen tuki järjestelmänvalvojille, jotka ottavat käyttöön ja käyttävät Power BI Premium -ominaisuuksia. | X |   |   | Yksi arkipäivä tai yksi tunti, tapauksen vakavuuden mukaan.\* | [Power BI -tukisivusto](https://support.powerbi.com)<br>TAI<br>[Microsoft 365 -hallintakeskus](https://portal.office.com/adminportal)<br>TAI<br> Puhelin |
-| **Power BI -tuki järjestelmänvalvojille**: Tekninen ja laskutustuki Power BI -käyttöönottojen järjestelmänvalvojille niiden organisaatioissa.  Jotta voit käyttää tätä vaihtoehtoa, sinun on oltava Azure Active Directoryn yrityksen järjestelmänvalvoja, Office 365:n yleinen järjestelmänvalvoja, Office 365 -palvelun järjestelmänvalvoja tai Power BI -palvelun järjestelmänvalvoja. | X | X |   | Yksi arkipäivä tai yksi tunti, tapauksen vakavuuden mukaan.\* | [Microsoft 365 -hallintakeskus](https://portal.office.com/adminportal)<br>TAI<br> Puhelin |
-| **Microsoft Premier -tuki**: Yritystason lähestymistapa tukeen, sisältäen tilin hallinnan, toimipaikan tuen ja ennakoivat palvelut, kuten koulutuksen ja tietomallin suorituskyvyn optimoinnin. | X | X | X | Vaihtelee tarjouksen ja tapauksen vakavuuden mukaan.\* | Technical Account Manager <br>TAI<br> [Microsoft 365 -hallintakeskus](https://portal.office.com/adminportal) |
+| **Power BI Premium -tason tuki järjestelmänvalvojille**: Tekninen tuki järjestelmänvalvojille, jotka ottavat käyttöön ja käyttävät Power BI Premium -ominaisuuksia. | X |   |   | Yksi arkipäivä tai yksi tunti, tapauksen vakavuuden mukaan.\* | [Power BI -tukisivusto](https://support.powerbi.com)<br>OR<br>[Microsoft 365 -hallintakeskus](https://portal.office.com/adminportal)<br>OR<br> Puhelin |
+| **Power BI -tuki järjestelmänvalvojille**: Tekninen ja laskutustuki Power BI -käyttöönottojen järjestelmänvalvojille niiden organisaatioissa.  Jotta voit käyttää tätä vaihtoehtoa, sinun on oltava Azure Active Directoryn yrityksen järjestelmänvalvoja, Office 365:n yleinen järjestelmänvalvoja, Office 365 -palvelun järjestelmänvalvoja tai Power BI -palvelun järjestelmänvalvoja. | X | X |   | Yksi arkipäivä tai yksi tunti, tapauksen vakavuuden mukaan.\* | [Microsoft 365 -hallintakeskus](https://portal.office.com/adminportal)<br>OR<br> Puhelin |
+| **Microsoft Premier -tuki**: Yritystason lähestymistapa tukeen, sisältäen tilin hallinnan, toimipaikan tuen ja ennakoivat palvelut, kuten koulutuksen ja tietomallin suorituskyvyn optimoinnin. | X | X | X | Vaihtelee tarjouksen ja tapauksen vakavuuden mukaan.\* | Technical Account Manager <br>OR<br> [Microsoft 365 -hallintakeskus](https://portal.office.com/adminportal) |
 | | | | | | |
 
 \* Yhden tunnin palvelutasosopimus on saatavana vain _A-vakavuusasteen tapausten_ kautta, jotka edellyttävät välitöntä ja suoraa vaikutusta liiketoimintaan töiden keskeytymisen vuoksi olemassa olevassa tuotannon raportoinnissa.

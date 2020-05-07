@@ -11,10 +11,10 @@ ms.topic: overview
 ms.custom: seodec18
 ms.date: 12/10/2018
 ms.openlocfilehash: f04621fdfe7e6055d84fa4d2672c874837ff5ea4
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79495270"
 ---
 # <a name="what-is-power-bi-embedded-in-azure"></a>Mikä on Power BI Embedded Azuressa?
@@ -39,7 +39,7 @@ Onko käytössäsi sovellus, jossa on upotettua Power BI -sisältöä ja joka k�
 
 Power BI Embeddedin avulla voit keskittyä siihen, minkä osaat parhaiten, eli erinomaisten sovellusten luomiseen. Power BI Embeddedillä hallinta ja kehittäminen onnistuu niillä työkaluilla ja taidoilla, joita sinulla jo on.
 
-* [**Azure-portaali**](https://portal.azure.com/): Verkkopohjainen sovellus kaikkien Azure-palvelujen hallintaan
+* [**Azure-portaali**](https://portal.azure.com/): verkkopohjainen sovellus kaikkien Azure-palveluiden hallintaan
 * [**Visual Studio -koodi**](https://code.visualstudio.com/docs): maksuton, ladattava, avoimen lähdekoodin laajennuksia tukeva koodieditori Windows-, macOS- ja Linux-käyttöjärjestelmille
 * [**Power BI Desktop**](https://powerbi.microsoft.com/desktop/): maksuton, ladattava työkalu monipuolisten ja vuorovaikutteisten raporttien luomiseen visuaalisella analysoinnilla
 
@@ -48,7 +48,7 @@ REST-ohjelmointirajapinnan avulla Power BI Embedded sallii kehittämisen millä 
 ## <a name="engage-with-the-power-bi-engineering-team"></a>Ole yhteydessä Power BI:n tekniseen tiimiin
 
 * [Yhteisöt](https://community.powerbi.com/): Esitä Power BI -kysymyksiä
-* [Power BI -ideat](https://ideas.powerbi.com): Pyydä ja äänestä ominaisuuksia
+* [Power BI -ideoita](https://ideas.powerbi.com): Pyydä ja äänestä ominaisuuksia
 * [Reddit](https://www.reddit.com/r/PowerBI/): Keskustele Power BI:stä
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

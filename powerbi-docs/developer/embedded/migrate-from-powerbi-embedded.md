@@ -8,10 +8,10 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.openlocfilehash: a8ce4209610e229ae1da7773bd7cb10bd522f72c
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80404039"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Power BI -työtilakokoelman sisällön siirtäminen Power BI Embedded -palveluun
@@ -79,7 +79,7 @@ Sinun on rekisteröitävä sovellus Azure AD:ssa ja myönnettävä sille tietyt 
 
 ### <a name="register-an-application"></a>Sovelluksen rekisteröinti
 
-Sinun on rekisteröitävä sovellus Azure AD:ssä REST-ohjelmointirajapinnan kutsujen tekemiseksi. Se tarkoittaa, että sinun on Power BI:n rekisteröintisivun lisäksi tehtävä lisämäärityksiä Azure-portaalissa. Saat lisätietoja artikkelista [Azure AD -sovelluksen rekisteröinti Power BI -sisällön upottamista varten](register-app.md).
+Sinun on rekisteröitävä sovellus Azure AD:ssä REST-ohjelmointirajapinnan kutsujen tekemiseksi. Se tarkoittaa, että sinun on Power BI:n rekisteröintisivun lisäksi tehtävä lisämäärityksiä Azure-portaalissa. Saat lisätietoja artikkelista [Azure AD -sovelluksen rekisteröinti upotettuun Power BI -sisältöön](register-app.md).
 
 Rekisteröi sovellus käyttämällä sovelluksen **päätiliä**.
 
@@ -99,7 +99,7 @@ Työtilan luomiseen Power BI:ssä tarvitaan käyttäjän, jolla on Pro-käyttöo
 
 Voit siirtää sisältösi työtilakokoelmista Power BI Embedded -palveluun rinnakkain nykyisen ratkaisusi kanssa ilman käyttökatkoa.
 
-Voit käyttää **siirtotyökalua**, joka auttaa sisällön kopioimisessa Power BI ‑työtilakokoelmasta Power BI Embedded ‑palveluun. Se on erityisen hyödyllinen, jos sinulla on paljon sisältöä. Jos haluat lisätietoja, katso [Power BI Embedded -siirtotyökalu](migrate-tool.md).
+Voit käyttää **siirtotyökalua**, joka auttaa sisällön kopioimisessa Power BI ‑työtilakokoelmasta Power BI Embedded ‑palveluun. Se on hyödyllinen erityisesti, jos sisältöä on paljon. Jos haluat lisätietoja, katso [Power BI Embedded -siirtotyökalu](migrate-tool.md).
 
 Sisällön siirtoon tarvitaan pääasiassa kahta ohjelmointirajapintaa.
 

@@ -10,10 +10,10 @@ ms.date: 06/04/2019
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: 63d49a439d10acc5d7cda10b76b04a26fcdb085a
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698804"
 ---
 # <a name="refresh-a-dataset-created-from-a-power-bi-desktop-file-on-a-local-drive"></a>Power BI Desktop -tiedostosta luodun tietojoukon päivittäminen – tiedosto paikallisessa asemassa
@@ -37,7 +37,7 @@ Power BI, Päivitä nyt ja Ajoita päivitys ovat tuettuja tietojoukkoja, jotka o
 
 Voit suorittaa kertaluonteisen manuaalisen päivityksen suoraan Power BI Desktopissa valitsemalla Aloitus-valintanauhasta **Päivitä**. Kun valitset tässä kohdassa **Päivitä**, tiedot *tiedoston* mallissa päivitetään alkuperäisen tietolähteen päivitetyillä tiedoilla. Tällainen päivitys kokonaan Power BI Desktop-sovelluksen sisällä eroaa manuaalisesta tai ajoitetusta päivityksestä Power BI:ssä, ja on tärkeää ymmärtää tämä ero.
 
-![Päivitä](media/refresh-desktop-file-local-drive/pbix-refresh.png)
+![päivitys](media/refresh-desktop-file-local-drive/pbix-refresh.png)
 
 Kun tuot Power BI Desktop-tiedostoa paikalliselta asemalta, data sekä muita tietoja mallista ladataan tietojoukkoon Power BI -palvelussa. Power BI -palvelussa, ei Power BI Desktopissa, haluat päivittää tietojoukon tietoja, koska siihen raporttisi Power BI -palvelussa perustuvat. Koska tietolähteet ovat ulkoisia, voit päivittää tietojoukon manuaalisesti valitsemalla **Päivitä nyt**. Vaihtoehtoisesti voit asettaa päivityksen ajoituksen valitsemalla **Ajoita päivitys**.
 
@@ -67,5 +67,5 @@ Joskus tietojen päivittäminen ei mene odotetulla tavalla. Yleensä tämä on y
 - [Paikallisen tietoyhdyskäytävän vianmääritys](service-gateway-onprem-tshoot.md)
 - [Power BI -yhdyskäytävän vianmääritys – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

@@ -10,10 +10,10 @@ ms.date: 07/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 32d731c354d848809d336392ef51f667b14427d8
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74565695"
 ---
 # <a name="connect-to-project-web-app-with-power-bi"></a>Yhteyden muodostaminen Project Web Appiin Power BI:llä
@@ -21,13 +21,13 @@ Microsoft Project Web App on joustava online-ratkaisu projektisalkun hallintaan 
 
 Muodosta yhteys Power BI:n [Project Web App -mallisovellukseen](https://appsource.microsoft.com/product/power-bi/pbi_msprojectonline.pbi-microsoftprojectwebapp).
 
-## <a name="how-to-connect"></a>Yhteyden muodostaminen
+## <a name="how-to-connect"></a>Yhdistäminen
 
 1. Valitse **Sovellukset** siirtymisruudussa > valitse **Hanki sovelluksia** oikeassa yläkulmassa.
 
     ![Hanki sovelluksia](media/service-connect-to-project-online/GetApps.png)
 
-2. Valitse **Palvelut**-ruudussa **Nouda**.
+2. Valitse **Palvelut**-ruudusta **Nouda**.
    
    ![AppSource](media/service-connect-to-project-online/AppSource.png)
 3. Valitse AppSourcessa **Sovellukset**-välilehti ja hae tai valitse **Microsoft Project Web App**.
@@ -40,10 +40,10 @@ Muodosta yhteys Power BI:n [Project Web App -mallisovellukseen](https://appsourc
    ![Microsoft Project Web App](media/service-connect-to-project-online/getstarted.png)
 6. Valitse **Aloita uuden sovelluksesi käyttö** -kohdassa **Yhdistä tiedot**.
    
-   ![Tietoihin yhdistäminen](media/service-connect-to-project-online/mproject.png)
+   ![tietoihin yhdistäminen](media/service-connect-to-project-online/mproject.png)
 7. Kirjoita yhdistettävän Project Web Appin (PWA) URL-osoite **Project Web Appin URL-osoite** -tekstiruutuun.  Huomaa, että se poiketa esimerkistä, jos käytössäsi on mukautettu toimialue. Valitse **PWA-sivuston kieli** -tekstiruutu ja kirjoita numero, joka vastaa PWA-sivuston kieltä. Kirjoita numero ”1” englannille, ”2” ranskalle, ”3” saksalle, ”4” portugalille (Brasilia), ”5” portugalille (Portugali) ja ”6” espanjalle. 
    
-   ![Yhteyden muodostaminen Microsoft Project Onlineen](media/service-connect-to-project-online/params.png)
+   ![Yhdistä Microsoft Project Onlineen](media/service-connect-to-project-online/params.png)
 8. Valitse todennusmenetelmäksi **oAuth2** \> **Kirjaudu sisään**. Anna pyydettäessä Project Web Appin tunnistetietosi ja noudata todennusprosessia.
 
     > [!NOTE]
@@ -61,7 +61,7 @@ Muodosta yhteys Power BI:n [Project Web App -mallisovellukseen](https://appsourc
    
     ![Projektin tila](media/service-connect-to-project-online/report2.png)
 
-**Mitä seuraavaksi?**
+**Mitä nyt?**
 
 * Tietojoukko on ajastettu päivittymään päivittäin, mutta voit muuttaa päivitysaikataulua tai kokeilla tietojoukon päivittämistä **Päivitä nyt** -toiminnolla haluamanasi ajankohtana.
 

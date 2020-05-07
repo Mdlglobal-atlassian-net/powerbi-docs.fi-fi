@@ -10,10 +10,10 @@ ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
 ms.openlocfilehash: 100417202fca148be0e2e976ce0cd84167c803d9
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74958428"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Tietojen päivittäminen paikallisesta SQL Server -tietokannasta
@@ -114,7 +114,7 @@ Yhdistit Power BI Desktopissa suoraan paikalliseen SQL Server -tietokantaan, mut
 
 5. Anna ja vahvista **yhdyskäytävien** hallintasivun **tietolähdeasetusten** välilehdellä alla luetellut tiedot. Valitse tämän jälkeen **Lisää**.
 
-    | Asetus | Arvo |
+    | Vaihtoehto | Arvo |
     | --- | --- |
     | Tietolähteen nimi | AdventureWorksProducts |
     | Tietolähteen tyyppi | SQL Server |
@@ -197,7 +197,7 @@ Aiempien päivitysten tulokset kannattaa tarkistaa säännöllisesti päivityshi
     > [!NOTE]
     > OneDrive-välilehti koskee vain tietojoukkoja, jotka ovat yhteydessä OneDriveen tai SharePoint Onlineen tallennettuihin Power BI Desktop -tiedostoihin, Excel-työkirjoihin tai CSV-tiedostoihin. Tästä on lisätietoja kohdassa [Tietojen päivittäminen Power BI:ssä](refresh-data.md).
 
-## <a name="clean-up-resources"></a>Puhdista resurssit
+## <a name="clean-up-resources"></a>Resurssien tyhjentäminen
 
 Jos et halua enää käyttää mallitietoja, hylkää tietokanta SQL Server Management Studiossa (SSMS). Jos et halua käyttää SQL Server -tietolähdettä, poista kyseinen tietolähde tietoyhdyskäytävästäsi. Sinun kannattaa harkita myös tietoyhdyskäytävän asennuksen poistamista, jos asensit sen vain tätä opetusohjelmaa varten. Sinun kannattaa poistaa myös AdventureWorksProducts-tietojoukko ja AdventureWorksProducts-raportti, jotka Power BI loi, kun latasit palveluun AdventureWorksProducts.pbix-tiedoston.
 

@@ -11,10 +11,10 @@ ms.date: 04/02/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: a67d983d11ae8fa2f82a540c0649c2da475d5249
-ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80621621"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Tietoilmoitukset Power BI -palvelussa
@@ -28,7 +28,7 @@ Vain sinä näet asettamasi hälytykset, vaikka jakaisit koontinäyttösi. Edes 
 ![ruudut](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
 > [!WARNING]
-> Aineistoperäiset ilmoitukset antavat tietoja lähdetiedoistasi. Jos tarkastelet Power BI -tietojasi mobiililaitteella ja laite katoaa tai varastetaan, suosittelemme kaikkien tietopohjaisten ilmoitusten poistamista käytöstä Power BI -palvelulla.
+> Aineistoperäisen ilmoitukset antavat on tietoja lähdetiedoistasi. Jos tarkastelet Power BI -tietojasi mobiililaitteella ja laite katoaa tai varastetaan, suosittelemme kaikkien tietopohjaisten ilmoitusten poistamista käytöstä Power BI -palvelulla.
 
 ## <a name="set-data-alerts-in-the-power-bi-service"></a>Power BI -palvelun tietoilmoitusten määrittäminen
 
@@ -42,7 +42,7 @@ Tässä esimerkissä käytetään jälleenmyyntianalyysimallin koontinäytön ko
 
    ![Myymälöitä yhteensä -ruutu](media/service-set-data-alerts/powerbi-card.png)
 
-1. Lisää ainakin yksi ilmoitus **Myymälöitä yhteensä** -ruudulle valitsemalla kellokuvake ![Hälytys-kuvake](media/service-set-data-alerts/power-bi-bell-icon.png).
+1. Lisää ainakin yksi ilmoitus ![Myymälöitä yhteensä](media/service-set-data-alerts/power-bi-bell-icon.png) -ruudulle valitsemalla kellokuvake **Hälytys-kuvake**.
 
 1. Aloita valitsemalla **+ Lisää ilmoitussääntö**, varmista, että **Aktiivinen**-liukusäädin on asennossa **Käytössä**, ja anna ilmoitukselle nimi. Nimet helpottavat ilmoitusten tunnistamista.
 

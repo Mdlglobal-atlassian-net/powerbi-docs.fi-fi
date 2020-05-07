@@ -10,10 +10,10 @@ ms.date: 03/18/2020
 ms.author: mihart
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: 67c2acad74827c515c92ed0d16dd642170b8dc61
-ms.sourcegitcommit: 646d2de454a2897dc52cbc02b7743aaa021bac04
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79525656"
 ---
 # <a name="create-shape-map-visualizations-in-power-bi-desktop-preview"></a>Muotokarttavisualisointien luominen Power BI Desktopissa (esiversio)

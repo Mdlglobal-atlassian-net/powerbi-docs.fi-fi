@@ -10,10 +10,10 @@ ms.date: 06/06/2019
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: 21b7b93b4e522a8e6a49d22b54c9ddd83cb5e042
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74699617"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-onedrive-or-sharepoint-online"></a>Excel-työkirjasta luodun tietojoukon päivittäminen OneDrivessa tai SharePoint Onlinessa
@@ -47,7 +47,7 @@ Power BI:n **Päivitä nyt** ja **Ajoita päivitys** ovat tuettuja tietojoukoill
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive vai OneDrive for Business? Mikä niiden ero on?
 
-Jos sinulla on sekä henkilökohtainen OneDrive että OneDrive for Business, on suositeltavaa säilyttää tiedostot, jotka haluat tuoda Power BI:ssa OneDrive for Business -palveluun. Syynä on se, että käytät todennäköisesti kahta eri tiliä niille kirjautumista varten.
+Jos sinulla on sekä henkilökohtainen OneDrive että OneDrive for Business, on suositeltavaa säilyttää tiedostot, jotka haluat tuoda Power BI:ssa OneDrive for Business -palveluun. Syynä on se, että todennäköisesti käytät kahta eri tiliä niille kirjautumista varten.
 
 Yhteyden muodostaminen OneDrive for Business -palveluun Power BI:ssä on yleensä saumaton, koska tili, jota käytit Power BI -kirjautumiseen on usein sama tili, jota käytetään kirjauduttaessa OneDrive for Business -palveluun. Henkilökohtaisen OneDrive olet todennäköisesti kuitenkin kirjautunut sisään toisella [Microsoft-tilillä](https://account.microsoft.com).
 
@@ -61,7 +61,7 @@ Jos teet muutoksia OneDrive-tiedostoon, joita ei voi synkronoida tietojoukkoon t
 
 Kun muodostat yhteyden Excel-työkirjaan OneDrive for Business- tai SharePoint Online -palvelussa, sinulla on kaksi vaihtoehtoa saada työkirjan sisältö Power BI:iin.
 
-[**Excel-tietojen tuominen Power BI:lle** ](service-excel-workbook-files.md#import-or-connect-to-an-excel-workbook-from-power-bi) – kun tuot Excel-työkirjan OneDrive for Business- tai SharePoint online -palvelusta, se toimii edellä kuvatulla tavalla.
+[**Excel-tietojen tuominen Power BI:lle**](service-excel-workbook-files.md#import-or-connect-to-an-excel-workbook-from-power-bi) – kun tuot Excel-työkirjan OneDrive for Business- tai SharePoint online -palvelusta, se toimii edellä kuvatulla tavalla.
 
 [**Yhdistä, Hallitse ja Näytä Excel Power BI:ssä**](service-excel-workbook-files.md#one-excel-workbook--two-ways-to-use-it) – tätä asetusta käytettäessä luot yhteyden Power BI:stä suoraan työkirjaasi OneDrive for Business- tai SharePoint Online -palveluissa.
 
@@ -92,7 +92,7 @@ Varmista sitten valinnassa **Lataa kohteeseen**, että valitset **Lisää nämä
 
 ### <a name="what-if-i-use-get-external-data-in-power-pivot"></a>Entä jos käytän Nouda ulkoiset tiedot Power Pivotissa?
 
-Se onnistuu helposti. Aina, kun käytät Power Pivotia yhteyden muodostamiseen ja kyselyn tietoja paikallisesta tai online-tietolähteestä, tiedot ladataan automaattisesti tietomalliin.
+Ei huolta. Aina, kun käytät Power Pivotia yhteyden muodostamiseen ja kyselyn tietoja paikallisesta tai online-tietolähteestä, tiedot ladataan automaattisesti tietomalliin.
 
 ## <a name="how-do-i-schedule-refresh"></a>Kuinka päivitys ajoitetaan?
 
@@ -117,5 +117,5 @@ Joskus tietojen päivittäminen ei mene odotetulla tavalla. Yleensä tämä on y
 - [Paikallisen tietoyhdyskäytävän vianmääritys](service-gateway-onprem-tshoot.md)
 - [Power BI -yhdyskäytävän vianmääritys – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

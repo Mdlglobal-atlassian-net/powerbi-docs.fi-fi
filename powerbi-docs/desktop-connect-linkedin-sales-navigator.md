@@ -10,10 +10,10 @@ ms.date: 11/11/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: cd952dfa690d079d662f09e1e01c34dadf129b7b
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74565635"
 ---
 # <a name="connect-to-linkedin-sales-navigator-in-power-bi-desktop"></a>Yhdistäminen LinkedIn Sales Navigatoriin Power BI Desktopissa
@@ -80,7 +80,7 @@ Saat **LinkedIn Sales Navigatorin** mallisovelluksen seuraavasta linkistä:
 Mallisovelluksessa on neljä välilehteä, jotka auttavat analysoimaan ja jakamaan tietoja:
 
 * Käyttö
-* Hae
+* Haku
 * InMail
 * SSI
 
@@ -106,7 +106,7 @@ Jos haluat siirtyä mallitiedoista omiin tietoihisi, valitse oikeasta yläkulmas
 
 Voit sitten muodostaa yhteyden omiin tietoihisi ja valita, monenko päivän tiedot ladataan. Voit ladata enintään 365 päivän tiedot. Sinun tulee kirjautua sisään käyttämällä samaa sähköpostiosoitetta, jolla kirjaudut sisään LinkedIn Sales Navigatoriin verkkosivuston kautta. 
 
-![Kirjaudu sisään](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-17.png)
+![Kirjaudu sisään.](media/desktop-connect-linkedin-sales-navigator/linkedin-sales-navigator-17.png)
 
 Mallisovellus päivittää sitten sovelluksen tiedot omilla tiedoillasi. Voit myös määrittää ajoitetun tietojen päivityksen, niin että sovelluksesi tiedot ovat niin ajan tasalla kuin päivitystiheytesi määrittää. 
 

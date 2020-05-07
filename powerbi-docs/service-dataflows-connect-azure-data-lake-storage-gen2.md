@@ -10,10 +10,10 @@ ms.date: 01/22/2020
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 8297d5e16c15baac058f82b75634eb4f31b3c630
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80113159"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Azure Data Lake Storage Gen2:n yhdistäminen tietovuon tallentamiseksi
@@ -69,7 +69,7 @@ Toista samat vaiheet **Säilön Blob-tietojen omistaja** ‑roolille ja määrit
 > [!NOTE]
 > Odota käyttöoikeuden välittymistä Power BI:hin portaalista vähintään 30 minuuttia. Aina kun muutat käyttöoikeuksia portaalissa, kyseisten käyttöoikeuksien näkyminen Power BI:ssä voi kestää 30 minuuttia. 
 
-## <a name="connect-your-azure-data-lake-storage-gen2-to-power-bi"></a>Azure Data Lake Storage Gen2:n yhdistäminen Power BI:hin
+## <a name="connect-your-azure-data-lake-storage-gen2-to-power-bi"></a>Azure Data Lake Storage Gen2:n yhdistäminen Power BI:hin 
 
 Kun olet määrittänyt Azure Data Lake Storage Gen2 -tilisi Azure-portaalissa, yhdistät sen Power BI:hin **Power BI -hallintaportaalissa**. Hallitset myös Power BI -tietovuon tallennusta Power BI -hallintaportaalin **Tietovuon tallennus** -asetusosiossa. Katso tarkempia ohjeita käynnistyksestä ja perustason käytöstä artikkelista [Siirtyminen hallintaportaaliin](service-admin-portal.md).
 

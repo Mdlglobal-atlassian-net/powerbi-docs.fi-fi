@@ -10,10 +10,10 @@ ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
 ms.openlocfilehash: 32ca01d06f4fc8c3f90f73bf8137349eed0220a6
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698827"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Kirjautuneena olevien Power BI -käyttäjien etsiminen
@@ -29,7 +29,7 @@ Kaikki käyttäjät (myös muut kuin järjestelmänvalvojat) voivat nähdä rapo
 
 * Vuokraajalla on oltava vuokraajaan liitetty Azure Active Directory Premium -käyttöoikeus.
 
-* Sinulla on oltava jokin seuraavista rooleista: Yleinen järjestelmänvalvoja, Suojauksen järjestelmänvalvoja tai rooli, jolla on suojaustietojen lukuoikeudet.
+* Sinulla on oltava jokin seuraavista rooleista: yleinen järjestelmänvalvoja, suojauksenvalvoja tai suojauksenlukija.
 
 ## <a name="use-the-azure-portal-to-view-sign-ins"></a>Kirjautumisten tarkastelu Azure-portaalin kautta
 

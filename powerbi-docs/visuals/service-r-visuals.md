@@ -10,10 +10,10 @@ ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 9f9b0ec77d0273374d940332abd5d186c2604866
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80979818"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>R-visualisointien luominen ja käyttö Power BI:ssa

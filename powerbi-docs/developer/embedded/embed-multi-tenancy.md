@@ -1,5 +1,5 @@
 ---
-title: Usean palveltavan kohteen hallinta Power BI Embeddedin analyysitoiminnoilla
+title: Usean vuokraajan hallinta Power BI Embeddedin analyysitoiminnoilla
 description: Suunnittele monen vuokraajan sovellus, jossa käytetään upotettuja analyysitoimintoja.
 author: KesemSharabi
 ms.author: kesharab
@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
 ms.openlocfilehash: 435f643ba155bc9d6c67d1131d946769e3d61730
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79494948"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Usean vuokraajan hallinta Power BI Embeddedin analyysitoiminnoilla
@@ -102,9 +102,9 @@ Jos saat määritettyä nämä prosessit ja selvitettyä, miten ne käsitellää
 
 Power BI Embedded tukee usean alueen käyttöönottoa (esikatselutoiminto). [Multi-Geo](embedded-multi-geo.md) mahdollistaa sen, että Power BI Embeddedin resursseja otetaan käyttöön eri alueilla, niin että tietty sisältö voidaan määrittää sijaitsemaan tietyillä alueilla. Tätä ominaisuutta voidaan käyttää kaikissa malleissa, mutta se saattaa vaikuttaa hallittavan sisällön määrään sekä kustannuksiin. Tällä hetkellä Multi-Geo-toiminto on suunniteltu vastaamaan tietojen sijaintivaatimuksiin, joten se ei paranna suorituskykyä siirtämällä tietoja lähemmäs kuluttajia.
 
-### <a name="cost"></a>Kustannukset
+### <a name="cost"></a>Cost
 
-[Power BI Embeddediin](azure-pbie-what-is-power-bi-embedded.md) liittyy resurssipohjainen ostomalli, samoin kuin **Power BI Premiumiin**. Voit ostaa yhden tai useita kapasiteetteja, joihin liittyy kiinteä laskentateho ja muisti. Kapasiteetti on tärkein kustannustekijä **Power BI Embeddediä** käytettäessä. Kapasiteetin käyttäjien määrää ei ole rajoitettu. Ainoa rajoitus on kapasiteetin suorituskyky. Kullakin *pääkäyttäjällä* eli sellaisilla käyttäjillä, joiden on voitava käsitellä Power BI -portaalia, on oltava oma [Power BI Pro -käyttöoikeus](../../service-admin-licensing-organization.md).
+[Power BI Embeddediin](azure-pbie-what-is-power-bi-embedded.md) liittyy resurssipohjainen ostomalli, samoin kuin **Power BI Premiumiin**. Voit ostaa yhden tai useita kapasiteetteja, joihin liittyy kiinteä laskentateho ja muisti. Kapasiteetti on tärkein kustannustekijä **Power BI Embeddediä** käytettäessä. Kapasiteetin käyttäjien määrää ei ole rajoitettu. Ainoa rajoitus on kapasiteetin suorituskyky. Kullakin [pääkäyttäjällä](../../service-admin-licensing-organization.md) eli sellaisilla käyttäjillä, joiden on voitava käsitellä Power BI -portaalia, on oltava oma *Power BI Pro -käyttöoikeus*.
 
 Suosittelemme kapasiteetin oletetun kuormituksen testaamista ja mittaamista niin, että todellista ympäristöä ja käyttömäärää simuloidaan ja samalla suoritetaan kuormitustestaus. Kuormituksen ja suorituskyvyn voi mitata hyödyntämällä Azure-kapasiteetin eri mittareita tai [Premium-kapasiteetin mittarisovellusta](../../service-admin-premium-monitor-capacity.md).
 
@@ -161,7 +161,7 @@ Esimerkiksi työtilan luominen uudelle vuokraajalle on usein toistuva tehtävä,
 
 Multi-Geohon sisältyy kapasiteetin ostaminen halutuille alueille sekä työtilan määrittäminen kyseiselle kapasiteetille. Jos haluat tukea vuokraajia eri alueilla, vuokraajan työtila on määritettävä halutun alueen kapasiteettiin. Tämä on yksinkertainen tehtävä, jonka kustannukset eivät ole sen suurempia kuin kaikkien työtilojen pitäminen samassa kapasiteetissa. Jos joidenkin vuokraajien tietojen tulee kuitenkin sijaita useilla alueilla, kaikki työtilan artefaktit on monistettava kunkin alueen kapasiteettiin, mikä kasvattaa sekä kustannuksia että hallinnan monimutkaisuutta.
 
-### <a name="cost"></a>Kustannukset
+### <a name="cost"></a>Cost
 
 Power BI Embeddediä käyttävien sovelluskehittäjien tulee [ostaa Power BI Embedded -kapasiteettia tuotantoon siirtymistä varten](embed-sample-for-customers.md#move-to-production).  On tärkeää ymmärtää työtilaan perustuvan eristysmallin yleinen vaikutus sekä vaikutus kapasiteetteihin.
 
@@ -209,7 +209,7 @@ Toinen käyttöä vaikeuttava tekijä on tarve valvoa tarkasti muistin käyttö�
 
 Kaikki tiedot on tallennettu yhteen tietojoukkoon, joten on haastavaa vastata sellaisiin tietojen sijaintivaatimuksiin, joiden mukaan tietyt tiedot on sidottava tiettyihin sijainteihin. Tämä saattaa myös huomattavasti kasvattaa useiden alueiden käyttökustannuksia, koska kaikki tiedot replikoidaan ja tallennetaan kullekin alueelle. Jos vain rajoitettu määrä vuokraajia tarvitsee eri alueita, voit pitää vain kyseisten vuokraajien tiedot eri alueella ja käyttää yllä kuvattua työtilaan perustuvaa eristysmallia.
 
-### <a name="cost"></a>Kustannukset
+### <a name="cost"></a>Cost
 
 Rivitason suojaukseen perustuvassa eristyksessä kustannuksiin vaikuttaa ensisijaisesti tietojoukon vaatima muistimäärä. Tarvitaan riittävästi kapasiteettia tietojoukon tallentamiseen, minkä lisäksi tarvitaan jonkin verran muistipuskuria muistitarpeen huippuja varten. Tilannetta voi helpottaa esimerkiksi tallentamalla tiedot SQL Server -tietokantaan tai SQL Server Analysis Services -kuutioon ja noutamalla tiedot tietolähteestä reaaliaikaisesti DirectQuery- tai Live-yhteyden avulla. Tämä lähestymistapa kasvattaa tietolähteiden kustannuksia mutta vähentää muistiin liittyvää suuren kapasiteetin tarvetta, joten se vähentää Power BI -kapasiteetin kustannuksia.
 
@@ -229,7 +229,7 @@ Kun loppukäyttäjät muokkaavat tai luovat raportteja, he voivat käyttää tuo
 | Skaalattavuus  | Keskitasoinen. Tietojen jakaminen useisiin tietojoukkoihin mahdollistaa optimoinnin.  | Heikoin. Tietojoukon rajoitusten rajoittama.  |  |  |
 | Multi-Geon tarpeita  | Sopii hyvin, jos useimmat vuokraajat ovat vain yhdellä alueella.  | Ei suositella. Koko tietojoukko on pidettävä tallennettuna useisiin alueisiin.  |  |  |
 | Automaatio ja toiminnallinen monimutkaisuus  | Hyvä automaatio yksittäiselle vuokraajalle.   Useiden artefaktien hallinta skaalauksessa on monimutkaista.  | Power BI -artefaktien hallinta on helppoa, mutta rivitason suojauksen hallinta mittakaavassa on monimutkaista.  |  |  |
-| Kustannukset  | Pienet tai keskitasoiset. Käyttöä voi optimoida vuokraajakohtaisten kustannusten pienentämiseksi.  Kustannukset saattavat kasvaa, jos päivityksiä on tehtävä usein.  | Keskitasoiset tai suuret tuontitilaa käytettäessä.  Pienet tai keskitasoiset käytettäessä DirectQuery-tilaa.  |  |  |
+| Cost  | Pienet tai keskitasoiset. Käyttöä voi optimoida vuokraajakohtaisten kustannusten pienentämiseksi.  Kustannukset saattavat kasvaa, jos päivityksiä on tehtävä usein.  | Keskitasoiset tai suuret tuontitilaa käytettäessä.  Pienet tai keskitasoiset käytettäessä DirectQuery-tilaa.  |  |  |
 | Sisällön mukauttaminen ja tuottaminen  | Hyvä vastaavuus. Suuressa mittakaavassa saattaa ilmetä rajoituksia.  | Sisällön luonnissa vain upotetut iFrame-kehykset.  |  |  |
 
 ## <a name="deployment-considerations-and-limitations"></a>Käyttöönotossa huomioitavat asiat ja rajoitukset

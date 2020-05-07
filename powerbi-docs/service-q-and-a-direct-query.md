@@ -10,10 +10,10 @@ ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: cf1d67318fc86b1044e38e6f4f5f56c9473c39a1
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74265472"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Q&A:n ottaminen käyttöön reaaliaikaisia yhteyksiä varten Power BI:ssä
@@ -60,7 +60,7 @@ Ominaisuudella on joitakin rajoituksia:
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-- [On-premises data gateway (Paikallinen tietoyhdyskäytävä)](service-gateway-onprem.md)  
+- [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md)  
 - [Tietolähteen hallinta – Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 - [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)  
 - [Yleiskatsaus Power BI Q&A:sta](consumer/end-user-q-and-a.md)  

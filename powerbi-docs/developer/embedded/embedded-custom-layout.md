@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: reference
 ms.date: 12/19/2017
 ms.openlocfilehash: e114c208093c9f3401c43e9ea44502e65d6d84fd
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79493200"
 ---
 # <a name="custom-layouts"></a>Mukautetut asettelut
@@ -61,8 +61,8 @@ enum DisplayOption {
 }
 ```
 
-- `pageSize`: Määritä piirtoalustan alueen koko (eli raportin valkoinen alue) sivun koon avulla.
-- `displayOptions`: Mahdollisia arvoja ovat: FitToWidth, FitToPage tai ActualSize. Objekti määrittää sen, miten piirtoalusta skaalataan, jotta se sopii iframe-kehykseen.
+- `pageSize`: Hallitse piirtoalustan alueen kokoa (eli raportin valkoista aluetta) sivun koon avulla.
+- `displayOptions`: Mahdollisia arvoja ovat FitToWidth, FitToPage tai ActualSize. Objekti määrittää sen, miten piirtoalusta skaalataan, jotta se sopii iframe-kehykseen.
 - `pagesLayout`: Määrittää jokaisen visualisoinnin asettelun. lisätietoja on kohdassa PagesLayout.
 
 ## <a name="pages-layout"></a>Sivujen asettelu
@@ -170,7 +170,7 @@ var embedContainer = document.getElementById('embedContainer');
 var report = powerbi.embed(embedContainer, embedConfiguration);
 ```
 
-## <a name="see-also"></a>Muuta aiheeseen liittyvää
+## <a name="see-also"></a>Katso myös
 
 [Power BI:n koontinäyttöjen, raporttien ja ruutujen upottaminen](embed-sample-for-customers.md)   
 [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
