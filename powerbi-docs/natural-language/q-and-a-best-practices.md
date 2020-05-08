@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: mohaali
-ms.openlocfilehash: d6b07025f2aefe334fbbd65659b527c2bcad1efd
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.openlocfilehash: 02faed03e84c9d3a9f9ebd536116ffa0287dba4e
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609955"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841913"
 ---
 # <a name="best-practices-to-optimize-qa-in-power-bi"></a>Q&A:n optimoimisen parhaat käytännöt Power BI:ssä
 Yleisien lauseiden ja luonnollisen kielen käyttäminen tiedoista esitettävissä kysymyksissä on tehokasta. Vielä tehokkaampaa on, kun tiedot vastaavat, minkä Power BI:n Q&A-toiminto tekee.
@@ -194,6 +194,8 @@ Yksi poikkeus ”normalisointi on parempi” -sääntöön on, kun taulukosta to
 Tämä vaihe koskee erityisesti Q&A:ta (ei Power BI -raportteja yleensä). Käyttäjillä on usein useita termejä, joilla he viittaavat samaan asiaan, kuten kokonaismyynti, nettomyynti ja nettomyynti yhteensä. Voit lisätä nämä synonyymit taulukoihin ja sarakkeisiin Power BI -mallissa. 
 
 Tämä vaihe voi olla tärkeä. Silloinkin, kun taulukon ja sarakkeiden nimet ovat yksinkertaisia, Q&A:n käyttäjät esittävät kysymyksiä käyttämällä sanastoa, joka heille ensimmäisenä tulee mieleen. He eivät valitse esimääritetystä sarakeluettelosta. Mitä enemmän merkitseviä synonyymeja lisäät, sitä paremman kokemuksen käyttäjät saavat raportista. Jos haluat lisätä synonyymeja, siirry Power BI Desktopissa mallinäkymään, valitse Mallinnus-välilehti ja valitse kenttä tai taulukko. Ominaisuudet-ruudussa näkyy **Synonyymit**-ruutu, jossa voit lisätä synonyymeja.
+
+
 
 ![Q&A:n Ominaisuudet-ruudun synonyymit](media/qna-modelling-pane-synonyms.png)
 

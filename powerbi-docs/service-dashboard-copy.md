@@ -11,14 +11,14 @@ ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: ab629c15f1e1e998c3870b95993cdf7348cb15ff
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73872839"
 ---
 # <a name="create-a-copy-of-a-dashboard-in-power-bi-service"></a>Koontinäytön kopion luominen Power BI -palvelussa
-![koontinäyttö](media/service-dashboard-copy/power-bi-dashboard.png)
+![koontinäytössä](media/service-dashboard-copy/power-bi-dashboard.png)
 
  Koontinäytön kopioimiselle on monia eri syitä. Voit tehdä muutoksia ja testata sen toimintaa alkuperäiseen verrattuna tai luoda hieman erilaisia versioita, jotka voit jakaa työtovereiden, alueen tai työryhmän perusteella. Työtoverisi saattaa tykätä koontinäyttösi mallista ja haluaa käyttää sitä raporteissaan omille esimiehilleen. Yksi syy voisi olla, että sinulla on uusi tietokanta, jossa on sama tietorakenne ja tietotyypit ja haluat käyttää jo luomaasi koontinäyttöä uudelleen. Tämäkin pystytään tekemään, mutta se vaatii hieman lisätöitä Power BI Desktopissa. 
 
@@ -49,5 +49,5 @@ Koontinäytön kopioimiseksi sinun pitää olla kyseisen koontinäytön *luoja*.
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Vinkkejä laadukkaiden koontinäyttöjen suunnitteluun](service-dashboards-design-tips.md) 
 
-Ilmenikö muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

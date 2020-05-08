@@ -2,7 +2,7 @@
   href: index.yml
   expanded: true
   items:
-    - name: Yleiskatsaus
+    - name: Yhteenveto
       expanded: true
       items:
         - name: 'Mitä on Power BI:n hallinta?'
@@ -147,5 +147,3 @@
           href: ../service-admin-alternate-email-address-for-power-bi.md
         - name: 'Samalla tilillä kirjautuminen Power BI:hin ja Azureen'
           href: ../service-admin-how-to-use-the-same-account-as-azure.md
-        - name: Office 365 – tunnetut ongelmat
-          href: ../service-admin-office-365-dedicated-known-issues.md

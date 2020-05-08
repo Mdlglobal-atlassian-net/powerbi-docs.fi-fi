@@ -10,14 +10,14 @@ ms.date: 03/05/2020
 ms.author: davidi
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 299329cad78d831a3b77e55107e94a234d6f64b1
-ms.sourcegitcommit: 22991861c2b9454b170222591f64266335b9fcff
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79133202"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Power BI Desktopin kirjautumisongelmien vianmääritys
-Voit toisinaan kohdata virheitä, kun yrität kirjautua sisään **Power BI Desktopiin**. Sisäänkirjautumisongelmiin on kaksi yleistä syytä: **Välityspalvelimen todennusvirheet** ja **URL-osoitteiden virheet uudelleenohjattaessa muuhun kuin HTTPS-protokollaan**. 
+Voit toisinaan kohdata virheitä, kun yrität kirjautua sisään **Power BI Desktopiin**. Kirjautumisongelmiin on kaksi yleistä syitä: **välityspalvelimen todennusvirheet** ja **ei-HTTPS-protokollan URL-osoitteen uudelleenohjausvirheet**. 
 
 Ensimmäinen vaihe voit selvittää, mistä kirjautumisongelma johtuu. Ota yhteyttä järjestelmänvalvojaan ja anna diagnostiikkatiedot, jotta ongelman syy voidaan määrittää. Jäljittämällä kirjautumisongelmiin liittyvien ongelmien syyt järjestelmänvalvojat voivat määrittää, mitkä seuraavista virheistä koskevat sinua. 
 
@@ -55,7 +55,7 @@ Nykyiset **Power BI Desktopin** versiot käyttävät Active Directory Authentica
 
 Seuraavat *Power BI Desktop* -jäljitystiedostojen poikkeukset koskevat tätä virhettä:
 
-* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException: URL-uudelleenohjausta muuhun kuin HTTPS-protokollaan ei tueta verkkonäkymässä*
+* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException: URL-uudelleenohjausta ei-HTTPS-protokollaan ei tueta verkkonäkymässä* 
 * *ErrorCode: non_https_redirect_failed*
 
 Jos saat *ErrorCode: non_https_redirect_failed* -virheilmoituksen, yksi tai useampi uudelleenohjaussivu tai uudelleenohjausketjun palveluntarjoaja ei ole suojattu HTTPS-päätepiste tai että yhden tai useamman uudelleenohjauksen varmenteen myöntäjä ei ole laitteen luotettujen pääkansioiden joukossa. Kaikkien sisäänkirjautumisen uudelleenohjausketjun palveluntarjoajien on käytettävä HTTPS-URL-osoitetta. Ota yhteyttä järjestelmänvalvojaan ja pyydä, että todennussivustoissa käytetään suojattuja URL-osoitteita. 

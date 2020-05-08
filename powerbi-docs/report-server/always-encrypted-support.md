@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/22/2020
 ms.author: maggies
 ms.openlocfilehash: f8d711bba8dc7570f2d470554fd1d971639bbb7b
-ms.sourcegitcommit: a1409030a1616027b138128695b80f6843258168
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/24/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76710202"
 ---
 # <a name="always-encrypted-in-power-bi-report-server"></a>Always Encrypted -toiminto Power BI -raporttipalvelimessa
@@ -29,9 +29,9 @@ Tällä hetkellä Power BI -raporttipalvelin ei rajoita raporttien Always Encryp
 
 |Tallennus  |Tuetaan  |
 |---------|---------|
-|Windows-varmennesäilö | Kyllä |
-|Azure Key Vault | Ei |
-| Cryptography Next Generation (CNG) | Ei |
+|Windows-varmennesäilö | Yes |
+|Azure Key Vault | No |
+| Cryptography Next Generation (CNG) | No |
 
 ### <a name="certificate-storage-and-access"></a>Varmenteen tallennus ja käyttö
 
@@ -46,10 +46,10 @@ Power BI -raporttipalvelimen sarakkeen salausstrategia voi olla *deterministinen
 
 |Käytä  |Deterministinen  |Satunnainen  |
 |---------|---------|---------|
-|Voidaan lukea sellaisenaan kyselyn tuloksissa, esimerkiksi SELECT-lausekkeet. | Kyllä  | Kyllä  |
-|Voidaan käyttää Ryhmittelyperuste-entiteettinä kyselyssä. | Kyllä | Ei |
-|Voidaan käyttää koostekenttänä, lukuun ottamatta COUNT- ja DISTINCT-lausekkeille. | Ei, lukuun ottamatta COUNT- ja DISTINCT-lausekkeita | Ei |
-|Voidaan käyttää raporttiparametrina | Kyllä | Ei |
+|Voidaan lukea sellaisenaan kyselyn tuloksissa, esimerkiksi SELECT-lausekkeet. | Yes  | Yes  |
+|Voidaan käyttää Ryhmittelyperuste-entiteettinä kyselyssä. | Yes | No |
+|Voidaan käyttää koostekenttänä, lukuun ottamatta COUNT- ja DISTINCT-lausekkeille. | Ei, lukuun ottamatta COUNT- ja DISTINCT-lausekkeita | No |
+|Voidaan käyttää raporttiparametrina | Yes | No |
 
 Lue lisää [deterministisestä salauksesta verrattuna satunnaiseen salaukseen](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine#selecting--deterministic-or-randomized-encryption).
 
@@ -71,14 +71,14 @@ Parametrin käyttö koskee vain determinististä salausta.
 
 | SQL-tietotyyppi | Tukee lukukenttää | Tukee käyttöä Ryhmittelyperuste-elementtinä | Tuetut koosteet (COUNT, DISTINCT, MAX, MIN, SUM jne.) | Tukee suodatusta yhtäläisyyden kautta parametrien avulla | Huomautukset |
 | --- | --- | --- | --- | --- | --- |
-| int | Kyllä | Kyllä | COUNT, DISTINCT | Kyllä, kokonaislukuna |   |
-| liukuluku | Kyllä | Kyllä | COUNT, DISTINCT | Kyllä, liukulukuna |   |
-| nvarchar | Kyllä | Kyllä | COUNT, DISTINCT | Kyllä, tekstinä | Deterministisen salauksen on käytettävä sarakelajittelua binary2-lajittelujärjestyksellä merkkisarakkeille. Katso lisätietoja SQL Serverin artikkelista [Always Encrypted -toiminto](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine#selecting--deterministic-or-randomized-encryption).  |
-| varchar | Kyllä | Kyllä | COUNT, DISTINCT | Ei |   |
-| desimaali | Kyllä | Kyllä | COUNT, DISTINCT | Ei |   |
-| numeerinen | Kyllä | Kyllä | COUNT, DISTINCT | Ei |   |
-| datetime | Kyllä | Kyllä | COUNT, DISTINCT | Ei |   |
-| datetime2 | Kyllä | Kyllä | COUNT, DISTINCT | Kyllä, päivämääränä ja aikana | Tuettu, jos sarakkeella ei ole millisekunnin tarkkuutta (toisin sanoen ei datetime2 (0)) |
+| int | Yes | Yes | COUNT, DISTINCT | Kyllä, kokonaislukuna |   |
+| liukuluku | Yes | Yes | COUNT, DISTINCT | Kyllä, liukulukuna |   |
+| nvarchar | Yes | Yes | COUNT, DISTINCT | Kyllä, tekstinä | Deterministisen salauksen on käytettävä sarakelajittelua binary2-lajittelujärjestyksellä merkkisarakkeille. Katso lisätietoja SQL Serverin artikkelista [Always Encrypted -toiminto](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine#selecting--deterministic-or-randomized-encryption).  |
+| varchar | Yes | Yes | COUNT, DISTINCT | No |   |
+| desimaali | Yes | Yes | COUNT, DISTINCT | No |   |
+| numeerinen | Yes | Yes | COUNT, DISTINCT | No |   |
+| datetime | Yes | Yes | COUNT, DISTINCT | No |   |
+| datetime2 | Yes | Yes | COUNT, DISTINCT | Kyllä, päivämääränä ja aikana | Tuettu, jos sarakkeella ei ole millisekunnin tarkkuutta (toisin sanoen ei datetime2 (0)) |
 
 ## <a name="aggregation-alternatives"></a>Koostevaihtoehdot
 

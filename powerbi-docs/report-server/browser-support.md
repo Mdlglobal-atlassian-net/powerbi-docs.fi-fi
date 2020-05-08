@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
 ms.openlocfilehash: 724bd7a9a11c42520c520019f1c4a67415aa5487
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874299"
 ---
 # <a name="browser-support-for-power-bi-report-server"></a>Power BI -raporttipalvelimen selaintuki
@@ -75,7 +75,7 @@ Selaimet tukevat tiettyjä todennusmalleja, jotka raporttipalvelin käsittelee v
 | **Microsoft Internet Explorer** |Negotiate, Kerberos, NTLM, perustodennus |Negotiate |On. Oletusarvoiset todennusasetukset toimivat Internet Explorerin kanssa. |
 | **Google Chrome**(+) |Negotiate, NTLM, perustodennus |Negotiate |On. Oletusarvoiset todennusasetukset toimivat Chromen kanssa. |
 | **Mozilla Firefox**(+) |NTLM, perustodennus |NTLM |On. Oletusarvoiset todennusasetukset toimivat Firefoxin kanssa. |
-| **Apple Safari**(+) |NTLM, perustodennus |Perustodennus |On. Oletusarvoiset todennusasetukset toimivat Safarin kanssa. |
+| **Apple Safari**(+) |NTLM, perustodennus |Perus |On. Oletusarvoiset todennusasetukset toimivat Safarin kanssa. |
 
  **(+)**  Viimeisin suurelle yleisölle julkaistu versio
 
@@ -116,5 +116,5 @@ Käytä selainta, jossa on käytössä komentosarjojen tuki. Jos selain ei voi s
 [Raportin muodostimen lataaminen](https://www.microsoft.com/download/details.aspx?id=53613)  
 [SQL Server Data Tools (SSDT) -työkalujen lataaminen](https://go.microsoft.com/fwlink/?LinkID=616714)
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

@@ -9,16 +9,16 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: e856c3afca0578c906a54f636dd58cd9208607a8
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 31ce44059ec2abd5a2615267311ba651993342ba
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207984"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841890"
 ---
 # <a name="power-bi-security"></a>Power BI:n suojaus
 
-Saat yksityiskohtaisen kuvauksen Power BI:n suojauksesta [lukemalla Power BI:n suojauksen teknisen raportin](whitepaper-powerbi-security.md).
+Saat yksityiskohtaisen kuvauksen Power BI:n suojauksesta [lukemalla Power BI:n suojauksen teknisen raportin](guidance/whitepaper-powerbi-security.md).
 
 Power BI -palvelu perustuu **Azureen**, joka on Microsoftin pilvitietojenkäsittelyinfrastruktuuri ja -alusta. Power BI -palveluarkkitehtuuri perustuu kahteen klusteriin – Web Front End (**WFE**) -klusteriin ja **Back End** -klusteriin. WFE-klusteri vastaa Power BI -palvelun ensiyhteydenotosta ja todentamisesta. Todennuksen jälkeen Back End -klusteri käsittelee kaiken käyttäjien vuorovaikutuksen. Power BI käyttää Azure Active Directorya (AAD) käyttäjätietojen tallentamiseen ja hallitsemiseen. Se hallitsee tietoja ja metatietoja Azure BLOB- ja Azure SQL -tietokantojen avulla (vastaavassa järjestyksessä).
 

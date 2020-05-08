@@ -10,10 +10,10 @@ ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: cf08f984e98b1497b04d1e19bd870ebcdda010b3
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73877218"
 ---
 # <a name="developer-resources-for-power-bi-dataflows"></a>Kehittäjien resurssit Power BI -tietovoille
@@ -26,7 +26,7 @@ Tietovoita voidaan käyttää monella tapaa ilman koodia, luomalla tai yhdistäm
 Seuraavat kehittäjien resurssit ovat käytettävissä Power BI -tietovoiden kanssa:
 
 
-| Tietovuoresurssi | Kuvaus |
+| Tietovuoresurssi | Description |
 | --- | --- |
 | [Power BI -tietovuon REST-ohjelmointirajapinnan viite](https://go.microsoft.com/fwlink/?linkid=2047629)    | Täydellinen opas tietovuon REST-ohjelmointirajapintaan.|
 
@@ -35,7 +35,7 @@ Seuraavat kehittäjien resurssit ovat käytettävissä Power BI -tietovoiden kan
 
 Tässä artikkelissa annettiin tietoja tietovoihin liittyvistä kehittäjien resursseista. Jos haluat lisätietoja tietovoista, seuraavista artikkeleista voi olla hyötyä:
 
-* [Omatoiminen tietojen valmistelu tietovoiden avulla](service-dataflows-overview.md)
+* [Omatoiminen tietojen valmisteleminen tietovoiden avulla](service-dataflows-overview.md)
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
 * [Laskettujen entiteettien käyttäminen Power BI Premiumissa](service-dataflows-computed-entities-premium.md)
 * [Tietovoiden käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)

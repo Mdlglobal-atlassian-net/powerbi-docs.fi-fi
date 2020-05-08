@@ -10,15 +10,15 @@ ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 817ce82b94817530854d85c7dbcca17a313fc438
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73874450"
 ---
 # <a name="create-a-visual-with-power-bi-qa"></a>Visualisoinnin luominen Power BI:n Q&A:n avulla
 
-Joskus nopein tapa saada vastauksia tiedoista on esittää kysymyksiä luonnollisella kielellä.  Tässä artikkelissa tarkastelemme kahta eri tapaa luoda sama visualisointi: ensin esittämällä kysymys Q&A:ssa ja sitten luomalla se raportissa. Käytämme Power BI -palvelua visualisoinnin luomiseen raportissa, mutta prosessi on lähes samanlainen Power BI Desktopissa.
+Joskus nopein tapa saada vastauksia tiedoista on kysyä kysymyksiä luonnollisella kielellä.  Tässä artikkelissa tarkastelemme kahta eri tapaa luoda sama visualisointi: ensin esittämällä kysymys Q&A:ssa ja sitten luomalla se raportissa. Käytämme Power BI -palvelua visualisoinnin luomiseen raportissa, mutta prosessi on lähes samanlainen Power BI Desktopissa.
 
 ![Power BI:n täytetty kaavio](media/power-bi-visualization-introduction-to-q-and-a/power-bi-qna-create-visual.png)
 
