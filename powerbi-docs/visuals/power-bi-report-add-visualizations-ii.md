@@ -10,10 +10,10 @@ ms.date: 10/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 132c795724b6f3744e0648ac1f3229c5e6538a97
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75758418"
 ---
 # <a name="add-visuals-to-a-power-bi-report-part-2"></a>Visualisointien lisääminen Power BI -raporttiin (osa 2)
@@ -36,7 +36,7 @@ Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedost
 
 1. Avaa **Jälleenmyyntianalyysimallin PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
+1. Select ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
 
 ## <a name="add-visualizations-to-the-report"></a>Visualisointien lisääminen raporttiin
 
@@ -70,6 +70,6 @@ Luo visualisointi vetämällä kenttä **Kentät**-ruudussa. Luotavan visualisoi
    ![raporttipohja, jossa on nuoli Chain in fields -luettelosta Chain in Legend -säilöön](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* Lisätietoja [Power BI -raporttien visualisoinneista](power-bi-report-visualizations.md).  
+* Lue lisätietoja [Power BI -raporttien visualisoinneista](power-bi-report-visualizations.md).  
 * Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

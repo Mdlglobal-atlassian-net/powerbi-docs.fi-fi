@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 281cb03e8d22688b23970c66b0fbc5a5bec1e15d
-ms.sourcegitcommit: 20f15ee7a11162127e506b86d21e2fff821a4aee
+ms.openlocfilehash: f689ba79f9cce7d6ee815e0712491e7d00647fe8
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82584757"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841660"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Tietotyypit Power BI Desktopissa
 Tässä artikkelissa kuvataan tietotyypit, joita Power BI Desktop ja Data Analysis Expressions (DAX) tukevat. 
@@ -79,10 +79,11 @@ Power BI Desktop tukee viittä päivämäärä/aika-tietotyyppiä kyselynäkymä
 Binaaritietotyyppiä voidaan käyttää edustamaan muita binaarimuotoisia tietoja. Kyselyeditorin sisällä voit käyttää sitä binaaritiedostojen lataamisessa, jos muunnat sen muihin tietotyyppeihin ennen sen lataamista Power BI -malliin. Binaarisarakkeita ei tueta Power BI -tietomallissa. Se on Tietonäkymä- ja Raporttinäkymä-valikoissa yhteensopivuussyistä, mutta jos yrität ladata binaarisarakkeita Power BI -malliin, saattaa ilmetä virheitä.
 
 
+
+
 > [!NOTE]
 >  Jos binaarisarake on kyselyn vaiheiden tulosteessa, tietojen päivityksen yrittäminen yhdyskäytävän kautta saattaa aiheuttaa virheitä. On suositeltavaa, että poistat kaikki binaarisarakkeet kyselyiden viimeisenä vaiheena.    
 > 
->
 
 ### <a name="table-data-type"></a>Taulukko-tietotyyppi
 DAX käyttää taulukko-tietotyyppiä monissa funktioissa, kuten koostamisissa ja aikatietojen laskutoimituksissa. Jotkin funktiot edellyttävät viittausta taulukkoon. Muut funktiot palauttavat taulukon, jota voidaan käyttää syötteenä muihin funktioihin. Joissakin funktioissa, jotka edellyttävät taulukkoa syötteeksi, voit määrittää lausekkeen, joka antaa taulukkoon arvon. Osa funktioista edellyttää viittausta perustaulukkoon. Lisätietoja tiettyjen funktioiden vaatimuksista saat [DAX Function Reference](https://msdn.microsoft.com/library/ee634396.aspx) -artikkelista.

@@ -10,18 +10,18 @@ ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 86307a871503dd42e565099b810cb82efa109417
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761222"
 ---
 # <a name="connect-to-sap-hana-data-sources-by-using-directquery-in-power-bi"></a>Yhteyden muodostaminen SAP HANA -tietolähteisiin DirectQueryn avulla Power BI:ssä
 Voit muodostaa yhteyden **SAP HANA** -tietolähteisiin suoraan **DirectQueryn** avulla. Voit muodostaa yhteyden SAP HANA -tietolähteisiin kahdella tavalla:
 
-* **Käsittele SAP HANAa monidimensioisena lähteenä (oletus):**  Tässä tapauksessa Power BI toimii samankaltaisesti kuin muihin monidimensioisiin tietolähteisiin yhdistettäessä (esimerkiksi SAP Business Warehouse tai Analysis Services). Kun muodostat yhteyden SAP HANA -tietolähteeseen tällä asetuksella, valittuna on yksi analyysi- tai laskentanäkymä ja kaikki sen mittarit, hierarkiat ja määritteet ovat käytettävissä kenttäluettelossa. Kun visualisointeja luodaan, koostetiedot haetaan aina SAP HANA -tietolähteestä. Tämä on suositeltu tapa. Se on myös oletustapa uusille DirectQuery-raporteille, jotka käyttävät SAP HANA -tietolähteitä.
+* **Käsittele SAP HANAa monidimensioisena lähteenä (oletus):** Tässä tapauksessa Power BI toimii samankaltaisesti kuin muihin monidimensioisiin tietolähteisiin yhdistettäessä (esimerkiksi SAP Business Warehouse tai Analysis Services). Kun muodostat yhteyden SAP HANA -tietolähteeseen tällä asetuksella, valittuna on yksi analyysi- tai laskentanäkymä ja kaikki sen mittarit, hierarkiat ja määritteet ovat käytettävissä kenttäluettelossa. Kun visualisointeja luodaan, koostetiedot haetaan aina SAP HANA -tietolähteestä. Tämä on suositeltu tapa. Se on myös oletustapa uusille DirectQuery-raporteille, jotka käyttävät SAP HANA -tietolähteitä.
 
-* **Käsittele SAP HANAa suhteellisena lähteenä:** Tässä tapauksessa Power BI käsittelee SAP HANA -tietolähdettä suhteellisena lähteenä. Tämä on joustavampi tapa. Tällä tavalla täytyy kuitenkin olla tarkkana, jotta mittarit koostetaan odotetusti ja jotta suorituskykyongelmat voidaan välttää.
+* **Käsittele HANAa suhteellisena lähteenä**: Tässä tapauksessa Power BI käsittelee SAP HANA -tietolähdettä suhteellisena lähteenä. Tämä on joustavampi tapa. Tällä tavalla täytyy kuitenkin olla tarkkana, jotta mittarit koostetaan odotetusti ja jotta suorituskykyongelmat voidaan välttää.
 
 Yhdistämistapa määritetään yleisellä työkaluasetuksella, jonka voit määrittää valitsemalla **Tiedosto > Asetukset ja vaihtoehdot** > **Asetukset > DirectQuery** > **Käsittele SAP HANAa suhteellisena lähteenä**, kuten seuraavassa kuvassa näytetään. 
 
@@ -63,17 +63,17 @@ Sallitut mallinnustoiminnot ovat rajoitetumpia kuin yleensä DirectQuerya käyte
 
 Kun muodostat yhteyden SAP HANA -tietolähteeseen DirectQuerylla (siten, että tietolähdettä käsitellään monidimensioisena tietolähteenä), ensisijaiset mallinnuksen lisärajoitukset ovat seuraavat: 
 
-* **Laskettuja sarakkeita ei tueta:** Laskettujen sarakkeiden luominen ei ole mahdollista. Tämä tarkoittaa sitä, että myöskään ryhmittely ja klusterointi eivät ole käytettävissä, sillä ne luovat laskettuja sarakkeita.
-* **Mittarien lisärajoitukset:** Mittareissa käytettäville DAX-lausekkeille on lisärajoitukset SAP HANAn tarjoaman tukitason vuoksi.
-* **Ei tukea suhteiden määrittämiselle:** Raportissa voi tehdä kyselyitä vain yhdestä näkymästä, joten suhteiden määrittämistä ei tueta.
-* **Ei tietonäkymää:** **Tietonäkymässä** näytetään yleensä taulukoiden tarkemmat tiedot. SAP HANAn kaltaisten OLAP-lähteiden luonteesta johtuen tämä näkymä ei ole käytettävissä SAP HANA -tietoja käytettäessä.
-* **Sarakkeiden ja mittarien tiedot ovat kiinteät:** Kenttäluettelossa näkyvä sarakkeiden ja mittarien luettelo on kiinteä taustalla olevan lähteen mukaisesti, joten sitä ei voi muokata. Et voi esimerkiksi poistaa saraketta tai vaihtaa sen tietotyyppiä (voit kuitenkin vaihtaa sen nimeä).
-* **Muut DAX-rajoitukset:** Mittarimääritelmissä käytettävälle DAX:lle on lisärajoituksia lähteen rajoitusten johdosta. Et esimerkiksi voi käyttää koostefunktiota taulukossa.
+* **Ei tukea lasketuille sarakkeille**: Laskettujen sarakkeiden luominen ei ole mahdollista. Tämä tarkoittaa sitä, että myöskään ryhmittely ja klusterointi eivät ole käytettävissä, sillä ne luovat laskettuja sarakkeita.
+* **Mittarien lisärajoitukset**: mittareissa käytettäville DAX-lausekkeille on lisärajoitukset SAP HANAn tarjoaman tukitason johdosta.
+* **Ei tukea suhteiden määrittämiselle:** raportissa voi tehdä kyselyitä vain yhdestä näkymästä, joten suhteiden määrittämistä ei tueta.
+* **Ei tietonäkymää**: **Tietonäkymässä** näytetään yleensä taulukoiden tarkemmat tiedot. SAP HANAn kaltaisten OLAP-lähteiden luonteesta johtuen tämä näkymä ei ole käytettävissä SAP HANA -tietoja käytettäessä.
+* **Sarakkeiden ja mittarien tiedot ovat kiinteät**: Kenttäluettelossa näkyvä sarakkeiden ja mittarien luettelo on kiinteä taustalla olevan lähteen mukaisesti, joten sitä ei voi muokata. Et voi esimerkiksi poistaa saraketta tai vaihtaa sen tietotyyppiä (voit kuitenkin vaihtaa sen nimeä).
+* **Muut rajoitukset DAX:ssä**: Mittarimääritelmissä käytettävälle DAX:lle on lisärajoituksia lähteen rajoitusten johdosta. Et esimerkiksi voi käyttää koostefunktiota taulukossa.
 
 ### <a name="additional-visualization-restrictions"></a>Visualisointien lisärajoitukset
 
 Visualisoinneilla on rajoituksia, kun muodostat yhteyden SAP HANA -tietolähteeseen DirectQuerylla (siten, että tietolähdettä käsitellään monidimensioisena tietolähteenä): 
-* **Ei sarakkeiden koostamista:** Et voi vaihtaa visualisoinnin sarakkeen koostamista. Sen asetus on aina *Älä tee yhteenvetoa*.
+* **Ei sarakkeiden koostamista**: Et voi vaihtaa visualisoinnin sarakkeen koostamista. Sen asetus on aina *Älä tee yhteenvetoa*.
 
 ## <a name="treat-sap-hana-as-a-relational-source"></a>Käsittele SAP HANAa suhteellisena lähteenä 
 
@@ -145,8 +145,8 @@ Alla luetellaan kaikki tunnetut ongelmat joita esiintyy, kun muodostat yhteyden 
 
 Saat lisätietoja DirectQuerystä seuraavista resursseista:
 
-* [DirectQuery Power BI:ssä](desktop-directquery-about.md)
+* [DirectQueryn käyttö Power BI:ssä](desktop-directquery-about.md)
 * [DirectQueryn tukemat tietolähteet](desktop-directquery-data-sources.md)
 * [DirectQuery ja SAP BW](desktop-directquery-sap-bw.md)
-* [On-premises data gateway (Paikallinen tietoyhdyskäytävä)](service-gateway-onprem.md)
+* [Paikallinen tietoyhdyskäytävä](service-gateway-onprem.md)
 

@@ -11,10 +11,10 @@ ms.date: 01/21/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 751a53e2bfe0c9743a71cc41aa349afa23fd013a
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76539124"
 ---
 # <a name="connect-to-data-sources-in-power-bi-desktop"></a>Yhteyden muodostaminen tietolähteisiin Power BI Desktopissa
@@ -49,7 +49,7 @@ Valitse **Muunna tiedot**, jos haluat ladata taulukon ja käynnistää Power Que
 
 ![Power Query -editori Kyselyasetukset näkyvissä](media/desktop-connect-to-data/designer_gsg_editquery.png)
 
-Nämä pisteet ovat numeroiden sijaan tekstiä, vaikka niiden pitää olla lukuja meidän tarkoituksessamme. Se onnistuu helposti. Napsauta vain sarakeotsikkoa hiiren kakkospainikkeella ja valitse **Muuta tyyppi** > **Kokonaisluku**, niin saat ne vaihdettua. Valitse useita sarakkeita, valitse ensimmäinen sarake, paina vaihtonäppäin pohjaan, valitse vierekkäisiä sarakkeita ja vaihda sitten kaikki valitut sarakkeet napsauttamalla hiiren kakkospainikkeella jotain valittua sarakeotsikkoa. Paina CTRL, kun valitset sarakkeita, jotka eivät ole vierekkäin.
+Nämä pisteet ovat numeroiden sijaan tekstiä, vaikka niiden pitää olla lukuja meidän tarkoituksessamme. Ei huolta. Napsauta vain sarakeotsikkoa hiiren kakkospainikkeella ja valitse **Muuta tyyppi** > **Kokonaisluku**, niin saat ne vaihdettua. Valitse useita sarakkeita, valitse ensimmäinen sarake, paina vaihtonäppäin pohjaan, valitse vierekkäisiä sarakkeita ja vaihda sitten kaikki valitut sarakkeet napsauttamalla hiiren kakkospainikkeella jotain valittua sarakeotsikkoa. Paina CTRL, kun valitset sarakkeita, jotka eivät ole vierekkäin.
 
 ![Tietotyypin muuttaminen kokonaisluvuksi](media/desktop-connect-to-data/designer_gsg_changedatatype.png)
 
@@ -78,5 +78,5 @@ Voit tehdä kaikenlaista Power BI Desktopilla. Saat lisätietoja sen toiminnoist
 
 Haluatko antaa palautetta? Hienoa! Käytä **Lähetä idea** -valikon kohtaa Power BI Desktopissa tai katso [yhteisön palautetta](https://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). Odotamme kuulevamme sinusta!
 
-![Lähetä idea](media/desktop-connect-to-data/sendfeedback.png)
+![Idean lähettäminen](media/desktop-connect-to-data/sendfeedback.png)
 

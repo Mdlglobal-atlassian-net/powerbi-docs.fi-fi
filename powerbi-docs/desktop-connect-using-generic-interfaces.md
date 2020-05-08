@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: eaf2e7fed056653f2ee44e25b493e6b5e170a8dd
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761452"
 ---
 # <a name="connect-to-data-by-using-power-bi-desktop-generic-interfaces"></a>Tietoihin yhdistäminen Power BI Desktopin yleisillä liittymillä 
@@ -46,7 +46,7 @@ Etkö löydä tietolähdettä, jota haluat käyttää **Power BI Desktopissa**? 
 
 Seuraavassa luettelossa annetaan muutamia esimerkkejä tietolähteistä, joihin **Power BI Desktop** voit muodostaa yhteyden yleisen **ODBC** -liittymän avulla.
 
-| Power BI Desktopin yleinen liitin | Ulkoinen tietolähde | Lisätietoja: |
+| Power BI Desktopin yleinen liitin | Ulkoinen tietolähde  | Lisätietoja: |
 | --- | --- | --- |
 | ODBC |Cassandra |[Cassandra ODBC -ohjain](https://www.simba.com/drivers/cassandra-odbc-jdbc/) |
 | ODBC |Couchbase DB |[Couchbase ja Power BI](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
@@ -66,7 +66,7 @@ Seuraavassa luettelossa annetaan muutamia esimerkkejä tietolähteistä, joihin 
 
 Seuraavassa luettelossa annetaan muutamia esimerkkejä tietolähteistä, joihin **Power BI Desktop** voit muodostaa yhteyden yleisen **OLE DB** -liittymän avulla.
 
-| Power BI Desktopin yleinen liitin | Ulkoinen tietolähde | Lisätietoja: |
+| Power BI Desktopin yleinen liitin | Ulkoinen tietolähde  | Lisätietoja: |
 | --- | --- | --- |
 | OLE DB |SAS OLE DB |[SAS-palvelu OLE DB:lle](https://support.sas.com/downloads/package.htm?pid=648) |
 | OLE DB |Sybase OLE DB |[Sybase-palvelu OLE DB:lle](http://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc35888.1550/doc/html/jon1256941734395.html) |
@@ -78,7 +78,7 @@ Seuraavassa luettelossa annetaan muutamia esimerkkejä tietolähteistä, joihin 
 
 Seuraavassa luettelossa annetaan muutamia esimerkkejä tietolähteistä, joihin **Power BI Desktop** voit muodostaa yhteyden yleisen **OData**-liittymän avulla.
 
-| Power BI Desktopin yleinen liitin | Ulkoinen tietolähde | Lisätietoja: |
+| Power BI Desktopin yleinen liitin | Ulkoinen tietolähde  | Lisätietoja: |
 | --- | --- | --- |
 | OData |Tulossa pian |Palaa pian takaisin tutustumaan OData-tietolähteisiin |
 
@@ -89,7 +89,7 @@ Voit muodostaa yhteyden tietolähteisiin käyttämällä **RESTi-ohjelmointiraja
 
 Seuraavassa luettelossa annetaan muutamia esimerkkejä tietolähteistä, joihin **Power BI Desktop** voit muodostaa yhteyden yleisen **REST API** -liittymän avulla.
 
-| Power BI Desktopin yleinen liitin | Ulkoinen tietolähde | Lisätietoja: |
+| Power BI Desktopin yleinen liitin | Ulkoinen tietolähde  | Lisätietoja: |
 | --- | --- | --- |
 | REST-ohjelmointirajapinnat |Couchbase DB |[Couchbase REST -ohjelmointirajapinnan tiedot](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
 
@@ -100,7 +100,7 @@ Voit käyttää **R-komentosarjoja** tietolähteisiin pääsemiseksi ja käyttä
 
 Seuraavassa luettelossa annetaan muutamia esimerkkejä tietolähteistä, joihin **Power BI Desktop** voit muodostaa yhteyden yleisen **R-komentosarjan** liittymän avulla.
 
-| Power BI Desktopin yleinen liitin | Ulkoinen tietolähde | Lisätietoja: |
+| Power BI Desktopin yleinen liitin | Ulkoinen tietolähde  | Lisätietoja: |
 | --- | --- | --- |
 | R-komentosarja |SAS-tiedostot |[R komentosarjan ohjeet CRAN:lta](https://cran.r-project.org/doc/manuals/R-data.html) |
 | R-komentosarja |SPSS-tiedostot |[R komentosarjan ohjeet CRAN:lta](https://cran.r-project.org/doc/manuals/R-data.html) |
