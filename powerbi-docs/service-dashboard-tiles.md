@@ -11,10 +11,10 @@ ms.date: 04/17/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: efa5acbe70ea4541c2f9819d5260cb662ca0adac
-ms.sourcegitcommit: d43761104f7daf4b2f297648855bb573b53e6d8c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81637870"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Johdatus raporttinäkymien ruutuihin Power BI -suunnittelijoille
@@ -41,7 +41,7 @@ Voit lisätä (kiinnittää) ruudun koontinäyttöön monella eri tavalla. Voit 
 * [Raportti](service-dashboard-pin-tile-from-report.md)
 * [Toinen koontinäyttö](service-pin-tile-to-another-dashboard.md)
 * [OneDrive for Businessin Excel-työkirja](service-dashboard-pin-tile-from-excel.md)
-* [Quick Insights (Nopeat merkitykselliset tiedot)](service-insights.md)
+* [Nopeat merkitykselliset tiedot](service-insights.md)
 * [Paikallinen Sivutettu raportti Power BI -raporttipalvelimessa tai SQL Server Reporting Servicesissa](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 Voit luoda erillisiä ruutuja kuville, muokkausruuduille, videoille, virtautettaville tiedoille ja verkkosisällölle suoraan koontinäytössä [Lisää ruutu](service-dashboard-add-widget.md) -toiminnon avulla.

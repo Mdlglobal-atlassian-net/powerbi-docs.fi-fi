@@ -10,10 +10,10 @@ ms.date: 01/09/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: 8921737fac842d040d014244e2ce80e9bc158b23
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76040138"
 ---
 # <a name="perform-common-query-tasks-in-power-bi-desktop"></a>Yleisten kyselytehtävien suorittaminen Power BI Desktopissa
@@ -162,4 +162,4 @@ Voit tehdä kaikenlaista Power BI Desktopilla. Saat lisätietoja sen ominaisuuks
 * [Kyselyn yleiskatsaus Power BI Desktopissa](desktop-query-overview.md)
 * [Power BI Desktopin tietolähteet](desktop-data-sources.md)
 * [Tietoihin yhdistäminen Power BI Desktopissa](desktop-connect-to-data.md)
-* [Tietojen muotoileminen ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)
+* [Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)

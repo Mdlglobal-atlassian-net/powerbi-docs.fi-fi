@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/01/2018
 ms.openlocfilehash: 51c43a19613381d39e0397864e55baed2022663c
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79491360"
 ---
 # <a name="power-bi-permissions"></a>Power BI -käyttöoikeudet
@@ -21,12 +21,12 @@ ms.locfileid: "79491360"
 
 Power BI -käyttöoikeudet antavat sovellukselle mahdollisuuden suorittaa tiettyjä toimenpiteitä käyttäjän puolesta. Käyttäjän on hyväksyttävä kaikki käyttöoikeudet, jotta ne ovat voimassa.
 
-| Näyttönimi | Kuvaus | Vaikutusalueen arvo |
+| Näyttönimi | Description | Vaikutusalueen arvo |
 | --- | --- | --- |
 | Kaikkien tietojoukkojen lukuoikeus |Sovelluksella on lukuoikeus kaikkiin kirjautuneen käyttäjän tietojoukkoihin sekä tietojoukkoihin, joihin käyttäjällä on käyttöoikeus. |Dataset.Read.All |
 | Kaikkien tietojoukkojen luku- ja kirjoitusoikeus |Sovelluksella on luku- ja kirjoitusoikeus kaikkiin kirjautuneen käyttäjän tietojoukkoihin sekä tietojoukkoihin, joihin käyttäjällä on käyttöoikeus. |Dataset.ReadWrite.All |
 | Tietojen lisäämisoikeus käyttäjän tietojoukkoon |Antaa sovellukselle oikeuden lisätä tai poistaa käyttäjän tietojoukon rivejä. Tämä käyttöoikeus ei anna sovellukselle pääsyä käyttäjän tietoihin. |Data.Alter_Any |
-| Sisällön luontioikeus |Sovellus voi luoda automaattisesti sisältöä ja tietojoukkoja käyttäjälle. |Content.Create |
+| Luo sisältöä |Sovellus voi luoda automaattisesti sisältöä ja tietojoukkoja käyttäjälle. |Content.Create |
 | Käyttäjän ryhmien lukuoikeus |Sovelluksella on lukuoikeus kaikkiin ryhmiin, joihin kirjautunut käyttäjä kuuluu. |Group.Read |
 | Kaikkien ryhmien lukuoikeus |Sovelluksella on lukuoikeus kaikkiin ryhmiin, joihin kirjautunut käyttäjä kuuluu. |Group.Read.All |
 | Kaikkien ryhmien luku- ja kirjoitusoikeus |Sovelluksella on luku- ja kirjoitusoikeus kaikkiin kirjautuneen käyttäjän ryhmiin sekä ryhmiin, joihin käyttäjällä on käyttöoikeus. |Group.ReadWrite.All |
@@ -41,7 +41,7 @@ Power BI -käyttöoikeudet antavat sovellukselle mahdollisuuden suorittaa tietty
 Sovellus voi pyytää käyttöoikeuksia, kun se yrittää ensimmäistä kertaa kirjautua sisään käyttäjän sivulle, välittämällä pyydetyt käyttöoikeudet kutsun vaikutusalueparametrissa. Jos käyttöoikeudet myönnetään, sovellukselle palautetaan käyttöoikeustietue, jota voidaan käyttää tulevissa ohjelmointirajapintojen kutsuissa. Käyttöoikeus on vain tietyn sovelluksen käytössä.
 
 > [!NOTE]
-> Power BI -ohjelmointirajapinnat viittaavat työtiloihin edelleen ryhminä. Viittaukset ryhmiin tarkoittavat sitä, että työskentelet työtilojen parissa.
+> Power BI -ohjelmointirajapinnat viittaavat työtiloihin edelleen ryhminä. Mitkä tahansa viittaukset ryhmiin tarkoittavat sitä, että työskentelet työtilojen parissa.
 
 ## <a name="requesting-permissions"></a>Käyttöoikeuksien pyytäminen
 

@@ -9,10 +9,10 @@ ms.topic: quickstart
 ms.date: 12/16/2019
 ms.author: painbar
 ms.openlocfilehash: 9af7fd95bcdaf0d747d1a3f2313f965d18a888e3
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79205661"
 ---
 # <a name="a-quick-tour-of-the-mobile-app-home-page"></a>Mobiilisovelluksen aloitussivun nopea esittely
@@ -20,9 +20,9 @@ Tässä esittelytoiminnossa tutustut Power BI -mobiilisovelluksen aloitussivuun 
 
 Koskee seuraavia:
 
-| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](./media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Android-](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) |
+| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](./media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Android](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) |
 |:--- |:--- |:--- |
-| iPhone | iPad | Android- | 
+| iPhone | iPad | Android | 
 
 Kun avaat Power BI -mobiilisovelluksen, siirryt aloitussivulle, josta pääset nopeasti useimmin tai viime aikoina käymiisi raportteihin, koontinäyttöihin ja sovelluksiin. Lisäksi toimintasyöte pitää sinut ajan tasalla siitä, mitä Power BI -sisällössäsi tapahtuu. Saat myös käteviä siirtymisen apuvälineitä, joiden avulla pääset nopeasti tarvitsemaasi sisältöön.
 

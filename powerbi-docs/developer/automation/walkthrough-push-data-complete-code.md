@@ -9,15 +9,15 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: 4745935e618f47f6092f6a33d879dd95d59b9963
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79488288"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Syötä tiedot tietojoukon kattavaan koodiluetteloon
 
-Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot työnnetään tietojoukkoon](walkthrough-push-data.md).
+Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot syötetään tietojoukkoon](walkthrough-push-data.md).
 
 Kun olet suorittanut toimet 2-5 kohdasta **tietojen syöttäminen tietojoukkoon**, täydellisen lähdekoodisi pitäisi näyttää seuraavanlaiselta.
 
@@ -224,7 +224,7 @@ Kun olet suorittanut toimet 2-5 kohdasta **tietojen syöttäminen tietojoukkoon*
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* [Syötä tiedot Power BI -tietojoukkoon](walkthrough-push-data.md)
+* [Tietojen työntäminen Power BI -tietojoukkoon](walkthrough-push-data.md)
 * [Rekisteröi sovellus Azure AD:n kanssa ](../embedded/register-app.md)  
 * [Todennustunnuksen hankkiminen](walkthrough-push-data-get-token.md)  
 * [Tietojoukon luominen Power BI:ssä](walkthrough-push-data-create-dataset.md)  

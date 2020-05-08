@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
 ms.openlocfilehash: bad6b507e970319003a8d338ecf29a2afc948e9c
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435555"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Suosikkien luominen ja selaaminen Power BI -mobiilisovelluksissa
@@ -23,7 +23,7 @@ Koskee seuraavia:
 | iPhonet |iPadit |Android-puhelimet |Android-tabletit |Windows 10 -laitteet |
 
 >[!NOTE]
->Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** lopetetaan 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** päättyy 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 Miten luot ja selaat suosikkeja Power BI -koontinäytöillä, raporteilla ja sovelluksissa sekä paikallisista Power BI -raporttipalvelimen ja Raporttipalveluiden raporteista ja suorituskyvyn mittareista mobiilisovelluksissa.
 

@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 3410d8fa8c2f9300fccbe47683a90cbca8ff8383
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79205523"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Raporttinäkymien ja raporttien tarkastelu Power BI -mobiilisovelluksissa
@@ -59,7 +59,7 @@ Tässä on Power BI -raporttinäkymä Power BI -palvelussa:
     Voit myös tarkastella raporttinäkymää vaakasuunnassa kääntämällä puhelimesi sivuttain.
    
     ![Raporttinäkymä vaakasuunnassa](././media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-landscape.png)
-3. Katso kaikki raporttinäkymän ruudut sipaisemalla ylös- ja alaspäin. Voit:
+3. Katso kaikki raporttinäkymän ruudut sipaisemalla ylös- ja alaspäin. Vaihtoehdot ovat:
    
    * [napauttaa ruutua](mobile-tiles-in-the-mobile-apps.md) ja avata sen tarkastelutilassa ja käsitellä sitä.
    * napauttaa ![suosikkitähteä](././media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png) ja [tehdä siitä suosikin](mobile-apps-favorites.md).
@@ -156,5 +156,5 @@ Lue lisää [raporttinäkymän puhelinnäkymän luomisesta](../../service-create
 * [Android-sovelluksen lataaminen](https://go.microsoft.com/fwlink/?LinkID=544867) Google Play Kaupasta  
 * [Power BI:n Android-sovelluksen käytön aloittaminen](mobile-android-app-get-started.md)  
 * [Mikä on Power BI?](../../fundamentals/power-bi-overview.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

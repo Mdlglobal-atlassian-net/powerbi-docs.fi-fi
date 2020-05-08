@@ -9,13 +9,13 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/16/2020
 ms.openlocfilehash: 0b57ec084477955086b3d1bb0acd0a3139d325c6
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76160600"
 ---
-# <a name="install-power-bi-report-server"></a>Asenna Power BI -raporttipalvelin
+# <a name="install-power-bi-report-server"></a>Power BI -raporttipalvelimen asentaminen
 
 Opi asentamaan Power BI -raporttipalvelin.
 
@@ -53,7 +53,7 @@ Voit avata valintaikkunan, joka sisältää tuoteavaimen, valitsemalla **Power B
 
 #### <a name="sql-server-enterprise-software-assurance-sa"></a>SQL Server Enterprise Software Assurance (SA)
 
-Jos sinulla on SQL Server Enterprise SA -sopimus, saat tuoteavaimen [volyymikäyttöoikeuskeskuksesta](https://www.microsoft.com/Licensing/servicecenter/).
+Jos sinulla on SQL Server Enterprise SA -sopimus, saat tuoteavaimen [voluumikäyttöoikeuskeskuksesta](https://www.microsoft.com/Licensing/servicecenter/).
 
 ## <a name="install-your-report-server"></a>Raporttipalvelimen asentaminen
 
@@ -65,7 +65,7 @@ SQL Server -tietokantamoduulin palvelimen ei tarvitse olla käytettävissä asen
 
 2. Valitse **Asenna Power BI -raporttipalvelin**.
 
-    ![Asenna Power BI -raporttipalvelin](media/install-report-server/pbireportserver-install.png)
+    ![Power BI -raporttipalvelimen asentaminen](media/install-report-server/pbireportserver-install.png)
 3. Valitse asennettava versio ja valitse sitten **Seuraava**.
 
     ![Valitse versio](media/install-report-server/pbireportserver-choose-edition.png)
@@ -123,7 +123,7 @@ Windows-palvelu luodaan asennuksen osana. Se näkyy muodossa **Power BI -raportt
 
 URL-varaukset koostuvat etuliitteestä, isäntänimestä, portista ja näennäishakemistosta:
 
-| Osa | Kuvaus |
+| Osa | Description |
 | --- | --- |
 | Etuliite |Oletusarvoinen etuliite on HTTP. Jos olet aiemmin asentanut Secure Sockets Layer (SSL) -varmenteen, asennusohjelma yrittää luoda URL-varaukset, jotka käyttävät HTTPS-etuliitettä. |
 | Isäntänimi |Oletusarvoinen isäntänimi on vahva yleismerkki (+). Se määrittää, että raporttipalvelin hyväksyy minkä tahansa HTTP-pyynnön määritetyssä portissa mille tahansa isäntänimelle, joka viittaa tietokoneeseen, mukaan lukien `https://<computername>/reportserver`, `https://localhost/reportserver` tai `https://<IPAddress>/reportserver.` |
@@ -162,4 +162,4 @@ Avaa TCP-portti, jonka olet määrittänyt verkkopalvelun URL-osoitetta ja verkk
 [Windowsin palvelutilien ja käyttöoikeuksien määrittäminen](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
 [Power BI -raporttipalvelimen selaintuki](browser-support.md)
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 LocalizationGroup: Visualizations
 ms.openlocfilehash: bd8053123d8a5c2fa0c4362cb2a534021208ba36
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79381464"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualisoinnit Power BI -raporteissa
@@ -62,7 +62,7 @@ Kokeile [muuttaa visualisointityyppiä](power-bi-report-change-visualization-typ
 
 Power BI -palvelussa visualisointeja voi [kiinnittää koontinäyttöön](../service-dashboard-pin-tile-from-report.md) ruutuna. Jos muutat visualisointia kiinnittämisen jälkeen, koontinäytön ruutu ei muutu – jos se oli viivakaavio, se pysyy viivakaaviona, vaikka muuttaisit sen raportissa rengaskaavioksi.
 
-## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
+## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioon otettavat seikat
 - Visualisointi saattaa latautua hitaasti. Tämä riippuu tietolähteestä ja kenttien määrästä (mittarit tai sarakkeet).  Suosittelemme luettavuus- ja suorituskykysyistä, että käytät visualisoinneissa enintään yhteensä 10–20 kenttää. 
 
 - Visualisoinnissa voi käyttää enintään 100 kenttää (mittarit tai sarakkeet). Jos visualisointisi lataaminen epäonnistuu, pienennä kenttien määrää.   

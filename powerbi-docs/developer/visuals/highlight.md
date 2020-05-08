@@ -9,10 +9,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 10/31/2019
 ms.openlocfilehash: a472db6c6dcc1266a11e78d72ab8465df7682042
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80114148"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Korosta arvopisteitä Power BI:n visualisoinneissa
@@ -21,7 +21,7 @@ Oletusarvon mukaan aina, kun elementti valitaan, `values`-matriisi `dataView`-ob
 
 ![`tietonäkymän` korostaminen oletustoiminta](media/highlight/highlight-dataview.png)
 
-Jos määrität `supportsHighlight`-ominaisuuden arvoksi `true` kohteessa `capabilities.json`, saat täyden suodattamattoman `values`-matriisin sekä `highlights`-matriisin. `highlights`-matriisi on yhtä pitkä kuin arvomatriisi, ja valitsemattomat arvot asetetaan arvoon `null`. Kun tämä ominaisuus on käytössä, on visualisoinnin vastuulla korostaa asianmukaiset tiedot vertaamalla `values`-matriisia `highlights`-matriisiin.
+Jos määrität `supportsHighlight`-ominaisuuden arvoksi `capabilities.json` kohteessa `true`, saat täyden suodattamattoman `values`-matriisin sekä `highlights`-matriisin. `highlights`-matriisi on yhtä pitkä kuin arvomatriisi, ja valitsemattomat arvot asetetaan arvoon `null`. Kun tämä ominaisuus on käytössä, on visualisoinnin vastuulla korostaa asianmukaiset tiedot vertaamalla `values`-matriisia `highlights`-matriisiin.
 
 ![`tietonäkymä` tukee korostamista](media/highlight/highlight-dataview-supports.png)
 
@@ -32,7 +32,7 @@ Tässä esimerkissä huomaat, että 1-palkki on valittuna. Se on korostusmatriis
 
 ## <a name="highlight-data-points-with-categorical-data-view-mapping"></a>Korosta arvopisteet luokittaisella tietonäkymän yhdistämismäärityksellä
 
-Visualisoinneilla, joissa on luokittainen tietonäkymän yhdistämismääritys, on `capabilities.json` parametrilla `"supportsHighlight": true`. Esimerkki:
+Visualisoinneilla, joissa on luokittainen tietonäkymän yhdistämismääritys, on `capabilities.json` parametrilla `"supportsHighlight": true`. Esimerkiksi:
 
 ```json
 {
@@ -275,7 +275,7 @@ Tuloksena pitäisi olla seuraava visualisointinäkymä.
 
 ## <a name="highlight-data-points-with-matrix-data-view-mapping"></a>Korosta arvopisteet matriisitietonäkymän yhdistämismäärityksellä
 
-Visualisoinneilla, joissa on matriisitietonäkymän yhdistämismääritys, on `capabilities.json` parametrilla `"supportsHighlight": true`. Esimerkki:
+Visualisoinneilla, joissa on matriisitietonäkymän yhdistämismääritys, on `capabilities.json` parametrilla `"supportsHighlight": true`. Esimerkiksi:
 
 ```json
 {

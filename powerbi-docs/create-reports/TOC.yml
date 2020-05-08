@@ -62,7 +62,7 @@
             - name: Luonnollisen kielen Q&A
               items:
                 - name: 'Johdanto Q&A:han'
-                  href: ../natural-language/q-and-a-intro.md
+                  href: ../natural-language/q-and-a-tooling-intro.md
                 - name: Johdanto Q&A-työkaluihin
                   href: ../natural-language/q-and-a-tooling-intro.md
                 - name: 'Q&A-työkalut, edistynyt'

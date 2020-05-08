@@ -11,10 +11,10 @@ ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 356d738795f8bf99ba1e2f8dfc705b23f52a6d5e
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75762435"
 ---
 # <a name="create-and-use-funnel-charts"></a>Suppilokaavioiden luominen ja käyttäminen
@@ -60,7 +60,7 @@ Tässä opetusohjelmassa käytetään [Mahdollisuusanalyysimallin PBIX-tiedostoa
 
 1. Avaa **Mahdollisuusanalyysimallin PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
+1. Select ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
 
 
 ## <a name="create-a-basic-funnel-chart"></a>Perusluontoisen suppilokaavion luonti

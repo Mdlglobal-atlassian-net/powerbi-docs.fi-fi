@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 828736dac528a8ba8c77b90162309236f5bc7018
-ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
+ms.openlocfilehash: d17c6bbe5ddf6cd39626ac0038595543cd2fecfb
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558604"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841062"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla
 
 Power BI mahdollistaa sisällön jakamisen ulkopuolisten vieraskäyttäjien kanssa Azure Active Directory Business-to-Businessin (Azure AD B2B:n) kautta.
 Azure AD B2B:n avulla organisaatiosi mahdollistaa jakamisen ulkoisten käyttäjien kanssa ja hallitsee sitä yhdestä paikasta. Ulkoisilla käyttäjillä on oletusarvoisesti oikeudet ainoastaan käyttää sisältöä. Lisäksi voit myös sallia organisaation ulkopuolisten vieraskäyttäjien muokata ja hallita organisaatiosi sisäistä sisältöä.
 
-Tässä artikkelissa annetaan perustiedot Azure AD B2B:stä Power BI:ssä. Lisätietoja saat kohdasta [Power BI ‑sisällön jakaminen ulkoisille vieraskäyttäjille Azure Active Directory B2B:n avulla](whitepaper-azure-b2b-power-bi.md).
+Tässä artikkelissa annetaan perustiedot Azure AD B2B:stä Power BI:ssä. Lisätietoja saat kohdasta [Power BI ‑sisällön jakaminen ulkoisille vieraskäyttäjille Azure Active Directory B2B:n avulla](guidance/whitepaper-azure-b2b-power-bi.md).
 
 ## <a name="enable-access"></a>Käytön salliminen
 
