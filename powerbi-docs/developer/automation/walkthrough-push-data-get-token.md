@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 05/29/2019
 ms.openlocfilehash: 7e74b01a6b12302393a3e4bc40b2e9cccfc13d63
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79488265"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Vaihe 2: Todennustunnuksen hankkiminen
@@ -23,7 +23,7 @@ Vaiheessa 1 [rekisteröit asiakassovelluksen Azure AD:ssä](../embedded/register
 
 ## <a name="get-an-authentication-access-token"></a>Todennustunnuksen hankkiminen
 
-Ennen kuin aloitat, varmista, että olet suorittanut [Tietojen työntäminen Power BI -tietojoukkoon](walkthrough-push-data.md) -sarjan [edellisen vaiheen](../embedded/register-app.md). 
+Ennen kuin aloitat, varmista, että olet suorittanut [Tietojen työntäminen Power BI -tietojoukkoon](../embedded/register-app.md) -sarjan [edellisen vaiheen](walkthrough-push-data.md). 
 
 Nämä toimenpiteet edellyttävät Visual Studio 2015:ttä tai uudempaa versiota.
 

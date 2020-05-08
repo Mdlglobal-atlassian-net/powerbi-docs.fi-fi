@@ -2,10 +2,10 @@
   href: index.yml
   expanded: true
   items:
-    - name: Yleiskatsaus
+    - name: Yhteenveto
       expanded: true
       items:
-        - name: Yleiskatsaus
+        - name: Yhteenveto
           href: overview.md
         - name: 'Optimointiopas Power BI:hin'
           href: power-bi-optimization.md
@@ -113,10 +113,10 @@
     - name: Raportit
       items:
         - name: Raporttien yleiskatsaus
-          href: ../whitepapers.md
+          href: whitepapers.md
         - name: 'Power BI:n suojausraportti'
-          href: ../whitepaper-powerbi-security.md
+          href: whitepaper-powerbi-security.md
         - name: 'Power BI:n premium-käyttöönotto'
-          href: ../whitepaper-powerbi-premium-deployment.md
+          href: whitepaper-powerbi-premium-deployment.md
         - name: 'Power BI -sisällön jakaminen ulkoisille käyttäjille Azure Active Directory B2B:n avulla'
-          href: ../whitepaper-azure-b2b-power-bi.md
+          href: whitepaper-azure-b2b-power-bi.md

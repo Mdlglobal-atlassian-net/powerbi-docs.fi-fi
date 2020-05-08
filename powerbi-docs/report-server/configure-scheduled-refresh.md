@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: davidi
 ms.openlocfilehash: cab64bdcd5707cfd0b1578e82334de4b5c84495c
-ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81439959"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Power BI -raportin ajoitetun päivityksen määrittäminen
@@ -40,7 +40,7 @@ Noudata seuraavia vaiheita ajoitetun päivityksen mallin luomiseksi.
 2. Valitse vasemmasta valikosta **Ajoitettu päivitys** -välilehti.
 3. Valitse **Ajoitettu päivitys** -sivulla **Uusi ajoitetun päivityksen malli**.
    
-    ![Uusi ajoitettu päivityksen malli](media/configure-scheduled-refresh/new-scheduled-refresh-plan.png)
+    ![Uusi ajoitettu päivityssuunnitelma](media/configure-scheduled-refresh/new-scheduled-refresh-plan.png)
 4. Kirjoita **Uusi ajoitettu päivityksen malli** -sivulle kuvaus ja määritä aikataulu tietomallin päivitykselle.
 5. Valitse **Luo ajoitettu päivityksen malli**, kun olet valmis.
    
@@ -78,7 +78,7 @@ Tarkastele ajoitetun päivityksen mallin tilaa verkkoportaalissa.
    | Tietoja päivitetään |Tietoja päivitetään mallissa. |
    | Tunnistetietoja poistetaan mallista |Tunnistetietojen, joita käytetään yhteyden muodostamiseen tietolähteeseen, poistaminen mallista. |
    | Tallentaa mallia luetteloon |Tietojen päivittäminen on valmis ja päivitetty malli tallennetaan takaisin raporttipalvelimen luettelon tietokantaan. |
-   | Valmis: Tietojen päivittäminen |Päivitys on valmis. |
+   | Valmis: tietojen päivitys |Päivitys on valmis. |
    | Virhe: |Päivityksen aikana tapahtui virhe, joka näytetään. |
 
 Verkkosivu on päivitettävä nykyisen tilan näkemiseksi. Tila ei muutu automaattisesti.

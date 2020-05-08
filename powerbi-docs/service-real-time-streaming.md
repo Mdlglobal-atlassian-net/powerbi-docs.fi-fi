@@ -10,10 +10,10 @@ ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: ed1100a418259845e6a2656e1c5bab6d80358df0
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79381073"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Reaaliaikainen suoratoisto Power BI:ssä
@@ -43,7 +43,7 @@ On otettava huomioon kaksi asiaa kiinnitettyjen ruutujen suhteen, jotka on saatu
 * Kun visualisointi on kiinnitetty koontinäyttöön, voit käyttää **Q&A** -kyselytoimintoa kysymysten tekemiseen siirretystä tietojoukosta luonnollisella kielellä. Kun olet tehnyt **Q&A**-kyselyn, voit kiinnittää tuloksena saadun visualisoinnin takaisin koontinäyttöön, jolloin kyseinen koontinäyttö *myös* päivittyy reaaliaikaisesti.
 
 ### <a name="streaming-dataset"></a>Suoratoistettava tietojoukko
-Myös **suoratoistettavassa tietojoukossa** tiedot lähetetään Power BI -palveluun, mutta prosessissa on yksi tärkeä ero: Power BI tallentaa tiedot vain tilapäiseen välimuistiin, joka vanhenee nopeasti. Tilapäistä välimuistia käytetään vain sellaisten visualisointien näyttämiseen, joihin voidaan kohdistaa jokin tilapäinen aikakäsite, kuten viivakaavio, jolla on yhden tunnin aikaraja.
+**Suoratoistettavaa tietojoukkoa** käytettäessä tiedot siirretään myös Power BI -palveluun. Tässä on yksi merkittävä ero: Power BI tallentaa tiedot vain tilapäiseen välimuistiin, joka vanhenee nopeasti. Tilapäistä välimuistia käytetään vain sellaisten visualisointien näyttämiseen, joihin voidaan kohdistaa jokin tilapäinen aikakäsite, kuten viivakaavio, jolla on yhden tunnin aikaraja.
 
 **Suoratoistettavaa tietojoukkoa** käytettäessä pohjana *ei* ole mitään tietojoukkoa, joten *et voi* koota raporttivisualisointeja käyttämällä suoratoiston kautta virtaavia tietoja. Sen vuoksi et voi hyödyntää raporttitoimintoja, kuten suodatusta, Power BI -visualisointeja tai muita raporttitoimintoja.
 
@@ -203,7 +203,7 @@ Kokeile sitä nyt ja testaa, miten näytetietojoukko toimii. Sitten voit luoda o
 ## <a name="questions-and-answers"></a>Kysymyksiä ja vastauksia
 Seuraavassa on tavallisimpia kysymyksiä reaaliaikaisesta suoratoistosta Power BI:ssä ja vastauksia niihin.
 
-#### <a name="can-i-use-filters-on-push-dataset-how-about-streaming-dataset"></a>Voinko käyttää suodattimia push-tietojoukkoon? Entä suoratoistettavaan tietojoukkoon?
+#### <a name="can-i-use-filters-on-push-dataset-how-about-streaming-dataset"></a>Voinko käyttää suodattimia push-tietojoukkoon? Entä suoratoistettavan tietojoukon?
 Valitettavasti suoratoistettavat tietojoukot eivät tue suodattamista. Push-tietojoukoille voit luoda raportin, suodattaa raportin ja kiinnittää suodatetut visualisoinnit sitten koontinäyttöön. Visualisoinnin suodatinta ei kuitenkaan voida muuttaa millään tavalla, kun se on koontinäytössä.
 
 Voit kuitenkin erikseen kiinnittää reaaliaikaisen raporttitapahtumaruudun koontinäyttöön, ja siinä tapauksessa voit muuttaa suodattimia. Reaaliaikaiset raporttiruudut eivät kuitenkaan päivity reaaliaikaisesti, kun tiedot on siirretty – sinun pitää päivittää visualisointi manuaalisesti käyttämällä *Päivitä koontinäytön ruudut* -vaihtoehtoa **Lisää**-valikossa.

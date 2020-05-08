@@ -47,7 +47,7 @@
             - name: Raporttien ja koontinäyttöjen luominen
               tocHref: /power-bi/create-reports/
               topicHref: /power-bi/create-reports/index
-            - name: Tietoihin yhdistäminen
+            - name: tietoihin yhdistäminen
               tocHref: /power-bi/connect-data/
               topicHref: /power-bi/connect-data/index
             - name: Aloittaminen

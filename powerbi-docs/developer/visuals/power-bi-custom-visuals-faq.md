@@ -10,21 +10,21 @@ ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
 ms.openlocfilehash: d70d1357af3309ddd9584b11ccf79115cde095c8
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79383294"
 ---
 # <a name="power-bi-visuals-faq"></a>Power BI:n visualisointien usein kysytyt kysymykset
 
 ## <a name="organizational-power-bi-visuals"></a>Organisaation Power BI -visualisoinnit
 
-Hallintaportaalissa voi hallita organisaation Power BI -visualisointeja.
+Hallintaportaalissa voi hallita organisaation Power BI:n visualisointeja.
 
 ### <a name="how-can-the-admin-manage-organizational-power-bi-visuals"></a>Miten järjestelmänvalvoja voi hallita organisaation Power BI -visualisointeja?
 
-Hallintaportaalin *Organisaation visualisoinnit* -välilehdessä järjestelmänvalvoja voi nähdä ja [hallita kaikkia organisaation Power BI -visualisointeja](../../service-admin-portal.md#organizational-visuals). Hallitseminen sisältää Power BI -visualisointien lisäämisen ja poistamisen sekä niiden käyttöön ottamisen ja käytöstä poistamisen.
+Hallintaportaalin *Organisaation visualisoinnit* -välilehdessä järjestelmänvalvoja voi nähdä ja [hallita kaikkia organisaation Power BI -visualisointeja](../../service-admin-portal.md#organizational-visuals). Hallitseminen sisältää Power BI ‑visualisointien lisäämisen ja poistamisen sekä niiden käyttöön ottamisen ja käytöstä poistamisen.
 
 Organisaation käyttäjät voivat helposti löytää Power BI ‑visualisointeja ja tuoda niitä raportteihinsa suoraan Power BI Desktopista tai ‑palvelusta.
 

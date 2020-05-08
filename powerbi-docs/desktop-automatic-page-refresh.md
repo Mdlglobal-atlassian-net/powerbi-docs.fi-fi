@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e7e5e406a0a4c9cdcecfab5a5af681857600feb5
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.openlocfilehash: 95ccee8e2c711c272d6114339161cbf1d1c883a9
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79488518"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841683"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automaattinen sivun päivitys Power BI Desktopissa (esiversio)
 
@@ -212,7 +212,7 @@ Katso lisätietoja seuraavista artikkeleista:
 
 * [DirectQueryn käyttäminen Power BI:ssä](desktop-directquery-about.md)
 * [Raporttielementtien suorituskyvyn analysointi Suorituskyvyn analysointi -toiminnolla](desktop-performance-analyzer.md)
-* [Power BI Premium -kapasiteettien käyttöönotto ja hallinta](whitepaper-powerbi-premium-deployment.md)
+* [Power BI Premium -kapasiteettien käyttöönotto ja hallinta](guidance/whitepaper-powerbi-premium-deployment.md)
 * [Power BI Desktopin tietolähteet](desktop-data-sources.md)
 * [Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)
 * [Yhteyden muodostaminen Excel-työkirjoihin Power BI Desktopissa](desktop-connect-excel.md)   

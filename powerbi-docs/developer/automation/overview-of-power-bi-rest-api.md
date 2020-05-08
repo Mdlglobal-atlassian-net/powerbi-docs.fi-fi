@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: overview
 ms.date: 03/25/2019
 ms.openlocfilehash: 1a74d856ad46dc6843546919aa4234dc86d2be5c
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79488428"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Mitä kehittäjät voivat tehdä Power BI -ohjelmointirajapinnalla?
@@ -35,7 +35,7 @@ Seuraavassa on joitakin asioita, joita voit tehdä Power BI -ohjelmointirajapinn
 
 ## <a name="api-developer-tools"></a>Ohjelmointirajapinnan kehitystyökalut
 
-| Työkalu(t) | Kuvaus |  |  |
+| Työkalu(t) | Description |  |  |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
 | [Playground-työkalu](https://microsoft.github.io/PowerBI-JavaScript/demo) | Täydellinen malli Power BI JavaScript -ohjelmointirajapintojen käyttämisestä. Tämä työkalu on lisäksi nopea tapa kokeilla erilaisia Power BI Embedded -malleja. |  |  |
 | [Power BI JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) | Lisätietojen saaminen Power BI JavaScript -ohjelmointirajapinnoista. |  |  |

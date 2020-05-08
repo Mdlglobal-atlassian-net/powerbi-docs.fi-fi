@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: b603ced5775d72c09419ea5e18b2eb03b2680e95
-ms.sourcegitcommit: ad638d553d5f7f5831587791ffa7aa37a47dd6ae
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80273359"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Suuren tiheyden näytteenotto Power BI:n pistekaavioissa
@@ -33,7 +33,7 @@ Aiemmin **Power BI** loi pistekaavion valitsemalla koko pohjana olevasta tietojo
 
 Kun otat **suuren tiheyden näytteenoton** käyttöön, Power BI toteuttaa algoritmin, joka poistaa päällekkäiset pisteet ja varmistaa, että visualisoinnin pisteet voidaan saavuttaa visualisointia käsittelemällä. Algoritmi myös varmistaa, että kaikki tietojoukon pisteet esitetään visualisoinnissa, ja antaa valittujen pisteiden merkitykselle kontekstin pelkän edustavan otannan esittämisen sijasta.
 
-Suuren tiheyden tiedoista otetaan näytteitä siksi, että näin voidaan kohtuullisen nopeasti luoda visualisointeja, joiden vuorovaikutteisuus säilyy. Jos visualisoinnissa on liikaa arvopisteitä, sen käyttö hidastuu ja trendit voivat jäädä hahmottamatta. Näytteenottoalgoritmeja kehitetään siksi, että tällaisista tiedoista saataisiin tuotettua parhaita mahdollisia visualisointeja ja että kaikki tiedot olisivat edustettuina. Power BI:n käyttämää algoritmia on parannettu siten, että se tarjoaa parhaan vasteajan ja esityksen ja taltioi selkeästi tärkeimmät pisteet koko tietojoukosta.
+Suuren tiheyden tiedoista otetaan näytteitä siksi, että voidaan luoda kohtuullisen nopeasti visualisointeja, joiden vuorovaikutteisuus säilyy. Jos visualisoinnissa on liikaa arvopisteitä, sen käyttö hidastuu ja trendit voivat jäädä hahmottamatta. Näytteenottoalgoritmeja kehitetään siksi, että tällaisista tiedoista saataisiin tuotettua parhaita mahdollisia visualisointeja ja että kaikki tiedot olisivat edustettuina. Power BI:n käyttämää algoritmia on parannettu siten, että se tarjoaa parhaan vasteajan ja esityksen ja taltioi selkeästi tärkeimmät pisteet koko tietojoukosta.
 
 > [!NOTE]
 > **Suuren tiheyden näytteenoton** algoritmia käyttävät pistekaaviot piirretään kaikkien pistekaavioiden tavoin parhaiten neliömäisiin visualisointeihin.

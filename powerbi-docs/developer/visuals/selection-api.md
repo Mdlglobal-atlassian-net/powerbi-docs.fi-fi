@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ms.openlocfilehash: 2cca057b2a91129745fe739160ffbb3e9e25b6da
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80113688"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Vuorovaikutteisuuden lisääminen visualisointiin Power BI:n visualisointien valinnoilla
@@ -81,7 +81,7 @@ Tällä objektilla on vastaavat menetelmät, joilla voidaan luoda `selections`-v
 
 Tarkastellaan, miten valinnat esitetään mallitietojoukon luokittaisessa tietonäkymän yhdistämismäärityksessä:
 
-| Valmistaja | Tyyppi | Arvo |
+| Valmistaja | Tyyppi. | Arvo |
 | - | - | - |
 | Chrysler | Kotimainen auto | 28883 |
 | Chrysler | Kotimainen rekka | 117131 |
@@ -159,18 +159,18 @@ Esimerkissä `Manufacturer` on `columns` ja `Type` on `rows`. Esimerkissä on sa
 
 Visualisoinnin tulee myös voida osittaa tietoja, niin että perusteina ovat `Manufacturer` ja `Type`.
 
-Jos käyttäjä esimerkiksi valitsee `Manufacturer`-kohteesta vaihtoehdon `Chrysler`, muiden visualisointien tulee näyttää seuraavat tiedot:
+Jos käyttäjä esimerkiksi valitsee `Chrysler`-kohteesta vaihtoehdon `Manufacturer`, muiden visualisointien tulee näyttää seuraavat tiedot:
 
-| Valmistaja | Tyyppi | Arvo |
+| Valmistaja | Tyyppi. | Arvo |
 | - | - | - |
 | **Chrysler** | Kotimainen auto | 28883 |
 | **Chrysler** | Kotimainen rekka | 117131 |
 | **Chrysler** | Tuontiauto | 0 |
 | **Chrysler** | Tuontirekka | 6362 |
 
-Jos käyttäjä valitsee `Type`-kohteesta vaihtoehdon `Import Car` (valitsee tietoja sarjan perusteella), muiden visualisointien tulee näyttää seuraavat tiedot:
+Jos käyttäjä valitsee `Import Car`-kohteesta vaihtoehdon `Type` (valitsee tietoja sarjan perusteella), muiden visualisointien tulee näyttää seuraavat tiedot:
 
-| Valmistaja | Tyyppi | Arvo |
+| Valmistaja | Tyyppi. | Arvo |
 | - | - | - |
 | Chrysler | **Tuontiauto** | 0 |
 | Ford | **Tuontiauto** | 0 |
@@ -185,7 +185,7 @@ Visualisoinnin tietokorit on täytettävä.
 
 ![Visualisoinnin ja valintojen tietokorit](media/selection-api/visual-selections-databuckets.png)
 
-Luokka on `Manufacturer` (sarakkeet), sarja on `Type` (rivit) ja `Values` on `Value` sarjoille.
+Luokka on `Manufacturer` (sarakkeet), sarja on `Type` (rivit) ja `Value` on `Values` sarjoille.
 
 > [!NOTE]
 > `Values`-tiedot tarvitaan sarjoille, koska tietonäkymän yhdistämismäärityksen mukaan visualisointi odottaa, että `Values`-tiedot ryhmitellään `Rows`-tietojen mukaan.
