@@ -10,10 +10,10 @@ ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 3936ebfedb1e4e51fe93b948a49de0b9fb133c52
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73881284"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Organisaation sisältöpaketin yhteyden poistaminen Power BI:lle
@@ -34,7 +34,7 @@ Tietojoukon poistaminen poistaa myös kaikki siihen liittyvät raportit ja koont
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Johdanto organisaation sisältöpaketteihin](service-organizational-content-pack-introduction.md) 
-* [Sovelluksen luominen ja jakaminen Power BI:ssä](service-create-distribute-apps.md) 
+* [Sovelluksen luonti ja jakaminen Power BI:ssä](service-create-distribute-apps.md) 
 * [Power BI -palvelun peruskäsitteitä suunnittelijoille](service-basic-concepts.md)  
 * Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 
