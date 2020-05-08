@@ -10,10 +10,10 @@ ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: b0e52ebf4f529c7da75e79becf30c74d6e2c0248
-ms.sourcegitcommit: f9909731ff5b6b69cdc58e9abf2025b7dee0e536
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77496305"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Koontinäytöt Power BI -palvelun kuluttajille
@@ -24,7 +24,7 @@ ms.locfileid: "77496305"
 
 Power BI ***-koontinäyttö*** on yksi sivu, jota kutsutaan usein pohjaksi, jossa käytetään visualisointeja tarinan kertomiseksi. Koska se on rajoitettu vain yhteen sivuun, hyvin suunniteltu koontinäyttö sisältää vain tarinan tärkeimmät elementit.
 
-![koontinäyttö](media/end-user-dashboards/power-bi-dashboard2.png)
+![koontinäytössä](media/end-user-dashboards/power-bi-dashboard2.png)
 
 Koontinäytössä näkyviä visualisointeja kutsutaan *ruuduiksi*, ja niiden *kiinnittämisestä* koontinäyttöön huolehtivat raporttien *suunnittelijat*. Valitsemalla ruudun pääset useimmiten sille raporttisivulle, jossa visualisointi on luotu. Jos olet uusi Power BI:n käyttäjä, saat hyvän pohjan sen käyttöön lukemalla [Power BI:n peruskäsitteet](end-user-basic-concepts.md).
 
@@ -51,9 +51,9 @@ Raportit sekoitetaan usein koontinäyttöihin, koska nekin ovat pohjia, jotka ov
 | Sivut |Yksi sivu |Yksi tai useampi sivu |
 | Tietolähteet |Yksi tai useampi raportti ja yksi tai useampi tietojoukko koontinäyttöä kohden |Yksi tietojoukko raporttia kohden |
 | suodatusta |Ei voi suodattaa tai jakaa sektoreihin |Monta eri tapaa suodattaa, korostaa ja jakaa sektoreihin |
-| Hälytysten asettaminen |Voit luoda hälytyksiä lähetettäväksi sähköpostina, kun tietyt ehdot täyttyvät |Ei |
+| Hälytysten asettaminen |Voit luoda hälytyksiä lähetettäväksi sähköpostina, kun tietyt ehdot täyttyvät |No |
 | Esittelyssä |Voit määrittää jonkin koontinäytön ”esittelyssä” olevaksi koontinäytöksi |Esittelyssä olevaa raporttia ei voida luoda |
-| Pohjana olevat tietojoukkojen taulukot ja kentät ovat näkyvissä |Ei. Voit viedä tietoja, mutta etänäe taulukoita ja kenttiä itse koontinäytössä. |Kyllä. Tietojoukon taulukot ja kentät ja arvot ovat näkyvissä. |
+| Pohjana olevat tietojoukkojen taulukot ja kentät ovat näkyvissä |Nro Voit viedä tietoja, mutta etänäe taulukoita ja kenttiä itse koontinäytössä. |On. Tietojoukon taulukot ja kentät ja arvot ovat näkyvissä. |
 
 
 ## <a name="dashboard-designers-and-dashboard-consumers"></a>Koontinäytön suunnittelijat ja koontinäytön kuluttajat

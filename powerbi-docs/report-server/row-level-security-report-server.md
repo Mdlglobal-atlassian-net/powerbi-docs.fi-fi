@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
 ms.openlocfilehash: 7436b97cdeacf08f1d4ed9374ec615d56ae92db1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73859193"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Rivitason suojaus (RLS) Power BI -raporttipalvelimessa
@@ -105,7 +105,7 @@ Voit, jos tiedot on tuotu Power BI Desktopiin. Jos käytät reaaliaikaista yhtey
 
 ### <a name="can-i-use-rls-to-limit-the-columns-or-measures-accessible-by-my-users"></a>Voinko käyttää rivitason suojausta rajoittamaan käyttäjien käytössä olevia sarakkeita tai mittareita? 
 
-Ei. Jos käyttäjällä on tietyn tietorivin käyttöoikeus, hän voi nähdä kaikki kyseisen rivin tietosarakkeet. 
+Nro Jos käyttäjällä on tietyn tietorivin käyttöoikeus, hän voi nähdä kaikki kyseisen rivin tietosarakkeet. 
 
 ### <a name="does-rls-let-me-hide-detailed-data-but-give-access-to-data-summarized-in-visuals"></a>Salliiko rivitason suojaus tarkkojen tietojen piilottamisen ja samalla visualisoinneissa olevien yhteenvetotietojen käytön? 
 
