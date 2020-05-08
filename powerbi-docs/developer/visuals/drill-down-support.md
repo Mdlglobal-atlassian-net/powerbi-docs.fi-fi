@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
 ms.openlocfilehash: dd8510230a66a9897023686aefb72990ac01a5fd
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79380385"
 ---
 # <a name="add-drill-down-support"></a>Lisää alaspäin porautumisen tuki
@@ -150,7 +150,7 @@ export class Visual implements IVisual {
 }
 ```
 
-Luo `button`-painikkeet päivittämällä visualisoinnin `update`-menetelmä:
+Luo `update`-painikkeet päivittämällä visualisoinnin `button`-menetelmä:
 
 ```typescript
 export class Visual implements IVisual {

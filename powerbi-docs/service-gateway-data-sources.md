@@ -11,10 +11,10 @@ ms.author: arthii
 ms.custom: seodec18
 LocalizationGroup: Gateways
 ms.openlocfilehash: 15b3236741eb19d9f08601f9503e0380f54a8d63
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79207455"
 ---
 # <a name="manage-data-sources"></a>Tietolähteiden hallinta
@@ -29,11 +29,11 @@ Useimmat tietolähteiden hallintatoiminnot voidaan suorittaa myös ohjelmointira
 
 1. Valitse ![Asetukset-rataskuvake](media/service-gateway-data-sources/icon-gear.png) >  Power BI -palvelun oikeasta yläkulmasta ja valitse sitten **Hallitse yhdyskäytäviä**.
 
-    ![Hallitse yhdyskäytäviä](media/service-gateway-data-sources/manage-gateways.png)
+    ![Yhdyskäytävien hallinta](media/service-gateway-data-sources/manage-gateways.png)
 
 2. Valitse yhdyskäytävä ja valitse sitten **Lisää tietolähde**. Tai valitse **Yhdyskäytävät** > **Lisää tietolähde**.
 
-    ![Lisää tietolähde](media/service-gateway-data-sources/add-data-source.png)
+    ![Tietolähteen lisääminen](media/service-gateway-data-sources/add-data-source.png)
 
 3. Valitse **tietolähteen tyyppi**.
 

@@ -10,16 +10,16 @@ ms.date: 02/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 6e468ac429c26f3b1880501914816ac60f8b7858
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79378727"
 ---
 # <a name="export-reports-to-pdf-from-power-bi-desktop"></a>Raporttien vienti PDF-tiedostoon Power BI Desktopista
 **Power BI Desktopissa** tai Power BI -palvelussa voit viedä raportteja PDF-tiedostoon, ja jakaa tai tulostaa näitä raportteja helposti tästä PDF-tiedostosta.
 
-![Vie PDF-tiedostoon](media/desktop-export-to-pdf/export-to-pdf_01.png)
+![Vienti PDF-tiedostoon](media/desktop-export-to-pdf/export-to-pdf_01.png)
 
 Voit viedä raportin helposti **Power BI Desktopista** PDF-tiedostoon, jotta voit tulostaa PDF-raportin tai jakaa tämän PDF-asiakirjan muiden kanssa. Valitse vain **Tiedosto > Vie PDF-tiedostoon** Power BI Desktopista.
 

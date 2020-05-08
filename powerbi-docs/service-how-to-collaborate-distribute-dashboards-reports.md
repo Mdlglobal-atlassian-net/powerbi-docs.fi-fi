@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 03/12/2020
 LocalizationGroup: Share your work
 ms.openlocfilehash: 86992d2e1426616f8d902a9f49d35407fde60ef2
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79376749"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Töiden jakamistavat Power BI:ssä
@@ -76,7 +76,7 @@ Jotkut käyttäjistä osaavat luoda laadukkaita, hyvin suunniteltu tietomalleja 
 
 Lue lisää [jaettujen tietojoukkojen luomisesta ja käyttämisestä](service-datasets-across-workspaces.md).
 
-## <a name="share-dashboards-and-reports"></a>Raporttinäkymien ja raporttien jakaminen
+## <a name="share-dashboards-and-reports"></a>Koontinäyttöjen ja raporttien jakaminen
 
 Oletetaan, että olet saanut koontinäytön ja raportin valmiiksi omassa työtilassasi tai työtilassa ja haluat joidenkin muiden käyttäjien voivan käyttää sitä. Yksi tapa saada se heidän käyttöönsä on *jakaa* se. 
 

@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 344b041b8cca3e6ed4be1f40c0e783df18315679
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79378589"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Suuren tiheyden viivaotanta Power BI:ssä
@@ -29,7 +29,7 @@ Aiemmin **Power BI** valitsi näytteen arvopisteitä koko pohjana olevasta tieto
 
 Tässä tilanteessa osakkeen hinnalla on monia arvoja jokaisena päivänä. Luonnollisesti osakkeella on alin ja ylin hinta, mutta ne voivat ilmetä mihin tahansa aikaan sellaisina päivinä, joina osakkeilla käydään kauppaa. Suuren tiheyden viivaotannassa näytteet pohjatiedoista saatetaan ottaa joka päivä klo 10.30 ja klo 24.00, jolloin tuloksena on edustava tilannevedos pohjatiedoista eli hinnasta kyseisinä ajankohtina. Tämä näyte ei kuitenkaan välittämättä taltioi tietopisteen eli kyseisen päivän alinta ja ylintä osakehintaa. Tässä ja monissa muissa tilanteissa näyte kuvaa pohjatietoja edustavasti mutta ei aina pysty taltioimaan tärkeitä seikkoja, kuten tässä tapauksessa osakkeen alimpia ja ylimpiä hintoja päivittäin.
 
-Suuren tiheyden tiedoista otetaan näytteitä siksi, että näin voidaan kohtuullisen nopeasti luoda visualisointeja, joiden vuorovaikutteisuus säilyy. Jos visualisoinnissa on liikaa arvopisteitä, sen käyttö hidastuu ja trendit voivat jäädä hahmottamatta. Näytteenottoalgoritmeja kehitetään siis sen takia, että tällaisista tiedoista saataisiin tuotettua parhaita mahdollisia visualisointeja. Power BI Desktopin käyttämää algoritmia on parannettu siten, että se tarjoaa parhaan vasteajan ja esityksen. Sen tavoitteena on lisäksi taltioida tärkeimmät arvopisteet jokaisesta näytteistetystä ajankohdasta.
+Suuren tiheyden tiedoista otetaan näytteitä siksi, että voidaan luoda kohtuullisen nopeasti visualisointeja, joiden vuorovaikutteisuus säilyy. Jos visualisoinnissa on liikaa arvopisteitä, sen käyttö hidastuu ja trendit voivat jäädä hahmottamatta. Näytteenottoalgoritmeja kehitetään siis sen takia, että tällaisista tiedoista saataisiin tuotettua parhaita mahdollisia visualisointeja. Power BI Desktopin käyttämää algoritmia on parannettu siten, että se tarjoaa parhaan vasteajan ja esityksen. Sen tavoitteena on lisäksi taltioida tärkeimmät arvopisteet jokaisesta näytteistetystä ajankohdasta.
 
 ## <a name="how-the-new-line-sampling-algorithm-works"></a>Uuden viivaotanta-algoritmin toimintaperiaate
 Suuren tiheyden viivaotannan uusi algoritmi on käytettävissä jatkuvan X-akselin sisältävien viivakaavioiden ja aluekaavioiden visualisointiin.
@@ -39,7 +39,7 @@ Suuren tiheyden visualisointia varten **Power BI** viipaloi älykkäästi suuren
 ### <a name="minimum-and-maximum-values-for-high-density-line-visuals"></a>Suuren tiheyden viivavisualisointien vähimmäis- ja enimmäisarvot
 Kaikkia visualisointeja koskevat seuraavat rajoitukset:
 
-* Useimmissa visualisoinnissa *näytettävien* arvopisteiden enimmäismäärä on **3 500** riippumatta pohjatietojen arvopisteiden tai sarjojen määrästä (katso *poikkeukset* seuraavasta luettelosta). Näin ollen jos käytettävissä on kymmenen sarjaa, joista kussakin on 350 arvopistettä, visualisoinnin arvopisteiden enimmäismäärä on saavutettu. Jos sarjoja on yksi, siinä voi olla jopa 3 500 arvopisteitä, mikäli uuden algoritmin mukaan ne kaikki tarvitaan pohjatietojen parasta esittämistä varten.
+* Useimmissa visualisoinnissa **näytettävien** arvopisteiden enimmäismäärä on *3 500* riippumatta pohjatietojen arvopisteiden tai sarjojen määrästä (katso *poikkeukset* seuraavasta luettelosta). Näin ollen jos käytettävissä on kymmenen sarjaa, joista kussakin on 350 arvopistettä, visualisoinnin arvopisteiden enimmäismäärä on saavutettu. Jos sarjoja on yksi, siinä voi olla jopa 3 500 arvopisteitä, mikäli uuden algoritmin mukaan ne kaikki tarvitaan pohjatietojen parasta esittämistä varten.
 
 * Visualisoinnissa voi olla enintään **60 sarjaa**. Jos sarjoja on yli 60, jaa tiedot ja luo useita visualisointeja, joista kussakin on korkeintaan 60 sarjaa. On suositeltava tapa käyttää **osittajaa** näyttämään vain osia tiedoista, kuten vain tietyt sarjat. Jos esimerkiksi näytät tietyn selitteen kaikki aliluokat, voit osittajan avulla suodattaa tiedot yleisen luokan mukaan samalla raporttisivulla.
 

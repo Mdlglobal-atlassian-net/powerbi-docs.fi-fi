@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 23291659a12bb08becf0d9a4f57a41a93eadbc5e
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435578"
 ---
 # <a name="get-notifications-in-the-power-bi-mobile-apps"></a>Power BI -mobiilisovellusten ilmoitusten vastaanottaminen
@@ -73,7 +73,7 @@ Voit myös muuttaa sitä, miten Power BI ilmoittaa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Power BI -palvelun tietoilmoitukset](../../service-set-data-alerts.md)
-* [Tietoilmoitusten määrittäminen iPhone-sovelluksessa (Power BI iOS:lle)](mobile-set-data-alerts-in-the-mobile-apps.md)
-* [Tietoilmoitusten määrittäminen Power BI -mobiilisovellukseen Windows 10:ssä](mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Tietohälytysten määrittäminen iPhone-sovelluksessa (Power BI iOS:lle)](mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Määritä tietoilmoitukset Power BI Windows 10 -mobiilisovelluksella](mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Lataa Power BI -sovellusten uusin versio](https://powerbi.microsoft.com/mobile/) mobiililaitteille
 

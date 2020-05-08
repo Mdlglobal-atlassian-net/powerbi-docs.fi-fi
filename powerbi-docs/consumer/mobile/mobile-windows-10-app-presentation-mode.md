@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 02/08/2020
 ms.author: painbar
 ms.openlocfilehash: 3be0ab1eb45716d0b9b7736d3e5bf5b8bfc25891
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79435992"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Raporttien ja koontinäyttöjen esittäminen esitystilassa Surface Hubilla ja Windows 10 -laitteilla
@@ -30,7 +30,7 @@ Voit myös [esittää raporttinäkymiä ja raportteja Power BI -palvelusta koko 
 > Esitystila eroaa [ruutujen tarkastelutilassa](mobile-tiles-in-the-mobile-apps.md).
 
 >[!NOTE]
->Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** lakkaa 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** lopetetaan 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## <a name="use-presentation-mode"></a>Käytä esitystilaa
 Napauta Power BI -mobiilisovelluksessa **Koko näyttö -kuvaketta**, kun haluat vaihtaa koko näytön tilaan.
@@ -57,5 +57,5 @@ Voit irrottaa työkalurivin ja vetää sen mihin tahansa paikkaan näytössä. T
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Esitä raporttinäkymiä ja raportteja Power BI -palvelusta koko näytön tilassa](../end-user-focus.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

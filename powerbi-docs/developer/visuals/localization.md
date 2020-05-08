@@ -10,10 +10,10 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
 ms.openlocfilehash: bb323737934ade08ed4998bdcf8d441e8951732c
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79379843"
 ---
 # <a name="add-the-locale-in-power-bi-for-power-bi-visuals"></a>Alueen lisääminen Power BI:ssä Power BI -visualisoinneille
@@ -153,7 +153,7 @@ Kaikki lokalisointihallinnan käyttöön tarvittavat vaiheet on kuvattu alla.
 
 ## <a name="setup-environment"></a>Asetusympäristö
 
-### <a name="desktop"></a>Työpöytä
+### <a name="desktop"></a>Desktop
 
 Lataa työpöytäkäyttöön Power BI Desktopin lokalisoitu versio osoitteesta https://powerbi.microsoft.com.
 
