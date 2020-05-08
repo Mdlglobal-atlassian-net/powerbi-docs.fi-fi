@@ -10,17 +10,17 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/06/2019
 ms.openlocfilehash: 823f2ea621d16eb911284cadeced2fb676fa5c75
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78923053"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Raporttiparametrit Power BI:n raportin muodostimessa
 
 Tässä aiheessa kuvataan Power BI:n raportin muodostimen raporttiparametrien yleisiä käyttötarkoituksia, määritettäviä ominaisuuksia ja paljon muuta. Raporttiparametrien avulla voit hallita raportin tietoja, yhdistää toisiinsa liittyviä raportteja ja muuttaa raportin esitystapaa. Voit käyttää raporttiparametreja Raportin muodostimessa luoduissa sivutetuissa raporteissa.
 
-## <a name="bkmk_Common_Uses_for_Parameters"></a> Raporttiparametrien yleiset käyttötarkoitukset
+## <a name="common-uses-for-parameters"></a><a name="bkmk_Common_Uses_for_Parameters"></a> Raporttiparametrien yleiset käyttötarkoitukset
 
  Alla on joitakin yleisiä parametrien käyttötapoja.  
   
@@ -36,7 +36,7 @@ Tässä aiheessa kuvataan Power BI:n raportin muodostimen raporttiparametrien yl
   
 - Salli käyttäjien muokata raportin tietoja ja ulkoasua lisäämällä parametreja lausekkeisiin.  
   
-## <a name="UserInterface"></a> Parametreja sisältävän raportin tarkastelu
+## <a name="viewing-a-report-with-parameters"></a><a name="UserInterface"></a> Parametreja sisältävän raportin tarkastelu
 
 Kun tarkastelet raporttia, jossa on parametreja, raporttien katseluohjelman työkalurivi näyttää jokaisen parametrin, joten voit määrittää arvot vuorovaikutteisesti. Seuraavassa kuvassa on raportin parametrialue, jossa on parametrit @ReportMonth, @ReportYear, @EmployeeID, @ShowAll, @ExpandTableRows, @CategoryQuota ja @SalesDate.  
 
@@ -54,7 +54,7 @@ Kun tarkastelet raporttia, jossa on parametreja, raporttien katseluohjelman työ
   
 6. **Näytä raportti** Kun lisäät parametriarvoja, suorita raportti valitsemalla **Näytä raportti**. Jos kaikilla parametreilla on oletusarvot, raportti suoritetaan automaattisesti ensimmäisellä näyttökerralla.  
   
-## <a name="bkmk_Create_Parameters"></a> Parametrien luominen
+## <a name="creating-parameters"></a><a name="bkmk_Create_Parameters"></a> Parametrien luominen
 
 Voit luoda raporttiparametreja muutamalla eri tavalla.
   
@@ -97,11 +97,11 @@ Luo parametri manuaalisesti raporttitietoruudusta. Voit määrittää raporttipa
   
 - Suorita raportti valitsematta ensin parametriarvoa, koska parametrille on luotu oletusarvo.  
   
-## <a name="bkmk_Report_Parameters"></a> Raporttiparametrin ominaisuudet
+## <a name="report-parameter-properties"></a><a name="bkmk_Report_Parameters"></a> Raporttiparametrin ominaisuudet
 
  Voit muuttaa raporttiparametrin ominaisuuksia raportin ominaisuudet -valintaikkunan kautta. Seuraavassa taulukossa on yhteenveto parametreille määritettävissä olevista ominaisuuksista:  
   
-|Ominaisuus|Kuvaus|  
+|Ominaisuus|Description|  
 |--------------|-----------------|  
 |Nimi|Kirjoita parametrille kirjainkoon huomioon ottava nimi. Nimen on alettava kirjaimella, ja siinä voi olla kirjaimia, numeroita ja alaviivoja (_). Nimessä ei voi olla välilyöntejä. Automaattisesti luotavien parametrien nimet vastaavat tietojoukkokyselyn parametreja. Manuaalisesti luodut raporttiparametrit ovat oletusarvoisesti samankaltaisia kuin Raporttiparametri1.|  
 |Kehote|Raportin katseluohjelman työkalurivissä parametrin vieressä näytettävä teksti.|  
@@ -114,9 +114,9 @@ Luo parametri manuaalisesti raporttitietoruudusta. Voit määrittää raporttipa
 |Sisäinen|Valitsemalla tämän voit piilottaa raporttiparametrin. Raporttiparametria voidaan tämän jälkeen tarkastella julkaistussa raportissa vain raportin määrityksissä.|  
 |Käytettävissä olevat arvot|Jos olet määrittänyt käytettävissä olevat parametrin arvot, kelvolliset arvot näkyvät aina avattavassa luettelossa. Jos annat **päivämäärä/aika**-parametrille käytettävissä olevia arvoja, päivämäärät näkyvät parametriruudussa avattavassa luettelossa kalenteriohjausobjektin sijaan.<br /><br /> Voit määrittää tietolähteen käyttämään yksittäistä tapahtumaa kaikissa tietolähteeseen liittyvissä tietojoukkokyselyissä. Näin voit varmistaa, että arvojen luettelo vastaa raporttia ja aliraporttia.<br /><br /> **Tietoturvahuomautus** **Teksti**-tietotyypin parametreja sisältävissä raporteissa on käytettävä käytettävissä olevien arvojen luetteloa (kelvollisten arvojen luetteloa). Varmista, että raporttia suorittavilla käyttäjillä on vain raportin tietojen tarkasteluoikeudet.|  
 |Oletusarvot|Määritä oletusarvot kyselystä tai staattisesta luettelosta.<br /><br /> Kun kaikilla parametreilla on oletusarvot, raportti suoritetaan automaattisesti ensimmäisellä näyttökerralla.|  
-|Laajennettu|Määritä raportin määrityksen ominaisuudeksi **UsedInQuery**. Se on arvo, joka ilmaisee, vaikuttaako parametri raportin tietoihin suoraan tai epäsuorasti.<br /><br /> **Päivitysajankohdan automaattinen määrittäminen**<br /> Valitse tämä vaihtoehto, kun haluat raportin käsittelytoiminnon määrittävän arvon asetuksen. Arvo on **Tosi**, jos raportin käsittelytoiminto havaitsee parametriin suoraan tai epäsuorasti viittaavan tietojoukkokyselyn tai jos raportissa on aliraportteja.<br /><br /> **Päivitä aina**<br /> Valitse tämä vaihtoehto, kun raporttiparametria käytetään tietojoukkokyselyssä tai parametrilausekkeissa suoraan tai epäsuorasti. Tämä asetus määrittää **UsedInQuery**-arvoksi Tosi.<br /><br /> **Älä koskaan päivitä**<br /> Valitse tämä vaihtoehto, kun raporttiparametria ei käytetä tietojoukkokyselyssä tai parametrilausekkeissa suoraan tai epäsuorasti. Tämä asetus määrittää **UsedInQuery**-arvoksi Epätosi.<br /><br /> **Varoitus** Käytä **Älä koskaan päivitä** -vaihtoehtoa harkiten. Raporttipalvelimella **UsedInQuery**-parametria käytetään raporttitietojen ja hahmonnettujen raporttien välimuistiasetusten sekä tilannevedosraporttien asetusten hallintaan. Jos määrität **Älä koskaan päivitä** -parametrin virheellisesti, raporttitiedot tai raportit saatetaan siirtää välimuistiin virheellisesti tai tilannevedosraportin tiedot saattavat siirtyä epäyhtenäisesti. |  
+|Lisäasetukset|Määritä raportin määrityksen ominaisuudeksi **UsedInQuery**. Se on arvo, joka ilmaisee, vaikuttaako parametri raportin tietoihin suoraan tai epäsuorasti.<br /><br /> **Päivitysajankohdan automaattinen määrittäminen**<br /> Valitse tämä vaihtoehto, kun haluat raportin käsittelytoiminnon määrittävän arvon asetuksen. Arvo on **Tosi**, jos raportin käsittelytoiminto havaitsee parametriin suoraan tai epäsuorasti viittaavan tietojoukkokyselyn tai jos raportissa on aliraportteja.<br /><br /> **Päivitä aina**<br /> Valitse tämä vaihtoehto, kun raporttiparametria käytetään tietojoukkokyselyssä tai parametrilausekkeissa suoraan tai epäsuorasti. Tämä asetus määrittää **UsedInQuery**-arvoksi Tosi.<br /><br /> **Älä koskaan päivitä**<br /> Valitse tämä vaihtoehto, kun raporttiparametria ei käytetä tietojoukkokyselyssä tai parametrilausekkeissa suoraan tai epäsuorasti. Tämä asetus määrittää **UsedInQuery**-arvoksi Epätosi.<br /><br /> **Varoitus** Käytä **Älä koskaan päivitä** -vaihtoehtoa harkiten. Raporttipalvelimella **UsedInQuery**-parametria käytetään raporttitietojen ja hahmonnettujen raporttien välimuistiasetusten sekä tilannevedosraporttien asetusten hallintaan. Jos määrität **Älä koskaan päivitä** -parametrin virheellisesti, raporttitiedot tai raportit saatetaan siirtää välimuistiin virheellisesti tai tilannevedosraportin tiedot saattavat siirtyä epäyhtenäisesti. |  
   
-##  <a name="bkmk_Dataset_Parameters"></a> Tietojoukkokysely  
+##  <a name="dataset-query"></a><a name="bkmk_Dataset_Parameters"></a> Tietojoukkokysely  
  Voit suodattaa tietojoukkokyselyn tietoja sisällyttämällä rajoituslauseen, joka rajoittaa noudettuja tietoja määrittämällä tulosjoukkoon sisällytettävät ja siitä pois jätettävät arvot.  
   
  Voit koostaa parametrisoidun kyselyn tietolähteessä suunnittelutyökalun avulla.  
@@ -125,7 +125,7 @@ Luo parametri manuaalisesti raporttitietoruudusta. Voit määrittää raporttipa
   
 -   Microsoft SQL Server Analysis Servicesiin tai muihin moniulotteisiin tietolähteisiin perustuvien kyselyiden tapauksessa voit valita, luodaanko kyselyjen suunnittelutyökalussa määritettyyn suodattimeen perustuva parametri. 
   
-##  <a name="bkmk_Manage_Parameters"></a> Julkaistun raportin parametrien hallinta  
+##  <a name="parameter-management-for-a-published-report"></a><a name="bkmk_Manage_Parameters"></a> Julkaistun raportin parametrien hallinta  
  Kun suunnittelet raporttia, raporttiparametrit tallennetaan raportin määritykseen. Kun julkaiset raportin, raporttiparametrit tallennetaan ja niitä hallitaan erillään raportin määrityksestä.  
   
  Julkaistuissa raporteissa voit käyttää seuraavia parametreja:  
@@ -140,7 +140,7 @@ Luo parametri manuaalisesti raporttitietoruudusta. Voit määrittää raporttipa
   
  Raportin suoritusasetukset voivat vaikuttaa siihen, miten parametreja käsitellään. Raportti, joka suoritetaan tilannevedoksena, ei voi käyttää kyselystä johdettuja parametreja, paitsi jos kysely sisältää parametrien oletusarvot.  
   
-##  <a name="bkmk_Parameters_Subscription"></a> Tilauksen parametrit  
+##  <a name="parameters-for-a-subscription"></a><a name="bkmk_Parameters_Subscription"></a> Tilauksen parametrit  
  Voit määrittää pyydettäessä suoritettavan tai tilannevedosraportin tilauksen ja määrittää tilauksen käsittelyssä käytettävät parametriarvot.  
   
 -   **Pyydettäessä suoritettava raportti**  Voit määrittää pyydettäessä suoritettavalle raportille eri parametriarvon kuin raportissa luetteloiduille julkaistuille arvoille. Oletetaan, että sinulla on palvelun kutsuraportti, jossa asiakkaiden palvelupyynnöt palautetaan päivän, viikon tai kuukauden mukaan *ajanjakso*parametrin avulla. Jos raportin oletusparametriarvoksi määritetään **tänään**, tilauksessa voidaan käyttää eri parametriarvoja (kuten **viikko** tai **kuukausi**) viikoittaisia tai kuukausittaisia lukuja palauttavan raportin tuottamiseen.  

@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.openlocfilehash: 3546254c8bff56ac4caefbdd0b5f8df901256a59
-ms.sourcegitcommit: b22a9a43f61ed7fc0ced1924eec71b2534ac63f3
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/21/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77527564"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Power BI -raporttipalvelimen tuen aikajana
@@ -30,7 +30,7 @@ Tämän tukikäytännön ansiosta voimme tarjota asiakkaillemme uusia innovaatio
 
 | **Versio** | **Julkaisupäivä** | **Tuen päättymispäivä** |
 | --- | --- | --- |
-| Kesä 2017 |12. kesäkuuta 2017 |Tuki lopetettu |
+| Kesäkuu 2017 |12. kesäkuuta 2017 |Tuki lopetettu |
 | Lokakuu 2017 |31. lokakuuta 2017 | Tuki lopetettu |
 | Maaliskuu 2018 | 19. maaliskuuta 2018 | Tuki lopetettu |
 | Elokuu 2018 | 15. elokuuta 2018 | Tuki lopetettu |
@@ -39,7 +39,7 @@ Tämän tukikäytännön ansiosta voimme tarjota asiakkaillemme uusia innovaatio
 | Syyskuu 2019 | Syyskuu 2019 | Syyskuu 2020 
 | Tammikuu 2020 | Tammikuu 2020 | Tammikuu 2021
 
-Lataa Power BI -raporttipalvelin ja Power BI -raporttipalvelimelle optimoitu Power BI Desktop tutustumalla ohjeaiheeseen [Paikallinen raportointi Power BI -raporttipalvelimella](https://powerbi.microsoft.com/report-server/).
+Voit ladata Power BI -raporttipalvelimen ja Power BI-raporttipalvelimille optimoidun Power BI Desktopin [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/) -kohdasta.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Power BI -raporttipalvelinten uudet ominaisuudet](whats-new.md)  

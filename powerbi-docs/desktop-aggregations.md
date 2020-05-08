@@ -10,10 +10,10 @@ ms.date: 02/14/2020
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: b7ff14b4932ba77b47fdb603124d29858c622fc7
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77427648"
 ---
 # <a name="use-aggregations-in-power-bi-desktop"></a>Koosteiden käyttö Power BI Desktopissa
@@ -47,10 +47,10 @@ Kun olet luonut haluamasi kentät sisältävän uuden taulukon, napsauta hiiren 
 
 **Koosteiden hallinta** -valintaikkunan avattavassa **Yhteenveto**-kohdassa on seuraavat arvot:
 - Määrä
-- Ryhmittelyperuste
+- GroupBy
 - Max
 - Min
-- Summa
+- Sum
 - Laske taulukon rivit
 
 ![Koosteiden hallinta -valintaikkuna](media/desktop-aggregations/aggregations_07.jpg)
@@ -118,7 +118,7 @@ Seuraavia dimensiotaulukoita käytetään useimmiten kyselyille, joilla on merki
 
 - Maantiede
 - Asiakas
-- Päivämäärä
+- Date
 - Tuotteen aliluokka
 - Tuoteluokka
 

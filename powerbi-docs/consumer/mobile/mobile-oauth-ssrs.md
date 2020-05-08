@@ -9,10 +9,10 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.openlocfilehash: c3c6e8d7ddb823eb1e857b102c2f6c788e366141
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114948"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Yhdistäminen Power BI -raporttipalvelimeen ja SSRS-palvelimeen OAuthia käyttämällä
@@ -232,7 +232,7 @@ Kun valitset **Yhdistä**, sinut ohjataan ADFS-kirjautumissivulle. Anna toimialu
 
 Kun olet valinnut **Kirjaudu sisään**, näkyviin tulee elementtejä Reporting Services ‑palvelimestasi.
 
-## <a name="multi-factor-authentication"></a>Monimenetelmäinen todentaminen
+## <a name="multi-factor-authentication"></a>Monimenetelmäisen todentaminen
 
 Voit ottaa käyttöön monimenetelmäisen todentamisen lisäsuojauksen ottamiseksi käyttöön ympäristössäsi. Lisätietoja on artikkelissa [AD FS 2016:n ja Azure MFA:n määrittäminen](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa).
 

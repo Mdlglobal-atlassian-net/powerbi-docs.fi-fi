@@ -10,10 +10,10 @@ ms.date: 02/20/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 9a59f8e230ecd8eec6338e92b7fb01e525831617
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79039978"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Usein kysyttyjä kysymyksiä Power BI:stä
@@ -54,13 +54,13 @@ Jos yrityksesi on ostanut Power BI -käyttöoikeuksia tai Premium-kapasiteettiti
 
 Voit myös rekisteröityä Power BI:hin yksityishenkilönä. Lue lisätietoja [Power BI:n omatoimisen rekisteröitymisen prosessista](../service-self-service-signup-for-power-bi.md).
 
-## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Miksi rekisteröitymiseen on käytettävä työsähköpostia?
+## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Miksi minun on kirjauduttava sisään työsähköpostiini?
 
 Power BI ei tue sähköpostin kuluttajapalvelujen tai tietoliikenteen palveluntarjoajien antamia sähköpostiosoitteita. Lue lisää [Power BI:n omatoimisen rekisteröitymisen prosessista](../service-self-service-signup-for-power-bi.md).
 
 ## <a name="does-power-bi-support-mobile-devices"></a>Tukeeko Power BI mobiililaitteita?
 
-Kyllä. Power BI:stä on saatavana alkuperäiset sovellukset Android-puhelimille ja -tableteille, iOS-laitteille ja Windows 10 -laitteille. Lataa haluamasi [Power BI -mobiilisovellus](https://powerbi.microsoft.com/mobile) soveltuvasta kaupasta:  
+On. Power BI:stä on saatavana alkuperäiset sovellukset Android-puhelimille ja -tableteille, iOS-laitteille ja Windows 10 -laitteille. Lataa haluamasi [Power BI -mobiilisovellus](https://powerbi.microsoft.com/mobile) soveltuvasta kaupasta:  
 
 * [Applen App Store](https://go.microsoft.com/fwlink/?LinkId=526218)
 * [Google Play](https://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)

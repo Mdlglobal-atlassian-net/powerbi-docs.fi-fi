@@ -1,6 +1,6 @@
 ---
-title: Poimi tietoja verkkosivulta esimerkin avulla Power BI Desktopissa
-description: Poimi tietoja verkkosivulta antamalla esimerkki siitä mitä haluat tuoda
+title: Tuo tietoja verkkosivulta esimerkin avulla Power BI Desktopissa
+description: Tuo tietoja verkkosivulta antamalla esimerkki siitä mitä haluat tuoda
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,27 +10,27 @@ ms.date: 01/21/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 2c09f21565cdf9987aad2027a148823fb32e2e55
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76538958"
 ---
 # <a name="get-webpage-data-by-providing-examples"></a>Tietojen tuominen verkkosivulta esimerkkejä antamalla
 
-Tietojen tuominen verkkosivulta antaa käyttäjien poimia tietoja helposti verkkosivuilta ja tuoda niitä *Power BI Desktopiin*. Verkkosivuilla olevat tiedot eivät kuitenkaan usein ole siisteissä taulukoissa, joista tietoja on helppo poimia. Tietojen poiminta tällaisilta sivuilta voi olla haastavaa, vaikka tiedot olisivat jäsenneltyjä ja yhdenmukaisia.
+Tietojen tuominen verkkosivulta antaa käyttäjien tuoda tietoja helposti verkkosivuilta *Power BI Desktopiin*. Verkkosivuilla olevat tiedot eivät kuitenkaan usein ole siisteissä taulukoissa, joista tietoja on helppo poimia. Tietojen poiminta tällaisilta sivuilta voi olla haastavaa, vaikka tiedot olisivat jäsenneltyjä ja yhdenmukaisia.
 
-Ongelmaan on ratkaisu. *Tuo esimerkin mukaisia tietoja verkosta* -toiminnon avulla voit näyttää Power BI Desktopille, mitä tietoja haluat poimia, antamalla yhden tai useampia esimerkkejä yhdistimen valintaikkunassa. Power BI Desktop kerää sivulta muita tietoja, jotka vastaavat esimerkkejäsi. Tämän ratkaisun avulla voit poimia verkkosivuilta kaikenlaisia tietoja, mukaan lukien sekä *taulukoissa* että taulukoiden ulkopuolella olevia tietoja.
+Ongelmaan on ratkaisu. *Tuo esimerkin mukaisia tietoja verkosta* -toiminnon avulla voit näyttää Power BI Desktopille, mitä tietoja haluat poimia, antamalla yhden tai useampia esimerkkejä yhdistimen valintaikkunassa. Power BI Desktop kerää sivulta muita tietoja, jotka vastaavat esimerkkejäsi. Tämän ratkaisun avulla voit tuoda verkkosivuilta kaikenlaisia tietoja, mukaan lukien sekä *taulukoissa* että taulukoiden ulkopuolella olevia tietoja.
 
 ![Tuo esimerkin mukaisia tietoja](media/desktop-connect-to-web-by-example/web-by-example_01.png)
 
 Kuvissa olevat hinnat ovat vain esimerkkejä varten.
 
-## <a name="using-get-data-from-web-by-example"></a>Tuo esimerkin mukaisia tietoja verkosta -toiminnon käyttö
+## <a name="using-get-data-from-web-by-example"></a>Toiminnon Tuo esimerkin mukaisia tietoja käyttäminen
 
 Valitse **Nouda tiedot** **Aloitus**-valintanauhasta. Valitse esiin tulevasta valintaikkunasta **Muut** vasemmassa ruudussa olevista luokista ja valitse sitten **Verkko**. Jatka valitsemalla **Yhdistä**.
 
-![Valitse Nouda tiedot -kohdasta Verkko](media/desktop-connect-to-web-by-example/web-by-example_03.png)
+![valitse Verkko kohdassa Nouda tiedot](media/desktop-connect-to-web-by-example/web-by-example_03.png)
 
 Syötä sitten **Verkosta**-kohtaan sen verkkosivun URL-osoite, josta haluat poimia tietoja. Tässä artikkelissa käytämme Microsoft Store -verkkosivua ja näytämme, miten tämä yhdistin toimii.
 
@@ -38,7 +38,7 @@ Jos haluat edetä mukana, voit käyttää [Microsoft Storen URL-osoitetta](https
 
     https://www.microsoft.com/store/top-paid/games/xbox?category=classics
 
-![Verkko-valintaikkuna](media/desktop-connect-to-web-by-example/web-by-example_04.png)
+![verkkodialogi](media/desktop-connect-to-web-by-example/web-by-example_04.png)
 
 Kun valitset **OK**, siirryt **Siirtymistoiminto**-valintaikkunaan, jossa esitetään verkkosivulta mahdollisesti automaattisesti havaitut taulukot. Alla olevassa kuvassa näytetyssä tapauksessa ei löytynyt taulukoita. Jos haluat antaa esimerkkejä, valitse **Lisää taulukko käyttäen esimerkkejä**.
 
@@ -46,7 +46,7 @@ Kun valitset **OK**, siirryt **Siirtymistoiminto**-valintaikkunaan, jossa esitet
 
 **Lisää taulukko käyttäen esimerkkejä** -kohdassa on vuorovaikutteinen ikkuna, jossa voit esikatsella verkkosivun sisältöä. Anna poimittavien tietojen malliarvot.
 
-Tässä esimerkissä poimimme kunkin sivustolla olevan pelin *Nimen* ja *Hinnan*. Voimme tehdä niin antamalla pari esimerkkiä sivulta kussakin sarakkeessa. Kun kirjoitat esimerkkejä, *Power Query* poimii tiedot, jotka sopivat esimerkkisyötteiden rakenteeseen, käyttämällä älykkäitä tietojen poiminta-algoritmeja.
+Tässä esimerkissä tuomme kunkin sivustolla olevan pelin *Nimen* ja *Hinnan*. Voimme tehdä niin antamalla pari esimerkkiä sivulta kussakin sarakkeessa. Kun kirjoitat esimerkkejä, *Power Query* poimii tiedot, jotka sopivat esimerkkisyötteiden rakenteeseen, käyttämällä älykkäitä tietojen poiminta-algoritmeja.
 
 ![esimerkkien mukaiset tiedot](media/desktop-connect-to-web-by-example/web-by-example_06.png)
 

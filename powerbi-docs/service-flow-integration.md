@@ -11,10 +11,10 @@ ms.date: 02/25/2020
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: aafba825c5bd4ece3c8b97256d5943f91b456cd7
-ms.sourcegitcommit: 032a77f2367ca937f45e7e751997d7b7d0e89ee2
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77609708"
 ---
 # <a name="power-automate-and-power-bi"></a>Power Automate ja Power BI
@@ -72,7 +72,7 @@ Tässä mallissa on yksi käynnistin (Power BI-tietohälytys Irlannin uusia olym
 1. Kun olet valmis, valitse **Luo työnkulku** tai **Tallenna työnkulku**.  Työnkulku luodaan ja tarkastetaan.  Power Automate kertoo, jos se löytää virheitä.
 2. Jos virheitä löytyy, valitse **Muokkaa työnkulkua** korjataksesi ne tai valitse **Valmis** suorittaaksesi uuden työnkulun.
    
-   ![onnistumisilmoitus](media/service-flow-integration/power-bi-flow-running.png)
+   ![onnistumissanoma](media/service-flow-integration/power-bi-flow-running.png)
 5. Kun tietoilmoitus käynnistyy, lähetetään sähköpostiviesti antamiisi osoitteisiin.  
    
    ![ilmoituksen sähköpostiviesti](media/service-flow-integration/power-bi-flow-email2.png)
@@ -86,7 +86,7 @@ Seuraavaksi luomme alusta alkaen yksinkertaisen työnkulun, joka käynnistyy Pow
    ![Power Automaten yläosan valikkorivi](media/service-flow-integration/power-bi-my-flows.png)
 3. Käytä hakuruutua hakeaksesi Power BI -käynnistimiä ja valitse **Power BI - tietopohjaisen ilmoituksen käynnistyminen**.
 
-### <a name="build-your-flow"></a>Työnkulun luominen
+### <a name="build-your-flow"></a>Muodosta työnkulkusi
 1. Valitse avattavasta valikosta ilmoituksesi nimi.  Oppiaksesi luomaan ilmoituksen, katso [Tietoilmoitukset Power BI:ssä](service-set-data-alerts.md).
    
     ![valitse ilmoituksen nimi](media/service-flow-integration/power-bi-totalstores2.png)
@@ -101,7 +101,7 @@ Seuraavaksi luomme alusta alkaen yksinkertaisen työnkulun, joka käynnistyy Pow
    ![jatka työnkulun muodostamista](media/service-flow-integration/power-bi-flow-event.png)
 5. Valitse **Luo työnkulku**, kun olet valmis.  Power Automate tallentaa ja arvioi työnkulun. Jos virheitä ei löydetä, valitse **Valmis** ja voit suorittaa tämän työnkulun.  Uusi työnkulku lisätään **Omat työnkulut** -sivulle.
    
-   ![Viimeistele työnkulku](media/service-flow-integration/power-bi-flow-running.png)
+   ![Työnkulun viimeisteleminen](media/service-flow-integration/power-bi-flow-running.png)
 6. Kun Power BI -tietoilmoitus käynnistää työnkulun, näyttöön ilmestyvä Outlook -tapahtumailmoitus näyttää suunnilleen tältä.
    
     ![Power Automate käynnistää Outlook-ilmoituksen](media/service-flow-integration/power-bi-flow-notice.png)

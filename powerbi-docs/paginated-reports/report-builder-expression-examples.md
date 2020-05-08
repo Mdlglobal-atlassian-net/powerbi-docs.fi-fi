@@ -9,10 +9,10 @@ ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 48e81c91a4555b4c8ea847ddffb1413058bbb152
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921144"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Power BI:n raportin muodostimen lauseke-esimerkit
@@ -37,7 +37,7 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
 ## <a name="functions"></a>Funktiot  
  Monet raporttien lausekkeet sisältävät funktioita. Voit muotoilla tietoja, soveltaa logiikkaa ja käyttää raportin metatietoja näiden funktioiden avulla. Voit kirjoittaa lausekkeita, joissa käytetään Microsoft Visual Basic -suorituskirjaston `xref:System.Convert` ja `xref:System.Math` -nimitilojen funktioita. Voit lisätä viittauksia funktioihin mukautettuna koodina. Voit käyttää myös Microsoft.NET Frameworkin luokkia, kuten `xref:System.Text.RegularExpressions`.  
   
-##  <a name="VisualBasicFunctions"></a> Visual Basic -funktiot  
+##  <a name="visual-basic-functions"></a><a name="VisualBasicFunctions"></a> Visual Basic -funktiot  
  Visual Basic -funktioilla voit käsitellä tietoja, jotka näytetään tekstiruuduissa tai joita käytetään parametreissa, ominaisuuksissa tai raportin muissa alueissa. Tämä osio sisältää esimerkkejä joistain tällaisista funktioista. Katso lisätiedot kohdasta [Visual Basic Runtime -kirjaston jäsenet](https://go.microsoft.com/fwlink/?LinkId=198941) MSDN:ssä.  
   
  .NET Framework tarjoaa monia mukautettuja muotoiluasetuksia, kuten tarkat päivämäärämuodot. Katso lisätiedot [Muotoilutyypit](/dotnet/standard/base-types/formatting-types)-kohdasta.  
@@ -56,7 +56,7 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
     = Round(1.3*5)/5  
     ```  
   
-###  <a name="DateFunctions"></a> Päivämääräfunktiot  
+###  <a name="date-functions"></a><a name="DateFunctions"></a> Päivämääräfunktiot  
   
 -   **Today**-funktio antaa senhetkisen päivämäärän. Tätä lauseketta voidaan käyttää tekstiruudussa näyttämään raportin päivämäärä tai parametrissa suodattamaan tiedot senhetkisen päivämäärän perusteella.  
   
@@ -161,7 +161,7 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
 |Vuosi sitten|`=DateSerial(Year(Parameters!TodaysDate.Value)-1,Month(Parameters!TodaysDate.Value),Day(Parameters!TodaysDate.Value))`|  
 |Kaksi vuotta sitten|`=DateSerial(Year(Parameters!TodaysDate.Value)-2,Month(Parameters!TodaysDate.Value),Day(Parameters!TodaysDate.Value))`|  
   
-###  <a name="StringFunctions"></a> Merkkijonofunktiot  
+###  <a name="string-functions"></a><a name="StringFunctions"></a> Merkkijonofunktiot  
   
 -   Yhdistä useita kenttiä ketjutusoperaattoreilla ja Visual Basic -vakioilla. Seuraava lauseke palauttaa kaksi kenttää, jotka ovat samassa tekstiruudussa omilla riveillään:  
   
@@ -177,7 +177,7 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
   
      Jos tekstiruutu sisältää vain päivämäärän tai luvun, aseta muotoilu tekstiruudun Muotoilu-ominaisuuden avulla tekstiruudun sisäisen **Format**-funktion sijaan.  
   
--   **Right**, **Len** ja **InStr** ovat hyödyllisiä funktioita alimerkkijonon palauttamiseen. Esimerkiksi *DOMAIN*\\*username* rajataan ainoastaan käyttäjänimeen. Seuraava lauseke palauttaa *User*-parametrista kenoviivan oikealla puolella sijaitsevan merkkijonon osan (\\):  
+-   **Right**, **Len** ja **InStr** ovat hyödyllisiä funktioita alimerkkijonon palauttamiseen. Esimerkiksi *DOMAIN*\\*username* rajataan ainoastaan käyttäjänimeen. Seuraava lauseke palauttaa \\User *-parametrista kenoviivan oikealla puolella sijaitsevan merkkijonon osan (* ):  
   
     ```  
     =Right(Parameters!User.Value, Len(Parameters!User.Value) - InStr(Parameters!User.Value, "\"))  
@@ -202,7 +202,7 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
   
     ```  
   
--   .NET Framework `xref:System.Text.RegularExpressions`:n **Regex**-funktiot ovat tehokas tapa muuttaa olemassa olevien merkkijonojen muotoa. Tällaisia merkkijonoja ovat esimerkiksi puhelinnumerot. Seuraavassa lausekkeessa **Replace**-funktion avulla kentässä oleva kymmennumeroinen puhelinnumero muutetaan muodosta "*nnn*-*nnn*-*nnnn*" muotoon "(*nnn*) *nnn*-*nnnn*":  
+-   .NET Framework **:n** Regex`xref:System.Text.RegularExpressions`-funktiot ovat tehokas tapa muuttaa olemassa olevien merkkijonojen muotoa. Tällaisia merkkijonoja ovat esimerkiksi puhelinnumerot. Seuraavassa lausekkeessa **Replace**-funktion avulla kentässä oleva kymmennumeroinen puhelinnumero muutetaan muodosta "*nnn*-*nnn*-*nnnn*" muotoon "(*nnn*) *nnn*-*nnnn*":  
   
     ```  
     =System.Text.RegularExpressions.Regex.Replace(Fields!Phone.Value, "(\d{3})[ -.]*(\d{3})[ -.]*(\d{4})", "($1) $2-$3")  
@@ -211,7 +211,7 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
     > [!NOTE]  
     >  Varmista, että Fields!Phone-arvo ei sisällä välilyöntejä ja että sen tyyppi on `xref:System.String`.  
   
-### <a name="lookup"></a>Lookup  
+### <a name="lookup"></a>Haku  
   
 -   Kun olet määrittänyt avainkentän, voit noutaa **Lookup**-funktiolla tietojoukosta yksi-yhteen-suhteen arvon, esimerkiksi avain-arvoparin. Seuraava lauseke näyttää tietojoukon (”Tuote”) tuotenimen, jos tuotetunnus vastaa seuraavaa:  
   
@@ -227,7 +227,7 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
     =Join(LookupSet(Fields!ContactID.Value, Fields!PersonID.Value, Fields!PhoneNumber.Value, "PhoneList"),",")  
     ```  
   
-###  <a name="ConversionFunctions"></a> Muuntofunktiot  
+###  <a name="conversion-functions"></a><a name="ConversionFunctions"></a> Muuntofunktiot  
  Visual Basic -funktioiden avulla voit muuntaa kentän tietotyypistä toiseen. Muuntofunktioiden avulla kentän oletustietotyyppi voidaan muuntaa laskutoimituksiin tai tekstin yhdistämiseen vaadituksi tietotyypiksi.  
   
 -   Seuraava lauseke muuntaa vakion 500 Decimal-tyyppiseksi, jotta sitä voidaan verrata Transact-SQL -rahatietotyyppiin suodatinlausekkeen Arvo-kentässä.  
@@ -242,7 +242,7 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
     =CStr(Parameters!MySelection.Count)  
     ```  
   
-###  <a name="DecisionFunctions"></a> Päätösfunktiot  
+###  <a name="decision-functions"></a><a name="DecisionFunctions"></a> Päätösfunktiot  
   
 -   **Iif**-funktio palauttaa kaksi arvoa sen mukaan, onko lauseke tosi vai epätosi. Seuraavassa lausekkeessa **Iif**-funktio palauttaa totuusarvon **Tosi**, jos arvon (`LineTotal`) on yli 100. Muussa tapauksessa se palauttaa arvon **Epätosi**:  
   
@@ -297,10 +297,10 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
   
     ```  
   
-##  <a name="ReportFunctions"></a> Raporttifunktiot  
+##  <a name="report-functions"></a><a name="ReportFunctions"></a> Raporttifunktiot  
  Voit lisätä lausekkeessa viitteen raportin lisäfunktioihin, jotka käsittelevät raportin tietoja. Tässä osiossa annetaan esimerkkejä kahdesta tällaisesta funktiosta. 
   
-###  <a name="Sum"></a> Summa  
+###  <a name="sum"></a><a name="Sum"></a> Summa  
   
 -   **Sum**-funktio laskee yhteen ryhmän tai tietoalueen arvot. Tämä funktio on kätevä ryhmän otsikossa tai alatunnisteessa. Seuraava lauseke näyttää Tilaus-ryhmän tai -tietoalueen tietojen summan:  
   
@@ -314,7 +314,7 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
     =Sum(IIF(Fields!State.Value = "Finished", 1, 0))  
     ```  
   
-###  <a name="RowNumber"></a> RowNumber  
+###  <a name="rownumber"></a><a name="RowNumber"></a> RowNumber  
   
 -   Tietoalueessa käytettynä **RowNumber**-funktio näyttää kunkin lausekkeen sisältämän tekstiruutuesiintymän rivin numeron. Tämä toiminto voi auttaa taulukon rivien numeroimisessa. Siitä voi olla hyötyä myös monimutkaisemmissa tehtävissä, kuten rivien määrään perustuvien sivunvaihtojen antamisessa. Katso lisätiedot tämän aiheen kohdasta [Sivunvaihdot](#PageBreaks).  
   
@@ -324,10 +324,10 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
     =RowNumber(Nothing)  
     ```  
   
-##  <a name="AppearanceofReportData"></a> Raporttitietojen ulkoasu  
+##  <a name="appearance-of-report-data"></a><a name="AppearanceofReportData"></a> Raporttitietojen ulkoasu  
  Lausekkeiden avulla voit muuttaa sitä, miten tiedot näkyvät raportissa. Voit esimerkiksi näyttää kahden kentän arvot yhdessä tekstiruudussa, näyttää raporttia koskevia tietoja tai hallita sitä, miten sivunvaihdot lisätään raporttiin.  
   
-###  <a name="PageHeadersandFooters"></a> Sivun otsikot ja alatunnisteet  
+###  <a name="page-headers-and-footers"></a><a name="PageHeadersandFooters"></a> Sivun otsikot ja alatunnisteet  
  Kun suunnittelet raporttia, haluat ehkä näyttää raportin nimen ja sivunumeron raportin alatunnisteessa. Voit tehdä tämän seuraavien lausekkeiden avulla:  
   
 -   Seuraava lauseke antaa raportin nimen ja sen suorittamisen kellonajan. Se voidaan sijoittaa raportin alatunnisteeseen tekstiruutuun tai raportin leipätekstiin. Ajan muoto määrätään .NET Frameworkin lyhyen päivämäärän muotoilumerkkijonolla:  
@@ -367,7 +367,7 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
 > [!NOTE]  
 >  Voit viitata vain yhteen sivun otsikon tai alatunnisteen raporttikohteeseen lauseketta kohti. Voit myös viitata tekstiruudun nimeen, mutta et todellisiin tekstiruudun, sivun otsikon ja alatunnisteen lausekkeiden sisäiseen tietolausekkeeseen.  
   
-###  <a name="PageBreaks"></a> Sivunvaihdot  
+###  <a name="page-breaks"></a><a name="PageBreaks"></a> Sivunvaihdot  
  Joissain raporteissa haluat ehkä sijoittaa sivunvaihdon määritetyn rivimäärän loppuun ryhmien tai raporttikohteiden lopussa olevien sivunvaihtojen sijaan tai niiden lisäksi. Voit tehdä tämän luomalla ryhmän, joka sisältää haluamiasi ryhmiä tai tietueita, lisäämällä sivunvaihdon ryhmään ja lisäämällä sitten ryhmälausekkeen ryhmään määritetyn rivimäärän mukaan.  
   
 -   Ryhmälausekkeeseen sijoitettuna seuraava lauseke määrittää numeron joka 25. riville. Kun ryhmälle on määritetty sivunvaihto, tämä lauseke tuottaa sivunvaihdon 25 rivin välein.  
@@ -382,10 +382,10 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
     =Ceiling(RowNumber(Nothing)/Parameters!RowsPerPage.Value)  
     ```  
   
-##  <a name="Properties"></a> Ominaisuudet  
+##  <a name="properties"></a><a name="Properties"></a> Ominaisuudet  
  Lausekkeita ei käytetä vain tietojen näyttämiseen tekstiruuduissa. Niiden avulla voidaan myös muuttaa sitä, miten ominaisuuksia käytetään raporttikohteissa. Voit muuttaa raporttikohteen tyylin tietoja tai muuttaa sen näkyvyyttä.  
   
-###  <a name="Formatting"></a> Muotoilu  
+###  <a name="formatting"></a><a name="Formatting"></a> Muotoilu  
   
 -   Tekstiruudun Väri-ominaisuudessa käytettynä seuraava lauseke muuttaa tekstin väriä `Profit`-kentän arvon mukaan:  
   
@@ -415,7 +415,7 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
 ### <a name="chart-colors"></a>Kaaviovärit  
  Voit määrittää Muoto-kaavion värit mukautetulla koodilla, jonka avulla voit hallita värien ja tietopistearvojen liitosta. Näin voit käyttää yhtenäisiä värejä useissa kaavioissa, joissa on samat luokkaryhmät. 
   
-###  <a name="Visibility"></a> Näkyvyys  
+###  <a name="visibility"></a><a name="Visibility"></a> Näkyvyys  
  Voit näyttää tai piilottaa raportin kohteita raporttikohteen näkyvyysominaisuuksien avulla. Voit piilottaa taulukon tai muun tietoalueen tietorivit aluksi lausekkeen arvon perusteella.  
   
 -   Ryhmän tietorivien alkunäkyvyyteen käytettynä seuraava lauseke näyttää kaikki 90 prosenttia ylittävät tietorivit `PctQuota`-kentässä:  
@@ -436,7 +436,7 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
     =IIF(Fields!Column_1.IsMissing, true, false)  
     ```  
   
-###  <a name="Hyperlinks"></a> URL-osoitteet  
+###  <a name="urls"></a><a name="Hyperlinks"></a> URL-osoitteet  
  Voit mukauttaa URL-osoitteita raporttitietojen avulla. Voit myös hallita ehdollisesti, lisätäänkö URL-osoitteet tekstiruudun toiminnoiksi.  
   
 -   Tekstiruudun toimintona käytettynä seuraava lauseke luo mukautetun URL-osoitteen, joka määrittää tietojoukon kentän `EmployeeID` URL-parametriksi.  
@@ -451,10 +451,10 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
     =IIF(Parameters!IncludeURLs.Value,"https://adventure-works.com/productcatalog",Nothing)  
     ```  
   
-##  <a name="ReportData"></a> Raporttitiedot  
+##  <a name="report-data"></a><a name="ReportData"></a> Raporttitiedot  
  Lausekkeita voidaan käyttää raportissa käytettyjen tietojen käsittelyyn. Voit viitata parametreihin ja muihin raporttitietoihin. Voit myös muuttaa kyselyä, jota käytetään raportin tietojen noutamiseen.  
   
-###  <a name="Parameters"></a> Parametrit  
+###  <a name="parameters"></a><a name="Parameters"></a> Parametrit  
  Voit muuttaa parametrin oletusarvoa käyttämällä lausekkeita parametrissa. Voit esimerkiksi käyttää parametria tietojen suodattamiseen tietyn, raportin suorittamiseen käytetyn käyttäjätunnuksen mukaan.  
   
 -   Parametrin oletusarvona käytettynä seuraava lauseke kerää raportin suorittavan käyttäjän käyttäjätunnuksen:  
@@ -475,7 +475,7 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
     =Fields(Parameters!ParameterField.Value).Value  
     ```  
   
-##  <a name="CustomCode"></a> Mukautettu koodi  
+##  <a name="custom-code"></a><a name="CustomCode"></a> Mukautettu koodi  
  Voit käyttää mukautettua koodia upotettuna raporttiin. 
   
 ### <a name="using-group-variables-for-custom-aggregation"></a>Ryhmän muuttujien käyttäminen mukautettuun koostamiseen  

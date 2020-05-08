@@ -10,10 +10,10 @@ ms.date: 10/08/2019
 ms.author: lukaszp
 LocalizationGroup: Common tasks
 ms.openlocfilehash: 7ed0920f66c178c23e6c4db22ff6acd998619522
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76160554"
 ---
 # <a name="set-contact-information-for-reports-and-dashboards-in-the-power-bi-service"></a>Power BI -palvelun raporttien ja koontinäyttöjen yhteystietojen määrittäminen
@@ -57,7 +57,7 @@ Yhteystietoluetteloiden tietoja käytetään myös muissa paikoissa. Sitä käyt
 
      ![palvelun koontinäytön yhteystietojen määrittäminen](media/service-item-contact/service-dashboard-contact-setting.png)
 
-## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
+## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioon otettavat seikat
 * Yhteystieto määritetään automaattisesti Power BI -palvelussa luoduille uusille tietoyksiköille. Olemassa oleville tietoyksiköille näytetään työtilan oletusarvo.
 * Voit valita minkä tahansa käyttäjän tai ryhmän yhteystietoluettelosta, mutta heille ei myönnetä käyttöoikeutta tietoyksikköön automaattisesti. Käytä jakamista tai anna käyttöoikeudet niitä tarvitseville käyttäjille työtilan roolien avulla. 
 * Kohdetason yhteystietolistaa ei työnnetä sovelluksiin, kun ne julkaistaan. Uusi sovelluksen siirtymäkokemus järjestää tuen URL-osoitteen, jonka määrität suuren sovelluskäyttäjäjoukon palautteen hallitsemisen avuksi.

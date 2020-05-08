@@ -10,10 +10,10 @@ ms.date: 02/12/2020
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 48380d40d819ea1af74430546b9548c372bd2091
-ms.sourcegitcommit: d6a48e6f6e3449820b5ca03638b11c55f4e9319c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77426606"
 ---
 # <a name="build-permission-for-shared-datasets-preview"></a>Jaettujen tietojoukkojen muodostamisoikeus (esiversio)
@@ -108,4 +108,4 @@ Voit poistaa muodostamisoikeuden. Jos poistat oikeuksia, käyttäjät, joiden oi
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 - [Tietojoukkojen käyttö eri työtiloissa (esikatselu)](service-datasets-across-workspaces.md)
-- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+- Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
