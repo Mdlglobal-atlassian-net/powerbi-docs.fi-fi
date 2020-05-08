@@ -10,10 +10,10 @@ ms.date: 01/15/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: eac1134ff12025d05cd59e86b7538cde58e3a2ee
-ms.sourcegitcommit: 08f65ea314b547b41b51afef6876e56182190266
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/25/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76753147"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Yhteyden muodostaminen SSAS-monidimensiomalleihin Power BI Desktopissa
@@ -41,7 +41,7 @@ Seuraavassa taulukossa esitetään monidimensioisten objektien ja Power BI Deskt
 | Dimension määritteet (avaimet), nimi |Sarakkeet |
 | Mittariryhmä |Taulukko |
 | Mittari |Mittari |
-| Mittarit ilman niihin liittyvää mittariryhmää |Taulukossa nimeltä *Mittarit* |
+| Mittarit ilman niihin liittyvää mittariryhmää |Taulukon sisällä kutsuttavat *mittarit* |
 | Mittariryhmän suhde kuution dimensioon |Suhde |
 | Perspektiivi |Perspektiivi |
 | Suorituskykyilmaisin |Suorituskykyilmaisin |

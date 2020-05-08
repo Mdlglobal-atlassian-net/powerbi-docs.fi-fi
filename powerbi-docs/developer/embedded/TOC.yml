@@ -2,7 +2,7 @@
   href: index.yml
   expanded: true
   items:
-    - name: Yleiskatsaus
+    - name: Yhteenveto
       expanded: true
       items:
         - name: 'Mitä on upottaminen Power BI:n avulla'

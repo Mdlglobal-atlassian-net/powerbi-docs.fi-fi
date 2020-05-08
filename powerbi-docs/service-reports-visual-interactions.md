@@ -11,10 +11,10 @@ ms.date: 02/04/2020
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: 1d723f3dd67eb5e096622c882b5f538a77666d9e
-ms.sourcegitcommit: 75300b3f53f438ed7d3bd4edc93b9eb5925bf3af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77036695"
 ---
 # <a name="change-how-visuals-interact-in-a-power-bi-report"></a>Visualisointien vuorovaikutuksen muuttaminen Power BI -raportissa
@@ -27,7 +27,7 @@ Katso [Tietoja suodattamisesta ja korostamisesta](power-bi-reports-filters-and-h
 
 Tässä artikkelissa kerrotaan, miten voit käyttää **visualisointitoimia** Power BI Desktopissa. Prosessi vastaa Power BI -palvelun [muokkausnäkymää](service-interact-with-a-report-in-editing-view.md). Jos sinulla on vain lukunäkymän käyttöoikeus tai jos raportti on jaettu kanssasi, et voi muuttaa visualisointitoimien asetuksia.
 
-Termejä *ristiinsuodatus* ja *ristiinkorostus* käytetään tässä kuvatun toiminnan erottamiseksi siitä, mitä tapahtuu, kun käytät visualisointien *suodattamiseen* ja *korostamiseen* **Suodattimet**-ruutua.  
+Termejä *ristiinsuodatus* ja *ristiinkorostus* käytetään tässä kuvatun toiminnan erottamiseksi siitä, mitä tapahtuu, kun käytät visualisointien **suodattamiseen** ja *korostamiseen* *Suodattimet*-ruutua.  
 
 > [!NOTE]
 > Tässä videossa käytetään Power BI Desktopin ja Power BI -palvelun vanhempia versioita. 

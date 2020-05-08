@@ -9,10 +9,10 @@ ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
 ms.openlocfilehash: c342a7472666ee50b7213e7d933ad36da85ce7f6
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76975029"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Käyttämiesi palveluiden yhdistäminen Power BI:hin
@@ -70,5 +70,5 @@ Jos olet kiinnostunut luomaan mallisovelluksia ja jakamaan niitä itse, katso [M
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Jaa sovelluksia työtovereillesi](service-create-distribute-apps.md)
 * [Luo uusia työtiloja Power BI:ssä](service-create-the-new-workspaces.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

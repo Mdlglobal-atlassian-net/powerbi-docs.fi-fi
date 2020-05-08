@@ -11,10 +11,10 @@ ms.date: 03/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 7ff02eb07d4b052892cc80ab4710223d8d302a9f
-ms.sourcegitcommit: 743167a911991d19019fef16a6c582212f6a9229
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78893440"
 ---
 # <a name="customize-visualization-titles-backgrounds-and-legends"></a>Visualisoinnin otsikoiden, taustojen ja selitteiden mukauttaminen
@@ -49,7 +49,7 @@ Seuraa mukana kirjautumalla sisään Power BI Desktopiin ja avaamalla [Jälleenm
 
 1. Siirrä **otsikon** liukusäädin tilaan **Käytössä**.
 
-1. Voit muuttaa otsikkoa kirjoittamalla *Myymälöiden määrä kuukauden mukaan avattuna* **Otsikon teksti** -kenttään.
+1. Voit muuttaa otsikkoa kirjoittamalla *Myymälöiden määrä kuukauden mukaan avattuna***Otsikon teksti** -kenttään.
 
     ![Näyttökuva muotoruudusta, jossa on annettu otsikkoteksti.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png)
 
@@ -139,7 +139,7 @@ Seuraavassa on luettelo visualisointi- ja mukautusvaihtoehdoista, jotka ovat kä
 | Palkki | kyllä | kyllä |kyllä |
 | Kortti | kyllä | kyllä |– |
 | Monirivinen kortti | kyllä | kyllä | – |
-| Sarake | kyllä | kyllä | kyllä |
+| sarake | kyllä | kyllä | kyllä |
 | Yhdistelmä | kyllä | kyllä | kyllä |
 | Ympyrä | kyllä | kyllä | kyllä |
 | Täytetty kartta | kyllä | kyllä | kyllä |
@@ -151,7 +151,7 @@ Seuraavassa on luettelo visualisointi- ja mukautusvaihtoehdoista, jotka ovat kä
 | Kartta | kyllä | kyllä | kyllä |
 | Matriisi | kyllä | kyllä | – |
 | Ympyrä | kyllä | kyllä | kyllä |
-| Q&A | kyllä | kyllä | – |
+| Kysymykset ja vastaukset | kyllä | kyllä | – |
 | Piste | kyllä | kyllä | kyllä |
 | Muoto | kyllä | kyllä | kyllä |
 | Osittaja | kyllä | kyllä | – |

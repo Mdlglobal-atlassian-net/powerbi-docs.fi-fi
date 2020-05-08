@@ -2,7 +2,7 @@
   href: index.yml
   expanded: true
   items:
-    - name: Yleiskatsaus
+    - name: Yhteenveto
       expanded: true
       items:
         - name: Kyselyeditorin yleiskatsaus
@@ -83,7 +83,7 @@
               href: ../service-dataflows-create-use.md
             - name: Tietovoiden edistäminen tai sertifiointi
               href: service-dataflows-promote-certify.md
-            - name: Parannetun laskentamoduulin käyttö tietovoiden kanssa
+            - name: Parannetun käsittelymoduulin käyttäminen tietovoiden kanssa
               href: ../service-dataflows-enhanced-compute-engine.md
             - name: Lasketut entiteetit ja Power BI Premium
               href: ../service-dataflows-computed-entities-premium.md
@@ -109,7 +109,7 @@
               href: ../service-dataflows-add-cdm-folder.md
             - name: 'Integroi Automaattianalyysipalvelut Power BI:ssä'
               href: ../service-machine-learning-integration.md
-            - name: 'Kognitiivisten palveluiden käyttäminen Power BI:ssä'
+            - name: 'Käytä Kognitiivisia palveluja Power BI:ssä'
               href: ../service-cognitive-services.md
             - name: 'Automaattianalyysipalvelut Power BI:ssä'
               href: ../service-machine-learning-automated.md
