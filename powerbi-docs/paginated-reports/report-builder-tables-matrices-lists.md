@@ -9,10 +9,10 @@ ms.assetid: 9dcf3fc8-bf9c-4a14-a03d-e78254aa4098
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 02ac131325dab59590cb88c524ace68a1226fc69
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921489"
 ---
 # <a name="tables-matrixes-and-lists-in-power-bi-report-builder"></a>Taulukot, matriisit ja luettelot Power BI:n raportin muodostimessa
@@ -28,7 +28,7 @@ ms.locfileid: "78921489"
 
 ![Taulukko, matriisi ja luettelo raportin muodostimessa](media/report-builder-tables-matrices-lists/report-builder-table-matrix-list.png)
   
-##  <a name="Table"></a> Taulukot  
+##  <a name="tables"></a><a name="Table"></a> Taulukot  
  Taulukon avulla voit näyttää tietoja ja/tai järjestää tiedot rivinryhmiin. Taulukkomalli sisältää kolme saraketta, taulukon otsikkorivin ja tietojen lisätietorivin. Seuraavassa kuvassa esitetään suunnittelualueessa valittu taulukkomalli:  
 
 ![Raportin muodostimen taulukkomalli valittuna suunnittelualueessa](media/report-builder-tables-matrices-lists/report-builder-new-table.png)
@@ -37,7 +37,7 @@ ms.locfileid: "78921489"
   
  Voit halutessasi piilottaa yksityiskohtaiset tai ryhmitellyt tiedot aluksi ja sisällyttää porautumisominaisuuksia, joiden avulla käyttäjä voi valita vuorovaikutteisesti, kuinka paljon tietoja näytetään.  
   
-##  <a name="Matrix"></a> Matriisit  
+##  <a name="matrixes"></a><a name="Matrix"></a> Matriisit  
  Matriisin avulla voit näyttää tietojen koostettuja yhteenvetoja riveihin tai sarakkeisiin ryhmiteltynä. Ne muistuttavat välilehtien välistä tai pivot-taulukkoa. Rivien ja sarakkeiden määrään vaikuttavat kunkin rivi- ja sarakeryhmän yksilöllisten arvojen määrä. Seuraavassa kuvassa esitetään suunnittelualueessa valittu matriisimalli:  
 
 ![Raportin muodostimessa valittu uusi, työkaluriviltä lisätty matriisi](media/report-builder-tables-matrices-lists/report-builder-new-matrix.png)
@@ -48,24 +48,24 @@ ms.locfileid: "78921489"
   
  Voit myös lisätä porautumiskytkimiä, jotka piilottavat tai näyttävät tiedot raporttia avatessa. Kytkinten avulla käyttäjä voi tarkastella enemmän tai vähemmän yksityiskohtaisia tietoja tarpeen mukaan.  
   
-##  <a name="List"></a> Luettelot  
+##  <a name="lists"></a><a name="List"></a> Luettelot  
  Luettelon avulla voit luoda vapaan asettelun. Luetteloihin voidaan ruudukkoasettelun lisäksi sijoittaa kenttiä vapaasti. Luettelon avulla voit suunnitella lomakkeen, jossa näytetään useita tietojoukkokenttiä tai joka toimii säilönä useille, rinnakkain esitettäville ryhmitettyjen tietojen tietoalueille. Voit esimerkiksi määrittää luettelolle ryhmän; lisätä taulukon, kaavion tai kuvan; ja näyttää ryhmän arvot taulukko- ja graafisessa muodossa. Voit käyttää tätä esimerkiksi työntekijä- tai potilastietojen esittämiseen.  
 
 ![Raportin muodostimessa valittu uusi, työkaluriviltä lisätty luettelo](media/report-builder-tables-matrices-lists/report-builder-new-list.png)
   
-##  <a name="PreparingData"></a> Tietojen valmistelu  
+##  <a name="preparing-data"></a><a name="PreparingData"></a> Tietojen valmistelu  
  Taulukon, matriisin ja luettelon tietoalueilla esitetään tietojoukon tietoja. Voit valmistella tiedot kyselyllä, joka hakee tietojoukon tiedot, tai määrittämällä ominaisuudet taulukossa, matriisissa tai luettelossa.  
   
  Transact-SQL ja muut kyselyiden kielet, joiden avulla noudat raportin tietojoukkojen tietoja, voivat valmistella tiedot suodattimilla, jotka sisällyttävät vain tietyn tietojen alijoukon, korvaavat nolla- tai tyhjät arvot luettavuutta parantavilla vakioilla sekä lajittelevat ja ryhmittelevät tietoja.  
   
  Voit valmistella raportin taulukon, matriisin tai luettelon tiedot määrittämällä tietoalueen tai tietoalueen solujen ominaisuudet. Voit suodattaa tai lajitella tiedot määrittämällä tietoalueen ominaisuudet. Voit esimerkiksi valita sarakkeet, joiden mukaan tiedot lajitellaan, sekä lajittelusuunnan. Voit antaa kentälle vaihtoehtoisen arvon määrittämällä kentässä näytettävän solutekstin arvot. Voit esimerkiksi käyttää lauseketta, joka asettaa kentän tyhjäksi, jos kenttä on tyhjä tai jos se sisältää nolla-arvon.  
   
-##  <a name="BuildingConfiguringTableMatrixList"></a> Taulukon, matriisin tai luettelon luominen ja määrittäminen  
+##  <a name="building-and-configuring-a-table-matrix-or-list"></a><a name="BuildingConfiguringTableMatrixList"></a> Taulukon, matriisin tai luettelon luominen ja määrittäminen  
  Kun lisäät taulukoita tai matriiseja raporttiin, voit käyttää Ohjattua taulukon ja matriisin luomista tai luoda ne manuaalisesti Raportin muodostimen mallien avulla. Luettelot koostetaan manuaalisesti luettelomallista.  
   
  Ohjattu toiminto opastaa sinua taulukon tai matriisin nopeassa luomisessa ja määrittämisessä. Kun olet suorittanut ohjatun toiminnon tai koostanut tablix-tietoalueet alusta alkaen, voit edelleen määrittää ja tarkentaa niitä. Napsauttamalla tietoalueita kakkospainikkeella voit avata valintaikkunoita, joiden avulla voit määrittää helposti otsikoiden ja alatunnisteiden, näyttöasetusten, suodattimien ja lajittelun sivunvaihdot, toistuvuuden ja näkyvyyden yleisimmin käytetyt ominaisuudet. Tablix-tietoalueet tarjoavat paljon lisäominaisuuksia, jotka voit määrittää vain Raportin muodostimen Ominaisuudet-ruudusta. Jos haluat esimerkiksi nähdä sanoman, kun taulukon, matriisin tai luettelon tietojoukko on tyhjä, määrität sanoman tekstin Ominaisuudet-ruudun NoRowsMessage-tablix-ominaisuudessa.  
   
-##  <a name="ChangingBetweenTablixTemplates"></a> Tablix-mallien välillä vaihtaminen  
+##  <a name="changing-between-tablix-templates"></a><a name="ChangingBetweenTablixTemplates"></a> Tablix-mallien välillä vaihtaminen  
  Alkuperäinen tablix-mallivalintasi ei rajoita käytössäsi olevia vaihtoehtoja. Ehkä haluat muokata tablix-rakennetta lisätessäsi ryhmiä, kokonaissummia tai otsikoita. Voit esimerkiksi aloittaa taulukosta ja sitten poistaa lisätiedot-rivin ja lisätä sarakeryhmiä.  
   
  Voit jatkaa taulukon, matriisin tai luettelon kehittämistä lisäämällä haluamiasi tablix-ominaisuuksia. Tablix-ominaisuuksiin sisältyvät tietojen lisätiedot tai ryhmitettyjen rivien ja sarakkeiden koostetut tiedot. Voit luoda sisäkkäisiä ryhmiä, riippumattomia rinnakkaisia ryhmiä tai rekursiivisia ryhmiä. Voit suodattaa ja lajitella ryhmitellyt tiedot ja yhdistää ryhmiä helposti sisällyttämällä useita ryhmälausekkeita ryhmämääritykseen.  

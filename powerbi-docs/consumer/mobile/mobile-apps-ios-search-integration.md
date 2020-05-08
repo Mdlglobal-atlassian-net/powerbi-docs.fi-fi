@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 7d61a57a928df95bd2210bf58cc44e37d14c393d
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114466"
 ---
 # <a name="ios-device-search-spotlight-integration-with-power-bi-mobile-ios-app-preview"></a>iOS-laitteiden haun (Spotlight) integrointi Power BI:n iOS-mobiilisovellukseen (esikatselu)
@@ -30,8 +30,8 @@ Kohteiden hakeminen laitteen hakutoiminnolla:
  
    Seuraavantyyppiset Power BI -kohteet näytetään hakutuloksissa:
 
-    * Koontinäytöt
-    * Raportit
+    * koontinäytöt
+    * raportit
     * Sovellukset
     * Työtilat
     * Kohteet, jotka on jaettu hakemasi kontaktin kanssa

@@ -10,10 +10,10 @@ ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
 ms.openlocfilehash: 2f2c0b2c6ba4d991dd6293b435acc07659013f5b
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698505"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Mobiilisovellusten määrittäminen Microsoft Intunella
@@ -29,7 +29,7 @@ Microsoft Intune voi olla käytössä Mobiililaitteiden hallinnan (MDM) kanssa O
 > [!NOTE]
 > Kun olet määrittänyt Intunen, tietojen päivittäminen taustalla on poistettu käytöstä iOS- tai Android-laitteen Power BI -mobiilisovelluksessa. Power BI päivittää tiedot verkossa olevasta Power BI -palvelusta, kun avaat sovelluksen.
 
-## <a name="step-1-get-the-url-for-the-application"></a>Vaihe 1: URL-osoitteen hankkiminen sovellusta varten
+## <a name="step-1-get-the-url-for-the-application"></a>Vaihe 1: Sovelluksen URL-osoitteen hankkiminen
 
 Tarvitsemme sovellusten URL-osoitteet, jotta voimme luoda sovelluksen Intunessa. Osoitteet saadaan iOS:ssä iTunesista. Androidissa ne saadaan Power BI -mobiilisivulta.
 
@@ -95,7 +95,7 @@ Voit luoda sovelluksen tai käytännön ensin. Lisäysjärjestyksellä ei ole me
 
 1. Valitse **Lataa**.
 
-1. Jos et näe sovellusta luettelossa, päivitä sivu: siirry kohtaan **Yleiskatsaus** ja palaa sitten takaisin kohtaan **Sovellukset**.
+1. Jos et näe sovellusta luettelossa, päivitä sivu: siirry kohtaan **Yleistä** ja palaa sitten takaisin kohtaan **Sovellukset**.
 
     ![Sovellukset-välilehti](media/service-admin-mobile-intune/intune-add-software-ios2.png)
 
@@ -105,13 +105,13 @@ Voit luoda sovelluksen tai käytännön ensin. Lisäysjärjestyksellä ei ole me
 
 1. Anna sovelluksen URL-osoite, jonka haimme [vaiheessa 1](#step-1-get-the-url-for-the-application), ja valitse **Seuraava**.
 
-    ![Ohjelmiston asennus: Android-](media/service-admin-mobile-intune/intune-add-software-android1.png)
+    ![Ohjelmiston asennus: Android](media/service-admin-mobile-intune/intune-add-software-android1.png)
 
 1. Anna **Julkaisija**, **Nimi** ja **Kuvaus**. Voit halutessasi lisätä **kuvakkeen**. **Luokka** on Yritysportaali-sovellus. Kun olet valmis, valitse **Seuraava**.
 
 1. Valitse **Lataa**.
 
-1. Jos et näe sovellusta luettelossa, päivitä sivu: siirry kohtaan **Yleiskatsaus** ja palaa sitten takaisin kohtaan **Sovellukset**.
+1. Jos et näe sovellusta luettelossa, päivitä sivu: siirry kohtaan **Yleistä** ja palaa sitten takaisin kohtaan **Sovellukset**.
 
     ![Sovellukset-välilehti](media/service-admin-mobile-intune/intune-add-software-android2.png)
 
@@ -190,4 +190,4 @@ Sovellus asennetaan *Yritysportaali*-sovelluksen kautta. Jos et ole vielä asent
 
 [Power BI -sovellukset mobiililaitteille](consumer/mobile/mobile-apps-for-mobile-devices.md)  
 
-Onko sinulla muuta kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)  
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)  
