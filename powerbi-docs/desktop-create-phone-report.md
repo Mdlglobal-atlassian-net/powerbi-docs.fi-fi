@@ -10,10 +10,10 @@ ms.date: 11/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: 2dca4094ed0c21c421aa2fef89353e6f210b3ea4
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75761475"
 ---
 # <a name="optimize-power-bi-reports-for-the-mobile-app"></a>Power BI -raporttien optimointi mobiilisovellukselle
@@ -56,7 +56,7 @@ Voit määrittää raporttinäkymän tai raportin visualisoinnit *reagoiviksi*. 
 
 Visualisoinnin koon muuttuessa Power BI priorisoi tietonäkymän. Se voi esimerkiksi poistaa täytön ja siirtää selitteen visualisoinnin yläpuolelle, jolloin visualisointi pysyy informatiivisena myös pienessä koossa.
 
-![Reagoivan visualisoinnin koon muuttaminen](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
+![Reagoivan visualisoinnin koon muuttuminen](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
 
 Voit valita visualisointikohtaisesti, otetaanko reagointi käyttöön. Lisätietoja [visualisointien optimoinnista](visuals/desktop-create-responsive-visuals.md).
 

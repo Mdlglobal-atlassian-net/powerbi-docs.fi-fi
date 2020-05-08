@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/16/2018
 LocalizationGroup: Model your data
 ms.openlocfilehash: e2b1c90c6a4ee237af0d800dd7d1c6e1dc8dc3ba
-ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75760901"
 ---
 # <a name="tag-barcodes-in-power-bi-desktop-for-use-in-the-mobile-app"></a>Viivakoodien merkitseminen mobiilisovelluksia varten Power BI Desktopissa
@@ -47,5 +47,5 @@ Power BI tunnistaa seuraavat viivakoodit, jos merkitset ne Power BI -raportissa:
 * [Viivakoodin lukeminen iPhonen Power BI -sovelluksella](consumer/mobile/mobile-apps-scan-barcode-iphone.md)
 * [Viivakoodin lukuongelmat iPhonessa](consumer/mobile/mobile-apps-scan-barcode-iphone.md#issues-with-scanning-a-barcode)
 * [Tietojen luokittelu Power BI Desktopissa](desktop-data-categorization.md)  
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

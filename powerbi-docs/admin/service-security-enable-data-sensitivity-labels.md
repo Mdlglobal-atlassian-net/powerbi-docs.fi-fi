@@ -10,10 +10,10 @@ ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
 ms.openlocfilehash: 70a1aed046ac213e314da2ddaecafab9c5a941ee
-ms.sourcegitcommit: 02342150eeab52b13a37b7725900eaf84de912bc
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/23/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76537228"
 ---
 # <a name="enable-data-sensitivity-labels-in-power-bi-preview"></a>Luottamuksellisuustunnisteiden käyttöönotto Power BI:ssä (esiversio)
@@ -29,7 +29,7 @@ Kun Power BI:n tietoja, joilla on tietojen luottamuksellisuustunniste, viedään
 
 Tietojen luottamuksellisuustunnisteiden käyttöönottoon vaaditaan Azure Information Protection -käyttöoikeus. Lisätietoja on artikkelissa [Käyttöoikeudet](#licensing).
 
-## <a name="enable-data-sensitivity-labels"></a>Tietojen luottamuksellisuustunnisteiden käyttöönotto
+## <a name="enable-data-sensitivity-labels"></a>Tietojen luottamuksellisuustunnisteiden ottaminen käyttöön
 
 Jos haluat ottaa käyttöön Microsoft Information Protectionin tietojen luottamuksellisuustunnisteet Power BI:ssä, siirry Power BI -hallintaportaaliin, avaa Vuokraaja-asetukset-ruutu ja etsi Tietojen suojaus -osio.
 
@@ -73,4 +73,4 @@ Tässä artikkelissa kerrottiin luottamuksellisuustunnisteiden käyttöönotosta
 * [Power BI:n tietojen suojauksen yleiskatsaus](service-security-data-protection-overview.md)
 * [Luottamuksellisuustunnisteiden käyttö Power BI:ssä](../designer/service-security-apply-data-sensitivity-labels.md)
 * [Microsoft Cloud App Securityn hallinnan käyttö Power BI:ssä](service-security-using-microsoft-cloud-app-security-controls.md)
-* [Tietojen suojaamisen tulosraportti](service-security-data-protection-metrics-report.md)
+* [Tietojen suojauksen tulosraportti](service-security-data-protection-metrics-report.md)

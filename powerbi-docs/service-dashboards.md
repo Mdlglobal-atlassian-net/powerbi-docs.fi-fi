@@ -10,17 +10,17 @@ ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: eb2c513e8ee8ad1c8ad93866f688e40f6c5af56d
-ms.sourcegitcommit: 3d6b27e3936e451339d8c11e9af1a72c725a5668
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/17/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76160784"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Johdatus raporttinäkymiin Power BI -kehittäjille
 
 Power BI -*raporttinäkymä* on yksittäinen sivu, joka kertoo tarinan visualisointien kautta. Koska se on rajattu yhdelle sivulle, hyvin suunniteltu raporttinäkymä sisältää vain tarinan kohokohdat. Lukijat voivat tutustua yksityiskohtiin raporttinäkymään liittyvien raporttien kautta.
 
-![Koontinäyttö](media/service-dashboards/power-bi-dashboard2.png)
+![Raporttinäkymä](media/service-dashboards/power-bi-dashboard2.png)
 
 Raporttinäkymä on vain Power BI -palvelun ominaisuus. Raporttinäkymät eivät ole käytettävissä Power BI Desktopissa. Raporttinäkymiä ei voi luoda mobiililaitteilla, mutta niitä voi [tarkastella ja jakaa](mobile-apps-view-dashboard.md) niillä.
 
@@ -51,14 +51,14 @@ Koontinäytön luominen on *luoja*-toiminto ja edellyttää raportin muokkausoik
 | --- | --- | --- |
 | Sivut |Yksi sivu |Yksi tai useampi sivu |
 | Tietolähteet |Yksi tai useampi raportti ja yksi tai useampi tietojoukko koontinäyttöä kohden |Yksi tietojoukko raporttia kohden |
-| Käytettävissä Power BI Desktopissa |Ei | Kyllä. Voi luoda ja tarkastella raportteja Power BI Desktopissa |
-| Tilaa |Kyllä. Koontinäytön voi tilata |Kyllä. Raporttisivun voi tilata |
-| suodatusta |Ei. Ei voi suodattaa tai jakaa sektoreihin |Kyllä. Monta eri tapaa suodattaa, korostaa ja jakaa sektoreihin |
-| Esittelyssä |Kyllä. Voit määrittää jonkin koontinäytön *esittelyssä olevaksi* koontinäytöksi |Ei |
-| Suosikki | Kyllä. Useita koontinäyttöjä voi merkitä *suosikeiksi* | Kyllä. Useita raportteja voi merkitä *suosikeiksi*
-| Hälytysten asettaminen |Kyllä. Käytettävissä koontinäytön ruuduilta tietyissä tilanteissa |Ei |
-| Kyselyt luonnollisella kielellä (Q&A) |Kyllä | Kyllä, jos käytettävissä on raportin ja sen pohjana olevan tietojoukon muokkausoikeudet |
-| Pohjana olevat tietojoukkojen taulukot ja kentät ovat näkyvissä |Ei. Voit viedä tietoja, mutta et näe taulukoita ja kenttiä itse koontinäytössä |Kyllä |
+| Käytettävissä Power BI Desktopissa |No | On. Voi luoda ja tarkastella raportteja Power BI Desktopissa |
+| Tilaa |On. Koontinäytön voi tilata |On. Raporttisivun voi tilata |
+| suodatusta |Nro Ei voi suodattaa tai jakaa sektoreihin |On. Monta eri tapaa suodattaa, korostaa ja jakaa sektoreihin |
+| Esittelyssä |On. Voit määrittää jonkin koontinäytön *esittelyssä olevaksi* koontinäytöksi |No |
+| Merkitse suosikiksi | On. Useita koontinäyttöjä voi merkitä *suosikeiksi* | On. Useita raportteja voi merkitä *suosikeiksi*
+| Hälytysten asettaminen |On. Käytettävissä koontinäytön ruuduilta tietyissä tilanteissa |No |
+| Kyselyt luonnollisella kielellä (Q&A) |Yes | Kyllä, jos käytettävissä on raportin ja sen pohjana olevan tietojoukon muokkausoikeudet |
+| Pohjana olevat tietojoukkojen taulukot ja kentät ovat näkyvissä |Nro Voit viedä tietoja, mutta et näe taulukoita ja kenttiä itse koontinäytössä |Yes |
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet

@@ -11,10 +11,10 @@ ms.date: 01/29/2020
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 16041ebc9ba293ab166178e008b12277d94e89c3
-ms.sourcegitcommit: 64a270362c60581a385af7fbc31394e3ebcaca41
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76894797"
 ---
 # <a name="filter-and-share-a-power-bi-report"></a>Power BI -raportin suodattaminen ja jakaminen
@@ -80,7 +80,7 @@ Tallenna raportti.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Töiden jakamistavat Power BI:ssä](service-how-to-collaborate-distribute-dashboards-reports.md)
-* [Koontinäytön jakaminen](service-share-dashboards.md)
+* [Jaa koontinäyttö](service-share-dashboards.md)
 * Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/).
 * Haluatko antaa palautetta? Anna ehdotuksia siirtymällä [Power BI -yhteisön sivustolle](https://community.powerbi.com/).
 

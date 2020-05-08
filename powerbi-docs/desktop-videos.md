@@ -10,10 +10,10 @@ ms.date: 01/02/2020
 ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: 8dbd72b310d6e62619a61d34001afc1f7bc44189
-ms.sourcegitcommit: b68a47b1854588a319a5a2d5d6a79bba2da3a4e6
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/08/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75730992"
 ---
 # <a name="power-bi-desktop-videos"></a>Power BI Desktop -videot
@@ -34,7 +34,7 @@ Tietojen tuonti, muotoilu ja muuntaminen Power Query -editorissa:
 
 Valitse seuraavat linkit, jos haluat tarkastella kaikkia Power BI:n YouTube-kanavalla olevia videoita:
 
-- [Aloita Power BI Desktopin käyttö](https://www.youtube.com/watch?v=Qgam9M8I0xA)
+- [Power BI Desktopin käytön aloittaminen](https://www.youtube.com/watch?v=Qgam9M8I0xA)
 - [Luo raportti Power BI Desktopissa](https://www.youtube.com/watch?v=IMAsitQ2cAc)
 - [Käytä Power Query -editoria](https://www.youtube.com/watch?v=ByIUx-HmQbw)
 - [Määritä suhteet taulukoiden välillä](https://www.youtube.com/watch?v=fVW4MCr0APA)

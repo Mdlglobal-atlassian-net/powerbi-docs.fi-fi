@@ -10,10 +10,10 @@ ms.date: 01/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 8e1f6c38af11c5bdf942a4dc3a20b4b5f0ec0601
-ms.sourcegitcommit: 0ae9328e7b35799d5d9613a6d79d2f86f53d9ab0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "76038869"
 ---
 # <a name="use-the-sap-business-warehouse-connector-in-power-bi-desktop"></a>SAP Business Warehouse -yhdistimen käyttö Power BI Desktopissa
@@ -37,7 +37,7 @@ Suosittelemme käyttämään toteutus 2.0 SAP -yhdistintä aina kun se on mahdol
 
    ![Hae tietojen asetukset SAP:lle](media/desktop-sap-bw-connector/sap_bw_2a.png)
 
-## <a name="installation-of-implementation-20-sap-connector"></a>Toteutus 2.0 SAP -yhdistimen asennus
+## <a name="installation-of-implementation-20-sap-connector"></a>Toteutus 2.0 SAP-yhdistimen asennus
 
 SAP-yhdistimen toteutus 2.0 vaatii SAP .NET Connector 3.0:n. Lataaminen edellyttää kelvollisia S-käyttöoikeuksia. Ota yhteyttä SAP Basis -tiimiin saadaksesi SAP .NET Connector 3.0:n.
 
@@ -98,7 +98,7 @@ Luo uusi yhteys toteutus 2.0 SAP BW -yhdistimen käyttämiseksi. Luodaksesi uude
 
 2. Valitse uudessa yhteysvalintaikkunassa toteutus. Valitsemalla **2.0:n** **toteutukselle** seuraavan kuvan mukaisesti voit ottaa käyttöön **suoritustilan**, **erän koon** ja **ominaisuusrakenteet**.
 
-    ![SAP-yhteys-valintaikkuna](media/desktop-sap-bw-connector/sap_bw_7.png)
+    ![SAP-yhteys -valintaikkuna](media/desktop-sap-bw-connector/sap_bw_7.png)
 
 3. Valitse **OK**. Tämän jälkeen version 1 SAP BW -yhdistimen käyttökokemus on sama kuin [Version 1 SAP BW -yhdistimen ominaisuudet](#version-1-sap-bw-connector-features) -kohdassa kuvattu.
 

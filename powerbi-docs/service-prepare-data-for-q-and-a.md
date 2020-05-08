@@ -10,10 +10,10 @@ ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 16d58090a9a7c6e64fbf2ace23fdf342d1768a30
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73881075"
 ---
 # <a name="make-excel-data-work-well-with-qa-in-power-bi"></a>Excel-tietojen muokkaaminen toimimaan hyvin Power BI:n Q&A-toiminnon kanssa
@@ -49,5 +49,5 @@ Seuraavassa on joitakin vinkkejä, joiden avulla voit hyödyntää Q&A:ta tehokk
 - [Paikallisten tietojoukkojen valmisteleminen Q&A:ta varten](service-q-and-a-direct-query.md)   
 - [Tietojen noutaminen (Power BI:hin)](service-get-data.md)  
 
-Onko sinulla muuta kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 
