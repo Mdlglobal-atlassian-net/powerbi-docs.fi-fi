@@ -62,7 +62,7 @@
             - name: Luonnollisen kielen Q&A
               items:
                 - name: 'Johdanto Q&A:han'
-                  href: ../natural-language/q-and-a-tooling-intro.md
+                  href: ../natural-language/q-and-a-intro.md
                 - name: Johdanto Q&A-työkaluihin
                   href: ../natural-language/q-and-a-tooling-intro.md
                 - name: 'Q&A-työkalut, edistynyt'
@@ -99,6 +99,14 @@
               href: ../paginated-reports/report-builder-previewing-reports.md
             - name: Sivutettujen raporttien usein kysytyt kysymykset
               href: ../paginated-reports/paginated-reports-faq.md
+        - name: Käyttöönottoputket
+          items:
+            - name: Käyttöönottoputkien esittely
+              href: deployment-pipelines-overview.md
+            - name: Tutustu käyttöönottoprosessiin
+              href: deployment-pipelines-process.md
+            - name: Parhaat käytännöt
+              href: deployment-pipelines-best-practices.md
     - name: Toimintaohjeet
       items:
         - name: Power BI -raportit
@@ -121,22 +129,20 @@
               href: ../desktop-buttons.md
             - name: Porautumispainikkeiden luominen
               href: ../desktop-drill-through-buttons.md
+            - name: Porautumistoiminnon käyttäminen
+              href: ../desktop-drillthrough.md
+            - name: Raporttien välisen porautumistoiminnon käyttäminen
+              href: ../desktop-cross-report-drill-through.md
             - name: Kirjanmerkkien luominen merkityksellisten tietojen tallentamista ja jakamista varten
               href: ../desktop-bookmarks.md
             - name: Raporttiteemojen käyttö
               href: ../desktop-report-themes.md
             - name: Suodattimien käyttö raporteissa
               href: ../power-bi-report-filter.md
-            - name: Porautumistoiminnon käyttäminen
-              href: ../desktop-drillthrough.md
-            - name: Raporttien välisen porautumistoiminnon käyttäminen
-              href: ../desktop-cross-report-drill-through.md
+            - name: Suodattimen lisääminen raporttiin
+              href: ../power-bi-report-add-filter.md
             - name: Ryhmittelyn ja lokeroinnin käyttö
               href: ../desktop-grouping-and-binning.md
-            - name: 'Power BI -visualisointien luominen R:n avulla'
-              href: ../desktop-r-visuals.md
-            - name: 'R:ää hyödyntävien Power BI -visualisointien lataaminen ja käyttäminen'
-              href: ../desktop-r-powered-custom-visuals.md
             - name: Ruudukoiden ja ruudukkoon kohdistamisen käyttö
               href: ../desktop-gridlines-snap-to-grid.md
             - name: Sivun näyttöasetusten käyttö raporteissa
@@ -153,6 +159,8 @@
               href: ../desktop-slicer-numeric-range.md
             - name: Suhteelliset päivämääräosittajat ja suodattimet
               href: ../visuals/desktop-slicer-filter-date-range.md
+            - name: Suhteelliset päivämääräosittajat ja suodattimet
+              href: slicer-filter-relative-time.md
             - name: Kooltaan muokattavan osittajan luominen
               href: ../power-bi-slicer-filter-responsive.md
             - name: Useiden kenttien lisääminen osittajaan
@@ -189,8 +197,6 @@
               href: ../desktop-templates.md
             - name: Raportin luominen tietojoukosta
               href: ../service-report-create-new.md
-            - name: Suodattimen lisääminen raporttiin
-              href: ../power-bi-report-add-filter.md
             - name: Raportin tallentaminen
               href: ../service-report-save.md
             - name: Raportin käsittely muokkausnäkymässä
@@ -201,6 +207,8 @@
               href: ../service-aggregates.md
             - name: Raportin QR-koodin luominen
               href: ../service-create-qr-code-for-report.md
+            - name: Anna kuluttajien mukauttaa visualisointeja (esikatselu)
+              href: power-bi-personalize-visuals.md
             - name: Raportin vieminen Power BI Desktopiin (esikatselu)
               href: ../service-export-to-pbix.md
             - name: Tietojoukkojen ja raporttien julkaiseminen
@@ -267,6 +275,10 @@
               href: ../visuals/power-bi-visualization-powerapp.md
             - name: R-visualisoinnit
               href: ../visuals/service-r-visuals.md
+            - name: 'Power BI -visualisointien luominen R:n avulla'
+              href: ../desktop-r-visuals.md
+            - name: 'R:ää hyödyntävien Power BI -visualisointien lataaminen ja käyttäminen'
+              href: ../desktop-r-powered-custom-visuals.md
             - name: Viisarimittarikaaviot
               href: ../visuals/power-bi-visualization-radial-gauge-charts.md
             - name: Nauhakaaviot
@@ -371,6 +383,12 @@
               href: ../service-data-classification.md
             - name: Raporttinäkymän teemat
               href: ../service-dashboard-themes.md
+        - name: Käyttöönottoputket
+          items:
+            - name: Aloittaminen
+              href: deployment-pipelines-get-started.md
+            - name: Vianmääritys
+              href: deployment-pipelines-troubleshooting.md
         - name: Muut tehtävät
           items:
             - name: Sisällön uudelleen nimeäminen
