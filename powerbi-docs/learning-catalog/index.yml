@@ -10,10 +10,10 @@ metadata:
   ms.author: v-lshann
   ms.date: 04/08/2020
   ms.openlocfilehash: 9f03f812eb20454f655a876438312ba50b521a29
-  ms.sourcegitcommit: b2cb0b02bdc451bf11a92a68f2c4d560a811f563
+  ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
   ms.translationtype: HT
   ms.contentlocale: fi-FI
-  ms.lasthandoff: 04/16/2020
+  ms.lasthandoff: 05/05/2020
   ms.locfileid: "81439292"
 landingContent:
 - title: Yritysten päätöksentekijät
@@ -36,7 +36,7 @@ landingContent:
       url: learning-catalog-report-creator.md#
     - text: Aloittaminen
       url: learning-catalog-report-creator.md#get-started
-    - text: Koontinäytöt
+    - text: koontinäytöt
       url: learning-catalog-report-creator.md#dashboards
     - text: Raportin suunnittelu
       url: learning-catalog-report-creator.md#report-design
@@ -56,15 +56,15 @@ landingContent:
       url: learning-catalog-data-analyst.md#best-practices
     - text: Tapaustutkimukset
       url: learning-catalog-data-analyst.md#case-studies
-    - text: Koontinäytöt
+    - text: koontinäytöt
       url: learning-catalog-data-analyst.md#dashboards
-    - text: Visualisoinnit
+    - text: visualisoinnit
       url: learning-catalog-data-analyst.md#visualizations
     - text: Hallinta ja käyttöönotto
       url: learning-catalog-data-analyst.md#governance-deployment
     - text: Integrointi
       url: learning-catalog-data-analyst.md#integration
-    - text: Suojaus
+    - text: Tietoturva
       url: learning-catalog-data-analyst.md#security
 - title: Järjestelmänvalvojat
   linkLists:
@@ -108,15 +108,15 @@ landingContent:
       url: learning-catalog-functional-consultant.md#best-practices
     - text: Tapaustutkimukset
       url: learning-catalog-functional-consultant.md#case-studies
-    - text: Koontinäytöt
+    - text: koontinäytöt
       url: learning-catalog-functional-consultant.md#dashboards
     - text: Hallinta ja käyttöönotto
       url: learning-catalog-functional-consultant.md#governance-deployment
     - text: Integrointi
       url: learning-catalog-functional-consultant.md#integration
-    - text: Suojaus
+    - text: Tietoturva
       url: learning-catalog-functional-consultant.md#security
-    - text: Visualisoinnit
+    - text: visualisoinnit
       url: learning-catalog-functional-consultant.md#visualizations
 - title: Ratkaisuarkkitehdit
   linkLists:
@@ -128,5 +128,5 @@ landingContent:
       url: learning-catalog-solution-architect.md#get-started
     - text: Tapaustutkimukset
       url: learning-catalog-solution-architect.md#case-studies
-    - text: Suorituskyky
+    - text: Menestys
       url: learning-catalog-solution-architect.md#performance
