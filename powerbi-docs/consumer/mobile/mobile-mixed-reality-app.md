@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 99e9c407a92d126ddc4c6f4822106cfa6458dbac
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79205914"
 ---
 # <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI ja tehostettu todellisuus -sovellus (esikatselu)
 Tarkastele koontinäyttöjä ja raportteja Power BI:n tehostettu todellisuus -sovelluksessa (esikatselu), joko virtuaalimaailmassa tai sijoita niitä tiettyihin kohtiin omassa ympäristössäsi. 
 
-[Lataa Power BI for Mixed Reality](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab) -sovellus Windows-kaupasta: Windows-kaupasta se löytyy Power BI -mobiilisovellus -nimellä. Käsittele raporttinäkymiä ja raportteja virtuaalimaailmassa ja valitse sitten ne, jotka haluat sijoittaa. 
+[Lataa Power BI ja tehostettu todellisuus](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab) -sovellus Windows-kaupasta, josta se löytyy nimellä “Power BI -mobiilisovellus” Käsittele raporttinäkymiä ja raportteja virtuaalimaailmassa ja valitse sitten ne, jotka haluat sijoittaa. 
 
 ## <a name="two-views-windows-classic-and-holographic"></a>Kaksi näkymää: perinteinen Windows ja holografinen
 
@@ -87,7 +87,7 @@ Voit skannata raportin QR-koodin holografisessa näkymässä aivan samalla tapaa
 
 - Katso QR-koodia holografisessa näkymässä. Power BI avaa QR-koodiin liitetyn raportin.
 
-## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
+## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioon otettavat seikat
 
 Seuraavassa holografiseen näkymään liittyviä huomioon otettavia rajoituksia ja asioita.
 

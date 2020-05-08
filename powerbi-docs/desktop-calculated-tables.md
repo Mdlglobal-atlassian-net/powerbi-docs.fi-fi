@@ -10,10 +10,10 @@ ms.date: 01/02/2020
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: c72387d40ddf4b193481a37dbcb40695668eab66
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75837352"
 ---
 # <a name="create-calculated-tables-in-power-bi-desktop"></a>Laskettujen taulukkojen luominen Power BI Desktopissa
@@ -55,7 +55,7 @@ Uusi **Western Region Employees** -taulukko luodaan. Se näytetään samalla tav
 
 ## <a name="functions-for-calculated-tables"></a>Laskettujen taulukoiden toiminnot
 
-Voit määrittää lasketun taulukon millä tahansa DAX-lausekkeella, joka palauttaa taulukon (mukaan lukien yksinkertainen viite toiseen taulukkoon). Esimerkki:
+Voit määrittää lasketun taulukon millä tahansa DAX-lausekkeella, joka palauttaa taulukon (mukaan lukien yksinkertainen viite toiseen taulukkoon). Esimerkiksi:
 
 ```dax
 New Western Region Employees = 'Western Region Employees'

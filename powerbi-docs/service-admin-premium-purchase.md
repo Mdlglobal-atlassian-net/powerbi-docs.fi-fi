@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 02/13/2020
 LocalizationGroup: Premium
 ms.openlocfilehash: aed0d1e4dec6f6efe49dd39cd5b6fc60f8977e44
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79488610"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Ohjeet Power BI Premiumin ostamiseen
@@ -35,7 +35,7 @@ Voit luoda uuden vuokraajan Power BI Premium P1 -varastointiyksikkö määritett
 
 ### <a name="create-a-new-tenant-with-power-bi-premium-p1"></a>Luo uusi vuokralainen Power BI Premium P1:llä
 
-Jos sinulla ei ole vuokraajaa ja haluat luoda sellaisen, voit ostaa Power BI Premiumin samaan aikaan. Seuraavat linkit auttavat sinua luomaan uuden vuokraajan ja hankkimaan Power BI Premiumin: [Power BI Premium P1 -tarjous](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). Kun luot vuokraajan, sinusta tulee automaattisesti kyseisen vuokraajan Microsoft 365:n yleinen järjestelmänvalvoja.
+Jos sinulla ei ole vuokraajaa ja haluat luoda sellaisen, voit ostaa Power BI Premiumin samaan aikaan. Seuraavassa linkissä opastetaan uuden vuokraajan luomiseen, ja voit ostaa Power BI Premiumin: [Power BI Premium P1 -tarjous](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). Kun luot vuokraajan, sinusta tulee automaattisesti kyseisen vuokraajan Microsoft 365:n yleinen järjestelmänvalvoja.
 
 Kun olet ostanut kapasiteetin, lue lisätietoja [kapasiteettien hallinnasta](service-admin-premium-manage.md#manage-capacity) ja [työtilojen määrittämisestä](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity) kapasiteettiin.
 

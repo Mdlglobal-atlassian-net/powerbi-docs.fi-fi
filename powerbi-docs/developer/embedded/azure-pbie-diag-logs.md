@@ -8,10 +8,10 @@ ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
 ms.openlocfilehash: 362c765fb5e739563b8d21eaed53304eddce8acc
-ms.sourcegitcommit: a175faed9378a7d040a08ced3e46e54503334c07
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79495799"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Power BI Embedded -palvelun diagnostiikan kirjaus Azuressa
@@ -118,7 +118,7 @@ Engine (Moduuli) -luokka ohjeistaa resurssin kirjaamaan seuraavat tapahtumat, ja
 | Ominaisuuden nimi | Vertipaq-kyselyn lopun esimerkki | Ominaisuuden kuvaus |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | EventClass | XM_SEQUERY_END | Tapahtumaluokan avulla luokitellaan tapahtumia. |
-| EventSubclass | 0 | Tapahtuman aliluokka tarjoaa lisätietoja jokaisesta tapahtumaluokasta. (Esimerkiksi 0: VertiPaq Scan) |
+| EventSubclass | 0 | Tapahtuman aliluokka tarjoaa lisätietoja jokaisesta tapahtumaluokasta. (esimerkiksi 0: VertiPaq Scan (VertiPaq-tarkistus)) |
 | RootActivityId | ff217fd2-611d-43c0-9c12-19e202a94f70 | Pääsolmun toiminnon tunnus. |
 | CurrentTime | 2018-04-06T18:30:11.9137358Z | Tapahtuman alkamisen aika, kun se on käytettävissä. |
 | StartTime | 2018-04-06T18:30:11.9137358Z | Tapahtuman alkamisen aika, kun se on käytettävissä. |
@@ -130,7 +130,7 @@ Engine (Moduuli) -luokka ohjeistaa resurssin kirjaamaan seuraavat tapahtumat, ja
 | SessionType | Käyttäjä | Istuntotyyppi (toiminnon aiheuttanut entiteetti). |
 | ProgressTotal | 0 | Edistyminen yhteensä. |
 | IntegerData | 0 | Kokonaislukutiedot. |
-| Vakavuus | 0 | Poikkeuksen vakavuus. |
+| Severity | 0 | Poikkeuksen vakavuus. |
 | Onnistui | 1 | 1 = onnistuminen. 0 = epäonnistuminen (esimerkiksi 1 tarkoittaa käyttöoikeustarkistuksen onnistumista ja 0 epäonnistumista). |
 | Virhe | 0 | Määritetyn tapahtuman virheen numero. |
 | ConnectionID | 3 | Yksilöivä yhteystunnus. |
@@ -176,7 +176,7 @@ Valitse **EventClass\_s** tai jokin tapahtumien nimistä, niin Log Analytics jat
 
 Muista tarkistaa [Log Analytics](https://docs.microsoft.com/azure/log-analytics/), jonka kautta pääset tutkimaan verkkosivustoa, jossa on kerättyihin tietoihin liittyvät parannellut kysely-, raporttinäkymä- ja ilmoitusmahdollisuudet.
 
-### <a name="queries"></a>Kyselyt
+### <a name="queries"></a>kyselyitä
 
 Käytettävissä on satoja kyselyitä. Seuraavassa on muutamia, joiden avulla pääset alkuun. Lisätietoja uudesta Log Search -kyselykielestä on artikkelissa [Understanding log searches in Log Analytics (Lokihaut Log Analytics -toiminnossa)](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-search).
 

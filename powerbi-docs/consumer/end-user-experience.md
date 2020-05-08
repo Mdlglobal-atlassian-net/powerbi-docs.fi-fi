@@ -12,10 +12,10 @@ ms.date: 01/31/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 595ce61bf2020c27420a33871e82ca7ff9025d60
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79040141"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Pikaopas - Power BI -palveluun tutustuminen
@@ -127,7 +127,7 @@ Katso lisätietoja artikkelista [Suosikit](end-user-favorite.md)
 Katso lisätietoja artikkelista [Viimeisimmät Power BI:ssä](end-user-recent.md)
 
 ### <a name="search-and-sort-content"></a>Hae ja lajittele sisältöä
-Power BI -palvelun uusien käyttäjien saatavilla on vain vähän sisältöä. Kun työtoverit aloittavat sisällön jakamisen kanssasi ja aloitat itse sovellusten lataamisen, sisältöä voi pian olla tarjolla runsaastikin. Silloin haku ja lajittelu ovat erittäin hyödyllisiä ominaisuuksia.
+Power BI -palvelun uusien käyttäjien saatavilla on vain vähän sisältöä. Kun työtoverit aloittavat sisällön jakamisen kanssasi ja aloitat itse sovellusten lataamisen, sisältöä voi pian olla tarjolla runsaastikin. Silloin hakemisesta ja lajittelusta tulee erittäin hyödyllisiä ominaisuuksia.
 
 Hakua voi käyttää Power BI -palvelun lähes jokaisessa osassa. Sen merkkinä näet hakuruudun tai suurennuslasikuvakkeen.    
 ![suurennuslasikuvake](./media/end-user-experience/power-bi-search-icon.png)
@@ -156,7 +156,7 @@ Aloitussivulla ovat haku- ja lajittelutyökalut, siirtymisruutu ja pohja, jolla 
 
 Jos haluat lisätietoja, katso [Power BI:n aloitussivu](end-user-home.md)
 
-## <a name="clean-up-resources"></a>Puhdista resurssit
+## <a name="clean-up-resources"></a>Resurssien tyhjentäminen
 Kun olet päässyt tämän pikaoppaan loppuun, voit halutessasi poistaa mallikoontinäytön, -raportin ja -tietojoukon.
 
 1. Avaa Power BI -palvelu (app.powerbi.com) ja kirjaudu sisään.    
