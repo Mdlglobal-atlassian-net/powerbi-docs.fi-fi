@@ -1,5 +1,5 @@
 ---
-title: Luo tietojoukko
+title: Tietojoukon luominen
 description: Vaihe vaiheelta – Tietojen työntäminen tietojoukkoon – Tietojoukon luominen Power BI:ssä
 author: KesemSharabi
 ms.author: kesharab
@@ -9,14 +9,14 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 02/05/2019
 ms.openlocfilehash: 149b4f8663838c0a87609a1ec24358fb9ee9727e
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80403626"
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Vaihe 3: Tietojoukon luominen Power BI:ssä
-Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot työnnetään tietojoukkoon](walkthrough-push-data.md).
+Tämä artikkeli on osa vaiheittaisia ohjeita, joilla [tiedot syötetään tietojoukkoon](walkthrough-push-data.md).
 
 Tietojen tietojoukkoon työntämisen **vaiheessa 2**, [Todennustunnuksen hankkiminen](walkthrough-push-data-get-token.md), sait tunnuksen **Microsoft Azure Active Directoryyn** todentamista varten. Tässä vaiheessa tunnusta käytetään [Julkaise tietojoukko](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) -toiminnon kutsumiseen.
 
@@ -107,7 +107,7 @@ Lisää tämä koodi kohtaan Program.cs.
 
 Seuraavaksi kerrotaan, miten [saat tietojoukon lisäämään rivejä Power BI -taulukkoon](walkthrough-push-data-get-datasets.md).
 
-Alla on [kattava koodiluettelo](#code).
+Alla on [Kattava koodiluettelo](#code).
 
 <a name="code"/>
 

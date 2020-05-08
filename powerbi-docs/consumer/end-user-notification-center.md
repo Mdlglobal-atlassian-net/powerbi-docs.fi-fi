@@ -11,10 +11,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: d92d7a3095ff2f252a09834becf90d5efc1811a0
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79113073"
 ---
 # <a name="view-power-bi-notifications"></a>Power BI -ilmoitusten näyttäminen
@@ -46,7 +46,7 @@ Katso, miten Amanda tarkastelee ja hallitsee ilmoituksia ja reagoi niihin. Kokei
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Power BI -palvelun tietoilmoitukset](end-user-alerts.md)
-* [Tietoilmoitusten määrittäminen iPhone-sovelluksessa (Power BI iOS:lle)](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Tietohälytysten määrittäminen iPhone-sovelluksessa (Power BI iOS:lle)](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Määritä tietoilmoitukset Power BI Windows 10 -mobiilisovelluksella](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

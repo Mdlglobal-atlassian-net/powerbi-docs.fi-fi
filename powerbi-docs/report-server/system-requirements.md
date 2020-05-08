@@ -9,10 +9,10 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/20/2020
 ms.openlocfilehash: 20b41762f7b38bd4ed26add97abb4eec1da0c000
-ms.sourcegitcommit: d42fbe235b6cf284ecc09c2a3c005459cec11272
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "77558552"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Laitteisto- ja ohjelmistovaatimukset Power BI-raporttipalvelimen asentamista varten
@@ -21,13 +21,13 @@ Tässä artikkelissa määritetään laitteiston ja ohjelmiston vähimmäisvaati
 
 ## <a name="processor-memory-and-operating-system-requirements"></a>Suoritin, muisti ja käyttöjärjestelmävaatimukset
 
-| Komponentti | Vaatimus |
+| Osa | Vaatimus |
 | --- | --- |
 | .NET Framework |4.7<br><br>Voit asentaa .NET Frameworkin manuaalisesti kohdasta [Microsoft .NET Framework 4.7 (Web Installer) for Windows](https://support.microsoft.com/en-us/kb/3186500).<br/><br/> Lisätietoja, suosituksia ja ohjeita .NET Framework 4.7:lle on kohdassa [.NET Framework-käyttöönotto-opas kehittäjille](https://docs.microsoft.com/dotnet/framework/deployment/deployment-guide-for-developers).<br/><br/>Windows 8.1 ja Windows Server 2012 R2 edellyttävät [KB2919355:n](https://support.microsoft.com/kb/2919355) asentamista ennen kuin asennat .NET Framework 4.7:n. |
 | Kiintolevy |Power BI -raporttipalvelin edellyttää vähintään 1 Gt käytettävissä olevaa kiintolevytilaa.<br><br>Lisätilaa tarvitaan tietokantapalvelimessa, joka isännöi raporttipalvelimen tietokantaa. |
-| Muisti |**Vähintään:** 1 GT<br/><br/> **Suositus:** Vähintään 4 Gt |
-| Suorittimen nopeus |**Vähintään:** x64-suoritin: 1,4 GHz<br/><br/> **Suositus:** 2,0 GHz tai nopeampi |
-| Suorittimen tyyppi |x64-suoritin: AMD Opteron, AMD Athlon 64, Intel Xeon ja Intel EM64T -tuki, Intel Pentium IV ja EM64T-tuki |
+| Muisti |**Vähintään:** 1 Gt<br/><br/> **Suositus:** vähintään 4 Gt |
+| Suorittimen nopeus |**Vähintään:** x64 suoritin: 1,4 GHz<br/><br/> **Suositus:** 2,0 GHz:n suoritin |
+| Suorittimen tyyppi |x64 suoritin: AMD Opteron, AMD Athlon 64, Intel Xeon ja Intel EM64T-tuki, Intel Pentium IV ja EM64T-tuki |
 | Käyttöjärjestelmä |Windows Server 2019 Datacenter<br><br>Windows Server 2019 Standard<br><br>Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows Server 2012 R2 Datacenter<br><br>Windows Server 2012 R2 Standard<br><br>Windows Server 2012 R2 Essentials<br><br>Windows Server 2012 R2 Foundation<br><br>Windows Server 2012 Datacenter<br><br>Windows Server 2012 Standard<br><br>Windows Server 2012 Essentials<br><br>Windows Server 2012 Foundation<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br><br>Windows 8.1<br><br>Windows 8.1 Pro<br><br>Windows 8.1 Enterprise<br><br>Windows 8<br><br>Windows 8 Pro<br><br>Windows 8 Enterprise |
 
 > [!NOTE]
@@ -47,7 +47,7 @@ SQL Serveriä käytetään isännöimään raporttipalvelintietokantoja. SQL Ser
 
 Kun luot raporttipalvelimen tietokannan etätietokoneessa, sinun on määritettävä yhteys, jota käytetään verkkoyhteydellä varustetun toimialueen käyttäjätilin tai palvelutilin kanssa. Jos päätät käyttää SQL Server-etäesiintymää, kannattaa harkita huolellisesti, mitä tunnistetietoja raporttipalvelimen kannattaa käyttää SQL Server-esiintymään. Katso lisätietoja kohdasta [Raporttipalvelimen tietokantayhteyden määrittäminen](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
 
-## <a name="considerations"></a>Huomioitavaa
+## <a name="considerations"></a>Huomioon otettavia seikkoja
 
 Power BI-raporttipalvelin asentaa oletusarvot raporttipalvelimen ydinasetusten määrittämiseksi raporttipalvelimen toimintaa varten. Se sisältää seuraavat vaatimukset:
 

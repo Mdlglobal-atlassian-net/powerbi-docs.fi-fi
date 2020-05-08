@@ -11,17 +11,17 @@ ms.date: 04/01/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 0f01a6da3bb0d829d396861814f71d33ba69f22f
-ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80550911"
 ---
 # <a name="connect-to-project-online-data-through-power-bi-desktop"></a>Project Online -tietoihin yhdistäminen Power BI Desktopilla
 Voit muodostaa Power BI Desktopilla yhteyden Project Onlinessa oleviin tietoihin.
 
 ## <a name="step-1-download-power-bi-desktop"></a>Vaihe 1: Power BI Desktopin lataaminen
-1. Hanki **Power BI Desktop** tietokoneellesi [lataamalla Power BI Desktop](https://go.microsoft.com/fwlink/?LinkID=521662) ja suorittamalla sen asennusohjelma.
+1. Hanki [Power BI Desktop](https://go.microsoft.com/fwlink/?LinkID=521662) tietokoneellesi **lataamalla Power BI Desktop** ja suorittamalla sen asennusohjelma.
 
 ## <a name="step-2-connect-to-project-online-with-odata"></a>Vaihe 2: Yhteyden muodostaminen Project Onlineen ODatan kautta
 1. Käynnistä **Power BI Desktop**.

@@ -1,6 +1,6 @@
 ---
-title: 'Hankinta-analyysimalli: aloita esittely'
-description: 'Hankinta-analyysimalli Power BI:lle: aloita esittely'
+title: 'Hankinta-analyysimalli: esittely'
+description: 'Hankinta-analyysimalli Power BI:lle: esittely'
 author: maggiesMSFT
 ms.reviewer: amac
 ms.service: powerbi
@@ -10,13 +10,13 @@ ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 8ee77485da03cb8e507d30d511c08aa869c3e4ba
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80404678"
 ---
-# <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Hankinta-analyysimalli Power BI:lle: aloita esittely
+# <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Hankinta-analyysimalli Power BI:lle: esittely
 
 Hankinta-analyysimallin sisältöpaketti sisältää koontinäytön, raportin ja tietojoukon, joka analysoi valmistavan yrityksen toimittajiin kohdistuvaa kulutusta luokan sekä sijainnin mukaan. Mallissa tutustumme seuraaviin alueisiin:
 
@@ -59,7 +59,7 @@ Ennen kuin voit käyttää mallia, se on ensin ladattava [sisältöpakettina](#g
 
 Vaihtoehtoisesti voit ladata hankinta-analyysimallin [.pbix-tiedostona](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix), joka on suunniteltu käytettäväksi Power BI Desktopilla. 
 
-### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän näytteen Excel-työkirja
+### <a name="get-the-excel-workbook-for-this-sample"></a>Hae tämän mallin Excel-työkirja
 
 Jos haluat perehtyä tämän mallin tietolähteeseen, se on saatavana myös [Excel-työkirjana](https://go.microsoft.com/fwlink/?LinkId=529784). Työkirja sisältää Power View -taulukoita, joita voit tarkastella ja muokata. Saat raakatiedot näkyviin ottamalla käyttöön Tietojen analysointi -apuohjelmat ja valitsemalla sitten **Power Pivot > Hallinta**. Voit ottaa Power View- ja Power Pivot -apuohjelmat käyttöön [tutustumalla Excelin sisältämien Excel-mallien](sample-datasets.md#explore-excel-samples-inside-excel) lisätietoihin.
 
@@ -138,8 +138,8 @@ Valitse **Muokkaa raporttia** vasemmasta yläkulmasta ja tutustu muokkausnäkym�
 * Muuta kaavion visualisointityyppiä – voit esimerkiksi muuttaa puukartan rengaskaavioksi.
 * Kiinnitä kaavioita koontinäyttöösi.
 
-## <a name="next-steps-connect-to-your-data"></a>Seuraavat vaiheet: Yhdistä tietoihisi
-Tässä ympäristössä on turvallista tehdä kokeiluja, koska voit jättää tekemäsi muutokset tallentamatta. Jos kuitenkin tallennat ne, voit aina siirtyä **Nouda tiedot** -kohtaan, jolloin saat tästä mallista uuden kopion.
+## <a name="next-steps-connect-to-your-data"></a>Seuraavat vaiheet: muodostaa yhteys tietoihisi
+Tässä ympäristössä on turvallista tehdä kokeiluja, koska voit jättää tekemäsi muutokset tallentamatta. Jos kuitenkin tallennat ne, voit aina siirtyä **Nouda tiedot** -kohtaan, jolloin saat mallista uuden kopion.
 
 Toivomme, että tämä esittely on osoittanut, miten Power BI -raporttinäkymät, Q&A ja raportit voivat tarjota uusia näkökulmia mallitietoihin. Nyt on sinun vuorosi – muodosta yhteys omiin tietoihisi. Power BI:n avulla voit yhdistää useisiin eri tietolähteisiin. Lisätietoja on artikkelissa [Power BI -palvelun käytön aloittaminen](service-get-started.md).
 

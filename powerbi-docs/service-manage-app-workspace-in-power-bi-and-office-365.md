@@ -10,10 +10,10 @@ ms.date: 03/02/2020
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 72694ea771950b4a12427e0a0696e221fbe993bf
-ms.sourcegitcommit: d65da4738f011beec8f4423085cbd483511cdfb0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78237841"
 ---
 # <a name="manage-your-workspace-in-power-bi-and-office-365"></a>Työtilan hallinta Power BI:ssä ja Office 365:ssä
@@ -71,7 +71,7 @@ Voit myös muokata työtilan ominaisuuksia suoraan Outlook for Office 365:ssä.
 
 ### <a name="add-an-image-and-set-other-workspace-properties"></a>Kuvan lisääminen ja työtilan muiden ominaisuuksien määrittäminen
 
-Kun jakelet sovellustasi työtilasta, tässä lisäämäsi kuva näkyy sovelluksen kuvana. Lisätietoja on **Uusien työtilojen luominen** -artikkelin osiossa [Kuvan lisääminen Office 365:n uusiin työtiloihin](service-create-workspaces.md#add-an-image-to-your-office-365-workspace-optional).
+Kun jakelet sovellustasi työtilasta, tässä lisäämäsi kuva näkyy sovelluksen kuvana. Lisätietoja on [Uusien työtilojen luominen](service-create-workspaces.md#add-an-image-to-your-office-365-workspace-optional) -artikkelin osiossa **Kuvan lisääminen Office 365:n uusiin työtiloihin**.
 
 1. Siirry työtilasi Outlook for Office 365 -näkymässä **Tietoja**-välilehdelle ja valitse **Muokkaa**.
 

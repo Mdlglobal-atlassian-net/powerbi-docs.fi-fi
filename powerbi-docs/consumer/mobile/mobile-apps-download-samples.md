@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 11/26/2019
 ms.author: painbar
 ms.openlocfilehash: 82a299dad5d58ca03d2b05ae02c49e0da0478303
-ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75256789"
 ---
 # <a name="downloading-samples-to-my-workspace-in-the-power-bi-service"></a>Mallien lataaminen Power BI -palvelun Oma työtila -kohtaan
@@ -46,4 +46,4 @@ Nyt voit siirtyä tarkastelemaan malleja mobiililaitteessa.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Pikaopas](mobile-apps-quickstart-view-dashboard-report.md)
-* Onko sinulla kysyttävää? Tutustu [Power BI -yhteisön Mobiilisovellukset-osaan](https://go.microsoft.com/fwlink/?linkid=839277)
+* Onko sinulla kysymyksiä? Tutustu [Power BI -yhteisön Mobiilisovellukset-osaan](https://go.microsoft.com/fwlink/?linkid=839277)

@@ -9,10 +9,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
 ms.openlocfilehash: e74e390a5d228cb4a158d422cf0adab48b573cce
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79079665"
 ---
 # <a name="dataset-properties"></a>Tietojoukon ominaisuudet
@@ -24,54 +24,54 @@ Nykyinen tietojoukkojen ohjelmointirajapinnan v1 sallii tietojoukkoja luotavan v
 
 ## <a name="dataset"></a>Tietojoukko
 
-Nimi  |Tyyppi  |Kuvaus  |Vain luku  |Pakollinen
+Nimi  |Tyyppi.  |Description  |Vain luku  |Pakollinen
 ---------|---------|---------|---------|---------
-tunnus     |  GUID-tunnus       | Järjestelmän laajuinen yksilöllinen tunnus tietojoukolle.        | Tosi        | Epätosi        
-name     | Merkkijono        | Käyttäjän määrittämä tietojoukon nimi.        | Epätosi        | Tosi        
+tunnus     |  GUID-tunnus       | Järjestelmän laajuinen yksilöllinen tunnus tietojoukolle.        | True        | Epätosi        
+nimi     | Merkkijono        | Käyttäjän määrittämä tietojoukon nimi.        | Epätosi        | True        
 taulukot     | Table[]        | Taulukkokokoelma.        |  Epätosi       | Epätosi        
 suhteet     | Relationship[]        | Taulukkojen välisten suhteiden kokoelma.        | Epätosi        |  Epätosi  
 defaultMode     | Merkkijono        | Määrittää, onko tietojoukkoon työnnetty tai virtautettu tai sekä työnnetty että virtautettu arvot ”Push” ja ”Streaming”.         | Epätosi        |  Epätosi
 
 ## <a name="table"></a>Taulukko
 
-Nimi  |Tyyppi  |Kuvaus  |Vain luku  |Pakollinen
+Nimi  |Tyyppi.  |Description  |Vain luku  |Pakollinen
 ---------|---------|---------|---------|---------
-name     | Merkkijono        |  Käyttäjän määrittämä taulukon nimi. Sitä käytetään myös taulun tunnuksena.       | Epätosi        |  Tosi       
-sarakkeet     |  sarake[]       |  Sarakekokoelma.       | Epätosi        |  Tosi       
+nimi     | Merkkijono        |  Käyttäjän määrittämä taulukon nimi. Sitä käytetään myös taulun tunnuksena.       | Epätosi        |  True       
+sarakkeet     |  sarake[]       |  Sarakekokoelma.       | Epätosi        |  True       
 mittarit     | mittari[]        |  Mittarikokoelma.       | Epätosi        |  Epätosi       
-isHidden     | Totuusarvo        | Jos arvo on tosi, taulukko on piilotettu asiakastyökaluilta.        | Epätosi        | Epätosi        
+isHidden     | Boolean        | Jos arvo on tosi, taulukko on piilotettu asiakastyökaluilta.        | Epätosi        | Epätosi        
 
-## <a name="column"></a>Sarake
+## <a name="column"></a>sarake
 
-Nimi  |Tyyppi  |Kuvaus  |Vain luku  |Pakollinen
+Nimi  |Tyyppi.  |Description  |Vain luku  |Pakollinen
 ---------|---------|---------|---------|---------
-name     |  Merkkijono        | Käyttäjän määrittämä sarakkeen nimi.        |  Epätosi       | Tosi       
-dataType     |  Merkkijono       |  Tuetut [EDM-tietotyypit](https://msdn.microsoft.com/library/ee382832.aspx) ja rajoitukset. Katso [Tietotyypin rajoitukset](#data-type-restrictions).      |  Epätosi       | Tosi        
+nimi     |  Merkkijono        | Käyttäjän määrittämä sarakkeen nimi.        |  Epätosi       | True       
+dataType     |  Merkkijono       |  Tuetut [EDM-tietotyypit](https://msdn.microsoft.com/library/ee382832.aspx) ja rajoitukset. Katso [Tietotyypin rajoitukset](#data-type-restrictions).      |  Epätosi       | True        
 formatString     | Merkkijono        | Merkkijono, joka kuvaa, miten arvoa olisi muotoiltava, kun se näytetään. Lisätietoja merkkijonon muotoilemisesta on artikkelissa [Merkkijonon sisällön muotoileminen](https://msdn.microsoft.com/library/ms146084.aspx).      | Epätosi        | Epätosi        
 sortByColumn    | Merkkijono        |   Sarakkeen merkkijonon nimi samassa taulukossa, jota käytetään nykyisen sarakkeen järjestämiseen.     | Epätosi        | Epätosi       
 dataCategory     | Merkkijono        |  Merkkijonon arvo, jota käytetään tietoluokalle, joka kuvaa tässä sarakkeessa olevia tietoja. Joitakin yleisiä arvoja ovat: Address, City, Continent, Country, Image, ImageUrl, Latitude, Longitude, Organization, Place, PostalCode, StateOrProvince, WebUrl       |  Epätosi       | Epätosi        
-isHidden    |  Totuusarvo       |  Ominaisuus, joka ilmaisee, onko sarake piilotettu näkyvistä. Oletusarvona on epätosi.       | Epätosi        | Epätosi        
+isHidden    |  Boolean       |  Ominaisuus, joka ilmaisee, onko sarake piilotettu näkyvistä. Oletusarvona on epätosi.       | Epätosi        | Epätosi        
 summarizeBy     | Merkkijono        |  Sarakkeen oletusarvoinen koostemenetelmä. Arvoja ovat: default, none, sum, min, max, count, average, distinctCount     |  Epätosi       | Epätosi
 
 ## <a name="measure"></a>Mittari
 
-Nimi  |Tyyppi  |Kuvaus  |Vain luku  |Pakollinen
+Nimi  |Tyyppi.  |Description  |Vain luku  |Pakollinen
 ---------|---------|---------|---------|---------
-name     | Merkkijono        |  Käyttäjän määrittämä mittarin nimi.       |  Epätosi       | Tosi        
-lauseke     | Merkkijono        | Kelvollinen DAX-lauseke.        | Epätosi        |  Tosi       
+nimi     | Merkkijono        |  Käyttäjän määrittämä mittarin nimi.       |  Epätosi       | True        
+lauseke     | Merkkijono        | Kelvollinen DAX-lauseke.        | Epätosi        |  True       
 formatString     | Merkkijono        |  Merkkijono, joka kuvaa, miten arvoa olisi muotoiltava, kun se näytetään. Lisätietoja merkkijonon muotoilemisesta on artikkelissa [Merkkijonon sisällön muotoileminen](https://msdn.microsoft.com/library/ms146084.aspx).       | Epätosi        | Epätosi        
 isHidden     | Merkkijono        |  Jos arvo on tosi, taulukko on piilotettu asiakastyökaluilta.       |  Epätosi       | Epätosi       
 
-## <a name="relationship"></a>Suhde
+## <a name="relationship"></a>Yhteydet
 
-Nimi  |Tyyppi  |Kuvaus  |Vain luku  |Pakollinen 
+Nimi  |Tyyppi.  |Description  |Vain luku  |Pakollinen 
 ---------|---------|---------|---------|---------
-name     | Merkkijono        | Käyttäjän määrittämä suhteen nimi. Sitä käytetään myös suhteen tunnuksena.        | Epätosi       | Tosi        
-crossFilteringBehavior     | Merkkijono        |    Yhteyden suodatussuunta: OneDirection (oletus), BothDirections, Automatic       | Epätosi        | Epätosi        
-fromTable     | Merkkijono        | Viiteavaintaulukon nimi.        | Epätosi        | Tosi         
-fromColumn    | Merkkijono        | Viiteavainsarakkeen nimi.        | Epätosi        | Tosi         
-toTable    | Merkkijono        | Ensisijaisen avaintaulukon nimi.        | Epätosi        | Tosi         
-toColumn     | Merkkijono        | Ensisijaisen avainsarakkeen nimi.        | Epätosi        | Tosi        
+nimi     | Merkkijono        | Käyttäjän määrittämä suhteen nimi. Sitä käytetään myös suhteen tunnuksena.        | Epätosi       | True        
+crossFilteringBehavior     | Merkkijono        |    Suhteen suodattimen suunta: OneDirection (oletus), BothDirections, Automatic       | Epätosi        | Epätosi        
+fromTable     | Merkkijono        | Viiteavaintaulukon nimi.        | Epätosi        | True         
+fromColumn    | Merkkijono        | Viiteavainsarakkeen nimi.        | Epätosi        | True         
+toTable    | Merkkijono        | Ensisijaisen avaintaulukon nimi.        | Epätosi        | True         
+toColumn     | Merkkijono        | Ensisijaisen avainsarakkeen nimi.        | Epätosi        | True        
 
 ## <a name="data-type-restrictions"></a>Tietotyypin rajoitukset
 
@@ -81,7 +81,7 @@ Tietotyyppi  |Rajoitukset
 ---------|---------
 Int64     |   Int64.MaxValue ja Int64.MinValue eivät ole sallittuja.      
 Double     |  Double.MaxValue- ja Double.MinValue-arvoja ei sallita. NaN:ää ei tueta. Komentoja +Infinity ja -Infinity ei tueta tietyissä funktioissa (esim. Min, Max).       
-Totuusarvo     |   Tosi tai epätosi.
+Boolean     |   Tosi tai epätosi.
 Päivämäärä ja aika    |   Tietojen lataamisen aikana arvot muutetaan määrällisiksi 1/300 sekunnin (3,33 ms) kerrannaisten päiväosiin.      
 Merkkijono     |  Tällä hetkellä sallii enintään 4 000 merkkiä merkkijonoarvoa kohden.
 Desimaali|tarkkuus = 28, mittakaava = 4

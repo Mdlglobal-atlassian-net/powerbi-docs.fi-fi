@@ -10,10 +10,10 @@ ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: de65fed27260f3e93c4e91fcb680d2e5190543b0
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74698206"
 ---
 # <a name="using-incremental-refresh-with-power-bi-dataflows"></a>Lisäävän päivityksen käyttäminen Power BI -tietovoiden kanssa
@@ -153,7 +153,7 @@ Seuraava päivitystoiminto, *suorita päivä 16.1.2017*, yhdistää joulukuun ja
 Tässä artikkelissa kuvattiin tietovoiden lisäävä päivitys. Seuraavassa on lisää artikkeleita, joista voi olla hyötyä.
 
 
-* [Omatoiminen tietojen valmistelu tietovoiden avulla](service-dataflows-overview.md)
+* [Omatoiminen tietojen valmisteleminen tietovoiden avulla](service-dataflows-overview.md)
 * [Tietovoiden luominen ja käyttäminen Power BI:ssä](service-dataflows-create-use.md)
 * [Tietovoiden käyttö paikallisiin tietolähteisiin](service-dataflows-on-premises-gateways.md)
 * [Kehittäjien resurssit Power BI -tietovoille](service-dataflows-developer-resources.md)

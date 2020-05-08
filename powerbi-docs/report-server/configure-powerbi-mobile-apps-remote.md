@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 11/07/2019
 ms.author: painbar
 ms.openlocfilehash: b84d7a23cf947b18302c761ff5f78143bf3356aa
-ms.sourcegitcommit: 50c4bebd3432ef9c09eacb1ac30f028ee4e66d61
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/12/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73925870"
 ---
 # <a name="configure-power-bi-mobile-app-access-to-report-server-remotely"></a>Raporttipalvelimen käyttöoikeuksien etämäärittäminen Power BI -mobiilisovellukselle
@@ -21,7 +21,7 @@ Koskee seuraavia:
 
 | ![iPhone](./media/configure-powerbi-mobile-apps-remote/ios-logo-40-px.png) | ![Android-puhelin](./media/configure-powerbi-mobile-apps-remote/android-logo-40-px.png) |
 |:--- |:--- |
-| iOS |Android- |
+| iOS |Android |
 
 Tässä artikkelissa kerrotaan, miten voit käyttää organisaatiosi ydintietojen hallintatyökalua määrittääksesi raporttipalvelimen käyttöoikeudet Power BI -mobiilisovellukselle. Tämän määrittämiseksi IT-järjestelmänvalvojat voivat luoda sovelluksen määrityskäytännön, joka lähettää vaaditut tiedot sovellukseen. 
 
@@ -38,12 +38,12 @@ Järjestelmänvalvojat voivat luoda sovelluksen määrityskäytännön Microsoft
 
 Parit on havainnollistettu seuraavassa taulukossa.
 
-|Avain  |Tyyppi  |Kuvaus  |
+|Avain  |Tyyppi.  |Description  |
 |---------|---------|---------|
 | com.microsoft.powerbi.mobile.ServerURL | Merkkijono | Raporttipalvelimen URL-osoite <br> Tulee alkaa merkkijonolla http tai https |
 | com.microsoft.powerbi.mobile.ServerUsername | Merkkijono | [valinnainen] <br> Käyttäjänimi, jota käytetään muodostettaessa yhteyttä palvelimeen. <br> Jos sellaista ei ole, sovellus pyytää käyttäjää antamaan käyttäjänimen yhteyden muodostamista varten.| 
 | com.microsoft.powerbi.mobile.ServerDisplayName | Merkkijono | [valinnainen] <br> Oletusarvo on ”Raporttipalvelin” <br> Kutsumanimi, joka edustaa palvelinta sovelluksessa | 
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Totuusarvo | Oletusarvo on Tosi (True) <br>Kun arvoksi on määritetty Tosi, se ohittaa mobiililaitteessa jo olevat raporttipalvelimen määritelmät. Tässä yhteydessä poistetaan olemassa olevat palvelimet, jotka on jo määritetty. <br> Ohituksen Tosi-arvo estää käyttäjää poistamista kyseistä määritystä. <br> Epätosi-arvo lisää lähetetyt arvot poistamatta olemassa olevia asetuksia. <br> Jos sama palvelimen URL-osoite on jo määritetty mobiilisovelluksessa, sovellus jättää sen määrityksen ennalleen. Sovellus ei pyydä käyttäjää todentamaan uudelleen samalle palvelimelle. |
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | Oletusarvo on Tosi (True) <br>Kun arvoksi on määritetty Tosi, se ohittaa mobiililaitteessa jo olevat raporttipalvelimen määritelmät. Tässä yhteydessä poistetaan olemassa olevat palvelimet, jotka on jo määritetty. <br> Ohituksen Tosi-arvo estää käyttäjää poistamista kyseistä määritystä. <br> Epätosi-arvo lisää lähetetyt arvot poistamatta olemassa olevia asetuksia. <br> Jos sama palvelimen URL-osoite on jo määritetty mobiilisovelluksessa, sovellus jättää sen määrityksen ennalleen. Sovellus ei pyydä käyttäjää todentamaan uudelleen samalle palvelimelle. |
 
 Tässä on esimerkki määrityskäytännön asettamisesta Intunen avulla.
 

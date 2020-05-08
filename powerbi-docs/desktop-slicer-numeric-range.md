@@ -11,10 +11,10 @@ ms.date: 04/06/2020
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: bd5f937154edf9f8b6a86fb7f53690943a7f3a53
-ms.sourcegitcommit: 915cb7d8088deb0d9d86f3b15dfb4f6f5b1b869c
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "81006637"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi"></a>Numeerisen alueen osittajan käyttö Power BI:ssä
@@ -77,7 +77,7 @@ Pohjana olevassa tietotyypissä voi olla esimerkiksi pitkä päivämäärämuoto
 
 Näyttämällä osittajassa lyhyen päivämäärän muodon varmistat, että merkkijonon pituus säilyy aina johdonmukaisena ja lyhyenä osittajassa.
 
-## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
+## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioon otettavat seikat
 
 Numeerisen alueen osittajaa koskevat seuraavat rajoitukset ja huomioon otettavat seikat:
 

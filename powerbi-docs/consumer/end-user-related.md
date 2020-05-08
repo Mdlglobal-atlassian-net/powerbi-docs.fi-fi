@@ -11,10 +11,10 @@ ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 0d3bbbf9042d2b0d1a42ab9c1f759ccfd03c6609
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114372"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Tarkastele aiheeseen liittyvää sisältöä Power BI -palvelussa
@@ -52,14 +52,14 @@ Täältä voit tehdä suoria toimintoja aiheeseen liittyvään sisältöön.  Va
 
 
 ## <a name="view-related-content-for-a-dataset"></a>Tarkastele tietojoukkoon liittyvää sisältöä
-Avataksesi **Aiheeseen liittyvä sisältö** -ruudun sinun pitää käydä läpi tietojoukkoon liittyvät oikeudet kohdasta *Lue*. Tässä esimerkkinä toimii [Hankinta-analyysimalli](../sample-procurement.md).
+Avataksesi *Aiheeseen liittyvä sisältö* -ruudun sinun pitää käydä läpi tietojoukkoon liittyvät oikeudet kohdasta **Lue**. Tässä esimerkkinä toimii [Hankinta-analyysimalli](../sample-procurement.md).
 
 Etsi siirtymisruudusta **Työtilat**-otsikko ja valitse työtila luettelosta. Jos sinulla on sisältöä työtilassa, se näkyy piirtoalustassa oikealla. 
 
 ![työtilat siirtymisruudussa](./media/end-user-related/power-bi-workspace.png)
 
 
-Valitse ensin **Tietojoukot**-välilehti työtilassa ja etsi sitten ![Näytä aiheeseen liittyvä kuvake](./media/end-user-related/power-bi-view-related-icon-new.png) kuvakkeesta **Näytä aiheeseen liittyvät**.
+Valitse ensin **Tietojoukot**-välilehti työtilassa ja etsi sitten **Näytä aiheeseen liittyvä kuvake** kuvakkeesta ![Näytä aiheeseen liittyvät](./media/end-user-related/power-bi-view-related-icon-new.png).
 
 ![Tietojoukot-välilehti](./media/end-user-related/power-bi-related-dataset.png)
 

@@ -11,10 +11,10 @@ ms.date: 03/09/2020
 ms.author: mihart
 LocalizationGroup: Common tasks
 ms.openlocfilehash: 0e7d46711502b75c9d0fedb8b1a0792a11f102bd
-ms.sourcegitcommit: 87b7cb4a2e626711b98387edaa5ff72dc26262bb
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79040190"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Näytä sisältö yksityiskohtaisemmin: tarkastelutila ja koko näytön tila
@@ -109,7 +109,7 @@ Tarkastelutila on käytettävissä koontinäytön ruuduille ja raportin visualis
 
 - Avaa koontinäytön ruutu tarkastelutilassa pitämällä hiiren osoitinta koontinäytön ruudun tai raportin visualisoinnin päällä ja valitse **Enemmän vaihtoehtoja** (...) ja valitse **Avaa tarkastelutilassa**.
 
-    ![ruudun kolme pistettä -valikko](media/end-user-focus/power-bi-dashboard-focus.png).. 
+    ![ruudun kolme pistettä -valikko](media/end-user-focus/power-bi-dashboard-focus.png). 
 
 - Avaa raportin visualisointi pitämällä hiiren osoitinta visualisoinnin päällä ja valitse **tarkastelutila**kuvake ![tarkastelutilakuvake](media/end-user-focus/pbi_popout.jpg).  
 

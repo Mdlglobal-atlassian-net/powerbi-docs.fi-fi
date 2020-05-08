@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 01/09/2020
 ms.author: maggies
 ms.openlocfilehash: 7052b0f045b98ce8e25822f76fe0b8391e298a47
-ms.sourcegitcommit: 4b926ab5f09592680627dca1f0ba016b07a86ec0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "75837603"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Power BI -raportin ajoitettu päivitys Power BI -raporttipalvelimessa
@@ -24,7 +24,7 @@ Ajoitettu päivitys on tarkoitettu nimenomaan niille Power BI -raporteille, jotk
 
 Ajoitettu päivitys asetetaan raportin hallintaosiosta. Saadaksesi lisätietoja ajoitetun päivityksen asettamisesta, katso [Power BI -raportin ajoitetun päivityksen asettaminen](configure-scheduled-refresh.md).
 
-## <a name="how-this-works"></a>Miten se toimii
+## <a name="how-this-works"></a>Miten tämä toimii?
 Power BI -raporttien ajoitetun päivityksen käyttöön liittyy useita eri osia.
 
 * SQL Server -agentti toimii ajoitettujen tapahtumien ajastimena.

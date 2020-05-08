@@ -9,23 +9,23 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/07/2020
 ms.openlocfilehash: a18e0a094c5bc42f7a77a045ac7b552e458e5628
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78919833"
 ---
 # <a name="install-report-builder---power-bi-report-server"></a>Raportin muodostimen asentaminen – Power BI-raporttipalvelin
 
 Raportin muodostin on itsenäinen sovellus, jonka sinä tai järjestelmänvalvoja on asentanut tietokoneeseesi. Voit ladata sen Microsoft Download Centeristä tai Power BI -raporttipalvelimelta.  
 
-Tarvitsetko neuvoja Power BI -palvelun Raportin muodostimen asentamiseen? Lue lisätietoja kohdasta [Power BI:n raportin muodostin](../paginated-reports/report-builder-power-bi.md).
+Tarvitsetko neuvoja Power BI -palvelun Raportin muodostimen asentamiseen? Katso lisätietoja kohdasta [Power BI:n raportin muodostin](../paginated-reports/report-builder-power-bi.md).
   
 Tavallisesti järjestelmänvaloja asentaa ja määrittää Power BI -raporttipalvelimen, myöntää käyttöoikeudet Raportin muodostimen lataamiseen verkkoportaalista, ja hallitsee kansioita ja raporttien käyttöoikeuksia sekä raporttipalvelimelle tallennettuja jaettuja tietojoukkoja. Lisätietoja Power BI -raporttipalvelimesta on artikkelissa [Hallinnan yhteenveto, Power BI -raporttipalvelin](admin-handbook-overview.md).  
   
 ## <a name="system-requirements"></a>Järjestelmävaatimukset
   
- Lisätietoja on Microsoft Download Centerin [Raportin muodostimen lataussivun](https://go.microsoft.com/fwlink/?LinkID=734968) **Järjestelmävaatimukset**-osassa.
+ Lisätietoja on Microsoft Download Centerin **Raportin muodostimen lataussivun** [Järjestelmävaatimukset](https://go.microsoft.com/fwlink/?LinkID=734968)-osassa.
  
 ## <a name="install-report-builder-from-a-web-portal"></a>Raportin muodostimen asentaminen verkkoportaalin kautta
   
@@ -46,7 +46,7 @@ Voit asentaa Raportin muodostimen Power BI-raporttipalvelimen verkkoportaalista.
     ![Uusi raportti tai tietojoukko -näyttö](media/quickstart-create-paginated-report/reportserver-paginated-new-report-screen.png)
  
 
-##  <a name="download"></a>Raportin muodostimen lataaminen Download Centeristä  
+##  <a name="install-report-builder-from-the-download-center"></a><a name="download"></a>Raportin muodostimen lataaminen Download Centeristä  
   
 1.  Valitse [Microsoft Download Centerin Raportin muodostin -sivulta](https://go.microsoft.com/fwlink/?LinkID=734968) **Lataa**.  
   

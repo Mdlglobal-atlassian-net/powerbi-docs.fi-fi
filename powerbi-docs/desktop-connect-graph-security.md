@@ -11,10 +11,10 @@ ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
 ms.openlocfilehash: ef8e874c1f1a47d65845b87dccd441746651a68b
-ms.sourcegitcommit: 8e3d53cf971853c32eff4531d2d3cdb725a199af
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74999786"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Muodosta yhteys Microsoft Graph Security -ohjelmointirajapintaan Power BI Desktopissa
@@ -58,7 +58,7 @@ Käytä liitintä seuraavasti:
     
 5. Kirjaudu sisään Azure Active Directory -tiliisi, kun sitä pyydetään. Tilin roolin on oltava *suojauksen lukija* tai *suojauksen järjestelmänvalvoja*, kuten edellisessä osassa mainittiin.
 
-    ![Kirjaudu sisään](media/desktop-connect-graph-security/SignIn.PNG) 
+    ![Kirjaudu sisään.](media/desktop-connect-graph-security/SignIn.PNG) 
     
 6. Jos olet vuokraajan järjestelmänvalvoja *etkä* ole vielä antanut suostumusta Microsoft Graph Security Power BI -liittimelle (sovellukselle), näkyviin tulee seuraava valintaikkuna. Valitse **Suostumus organisaatiosi puolesta**.
 

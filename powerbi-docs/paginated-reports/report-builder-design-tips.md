@@ -9,10 +9,10 @@ ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 13b9e37d4a64493dfdcac02d9df86a1e19a1c24b
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921167"
 ---
 # <a name="report-design-tips-in-power-bi-report-builder"></a>Power BI:n raportin muodostimella luotavien raporttien suunnitteluvinkkejä
@@ -20,7 +20,7 @@ ms.locfileid: "78921167"
   
    
   
-##  <a name="DesigningReports"></a> Raporttien suunnittelu  
+##  <a name="designing-reports"></a><a name="DesigningReports"></a> Raporttien suunnittelu  
   
 -   Hyvin suunniteltu raportti välittää tietoja, jotka johtavat toimiin. Määritä kysymykset, joihin voidaan vastata raportin avulla. Pidä kysymykset mielessä raporttia suunnitellessasi.  
   
@@ -36,7 +36,7 @@ ms.locfileid: "78921167"
   
  Lisätietoja raportin suunnittelussa huomioitavista seikoista on kohdassa [Raportin suunnittelu raportin muodostimessa](report-builder-planning-report.md)).  
   
-##  <a name="NamingConventions"></a> Raporttien, tietolähteiden ja tietojoukkojen nimeämiskäytännöt  
+##  <a name="naming-conventions-for-reports-data-sources-and-datasets"></a><a name="NamingConventions"></a> Raporttien, tietolähteiden ja tietojoukkojen nimeämiskäytännöt  
   
 -   Käytä nimeämiskäytäntöjä tietolähteille ja tietojoukoille, jotka kuvaavat tietolähdettä.  
   
@@ -44,7 +44,7 @@ ms.locfileid: "78921167"
   
     2.  **Tietojoukot** Käytä nimeä, joka ilmaisee, mihin tietolähteeseen tietojoukko perustuu.  
   
-##  <a name="Data"></a> Tietojen käsitteleminen  
+##  <a name="working-with-data"></a><a name="Data"></a> Tietojen käsitteleminen  
   
 -   Aseta aivan aluksi raporttitietoruudussa näkyviksi kaikki tiedot, joita haluat käsitellä. Tarkentaessasi kysymyksiä, joihin raportti vastaa, mieti, miten voit rajoittaa raportin tietojoukkojen tiedot oleelliseen.  
   
@@ -54,7 +54,7 @@ ms.locfileid: "78921167"
   
 -   Voit tarpeen mukaan näyttää raportin tietolähteiden nimet ja sijainnit, tietojoukon kyselyn komentotekstin ja parametriarvot. Monet uudet käyttävät kysyvät ensimmäisenä, mistä tieto on peräisin. Voit ehdollisesti piilottaa tämäntyyppistä tietoja sisältävät tekstiruudut ja antaa käyttäjien valita, haluavatko he nähdä ne. Tämä voi selkeyttää raportin esitystapaa. Kokeile lisätä nämä tiedot raportin viimeiselle sivulle. Määritä tekstiruudun näkyvyys käyttäjän muutettavissa olevan parametrin perusteella.  
   
-##  <a name="DesignSurface"></a> Raportin suunnittelualueen käyttö  
+##  <a name="interacting-with-the-report-design-surface"></a><a name="DesignSurface"></a> Raportin suunnittelualueen käyttö  
  Raportin suunnittelualueessa ei ole WYSIWYG-toimintoa. Kun lisäät raporttikohteita suunnittelualueelle, niiden suhteellinen sijainti vaikuttaa siihen, miltä kohteet näyttävät hahmonnetun raportin sivulla. Välilyönnit säilytetään.  
   
 -   Kohdistusapuviivojen ja asettelupainikkeiden avulla voit tasata ja järjestää kohteita raportin suunnittelualueella. Voit esimerkiksi tasata valittujen kohteiden yläosan tai reunat, laajentaa kohteen toisen kohteen kokoa vastaavaksi tai säätää tai kohteiden välejä.  
@@ -77,7 +77,7 @@ ms.locfileid: "78921167"
   
 -   Kun vedät kenttiä raportin tietoruudusta Ryhmittely-ruutuun, älä vedä kenttää muiden suunnittelualueella olevien raporttikohteiden yli, koska tällöin muut kohteet valitaan tablix-tietoalueen sijasta. Vedä kenttä alas raportin tietoruutuun ja sitten Ryhmittely-ruutuun.  
   
-###  <a name="Selecting"></a> Kohteiden valinta  
+###  <a name="selecting-items"></a><a name="Selecting"></a> Kohteiden valinta  
  Voit valita haluamasi objektin raportin suunnittelualueelta ESC-näppäimen, hiiren kakkospainikkeen pikavalikon, Ominaisuudet-ruudun ja Ryhmittely-ruudun avulla.  
   
 -   -   ESC-näppäintä painamalla voit selata raporttikohteita, jotka on pinottu samaan paikkaan suunnittelualueella.  
@@ -89,31 +89,31 @@ ms.locfileid: "78921167"
     -   Voit käsitellä tablix-tietoalueen rivinryhmiä ja sarakeryhmiä valitsemalla haluamasi ryhmän Ryhmittely-ruudussa.  
 
   
-##  <a name="ReportItems"></a> Tiettyjen raporttikohdetyyppien käsitteleminen  
+##  <a name="working-with-specific-types-of-report-items"></a><a name="ReportItems"></a> Tiettyjen raporttikohdetyyppien käsitteleminen  
   
-###  <a name="Parameters"></a> Parametrien käsitteleminen  
+###  <a name="working-with-parameters"></a><a name="Parameters"></a> Parametrien käsitteleminen  
   
 -   Raporttiparametrien ensisijainen tarkoitus on suodattaa tietolähteen sisältö ja noutaa ainoastaan raportin kannalta oleelliset tiedot.  
   
 -   Päätä raporttiparametrien osalta, mikä on asianmukainen osallistavan vuorovaikutteisuuden ja käyttäjän auttamisen suhde. Voit esimerkiksi määrittää parametrin oletusarvoiksi arvot, jotka ovat tunnetusti suosittuja.  
   
-###  <a name="Text"></a> Tekstin käsitteleminen  
+###  <a name="working-with-text"></a><a name="Text"></a> Tekstin käsitteleminen  
   
 -   Kun liität monirivisiä tietoja tekstiruutuun, teksti lisätään yhtenä tekstinä. Kutakin tekstiä voidaan muotoilla vain kokonaisuutena. Voit muotoilla kunkin rivin erikseen lisäämällä tarvittaessa rivinvaihdon Enter-näppäimellä. Voit sen jälkeen käyttää muotoilua ja tyylejä tekstirivin tekstiruuduissa toisistaan riippumatta.  
   
 -   Voit määrittää ominaisuudet ja toiminnot tekstiruudussa tai paikkamerkkitekstissä. Jos käytössä on vain yksi tekstirivi, on tehokkaampaa määrittää asetukset tekstiruudussa kuin tekstissä.  
   
-###  <a name="Expressions"></a> Lausekkeiden käyttäminen  
+###  <a name="working-with-expressions"></a><a name="Expressions"></a> Lausekkeiden käyttäminen  
   
 -   Yksinkertaisten ja monimutkaisten lausekemuotojen ymmärtäminen Voit kirjoittaa yksinkertaisen muotoisia lausekkeita suoraan tekstiruutuihin, Ominaisuudet-ruudun ominaisuuksiin tai valintaikkunoihin, jotka tukevat lausekkeita.
   
 -   Lausekkeen luominen helpottuu, kun luot jokaisen osan erikseen ja tarkistat sen arvon. Voit lopuksi yhdistää kaikki osat lopulliseksi lausekkeeksi. Kokeile lisätä tekstiruutu matriisin soluun, näyttää jokainen lausekkeen osa ja määrittää näkyvyys tekstiruudussa. Voit hallita reunan tyyliä ja väriä, kun tekstiruutu on piilotettu, lisää tekstiruudun ensin suorakulmioon ja asettamalla reunan tyylin ja värin matriisin suorakulmion värin mukaiseksi.  
   
-###  <a name="Indicators"></a> Ilmaisimien käsitteleminen  
+###  <a name="working-with-indicators"></a><a name="Indicators"></a> Ilmaisimien käsitteleminen  
   
 -   Ilmaisin näytetään oletuksena vähintään kolmessa tilassa. Kun lisäät raporttiin ilmaisimen raporttiin, voit määrittää sen lisäämällä tai poistamalla tiloja. Käyttäjien on helpompi erottaa väriltään ja muodoltaan erottuva ilmaisin ympäristöstään.  
   
-##  <a name="Rendering"></a> Raporttisivun raporttikohteiden hahmontamisen hallinta  
+##  <a name="controlling-the-rendering-of-report-items-on-the-report-page"></a><a name="Rendering"></a> Raporttisivun raporttikohteiden hahmontamisen hallinta  
   
 -   Raportin suunnittelunalueella olevat raporttikohteet laajenevat niihin liittyvän tietojoukon, lausekkeen, aliraportin tai tekstin sisällön koon mukaan.  
   

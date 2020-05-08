@@ -9,10 +9,10 @@ ms.assetid: 76d3ac86-650c-46fe-8086-8b3edcea3882
 author: maggiesMSFT
 ms.author: maggies
 ms.openlocfilehash: 96c62fec55f87a31970b624a79314656ced0c159
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921121"
 ---
 # <a name="expressions-in-power-bi-report-builder"></a>Lausekkeet Power BI:n raportin muodostimessa
@@ -30,7 +30,7 @@ ms.locfileid: "78921121"
   
  Voit lisätä lausekkeita manuaalisesti valitsemalla suunnittelualueella olevan kohteen määrittämällä kohteen ominaisuudet pikavalikot ja valintaikkunoiden avulla. Kun näet avattavassa luettelossa ***(fx)***-painikkeen tai arvon `<Expression>`, tiedät, että voit määrittää ominaisuuden lausekkeen. 
   
-##  <a name="Types"></a> Yksinkertaisten ja monimutkaisten lausekkeiden ymmärtäminen  
+##  <a name="understanding-simple-and-complex-expressions"></a><a name="Types"></a> Yksinkertaisten ja monimutkaisten lausekkeiden ymmärtäminen  
  Lausekkeet alkavat yhtäläisyysmerkillä (=) ja ne kirjoitetaan Microsoft Visual Basicilla. Lausekkeet voivat sisältää yhdistelmän vakioita, operaattoreita ja viittauksia sisäisiin arvoihin (kentät, kokoelmat ja funktiot) sekä ulkoista tai mukautettua koodia.  
   
  Lausekkeiden avulla voit määrittää useiden raporttikohteiden ominaisuudet. Yleisimmät ominaisuudet ovat tekstiruutujen ja paikkamerkkitekstien arvot. Jos tekstiruutu sisältää vain yhden lausekkeen, lauseke on yleensä tekstiruutuominaisuuden arvo. Jos tekstiruutu sisältää useita lausekkeita, kukin lauseke on tekstiruudun arvon paikkamerkki.  
@@ -50,7 +50,7 @@ ms.locfileid: "78921121"
 ![Lausekkeen mallimuotoilu raportin muodostimessa](media/report-builder-expressions/report-builder-expression-sample-values-format.png)  
 
 
-## <a name="DisplayText"></a> Yksinkertaisten lausekkeiden etuliitesymbolien ymmärtäminen  
+## <a name="understanding-prefix-symbols-in-simple-expressions"></a><a name="DisplayText"></a> Yksinkertaisten lausekkeiden etuliitesymbolien ymmärtäminen  
 
 Yksinkertaisissa lausekkeissa käytetään symboleja ilmaisemaan, onko viittaus kenttä, parametri, sisäinen kokoelma tai raporttikohteet-kokoelma. Seuraavassa taulukossa on esimerkkejä näytön ja lausekkeen tekstistä:  
   
@@ -61,12 +61,12 @@ Yksinkertaisissa lausekkeissa käytetään symboleja ilmaisemaan, onko viittaus 
 |Sisäiset kentät|`[&ReportName]`|`=Globals!ReportName.Value`|  
 |Tekstiruuduissa käytetyt literaalimerkit|`\[Sales\]`|`[Sales]`|  
   
-##  <a name="References"></a> Monimutkaisten lausekkeiden kirjoittaminen  
+##  <a name="writing-complex-expressions"></a><a name="References"></a> Monimutkaisten lausekkeiden kirjoittaminen  
  Lausekkeet voivat sisältää viittauksia funktioihin, operaattoreihin, vakioihin, kenttiin, parametreihin, sisäisten kokoelmien kohteisiin ja upotettuun mukautettuun koodiin tai mukautettuihin kokoonpanoihin.  
   
  Seuraavassa taulukossa luetellaan viittaustyypit, jotka voit sisällyttää lausekkeisiin:  
   
-|Viittaukset|Kuvaus|Esimerkki|  
+|Viittaukset|Description|Esimerkki|  
 |----------------|-----------------|-------------|  
 |Vakiot|Tässä artikkelissa kuvataan vakiot, joita voit käyttää vuorovaikutteisesti ominaisuuksiin, jotka edellyttävät fontin väriä tai muita vakioarvoja.|`="Blue"`|  
 |Operaattorit|Kuvailee operaattorit, joita voit käyttää yhdistääksesi viitteet lausekkeisiin. Esimerkiksi operaattorilla **&** merkkijonoja voidaan liittää yhteen.|`="The report ran at: " & Globals!ExecutionTime & "."`|  
@@ -74,8 +74,8 @@ Yksinkertaisissa lausekkeissa käytetään symboleja ilmaisemaan, onko viittaus 
 |Sisäiset raportit ja koostefunktiot|Kuvailee sisäiset funktiot, kuten `Sum` tai `Previous`, joita voi käyttää lausekkeissa.|`=Previous(Sum(Fields!Sales.Value))`|  
 |Mukautetut koodi- ja kokoonpanoviittaukset raportin muodostimen lausekkeissa |Tässä artikkelissa kuvataan, miten voit käyttää sisäisiä CLR-luokkiin `xref:System.Math` ja `xref:System.Convert`, muita CLR-luokkia, Visual Basic -suorituskirjastoja tai ulkoisten kokoonpanojen menetelmiä.<br /><br /> Tässä artikkelissa kuvataan, miten voit käyttää raporttiin upotettua mukautettua koodia tai koodia, jonka koostat ja asennat mukautettuna kokoonpanona sekä raportin asiakkaalle että raporttipalvelimelle.|`=Sum(Fields!Sales.Value)`<br /><br /> `=CDate(Fields!SalesDate.Value)`<br /><br /> `=DateAdd("d",3,Fields!BirthDate.Value)`<br /><br /> `=Code.ToUSD(Fields!StandardCost.Value)`|  
    
-##  <a name="Valid"></a> Lausekkeiden vahvistaminen  
- Kun luot lausekkeen tietylle raporttikohteen ominaisuudelle lausekkeen, voit sisällyttää lausekkeeseen joitain viitteitä. Tuetut viitteet riippuvat siitä, mitä arvoja raporttikohteen ominaisuudet hyväksyvät sekä arvioitavasta laajuudesta. Esimerkki:  
+##  <a name="validating-expressions"></a><a name="Valid"></a> Lausekkeiden vahvistaminen  
+ Kun luot lausekkeen tietylle raporttikohteen ominaisuudelle lausekkeen, voit sisällyttää lausekkeeseen joitain viitteitä. Tuetut viitteet riippuvat siitä, mitä arvoja raporttikohteen ominaisuudet hyväksyvät sekä arvioitavasta laajuudesta. Esimerkiksi:  
   
 -   Oletuksena lauseke [Sum] laskee lausekkeen arviointihetkellä laajuuteen sisältyvien tietojen summan. Taulukkosolujen tapauksessa laajuus määräytyy rivi- ja sarakeryhmien jäsenyyden mukaan. 
   

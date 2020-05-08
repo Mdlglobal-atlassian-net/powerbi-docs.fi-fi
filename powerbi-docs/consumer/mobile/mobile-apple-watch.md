@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: e2014f359d4085ab0dcb85135f7436c9e403eaab
-ms.sourcegitcommit: 480bba9c745cb9af2005637e693c5714b3c64a8a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79114527"
 ---
 # <a name="explore-your-data-in-the-power-bi-mobile-app-on-your-apple-watch"></a>Power BI -tietojen tarkastelu Apple Watch -mobiilisovelluksessa
@@ -31,7 +31,7 @@ Power BI Apple Watch -sovellus koostuu kahdesta osasta.
 * **Indeksi-näyttö** näyttää nopeasti yleiskatsauksen kaikista suorituskyvyn mittareista ja korttiruuduista synkronoidusta raporttinäkymästä.
   
   ![Apple Watch](./media/mobile-apple-watch/pbi_aplwatch_indexscreen240.png)
-* **Kohdistus-ruutu**: Napsauta indeksinäytön ruutua tietyn ruudun perusteellisempaa näkymää varten.
+* **Kohdistus-ruutu**: Napsauta indeksinäytön ruutua tietyn ruudun perusteellisempaa näkymään varten.
   
   ![Apple Watch](./media/mobile-apple-watch/pbi_aplwatch_kpi.png)
 
