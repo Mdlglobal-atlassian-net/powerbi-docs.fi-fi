@@ -1,19 +1,19 @@
 ---
 title: Vihjeitä mallisovellusten kehittämiseen Power BI:ssä
 description: Vihjeitä, jotka liittyvät kyselyiden, tietomallien, raporttien ja koontinäyttöjen luomiseen hyviä mallisovelluksia varten
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 03/24/2020
-ms.author: tebercov
-ms.openlocfilehash: 12ba04381c5227c897f4b1f13def4c52999bc1a5
-ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
+ms.date: 05/04/2020
+ms.author: painbar
+ms.openlocfilehash: 266e44b5e5ecff2f86bcd3d43ce91368cc57b9e1
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82066278"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781290"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Vihjeitä mallisovellusten kehittämiseen Power BI:ssä
 
@@ -142,22 +142,8 @@ Kun olet julkaissut mallisovelluksen AppSourcessa, luo latauslinkki sivustoltasi
 * Power BI – Power BI -käyttäjät voivat tarkastella tätä.
 
 Katso seuraavasta koodiesimerkistä lisätietoja käyttäjän ohjaamisesta sovelluksen latauslinkkiin Power BI:ssä: [GitHub-säilö](https://github.com/microsoft/Template-apps-examples/tree/master/src).
+
 [![Sovelluksen latauslinkki](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
-
-
-
-## <a name="known-limitations"></a>Tunnetut rajoitukset
-
-| Ominaisuus | Tunnettu rajoitus |
-|---------|---------|
-|Sisältö:  Tietojoukot   | Tarkalleen yhden tietojoukon tulee olla käytössä. Vain Power BI Desktopissa luodut tietojoukot (.pbix-tiedostot) sallitaan. <br>Ei tueta: Tietojoukkoja, jotka ovat peräisin muista mallisovelluksista, työtilojen välisiä tietojoukkoja, sivuttuja raportteja (.rdl-tiedostot), Excel-työkirjoja, parannettujen tietojoukkojen metatietoja |
-|Sisältö: Koontinäytöt | Reaaliaikaisia ruutuja ei sallita (toisin sanoen push-ilmoituksia tai tietojoukkojen suoratoistoa ei tueta) |
-|Sisältö: Tietovuot | Ei tueta: Tietovuot |
-|Tiedostojen sisällöt | Vain PBIX-tiedostot sallitaan. <br>Ei tueta: .rdl-tiedostot (sivutetut raportit), Excel-työkirjat   |
-| Tietolähteet | Pilvipohjaista ajoitettua tietojen päivittämistä tukevat tietolähteet sallitaan. <br>Ei tueta: <li> DirectQuery</li><li>Reaaliaikaiset yhteydet (Azure AS ei käy)</li> <li>Paikalliset tietolähteet (henkilökohtaiset yhdyskäytävät ja yritysyhdyskäytävät eivät ole tuettuja)</li> <li>Reaaliaikainen (push-tietojoukkoa ei tueta)</li> <li>Yhdistelmämallit</li></ul> |
-| Tietojoukko: työtilojen välinen | Työtilojen välisiä tietojoukkoja ei sallita  |
-| Kyselyparametrit | Ei tueta: Tyyppiä ”Any” tai ”Binary” olevat parametrit estävät tietojoukon päivitystoiminnon |
-| Power BI:n visualisoinnit | Vain julkisesti käytettävissä olevia Power BI -visualisointeja tuetaan. [Organisaation Power BI -visualisointeja](developer/visuals/power-bi-custom-visuals-organization.md) ei tueta. |
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

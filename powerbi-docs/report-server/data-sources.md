@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 04/08/2020
 ms.author: maggies
 ms.openlocfilehash: 166f72a717c99457e1d6b8e9a1f30535a9b4686f
-ms.sourcegitcommit: e7fda395b47e404c61e961a60816b7a1b0182759
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80979841"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI -raporttien tietolähteet Power BI -raporttipalvelimessa
@@ -28,84 +28,84 @@ Nämä tietotyypit koskevat Power BI -raportteja, joita käytetään Power BI -r
 
 Muutkin tietolähteet saattavat toimia, vaikka ne eivät olekaan tuettujen luettelossa.
 
-| **Tietolähde** | **Välimuistiin tallennetut tiedot** | **Ajoitettu päivitys** | **Reaaliaikainen yhteys / DirectQuery** |
+| **Tietolähde-** | **Välimuistiin tallennetut tiedot** | **Ajoitettu päivitys** | **Reaaliaikainen yhteys / DirectQuery** |
 | --- | --- | --- | --- |
-| SQL Server -tietokanta |Kyllä |Kyllä |Kyllä |
-| SQL Server Analysis Services |Kyllä |Kyllä |Kyllä |
-| Azuren SQL-tietokanta |Kyllä |Kyllä |Kyllä |
-| Azure SQL -tietovarasto |Kyllä |Kyllä |Kyllä |
-| Excel |Kyllä |Kyllä |Ei |
-| Access-tietokanta |Kyllä |Kyllä |Ei |
-| Active Directory |Kyllä |Kyllä |Ei |
-| Amazon Redshift |Kyllä |Ei |Ei |
-| Azure-blob-objektitallennus |Kyllä |Kyllä |Ei |
-| Azure Data Lake Store |Kyllä |Ei |Ei |
-| Azure HDInsight (HDFS) |Kyllä |Ei |Ei |
-| Azure HDInsight (Spark) |Kyllä |Ei |Ei |
-| Azure-taulukkotallennus |Kyllä |Kyllä |Ei |
-| Dynamics 365 (online) |Kyllä |Ei |Ei |
-| Facebook |Kyllä |Ei |Ei |
-| Kansio |Kyllä |Kyllä |Ei |
-| Google Analytics |Kyllä |Ei |Ei |
-| Hadoop-tiedosto (HDFS) |Kyllä |Ei |Ei |
-| IBM DB2 -tietokanta |Kyllä |Kyllä |Ei |
-| Impala |Kyllä |Ei |Ei |
-| JSON |Kyllä |Kyllä |Ei |
-| Microsoft Exchange |Kyllä |Ei |Ei |
-| Microsoft Exchange Online |Kyllä |Ei |Ei |
-| MySQL-tietokanta |Kyllä |Kyllä |Ei |
-| OData-syöte |Kyllä |Kyllä |Ei |
-| ODBC |Kyllä |Kyllä |Ei |
-| OLE DB |Kyllä |Kyllä |Ei |
-| Oracle-tietokanta |Kyllä |Kyllä |Kyllä |
-| PostgreSQL-tietokanta |Kyllä |Kyllä |Ei |
-| Power BI -palvelu |Ei |Ei |Ei |
-| R-komentosarja |Kyllä |Ei |Ei |
-| Salesforce-objektit |Kyllä |Ei |Ei |
-| Salesforce-raportit |Kyllä |Ei |Ei |
-| SAP Business Warehouse -palvelin |Kyllä |Kyllä |Kyllä |
-| SAP HANA -tietokanta |Kyllä |Kyllä |Kyllä |
-| SharePoint-kansio (paikallinen) |Kyllä |Kyllä |Ei |
-| SharePoint-luettelo (paikallinen) |Kyllä |Kyllä |Ei |
-| SharePoint Online -luettelo |Kyllä |Ei |Ei |
-| Snowflake |Kyllä |Ei |Ei |
-| Sybase-tietokanta |Kyllä |Kyllä |Ei |
-| Teradata |Kyllä |Kyllä |Kyllä |
-| Teksti- tai CSV-tiedosto |Kyllä |Kyllä |Ei |
-| Verkko |Kyllä |Kyllä |Ei |
-| XML |Kyllä |Kyllä |Ei |
-| appFigures (beeta) |Kyllä |Ei |Ei |
-| Azure Analysis Services -tietokanta |Kyllä |Ei |Kyllä |
-| Azure Cosmos DB (beeta) |Kyllä |Ei |Ei |
-| Azure HDInsight Spark (beeta) |Kyllä |Ei |Ei |
-| Common Data Service (beeta) |Kyllä |Ei |Ei |
-| comScore Digital Analytix (beeta) |Kyllä |Ei |Ei |
-| Dynamics 365 for Customer Insights (beeta) |Kyllä |Ei |Ei |
-| Dynamics 365 for Financials (beeta) |Kyllä |Ei |Ei |
-| GitHub (beeta) |Kyllä |Ei |Ei |
-| Google BigQuery (beeta) |Kyllä |Ei |Ei |
-| IBM Informix -tietokanta (beeta) |Kyllä |Ei |Ei |
-| IBM Netezza (beeta) |Kyllä |Ei |Ei |
-| Kusto (beeta) |Kyllä |Ei |Ei |
-| MailChimp (beeta) |Kyllä |Ei |Ei |
-| Microsoft Azure Consumption Insights (beeta) |Kyllä |Ei |Ei |
-| Mixpanel (beeta) |Kyllä |Ei |Ei |
-| Planview Enterprise (beeta) |Kyllä |Ei |Ei |
-| Projectplace (beeta) |Kyllä |Ei |Ei |
-| QuickBooks Online (beeta) |Kyllä |Ei |Ei |
-| Smartsheet |Kyllä |Ei |Ei |
-| Spark (beeta) |Kyllä |Ei |Ei |
-| SparkPost (beeta) |Kyllä |Ei |Ei |
-| SQL Sentry (beeta) |Kyllä |Ei |Ei |
-| Stripe (beeta) |Kyllä |Ei |Ei |
-| SweetIQ (beeta) |Kyllä |Ei |Ei |
-| Troux (beeta) |Kyllä |Ei |Ei |
-| Twilio (beeta) |Kyllä |Ei |Ei |
-| tyGraph (beeta) |Kyllä |Ei |Ei |
-| Vertica (beeta) |Kyllä |Ei |Ei |
-| Visual Studio Team Services (beeta) |Kyllä |Ei |Ei |
-| Webtrends (beeta) |Kyllä |Ei |Ei |
-| Zendesk (beeta) |Kyllä |Ei |Ei |
+| SQL Server -tietokanta |Yes |Yes |Yes |
+| SQL Server Analysis Services |Yes |Yes |Yes |
+| Azure SQL Database |Yes |Yes |Yes |
+| Azure SQL -tietovarasto |Yes |Yes |Yes |
+| Excel |Yes |Yes |No |
+| Access-tietokanta |Yes |Yes |No |
+| Active Directory |Yes |Yes |No |
+| Amazon Redshift |Yes |No |No |
+| Azure Blob Storage |Yes |Yes |No |
+| Azure Data Lake Store |Yes |No |No |
+| Azure HDInsight (HDFS) |Yes |No |No |
+| Azure HDInsight (Spark) |Yes |No |No |
+| Azure Table Storage |Yes |Yes |No |
+| Dynamics 365 (online) |Yes |No |No |
+| Facebook |Yes |No |No |
+| Kansio |Yes |Yes |No |
+| Google Analytics |Yes |No |No |
+| Hadoop-tiedosto (HDFS) |Yes |No |No |
+| IBM DB2 -tietokanta |Yes |Yes |No |
+| Impala |Yes |No |No |
+| JSON |Yes |Yes |No |
+| Microsoft Exchange |Yes |No |No |
+| Microsoft Exchange Online |Yes |No |No |
+| MySQL-tietokanta |Yes |Yes |No |
+| OData-syöte |Yes |Yes |No |
+| ODBC |Yes |Yes |No |
+| OLE DB |Yes |Yes |No |
+| Oracle-tietokanta |Yes |Yes |Yes |
+| PostgreSQL-tietokanta |Yes |Yes |No |
+| Power BI -palvelu |No |No |No |
+| R-komentosarja |Yes |No |No |
+| Salesforce-objektit |Yes |No |No |
+| Salesforce-raportit |Yes |No |No |
+| SAP Business Warehouse -palvelin |Yes |Yes |Yes |
+| SAP HANA -tietokanta |Yes |Yes |Yes |
+| SharePoint-kansio (paikallinen) |Yes |Yes |No |
+| SharePoint-luettelo (paikallinen) |Yes |Yes |No |
+| SharePoint Online -luettelo |Yes |No |No |
+| Snowflake |Yes |No |No |
+| Sybase-tietokanta |Yes |Yes |No |
+| Teradata |Yes |Yes |Yes |
+| Teksti/CSV |Yes |Yes |No |
+| Verkko |Yes |Yes |No |
+| XML |Yes |Yes |No |
+| appFigures (beeta) |Yes |No |No |
+| Azure Analysis Services -tietokanta |Yes |No |Yes |
+| Azure Cosmos DB (beeta) |Yes |No |No |
+| Azure HDInsight Spark (beeta) |Yes |No |No |
+| Common Data Service (beeta) |Yes |No |No |
+| comScore Digital Analytix (beeta) |Yes |No |No |
+| Dynamics 365 for Customer Insights (beeta) |Yes |No |No |
+| Dynamics 365 for Financials (beeta) |Yes |No |No |
+| GitHub (beeta) |Yes |No |No |
+| Google BigQuery (beeta) |Yes |No |No |
+| IBM Informix -tietokanta (beeta) |Yes |No |No |
+| IBM Netezza (beeta) |Yes |No |No |
+| Kusto (beeta) |Yes |No |No |
+| MailChimp (beeta) |Yes |No |No |
+| Microsoft Azure Consumption Insights (beeta) |Yes |No |No |
+| Mixpanel (beeta) |Yes |No |No |
+| Planview Enterprise (beeta) |Yes |No |No |
+| Projectplace (beeta) |Yes |No |No |
+| QuickBooks Online (beeta) |Yes |No |No |
+| Smartsheet |Yes |No |No |
+| Spark (beeta) |Yes |No |No |
+| SparkPost (beeta) |Yes |No |No |
+| SQL Sentry (beeta) |Yes |No |No |
+| Stripe (beeta) |Yes |No |No |
+| SweetIQ (beeta) |Yes |No |No |
+| Troux (beeta) |Yes |No |No |
+| Twilio (beeta) |Yes |No |No |
+| tyGraph (beeta) |Yes |No |No |
+| Vertica (beeta) |Yes |No |No |
+| Visual Studio Team Services (beeta) |Yes |No |No |
+| Webtrends (beeta) |Yes |No |No |
+| Zendesk (beeta) |Yes |No |No |
 
 > [!IMPORTANT]
 > Tietolähteessä määritetyn rivitason suojauksen pitäisi toimia tietyissä DirectQuery-yhteyksissä (SQL Server, Azure SQL -tietokanta, Oracle ja Teradata) sekä reaaliaikaisissa yhteyksissä, jos Kerberos on määritetty oikein ympäristössäsi.
@@ -116,79 +116,79 @@ Muutkin tietolähteet saattavat toimia, vaikka ne eivät olekaan tuettujen luett
 
 Power BI -raporttipalvelin ei tue OAuth-pohjaista todennusta mallipäivityksessä. Jotkin tietolähteet, esimerkiksi Excel ja Access-tietokannat, käyttävät ylimääräistä vaihetta tietoihin yhdistämisessä (esimerkiksi tiedosto- tai verkkovaihe).
 
-| **Tietolähde** | **Anonyymi todentaminen** | **Avaintodentaminen** | **Käyttäjänimi ja salasana** | **Windows-todentaminen** |
+| **Tietolähde-** | **Anonyymi todentaminen** | **Avaintodentaminen** | **Käyttäjänimi ja salasana** | **Windows-todentaminen** |
 | --- | --- | --- | --- | --- |
-| SQL Server -tietokanta |Ei |Ei |Kyllä |Kyllä |
-| SQL Server Analysis Services |Ei |Ei |Kyllä |Kyllä |
-| Verkko |Kyllä |Ei |Kyllä |Kyllä |
-| Azuren SQL-tietokanta |Ei |Ei |Kyllä |Ei |
-| Azure SQL Data Warehouse |Ei |Ei |Kyllä |Ei |
-| Active Directory |Ei |Ei |Kyllä |Kyllä |
-| Amazon Redshift |Ei |Ei |Ei |Ei |
-| Azure-blob-objektitallennus |Kyllä |Kyllä |Ei |Ei |
-| Azure Data Lake Store |Ei |Ei |Ei |Ei |
-| Azure HDInsight (HDFS) |Ei |Ei |Ei |Ei |
-| Azure HDInsight (Spark) |Ei |Ei |Ei |Ei |
-| Azure-taulukkotallennus |Ei |Kyllä |Ei |Ei |
-| Dynamics 365 (online) |Ei |Ei |Ei |Ei |
-| Facebook |Ei |Ei |Ei |Ei |
-| Kansio |Ei |Ei |Ei |Kyllä |
-| Google Analytics |Ei |Ei |Ei |Ei |
-| Hadoop-tiedosto (HDFS) |Ei |Ei |Ei |Ei |
-| IBM DB2 -tietokanta |Ei |Ei |Kyllä |Kyllä |
-| Impala |Ei |Ei |Ei |Ei |
-| Microsoft Exchange |Ei |Ei |Ei |Ei |
-| Microsoft Exchange Online |Ei |Ei |Ei |Ei |
-| MySQL-tietokanta |Ei |Ei |Kyllä |Kyllä |
-| OData-syöte |Kyllä |Kyllä |Kyllä |Kyllä |
-| ODBC |Kyllä |Ei |Kyllä |Kyllä |
-| OLE DB |Kyllä |Ei |Kyllä |Kyllä |
-| Oracle-tietokanta |Ei |Ei |Kyllä |Kyllä |
-| PostgreSQL-tietokanta |Ei |Ei |Kyllä |Ei |
-| Power BI -palvelu |Ei |Ei |Ei |Ei |
-| R-komentosarja |Ei |Ei |Ei |Ei |
-| Salesforce-objektit |Ei |Ei |Ei |Ei |
-| Salesforce-raportit |Ei |Ei |Ei |Ei |
-| SAP Business Warehouse -palvelin |Ei |Ei |Kyllä |Ei |
-| SAP HANA -tietokanta |Ei |Ei |Kyllä |Kyllä |
-| SharePoint-kansio (paikallinen) |Kyllä |Ei |Ei |Kyllä |
-| SharePoint-luettelo (paikallinen) |Kyllä |Ei |Ei |Kyllä |
-| SharePoint Online -luettelo |Ei |Ei |Ei |Ei |
-| Snowflake |Ei |Ei |Ei |Ei |
-| Sybase-tietokanta |Ei |Ei |Kyllä |Kyllä |
-| Teradata |Ei |Ei |Kyllä |Kyllä** |
-| appFigures (beeta) |Ei |Ei |Ei |Ei |
-| Azure Analysis Services -tietokanta (beeta) |Ei |Ei |Ei |Ei |
-| Azure Cosmos DB (beeta) |Ei |Ei |Ei |Ei |
-| Azure HDInsight Spark (beeta) |Ei |Ei |Ei |Ei |
-| Common Data Service (beeta) |Ei |Ei |Ei |Ei |
-| comScore Digital Analytix (beeta) |Ei |Ei |Ei |Ei |
-| Dynamics 365 for Customer Insights (beeta) |Ei |Ei |Ei |Ei |
-| Dynamics 365 for Financials (beeta) |Ei |Ei |Ei |Ei |
-| GitHub (beeta) |Ei |Ei |Ei |Ei |
-| Google BigQuery (beeta) |Ei |Ei |Ei |Ei |
-| IBM Informix -tietokanta (beeta) |Ei |Ei |Ei |Ei |
-| IBM Netezza (beeta) |Ei |Ei |Ei |Ei |
-| Kusto (beeta) |Ei |Ei |Ei |Ei |
-| MailChimp (beeta) |Ei |Ei |Ei |Ei |
-| Microsoft Azure Consumption Insights (beeta) |Ei |Ei |Ei |Ei |
-| Mixpanel (beeta) |Ei |Ei |Ei |Ei |
-| Planview Enterprise (beeta) |Ei |Ei |Ei |Ei |
-| Projectplace (beeta) |Ei |Ei |Ei |Ei |
-| QuickBooks Online (beeta) |Ei |Ei |Ei |Ei |
-| Smartsheet |Ei |Ei |Ei |Ei |
-| Spark (beeta) |Ei |Ei |Ei |Ei |
-| SparkPost (beeta) |Ei |Ei |Ei |Ei |
-| SQL Sentry (beeta) |Ei |Ei |Ei |Ei |
-| Stripe (beeta) |Ei |Ei |Ei |Ei |
-| SweetIQ (beeta) |Ei |Ei |Ei |Ei |
-| Troux (beeta) |Ei |Ei |Ei |Ei |
-| Twilio (beeta) |Ei |Ei |Ei |Ei |
-| tyGraph (beeta) |Ei |Ei |Ei |Ei |
-| Vertica (beeta) |Ei |Ei |Ei |Ei |
-| Visual Studio Team Services (beeta) |Ei |Ei |Ei |Ei |
-| Webtrends (beeta) |Ei |Ei |Ei |Ei |
-| Zendesk (beeta) |Ei |Ei |Ei |Ei |
+| SQL Server -tietokanta |No |No |Yes |Yes |
+| SQL Server Analysis Services |No |No |Yes |Yes |
+| Verkko |Yes |No |Yes |Yes |
+| Azure SQL Database |No |No |Yes |No |
+| Azure SQL -tietovarasto |No |No |Yes |No |
+| Active Directory |No |No |Yes |Yes |
+| Amazon Redshift |No |No |No |No |
+| Azure Blob Storage |Yes |Yes |No |No |
+| Azure Data Lake Store |No |No |No |No |
+| Azure HDInsight (HDFS) |No |No |No |No |
+| Azure HDInsight (Spark) |No |No |No |No |
+| Azure Table Storage |No |Yes |No |No |
+| Dynamics 365 (online) |No |No |No |No |
+| Facebook |No |No |No |No |
+| Kansio |No |No |No |Yes |
+| Google Analytics |No |No |No |No |
+| Hadoop-tiedosto (HDFS) |No |No |No |No |
+| IBM DB2 -tietokanta |No |No |Yes |Yes |
+| Impala |No |No |No |No |
+| Microsoft Exchange |No |No |No |No |
+| Microsoft Exchange Online |No |No |No |No |
+| MySQL-tietokanta |No |No |Yes |Yes |
+| OData-syöte |Yes |Yes |Yes |Yes |
+| ODBC |Yes |No |Yes |Yes |
+| OLE DB |Yes |No |Yes |Yes |
+| Oracle-tietokanta |No |No |Yes |Yes |
+| PostgreSQL-tietokanta |No |No |Yes |No |
+| Power BI -palvelu |No |No |No |No |
+| R-komentosarja |No |No |No |No |
+| Salesforce-objektit |No |No |No |No |
+| Salesforce-raportit |No |No |No |No |
+| SAP Business Warehouse -palvelin |No |No |Yes |No |
+| SAP HANA -tietokanta |No |No |Yes |Yes |
+| SharePoint-kansio (paikallinen) |Yes |No |No |Yes |
+| SharePoint-luettelo (paikallinen) |Yes |No |No |Yes |
+| SharePoint Online -luettelo |No |No |No |No |
+| Snowflake |No |No |No |No |
+| Sybase-tietokanta |No |No |Yes |Yes |
+| Teradata |No |No |Yes |Kyllä** |
+| appFigures (beeta) |No |No |No |No |
+| Azure Analysis Services -tietokanta (beeta) |No |No |No |No |
+| Azure Cosmos DB (beeta) |No |No |No |No |
+| Azure HDInsight Spark (beeta) |No |No |No |No |
+| Common Data Service (beeta) |No |No |No |No |
+| comScore Digital Analytix (beeta) |No |No |No |No |
+| Dynamics 365 for Customer Insights (beeta) |No |No |No |No |
+| Dynamics 365 for Financials (beeta) |No |No |No |No |
+| GitHub (beeta) |No |No |No |No |
+| Google BigQuery (beeta) |No |No |No |No |
+| IBM Informix -tietokanta (beeta) |No |No |No |No |
+| IBM Netezza (beeta) |No |No |No |No |
+| Kusto (beeta) |No |No |No |No |
+| MailChimp (beeta) |No |No |No |No |
+| Microsoft Azure Consumption Insights (beeta) |No |No |No |No |
+| Mixpanel (beeta) |No |No |No |No |
+| Planview Enterprise (beeta) |No |No |No |No |
+| Projectplace (beeta) |No |No |No |No |
+| QuickBooks Online (beeta) |No |No |No |No |
+| Smartsheet |No |No |No |No |
+| Spark (beeta) |No |No |No |No |
+| SparkPost (beeta) |No |No |No |No |
+| SQL Sentry (beeta) |No |No |No |No |
+| Stripe (beeta) |No |No |No |No |
+| SweetIQ (beeta) |No |No |No |No |
+| Troux (beeta) |No |No |No |No |
+| Twilio (beeta) |No |No |No |No |
+| tyGraph (beeta) |No |No |No |No |
+| Vertica (beeta) |No |No |No |No |
+| Visual Studio Team Services (beeta) |No |No |No |No |
+| Webtrends (beeta) |No |No |No |No |
+| Zendesk (beeta) |No |No |No |No |
 
 ** LDAP-todentamisen käyttäminen Teradata-palvelun kanssa (otetaan käyttöön Power BI Desktopissa komentorivikomennolla 'setx PBI_EnableTeradataLdap true') ei tueta mallin päivityksessä.
 
@@ -196,16 +196,16 @@ Power BI -raporttipalvelin ei tue OAuth-pohjaista todennusta mallipäivityksess�
 
 Power BI -raporttipalvelin ei tue OAuth-pohjaista todennusta DirectQuerylle.
 
-| **Tietolähde** | **Anonyymi todentaminen** | **Avaintodentaminen** | **Käyttäjänimi ja salasana** | **Windows-todentaminen** | **Integroitu Windows-todentaminen** |
+| **Tietolähde-** | **Anonyymi todentaminen** | **Avaintodentaminen** | **Käyttäjänimi ja salasana** | **Windows-todentaminen** | **Integroitu Windows-todentaminen** |
 | --- | --- | --- | --- | --- | --- |
-| SQL Server -tietokanta |Ei |Ei |Kyllä |Kyllä |Kyllä |
-| SQL Server Analysis Services |Ei |Ei |Kyllä |Kyllä |Kyllä |
-| Azuren SQL-tietokanta |Ei |Ei |Kyllä |Ei |Ei |
-| Azure SQL Data Warehouse |Ei |Ei |Kyllä |Ei |Ei |
-| Oracle-tietokanta |Ei |Ei |Kyllä |Kyllä |Kyllä |
-| SAP Business Warehouse -palvelin |Ei |Ei |Kyllä |Ei |Ei |
-| SAP HANA -tietokanta |Ei |Ei |Kyllä |Kyllä |Kyllä** |
-| Teradata |Ei |Ei |Kyllä |Kyllä |Kyllä |
+| SQL Server -tietokanta |No |No |Yes |Yes |Yes |
+| SQL Server Analysis Services |No |No |Yes |Yes |Yes |
+| Azure SQL Database |No |No |Yes |No |No |
+| Azure SQL -tietovarasto |No |No |Yes |No |No |
+| Oracle-tietokanta |No |No |Yes |Yes |Yes |
+| SAP Business Warehouse -palvelin |No |No |Yes |No |No |
+| SAP HANA -tietokanta |No |No |Yes |Yes |Kyllä** |
+| Teradata |No |No |Yes |Yes |Yes |
 
 **SAP HANA tukee DirectQueryä integroidulla Windows-todentamisella vain, kun sitä käytetään relaatiotietokantana julkaistussa Power BI Desktop -tiedostossa (.pbix).
 

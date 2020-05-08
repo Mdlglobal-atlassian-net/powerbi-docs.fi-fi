@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 04/02/2020
 ms.author: maggies
 ms.openlocfilehash: 25bf9d8a05805fad268152c64b5aefa36f602803
-ms.sourcegitcommit: e0833ec22b263f919025acae88551570b4def0cd
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80647659"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Ohjeita kapasiteetin suunnitteluun Power BI -raporttipalvelimella
@@ -62,7 +62,7 @@ Kaikki testit oli laadittu suorittamaan päästä päähän -toiminto (kuten rap
 > Microsoft ei tue työkalua virallisesti, mutta tuoteryhmä osallistuu projektiin ja vastaa muiden osallistujien esiin tuomiin ongelmiin.
 
 ### <a name="workloads"></a>Kuormitukset
-Testauksessa käytetään kahta kuormitusprofiilia: raskas Power BI -raportti ja raskas sivutettu raportti. Seuraavassa taulukossa kuvataan raporttipalvelimen avulla suoritettujen pyyntöjen jakauma.
+Testeissä käytettiin kahta kuormitusprofiilia: raskas Power BI -raportti ja raskas sivutettu raportti. Seuraavassa taulukossa kuvataan raporttipalvelimen avulla suoritettujen pyyntöjen jakauma.
 
 | Toiminta | Raskas Power BI -raportti, esiintymistiheys | Raskas sivutettu raportti, esiintymistiheys |
 | --- | --- | --- |

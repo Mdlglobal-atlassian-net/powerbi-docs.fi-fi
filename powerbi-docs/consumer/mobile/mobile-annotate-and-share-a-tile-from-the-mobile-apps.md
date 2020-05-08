@@ -9,10 +9,10 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
 ms.openlocfilehash: 5d1a014b32bcb3ce90938659e2b6478518e8aefc
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "79205500"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Merkintöjen lisääminen ja ruudun, raportin tai visualisoinnin jakaminen Power BI -mobiilisovelluksissa
@@ -73,5 +73,5 @@ Voit myös [jakaa ruudun Windows 10 -laitteiden Power BI -mobiilisovelluksesta](
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Koontinäytön jakaminen Power BI -mobiilisovelluksista](mobile-share-dashboard-from-the-mobile-apps.md)
-* Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+* Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 

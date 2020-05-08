@@ -10,10 +10,10 @@ ms.date: 04/01/2020
 ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: 26b49e1b94db0d6c46639118e3e7cc3218bb4e1e
-ms.sourcegitcommit: 6e56d038280efab86521602cbc089b3989dddbd0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80551070"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktopin aiemmat kuukausipäivitykset
@@ -2706,7 +2706,7 @@ Joulukuun Power BI Desktop -päivitys tarjoaa lisää ominaisuuksia ja toimintoj
     - Uusi visualisointi: **pinottu aluekaavio**
     - Älykkäät työkaluvihjeet **alue**- ja **viiva**kaavioille, kun hiiren osoitin siirretään niiden päälle
     - Mahdollisuus luoda viiteviiva tai -alue **karteesisessa** visualisoinnissa
-    - Parannetut **ympyrä**- ja **pistekaaviokaavion** otsikot
+    - Parannetut **ympyrä**- ja **pistekaaviokaavion** otsikot 
 
 
 -   [R-visualisointien integrointi Power BI Desktopissa (esiversio-ominaisuus)](desktop-r-visuals.md)

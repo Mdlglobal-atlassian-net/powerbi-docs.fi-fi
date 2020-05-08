@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.date: 06/06/2019
 ms.openlocfilehash: fea4e4927b009e30bc040593f9237cc49ff73956
-ms.sourcegitcommit: ced8c9d6c365cab6f63fbe8367fb33e6d827cb97
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "78921443"
 ---
 # <a name="report-data-in-power-bi-report-builder"></a>Raporttitiedot Power BI:n raportin muodostimessa
@@ -23,7 +23,7 @@ Raporttitiedot voivat olla peräisin useista organisaatiosi lähteistä. Kun koo
 Katso, miten voit [luoda sivutettuun raporttiin upotettavan tietolähteen Power BI:n raportin muodostimessa](paginated-reports-embedded-data-source.md).
 
 
-##  <a name="BkMk_ReportDataTerms"></a> Ehdot  
+##  <a name="terms"></a><a name="BkMk_ReportDataTerms"></a> Ehdot  
   
 - **Tietoyhteys.** Tunnetaan myös *tietolähteenä*. Tietoyhteys sisältää yhteystyypistä riippuvaisen nimen ja yhteyden ominaisuudet. Tietoyhteys on suunniteltu niin, että se ei voi sisältää tunnistetietoja. Tietoyhteys ei määritä, mitä tietoja ulkoisesta tietolähteestä noudetaan. Voit tehdä tämän määrittämällä kyselyn tietojoukkoa luodessasi.  
   
@@ -33,7 +33,7 @@ Katso, miten voit [luoda sivutettuun raporttiin upotettavan tietolähteen Power 
   
 - **Tunnistetiedot.** Tunnistetiedot ovat todennustietoja, jotka sinun on annettava, jotta voit käyttää ulkoisia tietoja.  
   
-##  <a name="BkMk_ReportDataTips"></a> Vihjeitä raporttitietojen määrittämiseen
+##  <a name="tips-for-specifying-report-data"></a><a name="BkMk_ReportDataTips"></a> Vihjeitä raporttitietojen määrittämiseen
 
  Käytä seuraavia tietoja suunnitellessasi lähestymistapaasi raporttitietoihin.  
   

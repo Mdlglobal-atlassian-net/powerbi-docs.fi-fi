@@ -2,7 +2,7 @@
   href: index.yml
   expanded: true
   items:
-    - name: Yleiskatsaus
+    - name: Yhteenveto
       expanded: true
       items:
         - name: Mikä on Power BI -raporttipalvelin?
@@ -17,7 +17,7 @@
     - name: Käsitteet
       expanded: true
       items:
-        - name: Uudet ominaisuudet
+        - name: Uudet toiminnot ominaisuudet
           href: whats-new.md
         - name: Järjestelmänvalvojan yleiskatsaus
           href: admin-handbook-overview.md
