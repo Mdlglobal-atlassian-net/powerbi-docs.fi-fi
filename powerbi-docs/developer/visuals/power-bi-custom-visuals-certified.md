@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: 2dee596648c9921cefab6903167e780bfacb122e
-ms.sourcegitcommit: 2c798b97fdb02b4bf4e74cf05442a4b01dc5cbab
+ms.openlocfilehash: b759d19046ddb375646743a50025689ab9a566c0
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80113896"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613530"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Sertifioinnin hankkiminen Power BI -visualisoinnille
 
@@ -82,8 +82,6 @@ Käytä viimeisintä [powerbi-visuals-tools](https://www.npmjs.com/package/power
 
 Sinun on käännettävä Power BI -visualisointisi apunasi `pbiviz package`. Jos käytät omia koontikomentosarjojasi, järjestä mukautettu `npm run package`-koontikomento.
 
-
-
 ### <a name="source-code-requirements"></a>Lähdekoodivaatimukset
 
 Varmista, että noudatat [Power BI -visualisointien lisäsertifioinnin](https://docs.microsoft.com/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification) käytäntöjen luetteloa. Jos lähetyksesi ei noudata näitä ohjeita, kumppanikeskuksen hylkäyssähköpostiviesti sisältää tässä linkissä luetteloidut käytäntöjen numerot.
@@ -150,6 +148,25 @@ Kun Power BI -visualisointi sertifioidaan, se saa merkin tästä.
     ![Power BI -käyttöliittymän sertifioitu Power BI -visualisointi](media/power-bi-custom-visuals-certified/certified-visual-blue.png)
 
 * Voit näyttää vain sertifioidut Power BI -visualisoinnit valitsemalla *Power BI -sertifioitu* -suodatinasetuksen.
+
+## <a name="publication-timeline"></a>Julkaisun aikajana
+
+Käyttöönotto Appsourceen on prosessi, joka voi kestää jonkin aikaa. Power BI -visualisointi on ladattavissa Appsourcesta, kun tämä prosessi on valmis.
+
+### <a name="when-will-users-be-able-to-download-my-visual"></a>Milloin käyttäjät pystyvät lataamaan visualisoinnin?
+
+* Jos olet lähettänyt Power BI -visualisoinnin ensimmäistä kertaa, käyttäjät voivat ladata sen muutaman tunnin kuluttua siitä, kun olet saanut sähköpostiviestin Appsourcesta.
+
+* Jos olet lähettänyt päivityksen aiemmin luotuun Power BI -visualisointiin, käyttäjät voivat ladata sen kuukauden kuluessa lähetyksestä.
+
+    >[!NOTE]
+    > Appsourcen *Versio*-kenttä päivitetään, kun AppSource on hyväksynyt Power BI:n noin viikko sen jälkeen, kun olet lähettänyt visualisoinnin. Käyttäjät voivat ladata päivitetyn visualisoinnin, mutta päivitetyt toiminnot eivät tule voimaan. Visualisoinnin uudet toiminnot vaikuttavat käyttäjän raportteihin kuukauden jälkeen. 
+
+### <a name="when-will-my-power-bi-visual-display-a-certification-badge"></a>Milloin Power BI -visualisointi näyttää sertifiointimerkin?
+
+* Jos olet lähettänyt Power BI -visualisoinnin ensimmäistä kertaa, sertifiointimerkki ilmestyy päivän kuluessa siitä, kun hän saa hyväksymisestä sähköpostiviestin Appsourcesta.
+
+* Jos pyydät varmentamista olemassa olevalle Power BI -visualisoinnille, sertifiointimerkki näkyy kuukauden kuluessa lähetyksestä.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

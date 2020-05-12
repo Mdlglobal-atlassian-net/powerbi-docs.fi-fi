@@ -10,10 +10,10 @@ ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 511fb6674d84cc0d206fdb1807fcb9ebf9e41d30
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73873121"
 ---
 # <a name="connect-to-azure-search-with-power-bi"></a>Yhteyden muodostaminen Azure-hakuun Power BI:n avulla
@@ -24,13 +24,13 @@ Azure Search-hakuliikenteen analysoinnin avulla voit valvoa ja ymmärtää liike
 Muodosta yhteys [Azure Search -sisältöpakettiin](https://app.powerbi.com/getdata/services/azure-search) Power BI:lle.
 
 ## <a name="how-to-connect"></a>Yhteyden muodostaminen
-1. Valitse siirtymisruudun alareunassa **Nouda tiedot**.
+1. Valitse siirtymisruudun alareunasta **Nouda tiedot**.
    
    ![](media/service-connect-to-azure-search/pbi_getdata.png) 
 2. Valitse **Palvelut**-ruudussa **Nouda**.
    
    ![](media/service-connect-to-azure-search/pbi_getservices.png) 
-3. Valitse **Azure Search** \> **Nouda**.
+3. Valitse **Azure Search** \> **Hae**.
    
    ![](media/service-connect-to-azure-search/azuresearch.png)
 4. Anna nimi taulukon tallennustilille, jonne Azure Search -analyysi tallennetaan.

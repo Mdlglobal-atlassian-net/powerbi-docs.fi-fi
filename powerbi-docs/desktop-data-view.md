@@ -6,19 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: a82465adb5b0c7fe8be0e6e724c5eda1bfcf7ec0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1fee95bbfb790a1c61d82131579c8fb43980ca05
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79206949"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866721"
 ---
 # <a name="work-with-data-view-in-power-bi-desktop"></a>Tieto-näkymän käsittely Power BI Desktopissa
 
 *Tiedot-näkymän* avulla voit tarkastaa *Power BI Desktop* -mallin tiedot, tutustua niihin ja ymmärtää niitä. Se poikkeaa taulukoiden, sarakkeiden ja tietojen tarkastelusta *Power Query -editorissa*. Tiedot-näkymässä tarkastelet tietojasi sen *jälkeen*, kun ne on ladattu tietomalliin.
+
+> [!NOTE]
+> Koska tietonäkymä näyttää tiedot sen jälkeen kun ne on ladattu malliin, Tietonäkymä-kuvaketta ei näy, jos kaikki tietolähteet perustuvat DirectQueryyn. 
 
 Kun mallinnat tietojasi, haluat ehkä nähdä, mitä taulukossa tai sarakkeessa todella on ilman visualisoinnin luomista raporttipohjaan. Haluat ehkä nähdä aivan rivitasolle asti. Tämä ominaisuus on hyödyksi erityisesti silloin, kun luot mittareita ja laskettuja sarakkeita tai kun sinun on tunnistettava tietotyyppi tai tietoluokka.
 
@@ -48,3 +51,14 @@ Voit suodattaa yksittäisiä arvoja tai käyttää sarakkeen tietoihin perustuva
 
 > [!NOTE]
 > Kun Power BI -malli luodaan maa-asetukselle, joka eroaa senhetkisestä käyttöliittymästä, hakuruutu ei näy käyttöliittymän tietonäkymässä muissa kuin tekstikentissä. Tämä koskee esimerkiksi amerikanenglanniksi luotua mallia, jota tarkastelet espanjaksi.
+
+
+## <a name="next-steps"></a>Seuraavat vaiheet
+
+Power BI Desktopilla voit tehdä kaikenlaista. Saat lisätietoja sen toiminnoista seuraavista resursseista:
+
+* [Mikä on Power BI Desktop?](desktop-what-is-desktop.md)
+* [Power BI Desktopin kyselyjen yleiskatsaus](desktop-query-overview.md)
+* [Tietotyypit Power BI Desktopissa](desktop-data-types.md)
+* [Tietojen muotoilu ja yhdistäminen Power BI Desktopissa](desktop-shape-and-combine-data.md)
+* [Yleiset kyselytehtävät Power BI Desktopissa](desktop-common-query-tasks.md)

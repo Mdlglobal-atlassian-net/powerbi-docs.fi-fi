@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/01/2020
+ms.date: 04/17/2020
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 26b49e1b94db0d6c46639118e3e7cc3218bb4e1e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 6c1cf92db936f980a505516ee525a532714c8325
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80551070"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866675"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Power BI Desktopin aiemmat kuukausipäivitykset
 
@@ -32,6 +32,103 @@ Kunkin päivityksen vieressä olevat linkit tarkoittavat seuraavaa:
 Voit myös katsoa **Uusimmat päivitykset** -videon, joka on aivan tämän artikkelin alussa. Napsauta päivitysluettelon alla olevan videokuvan **toistokuvaketta**.
 
 Seuraavat osiot käsittelevät **Power BI Desktopin** aiempien kuukausien päivityksiä.
+
+
+## <a name="march-2020-update-2795768562"></a>Maaliskuun 2020 päivitys (2.79.5768.562)
+
+Olimme onnekkaita kuin nelilehtinen apila saadessamme jakaa maaliskuun Power BI Desktopin kanssasi. 
+
+Voit ladata uusimman Power BI Desktop -version [Download Centeristä](https://www.microsoft.com/download/details.aspx?id=58494). Jos käytössäsi on Windows 10, voit hankkia Power BI Desktopin myös [Microsoft Storesta](https://aka.ms/pbidesktopstore). Power BI Desktopin asennustavasta riippumatta kuukausittaiset versiot ovat samat, vaikka versioiden numerointi saattaa erota. Lisätietoja Power BI Desktopin lataamisesta ja asentamisesta on kohdassa [Power BI Desktopin hankkiminen](desktop-get-the-desktop.md). 
+
+> [!IMPORTANT]
+> Syyskuun 2019 versiosta alkaen Power BI Desktop toimitetaan vain yksittäisenä .exe-tiedostona, joka sisältää kaikki tuetut kielet. .msi-versiota ei enää julkaista.
+
+
+Power BI Desktop -päivitysluettelon jokaisen ominaisuuden vieressä olevat linkit tulkitaan seuraavasti:
+
+* \[blogi\]: Useimmat ominaisuudet on selitetty kuukausittaisen päivityksen blogikirjoitusosiossa.
+* \[video\]: Jotkin ominaisuudet sisältävät ominaisuutta käsittelevän videokatkelman, joka toistetaan selaimen uudessa välilehdessä.
+* \[artikkeli\]: Tietyistä ominaisuuksista on tarjolla oma artikkeli, joka sisältää lisätietoja.
+* Muut ominaisuudet ovat itsestään selviä eivätkä tarvitse tuekseen artikkelia tai videota.
+
+Voit myös katsoa koko [Power BI Desktopin kuukausittaisen päivitysvideon](#power-bi-desktop-monthly-update-video).
+
+Seuraavat päivitykset olivat uutta Power BI Desktopissa tässä kuussa:
+
+
+### <a name="reporting"></a>Raportointi
+* Painikkeiden uudet toimintotyypit [[video]](https://youtu.be/DMjvJGGB_LQ?t=45)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_action_types) 
+* Taulukoiden monisarakkeinen lajittelu   [[video]](https://youtu.be/DMjvJGGB_LQ?t=414) [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Multi-column_sort) 
+* Kaksoisakseli viivakaaviolle   [[video]](https://youtu.be/DMjvJGGB_LQ?t=504)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Dual_axis) 
+* Suodatinruutuhaku   [[video]](https://youtu.be/DMjvJGGB_LQ?t=553)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Filter_pane_search) 
+* Päivityksiä hajotuspuuvisualisointiin   [[video]](https://youtu.be/DMjvJGGB_LQ?t=688)  [[artikkeli]](visuals/power-bi-visualization-decomposition-tree.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Updates_to_decomp_tree) 
+* Uusi nauha on nyt oletuksena käytössä   [[video]](https://youtu.be/DMjvJGGB_LQ?t=785)  [[artikkeli]](desktop-ribbon.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_ribbon) 
+
+
+
+
+### <a name="modeling"></a>Mallintaminen
+* Uusi DAX-funktio: COALESCE [[video]](https://youtu.be/DMjvJGGB_LQ?t=830)  [[artikkeli]](https://docs.microsoft.com/dax/firstnonblankvalue-function-dax)   [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_DAX_function
+) 
+
+### <a name="visuals"></a>Visualisoinnit
+* Päivityksiä ArcGIS-karttoihin [[video]](https://youtu.be/DMjvJGGB_LQ?t=1043)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Updates_to_ArcGIS) 
+* Uudet Power BI -visualisoinnit [[video]](https://youtu.be/DMjvJGGB_LQ?t=1025)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Waterfall_chart
+)
+
+
+### <a name="template-apps"></a>Mallisovellukset
+* Data Marun Azure DevOps -koontinäyttö [[video]](https://youtu.be/DMjvJGGB_LQ?t=1116)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Azure_DevOps_dashboard) 
+* Encaminan TeamsPower  [[video]](https://youtu.be/DMjvJGGB_LQ?t=1135)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_TeamsPower)
+
+
+### <a name="data-preparation"></a>Tietojen valmistelu
+* Kyselydiagnostiikka nyt yleisesti saatavilla [[video]](https://youtu.be/DMjvJGGB_LQ?t=1144)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Query_diagnostics) 
+
+
+### <a name="data-connectivity"></a>Tietoyhteydet
+* Hive LLAP -liitin (esiversio) [[video]](https://youtu.be/DMjvJGGB_LQ?t=1165)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Hive_LLAP_connector) 
+* Cognite-liitin (esiversio) [[video]](https://youtu.be/DMjvJGGB_LQ?t=1165)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Cognite) 
+
+
+### <a name="other-features"></a>Muut ominaisuudet
+* Parannettujen tietojoukon metatietojen käyttäminen (esiversio) [[video]](https://youtu.be/DMjvJGGB_LQ?t=1184)  [[artikkeli]](desktop-enhanced-dataset-metadata.md)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Enhanced_dataset_metadata) 
+* Järjestelmän oletusarvoisten tunnistetietojen käyttö välityspalvelimelle [[video]](https://youtu.be/DMjvJGGB_LQ?t=1239)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Using_default_system) 
+* Uusi opettajajohtoinen järjestelmänvalvojaksi päivässä -koulutus [[video]](https://youtu.be/DMjvJGGB_LQ?t=1247)  [[blogi]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_administrator) 
+
+
+Lisätietoja näistä uusista ominaisuuksista on [Power BI Desktopin ominaisuusyhteenvedon sisältävässä blogikirjoituksessa](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/).
+
+Tutustu [Power BI -palvelun uusiin ominaisuuksiin](service-whats-new.md) ja [Power BI -mobiilisovellusten uusiin ominaisuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+> [!NOTE]
+> Katso [Power BI Desktopin käytettävissä olevia tietolähteitä](desktop-data-sources.md). Luettelomme pitenee jatkuvasti, joten tarkista se usein.
+
+
+### <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktopin kuukausittainen päivitysvideo
+Seuraavassa videossa esitellään jokainen näistä päivityksistä. Voit katsoa tämän videon myös blogikirjoituksen kautta:
+
+> [!VIDEO https://www.youtube.com/embed/DMjvJGGB_LQ]
+
+Voit myös ladata Power BI Desktopin edellisiä versioita, jos organisaatiosi vaatii niin. Suosittelemme aina Power BI Desktopin uusimman version käyttämistä jonkin aiemman version sijasta. Kaikkia aiempia versioita koskevat seuraavat rajoitukset:
+
+* Power BI Desktopin aiempia versioita ei ylläpidetä – uusinta julkaisua tulee aina käyttää, jotta saa käyttöönsä uusimmat ominaisuudet ja päivitykset.
+* Power BI Desktopin aiemmilla versioilla ei ehkä voi avata tiedostoja, jotka on luotu tai tallennettu Power BI Desktopin uusimmilla versioilla. 
+* Jos saat varoituksen, kun lataat Power BI Desktopin uudemmassa versiossa tallennettua raporttia, ja tallennat raportin sitten aiemmassa versiossa, menetät kaikki uusiin ominaisuuksiin liittyvät tiedot.
+* Arkistoimme vain Power BI Desktopin englanninkieliset versiot.
+
+Valitse jompikumpi seuraavista linkeistä, jos haluat ladata aiemman version: 
+
+* [Power BI Desktop, maaliskuun 2020 versio – 32-bittinen](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-03.exe)
+* [Power BI Desktop, maaliskuun 2020 versio – 64-bittinen](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-03_x64.exe)
+
+
+
+
+
+
+
+
 
 
 ## <a name="february-2020-update-2785740642"></a>Helmikuun 2020 päivitys (2.78.5740.642)
@@ -91,7 +188,7 @@ Tutustu [Power BI -palvelun uusiin ominaisuuksiin](service-whats-new.md) ja [Pow
 > Katso [Power BI Desktopin käytettävissä olevia tietolähteitä](desktop-data-sources.md). Luettelomme pitenee jatkuvasti, joten tarkista se usein.
 
 
-## <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktopin kuukausittainen päivitysvideo
+### <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktopin kuukausittainen päivitysvideo
 Seuraavassa videossa esitellään jokainen näistä päivityksistä. Voit katsoa tämän videon myös blogikirjoituksen kautta:
 
 > [!VIDEO https://www.youtube.com/embed/TN61JvbUAxk]
@@ -173,7 +270,7 @@ Tutustu [Power BI -palvelun uusiin ominaisuuksiin](service-whats-new.md) ja [Pow
 > Katso [Power BI Desktopin käytettävissä olevia tietolähteitä](desktop-data-sources.md). Luettelomme pitenee jatkuvasti, joten tarkista se usein.
 
 
-## <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktopin kuukausittainen päivitysvideo
+### <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktopin kuukausittainen päivitysvideo
 Seuraavassa videossa esitellään jokainen näistä päivityksistä. Voit katsoa tämän videon myös blogikirjoituksen kautta:
 
 > [!VIDEO https://www.youtube.com/embed/eCEwgZsVUOs]
@@ -249,7 +346,7 @@ Lisätietoja näistä uusista ominaisuuksista on [Power BI Desktopin marraskuun 
 Tutustu [Power BI -palvelun uusiin ominaisuuksiin](service-whats-new.md) ja [Power BI -mobiilisovellusten uusiin ominaisuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
-## <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktopin kuukausittainen päivitysvideo
+### <a name="power-bi-desktop-monthly-update-video"></a>Power BI Desktopin kuukausittainen päivitysvideo
 Seuraavassa videossa esitellään jokainen näistä päivityksistä. Voit katsoa tämän videon myös blogikirjoituksen kautta:
 
 > [!VIDEO https://www.youtube.com/embed/kVli3Vm_kDo]
@@ -344,19 +441,6 @@ Seuraavassa videossa esitellään jokainen näistä päivityksistä. Näet video
 
 > [!NOTE]
 > Sinua saattavat myös kiinnostaa [Power BI -palvelun uudet ominaisuudet](service-whats-new.md). Tutustu myös [Power BI -mobiilisovellusten uutuuksiin](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
-
-Voit myös ladata Power BI Desktopin edellisiä versioita, jos organisaatiosi vaatii niin. Suosittelemme aina Power BI Desktopin uusimman version käyttämistä jonkin aiemman version sijasta. Kaikkia aiempia versioita koskevat seuraavat rajoitukset:
-
-* Power BI Desktopin aiempia versioita ei ylläpidetä – uusinta julkaisua tulee aina käyttää, jotta saa käyttöönsä uusimmat ominaisuudet ja päivitykset.
-* Power BI Desktopin aiemmilla versioilla ei ehkä voi avata tiedostoja, jotka on luotu tai tallennettu Power BI Desktopin uusimmilla versioilla. 
-* Jos saat varoituksen, kun lataat Power BI Desktopin uudemmassa versiossa tallennettua raporttia, ja tallennat raportin sitten aiemmassa versiossa, menetät kaikki uusiin ominaisuuksiin liittyvät tiedot.
-* Arkistoimme vain Power BI Desktopin englanninkieliset versiot.
-
-Valitse jompikumpi seuraavista linkeistä, jos haluat ladata aiemman version: 
-
-* [Power BI Desktop, lokakuun 2019 versio – 32-bittinen](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2019-10.exe)
-* [Power BI Desktop, lokakuun 2019 versio – 64-bittinen](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2019-10_x64.exe)
-
 
 
 

@@ -10,10 +10,10 @@ ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 8c58c85ea46f9884586e1ff73f1ef9f7b1db9cdd
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73860563"
 ---
 # <a name="reduce-the-size-of-an-excel-workbook-to-view-it-in-power-bi"></a>Excel-työkirjan koon pienentäminen Power BI:ssä tarkastelua varten
@@ -50,7 +50,7 @@ Kun tuot tiedot Exceliin, noudata seuraavia vihjeitä:
 * **Power Query**: tyhjennä **Lataa laskentataulukkoon** -ruutu.
   
   Tiedot tuodaan vain tietomalliin, eikä Excel-laskentataulukoissa ole tietoja.
-* **Excel-tiedot-välilehdestä**, jos aiemmin valitsit **Taulukko**-kohdan ohjatussa tuonnissa: siirry kohtaan **Aiemmin luodut yhteydet** \> valitse yhteys \> **Luo vain yhteys**. Poista alkuperäinen taulukko tai alkuperäiset taulukot, jotka luotiin ensimmäisen tuonnin aikana.
+* **Excel-tiedot-välilehdestä**, jos aiemmin valitsit **Taulukko**-kohdan ohjatussa tuonnissa: Siirry kohtaan **Aiemmin luodut yhteydet**\> valitse yhteys \>**Luo vain yhteys**. Poista alkuperäinen taulukko tai alkuperäiset taulukot, jotka luotiin ensimmäisen tuonnin aikana.
 * **Excel-tiedot-välilehdestä**: älä valitse **Taulukko**-kohtaa **Tuo tiedot** -ruudussa.
 
 ## <a name="workbook-size-optimizer"></a>Työkirjan koon optimointityökalu

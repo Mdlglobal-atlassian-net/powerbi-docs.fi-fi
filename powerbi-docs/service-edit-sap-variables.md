@@ -9,16 +9,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/12/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: cec8d598713000ec1d2b5a1fb72ebaa7d8932faf
-ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
+ms.openlocfilehash: a05b677a3a6c826c8207af29e965a7cd76149fbe
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "74010877"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841039"
 ---
 # <a name="edit-sap-variables-in-the-power-bi-service"></a>SAP-muuttujien muokkaus Power BI -palvelussa
 
-Kun käytössä on SAP Business Warehouse tai SAP HANA ja DirectQuery, raporttien tekijät voivat nyt antaa käyttäjille luvan muokata SAP-muuttujia **Power BI -palvelun** Premium-työtiloissa ja jaetuissa työtiloissa. Huomaa, että tämä ominaisuus EI toimi oman työtilan Jaettu kanssani -välilehden raporteissa. 
+Kun käytössä on SAP Business Warehouse tai SAP HANA ja DirectQuery, raporttien tekijät voivat nyt antaa käyttäjille luvan muokata SAP-muuttujia **Power BI -palvelun** Premium-työtiloissa ja jaetuissa työtiloissa. Huomaa, että tämä ominaisuus EI toimi oman työtilan Jaettu kanssani -välilehden raporteissa V1-työtiloista luodun kohdan Oma työtila ja sovellukset kanssa. 
 
 ![Muokkaa muuttujia -valintaikkuna](media/service-edit-sap-variables/sap-edit-variables-dialog.png)
 

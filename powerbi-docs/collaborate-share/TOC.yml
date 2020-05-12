@@ -2,7 +2,7 @@
   href: index.yml
   expanded: true
   items:
-    - name: Yhteenveto
+    - name: Yleiskatsaus
       expanded: true
       items:
         - name: Töiden jakamistavat
@@ -10,7 +10,7 @@
     - name: Käsitteet
       expanded: true
       items:
-        - name: Töiden organisointi
+        - name: Työn järjestäminen työtiloissa
           href: ../service-new-workspaces.md
         - name: Käytön valvominen perinteisissä työtiloissa
           href: ../service-usage-metrics.md
@@ -47,7 +47,7 @@
               href: ../service-manage-app-workspace-in-power-bi-and-office-365.md
         - name: Töiden julkaiseminen ja jakaminen
           items:
-            - name: Koontinäyttöjen ja raporttien jakaminen
+            - name: Raporttinäkymien ja raporttien jakaminen
               href: ../service-share-dashboards.md
             - name: Raportin suodattaminen ja jakaminen
               href: ../service-share-reports.md

@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/26/2020
+ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: e503d2c68b4b726ab44c3bec0fad7001da33e184
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ca3e954f64665798c439fba47c3135e93fe51ac0
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80329624"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866790"
 ---
 # <a name="publish-to-power-bi-from-microsoft-excel"></a>Julkaiseminen Power BI:hin Microsoft Excelistä
 Microsoft Excel 2016:n tai uudemman version avulla voit julkaista Excel-työkirjat suoraan [Power BI](https://powerbi.microsoft.com) -työtilaan, jossa voit luoda erittäin vuorovaikutteisia raportteja ja koontinäyttöjä työkirjan tietojen perusteella. Voit sitten jakaa merkityksellisiä tietoja muiden kanssa organisaatiossasi.
@@ -42,7 +42,7 @@ Excel tukee paikallisten Excel-tiedostojen julkaisemista. Niitä ei tarvitse tal
 > Voit julkaista paikallisia tiedostoja vain, jos käytössäsi on Excel 2016 (tai uudempi versio) ja Office 365 -tilaus. Erilliset Excel 2016 -asennukset voivat julkaista Power BI:hin, mutta vain silloin, kun työkirja on tallennettu OneDrive for Businessiin tai SharePoint Onlineen.
 > 
 
-Kun valitset **Julkaise**, voit valita työtilan, johon haluat julkaista. Työtila voi olla henkilökohtainen työtilasi tai ryhmän työtila, johon sinulla on käyttöoikeus, kuten seuraavassa kuvassa on esitetty.
+Kun valitset **Julkaise**, voit valita työtilan, johon haluat julkaista. Jos Excel-tiedostosi on OneDrive for Businessissa, voit julkaista sen *omassa työtilassa*. Jos Excel-tiedosto sijaitsee paikallisessa asemassa, voit julkaista *omassa työtilassa* tai jaetussa työtilassa, johon sinulla on käyttöoikeus.
 
 ![Julkaise Power BI:hin](media/service-publish-from-excel/pbi_choose_workspace.png)
 

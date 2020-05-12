@@ -6,19 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 04/23/2020
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 951a05247a02e379c56c45176edb622e683af413
-ms.sourcegitcommit: 7e845812874b3347bcf87ca642c66bed298b244a
+ms.openlocfilehash: 401cc419401756c9576ce6efc25a34b7aa667024
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79207731"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781522"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Power BI:n tuetut kielet ja maat tai alueet
 
-Tässä artikkelissa on luettelo Power BI -palvelun, Power BI Desktopin ja Power BI:n dokumentaation tuetuista kielistä ja maista tai alueista.
+Tässä artikkelissa on esittely Power BI -palvelun, Power BI Desktopin ja Power BI:n dokumentaation tuetuista kielistä ja maista tai alueista.
 
 ## <a name="countries-and-regions-where-power-bi-is-available"></a>Maat ja alueet, joissa Power BI on saatavilla
 Katso maat ja alueet, joissa Power BI on saatavilla, [kansainvälisen saatavuuden luettelosta](https://products.office.com/business/international-availability). 
@@ -72,7 +72,7 @@ Power BI -palvelu (selaimessa) on saatavilla seuraavilla 44 kielellä:
 * vietnam – Tiếng Việt
 
 ### <a name="whats-translated"></a>Käännetyt osat
-Power BI kääntää valikoita, painikkeita, sanomia ja muita käyttökokemuksen elementtejä kielellesi. Raportin sisältö, kuten automaattisesti luodut otsikot, suodattimet ja työkaluvihjeet, on käännetty, mutta tietojasi ei käännetä automaattisesti. Raporttien sisällä visualisointien ulkoasu ei muutu, jos käytät oikealta vasemmalle -kieltä, kuten hepreaa.
+Power BI kääntää valikoita, painikkeita, sanomia ja muita käyttökokemuksen elementtejä kielellesi. Power BI esimerkiksi kääntää raportin sisällön, kuten automaattisesti luodut otsikot, suodattimet ja työkaluvihjeet. Tietojasi ei kuitenkaan käännetä automaattisesti. Raporttien sisällä visualisointien ulkoasu ei muutu, jos käytät oikealta vasemmalle -kieltä, kuten hepreaa.
 
 Tällä hetkellä joitakin ominaisuuksia on saatavilla vain englanniksi:
 
@@ -118,7 +118,7 @@ Power BI tunnistaa kielen tietokoneesi kieliasetusten perusteella. Näiden asetu
 Voit hankkia Power BI Desktopin kahdella tavalla: Voit ladata sen erillisenä asennusohjelmana tai asentaa sen Windows-kaupasta.
 
 * Kun asennat Power BI Desktopin Windows-kaupasta, se asentaa oletusarvoisesti kaikki kielet ja näyttää Windowsin oletuskieltä vastaavan kielen.
-* Kun lataat Power BI Desktopin erillisenä asennusohjelmana, valitset oletuskielen asennusohjelman suorituksen aikana, ja voit muuttaa sitä myöhemmin.
+* Kun lataat Power BI Desktopin erillisenä asennusohjelmana, valitset oletuskielen asennusohjelman suorituksen aikana. Voit muuttaa sitä myöhemmin.
 * Voit myös [valita tietoja tuotaessa käytettävät aluekohtaiset asetukset](#choose-the-locale-for-importing-data-into-power-bi-desktop) tietylle raportille.
 
 > [!NOTE]
@@ -126,11 +126,12 @@ Voit hankkia Power BI Desktopin kahdella tavalla: Voit ladata sen erillisenä as
 
 ### <a name="choose-a-language-for-power-bi-desktop"></a>Valitse kieli Power BI Desktopia varten 
 1. Asenna Power BI Desktop [Windows-kaupasta](https://aka.ms/pbidesktopstore) tai [erillisenä asennusohjelmana](https://aka.ms/pbiSingleInstaller).
-2. Jos haluat vaihtaa kielen, tee tietokoneella haku **Windows-asetukset**. 
-3. Valitse **Aika ja kieli**.
+2. Jos haluat vaihtaa kieltä, valitse Windows-valikosta **Asetukset**
+
+3. Valitse **Windows-asetuksissa** **Aika ja kieli**.
    
      ![Windows-asetusten valintaikkuna](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
-4. Valitse **Alue ja kieli**, valitse kieli ja valitse **Aseta oletukseksi**.
+4. Valitse **Kieli** ja tee kielivalinta. Valitse **Lisää Windowsin näyttökieli Microsoft Storeen** tarvittaessa.
    
      ![Windowsin kieliasetusten valintaikkuna](media/supported-languages-countries-regions/power-bi-service-language-settings.png)
    
@@ -143,8 +144,30 @@ Jos haluat ohittaa oletusarvon ja käyttää Power BI Desktopia jollakin muulla 
 
 Power BI Desktopin kielituki rajoittuu sovelluksen kielivalikossa näkyvään kieleen.
 
+### <a name="verify-power-bi-desktop-default-number-and-date-formatting"></a>Tarkista Power BI Desktop -oletusnumeron ja päivämäärän muotoilu
+
+Power BI Desktop hakee oletusarvon mukaisen luku- ja päivämäärämuotoilun Windowsin alueasetuksista. Voit tarvittaessa tarkistaa tai muuttaa näitä asetuksia.
+
+1. Valitse Windows-valikosta **Asetukset**
+
+2. Valitse **Windows-asetuksissa** **Aika ja kieli**.
+   
+     ![Windows-asetusten valintaikkuna](media/supported-languages-countries-regions/power-bi-service-windows-settings.png)
+
+3. Valitse **Alue** > **Lisäpäivämäärä, aika ja aluekohtaiset asetukset**.
+
+    :::image type="content" source="media/supported-languages-countries-regions/power-bi-service-region-settings.png" alt-text="Lisäpäivämäärä, aika ja aluekohtaiset asetukset":::
+
+4. Valitse **Kello ja alue**, valitse **Muuta päivämäärä-, aika- tai lukumuotoa**.
+
+    :::image type="content" source="media/supported-languages-countries-regions/power-bi-service-check-region-settings.png" alt-text="Kello- ja alueasetukset":::
+
+5. Varmista, että **Vastaa Windowsin näyttökieltä** on valittuna, tai muuta se tarvittaessa.
+
+    :::image type="content" source="media/supported-languages-countries-regions/power-bi-service-match-windows.png" alt-text="Vastaa Windowsin näyttökieltä":::
+
 ### <a name="choose-the-locale-for-importing-data-into-power-bi-desktop"></a>Aluekohtaisten asetusten valitseminen tietojen Power BI Desktopiin tuomista varten
-Riippumatta siitä, lataatko Power BI Desktopin vai asennatko sen Windows-kaupasta, voit valita tietylle raportille aluekohtaiset asetukset, jotka ovat muut kuin Power BI Desktop -versiossasi. Tämä muuttaa tietojen tulkintatapaa, kun tiedot tuodaan tietolähteestä, esimerkiksi onko ”3/4/2017” 3. huhtikuuta vai 4. maaliskuuta. 
+Riippumatta siitä, lataatko Power BI Desktopin vai asennatko sen Windows-kaupasta, voit valita tietylle raportille aluekohtaiset asetukset, jotka ovat muut kuin Power BI Desktop -versiossasi. Kieliasetus muuttaa tapaa, jolla Power BI tulkitsee tietoja, kun ne tuodaan tietolähteestä. Onko esimerkiksi "3/4/2017" tulkittava 3. huhtikuuta tai 4. maaliskuuta?
 
 1. Siirry Power BI Desktopissa kohtaan **Tiedosto** > **Asetukset ja vaihtoehdot** > **Asetukset**.
 2. Valitse kohdassa **Nykyinen tiedosto** **Aluekohtaiset asetukset**.

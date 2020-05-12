@@ -4,17 +4,17 @@ description: Tutustu Power BI -raporttipalvelimeen ja sen käyttöön SQL Server
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/22/2019
+ms.date: 04/29/2020
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 26593f4869d6b8d2c1c206a8bedd3c0d214581b3
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3e01bd0d7314cba1eb46dacff01b350c6685a6e9
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73859548"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613582"
 ---
 # <a name="what-is-power-bi-report-server"></a>Mikä on Power BI -raporttipalvelin?
 
@@ -23,7 +23,7 @@ Power BI -raporttipalvelin on verkkoportaalilla varustettu paikallinen raporttip
 ![Power BI -raporttipalvelimen verkkoportaali](media/get-started/power-bi-report-server-overview.png)
 
 ## <a name="comparing-power-bi-report-server"></a>Power BI -raporttipalvelimen vertailu 
-Power BI -raporttipalvelin on vastaava kuin SQL Server Reporting Services ja Power BI -verkkopalvelu, mutta se toimii eri tavoilla. Power BI -palvelun tavoin Power BI -raporttipalvelin isännöi Power BI -raportteja (.PBIX), Excel-tiedostoja ja sivutettuja raportteja (.RDL). Reporting Servicesin tavoin Power BI -raporttipalvelin on paikallinen palvelin. Power BI -raporttipalvelimen ominaisuudet ovat Reporting Servicesin yläjoukko: kaikki Reporting Servicesissä tehtävät toiminnot voidaan tehdä myös Power BI -raporttipalvelimessa Power BI -raporttien tuen ansiosta. Katso lisätietoja kohdasta [Power BI -raporttipalvelimen ja Power BI -palvelun vertailu](compare-report-server-service.md).
+Power BI -raporttipalvelin on vastaava kuin SQL Server Reporting Services ja Power BI -verkkopalvelu, mutta se toimii eri tavoilla. Power BI -palvelun tavoin Power BI -raporttipalvelin isännöi Power BI -raportteja (.pbix), Excel-tiedostoja ja sivutettuja raportteja (.rdl). Reporting Servicesin tavoin Power BI -raporttipalvelin on paikallinen palvelin. Power BI -raporttipalvelimen ominaisuudet ovat Reporting Servicesin yläjoukko: kaikki Reporting Servicesissä tehtävät toiminnot voidaan tehdä myös Power BI -raporttipalvelimessa Power BI -raporttien tuen ansiosta. Katso lisätietoja kohdasta [Power BI -raporttipalvelimen ja Power BI -palvelun vertailu](compare-report-server-service.md).
 
 ## <a name="licensing-power-bi-report-server"></a>Power BI -raporttipalvelimen käyttöoikeus
 Power BI -raporttipalvelin on saatavana kahdella eri käyttöoikeudella: [Power BI Premium](../service-premium-what-is.md) ja [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions), jossa on SA-ylläpito. Power BI Premium -käyttöoikeudella voit luoda hybridiratkaisun, jossa yhdistyvät pilvi- ja paikallispalvelut.  
@@ -41,7 +41,7 @@ Käyttöoikeuksiesi mukaan voit hallita sisältöä verkkoportaalissa. Voit ajas
 Lisätietoja [Power BI -raporttipalvelimen verkkoportaalista](https://docs.microsoft.com/sql/reporting-services/web-portal-ssrs-native-mode).
 
 ## <a name="power-bi-reports"></a>Power BI -raportit
-Voit luoda Power BI -raportteja (.PBIX) raporttipalvelimelle optimoidulla Power BI Desktop -versiolla. Sitten voit julkaista ne ja tarkastella niitä verkkoportaalissa omassa ympäristössäsi.
+Voit luoda Power BI -raportteja (.pbix) raporttipalvelimelle optimoidulla Power BI Desktop -versiolla. Sitten voit julkaista ne ja tarkastella niitä verkkoportaalissa omassa ympäristössäsi.
 
 ![Power BI -raportit Power BI -raporttipalvelimella](media/get-started/powerbi-reports.png)
 
@@ -50,7 +50,7 @@ Power BI -raportti on usean perspektiivin tietomallinäkymä, jonka visualisoinn
 Lue [Microsoft Power BI Desktopin asentamisesta](install-powerbi-desktop.md).
 
 ## <a name="paginated-reports"></a>Sivutetut raportit
-Sivutetut raportit (.RDL)ovat asiakirjatyylisiä, visualisointeja sisältäviä raportteja, joissa taulukot laajentuvat vaaka- ja pystysuunnassa kaikkien tietojen näyttämiseksi, sivulta toiselle jatkuen tarpeen mukaan. Ne sopivat erinomaisesti pikselintarkasti täydellisesti aseteltuihin kiinteisiin raportteihin, jotka on optimoitu tulostettavaksi esimerkiksi PDF- tai Word-tiedostoina. 
+Sivutetut raportit (.rdl) ovat asiakirjatyylisiä, visualisointeja sisältäviä raportteja, joissa taulukot laajentuvat vaaka- ja pystysuunnassa kaikkien tietojen näyttämiseksi, sivulta toiselle jatkuen tarpeen mukaan. Ne sopivat erinomaisesti pikselintarkasti täydellisesti aseteltuihin kiinteisiin raportteihin, jotka on optimoitu tulostettavaksi esimerkiksi PDF- tai Word-tiedostoina. 
 
 ![Sivutetut raportit Power BI -raporttipalvelimella](media/get-started/paginated-reports.png)
 

@@ -8,16 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 01/10/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8aa392b69d21905901f8304c577b87b00ed19057
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f7c907d31d4d58a9f39ad982e7d94f3f5ba3f118
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75885287"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865564"
 ---
 # <a name="create-and-view-decomposition-tree-visuals-in-power-bi-preview"></a>Hajotuspuu-visualisoinnin luominen ja tarkasteleminen Power BI:ssä (esiversio)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Power BI hajotuspuu-visualisoinnin avulla voit visualisoida tietoja useissa ulottuvuuksissa. Se kokoaa tiedot automaattisesti ja mahdollistaa porautumisen ulottuvuuksiin missä tahansa järjestyksessä. Lisäksi se on tekoäly-visualisointi, joten voit pyytää sitä etsimään tiettyjen ehtojen perusteella seuraavan ulottuvuuden, johon porautua. Tämän ansiosta se on arvokas työkalu ad-hoc-tutkimiseen ja pääsyyn analysointiin.
@@ -29,6 +32,8 @@ Tässä opetusohjelmassa käytetään kahta esimerkkiä:
 - Toimitusketjuskenaario, jossa analysoidaan, kuinka suuri prosenttiosuus yrityksen tuotteista on jälkitoimituksessa (loppu varastosta).  
 - Myyntiskenaario, jossa videopelin myynti eritellään useiden tekijöiden mukaan, kuten peligenren ja julkaisijan.
 
+> [!NOTE]
+> Raportin jakaminen työtoverin kanssa Power BI:ssä edellyttää, että teillä kummallakin on oma Power BI Pro -käyttöoikeus tai että raportti on tallennettu Premium-kapasiteettiin.    
 
 ## <a name="get-started"></a>Aloittaminen
 Valitse Visualisoinnit-ruudusta hajotuspuun kuvake.
