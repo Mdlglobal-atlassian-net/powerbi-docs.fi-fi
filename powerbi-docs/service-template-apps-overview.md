@@ -4,16 +4,16 @@ description: Tämä artikkeli on Power BI -mallisovellusten ohjelman yleiskatsau
 author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/16/2020
+ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: 42fa16228deea88f606e348d1a87f9d465c8c2ea
-ms.sourcegitcommit: 01bcbc8f0280aec875b22542a9c193c80899dc10
+ms.openlocfilehash: 466e7cb842244104b004c4f65f82dafe13dc9725
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82066321"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781313"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Mitä Power BI -mallisovellukset ovat?
 
@@ -103,6 +103,7 @@ Lisää ehdotuksia on artikkelissa [Vihjeitä mallisovellusten luomiseen Power B
 | Tietojoukko: työtilojen välinen | Työtilojen välisiä tietojoukkoja ei sallita  |
 | Kyselyparametrit | Ei tueta: Tyyppiä ”Any” tai ”Binary” olevat parametrit estävät tietojoukon päivitystoiminnon |
 | Power BI:n visualisoinnit | Vain julkisesti käytettävissä olevia Power BI -visualisointeja tuetaan. [Organisaation Power BI -visualisointeja](developer/visuals/power-bi-custom-visuals-organization.md) ei tueta. |
+| Maakohtaiset pilvipalvelut | Mallisovellukset eivät ole käytettävissä itsenäisissä pilvipalveluissa |
 
 ## <a name="support"></a>Tuki
 Saat tukea kehityksen aikana osoitteesta [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Valvomme ja hallinnoimme tätä sivustoa aktiivisesti. Asiakastapaukset ohjataan nopeasti oikealle tiimille.

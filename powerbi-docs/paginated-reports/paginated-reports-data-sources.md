@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/24/2020
-ms.openlocfilehash: cbf30e3479629533faea73465362c378d4b73848
-ms.sourcegitcommit: c772c544ce2e1e2a147b9b62e5579ac3cb59d54c
+ms.date: 04/28/2020
+ms.openlocfilehash: ad75cf6b85a896fbdc275748dc31c620206e08a2
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82255774"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82692879"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Power BI:n sivutetuissa raporteissa tuetut tietolähteet
 
@@ -25,7 +25,7 @@ Sivutetut raportit tukevat suoraan seuraavia tietolähteitä:
 
 | Tietolähde | Todentaminen | Huomautukset |
 | --- | --- | --- |
-| Azuren SQL-tietokanta <br>Azure SQL Data Warehouse | Perus, kertakirjautuminen (SSO), OAuth2 |   |
+| Azuren SQL-tietokanta <br>Azure SQL Data Warehouse | Perus, kertakirjautuminen (SSO), OAuth2 | Voit käyttää Enterprise-yhdyskäytävää Azure SQL-tietokannan kanssa. Et kuitenkaan saa käyttää SSO- tai oAuth2-todennusta näissä tilanteissa.   |
 | Azure SQL:n hallittu esiintymä | Perustodennus | Julkisen tai yksityisen päätepisteen kautta (yksityinen päätepiste on reititettävä yritysyhdyskäytävän kautta)  |
 | Azure Analysis Services | SSO, OAuth2 | AAS-palomuuri täytyy poistaa käytöstä tai määrittää sallimaan kaikki IP-alueet.|
 | Power BI -tietojoukko | SSO | Power BI:n Premium- ja muut kuin Premium-tietojoukot. Edellyttää lukuoikeutta |

@@ -4,16 +4,16 @@ description: Lue lisätietoja siitä, miten voit asentaa, mukauttaa ja jakaa mal
 author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
-ms.date: 03/15/2020
+ms.subservice: powerbi-template-apps
+ms.topic: conceptual
+ms.date: 05/04/2020
 ms.author: painbar
-ms.openlocfilehash: 08aadc3027c5b265194e4239b150ea5d27fe2e43
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.openlocfilehash: 86fe618508504faebc920c77a1f9605da59040d9
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436107"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82781670"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization"></a>Mallisovellusten asentaminen ja jakaminen organisaatiossa
 
@@ -65,7 +65,7 @@ Mallisovelluksen asentamiseen, mukauttamiseen ja jakamiseen tarvitset seuraavat 
 
 1. Napsauta **Yhdistä**.
     
-    Tämä avaa yhden tai useita valintaikkunoita, joissa voit vaihtaa tietolähteen mallitiedoista omaan tietolähteeseesi. Tämä tarkoittaa yleensä tietojoukon parametrien ja tietolähteen tunnistetietojen määrittämistä uudelleen. Katso kohta [Tunnetut rajoitukset](service-template-apps-tips.md#known-limitations).
+    Tämä avaa yhden tai useita valintaikkunoita, joissa voit vaihtaa tietolähteen mallitiedoista omaan tietolähteeseesi. Tämä tarkoittaa yleensä tietojoukon parametrien ja tietolähteen tunnistetietojen määrittämistä uudelleen. Katso kohta [Tunnetut rajoitukset](service-template-apps-overview.md#known-limitations).
     
     Alla olevassa esimerkissä tietoihin yhdistäminen tuo esiin kaksi valintaikkunaa.
 
@@ -95,14 +95,18 @@ Kun olet tehnyt haluamasi muutokset työtilassa oleviin artefakteihin, olet valm
 
 Mallisovellusten luojat julkaisevat ajoittain uusia parannettuja versioita mallisovelluksistaan joko AppSourcen, suoran linkin tai molempien kautta.
 
-Jos olet alun perin ladannut sovelluksen AppSourcesta, kun mallisovelluksen uusi versio tulee saataville, Power BI -palvelussa näkyviin tulevassa ilmoituspalkissa kerrotaan, että uusi sovellusversio on saatavilla.
+Jos olet alun perin ladannut sovelluksen Appsourcesta, kun mallisovelluksen uusi versio tulee saataville, saat ilmoituksen kahdella tavalla:
+* Power BI -palvelussa näkyviin tulee päivityspalkki, jossa kerrotaan, että uusi sovellusversio on saatavilla.
+  ![Mallisovelluksen päivitysilmoitus](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-banner.png)
+* Saat ilmoituksen Power BI -ilmoitus ruudussa.
 
-  ![Mallisovelluksen päivitysilmoitus](media/service-template-apps-install-distribute/power-bi-new-app-version-notification.png)
+
+  ![Mallisovelluksen päivitysilmoitus](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-pane.png)
 
 >[!NOTE]
 >Jos olet alun perin hankkinut sovelluksen suoran linkin kautta AppSourcen sijaan, ainoa tapa saada tietää, milloin uusi versio on saatavilla, on ottaa yhteyttä mallisovelluksen luojaan.
 
-  Jos haluat asentaa päivityksen, valitse ilmoituspalkissa **Hanki se** tai etsi sovellus uudelleen AppSourcesta ja valitse **Hanki se nyt**. Jos olet saanut suoran linkin päivitykseen mallinsovelluksen luojalta, napsauta linkkiä.
+  Jos haluat asentaa päivityksen, valitse ilmoituspalkissa tai ilmoituskeskuksesta **Hanki se** tai etsi sovellus uudelleen AppSourcesta ja valitse **Hanki se nyt**. Jos olet saanut suoran linkin päivitykseen mallinsovelluksen luojalta, napsauta linkkiä.
   
   Sinulta kysytään, haluatko korvata nykyisen version vai asentaa uuden version uuteen työtilaan. Korvaaminen on valittuna oletusarvoisesti.
 

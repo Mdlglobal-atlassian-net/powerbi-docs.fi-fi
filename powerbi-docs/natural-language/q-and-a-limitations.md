@@ -1,18 +1,18 @@
 ---
 title: Power BI Q&A:n rajoitukset
 description: Power BI Q&A:n nykyiset rajoitukset
-author: mohaali
+author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/18/2019
-ms.author: mohaali
-ms.openlocfilehash: 9f1beed3408d53a58a0fb725f9d98a4a95bb1b7c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 04/21/2020
+ms.author: maggies
+ms.openlocfilehash: b71fd2986fb79adf88493416ac8234f2656aefa9
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874895"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866767"
 ---
 # <a name="limitations-of-power-bi-qa"></a>Power BI Q&A:n rajoitukset
 
@@ -27,7 +27,7 @@ Power BI Q&A tukee seuraavia tietolähteiden kokoonpanoja Power BI -palvelussa:
 - Tuontitila
 - Reaaliaikaisen yhteyden muodostaminen Azure Analysis Servicesiin
 - Reaaliaikaisen yhteyden muodostaminen SQL Server-Analysis Servicesiin (yhdyskäytävän kanssa)
-- Power BI -tietojoukot Power BI Desktop raportoi Q&A:n virheestä Power BI -tietojoukkoa käytettäessä. Kuitenkin kun julkaiset raportin Power BI -palveluun, virhe poistuu.
+- Power BI -tietojoukot
 
 Kaikissa näissä kokoonpanoissa tuetaan myös rivitason suojausta.
 
@@ -36,7 +36,7 @@ Kaikissa näissä kokoonpanoissa tuetaan myös rivitason suojausta.
 Power BI Q&A ei tällä hetkellä tue seuraavia kokoonpanoja:
 
 - Objektitason suojaus minkä tahansa tietolähdetyypin kanssa
-- DirectQuery mitä tahansa lähdettä vastaan. Vaihtoehtoinen tukimenetelmä on käyttää reaaliaikaista yhteyden muodostamista DirectQueryä käyttävän Azure Analysis Servicesin kanssa.
+- DirectQuery mitä tahansa lähdettä vastaan. Vaihtoehtoinen menetelmä on käyttää reaaliaikaista yhteyden muodostamista DirectQueryä käyttävän Azure Analysis Servicesin kanssa.
 - Yhdistelmämallit
 - Reporting Services 
 
@@ -46,7 +46,7 @@ Uuden työkaluvalintaikkunan avulla käyttäjät voivat mukauttaa ja parantaa Q&
 
 ## <a name="review-question-limitations"></a>Kysymysten tarkastelun rajoitukset
 
-Kysymysten tarkastelu tallentaa vain tietomalliasi vastaan kysytyt kysymykset enintään 28 päivän ajan. Kun käytät uutta tarkastele kysymyksiä -ominaisuutta, saatat huomata, ettei joitakin kysymyksiä tallenneta. Tämä kuuluu asiaan, sillä luonnollisen kielen moduuli suorittaa sarjan tietojenpuhdistusvaiheita varmistaakseen, ettei käyttäjän jokainen näppäimen painallus tallennu tai näy.
+Kysymysten tarkastelu tallentaa vain tietomalliasi vastaan kysytyt kysymykset enintään 28 päivän ajan. Kun käytät uutta tarkastele kysymyksiä -ominaisuutta, saatat huomata, ettei joitakin kysymyksiä tallenneta. Tämä kuuluu asiaan, sillä luonnollisen kielen moduuli suorittaa sarjan tietojenpuhdistusvaiheita varmistaakseen, ettei käyttäjän jokaista näppäimen painallusta tallenneta tai näytetä.
 
 Vuokraajan järjestelmänvalvojat voivat käyttää vuokraajan järjestelmänvalvojan asetuksia kysymysten tallennusten hallintaan. Käyttöoikeudet perustuvat käyttöoikeusryhmään. 
 
@@ -61,11 +61,14 @@ Opeta Q&A:ta -toiminnon avulla voit korjata kahdentyyppisiä virheitä:
 
 Tällä hetkellä emme tue tunnistetun termin määrittelyä uudelleen tai muiden ehtojen tai lausekkeiden määrittämistä. Suodatusehtoja määrittäessäsi voit lisäksi käyttää vain rajoitettua kielen alijoukkoa, mukaan lukien:
 
-- ”Maa”, joka on ”USA”
-- ”Maa”, joka ei ole ”USA”
-- ”Paino” > 2 000
-- ”Paino = 2 000
-- ”Paino” < 2 000
+- Maa, joka on USA
+- Maa, joka ei ole USA
+- Tuotteet > 100
+- Tuotteet on suurempi kuin 100
+- Tuotteet = 100
+- Tuotteet on 100
+- Tuotteet < 100
+- Tuotteet on pienempi kuin 100
 
 > [!NOTE]
 > Q&A-työkalut tukevat vain tuontitilaa. Se ei vielä tue yhdistämistä paikalliseen tai Azure Analysis Servicesin tietolähteeseen. Tämä rajoitus poistetaan seuraavissa Power BI -julkaisuversioissa.
@@ -75,3 +78,7 @@ Tällä hetkellä emme tue tunnistetun termin määrittelyä uudelleen tai muide
 - Mittarien käyttämistä ehdoissa ei tueta tällä hetkellä. Tämän sijaan voit muuntaa mittarit lasketuiksi sarakkeiksi.
 - Useita ehtoja ei tueta. Voit kiertää ongelman luomalla DAX-lasketun sarakkeen, joka laskee useita ehtoja sisältävän lausekkeen totuusarvon, ja käyttää tätä kenttää.
 - Jos et määritä suodatinehtoa, kun Q&A kysyy tietojen alijoukkoa, et voi tallentaa määritelmää, vaikka koko lausekkeessa ei olisi punaisia alleviivauksia.
+
+## <a name="next-steps"></a>Seuraavat vaiheet
+
+Luonnollisen kielen moduulin parantamiseen on olemassa joitain parhaita käytäntöjä. Lisätietoja: [Q&A:n parhaat käytännöt](q-and-a-best-practices.md).

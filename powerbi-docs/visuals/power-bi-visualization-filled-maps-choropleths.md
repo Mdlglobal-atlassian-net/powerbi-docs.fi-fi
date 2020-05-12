@@ -8,16 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/05/2019
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a2ac2820c7beb3a82650716896ddd36b79c82e07
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ba344d66f967d502d9de8adef7defcae434fb3ef
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79436061"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865456"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Täytettyjen karttojen (koropleettikartat) luominen ja käyttäminen Power BI:ssä
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -55,15 +57,8 @@ Tässä oppaassa käytetään [myynti- ja markkinointi-PBIX-mallitiedostoa](http
 
 1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
 
-
-## <a name="create-a-basic-filled-map"></a>Perusluontoisen täytetyn kartan luominen
-Tällä videolla Kim luo peruskartan ja muuntaa sen täytetyksi kartaksi.
-   > [!NOTE]
-   > Tässä videossa käytetään Power BI Desktopin vanhempaa versiota.
-   > 
-   > 
-
-> [VIDEO https://www.youtube.com/embed/ajTPGNpthcg ]
+> [!NOTE]
+> Raportin jakaminen työtoverin kanssa Power BI:ssä edellyttää, että teillä kummallakin on oma Power BI Pro -käyttöoikeus tai että raportti on tallennettu Premium-kapasiteettiin.    
 
 ### <a name="create-a-filled-map"></a>Täytetyn kartan luominen
 1. Valitse Kentät-ruudusta **Alue** \> **Osavaltio**.    

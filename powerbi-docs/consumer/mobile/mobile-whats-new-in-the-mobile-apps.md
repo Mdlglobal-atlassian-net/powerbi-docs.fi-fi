@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/09/2020
+ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: af9a1ad5dd13f4f57947b0ca92459e7691eab5fd
-ms.sourcegitcommit: 9b806dfe62c2dee82d971bb4f89d983b97931b43
+ms.openlocfilehash: 8235f95d724b34e7ea815579e6f8ed6a1f71e409
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80802091"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841706"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -24,6 +24,14 @@ Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 
 >[!NOTE]
 >Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** lopetetaan 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## <a name="april-2020"></a>Huhtikuu 2020
+
+### <a name="sharing-from-workspaces-is-now-available"></a>Jakaminen työtiloista on nyt käytettävissä
+Olemme lisänneet toiminnon raporttien ja koontinäyttöjen jakamiseen työtiloista. Voit jakaa sisältösi Omasta työtilasta ja muista työtiloista, jos työtilan omistaja sallii sen, aivan kuin Power BI -palvelussa. 
+
+### <a name="dashboards-now-support-full-screen-mode-ios-and-android"></a>Koontinäytöt tukevat nyt koko näytön tilaa (iOS ja Android)
+Nyt voit tarkastella koontinäyttöjä koko näytön tilassa, mikä antaa sinulle lisää tilaa koontinäyttösi sisällön tarkastelemiseen. 
 
 ## <a name="march-2020"></a>Maaliskuu 2020
 
@@ -871,4 +879,4 @@ Parannuksia Power BI -mobiilisovelluksiin: Android, iOS (iPhone ja iPad) ja Wind
 * Parannettu karttaruudun hahmontaminen tarkastelutilassa, jotta näyttöala on käytettävissä mahdollisimman tehokkaasti.
 * Parannettu käyttökokemus käytettäessä roolipohjaista suojausta käyttäviä koontinäyttöjä. 
 * Uuden ominaisuuden avulla voit selata edestakaisin koontinäytön ruuduissa ja tarkastella niitä suoraan tarkastelutilassa ilman, että joudut palaamaan takaisin koontinäyttöön seuraavan ruudun valitsemista varten.
-* Lisää vakauden ja suorituskyvyn parannuksia. 
+* Lisää vakauden ja suorituskyvyn parannuksia.

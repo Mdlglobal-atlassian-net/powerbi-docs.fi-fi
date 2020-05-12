@@ -3,18 +3,19 @@ title: Raporttien vieminen Power BI:stä PowerPointiin
 description: Lue, miten voit viedä Power BI -raportin PowerPointiin.
 author: mihart
 ms.reviewer: ''
+ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/21/2020
+ms.date: 05/05/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f9e0288c91f65d10329aaac29df8eb6e7a81f297
-ms.sourcegitcommit: 6bbc3d0073ca605c50911c162dc9f58926db7b66
+ms.openlocfilehash: 4a93bbc0d5d8014e11fb59129b22b5493def0ac2
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79377156"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841098"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Raporttien vieminen Power BI:stä PowerPointiin
 
@@ -22,7 +23,9 @@ ms.locfileid: "79377156"
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Voit julkaista Power BI:llä raportin Microsoft PowerPointiin ja luoda helposti Power BI -raporttiin perustuvan diasarjan. PowerPointiin vietäessä tapahtuu seuraavaa:
+![kuva, jossa näkyy Power BI -logo ja PowerPoint-logo](media/end-user-powerpoint/logos.png)
+
+Voit julkaista Power BI -palvelussa (app.powerbi.com) raportin Microsoft PowerPointiin ja luoda helposti Power BI -raporttiin perustuvan diasarjan. PowerPointiin vietäessä tapahtuu seuraavaa:
 
 * Jokaisesta Power BI -raportin sivusta tulee yksittäinen dia PowerPointissa.
 * Power BI -raportin jokainen sivu viedään yksittäisenä suuritarkkuuksisena kuvana PowerPointiin.
@@ -30,6 +33,10 @@ Voit julkaista Power BI:llä raportin Microsoft PowerPointiin ja luoda helposti 
 * PowerPointissa luodaan linkki Power BI -raporttiin.
 
 **Power BI -raportin** vieminen **PowerPointiin** on nopeaa. Seuraa seuraavassa osiossa kuvailtuja vaiheita.
+
+Voit myös kopioida tiettyjä visualisointeja Power BI -palveluun ja liittää ne PowerPointiin. Kopioi visualisointi leikepöydälle valitsemalla **Kopioi kuvana**. Avaa sitten PowerPoint ja liitä visualisointi.
+
+![Valitse Kopioi kuvana -kuvake](media/end-user-powerpoint/power-bi-copy.png)
 
 ## <a name="export-your-power-bi-report-to-powerpoint"></a>Power BI -raportin vieminen PowerPointiin
 Valitse **Power BI** -palvelussa raportti, jonka haluat näyttää pohjalla. Voit myös valita raportin **aloitussivulta**, **sovelluksista** tai siirtymisruudun avulla mistä tahansa muusta säilöstä.
@@ -77,12 +84,13 @@ Edellä olevien vaiheiden jälkeen voit tehdä PowerPoint-esitykselläsi ja sen 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
 Ota huomioon seuraavat seikat ja rajoitukset, kun käytät **Vieminen PowerPointiin** -ominaisuutta.
 
-* R- ja Python-visualisointeja ei tällä hetkellä tueta. Tällaiset visualisoinnit viedään tyhjinä kuvina PowerPointiin mukanaan virhesanoma siitä, ettei visualisointia tueta.
+
+* Raportin vieminen PowerPointiin saattaa kestää muutamia minuutteja. Kestoon vaikuttavat esimerkiksi raportin rakenne ja Power BI -palvelun kulloinenkin kuormitus.
 * Sertifioituja Power BI -visualisointeja tuetaan. Saat lisätietoja sertifioiduista mukautetuista visualisoinneista, mukaan lukien sertifioinnin hakemisesta visualisoinnille, artikkelista [Mukautetun visualisoinnin sertifiointi](../developer/power-bi-custom-visuals-certified.md). Mukautettuja visualisointeja, joita ei ole sertifioitu, ei tueta. Ne viedään tyhjinä kuvina PowerPointiin mukanaan virhesanoma siitä, ettei visualisointia tueta.
-* ESRI-visualisointia ei tueta
+* URL-suodattimia ei oteta tällä hetkellä huomioon, kun valitset viennin kohdalla **Nykyiset arvot**.
+* [ESRI ArcGIS -visualisointia](../visuals/power-bi-visualizations-arcgis.md) ei tueta
 * Yli 30 raporttisivua sisältäviä raportteja ei tällä hetkellä voi viedä.
 * Visualisoinnit, joissa on vierityspalkkeja, viedään niiden oletustilassa. Visualisoinnissa PowerPointissa näkyy vain tietojen ylin osa. Vieritys PowerPointissa ei ole käytettävissä, koska jokainen dia on kuva. 
-* Raportin vieminen PowerPointiin saattaa kestää muutamia minuutteja. Kestoon vaikuttavat esimerkiksi raportin rakenne ja Power BI -palvelun kulloinenkin kuormitus.
 * Jos **Vie PowerPointiin** -valikkovaihtoehtoa ei ole käytettävissä Power BI -palvelussa, syy on todennäköisesti se, että vuokraajan järjestelmänvalvoja on poistanut toiminnon käytöstä. Saat lisätietoja ottamalla yhteyttä vuokraajan järjestelmänvalvojaan.
 * Taustakuvat rajataan kaavion raja-alueen mukaiseksi. Suosittelemme poistamaan taustakuvat ennen PowerPointiin viemistä.
 * PowerPoint-sivut luodaan aina 9:16-standardikoossa riippumatta alkuperäisen Power BI -raportin sivujen koosta tai mittasuhteista.
@@ -93,7 +101,10 @@ Ota huomioon seuraavat seikat ja rajoitukset, kun käytät **Vieminen PowerPoint
 * Power BI -palvelu käyttää PowerPoint-viennin kielenä Power BI:n kieliasetusta. Jos haluat tarkistaa kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![Hammasrataskuvake](media/end-user-powerpoint/power-bi-settings-icon.png) > **Asetukset** > **Yleiset** > **Kieli**.
 * Viedyn PowerPoint-tiedoston kansidian **Latausajankohta**-kellonajaksi määritetään tietokoneesi aikavyöhyke vientihetkellä.
 * Kun viet PPTX-tiedostoon, mukautettuja fontteja käyttävien teemojen avulla voit korvata mukautetun fontin oletusfontilla.
-* URL-suodattimia ei oteta tällä hetkellä huomioon, kun valitset viennin kohdalla **Nykyiset arvot**.
+* R-ja Python-toiminnolla luotuja visualisointeja ei tueta tällä hetkellä. Tällaiset visualisoinnit viedään tyhjinä kuvina PowerPointiin mukanaan virhesanoma siitä, ettei visualisointia tueta.
+
+
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
+[Kopioi visualisoinnit staattisina kuvina](../power-bi-visualization-copy-paste.md)    
 [Raportin tulostaminen](end-user-print.md)

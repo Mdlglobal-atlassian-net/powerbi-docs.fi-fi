@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/07/2020
+ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: 9f9a0afb766becefa5b74c5737795f6f227e7c27
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.openlocfilehash: f2aeb720221fa79aa95f9674aa1e3ac610b28c19
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79435762"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841729"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Raporttien tutkiminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -45,7 +45,7 @@ Power BI -mobiilisovelluksissa on kaksi kuvaketta raportteja varten:
 * ![Puhelinraportin kuvake](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) tarkoittaa raporttia, jossa on vähintään yksi puhelimelle optimoitu sivu, joka näkyy pystysuunnassa.
 
 > [!NOTE]
-> Kun pidät puhelinta vaaka-asennossa, saat aina vaakasuuntaisen asettelun, vaikka raporttisivulla olisi puhelinasettelu.
+> Kun pidät puhelinta vaaka-asennossa, saat aina vaakasuuntaisen asettelun, vaikka raporttisivulla olisi mobiiliasettelu.
 
 Jos haluat päästä raporttiin raporttinäkymästä, napauta **Enemmän vaihtoehtoja** (...) raporttinäkymän ruudun oikeassa yläkulmassa ja valitse **Avaa raportti**:
   

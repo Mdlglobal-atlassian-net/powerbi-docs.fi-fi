@@ -1,19 +1,19 @@
 ---
 title: Opeta Q&A:ta ymmärtämään kysymyksiä ja termejä Power BI:n Q&A:ssa
 description: Tietojen tutkiminen Power BI Q&A:n avulla
-author: mohaali
+author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/17/2019
-ms.author: mohaali
+ms.date: 04/21/2020
+ms.author: maggies
 LocalizationGroup: Ask questions of your datadefintion
-ms.openlocfilehash: 695ad9143aa7074e079ae8606a9ad0eb6f6c964f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e5b870201943b93bfdaec2881005785c2f3c470b
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874914"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82865768"
 ---
 # <a name="teach-qa-to-understand-questions-and-terms-in-power-bi-qa"></a>Opeta Q&A:ta ymmärtämään kysymyksiä ja termejä Power BI:n Q&A:ssa
 
@@ -26,7 +26,7 @@ Q&A-määrityksen osassa **Opeta Q&A:ta** voit harjoittaa Q&A:ta ymmärtämään
 
 1. Valitse Power BI Desktopissa **Mallinnus**-valintanauhassa **Q&A-määritys** > **Opeta Q&A:ta**.
 
-    ![Opeta Q&A:ta -toiminnon synonyymi punainen](media/qna-tooling-teach-synonym-red.png)
+    ![Opeta Q&A:ta -toiminnon synonyymi punainen](media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonym-red.png)
 
 2. Kirjoita lause, joka sisältää termin, jota Q&A ei tunnista, ja valitse **Lähetä**.
 
@@ -36,7 +36,7 @@ Q&A-määrityksen osassa **Opeta Q&A:ta** voit harjoittaa Q&A:ta ymmärtämään
     
 3. Anna määritelmä kohtaan **Määritä termit, joita Q&A ei ymmärtänyt**.
 
-    ![Opeta Q&A:ta -toiminnon synonyymin esikatselu](media/qna-tooling-teach-fixpreview.png)
+    ![Opeta Q&A:ta -toiminnon synonyymin esikatselu](media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-fixpreview.png)
 
 4. Esikatsele päivitettyä visualisointia valitsemalla **Tallenna**.
 
@@ -61,7 +61,7 @@ Q&A tunnistaa automaattisesti, kun tunnistamaton sana on substantiivi, käyttäe
 
 Täytä ruutuun termisi tiedot.
 
-![Opeta Q&A:ta -toiminnon synonyymin kehote](media/qna-tooling-synonym-prompt.png)
+![Opeta Q&A:ta -toiminnon synonyymin kehote](media/q-and-a-tooling-teach-q-and-a/qna-tooling-synonym-prompt.png)
 
 Jos annat synonyymiksi jotain muuta kuin tietomallin kentän, saatat saada epätoivottuja tuloksia.
 
@@ -73,17 +73,26 @@ Joskus saatat haluta määrittää termejä, jotka toimivat pohjana olevien tiet
 
 Täytä ruutuun ehto.
 
-![Opeta Q&A:ta -toiminnon synonyymin kehote](media/qna-tooling-adjectives.png)
+![Opeta Q&A:ta -toiminnon synonyymin kehote](media/q-and-a-tooling-teach-q-and-a/qna-tooling-adjectives.png)
 
 Esimerkkejä ehdoista, joita voit määrittää:
 
-- ”Maa”, joka on ”USA”
-- ”Maa”, joka ei ole ”USA”
-- ”Paino” > 2 000
-- ”Paino = 2 000
-- ”Paino” < 2 000
+- Maa, joka on USA
+- Maa, joka ei ole USA
+- Tuotteet > 100
+- Tuotteet on suurempi kuin 100
+- Tuotteet = 100
+- Tuotteet on 100
+- Tuotteet < 100
+- Tuotteet on pienempi kuin 100
 
-Voit määrittää vain yhden ehdon työkalujen kautta. Jos haluat määrittää monimutkaisempia ehtoja, luo DAX-toiminnolla laskettu sarake ja luo sitten yksi ehto tälle lasketulle sarakkeelle työkalujen avulla. Mittareita ei tueta. Käytä sen sijaan laskettuja sarakkeita.
+Näissä esimerkeissä Tuotteet voi olla joko sarakkeen nimi tai mittari. 
+
+Voit myös määrittää koosteen suoraan Q&A-lausekkeessa. Jos esimerkiksi Suositut tuotteet ovat tuotteita, joita on myyty vähintään 100 yksikköä, voit määrittää suosituiksi tuotteet, joiden myytyjen yksiköiden yhteenlaskettu määrä on suurempi kuin 100.  
+
+:::image type="content" source="media/q-and-a-tooling-teach-q-and-a/power-bi-qna-popular-products.png" alt-text="Määritä suositut tuotteet":::
+
+Voit määrittää vain yhden ehdon työkalujen kautta. Jos haluat määrittää monimutkaisempia ehtoja, luo DAX-toiminnolla laskettu sarake tai mittari ja luo sitten yksi ehto tälle sarakkeelle tai mittarille työkalujen avulla.
 
 ## <a name="manage-terms"></a>Hallitse termejä
 
@@ -93,10 +102,8 @@ Kun olet antanut määritelmät, voit palata katsomaan kaikkia tekemiäsi korjau
 
 2. Poista termit, joita et enää halua. Tällä hetkellä et voi muokata termejä. Jos haluat määrittää termin uudelleen, poista se ja määritä se uudelleen.
 
-    ![Q&A:n termien hallinta](media/qna-manage-terms.png)
+    ![Q&A:n termien hallinta](media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Luonnollisen kielen moduulin parantamiseen on olemassa joitain parhaita käytäntöjä. Katso lisätietoja seuraavasta artikkelista:
-
-* [Q&A:n parhaat käytännöt](q-and-a-best-practices.md)
+Luonnollisen kielen moduulin parantamiseen on olemassa joitain parhaita käytäntöjä. Lisätietoja: [Q&A:n parhaat käytännöt](q-and-a-best-practices.md).

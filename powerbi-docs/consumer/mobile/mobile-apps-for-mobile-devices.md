@@ -9,12 +9,12 @@ ms.date: 03/11/2020
 ms.author: painbar
 ms.custom: ''
 ms.reviewer: ''
-ms.openlocfilehash: 3eb8aafca2257bff12d3b248d4f3c1d43708e563
-ms.sourcegitcommit: abc8419155dd869096368ba744883b865c5329fa
+ms.openlocfilehash: 8e24258d7431996bcdcc1c049daa2a6cbd4f60b5
+ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79435395"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82841752"
 ---
 # <a name="what-are-the-power-bi-mobile-apps"></a>Mitä Power BI -mobiilisovellukset ovat?
 Power BI tarjoaa joukon mobiilisovelluksia iOS-, Android- ja Windows 10 -mobiililaitteisiin. Mobiilisovelluksissa muodostat yhteyden ja käytät pilvipalveluissa olevia tietoja ja paikallisia tietoja. 
@@ -31,7 +31,7 @@ Voit luoda raportteja Power BI Desktopissa. Voit luoda raporttinäkymiä sekä t
 
 | **Laite** | **Kohokohdat** |
 | --- | --- |
-| [![iPhone](./media/mobile-apps-for-mobile-devices/iphone-logo-50-px.png)](mobile-iphone-app-get-started.md) |**iPhone** kulkee mukana kaikkialla, ja sama koskee myös [iPhonen Power BI -mobiilisovelluksia](mobile-iphone-app-get-started.md). Power BI [-raporttien tarkastelemiseksi puhelimen erityisessä asettelu-näkymässä](mobile-apps-view-phone-report.md) voit [lisätä Power BI -palvelun Apple Watch-kelloon](mobile-apple-watch.md) ja [kysyä kysymyksiä Q&A virtuaaliselta analyytikolta](mobile-apps-ios-qna.md). <br/>[iOS:n Power BI -mobiilisovelluksen](mobile-iphone-app-get-started.md) käytön aloittaminen. |
+| [![iPhone](./media/mobile-apps-for-mobile-devices/iphone-logo-50-px.png)](mobile-iphone-app-get-started.md) |**iPhone** kulkee mukana kaikkialla, ja sama koskee myös [iPhonen Power BI -mobiilisovelluksia](mobile-iphone-app-get-started.md). Power BI [-raporttien tarkastelemiseksi erityisessä mobiiliasettelunäkymässä](mobile-apps-view-phone-report.md) voit [lisätä Power BI -palvelun Apple Watch-kelloon](mobile-apple-watch.md) ja [kysyä kysymyksiä Q&A virtuaaliselta analyytikolta](mobile-apps-ios-qna.md). <br/>[iOS:n Power BI -mobiilisovelluksen](mobile-iphone-app-get-started.md) käytön aloittaminen. |
 | [![iPad](./media/mobile-apps-for-mobile-devices/ipad-logo-50-px.png)](mobile-iphone-app-get-started.md) |**iPadissa** Power BI -mobiilisovellus näyttää raporttinäkymän ja raportit tavalla, jolla ne muotoiltiin Power BI -palvelua varten. Lisäksi voit tarkastella omia [Power BI-raporttipalvelimen ja raportointipalvelimen suorituskykymittareita ja raportteja](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) suoraan iPadista. Voit [asettaa tietoilmoituksia Power BI -mobiilisovellukseen ](mobile-set-data-alerts-in-the-mobile-apps.md) saadaksesi ilmoituksen, kun koontinäytön tiedot muuttuvat asettamiesi rajojen ulkopuolelle. <br/>[iOS:n Power BI -mobiilisovelluksen](mobile-iphone-app-get-started.md) käytön aloittaminen. |
 | [![Android-puhelin](media/mobile-apps-for-mobile-devices/android-phone-logo-50-px.png)](mobile-android-app-get-started.md) |**Android-puhelimen** Power BI -mobiilisovellus tuo Power BI:n palvelut suoraan taskuusi ja tarjoaa ajan tasalla olevan, kosketuskäyttöisen mobiiliyhteyden yritystietoihisi. Voit [suodattaa raportin maantieteellisen sijainnin mukaan](mobile-apps-geographic-filtering.md). Voit [skannata QR-koodin Android-puhelimellasi](mobile-apps-qr-code.md) ja siirtyä suoraan Power BI -raporttinäkymään tai raporttiin. <br/>[Android-laitteen Power BI -mobiilisovelluksen ](mobile-android-app-get-started.md)käytön aloittaminen. |
 | [![Android-tabletti](./media/mobile-apps-for-mobile-devices/android-tablet-logo-50-px.png)](mobile-android-app-get-started.md) |Tämä mobiilisovellus toimii useilla erilaisilla **Android-tableteilla** ja tarjoaa sinulle tarjoaa ajan tasalla olevan, kosketuskäyttöisen mobiiliyhteyden yritystietoihisi. Android-tabletissa Power BI -mobiilisovellus näyttää raporttinäkymät ja raportit tavalla, jolla ne muotoiltiin Power BI -palvelua varten. Voit myös [merkitä suosikkiraporttinäkymäsi ja raporttisi](mobile-apps-favorites.md), joten pääset käyttämään nopeasti niitä sekä suosituinta Power BI-raporttipalvelinta ja raportointipalveluiden suorituskykyilmaisimia ja raportteja. <br/>[Android-laitteen Power BI -mobiilisovelluksen ](mobile-android-app-get-started.md)käytön aloittaminen. |

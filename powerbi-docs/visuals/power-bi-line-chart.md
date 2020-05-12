@@ -2,27 +2,35 @@
 title: Viivakaaviot Power BI:ssä
 description: Viivakaaviot Power BI:ssä
 author: mihart
-ms.reviewer: amac
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/26/2019
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e46aa05ac326b5c959da8a29329fa92f4aec0b4d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 0f430747187729cbb939b67795ff0507770bb0f1
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73871071"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82867020"
 ---
 # <a name="line-charts-in-power-bi"></a>Viivakaaviot Power BI:ssä
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 Viivakaaviot ovat arvopisteiden sarjoja, jotka esitetään pisteillä ja yhdistetään suorilla viivoilla. Viivakaaviossa voi olla yksi tai useampi viiva. Viivakaavioissa on X- ja Y-akseli. 
 
 ![yksinkertainen viivakaavio](media/power-bi-line-charts/power-bi-line.png)
 
+
+
 ## <a name="create-a-line-chart"></a>Luo viivakaavio
 Näissä ohjeissa käytetään myynnin ja markkinoinnin mallisovellusta sellaisen viivakaavion luomiseen, joka näyttää tämän vuoden myynnin luokittain. Seuraa mukana hankkimalla mallisovellus appsource.comista.
+
+> [!NOTE]
+> Raportin jakaminen työtoverin kanssa Power BI:ssä edellyttää, että teillä kummallakin on oma Power BI Pro -käyttöoikeus tai että raportti on tallennettu Premium-kapasiteettiin.
 
 1. Aloita tyhjältä raporttisivulta. Jos käytät Power BI ‑palvelua, varmista, että avaat raportin [muokkausnäkymässä](../service-interact-with-a-report-in-editing-view.md).
 
@@ -45,7 +53,7 @@ Näissä ohjeissa käytetään myynnin ja markkinoinnin mallisovellusta sellaise
 
 6. Voit vaihtoehtoisesti [säätää kaavion tekstin väriä ja kokoa](power-bi-visualization-customize-title-background-and-legend.md). 
 
-    ![Suurenna fonttikokoa ja muuta Y-akselin fonttia](media/power-bi-line-charts/power-bi-line-3years.png)
+    ![Fonttikoon suurentaminen ja Y-akselin fontin muuttaminen](media/power-bi-line-charts/power-bi-line-3years.png)
 
 ## <a name="add-additional-lines-to-the-chart"></a>Lisää kaavioon lisäviivoja
 Viivakaavioissa voi olla useita eri viivoja. Ja joissakin tapauksissa viivojen arvot voivat olla niin erkautuvia, etteivät ne näy hyvin yhdessä. Katsotaanpa lisäviivojen lisäämistä nykyiseen kaavioomme ja sitä, miten voimme muotoilla kaaviota, kun viivojen esittämät arvot ovat hyvin erilaisia. 

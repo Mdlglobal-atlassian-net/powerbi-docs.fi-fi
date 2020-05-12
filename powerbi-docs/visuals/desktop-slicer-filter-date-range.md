@@ -1,30 +1,32 @@
 ---
 title: Suhteellisen päivämääräosittajan tai suodattimen käyttö Power BI:ssä
 description: Opi miten osittajaa tai suodatinta käytetään rajoittamaan suhteellisia päivämääräjoukkoja Power BI:ssä.
-author: mihart
+author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/06/2020
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9ce36bfa61b16bd30e59bc8491af80efdfdc8a35
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f63a56ea350d089b82eb7a18470e1bcc439d1151
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81006780"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866514"
 ---
-# <a name="use-a-relative-date-slicer-and-filter-in-power-bi"></a>Suhteellisen päivämääräosittajan ja -suodattimen käyttö Power BI:ssä
+# <a name="creating-a-relative-date-slicer-and-filter-in-power-bi"></a>Suhteellisen päivämääräosittajan ja -suodattimen luominen Power BI:ssä
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 **Suhteellisen päivämääräosittajan** tai **suhteellisen päivämääräsuodattimen** avulla voit käyttää aikasidonnaisia suodattimia missä tahansa tietomallisi päivämääräsarakkeessa. Voit esimerkiksi käyttää **suhteellisen päivämäärän osittajaa** näyttääksesi vain viimeisten 30 päivän (tai kuukauden tai kalenterikuukausien jne.) aikana tapahtuneen myynnin tiedot. Kun päivität tiedot, suhteellinen ajanjakso käyttää automaattisesti soveltuvaa suhteellisen päivämäärän rajoitusta.
 
 ![Näyttökuvassa on raportti, jossa näkyy suhteelliseen päivämäärän osittajaan osoittava nuoli.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png)
 
-## <a name="use-the-relative-date-range-slicer"></a>Suhteellisen päivämääräalueen osittajan käyttäminen
+Raportin jakaminen työtoverin kanssa Power BI:ssä edellyttää, että teillä kummallakin on oma Power BI Pro -käyttöoikeus tai että raportti on tallennettu Premium-kapasiteettiin.
+
+## <a name="create-the-relative-date-range-slicer"></a>Suhteellisen päivämääräalueen osittajan luominen
 
 Voit käyttää suhteellisen päivämäärän osittajaa kuten mitä muuta tahansa osittajaa. Luo **osittaja** raportillesi ja valitse sitten päivämääräarvo **Kenttä**-arvoksi. Seuraavassa kuvassa valitsimme *OrderDate*-kentän.
 
@@ -80,7 +82,7 @@ Jos valitset luettelosta **Kuukaudet** ja annat keskimmäiseksi asetukseksi *2*,
 
 Jos taas valitsit *Kuukaudet (Kalenteri)* , rajoitettu näyttö esittäisi tiedot ajalta 1.5.–30.6. (viimeiset kaksi täyttä kalenterikuukautta).
 
-## <a name="using-the-relative-date-range-filter"></a>Suhteellisen päivämääräalueen suodattimen käyttäminen
+## <a name="create-the-relative-date-range-filter"></a>Suhteellisen päivämääräalueen suodattimen luominen
 
 Voit myös luoda raporttisivullesi tai koko raportillesi suhteellisen päivämääräalueen suodattimen. Tee niin vetämällä päivämääräkenttä **sivutason suodattimien** tai **raporttitason alueen suodattimien** kohtiin **Kenttä**-ruudussa:
 
@@ -94,7 +96,7 @@ Kun valitset **suhteellisen päivämääräsuodatuksen**, näet kolme muokattava
 
 ![Näyttökuvassa näkyy raporttitason suodattimia sekä nuolia osoittamassa kohteiden näyttämisen kohteen.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-08.png)
 
-## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioon otettavat seikat
+## <a name="limitations-and-considerations"></a>Rajoitukset ja huomioitavat asiat
 
 **Suhteellisen päivämäärän osittajaa** ja suodatinta koskevat seuraavat rajoitukset ja huomioon otettavat seikat.
 
@@ -106,4 +108,5 @@ Kun valitset **suhteellisen päivämääräsuodatuksen**, näet kolme muokattava
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-Opettele [käyttämään ryhmittely ja lokerointia Power BI Desktopissa](../desktop-grouping-and-binning.md).
+- [Suhteellisen päivämääräosittajan ja -suodattimen käyttö Power BI:ssä](desktop-slicer-filter-date-range.md)
+- [Osittajat Power BI:ssä](power-bi-visualization-slicers.md)

@@ -10,10 +10,10 @@ ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: 1dfb75595de939f99bf269d67bf9c29a2f0db249
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "73871620"
 ---
 # <a name="save-a-report-in-power-bi-service-and-power-bi-desktop"></a>Raportin tallentaminen Power BI -palvelussa ja Power BI Desktopissa
@@ -27,8 +27,8 @@ Kun olet tehnyt muutoksia raporttiin Power BI:ssä, voit tallentaa sen, tallenta
 ### <a name="to-save-a-report"></a>Raportin tallentaminen:
 1. Jos yrität siirtyä pois raportista ja raportissa on muutoksia, Power BI näyttää kehotteen.
    
-   ![Muutosten tallentaminen](media/service-report-save/power-bi-unsaved.png)
-2. Toinen tapa tallentaa raportti on valita **TIEDOSTO** \> **Tallenna** tai **Tallenna nimellä**. Jos olet [Lukunäkymässä](consumer/end-user-reading-view.md), ainoastaan Tallenna nimellä -vaihtoehto on näkyvissä. 
+   ![Tallenna muutokset](media/service-report-save/power-bi-unsaved.png)
+2. Toinen tapa tallentaa raportti on valita **TIEDOSTO**\>**Tallenna** tai **Tallenna nimellä**. Jos olet [Lukunäkymässä](consumer/end-user-reading-view.md), ainoastaan Tallenna nimellä -vaihtoehto on näkyvissä. 
    
    ![Raportin tallentaminen](media/service-report-save/power-bi-save-new.png)
 3. Jos kyse on uudesta raportista (Tallenna) tai aiemmin luodun raportin uudesta versiosta (Tallenna nimellä), anna sille kuvaava nimi.  **Raportti lisätään aktiiviseen työtilaan**.

@@ -7,12 +7,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: mohaali
-ms.openlocfilehash: 02faed03e84c9d3a9f9ebd536116ffa0287dba4e
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: b5865219d84c8fa388f297824550fd715f0c2923
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841913"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866842"
 ---
 # <a name="best-practices-to-optimize-qa-in-power-bi"></a>Q&A:n optimoimisen parhaat käytännöt Power BI:ssä
 Yleisien lauseiden ja luonnollisen kielen käyttäminen tiedoista esitettävissä kysymyksissä on tehokasta. Vielä tehokkaampaa on, kun tiedot vastaavat, minkä Power BI:n Q&A-toiminto tekee.
@@ -195,8 +195,10 @@ Tämä vaihe koskee erityisesti Q&A:ta (ei Power BI -raportteja yleensä). Käy
 
 Tämä vaihe voi olla tärkeä. Silloinkin, kun taulukon ja sarakkeiden nimet ovat yksinkertaisia, Q&A:n käyttäjät esittävät kysymyksiä käyttämällä sanastoa, joka heille ensimmäisenä tulee mieleen. He eivät valitse esimääritetystä sarakeluettelosta. Mitä enemmän merkitseviä synonyymeja lisäät, sitä paremman kokemuksen käyttäjät saavat raportista. Jos haluat lisätä synonyymeja, siirry Power BI Desktopissa mallinäkymään, valitse Mallinnus-välilehti ja valitse kenttä tai taulukko. Ominaisuudet-ruudussa näkyy **Synonyymit**-ruutu, jossa voit lisätä synonyymeja.
 
-
-
-![Q&A:n Ominaisuudet-ruudun synonyymit](media/qna-modelling-pane-synonyms.png)
+![Q&A:n Ominaisuudet-ruudun synonyymit](media/q-and-a-best-practices/qna-modelling-pane-synonyms.png)
 
  Ole huolellinen lisätessäsi synonyymeja. Saman synonyymin lisääminen useampaan kuin yhteen sarakkeeseen tai taulukkoon luo moniselitteisyyttä. Q&A käyttää mahdollisuuksien mukaan kontekstia valitakseen moniselitteisten synonyymien välillä, mutta kaikkiin kysymyksiin kontekstia ei ole riittävästi. Jos esimerkiksi käyttäjä esittää kysymyksen ”laske asiakkaat” ja mallissasi on kolme eri asiaa synonyymilla ”asiakas” kanssa, käyttäjä ei välttämättä saa hakemaansa vastausta. Varmista näissä tapauksissa, että ensisijainen synonyymi on ainutkertainen, sillä sitä käytetään oikaisussa. Se voi varoittaa käyttäjää moniselitteisyydestä (esimerkiksi oikaisu kysymyksestä ”näytä arkistoitujen asiakastietueiden määrä”) ja antaa vihjeen, että käyttäjä haluaa ehkä esittää kysymyksen toisin.
+
+## <a name="next-steps"></a>Seuraavat vaiheet
+
+[Johdatus Power BI:n Q&A:han](q-and-a-intro.md)

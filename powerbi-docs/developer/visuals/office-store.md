@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: 08790c8c0c751f935d62357d86b6976a81dc977b
-ms.sourcegitcommit: 8eeb784fd46321680367ac913ef976aeedaa7766
+ms.openlocfilehash: 90e914cf9b5c03542436750253fd959808403214
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80621471"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82613553"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Power BI -visualisointien julkaiseminen kumppanikeskuksessa
 
@@ -101,9 +101,11 @@ Lähetä Power BI -visualisointi kumppanikeskukseen noudattamalla alla olevia oh
 
 ## <a name="tracking-submission-status-and-usage"></a>Lähetyksen tilan ja käytön seuraaminen
 
-Voit tarkistaa [vahvistuskäytännöt](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
+* Voit tarkistaa [vahvistuskäytännöt](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
-Kun olet lähettänyt visualisoinnin, voit seurata sen tilaa [sovelluskoontinäytössä](https://sellerdashboard.microsoft.com/Application/Summary/).
+* Kun olet lähettänyt visualisoinnin, voit seurata sen tilaa [sovelluskoontinäytössä](https://sellerdashboard.microsoft.com/Application/Summary/).
+
+* Jotta ymmärtäisit, milloin Power BI -visualisointi on ladattavissa Appsourcesta, tarkista Power BI -visualisoinnit [julkaisun aikajanalla](power-bi-custom-visuals-certified.md#publication-timeline).
 
 ## <a name="certify-your-visual"></a>Visualisoinnin sertifioiminen
 

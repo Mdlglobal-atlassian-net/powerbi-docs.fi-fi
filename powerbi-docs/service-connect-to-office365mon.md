@@ -10,10 +10,10 @@ ms.date: 11/26/2019
 ms.author: painbar
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 8e9563d10d80290a48e20cd2d6a889831d34924b
-ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "74548587"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Yhteyden muodostaminen Office365Moniin Power BI:n avulla
@@ -31,10 +31,10 @@ Muodosta yhteys [Office365Mon-mallisovellukseen](https://msit.powerbi.com/groups
 2. Valitse **Palvelut**-ruudussa **Nouda**.
    
    ![](media/service-connect-to-office365mon/pbi_getservices.png) 
-3. Valitse **Office365Mon** \> **Nouda**.
+3. Valitse **Office365Mon** \> **Hae**.
    
    ![](media/service-connect-to-office365mon/o365mon.png)
-4. Valitse todennusmenetelmäksi **oAuth2**\>**Kirjaudu sisään**.
+4. Valitse todennusmenetelmäksi **oAuth2** \> **Kirjaudu sisään**.
    
    Anna pyydettäessä Office365Monin tunnistetiedot ja noudata todennusprosessia.
    

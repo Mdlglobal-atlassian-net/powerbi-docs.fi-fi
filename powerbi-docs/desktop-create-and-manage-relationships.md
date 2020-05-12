@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/09/2020
+ms.date: 05/05/2020
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 6f71cf9b8325441fe3827a259daf3bcbe15765a5
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 373ad0d230b3d9d7b9d35909d086b0611637f0e2
+ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76709926"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82866330"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Suhteiden luominen ja hallinta Power BI Desktopissa
 Jos tuot useita taulukoita, luot todennäköisesti analyyseja kaikkien tuotavien taulukoiden tietojen perusteella. Näiden taulukoiden välisiä suhteita tarvitaan tuloksien tarkkaan laskemiseen ja oikeiden tietojen esittämiseen raporteissa. Power BI Desktop tekee näiden suhteiden luomisesta helppoa. Itse asiassa sinun ei useimmiten tarvitse tehdä mitään, sillä automaattinen tunnistus tekee kaiken puolestasi. Joissakin tilanteissa sinun on ehkä luotava suhteita itse tai muokattava niitä. Joka tapauksessa on tärkeää ymmärtää Power BI Desktopissa olevia suhteita ja miten niitä voi luoda ja muokata.
@@ -271,7 +271,7 @@ Jos yksisuuntaisella ristisuodatuksella luodaan projektin tunnit sisältävä yh
 
  ![Ristisuodatussuunta](media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png)
 
-Suodattimen määritystä käytetään **Yritysprojekti**-taulukosta **YrityksenTyöntekijä**-taulukon suuntaan (kuten seuraavassa kuvassa) mutta ei vastavirtaan **YrityksenTyöntekijä**-taulukkoon. 
+Suodattimen määritystä käytetään **Yritysprojekti**-taulukosta **Projektitunnit**-taulukon suuntaan (kuten seuraavassa kuvassa) mutta ei vastavirtaan **YrityksenTyöntekijä**-taulukkoon. 
 
  ![Esimerkki ristisuodatuksesta](media/desktop-create-and-manage-relationships/candmrel_singledircrossfiltering.png)
 

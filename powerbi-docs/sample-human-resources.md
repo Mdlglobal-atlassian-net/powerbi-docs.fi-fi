@@ -10,10 +10,10 @@ ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 8124a80f471e33ebbd140a30d6a49e2a762206ee
-ms.sourcegitcommit: 444f7fe5068841ede2a366d60c79dcc9420772d4
+ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 05/05/2020
 ms.locfileid: "80404093"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Power BI:n henkilöstöhallintomalli: aloita esittely
@@ -135,7 +135,7 @@ Tutustutaan raporttiin muokkausnäkymässä. Voit muuttaa ympyräkaavioita näyt
 9. Valitse **Henkilöstöhallintomalli** yläreunan siirtymisruudusta koontinäyttöön palaamiseksi. Voit halutessasi tallentaa raporttiin tekemäsi muutokset.
 
 ## <a name="bad-hires"></a>Huonot palkkaukset
-Viimeinen tutustuttava alue ovat huonot palkkaukset. Huonoiksi palkkauksiksi määritellään työntekijät, joiden palkkaus kesti alle 60 päivää. Palkkaamme nopeasti, mutta palkkaammeko hyviä ehdokkaita?
+Viimeinen tutustuttava alue ovat huonot palkkaukset. Huonoiksi palkkauksiksi määritellään työntekijät, joiden työsuhde kesti alle 60 päivää. Palkkaamme nopeasti, mutta palkkaammeko hyviä ehdokkaita?
 
 1. Valitse **Huonojen palkkausten prosenttimäärä aktiivisista ikäryhmän mukaan** -koontinäyttöruutu. Raportti avautuu kolmannen välilehden, **Huonot palkkaukset**, kohdalla.
 
