@@ -8,26 +8,26 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 723cc7b2767f6a5ee4394bca74e507fc688b3af8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ace93dfe358c85e54863dece0303c889c6a766b2
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75223655"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279591"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Power BI Desktopin DirectQuery-mallin ohjeet
 
 Tässä artikkelissa käsitellään tietojen mallintajia, jotka kehittävät Power BI:n DirectQuery-malleja, jotka on kehitetty joko Power BI Desktopin tai Power BI -palvelun avulla. Tässä kuvataan DirectQueryn käyttötapauksia, rajoituksia ja ohjeita. Ohjeiden tarkoituksena on erityisesti auttaa selvittämään, onko DirectQuery sopiva tila mallillesi, ja parantaa raporttiesi suoritustehoa DirectQuery-mallien perusteella. Tämä artikkeli koskee Power BI -palvelussa tai Power BI -raporttipalvelimessa isännöityjä DirectQuery-malleja.
 
-Tämän artikkelin tarkoituksena ei ole käydä DirectQuery-mallia läpi kokonaisvaltaisesti. Saat lisätietoja [DirectQuery-mallit Power BI Desktopissa](../desktop-directquery-about.md) -artikkelista. Jos haluat syvellisempiä tietoja, lue suoraan tekninen raportti [DirectQuery SQL Server 2016 Analysis Servicesissä](https://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf). Kannattaa muistaa, että tekninen raportti kuvaa DirectQueryn käyttämistä SQL Server Analysis Servicesissä. Suurta osaa sisällöstä voidaan kuitenkin soveltaa Power BI:n DirectQuery -malleihin.
+Tämän artikkelin tarkoituksena ei ole käydä DirectQuery-mallia läpi kokonaisvaltaisesti. Saat lisätietoja [DirectQuery-mallit Power BI Desktopissa](../connect-data/desktop-directquery-about.md) -artikkelista. Jos haluat syvellisempiä tietoja, lue suoraan tekninen raportti [DirectQuery SQL Server 2016 Analysis Servicesissä](https://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf). Kannattaa muistaa, että tekninen raportti kuvaa DirectQueryn käyttämistä SQL Server Analysis Servicesissä. Suurta osaa sisällöstä voidaan kuitenkin soveltaa Power BI:n DirectQuery -malleihin.
 
-Tämä artikkeli ei suoranaisesti käsittele yhdistelmämalleja. Yhdistelmämalli koostuu vähintään yhdestä DirectQuery-lähteestä. Tässä artikkelissa kuvatut ohjeet ovat koskevat kuitenkin  – ainakin osittain – yhdistelmämallin suunnittelua. Tässä artikkelissa ei kuitenkaan käsitellä tuontitaulukoiden yhdistämisen vaikutuksia DirectQuery-taulukoihin. Jos haluat lisätietoja, katso [Yhdistelmämallien käyttäminen Power BI Desktopissa](../desktop-composite-models.md).
+Tämä artikkeli ei suoranaisesti käsittele yhdistelmämalleja. Yhdistelmämalli koostuu vähintään yhdestä DirectQuery-lähteestä. Tässä artikkelissa kuvatut ohjeet ovat koskevat kuitenkin  – ainakin osittain – yhdistelmämallin suunnittelua. Tässä artikkelissa ei kuitenkaan käsitellä tuontitaulukoiden yhdistämisen vaikutuksia DirectQuery-taulukoihin. Jos haluat lisätietoja, katso [Yhdistelmämallien käyttäminen Power BI Desktopissa](../transform-model/desktop-composite-models.md).
 
 On tärkeää ymmärtää, että DirectQuery-mallit asettavat erilaisen kuormituksen Power BI -ympäristölle (Power BI-palvelulle tai Power BI-raporttipalvelimelle) ja myös pohjana oleville tietolähteille. Jos päätät, että DirectQuery on sopiva suunnittelumenetelmä, suosittelemme, että otat oikeat henkilöt mukaan projektiin. Huomaamme usein, että DirectQuery-mallin onnistunut käyttöönotto on seurausta siitä, että IT-ammattilaisten ryhmä työskentelee tiiviissä yhteistyössä. Ryhmä koostuu yleensä mallien kehittäjistä ja lähdetietokantojen järjestelmänvalvojista. Siihen voi kuulua myös tietoarkkitehtejä ja tietovarastojen sekä keräämisen, muuntamisen ja lataamisen kehittäjiä. Usein optimointeja on sovellettava suoraan tietolähteeseen hyvien suorituskykytulosten saavuttamiseksi.
 
 ## <a name="design-in-power-bi-desktop"></a>Suunnitelu Power BI Desktopissa
 
-Sekä Azure SQL Data Warehouse- että Azure HDInsight Spark -tietolähteet voidaan yhdistää suoraan ilman tarvetta käyttää Power BI Desktopia. Tämä tehdään Power BI -palvelussa ”hankkimalla tiedot” ja valitsemalla Tietokannat-ruutu. Jos haluat lisätietoja, lue artikkeli [Azure SQL Data Warehouse ja DirectQuery](../service-azure-sql-data-warehouse-with-direct-connect.md).
+Sekä Azure SQL Data Warehouse- että Azure HDInsight Spark -tietolähteet voidaan yhdistää suoraan ilman tarvetta käyttää Power BI Desktopia. Tämä tehdään Power BI -palvelussa ”hankkimalla tiedot” ja valitsemalla Tietokannat-ruutu. Jos haluat lisätietoja, lue artikkeli [Azure SQL Data Warehouse ja DirectQuery](../connect-data/service-azure-sql-data-warehouse-with-direct-connect.md).
 
 Vaikka suora yhteys on kätevä, emme suosittele tämän lähestymistavan käyttämistä. Pääsyy on se, että mallirakennetta ei voi päivittää pohjana olevan tietolähderakenteen muuttuessa.
 
@@ -77,8 +77,8 @@ DirectQuery-malli voidaan optimoida monella tavalla, kuten seuraavassa luettelos
     Tähän ohjeistukseen on yksi poikkeus, ja se koskee [COMBINEVALUES](/dax/combinevalues-function-dax)-DAX-funktion käyttämistä. Tämän funktion tarkoituksena on tukea monisarakkeisia mallien yhteyksiä. Sen sijaan, että se loisi suhteen käyttämän lausekkeen, se luo monisarakkeisen SQL-liittymispredikaatin.
 - **Vältä suhteita ”Unique Identifier” -sarakkeissa:** Power BI ei suoraan tue yksilöivän tunnisteen tietotyyppiä (GUID). Kun määrität suhdetta tämän tyypin sarakkeiden välille, Power BI muodostaa lähdekyselyn, jossa on liitos, johon liittyy tyyppimuunnos. Tämä kyselyajan tietojen muuntaminen johtaa usein huonoon suorituskykyyn. Ellei tätä tapausta optimoida, ainoa tapa tämän kiertämiseen on luoda sarakkeet eri tietotyypillä taustatietokannassa.
 - **Piilota suhteiden yhden puolen sarake:** Suhteen yhden puolen sarake tulisi olla piilotettuna. (Se on yleensä dimensiotyypin taulukoiden perusavainsarake.) Kun se on piilotettu, se ei ole käytettävissä **Kentät**-ruudussa, joten sitä ei voi käyttää visualisoinnin määrittämiseen. Monen puolen sarake voi pysyä näkyvissä, jos raporttien ryhmitteleminen tai suodattaminen on hyödyllistä sarakkeiden arvojen mukaan. Harkitse esimerkiksi mallia, jossa **Myynti**- ja **Tuote**-taulukoiden välillä on suhde. Suhdesarakkeet sisältävät tuotteen SKU-arvot (varastointiyksikköarvot). Jos tuotteen SKU on lisättävä visualisointeihin, sen tulee näkyä vain **Myynti**-taulukossa. Kun tämän sarakkeen avulla suodatetaan tai ryhmitetään visualisointia, Power BI luo kyselyn, jonka ei tarvitse liittyä **Myynti**- ja **Tuote**-taulukoihin.
-- **Pakota eheys määrittämällä suhteita:** DirectQuery-suhteiden **Oleta viite-eheys**-ominaisuus määrittää, muodostaako Power BI lähdekyselyt käyttämällä sisäliitosta ulkoliitoksen sijaan. Yleensä se parantaa kyselyn tehokkuutta, mutta tämä riippuu kuitenkin relaatiotietokantalähteen ominaisuuksista. Lisätietoja on artikkelissa [Oleta viite-eheys -asetus Power BI Desktopissa](../desktop-assume-referential-integrity.md).
-- **Vältä kaksisuuntaisen suhteen suodatuksen käyttöä:** Kaksisuuntaisen suhteiden suodatuksen käyttö voi johtaa kyselylausekkeisiin, jotka eivät toimi kunnolla. Käytä tätä suhdeominaisuutta vain tarvittaessa. Yleensä tilanne on tämä silloin, kun monta-moneen-suhde otetaan käyttöön välitaulukon kautta. Lisätietoja on kohdassa [Moni-moneen-kardinaliteetin sisältävien suhteiden käyttäminen Power BI Desktopissa](../desktop-many-to-many-relationships.md).
+- **Pakota eheys määrittämällä suhteita:** DirectQuery-suhteiden **Oleta viite-eheys**-ominaisuus määrittää, muodostaako Power BI lähdekyselyt käyttämällä sisäliitosta ulkoliitoksen sijaan. Yleensä se parantaa kyselyn tehokkuutta, mutta tämä riippuu kuitenkin relaatiotietokantalähteen ominaisuuksista. Lisätietoja on artikkelissa [Oleta viite-eheys -asetus Power BI Desktopissa](../connect-data/desktop-assume-referential-integrity.md).
+- **Vältä kaksisuuntaisen suhteen suodatuksen käyttöä:** Kaksisuuntaisen suhteiden suodatuksen käyttö voi johtaa kyselylausekkeisiin, jotka eivät toimi kunnolla. Käytä tätä suhdeominaisuutta vain tarvittaessa. Yleensä tilanne on tämä silloin, kun monta-moneen-suhde otetaan käyttöön välitaulukon kautta. Lisätietoja on kohdassa [Moni-moneen-kardinaliteetin sisältävien suhteiden käyttäminen Power BI Desktopissa](../transform-model/desktop-many-to-many-relationships.md).
 - **Rajaa rinnakkaisia kyselyitä:** Voit valita, enimmäismäärän yhteyksille, jotka DirectQuery avaa kullekin pohjana olevalle tietolähteelle. Se määrittää, montako kyselyä tietolähteeseen lähetetään samanaikaisesti.
 
     ![Power BI Desktop -ikkuna on avoinna ja nykyisen tiedoston DirectQuery-sivu on valittuna. Yhteyksien enimmäismäärä tietolähdettä kohden -ominaisuus on korostettu.](media/directquery-model-guidance/directquery-model-guidance-desktop-options-current-file-directquery.png)
@@ -121,9 +121,9 @@ Ota yllä mainittujen optimointitekniikoiden lisäksi huomioon myös se, että k
 
 ## <a name="convert-to-a-composite-model"></a>Yhdistelmämalliksi muuntaminen
 
-Tuonti- ja DirectQuery-mallien edut voidaan yhdistää yhdeksi malliksi määrittämällä mallitaulukoiden tallennustila. Taulukon tallennustila voi olla tuonti tai DirectQuery tai molemmat, joka tunnetaan nimellä kaksoistaulukko. Kun malli sisältää taulukoita, joilla on eri tallennustilat, sitä kutsutaan yhdistelmämalliksi. Jos haluat lisätietoja, katso [Yhdistelmämallien käyttäminen Power BI Desktopissa](../desktop-composite-models.md).
+Tuonti- ja DirectQuery-mallien edut voidaan yhdistää yhdeksi malliksi määrittämällä mallitaulukoiden tallennustila. Taulukon tallennustila voi olla tuonti tai DirectQuery tai molemmat, joka tunnetaan nimellä kaksoistaulukko. Kun malli sisältää taulukoita, joilla on eri tallennustilat, sitä kutsutaan yhdistelmämalliksi. Jos haluat lisätietoja, katso [Yhdistelmämallien käyttäminen Power BI Desktopissa](../transform-model/desktop-composite-models.md).
 
-Voit toteuttaa monia toiminnallisia ja suorituskykyyn liittyviä parannuksia muuntamalla DirectQuery-mallin yhdistelmämalliksi. Yhdistelmämalli voi integroida useamman kuin yhden DirectQuery-lähteen, ja se voi sisältää myös koosteita. Koostetaulukoita voidaan lisätä DirectQuery-taulukoihin, jos haluat tuoda yhteenvetoesityksen taulukosta. Niillä voi saavuttaa merkittäviä suorituskyvyn parannuksia, kun visualisoinnit suorittavat kyselyjä ylemmän tason koosteille. Saat lisätietoja ohjeartikkelista [Koosteet Power BI Desktopissa](../desktop-aggregations.md).
+Voit toteuttaa monia toiminnallisia ja suorituskykyyn liittyviä parannuksia muuntamalla DirectQuery-mallin yhdistelmämalliksi. Yhdistelmämalli voi integroida useamman kuin yhden DirectQuery-lähteen, ja se voi sisältää myös koosteita. Koostetaulukoita voidaan lisätä DirectQuery-taulukoihin, jos haluat tuoda yhteenvetoesityksen taulukosta. Niillä voi saavuttaa merkittäviä suorituskyvyn parannuksia, kun visualisoinnit suorittavat kyselyjä ylemmän tason koosteille. Saat lisätietoja ohjeartikkelista [Koosteet Power BI Desktopissa](../transform-model/desktop-aggregations.md).
 
 ## <a name="educate-users"></a>Käyttäjien kouluttaminen
 
@@ -137,7 +137,7 @@ Kun raportteja toimitetaan muuttuvista tietolähteistä, varmista, että opetat 
 
 Saat lisätietoja DirectQuerystä seuraavista resursseista:
 
-- [DirectQuery-mallit Power BI Desktopissa](../desktop-directquery-about.md)
-- [DirectQueryn käyttö Power BI Desktopissa](../desktop-use-directquery.md)
-- [Power BI Desktopin DirectQuery-mallin vianmääritys](../desktop-directquery-troubleshoot.md)
+- [DirectQuery-mallit Power BI Desktopissa](../connect-data/desktop-directquery-about.md)
+- [DirectQueryn käyttö Power BI Desktopissa](../connect-data/desktop-use-directquery.md)
+- [Power BI Desktopin DirectQuery-mallin vianmääritys](../connect-data/desktop-directquery-troubleshoot.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

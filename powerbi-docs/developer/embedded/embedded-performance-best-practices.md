@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: 7284532d95cce780f4022477faab9033adcd764a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c619f37ac062eec02eb379ba7cd97731254a171a
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79492602"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279384"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Power BI Embeddedin suorituskykyä parantavat parhaat käytännöt
 
@@ -59,7 +59,7 @@ Kun upotat useita raportteja samaan iframe-kehykseen, älä luo uutta iframea ku
 
 Power BI Premiumi -kapasiteettia tai Power BI Embedded -kapasiteettia käyttävät organisaatiot voivat hyödyntää kyselyn tallentamista välimuistiin tietojoukkoon liittyvien raporttien nopeuttamiseksi.
 
-[Lue lisätietoja kyselyiden tallentamisesta välimuistiin Power BI:ssä](../../power-bi-query-caching.md).
+[Lue lisätietoja kyselyiden tallentamisesta välimuistiin Power BI:ssä](../../connect-data/power-bi-query-caching.md).
 
 ## <a name="preload"></a>Esilataus
 
@@ -99,7 +99,7 @@ Välimuistissa olevat tiedot hahmonnetaan, kun ne ovat käytettävissä, mutta l
 Jos haluat tarkastella raporttielementtien suorituskykyä, voit käyttää Power BI Desktopin suorityskyvyn analysointia.
 Suorityskyvyn analysointi -toiminnon avulla voit tarkastella ja kirjata lokeja, jotka mittaavat kunkin raporttielementin suorityskyvyn.
 
-[Lue lisätietoja suorityskyvyn analysoinnista](../../desktop-performance-analyzer.md).
+[Lue lisätietoja suorityskyvyn analysoinnista](../../create-reports/desktop-performance-analyzer.md).
 
 > [!NOTE]
 > Muista aina verrata upotetun raportin suorituskykyä suorituskykyyn powerbi.comissa. Tämä saattaa auttaa ymmärtämään suorituskykyyn liittyvien ongelmien alkuperän.

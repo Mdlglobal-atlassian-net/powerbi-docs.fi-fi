@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 5560181f2fc52a02eebce274d88dc66517181517
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7816fd6e75c9b8925ba0d707f6a63f58af546fcf
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79205776"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279476"
 ---
 # <a name="data-reduction-techniques-for-import-modeling"></a>Tietojen vähentämisen tekniikat tuonnin mallinnusta varten
 
@@ -23,8 +23,8 @@ Tuontimalleihin on ladattu pakattuja ja optimoituja tietoja, jotka VertiPaq-säi
 
 VertiPaq-säilömoduulin tuottamista tehokkuuseduista huolimatta on tärkeää pyrkiä minimoimaan malleihin ladatut tiedot. Tämä pätee erityisesti suuriin malleihin tai malleihin, joiden odotetaan kasvavan suuriksi ajan mittaan. Neljä vakuuttavaa syytä:
 
-- Kapasiteettisi ei välttämättä tue suurempia mallin kokoja. Jaettu kapasiteetti voi isännöidä enintään 1 gigatavun kokoisia malleja, kun taas Premium-kapasiteetit voivat isännöidä jopa 13 gigatavun kokoisia malleja. Lisätietoja on artikkelissa [Power BI Premiumin suurten tietojoukkojen tuki](../service-premium-large-datasets.md).
-- Pienemmät mallikoot vähentävät kapasiteettiresursseihin, erityisesti muistiin, liittyviä kiistoja. Tämän ansiosta enemmän malleja voidaan ladata samanaikaisesti entistä pidemmän aikaa, joten poistoprosentit putoavat. Katso lisätietoja artikkelista [Premium-kapasiteettien hallinta](../service-premium-capacity-manage.md).
+- Kapasiteettisi ei välttämättä tue suurempia mallin kokoja. Jaettu kapasiteetti voi isännöidä enintään 1 gigatavun kokoisia malleja, kun taas Premium-kapasiteetit voivat isännöidä jopa 13 gigatavun kokoisia malleja. Lisätietoja on artikkelissa [Power BI Premiumin suurten tietojoukkojen tuki](../admin/service-premium-what-is.md).
+- Pienemmät mallikoot vähentävät kapasiteettiresursseihin, erityisesti muistiin, liittyviä kiistoja. Tämän ansiosta enemmän malleja voidaan ladata samanaikaisesti entistä pidemmän aikaa, joten poistoprosentit putoavat. Katso lisätietoja artikkelista [Premium-kapasiteettien hallinta](../admin/service-premium-capacity-manage.md).
 - Pienemmissä malleissa tietojen päivitys on nopeampaa, joten tuloksena on pienemmät viiveet raportoinnissa, suurempi tietojoukon päivitysnopeus ja vähemmän painetta lähdejärjestelmässä ja kapasiteettiresursseissa.
 - Pienemmät taulukon rivimäärät voivat johtaa nopeampaan laskennan arviointiin, mikä voi tuottaa kyselyssä paremman yleisen suorituskyvyn.
 
@@ -88,7 +88,7 @@ Power Query -kyselyitä, joiden tarkoituksena on tukea tietojen integrointia mui
 
 ## <a name="disable-auto-datetime"></a>Automaattisen päivämäärän ja ajan poistaminen käytöstä
 
-Power BI Desktopissa on asetus nimeltä _Automaattinen päivämäärä ja aika_. Kun se on käytössä, se luo piilotetun automaattisen päivämäärä- ja aikataulukon päivämääräsarakkeille, jotka tukevat raportin tekijöitä määritettäessä suodattimia, ryhmittelyä ja porautumista kalenterin aikajaksoille. Piilotetut taulukot ovat itse asiassa laskettuja taulukoita, jotka suurentavat mallin kokoa. Ohjeita tämän asetuksen käyttämiseen on artikkelissa [Power BI Desktopin automaattisen päivämäärän ja ajan ohjeet](../desktop-auto-date-time.md).
+Power BI Desktopissa on asetus nimeltä _Automaattinen päivämäärä ja aika_. Kun se on käytössä, se luo piilotetun automaattisen päivämäärä- ja aikataulukon päivämääräsarakkeille, jotka tukevat raportin tekijöitä määritettäessä suodattimia, ryhmittelyä ja porautumista kalenterin aikajaksoille. Piilotetut taulukot ovat itse asiassa laskettuja taulukoita, jotka suurentavat mallin kokoa. Ohjeita tämän asetuksen käyttämiseen on artikkelissa [Power BI Desktopin automaattisen päivämäärän ja ajan ohjeet](../transform-model/desktop-auto-date-time.md).
 
 ## <a name="switch-to-mixed-mode"></a>Vaihda yhdistelmätilaan
 
@@ -96,12 +96,13 @@ Power BI Desktopin yhdistelmätilan rakenne tuottaa yhdistelmämallin. Sen avull
 
 Tehokas menetelmä pienentää mallin kokoa on määrittää Tallennustilan tila -ominaisuuden arvoksi DirectQuery suuremmissa tietotyyppisissä taulukoissa. Ota huomioon, että tämä rakennemenetelmä voi toimia hyvin edellä käsitellyn [Ryhmittelyperuste ja yhteenveto](#group-by-and-summarize) -tekniikan kanssa. Esimerkiksi myynnin yhteenvetotietoja voidaan käyttää suorituskykyisen yhteenvetoraportoinnin saavuttamiseen. Porautumissivulla voidaan näyttää tarkka myynti tietyllä (ja suppealla) suodatuskontekstilla, jotta kaikki kontekstiin sisältyvät myyntitilaukset näkyvät. Tässä esimerkissä porautumissivu sisältää DirectQuery-taulukkoon perustuvia visualisointeja myyntitilauksen tietojen noutamiseksi.
 
-Yhdistelmämalleihin liittyy kuitenkin useita tietoturva- ja suorituskykyvaikutuksia. Lisätietoja on artikkelissa [Yhdistelmämallien käyttäminen Power BI Desktopissa](../desktop-composite-models.md).
+Yhdistelmämalleihin liittyy kuitenkin useita tietoturva- ja suorituskykyvaikutuksia. Lisätietoja on artikkelissa [Yhdistelmämallien käyttäminen Power BI Desktopissa](../transform-model/desktop-composite-models.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 Lisätietoja Power BI:n tuontimallin rakenteesta on seuraavissa artikkeleissa:
 
-- [Yhdistelmämallien käyttäminen Power BI Desktopissa](../desktop-composite-models.md)
-- [Tallennustilan tila Power BI Desktopissa](../desktop-storage-mode.md)
+- [Yhdistelmämallien käyttäminen Power BI Desktopissa](../transform-model/desktop-composite-models.md)
+- [Tallennustilan tila Power BI Desktopissa](../transform-model/desktop-storage-mode.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+

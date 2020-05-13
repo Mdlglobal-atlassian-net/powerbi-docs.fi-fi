@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/11/2019
 ms.author: painbar
-ms.openlocfilehash: ff33bc2005918ba08c6098afd91a020e0cb6ba79
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 288ac6620af03c49d0a7f96e219e88d855381caf
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435808"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279545"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Tietoilmoitusten määrittäminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -29,7 +29,7 @@ Voit määrittää ilmoituksia ruuduille, jos sinulla on Power BI Pro -käyttöo
 > [!WARNING]
 > Aineistoperäiset ilmoitukset antavat tietoja lähdetiedoistasi. Jos laitteesi varastetaan, suosittelemme Power BI -palvelun avaamista ja kaikkien aineistoperäisten ilmoitussääntöjen poistamista käytöstä. 
 > 
-> Lue lisää [tietoilmoitusten hallinnasta Power BI -palvelussa](../../service-set-data-alerts.md).
+> Lue lisää [tietoilmoitusten hallinnasta Power BI -palvelussa](../../create-reports/service-set-data-alerts.md).
 > 
 > 
 
@@ -58,7 +58,7 @@ Voit määrittää ilmoituksia ruuduille, jos sinulla on Power BI Pro -käyttöo
    ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-add-another-alert-rule.png)
 
 ### <a name="manage-alerts-on-your-iphone-or-ipad"></a>Ilmoitusten hallinta iPhonella tai iPadilla
-Voit hallita yksittäisiä ilmoituksia mobiililaitteessasi tai [hallita kaikkia ilmoituksiasi Power BI -palvelussa](../../service-set-data-alerts.md).
+Voit hallita yksittäisiä ilmoituksia mobiililaitteessasi tai [hallita kaikkia ilmoituksiasi Power BI -palvelussa](../../create-reports/service-set-data-alerts.md).
 
 1. Koontinäytössä napauta numero- tai mittariruutua, jossa on ilmoitus.  
    
@@ -92,7 +92,7 @@ Voit hallita yksittäisiä ilmoituksia mobiililaitteessasi tai [hallita kaikkia 
 8. Valitse **Tallenna**.
 
 ### <a name="manage-alerts-on-an-android-device"></a>Ilmoitusten hallinta Android-laitteessa
-Voit hallita yksittäisiä ilmoituksia Power BI -mobiilisovelluksessa tai [hallita kaikkia ilmoituksiasi Power BI -palvelussa](../../service-set-data-alerts.md).
+Voit hallita yksittäisiä ilmoituksia Power BI -mobiilisovelluksessa tai [hallita kaikkia ilmoituksiasi Power BI -palvelussa](../../create-reports/service-set-data-alerts.md).
 
 1. Koontinäytössä napauta kortti- tai mittariruutua, jossa on ilmoitus.  
 2. Napauta kellokuvaketta ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-filled-alert-bell.png).  
@@ -131,7 +131,7 @@ Voit hallita yksittäisiä ilmoituksia Power BI -mobiilisovelluksessa tai [halli
    ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-add-another-alert.png)
 
 ### <a name="manage-alerts-on-a-windows-device"></a>Ilmoitusten hallinta Windows-laitteessa
-Voit hallita yksittäisiä ilmoituksia Power BI -mobiilisovelluksessa tai [hallita kaikkia ilmoituksiasi Power BI -palvelussa](../../service-set-data-alerts.md).
+Voit hallita yksittäisiä ilmoituksia Power BI -mobiilisovelluksessa tai [hallita kaikkia ilmoituksiasi Power BI -palvelussa](../../create-reports/service-set-data-alerts.md).
 
 1. Koontinäytössä napauta kortti- tai mittariruutua, jossa on ilmoitus.  
 2. Napauta kellokuvaketta ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-on.png).  
@@ -172,7 +172,6 @@ Tietolähteet määritetään usein päivittymään päivittäin, vaikka jotkin 
 * Ilmoitukset eivät toimi ruuduissa, jotka sisältävät virtautettavia tietoja.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Power BI -palvelun ilmoitusten hallinta](../../service-set-data-alerts.md)
+* [Power BI -palvelun ilmoitusten hallinta](../../create-reports/service-set-data-alerts.md)
 * [Power BI -mobiilisovelluksen ilmoituskeskus](mobile-apps-notification-center.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-

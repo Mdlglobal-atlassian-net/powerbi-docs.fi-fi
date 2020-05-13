@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: f2aeb720221fa79aa95f9674aa1e3ac610b28c19
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: 48b13b73455d39eb7dc8cbf9df3e95408592f7f5
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841729"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279499"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Raporttien tutkiminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -27,7 +27,7 @@ Koskee seuraavia:
 
 Power BI -raportti on vuorovaikutteinen näkymä tiedoistasi, joka sisältää eri havaintoja ja merkityksellisiä tietoja esittäviä visualisointeja. Raporttien tarkasteleminen Power BI -mobiilisovelluksissa on kolmivaiheisen prosessin kolmas vaihe:
 
-1. [Luo raportteja Power BI Desktopissa](../../desktop-report-view.md). Voit jopa [optimoida raportin puhelimille](mobile-apps-view-phone-report.md) Power BI Desktopissa.
+1. [Luo raportteja Power BI Desktopissa](../../create-reports/desktop-report-view.md). Voit jopa [optimoida raportin puhelimille](mobile-apps-view-phone-report.md) Power BI Desktopissa.
 2. Julkaise raportit Power BI -palvelussa [(https://powerbi.com)](https://powerbi.com) tai [Power BI -raporttipalvelimessa](../../report-server/get-started.md).  
 3. Käsittele raportteja Power BI -mobiilisovelluksissa.
 
@@ -100,7 +100,7 @@ Raportin tekijät voivat määrittää hierarkioita raporttisivujen välisissä 
 Kun napautat tiettyä kohtaa visualisoinnissa ja sitten *porautumisvaihtoehtoa*, voit siirtyä Power BI:ssä raportin eri sivulle, joka suodatetaan napauttamasi arvon mukaisesti. Raportin tekijä voi määrittää yhden tai useampia porautumisvaihtoehtoja, joista jokainen siirtää sinut eri sivulle. Voit siinä tapauksessa valita, mihin vaihtoehtoon haluat porautua. Takaisin-painike vie sinut takaisin edelliselle sivulle.
 
 
-Lue lisätietoja [porautumisen lisäämisestä Power BI Desktopiin](../../desktop-drillthrough.md).
+Lue lisätietoja [porautumisen lisäämisestä Power BI Desktopiin](../../create-reports/desktop-drillthrough.md).
    
    > [!IMPORTANT]
    > Power BI -mobiilisovelluksissa porautumistoiminnot ovat käytössä matriisi- ja taulukkovisualisoinneissa vain solujen arvojen kautta. Ne eivät ole käytössä sarake- tai riviotsikoiden kautta.
@@ -164,6 +164,5 @@ Katso [sovelluksen vuorovaikutusasetuksista](./mobile-app-interaction-settings.m
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Puhelimelle optimoitujen Power BI -raporttien tarkasteleminen ja käyttäminen](mobile-apps-view-phone-report.md)
-* [Puhelimille optimoidun raporttiversion luominen](../../desktop-create-phone-report.md)
+* [Puhelimille optimoidun raporttiversion luominen](../../create-reports/desktop-create-phone-report.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-
