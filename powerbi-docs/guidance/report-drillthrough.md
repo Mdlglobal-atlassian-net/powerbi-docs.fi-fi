@@ -8,16 +8,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2019
 ms.author: v-pemyer
-ms.openlocfilehash: d5599db57ef7b105575dcb7ee4b4342f374624f0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 853f6d7f5cd6696be55edeea101bc0ca51922ad3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78290577"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278073"
 ---
 # <a name="use-report-page-drillthrough"></a>Raporttisivun porautumisen käyttäminen
 
-Tämä artikkeli koskee raportin laatijaa, joka suunnittelee Power BI -raportteja. Siinä annetaan ehdotuksia ja suosituksia luotaessa [raporttisivun porautumista](../desktop-drillthrough.md).
+Tämä artikkeli koskee raportin laatijaa, joka suunnittelee Power BI -raportteja. Siinä annetaan ehdotuksia ja suosituksia luotaessa [raporttisivun porautumista](../create-reports/desktop-drillthrough.md).
 
 On suositeltavaa, että suunnittelet raporttisi niin, että raportin käyttäjät voivat noudattaa seuraavaa työnkulkua:
 
@@ -58,8 +58,8 @@ Raportin suunnittelun aikana suosittelemme seuraavia käytäntöjä:
 - **Porautumissuodattimet:** Valitse porautumiseen käytettävät suodattimet, jotta voit esikatsella realistista tulosta, kun suunnittelet porautumissivua. Varmista, että poistat nämä suodattimet ennen raportin julkaisemista.
 - **Muut ominaisuudet:** Porautumissivu on kuin mikä tahansa raporttisivu. Voit myös parantaa sitä vuorovaikutteisten toimintojen avulla, mukaan lukien sektorit tai suodattimet.
 - **Tyhjät:** Vältä lisäämästä visualisointeja, jotka voivat palauttaa tyhjän tai aiheuttaa virheitä, kun porautumissuodattimia otetaan käyttöön.
-- **Sivun näkyvyys:** Harkitse porautumissivujen piilottamista. Jos päätät pitää porautumissivun näkyvissä, lisää painike, jonka avulla käyttäjät voivat tyhjentää mahdolliset aiemmin määritetyt porautumissuodattimet. Määritä painikkeeseen [kirjanmerkki](../desktop-bookmarks.md). Kirjanmerkki tulee määrittää poistamaan kaikki suodattimet.
-- **Takaisin-painike:** Takaisin[-painike](../desktop-buttons.md) lisätään automaattisesti, kun määrität porautumissuodattimen. Se kannattaa säilyttää. Näin raporttisi käyttäjät voivat helposti palata lähdesivulle.
+- **Sivun näkyvyys:** Harkitse porautumissivujen piilottamista. Jos päätät pitää porautumissivun näkyvissä, lisää painike, jonka avulla käyttäjät voivat tyhjentää mahdolliset aiemmin määritetyt porautumissuodattimet. Määritä painikkeeseen [kirjanmerkki](../create-reports/desktop-bookmarks.md). Kirjanmerkki tulee määrittää poistamaan kaikki suodattimet.
+- **Takaisin-painike:** Takaisin[-painike](../create-reports/desktop-buttons.md) lisätään automaattisesti, kun määrität porautumissuodattimen. Se kannattaa säilyttää. Näin raporttisi käyttäjät voivat helposti palata lähdesivulle.
 - **Löydettävyys:** Voit edistää porautumissivun tunnettuutta asettamalla visualisoinnin otsikolle kuvaketekstin tai lisäämällä ohjeita tekstiruutuun. Voit myös suunnitella peittokuvan, joka on kuvattu [tässä blogikirjoituksessa](https://alluringbi.com/2019/10/23/overlays-for-true-self-serve-reporting/).
 
 > [!TIP]
@@ -69,6 +69,6 @@ Raportin suunnittelun aikana suosittelemme seuraavia käytäntöjä:
 
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
-- [Porautumisen käyttäminen Power BI Desktopissa](../desktop-drillthrough.md)
+- [Porautumisen käyttäminen Power BI Desktopissa](../create-reports/desktop-drillthrough.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)

@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 70a1aed046ac213e314da2ddaecafab9c5a941ee
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 60b7c858a98a105454efe0233484120ad4319f62
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76537228"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83131903"
 ---
 # <a name="enable-data-sensitivity-labels-in-power-bi-preview"></a>Luottamuksellisuustunnisteiden käyttöönotto Power BI:ssä (esiversio)
 
 Kun [Microsoft Information Protectionin tietojen luottamuksellisuustunnisteet](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) ovat käytössä Power BI:ssä, sovelletaan seuraavaa:
 
-* Jotkin organisaation käyttäjät ja käyttöoikeusryhmät voivat luokitella ja [käyttää luottamuksellisuustunnisteita](../designer/service-security-apply-data-sensitivity-labels.md) Power BI -koontinäyttöihin, raportteihin, tietojoukkoihin ja tietovoihin (jäljempänä *resurssit*).
+* Jotkin organisaation käyttäjät ja käyttöoikeusryhmät voivat luokitella ja [käyttää luottamuksellisuustunnisteita](../collaborate-share/service-security-apply-data-sensitivity-labels.md) Power BI -koontinäyttöihin, raportteihin, tietojoukkoihin ja tietovoihin (jäljempänä *resurssit*).
 * Kaikki organisaation jäsenet näkevät nämä tunnisteet.
 
 Tietojen luottamuksellisuustunnisteet edistävät tietojen suojausta antamalla Power BI:n tekijöille ja käyttäjille tietoa tietojen arkaluonteisuudesta. Samalla he saavat tietoja siitä, mitä luokitus tarkoittaa ja miten tietoja, joilla on kyseinen luokitus, käsitellään.
@@ -71,6 +71,6 @@ Power BI käyttää Microsoft Information Protectionin luottamuksellisuustunnist
 Tässä artikkelissa kerrottiin luottamuksellisuustunnisteiden käyttöönotosta Power BI:ssä. Seuraavissa artikkeleissa annetaan lisätietoja tietojen suojaamisesta Power BI:ssä. 
 
 * [Power BI:n tietojen suojauksen yleiskatsaus](service-security-data-protection-overview.md)
-* [Luottamuksellisuustunnisteiden käyttö Power BI:ssä](../designer/service-security-apply-data-sensitivity-labels.md)
+* [Luottamuksellisuustunnisteiden käyttö Power BI:ssä](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
 * [Microsoft Cloud App Securityn hallinnan käyttö Power BI:ssä](service-security-using-microsoft-cloud-app-security-controls.md)
 * [Tietojen suojauksen tulosraportti](service-security-data-protection-metrics-report.md)

@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: c9957b1f190f3e2cfc2aa5f082eb11df4d647b5f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e5f4fc253fbb7427de8adb21305f66769abcd428
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435900"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273082"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Tutustu ruutuihin Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -52,7 +52,7 @@ Power BI -mobiilisovelluksissa avaat ruutuja tarkastelutilassa ja olet vuorovaik
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-tile-link.png)
    
-    Linkit voivat johtaa muihin Power BI -koontinäyttöihin tai ulkoiseen URL-osoitteeseen. Voit [napauttaa linkkiä](../../service-dashboard-edit-tile.md#hyperlink) avataksesi sen Power BI -sovelluksessa. Jos kyseessä on ulkoinen sivusto, Power BI pyytää sinua sallimaan sen.
+    Linkit voivat johtaa muihin Power BI -koontinäyttöihin tai ulkoiseen URL-osoitteeseen. Voit [napauttaa linkkiä](../../create-reports/service-dashboard-edit-tile.md#hyperlink) avataksesi sen Power BI -sovelluksessa. Jos kyseessä on ulkoinen sivusto, Power BI pyytää sinua sallimaan sen.
    
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
@@ -77,7 +77,7 @@ Power BI -mobiilisovelluksissa avaat ruutuja tarkastelutilassa ja olet vuorovaik
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)
    
-    Linkit voivat johtaa muihin Power BI -koontinäyttöihin tai ulkoiseen URL-osoitteeseen. Voit [napauttaa linkkiä](../../service-dashboard-edit-tile.md#hyperlink) avataksesi sen Power BI -sovelluksessa. Jos kyseessä on ulkoinen sivusto, Power BI pyytää sinua sallimaan sen.
+    Linkit voivat johtaa muihin Power BI -koontinäyttöihin tai ulkoiseen URL-osoitteeseen. Voit [napauttaa linkkiä](../../create-reports/service-dashboard-edit-tile.md#hyperlink) avataksesi sen Power BI -sovelluksessa. Jos kyseessä on ulkoinen sivusto, Power BI pyytää sinua sallimaan sen.
    
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
@@ -98,7 +98,7 @@ Power BI -mobiilisovelluksissa avaat ruutuja tarkastelutilassa ja olet vuorovaik
    
     Napauttaa **Avaa raportti**![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png), jos haluat [tarkastella pohjana olevaa raporttia](mobile-reports-in-the-mobile-apps.md).
    
-    [Avata linkin](../../service-dashboard-edit-tile.md#hyperlink), jos siinä on linkki. Linkit voivat johtaa Power BI -koontinäyttöihin tai ulkoiseen URL-osoitteeseen.
+    [Avata linkin](../../create-reports/service-dashboard-edit-tile.md#hyperlink), jos siinä on linkki. Linkit voivat johtaa Power BI -koontinäyttöihin tai ulkoiseen URL-osoitteeseen.
 3. Napauttaa **Laajenna ruutu** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-focus-mode-icon.png). Se avautuu tarkastelutilassa, jossa on helpompi tarkastella ja tutkia ruudun tietoja. Tässä tilassa voit:
    
    Pyörittää ympyräkaaviota, niin saat sektorin arvot näkyviin ympyrän yläreunaan.  
@@ -130,4 +130,3 @@ Power BI -mobiilisovelluksissa avaat ruutuja tarkastelutilassa ja olet vuorovaik
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Mikä on Power BI?](../../fundamentals/power-bi-overview.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-

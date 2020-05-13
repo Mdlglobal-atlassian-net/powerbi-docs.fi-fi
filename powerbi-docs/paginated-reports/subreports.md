@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 04/29/2020
-ms.openlocfilehash: 65d1401a66f8e670df1af3097f0e99fb6b647022
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 784e3fd3883adb9fc5b773cc730b992135d7ef8b
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82615699"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83272806"
 ---
 # <a name="subreports-in-power-bi-paginated-reports"></a>Aliraportit Power BI:n sivutetuissa raporteissa
 
@@ -74,7 +74,7 @@ Nyt kun olet tallentanut molemmat raportit samaan Premium-työtilaan, voit lisä
   
  Voit sijoittaa aliraportin raportin pääleipätekstiin tai tietoalueeseen. Jos sijoitat aliraportin tietoalueelle, aliraportti toistuu jokaisessa tietoalueen ryhmän tai rivin esiintymässä. Voit siirtää arvon ryhmästä tai riviltä aliraporttiin. Käytä aliraporttiarvo-ominaisuudessa kenttälauseketta kentälle, joka sisältää aliraporttiparametrille siirrettävät arvot.  
   
- Lisätietoja parametrien ja aliraporttien käsittelemisestä on [Aliraportin ja parametrien lisääminen](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-subreport-and-parameters-report-builder-and-ssrs.md) SQL Server Reporting Services -ohjeaiheessa.  
+ Lisätietoja parametrien ja aliraporttien käsittelemisestä on [Aliraportin ja parametrien lisääminen](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-subreport-and-parameters-report-builder-and-ssrs) SQL Server Reporting Services -ohjeaiheessa.  
 
 ## <a name="preview-paginated-reports-in-report-builder"></a>Raportin muodostimessa sivutettujen raporttien esikatselu
 

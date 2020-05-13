@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0a9bebd51e64c18e0c354386e168661542b9c5bf
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: b26cd958ad637f0dc3c27c7a0f6ccbe2591d37b7
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866583"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279177"
 ---
 # <a name="create-matrix-visualizations-in-power-bi"></a>Matriisivisualisoinnin luominen Power BI:ssä
 
@@ -62,7 +62,7 @@ Matriisin laajennustila tallennetaan raporttisi kanssa. Matriisi voidaan kiinnit
 ![](media/desktop-matrix-visual/power-bi-expand3.png)
 
 > [!NOTE]
-> Jos luot raportin moniulotteisen Analysis Services -mallin pohjalta, laajentamiseen ja kutistamiseen liittyy joitakin lisähuomioita, jos mallissa käytetään Oletusjäsen-ominaisuutta. Lisätietoja on artikkelissa [Power BI:n monidimensiomallien käyttö](../desktop-default-member-multidimensional-models.md)
+> Jos luot raportin moniulotteisen Analysis Services -mallin pohjalta, laajentamiseen ja kutistamiseen liittyy joitakin lisähuomioita, jos mallissa käytetään Oletusjäsen-ominaisuutta. Lisätietoja on artikkelissa [Power BI:n monidimensiomallien käyttö](../connect-data/desktop-default-member-multidimensional-models.md)
 
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Alaspäin porautumisen käyttö matriisivisualisoinnin kanssa
 Matriisivisualisoinnilla voit tehdä erilaisia alaspäin porautumisen toimintoja, jotka eivät ennen olleet käytettävissä. Voit porata rivejä, sarakkeita ja jopa yksittäisiä osioita ja soluja. Niiden toiminta on kuvattu alla.
@@ -211,7 +211,7 @@ Jos sinulla on sarake tai mittari, joka sisältää WWW-URL-osoitteita, voit kä
 
 Ota **WWW-URL-osoite**-asetus käyttöön ja valitse kenttä, jota käytetään sarakkeen URL-osoitteena. Kun se on otettu käyttöön, kentän (sarakkeen) arvoista tulee aktiivisia linkkejä. Siirry linkin kohdalle ja siirry kyseiseen sivuun valitsemalla linkki. 
 
-Lisätietoja on artikkelissa [Taulukon ehdollinen muotoilu](../desktop-conditional-table-formatting.md).
+Lisätietoja on artikkelissa [Taulukon ehdollinen muotoilu](../create-reports/desktop-conditional-table-formatting.md).
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Sävytys ja fontin väri matriisivisualisoinneissa
 Matriisivisualisoinnin avulla voit käyttää ehdollista muotoilua (värit, sävytys ja tietopalkit) matriisin solujen taustavärinä, ja voit käyttää ehdollista muotoilua myös itse tekstiin ja arvoihin.
@@ -233,3 +233,5 @@ Valitsemalla *Lisäasetukset* näet valintaikkunan, jonka avulla voit tehdä muk
 [Power BI:n Power Apps -visualisointi](power-bi-visualization-powerapp.md)
 
 [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+

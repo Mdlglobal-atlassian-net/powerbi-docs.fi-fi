@@ -7,16 +7,18 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/10/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 98af83c726cfd4e5b4e6744cbcfa1f7e5a69f57b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a874875c470cd85720570e57b7c6d7cf50dabca1
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79381441"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83274163"
 ---
 # <a name="apply-data-point-limits-and-strategies-by-visual-type"></a>Arvopisterajojen ja strategioiden käyttö visualisointityypin mukaan
+
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]    
 
 Kun visualisointia hahmonnetaan Power BI:ssä, visualisoinnin on oltava nopea ja tarkka. Se edellyttää tausta-algoritmien määrittämistä jokaiselle visualisointityypille. Power BI:n visualisointien on oltava riittävän joustavia, jotta ne pystyvät käsittelemään erikokoisia tietojoukkoja. Joissakin tietojoukoissa voi olla vain muutamia arvopisteitä, kun taas toisissa arvopisteitä voi olla useita petatavuja. Tässä artikkelissa käsitellään strategioita, joiden avulla Power BI hahmontaa visualisoinnit.
 
@@ -57,7 +59,7 @@ Dynaamiset rajoitukset otetaan käyttöön automaattisesti, kun palvelin täytt�
 ## <a name="strategies-and-data-point-limits-by-visual-type"></a>Strategiat ja arvopisterajat visualisointityypin mukaan
 
 ### <a name="area-chart"></a>Aluekaavio
-Katso [viivaotannan toimintaperiaate](../desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
+Katso [viivaotannan toimintaperiaate](../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
 
 ### <a name="barcolumn-chart"></a>Palkki-/pylväskaavio
 - Luokittaisessa tilassa
@@ -97,10 +99,10 @@ Täytetyssä kartassa voidaan käyttää tilastotiedot tai dynaamisia rajoja. Po
 - Alimmat 3 500
 
 ### <a name="line-chart"></a>Viivakaavio
-Katso [viivaotannan toimintaperiaate](../desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
+Katso [viivaotannan toimintaperiaate](../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
 
 ### <a name="line-chart-high-density"></a>Viivakaavio, suuri tiheys
-Katso [Suuren tiheyden otanta](../desktop-high-density-sampling.md)
+Katso [Suuren tiheyden otanta](../create-reports/desktop-high-density-sampling.md)
 
 ### <a name="map"></a>Kartta 
 - Maksimipisteet: 3 500
@@ -109,9 +111,9 @@ Kartassa voi olla määritysten mukaan:
 - Sijainti: Ylimmät 3 500
 - Sijainti, koko: Ylimmät 3 500
 - Sijainti, leveys- ja pituusastekoosteet (+/-koko): Ylimmät 3 500
-- Leveysaste, pituusaste: katso [Suuren tiheyden pistekaaviot](desktop-high-density-scatter-charts.md)
+- Leveysaste, pituusaste: katso [Suuren tiheyden pistekaaviot](../create-reports/desktop-high-density-scatter-charts.md)
 - Leveysaste, pituusaste, koko: Ylimmät 3 500
-- Selite, leveysaste, pituusaste: katso [Suuren tiheyden pistekaaviot](desktop-high-density-scatter-charts.md)
+- Selite, leveysaste, pituusaste: katso [Suuren tiheyden pistekaaviot](../create-reports/desktop-high-density-scatter-charts.md)
 - Selite, leveysaste, pituusaste, koko: Ylimmät 233 selitettä, ylimmät 15 leveys- ja pituusastetta (voidaan käyttää tilastotietoja tai dynaamisia rajoituksia)
 - Sijainti, selite, pituusaste, leveysaste koosteina (+/-koko): Ylimmät 233 sijaintia, ylimmät 15 selitettä (voidaan käyttää tilastotietoja tai dynaamisia rajoituksia)
 

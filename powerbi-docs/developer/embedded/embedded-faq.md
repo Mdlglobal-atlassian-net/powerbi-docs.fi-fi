@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 0042c7db70cac103d04d1c48d06c12b71634b541
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: fe1eb36a63d504497f15bef8316e96d120439793
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80403661"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83145102"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Usein kysyttyjä kysymyksiä – Power BI Embedded
 
@@ -67,7 +67,7 @@ Katso artikkelia [Kapasiteetti ja SKU Power BI:n upotetussa analytiikassa](embed
 
 ### <a name="how-can-i-monitor-power-bi-embedded-capacity-consumption"></a>Miten voin valvoa Power BI Embedded -kapasiteetin käyttöä?
 
-* Käyttämällä [Power BI -hallintaportaalia](../../service-admin-portal.md#power-bi-embedded).
+* Käyttämällä [Power BI -hallintaportaalia](../../admin/service-admin-portal.md#power-bi-embedded).
 
 * Lataamalla [mittausarvosovelluksen](https://docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) Power BI:ssä.
 

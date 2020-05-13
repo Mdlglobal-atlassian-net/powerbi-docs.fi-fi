@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/22/2020
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4f0bfdbf3eb3856f872c872fbe0880ad39839e07
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 31563e5bb5b91468b8913c3204e9d27607716c77
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82867595"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279200"
 ---
 # <a name="use-a-relative-time-slicer-and-filter-in-power-bi"></a>Suhteellisen aikaosittajan ja -suodattimen käyttö Power BI:ssä
 
@@ -24,7 +24,7 @@ Nopean päivityksen tilanteissa mahdollisuudesta suodattaa lyhyempi ajanjakso vo
 
 :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Suhteellisen ajan esimerkki":::
 
-Ominaisuutta ei tarvitse käyttää yhdessä [automaattisen sivun päivitysominaisuuden](../desktop-automatic-page-refresh.md) kanssa. Kuitenkin monet suhteelliset aikatapaukset sopivat hyvin yhteen automaattisen sivun päivitysominaisuuden kanssa.  
+Ominaisuutta ei tarvitse käyttää yhdessä [automaattisen sivun päivitysominaisuuden](../create-reports/desktop-automatic-page-refresh.md) kanssa. Kuitenkin monet suhteelliset aikatapaukset sopivat hyvin yhteen automaattisen sivun päivitysominaisuuden kanssa.  
 
 > [!NOTE]
 > Kun otat suhteellisen aikasuodattimen tai -osittajan käyttöön sivun tai raportin tasolla, kaikki kyseisen sivun tai raportin visualisoinnit suodatetaan samalla aikavälillä ja niissä käytetään jaettua *ankkuriaikaa*. Koska visualisointien suoritusajat saattavat olla hieman erilaiset, tämä jaettu ankkuriaika varmistaa, että visualisoinnit synkronoidaan koko sivulla tai raportissa. Tässä artikkelissa on lisätietoja [ankkuriajasta](#understanding-anchor-time).
@@ -107,4 +107,3 @@ Suhteellisen ajan osittajaa ja suodatinta koskevat tällä hetkellä seuraavat r
 
 - [Suhteellisen päivämääräosittajan ja -suodattimen käyttö Power BI:ssä](../visuals/desktop-slicer-filter-date-range.md)
 - [Osittajat Power BI:ssä](../visuals/power-bi-visualization-slicers.md)
-

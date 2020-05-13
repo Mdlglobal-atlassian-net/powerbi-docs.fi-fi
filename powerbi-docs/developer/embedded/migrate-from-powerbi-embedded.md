@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: a8ce4209610e229ae1da7773bd7cb10bd522f72c
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8d4145e1fdfdd6c1e9409dc305a5767eec8ace53
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80404039"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148539"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Power BI -työtilakokoelman sisällön siirtäminen Power BI Embedded -palveluun
 
@@ -200,7 +200,7 @@ Sinun on vielä tehtävä Azuressa joitakin puhdistustoimia.
 [Power BI ‑työtilakokoelman siirtotyökalu](migrate-tool.md)  
 [Koodikatkelmia sisällön siirtämiseen Power BI ‑työtilakokoelmasta](migrate-code-snippets.md)  
 [Power BI:n koontinäyttöjen, raporttien ja ruutujen upottaminen](embed-sample-for-your-organization.md)  
-[Mikä on Power BI Premium?](../../service-premium-what-is.md)  
+[Mikä on Power BI Premium?](../../admin/service-premium-what-is.md)  
 [JavaScript API Git -säilö](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git -säilö](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript-upotuksen näyte](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

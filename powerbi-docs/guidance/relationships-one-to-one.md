@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 92aa2c5d8da91590f5d491090761a6a6b1501061
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 43905b05bfe796c416bb8d91901497f6ca1e573e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78263802"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278257"
 ---
 # <a name="one-to-one-relationship-guidance"></a>Yksi-yhteen-suhteen ohjeet
 
@@ -99,7 +99,7 @@ Jos mahdollista, suosittelemme välttämään yksi yhteen -mallisten suhteiden l
 - rajoittaa mahdollisuutta hierarkioiden luomiseen, koska hierarkioiden tasojen tulee perustua _samassa taulukossa_ oleviin sarakkeihin
 - tuottaa odottamattomia tuloksia, jos taulukoiden välillä ei ole rivien täyttä vastaavuutta.
 
-Tarkat suositukset vaihtelevat sen mukaan, onko yksi yhteen -suhde _saarensisäinen_ vai _saartenvälinen_. Jos haluat lisätietoja suhteen arvioinnista, katso [Mallien suhteet Power BI Desktopissa (Suhteen arviointi)](../desktop-relationships-understand.md#relationship-evaluation).
+Tarkat suositukset vaihtelevat sen mukaan, onko yksi yhteen -suhde _saarensisäinen_ vai _saartenvälinen_. Jos haluat lisätietoja suhteen arvioinnista, katso [Mallien suhteet Power BI Desktopissa (Suhteen arviointi)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 ### <a name="intra-island-one-to-one-relationship"></a>Saarensisäinen yksi yhteen -suhde
 
@@ -107,7 +107,7 @@ Jos taulukoiden välillä on _saarensisäinen_ yksi yhteen -suhde, suosittelemme
 
 Seuraavissa vaiheissa esitellään menetelmä, jolla voidaan yhdistää ja mallintaa yksi yhteen -suhteiset tiedot:
 
-1. **Yhdistä kyselyt**: Kun [yhdistät kahta kyselyä](../desktop-shape-and-combine-data.md#combine-queries), ota huomioon tietojen täydellisyys kussakin kyselyssä. Jos yksi kysely sisältää koko rivijoukon (pääluettelon tapaan), yhdistä toinen kysely siihen. Määritä yhdistämismuunnos käyttämään _vasenta ulkoliitosta_, joka on liitosten oletustyyppi. Tämä liitostyyppi varmistaa, että kaikki ensimmäisen kyselyn rivit säilyvät ja että ne täydennetään toisen kyselyn vastaavilla riveillä. Laajenna kaikki toisen kyselyn pakolliset sarakkeet ensimmäiseen kyselyyn.
+1. **Yhdistä kyselyt**: Kun [yhdistät kahta kyselyä](../connect-data/desktop-shape-and-combine-data.md#combine-queries), ota huomioon tietojen täydellisyys kussakin kyselyssä. Jos yksi kysely sisältää koko rivijoukon (pääluettelon tapaan), yhdistä toinen kysely siihen. Määritä yhdistämismuunnos käyttämään _vasenta ulkoliitosta_, joka on liitosten oletustyyppi. Tämä liitostyyppi varmistaa, että kaikki ensimmäisen kyselyn rivit säilyvät ja että ne täydennetään toisen kyselyn vastaavilla riveillä. Laajenna kaikki toisen kyselyn pakolliset sarakkeet ensimmäiseen kyselyyn.
 2. **Poista kyselyn lataaminen käytöstä**: Muista [poistaa lataaminen](import-modeling-data-reduction.md#disable-power-query-query-load) toisen kyselyn osalta. Tällöin se ei lataa tuloksiaan mallitaulukoksi. Tämä määritys pienentää tietomallin tallennuskokoa ja auttaa selkeyttämään **Fields** (Kentät) -ruutua.
 
     Omassa esimerkissämme raportin tekijät löytävät nyt **Fields**-ruudusta yksittäisen taulukon, jonka nimi on **Product**. Se sisältää kaikki tuotteisiin liittyvät kentät.
@@ -131,11 +131,11 @@ Tässä esimerkissä raporttien tekijät löytävät **Category**-kentän **Mark
 
 ![Fields-ruudussa Category-kenttä näkyy näyttökansiossa, jonka nimi on Marketing.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-display-folder.png)
 
-Jos päätät kuitenkin määrittää mallissasi saarensisäisiä yksi yhteen -suhteita, varmista aina kun mahdollista, että toisiinsa liittyvissä taulukoissa on toisiaan vastaavat rivit. Saarensisäinen yksi yhteen -suhde arvioidaan [vahvaksi suhteeksi](../desktop-relationships-understand.md#strong-relationships), joten tietojen eheyteen liittyvät ongelmat saattavat näkyä raportin visualisoinneissa tyhjäarvoina. (Tämän artikkelin ensimmäisessä taulukon visualisoinnissa on esimerkki tyhjäarvoisesta ryhmittelystä.)
+Jos päätät kuitenkin määrittää mallissasi saarensisäisiä yksi yhteen -suhteita, varmista aina kun mahdollista, että toisiinsa liittyvissä taulukoissa on toisiaan vastaavat rivit. Saarensisäinen yksi yhteen -suhde arvioidaan [vahvaksi suhteeksi](../transform-model/desktop-relationships-understand.md#strong-relationships), joten tietojen eheyteen liittyvät ongelmat saattavat näkyä raportin visualisoinneissa tyhjäarvoina. (Tämän artikkelin ensimmäisessä taulukon visualisoinnissa on esimerkki tyhjäarvoisesta ryhmittelystä.)
 
 ### <a name="inter-island-one-to-one-relationship"></a>Saartenvälinen yksi yhteen -suhde
 
-Jos taulukoiden välillä on _saartenvälinen_ yksi yhteen -suhde, tarjolla ei ole vaihtoehtoista mallirakennetta – ellet sitten etukäteen yhdistä tietolähteiden tietoja. Power BI arvioi yksi yhteen -mallisuhteen [heikoksi suhteeksi](../desktop-relationships-understand.md#weak-relationships). Varmista siis, että toisiinsa liittyvissä taulukoissa on vastaavat rivit, koska toisiaan vastaamattomat rivit poistetaan kyselyn tuloksista.
+Jos taulukoiden välillä on _saartenvälinen_ yksi yhteen -suhde, tarjolla ei ole vaihtoehtoista mallirakennetta – ellet sitten etukäteen yhdistä tietolähteiden tietoja. Power BI arvioi yksi yhteen -mallisuhteen [heikoksi suhteeksi](../transform-model/desktop-relationships-understand.md#weak-relationships). Varmista siis, että toisiinsa liittyvissä taulukoissa on vastaavat rivit, koska toisiaan vastaamattomat rivit poistetaan kyselyn tuloksista.
 
 Katsotaan, mitä tapahtuu, kun molempien taulukoiden kentät lisätään taulukon visualisointiin ja taulukoiden välillä on heikko suhde.
 
@@ -147,7 +147,7 @@ Taulukko näyttää vain kaksi riviä. Taulukossa ei ole tuotetta, jonka SKU-arv
 
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
-- [Mallien suhteet Power BI Desktopissa](../desktop-relationships-understand.md)
+- [Mallien suhteet Power BI Desktopissa](../transform-model/desktop-relationships-understand.md)
 - [Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä](star-schema.md)
 - [Suhteen vianmääritysohjeet](relationships-troubleshoot.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

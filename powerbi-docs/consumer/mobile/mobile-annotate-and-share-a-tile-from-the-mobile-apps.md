@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 5d1a014b32bcb3ce90938659e2b6478518e8aefc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 31a899001b5a821a38a3de01db0357c26f2e58dc
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79205500"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83149196"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Merkintöjen lisääminen ja ruudun, raportin tai visualisoinnin jakaminen Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -28,7 +28,7 @@ Voit jakaa tilannevedoksen ruudusta, raportista tai visualisoinnista ja lisätä
 
 *Raportti, jossa on merkintöjä*
 
-Sähköposti, jossa tilannevedos ruudusta, raportista tai visualisoinnista, sisältää myös linkin todelliseen kohteeseen Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)). Vastaanottajat voivat napsauttaa linkkiä ja siirtyä suoraan kyseiseen ruutuun, raporttiin tai visualisointiin, jos sinulla ja heillä on Power BI Pro -käyttöoikeudet tai jos sisältö on [Premium-kapasiteetissa](../../service-premium-what-is.md) ja olet jo jakanut kohteen heidän kanssaan. 
+Sähköposti, jossa tilannevedos ruudusta, raportista tai visualisoinnista, sisältää myös linkin todelliseen kohteeseen Power BI -palvelussa ([https://powerbi.com](https://powerbi.com)). Vastaanottajat voivat napsauttaa linkkiä ja siirtyä suoraan kyseiseen ruutuun, raporttiin tai visualisointiin, jos sinulla ja heillä on Power BI Pro -käyttöoikeudet tai jos sisältö on [Premium-kapasiteetissa](../../admin/service-premium-what-is.md) ja olet jo jakanut kohteen heidän kanssaan. 
 
 Voit myös [jakaa ruudun Windows 10 -laitteiden Power BI -mobiilisovelluksesta](mobile-windows-10-phone-app-get-started.md), mutta et lisätä siihen merkintöjä.
 
@@ -74,4 +74,3 @@ Voit myös [jakaa ruudun Windows 10 -laitteiden Power BI -mobiilisovelluksesta](
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Koontinäytön jakaminen Power BI -mobiilisovelluksista](mobile-share-dashboard-from-the-mobile-apps.md)
 * Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-

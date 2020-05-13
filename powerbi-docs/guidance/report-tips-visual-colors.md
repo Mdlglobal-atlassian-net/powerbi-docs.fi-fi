@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/15/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 007f91a0f220ce7482600ac284336a3ac1cbfa0f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7e8526e5e8acf45afe125495cf8eca4628b70a06
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82065497"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278878"
 ---
 # <a name="tips-to-optimize-visual-colors-in-power-bi-reports"></a>Vinkkejä visualisoinnin värien optimoimiseen Power BI -raporteissa
 
@@ -41,7 +41,8 @@ Kahdeksan parasta vinkkiä visualisoinnin värien optimointiin Power BI -raporte
 
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
-- [Vinkkejä tyylikkäiden raporttien luomiseen](../desktop-tips-and-tricks-for-creating-reports.md)
+- [Vinkkejä tyylikkäiden raporttien luomiseen](../create-reports/desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine-video: [8 huippuvinkkiä visualisoinnin värien optimoimiseen Power BI:ssä](https://www.youtube.com/watch?v=RhYcEsdPqJg)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com)
+

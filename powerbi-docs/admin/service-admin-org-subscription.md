@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/08/2020
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 28acd982faed44a0912a486262c9db7611531265
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c0f4e8fd72f3808633cde64a880130798fabb173
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81447483"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83138311"
 ---
 # <a name="get-a-power-bi-subscription-for-your-organization"></a>Power BI -tilauksen hankkiminen organisaatiollesi
 
@@ -41,7 +41,7 @@ Rekisteröidy seuraavasti:
 
 ## <a name="sign-up-through-microsoft-365"></a>Rekisteröityminen Microsoft 365:n kautta
 
-Jos olet Microsoft 365:n yleinen järjestelmänvalvoja tai laskutuksen järjestelmänvalvoja, voit hankkia Power BI -tilauksen organisaatiollesi. Jos haluat lisätietoja, katso kohta [Kuka voi ostaa ja määrittää käyttöoikeuksia?](../service-admin-licensing-organization.md#who-can-purchase-and-assign-licenses).
+Jos olet Microsoft 365:n yleinen järjestelmänvalvoja tai laskutuksen järjestelmänvalvoja, voit hankkia Power BI -tilauksen organisaatiollesi. Jos haluat lisätietoja, katso kohta [Kuka voi ostaa ja määrittää käyttöoikeuksia?](service-admin-licensing-organization.md#who-can-purchase-and-assign-licenses).
 
 > [!NOTE]
 >

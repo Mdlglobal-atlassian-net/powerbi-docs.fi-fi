@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: d718c9c7f627d735c083a46c1483815e3744faca
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f189ea2944f86a3caabfbc51ae5b2887bc7c89bb
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79378865"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278603"
 ---
 # <a name="optimization-guide-for-power-bi"></a>Optimointiopas Power BI:hin
 
@@ -26,7 +26,7 @@ Tässä artikkelissa olevien ohjeiden avulla kehittäjät ja järjestelmänvalvo
 
 ## <a name="optimizing-the-data-model"></a>Tietomallin optimointi
 
-Tietomalli tukee koko visualisointikokemusta. Tietomallit ovat joko ulkoisesti isännöityjä tai sisäisesti isännöityjä, ja Power BI:ssä niitä kutsutaan _tietojoukoiksi_. On tärkeää ymmärtää toimintavaihtoehtosi ja valita ratkaisullesi sopiva tietojoukkotyyppi. Tietojoukkotiloja on kolme: Tuonti, DirectQuery ja Yhdistelmä. Lisätietoja on artikkeleissa [Tietojoukot Power BI -palvelussa](../service-datasets-understand.md) ja [Tietojoukkojen tilat Power BI -palvelussa](../service-dataset-modes-understand.md).
+Tietomalli tukee koko visualisointikokemusta. Tietomallit ovat joko ulkoisesti isännöityjä tai sisäisesti isännöityjä, ja Power BI:ssä niitä kutsutaan _tietojoukoiksi_. On tärkeää ymmärtää toimintavaihtoehtosi ja valita ratkaisullesi sopiva tietojoukkotyyppi. Tietojoukkotiloja on kolme: Tuonti, DirectQuery ja Yhdistelmä. Lisätietoja on artikkeleissa [Tietojoukot Power BI -palvelussa](../connect-data/service-datasets-understand.md) ja [Tietojoukkojen tilat Power BI -palvelussa](../connect-data/service-dataset-modes-understand.md).
 
 Jos haluat ohjeita tiettyä tietojoukkotilaa varten, katso seuraavia:
 
@@ -40,7 +40,7 @@ Power BI:n visualisoinnit voivat olla koontinäyttöjä, Power BI -raportteja ta
 
 ### <a name="dashboards"></a>Koontinäytöt
 
-On tärkeää ymmärtää, että Power BI ylläpitää välimuistia koontinäytön ruutuja varten reaaliaikaisia raporttiruutuja ja suoratoistoruutuja lukuun ottamatta. Lisätietoja on artikkelissa [Tietojen päivitys Power BI:ssä (ruudun päivitys)](../refresh-data.md#tile-refresh). Jos tietojoukossasi käytetään dynaamista [rivitason suojausta (RLS)](../service-admin-rls.md), varmista, että ymmärrät sen vaikutuksen suorituskykyyn, sillä ruudut tallennetaan välimuistiin käyttäjäkohtaisesti.
+On tärkeää ymmärtää, että Power BI ylläpitää välimuistia koontinäytön ruutuja varten reaaliaikaisia raporttiruutuja ja suoratoistoruutuja lukuun ottamatta. Lisätietoja on artikkelissa [Tietojen päivitys Power BI:ssä (ruudun päivitys)](../connect-data/refresh-data.md#tile-refresh). Jos tietojoukossasi käytetään dynaamista [rivitason suojausta (RLS)](../admin/service-admin-rls.md), varmista, että ymmärrät sen vaikutuksen suorituskykyyn, sillä ruudut tallennetaan välimuistiin käyttäjäkohtaisesti.
 
 Kun kiinnität reaaliaikaisia raporttiruutuja koontinäyttöön, välimuisti ei ole niiden syötteen lähteenä. Sen sijaan ne toimivat raporttien tavoin ja tekevät kyselyjä taustaytimiin lennossa.
 
@@ -75,7 +75,7 @@ Muista testata jokainen mukautettu visualisointi, jotta niiden hyvä suorituskyk
 
 Power BI:n sivutettuja raporttirakenteita voi optimoida käyttämällä parhaan käytännön rakennetta raportin tietojen noutamiseen. Lisätietoja on artikkelissa [Sivutettujen raporttien tietojen nouto-ohjeet](report-paginated-data-retrieval.md).
 
-Varmista myös, että kapasiteetissa on tarpeeksi muistia varattuna [sivutettujen raporttien kuormitukseen](../service-admin-premium-workloads.md#paginated-reports).
+Varmista myös, että kapasiteetissa on tarpeeksi muistia varattuna [sivutettujen raporttien kuormitukseen](../admin/service-admin-premium-workloads.md#paginated-reports).
 
 ## <a name="optimizing-the-environment"></a>Ympäristön optimointi
 
@@ -83,11 +83,11 @@ Voit optimoida Power BI -ympäristön määrittämällä kapasiteettiasetukset, 
 
 ### <a name="capacity-settings"></a>Kapasiteettiasetukset
 
-Kun käytät varattuja kapasiteetteja (käytettävissä Power BI Premiumissa (P SKU:t) tai Power BI Embeddedissä (A SKU:t, A4–A6)), voit hallita kapasiteettiasetuksia. Katso lisätietoja artikkelista [Premium-kapasiteettien hallinta](../service-premium-capacity-manage.md). Ohjeita kapasiteetin optimoimiseen on artikkelissa [Premium-kapasiteettien optimointi](../service-premium-capacity-optimize.md).
+Kun käytät varattuja kapasiteetteja (käytettävissä Power BI Premiumissa (P SKU:t) tai Power BI Embeddedissä (A SKU:t, A4–A6)), voit hallita kapasiteettiasetuksia. Katso lisätietoja artikkelista [Premium-kapasiteettien hallinta](../admin/service-premium-capacity-manage.md). Ohjeita kapasiteetin optimoimiseen on artikkelissa [Premium-kapasiteettien optimointi](../admin/service-premium-capacity-optimize.md).
 
 ### <a name="gateway-sizing"></a>Yhdyskäytävän koko
 
-Yhdyskäytävää tarvitaan, kun Power BI:n on käytettävä tietoja, jotka eivät ole saatavilla suoraan Internetin kautta. Voit asentaa [paikallisen tietoyhdyskäytävän](../service-gateway-onprem.md) paikalliseen palvelimeen tai näennäiskoneen isännöimään infrastruktuuri palveluna (IaaS) -järjestelmään.
+Yhdyskäytävää tarvitaan, kun Power BI:n on käytettävä tietoja, jotka eivät ole saatavilla suoraan Internetin kautta. Voit asentaa [paikallisen tietoyhdyskäytävän](../connect-data/service-gateway-onprem.md) paikalliseen palvelimeen tai näennäiskoneen isännöimään infrastruktuuri palveluna (IaaS) -järjestelmään.
 
 Jos haluat tietoja yhdyskäytävän kuormituksista ja kokosuosituksista, katso [Paikallisen tietoyhdyskäytävän koon määrittäminen](gateway-onprem-sizing.md).
 
@@ -96,7 +96,7 @@ Jos haluat tietoja yhdyskäytävän kuormituksista ja kokosuosituksista, katso [
 Verkon viive voi vaikuttaa raportin suorituskykyyn kasvattamalla aikaa, jonka pyynnöt tarvitsevat saavuttaakseen Power BI -palvelun, ja vastausten toimitusaikaa. Vuokraajille nimetään Power BI:ssä tietty alue.
 
 > [!TIP]
-> Jos haluat tietää, missä -vuokraajasi sijaitsee, lue artikkeli [Missä Power BI -vuokraajani sijaitsee?](../service-admin-where-is-my-tenant-located.md).
+> Jos haluat tietää, missä -vuokraajasi sijaitsee, lue artikkeli [Missä Power BI -vuokraajani sijaitsee?](../admin/service-admin-where-is-my-tenant-located.md).
 
 Kun vuokraajan käyttäjät käyttävät Power BI -palvelua, heidän pyyntönsä reititetään aina tälle alueelle. Kun pyynnöt saavuttavat Power BI -palvelun, palvelu voi tämän jälkeen lähettää lisäpyyntöjä esimerkiksi taustalla olevaan tietolähteeseen tai tietoyhdyskäytävään, joita verkkoviive koskee myös.
 
@@ -115,3 +115,7 @@ Saat lisätietoja tästä artikkelista tutustumalla seuraaviin resursseihin:
 - Tekninen raportti: [Power BI:n yrityskäyttöönoton suunnitteleminen](https://go.microsoft.com/fwlink/?linkid=2057861)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)
+
+
+
+

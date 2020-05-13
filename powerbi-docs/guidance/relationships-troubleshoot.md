@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: e2854d82d858bb1963b691d32d561c7b3bbfc11a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7ccff80391ed0625aac063af3bf7a86b83cd7e85
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78263641"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278119"
 ---
 # <a name="relationship-troubleshooting-guidance"></a>Yhteyden vianmääritysohjeet
 
@@ -44,18 +44,18 @@ Tässä on luettelo ongelmista ja niiden mahdollisista ratkaisuista.
 
 |Ongelma|Mahdolliset syyt|
 |---------|---------|
-|Visualisointi ei näytä tulosta|- Malliin ei ole vielä ladattu tietoja<br />- Suodatinkontekstissa ei ole tietoja<br />- Rivitason suojaus on käytössä<br />- Yhteydet eivät levity taulukoiden välillä – _noudata yllä olevaa tarkistusluetteloa_<br />- Rivitason suojaus on käytössä, mutta kaksisuuntaista yhteyttä ei voi levittää – katso [Rivitason suojaus (RLS) Power BI Desktopissa](../desktop-rls.md)|
+|Visualisointi ei näytä tulosta|- Malliin ei ole vielä ladattu tietoja<br />- Suodatinkontekstissa ei ole tietoja<br />- Rivitason suojaus on käytössä<br />- Yhteydet eivät levity taulukoiden välillä – _noudata yllä olevaa tarkistusluetteloa_<br />- Rivitason suojaus on käytössä, mutta kaksisuuntaista yhteyttä ei voi levittää – katso [Rivitason suojaus (RLS) Power BI Desktopissa](../create-reports/desktop-rls.md)|
 |Visualisointi näyttää saman arvon jokaiselle ryhmittelylle |- Yhteyksiä ei ole<br />- Yhteydet eivät levity taulukoiden välillä – _noudata yllä olevaa tarkistusluetteloa_|
 |Visualisointi näyttää tulokset, mutta ne eivät ole oikein|- Visualisointi on määritetty virheellisesti<br />- Mittarilogiikka on virheellinen<br />- Mallitiedot täytyy päivittää<br />- Lähdetiedot ovat virheelliset<br />- Yhteyssarakkeiden suhteet ovat väärät (esimerkiksi **ProductID**-sarake on yhdistetty **CustomerID**-kohteeseen)<br />- Yhteys on kahden DirectQuery-taulukon välillä, ja yhteyden ”yksi”-puolen sarake sisältää arvojen kaksoiskappaleita|
-|TYHJÄ-ryhmittelyjä tai osittaja-/suodatuskohteita näkyy, eivätkä lähdesarakkeet sisällä TYHJÄ-kohtia|- Yhteys on vahva, ja "monta"-puolen sarake sisältää arvoja, joita ei ole tallennettu "yksi"-puolen sarakkeeseen – katso [Mallien suhteet Power BI Desktopissa (Vahvat yhteydet)](../desktop-relationships-understand.md#strong-relationships)<br />- Kyseessä on vahva yksi yhteen -yhteys, ja toisiinsa liittyvät sarakkeet sisältävät TYHJÄ-kohtia – katso [Mallien suhteet Power BI Desktopissa (Vahvat yhteydet)](../desktop-relationships-understand.md#strong-relationships)<br />- Epäaktiivisen yhteyden "monta"-puolen sarakkeeseen on tallennettu TYHJÄ-kohtia, tai siinä on arvoja, joita ei ole tallennettu "yksi"-puolelle|
-|Visualisoinnista puuttuu tietoja|- Virheellisiä/odottamattomia suodattimia on käytössä<br />- Rivitason suojaus on käytössä<br />- Yhteys on heikko, ja toisiinsa liittyvissä sarakkeissa on TYHJÄ-kohtia tai tietojen eheysongelmia – katso [Mallien suhteet Power BI Desktopissa (Heikot yhteydet)](../desktop-relationships-understand.md#weak-relationships)<br />- Kyseessä on kahden DirectQuery-taulukon välinen yhteys, joka on määritetty [olettamaan viite-eheys](../desktop-relationships-understand.md#assume-referential-integrity), mutta tiedoissa on eheysongelmia (ristiriitaisia arvoja toisiinsa liittyvissä sarakkeissa)|
-|Rivitason suojausta ei ole otettu käyttöön oikein|- Yhteydet eivät levity taulukoiden välillä – _noudata yllä olevaa tarkistusluetteloa_<br />- Rivitason suojaus on käytössä, mutta kaksisuuntaista yhteyttä ei voi levittää – katso [Rivitason suojaus (RLS) Power BI Desktopissa](../desktop-rls.md)|
+|TYHJÄ-ryhmittelyjä tai osittaja-/suodatuskohteita näkyy, eivätkä lähdesarakkeet sisällä TYHJÄ-kohtia|- Yhteys on vahva, ja "monta"-puolen sarake sisältää arvoja, joita ei ole tallennettu "yksi"-puolen sarakkeeseen – katso [Mallien suhteet Power BI Desktopissa (Vahvat yhteydet)](../transform-model/desktop-relationships-understand.md#strong-relationships)<br />- Kyseessä on vahva yksi yhteen -yhteys, ja toisiinsa liittyvät sarakkeet sisältävät TYHJÄ-kohtia – katso [Mallien suhteet Power BI Desktopissa (Vahvat yhteydet)](../transform-model/desktop-relationships-understand.md#strong-relationships)<br />- Epäaktiivisen yhteyden "monta"-puolen sarakkeeseen on tallennettu TYHJÄ-kohtia, tai siinä on arvoja, joita ei ole tallennettu "yksi"-puolelle|
+|Visualisoinnista puuttuu tietoja|- Virheellisiä/odottamattomia suodattimia on käytössä<br />- Rivitason suojaus on käytössä<br />- Yhteys on heikko, ja toisiinsa liittyvissä sarakkeissa on TYHJÄ-kohtia tai tietojen eheysongelmia – katso [Mallien suhteet Power BI Desktopissa (Heikot yhteydet)](../transform-model/desktop-relationships-understand.md#weak-relationships)<br />- Kyseessä on kahden DirectQuery-taulukon välinen yhteys, joka on määritetty [olettamaan viite-eheys](../transform-model/desktop-relationships-understand.md#assume-referential-integrity), mutta tiedoissa on eheysongelmia (ristiriitaisia arvoja toisiinsa liittyvissä sarakkeissa)|
+|Rivitason suojausta ei ole otettu käyttöön oikein|- Yhteydet eivät levity taulukoiden välillä – _noudata yllä olevaa tarkistusluetteloa_<br />- Rivitason suojaus on käytössä, mutta kaksisuuntaista yhteyttä ei voi levittää – katso [Rivitason suojaus (RLS) Power BI Desktopissa](../create-reports/desktop-rls.md)|
 |||
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
-- [Mallien suhteet Power BI Desktopissa](../desktop-relationships-understand.md)
+- [Mallien suhteet Power BI Desktopissa](../transform-model/desktop-relationships-understand.md)
 - Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)

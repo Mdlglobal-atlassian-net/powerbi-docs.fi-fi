@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: 7436b97cdeacf08f1d4ed9374ec615d56ae92db1
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: d94e9696ee41e8bd76f7d11aab794ccd2dc701b3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "73859193"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277981"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Rivitason suojaus (RLS) Power BI -raporttipalvelimessa
 
@@ -33,7 +33,7 @@ Oletuksena rivitason suojauksen suodatuksessa käytetään yksisuuntaisia suodat
 
 Valitse tämä ruutu, jos otat käyttöön käyttäjänimeen tai kirjautumistunnukseen perustuvan [dynaamisen rivitason suojauksen](https://docs.microsoft.com/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters). 
 
-Lisätietoja on artikkelissa [Kaksisuuntainen ristiinsuodatus käyttämällä DirectQueryä Power BI Desktopissa](../desktop-bidirectional-filtering.md) ja teknisessä raportissa [Taulukkomuotoisen liiketoimintatietojen semanttisen mallin suojaaminen](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
+Lisätietoja on artikkelissa [Kaksisuuntainen ristiinsuodatus käyttämällä DirectQueryä Power BI Desktopissa](../transform-model/desktop-bidirectional-filtering.md) ja teknisessä raportissa [Taulukkomuotoisen liiketoimintatietojen semanttisen mallin suojaaminen](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
 [!INCLUDE [rls-desktop-view-as-roles](../includes/rls-desktop-view-as-roles.md)]
 
@@ -84,7 +84,7 @@ Seuraavassa on luettelo Power BI -mallien rivitason suojauksen tämänhetkisist�
 
 Käyttäjät, joiden raporteissa käytettiin username()-DAX-funktiota, huomaavat funktion uuden toimintatavan, jossa funktio palauttaa täydellisen käyttäjätunnuksen PAITSI JOS DirectQuerya käytetään yhdessä integroidun suojauksen kanssa.  Koska rivitason suojaus ei kyseisessä skenaariossa päde, skenaarioon ei tule muutoksia.
 
-Voit määrittää rivitason suojauksen vain tietojoukoille, jotka on luotu Power BI Desktopin avulla. Jos haluat ottaa rivitason suojauksen käyttöön tietojoukoille, jotka on luotu Excelin avulla, sinun on ensin muunnettava tiedostosi Power BI Desktop (PBIX) -tiedostoiksi. Lue lisätietoja artikkelista [Excel-tiedostojen muuntaminen](../desktop-import-excel-workbooks.md).
+Voit määrittää rivitason suojauksen vain tietojoukoille, jotka on luotu Power BI Desktopin avulla. Jos haluat ottaa rivitason suojauksen käyttöön tietojoukoille, jotka on luotu Excelin avulla, sinun on ensin muunnettava tiedostosi Power BI Desktop (PBIX) -tiedostoiksi. Lue lisätietoja artikkelista [Excel-tiedostojen muuntaminen](../connect-data/desktop-import-excel-workbooks.md).
 
 Toiminto tukee ainoastaan keräämistä, muuntamista ja lataamista (ETL) sekä DirectQuery-yhteyksiä, joissa käytetään tallennettuja tunnistetietoja. Analysis Servicesiin muodostettavat reaaliaikaiset yhteydet ja DirectQuery-yhteydet, joissa käytetään integroitua todentamista, käsitellään pohjana olevassa tietolähteessä. 
 
@@ -122,3 +122,4 @@ Kyllä voit. Jos olet jo määrittänyt rooleja ja jäseniä Power BI -raporttip
 [Järjestelmänvalvojien opas](admin-handbook-overview.md)  
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+

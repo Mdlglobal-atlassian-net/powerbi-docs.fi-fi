@@ -8,12 +8,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
-ms.openlocfilehash: 6ffdc73e5e9ef9ccd416378c19da587986c80b55
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 661277337c00f160c010351ba5f827b6e0fc2f8f
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114339"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277613"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Raportin näyttäminen Power BI -palvelussa *kuluttajille*
 
@@ -99,14 +99,14 @@ Raportit voidaan avata koontinäytöstä. Useimmat koontinäyttö[ruudut](end-us
     ![raportti avoinna lukunäkymässä](./media/end-user-report-open/power-bi-report-tabs.png)
 
 > [!NOTE]
-> Kaikki ruudut eivät johda raporttiin. Jos valitset ruudun, joka oli [luotu esittämällä kysymyksiä](end-user-q-and-a.md), QA-näyttö avautuu. Jos valitset ruudun, joka oli [luotu koontinäytön **Lisää ruutu** -pienoissovelluksella](../service-dashboard-add-widget.md), monia eri asioita voi tapahtua. Esimerkiksi video voidaan toistaa tai sivusto avata.  
+> Kaikki ruudut eivät johda raporttiin. Jos valitset ruudun, joka oli [luotu esittämällä kysymyksiä](end-user-q-and-a.md), QA-näyttö avautuu. Jos valitset ruudun, joka oli [luotu koontinäytön **Lisää ruutu** -pienoissovelluksella](../create-reports/service-dashboard-add-widget.md), monia eri asioita voi tapahtua. Esimerkiksi video voidaan toistaa tai sivusto avata.  
 
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Muita tapoja avata raportti
 Kun pääset sinuiksi Power BI -palvelun kanssa, löydät itsellesi sopivimmat työnkulut. Tässä on vielä muita tapoja raporttien käyttämiseen:
 - Valitsemalla siirtymisruudusta [Suosikit](end-user-favorite.md) ja [Viimeisimmät](end-user-recent.md)    
 - Käyttämällä [Näytä aiheeseen liittyvät](end-user-related.md) -toimintoa    
-- Sähköpostiviestistä, jonka joku on [jakanut kanssasi](../service-share-reports.md), tai kun [määrität ilmoituksen](end-user-alerts.md)    
+- Sähköpostiviestistä, jonka joku on [jakanut kanssasi](../collaborate-share/service-share-reports.md), tai kun [määrität ilmoituksen](end-user-alerts.md)    
 - [Ilmoituskeskuksen](end-user-notification-center.md) kautta    
 - Työtilasta
 - ja muilla tavoilla

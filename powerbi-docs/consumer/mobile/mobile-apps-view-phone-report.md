@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: eba723e4e75c7ce051921a907d2a3d0aa9536833
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: d3584ebc5233ccffc007118ac87ada49e906b34c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841775"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273519"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Puhelimelle optimoitujen Power BI ‑raporttien tarkastelu
 
@@ -48,7 +48,7 @@ Jos puhelinoptimoituun raporttiin on määritetty suodattimia, voit käyttää n
 ## <a name="cross-highlight-visuals"></a>Visualisointien ristiinkorostaminen
 Visualisointien ristiinkorostaminen pystynäkymässä toimii samoin kuin Power BI -palvelussa ja puhelimissa vaakasuunnassa: kun valitset tietoja yhdessä visualisoinnissa, tiedot korostuvat myös muissa tämän sivun visualisoinneissa.
 
-Lue lisää [suodattamisesta ja korostamisesta Power BI:ssä](../../power-bi-reports-filters-and-highlighting.md).
+Lue lisää [suodattamisesta ja korostamisesta Power BI:ssä](../../create-reports/power-bi-reports-filters-and-highlighting.md).
 
 ## <a name="select-visuals"></a>Visualisointien valitseminen
 Kun valitset puhelinraportissa visualisoinnin, puhelinraportti korostaa visualisoinnin ja kohdistaa siihen, mikä poistaa taustaa vasten tehtävät eleet käytöstä.
@@ -131,8 +131,7 @@ Raportin tekijät voivat [määrittää porautumisen](https://docs.microsoft.com
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Power BI -mobiilisovelluksille optimoitujen raporttien luominen](../../desktop-create-phone-report.md)
-* [Koontinäytön puhelinnäkymän luominen Power BI:ssä](../../service-create-dashboard-mobile-phone-view.md)
+* [Power BI -mobiilisovelluksille optimoitujen raporttien luominen](../../create-reports/desktop-create-phone-report.md)
+* [Koontinäytön puhelinnäkymän luominen Power BI:ssä](../../create-reports/service-create-dashboard-mobile-phone-view.md)
 * [Mihin tahansa kokoon optimaalisten reagoivien visualisointien luominen](../../visuals/desktop-create-responsive-visuals.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-

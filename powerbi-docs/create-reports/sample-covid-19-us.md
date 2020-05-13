@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/28/2020
 ms.author: lukaszp
 LocalizationGroup: Samples
-ms.openlocfilehash: 8cdc4a9a78c20c7c4e6986b63a3af61a319df1b6
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: aca7fc70bc70de553eee070ce5e1522b96c94880
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82584937"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277889"
 ---
 # <a name="covid-19-tracking-sample-for-us-state-and-local-governments"></a>COVID-19-seurantamalli Yhdysvaltain viranomaisille
 
@@ -48,7 +48,7 @@ Jos haluat sisällyttää vuorovaikutteisen grafiikan sivustoosi, kopioi ja liit
 <iframe width="1600" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
 ```
 
-Upotuskoodi on HTML iFrame -elementti, jonka voit lisätä mille tahansa HTML-sivulle. Säädä iFramen leveys ja korkeus sivustoosi sopivaksi. Malliraportti on tehty 16:9-kuvasuhteelle, joten valitse koko, joka säilyttää tämän kuvasuhteen. Oikein toteutettuna grafiikka näkyy ilman ylimääräisiä harmaita reunoja. Tutustu [iFramen koon muokkaamiseen vinkkeihin](../service-publish-to-web.md#tips-for-iframe-height-and-width), kun teet näitä muutoksia.
+Upotuskoodi on HTML iFrame -elementti, jonka voit lisätä mille tahansa HTML-sivulle. Säädä iFramen leveys ja korkeus sivustoosi sopivaksi. Malliraportti on tehty 16:9-kuvasuhteelle, joten valitse koko, joka säilyttää tämän kuvasuhteen. Oikein toteutettuna grafiikka näkyy ilman ylimääräisiä harmaita reunoja. Tutustu [iFramen koon muokkaamiseen vinkkeihin](../collaborate-share/service-publish-to-web.md#tips-for-iframe-height-and-width), kun teet näitä muutoksia.
 
 ## <a name="option-2-customize-the-sample-power-bi-file"></a>Vaihtoehto 2: muokkaa Power BI -mallitiedostoa
 
@@ -93,18 +93,18 @@ Aloita [lataamalla .pbix-tiedosto (täältä)](https://go.microsoft.com/fwlink/?
 
 ### <a name="publish-your-report-to-the-power-bi-service"></a>Julkaise raportti Power BI -palveluun
 
-Kun olet muokannut raportin haluamallasi tavalla, [julkaise se Power BI -palveluun täällä annettujen ohjeiden mukaisesti](../desktop-upload-desktop-files.md).
+Kun olet muokannut raportin haluamallasi tavalla, [julkaise se Power BI -palveluun täällä annettujen ohjeiden mukaisesti](../create-reports/desktop-upload-desktop-files.md).
 
 ### <a name="configure-scheduled-refresh"></a>Ajoitetun päivityksen määrittäminen
 
-Jos haluat pitää raportin tiedot ajan tasalla, voit määrittää [päivitysaikataulun](../refresh-scheduled-refresh.md) raportin julkaisemisen jälkeen.
+Jos haluat pitää raportin tiedot ajan tasalla, voit määrittää [päivitysaikataulun](../connect-data/refresh-scheduled-refresh.md) raportin julkaisemisen jälkeen.
 
 Kun toimit ohjeiden mukaisesti, valitse seuraavat asetukset:
 
 1. Tietolähteen tunnistetietojen todennusmenetelmä: Anonyymi
 2. Tämän tietolähteen tietosuojataso: Julkinen
 
-Testaa päivitysasetus valitsemalla [Päivitä nyt](../refresh-data.md#data-refresh) -toiminto tietojoukkokohteessa.
+Testaa päivitysasetus valitsemalla [Päivitä nyt](../connect-data/refresh-data.md#data-refresh) -toiminto tietojoukkokohteessa.
 
 Päivitetyt tiedot ladataan aina, kun päivitys suoritetaan aikataulun mukaisesti. Taustatiedot tarjoaa USAFacts, ja ne eivät välttämättä päivity yhtä usein kuin päivitysaikataulussasi on määritetty. Tarkista [USAFactsin verkkosivustosta](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) taustatietojen edellisen päivityksen ajankohta. 
 
@@ -112,7 +112,7 @@ Jos aiot julkaista muokatun raportin verkkosivustossasi, sinun kannattaa määri
 
 ### <a name="create-a-publish-to-web-embed-code"></a>Luo verkkoon julkaisemisen upotuskoodi 
 
-Jos haluat upottaa muokatun raportin omaan verkkosivustoosi, [luo oma verkkoon julkaisemisen upotuskoodi ohjeiden mukaisesti](../service-publish-to-web.md#create-embed-codes-with-publish-to-web).
+Jos haluat upottaa muokatun raportin omaan verkkosivustoosi, [luo oma verkkoon julkaisemisen upotuskoodi ohjeiden mukaisesti](../collaborate-share/service-publish-to-web.md#create-embed-codes-with-publish-to-web).
 
 Kun julkaiset upotuskoodin, upotat tiedot sivustoosi vahvistusvalintaikkunan iFramen avulla.
 
@@ -143,7 +143,7 @@ Voit yhdistää tämän raportin tietoja myös toisesta lähteestä peräisin ol
 
     :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-load-data.png" alt-text="Lataa tiedot verkosta":::
 
-    [Verkkosivuille yhdistäminen Power BI Desktopista](../desktop-connect-to-web.md) -ohjeartikkelista saat lisätietoja tietojen lataamisesta verkosta.
+    [Verkkosivuille yhdistäminen Power BI Desktopista](../connect-data/desktop-connect-to-web.md) -ohjeartikkelista saat lisätietoja tietojen lataamisesta verkosta.
     
 Tämän jälkeen voit visualisoida tietoja Power BI Desktopilla. Toimi lopuksi **tavan 2** [(Julkaise raportti Power BI -palveluun)](#publish-your-report-to-the-power-bi-service) ohjeiden mukaisesti ja julkaise raportti sekä luo muokattu upotuskoodi. 
 
@@ -168,4 +168,8 @@ Johns Hopkins Universityn tietojen tekijänoikeudet: copyright 2020 Johns Hopkin
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Hanki Power BI:n malleja](../sample-datasets.md)
+[Hanki Power BI:n malleja](../create-reports/sample-datasets.md)
+
+
+
+

@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/25/2020
 ms.author: v-pemyer
-ms.openlocfilehash: f03daf65ab938923906351acef9440fe0de88c5c
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 863f5f55eb4fb5d2427585bd2d792097ac1c6630
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82065566"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278924"
 ---
 # <a name="tips-to-improve-analysis-with-shapes-images-and-icons-in-power-bi-reports"></a>Vihjeitä analyysin parantamiseen muodoilla, kuvilla ja kuvakkeilla Power BI ‑raporteissa
 
@@ -37,7 +37,8 @@ Yhteenveto: neljä parasta vinkkiä analyysin parantamiseen muodoilla, kuvilla j
 
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
-- [Vinkkejä tyylikkäiden raporttien luomiseen](../desktop-tips-and-tricks-for-creating-reports.md)
+- [Vinkkejä tyylikkäiden raporttien luomiseen](../create-reports/desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine-video: [Neljä parasta vinkkiä analyysien parantamiseen piktogrammien avulla Power BI:ssä](https://www.youtube.com/watch?v=-gLwXonWNsI)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)
+

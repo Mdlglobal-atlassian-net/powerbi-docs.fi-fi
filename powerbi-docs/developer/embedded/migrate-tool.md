@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 7415750d59155f690cf0ff1ced25b31669f73710
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b6b84d9e6c5f0dee912ccf80cf6949618b16d8c5
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80114562"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83149003"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Power BI Embedded -siirtotyökalu
 
@@ -271,7 +271,7 @@ Katso lisätietoja artikkelista [Miten Power BI Embedded -työtilakokoelman sis�
 
 [Upottaminen Power BI:n avulla](embedding.md)  
 [Miten Power BI Embedded -työtilakokoelman sisältö siirretään Power BI -palveluun](migrate-from-powerbi-embedded.md)  
-[Mikä on Power BI Premium?](../../service-premium-what-is.md)  
+[Mikä on Power BI Premium?](../../admin/service-premium-what-is.md)  
 [JavaScript API Git -säilö](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git -säilö](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript-upotuksen näyte](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

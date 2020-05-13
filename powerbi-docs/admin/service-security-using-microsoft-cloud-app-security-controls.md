@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 6d342773f35adef5f7b61953b06e526a42be75dc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 9e3527d4e32143a3bc261226a5f10c371bcaaef4
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76537389"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83131986"
 ---
 # <a name="using-microsoft-cloud-app-security-controls-in-power-bi-preview"></a>Microsoft Cloud App Securityn hallinnan käyttäminen Power BI:ssä (esikatselu)
 
@@ -60,7 +60,7 @@ Cloud App Securityssa on myös kaksi erillistä, sisäistä tunnistusta Power BI
 
 Luottamuksellisuustunnisteiden avulla voit luokitella ja auttaa suojaamaan arkaluontoista sisältöä, jolloin organisaatiosi käyttäjät voivat tehdä yhteistyötä organisaation ulkopuolisten kumppanien kanssa mutta silti olla huolellisia ja tietoisia arkaluonteisesta sisällöstä ja tiedosta. 
 
-Voit lukea artikkelin [Luottamuksellisuustunnisteet Power BI:ssä](../designer/service-security-apply-data-sensitivity-labels.md), jossa käsitellään Power BI:n luottamuksellisuustunnisteiden käyttämistä. Alla on [esimerkki Power BI -käytännöstä, joka perustuu luottamuksellisuustunnisteisiin](#example).
+Voit lukea artikkelin [Luottamuksellisuustunnisteet Power BI:ssä](../collaborate-share/service-security-apply-data-sensitivity-labels.md), jossa käsitellään Power BI:n luottamuksellisuustunnisteiden käyttämistä. Alla on [esimerkki Power BI -käytännöstä, joka perustuu luottamuksellisuustunnisteisiin](#example).
 
 ## <a name="built-in-microsoft-cloud-app-security-detections-for-power-bi"></a>Power BI:n sisäiset Microsoft Cloud App Security -tunnistukset
 
@@ -136,7 +136,7 @@ Tässä artikkelissa kerrotaan, miten Microsoft Cloud App Security voi tarjota P
 
 * [Power BI:n tietojen suojauksen yleiskatsaus](service-security-data-protection-overview.md)
 * [Luottamuksellisuustunnisteiden käyttöönotto Power BI:ssä](service-security-enable-data-sensitivity-labels.md)
-* [Luottamuksellisuustunnisteiden käyttö Power BI:ssä](../designer/service-security-apply-data-sensitivity-labels.md)
+* [Luottamuksellisuustunnisteiden käyttö Power BI:ssä](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
 
 Voit olla kiinnostunut myös seuraavista Azure- ja tietoturva-artikkeleista:
 

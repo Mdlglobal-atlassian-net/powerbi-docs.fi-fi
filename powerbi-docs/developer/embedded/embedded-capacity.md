@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/11/2020
-ms.openlocfilehash: 27d6ddd9b24e09805bd22150a22347e5cd93c8e0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 66ef36f669b5f34c19f283cf9ebc8be2b12332ec
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79492832"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148640"
 ---
 # <a name="capacity-and-skus-in-power-bi-embedded-analytics"></a>Kapasiteetti ja SKU Power BI:n upotetussa analytiikassa
 
@@ -38,7 +38,7 @@ Power BI Embeddediä käyttävien sovellusten avulla käyttäjät voivat käytt�
 
 ### <a name="power-bi-premium"></a>Power BI Premium
 
-[Power BI Premium](../../service-premium-what-is.md) on optimoitu yrityksille, jotka haluavat täydellisen BI-ratkaisun, joka mahdollistaa organisaation, kumppanien, asiakkaiden ja toimittajien tietojen tarkastelun yhdessä näkymässä.
+[Power BI Premium](../../admin/service-premium-what-is.md) on optimoitu yrityksille, jotka haluavat täydellisen BI-ratkaisun, joka mahdollistaa organisaation, kumppanien, asiakkaiden ja toimittajien tietojen tarkastelun yhdessä näkymässä.
 
 Power BI Premium on SaaS-tuote, jonka käyttäjät voivat käyttää sisältöä mobiilisovellusten, sisäisesti kehitettyjen sovellusten tai Power BI -portaalin kautta (Power BI -palvelu). Tämän avulla Power BI Premium voi tarjota ratkaisun sekä sisäisille että ulkoisille asiakkaille tarkoitettuihin sovelluksiin.
 
@@ -46,21 +46,21 @@ Power BI Premium on SaaS-tuote, jonka käyttäjät voivat käyttää sisältöä
 
 Jokainen kapasiteetti tarjoaa SKU-valikoiman ja kukin SKU tarjoaa eri resurssitasoja muistia ja laskentatehoa varten. Tarvitsemasi SKU-tyyppi riippuu siitä, minkä ratkaisun haluat ottaa käyttöön.
 
-Jos haluat tietää, mitä kuormituksia kullekin tasolle tuetaan, katso artikkelia [Premium-kapasiteetin kuormitusten määrittäminen](../../service-admin-premium-workloads.md)
+Jos haluat tietää, mitä kuormituksia kullekin tasolle tuetaan, katso artikkelia [Premium-kapasiteetin kuormitusten määrittäminen](../../admin/service-admin-premium-workloads.md)
 
 Suunnittele ja testaa kapasiteettisi näiden linkkien avulla:
 * [Kapasiteetin suunnittelu](embedded-capacity-planning.md)
-* [Testausmenetelmät](../../service-premium-capacity-optimize.md#testing-approaches)
+* [Testausmenetelmät](../../admin/service-premium-capacity-optimize.md#testing-approaches)
 
 ### <a name="power-bi-embedded-skus"></a>Power BI Embeddedin SKU
 
-Power BI Embedded toimitetaan [*a* SKU:n kanssa](../../service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios).
+Power BI Embedded toimitetaan [*a* SKU:n kanssa](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios).
 
 ### <a name="power-bi-premium-skus"></a>Power BI Premiumin SKU
 
 Power BI Premium tarjoaa kaksi SKU:ta, *P* ja *EM*.
-* [Ymmärrä *P* ja *EM* SKU:n](../../service-premium-what-is.md#subscriptions-and-licensing) väliset erot
-* [Osta Premium SKU](../../service-admin-premium-purchase.md)
+* [Ymmärrä *P* ja *EM* SKU:n](../../admin/service-premium-what-is.md#subscriptions-and-licensing) väliset erot
+* [Osta Premium SKU](../../admin/service-admin-premium-purchase.md)
 
 ### <a name="which-sku-should-i-use"></a>Mitä SKU:ta minun pitäisi käyttää?
 

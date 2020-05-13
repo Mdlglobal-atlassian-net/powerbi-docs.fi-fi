@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/09/2019
 ms.author: painbar
-ms.openlocfilehash: 9c38aef858d723e548529f450e34d0480de5f8b2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: cfb5e4f1f75437db6235ece0d8661bab3f008649
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435440"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148430"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Tietojen tarkastelu offline-tilassa Power BI -mobiilisovelluksissa
 Koskee seuraavia:
@@ -44,7 +44,7 @@ Voit poistaa taustapäivityksen käytöstä, jos haluat esimerkiksi välttää v
 > [!NOTE]
 > Jos käytät Power BI -mobiilisovellusta iOS-laitteessa ja organisaatiosi on määrittänyt Microsoft Intunen mobiilisovellusten hallinnan, tietojen päivittäminen taustalla on poistettu käytöstä. Kun avaat sovelluksen seuraavan kerran, Power BI päivittää tiedot verkossa olevasta Power BI -palvelusta.
 > 
-> Lue lisää [Power BI -mobiilisovellusten päivittämisestä Microsoft Intunella](../../service-admin-mobile-intune.md). 
+> Lue lisää [Power BI -mobiilisovellusten päivittämisestä Microsoft Intunella](../../admin/service-admin-mobile-intune.md). 
 > 
 > 
 

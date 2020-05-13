@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/30/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 49601798ae920d956441c5580079625bf7408e07
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 242f1e44e3314af900d9f4d4e4fb7380b28b4103
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78290564"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278671"
 ---
 # <a name="referencing-power-query-queries"></a>Power Query -kyselyihin viittaaminen
 
@@ -42,7 +42,7 @@ Tilanteen voi ajatella niin, että **kyselyyn 2** on upotettu sisään **kyselyn
 
 Yleensä suosittelemme kyselyihin viittaamista, jotta vältetään logiikkapäällekkäisyydet eri kyselyiden välillä. Kuitenkin tämä suunnittelutapa voi hidastaa tietojen päivittymistä ja ylikuormittaa tietolähteitä, kuten edellä on kuvattu.
 
-Suosittelemme, että luot niiden sijasta [tietovuon](../service-dataflows-overview.md). Tietovuon käyttö voi parantaa tietojen päivittymisaikaa ja vähentää tietolähteeseen kohdistuvia vaikutuksia.
+Suosittelemme, että luot niiden sijasta [tietovuon](../transform-model/service-dataflows-overview.md). Tietovuon käyttö voi parantaa tietojen päivittymisaikaa ja vähentää tietolähteeseen kohdistuvia vaikutuksia.
 
 Voit suunnitella tietovuon niin, että se sisältää lähdetiedot ja muunnokset. Koska tietovuo on pysyvä tietosäilö Power BI ‑palvelun sisällä, se noutaa tiedot nopeasti. Vaikka kyselyihin viittaaminen johtaisi useisiin tietovuopyyntöihin, tietojen päivittymisajat voivat silti parantua.
 
@@ -52,7 +52,7 @@ Jos aiemman esimerkin **kysely 1** suunnitellaan uudestaan tietovuoentiteetiksi,
 
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
-- [Omatoiminen tietojen valmisteleminen Power BI:ssä](../service-dataflows-overview.md)
-- [Tietovoiden luominen ja käyttäminen Power BI:ssä](../service-dataflows-create-use.md)
+- [Omatoiminen tietojen valmisteleminen Power BI:ssä](../transform-model/service-dataflows-overview.md)
+- [Tietovoiden luominen ja käyttäminen Power BI:ssä](../transform-model/service-dataflows-create-use.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)

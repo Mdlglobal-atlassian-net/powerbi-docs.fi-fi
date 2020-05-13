@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b60a4c14873427bd06d2b6abce48c9d3d3008859
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 6eee86423fdfc1e1a9338aa4fecfd5eae0c0d111
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865249"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83272852"
 ---
 # <a name="create-and-use-funnel-charts"></a>Suppilokaavioiden luominen ja käyttäminen
 
@@ -94,20 +94,23 @@ Nyt voit luoda oman suppilokaavion, joka esittää mahdollisuuksien määrän ku
      
      ![Ehdotuspalkin tiedot](media/power-bi-visualization-funnel-charts/funnelhover-new.png)
 
-6. [Tallenna raportti](../service-report-save.md).
+6. [Tallenna raportti](../create-reports/service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Korostaminen ja ristiinsuodatus
-Lisätietoja Suodattimet-paneelin käyttämisestä, katso ohjeet [suodattimen lisäämisestä raporttiin](../power-bi-report-add-filter.md).
+Lisätietoja Suodattimet-paneelin käyttämisestä, katso ohjeet [suodattimen lisäämisestä raporttiin](../create-reports/power-bi-report-add-filter.md).
 
 Yksittäisen palkin korostaminen suppilossa ristiinsuodattaa muut raporttisivulla olevat visualisoinnit... ja päinvastoin. Jatka harjoittelua lisäämällä suppilokaavion sisältämälle raporttisivulle joitakin muitakin visualisointeja.
 
 1. Valitse suppilokaavion palkki **Ehdotus**. Se ristiinkorostaa muut sivulla olevat visualisoinnit. Voit valita useita kohteita kerralla käyttämällä Ctrl-näppäintä.
    
    ![visuaalisia vuorovaikutuksia esittävä lyhyt video](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
-2. Jos haluat määrittää asetukset siitä, miten visualisoinnit ristiinkorostavat ja -suodattavat toisiaan, katso [visualisointien vuorovaikutukset Power BI:ssä](../service-reports-visual-interactions.md)
+2. Jos haluat määrittää asetukset siitä, miten visualisoinnit ristiinkorostavat ja -suodattavat toisiaan, katso [visualisointien vuorovaikutukset Power BI:ssä](../create-reports/service-reports-visual-interactions.md)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 [Mittarit Power BI:ssä](power-bi-visualization-radial-gauge-charts.md)
 
 [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+
+

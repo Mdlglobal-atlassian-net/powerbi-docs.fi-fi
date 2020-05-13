@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 937f8ca693113cf85d265420da44f7c9f8b68f5f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 8718c67c592bf96d50efed475c0d27b4ec80ca04
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78260442"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278326"
 ---
 # <a name="many-to-many-relationship-guidance"></a>Monta-moneen-suhteen ohjeet
 
@@ -161,7 +161,7 @@ Visualisoinnissa näytetään tarkka tulos. Mallin hyödyllisyys on kuitenkin ra
 
 ### <a name="relate-many-to-many-facts-guidance"></a>Liitä monta-moneen-faktat – ohjeet
 
-Emme yleisesti ottaen suosittele kahden faktatyyppisen taulukon liittämistä suoraan monta-moneen-kardinaliteetin avulla. Tärkein syy on se, että malli ei tarjoa joustavuutta raportin visualisointien suodatukseen tai ryhmittelyyn. Esimerkissä visualisoinnit voivat suodattaa tai ryhmitellä vain **Order**-taulukon **OrderID**-sarakkeen mukaan. Toinen syy liittyy tietojesi laatuun. Jos tietojesi eheydessä on ongelmia, joitakin rivejä voidaan jättää pois kyselyjen suorittamisen aikana _heikon suhteen_ vuoksi. Jos haluat lisätietoja, katso [Mallien suhteet Power BI Desktopissa (Suhteen arviointi)](../desktop-relationships-understand.md#relationship-evaluation).
+Emme yleisesti ottaen suosittele kahden faktatyyppisen taulukon liittämistä suoraan monta-moneen-kardinaliteetin avulla. Tärkein syy on se, että malli ei tarjoa joustavuutta raportin visualisointien suodatukseen tai ryhmittelyyn. Esimerkissä visualisoinnit voivat suodattaa tai ryhmitellä vain **Order**-taulukon **OrderID**-sarakkeen mukaan. Toinen syy liittyy tietojesi laatuun. Jos tietojesi eheydessä on ongelmia, joitakin rivejä voidaan jättää pois kyselyjen suorittamisen aikana _heikon suhteen_ vuoksi. Jos haluat lisätietoja, katso [Mallien suhteet Power BI Desktopissa (Suhteen arviointi)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 Faktatyyppisten taulukoiden suoran liittämisen sijaan suosittelemme [tähtirakenteen](star-schema.md) periaatteiden käyttöönottoa. Voit tehdä sen lisäämällä dimensiotyyppisiä taulukoita. Dimensiotyyppiset taulukot liittyvät faktatyyppisiin taulukoihin yksi-moneen-suhteiden avulla. Tämä rakennemenettely on tehokas, sillä se tarjoaa joustavia raportointivaihtoehtoja. Sen avulla voit suodattaa tai ryhmitellä käyttämällä mitä tahansa dimensiotyyppisiä sarakkeita ja tehdä yhteenvedon mistä tahansa liittyvästä faktatyyppisestä taulukosta.
 
@@ -184,7 +184,7 @@ Kun otat käyttöön tähtirakenteen periaatteet, saat seuraavat edut:
 - Raportin visualisoinnit voivat _suodattaa tai ryhmitellä_ dimensiotyyppisen taulukon minkä tahansa näkyvissä olevan sarakkeen mukaan
 - Raportin visualisoinnit voivat _tehdä yhteenvedon_ faktatyyppisen taulukon mistä tahansa näkyvissä olevasta sarakkeesta
 - **OrderLine**-, **OrderDate**- tai **Product**-taulukoihin käytetyt suodattimet leviävät molempiin faktatyyppisiin taulukoihin
-- Kaikki suhteet ovat yksi-moneen-suhteita, ja jokainen suhde on _vahva suhde_. Tietojen eheyteen liittyviä ongelmia ei peitetä. Jos haluat lisätietoja, katso [Mallien suhteet Power BI Desktopissa (Suhteen arviointi)](../desktop-relationships-understand.md#relationship-evaluation).
+- Kaikki suhteet ovat yksi-moneen-suhteita, ja jokainen suhde on _vahva suhde_. Tietojen eheyteen liittyviä ongelmia ei peitetä. Jos haluat lisätietoja, katso [Mallien suhteet Power BI Desktopissa (Suhteen arviointi)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 ## <a name="relate-higher-grain-facts"></a>Liitä yksityiskohtaiset faktat
 
@@ -209,7 +209,7 @@ Käsitellään esimerkkiä, joka koskee neljää taulukkoa: **Date**, **Sales**,
 
 On kuitenkin varmistettava, että kuukausi- tai päivämäärätason suodattimet antavat merkityksellisen tuloksen. Ilman erityistä laskentalogiikkaa raportin visualisoinnit voivat ilmoittaa, että kohdepäivät ovat kunkin vuoden ensimmäisiä päiviä. Kaikki muut päivät – ja kaikki kuukaudet lukuun ottamatta tammikuuta – näyttävät kohdemääräksi TYHJÄÄ.
 
-Seuraavassa matriisivisualisoinnissa näytetään, mitä tapahtuu, kun raportin käyttäjä porautuu vuositasolta kuukausitasolle. Visualisointi tekee yhteenvedon **TargetQuantity**-sarakkeesta. ([Näytä kohteet, joilla ei ole tietoja](../desktop-show-items-no-data.md) -asetus on otettu käyttöön matriisin riveille.)
+Seuraavassa matriisivisualisoinnissa näytetään, mitä tapahtuu, kun raportin käyttäjä porautuu vuositasolta kuukausitasolle. Visualisointi tekee yhteenvedon **TargetQuantity**-sarakkeesta. ([Näytä kohteet, joilla ei ole tietoja](../create-reports/desktop-show-items-no-data.md) -asetus on otettu käyttöön matriisin riveille.)
 
 ![Matriisivisualisointi näyttää vuoden 2020 kohdemääräksi 270. Kun sitä laajennetaan näyttämään vuoden 2020 kuukaudet, tammikuu on 270 ja kaikki muut kuukausitason kohdemäärät ovat TYHJIÄ.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-bad.png)
 
@@ -295,7 +295,7 @@ Kun sinun täytyy liittää dimensiotyyppinen taulukko faktatyyppiseen taulukkoo
 
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
-- [Mallien suhteet Power BI Desktopissa](../desktop-relationships-understand.md)
+- [Mallien suhteet Power BI Desktopissa](../transform-model/desktop-relationships-understand.md)
 - [Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä](star-schema.md)
 - [Suhteen vianmääritysohjeet](relationships-troubleshoot.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

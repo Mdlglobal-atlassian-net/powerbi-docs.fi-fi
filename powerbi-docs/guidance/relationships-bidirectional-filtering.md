@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 502e37cda5533fe6d9b1ce45faa67f809dbeec78
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 9c883b32d03362e5d0e0d6d5ed074cb627fabaf1
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78263687"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273181"
 ---
 # <a name="bi-directional-relationship-guidance"></a>Kaksisuuntaisen suhteen ohjeet
 
@@ -134,10 +134,11 @@ Seuraavassa taulukossa esitetään kunkin myydyn tuotteen nykyiset tilastotiedot
 
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
-- [Mallien suhteet Power BI Desktopissa](../desktop-relationships-understand.md)
+- [Mallien suhteet Power BI Desktopissa](../transform-model/desktop-relationships-understand.md)
 - [Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä](star-schema.md)
 - [Yksi-yhteen-suhteen ohjeet](relationships-one-to-one.md)
 - [Monta-moneen-suhteen ohjeet](relationships-many-to-many.md)
 - [Suhteen vianmääritysohjeet](relationships-troubleshoot.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)
+

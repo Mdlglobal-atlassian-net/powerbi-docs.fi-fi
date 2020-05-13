@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/02/2020
 ms.author: v-pemyer
-ms.openlocfilehash: a8c8c50369911e76376ccbda3a95743813fde6bb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3e3e44647ca7c85c09a3e7f4b3c309947559f5d3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78263664"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273220"
 ---
 # <a name="active-vs-inactive-relationship-guidance"></a>Aktiivisten ja passiivisten suhteiden ohjeet
 
@@ -114,7 +114,7 @@ Tämä mallirakenne tukee seuraavan raporttimallin tuottamista.
 
 Raporttisivu suodattaa vuosineljänneksen 2019 Q4 mukaan. Taulukon visualisointi ryhmittelee kuukauden perusteella ja näyttää useita myyntitietoja. **Orders**- ja **Orders Shipped** -mittarit tuottavat erilaisia tuloksia. Ne käyttävät samaa yhteenvetologiikkaa (**Sales**-taulukon rivien laskeminen), mutta erilaista **Date**-taulukon suodatuksen levittämistä.
 
-Huomaa, että vuosineljänneksen osittaja sisältää tyhjäarvoisen kohteen. Tämä osittajakohde tulee näkyviin [taulukon laajennuksen](../desktop-relationships-understand.md#strong-relationships) seurauksena. Kullakin **Sales**-taulukon rivillä on tilauspäivämäärä, mutta joillakin riveillä on tyhjä lähetyspäivämäärä – näitä tilauksia ei vielä ole lähetetty. Taulukon laajennus ottaa huomioon myös passiiviset suhteet, joten tyhjäarvoja saattaa ilmestyä, jos suhteessa on monta puolta tai jos tiedoissa on eheysongelmia.
+Huomaa, että vuosineljänneksen osittaja sisältää tyhjäarvoisen kohteen. Tämä osittajakohde tulee näkyviin [taulukon laajennuksen](../transform-model/desktop-relationships-understand.md#strong-relationships) seurauksena. Kullakin **Sales**-taulukon rivillä on tilauspäivämäärä, mutta joillakin riveillä on tyhjä lähetyspäivämäärä – näitä tilauksia ei vielä ole lähetetty. Taulukon laajennus ottaa huomioon myös passiiviset suhteet, joten tyhjäarvoja saattaa ilmestyä, jos suhteessa on monta puolta tai jos tiedoissa on eheysongelmia.
 
 ## <a name="recommendations"></a>Suositukset
 
@@ -129,7 +129,7 @@ Tietyissä tilanteissa voit kuitenkin määrittää rooliulottuvuustyyppiselle t
 
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
-- [Mallien suhteet Power BI Desktopissa](../desktop-relationships-understand.md)
+- [Mallien suhteet Power BI Desktopissa](../transform-model/desktop-relationships-understand.md)
 - [Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä](star-schema.md)
 - [Suhteen vianmääritysohjeet](relationships-troubleshoot.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

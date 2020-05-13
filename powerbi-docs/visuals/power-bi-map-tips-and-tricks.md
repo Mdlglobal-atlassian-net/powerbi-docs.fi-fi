@@ -2,22 +2,25 @@
 title: Vihjeitä ja vinkkejä karttoja varten (mukaan lukien Bing Map s-integrointi)
 description: 'Power BI:n kartan visualisointeihin, kuviin, sijainteihin, pituusasteisiin ja leveysasteisiin sekä niiden toimintaan Bing Mapsin kanssa liittyviä vinkkejä. '
 author: mihart
-ms.reviewer: ''
+ms.reviewer: rien
 featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/17/2020
+ms.date: 05/05/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e5c89a8089929b7d87d2a1291ef2c5d3a5b012b7
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 89b81286819e5f286a26efeb6b36d6336446132c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79525909"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277820"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Vinkkejä Power BI -karttavisualisoinneille
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 Power BI:n voi integroida Bing Mapsin kanssa, jolloin karttoja voidaan luoda oletusarvoisten karttakoordinaattien avulla (prosessia kutsutaan geokoodaukseksi). Power BI ja Bing Maps käyttävät algoritmeja oikean sijainnin määrittämiseen, mutta joskus sijainnin määritys perustuu parhaaseen arvaukseen. Jos Power BI ei pysty luomaan kartan visualisointia itse, se käyttää apuna Bing Mapsia. 
 
 Palomuuri on ehkä päivitettävä, jotta Bingin geokoodauksessa hyödyntämiä URL-osoitteita voidaan käyttää.  Tässä on luettelo näistä URL-osoitteista:
@@ -47,7 +50,7 @@ Jos sinulla on pääsy tietojoukkoon, jota käytetään kartan visualisoinnin lu
 
 **1. Luokittele maantieteelliset kentät Power BI Desktopissa**
 
-Määrittämällä *tietokentille* tietoluokan Power BI Desktopissa voit varmistaa, että kentät on geokoodattu oikein. Valitse haluamasi sarake tietonäkymässä. Valitse valintanauhassa **Mallinnus**-välilehti ja määritä sitten **tietoluokaksi** **Osoite**, **Kaupunki**, **Maanosa**, **Maa/alue**, **Hallintoalue**, **Postinumero**, **Osavaltio** tai **Provinssi**. Näiden tietoluokkien avulla Bing voi koodata päivämäärän oikein. Lisätietoja on artikkelissa [Tietojen luokittelu Power BI Desktopissa](../desktop-data-categorization.md). Jos muodostat reaaliaikaisen yhteyden SQL Server Analysis Servicesiin, sinun on määritettävä tietojen luokittelu Power BI:n ulkopuolella [SQL Server Data Toolsin (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) avulla.
+Määrittämällä *tietokentille* tietoluokan Power BI Desktopissa voit varmistaa, että kentät on geokoodattu oikein. Valitse haluamasi sarake tietonäkymässä. Valitse valintanauhassa **Mallinnus**-välilehti ja määritä sitten **tietoluokaksi** **Osoite**, **Kaupunki**, **Maanosa**, **Maa/alue**, **Hallintoalue**, **Postinumero**, **Osavaltio** tai **Provinssi**. Näiden tietoluokkien avulla Bing voi koodata päivämäärän oikein. Lisätietoja on artikkelissa [Tietojen luokittelu Power BI Desktopissa](../transform-model/desktop-data-categorization.md). Jos muodostat reaaliaikaisen yhteyden SQL Server Analysis Servicesiin, sinun on määritettävä tietojen luokittelu Power BI:n ulkopuolella [SQL Server Data Toolsin (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) avulla.
 
 **2. Käytä useita sijaintisarakkeita**    
  Joskus tietoluokkien määrittäminen yhdistämistä varten ei riitä siihen, että Bing ymmärtää käyttäjän aikeet. Jotkin määritykset ovat moniselitteisiä, koska paikka sijaitsee useassa eri maassa tai usealla eri alueella. ***Southampton*** esimerkiksi sijaitsee Englannissa, Pennsylvaniassa ja New Yorkissa.
@@ -94,4 +97,5 @@ Kun tietoihin poraudutaan maantieteellisten hierarkioiden avulla, on tärkeää 
 [Power Bi -visualisoinnit](power-bi-report-visualizations.md)
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+
 

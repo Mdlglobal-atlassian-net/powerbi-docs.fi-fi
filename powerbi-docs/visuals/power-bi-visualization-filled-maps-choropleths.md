@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ba344d66f967d502d9de8adef7defcae434fb3ef
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: ae73f2e32d34c3e1b37991358545997c4b4bb961
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865456"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83272898"
 ---
 # <a name="create-and-use-filled-maps-choropleth-maps-in-power-bi"></a>Täytettyjen karttojen (koropleettikartat) luominen ja käyttäminen Power BI:ssä
 
@@ -92,12 +92,12 @@ Tässä oppaassa käytetään [myynti- ja markkinointi-PBIX-mallitiedostoa](http
 7. Täytetty kartta sävytetään vihreällä ja punaisella niin, että punainen edustaa alempia asennearvoja ja vihreät suurempia, positiivisempia asenteita.  Jos haluat lisätietoja, vedä kenttä työkaluvihjeisiin.  Olemme lisänneet **SalesFact** > **Sentiment -välin**. Idahon (ID) tilan korostaminen osoittaa, että asenneväli on alhainen, 6.
    ![täytetty kartta jossa näkyy Idaho-työkaluvihjeet](media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho-filled-map.png)
 
-10. [Tallenna raportti](../service-report-save.md).
+10. [Tallenna raportti](../create-reports/service-report-save.md).
 
 Power BI:n avulla voit hallita täytetyn kartan ulkoasua vapaasti. Harjoittele väriasetusten käyttöä, kunnes ulkoasu vastaa odotuksiasi. 
 
 ## <a name="highlighting-and-cross-filtering"></a>Korostaminen ja ristiinsuodatus
-Lisätietoja Suodattimet-paneelin käyttämisestä saat ohjeaiheesta [Suodattimen lisääminen raporttiin](../power-bi-report-add-filter.md).
+Lisätietoja Suodattimet-paneelin käyttämisestä saat ohjeaiheesta [Suodattimen lisääminen raporttiin](../create-reports/power-bi-report-add-filter.md).
 
 Yksittäisen sijainnin korostaminen täytetyssä kartassa ristiinsuodattaa muut raporttisivulla olevat visualisoinnit – ja päinvastoin.
 
@@ -136,3 +136,5 @@ Lisäohjeita karttavisualisointien tekemiseen saat ohjeaiheesta [Vihjeitä ja vi
 [Muotokartta](desktop-shape-map.md)
 
 [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+

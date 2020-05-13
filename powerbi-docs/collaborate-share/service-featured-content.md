@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/16/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 01e41520ec4cc391e241cd53a03c3e71d15379d7
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4d8b3d48828840920b6bbd792c9fe9da40308b39
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79496259"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83142299"
 ---
 # <a name="feature-content-on-colleagues-power-bi-home-page"></a>Sisällön esittely työtovereiden Power BI -aloitussivulla
 
@@ -24,9 +24,9 @@ Voit esitellä koontinäyttöjä, raportteja ja sovelluksia niin, että ne näky
 
 ## <a name="who-can-feature-content"></a>Kuka saa esitellä sisältöä
 
-Power BI -vuokraajasi järjestelmänvalvoja päättää, ottaako käyttöön sisällön esittelyominaisuuden vuokraajassasi. Järjestelmänvalvoja myös päättää, kuka saa esitellä sisältöä. Katso lisätietoja [hallintaportaalin](../service-admin-portal.md#featured-content) artikkelista.
+Power BI -vuokraajasi järjestelmänvalvoja päättää, ottaako käyttöön sisällön esittelyominaisuuden vuokraajassasi. Järjestelmänvalvoja myös päättää, kuka saa esitellä sisältöä. Katso lisätietoja [hallintaportaalin](../admin/service-admin-portal.md#featured-content) artikkelista.
 
-Jos kuulet siihen organisaatiosi valittuun ryhmään, jolla on tämä vastuu, sinulla pitää olla Power BI Pro -käyttöoikeudet. Jotta voit esitellä koontinäyttöjä ja raportteja, sinulla pitää olla työtilassa järjestelmänvalvojan, jäsenen tai osallistujan rooli. Jotta voit esitellä itse sovellusta, sinulla on oltava työtilassa järjestelmänvalvojan tai jäsenen rooli. Katso lisätietoja kohdasta [Uusien työtilojen roolit](../service-new-workspaces.md#roles-in-the-new-workspaces).
+Jos kuulet siihen organisaatiosi valittuun ryhmään, jolla on tämä vastuu, sinulla pitää olla Power BI Pro -käyttöoikeudet. Jotta voit esitellä koontinäyttöjä ja raportteja, sinulla pitää olla työtilassa järjestelmänvalvojan, jäsenen tai osallistujan rooli. Jotta voit esitellä itse sovellusta, sinulla on oltava työtilassa järjestelmänvalvojan tai jäsenen rooli. Katso lisätietoja kohdasta [Uusien työtilojen roolit](service-new-workspaces.md#roles-in-the-new-workspaces).
 
 ## <a name="who-sees-featured-content"></a>Kuka voi nähdä esiteltyä sisältöä
 
@@ -58,7 +58,6 @@ Nyt kaikki, jotka pääsevät käyttämään tätä sovellusta, näkevät sen my
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* [Miten voin työstää koontinäyttöjä ja raportteja yhdessä muiden kanssa sekä jakaa niitä?](../service-how-to-collaborate-distribute-dashboards-reports.md)
-* [Hallitse esiteltyä sisältöä hallintaportaalissa](../service-admin-portal.md#manage-featured-content)
+* [Miten voin työstää koontinäyttöjä ja raportteja yhdessä muiden kanssa sekä jakaa niitä?](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
+* [Hallitse esiteltyä sisältöä hallintaportaalissa](../admin/service-admin-portal.md#manage-featured-content)
 * Onko sinulla kysymyksiä? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
-

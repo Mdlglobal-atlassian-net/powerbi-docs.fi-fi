@@ -8,16 +8,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 5a6b7bda8bf5e8d80ae8b22a71035f8bc362fb89
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e3af0828afcc7c085b896fe9e1b99f3b10bfdd5f
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377738"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277843"
 ---
 # <a name="extend-visuals-with-report-page-tooltips"></a>Visualisointien laajentaminen raporttisivun työkaluvihjeiden avulla
 
-Tämä artikkeli koskee raportin laatijaa, joka suunnittelee Power BI -raportteja. Siinä annetaan ehdotuksia ja suosituksia luotaessa [raporttisivun työkaluvihjeitä](../desktop-tooltips.md).
+Tämä artikkeli koskee raportin laatijaa, joka suunnittelee Power BI -raportteja. Siinä annetaan ehdotuksia ja suosituksia luotaessa [raporttisivun työkaluvihjeitä](../create-reports/desktop-tooltips.md).
 
 ## <a name="suggestions"></a>Ehdotukset
 
@@ -29,7 +29,7 @@ Raporttisivun työkaluvihjeet voivat parantaa raporttikäyttäjiesi käyttökoke
 > [!NOTE]
 > Raportin visualisointi voi näyttää sivun työkaluvihjeen vain, kun työkaluvihjeen sivun suodattimet ovat yhteensopivia visualisoinnin rakenteen kanssa. Esimerkiksi visualisointi, joka ryhmittelee eri _tuotteita_, on yhteensopiva vain työkaluvihjeen sivun kanssa, joka suodattaa _tuotteittain_.
 >
-> Sivun työkaluvihjeet eivät tue vuorovaikutteisuutta. Jos haluat, että raporttisi käyttäjät voivat toimia vuorovaikutuksessa, luo [porautumissivu](../desktop-drillthrough.md) työkaluvihjeen sijaan.
+> Sivun työkaluvihjeet eivät tue vuorovaikutteisuutta. Jos haluat, että raporttisi käyttäjät voivat toimia vuorovaikutuksessa, luo [porautumissivu](../create-reports/desktop-drillthrough.md) työkaluvihjeen sijaan.
 >
 > Power BI -visualisoinnit eivät tue sivun työkaluvihjeitä.
 
@@ -65,7 +65,7 @@ Visualisoinnin otsikot voidaan määrittää näyttämään sivun työkaluvihjee
 
 Kiinnostavaa kyllä, painikkeet, kuvat, tekstiruudut ja muodot voivat myös paljastaa visualisoinnin otsikon sivun työkaluvihjeen.
 
-Seuraavassa esimerkissä näytetään, mitä tapahtuu, kun raportin käyttäjä siirtää kohdistimen [visualisointiotsikon](../desktop-visual-elements-for-reports.md) kohdalle.
+Seuraavassa esimerkissä näytetään, mitä tapahtuu, kun raportin käyttäjä siirtää kohdistimen [visualisointiotsikon](../create-reports/desktop-visual-elements-for-reports.md) kohdalle.
 
 ![Raportin käyttäjä on pitänyt osoittimen visualisoinnin otsikon kuvakkeen (kysymysmerkkikuvake) päällä. Esiin on tullut RTF-muotoiltu työkaluvihje.](media/report-page-tooltips/suggestion-add-help.png)
 
@@ -85,8 +85,8 @@ Raportin suunnittelun aikana suosittelemme seuraavia käytäntöjä:
 
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
-- [Power BI Desktopissa luotuihin raporttisivuihin perustuvien työkaluvihjeiden luominen](../desktop-tooltips.md)
-- [Työkaluvihjeiden mukautus Power BI Desktopissa](../desktop-custom-tooltips.md)
-- [Power BI -raporttien parantaminen visuaalisia elementtejä käyttämällä](../desktop-visual-elements-for-reports.md)
+- [Power BI Desktopissa luotuihin raporttisivuihin perustuvien työkaluvihjeiden luominen](../create-reports/desktop-tooltips.md)
+- [Työkaluvihjeiden mukautus Power BI Desktopissa](../create-reports/desktop-custom-tooltips.md)
+- [Power BI -raporttien parantaminen visuaalisia elementtejä käyttämällä](../create-reports/desktop-visual-elements-for-reports.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)

@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: a2e53d27a8ca49e9fc318fd25cc20acbb7bacc38
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4172fc2ff4a1da409a1f5586e8b3579e4745fe99
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80751610"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273450"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä
 
@@ -42,7 +42,7 @@ Huomaa, että jokainen Power BI -raportin visualisointi luo kyselyn, joka lähet
 - Dimensiotaulukot tukevat _suodatusta_ ja _ryhmittelyä_.
 - Faktataulukot tukevat _yhteenvetoa_.
 
-Ei ole olemassa mitään taulukon ominaisuutta, jolla mallintajat määrittäisivät taulukon dimensio- tai faktataulukoksi. Se määritetään mallien yhteyksien perusteella. Mallin yhteys muodostaa suodatuksen välityspolun kahden taulukon välille. Yhteyden **Kardinaliteetti**-ominaisuus määrittää taulukkotyypin. Yleinen yhteyden kardinaliteetti on _yksi moneen_ tai sen käänteinen vastapari _monta yhteen_. "Yksi" puoli on aina dimensiotyyppinen taulukko ja "moni" puoli on aina faktatyyppinen taulukko. Jos haluat lisätietoja yhteyksistä, katso [Mallien suhteet Power BI Desktopissa](../desktop-relationships-understand.md).
+Ei ole olemassa mitään taulukon ominaisuutta, jolla mallintajat määrittäisivät taulukon dimensio- tai faktataulukoksi. Se määritetään mallien yhteyksien perusteella. Mallin yhteys muodostaa suodatuksen välityspolun kahden taulukon välille. Yhteyden **Kardinaliteetti**-ominaisuus määrittää taulukkotyypin. Yleinen yhteyden kardinaliteetti on _yksi moneen_ tai sen käänteinen vastapari _monta yhteen_. "Yksi" puoli on aina dimensiotyyppinen taulukko ja "moni" puoli on aina faktatyyppinen taulukko. Jos haluat lisätietoja yhteyksistä, katso [Mallien suhteet Power BI Desktopissa](../transform-model/desktop-relationships-understand.md).
 
 ![Käsitteellinen tähtirakenne](media/star-schema/star-schema-example2.png)
 
@@ -209,10 +209,12 @@ Tämä monta-moneen-rakennemenetelmä on hyvin dokumentoitu, ja se voidaan saavu
 Lisätietoja tähtirakenteesta ja Power BI:n mallin rakenteesta on seuraavissa artikkeleissa:
 
 - [Dimensiomallinnuksen Wikipedia-artikkeli](https://go.microsoft.com/fwlink/p/?linkid=246459)
-- [Yhteyksien luominen ja hallinta Power BI Desktopissa](../desktop-create-and-manage-relationships.md)
+- [Yhteyksien luominen ja hallinta Power BI Desktopissa](../transform-model/desktop-create-and-manage-relationships.md)
 - [Yksi-yhteen-suhteen ohjeet](relationships-one-to-one.md)
 - [Monta-moneen-suhteen ohjeet](relationships-many-to-many.md)
 - [Kaksisuuntaisen suhteen ohjeet](relationships-bidirectional-filtering.md)
 - [Aktiivisten ja passiivisten suhteiden ohjeet](relationships-active-inactive.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)
+
+

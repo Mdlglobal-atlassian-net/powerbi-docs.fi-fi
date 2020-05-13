@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/05/2019
 ms.author: painbar
-ms.openlocfilehash: 6020a6cb72be4e8d7be0485c7787fefc097e679d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 387f0cd4ecea59fd55af0a9eceff2272ddd8097b
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75220041"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278855"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Paikallisten raporttipalvelinten raporttien ja suorituskykyilmaisimien tarkastelu Power BI -mobiilisovelluksissa
 
@@ -107,7 +107,7 @@ Power BI -raportit, Reporting Services -mobiiliraportit ja suorituskykyilmaisime
   > Poraudu alaspäin ja ylöspäin -toimintoa ei tällä hetkellä ole otettu käyttöön Power BI -raporteissa Power BI -raporttipalvelimella.
   
     ![Power BI -raportti](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-report-server-report.png)
-* Power BI Desktopissa raporttien omistajat voivat [optimoida raportin](../../desktop-create-phone-report.md) Power BI -mobiilisovelluksia silmällä pitäen. Matkapuhelimessa optimoiduilla raporteilla on erityinen kuvake, ![Optimoidun Power BI -raportin kuvake](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png) ja asettelu.
+* Power BI Desktopissa raporttien omistajat voivat [optimoida raportin](../../create-reports/desktop-create-phone-report.md) Power BI -mobiilisovelluksia silmällä pitäen. Matkapuhelimessa optimoiduilla raporteilla on erityinen kuvake, ![Optimoidun Power BI -raportin kuvake](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png) ja asettelu.
   
     ![Mobiililaitteille optimoitu Power BI -raportti](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-report.png)
 * Napauta Suorituskykyilmaisinta sen näkemiseksi tarkastelutilassa.
@@ -133,4 +133,3 @@ Voit merkitä suorituskykyilmaisimia ja raportteja suosikeiksi verkkoportaalissa
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Mikä on Power BI?](../../fundamentals/power-bi-overview.md)  
 * Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-

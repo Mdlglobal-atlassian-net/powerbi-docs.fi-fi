@@ -9,16 +9,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 2962d5f8504b7214cb685457c59b11f1d9d7b85e
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 9245dd6c25917b2c8c861ea5b83710cd8b52bb22
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525533"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279016"
 ---
 # <a name="monitor-report-performance-in-power-bi"></a>Raportin suorituskyvyn valvominen Power BI:ssä
 
-Valvo raportin suoritustehoa Power BI Desktopissa käyttämällä [Power BI Premium Metrics -sovellusta](../service-premium-metrics-app.md), selvitä pullonkaulojen sijainti ja opi parantamaan raportin suorituskykyä.
+Valvo raportin suoritustehoa Power BI Desktopissa käyttämällä [Power BI Premium Metrics -sovellusta](../admin/service-premium-metrics-app.md), selvitä pullonkaulojen sijainti ja opi parantamaan raportin suorituskykyä.
 
 Suorituskyvyn valvonta on oleellista seuraavissa tilanteissa:
 
@@ -39,7 +39,7 @@ Käytä [kyselydiagnostiikkaa](/power-query/QueryDiagnostics) Power BI Desktopis
 
 ## <a name="use-performance-analyzer"></a>Suorituskyvyn analysoinnin käyttäminen
 
-Käyttämällä [Suorityskyvyn analysointia](../desktop-performance-analyzer.md) Power BI Desktopissa voit selvittää, miten kaikki raporttielementit, kuten visualisoinnit ja DAX-kaavat, toimivat. On erityisen hyödyllistä määrittää, johtuvatko suorituskykyongelmat kyselystä vai visualisoinnin hahmonnuksesta.
+Käyttämällä [Suorityskyvyn analysointia](../create-reports/desktop-performance-analyzer.md) Power BI Desktopissa voit selvittää, miten kaikki raporttielementit, kuten visualisoinnit ja DAX-kaavat, toimivat. On erityisen hyödyllistä määrittää, johtuvatko suorituskykyongelmat kyselystä vai visualisoinnin hahmonnuksesta.
 
 ## <a name="use-sql-server-profiler"></a>SQL Serverin profiloinnin käyttäminen
 
@@ -77,15 +77,15 @@ SQL Serverin profiloinnin käyttämisen etuna on, että SQL Serverin (relaatio)t
 
 ## <a name="monitor-premium-metrics"></a>Premium-mittareiden valvonta
 
-Power BI Premium -kapasiteetteja varten voit käyttää **Power BI Premium Metrics -sovellusta** Power BI Premium -tilauksesi kunnon ja kapasiteetin hallitsemiseen. Lisätietoja on artikkelissa [Power BI Premium Metric -sovellus](../service-premium-metrics-app.md).
+Power BI Premium -kapasiteetteja varten voit käyttää **Power BI Premium Metrics -sovellusta** Power BI Premium -tilauksesi kunnon ja kapasiteetin hallitsemiseen. Lisätietoja on artikkelissa [Power BI Premium Metric -sovellus](../admin/service-premium-metrics-app.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 Saat lisätietoja tästä artikkelista tutustumalla seuraaviin resursseihin:
 
 - [Kyselydiagnostiikka](/power-query/QueryDiagnostics)
-- [Suorituskyvyn analysointi](../desktop-performance-analyzer.md)
+- [Suorituskyvyn analysointi](../create-reports/desktop-performance-analyzer.md)
 - [Raportin suorituskyvyn vianmääritys Power BI:ssä](report-performance-troubleshoot.md)
-- [Power BI Premium Metrics -sovellus](../service-premium-metrics-app.md)
+- [Power BI Premium Metrics -sovellus](../admin/service-premium-metrics-app.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com/)

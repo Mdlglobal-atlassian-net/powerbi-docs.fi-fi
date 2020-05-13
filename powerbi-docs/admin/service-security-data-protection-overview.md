@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/22/2020
 ms.author: painbar
 LocalizationGroup: Data from files
-ms.openlocfilehash: 97e7bf44233e0986459be9edf719cd21cd3d7a01
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: d7fc915c9c21460670bf86f308b756196886983a
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81637595"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83132050"
 ---
 # <a name="data-protection-in-power-bi-preview"></a>Tietojen suojaus Power BI:ssä (esiversio)
 
@@ -113,6 +113,6 @@ Seuraavassa on lueteltu joitakin luottamuksellisuustunnisteiden rajoituksia Powe
 Tässä artikkelissa annetaan yleiskatsaus tietojen suojaamisesta Power BI:ssä. Seuraavissa artikkeleissa annetaan lisätietoja tietojen suojaamisesta Power BI:ssä. 
 
 * [Luottamuksellisuustunnisteiden käyttöönotto Power BI:ssä](service-security-enable-data-sensitivity-labels.md)
-* [Luottamuksellisuustunnisteiden käyttö Power BI:ssä](../designer/service-security-apply-data-sensitivity-labels.md)
+* [Luottamuksellisuustunnisteiden käyttö Power BI:ssä](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
 * [Microsoft Cloud App Securityn hallinnan käyttö Power BI:ssä](service-security-using-microsoft-cloud-app-security-controls.md)
 * [Tietojen suojauksen tulosraportti](service-security-data-protection-metrics-report.md)

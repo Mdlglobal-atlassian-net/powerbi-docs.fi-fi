@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 03/24/2020
-ms.openlocfilehash: db907897256ef4afc0bdb9a253a23880b6e79f53
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1d51c16502d3217e0158add2126d0b5726d87ff1
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525464"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83144723"
 ---
 # <a name="export-power-bi-report-to-file-preview"></a>Power BI ‑raportin vieminen tiedostoon (esikatselu)
 
@@ -34,7 +34,7 @@ Voit käyttää vientiominaisuutta monella eri tavalla. Tässä on pari esimerkk
 
 ## <a name="using-the-api"></a>Ohjelmointirajapinnan käyttäminen
 
-Varmista ennen ohjelmointirajapinnan käyttämistä, että seuraavat [järjestelmänvalvojan vuokraajan asetukset](../../service-admin-portal.md#tenant-settings) ovat käytössä:
+Varmista ennen ohjelmointirajapinnan käyttämistä, että seuraavat [järjestelmänvalvojan vuokraajan asetukset](../../admin/service-admin-portal.md#tenant-settings) ovat käytössä:
 * **Vie raportit PowerPoint-esityksinä tai PDF-tiedostoina** – oletusarvoisesti käytössä.
 * **Vie raportit kuvatiedostoina** – Pakollinen vain *.png*-tiedostoille ja oletusarvoisesti poissa käytöstä.
 

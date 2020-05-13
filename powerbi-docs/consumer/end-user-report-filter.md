@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: cb3947ec7aaf6d67a22eb1d7543a57e66e87f5f3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 029970885070fad34e38697aa4c81fce316b7410
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114451"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277659"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Aloita raportin Suodattimet-ruudun esittely
 
@@ -25,7 +25,7 @@ ms.locfileid: "79114451"
 
 Tässä artikkelissa tutustutaan raportin **Suodattimet**-ruutuun Power BI -palvelussa. Suodattimilla saat tiedoistasi näkyviin uusia merkityksiä.
 
-Tietoja voi suodattaa Power BI:ssä monin eri tavoin. Saat lisätietoja suodattimista ohjeartikkelista [Suodattimet ja korostaminen Power BI -raporteissa](../power-bi-reports-filters-and-highlighting.md).
+Tietoja voi suodattaa Power BI:ssä monin eri tavoin. Saat lisätietoja suodattimista ohjeartikkelista [Suodattimet ja korostaminen Power BI -raporteissa](../create-reports/power-bi-reports-filters-and-highlighting.md).
 
 ![Näyttökuvassa on selaimessa auki oleva raportti, jossa nuoli osoittaa Suodattimet-kohtaan.](media/end-user-report-filter/power-bi-report.png)
 

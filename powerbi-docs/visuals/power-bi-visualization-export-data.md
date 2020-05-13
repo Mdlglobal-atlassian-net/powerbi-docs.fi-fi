@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/28/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e3e0108f539a7c42b41c36f743a0b8b79f3b61b8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 49e4653152e8981222d3a2589781546eb25bcd0e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82781727"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273013"
 ---
 # <a name="export-the-data-that-was-used-to-create-a-visualization"></a>Visualisoinnin lähdetietojen vieminen
 
@@ -54,7 +54,7 @@ Katso videolta, miten tiedot viedään raportin visualisoinnista, tallennetaan *
 
 ## <a name="export-data-from-a-report"></a>Tietojen vieminen raportista
 
-Seuraa mukana avaamalla [Hankinta-analyysimallin raportti](../sample-procurement.md) Power BI -palvelun muokkausnäkymässä. Lisää uusi tyhjä raporttisivu. Lisää sitten kooste, hierarkia ja visualisoinnin tason suodatin noudattamalla alla olevia ohjeita.
+Seuraa mukana avaamalla [Hankinta-analyysimallin raportti](../create-reports/sample-procurement.md) Power BI -palvelun muokkausnäkymässä. Lisää uusi tyhjä raporttisivu. Lisää sitten kooste, hierarkia ja visualisoinnin tason suodatin noudattamalla alla olevia ohjeita.
 
 ### <a name="create-a-stacked-column-chart"></a>Luo pinottu pylväskaavio
 
@@ -94,7 +94,7 @@ Valitse vaihtoehto **Yhteenvedetyt tiedot**, jos haluat viedä tietoja siitä, m
 
     - **Pohjana olevat tiedot**
 
-    Lue lisätietoja koosteista artikkelissa [Koosteet Power BI:ssä](../service-aggregates.md).
+    Lue lisätietoja koosteista artikkelissa [Koosteet Power BI:ssä](../create-reports/service-aggregates.md).
 
 
     > [!NOTE]
@@ -133,7 +133,7 @@ Kun valitset **Vie**, Power Bi vie tiedot *.xlsx*-tiedostoon ja selain pyytää 
 
     - **Pohjana olevat tiedot**
 
-    Lue lisätietoja koosteista artikkelissa [Koosteet Power BI:ssä](../service-aggregates.md).
+    Lue lisätietoja koosteista artikkelissa [Koosteet Power BI:ssä](../create-reports/service-aggregates.md).
 
 
     > [!NOTE]
@@ -164,7 +164,7 @@ On useita strategioita, joita Power BI -järjestelmänvalvojien ja suunnittelijo
 
 - Power BI -järjestelmänvalvojat voivat kytkeä tietojen viennin pois organisaationsa käytöstä. 
 
-- Tietojoukkojen omistajat voivat määrittää rivitason suojauksen (RLS). RLS rajoittaa käyttöoikeuksia vain luku -käyttäjiltä. Mutta jos olet määrittänyt sovellustyötilan ja antanut jäsenille muokkausoikeudet, RLS-rooleja ei sovelleta heihin. Lisätietoja on artikkelissa [Rivitason suojaus](../service-admin-rls.md).
+- Tietojoukkojen omistajat voivat määrittää rivitason suojauksen (RLS). RLS rajoittaa käyttöoikeuksia vain luku -käyttäjiltä. Mutta jos olet määrittänyt sovellustyötilan ja antanut jäsenille muokkausoikeudet, RLS-rooleja ei sovelleta heihin. Lisätietoja on artikkelissa [Rivitason suojaus](../admin/service-admin-rls.md).
 
 - Raporttisuunnittelijat voivat piilottaa sarakkeita niin, että ne eivät näy **Kentät**-luettelossa. Lisätietoja on kohdassa [Tietojoukon ominaisuudet](../developer/automation/api-dataset-properties.md)
 

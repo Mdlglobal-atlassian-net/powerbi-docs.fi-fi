@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 089d1df9a63a30d602ac12f1bf18f32787374654
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 28af5cd89e918fad7fc7064479ac95c67ca3cee3
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114235"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277452"
 ---
 # <a name="reports-in-power-bi"></a>Raportit Power BI:ssä
 
@@ -76,7 +76,7 @@ Tai voit olla *kuluttaja*, joka saa raportteja muilta. Haluat oppia ymmärtämä
 
 * Aloita [Power BI -palvelun esittelyllä](end-user-basic-concepts.md) niin tiedät, mistä raportit ja raporttityökalut löytyvät.
 * Katso, miten voit [avata raportin](end-user-report-open.md), ja tutustu kaikkiin [kuluttajien saatavilla oleviin toimintoihin](end-user-reading-view.md).
-* Tutustu raportteihin paremmin tutustumalla johonkin [malleistamme](../sample-tutorial-connect-to-the-samples.md).  
+* Tutustu raportteihin paremmin tutustumalla johonkin [malleistamme](../create-reports/sample-tutorial-connect-to-the-samples.md).  
 * Katso, mitä tietojoukkoa raportissa käytetään ja missä raporttinäkymissä on raportin sisältämiä visualisointeja (*kiinnityksiä*), [tarkastelemalla asiaan liittyvää sisältöä Power BI -palvelussa](end-user-related.md).
 
 > [!TIP]
@@ -86,3 +86,4 @@ Tai voit olla *kuluttaja*, joka saa raportteja muilta. Haluat oppia ymmärtämä
 
 [Raportin avaaminen ja tarkasteleminen](end-user-report-open.md)    
 [Raporttinäkymät Power BI -palvelussa](end-user-dashboards.md)
+

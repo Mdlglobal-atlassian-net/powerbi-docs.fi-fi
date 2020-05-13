@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0f430747187729cbb939b67795ff0507770bb0f1
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 9f7cd6c277a02ce4e44db40930184cce955e5948
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82867020"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83274186"
 ---
 # <a name="line-charts-in-power-bi"></a>Viivakaaviot Power BI:ssä
 
@@ -32,7 +32,7 @@ Näissä ohjeissa käytetään myynnin ja markkinoinnin mallisovellusta sellaise
 > [!NOTE]
 > Raportin jakaminen työtoverin kanssa Power BI:ssä edellyttää, että teillä kummallakin on oma Power BI Pro -käyttöoikeus tai että raportti on tallennettu Premium-kapasiteettiin.
 
-1. Aloita tyhjältä raporttisivulta. Jos käytät Power BI ‑palvelua, varmista, että avaat raportin [muokkausnäkymässä](../service-interact-with-a-report-in-editing-view.md).
+1. Aloita tyhjältä raporttisivulta. Jos käytät Power BI ‑palvelua, varmista, että avaat raportin [muokkausnäkymässä](../create-reports/service-interact-with-a-report-in-editing-view.md).
 
 2. Valitse Kentät-ruudusta **SalesFact** \> **Yksiköt yhteensä**, ja valitse **Päivämäärä** > **Kuukausi**.  Power BI luo pylväskaavion raporttipohjalle.
 
@@ -74,7 +74,7 @@ Jotta voit näyttää voimakkaasti erkautuvat arvot yhdessä kaaviossa, käytä 
    ![voimakkaasti erkautuvat arvot](media/power-bi-line-charts/power-bi-dual-axes.png)
 
 ## <a name="highlighting-and-cross-filtering"></a>Korostaminen ja ristiinsuodatus
-Lisätietoja Suodattimet-paneelin käyttämisestä saat ohjeaiheesta [Suodattimen lisääminen raporttiin](../power-bi-report-add-filter.md).
+Lisätietoja Suodattimet-paneelin käyttämisestä saat ohjeaiheesta [Suodattimen lisääminen raporttiin](../create-reports/power-bi-report-add-filter.md).
 
 Arvopisteen valitseminen viivakaaviossa ristiinkorostaa ja ristiinsuodattaa muut raporttisivulla olevat visualisoinnit... ja päinvastoin. Seuraa mukana avaamalla **Markkinaosuus**-välilehti.  
 
@@ -86,7 +86,7 @@ Tässä esimerkissä olemme valinneet arvopisteen, joka kattaa seuraavat: Heinä
 
 Huomaa, miten pylväskaavio on ristiinkorostettu ja mittari ristiinsuodatettu.
 
-Jos haluat määrittää, miten visualisoinnit ristiinkorostavat ja -suodattavat toisiaan, katso [visualisointien vuorovaikutukset Power BI -raportissa](../service-reports-visual-interactions.md)
+Jos haluat määrittää, miten visualisoinnit ristiinkorostavat ja -suodattavat toisiaan, katso [visualisointien vuorovaikutukset Power BI -raportissa](../create-reports/service-reports-visual-interactions.md)
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
 * Yhdessä viivakaaviossa ei voi olla kahta Y-akselia.  Sen sijaan on käytettävä yhdistelmäkaaviota.
@@ -95,5 +95,8 @@ Jos haluat määrittää, miten visualisoinnit ristiinkorostavat ja -suodattavat
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+
+
 
 

@@ -8,18 +8,18 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/11/2020
 ms.author: v-pemyer
-ms.openlocfilehash: dad451da460abed65a69990394522f268d7f21cd
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 971c699170103d5521763679c93d3641c094cc58
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525247"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277429"
 ---
 # <a name="separate-reports-from-models-in-power-bi-desktop"></a>Raporttien erottaminen malleista Power BI Desktopissa
 
 Uutta Power BI Desktop -ratkaisua luodessasi yksi ensimmäisistä tehtävistä on "noutaa tiedot". Tietojen noutaminen voi johtaa kahteen selvästi erilaiseen tulokseen. Se voi
 
-- luoda [reaaliaikaisen yhteyden](../desktop-report-lifecycle-datasets.md) jo julkaistuun malliin, joka voi olla Power BI -tietojoukko tai etäisännöity Analysis Services -malli.
+- luoda [reaaliaikaisen yhteyden](../connect-data/desktop-report-lifecycle-datasets.md) jo julkaistuun malliin, joka voi olla Power BI -tietojoukko tai etäisännöity Analysis Services -malli.
 - aloittaa uuden mallin kehittämisen, joka voi olla joko tuonti-, DirectQuery- tai yhdistelmämalli.
 
 Tämä artikkeli koskee toista skenaariota. Se antaa ohjeita siitä, pitäisikö raportti ja malli yhdistää yhdeksi Power BI Desktop -tiedostoksi.
@@ -67,7 +67,7 @@ Suosittelemme ottamaan yhteyttä kunkin liittyvän artefaktin omistajaan ja kert
 
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
-- [Tietojoukkoihin yhdistäminen Power BI -palvelussa Power BI Desktopista](../desktop-report-lifecycle-datasets.md)
+- [Tietojoukkoihin yhdistäminen Power BI -palvelussa Power BI Desktopista](../connect-data/desktop-report-lifecycle-datasets.md)
 - [Tarkastele aiheeseen liittyvää sisältöä Power BI -palvelussa](../consumer/end-user-related.md)
 - [Tietojen siirtymä](../collaborate-share/service-data-lineage.md)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

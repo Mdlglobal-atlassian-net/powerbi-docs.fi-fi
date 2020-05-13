@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 12/03/2019
-ms.openlocfilehash: d3813636010dcbf5c866248111755beb0dca99b8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c7f377c1295d4cd8f0d226331fcb6db697786e5a
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "74834628"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83141265"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Power BI -palvelun sivutettujen raporttien tilaaminen itsellesi ja muille 
 
@@ -39,7 +39,6 @@ Kun määrität tilauksia, valitset kuinka usein haluat saada sähköpostivieste
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Tilaa Power BI -palvelun raportteja ja raporttinäkymiä itsellesi ja muille](../service-report-subscribe.md)
+[Tilaa Power BI -palvelun raportteja ja raporttinäkymiä itsellesi ja muille](../collaborate-share/service-report-subscribe.md)
 
 [Sivutetut raportit Power BI -palvelussa](end-user-paginated-report.md)
-

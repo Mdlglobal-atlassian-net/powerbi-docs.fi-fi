@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/22/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d4fbc607b27999a9a1264a4cf004898ec05b0d18
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e54fbf7c521d057b6cc9fe1dde6c66358a9c349d
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80302497"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277521"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Minulle jaettujen koontinäyttöjen ja raporttien tarkastelu
 
@@ -26,7 +26,7 @@ Kun työtoveri jakaa sinulle sisältöä **Jaa**-painiketta käyttämällä, se 
 
 ![Jaa-kuvake](./media/end-user-shared-with-me/power-bi-share-dashboard.png)
 
-Katso videolta, kun Amanda kertoo lisää **Jaettu kanssani** ‑sisältöluettelosta ja näyttää, miten luettelosta siirrytään sisältöihin toiseen ja miten luetteloa voi suodattaa. Kokeile sitten itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita. Tarvitset Power BI Pro ‑käyttöoikeuden voidaksesi tarkastella sinulle jaettuja koontinäyttöjä. Lisätietoja on artikkelissa [Mikä on Power BI Premium?](../service-premium-what-is.md)
+Katso videolta, kun Amanda kertoo lisää **Jaettu kanssani** ‑sisältöluettelosta ja näyttää, miten luettelosta siirrytään sisältöihin toiseen ja miten luetteloa voi suodattaa. Kokeile sitten itse noudattamalla videon alapuolella olevia vaiheittaisia ohjeita. Tarvitset Power BI Pro ‑käyttöoikeuden voidaksesi tarkastella sinulle jaettuja koontinäyttöjä. Lisätietoja on artikkelissa [Mikä on Power BI Premium?](../admin/service-premium-what-is.md)
     
 
 > [!NOTE]
@@ -50,7 +50,7 @@ Käytettävissä olevat toiminnot määräytyvät sisällön *suunnittelijan* m�
 * [Näytä merkitykselliset tiedot](end-user-insights.md), jotka Power BI löytää tiedoista ![merkitykselliset tiedot -kuvake](./media/end-user-shared-with-me/power-bi-insights.png).
   
   > [!NOTE]
-  > Jos haluat tietoa EGRC-luokituksista, valitse **Luokitus**-painike tai lue artikkeli [Koontinäytön tietojen luokittelu](../service-data-classification.md).
+  > Jos haluat tietoa EGRC-luokituksista, valitse **Luokitus**-painike tai lue artikkeli [Koontinäytön tietojen luokittelu](../create-reports/service-data-classification.md).
   > 
 
 
