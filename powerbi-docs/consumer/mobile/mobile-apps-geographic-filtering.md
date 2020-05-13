@@ -7,12 +7,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 4a9dcf14d1745087e2596507d4c7dbc7a03b5ab3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7ee8887752f6a5161e0046e4aac1711f2ce64922
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435325"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276210"
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Raportin suodattaminen maantieteellisen sijainnin mukaan Power BI ‑mobiilisovelluksessa
 Koskee seuraavia:
@@ -39,17 +39,16 @@ Kun tarkastelet Power BI ‑raporttia mobiililaitteelta, näetkö oikeassa yläk
 ## <a name="why-dont-i-see-location-tags-on-a-report"></a>Miksi en näe raportissa sijaintitunnisteita?
 Jotta näkisit sijaintitunnisteet, kaikkien alla mainitun kolmen ehdon on täytyttävä. 
 
-* Power BI Desktopissa raportin luoneen henkilön [on pitänyt luokitella maantieteellisiä tietoja](../../desktop-mobile-geofiltering.md), kuten kaupunki, osavaltio tai maa/alue, vähintään yhteen sarakkeeseen.
+* Power BI Desktopissa raportin luoneen henkilön [on pitänyt luokitella maantieteellisiä tietoja](../../transform-model/desktop-mobile-geofiltering.md), kuten kaupunki, osavaltio tai maa/alue, vähintään yhteen sarakkeeseen.
 * Olet sellaisessa paikassa, josta on tietoja kyseisessä sarakkeessa.
 * Käytät jotakin seuraavista mobiililaitteista:
   * iOS (iPad, iPhone, iPod)
   * Android (puhelin ja tabletti).
   * Windows 10 ‑puhelin (muut Windows 10 ‑laitteet, kuten pöytäkoneet ja tabletit, eivät tue maantieteellistä suodatusta).
 
-Lue lisää [maantieteellisen suodatuksen määrittämisestä](../../desktop-mobile-geofiltering.md) Power BI Desktopissa.
+Lue lisää [maantieteellisen suodatuksen määrittämisestä](../../transform-model/desktop-mobile-geofiltering.md) Power BI Desktopissa.
 
 ### <a name="next-steps"></a>Seuraavat vaiheet
 * [Power BI:n yhdistäminen reaalimaailman tietoihin](mobile-apps-data-in-real-world-context.md) mobiilisovellusten avulla
-* [Tietojen luokittelu Power BI Desktopissa](../../desktop-data-categorization.md) 
+* [Tietojen luokittelu Power BI Desktopissa](../../transform-model/desktop-data-categorization.md) 
 * Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 03/02/2020
-ms.openlocfilehash: 83fadfe5f690a87563d20b9c6385b9a37193b9c9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: b70db42732143d5db938ad793be8aa3997ecdd8c
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78921765"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276900"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Upotetun tietolähteen luominen sivutettuun raporttiin Power BI -palvelussa
 
@@ -27,11 +27,11 @@ Tässä artikkelissa opit luomaan upotetun tietolähteen sivutettuun raporttiin 
 - Oracle 
 - Teradata 
 
-Käytä seuraavien tietolähteiden tapauksessa [SQL Server Analysis Services -yhteysvaihtoehtoa](../service-premium-connect-tools.md):
+Käytä seuraavien tietolähteiden tapauksessa [SQL Server Analysis Services -yhteysvaihtoehtoa](../admin/service-premium-connect-tools.md):
 
 - Power BI Premium -tietojoukot
 
-Sivutetut raportit yhdistetään paikallisiin tietolähteisiin [Power BI -yhdyskäytävän avulla](../service-gateway-onprem.md). Määrität yhdyskäytävän, kun olet julkaissut raportin Power BI -palveluun.
+Sivutetut raportit yhdistetään paikallisiin tietolähteisiin [Power BI -yhdyskäytävän avulla](../connect-data/service-gateway-onprem.md). Määrität yhdyskäytävän, kun olet julkaissut raportin Power BI -palveluun.
 
 Katso lisätiedot kohdasta [Raporttitiedot Power BI:n raportin muodostimessa](report-builder-data.md).
 
@@ -93,3 +93,4 @@ Power BI-tietojoukkoihin yhdistyvät sivutetut raportit noudattavat Power BI:n j
 
 - [Upotetun tietojoukon luominen sivutettuun raporttiin Power BI -palvelussa](paginated-reports-create-embedded-dataset.md)
 - [Mitä ovat sivutetut raportit Power BI Premiumissa?](paginated-reports-report-builder-power-bi.md)
+

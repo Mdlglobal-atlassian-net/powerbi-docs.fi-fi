@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 435f643ba155bc9d6c67d1131d946769e3d61730
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: cd30727e6329ca91413f2023f7dc3bd715bcbca6
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79494948"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276003"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Usean vuokraajan hallinta Power BI Embeddedin analyysitoiminnoilla
 
@@ -40,7 +40,7 @@ Tässä artikkelissa kuvataan eri lähestymistapoja ja analysoidaan niitä erila
 
 **Power BI -vuokraaja** – Joukko yhteen AAD-vuokraajaan liittyviä Power BI -resursseja.
 
-**[Power BI -työtila](../../service-create-workspaces.md)** – Sisällön säilö Power BI:ssä.
+**[Power BI -työtila](../../collaborate-share/service-create-workspaces.md)** – Sisällön säilö Power BI:ssä.
 
 **Power BI -artefaktit** – Power BI -työtiloissa on useita Power BI -artefakteja, joita ovat esimerkiksi koontinäytöt, raportit, tietojoukot ja tietovuot.
 
@@ -52,11 +52,11 @@ Tässä artikkelissa kuvataan eri lähestymistapoja ja analysoidaan niitä erila
 
 **AAD-sovelluksen käyttäjä (palvelun päänimi)** – Käyttäjätiedot, jotka edustavat SaaS-sovellusta Power BI -ympäristössä ja joita SaaS-sovellus käyttää kutsuessaan Power BI -ohjelmointirajapintoja. Tämän on oltava AAD-verkkosovellus. Voi korvata *pääkäyttäjän*, kun suoritetaan Power BI -todennusta.
 
-**Kapasiteetti** – Joukko resursseja, jotka on omistettu Power BI -palvelun suoritukseen. [Power BI Premium -kapasiteetit](../../service-premium-what-is.md) – Nämä on tarkoitettu suurille yrityksille, joissa Power BI on sisäisessä käytössä, kun taas [Power BI Embedded -kapasiteetit](azure-pbie-create-capacity.md) on tarkoitettu sovelluskehittäjille, jotka kehittävät SaaS-sovelluksia kolmansille osapuolille.
+**Kapasiteetti** – Joukko resursseja, jotka on omistettu Power BI -palvelun suoritukseen. [Power BI Premium -kapasiteetit](../../admin/service-premium-what-is.md) – Nämä on tarkoitettu suurille yrityksille, joissa Power BI on sisäisessä käytössä, kun taas [Power BI Embedded -kapasiteetit](azure-pbie-create-capacity.md) on tarkoitettu sovelluskehittäjille, jotka kehittävät SaaS-sovelluksia kolmansille osapuolille.
 
-**[Power BI Pro -käyttöoikeus](../../service-admin-purchasing-power-bi-pro.md)** – Käyttäjäkohtainen käyttöoikeus, joka antaa oikeuden julkaista sisältöä työtiloihin, kuluttaa sovelluksia ilman Premium-kapasiteettia, jakaa koontinäyttöjä sekä tilata koontinäyttöjä ja raportteja.
+**[Power BI Pro -käyttöoikeus](../../admin/service-admin-purchasing-power-bi-pro.md)** – Käyttäjäkohtainen käyttöoikeus, joka antaa oikeuden julkaista sisältöä työtiloihin, kuluttaa sovelluksia ilman Premium-kapasiteettia, jakaa koontinäyttöjä sekä tilata koontinäyttöjä ja raportteja.
 
-**[Tietoyhteystilat](../../desktop-directquery-about.md)** – Tietolähteiden yhdistäminen Power BI:hin voidaan tehdä eri tiloissa:
+**[Tietoyhteystilat](../../connect-data/desktop-directquery-about.md)** – Tietolähteiden yhdistäminen Power BI:hin voidaan tehdä eri tiloissa:
 
    * Tuonti – Yleisin tapa hakea tietoja.
    * DirectQuery – Muodostetaan suora yhteys tietoihin niiden lähdesäilössä.
@@ -104,9 +104,9 @@ Power BI Embedded tukee usean alueen käyttöönottoa (esikatselutoiminto). [Mul
 
 ### <a name="cost"></a>Cost
 
-[Power BI Embeddediin](azure-pbie-what-is-power-bi-embedded.md) liittyy resurssipohjainen ostomalli, samoin kuin **Power BI Premiumiin**. Voit ostaa yhden tai useita kapasiteetteja, joihin liittyy kiinteä laskentateho ja muisti. Kapasiteetti on tärkein kustannustekijä **Power BI Embeddediä** käytettäessä. Kapasiteetin käyttäjien määrää ei ole rajoitettu. Ainoa rajoitus on kapasiteetin suorituskyky. Kullakin [pääkäyttäjällä](../../service-admin-licensing-organization.md) eli sellaisilla käyttäjillä, joiden on voitava käsitellä Power BI -portaalia, on oltava oma *Power BI Pro -käyttöoikeus*.
+[Power BI Embeddediin](azure-pbie-what-is-power-bi-embedded.md) liittyy resurssipohjainen ostomalli, samoin kuin **Power BI Premiumiin**. Voit ostaa yhden tai useita kapasiteetteja, joihin liittyy kiinteä laskentateho ja muisti. Kapasiteetti on tärkein kustannustekijä **Power BI Embeddediä** käytettäessä. Kapasiteetin käyttäjien määrää ei ole rajoitettu. Ainoa rajoitus on kapasiteetin suorituskyky. Kullakin [pääkäyttäjällä](../../admin/service-admin-licensing-organization.md) eli sellaisilla käyttäjillä, joiden on voitava käsitellä Power BI -portaalia, on oltava oma *Power BI Pro -käyttöoikeus*.
 
-Suosittelemme kapasiteetin oletetun kuormituksen testaamista ja mittaamista niin, että todellista ympäristöä ja käyttömäärää simuloidaan ja samalla suoritetaan kuormitustestaus. Kuormituksen ja suorituskyvyn voi mitata hyödyntämällä Azure-kapasiteetin eri mittareita tai [Premium-kapasiteetin mittarisovellusta](../../service-admin-premium-monitor-capacity.md).
+Suosittelemme kapasiteetin oletetun kuormituksen testaamista ja mittaamista niin, että todellista ympäristöä ja käyttömäärää simuloidaan ja samalla suoritetaan kuormitustestaus. Kuormituksen ja suorituskyvyn voi mitata hyödyntämällä Azure-kapasiteetin eri mittareita tai [Premium-kapasiteetin mittarisovellusta](../../admin/service-admin-premium-monitor-capacity.md).
 
 ### <a name="content-customization-and-authoring"></a>Sisällön mukauttaminen ja tuottaminen
 
@@ -131,7 +131,7 @@ Vuokraajan tietojen hallintaan on kaksi perusmenetelmää.
 
 Jos SaaS-sovelluksen tallennustilassa on erillinen tietokanta kutakin vuokraajaa kohden, on luontevaa käyttää Power BI:ssä yhden vuokraajan tietojoukkoja, niin että kunkin tietokannan yhteysmerkkijono osoittaa vastaavaan tietokantaan.
 
-Jos SaaS-sovelluksen tallennustila käyttää usean vuokraajan tietokantaa kaikille vuokraajille, vuokraajat voi helposti erotella työtilan mukaan. Voit määrittää tietokantayhteyden Power BI -tietojoukkoon käyttämällä parametrisoitua tietokantakyselyä, joka hakee vain kyseessä olevan vuokraajan tiedot. Yhteyden voi päivittää käyttämällä [Power BI Desktopia](../../desktop-query-overview.md) tai käyttämällä kyselyssä [ohjelmointirajapintaa](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) ja [parametreja](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup).
+Jos SaaS-sovelluksen tallennustila käyttää usean vuokraajan tietokantaa kaikille vuokraajille, vuokraajat voi helposti erotella työtilan mukaan. Voit määrittää tietokantayhteyden Power BI -tietojoukkoon käyttämällä parametrisoitua tietokantakyselyä, joka hakee vain kyseessä olevan vuokraajan tiedot. Yhteyden voi päivittää käyttämällä [Power BI Desktopia](../../transform-model/desktop-query-overview.md) tai käyttämällä kyselyssä [ohjelmointirajapintaa](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) ja [parametreja](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup).
 
 ### <a name="data-isolation"></a>Tietojen eristys
 
@@ -193,7 +193,7 @@ Rivitason suojaukseen perustuvaa eristystä käytettäessä tietojen erittely su
 
 ### <a name="scalability"></a>Skaalattavuus
 
-Rivitason suojaukseen perustuvaa eristystä käytettäessä tiedot eivät saa ylittää tietojoukon kokorajoitusta, joka on tällä hetkellä 10 Gt. [Lisäävän päivityksen](../../service-premium-incremental-refresh.md) ja Power BI -tietojoukkojen XMLA-päätepisteen tulevan julkaisun myötä tietojoukon kokorajoituksen odotetaan suurenevan huomattavasti. Tietojen täytyy kuitenkin yhä sopia kapasiteetin muistiin, ja muistia tulee jäädä riittävästi tietojen päivitysten suorittamiseen. Suurikokoiset käyttöönotot tarvitsevat suuren kapasiteetin, jotta käyttäjillä ei ilmenisi ongelmia sen vuoksi, että muisti ylittää nykyisen kapasiteetin rajat. Vaihtoehtoisia keinoja koon hallintaan ovat [koosteiden](../../desktop-aggregations.md) käyttö tai yhteyden muodostaminen suoraan tietolähteeseen DirectQuery- tai Live-yhteyden avulla sen sijaan, että kaikki tiedot tallennettaisiin Power BI -kapasiteetissa välimuistiin.
+Rivitason suojaukseen perustuvaa eristystä käytettäessä tiedot eivät saa ylittää tietojoukon kokorajoitusta, joka on tällä hetkellä 10 Gt. [Lisäävän päivityksen](../../admin/service-premium-incremental-refresh.md) ja Power BI -tietojoukkojen XMLA-päätepisteen tulevan julkaisun myötä tietojoukon kokorajoituksen odotetaan suurenevan huomattavasti. Tietojen täytyy kuitenkin yhä sopia kapasiteetin muistiin, ja muistia tulee jäädä riittävästi tietojen päivitysten suorittamiseen. Suurikokoiset käyttöönotot tarvitsevat suuren kapasiteetin, jotta käyttäjillä ei ilmenisi ongelmia sen vuoksi, että muisti ylittää nykyisen kapasiteetin rajat. Vaihtoehtoisia keinoja koon hallintaan ovat [koosteiden](../../transform-model/desktop-aggregations.md) käyttö tai yhteyden muodostaminen suoraan tietolähteeseen DirectQuery- tai Live-yhteyden avulla sen sijaan, että kaikki tiedot tallennettaisiin Power BI -kapasiteetissa välimuistiin.
 
 ### <a name="automation--operational-complexity"></a>Automaatio ja toiminnallinen monimutkaisuus
 
@@ -244,17 +244,17 @@ Kun loppukäyttäjät muokkaavat tai luovat raportteja, he voivat käyttää tuo
 
 **Power BI -kapasiteetin huomioitavat asiat ja rajoitukset:**
 
-* Kukin kapasiteetti voi käyttää [ostetun varastointiyksikön](../../service-premium-what-is.md) mukaisesti vain sille varattua muistia ja näennäisytimiä.
-* Kunkin varastointiyksikön suositellut tietojoukkokoot ovat kohdassa [Suuret Premium-tietojoukot](../../service-premium-what-is.md#large-datasets).
+* Kukin kapasiteetti voi käyttää [ostetun varastointiyksikön](../../admin/service-premium-what-is.md) mukaisesti vain sille varattua muistia ja näennäisytimiä.
+* Kunkin varastointiyksikön suositellut tietojoukkokoot ovat kohdassa [Suuret Premium-tietojoukot](../../admin/service-premium-what-is.md#large-datasets).
 * Varatun kapasiteetin suurin mahdollinen tietojoukon koko on 10 gigatavua.
 * Ajoitettujen päivitysten määrä *tuontitilan* tietojoukolle on 48 päivässä.
 * Ajoitettujen päivitysten välinen aika *tuontitilan* tietojoukolle on 30 minuuttia.
-* Kapasiteetissa samanaikaisesti mahdollisesti suoritettavien päivitysten määrä on annettu kohdassa [resurssien hallinta ja optimointi](../../service-premium-what-is.md#capacity-nodes).
+* Kapasiteetissa samanaikaisesti mahdollisesti suoritettavien päivitysten määrä on annettu kohdassa [resurssien hallinta ja optimointi](../../admin/service-premium-what-is.md#capacity-nodes).
 * Kapasiteetin skaalaukseen keskimäärin kuluva aika on 1–2 minuuttia. Tänä aikana kapasiteetti ei ole käytettävissä. Suosittelemme [käyttökatkojen välttämiseksi](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script) skaalausratkaisua.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * [Upotettu analysointi Power BI:n avulla](embedding.md)
 * [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)
-* [Power BI Premium](../../service-premium-what-is.md)
+* [Power BI Premium](../../admin/service-premium-what-is.md)
 * [Rivitason suojaus](embedded-row-level-security.md)

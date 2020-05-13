@@ -8,12 +8,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 02/16/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 067171f7ec74beccdb5a312c1cac5bbc6c87541f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 511dc42a3090f838654cda84f596d34f02bb3439
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377646"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275083"
 ---
 # <a name="data-retrieval-guidance-for-paginated-reports"></a>Sivutettujen raporttien tietojen nouto-ohjeet
 
@@ -101,14 +101,14 @@ Suosittelemme _tietojoukon parametrointia_, kun on oletettavasti epätodennäkö
 
 ## <a name="non-native-data-sources"></a>Muut kuin alkuperäiset tietolähteet
 
-Jos sinun on luotava sivutettuja raportteja sellaisten tietolähteiden perusteella, joita [sivutetut raportit eivät suoraan tue](../paginated-reports/paginated-reports-data-sources.md), voit kehittää ensin Power BI Desktop -tietomallin. Näin voit muodostaa yhteyden yli 100 [Power BI -tietolähteeseen](../power-bi-data-sources.md). Kun olet julkaissut Power BI -palvelussa, voit luoda sivutetun raportin, joka muodostaa yhteyden Power BI -tietojoukkoon.
+Jos sinun on luotava sivutettuja raportteja sellaisten tietolähteiden perusteella, joita [sivutetut raportit eivät suoraan tue](../paginated-reports/paginated-reports-data-sources.md), voit kehittää ensin Power BI Desktop -tietomallin. Näin voit muodostaa yhteyden yli 100 [Power BI -tietolähteeseen](../connect-data/power-bi-data-sources.md). Kun olet julkaissut Power BI -palvelussa, voit luoda sivutetun raportin, joka muodostaa yhteyden Power BI -tietojoukkoon.
 
 ## <a name="data-integration"></a>Tietojen integrointi
 
 Jos sinun on yhdistettävä tietoja useista tietolähteistä, sinulla on kaksi vaihtoehtoa:
 
 - **Yhdistä raportin tietojoukot**: Jos [sivutetut raportit tukevat tietolähteitä suoraan](../paginated-reports/paginated-reports-data-sources.md), voit halutessasi luoda laskettuja kenttiä, jotka käyttävät Report Builderin [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function)- tai [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function)-funktioita.
-- **Luo Power BI Desktop -malli**: On kuitenkin tehokkaampaa, että luot tietomallin Power BI Desktopissa. Power Queryn avulla voit yhdistää kyselyitä minkä tahansa [tuetun tietolähteen](../power-bi-data-sources.md) perusteella. Kun olet julkaissut Power BI -palvelussa, voit luoda sivutetun raportin, joka muodostaa yhteyden Power BI -tietojoukkoon.
+- **Luo Power BI Desktop -malli**: On kuitenkin tehokkaampaa, että luot tietomallin Power BI Desktopissa. Power Queryn avulla voit yhdistää kyselyitä minkä tahansa [tuetun tietolähteen](../connect-data/power-bi-data-sources.md) perusteella. Kun olet julkaissut Power BI -palvelussa, voit luoda sivutetun raportin, joka muodostaa yhteyden Power BI -tietojoukkoon.
 
 ## <a name="sql-server-complex-data-types"></a>SQL Serverin monimutkaiset tietotyypit
 

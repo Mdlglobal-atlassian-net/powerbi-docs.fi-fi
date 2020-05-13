@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/30/2020
-ms.openlocfilehash: 7ae2752627e24c5de2feed372009061e523a3fc8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 40f713c2fd021ea8ecea5789b8ad0bc54cff2294
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80751621"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275957"
 ---
 # <a name="embedding-power-bi-content-with-service-principal-and-application-secret"></a>Power BI sisällön upottaminen palvelun päänimeen ja sovelluksen salauskoodiin
 
@@ -183,14 +183,14 @@ Kun sisältösi on upotettu, olet valmis [siirtymään tuotantoon](embed-sample-
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
-* Palvelun päänimi toimii vain [uusien työtilojen](../../service-create-the-new-workspaces.md) kanssa.
+* Palvelun päänimi toimii vain [uusien työtilojen](../../collaborate-share/service-create-the-new-workspaces.md) kanssa.
 * **Omaa työtilaa** ei tueta, kun käytät palvelun päänimeä.
 * Tarvitset varattua kapasiteettia, kun siirryt hyötykäyttöön.
 * Et voi kirjautua Power BI -portaaliin palvelun päänimellä.
 * Power BI -järjestelmänvalvojan oikeuksia edellytetään, kun otat palvelun päänimen käyttöön Power BI -hallintaportaalin kehittäjäasetuksissa.
 * Et voi asentaa tai hallita paikallista tietoyhdyskäytävää palvelun päänimellä.
 * [Organisaatiosi upotetut sovellukset](embed-sample-for-your-organization.md) eivät voi käyttää palvelun päänimeä.
-* [Tietovoiden](../../service-dataflows-overview.md) hallintaa ei tueta.
+* [Tietovoiden](../../transform-model/service-dataflows-overview.md) hallintaa ei tueta.
 * Palvelun päänimi ei tällä hetkellä tue mitään järjestelmänvalvojien ohjelmointirajapintoja.
 * Kun palvelun päänimeä käytetään [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview) -tietolähteen avulla, palvelun päänimellä on itsellään oltava käyttöoikeudet Azure Analysis Services -esiintymään. Tähän ei riitä käyttöoikeusryhmä, joka sisältää palvelun päänimen.
 

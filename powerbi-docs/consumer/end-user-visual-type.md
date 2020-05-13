@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 6bf8ccd9048262ce05aff68819ecdb31a44ddfe2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: acfcd863a537153e70734d5f83e89e384438885e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79377186"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279430"
 ---
 # <a name="visual-types-in-power-bi"></a>Visualisointityypit Power BI:ssä
 
@@ -152,7 +152,7 @@ Raporttien suunnittelijat voivat luoda Power Apps -visualisoinnin ja upottaa sen
 ![Q&A-visualisoinnit](media/end-user-visual-type/power-bi-q-and-a.png)
 
 >[!TIP]
->Samaan tapaan kuin [koontinäytön Q&A-kokemuksen kanssa](../power-bi-tutorial-q-and-a.md), Q&A-visualisoinnin avulla voit esittää kysymyksiä tiedoistasi käyttämällä luonnollista kieltä. 
+>Samaan tapaan kuin [koontinäytön Q&A-kokemuksen kanssa](../create-reports/power-bi-tutorial-q-and-a.md), Q&A-visualisoinnin avulla voit esittää kysymyksiä tiedoistasi käyttämällä luonnollista kieltä. 
 
 Lisätietoja on artikkelissa [Q&A-visualisoinnit Power BI:ssä](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
@@ -248,3 +248,4 @@ Kun kirjoitat Power BI Q&A:lla kyselyjä luonnollisella kielellä, voit määrit
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Visualisointien käyttö raporteissa, koontinäytöissä ja sovelluksissa](end-user-visualizations.md)    
 [Oikealla oleva visuaalinen viite osoitteesta sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+

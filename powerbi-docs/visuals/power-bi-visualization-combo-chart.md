@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/22/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9c8dcfec103bb53d645cdfd347112d7443506569
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 036343df0a9af678b5a88c261a60ce603483a1cc
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866997"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277176"
 ---
 # <a name="create-and-use-combo-charts-in-power-bi"></a>Yhdistelmäkaavioiden luominen ja käyttäminen Power BI:ssa
 
@@ -121,16 +121,19 @@ Myyntikate oli tammikuussa 35 %, huipussaan 45 % huhtikuussa, laski heinäkuussa
 
 Seuraavat toiminnot:
 
-* [Yhdistelmäkaavion lisääminen koontinäytön ruutuna](../service-dashboard-tiles.md)
-* [Tallenna raportti](../service-report-save.md).
+* [Yhdistelmäkaavion lisääminen koontinäytön ruutuna](../create-reports/service-dashboard-tiles.md)
+* [Tallenna raportti](../create-reports/service-report-save.md).
 * [Tee raportista helpommin käytettävä toimintarajoitteisille ihmisille](../desktop-accessibility.md).
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Ristiinkorostaminen ja ristiinsuodatus
 
-Sarakkeen tai rivin korostaminen yhdistelmäkaaviossa ristiinkorostaa ja ristiinsuodattaa muut raporttisivulla olevat visualisoinnit... ja päinvastoin. Voit muuttaa tätä oletustoimintaa [visualisointitoimien](../service-reports-visual-interactions.md) avulla.
+Sarakkeen tai rivin korostaminen yhdistelmäkaaviossa ristiinkorostaa ja ristiinsuodattaa muut raporttisivulla olevat visualisoinnit... ja päinvastoin. Voit muuttaa tätä oletustoimintaa [visualisointitoimien](../create-reports/service-reports-visual-interactions.md) avulla.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 [Rengaskaaviot Power BI:ssä](power-bi-visualization-doughnut-charts.md)
 
 [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+
+

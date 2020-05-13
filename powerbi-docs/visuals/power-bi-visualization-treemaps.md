@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 189cc784577df277b0b0517253699ae06842b30c
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: afc18fa33ec1612900cecc0a34eb50851804fb62
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866882"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276693"
 ---
 # <a name="treemaps-in-power-bi"></a>Puukartat Power BI:ssä
 
@@ -120,10 +120,11 @@ Luot raportin ja lisäät perustason puukartan.
 1. Jos **Viime vuoden myynti ketjun mukaan** -ympyräkaaviossa valitaan **Fashions Direct** -sektori, tämä ristiinsuodattaa puukartan.
    ![GIF-esittely ristiinsuodatus-ominaisuudesta.](media/power-bi-visualization-treemaps/treemapnoowl.gif)
 
-1. Jos haluat hallita, miten visualisoinnit ristiinkorostavat ja -suodattavat toisiaan, katso artikkelia [Muuta visualisointien vuorovaikutusta Power BI -raportissa](../service-reports-visual-interactions.md)
+1. Jos haluat hallita, miten visualisoinnit ristiinkorostavat ja -suodattavat toisiaan, katso artikkelia [Muuta visualisointien vuorovaikutusta Power BI -raportissa](../create-reports/service-reports-visual-interactions.md)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * [Vesiputouskaaviot Power BI:ssä](power-bi-visualization-waterfall-charts.md)
 
 * [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
+

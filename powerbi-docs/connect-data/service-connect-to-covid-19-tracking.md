@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/05/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 90d5e48ca200a6817338ae6c44595905cc76bfed
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 97e0a4f6e522997e6f132d1c3dbc493188ba66ba
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80752667"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275474"
 ---
 # <a name="connect-to-the-covid-19-us-tracking-report"></a>COVID-19 US Tracking -raporttiin yhdistäminen
 Tässä artikkelissa kerrotaan, miten COVID-19-seurantaraportin mallisovellus asennetaan ja miten muodostetaan yhteys tietolähteisiin.
@@ -54,14 +54,14 @@ Kun olet asentanut mallisovelluksen ja muodostanut yhteyden tietolähteisiin, vo
 
 ## <a name="schedule-report-refresh"></a>Raportin päivityksen ajoittaminen
 
-Kun tiedot on päivitetty, olet sovellukseen liittyvässä työtilassa. [Määritä päivitysaikataulu](../refresh-scheduled-refresh.md), jotta raportin tiedot pysyvät ajan tasalla.
+Kun tiedot on päivitetty, olet sovellukseen liittyvässä työtilassa. [Määritä päivitysaikataulu](../connect-data/refresh-scheduled-refresh.md), jotta raportin tiedot pysyvät ajan tasalla.
 
 ## <a name="customize-and-share"></a>Mukauta ja jaa
 
-Lisätietoja on artikkelissa [Sovelluksen mukauttaminen ja jakaminen](../service-template-apps-install-distribute.md#customize-and-share-the-app). Tarkista [raportin vastuuvapausilmoitus](../create-reports/sample-covid-19-us.md#disclaimers) ennen sovelluksen julkaisemista tai jakelemista.
+Lisätietoja on artikkelissa [Sovelluksen mukauttaminen ja jakaminen](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app). Tarkista [raportin vastuuvapausilmoitus](../create-reports/sample-covid-19-us.md#disclaimers) ennen sovelluksen julkaisemista tai jakelemista.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [COVID-19-seurantamalli Yhdysvaltain viranomaisille](../create-reports/sample-covid-19-us.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-* [Mitä Power BI -mallisovellukset ovat?](../service-template-apps-overview.md)
-* [Mallisovellusten asentaminen ja jakaminen organisaatiossa](../service-template-apps-install-distribute.md)
+* [Mitä Power BI -mallisovellukset ovat?](../connect-data/service-template-apps-overview.md)
+* [Mallisovellusten asentaminen ja jakaminen organisaatiossa](../connect-data/service-template-apps-install-distribute.md)

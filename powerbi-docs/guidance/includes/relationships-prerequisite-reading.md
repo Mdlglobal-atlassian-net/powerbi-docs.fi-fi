@@ -1,12 +1,12 @@
 ---
-ms.openlocfilehash: d9c1bab6b710ae50343d0b96c913b9193cf2e865
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 58496b6468b346d4e036fb9719b754e5be99bd2e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78260441"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83273180"
 ---
 > [!NOTE]
-> Tämä artikkeli ei sisällä mallien suhteiden johdantoa. Jos et ole täysin perehtynyt suhteisiin, niiden ominaisuuksiin tai niiden määrittämiseen, suosittelemme, että luet ensin [Mallien suhteet Power BI Desktopissa](../../desktop-relationships-understand.md) -artikkelin.
+> Tämä artikkeli ei sisällä mallien suhteiden johdantoa. Jos et ole täysin perehtynyt suhteisiin, niiden ominaisuuksiin tai niiden määrittämiseen, suosittelemme, että luet ensin [Mallien suhteet Power BI Desktopissa](../../transform-model/desktop-relationships-understand.md) -artikkelin.
 >
 > Lisäksi on tärkeää, että ymmärrät tähtirakenteen periaatteet. Lisätietoja on artikkelissa [Tutustu tähtirakenteeseen ja sen merkitykseen Power BI:ssä](../star-schema.md).

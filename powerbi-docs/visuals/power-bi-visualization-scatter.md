@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 33c07df0cd8c0e00489f344e721164ed9252fcaf
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 9a9248f68f85f6dec2a70842c0931d7dd448d690
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866905"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276831"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Pistekaaviot ja kuplakaaviot Power BI:ssä
 
@@ -177,13 +177,13 @@ Tai jos tiedoissasi ei ole näitä, luo kenttä, joka liittää X- ja Y-arvot yh
 
 ![Näyttökuva pistekaaviosta, jossa TempTime on lisätty Tiedot-säilöön.](media/power-bi-visualization-scatter/pbi-scatter-tshoot2.png)
 
-Jos haluat luoda uuden kentän, [käytä Power BI Desktopin kyselyeditoria lisätäksesi indeksisarakkeen](../desktop-add-custom-column.md) tietojoukkoosi. Lisää sitten tämä sarake visualisointisi **Tiedot**-säilöön.
+Jos haluat luoda uuden kentän, [käytä Power BI Desktopin kyselyeditoria lisätäksesi indeksisarakkeen](../create-reports/desktop-add-custom-column.md) tietojoukkoosi. Lisää sitten tämä sarake visualisointisi **Tiedot**-säilöön.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 Voit olla kiinnostunut myös seuraavista artikkeleista:
 
-* [Suuren tiheyden näytteenotto Power BI:n pistekaavioissa](desktop-high-density-scatter-charts.md)
+* [Suuren tiheyden näytteenotto Power BI:n pistekaavioissa](../create-reports/desktop-high-density-scatter-charts.md)
 * [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
 * [Vihjeitä tietolohkojen lajittelemiseen ja jakeluun Power BI ‑raporteissa](../guidance/report-tips-sort-distribute-data-plots.md)
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 19abcd84809f0bf8d3560fd8734d30fcf31b9ecb
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 71f204058bfa94c61df8299d2a2c7c9063caad5d
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80550966"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277015"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Rivitason suojaus Power BI Embeddedissä
 
@@ -21,7 +21,7 @@ ms.locfileid: "80550966"
 
 Jos olet upottamassa sisältöä muille kuin Power BI:n käyttäjille (sovellus omistaa tiedot), tavallisesti ISV-skenaariossa, tämä artikkeli koskee sinua. Määritä tiliin upotustunnus käyttäjälle ja roolille.
 
-Jos olet upottamassa sisältöä Power BI -käyttäjille (käyttäjä omistaa tiedot) organisaatiosi sisällä, rivitason suojaus toimii samalla tavalla kuin suoraan Power BI -palvelussa. Sinun ei tarvitse tehdä sovelluksessasi mitään muuta. Lisätietoja on artikkelissa [Rivitason suojaus (RLS) Power BI:ssä](../../service-admin-rls.md).
+Jos olet upottamassa sisältöä Power BI -käyttäjille (käyttäjä omistaa tiedot) organisaatiosi sisällä, rivitason suojaus toimii samalla tavalla kuin suoraan Power BI -palvelussa. Sinun ei tarvitse tehdä sovelluksessasi mitään muuta. Lisätietoja on artikkelissa [Rivitason suojaus (RLS) Power BI:ssä](../../admin/service-admin-rls.md).
 
 ![Rivitason suojaukseen liittyvät kohteet.](media/embedded-row-level-security/powerbi-embedded-rls-components.png)
 
@@ -29,7 +29,7 @@ Jotta voit hyödyntää rivitason suojausta, sinun on tärkeää ymmärtää kol
 
 **Käyttäjät** – Kohdetta (koontinäyttöä, ruutua, raporttia tai tietojoukkoa) tarkastelevat loppukäyttäjät. Power BI Embeddedissä käyttäjät tunnistetaan upotuksen tunnuksen käyttäjänimi-ominaisuudella.
 
-**Roolit** – Käyttäjät kuuluvat rooleihin. Rooli on sääntöjen säilö. Roolin nimi voi olla esim. *myyntipäällikkö* tai *myyntiedustaja*. Voit luoda rooleja Power BI Desktopissa. Lisätietoja on artikkelissa [Rivitason suojaus (RLS) Power BI Desktopissa](../../desktop-rls.md).
+**Roolit** – Käyttäjät kuuluvat rooleihin. Rooli on sääntöjen säilö. Roolin nimi voi olla esim. *myyntipäällikkö* tai *myyntiedustaja*. Voit luoda rooleja Power BI Desktopissa. Lisätietoja on artikkelissa [Rivitason suojaus (RLS) Power BI Desktopissa](../../create-reports/desktop-rls.md).
 
 **Säännöt** – Rooleilla on sääntöjä, jotka ovat tietoihin sovellettavia todellisia suodattimia. Sääntö voi olla yksinkertainen, esim. ”maa = Yhdysvallat”, tai paljon dynaamisempi.
 Tässä artikkelissa on esimerkki rivitason suojauksen luomisesta ja sen käyttämisestä upotetussa sovelluksessa. Esimerkissämme käytetään [Jälleenmyynnin analyysiesimerkki](https://go.microsoft.com/fwlink/?LinkID=780547) -PBIX-tiedostoa.
@@ -135,7 +135,7 @@ Käyttäjänimi-ominaisuuden on vastattava Windows-käyttäjää, jolla on käyt
 
 ### <a name="on-premises-data-gateway-configuration"></a>Paikallisen tietoyhdyskäytävän määritys
 
-[Paikallista tietoyhdyskäytävää](../../service-gateway-onprem.md) käytetään, kun käsittelet reaaliaikaisia Analysis Services -yhteyksiä. Upotuksen tunnusta luotaessa, kun käyttäjätieto on luetteloitu, päätili on lueteltava yhdyskäytävän järjestelmänvalvojana. Jos päätili ei ole luettelossa, rivitason suojausta ei käytetä tietojen ominaisuuksiin. Yhdyskäytävän muu käyttäjä kuin järjestelmänvalvojien voi lisätä rooleja, mutta hänen on annettava käyttäjätiedoksi oma käyttäjänimensä.
+[Paikallista tietoyhdyskäytävää](../../connect-data/service-gateway-onprem.md) käytetään, kun käsittelet reaaliaikaisia Analysis Services -yhteyksiä. Upotuksen tunnusta luotaessa, kun käyttäjätieto on luetteloitu, päätili on lueteltava yhdyskäytävän järjestelmänvalvojana. Jos päätili ei ole luettelossa, rivitason suojausta ei käytetä tietojen ominaisuuksiin. Yhdyskäytävän muu käyttäjä kuin järjestelmänvalvojien voi lisätä rooleja, mutta hänen on annettava käyttäjätiedoksi oma käyttäjänimensä.
 
 ### <a name="use-of-roles"></a>Roolien käyttäminen
 
@@ -235,9 +235,9 @@ Voit alkaa määrittää CustomData()-ominaisuutta Power BI Embedded -sovellukse
 
 Kun päätät suodattaa raportin tietoja, voit käyttää **rivitason suojausta** tai **JavaScript-suodattimia**.
 
-[Rivitason suojaus](../../service-admin-rls.md) on ominaisuus, joka suodattaa tiedot tietomallin tasolla. Taustatietolähde ohjaa RLS-asetuksia. Upotustunnuksen luominen määrittää istunnon käyttäjänimen ja roolit tietomallisi perusteella. Sitä ei voi ohittaa, poistaa eikä hallita asiakaspuolen koodilla, minkä vuoksi sitä pidetään turvallisena. Rivitason suojausta suositellaan tietojen turvalliseen suodattamiseen. Voit suodattaa tietoja rivitason suojauksen avulla käyttämällä jotakin seuraavista vaihtoehdoista.
+[Rivitason suojaus](../../admin/service-admin-rls.md) on ominaisuus, joka suodattaa tiedot tietomallin tasolla. Taustatietolähde ohjaa RLS-asetuksia. Upotustunnuksen luominen määrittää istunnon käyttäjänimen ja roolit tietomallisi perusteella. Sitä ei voi ohittaa, poistaa eikä hallita asiakaspuolen koodilla, minkä vuoksi sitä pidetään turvallisena. Rivitason suojausta suositellaan tietojen turvalliseen suodattamiseen. Voit suodattaa tietoja rivitason suojauksen avulla käyttämällä jotakin seuraavista vaihtoehdoista.
 
-* [Power BI -raportin roolien määrittäminen](../../desktop-rls.md).
+* [Power BI -raportin roolien määrittäminen](../../create-reports/desktop-rls.md).
 * Roolien määrittäminen tietolähteen tasolla (vain Analysis Servicesin reaaliaikainen yhteys).
 * Ohjelmallisesti [upotustunnuksella](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) käyttämällä `EffectiveIdentity`-komentoa. Kun käytetään upotustunnusta, todellinen suodatin läpäisee tietyn istunnon upotustunnuksen.
 

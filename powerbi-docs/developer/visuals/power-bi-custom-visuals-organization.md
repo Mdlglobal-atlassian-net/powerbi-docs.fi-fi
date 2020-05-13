@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 52ebb1bf049024051846936237d35b202f00d630
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 6683efbf9fa9dea9215914c097f249362fbffff2
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80464589"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83278809"
 ---
 # <a name="organizational-visuals-in-power-bi"></a>Organisaation visualisoinnit Power BI:ssä
 
@@ -42,8 +42,6 @@ Lisätietoja organisaation Power BI -visualisointien käyttöönotosta ja hallin
 Sinun on otettava huomioon useita seikkoja ja rajoituksia.
 
 Järjestelmänvalvoja:
-
-* Vanhoja Power BI -visualisointeja (esimerkiksi Power BI -visualisointeja, joita ei ole luotu uusilla ohjelmointirajapintojen versioilla) ei tueta
 
 * Jos AppSourcesta tai tiedostosta peräisin oleva Power BI -visualisointi poistetaan säilöstä, poistettua visualisointia käyttäviä aiemmin luotuja raportteja ei enää näytetä. Säilöstä poistamista ei voi kumota. Jos haluat poistaa AppSourcesta tai tiedostosta peräisin oleva Power BI -visualisoinnin käytöstä tilapäisesti, käytä Poista käytöstä toimintoa.
 

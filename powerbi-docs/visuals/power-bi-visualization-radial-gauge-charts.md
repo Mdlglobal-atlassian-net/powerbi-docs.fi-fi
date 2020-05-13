@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7c6c4dbe9f17464483f5b44542ffbe04f715d4bd
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 4274136df063258b6879057636f11ec437873ae6
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866928"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276348"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Viisarimittarikaaviot Power BI:ssä
 
@@ -116,7 +116,7 @@ Vaiheessa 2 Power BI asetti **Arvo**-kentän avulla automaattisesti minimi- ja m
 
 ### <a name="step-5-save-your-report"></a>Vaihe 5: Tallenna raporttisi
 
-1. [Tallenna raportti](../service-report-save.md).
+1. [Tallenna raportti](../create-reports/service-report-save.md).
 
 ## <a name="use-manual-format-options-to-set-minimum-maximum-and-target-values"></a>Käytä manuaalisia muotoiluvaihtoehtoja minimi-, maksimi- ja tavoitearvojen asettamiseen
 
@@ -151,3 +151,4 @@ Kun olet käynyt läpi nämä vaiheet, sinulla on mittarikaavio, joka näyttää
 * [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+

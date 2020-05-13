@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 18d16440e8894e69101357af700c9b295eaa30c6
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: f6960d3087ba5b271c6c130df59e6e667e838165
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866955"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277153"
 ---
 # <a name="create-and-use-basic-area-charts"></a>Perusaluekaavioiden luominen ja käyttäminen
 
@@ -68,7 +68,7 @@ Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedost
    d.  Jos haluat näyttää kaavion kuukauden mukaan, valitse kolme pistettä (visualisoinnin oikeassa yläkulmassa) ja valitse **Lajittele kuukauden mukaan**. Jos haluat muuttaa lajittelujärjestyksen, valitse kolme pistettä uudelleen ja valitse joko **Lajittele nousevaan järjestykseen** tai **Lajittele laskevaan järjestykseen**.
 
 ## <a name="highlighting-and-cross-filtering"></a>Korostaminen ja ristiinsuodatus
-Lisätietoja Suodattimet-paneelin käyttämisestä saat ohjeaiheesta [Suodattimen lisääminen raporttiin](../power-bi-report-add-filter.md).
+Lisätietoja Suodattimet-paneelin käyttämisestä saat ohjeaiheesta [Suodattimen lisääminen raporttiin](../create-reports/power-bi-report-add-filter.md).
 
 Voit korostaa kaavion tietyn alueen valitsemalla alueen tai sen yläreunan.  Toisin kuin muut visualisointityypit, jos muita visualisointeja on samalla sivulla, perusaluekaavion korostaminen ei ristiinsuodata muita visualisointeja raportin sivulla. Aluekaaviot ovat kuitenkin ristiinsuodatuksen kohteena muiden raportin sivulla olevien visualisointien käynnistämänä. 
 
@@ -78,7 +78,7 @@ Voit korostaa kaavion tietyn alueen valitsemalla alueen tai sen yläreunan.  Toi
 
     ![Suodatinesimerkkejä](media/power-bi-visualization-basic-area-chart/power-bi-area-chart-filters.gif) 
 
-Lisätietoja on artikkelissa [Visualisointitoimet raporteissa](../service-reports-visual-interactions.md)
+Lisätietoja on artikkelissa [Visualisointitoimet raporteissa](../create-reports/service-reports-visual-interactions.md)
 
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys   
@@ -87,4 +87,6 @@ Lisätietoja on artikkelissa [Visualisointitoimet raporteissa](../service-report
 
 ## <a name="next-step"></a>Seuraava vaihe
 [Raportit Power BI:ssä](power-bi-visualization-card.md)  
+
+
 

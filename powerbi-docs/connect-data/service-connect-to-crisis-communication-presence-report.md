@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f637bb10ed7ec27dcb3da07fc04cae39328ffebe
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: fef6bc5c396ccaf89ff4cd0e5a449cb9d01ce75b
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80752253"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83275497"
 ---
 # <a name="connect-to-the-crisis-communication-presence-report"></a>Crisis Communication -läsnäoloraporttiin yhdistäminen
 
@@ -89,20 +89,20 @@ Kun asennat Crisis Communication -mallin, kirjoita muistiin [CI_Employee Status 
 
 ## <a name="schedule-report-refresh"></a>Raportin päivityksen ajoittaminen
 
-Kun tietojen päivitys on valmis, [määritä päivitysaikataulu](../refresh-scheduled-refresh.md), jotta raportin tiedot pysyvät ajan tasalla.
+Kun tietojen päivitys on valmis, [määritä päivitysaikataulu](../connect-data/refresh-scheduled-refresh.md), jotta raportin tiedot pysyvät ajan tasalla.
 
 1. Valitse yläreunan otsikkorivillä **Power BI**.
 
    ![Power BI -navigointipolku](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-powerbi-breadcrumb.png)
 
-1. Etsi vasemmasta siirtymisruudusta Hospital Emergency Response Decision Support Dashboard -työtila kohdasta **Työtilat** ja noudata ohjeita artikkelissa[Ajoitetun päivityksen määrittäminen](../refresh-scheduled-refresh.md).
+1. Etsi vasemmasta siirtymisruudusta Hospital Emergency Response Decision Support Dashboard -työtila kohdasta **Työtilat** ja noudata ohjeita artikkelissa[Ajoitetun päivityksen määrittäminen](../connect-data/refresh-scheduled-refresh.md).
 
 ## <a name="customize-and-share"></a>Mukauta ja jaa
 
-Lisätietoja on artikkelissa [Sovelluksen mukauttaminen ja jakaminen](../service-template-apps-install-distribute.md#customize-and-share-the-app). Tarkista [raportin vastuuvapausilmoitus](../create-reports/sample-covid-19-us.md#disclaimers) ennen sovelluksen julkaisemista tai jakelemista.
+Lisätietoja on artikkelissa [Sovelluksen mukauttaminen ja jakaminen](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app). Tarkista [raportin vastuuvapausilmoitus](../create-reports/sample-covid-19-us.md#disclaimers) ennen sovelluksen julkaisemista tai jakelemista.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Power Appsin Crisis Communication -mallisovelluksen määrittäminen ja siihen tutustuminen](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-* [Mitä Power BI -mallisovellukset ovat?](../service-template-apps-overview.md)
-* [Mallisovellusten asentaminen ja jakaminen organisaatiossa](../service-template-apps-install-distribute.md)
+* [Mitä Power BI -mallisovellukset ovat?](../connect-data/service-template-apps-overview.md)
+* [Mallisovellusten asentaminen ja jakaminen organisaatiossa](../connect-data/service-template-apps-install-distribute.md)

@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: consumers
-ms.openlocfilehash: 8610f5c0efbc3da394e4de7c263a88aad813eae2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 14e3b0f2956252e0b09abcf314d6e14b9a9709ad
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82066012"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83129493"
 ---
 # <a name="using-the-power-bi-service-as-a-consumer"></a>Power BI -palvelun käyttäminen *kuluttajana*
 
@@ -47,7 +47,7 @@ Premium mahdollistaa Pro-version käyttäjien luoman sisällön laaja-alaisen ja
 
 Näissä työtiloissa suunnittelijat määrittävät rooleja, kuten **Katselija**, **Osallistuja**, **Jäsen** ja **Järjestelmänvalvoja**, jotka määrittävät, missä määrin työtoverit voivat käsitellä sisältöä. Lisätietoja on [työtilan käyttöoikeuksia ja rooleja](end-user-workspaces.md) käsittelevässä kohdassa. 
 
-Lisätietoja Premium-kapasiteetista on kohdassa [Mikä on Microsoft Power BI Premium?](../service-premium-what-is.md)
+Lisätietoja Premium-kapasiteetista on kohdassa [Mikä on Microsoft Power BI Premium?](../admin/service-premium-what-is.md)
 
 
 ## <a name="find-out-which-licenses-you-have"></a>Selvitä, mitkä käyttöoikeudet sinulla on

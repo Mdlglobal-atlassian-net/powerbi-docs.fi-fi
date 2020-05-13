@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1ba284aa3c925ef0679572ca55cad9e5267d3f21
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c72863407fea0cf550643e5193a8b514b2bb51bd
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82585057"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276325"
 ---
 # <a name="slicers-in-power-bi"></a>Osittajat Power BI:ssä
 
@@ -24,11 +24,11 @@ Oletetaan, että haluat, että raportin lukijat voivat tarkastella yleisiä myyn
 
 ![Osittaja-animaatio](media/power-bi-visualization-slicers/slicer2.gif)
 
-Tässä artikkelissa käydään läpi perusosittajan luominen ja muotoileminen käyttämällä maksutonta [Jälleenmyyntianalyysimallia](../sample-retail-analysis.md). Se myös esittelee, miten voit määrittää, mihin visualisointeihin osittaja vaikuttaa, ja miten voit synkronoida sen muilla sivuilla olevien osittajien kanssa. Seuraavassa on joitakin muita artikkeleita, joissa selitetään, miten voit tehdä tietyntyyppisiä osittajia:
+Tässä artikkelissa käydään läpi perusosittajan luominen ja muotoileminen käyttämällä maksutonta [Jälleenmyyntianalyysimallia](../create-reports/sample-retail-analysis.md). Se myös esittelee, miten voit määrittää, mihin visualisointeihin osittaja vaikuttaa, ja miten voit synkronoida sen muilla sivuilla olevien osittajien kanssa. Seuraavassa on joitakin muita artikkeleita, joissa selitetään, miten voit tehdä tietyntyyppisiä osittajia:
 
-- [Numeerisen alueen osittajat](../desktop-slicer-numeric-range.md).
+- [Numeerisen alueen osittajat](../create-reports/desktop-slicer-numeric-range.md).
 - [Suhteelliset päivämääräosittajat](desktop-slicer-filter-date-range.md).
-- Reagoivat, [koonmuuttokelpoiset osittajat](../power-bi-slicer-filter-responsive.md).
+- Reagoivat, [koonmuuttokelpoiset osittajat](../create-reports/power-bi-slicer-filter-responsive.md).
 - [Hierarkiaosittajat](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md), joissa on useita kenttiä.
 
 ## <a name="when-to-use-a-slicer"></a>Osittajan käyttäminen
@@ -92,7 +92,7 @@ Voit estää joidenkin sivujen visualisointien vaikutukset visualisointitoimilla
 
    Nyt, kun valitset nimet ja päivämäärävälit osittajasta, **Kokonaismyynnin variaatioprosentti tilikauden kuukauden mukaan** -kaavio ei muutu.
 
-Lisätietoja vuorovaikutusten muokkaamisesta on artikkelissa [Visualisointien vuorovaikutusten muokkaaminen Power BI -raportissa](../service-reports-visual-interactions.md).
+Lisätietoja vuorovaikutusten muokkaamisesta on artikkelissa [Visualisointien vuorovaikutusten muokkaaminen Power BI -raportissa](../create-reports/service-reports-visual-interactions.md).
 
 ## <a name="sync-and-use-slicers-on-other-pages"></a>Osittajien synkronoiminen ja käyttäminen muilla sivuilla
 Vuoden 2018 helmikuun Power BI -päivityksestä alkaen voit synkronoida osittajan ja käyttää sitä millä tahansa tai kaikilla raportin sivuilla. 
@@ -134,7 +134,7 @@ Nykyisen raportin **Alueen kuukausimyynti** -sivulla on myös **Aluejohtaja**-os
 ## <a name="filtering-slicers"></a>Osittajien suodattaminen
 Voit käyttää osittajille visualisointitason suodattimia, joilla voit lyhentää osittajassa näkyvien arvojen luetteloa. Voit esimerkiksi suodattaa pois tyhjät arvot luettelon osittajasta tai suodattaa pois tietyt päivämäärät alueen osittajasta. Kun teet tämän, se vaikuttaa vain *osittajassa näytettäviin arvoihin*, ei *suodattimeen, jota osittaja käyttää muihin visualisointeihin*, kun teet valinnan. Oletetaan esimerkiksi, että käytät suodatinta alueen osittajassa niin, että vain tietyt päivämäärät näkyvät. Osittajan valinta näyttää vain kyseisen alueen ensimmäisen ja viimeisen päivämäärän, mutta voit silti nähdä muita päivä määriä muissa visualisoinneissasi. Kun muutat valittua aluetta osittajassa, näet muiden visualisointien päivittyvän. Osittajan tyhjentäminen näyttää kaikki päivämäärät uudelleen.
 
-Artikkelissa [Suodatintyypit](../power-bi-report-filter-types.md) on lisätietoja visualisointitason suodattimista.
+Artikkelissa [Suodatintyypit](../create-reports/power-bi-report-filter-types.md) on lisätietoja visualisointitason suodattimista.
 
 ## <a name="format-slicers"></a>Osittajien muotoilu
 Käytettävissä on erilaisia muotoiluasetuksia osittajan tyypin mukaan. Käyttämällä **Vaaka**-suuntaa **Reagoiva**-asettelua ja **Nimi**-väriä, voit luoda painikkeita tai ruutuja standardiluettelonimikkeiden sijaan ja muuttaa osittajan kohteiden kokoa sopimaan eri näyttöjen ja asettelujen kokoon.  
@@ -169,7 +169,7 @@ Käytettävissä on erilaisia muotoiluasetuksia osittajan tyypin mukaan. Käytt�
 
     ![Vaaka-asetukset](media/power-bi-visualization-slicers/6-buttons.png)
 
-Jos haluat lisätietoja vaaka-asettelusta ja reagoivasta asettelusta, lue ohjeartikkeli [Kooltaan muokattavan reagoivan osittajan luominen Power BI:ssä](../power-bi-slicer-filter-responsive.md).
+Jos haluat lisätietoja vaaka-asettelusta ja reagoivasta asettelusta, lue ohjeartikkeli [Kooltaan muokattavan reagoivan osittajan luominen Power BI:ssä](../create-reports/power-bi-slicer-filter-responsive.md).
 
 ### <a name="selection-controls-options-list-slicers-only"></a>Valinnan hallinta -asetukset (vain luettelon osittajat)
 1. Ota **Valinnan hallinta** -kohdassa **Näytä Valitse kaikki -vaihtoehto** -asetus **Käyttöön**. Tämä lisää **Valitse kaikki** -asetuksen osittajaan. 
@@ -222,4 +222,3 @@ Katso lisätietoja seuraavista artikkeleista:
 - [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 - [Taulukot Power BI:ssä](power-bi-visualization-tables.md)
-

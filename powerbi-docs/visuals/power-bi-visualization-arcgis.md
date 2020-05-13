@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/29/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c296e202dccf814fcb9e1a4c6ee0620185723248
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: 34c0287c8a4df296e41826f32de95b0c050c8d08
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82865686"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277291"
 ---
 # <a name="create-arcgis-maps-in-power-bi-desktop"></a>ArcGIS-karttojen luominen Power BI Desktopissa
 
@@ -73,7 +73,7 @@ Tässä opetusohjelmassa käytetään [Power BI Desktopia ja jälleenmyyntianaly
    
 ## <a name="create-an-arcgis-maps-for-power-bi-map-visualization"></a>ArcGIS Maps for Power BI -karttavisualisointien luominen
 
-Katso, miten Will luo muutamia erilaisia visualisointeja, ja kokeile itse alla olevien ohjeiden mukaisesti. Käytä pohjana [jälleenmyyntianalyysimallin .PBIX-tiedostoa](../sample-datasets.md).
+Katso, miten Will luo muutamia erilaisia visualisointeja, ja kokeile itse alla olevien ohjeiden mukaisesti. Käytä pohjana [jälleenmyyntianalyysimallin .PBIX-tiedostoa](../create-reports/sample-datasets.md).
     
 
    > [!NOTE]
@@ -368,4 +368,5 @@ Et vielä. Kun [äänestät tätä ideaa](https://ideas.powerbi.com/forums/26520
 [Blogimerkintä, jossa ilmoitetaan ArcGIS Maps for Power BI:n saatavuudesta](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 
 Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+
 

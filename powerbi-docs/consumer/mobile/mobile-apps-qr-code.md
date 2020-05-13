@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/02/2019
 ms.author: painbar
-ms.openlocfilehash: 55b71508380a424ba48e4d24ac6c6fc70d9a570d
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c4d1ce3a4a15c2d79951865e03131e001260e2c9
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80802068"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276072"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Power BI:n QR-koodin lukeminen mobiililaitteella
 Koskee seuraavia:
@@ -24,7 +24,7 @@ Koskee seuraavia:
 
 Power BI:n QR-koodien avulla voit yhdistää minkä tahansa kohteen todellisesta maailmasta suoraan siihen liittyviin BI-tietoihin – siirtymis- tai hakutoimintoja ei tarvita.
 
-Sanotaan, että työtoverisi olisi [luonut Power BI -palvelussa QR-koodin](../../service-create-qr-code-for-tile.md) raporttia tai koontinäytön ruutua varten, jakanut koontinäytön tai raportin sinulle ja lisännyt QR-koodin sopivaan paikkaan – esimerkiksi sähköpostiviestiin tai tiettyyn esineeseen. 
+Sanotaan, että työtoverisi olisi [luonut Power BI -palvelussa QR-koodin](../../create-reports/service-create-qr-code-for-tile.md) raporttia tai koontinäytön ruutua varten, jakanut koontinäytön tai raportin sinulle ja lisännyt QR-koodin sopivaan paikkaan – esimerkiksi sähköpostiviestiin tai tiettyyn esineeseen. 
 
 Voit lukea QR-koodin ja päästä saman tien haluttuun ruutuun tai raporttiin suoraan puhelimestasi käyttämällä joko Power BI ‑sovelluksen viivakoodinlukijaa tai muuta puhelimeen asennettua viivakoodinlukijaa. 
 
@@ -75,8 +75,7 @@ Jos työtoverisi ei ole jakanut koontinäyttöä tai raporttia sinulle, voit pyy
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Power BI:n yhdistäminen reaalimaailman tietoihin](mobile-apps-data-in-real-world-context.md) mobiilisovellusten avulla
-* [Ruudun QR-koodin luominen Power BI -palvelussa](../../service-create-qr-code-for-tile.md)
-* [Raportin QR-koodin luominen Power BI -palvelussa](../../service-create-qr-code-for-report.md)
+* [Ruudun QR-koodin luominen Power BI -palvelussa](../../create-reports/service-create-qr-code-for-tile.md)
+* [Raportin QR-koodin luominen Power BI -palvelussa](../../create-reports/service-create-qr-code-for-report.md)
 * Voit myös [lukea QR-koodin Power BI ja tehostettu todellisuus -sovelluksessa](mobile-mixed-reality-app.md).
 * Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-
