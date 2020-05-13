@@ -27,9 +27,9 @@
         - name: Opi kysymään kysymyksiä luonnollisella kielellä
           href: end-user-q-and-a.md
         - name: Siirry uuteen ulkoasuun
-          href: ../service-new-look.md
+          href: service-new-look.md
         - name: 'Uusi ulkoasu: Minne toiminnot ovat kadonneet?'
-          href: ../service-new-look-where-actions.md
+          href: service-new-look-where-actions.md
     - name: Ohjeet
       items:
         - name: Koontinäytöt
@@ -93,7 +93,7 @@
             - name: Porautuminen alaspäin visualisoinnissa
               href: end-user-drill.md
             - name: ArcGIS-karttojen käsittely
-              href: ../power-bi-visualizations-arcgis.md
+              href: ../visuals/power-bi-visualizations-arcgis.md
         - name: Yleiset tehtävät
           items:
             - name: Tietojen vieminen Exceliin

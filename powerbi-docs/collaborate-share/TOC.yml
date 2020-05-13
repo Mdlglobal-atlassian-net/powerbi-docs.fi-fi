@@ -6,88 +6,88 @@
       expanded: true
       items:
         - name: Töiden jakamistavat
-          href: ../service-how-to-collaborate-distribute-dashboards-reports.md
+          href: service-how-to-collaborate-distribute-dashboards-reports.md
     - name: Käsitteet
       expanded: true
       items:
         - name: Työn järjestäminen työtiloissa
-          href: ../service-new-workspaces.md
+          href: service-new-workspaces.md
         - name: Käytön valvominen perinteisissä työtiloissa
-          href: ../service-usage-metrics.md
+          href: service-usage-metrics.md
         - name: Käytön valvominen uusissa työtiloissa
-          href: ../service-modern-usage-metrics.md
+          href: service-modern-usage-metrics.md
     - name: Toimintaohjeet
       expanded: true
       items:
         - name: 'Yhteistyö Power BI:ssä'
           items:
             - name: Uusien työtilojen luominen
-              href: ../service-create-the-new-workspaces.md
+              href: service-create-the-new-workspaces.md
             - name: Työtilojen uuden ulkoasun ottaminen käyttöön
               href: service-workspaces-new-look.md
             - name: Perinteisten työtilojen päivittäminen
-              href: ../designer/service-upgrade-workspaces.md
+              href: ../collaborate-share/service-upgrade-workspaces.md
             - name: Työtilojen luominen
-              href: ../service-create-workspaces.md
+              href: service-create-workspaces.md
             - name: Sovellusten julkaisu työtiloista
-              href: ../service-create-distribute-apps.md
+              href: service-create-distribute-apps.md
             - name: Tietojen tallennuksen hallinta työtiloissa
-              href: ../service-admin-manage-your-data-storage-in-power-bi.md
+              href: ../admin/service-admin-manage-your-data-storage-in-power-bi.md
             - name: Tietojen historiatiedot
               href: service-data-lineage.md
             - name: Tietojoukkojen vaikutusanalyysi
               href: service-dataset-impact-analysis.md
             - name: Tietojen luottamuksellisuustunnisteiden käyttäminen
-              href: ../designer/service-security-apply-data-sensitivity-labels.md
+              href: ../collaborate-share/service-security-apply-data-sensitivity-labels.md
             - name: Ryhmän OneDrive-tiedostoihin yhdistäminen
-              href: ../service-connect-to-files-in-app-workspace-onedrive-for-business.md
+              href: ../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md
             - name: Yhteistyö perinteisessä työtilassa
-              href: ../service-collaborate-power-bi-workspace.md
+              href: service-collaborate-power-bi-workspace.md
             - name: 'Ryhmän hallinta Power BI:ssä ja Office 365:ssä'
-              href: ../service-manage-app-workspace-in-power-bi-and-office-365.md
+              href: service-manage-app-workspace-in-power-bi-and-office-365.md
         - name: Töiden julkaiseminen ja jakaminen
           items:
             - name: Raporttinäkymien ja raporttien jakaminen
-              href: ../service-share-dashboards.md
+              href: service-share-dashboards.md
             - name: Raportin suodattaminen ja jakaminen
-              href: ../service-share-reports.md
+              href: service-share-reports.md
             - name: Raportin suodattaminen URL-osoitteen parametrien avulla
-              href: ../service-url-filters.md
+              href: service-url-filters.md
             - name: Tilaa itselle tai muille
-              href: ../service-report-subscribe.md
+              href: service-report-subscribe.md
             - name: Ominaisuuksien sisältö kotisivulla
               href: service-featured-content.md
             - name: Raportin upottaminen Microsoft Teamsiin
-              href: ../service-embed-report-microsoft-teams.md
+              href: service-embed-report-microsoft-teams.md
             - name: Raportin upottaminen SharePoint Onlineen
-              href: ../service-embed-report-spo.md
+              href: service-embed-report-spo.md
             - name: Raportin upottaminen turvalliseen portaaliin tai sivustoon
-              href: ../service-embed-secure.md
+              href: service-embed-secure.md
             - name: 'Julkaiseminen Power BI:stä verkkoon'
-              href: ../service-publish-to-web.md
+              href: service-publish-to-web.md
             - name: OneDriveen tallennettuun Excel-työkirjaan linkittävän koontinäytön jakaminen
-              href: ../service-share-dashboard-that-links-to-excel-onedrive.md
+              href: service-share-dashboard-that-links-to-excel-onedrive.md
         - name: 'Power BI:n laajentaminen'
           items:
             - name: Analysoi Excelissä
-              href: ../service-analyze-in-excel.md
+              href: service-analyze-in-excel.md
             - name: Analysoi Excelissä -toiminnon vianmääritys
-              href: ../desktop-troubleshooting-analyze-in-excel.md
+              href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Virhe: Excel-työkirjasta ei löydy mitään tietoja'
-              href: ../service-admin-troubleshoot-excel-workbook-data.md
+              href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
             - name: Power Automate ja Power BI
-              href: ../service-flow-integration.md
+              href: service-flow-integration.md
             - name: Kolmannen osapuolen sovellusten käyttäminen
-              href: ../service-power-bi-get-started-third-party-apps.md
+              href: service-power-bi-get-started-third-party-apps.md
         - name: Organisaation sisältöpaketit
           items:
             - name: Organisaation sisältöpakettien esittely
-              href: ../service-organizational-content-pack-introduction.md
+              href: service-organizational-content-pack-introduction.md
             - name: Sisältöpaketin luominen ja julkaiseminen
-              href: ../service-organizational-content-pack-create-and-publish.md
+              href: service-organizational-content-pack-create-and-publish.md
             - name: 'Sisältöpakettien kopiointi, päivitys ja käyttöoikeuksien saaminen'
-              href: ../service-organizational-content-pack-copy-refresh-access.md
+              href: service-organizational-content-pack-copy-refresh-access.md
             - name: 'Sisältöpakettien hallinta, päivitys ja poistaminen'
-              href: ../service-organizational-content-pack-manage-update-delete.md
+              href: service-organizational-content-pack-manage-update-delete.md
             - name: Yhteyden poistaminen sisältöpakettiin
-              href: ../service-organizational-content-pack-disconnect.md
+              href: service-organizational-content-pack-disconnect.md

@@ -2,10 +2,10 @@
   href: index.yml
   expanded: true
   items:
-    - name: Yhteenveto
+    - name: Yleiskatsaus
       expanded: true
       items:
-        - name: Yhteenveto
+        - name: Yleiskatsaus
           href: overview.md
         - name: 'Optimointiopas Power BI:hin'
           href: power-bi-optimization.md
@@ -21,7 +21,7 @@
             - name: Poista Power Query -taustalataus käytöstä
               href: power-query-background-refresh.md
             - name: Tietovoiden parhaat käytännöt
-              href: ../service-dataflows-best-practices.md
+              href: ../transform-model/service-dataflows-best-practices.md
         - name: Tietojen mallinnus
           items:
             - name: Mikä on tähtirakenne?

@@ -5,7 +5,7 @@
       expanded: true
       items:
         - name: Raporttieditoriin tutustuminen
-          href: ../service-the-report-editor-take-a-tour.md
+          href: service-the-report-editor-take-a-tour.md
         - name: Mitä sivutetut raportit ovat?
           href: ../paginated-reports/paginated-reports-report-builder-power-bi.md
     - name: Opetusohjelmat
@@ -19,46 +19,46 @@
       expanded: true
       items:
         - name: 'Hanki Power BI:n malleja'
-          href: ../sample-datasets.md
+          href: sample-datasets.md
         - name: COVID-19 Yhdysvallat -malli
           href: sample-covid-19-us.md
         - name: Asiakkaan tuottavuuden malli
-          href: ../sample-customer-profitability.md
+          href: sample-customer-profitability.md
         - name: IT-kulutusanalyysimalli
-          href: ../sample-it-spend.md
+          href: sample-it-spend.md
         - name: Henkilöstöhallintomalli
-          href: ../sample-human-resources.md
+          href: sample-human-resources.md
         - name: Mahdollisuusanalyysimalli
-          href: ../sample-opportunity-analysis.md
+          href: sample-opportunity-analysis.md
         - name: Hankinta-analyysimalli
-          href: ../sample-procurement.md
+          href: sample-procurement.md
         - name: Jälleenmyyntianalyysimalli
-          href: ../sample-retail-analysis.md
+          href: sample-retail-analysis.md
         - name: Tutustu jälleenmyyntianalyysimalliin
-          href: ../sample-tutorial-connect-to-the-samples.md
+          href: sample-tutorial-connect-to-the-samples.md
         - name: Myynti- ja markkinointimalli
-          href: ../sample-sales-and-marketing.md
+          href: sample-sales-and-marketing.md
         - name: Toimittajan laatuanalyysimalli
-          href: ../sample-supplier-quality.md
+          href: sample-supplier-quality.md
         - name: Talousmalli-työkirjan lataaminen
-          href: ../sample-financial-download.md
+          href: sample-financial-download.md
     - name: Käsitteet
       expanded: true
       items:
         - name: Power BI -raportit
           items:
             - name: Raporttinäkymän käyttö
-              href: ../desktop-report-view.md
+              href: desktop-report-view.md
             - name: Suodatintyypit raporteissa
-              href: ../power-bi-report-filter-types.md
+              href: power-bi-report-filter-types.md
             - name: Suodattimet ja korostaminen raporteissa
-              href: ../power-bi-reports-filters-and-highlighting.md
+              href: power-bi-reports-filters-and-highlighting.md
             - name: Suuren tiheyden viivaotanta
-              href: ../desktop-high-density-sampling.md
+              href: desktop-high-density-sampling.md
             - name: Tietoja Q&A-visualisoinneista
               href: ../visuals/power-bi-visualization-q-and-a.md
             - name: Tietoja helppokäyttötoiminnoista
-              href: ../desktop-accessibility-overview.md
+              href: desktop-accessibility-overview.md
             - name: Luonnollisen kielen Q&A
               items:
                 - name: 'Johdanto Q&A:han'
@@ -112,107 +112,107 @@
         - name: Power BI -raportit
           items:
             - name: Automaattisen sivun päivityksen käyttöönotto (esiversio)
-              href: ../desktop-automatic-page-refresh.md
+              href: desktop-automatic-page-refresh.md
             - name: Raporttielementtien tutkiminen suorituskyvyn analysoinnilla
-              href: ../desktop-performance-analyzer.md
+              href: desktop-performance-analyzer.md
             - name: Visuaalisten elementtien lisääminen raportteihin
-              href: ../desktop-visual-elements-for-reports.md
+              href: desktop-visual-elements-for-reports.md
             - name: Visualisointien parantaminen raportin työkaluvihjeitä lisäämällä
-              href: ../desktop-tooltips.md
+              href: desktop-tooltips.md
             - name: Raporttien vieminen PDF-tiedostoihin
-              href: ../desktop-export-to-pdf.md
+              href: desktop-export-to-pdf.md
             - name: Visualisointien muutosten selittäminen merkityksellisillä tiedoilla (esiversio)
-              href: ../desktop-insights.md
+              href: desktop-insights.md
             - name: Jakaumien vaihtelun selittäminen merkityksellisillä tiedoilla (esiversio)
-              href: ../desktop-insights-find-where-different.md
+              href: desktop-insights-find-where-different.md
             - name: Painikkeiden luominen
-              href: ../desktop-buttons.md
+              href: desktop-buttons.md
             - name: Porautumispainikkeiden luominen
-              href: ../desktop-drill-through-buttons.md
+              href: desktop-drill-through-buttons.md
             - name: Porautumistoiminnon käyttäminen
-              href: ../desktop-drillthrough.md
+              href: desktop-drillthrough.md
             - name: Raporttien välisen porautumistoiminnon käyttäminen
-              href: ../desktop-cross-report-drill-through.md
+              href: desktop-cross-report-drill-through.md
             - name: Kirjanmerkkien luominen merkityksellisten tietojen tallentamista ja jakamista varten
-              href: ../desktop-bookmarks.md
+              href: desktop-bookmarks.md
             - name: Raporttiteemojen käyttö
-              href: ../desktop-report-themes.md
+              href: desktop-report-themes.md
             - name: Suodattimien käyttö raporteissa
-              href: ../power-bi-report-filter.md
+              href: power-bi-report-filter.md
             - name: Suodattimen lisääminen raporttiin
-              href: ../power-bi-report-add-filter.md
+              href: power-bi-report-add-filter.md
             - name: Ryhmittelyn ja lokeroinnin käyttö
-              href: ../desktop-grouping-and-binning.md
+              href: desktop-grouping-and-binning.md
             - name: Ruudukoiden ja ruudukkoon kohdistamisen käyttö
-              href: ../desktop-gridlines-snap-to-grid.md
+              href: desktop-gridlines-snap-to-grid.md
             - name: Sivun näyttöasetusten käyttö raporteissa
-              href: ../power-bi-report-display-settings.md
+              href: power-bi-report-display-settings.md
             - name: Sarakkeen lisääminen esimerkistä
-              href: ../desktop-add-column-from-example.md
+              href: desktop-add-column-from-example.md
             - name: Mukautetun sarakkeen lisääminen
-              href: ../desktop-add-custom-column.md
+              href: desktop-add-custom-column.md
             - name: Sidottujen hierarkiaselitteiden käyttö
-              href: ../desktop-inline-hierarchy-labels.md
+              href: desktop-inline-hierarchy-labels.md
             - name: Osittajat
               href: ../visuals/power-bi-visualization-slicers.md
             - name: Numeerisen alueen osittajat
-              href: ../desktop-slicer-numeric-range.md
+              href: desktop-slicer-numeric-range.md
             - name: Suhteelliset päivämääräosittajat ja suodattimet
               href: ../visuals/desktop-slicer-filter-date-range.md
             - name: Suhteelliset päivämääräosittajat ja suodattimet
               href: slicer-filter-relative-time.md
             - name: Kooltaan muokattavan osittajan luominen
-              href: ../power-bi-slicer-filter-responsive.md
+              href: power-bi-slicer-filter-responsive.md
             - name: Useiden kenttien lisääminen osittajaan
               href: power-bi-slicer-hierarchy-multiple-fields.md
             - name: Tietojen käytön rajoittaminen rivitason suojauksen avulla
-              href: ../desktop-rls.md
+              href: desktop-rls.md
             - name: Työkaluvihjeiden mukauttaminen
-              href: ../desktop-custom-tooltips.md
+              href: desktop-custom-tooltips.md
             - name: Tekstiruutujen ja muotojen lisääminen raportteihin
-              href: ../power-bi-reports-add-text-and-shapes.md
+              href: power-bi-reports-add-text-and-shapes.md
             - name: Hyperlinkin lisääminen tekstiruutuun
-              href: ../service-add-hyperlink-to-text-box.md
+              href: service-add-hyperlink-to-text-box.md
             - name: Hyperlinkkien lisääminen taulukkoon
-              href: ../power-bi-hyperlinks-in-tables.md
+              href: power-bi-hyperlinks-in-tables.md
             - name: 'Kuvien näyttäminen taulukoissa, matriiseissa ja osittajissa'
-              href: ../power-bi-images-tables.md
+              href: power-bi-images-tables.md
             - name: Mukautettujen muotoilumerkkijonojen näyttäminen
-              href: ../desktop-custom-format-strings.md
+              href: desktop-custom-format-strings.md
             - name: Taulukon ehdollisen muotoilun käyttäminen
-              href: ../desktop-conditional-table-formatting.md
+              href: desktop-conditional-table-formatting.md
             - name: Dynaamisten lausekepohjaisten otsikoiden käyttö
-              href: ../desktop-conditional-format-visual-titles.md
+              href: desktop-conditional-format-visual-titles.md
             - name: Lajitteleminen sarakkeen mukaan
-              href: ../desktop-sort-by-column.md
+              href: desktop-sort-by-column.md
             - name: Mobiilisovellusten raporttien optimointi
-              href: ../desktop-create-phone-report.md
+              href: desktop-create-phone-report.md
             - name: Näytä tiedot- ja Näytä tietueet -toimintojen käyttö
-              href: ../desktop-see-data-see-records.md
+              href: desktop-see-data-see-records.md
             - name: Vinkkejä raporttien luomiseen
-              href: ../desktop-tips-and-tricks-for-creating-reports.md
+              href: desktop-tips-and-tricks-for-creating-reports.md
             - name: Raportin visualisointien ryhmittely
-              href: ../desktop-grouping-visuals.md
+              href: desktop-grouping-visuals.md
             - name: Raporttimallien luominen
-              href: ../desktop-templates.md
+              href: desktop-templates.md
             - name: Raportin luominen tietojoukosta
-              href: ../service-report-create-new.md
+              href: service-report-create-new.md
             - name: Raportin tallentaminen
-              href: ../service-report-save.md
+              href: service-report-save.md
             - name: Raportin käsittely muokkausnäkymässä
-              href: ../service-interact-with-a-report-in-editing-view.md
+              href: service-interact-with-a-report-in-editing-view.md
             - name: Analysoi Excelissä
-              href: ../service-analyze-in-excel.md
+              href: ../collaborate-share/service-analyze-in-excel.md
             - name: Koosteiden käsitteleminen palvelussa
-              href: ../service-aggregates.md
+              href: service-aggregates.md
             - name: Raportin QR-koodin luominen
-              href: ../service-create-qr-code-for-report.md
+              href: service-create-qr-code-for-report.md
             - name: Anna kuluttajien mukauttaa visualisointeja (esikatselu)
               href: power-bi-personalize-visuals.md
             - name: Raportin vieminen Power BI Desktopiin (esikatselu)
-              href: ../service-export-to-pbix.md
+              href: service-export-to-pbix.md
             - name: Tietojoukkojen ja raporttien julkaiseminen
-              href: ../desktop-upload-desktop-files.md
+              href: desktop-upload-desktop-files.md
         - name: Visualisoinnit
           items:
             - name: Visualisointien lisääminen raporttiin (osa 1)
@@ -226,7 +226,7 @@
             - name: 'Visualisoinnin otsikoiden, taustojen ja selitteiden mukauttaminen'
               href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
             - name: 'Näytä kohteet, joilla ei ole tietoja'
-              href: ../desktop-show-items-no-data.md
+              href: desktop-show-items-no-data.md
             - name: Arvopisterajojen ja strategioiden käyttö visualisointityypin mukaan
               href: ../visuals/power-bi-data-points.md
             - name: Visualisoinnin pohjana olevien tietojen näyttäminen
@@ -242,7 +242,7 @@
             - name: 'Raportin visualisoinnin siirtäminen, koon muuttaminen ja ponnahduskäyttö'
               href: ../visuals/power-bi-visualization-move-and-resize.md
             - name: Visualisointien toimintatapojen muokkaaminen raportissa
-              href: ../service-reports-visual-interactions.md
+              href: service-reports-visual-interactions.md
             - name: Vinkkejä karttavisualisoinneille
               href: ../visuals/power-bi-map-tips-and-tricks.md
             - name: X- ja Y-akselin ominaisuuksien muokkaaminen
@@ -276,9 +276,9 @@
             - name: R-visualisoinnit
               href: ../visuals/service-r-visuals.md
             - name: 'Power BI -visualisointien luominen R:n avulla'
-              href: ../desktop-r-visuals.md
+              href: desktop-r-visuals.md
             - name: 'R:ää hyödyntävien Power BI -visualisointien lataaminen ja käyttäminen'
-              href: ../desktop-r-powered-custom-visuals.md
+              href: desktop-r-powered-custom-visuals.md
             - name: Viisarimittarikaaviot
               href: ../visuals/power-bi-visualization-radial-gauge-charts.md
             - name: Nauhakaaviot
@@ -304,29 +304,29 @@
             - name: 'Q&A:n parhaat käytännöt'
               href: ../natural-language/q-and-a-best-practices.md
             - name: 'Tietojen tutkiminen Q&A:n avulla'
-              href: ../power-bi-tutorial-q-and-a.md
+              href: power-bi-tutorial-q-and-a.md
             - name: 'Visualisoinnin luominen Q&A:n avulla'
-              href: ../power-bi-visualization-introduction-to-q-and-a.md
+              href: power-bi-visualization-introduction-to-q-and-a.md
             - name: 'Excel-tietojen muokkaaminen toimimaan hyvin Q&A:n kanssa'
-              href: ../service-prepare-data-for-q-and-a.md
+              href: service-prepare-data-for-q-and-a.md
             - name: Q&A-toiminnon suositeltujen kysymysten luominen
-              href: ../service-q-and-a-create-featured-questions.md
+              href: service-q-and-a-create-featured-questions.md
             - name: 'Q&A:n käyttäminen reaaliaikaisten yhteyksien kautta'
-              href: ../service-q-and-a-direct-query.md
+              href: service-q-and-a-direct-query.md
             - name: Nopeat merkitykselliset tiedot
-              href: ../service-insights.md
+              href: service-insights.md
             - name: Tietojen optimointi nopeille merkityksellisille tiedoille
-              href: ../service-insights-optimize.md
+              href: service-insights-optimize.md
         - name: Helppokäyttötoiminnot
           items:
             - name: Helppokäyttöisten raporttien suunnittelu
-              href: ../desktop-accessibility-creating-reports.md
+              href: desktop-accessibility-creating-reports.md
             - name: Raporttien luominen helppokäyttötoimintojen työkalujen avulla
-              href: ../desktop-accessibility-creating-tools.md
+              href: desktop-accessibility-creating-tools.md
             - name: Raporttien käyttö helppokäyttötoimintojen avulla
-              href: ../desktop-accessibility-consuming-tools.md
+              href: desktop-accessibility-consuming-tools.md
             - name: Pikanäppäimet Power BI Desktopissa
-              href: ../desktop-accessibility-keyboard-shortcuts.md
+              href: desktop-accessibility-keyboard-shortcuts.md
         - name: Sivutetut raportit
           items:
             - name: Anna tiedot suoraan sivutettuun raporttiin
@@ -350,39 +350,39 @@
         - name: Koontinäytöt
           items:
             - name: Koontinäyttöjen esittely
-              href: ../service-dashboards.md
+              href: service-dashboards.md
             - name: Koontinäytön ruudut
-              href: ../service-dashboard-tiles.md
+              href: service-dashboard-tiles.md
             - name: Koontinäytön luominen raportista
-              href: ../service-dashboard-create.md
+              href: service-dashboard-create.md
             - name: Koontinäytön kopioiminen
-              href: ../service-dashboard-copy.md
+              href: service-dashboard-copy.md
             - name: Ruudun kiinnittäminen koontinäyttöön raportista
-              href: ../service-dashboard-pin-tile-from-report.md
+              href: service-dashboard-pin-tile-from-report.md
             - name: Yhden koontinäytön ruudun kiinnittäminen toiseen koontinäyttöön
-              href: ../service-pin-tile-to-another-dashboard.md
+              href: service-pin-tile-to-another-dashboard.md
             - name: Ruudun kiinnittäminen koontinäyttöön Excelistä
-              href: ../service-dashboard-pin-tile-from-excel.md
+              href: service-dashboard-pin-tile-from-excel.md
             - name: 'Ruudun kiinnittäminen koontinäyttöön Q&A:sta'
-              href: ../service-dashboard-pin-tile-from-q-and-a.md
+              href: service-dashboard-pin-tile-from-q-and-a.md
             - name: Koko raporttisivun kiinnittäminen koontinäyttöön
-              href: ../service-dashboard-pin-live-tile-from-report.md
+              href: service-dashboard-pin-live-tile-from-report.md
             - name: Tietoilmoitukset palvelussa
-              href: ../service-set-data-alerts.md
+              href: service-set-data-alerts.md
             - name: 'Kuvan, tekstiruudun, videon tai koodin lisääminen koontinäyttöön'
-              href: ../service-dashboard-add-widget.md
+              href: service-dashboard-add-widget.md
             - name: Ruudun muokkaaminen
-              href: ../service-dashboard-edit-tile.md
+              href: service-dashboard-edit-tile.md
             - name: Vinkkejä laadukkaiden koontinäyttöjen suunnitteluun
-              href: ../service-dashboards-design-tips.md
+              href: service-dashboards-design-tips.md
             - name: Raporttinäkymän optimoiminen puhelimille
-              href: ../service-create-dashboard-mobile-phone-view.md
+              href: service-create-dashboard-mobile-phone-view.md
             - name: Ruudun QR-koodin luominen
-              href: ../service-create-qr-code-for-tile.md
+              href: service-create-qr-code-for-tile.md
             - name: Koontinäytön tietojen luokittelu
-              href: ../service-data-classification.md
+              href: service-data-classification.md
             - name: Raporttinäkymän teemat
-              href: ../service-dashboard-themes.md
+              href: service-dashboard-themes.md
         - name: Käyttöönottoputket
           items:
             - name: Aloittaminen
@@ -392,8 +392,8 @@
         - name: Muut tehtävät
           items:
             - name: Sisällön uudelleen nimeäminen
-              href: ../service-rename.md
+              href: service-rename.md
             - name: Kohteen yhteystietojen asettaminen
-              href: ../service-item-contact.md
+              href: service-item-contact.md
             - name: Lähes kaiken poistaminen
-              href: ../service-delete.md
+              href: service-delete.md

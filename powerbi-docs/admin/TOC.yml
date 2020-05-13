@@ -2,48 +2,48 @@
   href: index.yml
   expanded: true
   items:
-    - name: Yhteenveto
+    - name: Yleiskatsaus
       expanded: true
       items:
         - name: 'Mitä on Power BI:n hallinta?'
-          href: ../service-admin-administering-power-bi-in-your-organization.md
+          href: service-admin-administering-power-bi-in-your-organization.md
         - name: Missä vuokraajani sijaitsee?
-          href: ../service-admin-where-is-my-tenant-located.md
+          href: service-admin-where-is-my-tenant-located.md
         - name: Mikä on Power BI Premium?
-          href: ../service-premium-what-is.md
+          href: service-premium-what-is.md
     - name: Käsitteet
       expanded: true
       items:
         - name: 'Järjestelmänvalvojarooli Office 365:ssä'
-          href: ../service-admin-role.md
+          href: service-admin-role.md
         - name: Käyttöoikeudet organisaatiollesi
-          href: ../service-admin-licensing-organization.md
+          href: service-admin-licensing-organization.md
         - name: Power BI Pro Yhdysvaltain julkishallinnolle
           items:
             - name: Power BI Pro Yhdysvaltain julkishallinnolle
-              href: ../service-govus-overview.md
+              href: service-govus-overview.md
             - name: Rekisteröi Yhdysvaltain julkishallinnon organisaatio
-              href: ../service-govus-signup.md
+              href: service-govus-signup.md
         - name: Power BI ja alueelliset pilvipalvelut
           items:
             - name: Siirtyminen saksalaisille Go Local -alueille
               href: service-admin-migrate-data-germany.md
             - name: Usein kysyttyjä kysymyksiä saksalaisille pilviasiakkaille
-              href: ../service-govde-faq.md
+              href: service-govde-faq.md
         - name: Usein kysytyt kysymykset
-          href: ../service-admin-faq.md
+          href: service-admin-faq.md
         - name: Korkean käytettävyyden ja vikasietoisuuden usein kysytyt kysymykset
-          href: ../service-admin-failover.md
+          href: service-admin-failover.md
         - name: Power BI Premium
           items:
             - name: Premium-kapasiteettien hallinta
-              href: ../service-premium-capacity-manage.md
+              href: service-premium-capacity-manage.md
             - name: Premium-kapasiteettien optimointi
-              href: ../service-premium-capacity-optimize.md
+              href: service-premium-capacity-optimize.md
             - name: Premium-kapasiteettitilanteet
-              href: ../service-premium-capacity-scenarios.md
+              href: service-premium-capacity-scenarios.md
             - name: Power BI Premiumin usein kysytyt kysymykset
-              href: ../service-premium-faq.md
+              href: service-premium-faq.md
     - name: Ohjeet
       items:
         - name: Käyttöoikeudet ja rekisteröityminen
@@ -51,29 +51,29 @@
             - name: Hanki Power BI organisaatiolle
               href: service-admin-org-subscription.md
             - name: Osta Power BI Pro
-              href: ../service-admin-purchasing-power-bi-pro.md
+              href: service-admin-purchasing-power-bi-pro.md
             - name: Poista omatoiminen rekisteröinti käytöstä
               href: service-admin-disable-self-service.md
             - name: Tarkastele ja hallitse käyttäjien käyttöoikeuksia
               href: service-admin-manage-licenses.md
             - name: Rekisteröityminen Microsoft 365 -kokeiluversion kanssa
-              href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+              href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
             - name: 'Power BI:n lisääminen Microsoft 365 -kumppanin kanssa'
-              href: ../service-admin-syndication-partner.md
+              href: service-admin-syndication-partner.md
         - name: Hallintaportaalin käyttö
-          href: ../service-admin-portal.md
+          href: service-admin-portal.md
         - name: Kirjautuneiden käyttäjien etsiminen
-          href: ../service-admin-access-usage.md
+          href: service-admin-access-usage.md
         - name: Seuraa käyttäjien toimia
-          href: ../service-admin-auditing.md
+          href: service-admin-auditing.md
         - name: Seuraa palvelun kuntoa
-          href: ../service-admin-health.md
+          href: service-admin-health.md
         - name: Tilin sulkeminen
-          href: ../service-admin-closing-your-account.md
+          href: service-admin-closing-your-account.md
         - name: 'Azure AD B2B:n käyttö'
-          href: ../service-admin-azure-ad-b2b.md
+          href: service-admin-azure-ad-b2b.md
         - name: Power BI Desktopin kirjautumislomakkeen halinta
-          href: ../desktop-admin-sign-in-form.md
+          href: desktop-admin-sign-in-form.md
         - name: Tietojen suojaus
           items:
             - name: Tietojen suojauksen yleiskatsaus
@@ -85,65 +85,65 @@
             - name: Tietojen suojaamisen tulosraportti
               href: service-security-data-protection-metrics-report.md
         - name: Rivitason suojaus
-          href: ../service-admin-rls.md
+          href: service-admin-rls.md
         - name: Tietojoukkojen ja tietovoiden sertifioinnin määrittäminen
           href: service-admin-setup-certification.md
         - name: Mobiilisovellusten määrittäminen Intunella
-          href: ../service-admin-mobile-intune.md
+          href: service-admin-mobile-intune.md
         - name: Power BI Premium
           items:
             - name: Osta Power BI Premium
-              href: ../service-admin-premium-purchase.md
+              href: service-admin-premium-purchase.md
             - name: Kapasiteettien määrittäminen ja hallinta
-              href: ../service-admin-premium-manage.md
+              href: service-admin-premium-manage.md
             - name: Kuormitusten määrittäminen
-              href: ../service-admin-premium-workloads.md
+              href: service-admin-premium-workloads.md
             - name: Kapasiteettien valvonta sovelluksen avulla
-              href: ../service-admin-premium-monitor-capacity.md
+              href: service-admin-premium-monitor-capacity.md
             - name: Premium-kuormituksen mittareiden valvonta
-              href: ../service-premium-metrics-app.md
+              href: service-premium-metrics-app.md
             - name: Kapasiteettien valvonta hallintaportaalissa
-              href: ../service-admin-premium-monitor-portal.md
+              href: service-admin-premium-monitor-portal.md
             - name: Suurten mallien määrittäminen (esikatselu)
-              href: ../service-premium-large-models.md
+              href: service-premium-large-models.md
             - name: Multi-Geon määrittäminen
-              href: ../service-admin-premium-multi-geo.md
+              href: service-admin-premium-multi-geo.md
             - name: Tuo omat salausavaimet
-              href: ../service-encryption-byok.md
+              href: service-encryption-byok.md
             - name: Käynnistä Premium-kapasiteetti uudelleen
-              href: ../service-admin-premium-restart.md
+              href: service-admin-premium-restart.md
             - name: Tietojoukon liitettävyys XMLA-päätepisteeseen (esikatselu)
-              href: ../service-premium-connect-tools.md
+              href: service-premium-connect-tools.md
     - name: Viittaus
       items:
         - name: 'PowerShell, REST-ohjelmointirajapinnat ja .NET SDK'
-          href: ../service-admin-reference.md
+          href: service-admin-reference.md
         - name: 'Power BI:n cmdlet-komennot PowerShellille'
           href: 'https://docs.microsoft.com/powershell/power-bi/'
           maintainContext: true
         - name: Palvelun URL-osoiteviittaus
-          href: ../power-bi-whitelist-urls.md
+          href: power-bi-whitelist-urls.md
     - name: Resurssit
       items:
         - name: 'Power BI:n hallinta- ja käyttöönottotavat'
-          href: ../service-admin-governance.md
+          href: service-admin-governance.md
         - name: 'Power BI:n suojaus'
-          href: ../service-admin-power-bi-security.md
+          href: service-admin-power-bi-security.md
         - name: Yksityisyystasot
-          href: ../desktop-privacy-levels.md
+          href: desktop-privacy-levels.md
     - name: Vianmääritys
       items:
         - name: Eikö sisäänkirjautuminen onnistu?
-          href: ../power-bi-cannot-sign-in.md
+          href: power-bi-cannot-sign-in.md
         - name: Power BI -tukivaihtoehdot
-          href: ../service-support-options.md
+          href: service-support-options.md
         - name: Palvelun keskeytymisilmoitukset
-          href: ../service-interruption-notifications.md
+          href: service-interruption-notifications.md
         - name: Unohditko Power BI -salasanasi?
-          href: ../service-admin-forgot-your-password.md
+          href: service-admin-forgot-your-password.md
         - name: 'Power BI:n vianmäärityksen lisätietojen kirjaaminen'
-          href: ../service-admin-capturing-additional-diagnostic-information-for-power-bi.md
+          href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
         - name: 'Power BI:n vaihtoehtoinen sähköpostiosoite'
-          href: ../service-admin-alternate-email-address-for-power-bi.md
+          href: service-admin-alternate-email-address-for-power-bi.md
         - name: 'Samalla tilillä kirjautuminen Power BI:hin ja Azureen'
-          href: ../service-admin-how-to-use-the-same-account-as-azure.md
+          href: service-admin-how-to-use-the-same-account-as-azure.md

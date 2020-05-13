@@ -2,54 +2,54 @@
   href: index.yml
   expanded: true
   items:
-    - name: Yhteenveto
+    - name: Yleiskatsaus
       expanded: true
       items:
-        - name: Mikä on Power BI?
-          href: ../power-bi-overview.md
+        - name: Mikä Power BI on?
+          href: power-bi-overview.md
         - name: Mikä on Power BI Desktop?
-          href: ../desktop-what-is-desktop.md
+          href: desktop-what-is-desktop.md
         - name: Mikä Power BI -palvelu on?
-          href: ../power-bi-service-overview.md
+          href: power-bi-service-overview.md
         - name: Power BI Desktopin ja palvelun vertailu
-          href: ../service-service-vs-desktop.md
+          href: service-service-vs-desktop.md
     - name: Käsitteet
       items:
         - name: Mitä uutta viimeisin Power BI Desktop -päivitys sisältää?
-          href: ../desktop-latest-update.md
+          href: desktop-latest-update.md
         - name: Power BI -palvelun uudet toiminnot ja ominaisuudet
-          href: ../service-whats-new.md
+          href: service-whats-new.md
         - name: Power BI -palvelun ymmärtäminen
-          href: ../service-basic-concepts.md
+          href: service-basic-concepts.md
         - name: 10 vinkkiä ohjeiden hankkimiseen
-          href: ../service-tips-for-finding-help.md
+          href: service-tips-for-finding-help.md
         - name: Käyttöoikeudet
           items:
             - name: 'Rekisteröidy Power BI:hin'
-              href: ../service-self-service-signup-for-power-bi.md
+              href: service-self-service-signup-for-power-bi.md
             - name: Toiminnot käyttöoikeustyypin mukaan
-              href: ../service-features-license-type.md
+              href: service-features-license-type.md
     - name: Toimintaohjeet
       items:
         - name: Power BI Desktopin hankkiminen
-          href: ../desktop-get-the-desktop.md
+          href: desktop-get-the-desktop.md
         - name: Power BI Desktopin käytön aloittaminen
-          href: ../desktop-getting-started.md
+          href: desktop-getting-started.md
     - name: Viittaus
       items:
         - name: Tuetut kielet ja maat tai alueet
-          href: ../supported-languages-countries-regions.md
+          href: supported-languages-countries-regions.md
         - name: Tuetut selaimet
-          href: ../power-bi-browsers.md
+          href: power-bi-browsers.md
     - name: Resurssit
       items:
         - name: Videot
-          href: ../videos.md
+          href: videos.md
         - name: Verkkoseminaarit
-          href: ../webinars.md
+          href: webinars.md
         - name: Power BI Desktop -videot
-          href: ../desktop-videos.md
+          href: desktop-videos.md
         - name: Power BI Desktopin päivitysarkisto
-          href: ../desktop-latest-update-archive.md
+          href: desktop-latest-update-archive.md
         - name: Power BI Desktopin Send a Smile -tietosuojatiedot
-          href: ../desktop-send-smile-privacy-statement.md
+          href: desktop-send-smile-privacy-statement.md
