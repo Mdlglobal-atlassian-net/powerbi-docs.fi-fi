@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/12/2019
-ms.openlocfilehash: 4eca0a799440da57cdb37a603447ba2b0d0c99c8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7eef6c7522bc364bc4b66c9567189dd7aec72239
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80403818"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349835"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseen asiakkaille
 
@@ -31,7 +31,7 @@ Tässä opetusohjelmassa opit:
 
 Tarvitset seuraavat:
 
-* Tarvitset [Power BI Pro -tilin](../../service-self-service-signup-for-power-bi.md) (päätili, jonka käyttäjänimellä ja salasanalla kirjaudut Power BI Pro -tilille) tai [palvelun päänimen (sovellustunnus)](embed-service-principal.md).
+* Tarvitset [Power BI Pro -tilin](../../fundamentals/service-self-service-signup-for-power-bi.md) (päätili, jonka käyttäjänimellä ja salasanalla kirjaudut Power BI Pro -tilille) tai [palvelun päänimen (sovellustunnus)](embed-service-principal.md).
 * Sinulla on oltava oma [Azure Active Directory -vuokraaja ](create-an-azure-active-directory-tenant.md) käyttövalmiina.
 
 Jos et ole rekisteröitynyt **Power BI:hin**, [rekisteröi ilmainen kokeiluversio](https://powerbi.microsoft.com/pricing/) ennen aloittamista.
@@ -58,7 +58,7 @@ Jos käytät palvelun päänimeä, sinun täytyy rekisteröidä **palvelinpuolen
 
 ### <a name="create-a-workspace"></a>Luo työtila
 
-Jos upotat asiakkaille raportteja, raporttinäkymiä tai ruutuja, sisältö tulee sijoittaa työtilaan. Voit ottaa käyttöön erityyppisiä työtiloja: [perinteisiä työtiloja](../../service-create-workspaces.md) tai [uusia työtiloja](../../service-create-the-new-workspaces.md). Jos käytät *päätiliä*, käyttämiesi työtilojen tyypillä ei ole väliä. Jos kirjaudut sovellukseesi *[palvelun päänimellä](embed-service-principal.md)* , sinun täytyy käyttää uusia työtiloja. Molemmissa tapauksissa *päätilin* tai *palvelun päänimen* täytyy olla sovellukseesi liittyvien työtilojen järjestelmänvalvoja.
+Jos upotat asiakkaille raportteja, raporttinäkymiä tai ruutuja, sisältö tulee sijoittaa työtilaan. Voit ottaa käyttöön erityyppisiä työtiloja: [perinteisiä työtiloja](../../collaborate-share/service-create-workspaces.md) tai [uusia työtiloja](../../collaborate-share/service-create-the-new-workspaces.md). Jos käytät *päätiliä*, käyttämiesi työtilojen tyypillä ei ole väliä. Jos kirjaudut sovellukseesi *[palvelun päänimellä](embed-service-principal.md)* , sinun täytyy käyttää uusia työtiloja. Molemmissa tapauksissa *päätilin* tai *palvelun päänimen* täytyy olla sovellukseesi liittyvien työtilojen järjestelmänvalvoja.
 
 ### <a name="create-and-publish-your-reports"></a>Luo ja julkaise raportteja
 
@@ -409,7 +409,7 @@ Kun olet nyt kehittänyt sovelluksesi, on aika varata työtilalle kapasiteettia.
 ### <a name="create-a-dedicated-capacity"></a>Luo varattua kapasiteettia
 
 Luomalla varattua kapasiteettia voit hyötyä siitä, että asiakkaalle varataan tietty resurssi. Valittavanasi on kahdentyyppisiä kapasiteetteja:
-* **Power BI Premium** – vuokraajatason Office 356: n tilaus, joka on saatavilla kahdesta SKU- perheestä, *EM* ja *P*. Kun upotat Power BI -sisältöä, tähän ratkaisuun viitataan nimellä *Power BI -upottaminen*. Lisätietoja tästä tilauksesta on kohdassa [Mikä on Power BI Premium?](../../service-premium-what-is.md)
+* **Power BI Premium** – vuokraajatason Office 356: n tilaus, joka on saatavilla kahdesta SKU- perheestä, *EM* ja *P*. Kun upotat Power BI -sisältöä, tähän ratkaisuun viitataan nimellä *Power BI -upottaminen*. Lisätietoja tästä tilauksesta on kohdassa [Mikä on Power BI Premium?](../../admin/service-premium-what-is.md)
 * **Azure Power BI Embedded** – voit ostaa varattua kapasiteettia [Microsoft Azure -portaalista](https://portal.azure.com). Tämä tilaus käyttää *A*-SKU:ita. Lisätietoa Power BI Embedded ‑kapasiteetin luomisesta saat ohjeaiheesta [Power BI Embedded -kapasiteetin luominen Azure-portaalissa](azure-pbie-create-capacity.md).
 > [!NOTE]
 > A-varastointiyksiköillä et pysty käyttämään Power BI -sisältöä ilmaisella Power BI -käyttöoikeudella.

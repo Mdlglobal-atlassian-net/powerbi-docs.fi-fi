@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/04/2020
-ms.openlocfilehash: 332b9d500aa45ed25199630422e89f890a81f6a3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 125c8ddbdda48b5c7249a6f810d33a65a5f908ee
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80621640"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349789"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Opetusohjelma: Power BI -sisällön upottaminen sovellukseen organisaatiolle
 
@@ -31,7 +31,7 @@ Tässä opetusohjelmassa opit tekemään seuraavat asiat:
 
 Tarvitset seuraavat:
 
-* [Power BI Pro -tili](../../service-self-service-signup-for-power-bi.md).
+* [Power BI Pro -tili](../../fundamentals/service-self-service-signup-for-power-bi.md).
 * Tarvitset [Microsoft Azure](https://azure.microsoft.com/) -tilauksen.
 * Sinulla on oltava oma [Azure Active Directory -vuokraaja ](create-an-azure-active-directory-tenant.md) käyttövalmiina.
 * Jos haluat upottaa sivutettuja raportteja, tarvitset vähintään P1-kapasiteetin. Katso kohta [Minkä kokoista Premium-kapasiteettia tarvitsen sivutettuja raportteja varten?](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
@@ -60,7 +60,7 @@ Kun olet luonut sovelluksesi Azuressa, avaa sovelluksesi Azuressa, siirry *toden
 
 ### <a name="create-a-workspace"></a>Luo työtila
 
-Jos upotat asiakkaille raportteja, raporttinäkymiä tai ruutuja, sisältö tulee sijoittaa työtilaan. Voit ottaa käyttöön erityyppisiä työtiloja: [perinteisiä työtiloja](../../service-create-workspaces.md) tai [uusia työtiloja](../../service-create-the-new-workspaces.md).
+Jos upotat asiakkaille raportteja, raporttinäkymiä tai ruutuja, sisältö tulee sijoittaa työtilaan. Voit ottaa käyttöön erityyppisiä työtiloja: [perinteisiä työtiloja](../../collaborate-share/service-create-workspaces.md) tai [uusia työtiloja](../../collaborate-share/service-create-the-new-workspaces.md).
 
 ### <a name="create-and-publish-your-power-bi-reports"></a>Luo ja julkaise Power BI -raportteja
 
@@ -381,9 +381,9 @@ Kun olet nyt kehittänyt sovelluksesi, on aika varata työtilalle kapasiteettia.
 
 ### <a name="create-a-dedicated-capacity"></a>Luo varattua kapasiteettia
 
-Luomalla varattua kapasiteettia voit hyödyntää sitä, että työtilan sisällölle varataan tietty resurssi. Sivutettujen raporttien osalta työtila on varmistettava vähintään P1-kapasiteetilla. Voit luoda varattua kapasiteettia käyttämällä [Power BI Premiumia](../../service-premium-what-is.md).
+Luomalla varattua kapasiteettia voit hyödyntää sitä, että työtilan sisällölle varataan tietty resurssi. Sivutettujen raporttien osalta työtila on varmistettava vähintään P1-kapasiteetilla. Voit luoda varattua kapasiteettia käyttämällä [Power BI Premiumia](../../admin/service-premium-what-is.md).
 
-Seuraavassa taulukossa esitetään Power BI Premiumin SKU:t, jotka ovat käytettävissä [Microsoft Office 365:ssä](../../service-admin-premium-purchase.md):
+Seuraavassa taulukossa esitetään Power BI Premiumin SKU:t, jotka ovat käytettävissä [Microsoft Office 365:ssä](../../admin/service-admin-premium-purchase.md):
 
 | Kapasiteetin solmu | Näennäisytimiä yhteensä<br/>(tausta ja edusta) | Taustan näennäisytimet | Edustan näennäisytimet | DirectQueryn/live-yhteyden rajoitukset |
 | --- | --- | --- | --- | --- | --- |
@@ -418,7 +418,7 @@ Kun olet luonut varatun kapasiteetin, voit määrittää työtilan kyseiselle va
 
 ## <a name="admin-settings"></a>Järjestelmänvalvojan asetukset
 
-Yleiset järjestelmänvalvojat eli Power BI -palvelun järjestelmänvalvojat voivat ottaa käyttöön REST-ohjelmointirajapintojen käytön vuokraajassa ja poistaa sen käytöstä. Power BI ‑järjestelmänvalvojat voivat määrittää asetuksen koskemaan koko organisaatiota tai yksittäisiä käyttöoikeusryhmiä. Oletusarvoisesti se on käytössä koko organisaatiolle. Voit tehdä nämä muutokset [Power BI -hallintaportaalissa](../../service-admin-portal.md).
+Yleiset järjestelmänvalvojat eli Power BI -palvelun järjestelmänvalvojat voivat ottaa käyttöön REST-ohjelmointirajapintojen käytön vuokraajassa ja poistaa sen käytöstä. Power BI ‑järjestelmänvalvojat voivat määrittää asetuksen koskemaan koko organisaatiota tai yksittäisiä käyttöoikeusryhmiä. Oletusarvoisesti se on käytössä koko organisaatiolle. Voit tehdä nämä muutokset [Power BI -hallintaportaalissa](../../admin/service-admin-portal.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 

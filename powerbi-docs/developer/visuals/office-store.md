@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
-ms.openlocfilehash: 90e914cf9b5c03542436750253fd959808403214
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1aa682a71fe7469f8a9c7d5415fb843400e5d312
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82613553"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148320"
 ---
 # <a name="publish-power-bi-visuals-to-partner-center"></a>Power BI -visualisointien julkaiseminen kumppanikeskuksessa
 
@@ -27,7 +27,7 @@ Kun olet luonut Power BI -visualisoinnin, voit julkaista sen AppSourcessa, josta
 
 ## <a name="preparing-to-submit-your-power-bi-visual"></a>Power BI -visualisoinnin julkaisun valmisteleminen
 
-Ennen kuin lähetät Power BI -visualisoinnin AppSourceen, varmista, että olet lukenut [Power BI -visualisointien ohjeet](guidelines-powerbi-visuals.md) ja [testannut mukautettua visualisointiasi](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md).
+Ennen kuin lähetät Power BI -visualisoinnin AppSourceen, varmista, että olet lukenut [Power BI -visualisointien ohjeet](guidelines-powerbi-visuals.md) ja [testannut mukautettua visualisointiasi](./submission-testing.md).
 
 Kun olet valmis lähettämään Power BI -visualisoinnin, varmista, että se täyttää kaikki alla luetellut vaatimukset.
 
@@ -99,9 +99,10 @@ Lähetä Power BI -visualisointi kumppanikeskukseen noudattamalla alla olevia oh
 
 10. Valitse **Tuotteen asennus**, ja valitse **Tarkista ja julkaise**.
 
+
 ## <a name="tracking-submission-status-and-usage"></a>Lähetyksen tilan ja käytön seuraaminen
 
-* Voit tarkistaa [vahvistuskäytännöt](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
+Voit tarkistaa [vahvistuskäytännöt](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
 * Kun olet lähettänyt visualisoinnin, voit seurata sen tilaa [sovelluskoontinäytössä](https://sellerdashboard.microsoft.com/Application/Summary/).
 

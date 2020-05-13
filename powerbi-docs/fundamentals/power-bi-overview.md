@@ -8,12 +8,12 @@ ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: c3218e20274c0607c2bbec86e961685ccd276659
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f02c383ddbe9eddca180ad8bd29816730c249561
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80487760"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349605"
 ---
 # <a name="what-is-power-bi"></a>Mikä Power BI on?
 **Power BI** on kokoelma ohjelmistopalveluja, sovelluksia ja yhdistimiä, jotka yhdessä muuntavat toisiinsa liittymättömistä lähteistä peräisin olevan tiedon johdonmukaisiksi, visuaalisesti vaikuttaviksi ja vuorovaikutteisiksi näkemyksiksi. Tiedot voivat olla Excel-laskentataulukossa tai joukossa pilvipohjaisia ja paikallisia hybriditietovarastoja. Power BI:n avulla voit helposti muodostaa yhteyden tietolähteisiin, visualisoida ja löytää tärkeitä asioita sekä jakaa niitä kenen kanssa haluat.
@@ -42,9 +42,9 @@ Saatat käyttää Power BI:n eri osia aina sen mukaan, mitä on tarkoitus saavut
 Power BI:n käyttötapasi voi riippua siitä, mikä Power BI:n toiminto tai palvelu on paras työkalu tilanteeseesi. Voit esimerkiksi käyttää Power BI Desktopia raporttien luomiseen tiimillesi asiakkaiden osallistamistilastoista ja tarkastella varastotilannetta tai valmistumisprosessin etenemistä Power BI -palvelun reaaliaikaisessa koontinäytössä. Kukin Power BI:n osa on käytettävissäsi, mikä tekee siitä niin joustavan ja houkuttavan.
 
 Tutustu rooliasi vastaaviin dokumentteihin:
-- Power BI Desktop [*suunnittelijoille*](../desktop-what-is-desktop.md)
+- Power BI Desktop [*suunnittelijoille*](desktop-what-is-desktop.md)
 - Power BI [*kuluttajille*](../consumer/end-user-consumer.md)
-- Power BI [*järjestelmänvalvojille*](../service-admin-administering-power-bi-in-your-organization.md)
+- Power BI [*järjestelmänvalvojille*](../admin/service-admin-administering-power-bi-in-your-organization.md)
 - Power BI *kehittäjille*
     * [Upotettu analysointi Power BI:n avulla](../developer/embedded/embedding.md)
     * [Mikä on Power BI Embedded Azuressa?](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md)
@@ -71,5 +71,5 @@ Lue lisää [Power BI -raporttipalvelimesta](../report-server/get-started.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 - [Pikaopas: Power BI -palvelussa liikkuminen](../service-the-new-power-bi-experience.md)   
-- [Opetusohjelma: Power BI -palvelun käytön aloittaminen](../service-get-started.md)
-- [Pikaopas: Tietoihin yhdistäminen Power BI Desktopissa](../desktop-quickstart-connect-to-data.md)
+- [Opetusohjelma: Power BI -palvelun käytön aloittaminen](service-get-started.md)
+- [Pikaopas: Tietoihin yhdistäminen Power BI Desktopissa](../connect-data/desktop-quickstart-connect-to-data.md)

@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: eee7b67fcfaed987170baa8cb5a0b3c8cba86350
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: a7de3dfbbd378ea96f56c1d6d37d273434f5c2f9
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82866405"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349812"
 ---
 # <a name="create-and-use-r-visuals-in-power-bi"></a>R-visualisointien luominen ja käyttö Power BI:ssa
 
 [!INCLUDE[consumer-appliesto-nnyn](../includes/consumer-appliesto-nnyn.md)]
 
-R-visualisointeja voidaan tällä hetkellä luoda vain **Power BI Desktopissa**, ja sen jälkeen ne julkaistaan Power BI -palveluun. Katso lisätietoja R-visualisointien luomisesta kohdasta [Power BI -visualisointien luominen R:n avulla](../desktop-r-visuals.md).
+R-visualisointeja voidaan tällä hetkellä luoda vain **Power BI Desktopissa**, ja sen jälkeen ne julkaistaan Power BI -palveluun. Katso lisätietoja R-visualisointien luomisesta kohdasta [Power BI -visualisointien luominen R:n avulla](../create-reports/desktop-r-visuals.md).
 
 ## <a name="viewing-r-visuals-in-the-power-bi-service"></a>R-visualisointien tarkasteleminen Power BI -palvelussa
 Power BI -palvelu tukee R-komentosarjoilla luotujen visualisointien tarkastelemista ja käsittelemistä. R-komentosarjoilla luodut visualisoinnit, joita kutsutaan yleisesti nimellä *R-visualisoinnit*, voivat esittää kehittynyttä tietojen muotoilemista ja analytiikkaa, kuten ennusteita, hyödyntämällä R:n monipuolisia analytiikka- ja visualisointitaitoja.
@@ -34,7 +34,7 @@ Seuraavassa kuvassa on Power BI -koontinäyttö, jossa on kehittyneessä analyys
 
 ![Näyttökuva Power BI -palvelun raporttipohjasta](media/service-r-visuals/power-bi-r-visuals.png)
 
-R-visualisointeja luodaan [Power BI Desktop -raportissa](../desktop-get-the-desktop.md), kuten seuraavassa kuvassa näkyvässä raportissa.
+R-visualisointeja luodaan [Power BI Desktop -raportissa](../fundamentals/desktop-get-the-desktop.md), kuten seuraavassa kuvassa näkyvässä raportissa.
 
 ![Työpöytäraportti ja kaksi visualisointia](media/service-r-visuals/power-bi-r-visual-desktop.png)
 
@@ -44,7 +44,7 @@ Kun raportti luodaan **Power BI Desktopissa**, voit julkaista raportin, joka sis
 
 Voit ladata tämän [Power BI Desktop -mallitiedoston](https://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix-tiedosto), joka sisältää joitakin R-visualisointeja, nähdäksesi, miten tämä toimii, ja kokeillaksesi sitä.
 
-R-visualisoinnit, jotka on luotu **Power BI Desktopissa** ja sitten julkaistu Power BI -palveluun, toimivat suurelta osin minkä tahansa muun Power BI -palvelun visualisoinnin tavoin: voit olla vuorovaikutuksessa niiden kanssa, suodattaa ja osittaa niitä ja kiinnittää niitä koontinäyttöön tai jakaa niitä muiden kanssa. Katso lisätietoja koontinäyttöjen ja visualisointien jakamisesta kohdasta [Koontinäytön jakaminen työtoverien ja muiden kanssa](../service-share-dashboards.md). Yksi ero muihin visualisointeihin on se, että R-visualisoinneissa ei voi näyttää työkaluvihjeitä eikä niitä voi käyttää muiden visualisointien suodattamiseen.
+R-visualisoinnit, jotka on luotu **Power BI Desktopissa** ja sitten julkaistu Power BI -palveluun, toimivat suurelta osin minkä tahansa muun Power BI -palvelun visualisoinnin tavoin: voit olla vuorovaikutuksessa niiden kanssa, suodattaa ja osittaa niitä ja kiinnittää niitä koontinäyttöön tai jakaa niitä muiden kanssa. Katso lisätietoja koontinäyttöjen ja visualisointien jakamisesta kohdasta [Koontinäytön jakaminen työtoverien ja muiden kanssa](../collaborate-share/service-share-dashboards.md). Yksi ero muihin visualisointeihin on se, että R-visualisoinneissa ei voi näyttää työkaluvihjeitä eikä niitä voi käyttää muiden visualisointien suodattamiseen.
 
 Kuten näet seuraavasta kuvasta, R-visualisoinnit Power BI -palvelussa, joko koontinäytössä tai raporteissa, näkyvät ja käyttäytyvät pitkälti kuten mikä tahansa muu visualisointi, eikä käyttäjien tarvitse olla tietoisia pohjana olevasta R-komentosarjasta, joka loi visualisoinnin.
 
@@ -69,9 +69,9 @@ Toinen esimerkki on alla olevan kuvan virhesanoma, joka tulee näkyviin, kun R-k
 ![Näyttökuva, jossa näkyy suorituksenaikainen virhe](media/service-r-visuals/r-visuals-service-5.png)
 
 ## <a name="licensing"></a>Käyttöoikeudet
-R-visualisoinnit edellyttävät [Power BI Pro](../service-self-service-signup-for-power-bi.md) -käyttöoikeutta hahmontamiseen raporteissa, päivitykseen, suodatukseen ja ristiinsuodatukseen. Katso lisätietoja Power BI Pro -käyttöoikeuksista ja siitä, miten ne eroavat maksuttomista käyttöoikeuksista, kohdasta [Power BI Pro -sisältö – mikä se on?](../service-admin-purchasing-power-bi-pro.md)
+R-visualisoinnit edellyttävät [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) -käyttöoikeutta hahmontamiseen raporteissa, päivitykseen, suodatukseen ja ristiinsuodatukseen. Katso lisätietoja Power BI Pro -käyttöoikeuksista ja siitä, miten ne eroavat maksuttomista käyttöoikeuksista, kohdasta [Power BI Pro -sisältö – mikä se on?](../admin/service-admin-purchasing-power-bi-pro.md)
 
-Power BI:n maksuttomat käyttäjät kuluttavat vain ruutuja, jotka on jaettu heidän kanssaan Premium-työtiloissa. Saat lisätietoja ohjeartikkelista [Power BI Pron ostaminen](../service-admin-purchasing-power-bi-pro.md).
+Power BI:n maksuttomat käyttäjät kuluttavat vain ruutuja, jotka on jaettu heidän kanssaan Premium-työtiloissa. Saat lisätietoja ohjeartikkelista [Power BI Pron ostaminen](../admin/service-admin-purchasing-power-bi-pro.md).
 
 Seuraavassa taulukossa on kuvattu R-visualisoinnin ominaisuudet käyttöoikeuksien perusteella.
 
@@ -88,7 +88,7 @@ Seuraavassa taulukossa on kuvattu R-visualisoinnin ominaisuudet käyttöoikeuksi
 ## <a name="known-limitations"></a>Tunnetut rajoitukset
 R-visualisoinneilla Power BI -palvelussa on joitakin rajoituksia:
 
-* R-visualisointien tuki rajoittuu paketteihin, jotka on kerrottu kohdassa [Lue, mitä R-paketteja tuetaan](../service-r-packages-support.md). Mukautettujen pakettien tukea ei ole tällä hetkellä.
+* R-visualisointien tuki rajoittuu paketteihin, jotka on kerrottu kohdassa [Lue, mitä R-paketteja tuetaan](../connect-data/service-r-packages-support.md). Mukautettujen pakettien tukea ei ole tällä hetkellä.
 * Tietojen kokorajoitukset – R-visualisointien piirtämiseen käyttämä tietomäärä on rajoitettu 150 000 riviin. Jos valittuna on yli 150 000 riviä, vain 150 000 ylintä riviä käytetään ja kuvassa näkyy sanoma. Lisäksi syötetietojen raja on 250 Mt.
 * Resoluutio - kaikki R-visualisoinnit näytetään tarkkuudella 72 DPI.
 * Piirtolaite – ainoastaan oletuslaitteelle piirtoa tuetaan. 
@@ -119,7 +119,7 @@ R-paketit ovat R-funktioiden, tietojen ja käännetyn koodin kokoelmia, jotka on
 
 **Power BI Desktop** voi käyttää minkä tahansa tyyppistä R-pakettia rajoituksetta. Voit asentaa R-paketit käytettäväksi **Power BI Desktopissa** itse (käyttämällä esimerkiksi [RStudio IDEä](https://www.rstudio.com/)).
 
-**Power BI -palvelun** R-visualisointeja tukevat paketit, jotka löytyvät **Tuetut paketit** -osasta [tästä artikkelista](../service-r-packages-support.md). Jos et löydä paketin sinua kiinnostavaa pakettia Tuetut paketit -luettelosta, voit pyytää paketin tukea. Katso [R-paketit Power BI -palvelussa](../service-r-packages-support.md) -kohdasta lisätietoja siitä, miten voit pyytää tukea.
+**Power BI -palvelun** R-visualisointeja tukevat paketit, jotka löytyvät **Tuetut paketit** -osasta [tästä artikkelista](../connect-data/service-r-packages-support.md). Jos et löydä paketin sinua kiinnostavaa pakettia Tuetut paketit -luettelosta, voit pyytää paketin tukea. Katso [R-paketit Power BI -palvelussa](../connect-data/service-r-packages-support.md) -kohdasta lisätietoja siitä, miten voit pyytää tukea.
 
 ### <a name="requirements-and-limitations-of-r-packages"></a>R-paketteja koskevat vaatimukset ja rajoitukset
 R-paketteja koskevat muutamat vaatimukset ja rajoitukset:
@@ -130,11 +130,10 @@ R-paketteja koskevat muutamat vaatimukset ja rajoitukset:
   
   * R-visualisointien kohdalla voit asentaa minkä tahansa paketin, mukaan lukien mukautetun R-paketin
   * Mukautettujen R-visualisointien kohdalla vain julkisia CRAN-paketteja tuetaan pakettien automaattisessa asennuksessa
-* Suojaus ja tietosuojasyiden takia emme tällä hetkellä tue palvelussa R-paketteja, jotka tarjoavat asiakas-palvelin-kyselyjä Internetissä (esimerkiksi RgoogleMaps). Verkkopalvelut on estetty tällaisten yritysten kohdalla. [R-paketit Power BI-palvelussa](../service-r-packages-support.md) -kohdassa on luettelo R-paketeista, joita tuetaan ja joita ei tueta.
+* Suojaus ja tietosuojasyiden takia emme tällä hetkellä tue palvelussa R-paketteja, jotka tarjoavat asiakas-palvelin-kyselyjä Internetissä (esimerkiksi RgoogleMaps). Verkkopalvelut on estetty tällaisten yritysten kohdalla. [R-paketit Power BI-palvelussa](../connect-data/service-r-packages-support.md) -kohdassa on luettelo R-paketeista, joita tuetaan ja joita ei tueta.
 * Uuden R-paketin hyväksyntäprosessissa on riippuvuuksien puu; joitain riippuvuuksia, jotka pitää asentaa palveluun, ei voida tukea.
 
 ### <a name="supported-packages"></a>Tuetut paketit:
 Pitkä luettelo tuetuista R-paketeista (ja lyhyt luettelo paketeista, joita ei tueta) on seuraavassa artikkelissa:
 
-* [R-paketit Power BI-palvelussa](../service-r-packages-support.md)
-
+* [R-paketit Power BI-palvelussa](../connect-data/service-r-packages-support.md)
