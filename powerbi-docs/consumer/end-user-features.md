@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.date: 04/17/2020
 ms.author: mihart
 LocalizationGroup: consumers
-ms.openlocfilehash: 4c4b923199ccd35433b7bf743314395fc70bbe30
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 088844ccf52a67cfd67590e62a2dd8cab83add66
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82065722"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348409"
 ---
 # <a name="power-bi-feature-list-for-consumers-and-others-with-free-licenses"></a>Power BI:n ominaisuusluettelo *kuluttajille* ja muille ilmaiskäyttäjille
 
@@ -23,7 +23,7 @@ ms.locfileid: "82065722"
 
 *Kuluttajana* käytät Power BI -palvelua raporttien ja koontinäyttöjen tarkastelemiseen, jotta voit tehdä liiketoimintapäätöksiä. *Suunnittelijat*, joilla on Power BI:n *Pro*-käyttöoikeus, luovat nämä raportit ja koontinäytöt. Pro-käyttäjät voivat jakaa sisältöä työtovereidensa kanssa ja hallita sitä, mitä heidän työtoverinsa voivat ja eivät voi tehdä kyseiselle sisällölle. Toisinaan suunnittelijat jakavat sisältöä lähettämällä sinulle linkkejä, ja joskus sisältö asentuu automaattisesti ja näkyy Power BI:ssä kohdassa **Sovellukset** tai **Jaettu kanssani**.
 
-Suunnittelijat voivat jakaa sisältöä monella eri tavalla. Tämä artikkeli on kuitenkin tarkoitettu Power BI:n *kuluttajille*, joten se kuvaa vain sitä, miten kuluttajat saavat sisältöä ja käsittelevät sitä. Jos haluat lisätietoja muista sisällön jakamistavoista, katso [Työn jakamistapoja Power BI:ssä](../service-how-to-collaborate-distribute-dashboards-reports.md).
+Suunnittelijat voivat jakaa sisältöä monella eri tavalla. Tämä artikkeli on kuitenkin tarkoitettu Power BI:n *kuluttajille*, joten se kuvaa vain sitä, miten kuluttajat saavat sisältöä ja käsittelevät sitä. Jos haluat lisätietoja muista sisällön jakamistavoista, katso [Työn jakamistapoja Power BI:ssä](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
 ![Power BI:n siirtymisruutu](media/end-user-features/power-bi-share.png)
 
@@ -47,7 +47,7 @@ Kun organisaatiolla on Premium-kapasiteettitilaus, järjestelmänvalvojat ja Pro
 ### <a name="licenses"></a>Käyttöoikeudet 
 Jokaisella Power BI -palvelun käyttäjällä on joko maksuton käyttöoikeus tai Pro-käyttöoikeus. *Kuluttajilla* on maksuttomia käyttöoikeuksia.
 
-- **Maksuton käyttöoikeus** – Annetaan yleensä organisaation sisäisille *kuluttajille* (katso ensimmäinen kuva alla). Määritetään myös kaikille, jotka rekisteröityvät Power BI -palveluun yksilönä ja haluavat kokeilla [Power BI -palvelua erillisessä tilassa](../service-self-service-signup-for-power-bi.md) (katso toinen kuva alla). 
+- **Maksuton käyttöoikeus** – Annetaan yleensä organisaation sisäisille *kuluttajille* (katso ensimmäinen kuva alla). Määritetään myös kaikille, jotka rekisteröityvät Power BI -palveluun yksilönä ja haluavat kokeilla [Power BI -palvelua erillisessä tilassa](../fundamentals/service-self-service-signup-for-power-bi.md) (katso toinen kuva alla). 
 
     ![näyttö, jossa näkyy ilmaiskäyttäjä](media/end-user-features/power-bi-free-organization.png)
 

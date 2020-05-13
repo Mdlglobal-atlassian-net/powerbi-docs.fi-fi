@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 4f135a411d69835e925cf97b418bda6ae80adc1a
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 6c8957526f3aaf63d6dda80d5e5d84db1eb22df4
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79113193"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349375"
 ---
 # <a name="supported-languages-in-the-power-bi-mobile-apps"></a>Power BI -mobiilisovelluksissa tuetut kielet
 Power BI ‑mobiilisovelluksissa on tällä hetkellä seuraavien kielten tuki:
@@ -58,7 +58,6 @@ Power BI ‑mobiilisovelluksissa on tällä hetkellä seuraavien kielten tuki:
 * Ilmoitukset ovat vain englanniksi. Jos esimerkiksi joku jakaa koontinäytön kanssasi, ilmoitus tulee englanniksi. 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Power BI:n tuetut kielet ja maat tai alueet](../../supported-languages-countries-regions.md)
+* [Power BI:n tuetut kielet ja maat tai alueet](../../fundamentals/supported-languages-countries-regions.md)
 * Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/).
 * Eikö ongelma ratkennut? Vieraile [Power BI -tukisivulla](https://powerbi.microsoft.com/support/).
-

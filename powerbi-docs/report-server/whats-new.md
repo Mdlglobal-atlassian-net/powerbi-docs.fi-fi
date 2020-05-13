@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/27/2020
-ms.openlocfilehash: 6ee1740d536a1bfd248b91d002142470b3894180
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3ce1ae5207af6f4aaf844679bcd3ae52d2c13819
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79381303"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348156"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Power BI -raporttipalvelinten uudet ominaisuudet
 
@@ -23,8 +23,8 @@ Lataa [Power BI -raporttipalvelin ja Power BI -raporttipalvelimelle optimoitu Po
 
 Lisätietoja Power BI:hin liittyvistä uusista ominaisuuksista:
 
-* [Power BI -palvelun uudet ominaisuudet](../service-whats-new.md)
-* [Power BI Desktopin uudet ominaisuudet](../desktop-latest-update.md)
+* [Power BI -palvelun uudet ominaisuudet](../fundamentals/service-whats-new.md)
+* [Power BI Desktopin uudet ominaisuudet](../fundamentals/desktop-latest-update.md)
 * [Power BI -mobiilisovellusten uudet ominaisuudet](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
 
 ## <a name="january-2020"></a>Tammikuu 2020
@@ -128,7 +128,7 @@ Tässä kuussa julkaisemme uuden .pdids-tiedostomuodon, jonka avulla voit tehost
 
 Kun raportin tekijä avaa .pbids-tiedoston, Power BI Desktop pyytää todentamista, jotta se voi muodostaa yhteyden tiedostossa määritettyyn tietolähteeseen. Tämän jälkeen käyttäjä valitsee malliin ladattavat taulukot. Käyttäjien on ehkä myös valittava tietokanta, jos sitä ei ole määritetty tiedostossa. Sen jälkeen raportin tekijä voi aloittaa visualisointien luomisen.
 
-Lisätietoja ja esimerkkejä saat Power BI Desktopin tietolähteet -artikkelin osiosta [Tietojen noutaminen .pbids-tiedostoja käyttämällä](../desktop-data-sources.md#using-pbids-files-to-get-data).
+Lisätietoja ja esimerkkejä saat Power BI Desktopin tietolähteet -artikkelin osiosta [Tietojen noutaminen .pbids-tiedostoja käyttämällä](../connect-data/desktop-data-sources.md#using-pbids-files-to-get-data).
 
 *Mallinnustoimintojen suorituskyvyn parannukset*
 
@@ -239,11 +239,11 @@ Seuraavassa on joitakin version kohokohtia:
 
 #### <a name="performance-analyzer"></a>Suorituskyvyn analysointi 
 
-Jos raporttisi toimii oletettua hitaammin, kokeile Power BI Desktopin suorituskyvyn analysointia. Kun käynnistät sen, se luo loki tiedoston, joka sisältää tiedot kaikista raportissa käyttämistäsi toiminnoista. Lue lisätietoja [suorituskyvyn analysoinnista](../desktop-performance-analyzer.md).
+Jos raporttisi toimii oletettua hitaammin, kokeile Power BI Desktopin suorituskyvyn analysointia. Kun käynnistät sen, se luo loki tiedoston, joka sisältää tiedot kaikista raportissa käyttämistäsi toiminnoista. Lue lisätietoja [suorituskyvyn analysoinnista](../create-reports/desktop-performance-analyzer.md).
 
 #### <a name="new-modeling-view"></a>Uusi mallinnusnäkymä
 
-Power BI Desktopin uuden Mallintamisnäkymän avulla voit tarkastella ja käsitellä monimuotoisia tietojoukkoja, jotka sisältävät useita taulukoita. Kohokohtia ovat useita kaavioita sisältävät asettelut ja sarakkeiden, mittarien ja taulukoiden joukkomuokkaus. Lue lisätietoja [mallinnusnäkymästä](../desktop-modeling-view.md).
+Power BI Desktopin uuden Mallintamisnäkymän avulla voit tarkastella ja käsitellä monimuotoisia tietojoukkoja, jotka sisältävät useita taulukoita. Kohokohtia ovat useita kaavioita sisältävät asettelut ja sarakkeiden, mittarien ja taulukoiden joukkomuokkaus. Lue lisätietoja [mallinnusnäkymästä](../transform-model/desktop-modeling-view.md).
 
 #### <a name="accessible-visual-interaction"></a>Helppokäyttöinen visuaalinen vuorovaikutus
 
@@ -251,11 +251,11 @@ Voit nyt käyttää arvopisteitä monissa valmiissa visualisoinneissa näppäimi
 
 #### <a name="conditional-formatting-titles-and-web-url-actions"></a>Otsikoiden ehdollinen muotoilu ja verkko-URL-toiminnot
 
-Power BI -raportit ovat vuorovaikutteisia. On järkevää, että raportin otsikot ovat dynaamisia, jotta ne vastaavat raportin kulloistakin tilaa. Voit määrittää painikkeiden, muotojen ja kuvien URL-osoitteet dynaamisiksi saman lausekkeeseen sidotun muotoilun avulla. Lue lisätietoja [lausekepohjaisista otsikoista](../desktop-conditional-format-visual-titles.md).
+Power BI -raportit ovat vuorovaikutteisia. On järkevää, että raportin otsikot ovat dynaamisia, jotta ne vastaavat raportin kulloistakin tilaa. Voit määrittää painikkeiden, muotojen ja kuvien URL-osoitteet dynaamisiksi saman lausekkeeseen sidotun muotoilun avulla. Lue lisätietoja [lausekepohjaisista otsikoista](../create-reports/desktop-conditional-format-visual-titles.md).
 
 #### <a name="cross-highlight-by-axis-labels"></a>Ristiinkorostus akseleiden nimien mukaan
 
-Jos haluat ristiinkorostaa sivun muita elementtejä, voit valita visualisoinnin akselin luokkaotsikoita samalla tavalla kuin visualisoinnin arvopisteitä. Lue lisätietoja [ristiinkorostamisesta](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
+Jos haluat ristiinkorostaa sivun muita elementtejä, voit valita visualisoinnin akselin luokkaotsikoita samalla tavalla kuin visualisoinnin arvopisteitä. Lue lisätietoja [ristiinkorostamisesta](../create-reports/power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
 
 #### <a name="all-the-new-features"></a>Kaikki uudet ominaisuudet
 

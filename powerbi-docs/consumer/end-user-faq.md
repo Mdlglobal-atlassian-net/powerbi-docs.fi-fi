@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/20/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 9a59f8e230ecd8eec6338e92b7fb01e525831617
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: a22bba65b44446e7027627a24ebcf316f8f073d4
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79039978"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348386"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Usein kysyttyjä kysymyksiä Power BI:stä
 
@@ -42,21 +42,21 @@ Saat lisätietoja kohdasta [Mikä käyttöoikeus minulla on?](end-user-license.m
 
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Entä jos minulla on kysyttävää Power BI Premiumista?
 
-Jos sinulla on Power BI Premiumiin liittyviä kysymyksiä, tutustu [Power BI Premiumin usein kysyttyihin kysymyksiin](../service-premium-faq.md).
+Jos sinulla on Power BI Premiumiin liittyviä kysymyksiä, tutustu [Power BI Premiumin usein kysyttyihin kysymyksiin](../admin/service-premium-faq.md).
 
 ## <a name="what-is-power-bi-desktop"></a>Mikä on Power BI Desktop?
 
-Power BI Desktop on maksuton sovellus, jonka voit asentaa saman tien omalle tietokoneellesi. Power BI Desktop kuuluu yhteen Power BI -palvelun kanssa.  Tietojenkäsittelyn asiantuntijat, raporttien suunnittelijat, järjestelmänvalvojat ja kehittäjät luovat raportteja Power BI Desktopin avulla ja tuovat ne kaltaistesi Power BI -palvelun *kuluttajien* saataville. Lue lisää siitä, [mikä on Power BI Desktop](../desktop-what-is-desktop.md).
+Power BI Desktop on maksuton sovellus, jonka voit asentaa saman tien omalle tietokoneellesi. Power BI Desktop kuuluu yhteen Power BI -palvelun kanssa.  Tietojenkäsittelyn asiantuntijat, raporttien suunnittelijat, järjestelmänvalvojat ja kehittäjät luovat raportteja Power BI Desktopin avulla ja tuovat ne kaltaistesi Power BI -palvelun *kuluttajien* saataville. Lue lisää siitä, [mikä on Power BI Desktop](../fundamentals/desktop-what-is-desktop.md).
 
 ## <a name="what-do-i-need-to-use-the-power-bi-service-as-a-consumer"></a>Mitä tarvitsen Power BI -palvelun käyttämiseksi *kuluttajana*?
 
 Jos yrityksesi on ostanut Power BI -käyttöoikeuksia tai Premium-kapasiteettitilin, tarvitset vain verkkoselaimen ja tunnistetiedot. Kirjaudu sisään työsähköpostiosoitteella ja salasanalla (Power BI -järjestelmänvalvojasi määrittää ne).  
 
-Voit myös rekisteröityä Power BI:hin yksityishenkilönä. Lue lisätietoja [Power BI:n omatoimisen rekisteröitymisen prosessista](../service-self-service-signup-for-power-bi.md).
+Voit myös rekisteröityä Power BI:hin yksityishenkilönä. Lue lisätietoja [Power BI:n omatoimisen rekisteröitymisen prosessista](../fundamentals/service-self-service-signup-for-power-bi.md).
 
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Miksi minun on kirjauduttava sisään työsähköpostiini?
 
-Power BI ei tue sähköpostin kuluttajapalvelujen tai tietoliikenteen palveluntarjoajien antamia sähköpostiosoitteita. Lue lisää [Power BI:n omatoimisen rekisteröitymisen prosessista](../service-self-service-signup-for-power-bi.md).
+Power BI ei tue sähköpostin kuluttajapalvelujen tai tietoliikenteen palveluntarjoajien antamia sähköpostiosoitteita. Lue lisää [Power BI:n omatoimisen rekisteröitymisen prosessista](../fundamentals/service-self-service-signup-for-power-bi.md).
 
 ## <a name="does-power-bi-support-mobile-devices"></a>Tukeeko Power BI mobiililaitteita?
 
@@ -80,12 +80,12 @@ Voit ladata Power BI -mobiilisovellukset soveltuvasta kaupasta, myös ilmaiseksi
 
 Seuraavat resurssit ovat käytettävissäsi alkuun pääsemiseksi:
 
-* [Power BI -blogi](https://blogs.msdn.com/b/powerbi/)
-* [Verkkoseminaarit](../webinars.md)
+* [Power BI -blogi](https://powerbi.microsoft.com/blog/)
+* [Verkkoseminaarit](../fundamentals/webinars.md)
 * [YouTube-kanavamme](https://www.youtube.com/user/mspowerbi) aloitusohjevideot
 * [Aloita Power BI:n käyttäminen *kuluttajana*](index.yml) -artikkeli
 * [Liity yhteisöön](https://community.powerbi.com/) ja esitä kysymyksiä
-* Katso lisää ehdotuksia artikkelista [10 vinkkiä ohjeiden hankkimiseen](../service-tips-for-finding-help.md).
+* Katso lisää ehdotuksia artikkelista [10 vinkkiä ohjeiden hankkimiseen](../fundamentals/service-tips-for-finding-help.md).
 
 ## <a name="what-browsers-does-power-bi-support"></a>Mitä selaimia Power BI tukee?
 
@@ -93,7 +93,7 @@ Tässä on täydellinen luettelo [Power BI:n tukemista selaimista](../service-br
 
 ## <a name="what-regions-and-languages-does-power-bi-support"></a>Mitä alueita ja kieliä Power BI tukee?
 
-Tässä on täydellinen luettelo [Power BI:n tukemista alueista ja kielistä](../supported-languages-countries-regions.md).
+Tässä on täydellinen luettelo [Power BI:n tukemista alueista ja kielistä](../fundamentals/supported-languages-countries-regions.md).
 
 ## <a name="where-can-i-learn-more-about-security"></a>Mistä saan lisätietoja suojauksesta?
 
@@ -101,7 +101,7 @@ Lue lisää Power BI:n suojauksesta, tietosuojasta ja yhteensopivuudesta tästä
 
 * Tämä [Power BI:n suojauksen](https://go.microsoft.com/fwlink/?LinkId=829185) raportti
 
-* Tämä [Power BI:n suojauksen tuen](../service-admin-power-bi-security.md) artikkeli
+* Tämä [Power BI:n suojauksen tuen](../admin/service-admin-power-bi-security.md) artikkeli
 
 ## <a name="how-do-i-undo-in-power-bi"></a>Miten Power BI:ssä voi kumota toimintoja?
 

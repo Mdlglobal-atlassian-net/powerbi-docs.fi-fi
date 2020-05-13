@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: c757534ba0d93fb5eb04f10ee7b8792c8c9e4af3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 31d3ee405f77acaa47bb158ddde97778a8af9ff0
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435785"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349329"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Koontinäytön tai raportin jakaminen Power BI -mobiilisovelluksista
 Koskee seuraavia:
@@ -25,7 +25,7 @@ Koskee seuraavia:
 >[!NOTE]
 >Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** lopetetaan 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
 
-[Power BI Pro -käyttöoikeuksilla](../../service-features-license-type.md) voit kutsua muita tarkastelemaan koontinäyttöjä ja raportteja jakamalla linkkejä Power BI -mobiilisovellusten kautta. Voit jakaa kenen tahansa kanssa, organisaation sisällä tai sen ulkopuolelle, yrityssähköpostitilillä tai ilman sitä. Heilläkin tosin täytyy olla Power BI Pro -käyttöoikeudet tai sisällön on oltava [Premium-kapasiteetissa](../../service-premium-what-is.md).
+[Power BI Pro -käyttöoikeuksilla](../../fundamentals/service-features-license-type.md) voit kutsua muita tarkastelemaan koontinäyttöjä ja raportteja jakamalla linkkejä Power BI -mobiilisovellusten kautta. Voit jakaa kenen tahansa kanssa, organisaation sisällä tai sen ulkopuolelle, yrityssähköpostitilillä tai ilman sitä. Heilläkin tosin täytyy olla Power BI Pro -käyttöoikeudet tai sisällön on oltava [Premium-kapasiteetissa](../../admin/service-premium-what-is.md).
 
 iOS-ja Android-laitteiden Power BI -mobiilisovelluksista voit [jakaa kenelle tahansa tilannevedoksen ruudusta, raportista tai visualisoinnista ja lisätä merkintöjä niihin](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md). 
 
@@ -42,7 +42,7 @@ iOS-ja Android-laitteiden Power BI -mobiilisovelluksista voit [jakaa kenelle tah
    * Napauta Power BI -mobiilisovelluksen siirtymispalkissa **Lisää vaihtoehtoja** (...) ja valitse ![Jaettu kanssani](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Jaettu kanssani**.
    * Valitse Power BI -palvelussa ![Jaettu kanssani](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Jaettu kanssani** vasemmassa siirtymisruudussa.
    
-   Lue lisää [muistiinpanoja jakamisesta työtovereiden kanssa](../../service-share-dashboards.md).
+   Lue lisää [muistiinpanoja jakamisesta työtovereiden kanssa](../../collaborate-share/service-share-dashboards.md).
 
 ### <a name="unshare-from-your-iphone-or-ipad"></a>Jakamisen poistaminen iPhonessa tai iPadissa
 Voit poistaa jakamisen vain, jos olet omistaja.
@@ -67,7 +67,7 @@ Voit poistaa jakamisen vain, jos olet omistaja.
    * Napauta Power BI -mobiilisovelluksen siirtymispalkissa **Lisää vaihtoehtoja** (...) ja valitse ![Jaettu kanssani](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Jaettu kanssani**.
    * Valitse Power BI -palvelussa ![Jaettu kanssani](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Jaettu kanssani** vasemmassa siirtymisruudussa.
    
-   Lue lisää [muistiinpanoja jakamisesta työtovereiden kanssa](../../service-share-dashboards.md).
+   Lue lisää [muistiinpanoja jakamisesta työtovereiden kanssa](../../collaborate-share/service-share-dashboards.md).
 
 
 ### <a name="unshare-from-your-android-device"></a>Jaon poistaminen Android-laitteesta
@@ -97,10 +97,9 @@ Voit poistaa jakamisen vain, jos olet omistaja.
    * Napauta Power BI -mobiilisovelluksen siirtymispalkissa **Lisää vaihtoehtoja** (...) ja valitse ![Jaettu kanssani](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Jaettu kanssani**.
    * Valitse Power BI -palvelussa ![Jaettu kanssani](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Jaettu kanssani** vasemmassa siirtymisruudussa.
    
-   Lue lisää [muistiinpanoja jakamisesta työtovereiden kanssa](../../service-share-dashboards.md).
+   Lue lisää [muistiinpanoja jakamisesta työtovereiden kanssa](../../collaborate-share/service-share-dashboards.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Jaa tilannevedos ruudusta, raportista tai visualisoinnista ja lisää niihin merkintöjä mobiilisovelluksissa](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
-* [Jaa koontinäyttö tai raportti Power BI:ssä](../../service-share-dashboards.md)
+* [Jaa koontinäyttö tai raportti Power BI:ssä](../../collaborate-share/service-share-dashboards.md)
 * Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-

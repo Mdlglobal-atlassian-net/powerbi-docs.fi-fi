@@ -10,12 +10,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 03/24/2020
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 10d1e87fabc54c5886930c52ce60ed4a62479847
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e5d87e3b41d6048b214fca45fc99df35f997d3c1
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525439"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83347289"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Raportin tai koontinäytön tilaaminen Power BI -palvelussa 
 
@@ -25,7 +25,7 @@ ms.locfileid: "81525439"
 
 Ei ole koskaan ollut näin helppoa pysyä ajan tasalla tärkeimmistä koontinäytöistä ja raporteista. Kun tilaat itsellesi tärkeimmät raporttisivut ja koontinäytöt, Power BI lähettää sinulle sähköpostitse niistä tilannevedoksen. Voit määrittää, miten usein haluat Power BI:n lähettävän sähköpostia: päivittäin, viikoittain tai tietojen päivittyessä. Voit myös määrittää tietyn ajankohdan sille, milloin Power BI lähettää sähköpostit, tai voit suorittaa tämän nyt.  Voit määrittää enintään 24 eri tilausta kullekin raportille tai koontinäytölle.
 
-Sähköpostissa ja tilannevedoksessa käytetään samaa kieliasetusta kuin Power BI:ssä (katso [Power BI:n tuetut kielet ja maat tai alueet](../supported-languages-countries-regions.md)). Jos mitään kieltä ei ole määritetty, Power BI käyttää senhetkisen selaimesi paikka-asetuksen mukaista kieltä. Jos haluat nähdä kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![hammasrataskuvake](./media/end-user-subscribe/power-bi-settings-icon.png) > **Asetukset > Yleiset > Kieli**. 
+Sähköpostissa ja tilannevedoksessa käytetään samaa kieliasetusta kuin Power BI:ssä (katso [Power BI:n tuetut kielet ja maat tai alueet](../fundamentals/supported-languages-countries-regions.md)). Jos mitään kieltä ei ole määritetty, Power BI käyttää senhetkisen selaimesi paikka-asetuksen mukaista kieltä. Jos haluat nähdä kieliasetuksesi tai muuttaa sitä, valitse hammasrataskuvake ![hammasrataskuvake](./media/end-user-subscribe/power-bi-settings-icon.png) > **Asetukset > Yleiset > Kieli**. 
 
 ![Avattava kielivalikko](./media/end-user-subscribe/power-bi-language.png)
 

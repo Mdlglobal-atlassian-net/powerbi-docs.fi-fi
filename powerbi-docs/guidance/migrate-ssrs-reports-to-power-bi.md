@@ -8,12 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 01/03/2020
 ms.author: v-pemyer
-ms.openlocfilehash: b87848953722d33235a11729a3643c627cca7234
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: d9fd23a0cf5c3ed26c78e4c53ae600bf74daca91
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79525610"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348179"
 ---
 # <a name="migrate-sql-server-reporting-services-reports-to-power-bi"></a>SQL Server Reporting Services -raporttien siirtäminen Power BI:hin
 
@@ -37,7 +37,7 @@ Tarkista ennen siirtämisen aloittamista, että ympäristösi täyttää tietyt 
 
 ### <a name="preparing-for-migration"></a>Siirtämiseen valmistautuminen
 
-Kun valmistaudut siirtämään raporttisi Power BI:hin, varmista ensin, että organisaatiollasi on [Power BI Premium](../service-premium-what-is.md) -tilaus. Tämä tilaus vaaditaan, jotta voit isännöidä ja suorittaa Power BI:n sivutettuja raportteja.
+Kun valmistaudut siirtämään raporttisi Power BI:hin, varmista ensin, että organisaatiollasi on [Power BI Premium](../admin/service-premium-what-is.md) -tilaus. Tämä tilaus vaaditaan, jotta voit isännöidä ja suorittaa Power BI:n sivutettuja raportteja.
 
 ### <a name="supported-versions"></a>Tuetut versiot
 
@@ -112,12 +112,12 @@ Yleensä Power BI:n sivutetut raportit on optimoitu **tulostamista** ja **PDF-ti
 
 _Valmistele_-vaiheessa kaikki laitetaan valmiiksi. Se käsittää Power BI -ympäristön valmistelun, raporttien suojaamisen ja julkaisemisen suunnittelun sekä ideat niiden SSRS-kohteiden uudelleenkehittämiseksi, joita ei voida siirtää.
 
-1. Varmista, että [sivutettujen raporttien kuormitus](../service-admin-premium-workloads.md#paginated-reports) on käytössä Power BI Premium -kapasiteetissasi ja että sillä on riittävästi muistia.
-1. Varmista raportin [tietolähteiden](../paginated-reports/paginated-reports-data-sources.md) tuki ja ota käyttöön [Power BI -yhdyskäytävä](../service-gateway-onprem.md), joka mahdollistaa yhteydet paikallisiin tietolähteisiin.
-1. Tutustu Power BI:n suojaukseen ja suunnittele, [miten luot SSRS-kansiot ja -käyttöoikeudet](/sql/reporting-services/security/secure-folders) uudelleen [Power BI:n työtiloilla ja työtilarooleilla](../service-new-workspaces.md).
-1. Tutustu Power BI:n jakamiseen ja suunnittele, miten jaat sisältöä julkaisemalla [Power BI -sovelluksia](../service-create-distribute-apps.md).
-1. Harkitse [jaettujen Power BI -tietojoukkojen](../service-datasets-build-permissions.md) käyttöä SSRS:n jaettujen tietolähteiden asemesta.
-1. Luo [Power BI Desktopilla](../desktop-what-is-desktop.md) mobiilioptimoituja raportteja. Voit käyttää esimerkiksi [Power BI:n mukautettuja suorituskykymittarivisualisointeja](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) SSRS:n mobiiliraporttien ja suorituskykymittareiden asemesta.
+1. Varmista, että [sivutettujen raporttien kuormitus](../admin/service-admin-premium-workloads.md#paginated-reports) on käytössä Power BI Premium -kapasiteetissasi ja että sillä on riittävästi muistia.
+1. Varmista raportin [tietolähteiden](../paginated-reports/paginated-reports-data-sources.md) tuki ja ota käyttöön [Power BI -yhdyskäytävä](../connect-data/service-gateway-onprem.md), joka mahdollistaa yhteydet paikallisiin tietolähteisiin.
+1. Tutustu Power BI:n suojaukseen ja suunnittele, [miten luot SSRS-kansiot ja -käyttöoikeudet](/sql/reporting-services/security/secure-folders) uudelleen [Power BI:n työtiloilla ja työtilarooleilla](../collaborate-share/service-new-workspaces.md).
+1. Tutustu Power BI:n jakamiseen ja suunnittele, miten jaat sisältöä julkaisemalla [Power BI -sovelluksia](../collaborate-share/service-create-distribute-apps.md).
+1. Harkitse [jaettujen Power BI -tietojoukkojen](../connect-data/service-datasets-build-permissions.md) käyttöä SSRS:n jaettujen tietolähteiden asemesta.
+1. Luo [Power BI Desktopilla](../fundamentals/desktop-what-is-desktop.md) mobiilioptimoituja raportteja. Voit käyttää esimerkiksi [Power BI:n mukautettuja suorituskykymittarivisualisointeja](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) SSRS:n mobiiliraporttien ja suorituskykymittareiden asemesta.
 1. Arvioi uudelleen sisäisen **Käyttäjätunnus**-kentän käyttö raporteissasi. Jos luotat **Käyttäjätunnukseen** raporttitietojen suojaamisessa, huomaa, että sivutetuissa raporteissa (Power BI -palvelussa isännöitynä) se palauttaa täydellisen käyttäjätunnuksen. NT-tilin nimen, esimerkiksi _AW\mblythe_, palauttamisen sijaan sisäinen kenttä palauttaa jotain tämänkaltaista: _m. Blythe&commat;adventureworks.com_. Sinun on muokattava tietojoukkomäärityksiä ja mahdollisesti lähdetietoja. Muokkaamisen ja julkaisun jälkeen suosittelemme, että testaat raporttisi perusteellisesti varmistaaksesi, että tietojen käyttöoikeudet toimivat odotetulla tavalla.
 1. Arvioi uudelleen sisäisen **ExecutionTime**-kentän käyttö raporteissasi. Jos kyseessä ovat sivutetut raportit (Power BI -palvelussa isännöitynä), sisäinen kenttä palauttaa päivämäärän/ajan _koordinoituna yleisaikana (UTC)_ . Se voi vaikuttaa raporttiparametrin oletusarvoihin ja raportin suorituksen aikatunnisteeseen (jotka yleensä lisätään raportin alatunnisteisiin).
 1. Jos tietolähteesi on SQL Server (paikallinen), tarkista, että raportit eivät käytä kartan visualisointeja. Kartan visualisointi riippuu SQL Serverin spatiaalisista tietotyypeistä, eikä yhdyskäytävä tue niitä. Lisätietoja on kohdassa [Sivutettujen raporttien tietojen nouto-ohjeet (SQL Serverin monimutkaiset tietotyypit)](report-paginated-data-retrieval.md#sql-server-complex-data-types).
@@ -171,9 +171,9 @@ Kun raportit on siirretty Power BI:hin, sinun täytyy varmistaa, että niiden ti
 
 Suosittelemme painokkaasti, että suoritat seuraavat toimenpiteet. Niillä varmistat raporttien toimivuuden käyttäjille:
 
-1. Testaa raportit kaikilla [Power BI:n tukemilla selaimilla](../power-bi-browsers.md) ja varmista, että raportit näkyvät oikein.
+1. Testaa raportit kaikilla [Power BI:n tukemilla selaimilla](../fundamentals/power-bi-browsers.md) ja varmista, että raportit näkyvät oikein.
 1. Suorita testejä, joilla vertailet näyttämisaikoja SSRS:ssä ja Power BI:ssä. Tarkista, että Power BI -raportit näytetään hyväksyttävässä ajassa.
-1. Jos Power BI -raportin näyttäminen epäonnistuu, koska muisti ei riitä, varaa [lisää resursseja Power BI Premium -kapasiteettiin](../service-admin-premium-workloads.md#paginated-reports).
+1. Jos Power BI -raportin näyttäminen epäonnistuu, koska muisti ei riitä, varaa [lisää resursseja Power BI Premium -kapasiteettiin](../admin/service-admin-premium-workloads.md#paginated-reports).
 1. Jos raportin näyttäminen kestää kauan, sinun kannattaa harkita sitä, että Power BI toimittaa ne raporttiesi käyttäjille [sähköpostitilauksina, jotka sisältävät raporttiliitteet](../consumer/paginated-reports-subscriptions.md).
 1. Tarkista Power BI -tietojoukkoihin perustuvista Power BI -raporteista mallitoteutukset ja varmista, että ne ovat täysin optimoituja.
 
@@ -183,8 +183,8 @@ Jälkisiirtämisvaihe on elintärkeä mahdollisten ongelmien korjaamisten ja teh
 
 Saat lisätietoja näistä ongelmista sekä ohjeet niiden ymmärtämiseen ja lieventämiseen tutustumalla seuraaviin ohjeartikkeleihin:
 
-- [Premium-kapasiteettien optimointi](../service-premium-capacity-optimize.md)
-- [Premium-kapasiteettien valvonta sovelluksen avulla](../service-admin-premium-monitor-capacity.md)
+- [Premium-kapasiteettien optimointi](../admin/service-premium-capacity-optimize.md)
+- [Premium-kapasiteettien valvonta sovelluksen avulla](../admin/service-admin-premium-monitor-capacity.md)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
@@ -195,7 +195,7 @@ Saat lisätietoja tästä artikkelista tutustumalla seuraaviin resursseihin:
 - [Milloin sivutettuja raportteja kannattaa käyttää Power BI:ssä?](report-paginated-or-power-bi.md)
 - [Sivutetut raportit Power BI:ssä: usein kysytyt kysymykset](../paginated-reports/paginated-reports-faq.md)
 - [Verkkokurssi: Sivutetut raportit päivässä](../paginated-reports/paginated-reports-online-course.md)
-- [Power BI Premiumin usein kysytyt kysymykset](../service-premium-faq.md)
+- [Power BI Premiumin usein kysytyt kysymykset](../admin/service-premium-faq.md)
 - [RDL-siirtotyökalu](https://github.com/microsoft/RdlMigration)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com)

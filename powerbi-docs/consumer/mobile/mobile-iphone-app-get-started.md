@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: c766393c9a4c81c484afe6f934e1ebb8314d0fb9
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 56b3a4f67f5bc6dda777ea7c94b92c65abb4f3b0
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77426629"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349398"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>iOS-laitteiden Power BI -mobiilisovelluksen käytön aloittaminen
 Microsoft Power BI for iOS -sovellus iPhonessa tai iPadissa tarjoaa BI-mobiilikäyttökokemuksen Power BI:lle, Power BI -raporttipalvelimelle ja Reporting Services -palveluille. Voit tarkastella ja käsitellä yrityksen koontinäyttöjä paikallisesti ja pilvipalvelussa missä tahansa, live-tilassa kosketusnäytöllisessä mobiilikäytössä. Tarkastele tietoja koontinäytöissä ja jaa sähköpostitse tai tekstiviestillä työtovereiden kanssa. Pysy ajan tasalla kaikkein ajantasaisimmilla tiedoilla [Apple Watchin](mobile-apple-watch.md) avulla.  
@@ -22,7 +22,7 @@ Microsoft Power BI for iOS -sovellus iPhonessa tai iPadissa tarjoaa BI-mobiilik�
 
 Luo Power BI -raportteja Power BI Desktopissa ja julkaise ne:
 
-* [Julkaise Power BI -palvelussa](../../service-get-started.md) ja luo koontinäyttöjä.
+* [Julkaise Power BI -palvelussa](../../fundamentals/service-get-started.md) ja luo koontinäyttöjä.
 * [Julkaise paikallisesti Power BI -raporttipalvelimeen](../../report-server/quickstart-create-powerbi-report.md).
 
 Voit iOS:n Power BI -mobiilisovelluksessa käsitellä koontinäyttöjä ja raportteja joko paikallisesti tai pilvipalvelussa.
@@ -79,11 +79,9 @@ Microsoft Intunen avulla organisaatiot voivat ohjata tietoyksiköitä kuten pika
 > Jos käytät Power BI -mobiilisovellusta iOS-laitteessasi ja organisaatiosi on määrittänyt Microsoft Intunen mobiilisovellusten hallinnan, tietojen päivittäminen taustalla on poistettu käytöstä. Kun avaat sovelluksen seuraavan kerran, Power BI päivittää tiedot verkossa olevasta Power BI -palvelusta.
 > 
 
-Lue lisää [Power BI -mobiilisovellusten päivittämisestä Microsoft Intunella](../../service-admin-mobile-intune.md). 
+Lue lisää [Power BI -mobiilisovellusten päivittämisestä Microsoft Intunella](../../admin/service-admin-mobile-intune.md). 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
 * [Mikä on Power BI?](../../fundamentals/power-bi-overview.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-
-

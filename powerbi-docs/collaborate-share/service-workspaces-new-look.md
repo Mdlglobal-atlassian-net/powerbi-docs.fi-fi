@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 04/15/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e74a59d3ff4a5568352c647ec9f384ad8c3a09b8
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 53a4ae78fa996c1e48ed0c16e0caf15e4f687697
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81638521"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83347926"
 ---
 # <a name="opt-in-to-the-workspace-new-look-preview"></a>Työtilojen uuden ulkoasun ottaminen käyttöön (esikatselu)
 
-Työtiloissa on uusi ulkoasu, joka vastaa Power BI -palvelun [uutta ulkoasua](../service-new-look.md). Jokainen Power BI -palvelun (app.powerbi.com) käyttäjä voi ottaa sen käyttöön. Kun otat käyttöön **uuden ulkoasun** mustassa otsikkopalkissa, otat uuden ulkoasun käyttöön raporteissa ja työtiloissa. Kaikki työtilat, sekä perinteiset että uudet, voivat hyötyä uudesta ulkoasusta.
+Työtiloissa on uusi ulkoasu, joka vastaa Power BI -palvelun [uutta ulkoasua](../consumer/service-new-look.md). Jokainen Power BI -palvelun (app.powerbi.com) käyttäjä voi ottaa sen käyttöön. Kun otat käyttöön **uuden ulkoasun** mustassa otsikkopalkissa, otat uuden ulkoasun käyttöön raporteissa ja työtiloissa. Kaikki työtilat, sekä perinteiset että uudet, voivat hyötyä uudesta ulkoasusta.
 
-Etsitkö tietoja **Power BI Desktopin** uudesta ulkoasusta? Katso [Power BI Desktopin päivitetyn valintanauhan käyttäminen](../desktop-ribbon.md).
+Etsitkö tietoja **Power BI Desktopin** uudesta ulkoasusta? Katso [Power BI Desktopin päivitetyn valintanauhan käyttäminen](../create-reports/desktop-ribbon.md).
 
 ## <a name="features-of-the-new-look"></a>Uuden ulkoasun ominaisuudet
 
@@ -50,7 +50,6 @@ Jos haluat palata vanhaan näkymään, siirrä valitsin takaisin kohtaan **ei k�
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-- [Power BI Desktopin päivitetyn valintanauhan käyttäminen](../desktop-ribbon.md)
-- [Power BI -palvelun uusi ulkoasu](../service-new-look.md)
+- [Power BI Desktopin päivitetyn valintanauhan käyttäminen](../create-reports/desktop-ribbon.md)
+- [Power BI -palvelun uusi ulkoasu](../consumer/service-new-look.md)
 - Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
-

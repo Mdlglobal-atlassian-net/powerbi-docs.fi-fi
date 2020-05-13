@@ -8,19 +8,19 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: 0bbdc13e1adf52ba90435f22920e4351e8f34404
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: cfbffaa06f3cfc393ba3381adbfc1a7613c2f0c1
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79435946"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349352"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Windows 10:n Power BI -mobiilisovelluksen käytön aloittaminen
 Windows 10:n Power BI -mobiilisovellus tuo Power BI:n tablet-laitteeseen tai puhelimeen. Voit käyttää yritystietoja ajan tasalla olevan, kosketuksella toimivan mobiilijärjestelmän kautta. Tarkastele ja käytä yrityksesi koontinäyttöjä missä tahansa kätevästi [Windowsin Aloitusnäytöllä](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
 
 ![Windowsin tapahtumaruutu](./media/mobile-windows-10-phone-app-get-started/pbi_win10_livetile.gif)
 
-Voit [luoda koontinäyttöjä ja raportteja Power BI -palvelussa](../../service-get-started.md) tietojasi käyttäen. 
+Voit [luoda koontinäyttöjä ja raportteja Power BI -palvelussa](../../fundamentals/service-get-started.md) tietojasi käyttäen. 
 
 Sitten voit käyttää koontinäyttöjä ja raportteja, tutkia tietoja ja jakaa niitä – kaikki voidaan tehdä Windows 10:n Power BI -mobiilisovelluksesta käsin.
 
@@ -38,7 +38,7 @@ Sitten voit käyttää koontinäyttöjä ja raportteja, tutkia tietoja ja jakaa 
 Jos et ole vielä rekisteröitynyt, siirry [Power BI-palveluun](https://powerbi.com/). Rekisteröi tili, jotta voit luoda ja tallentaa koontinäyttöjä ja raportteja sekä tuoda tiedot yhteen. Kirjaudu sitten Power BI:hin Windows 10 -laitteellasi, jotta näet omat koontinäyttösi missä tahansa.
 
 1. Napauta Power BI- palvelussa [Rekisteröidy](https://go.microsoft.com/fwlink/?LinkID=513879) Power BI -tilin luomiseksi.
-2. Aloita [omien koontinäyttöjen ja raporttien luominen](../../service-get-started.md).
+2. Aloita [omien koontinäyttöjen ja raporttien luominen](../../fundamentals/service-get-started.md).
 
 ## <a name="get-started-with-the-power-bi-app"></a>Power BI -sovelluksen käytön aloittaminen
 1. Avaa Power BI -sovellus Windows 10 -laitteesi aloitusnäytössä.
@@ -110,7 +110,7 @@ Lue lisää [suosikeista Power BI -mobiilisovelluksissa](mobile-apps-favorites.m
 Seuraavassa on joitakin muita asioita, voit tehdä Power BI -sovelluksessa Windows 10 -laitteissa, joissa on koontinäyttöjä ja raportteja Power BI:ssa sekä Reporting Services -mobiiliraportteja ja suorituskykyilmaisimia Reporting Services -verkkoportaalissa.
 
 ### <a name="power-bi-dashboards-and-reports"></a>Power BI -koontinäytöt ja -raportit
-* Tarkastele [omia sovelluksia](../../service-create-distribute-apps.md).
+* Tarkastele [omia sovelluksia](../../collaborate-share/service-create-distribute-apps.md).
 * Tarkastele omia [koontinäyttöjä](mobile-apps-view-dashboard.md).
 * [Kiinnitä Power BI -ruutuja ja koontinäyttöjä](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) laitteesi Aloitusnäytölle live-ruutuina.
 * [Jaa ruutuja](mobile-windows-10-phone-app-get-started.md).
@@ -125,4 +125,3 @@ Seuraavassa on joitakin muita asioita, voit tehdä Power BI -sovelluksessa Windo
 * [Lataa Power BI -sovellus](https://go.microsoft.com/fwlink/?LinkID=526478) Windows Storesta  
 * [Mikä on Power BI?](../../fundamentals/power-bi-overview.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-

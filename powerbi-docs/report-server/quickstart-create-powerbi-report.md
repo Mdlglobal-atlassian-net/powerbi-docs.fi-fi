@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/03/2020
 ms.author: maggies
-ms.openlocfilehash: 69ebfa9b1d2ef500b388a1bbb57926dc53ff2607
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: efc316e93bea9cfc1b3f429657ac2810e13f4e63
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76975006"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349467"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Power BI -raportin luominen Power BI -raporttipalvelimeen
 Voit tallentaa ja hallita Power BI -raportteja Power BI -raporttipalvelimen verkkoportaalissa paikallisesti samalla tavalla kuin voit tallentaa Power BI -raportteja pilveen Power BI -palvelussa (https://powerbi.com). Luo ja muokkaa raportteja Power BI Desktopissa ja julkaise ne verkkoportaalissa. Raportin lukijat organisaatiossasi voivat tarkastella niitä selaimessa tai Power BI -mobiilisovelluksessa mobiililaitteillaan.
@@ -79,7 +79,7 @@ Voit esimerkiksi luoda suppilokaavion asiakkaiden ja ryhmien arvoista vuosituloj
 2. Vedä laskettava kenttä kohtaan **Arvot**. Jos se ei ole numeerinen kenttä, Power BI Desktop laskee siitä automaattisesti *arvon*.
 3. Vedä kenttä ryhmään kohdassa **Ryhmä**.
 
-Lue lisätietoja [Power BI -raportin suunnittelemisesta](../desktop-report-view.md).
+Lue lisätietoja [Power BI -raportin suunnittelemisesta](../create-reports/desktop-report-view.md).
 
 ## <a name="step-4-save-your-report-to-the-report-server"></a>Vaihe 4: Tallenna raportti raporttipalvelimeen
 Kun raportti on valmis, tallenna se Power BI -raporttipalvelimelle, jonka valitsit vaiheessa 2.
@@ -98,7 +98,7 @@ Kun raportti on valmis, tallenna se Power BI -raporttipalvelimelle, jonka valits
 ### <a name="power-bi-desktop"></a>Power BI Desktop
 Power BI Desktop -raporttien luomiseen on olemassa runsaasti resursseja. Tämä linkki on hyvä aloituskohta.
 
-* [Aloita Power BI Desktopin käyttö](../desktop-getting-started.md)
+* [Aloita Power BI Desktopin käyttö](../fundamentals/desktop-getting-started.md)
 * Ohjattu oppiminen: [Tutustuminen Power BI Desktopiin](/learn/modules/get-data-power-bi/2-getting-started-power-bi-desktop)
 
 ### <a name="power-bi-report-server"></a>Power BI -raporttipalvelin

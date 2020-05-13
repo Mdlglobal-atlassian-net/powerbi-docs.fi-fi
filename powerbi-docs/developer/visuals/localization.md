@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
 ms.date: 06/18/2019
-ms.openlocfilehash: bb323737934ade08ed4998bdcf8d441e8951732c
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: fece594fa6236f01c707f0b84ddca977fb32dede
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79379843"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349283"
 ---
 # <a name="add-the-locale-in-power-bi-for-power-bi-visuals"></a>Alueen lisääminen Power BI:ssä Power BI -visualisoinneille
 
 Visualisoinnit voivat noutaa Power BI:n aluekohtaiset asetukset sisällön lokalisoimiseksi kyseiselle kielelle.
 
-Lue lisää kohdasta [Power BI:n tuetut kielet ja maat tai alueet](./../../supported-languages-countries-regions.md)
+Lue lisää kohdasta [Power BI:n tuetut kielet ja maat tai alueet](./../../fundamentals/supported-languages-countries-regions.md)
 
 Esimerkiksi kieliasetuksen hakeminen mallipalkkikaavion visualisoinnissa.
 

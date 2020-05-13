@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/10/2020
 ms.author: painbar
-ms.openlocfilehash: af3ae969d0aedab3cc49e8d286ce71313da3d6bc
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 557334ed8aecccd646fde92a6d2cfa7852aff36b
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77259781"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83347213"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Android-laitteiden Power BI -mobiilisovelluksen käytön aloittaminen
 Android-sovellus Microsoft Power BI:lle tarjoaa BI-mobiilikäyttökokemuksen Power BI:lle, Power BI-raporttipalvelimelle ja Reporting Services -palveluille. Voit tarkastella ja käsitellä yrityksen koontinäyttöjä paikallisesti ja pilvipalvelussa missä tahansa, live-tilassa kosketusnäytöllisessä mobiilikäytössä. Tarkastele tietoja koontinäytöissä ja jaa sähköpostitse tai tekstiviestillä työtovereiden kanssa. 
@@ -46,7 +46,7 @@ Katso [Power BI -mobiilisovellusten uudet ominaisuudet](../../mobile-whats-new-i
 Jos et ole jo rekisteröinyt, siirry [Power BI -palveluun](https://powerbi.com/) oman tilin luomiseen, jotta voit luoda ja tallentaa koontinäyttöjä ja raportteja sekä koota kaikki tietosi yhteen. Kirjaudu sitten Power BI:hin Android-laitteestasi, niin voit seurata omia koontinäyttöjäsi missä tahansa.
 
 1. Napauta Power BI- palvelussa [Rekisteröidy](https://go.microsoft.com/fwlink/?LinkID=513879) Power BI -tilin luomiseksi.
-2. Aloita [omien koontinäyttöjen ja raporttien luominen](../../service-get-started.md).
+2. Aloita [omien koontinäyttöjen ja raporttien luominen](../../fundamentals/service-get-started.md).
 
 ## <a name="get-started-with-the-power-bi-app-on-your-device"></a>Power BI -sovelluksen käytön aloittaminen laitteellasi
 1. Avaa Power BI Android-käyttöjärjestelmälle -sovellus Android-laitteesi aloitusnäytössä.
@@ -94,17 +94,17 @@ Microsoft Intunen avulla organisaatiot voivat ohjata tietoyksiköitä kuten pika
 > 
 > 
 
-Lue lisää [Power BI -mobiilisovellusten päivittämisestä Microsoft Intunella](../../service-admin-mobile-intune.md). 
+Lue lisää [Power BI -mobiilisovellusten päivittämisestä Microsoft Intunella](../../admin/service-admin-mobile-intune.md). 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Seuraavassa on mainittu eräitä muita asioita, joita voit tehdä Android-laitteen Power BI -sovelluksessa. Saatavilla on Power BI -koontinäyttöjä ja -raportteja sekä raportteja ja suorituskyvyn mittareita Microsoft Power BI -raporttipalvelimessa ja Reporting Services -verkkoportaalissa.
 
 ### <a name="power-bi-dashboards-and-reports"></a>Power BI -koontinäytöt ja -raportit
-* Tarkastele [omia sovelluksia](../../service-create-distribute-apps.md).
+* Tarkastele [omia sovelluksia](../../collaborate-share/service-create-distribute-apps.md).
 * Tarkastele omia [koontinäyttöjä](../../mobile-apps-view-dashboard.md).
 * Tutustu [ruutuihin koontinäytöllä](../../mobile-tiles-in-the-mobile-apps.md).
 * Avaa [Power BI -raportit](../../mobile-reports-in-the-mobile-apps.md).
-* Tarkastele [omia sovelluksia](../../service-create-distribute-apps.md).
+* Tarkastele [omia sovelluksia](../../collaborate-share/service-create-distribute-apps.md).
 * [Lisää merkintöjä ja jaa ruutuja](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md).
 * Jaa [koontinäyttöjä](../../mobile-share-dashboard-from-the-mobile-apps.md).
 * [Skannaa Power BI:n QR-koodi](../../mobile-apps-qr-code.md) avataksesi asianmukaisen koontinäytön ruudun tai raportin. 
@@ -119,5 +119,3 @@ Seuraavassa on mainittu eräitä muita asioita, joita voit tehdä Android-laitte
 * [Lataa Android-sovellus](https://go.microsoft.com/fwlink/?LinkID=544867) Androidin sovelluskaupasta.
 * [Mikä on Power BI?](../../fundamentals/power-bi-overview.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
-
-

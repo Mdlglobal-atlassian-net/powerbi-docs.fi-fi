@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 03/18/2020
 ms.author: v-pemyer
-ms.openlocfilehash: 5ff7891ce704ebaf8677df6f0872396ffa1b04a2
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: ada695b2a568358f96010feb320226437beeb075
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81675653"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349168"
 ---
 # <a name="online-course-power-bi-paginated-reports-in-a-day"></a>Verkkokurssi: Power BI:n sivutetut raportit päivässä
 
@@ -100,11 +100,11 @@ Suosittelemme, että katsot verkkokurssin ensin. Voit palata esitysteoriaan avaa
 Kun olet valmis aloittamaan ensimmäisen laboratorion, avaa tiedosto **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf**. Tämä tiedosto opastaa sinua kirjautumaan Power BI -palveluun, lataamaan tietojoukon ja asentamaan sitten [Power BI:n Raportin muodostimen](report-builder-power-bi.md).
 
 > [!NOTE]
-> Vastaat itse siitä, että sinulla on oma Power BI -tili. Jos sinulla ei vielä ole tiliä, katso [Rekisteröityminen Power BI:hin yksityishenkilönä](../service-self-service-signup-for-power-bi.md).
+> Vastaat itse siitä, että sinulla on oma Power BI -tili. Jos sinulla ei vielä ole tiliä, katso [Rekisteröityminen Power BI:hin yksityishenkilönä](../fundamentals/service-self-service-signup-for-power-bi.md).
 >
 > Sinun on kirjauduttava Power BI:n, jotta voit julkaista Power BI Desktop -tiedoston työtilaan. Julkaisu antaa tulokseksi tietojoukon, jota käytetään raportin tietolähteenä. Et tarvitse Power BI Pro -käyttöoikeutta etkä Power BI Premium -tilausta tietojoukon käyttämiseen raportin tietolähteenä.
 >
-> Jotkin laboratoriotehtävät edellyttävät kuitenkin sivutetun raportin julkaisemista työtilaan. Voit avata sivutetun raportin vain, kun se on tallennettu työtilaan [erilliseen kapasiteettiin](../service-premium-what-is.md#dedicated-capacities), jossa sivutettujen raporttien työkuorma on otettu käyttöön. Jos sinulla ei ole käyttöoikeutta sopivaan työtilaan, saat sen sijaan linkin, jonka avulla voit katsoa raportin julkaisemista esittelevän videon.
+> Jotkin laboratoriotehtävät edellyttävät kuitenkin sivutetun raportin julkaisemista työtilaan. Voit avata sivutetun raportin vain, kun se on tallennettu työtilaan [erilliseen kapasiteettiin](../admin/service-premium-what-is.md#dedicated-capacities), jossa sivutettujen raporttien työkuorma on otettu käyttöön. Jos sinulla ei ole käyttöoikeutta sopivaan työtilaan, saat sen sijaan linkin, jonka avulla voit katsoa raportin julkaisemista esittelevän videon.
 
 ## <a name="instructor-kit"></a>Opettajan paketti
 

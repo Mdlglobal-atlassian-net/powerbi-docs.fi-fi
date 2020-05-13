@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 0d3bbbf9042d2b0d1a42ab9c1f759ccfd03c6609
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 3dcd968d00d98106a8b717e635b8a7fdf958dc70
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114372"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83347328"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Tarkastele aiheeseen liittyvää sisältöä Power BI -palvelussa
 
@@ -47,12 +47,12 @@ Kun raporttinäkymä tai raportti on avoinna, valitse **Enemmän vaihtoehtoja** 
 
 ![Aiheeseen liittyvä sisältö -ruutu](./media/end-user-related/power-bi-view-related-dashboard.png)
 
-Täältä voit tehdä suoria toimintoja aiheeseen liittyvään sisältöön.  Valitse esimerkiksi raporttinäkymän tai raportin nimi avataksesi sen.  Listatun raportin kanssa voit suorittaa toimintoja valitsemalla kuvakkeen: [Analysoi Excelissä](../service-analyze-in-excel.md) tai [Hae merkityksellistä tietoa](end-user-insights.md). Tietojoukon kohdalla voit tarkastella viimeisintä päivityksen päivämäärää ja aikaa, [analysoida Excelissä](../service-analyze-in-excel.md) ja [hakea merkityksellisiä tietoja](end-user-insights.md).  
+Täältä voit tehdä suoria toimintoja aiheeseen liittyvään sisältöön.  Valitse esimerkiksi raporttinäkymän tai raportin nimi avataksesi sen.  Listatun raportin kanssa voit suorittaa toimintoja valitsemalla kuvakkeen: [Analysoi Excelissä](../collaborate-share/service-analyze-in-excel.md) tai [Hae merkityksellistä tietoa](end-user-insights.md). Tietojoukon kohdalla voit tarkastella viimeisintä päivityksen päivämäärää ja aikaa, [analysoida Excelissä](../collaborate-share/service-analyze-in-excel.md) ja [hakea merkityksellisiä tietoja](end-user-insights.md).  
 
 
 
 ## <a name="view-related-content-for-a-dataset"></a>Tarkastele tietojoukkoon liittyvää sisältöä
-Avataksesi *Aiheeseen liittyvä sisältö* -ruudun sinun pitää käydä läpi tietojoukkoon liittyvät oikeudet kohdasta **Lue**. Tässä esimerkkinä toimii [Hankinta-analyysimalli](../sample-procurement.md).
+Avataksesi *Aiheeseen liittyvä sisältö* -ruudun sinun pitää käydä läpi tietojoukkoon liittyvät oikeudet kohdasta **Lue**. Tässä esimerkkinä toimii [Hankinta-analyysimalli](../create-reports/sample-procurement.md).
 
 Etsi siirtymisruudusta **Työtilat**-otsikko ja valitse työtila luettelosta. Jos sinulla on sisältöä työtilassa, se näkyy piirtoalustassa oikealla. 
 
@@ -67,7 +67,7 @@ Valitse kuvake avataksesi **Aiheeseen liittyvä sisältö** -ruudun.
 
 ![Aiheeseen liittyvä sisältö -ruutu avautuu Power BI -sisältönäkymän yläpuolelle](media/end-user-related/power-bi-dataset.png)
 
-Täältä voit tehdä suoria toimintoja aiheeseen liittyvään sisältöön. Valitse esimerkiksi raporttinäkymän tai raportin nimi avataksesi sen.  Voit jakaa listassa olevan raporttinäkymän valitsemalla kuvakkeen [Raporttinäkymän jakaminen muille](../service-share-dashboards.md) tai avaamalla raporttinäkymän **Asetukset**-ikkunan. Raportin kanssa voit suorittaa toimintoja valitsemalla kuvakkeen [Analysoi Excelissä](../service-analyze-in-excel.md), [Nimeä uudelleen](../service-rename.md), tai [Hae merkityksellistä tietoa](end-user-insights.md).  
+Täältä voit tehdä suoria toimintoja aiheeseen liittyvään sisältöön. Valitse esimerkiksi raporttinäkymän tai raportin nimi avataksesi sen.  Voit jakaa listassa olevan raporttinäkymän valitsemalla kuvakkeen [Raporttinäkymän jakaminen muille](../collaborate-share/service-share-dashboards.md) tai avaamalla raporttinäkymän **Asetukset**-ikkunan. Raportin kanssa voit suorittaa toimintoja valitsemalla kuvakkeen [Analysoi Excelissä](../collaborate-share/service-analyze-in-excel.md), [Nimeä uudelleen](../create-reports/service-rename.md), tai [Hae merkityksellistä tietoa](end-user-insights.md).  
 
 ## <a name="limitations-and-troubleshooting"></a>Rajoitukset ja vianmääritys
 * Jos et näe Näytä aiheeseen liittyvät -kohtaa, etsi sen sijaan kuvaketta ![Näytä aiheeseen liittyvä kuvake](./media/end-user-related/power-bi-view-related-icon-new.png). Valitse kuvake avataksesi **Aiheeseen liittyvä sisältö** -ruudun.
@@ -75,6 +75,5 @@ Täältä voit tehdä suoria toimintoja aiheeseen liittyvään sisältöön. Val
 * Aiheeseen liittyvä sisältö -ominaisuus ei toimi suoratoistettuihin tietojoukkoihin.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* [Power BI -palvelun käytön aloittaminen](../service-get-started.md)
+* [Power BI -palvelun käytön aloittaminen](../fundamentals/service-get-started.md)
 * Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
-

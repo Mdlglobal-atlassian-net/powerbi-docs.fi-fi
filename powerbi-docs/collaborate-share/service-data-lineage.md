@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 02/27/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: fc1f55fbadfaa6c25dd9140a41064eaa876013df
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 101217023576783a32491b21ba254d54736b27db
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "81525395"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83348202"
 ---
 # <a name="data-lineage"></a>Tietojen historiatiedot
 Moderneissa liiketoimintatietojen projekteissa tietovirran ymmärtäminen tietolähteestä kohteeseen voi olla haastavaa. Haaste on vieläkin suurempi, jos olet luonut edistyneitä analyysiprojekteja, jotka kattavat useita tietolähteitä, artefakteja ja riippuvuuksia. Esimerkiksi kysymyksiin ”Mitä tapahtuu, jos muutan näitä tietoja?” Miksi tämä raportti ei ole ajan tasalla? voi olla vaikea vastata. Niiden ymmärtäminen voi vaatia asiantuntijaryhmän tai syvällistä tutkintaa. Olemme suunnitelleet historiatietonäkymän, jonka avulla näihin kysymyksiin voi vastata.
@@ -88,9 +88,9 @@ Tietojen historiatietojen näkymä on vuorovaikutteinen pohja. Voit käyttää h
 
 ## <a name="considerations-and-limitations"></a>Huomioitavat asiat ja rajoitukset
 
-- Tietojen historiatietojen näkymä ei ole käytettävissä Internet Explorerissa. Katso lisätietoja kohdasta [Power BI:n tuetut selaimet](../power-bi-browsers.md).
+- Tietojen historiatietojen näkymä ei ole käytettävissä Internet Explorerissa. Katso lisätietoja kohdasta [Power BI:n tuetut selaimet](../fundamentals/power-bi-browsers.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-* [Johdanto tietojoukkojen käyttöön eri työtiloissa (esikatselu)](../service-datasets-across-workspaces.md)
+* [Johdanto tietojoukkojen käyttöön eri työtiloissa (esikatselu)](../connect-data/service-datasets-across-workspaces.md)
 * [Tietojoukkojen vaikutusanalyysi](service-dataset-impact-analysis.md)

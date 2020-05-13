@@ -8,19 +8,19 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: 8235f95d724b34e7ea815579e6f8ed6a1f71e409
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: dd3d3702524bc8939720a177dcdcc291081542f4
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82841706"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83349260"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Power BI -mobiilisovellusten uudet ominaisuudet
 Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
 
 * [Power BI -tiimin mobiilisovelluksia käsittelevä blogi](https://powerbi.microsoft.com/blog/tag/mobile/)
-* [Power BI Desktopin uudet ominaisuudet](../../desktop-latest-update.md)  
-* [Power BI -palvelun uudet ominaisuudet](../../service-whats-new.md)
+* [Power BI Desktopin uudet ominaisuudet](../../fundamentals/desktop-latest-update.md)  
+* [Power BI -palvelun uudet ominaisuudet](../../fundamentals/service-whats-new.md)
 
 >[!NOTE]
 >Power BI -mobiilisovellustuki **Windows 10 Mobilea käyttäville puhelimille** lopetetaan 16. maaliskuuta 2021. [Lisätietoja](https://go.microsoft.com/fwlink/?linkid=2121400)
@@ -476,7 +476,7 @@ Lue [mobiilisovellusten ominaisuusyhteenveto heinäkuulta 2017](https://powerbi.
 
 ### <a name="june-2107"></a>Kesäkuu 2107
 #### <a name="all-devices"></a>Kaikki laitteet
-**Sovellusten lisääminen suosikkeihin** Koontinäytön voi jo lisätä suosikkeihin. Hiljattain [Power BI:hin lisättiin sovelluksia](../../service-create-distribute-apps.md) ja nyt myös sovelluksia voi lisätä suosikkeihin. 
+**Sovellusten lisääminen suosikkeihin** Koontinäytön voi jo lisätä suosikkeihin. Hiljattain [Power BI:hin lisättiin sovelluksia](../../collaborate-share/service-create-distribute-apps.md) ja nyt myös sovelluksia voi lisätä suosikkeihin. 
 
 ### <a name="may-2017"></a>Toukokuu 2017
 #### <a name="all-devices"></a>Kaikki laitteet
@@ -493,7 +493,7 @@ Lue lisää [Power BI -sisällön organisoinnista](mobile-apps-quickstart-view-d
 Lue [mobiilisovellusten ominaisuusyhteenveto huhtikuulta 2017](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-march-april-2017/).
 
 #### <a name="all-devices"></a>Kaikki laitteet
-**Puhelinraporttien taustaväri** Kun määrität raportin taustavärin Power BI Desktopissa, puhelinraportissa käytetään samaa taustaväriä. Lue lisätietoja [raporttisivujen optimoinnista puhelimille](../../desktop-create-phone-report.md).
+**Puhelinraporttien taustaväri** Kun määrität raportin taustavärin Power BI Desktopissa, puhelinraportissa käytetään samaa taustaväriä. Lue lisätietoja [raporttisivujen optimoinnista puhelimille](../../create-reports/desktop-create-phone-report.md).
 
 **Kehitä mobiililaitteille sopivia Power BI -visualisointeja** Lue tästä [kehittäjän oppaasta](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) vinkkejä, joiden avulla voit luoda Power BI -visualisointeja, jotka näyttävät hyvältä ja toimivat hyvin mobiililaitteissa.
 
@@ -553,7 +553,7 @@ Lue [tammikuun 2017 mobiilisovellusten blogin ominaisuusyhteenveto](https://powe
 #### <a name="all-devices"></a>Kaikki laitteet
 **Lataa yli 100 riviä taulukoissa ja matriiseissa** Jos sinulla on nyt suuri taulukko tai matriisi koontinäytössä tai raportissa, näytämme ruudussa mahdollisimman paljon tietoa. Tarkastelutilassa voit vierittää alaspäin ja ladata lisää rivejä.
 
-**Puhelinraportti – yleinen käytettävyys** Power BI:n puhelinraportit ovat nyt yleisesti saatavilla. Power BI Desktopissa voi luoda olemassa olevasta raportista pystynäkymän mobiilikatseluohjelmia varten. Lue lisätietoja [puhelinraporttien luomisesta Power BI Desktopissa](../../desktop-create-phone-report.md) ja [raportin käyttökokemuksesta puhelimissa](mobile-apps-view-phone-report.md).
+**Puhelinraportti – yleinen käytettävyys** Power BI:n puhelinraportit ovat nyt yleisesti saatavilla. Power BI Desktopissa voi luoda olemassa olevasta raportista pystynäkymän mobiilikatseluohjelmia varten. Lue lisätietoja [puhelinraporttien luomisesta Power BI Desktopissa](../../create-reports/desktop-create-phone-report.md) ja [raportin käyttökokemuksesta puhelimissa](mobile-apps-view-phone-report.md).
 
 #### <a name="ios"></a>iOS
 **SSRS-todennus Active Directory -liittoutumispalveluiden (ADFS) avulla – esikatselu** Voit nyt kirjautua sisään paikallisiin SQL Server Reporting Services -palvelimiin mobiililaitteella käyttäen organisaation tiliä. Lue lisää [OAuthin käyttämisestä yhteyden muodostamisessa SSRS-palvelimiin](mobile-oauth-ssrs.md).
@@ -644,7 +644,7 @@ Lue [lokakuun 2016 Power BI -mobiilisovellusten ominaisuusyhteenveto](https://po
 #### <a name="all-phones"></a>Kaikki puhelimet
 **Suosikit** Tarkastele suosikkikoontinäyttöjäsi kaikissa Power BI -mobiilisovelluksissa ja hallitse Suosikit-luetteloa iOS- ja Windows 10 -laitteiden Power BI -mobiilisovelluksissa. Lue lisää [suosikeista Power BI -mobiilisovelluksissa](mobile-apps-favorites.md).
 
-**Koontinäytön tietojen luokitus** Katso tietojen luokittelu, jonka koontinäyttöjen omistajat ovat määrittäneet koontinäytöilleen. Lue lisää [koontinäyttöjen luokittelusta](../../service-data-classification.md).
+**Koontinäytön tietojen luokitus** Katso tietojen luokittelu, jonka koontinäyttöjen omistajat ovat määrittäneet koontinäytöilleen. Lue lisää [koontinäyttöjen luokittelusta](../../create-reports/service-data-classification.md).
 
 **Tietopohjaiset hälytykset** Saat ilmoituksen, kun tiedot muuttuvat ennalta määritetyillä tavoilla suorituskykyilmaisin-, mittari- ja korttiruuduissa. Lue lisätietoja:
 
@@ -659,14 +659,14 @@ Lue [lokakuun 2016 Power BI -mobiilisovellusten ominaisuusyhteenveto](https://po
 
 **Intune MAM -tuki** Lisätty tuki Microsoft Intunen mobiilisovellusten hallinnan (MAM) ominaisuuksille.
 
-Lue lisää [Microsoft Intunesta Power BI -mobiilisovelluksissa](../../service-admin-mobile-intune.md).
+Lue lisää [Microsoft Intunesta Power BI -mobiilisovelluksissa](../../admin/service-admin-mobile-intune.md).
 
 #### <a name="windows-10-devices"></a>Windows 10 -laitteet
 **Koko näytön tila ja esitystila** Voit esittää raportteja Surface Hubin esitystilassa ja raporttinäkymiä, raportteja ja ruutuja Windows 10 -laitteiden koko näytön tilassa.
 
 ### <a name="july-2016"></a>Heinäkuu 2016
 #### <a name="all-phones"></a>Kaikki puhelimet
-Voit nyt [luoda koontinäytöstä pystysuuntaisen näkymän puhelimille](../../service-create-dashboard-mobile-phone-view.md) Power BI -palvelussa. 
+Voit nyt [luoda koontinäytöstä pystysuuntaisen näkymän puhelimille](../../create-reports/service-create-dashboard-mobile-phone-view.md) Power BI -palvelussa. 
 
 #### <a name="android-phones"></a>Android-puhelimet
 **Suosikit-välilehti** Käytä kaikkia suosikkikoontinäyttöjäsi yksittäisestä sijainnista.
@@ -795,7 +795,7 @@ Kaikki tammikuun parannukset ovat jo uudessa [Windows 10 -puhelinten Power BI -s
 
 **R-ruudut ja web-pienoissovellukset** Voit tarkastella näitä uusia koontinäyttöjen ruututyyppejä mobiililaitteessasi.
 
-**Bing-koontinäytöt** Voit nyt luoda Power BI -palvelussa [koontinäyttöjä Bing-hakutuloksista](../../service-connect-to-services.md) ja tarkastella niitä mobiililaitteessasi.
+**Bing-koontinäytöt** Voit nyt luoda Power BI -palvelussa [koontinäyttöjä Bing-hakutuloksista](../../connect-data/service-connect-to-services.md) ja tarkastella niitä mobiililaitteessasi.
 
 **Raporttisivut kiinnitettyinä ruuduiksi koontinäytöissä** Voit nyt kiinnittää koko raportin koontinäyttöön Power BI -palvelussa ja käyttää raporttisivuja iPhone- tai Android-puhelimesi Power BI -sovelluksessa.
 
@@ -805,41 +805,42 @@ Power BI -tiimi päätti vuoden 2015 vahvasti tuoden useita merkittäviä lisäy
 #### <a name="sql-server-2016-reporting-services-mobile-reports-in-ios"></a>SQL Server 2016 Reporting Services -mobiiliraportit iOS:ssä
 Voit nyt tarkastella SQL Server -mobiiliraportteja iOS-laitteesi (iPhone tai iPad) Power BI -sovelluksessa. Lue lisää:
 
-* blogimerkintä [SQL 16 SSRS iOS:n Power BI -sovelluksessa](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/sql-16-ssrs-on-power-bi-app-for-ios.aspx)
+* blogimerkintä [SQL 16 SSRS iOS:n Power BI -sovelluksessa](https://powerbi.microsoft.com/blog/sql-16-ssrs-on-power-bi-app-for-ios/
+)
 * Katso [SQL Server -mobiiliraporttien ja -suorituskykyilmaisimien iPhone- ja iPad-sovellusten](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) dokumentaatio
 
 #### <a name="power-bi-app-for-windows-10-phones"></a>Power BI -sovellus Windows 10 -puhelimille
 Windows 10 -puhelinten uusi Power BI -sovellus on optimoitu kosketusnäyttöjä ja mobiilituottavuutta varten. Tutustu koontinäyttöihin ja raportteihin, kutsu työtovereita tarkastelemaan tietoja ja jaa merkityksellistä tietoa sähköpostitse tiimin sitouttamiseksi. Voit lisäksi [kiinnittää Power BI -koontinäyttöjä Windows-puhelimesi aloitusnäyttöön](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
 
-* Lue [Windows 10 -puhelinten Power BI -sovellusta käsittelevä blogimerkintä](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/announcing-the-power-bi-app-for-windows-10-mobile.aspx).
+* Lue [Windows 10 -puhelinten Power BI -sovellusta käsittelevä blogimerkintä](https://powerbi.microsoft.com/blog/announcing-the-power-bi-app-for-windows-10-mobile/).
 * [Aloita Windows 10 -puhelinten Power BI -sovelluksen käyttö](mobile-windows-10-phone-app-get-started.md).
 
 #### <a name="other-additions"></a>Muut lisäykset
-Lue lisätietoja [joulukuun Power BI -mobiilisovellusten blogimerkinnästä](https://blogs.msdn.com/b/powerbi/archive/2015/12/30/power-bi-mobile-apps-update-_2d00_-december-2015.aspx).
+Lue lisätietoja [joulukuun Power BI -mobiilisovellusten blogimerkinnästä](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-2d00-december-2015/).
 
 * Vastaanota ilmoituksia, kun työtoverisi jakaa koontinäytön kanssasi. (iOS)
 * Tarkastele kiinnitettyjä raporttisivuja kokonaisuudessaan raporttinäkymissä. (iOS ja Android)
-* [Skannaa QR-koodi](https://blogs.msdn.com/b/powerbi/archive/2015/12/08/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes.aspx) ja siirry suoraan asianmukaiseen ruutuun Android-puhelimessa.
+* [Skannaa QR-koodi](https://powerbi.microsoft.com/blog/bridge-the-gap-between-your-physical-world-and-your-bi-using-qr-codes/) ja siirry suoraan asianmukaiseen ruutuun Android-puhelimessa.
 
 ### <a name="november-2015"></a>Marraskuu 2015
-Lue [marraskuun 2015 Power BI -mobiilisovellusten blogimerkintä](https://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-mobile-apps-update-_2d00_-november-2015.aspx).
+Lue [marraskuun 2015 Power BI -mobiilisovellusten blogimerkintä](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-2d00-november-2015/).
 
 #### <a name="all-power-bi-mobile-apps"></a>Kaikki Power BI -mobiilisovellukset
 * Uusi tervetulokokemus.
 * Parannettu kaavion tietojen kapasiteetti.
 
 #### <a name="ios-and-android-mobile-apps"></a>iOS- ja Android-mobiilisovellukset
-* Yritykset voivat nyt [määrittää Power BI -mobiilisovellukset iOS:lle ja Androidille Microsoft Intunella](../../service-admin-mobile-intune.md) laitteiden ja sovellusten hallintaa varten.
+* Yritykset voivat nyt [määrittää Power BI -mobiilisovellukset iOS:lle ja Androidille Microsoft Intunella](../../admin/service-admin-mobile-intune.md) laitteiden ja sovellusten hallintaa varten.
 
 #### <a name="iphone-mobile-app"></a>iPhone-mobiilisovellus
 * [Lisää kuvaruutu koontinäyttöön](mobile-iphone-app-get-started.md) suoraan iPhonesta.
-* [Luo QR-koodeja Power BI -palvelussa](../../service-create-qr-code-for-tile.md) ja skannaa ne iPhonella, jotta Power BI -sovellus avautuu tiettyyn ruutuun.
+* [Luo QR-koodeja Power BI -palvelussa](../../create-reports/service-create-qr-code-for-tile.md) ja skannaa ne iPhonella, jotta Power BI -sovellus avautuu tiettyyn ruutuun.
 
 #### <a name="the-power-bi-app-for-windows-devices"></a>Windows-laitteiden Power BI -sovellus
-* [Linkitä ruudusta suoraan tiettyyn URL-osoitteeseen](../../service-dashboard-edit-tile.md#hyperlink).
+* [Linkitä ruudusta suoraan tiettyyn URL-osoitteeseen](../../create-reports/service-dashboard-edit-tile.md#hyperlink).
 
 ### <a name="october-2015"></a>Lokakuu 2015
-Lue [lokakuun puolivälin Power BI -mobiilisovellusten blogimerkintä](https://blogs.msdn.com/b/powerbi/archive/2015/10/21/power-bi-mobile-mid-october-updates-are-here.aspx).
+Lue [lokakuun puolivälin Power BI -mobiilisovellusten blogimerkintä](https://powerbi.microsoft.com/blog/power-bi-mobile-mid-october-updates-are-here/).
 
 #### <a name="all-power-bi-mobile-apps"></a>Kaikki Power BI -mobiilisovellukset
 * Viivakaavioista, joissa on prosenttipohjainen y-akseli, lasketaan nyt visuaalinen alue todellisten tietojen perusteella. Kaavio alkaa nyt kaavion alimmasta arvopisteestä oletusarvon sijaan.
@@ -851,12 +852,12 @@ Lue [lokakuun puolivälin Power BI -mobiilisovellusten blogimerkintä](https://b
 * Pysy ajan tasalla ryhmien uusimmilla koontinäytöillä – saat ilmoituksia iPhoneesi aina, kun tiimin jäsen lisää koontinäytön johonkin ryhmääsi.
   
     ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_grpdashalertcrop.png)
-* Voit nyt tarkastella koontinäyttöjä vaakasuunnassa kääntämällä puhelimen vaaka-asentoon. Lue lisää [vaakatilasta iPhone-sovelluksessa](https://blogs.msdn.com/b/powerbi/archive/2015/11/02/enjoy-the-landscape-with-the-power-bi-iphone-app.aspx).
+* Voit nyt tarkastella koontinäyttöjä vaakasuunnassa kääntämällä puhelimen vaaka-asentoon. Lue lisää [vaakatilasta iPhone-sovelluksessa](https://powerbi.microsoft.com/blog/enjoy-the-landscape-with-the-power-bi-iphone-app/).
   
     ![](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
 
 ### <a name="september-2015"></a>Syyskuu 2015
-Parannuksia Power BI -mobiilisovelluksiin: Android, iOS (iPhone ja iPad) ja Windows. Lue [syyskuun puolivälin Power BI -mobiilisovellusten blogimerkintä](https://blogs.msdn.com/b/powerbi/archive/2015/09/23/power-bi-mobile-mid-september-updates-are-here.aspx).
+Parannuksia Power BI -mobiilisovelluksiin: Android, iOS (iPhone ja iPad) ja Windows. Lue [syyskuun puolivälin Power BI -mobiilisovellusten blogimerkintä](https://powerbi.microsoft.com/blog/power-bi-mobile-mid-september-updates-are-here/).
 
 #### <a name="android"></a>Android-
 * Ryhmätyötiloja tuki: tee yhteistyötä työtovereiden kanssa ryhmätyötiloissa. 
