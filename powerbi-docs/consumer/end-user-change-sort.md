@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 02/19/2020
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 1a59618ea27944314465d8e08d5f0c249c3bed0b
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 811e0513c1b4a16a731e6d9bd90cbc0689ca76e0
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77496468"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279775"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Power BI -raportin kaavion lajittelutavan vaihtaminen
 
@@ -22,7 +22,7 @@ ms.locfileid: "77496468"
 
 
 > [!IMPORTANT]
-> **Tämä artikkeli on tarkoitettu Power BI -käyttäjille, joilla ei ole raportin tai tietojoukon muokkausoikeuksia ja jotka käyttävät vain Power BI:n verkkoversiota (Power BI -palvelu). Jos olet raportin *suunnittelija* tai *järjestelmänvalvoja* tai *omistaja*, tässä artikkelissa ei välttämättä ole kaikkia tarvitsemiasi tietoja. Tutustu siinä tapauksessa artikkeliin [Sarakkeen perusteella lajittelu Power BI Desktopissa](../desktop-sort-by-column.md)** .
+> **Tämä artikkeli on tarkoitettu Power BI -käyttäjille, joilla ei ole raportin tai tietojoukon muokkausoikeuksia ja jotka käyttävät vain Power BI:n verkkoversiota (Power BI -palvelu). Jos olet raportin *suunnittelija* tai *järjestelmänvalvoja* tai *omistaja*, tässä artikkelissa ei välttämättä ole kaikkia tarvitsemiasi tietoja. Tutustu siinä tapauksessa artikkeliin [Sarakkeen perusteella lajittelu Power BI Desktopissa](../create-reports/desktop-sort-by-column.md)** .
 
 Voit muuttaa visualisoinnin ulkoasua Power BI -palvelussa lajittelemalla sen eri tietokenttien mukaan. Muuttamalla visualisoinnin lajittelua voit korostaa välitettäviä tietoja. Voit lajitella visualisoinnit haluamallasi tavalla, olipa käytössä siten numeerisia tietoja (kuten myyntilukuja) tai tekstiä (kuten osavaltioiden nimiä). Power BI tarjoaa käyttöösi joustavat lajitteluvaihtoehdot ja pikavalikot. 
 
@@ -69,7 +69,7 @@ Vain raportin luonut henkilö voi tehdä nämä muutokset puolestasi. *Suunnitte
 
 ![Valikko, joka näyttää yhteystiedot](media/end-user-change-sort/power-bi-contact.png)
 
-Jos olet *suunnittelija*  ja sinulla on sisällön muokkausoikeudet, lue [Sarakkeen perusteella lajittelu Power BI Desktopissa](../desktop-sort-by-column.md), niin opit päivittämään tietojoukon ja ottamaan käyttöön tämän tyyppisen lajittelun.
+Jos olet *suunnittelija*  ja sinulla on sisällön muokkausoikeudet, lue [Sarakkeen perusteella lajittelu Power BI Desktopissa](../create-reports/desktop-sort-by-column.md), niin opit päivittämään tietojoukon ja ottamaan käyttöön tämän tyyppisen lajittelun.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Lue lisätietoja [Power BI -raporttien visualisoinneista](end-user-visualizations.md).

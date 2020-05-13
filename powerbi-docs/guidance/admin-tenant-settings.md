@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: v-pemyer
-ms.openlocfilehash: fdd7504823f088ed0e88657a6fcccaeb9a5a36d0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 1ab1ed139a62b1929cb1b4da411bf7949a5d151e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79487805"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279752"
 ---
 # <a name="tenant-admin-settings-guidance"></a>Vuokraajan järjestelmänvalvojan asetuksia koskevat ohjeet
 
@@ -21,7 +21,7 @@ Tämä artikkeli on tarkoitettu Power BI -järjestelmänvalvojille, jotka vastaa
 
 Annamme erityisiä vuokraajan asetuksia koskevia ohjeita Power BI:n käyttökokemuksen parantamiseksi. Nämä asetukset saattavat myös altistaa organisaatiosi riskeille. Suosittelemme, että määrität aina vuokraajasi organisaatiosi käytäntöjen ja prosessien mukaisesti.
 
-[Vuokraaja-asetuksia](../service-admin-portal.md#tenant-settings) hallitaan [järjestelmänvalvojan portaalissa](https://app.powerbi.com/admin-portal/tenantSettings), ja ne määrittää [Power BI -palvelun järjestelmänvalvoja](../service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi). Useiden vuokraaja-asetusten avulla voidaan rajoittaa ominaisuuksien käyttöä tietyille käyttäjille. Suosittelemme, että tutustut ensin asetuksiin, jotta voit suunnitella tarvitsemasi käyttöoikeusryhmät. Saatat huomata, että voit käyttää samaa käyttöoikeusryhmää useisiin asetuksiin.
+[Vuokraaja-asetuksia](../admin/service-admin-portal.md#tenant-settings) hallitaan [järjestelmänvalvojan portaalissa](https://app.powerbi.com/admin-portal/tenantSettings), ja ne määrittää [Power BI -palvelun järjestelmänvalvoja](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi). Useiden vuokraaja-asetusten avulla voidaan rajoittaa ominaisuuksien käyttöä tietyille käyttäjille. Suosittelemme, että tutustut ensin asetuksiin, jotta voit suunnitella tarvitsemasi käyttöoikeusryhmät. Saatat huomata, että voit käyttää samaa käyttöoikeusryhmää useisiin asetuksiin.
 
 ## <a name="improve-power-bi-experience"></a>Paranna Power BI:n käyttökokemusta
 
@@ -88,7 +88,7 @@ Suosittelemme, että määrität vähintään yhden käyttöoikeusryhmän. Näil
 
 ### <a name="publish-to-web"></a>Verkkoon julkaiseminen
 
-[Julkaise verkkoon](../service-publish-to-web.md) -ominaisuuden avulla voit julkaista julkisia raportteja verkossa. Jos sitä käytetään väärin, on olemassa riski siitä, että luottamukselliset tiedot asetetaan saataville verkossa.
+[Julkaise verkkoon](../collaborate-share/service-publish-to-web.md) -ominaisuuden avulla voit julkaista julkisia raportteja verkossa. Jos sitä käytetään väärin, on olemassa riski siitä, että luottamukselliset tiedot asetetaan saataville verkossa.
 
 **Julkaise verkkoon** -asetus on oletusarvoisesti otettu käyttöön koko organisaatiolle, mutta se rajoittaa muiden kuin järjestelmänvalvojana toimivien käyttäjien kykyä luoda upotettuja koodeja. Se löytyy **Vienti- ja jakamisasetukset** -ryhmästä.
 
@@ -109,7 +109,7 @@ Voit rajoittaa käyttäjiä viemästä tietoja koontinäytön ruuduista tai rapo
 Suosittelemme, että määrität vähintään yhden käyttöoikeusryhmän. Näille ryhmille voidaan myöntää _tai hylätä_ raporttien julkaisemisen käyttöoikeus.
 
 > [!IMPORTANT]
-> Tämän asetuksen poistaminen käytöstä rajoittaa myös [Analysoi Excelissä](../service-analyze-in-excel.md) -ominaisuuden ja Power BI -palvelun [reaaliaikaisen yhteysominaisuuden](../desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) käyttöä.
+> Tämän asetuksen poistaminen käytöstä rajoittaa myös [Analysoi Excelissä](../collaborate-share/service-analyze-in-excel.md) -ominaisuuden ja Power BI -palvelun [reaaliaikaisen yhteysominaisuuden](../connect-data/desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) käyttöä.
 
 ![Kuvassa näytetään ”Vie tiedot” -asetus.](media/admin-tenant-settings/export-data.png)
 
@@ -118,7 +118,7 @@ Suosittelemme, että määrität vähintään yhden käyttöoikeusryhmän. Näil
 
 ### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa
 
-Ulkoiset vieraskäyttäjät voivat muokata ja hallita Power BI:n sisältöä. Lisätietoja on artikkelissa [Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla](../service-admin-azure-ad-b2b.md).
+Ulkoiset vieraskäyttäjät voivat muokata ja hallita Power BI:n sisältöä. Lisätietoja on artikkelissa [Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure AD B2B:n avulla](../admin/service-admin-azure-ad-b2b.md).
 
 **Salli ulkoisten vieraskäyttäjien muokata ja hallita sisältöä organisaatiossa** -asetus on oletusarvoisesti poistettu käytöstä koko organisaatiolle. Se löytyy **Vienti- ja jakamisasetukset** -ryhmästä.
 
@@ -141,7 +141,8 @@ Jos et aio käyttää kehittäjien ohjelmointirajapintoja sisällön upottamisee
 
 Saat lisätietoja tähän artikkeliin liittyen tutustumalla seuraaviin resursseihin:
 
-- [Mitä on Power BI:n hallinta?](../service-admin-administering-power-bi-in-your-organization.md)
-- [Power BI:n hallinta hallintaportaalissa](../service-admin-portal.md)
+- [Mitä on Power BI:n hallinta?](../admin/service-admin-administering-power-bi-in-your-organization.md)
+- [Power BI:n hallinta hallintaportaalissa](../admin/service-admin-portal.md)
 - Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
 - Onko sinulla ehdotuksia? [Kerro ideasi Power BI:n parantamiseksi](https://ideas.powerbi.com)
+

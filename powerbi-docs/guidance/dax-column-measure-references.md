@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/18/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 3ca49008639f7e3e084c8d045bc911aff57b7b21
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 42d99c7139586a78565198b59bc74716261537e0
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75498733"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279614"
 ---
 # <a name="dax-column-and-measure-references"></a>DAX: sarake- ja mittariviittaukset
 
@@ -43,7 +43,7 @@ Suosittelemme käyttämään aina täydellisiä viittauksia sarakkeisiin. Perust
 
 ## <a name="measures"></a>Mittarit
 
-Mittari on mallitason objekti. Sen vuoksi mittarien nimien on oltava yksilöllisiä saman mallin sisällä. Raportin tekijät näkevät kuitenkin **Kentät**-ruudussa mittarit niin, että kuhunkin mittariin liittyy yksi mallitaulukko. Tämä yhdistely on tehty kosmeettisista syistä, ja voit muuttaa sitä määrittämällä mittarille **Aloitustaulukko**-ominaisuuden. Lisätietoja saat kohdasta [Mittarit Power BI Desktopissa (Mittarien järjestäminen)](../desktop-measures.md#organizing-your-measures).
+Mittari on mallitason objekti. Sen vuoksi mittarien nimien on oltava yksilöllisiä saman mallin sisällä. Raportin tekijät näkevät kuitenkin **Kentät**-ruudussa mittarit niin, että kuhunkin mittariin liittyy yksi mallitaulukko. Tämä yhdistely on tehty kosmeettisista syistä, ja voit muuttaa sitä määrittämällä mittarille **Aloitustaulukko**-ominaisuuden. Lisätietoja saat kohdasta [Mittarit Power BI Desktopissa (Mittarien järjestäminen)](../transform-model/desktop-measures.md#organizing-your-measures).
 
 Lausekkeissa on mahdollista käyttää täydellisiä viittauksia mittareihin. DAX intellisense tarjoaa niistä jopa ehdotuksia. Se ei kuitenkaan ole tarpeen eikä suositeltu käytäntö. Jos päätätkin myöhemmin muuttaa mittarin aloitustaulukkoa, täydellisiä mittariviittauksia käyttävät lausekkeet hajoavat. Sitten sinun on muokattava erikseen kutakin rikkoutunutta kaavaa poistaaksesi (tai korjataksesi) mittariviittaukset.
 
@@ -68,3 +68,4 @@ Saat lisätietoja tästä artikkelista tutustumalla seuraaviin resursseihin:
 
 - [Data Analysis Expressions (DAX) -viittaukset](/dax/)
 - Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+
