@@ -1,6 +1,6 @@
-- name: 'Power BI:hin tutustuminen (kuluttaja)'
+- name: 'Power BI:hin tutustuminen (../kuluttaja)'
   href: 'https://docs.microsoft.com/learn/modules/explore-power-bi-service'
-- name: 'Tietojen analysoiminen Power BI:ssä (kuluttaja)'
+- name: 'Tietojen analysoiminen Power BI:ssä (../kuluttaja)'
   href: 'https://docs.microsoft.com/learn/modules/analyze-data-power-bi'
 - name: 'Luomisen aloittaminen Power BI:ssä'
   href: 'https://docs.microsoft.com/learn/modules/get-started-with-power-bi'

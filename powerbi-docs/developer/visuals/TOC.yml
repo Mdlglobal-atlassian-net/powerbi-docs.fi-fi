@@ -12,6 +12,10 @@
       items:
         - name: Power BI -visualisoinnin kehittäminen
           href: custom-visual-develop-tutorial.md
+        - name: React-perustaisten visualisointien luominen
+          href: create-react-visual.md
+        - name: Palkkikaavion rakentaminen
+          href: create-bar-chart.md
         - name: Muotoiluasetusten lisääminen
           href: custom-visual-develop-tutorial-format-options.md
         - name: Yksikkötestausten lisääminen visualisointiprojektiin
@@ -38,14 +42,20 @@
           href: objects-properties.md
         - name: Muokkaustilan lisäasetukset
           href: advanced-edit-mode.md
+        - name: supportsKeyboardFocus-ominaisuus
+          href: supportskeyboardfocus-feature.md
+        - name: supportsMultiVisualSelection-feature.md
+          href: supportsmultivisualselection-feature.md
     - name: Ohjeet
       items:
         - name: Sertifioinnin hankkiminen Power BI -visualisoinnille
           href: power-bi-custom-visuals-certified.md
         - name: Power BI -visualisointien julkaiseminen AppSourceen
           href: office-store.md
+        - name: Oman Power BI -visualisoinnin testaaminen
+          href: submission-testing.md
         - name: 'R:ää hyödyntävien Power BI -visualisointien käyttö Power BI:ssä'
-          href: ../../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
+          href: ../../create-reports/desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
         - name: Visualisointitoimet
           href: visuals-interactions.md
         - name: Valintojen lisääminen
@@ -64,6 +74,8 @@
           href: context-menu.md
         - name: Lisää alaspäin porautumisen tuki
           href: drill-down-support.md
+        - name: Värien lisääminen omaan visualisointiin
+          href: add-colors-power-bi-visual.md
         - name: Tietojen korostaminen visualisoinneissa
           href: highlight.md
         - name: Suuren kontrastin tilan tuen lisääminen
@@ -78,10 +90,14 @@
           href: power-bi-custom-visuals-troubleshoot.md
     - name: Viittaus
       items:
+        - name: Muutosloki
+          href: changelog.md
         - name: Aloitussivu
           href: landing-page.md
         - name: 'URL:n käynnistäminen'
           href: launch-url.md
+        - name: Visuaalinen ohjelmointirajapinta
+          href: visual-api.md
         - name: Paikallisen tallennustilan ohjelmointirajapinta
           href: local-storage.md
         - name: Tapahtumien hahmontaminen
@@ -119,8 +135,8 @@
         - name: Kehityskeskus
           href: 'https://powerbi.microsoft.com/developers/'
         - name: Power BI -visualisointien mallit
-          href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
-        - name: Power BI -visualisointien Git‑säilö
+          href: samples.md
+        - name: Mukautettujen visualisointien Git Repo
           href: 'https://go.microsoft.com/fwlink/?linkid=848277'
         - name: SSL-varmenteen luominen
           href: create-ssl-certificate.md
