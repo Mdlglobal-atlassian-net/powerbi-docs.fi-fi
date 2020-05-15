@@ -72,6 +72,8 @@
               href: end-user-bookmarks.md
             - name: Lisää korostus raporttiin
               href: end-user-spotlight.md
+            - name: Visualisoinnin mukauttaminen
+              href: end-user-personalize-visuals.md
             - name: 'Sivutetut raportit Power BI:ssä'
               items:
                 - name: Sivutetut raportit
