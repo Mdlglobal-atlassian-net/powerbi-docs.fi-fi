@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: ff8b6a139d0088b2ff2acc8f73b75431e500ba51
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4454269803c45948c21c4448ab76b5397d3388b2
+ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279085"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83407529"
 ---
 # <a name="power-bi-security-whitepaper"></a>Power BI:n suojausraportti
 
@@ -263,7 +263,7 @@ Power BI toteuttaa tietojen eheyden valvonnan seuraavilla tavoilla:
 
     &ensp;&ensp;a. Jos raportti on luotu Office 365:n Excelillä, mitään ei tallenneta välimuistiin.
 
-    &ensp;&ensp;b. Jos kyseessä on Power BI -raportti, visualisointien tiedot tallennetaan salattuina välimuistiin Azuren SQL-tietokannassa.
+    &ensp;&ensp;b. Power BI raportteja varten näytettävien raporttien visualisointien tiedot tallennetaan väli muistiin ja tallennetaan seuraavassa osiossa kuvattuun visuaalisen tietojen väli muistiin.
  
 
 4. Power BI:hin julkaistut alkuperäiset Power BI Desktop (.pbix)- tai Excel (.xlsx) -tiedostot
@@ -272,11 +272,20 @@ Power BI toteuttaa tietojen eheyden valvonnan seuraavilla tavoilla:
 
 #### <a name="dashboards-and-dashboard-tiles"></a>Koontinäytöt ja koontinäyttöruudut
 
-1. Välimuistit – Koontinäytön visualisointeihin tarvittavat tiedot on yleensä tallennettu välimuistiin, ja ne säilytetään salattuina Azuren SQL-tietokannassa. Muut ruudut, kuten kiinnitetyt visualisoinnit Excelistä ja SSRS (SQL Server Reporting Services) -palvelut, tallennetaan Azure Blobiin kuvina ja salataan.
+1. Väli muistit – koonti näytön visualisointien tarvitsemat tiedot tallennetaan yleensä väli muistiin ja tallennetaan seuraavassa osiossa kuvattuun visuaalisen tietojen väli muistiin. Muut ruudut, kuten kiinnitetyt visualisoinnit Excelistä ja SSRS (SQL Server Reporting Services) -palvelut, tallennetaan Azure Blobiin kuvina ja salataan.
 
 2. Staattiset tiedot, jotka sisältävät esimerkiksi tausta kuvia ja Power BI visualisointeja, jotka on tallennettu, salattu, Azure BLOB-säilöön.
 
-Käytetystä salausmenetelmästä huolimatta Microsoft hallitsee avainten salausta asiakkaiden puolesta joko salaisessa säilössä tai Azure Key Vaultissa.
+Huolimatta käytetyistä salaus menetelmistä, Microsoft hallitsee avain salausta asiakkaiden puolesta.
+
+#### <a name="visual-data-cache"></a>Visuaalisen tietojen väli muisti
+
+Visuaaliset tiedot tallennetaan väli muistiin eri sijainteihin sen mukaan, isännöitääkö tieto joukkoa Power BI Premium kapasiteettia. Tieto joukoissa, joita ei isännöidään kapasiteetissa, visualisoinnin tiedot tallennetaan väli muistiin ja salataan Azure SQL-tieto kannassa. Tieto joukkojen, joiden kapasiteetti on isännöity, visualisointi tiedot voidaan sijoittaa väli muistiin seuraavissa sijainneissa:
+
+* Azure-blob-objektitallennus
+* Azure Premium-tiedostot
+* Power BI Premium kapasiteetti solmu
+
 
 ### <a name="data-transiently-stored-on-non-volatile-devices"></a>Tilapäisesti ei-väliaikaisiin laitteisiin tallennetut tiedot
 
