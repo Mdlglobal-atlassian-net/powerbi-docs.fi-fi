@@ -25,7 +25,7 @@ Tavallisesti järjestelmänvaloja asentaa ja määrittää Power BI -raporttipal
   
 ## <a name="system-requirements"></a>Järjestelmävaatimukset
   
- Lisätietoja on Microsoft Download Centerin **Raportin muodostimen lataussivun** [Järjestelmävaatimukset](https://go.microsoft.com/fwlink/?LinkID=734968)-osassa.
+ Lisätietoja on Microsoft Download Centerin [Raportin muodostimen lataussivun](https://go.microsoft.com/fwlink/?LinkID=734968)**Järjestelmävaatimukset**-osassa.
  
 ## <a name="install-report-builder-from-a-web-portal"></a>Raportin muodostimen asentaminen verkkoportaalin kautta
   

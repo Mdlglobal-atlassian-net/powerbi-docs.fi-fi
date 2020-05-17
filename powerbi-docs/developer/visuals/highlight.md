@@ -21,7 +21,7 @@ Oletusarvon mukaan aina, kun elementti valitaan, `values`-matriisi `dataView`-ob
 
 ![`tietonäkymän` korostaminen oletustoiminta](media/highlight/highlight-dataview.png)
 
-Jos määrität `supportsHighlight`-ominaisuuden arvoksi `capabilities.json` kohteessa `true`, saat täyden suodattamattoman `values`-matriisin sekä `highlights`-matriisin. `highlights`-matriisi on yhtä pitkä kuin arvomatriisi, ja valitsemattomat arvot asetetaan arvoon `null`. Kun tämä ominaisuus on käytössä, on visualisoinnin vastuulla korostaa asianmukaiset tiedot vertaamalla `values`-matriisia `highlights`-matriisiin.
+Jos määrität `supportsHighlight`-ominaisuuden arvoksi `true` kohteessa `capabilities.json`, saat täyden suodattamattoman `values`-matriisin sekä `highlights`-matriisin. `highlights`-matriisi on yhtä pitkä kuin arvomatriisi, ja valitsemattomat arvot asetetaan arvoon `null`. Kun tämä ominaisuus on käytössä, on visualisoinnin vastuulla korostaa asianmukaiset tiedot vertaamalla `values`-matriisia `highlights`-matriisiin.
 
 ![`tietonäkymä` tukee korostamista](media/highlight/highlight-dataview-supports.png)
 

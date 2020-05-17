@@ -177,7 +177,7 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
   
      Jos tekstiruutu sisältää vain päivämäärän tai luvun, aseta muotoilu tekstiruudun Muotoilu-ominaisuuden avulla tekstiruudun sisäisen **Format**-funktion sijaan.  
   
--   **Right**, **Len** ja **InStr** ovat hyödyllisiä funktioita alimerkkijonon palauttamiseen. Esimerkiksi *DOMAIN*\\*username* rajataan ainoastaan käyttäjänimeen. Seuraava lauseke palauttaa \\User *-parametrista kenoviivan oikealla puolella sijaitsevan merkkijonon osan (* ):  
+-   **Right**, **Len** ja **InStr** ovat hyödyllisiä funktioita alimerkkijonon palauttamiseen. Esimerkiksi *DOMAIN*\\*username* rajataan ainoastaan käyttäjänimeen. Seuraava lauseke palauttaa *User*-parametrista kenoviivan oikealla puolella sijaitsevan merkkijonon osan (\\):  
   
     ```  
     =Right(Parameters!User.Value, Len(Parameters!User.Value) - InStr(Parameters!User.Value, "\"))  
@@ -202,7 +202,7 @@ Katso kohdasta [lausekkeet Power BI:n raportin muodostimessa](report-builder-exp
   
     ```  
   
--   .NET Framework **:n** Regex`xref:System.Text.RegularExpressions`-funktiot ovat tehokas tapa muuttaa olemassa olevien merkkijonojen muotoa. Tällaisia merkkijonoja ovat esimerkiksi puhelinnumerot. Seuraavassa lausekkeessa **Replace**-funktion avulla kentässä oleva kymmennumeroinen puhelinnumero muutetaan muodosta "*nnn*-*nnn*-*nnnn*" muotoon "(*nnn*) *nnn*-*nnnn*":  
+-   .NET Framework `xref:System.Text.RegularExpressions`:n **Regex**-funktiot ovat tehokas tapa muuttaa olemassa olevien merkkijonojen muotoa. Tällaisia merkkijonoja ovat esimerkiksi puhelinnumerot. Seuraavassa lausekkeessa **Replace**-funktion avulla kentässä oleva kymmennumeroinen puhelinnumero muutetaan muodosta "*nnn*-*nnn*-*nnnn*" muotoon "(*nnn*) *nnn*-*nnnn*":  
   
     ```  
     =System.Text.RegularExpressions.Regex.Replace(Fields!Phone.Value, "(\d{3})[ -.]*(\d{3})[ -.]*(\d{4})", "($1) $2-$3")  

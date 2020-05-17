@@ -159,7 +159,7 @@ Esimerkissä `Manufacturer` on `columns` ja `Type` on `rows`. Esimerkissä on sa
 
 Visualisoinnin tulee myös voida osittaa tietoja, niin että perusteina ovat `Manufacturer` ja `Type`.
 
-Jos käyttäjä esimerkiksi valitsee `Chrysler`-kohteesta vaihtoehdon `Manufacturer`, muiden visualisointien tulee näyttää seuraavat tiedot:
+Jos käyttäjä esimerkiksi valitsee `Manufacturer`-kohteesta vaihtoehdon `Chrysler`, muiden visualisointien tulee näyttää seuraavat tiedot:
 
 | Valmistaja | Tyyppi. | Arvo |
 | - | - | - |
@@ -168,7 +168,7 @@ Jos käyttäjä esimerkiksi valitsee `Chrysler`-kohteesta vaihtoehdon `Manufactu
 | **Chrysler** | Tuontiauto | 0 |
 | **Chrysler** | Tuontirekka | 6362 |
 
-Jos käyttäjä valitsee `Import Car`-kohteesta vaihtoehdon `Type` (valitsee tietoja sarjan perusteella), muiden visualisointien tulee näyttää seuraavat tiedot:
+Jos käyttäjä valitsee `Type`-kohteesta vaihtoehdon `Import Car` (valitsee tietoja sarjan perusteella), muiden visualisointien tulee näyttää seuraavat tiedot:
 
 | Valmistaja | Tyyppi. | Arvo |
 | - | - | - |
@@ -185,7 +185,7 @@ Visualisoinnin tietokorit on täytettävä.
 
 ![Visualisoinnin ja valintojen tietokorit](media/selection-api/visual-selections-databuckets.png)
 
-Luokka on `Manufacturer` (sarakkeet), sarja on `Type` (rivit) ja `Value` on `Values` sarjoille.
+Luokka on `Manufacturer` (sarakkeet), sarja on `Type` (rivit) ja `Values` on `Value` sarjoille.
 
 > [!NOTE]
 > `Values`-tiedot tarvitaan sarjoille, koska tietonäkymän yhdistämismäärityksen mukaan visualisointi odottaa, että `Values`-tiedot ryhmitellään `Rows`-tietojen mukaan.

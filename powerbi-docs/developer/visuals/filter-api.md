@@ -19,7 +19,7 @@ ms.locfileid: "80114102"
 
 Visuaalisten suodattimien ohjelmointirajapinnan avulla voit suodattaa tietoja Power BI:n visualisoinneissa. Suurin ero muihin valintoihin verrattuna on se, että muut visualisoinnit suodatetaan millä tahansa tavalla, vaikka muu visualisointi tukisi korostuksia.
 
-Visualisoinnin suodattamisen mahdollistamiseksi sen tulee sisältää `filter`-objekti `general`capabilities.json *-koodin* -osassa.
+Visualisoinnin suodattamisen mahdollistamiseksi sen tulee sisältää `filter`-objekti *capabilities.json*-koodin `general`-osassa.
 
 ```json
 "objects": {

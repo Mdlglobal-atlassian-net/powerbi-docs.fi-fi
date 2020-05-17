@@ -150,7 +150,7 @@ export class Visual implements IVisual {
 }
 ```
 
-Luo `update`-painikkeet päivittämällä visualisoinnin `button`-menetelmä:
+Luo `button`-painikkeet päivittämällä visualisoinnin `update`-menetelmä:
 
 ```typescript
 export class Visual implements IVisual {

@@ -23,7 +23,7 @@ Vaiheessa 1 [rekisteröit asiakassovelluksen Azure AD:ssä](../embedded/register
 
 ## <a name="get-an-authentication-access-token"></a>Todennustunnuksen hankkiminen
 
-Ennen kuin aloitat, varmista, että olet suorittanut [Tietojen työntäminen Power BI -tietojoukkoon](../embedded/register-app.md) -sarjan [edellisen vaiheen](walkthrough-push-data.md). 
+Ennen kuin aloitat, varmista, että olet suorittanut [Tietojen työntäminen Power BI -tietojoukkoon](walkthrough-push-data.md) -sarjan [edellisen vaiheen](../embedded/register-app.md). 
 
 Nämä toimenpiteet edellyttävät Visual Studio 2015:ttä tai uudempaa versiota.
 
