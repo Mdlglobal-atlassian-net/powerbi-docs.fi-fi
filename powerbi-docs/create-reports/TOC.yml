@@ -339,6 +339,8 @@
               href: ../paginated-reports/report-builder-shared-datasets.md
             - name: Parametrien luominen
               href: ../paginated-reports/paginated-reports-parameters.md
+            - name: Raporttinäkymien määrittäminen
+              href: ../paginated-reports/page-view.md
             - name: Aliraportit
               href: ../paginated-reports/subreports.md
             - name: Aliraporttien vianmääritys

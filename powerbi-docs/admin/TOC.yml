@@ -112,8 +112,10 @@
               href: service-encryption-byok.md
             - name: Käynnistä Premium-kapasiteetti uudelleen
               href: service-admin-premium-restart.md
-            - name: Tietojoukon liitettävyys XMLA-päätepisteeseen (esikatselu)
+            - name: Tietojoukkojen yhteydet XMLA-päätepisteeseen
               href: service-premium-connect-tools.md
+            - name: Automaatio palvelun päänimillä
+              href: service-premium-service-principal.md
     - name: Viittaus
       items:
         - name: 'PowerShell, REST-ohjelmointirajapinnat ja .NET SDK'
