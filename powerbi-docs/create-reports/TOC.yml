@@ -12,7 +12,7 @@
       expanded: true
       items:
         - name: 'Verkkokurssi: Sivutetut raportit'
-          href: ../paginated-reports/paginated-reports-online-course.md
+          href: ../learning-catalog/paginated-reports-online-course.md
         - name: Luo sivutettu raportti ja lataa se palvelimeen
           href: ../paginated-reports/paginated-reports-quickstart-aw.md
     - name: Mallit

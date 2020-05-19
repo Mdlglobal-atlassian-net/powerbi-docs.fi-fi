@@ -2,7 +2,7 @@
   href: index.yml
   expanded: true
   items:
-    - name: Yhteenveto
+    - name: Yleiskatsaus
       expanded: true
       items:
         - name: 'Mitä on upottaminen Power BI:n avulla'
@@ -89,7 +89,7 @@
             - name: Azure resurssienhallinta REST-ohjelmointirajapinnat
               href: 'https://docs.microsoft.com/rest/api/power-bi-embedded/'
             - name: Power BI REST-ohjelmointirajapinnat
-              href: 'https://msdn.microsoft.com/library/mt147898.aspx'
+              href: 'https://docs.microsoft.com/rest/api/power-bi/'
         - name: Power BI -kirjastot
           href: 'https://go.microsoft.com/fwlink/?linkid=848274'
         - name: Omien asetteluiden upottaminen sovellukseen
