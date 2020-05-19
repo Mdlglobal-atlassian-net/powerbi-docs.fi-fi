@@ -10,14 +10,17 @@ ms.topic: conceptual
 ms.date: 03/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7ff02eb07d4b052892cc80ab4710223d8d302a9f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 5a55fca07e4a0e5f9c027bcd17c3fba66a09958e
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "78893440"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277130"
 ---
 # <a name="customize-visualization-titles-backgrounds-and-legends"></a>Visualisoinnin otsikoiden, taustojen ja selitteiden mukauttaminen
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 
 Tässä opetusohjelmassa opit pari erilaista tapaa mukauttaa visualisointeja. Visualisointien mukauttamiseen on paljon vaihtoehtoja. Paras keino tutustua niihin kaikkiin on tarkastella **Muotoilu**-ruutua (valitse maalirullakuvake). Jotta pääset alkuun, tässä artikkelissa kerrotaan, miten voit mukauttaa visualisoinnin otsikkoa, selitettä ja taustaa sekä lisätä teeman.
 
@@ -30,12 +33,15 @@ Kaikkia visualisointeja ei voi mukauttaa. Katso lisätietoja visualisointien [t�
 
 - Jälleenmyyntianalyysimallin raportti
 
+> [!NOTE]
+> Raportin jakaminen työtoverin kanssa Power BI:ssä edellyttää, että teillä kummallakin on oma Power BI Pro -käyttöoikeus tai että raportti on tallennettu Premium-kapasiteettiin. Katso [raporttien jakaminen](../collaborate-share/service-share-reports.md).
+
 ## <a name="customize-visualization-titles-in-reports"></a>Visualisoinnin otsikoiden mukauttaminen raporteissa
 
-Seuraa mukana kirjautumalla sisään Power BI Desktopiin ja avaamalla [Jälleenmyyntianalyysimalli](../sample-datasets.md)-raportin.
+Seuraa mukana kirjautumalla sisään Power BI Desktopiin ja avaamalla [Jälleenmyyntianalyysimalli](../create-reports/sample-datasets.md)-raportin.
 
 > [!NOTE]
-> Kun kiinnität visualisoinnin raporttinäkymään, siitä tulee raporttinäkymän ruutu. Voit myös mukauttaa itse ruutuja [uusien otsikoiden ja alaotsikoiden sekä hyperlinkkien avulla, ja muuttaa niiden kokoa](../service-dashboard-edit-tile.md).
+> Kun kiinnität visualisoinnin raporttinäkymään, siitä tulee raporttinäkymän ruutu. Voit myös mukauttaa itse ruutuja [uusien otsikoiden ja alaotsikoiden sekä hyperlinkkien avulla, ja muuttaa niiden kokoa](../create-reports/service-dashboard-edit-tile.md).
 
 1. Siirry **Jälleenmyyntianalyysimalli**-raportin **Uudet myymälät** -sivulle.
 
@@ -49,7 +55,7 @@ Seuraa mukana kirjautumalla sisään Power BI Desktopiin ja avaamalla [Jälleenm
 
 1. Siirrä **otsikon** liukusäädin tilaan **Käytössä**.
 
-1. Voit muuttaa otsikkoa kirjoittamalla *Myymälöiden määrä kuukauden mukaan avattuna***Otsikon teksti** -kenttään.
+1. Voit muuttaa otsikkoa kirjoittamalla *Myymälöiden määrä kuukauden mukaan avattuna* **Otsikon teksti** -kenttään.
 
     ![Näyttökuva muotoruudusta, jossa on annettu otsikkoteksti.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-title.png)
 
@@ -139,7 +145,7 @@ Seuraavassa on luettelo visualisointi- ja mukautusvaihtoehdoista, jotka ovat kä
 | Palkki | kyllä | kyllä |kyllä |
 | Kortti | kyllä | kyllä |– |
 | Monirivinen kortti | kyllä | kyllä | – |
-| sarake | kyllä | kyllä | kyllä |
+| Sarake | kyllä | kyllä | kyllä |
 | Yhdistelmä | kyllä | kyllä | kyllä |
 | Ympyrä | kyllä | kyllä | kyllä |
 | Täytetty kartta | kyllä | kyllä | kyllä |
@@ -151,7 +157,7 @@ Seuraavassa on luettelo visualisointi- ja mukautusvaihtoehdoista, jotka ovat kä
 | Kartta | kyllä | kyllä | kyllä |
 | Matriisi | kyllä | kyllä | – |
 | Ympyrä | kyllä | kyllä | kyllä |
-| Kysymykset ja vastaukset | kyllä | kyllä | – |
+| Q&A | kyllä | kyllä | – |
 | Piste | kyllä | kyllä | kyllä |
 | Muoto | kyllä | kyllä | kyllä |
 | Osittaja | kyllä | kyllä | – |
@@ -167,3 +173,5 @@ Seuraavassa on luettelo visualisointi- ja mukautusvaihtoehdoista, jotka ovat kä
 - [Värimuotoilun ja akseliominaisuuksien käytön aloittaminen](service-getting-started-with-color-formatting-and-axis-properties.md)
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
+
+

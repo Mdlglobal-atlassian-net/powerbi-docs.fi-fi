@@ -1,20 +1,23 @@
 ---
 title: Power BI:n Q&A-visualisoinnin käyttäminen
 description: Power BI:n Q&A-visualisoinnin määrittäminen
-author: mihart
+author: rien
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/19/2019
 ms.author: mohaali
-ms.openlocfilehash: a17f98859e637621fbae037610359c8f29391a98
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e94b27945f277c352773e7f9eaa3979fa8bc7451
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75762274"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83148359"
 ---
 # <a name="introduction-to-power-bi-qa-visualizations"></a>Johdatus Power BI:n Q&A-visualisointeihin
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -45,10 +48,12 @@ Q&A-visualisointi koostuu neljästä ydinosasta:
 
 1. Avaa tiedosto raporttinäkymään ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Select ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
+1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
 
+Jos näyttöön tulee virhe Q&A-visualisointia luotaessa, tarkista [rajoitukset](../natural-language/q-and-a-limitations.md)-osiosta, tuetaanko tietolähdemääritystä.    
 
-Jos näyttöön tulee virhe Q&A-visualisointia luotaessa, tarkista [rajoitukset](../natural-language/q-and-a-limitations.md)-osiosta, tuetaanko tietolähdemääritystä.
+> [!NOTE]
+> Raportin jakaminen työtoverin kanssa Power BI:ssä edellyttää, että teillä kummallakin on oma Power BI Pro -käyttöoikeus tai että raportti on tallennettu Premium-kapasiteettiin. Katso [raporttien jakaminen](../collaborate-share/service-share-reports.md).
 
 ## <a name="create-a-qa-visual-using-a-suggested-question"></a>Luo Q&A-visualisointi käyttämällä ehdotettua kysymystä
 Tässä harjoituksessa valitaan yksi ehdotetuista kysymyksistä Q&A-visualisoinnin luomiseksi. 

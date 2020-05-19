@@ -7,14 +7,14 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/14/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 12c2d839c14a4a982505f56b7d605bacc5edc728
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7210e2f2f6fa3581744a5400bcdeb795d8883120
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79381418"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276808"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualisointityypit Power BI:ssä
 ## <a name="power-bi-visualizations"></a>Visualisoinnit Power BI:ssä
@@ -41,7 +41,7 @@ Lisätietoja on artikkelissa [Perusaluekaavio](power-bi-visualization-basic-area
 >[!TIP]
 >Palkkikaaviot ovat vakiomuotoisia katseltaessa tiettyä arvoa eri luokkien välillä.
 
-### <a name="cards-multi-row"></a>Kortit: Multi-rivi
+### <a name="cards-multi-row"></a>Kortit: Moniriviset
 ![monirivinen kortti](media/power-bi-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
 
 ### <a name="cards-single-number"></a>Kortit: Yksittäinen luku
@@ -88,7 +88,7 @@ Tärkeimpien vaikuttajien kaaviossa näytetään valittuun tulokseen tai arvoon 
 
 Lisätietoja on artikkelissa [Power BI:n tärkeimpien vaikuttajien kaaviot](power-bi-visualization-influencers.md).
 
-### <a name="kpis"></a>Suorituskykyilmaisimet
+### <a name="kpis"></a>Suorituskyvyn mittarit
 ![Suorituskyvyn mittareiden kaavio](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
 
 >[!TIP]
@@ -157,7 +157,7 @@ Katso lisätietoja ohjeaiheesta [Power Apps -visualisoinnin lisääminen raportt
 ![Q&A-visualisoinnit](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)
 
 >[!TIP]
->Samaan tapaan kuin [koontinäytön Q&A-kokemuksen kanssa](../power-bi-tutorial-q-and-a.md), Q&A-visualisoinnin avulla voit esittää kysymyksiä tiedoistasi käyttämällä luonnollista kieltä. 
+>Samaan tapaan kuin [koontinäytön Q&A-kokemuksen kanssa](../create-reports/power-bi-tutorial-q-and-a.md), Q&A-visualisoinnin avulla voit esittää kysymyksiä tiedoistasi käyttämällä luonnollista kieltä. 
 
 Lisätietoja on artikkelissa [Q&A-visualisoinnit Power BI:ssä](power-bi-visualization-q-and-a.md).
 
@@ -191,7 +191,7 @@ Lisätietoja on artikkelissa [Power BI -pistekaaviot](power-bi-visualization-sca
 >[!TIP]
 >Liian moni arvopiste voi vaikeuttaa visualisoinnin tulkintaa, minkä vuoksi visualisoinnin tarkkuus varmistetaan kehittyneillä näytteenottoalgoritmeilla.
 
-Lisätietoja on artikkelissa [Suuren tiheyden pistekaaviot Power BI:ssä](desktop-high-density-scatter-charts.md).
+Lisätietoja on artikkelissa [Suuren tiheyden pistekaaviot Power BI:ssä](../create-reports/desktop-high-density-scatter-charts.md).
 
 ### <a name="slicers"></a>Osittajat
 ![osittaja](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_slicer.png)
@@ -201,7 +201,7 @@ Lisätietoja on artikkelissa [Power BI:n osittajat](power-bi-visualization-slice
 ### <a name="standalone-images"></a>Erilliset kuvat
 ![erillisen kuvan visualisointi](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_image.png)
 
-Lisätietoja on artikkelissa [Lisää kuvan pienoissovellus raporttinäkymään](../service-dashboard-add-widget.md).
+Lisätietoja on artikkelissa [Lisää kuvan pienoissovellus raporttinäkymään](../create-reports/service-dashboard-add-widget.md).
 
 ### <a name="tables"></a>Taulukot
 ![Taulukkovisualisointi](media/power-bi-visualization-types-for-reports-and-q-and-a/tabletype.png)
@@ -212,7 +212,7 @@ Lisätietoja on artikkelissa [Lisää kuvan pienoissovellus raporttinäkymään]
 Lisätietoja on artikkelissa [Power BI:n taulukoiden käsitteleminen](power-bi-visualization-tables.md).
 
 ### <a name="treemaps"></a>Puukartat
-![treemap](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_tree.png)
+![puukartta](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_tree.png)
 
 Lisätietoja on artikkelissa [Puukartat Power BI:ssä](power-bi-visualization-treemaps.md).
 
@@ -228,12 +228,15 @@ Lisätietoja on artikkelissa [Puukartat Power BI:ssä](power-bi-visualization-tr
 Lisätietoja on artikkelissa [Power BI -vesiputouskaaviot](power-bi-visualization-waterfall-charts.md).
 
 ## <a name="tell-qa-which-visualization-to-use"></a>Kerro Q&A:llen minkä visualisoinnin haluat
-Power BI Q&A:lla kirjoitettaessa kyselyjä luonnollisella kielellä voit määrittää visualisointityypin kyselyssäsi.  Esimerkiksi:
+Power BI Q&A:lla kirjoitettaessa kyselyjä luonnollisella kielellä voit määrittää visualisointityypin kyselyssäsi.  Esimerkki:
 
 ”***myynti osavaltioittain puukarttana***”
+
+Jos raporttinäkymässäsi ei ole Q&A-kenttää, vuokraajan järjestelmänvalvoja on saattanut poistaa sen käytöstä. 
 
 ![Q&A-kysymys ruutu, jossa näkyy määritetty visualisointityyppi](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Visualisoinnit Power BI -raporteissa](power-bi-report-visualizations.md)    
 [Oikealla oleva visuaalinen viite osoitteesta sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+

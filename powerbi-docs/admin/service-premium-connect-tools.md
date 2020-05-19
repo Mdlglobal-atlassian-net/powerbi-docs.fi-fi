@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/26/2020
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 7bb3dc401fedbb55f5ed81fa5e859cbfee5a1a26
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 7a363af0bb8d6db9f0fd370b7c4b987b51c88221
+ms.sourcegitcommit: faa8cfb66e79ea16ba46605f752cc9ca57924d0e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274439"
+ms.locfileid: "83382734"
 ---
 # <a name="dataset-connectivity-with-the-xmla-endpoint-preview"></a>Tietojoukon liitettävyys XMLA-päätepisteeseen (esikatselu)
 
@@ -29,6 +29,9 @@ Power BI Premiumin työtilat ja tietojoukot, joiden yhteensopivuustaso on 1500 t
 Power BI Premium käyttää [XML for Analysis](https://docs.microsoft.com/analysis-services/xmla/xml-for-analysis-xmla-reference?view=power-bi-premium-current) (XMLA) -protokollaa viestinnässä asiakassovellusten välillä ja moduulissa, joka hallitsee Power BI -työtilojasi ja -tietojoukkojasi. Tämä viestintä kulkee niin sanottujen XMLA-päätepisteiden välillä. XMLA on sama viestintäprotokolla, jota käytetään Microsoft Analysis Services -moduulissa. Se perustuu Power BI:n semanttiseen mallinnukseen, valvontaan, elinkaareen ja tiedonhallintaan.
 
 Oletusarvoisesti *vain luku* -yhteys päätepisteen avulla on käytössä kapasiteetin **tietojoukkojen kuormituksessa**. Vain luku -käyttöoikeudella tietojen visualisoinnin sovellukset ja työkalut voivat tehdä kyselyn tietojoukon mallitietoihin, metatietoihin, tapahtumiin ja rakenteeseen. Päätepistettä käyttävät *luku/kirjoitus*toiminnot voidaan ottaa käyttöön. Ne lisäävät tietojoukkojen hallinnan, hallinnoimisen, kehittyneen semanttisen mallinnuksen, vianetsinnän ja valvonnan ominaisuuksia. Kun luku/kirjoitus on käytössä, Power BI Premiumin tietojoukoissa on enemmän vastaavuutta Azure Analysis Servicesin ja SQL Server Analysis Servicesin suuryritystason taulukkomallinnustyökaluihin ja prosesseihin.
+
+> [!NOTE]
+> Modernin työtilakokemuksen käyttäminen on suositeltavaa, erityisesti yhdistettäessä tietojoukkoihin XMLA-päätepisteen avulla. Toimintoja, kuten tietojoukkojen luontia tai poistamista, ei tueta perinteisissä työtiloissa. Jos haluat päivittää perinteiset työtilat moderniin kokemukseen, katso kohta [Perinteisten työtilojen päivittäminen Power BI:ssä](../collaborate-share/service-upgrade-workspaces.md).
 
 ## <a name="data-modeling-and-management-tools"></a>Tietojen mallinnus- ja hallintatyökalut
 

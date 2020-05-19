@@ -6,17 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 04/30/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2433f030f00ec8cd337d97c4402b83ed6c4c5a00
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 526d2face5b963b27ac17335bbe223c5e3bec672
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "76895211"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276578"
 ---
 # <a name="getting-started-with-the-formatting-pane"></a>Muotoiluruudun käytön aloittaminen
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 Jos sinulla on raportin muokkausoikeudet, käytettävissäsi on useita muotoiluasetuksia. Valitsemalla Power BI -raportit voit muuttaa arvosarjojen, arvopisteiden ja jopa visualisointien taustan värin. Voit muuttaa sitä, miten x-akseli ja y-akseli esitetään. Voit muotoilla myös visualisointien, muotojen ja otsikoiden fonttien ominaisuuksia. Power BI antaa sinun päättää raporttiesi ulkoasun täysin.
 
 Aloita avaamalla raportti Power BI Desktopissa tai Power BI -palvelussa. Kummassakin on lähes samat muotoiluasetukset. Kun avaat raportin Power BI -palvelussa, valitse valikkoriviltä **Muokkaa**. 
@@ -154,8 +157,10 @@ Aktivoimme visualisoinnin valitsemalla sen ja avasimme Muotoilu-välilehden.  Va
 Nämä ovat vain muutamia mahdollisia muotoilutehtäviä. Avaa raportti muokkaustilassa ja luo kauniita ja informatiivisia visualisointeja Muotoilu-ruudun avulla.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-Katso lisätietoja seuraavasta artikkelista:  
+Katso lisätietoja seuraavasta artikkelista: 
+
+* [Raporttien jakaminen](../collaborate-share/service-share-reports.md)
 
 * [Vinkkejä värimuotoiluun Power BI:ssä](service-tips-and-tricks-for-color-formatting.md)  
-* [Ehdollinen muotoilu taulukoissa](../desktop-conditional-table-formatting.md)
+* [Ehdollinen muotoilu taulukoissa](../create-reports/desktop-conditional-table-formatting.md)
 

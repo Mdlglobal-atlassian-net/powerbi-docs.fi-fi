@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 01/04/2019
-ms.openlocfilehash: d9ebab8c52be8872865b0c308e8629c92603bbaa
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: f9248b659bec744f7da02c4d2639f30bd646bb48
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "80403761"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83276049"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Opetusohjelma: Power BI:n sivutetun raportin upottaminen sovellukseen asiakkaitasi varten (esikatselu)
 
@@ -34,14 +34,14 @@ Tarvitset seuraavat:
 * [palvelun päänimi (sovelluksen tunnus)](embed-service-principal.md)
 * [Microsoft Azure](https://azure.microsoft.com/) -tilaus
 * oma [Azure Active Directory -vuokraaja ](create-an-azure-active-directory-tenant.md) käyttövalmiina
-* vähintään A4- tai P1-[kapasiteetti](#create-a-dedicated-capacity) ja [sivutettujen raporttien](../../service-admin-premium-workloads.md#paginated-reports) työkuorma otettuna käyttöön.
+* vähintään A4- tai P1-[kapasiteetti](#create-a-dedicated-capacity) ja [sivutettujen raporttien](../../admin/service-admin-premium-workloads.md#paginated-reports) työkuorma otettuna käyttöön.
 
 Jos sinulla ei ole Azure-tilausta, luo [ilmainen tili](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) ennen aloittamista.
 
 > [!IMPORTANT]
 > * Sinun täytyy käyttää **palvelun päänimeä.** Pääkäyttäjiä ei tueta.
 > * Kertakirjautumista edellyttäviä tietolähteitä ei tueta.
-> * Power BI -tietojoukkoa ei tueta [tietolähteenä](../../service-get-data.md).
+> * Power BI -tietojoukkoa ei tueta [tietolähteenä](../../connect-data/service-get-data.md).
 
 ## <a name="set-up-your-power-bi-environment"></a>Power BI -ympäristön määrittäminen
 
@@ -49,12 +49,12 @@ Sivutetun raportin upottaminen edellyttää työtilan määrittämistä varattuu
 
 ### <a name="create-an-app-workspace"></a>Sovelluksen työtilan luominen
 
-Koska kirjaudut sovellukseesi [palvelun päänimellä](embed-service-principal.md), sinun on käytettävä [uusia työtiloja](../../service-create-the-new-workspaces.md). *Palvelun päänimeä* käyttävänä käyttäjänä sinun on oltava myös järjestelmänvalvoja tai sovellukseesi liittyvien sovellustyötilojen jäsen.
+Koska kirjaudut sovellukseesi [palvelun päänimellä](embed-service-principal.md), sinun on käytettävä [uusia työtiloja](../../collaborate-share/service-create-the-new-workspaces.md). *Palvelun päänimeä* käyttävänä käyttäjänä sinun on oltava myös järjestelmänvalvoja tai sovellukseesi liittyvien sovellustyötilojen jäsen.
 
 ### <a name="create-a-dedicated-capacity"></a>Luo varattua kapasiteettia
 
 Ennen kuin tuot tai lataat sivutetun raportin upottamista varten, raportin sisältävä työtila on määritettävä vähintään A4-tai P1-kapasiteettiin. Valittavanasi on kahdentyyppisiä kapasiteetteja:
-* **Power BI Premium** – sivutetun raportin upottamista varten tarvitaan *P*-SKU-kapasiteetti. Kun upotat Power BI -sisältöä, tähän ratkaisuun viitataan nimellä *Power BI -upottaminen*. Lisätietoja tästä tilauksesta on kohdassa [Mikä on Power BI Premium?](../../service-premium-what-is.md)
+* **Power BI Premium** – sivutetun raportin upottamista varten tarvitaan *P*-SKU-kapasiteetti. Kun upotat Power BI -sisältöä, tähän ratkaisuun viitataan nimellä *Power BI -upottaminen*. Lisätietoja tästä tilauksesta on kohdassa [Mikä on Power BI Premium?](../../admin/service-premium-what-is.md)
 * **Azure Power BI Embedded** – voit ostaa varattua kapasiteettia [Microsoft Azure -portaalista](https://portal.azure.com). Tämä tilaus käyttää *A*-SKU:ita. Sivutettujen raporttien upottaminen edellyttää vähintään *A4*-tilausta. Lisätietoa Power BI Embedded ‑kapasiteetin luomisesta saat ohjeaiheesta [Power BI Embedded -kapasiteetin luominen Azure-portaalissa](azure-pbie-create-capacity.md).
 
 Seuraavassa taulukossa kuvataan jokaisen SKU:n resurssit ja rajoitukset. Jos haluat tarkistaa, mikä kapasiteetti sopii parhaiten tarpeisiisi, tarkastele [mikä SKU minun tulisi ostaa omaa skenaariotani varten ](https://docs.microsoft.com/power-bi/developer/embedded-faq#which-solution-should-i-choose)-taulukkoa.
@@ -242,7 +242,7 @@ Report report = reports.Value.FirstOrDefault();
 
 ### <a name="create-the-embed-token"></a>Upotustunnuksen luominen
 
-Luo upotustunnus, jota voidaan käyttää JavaScript-ohjelmointirajapinnasta. Kun haluat luoda upotetun tunnuksen Power BI:n sivutettujen raporttien upottamista varten, käytä ohjelmointirajapintaa [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup).
+Luo upotustunnus, jota voidaan käyttää JavaScript-ohjelmointirajapinnasta. Kun haluat luoda upotetun tunnuksen Power BI:n sivutettujen raporttien upottamista varten, käytä ohjelmointirajapintaa [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup).
 
 Malli sisältökohteen upotustunnuksen luomisesta on saatavilla mallisovelluksen  *Services\EmbedService.cs*[-tiedostosta](https://github.com/Microsoft/PowerBI-Developer-Samples).
 

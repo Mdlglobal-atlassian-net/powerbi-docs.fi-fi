@@ -7,16 +7,18 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.date: 01/10/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 413e30c04ac02e6b957f03494bf6a488edeacac0
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: e7c59ddd15a85eeabe0edae6d6a9649f56092ab7
+ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75885316"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83141435"
 ---
 # <a name="create-key-influencers-visualizations"></a>Tärkeiden vaikuttajien visualisointien luominen
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -401,7 +403,7 @@ Visualisointi arvioi kaikki selittävät tekijät yhdessä. Tekijä voi olla vai
 - Makuuhuoneiden merkitys saattaa olla nyt vähäisempi kuin ennen talon koon huomioimista. 
 
 
-
+Raportin jakaminen työtoverin kanssa Power BI:ssä edellyttää, että teillä kummallakin on oma Power BI Pro -käyttöoikeus tai että raportti on tallennettu Premium-kapasiteettiin. Katso [raporttien jakaminen](../collaborate-share/service-share-reports.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 - [Yhdistelmäkaaviot Power BI:ssä](power-bi-visualization-combo-chart.md)

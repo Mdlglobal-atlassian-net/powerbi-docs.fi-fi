@@ -6,17 +6,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/28/2018
+ms.date: 05/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 132c795724b6f3744e0648ac1f3229c5e6538a97
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: c8b0012224d145f40cb6b9784da1a40957efce50
+ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "75758418"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83277774"
 ---
 # <a name="add-visuals-to-a-power-bi-report-part-2"></a>Visualisointien lisääminen Power BI -raporttiin (osa 2)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -36,7 +38,7 @@ Tässä opetusohjelmassa käytetään [Jälleenmyyntianalyysimallin PBIX-tiedost
 
 1. Avaa **Jälleenmyyntianalyysimallin PBIX-tiedosto** raporttinäkymässä ![Näyttökuva raporttinäkymän kuvakkeesta.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Select ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
+1. Valitse ![Näyttökuva keltaisesta välilehdestä.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) uuden sivun lisäämiseksi.
 
 ## <a name="add-visualizations-to-the-report"></a>Visualisointien lisääminen raporttiin
 
@@ -59,7 +61,7 @@ Luo visualisointi vetämällä kenttä **Kentät**-ruudussa. Luotavan visualisoi
 5. [Muokkaa visualisoinnin kokoa](power-bi-visualization-move-and-resize.md) valitsemalla visualisointi, tarttumalla kiinni yhdestä sen kehyksessä olevista ympyröistä ja vetämällä. Tee visualisoinnista niin suuri, ettei vierityspalkkia enää näy, ja niin pieni, että tilaa jää toisellekin visualisoinnille.
    
    ![näyttökuva aluekaavion visualisoinnista](media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png)
-6. [Tallenna raportti](../service-report-save.md).
+6. [Tallenna raportti](../create-reports/service-report-save.md).
 
 ### <a name="add-a-map-visualization-that-looks-at-sales-by-location"></a>Lisää karttavisualisointi, joka näyttää myynnin sijainnin mukaan.
 
@@ -69,7 +71,10 @@ Luo visualisointi vetämällä kenttä **Kentät**-ruudussa. Luotavan visualisoi
 2. Lisää visualisoinnille selite.  Jos haluat nähdä tiedot kaupan nimen mukaan, vedä **Kauppa** > **Ketju** selitealueelle.  
    ![raporttipohja, jossa on nuoli Chain in fields -luettelosta Chain in Legend -säilöön](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
 
+> [!NOTE]
+> Raportin jakaminen työtoverin kanssa Power BI:ssä edellyttää, että teillä kummallakin on oma Power BI Pro -käyttöoikeus tai että raportti on tallennettu Premium-kapasiteettiin. Katso [raporttien jakaminen](../collaborate-share/service-share-reports.md).
+
 ## <a name="next-steps"></a>Seuraavat vaiheet
-* Lue lisätietoja [Power BI -raporttien visualisoinneista](power-bi-report-visualizations.md).  
+* Lisätietoja [Power BI -raporttien visualisoinneista](power-bi-report-visualizations.md).  
 * Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
 

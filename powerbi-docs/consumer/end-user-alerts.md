@@ -7,23 +7,26 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: tutorial
-ms.date: 02/18/2020
+ms.date: 04/18/2020
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5f4dc1d1f3e707a59ef81e63be42714c499d050f
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 4cad37b9d4a7bf9e74a29312786a02b26fce5463
+ms.sourcegitcommit: faa8cfb66e79ea16ba46605f752cc9ca57924d0e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "77496527"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83382757"
 ---
 # <a name="tutorial-set-alerts-on-power-bi-dashboards"></a>Opetusohjelma: Ilmoitusten määrittäminen Power BI -raporttinäkymissä
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Aseta hälytyksiä ilmoittamaan sinulle, kun koontinäyttösi tiedot muuttuvat asettamiesi rajojen ylä- tai alapuolelle. Hälytykset toimivat mittareissa, suorituskykyilmaisimissa ja korteissa. Tämä ominaisuus on vielä kehitteillä, joten katso lisätietoja [alla olevasta Vihjeet ja vianmääritys -kohdasta](#tips-and-troubleshooting).
+Aseta hälytyksiä ilmoittamaan sinulle, kun koontinäyttösi tiedot muuttuvat asettamiesi rajojen ylä- tai alapuolelle. Ilmoitukset voidaan määrittää vain ruuduille, jotka on kiinnitetty raportin visualisoinneista, ja vain mittareissa, suorituskykyilmaisimissa ja korteissa. 
+
+*Kuluttajat* voivat lisätä ilmoituksia ruutuihin, jotka he ovat luoneet **omassa työtilassa**. *Kuluttajat* voi myös lisätä ilmoituksia ruutuihin koontinäytöissä, jotka on jaettu heidän kanssaan [Premium-kapasiteetissa](end-user-license.md). Jos sinulla on Power BI:n Pro-käyttöoikeus, voit määrittää ilmoituksia ruuduille myös missä tahansa muussa työtilassa.
+Tämä ominaisuus on vielä kehitteillä, joten katso lisätietoja [alla olevasta Vihjeet ja vianmääritys -kohdasta](#tips-and-troubleshooting).
 
 ![ruutu, kortti, suorituskykyilmaisin](media/end-user-alerts/card-gauge-kpi.png)
 
@@ -44,12 +47,12 @@ Tässä artikkelissa käsitellään seuraavat asiat.
 
 Jos et ole rekisteröitynyt Power BI:hin, [rekisteröidy ilmaiseen kokeiluversioon](https://app.powerbi.com/signupredirect?pbi_source=web) ennen aloittamista.
 
-Tässä esimerkissä käytetään Myynti- ja markkinointi -mallisovelluksen koontinäytön korttiruutua. Tämä sovellus on käytettävissä [Microsoft AppSourcessa](https://appsource.microsoft.com). Katso lisätietoja sovelluksen käyttämisestä kohdasta [Asenna ja käytä sovelluksia Power BI:ssä](end-user-app-view.md).
+Tässä esimerkissä käytetään Myynti- ja markkinointi -mallisovelluksen koontinäytön korttiruutua. Tämä sovellus on käytettävissä [Microsoft AppSourcessa](https://appsource.microsoft.com). Katso lisätietoja sovelluksen käyttämisestä kohdasta [Myynti- ja markkinointisovelluksen asentaminen ja käyttäminen](end-user-app-marketing.md).
 
 1. Valitse koontinäytön mittarista, suorituskykyilmaisimesta tai korttiruudusta kolme pistettä.
    
    ![korttiruutu](media/end-user-alerts/power-bi-cards.png)
-2. Lisää yksi tai useampia hälytyksiä **Myymälöitä yhteensä** -ruudulle valitsemalla kellokuvake ![Hälytys-kuvake](media/end-user-alerts/power-bi-bell-icon.png) tai **Hälytysten hallinta**.
+2. Lisää yksi tai useampia hälytyksiä **Yksiköiden markkinaosuus-%** -ruudulle valitsemalla kellokuvake ![Hälytys-kuvake](media/end-user-alerts/power-bi-bell-icon.png) tai **Hälytysten hallinta**.
 
    ![korttiruutu, jossa kolme pistettä on valittuna](media/end-user-alerts/power-bi-ellipses.png)
 
@@ -111,10 +114,10 @@ Voit hallita ilmoituksia usealla tavalla: suoraan raporttinäkymän ruudusta, Po
 
 ## <a name="tips-and-troubleshooting"></a>Vihjeet ja vianmääritys 
 
-* Hälytyksiä voi asettaa vain mittareihin, suorituskykyilmaisimiin ja kortteihin.
-* Jos et pysty asettamaan hälytystä mittarille, suorituskykyilmaisimelle tai kortille, pyydä apua järjestelmänvalvojalta. Joskus hälytykset on poistettu käytöstä tai ne eivät ole käytettävissä koontinäytössäsi tai tietyntyyppisissä koontinäytön ruuduissa.
+* Jos et pysty asettamaan hälytystä mittarille, suorituskykyilmaisimelle tai kortille, pyydä apua vuokraajan järjestelmänvalvojalta. Joskus hälytykset on poistettu käytöstä tai ne eivät ole käytettävissä koontinäytössäsi tai tietyntyyppisissä koontinäytön ruuduissa.
 * Ilmoitukset toimivat vain tiedoissa, joita päivitetään. Ne eivät toimi staattisissa tiedoissa. Useimmat Microsoftin toimittamista malleista ovat staattisia. 
-* *Kuluttajat* eivät luo omia raporttinäkymiään, vaan *suunnittelijat* luovat raporttinäkymiä jakavat niitä kuluttajille. Sisällön vastaanottaminen ja jaetun sisällön katsominen edellyttää Power BI Pro- tai Premium-käyttöoikeutta. Saat lisätietoja kohdasta [Mikä käyttöoikeus minulla on?](end-user-license.md) 
+* Sisällön vastaanottaminen ja jaetun sisällön katsominen edellyttää Power BI Pro- tai Premium-käyttöoikeutta. Saat lisätietoja kohdasta [Mikä käyttöoikeus minulla on?](end-user-license.md)
+* Ilmoituksia voidaan määrittää visualisoinneille, jotka on tehty virtautettavista tietojoukoista, jotka kiinnitetään raportista koontinäyttöön. Ilmoituksia ei voi määrittää virtautettaville ruuduille, jotka on tehty suoraan koontinäytössä valitsemalla **Lisää-ruutu** > **Mukautetut virtautettavat tiedot**.
 
 
 ## <a name="clean-up-resources"></a>Puhdista resurssit
