@@ -208,8 +208,8 @@
               href: refresh-data.md
             - name: Ajoitetun päivityksen määrittäminen
               href: refresh-scheduled-refresh.md
-            - name: Päivityskeskus
-              href: refresh-center.md
+            - name: Päivitä yhteenvedot
+              href: refresh-summaries.md
             - name: Lisäävän päivityksen määrittäminen
               href: ../admin/service-premium-incremental-refresh.md
             - name: Paikallisen Power BI Desktop -tiedoston tietojoukon päivittäminen

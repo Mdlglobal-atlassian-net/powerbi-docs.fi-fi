@@ -118,7 +118,9 @@
           href: whitepapers.md
         - name: 'Power BI:n suojausraportti'
           href: whitepaper-powerbi-security.md
-        - name: 'Power BI:n premium-käyttöönotto'
+        - name: 'Power BI:n yrityskäyttöönoton tekninen raportti'
+          href: whitepaper-powerbi-enterprise-deployment.md
+        - name: 'Power BI:n Premium-käyttöönotto'
           href: whitepaper-powerbi-premium-deployment.md
         - name: 'Power BI -sisällön jakaminen ulkoisille käyttäjille Azure Active Directory B2B:n avulla'
           href: whitepaper-azure-b2b-power-bi.md

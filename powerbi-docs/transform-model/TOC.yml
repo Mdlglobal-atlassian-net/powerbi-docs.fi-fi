@@ -83,6 +83,8 @@
               href: service-dataflows-create-use.md
             - name: Tietovoiden edistäminen tai sertifiointi
               href: service-dataflows-promote-certify.md
+            - name: 'DirectQueryn käyttäminen tietovoiden kanssa Power BI:ssä (esikatselu)'
+              href: service-dataflows-directquery.md
             - name: Parannetun laskentamoduulin käyttö tietovoiden kanssa
               href: service-dataflows-enhanced-compute-engine.md
             - name: Lasketut entiteetit ja Power BI Premium
