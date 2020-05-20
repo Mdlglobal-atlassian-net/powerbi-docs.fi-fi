@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2019
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9a9248f68f85f6dec2a70842c0931d7dd448d690
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 4a6ba7f171f462fe6fe0d386305c82b486db5ed4
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83276831"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565022"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Pistekaaviot ja kuplakaaviot Power BI:ssä
 
@@ -128,7 +128,7 @@ Nyt lisätään kolmas dimensio.
     > [!NOTE]
     > Useammat arvopisteet saattavat merkitä pidempää latausaikaa. Jos haluat julkaista raportteja, joissa on rajat asteikon lopussa, testaa raporttisi myös verkossa ja mobiililaitteessa. Voit näin varmistaa, että kaavion suorituskyky vastaa käyttäjien odotuksia.
 
-1. Jatka visualisoinnin värien, selitteiden, otsikoiden, taustan ja muiden muotoilua. Jos haluat [parantaa helppokäyttöisyyttä](../desktop-accessibility.md), harkitse merkin muotojen lisäämistä kullekin riville. Jos haluat valita merkin muodon, laajenna **Muodot**-kohtaa, valitse **Merkin muoto** ja valitse muoto.
+1. Jatka visualisoinnin värien, selitteiden, otsikoiden, taustan ja muiden muotoilua. Jos haluat [parantaa helppokäyttöisyyttä](../create-reports/desktop-accessibility-overview.md), harkitse merkin muotojen lisäämistä kullekin riville. Jos haluat valita merkin muodon, laajenna **Muodot**-kohtaa, valitse **Merkin muoto** ja valitse muoto.
 
     ![Näyttökuva avattavasta Muodot-valikosta, jossa on korostettu Merkin muoto -vaihtoehdot.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 

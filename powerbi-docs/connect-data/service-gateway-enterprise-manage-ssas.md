@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: arthii
 LocalizationGroup: Gateways
-ms.openlocfilehash: deb72b1b66d4cbc87c2e317bb1fe1428c079cfea
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 2c71f26949f19ed1beb29a162c18dc36ed689c21
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83308942"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565342"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Tietolähteen hallinta - Analysis Services
 
@@ -54,9 +54,9 @@ Vaihtoehtoisesti voit määrittää tietolähteellesi yksityisyystason. Tällä 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qb5EEjkHoLg" frameborder="0" allowfullscreen></iframe>
 
-Aina, kun käyttäjä on vuorovaikutuksessa Analysis Servicesiin yhdistetyn raportin kanssa, käytössä oleva käyttäjänimi välitetään yhdyskäytävään ja sitten paikalliseen Analysis Services -palvelimeen. Analysis Servicesiin välitetään käyttäjätietona Power BI:hin kirjautumisessa käytetty sähköpostiosoite. Yhteys välittää sen [EffectiveUserName](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth)-ominaisuutena. 
+Aina, kun käyttäjä on vuorovaikutuksessa Analysis Servicesiin yhdistetyn raportin kanssa, käytössä oleva käyttäjänimi välitetään yhdyskäytävään ja sitten paikalliseen Analysis Services -palvelimeen. Analysis Servicesiin välitetään käyttäjätietona Power BI:hin kirjautumisessa käytetty sähköpostiosoite. Yhteys välittää sen [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services#bkmk_auth)-ominaisuutena. 
 
-Tämän sähköpostiosoitteen on vastattava paikallisen Active Directory -toimialueeseen määritettyä täydellistä käyttäjätunnusta (UPN). Täydellinen käyttäjätunnus on Active Directory -tilin ominaisuus. Windows-tilin on oltava käytössä Analysis Services -roolissa. Kirjautuminen ei onnistu, jos Active Directorysta ei löydy vastaavuutta. Lisätietoja Active Directorystä ja käyttäjien nimeämisestä on kohdassa [Käyttäjän nimeämisen määritteet](https://msdn.microsoft.com/library/ms677605.aspx).
+Tämän sähköpostiosoitteen on vastattava paikallisen Active Directory -toimialueeseen määritettyä täydellistä käyttäjätunnusta (UPN). Täydellinen käyttäjätunnus on Active Directory -tilin ominaisuus. Windows-tilin on oltava käytössä Analysis Services -roolissa. Kirjautuminen ei onnistu, jos Active Directorysta ei löydy vastaavuutta. Lisätietoja Active Directorystä ja käyttäjien nimeämisestä on kohdassa [Käyttäjän nimeämisen määritteet](/windows/win32/ad/naming-properties).
 
 Voit myös [liittää Power BI -kirjautumisnimen paikallisen hakemiston täydelliseen käyttäjätunnukseen](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources).
 
@@ -203,7 +203,7 @@ Käyttäjän mahdollisuus suorittaa kyselyjä ja tarkastella mallitietoja määr
 - heidän Windows-käyttäjätiliinsä määritettyjen roolien perusteella
 - mahdollisen dynaamisen rivitason suojauksen perusteella.
 
-Tässä artikkelissa ei käsitellä roolipohjaisen ja dynaamisen rivitason suojauksen ottamista käyttöön malleissa. Lisätietoja on MSDN:n artikkeleissa, jotka käsittelevät [rooleja (SSAS – taulukkomuoto)](https://msdn.microsoft.com/library/hh213165.aspx) ja [käyttöoikeusrooleja (Analysis Services – monidimensionaaliset tiedot)](https://msdn.microsoft.com/library/ms174840.aspx). Jos haluat ymmärtää taulukkomallin suojausta mahdollisimman perusteellisesti, lataa ja lue [Taulukkomuotoisten liiketoimintatietojen semanttisen mallin suojaamista käsittelevä tekninen raportti](https://msdn.microsoft.com/library/jj127437.aspx).
+Tässä artikkelissa ei käsitellä roolipohjaisen ja dynaamisen rivitason suojauksen ottamista käyttöön malleissa. Lisätietoja on MSDN:n artikkeleissa, jotka käsittelevät [rooleja (SSAS – taulukkomuoto)](/analysis-services/tabular-models/roles-ssas-tabular) ja [käyttöoikeusrooleja (Analysis Services – monidimensionaaliset tiedot)](/analysis-services/multidimensional-models/olap-logical/security-roles-analysis-services-multidimensional-data). Jos haluat ymmärtää taulukkomallin suojausta mahdollisimman perusteellisesti, lataa ja lue [Taulukkomuotoisten liiketoimintatietojen semanttisen mallin suojaamista käsittelevä tekninen raportti](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
 ## <a name="what-about-azure-ad"></a>Entä Azure AD?
 

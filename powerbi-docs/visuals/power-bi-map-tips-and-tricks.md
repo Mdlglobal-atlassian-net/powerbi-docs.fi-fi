@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 89b81286819e5f286a26efeb6b36d6336446132c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 8a7b5785712aeac318b3d8a2bbd14ab7170a435f
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83277820"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565898"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Vinkkejä Power BI -karttavisualisoinneille
 
@@ -55,7 +55,7 @@ Määrittämällä *tietokentille* tietoluokan Power BI Desktopissa voit varmist
 **2. Käytä useita sijaintisarakkeita**    
  Joskus tietoluokkien määrittäminen yhdistämistä varten ei riitä siihen, että Bing ymmärtää käyttäjän aikeet. Jotkin määritykset ovat moniselitteisiä, koska paikka sijaitsee useassa eri maassa tai usealla eri alueella. ***Southampton*** esimerkiksi sijaitsee Englannissa, Pennsylvaniassa ja New Yorkissa.
 
-Power BI käyttää Bingin [jäsentämätöntä URL-mallipalvelua](https://msdn.microsoft.com/library/ff701714.aspx) leveys- ja pituusasteiden noutamiseen maan osoitearvojen perusteella. Jos tiedot eivät sisällä riittävästi sijaintitietoja, lisää kyseisiä sarakkeita ja luokittele ne asianmukaisesti.
+Power BI käyttää Bingin [jäsentämätöntä URL-mallipalvelua](/bingmaps/rest-services/locations/find-a-location-by-address) leveys- ja pituusasteiden noutamiseen maan osoitearvojen perusteella. Jos tiedot eivät sisällä riittävästi sijaintitietoja, lisää kyseisiä sarakkeita ja luokittele ne asianmukaisesti.
 
  Jos sinulla esimerkiksi on vain Kaupunki-sarake, geokoodaus voi olla Bingille vaikeaa. Tee sijainnista yksiselitteinen lisäämällä ylimääräisiä maantieteellisiä sarakkeita.  Joskus vain yhden sijaintisarakkeen – tässä tapauksessa osavaltio- tai provinssisarakkeen – lisääminen tietojoukkoon riittää. Muista myös luokitella se oikein. Katso kohta 1.
 
@@ -97,5 +97,3 @@ Kun tietoihin poraudutaan maantieteellisten hierarkioiden avulla, on tärkeää 
 [Power Bi -visualisoinnit](power-bi-report-visualizations.md)
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
-
-

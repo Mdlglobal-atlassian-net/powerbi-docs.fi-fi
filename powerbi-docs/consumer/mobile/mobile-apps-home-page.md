@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 12/16/2019
 ms.author: painbar
-ms.openlocfilehash: 9af7fd95bcdaf0d747d1a3f2313f965d18a888e3
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 16d62af90855c99f9d50c35dd411ef50f2a9a4e6
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79205661"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565165"
 ---
 # <a name="a-quick-tour-of-the-mobile-app-home-page"></a>Mobiilisovelluksen aloitussivun nopea esittely
 Tässä esittelytoiminnossa tutustut Power BI -mobiilisovelluksen aloitussivuun ja siirtymisen apuvälineisiin, joiden avulla saat tarvitsemasi tiedot nopeasti.
@@ -41,7 +41,7 @@ Toimintasyötteen avulla voit seurata, mitä Power BI ‑sisällöissä tapahtuu
 Syötteen päivitykset sisältävät seuraavat:
 * **Päivitetyt tiedot**: kun pohjana olevat tiedot päivittyvät jossakin raportissa tai koontinäytössä, joka on suosikeissa tai viimeisimmissä.
 * **Uudet kommentit**: kun käyttäjä luo kommentin raportissa tai koontinäytössä, joka on suosikeissa tai viimeisimmissä, tai kun joku mainitsee sinut kommentissa.
-* **Tietoilmoitukset**: kun tiedot saavuttavat kynnysarvon, jonka olet aiemmin määrittänyt [tietoilmoituksessa](../../mobile-set-data-alerts-in-the-mobile-apps.md).
+* **Tietoilmoitukset**: kun tiedot saavuttavat kynnysarvon, jonka olet aiemmin määrittänyt [tietoilmoituksessa](mobile-set-data-alerts-in-the-mobile-apps.md).
 * **Sovelluspäivitykset**: kun sovelluksen luoja julkaisee päivityksen käyttämääsi sovellukseen.
 
  Napauta toimintokohdetta ja siirry asianmukaiseen kohtaan lisätutkimuksia varten.
@@ -57,13 +57,13 @@ Sivun alareunassa on siirtymispalkki.
 Siirtymispalkin kautta pääsee nopeasti seuraaviin kohteisiin:
 
 * ![aloituskuvake](./media/mobile-apps-home-page/powerbi-mobile-app-home-icon.png) **Aloitus** – takaisin aloitussivulle.
-* ![suosikit-kuvake](./media/mobile-apps-home-page/powerbi-mobile-app-favorites-icon.png) **Suosikit** – raportit, koontinäytöt ja sovellukset, jotka olet merkinnyt [suosikeiksi](../../mobile-apps-favorites.md).
+* ![suosikit-kuvake](./media/mobile-apps-home-page/powerbi-mobile-app-favorites-icon.png) **Suosikit** – raportit, koontinäytöt ja sovellukset, jotka olet merkinnyt [suosikeiksi](mobile-apps-favorites.md).
 * ![sovellukset-kuvake](./media/mobile-apps-home-page/powerbi-mobile-app-apps-icon.png) **Sovellukset** – tiliisi asentamasi sovellukset.
 * ![työtilat-kuvake](./media/mobile-apps-home-page/powerbi-mobile-app-workspaces-icon.png) **Työtilat** – työkansiot, jotka pitävät yhdessä sisällöntuottajien laatimat raportit ja koontinäytöt.
 * ![viimeisimmät-kuvake](./media/mobile-apps-home-page/powerbi-mobile-app-recents-icon.png) **Viimeisimmät** – kohteet, joita olet viimeksi tarkastellut.
 * ![jaettu kanssani -kuvake](./media/mobile-apps-home-page/powerbi-mobile-app-shared-with-me-icon.png) **Jaettu kanssani** – kohteet, jotka muut ovat jakaneet kanssasi.
 * ![näytteet-kuvake](./media/mobile-apps-home-page/powerbi-mobile-app-samples-icon.png) **Näytteet** – Power BI -näytteet, joita käyttämällä saat lisätietoja Power BI -ominaisuuksista.
-* ![skanneri-kuvake](./media/mobile-apps-home-page/powerbi-mobile-app-scanner-icon.png) **Skanneri** – laitteen kamera, jota voit käyttää skannerina [viivakoodien](../../mobile-apps-scan-barcode-iphone.md) ja [QR-koodien](../../mobile-apps-qr-code.md) skannaamiseksi.
+* ![skanneri-kuvake](./media/mobile-apps-home-page/powerbi-mobile-app-scanner-icon.png) **Skanneri** – laitteen kamera, jota voit käyttää skannerina [viivakoodien](mobile-apps-scan-barcode-iphone.md) ja [QR-koodien](mobile-apps-qr-code.md) skannaamiseksi.
 
 ## <a name="header"></a>Ylätunniste
 
@@ -72,11 +72,11 @@ Sivun yläreunassa olevassa otsikossa näkyy Power BI:n sivun, raportin tai koon
 ![ylätunniste](./media/mobile-apps-home-page/powerbi-mobile-app-header.png)
 
 Otsikossa on seuraavat siirtymiskohteet:
-* **Profiilikuva tai avatar** – avaa sivupaneelin, jossa voit [vaihtaa Power BI -palvelun ja raporttipalvelimen tiliesi välillä](../../mobile-app-ssrs-kpis-mobile-on-premises-reports.md) sekä käyttää Power BI -mobiilisovelluksen asetuksia.
+* **Profiilikuva tai avatar** – avaa sivupaneelin, jossa voit [vaihtaa Power BI -palvelun ja raporttipalvelimen tiliesi välillä](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) sekä käyttää Power BI -mobiilisovelluksen asetuksia.
 
     ![sivupaneeli](./media/mobile-apps-home-page/powerbi-mobile-app-side-panel.png)
 
-* **Ilmoitukset** – avaa [ilmoitusten sivun](../../mobile-apps-notification-center.md), jossa voit tarkastella ja käyttää ilmoituksiasi. Piste ilmoituskellossa ilmoittaa, että sinulla on uusia ilmoituksia.
+* **Ilmoitukset** – avaa [ilmoitusten sivun](mobile-apps-notification-center.md), jossa voit tarkastella ja käyttää ilmoituksiasi. Piste ilmoituskellossa ilmoittaa, että sinulla on uusia ilmoituksia.
 
     ![ilmoitukset-sivu](./media/mobile-apps-home-page/powerbi-mobile-app-notifications-page.png)
 
@@ -86,5 +86,5 @@ Otsikossa on seuraavat siirtymiskohteet:
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 Tässä esittelyssä tutustuit Power BI -mobiilisovelluksen aloitussivuun. Lue lisää Power BI -mobiilisovelluksen käyttämisestä. 
-* [Koontinäyttöjen ja raporttien tutkiminen](../../mobile-apps-quickstart-view-dashboard-report.md)
-* [Raporttien tutkiminen Power BI -mobiilisovelluksissa](../../mobile-reports-in-the-mobile-apps.md)
+* [Koontinäyttöjen ja raporttien tutkiminen](mobile-apps-quickstart-view-dashboard-report.md)
+* [Raporttien tutkiminen Power BI -mobiilisovelluksissa](mobile-reports-in-the-mobile-apps.md)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 9ff04510a786fa89e1e461e6eefee1af90e58a8e
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 783a9bdce34345afd87be379aff7e073ff8c548d
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83313381"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565852"
 ---
 # <a name="apply-dax-basics-in-power-bi-desktop"></a>Käytä DAX-perusteita Power BI Desktopissa
 Tämä artikkeli on tarkoitettu uusille Power BI Desktopin käyttäjille. Se antaa sinulle helpon ja nopean esittelyn siitä, miten voit käyttää Data Analysis Expression (DAX) -kaavaa ja ratkaista sillä useita peruslaskutoimituksia ja tietojen analysointiongelmia. Artikkeli sisältää käsitteellisiä tietoja, joukon harjoitustehtäviä ja lähtötasotestin, jolla voit testata, mitä olet oppinut. Kun olet käynyt tämän artikkelin läpi, sinulla pitäisi olla hyvä käsitys DAX:n tärkeimmistä peruskäsitteistä.
@@ -66,7 +66,7 @@ Kun tämä mittari lisätään raporttiin, se laskee ja palauttaa arvot laskemal
 
 Saatat ajatella: ”Eikö tämä mittari tee saman kuin jos vain lisäisin SalesAmount-kentän omaan raporttiini?” Kyllä vain. Mutta on hyvä syy sille, miksi kannattaa luoda oma mittari, joka laskee yhteen SalesAmount-kentän arvoja: voimme käyttää sitä argumenttina muissa kaavoissa. Tämä saattaa nyt vaikuttaa hieman sekavalta, mutta kun DAX-kaavataitosi kasvavat, tämän menetelmän tietäminen tekee kaavoistasi ja mallistasi tehokkaampia. Tulet itse asiassa näkemään Total Sales -mittarin argumenttina muissa kaavoissa myöhemmin.
 
-Käydäänpä seuraavaksi läpi muutamia muita tätä kaavaa koskevia seikkoja. Toimme esiin erityisesti funktion [SUM](https://msdn.microsoft.com/library/ee634387.aspx). Funktiot ovat ennalta laadittuja kaavoja, jotka helpottavat monimutkaisia laskutoimituksia ja käsittelytoimintoja mm. numeroiden, päivämäärien, ajan ja tekstin kanssa. Funktioista on lisätietoja jäljempänä.
+Käydäänpä seuraavaksi läpi muutamia muita tätä kaavaa koskevia seikkoja. Toimme esiin erityisesti funktion [SUM](/dax/sum-function-dax). Funktiot ovat ennalta laadittuja kaavoja, jotka helpottavat monimutkaisia laskutoimituksia ja käsittelytoimintoja mm. numeroiden, päivämäärien, ajan ja tekstin kanssa. Funktioista on lisätietoja jäljempänä.
 
 Näet myös, että kaavassa sarakkeen nimen [SalesAmount] edellä oli Sales-taulukko, johon sarake kuuluu. Tätä nimeä kutsutaan sarakkeen täydelliseksi nimeksi, koska se sisältää sarakkeen nimen, jonka edessä on taulukon nimi. Viitattaessa saman taulukon sisällä oleviin sarakkeisiin kaavaan ei tarvita taulukon nimeä. Tämän avulla pitkistä kaavoista, jotka viittaavat moniin sarakkeisiin, saadaan lyhempiä ja helpommin luettavia. On kuitenkin hyvä sisällyttää taulukon nimi mittarikaavoihin, myös silloin kun ne ovat samassa taulukossa.
 
@@ -121,7 +121,7 @@ Teit sen! Olet juuri luonut monitasoisen mittarin käyttämällä DAX-kaavaa, ei
 
 Olet juuri tutustunut muutamiin tärkeisiin DAX-kaavoihin liittyviin näkökohtiin: 
 
-- Tämä kaava sisälsi kaksi funktiota. Aikatietofunktio [PREVIOUSQUARTER](https://msdn.microsoft.com/library/ee634385.aspx) asetettiin sisäkkäin argumenttina, joka välitettiin suodatusfunktioon [CALCULATE](https://msdn.microsoft.com/library/ee634825.aspx). 
+- Tämä kaava sisälsi kaksi funktiota. Aikatietofunktio [PREVIOUSQUARTER](/dax/previousquarter-function-dax) asetettiin sisäkkäin argumenttina, joka välitettiin suodatusfunktioon [CALCULATE](/dax/calculate-function-dax). 
 
    DAX-kaavat voivat sisältää jopa 64 sisäkkäistä funktiota. On epätodennäköistä, että mikään kaava koskaan sisältäisi näin paljon sisäkkäisiä funktioita. Itse asiassa tällaisen kaavan luominen ja sen virheenkorjaus olisi vaikeaa, eikä se todennäköisesti olisi myöskään kovin nopea.
 
@@ -142,7 +142,7 @@ Vastaukset ovat tämän artikkelin lopussa.
 ### <a name="functions"></a>Funktiot
 Funktiot ovat ennalta määritettyjä kaavoja, jotka suorittavat laskutoimituksia käyttämällä erityisiä arvoja eli argumentteja tietyssä järjestyksessä tai tietyssä rakenteessa. Argumentit voivat olla muita funktioita, muita kaavoja, lausekkeita, sarakeviittauksia, numeroita, tekstiä, loogisia arvoja, kuten TOSI tai EPÄTOSI, tai vakioita.
 
-DAX sisältää seuraavat funktioluokat: [päivämäärä- ja aikafunktiot](https://msdn.microsoft.com/library/ee634786.aspx), [aikatietofunktiot](https://msdn.microsoft.com/library/ee634763.aspx), [tietofunktiot](https://msdn.microsoft.com/library/ee634552.aspx), [loogiset](https://msdn.microsoft.com/library/ee634365.aspx), [matemaattiset](https://msdn.microsoft.com/library/ee634241.aspx) ja [tilastolliset funktiot](https://msdn.microsoft.com/library/ee634822.aspx), [tekstifunktiot](https://msdn.microsoft.com/library/ee634938.aspx), [pääkohde-/alikohdefunktiot](https://msdn.microsoft.com/library/mt150102.aspx) ja [muut](https://msdn.microsoft.com/library/mt150101.aspx) funktiot. Jos funktiot ovat sinulle tuttuja Excel-kaavoista, monet DAX-kielen funktiot vaikuttavat vastaavanlaisilta. DAX-funktiot ovat kuitenkin ainutlaatuisia seuraavin tavoin:
+DAX sisältää seuraavat funktioluokat: [päivämäärä- ja aikafunktiot](/dax/date-and-time-functions-dax), [aikatietofunktiot](/dax/time-intelligence-functions-dax), [tietofunktiot](/dax/information-functions-dax), [loogiset](/dax/logical-functions-dax), [matemaattiset](/dax/math-and-trig-functions-dax) ja [tilastolliset funktiot](/dax/statistical-functions-dax), [tekstifunktiot](/dax/text-functions-dax), [pääkohde-/alikohdefunktiot](/dax/parent-and-child-functions-dax) ja [muut](/dax/other-functions-dax) funktiot. Jos funktiot ovat sinulle tuttuja Excel-kaavoista, monet DAX-kielen funktiot vaikuttavat vastaavanlaisilta. DAX-funktiot ovat kuitenkin ainutlaatuisia seuraavin tavoin:
 
 * DAX-funktio viittaa aina kokonaiseen sarakkeeseen tai taulukkoon. Jos haluat käyttää vain tiettyjä arvoja taulukosta tai sarakkeesta, voit lisätä kaavaan suodattimia.
 * Jos laskutoimituksia on mukautettava rivikohtaisesti, voit tiettyjen DAX-funktioiden avulla suorittaa kontekstin mukaan vaihtelevia laskutoimituksia käyttämällä nykyistä rivin arvoa tai liittyvää arvoa eräänlaisena argumenttina. Kontekstista on lisätietoja jäljempänä.
@@ -150,7 +150,7 @@ DAX sisältää seuraavat funktioluokat: [päivämäärä- ja aikafunktiot](http
 * DAX sisältää erilaisia aikatietojen funktioita. Näiden funktioiden avulla voit määrittää tai valita päivämäärävälejä ja suorittaa näihin perustuvia dynaamisia laskutoimituksia. Voit esimerkiksi verrata rinnakkaisten vuosineljännesten summia.
 * Excelissä on suosittu funktio, PHAKU. DAX-funktiot eivät käsitä solua tai solualuetta viitteeksi, kuten PHAKU tekee Excelissä. DAX-funktiot ottavat viitteeksi sarakkeen tai taulukon. Pidä mielessä, että Power BI Desktopissa työskentelet relaatiotietomallin kanssa. Arvojen hakeminen toisesta taulukosta on helppoa, ja useimmissa tapauksissa sinun ei tarvitse luoda kaavoja lainkaan.
   
-  Kuten huomaat, DAX-funktioiden avulla voit luoda tehokkaita kaavoja. Ja olemme käsitelleet vasta funktioiden perusteita. DAX-taitojesi kasvaessa opit luomaan kaavoja, joissa käytät useita eri funktioita. Yksi parhaimmista kaikkia DAX-funktioita koskevia tarkempia tietoja sisältävistä resursseista on [DAX Function Reference](https://msdn.microsoft.com/query-bi/dax/data-analysis-expressions-dax-reference) -artikkeli.
+  Kuten huomaat, DAX-funktioiden avulla voit luoda tehokkaita kaavoja. Ja olemme käsitelleet vasta funktioiden perusteita. DAX-taitojesi kasvaessa opit luomaan kaavoja, joissa käytät useita eri funktioita. Yksi parhaimmista kaikkia DAX-funktioita koskevia tarkempia tietoja sisältävistä resursseista on [DAX Function Reference](/dax/) -artikkeli.
 
 ### <a name="functions-quickquiz"></a>Testaa tietosi funktioista
 1. Mihin funktio aina viittaa?
@@ -210,7 +210,7 @@ Kuten voit kuvitella, mahdollisuus määrittää suodatinkonteksteja kaavassa ta
 Vastaukset ovat tämän artikkelin lopussa.
 
 ## <a name="summary"></a>Yhteenveto
-Nyt kun sinulla on perustietämys DAX-kielen tärkeimmistä käsitteistä, voit aloittaa DAX-kaavojen luomisen mittareille. DAX:n opetteleminen voi olla hieman hankalaa, mutta saatavilla on monia resursseja. Kun olet lukenut tämän artikkelin ja kokeillut muutamia omia kaavoja, voit perehtyä muihin DAX-käsitteisiin ja kaavoihin, jotka voivat auttaa omien liiketoimintaongelmiesi ratkaisemisessa. Saatavilla on useita DAX-resursseja, joista tärkein on [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx).
+Nyt kun sinulla on perustietämys DAX-kielen tärkeimmistä käsitteistä, voit aloittaa DAX-kaavojen luomisen mittareille. DAX:n opetteleminen voi olla hieman hankalaa, mutta saatavilla on monia resursseja. Kun olet lukenut tämän artikkelin ja kokeillut muutamia omia kaavoja, voit perehtyä muihin DAX-käsitteisiin ja kaavoihin, jotka voivat auttaa omien liiketoimintaongelmiesi ratkaisemisessa. Saatavilla on useita DAX-resursseja, joista tärkein on [Data Analysis Expressions (DAX) Reference](/dax/).
 
 Koska DAX on ollut käytössä useita vuosia muissa Microsoftin BI-työkaluissa, kuten Power Pivotin ja Analysis Servicesin taulukkomuotoisissa malleissa, saatavilla on paljon erinomaisia tietolähteitä. Voit etsiä lisätietoja kirjoista, teknisistä raporteista ja blogeista, joita Microsoft ja BI-huippuasiantuntijat ovat kirjoittaneet. [TechNetin DAX Resource Center Wiki ](https://social.technet.microsoft.com/wiki/contents/articles/dax-resource-center.aspx) on myös hyvä paikka aloittaa.
 
@@ -224,11 +224,10 @@ Funktiot:
 
 1. Taulukko ja sarake.
 2. Kyllä. Kaava voi sisältää jopa 64 sisäkkäistä funktiota.
-3. [Tekstifunktiot](https://msdn.microsoft.com/library/ee634938.aspx).
+3. [Tekstifunktiot](/dax/text-functions-dax).
 
 Konteksti:
 
 1. Rivikonteksti ja suodatinkonteksti.
 2. Yksi tai useampi suodatin laskutoimituksessa, joka määrittää yksittäisen arvon.
 3. Nykyinen rivi.
-

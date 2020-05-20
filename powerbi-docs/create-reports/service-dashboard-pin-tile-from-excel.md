@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3f3b5f8967890a3bb0cda3464b8d122d40938f62
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 283b43ef60d88df64b66812956e79bdcce1f16e9
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83322006"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565783"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Ruudun kiinnittäminen Power BI -raporttinäkymään Excelistä
 Ennen kuin voit kiinnittää ruudun Excel-työkirjasta, yhdistät kyseisen työkirjan Power BI -palveluun (app.powerbi.com). Työkirjan yhdistäminen tuo lähinnä tämän työkirjan linkitetyn vain luku -version Power BI -palveluun, ja voit näin kiinnittää alueita raporttinäkymiin. Voit kiinnittää jopa kokonaisen laskentataulukon raporttinäkymään.  
@@ -80,7 +80,7 @@ Työkirjan ruudun valitseminen avaa linkitetyn työkirjan Power BI:ssä. Koska t
  ![video](media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Huomioon otettavat seikat ja vianmääritys
-Ominaisuudet, joita ei tueta: Power BI käyttää Excel Servicesiä työkirjan ruutujen noutamiseen. Näin ollen koska joitakin Excelin ominaisuuksia ei tueta Excel Servicesin REST-ohjelmointirajapinnassa, ne eivät näy Power BI:n ruuduissa. Esimerkkejä: sparkline-kaaviot, kuvakejoukon ehdollinen muotoilu ja aikaosittajat. Täydellinen luettelo ominaisuuksista, joita ei tueta, on artikkelissa [Excel Servicesin REST-ohjelmointirajapinnan ominaisuudet, joita ei tueta](https://msdn.microsoft.com/library/office/ff394477.aspx)
+Ominaisuudet, joita ei tueta: Power BI käyttää Excel Servicesiä työkirjan ruutujen noutamiseen. Näin ollen koska joitakin Excelin ominaisuuksia ei tueta Excel Servicesin REST-ohjelmointirajapinnassa, ne eivät näy Power BI:n ruuduissa. Esimerkkejä: sparkline-kaaviot, kuvakejoukon ehdollinen muotoilu ja aikaosittajat. Täydellinen luettelo ominaisuuksista, joita ei tueta, on artikkelissa [Excel Servicesin REST-ohjelmointirajapinnan ominaisuudet, joita ei tueta](/sharepoint/dev/general-development/unsupported-features-in-excel-services-rest-api)
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 [Excel-työkirjaan linkittävän raporttinäkymän jakaminen](../collaborate-share/service-share-dashboard-that-links-to-excel-onedrive.md)

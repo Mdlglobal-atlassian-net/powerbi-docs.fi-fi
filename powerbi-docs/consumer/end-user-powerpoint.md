@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/12/2020
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1dbb35ab45a1172044cedb7fbe484ed4da6c43db
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: f70c41e40ff2da385b2f63798b93dec3fcd7b7c5
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348363"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565737"
 ---
 # <a name="export-reports-to-powerpoint"></a>Raporttien vieminen PowerPointiin
 
@@ -31,7 +31,7 @@ Voit julkaista Power BI -palvelussa (app.powerbi.com) raportin Microsoft PowerPo
 
 **Power BI -raportin** vieminen **PowerPointiin** on nopeaa. Seuraa seuraavassa osiossa kuvailtuja vaiheita.
 
-Voit myös kopioida yhden visualisoinnin kerrallaan Power BI -palvelusta ja liittää sen PowerPointiin (tai mihin tahansa muuhun liittämistä tukevaan ohjelmaan). Kopioi visualisointi leikepöydälle valitsemalla **Kopioi kuvana**. Avaa sitten PowerPoint ja liitä visualisointi. Jos haluat lisätietoja, katso [Kopioi visualisoinnit staattisina kuvina](../power-bi-visualization-copy-paste.md).
+Voit myös kopioida yhden visualisoinnin kerrallaan Power BI -palvelusta ja liittää sen PowerPointiin (tai mihin tahansa muuhun liittämistä tukevaan ohjelmaan). Kopioi visualisointi leikepöydälle valitsemalla **Kopioi kuvana**. Avaa sitten PowerPoint ja liitä visualisointi. Jos haluat lisätietoja, katso [Kopioi visualisoinnit staattisina kuvina](../visuals/power-bi-visualization-copy-paste.md).
 
 ![Valitse Kopioi kuvana -kuvake](media/end-user-powerpoint/power-bi-copy.png)
 
@@ -87,12 +87,12 @@ Edellä olevien vaiheiden jälkeen voit tehdä PowerPoint-esitykselläsi ja sen 
 Ota huomioon seuraavat seikat ja rajoitukset, kun käytät **Vieminen PowerPointiin** -ominaisuutta.
  
 
-* [URL-suodattimia](../service-url-filters.md) ei oteta tällä hetkellä huomioon, kun valitset viennin kohdalla **Nykyiset arvot**.
+* [URL-suodattimia](../collaborate-share/service-url-filters.md) ei oteta tällä hetkellä huomioon, kun valitset viennin kohdalla **Nykyiset arvot**.
 
 * Kun viet PowerPointiin ja raportti käyttää mukautettua fonttia, kyseinen fontti korvataan oletusfontilla.
 
 * Seuraavia visualisointityyppejä ei tueta, eikä niitä viedä PowerPointiin:
-   - [Mukautettuja visualisointeja, joita ei ole sertifioitu](../developer/power-bi-custom-visuals-certified.md), ei tueta. 
+   - [Mukautettuja visualisointeja, joita ei ole sertifioitu](../developer/visuals/power-bi-custom-visuals-certified.md), ei tueta. 
    - [ESRI ArcGIS -visualisointia](../visuals/power-bi-visualizations-arcgis.md) ei tueta
    - R- ja Python-visualisointeja ei tueta.
    - Taustakuvat rajataan kaavion raja-alueen mukaiseksi. Suosittelemme poistamaan taustakuvat ennen PowerPointiin viemistä.
@@ -109,5 +109,5 @@ Ota huomioon seuraavat seikat ja rajoitukset, kun käytät **Vieminen PowerPoint
 
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-[Kopioi visualisoinnit staattisina kuvina](../power-bi-visualization-copy-paste.md)    
+[Kopioi visualisoinnit staattisina kuvina](../visuals/power-bi-visualization-copy-paste.md)    
 [Raportin tulostaminen](end-user-print.md)

@@ -9,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 09/13/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 583d33a1d28fa926bdea41988d651f12de5a8e92
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: a490951808271cb845c1ec558344bcf5fdc6c145
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83309126"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564942"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Päivitystilanteiden vianmääritys
 
@@ -33,7 +33,7 @@ Jos olet siirtynyt tähän artikkeliin sähköposti-ilmoituksesta etkä halua en
 
 ## <a name="refresh-using-web-connector-doesnt-work-properly"></a>Päivittäminen käyttämällä verkkoyhdistintä ei toimi oikein
 
-Jos sinulla on verkkoyhdistimen komentosarja, joka käyttää [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx) -toimintoa ja olet päivittänyt tietojoukkosi tai raportin 18.11.2016 jälkeen, sinun on käytettävä yhdyskäytävää, jotta päivitys toimii oikein.
+Jos sinulla on verkkoyhdistimen komentosarja, joka käyttää [**Web.Page**](/powerquery-m/web-page) -toimintoa ja olet päivittänyt tietojoukkosi tai raportin 18.11.2016 jälkeen, sinun on käytettävä yhdyskäytävää, jotta päivitys toimii oikein.
 
 ## <a name="unsupported-data-source-for-refresh"></a>Tukemattoman tietolähteen päivitys
 

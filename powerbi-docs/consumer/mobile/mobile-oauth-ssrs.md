@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
-ms.openlocfilehash: c3c6e8d7ddb823eb1e857b102c2f6c788e366141
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 40bbf09e684b4fd3f86564c9b469c6ff248954a6
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79114948"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565714"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Yhdistäminen Power BI -raporttipalvelimeen ja SSRS-palvelimeen OAuthia käyttämällä
 
@@ -60,7 +60,7 @@ Reporting Servicesin puolella ei ole paljon määritettävää. On ainoastaan ta
 
 SPN eli palvelun päänimi on Kerberos-todennusta käyttävän palvelun yksilöivä tunniste. Sinun täytyy varmistaa, että raporttipalvelimellasi on asianmukainen HTTP-palvelun päänimi.
 
-Lisätietoja asianmukaisen palvelun päänimen (SPN) määrittämisestä raporttipalvelimelle on ohjeaiheessa [Palvelun päänimen (SPN) rekisteröiminen raporttipalvelimelle](https://msdn.microsoft.com/library/cc281382.aspx).
+Lisätietoja asianmukaisen palvelun päänimen (SPN) määrittämisestä raporttipalvelimelle on ohjeaiheessa [Palvelun päänimen (SPN) rekisteröiminen raporttipalvelimelle](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server).
 
 ### <a name="enabling-negotiate-authentication"></a>Todennuksen neuvottelun ottaminen käyttöön
 
@@ -74,7 +74,7 @@ Sinun on määritettävä raporttipalvelimen todennustyypiksi RSWindowsNegotiate
 </AuthenticationTypes>
 ```
 
-Lisätietoja on artikkeleissa [Reporting Services -määritystiedoston muokkaaminen](https://msdn.microsoft.com/library/bb630448.aspx) ja [Windows-todennuksen määrittäminen raporttipalvelimessa](https://msdn.microsoft.com/library/cc281253.aspx).
+Lisätietoja on artikkeleissa [Reporting Services -määritystiedoston muokkaaminen](/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config) ja [Windows-todennuksen määrittäminen raporttipalvelimessa](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
 
 ## <a name="active-directory-federation-services-adfs-configuration"></a>Active Directory -liittoutumispalvelujen (ADFS) määritys
 
@@ -248,9 +248,9 @@ Jos sisäänkirjautuminen toimii Fiddleria käytettäessä, kyseessä voi olla W
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-[Palvelun päänimen (SPN) rekisteröiminen raporttipalvelimelle](https://msdn.microsoft.com/library/cc281382.aspx)  
-[Reporting Services -määritystiedoston muokkaaminen](https://msdn.microsoft.com/library/bb630448.aspx)  
-[Windows-todennuksen määrittäminen raporttipalvelimessa](https://msdn.microsoft.com/library/cc281253.aspx)  
+[Palvelun päänimen (SPN) rekisteröiminen raporttipalvelimelle](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server)  
+[Reporting Services -määritystiedoston muokkaaminen](/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config)  
+[Windows-todennuksen määrittäminen raporttipalvelimessa](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server)  
 [Active Directory -liittoutumispalvelut](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services)  
 [Web Application Proxy Windows Server 2016:ssa](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server)  
 [Sovellusten julkaiseminen käyttäen AD FS -esitodennusta](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app)  

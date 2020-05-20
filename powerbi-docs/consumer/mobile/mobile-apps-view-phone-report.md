@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2020
 ms.author: painbar
-ms.openlocfilehash: d3584ebc5233ccffc007118ac87ada49e906b34c
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 380057c2c65db3ea659adc39d692d8955201483b
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83273519"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565119"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Puhelimelle optimoitujen Power BI ‑raporttien tarkastelu
 
@@ -60,7 +60,7 @@ Myös tarkastelutila on mahdollinen puhelinraporteissa: saat suuremman näkymän
 
 * Napauta puhelinraportissa visualisoinnin oikeasta yläkulmasta kolmea pistettä ( **...** ) &gt; **Laajenna tarkastelutilaan**.
   
-    ![Laajenna tarkastelutilaan](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
+    ![Laajenna tarkastelutilaan](media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
 
 Tarkastelutilassa tekemäsi toimet tulevat myös käyttöön myös raporttipohjassa ja päinvastoin. Jos esimerkiksi korostat visualisoinnista jonkin arvon ja palaat sitten koko raporttiin, raportti suodatetaan visualisoinnissa korostamasi arvon mukaan.
 
@@ -72,7 +72,7 @@ Näytön kokorajoitusten vuoksi jotkin toiminnot ovat käytettävissä vain tark
   
     Jos haluat poistaa kaikki tarkastelutoimet, napauta kolmea pistettä ( **...** ) > **Kumoa**.
   
-    ![Kumoa](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
+    ![Kumoa](media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
   
     Kumoaminen on käytettävissä sekä raportin tasolla, jolloin se poistaa tarkastelutoimet kaikista visualisoinneista, että visualisoinnin tasolla, jolloin se poistaa tarkastelutoimet valitusta visualisoinnista.   
 
@@ -86,14 +86,14 @@ Porautumistyyppejä on vähän:
 2. Työkaluvihje tulee näkyviin, ja jos on määritetty hierarkia, porautumisen ylä- ja alanuoli näkyvät työkaluvihjeen alatunnisteessa.
 3. Napauta alaspäin osoittavaa nuolta, kun haluat porautua alaspäin
 
-    ![Napauta alaspäin porautumista](././media/mobile-apps-view-phone-report/report-drill-down.png)
+    ![Napauta alaspäin porautumista](media/mobile-apps-view-phone-report/report-drill-down.png)
     
 4. Napauta ylöspäin osoittavaa nuolta, kun haluat porautua ylöspäin.
 
 ### <a name="drill-to-next-level"></a>Poraudu seuraavalle tasolle
 1. Napauta puhelimella raportin oikeasta yläkulmasta kolmea pistettä ( **...** ) &gt; **Laajenna tarkastelutilaan**.
    
-    ![Laajenna tarkastelutilaan](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
+    ![Laajenna tarkastelutilaan](media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
    
     Tässä esimerkissä palkit kuvaavat osavaltioiden arvoja.
 2. Napauta tutkimiskuvaketta ![Tutkimiskuvake](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) vasemmassa alakulmassa.
@@ -111,7 +111,7 @@ Porautumistyyppejä on vähän:
     ![Laajennettuna edelleen alemmalle tasolle](./media/mobile-apps-view-phone-report/power-bi-back-to-phone-report-expanded-levels.png)
 5. Voit palata takaisin alkuperäiselle tasolle napauttamalla uudelleen kolmea pistettä ( **...** ) > **Kumoa**.
    
-    ![Kumoa](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
+    ![Kumoa](media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
 
 ## <a name="drill-through-from-a-value"></a>Porautuminen läpi arvosta
 Läpiporautumalla yhdistät yhden raporttisivun arvoja toisiin raporttisivuihin. Kun poraudut arvopisteestä läpi toiseen raporttisivuun, arvopisteen arvoja käytetään läpiporatun sivun suodattamiseen, tai se esiintyy valittujen tietojen yhteydessä.
@@ -121,11 +121,11 @@ Raportin tekijät voivat [määrittää porautumisen](https://docs.microsoft.com
 2. Työkaluvihje tulee näkyviin, ja jos on määritetty porautuminen, porautumisnuoli näkyy työkaluvihjeen alatunnisteessa.
 3. Napauta nuolta kun haluat porautua läpi
 
-    ![Napauta porautumista](././media/mobile-apps-view-phone-report/report-drill-through1.png)
+    ![Napauta porautumista](media/mobile-apps-view-phone-report/report-drill-through1.png)
 
 4. Valitse, minkä raporttisivun läpi poraudutaan
 
-    ![Valitse raporttisivu](././media/mobile-apps-view-phone-report/report-drill-through2.png)
+    ![Valitse raporttisivu](media/mobile-apps-view-phone-report/report-drill-through2.png)
 
 5. Palaa alkusivulle sovelluksen otsikon Takaisin-painikkeesta.
 
@@ -133,5 +133,5 @@ Raportin tekijät voivat [määrittää porautumisen](https://docs.microsoft.com
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Power BI -mobiilisovelluksille optimoitujen raporttien luominen](../../create-reports/desktop-create-phone-report.md)
 * [Koontinäytön puhelinnäkymän luominen Power BI:ssä](../../create-reports/service-create-dashboard-mobile-phone-view.md)
-* [Mihin tahansa kokoon optimaalisten reagoivien visualisointien luominen](../../visuals/desktop-create-responsive-visuals.md)
+* [Mihin tahansa kokoon optimaalisten reagoivien visualisointien luominen](../../visuals/power-bi-report-visualizations.md)
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

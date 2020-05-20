@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 02/27/2020
-ms.openlocfilehash: 3ce1ae5207af6f4aaf844679bcd3ae52d2c13819
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: f4585e4c1eb629b4676b74157c0520d70540da7b
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348156"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565142"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Power BI -raporttipalvelinten uudet ominaisuudet
 
@@ -247,7 +247,7 @@ Power BI Desktopin uuden Mallintamisnäkymän avulla voit tarkastella ja käsite
 
 #### <a name="accessible-visual-interaction"></a>Helppokäyttöinen visuaalinen vuorovaikutus
 
-Voit nyt käyttää arvopisteitä monissa valmiissa visualisoinneissa näppäimistöllä siirtymisen avulla. Lue lisätietoja [Power BI -raporttien helppokäyttöisyydestä](../desktop-accessibility.md).
+Voit nyt käyttää arvopisteitä monissa valmiissa visualisoinneissa näppäimistöllä siirtymisen avulla. Lue lisätietoja [Power BI -raporttien helppokäyttöisyydestä](../create-reports/desktop-accessibility-overview.md).
 
 #### <a name="conditional-formatting-titles-and-web-url-actions"></a>Otsikoiden ehdollinen muotoilu ja verkko-URL-toiminnot
 

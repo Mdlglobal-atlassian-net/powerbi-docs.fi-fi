@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 858ecc07deabf5b91295220c2b92791b998ecf3a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: e5394a9ac7b7dbfc9edcfac53ea87d061e306a47
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349237"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565829"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Opetusohjelma: laskettujen sarakkeiden luominen Power BI Desktopissa
 
@@ -46,7 +46,7 @@ Myyntiraportissa haluat tuoteluokat ja aliluokat näkyviin yksittäisinä arvoin
 
 2. Uuden sarakkeen nimi on oletusarvoisesti **Sarake**. Jos et nimeä sitä uudelleen, uusille sarakkeille annetaan nimeksi **Sarake 2**, **Sarake 3** ja niin edelleen. Haluat varmasti sarakkeen olevan helpommin tunnistettava, joten kun **Sarake**-nimi on jo korostettu kaavarivillä, nimeä se uudelleen kirjoittamalla **ProductFullCategory** ja lisää sitten yhtäläisyysmerkki ( **=** ).
 
-3. Haluat uudessa sarakkeessa olevien arvojen alkavan **ProductCategory**-kentän nimellä. Koska tämä sarake on erilaisessa, mutta liittyvässä taulukossa, voit käyttää apuna sen hakemisessa [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) (SUHTEET) -funktiota.
+3. Haluat uudessa sarakkeessa olevien arvojen alkavan **ProductCategory**-kentän nimellä. Koska tämä sarake on erilaisessa, mutta liittyvässä taulukossa, voit käyttää apuna sen hakemisessa [RELATED](/dax/related-function-dax) (SUHTEET) -funktiota.
 
    Kirjoita yhtäläisyysmerkin jälkeen kirjain **r**. Avattava valikko näyttää kaikki kirjaimella R alkavat DAX-funktiot. Kunkin funktion valitseminen näyttää sen vaikutuksen kuvauksen. Kirjoittaessasi ehdotusluettelo Skaalaa lähemmäs tarvitsemaasi funktiota. Valitse **RELATED** (SUHTEET) ja paina **Enter**-painiketta.
 
@@ -97,7 +97,7 @@ Nyt voit käyttää uutta **ProductFullCategory**-saraketta **SalesAmount**-kaav
 
 Contoso Sales Sample sisältää sekä aktiivisten että passiivisten myymälöiden myyntitietoja. Voit varmistaa, että aktiivisen myymälän myynti on raportissa selvästi erillään passiivisen myymälän myynnistä, luomalla **Active StoreName** -kentän. Uudessa lasketussa **Active StoreName** -sarakkeessa kukin aktiivinen myymälä näkyy myymälän koko nimellä, kun taas passiivisten myymälöiden myynti ryhmitellään yhteen rivinimekkeeseen nimeltä **Inactive**.
 
-Onneksi **Stores**-taulukossa on sarake nimeltä **Status**, jossa on arvot ”On” aktiivisille myymälöille ja ”Off” passiivisille myymälöille. Voimme käyttää niitä luomaan arvoja uutta **Active StoreName** -saraketta varten. DAX-kaava käyttää loogista [IF](https://msdn.microsoft.com/library/ee634824.aspx) (JOS) -funktiota testatakseen kunkin myymälän **Status**-tilan ja palauttaakseen tietyn arvon tuloksesta riippuen. Jos myymälän **Status**-tila on ”On” (Käytössä), kaava palauttaa myymälän nimen. Jos se on ”Off”, kaava määrittää **Active StoreName** -arvoksi ”Inactive”.
+Onneksi **Stores**-taulukossa on sarake nimeltä **Status**, jossa on arvot ”On” aktiivisille myymälöille ja ”Off” passiivisille myymälöille. Voimme käyttää niitä luomaan arvoja uutta **Active StoreName** -saraketta varten. DAX-kaava käyttää loogista [IF](/dax/if-function-dax) (JOS) -funktiota testatakseen kunkin myymälän **Status**-tilan ja palauttaakseen tietyn arvon tuloksesta riippuen. Jos myymälän **Status**-tila on ”On” (Käytössä), kaava palauttaa myymälän nimen. Jos se on ”Off”, kaava määrittää **Active StoreName** -arvoksi ”Inactive”.
 
 1. Luo **Stores**-taulukkoon uusi laskettu sarake ja anna sille kaavarivillä nimeksi **Active StoreName**.
 
@@ -133,4 +133,4 @@ Laskettujen sarakkeiden avulla voit rikastaa tietojasi ja saada helpommin merkit
 
 Jos haluat tutustua tarkemmin DAX-kaavoihin ja siihen, miten laskettuja sarakkeita voi luoda edistyneemmillä kaavoilla, lue [DAX-perusteet Power BI Desktopissa](desktop-quickstart-learn-dax-basics.md). Tässä artikkelissa keskitytään DAX-peruskäsitteisiin, kuten syntaksiin ja funktioihin, ja annetaan tarkempaa tietoa kontekstista.
 
-Muista lisätä [Data Analysis Expressions (DAX) -viite](https://msdn.microsoft.com/library/gg413422.aspx) suosikkeihin. Sieltä saat tarkempia tietoja DAX-syntaksista ja -operaattoreista sekä yli 200 DAX-funktiosta.
+Muista lisätä [Data Analysis Expressions (DAX) -viite](/dax/) suosikkeihin. Sieltä saat tarkempia tietoja DAX-syntaksista ja -operaattoreista sekä yli 200 DAX-funktiosta.

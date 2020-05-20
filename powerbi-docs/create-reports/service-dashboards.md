@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 35e5d3b93305f8f2271db6343164cad8b57a4bfd
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: c687486af1293660af5496e27ea707bb1afeec80
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348846"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564548"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Johdatus raporttinäkymiin Power BI -kehittäjille
 
@@ -22,7 +22,7 @@ Power BI -*raporttinäkymä* on yksittäinen sivu, joka kertoo tarinan visualiso
 
 ![Koontinäyttö](media/service-dashboards/power-bi-dashboard2.png)
 
-Raporttinäkymä on vain Power BI -palvelun ominaisuus. Raporttinäkymät eivät ole käytettävissä Power BI Desktopissa. Raporttinäkymiä ei voi luoda mobiililaitteilla, mutta niitä voi [tarkastella ja jakaa]../consumer/mobile/mobile-apps-view-dashboard.md) niillä.
+Raporttinäkymä on vain Power BI -palvelun ominaisuus. Raporttinäkymät eivät ole käytettävissä Power BI Desktopissa. Raporttinäkymiä ei voi luoda mobiililaitteilla, mutta niitä voi [tarkastella ja jakaa](../consumer/mobile/mobile-apps-view-dashboard.md) niillä.
 
 ## <a name="dashboard-basics"></a>Raporttinäkymien perusteet 
 

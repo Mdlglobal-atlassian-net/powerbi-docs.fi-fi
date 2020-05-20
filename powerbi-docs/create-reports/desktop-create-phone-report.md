@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 593847d229dcd4e2081843523a0a988415a9ef81
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: cab4accfa11a4c92c1672314e2157659ef68f21a
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83297971"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564742"
 ---
 # <a name="optimize-power-bi-reports-for-the-mobile-app"></a>Power BI -raporttien optimointi mobiilisovellukselle
 Voit parantaa raporttiesi tarkastelua mobiilisovelluksissa luomalla pystysuuntaisen asettelun. Power BI Desktopissa ja Power BI -palvelussa voit järjestellä raporttien visualisointeja uudelleen ja muuttaa niiden kokoa saadaksesi parhaan mahdollisen käyttökokemuksen pystysuuntaisessa tilassa.  
@@ -58,7 +58,7 @@ Visualisoinnin koon muuttuessa Power BI priorisoi tietonäkymän. Se voi esimerk
 
 ![Reagoivan visualisoinnin koon muuttuminen](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
 
-Voit valita visualisointikohtaisesti, otetaanko reagointi käyttöön. Lisätietoja [visualisointien optimoinnista](../visuals/desktop-create-responsive-visuals.md).
+Voit valita visualisointikohtaisesti, otetaanko reagointi käyttöön. Lisätietoja [visualisointien optimoinnista](../visuals/power-bi-report-visualizations.md).
 
 ## <a name="considerations-when-creating-phone-report-layouts"></a>Huomioon otettavia seikkoja luotaessa raporttien puhelinasetteluja
 * Jos raportissa on useita sivuja, voit joko optimoida kaikki sivut tai vain osan niistä. 
@@ -108,5 +108,5 @@ Raportin lukijat voivat kääntää puhelimen tai tabletin sivuttain ja tarkaste
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Luo koontinäytön puhelinnäkymä Power BI:ssä](service-create-dashboard-mobile-phone-view.md).
 * [Tarkastele puhelimelle optimoituja Power BI ‑raportteja](../consumer/mobile/mobile-apps-view-phone-report.md).
-* [Luo mihin tahansa kokoon optimaalisten reagoivia visualisointeja](../visuals/desktop-create-responsive-visuals.md).
+* [Luo mihin tahansa kokoon optimaalisten reagoivia visualisointeja](../visuals/power-bi-report-visualizations.md).
 * Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/).

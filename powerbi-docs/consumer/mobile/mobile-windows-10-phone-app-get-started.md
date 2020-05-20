@@ -8,12 +8,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/11/2020
 ms.author: painbar
-ms.openlocfilehash: cfbffaa06f3cfc393ba3381adbfc1a7613c2f0c1
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 04b5bfbc08295974efcb7d583036d96274754bad
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349352"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565691"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Windows 10:n Power BI -mobiilisovelluksen käytön aloittaminen
 Windows 10:n Power BI -mobiilisovellus tuo Power BI:n tablet-laitteeseen tai puhelimeen. Voit käyttää yritystietoja ajan tasalla olevan, kosketuksella toimivan mobiilijärjestelmän kautta. Tarkastele ja käytä yrityksesi koontinäyttöjä missä tahansa kätevästi [Windowsin Aloitusnäytöllä](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -118,8 +118,8 @@ Seuraavassa on joitakin muita asioita, voit tehdä Power BI -sovelluksessa Windo
 
 ### <a name="reporting-services-mobile-reports-and-kpis"></a>Reporting Servicesin mobiiliraportit ja suorituskykyilmaisimet
 * [Tarkastele Reporting Servicesin mobiiliraportteja ja suorituskykyilmaisimia](mobile-app-windows-10-ssrs-kpis-mobile-reports.md) Windows 10 -laitteiden Power BI -sovelluksella.
-* Luo [suorituskykyilmaisimia Reporting Services -verkkoportaaliin](https://msdn.microsoft.com/library/mt683632.aspx).
-* [Luoda omia mobiiliraporttejasi SQL Server -mobiiliraportin julkaisuohjelmalla](https://msdn.microsoft.com/library/mt652547.aspx) ja julkaise ne Reporting Services -verkkoportaalin kautta.
+* Luo [suorituskykyilmaisimia Reporting Services -verkkoportaaliin](/sql/reporting-services/working-with-kpis-in-reporting-services).
+* [Luoda omia mobiiliraporttejasi SQL Server -mobiiliraportin julkaisuohjelmalla](/sql/reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher) ja julkaise ne Reporting Services -verkkoportaalin kautta.
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 * [Lataa Power BI -sovellus](https://go.microsoft.com/fwlink/?LinkID=526478) Windows Storesta  

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/14/2020
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: b89c64caa7a4f8fe846cca488164758550a4869a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 78031bb4f8326b50917b5c299948518717cc18a9
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83361194"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83566059"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Power BI -palvelun uudet toiminnot ja ominaisuudet
 Tarkista tältä sivulta **Power BI -palvelun** tunnetut ongelmat ja hiljattain julkaistut ominaisuudet. Lisätietoja aiheeseen liittyvistä uusista ominaisuuksista:
@@ -224,7 +224,7 @@ Saat lisätietoja uusista toiminnoista ja ominaisuuksista myös YouTube-kanavist
 
 ### <a name="june-2017"></a>Kesä 2017
 * [Power BI Premium](https://powerbi.microsoft.com/blog/power-bi-premium-generally-available/) saatettu yleisesti saataville.
-* Useita ohjelmointirajapintojen parannuksia, kuten [ajoitetun päivityksen automatisointi](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), [raporttien kloonaus ja uudelleensidonta](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), [yhdyskäytävän sidontojen päivitys](https://msdn.microsoft.com/library/mt784650.aspx) ja monta muuta
+* Useita ohjelmointirajapintojen parannuksia, kuten [ajoitetun päivityksen automatisointi](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), [raporttien kloonaus ja uudelleensidonta](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), [yhdyskäytävän sidontojen päivitys](/rest/api/power-bi/) ja monta muuta
 * Power BI -sovellusten suhteelliset linkit koontinäytön ruuduista muihin koontinäyttöihin ja raportteihin.
 * [Impala-liitin](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#impala) yleisesti saatavilla Power BI Desktopissa.
 * Power BI:n visuaalisten ominaisuuksien laajentaminen [vuorovaikutteisten Power BI:n R-visualisointien](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/) avulla.

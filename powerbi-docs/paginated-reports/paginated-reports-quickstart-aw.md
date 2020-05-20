@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 45edb3695acdcc5519fb0b62cebc853ff25ce97a
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 81e293f4dbf15a21c2546a54f140b163ebc93c05
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83145216"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565645"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Opetusohjelma: Sivutetun raportin luominen ja lataaminen Power BI -palveluun
 
@@ -42,7 +42,7 @@ Edellytykset sivutetun raportin luomiseen:
 
 Sivutetun raportin lataaminen Power BI -palveluun edellyttää seuraavia:
 
-- [Power BI Pro -lisenssi](../service-admin-power-bi-pro-in-your-organization.md).
+- [Power BI Pro -lisenssi](../admin/service-admin-licensing-organization.md).
 - Työtila palvelun [Power BI Premium -kapasiteetissa](../admin/service-premium-what-is.md). Työtilan nimen vieressä on ![Premium-vinoneliökuvake](media/paginated-reports-quickstart-aw/premium-diamond.png).
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Matriisin luominen ohjatun toiminnon avulla

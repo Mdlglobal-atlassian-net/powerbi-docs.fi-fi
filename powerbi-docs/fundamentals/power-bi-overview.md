@@ -8,12 +8,12 @@ ms.topic: overview
 ms.date: 09/04/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: f02c383ddbe9eddca180ad8bd29816730c249561
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 9a7e7319bf8f5ccf517596d708dea4c1f4a41590
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83349605"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83564445"
 ---
 # <a name="what-is-power-bi"></a>Mikä Power BI on?
 **Power BI** on kokoelma ohjelmistopalveluja, sovelluksia ja yhdistimiä, jotka yhdessä muuntavat toisiinsa liittymättömistä lähteistä peräisin olevan tiedon johdonmukaisiksi, visuaalisesti vaikuttaviksi ja vuorovaikutteisiksi näkemyksiksi. Tiedot voivat olla Excel-laskentataulukossa tai joukossa pilvipohjaisia ja paikallisia hybriditietovarastoja. Power BI:n avulla voit helposti muodostaa yhteyden tietolähteisiin, visualisoida ja löytää tärkeitä asioita sekä jakaa niitä kenen kanssa haluat.
@@ -70,6 +70,6 @@ Power BI -raporttipalvelin on ratkaisu, jonka voit ottaa käyttöön oman palomu
 Lue lisää [Power BI -raporttipalvelimesta](../report-server/get-started.md).
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
-- [Pikaopas: Power BI -palvelussa liikkuminen](../service-the-new-power-bi-experience.md)   
+- [Pikaopas: Power BI -palvelussa liikkuminen](../consumer/end-user-experience.md)   
 - [Opetusohjelma: Power BI -palvelun käytön aloittaminen](service-get-started.md)
 - [Pikaopas: Tietoihin yhdistäminen Power BI Desktopissa](../connect-data/desktop-quickstart-connect-to-data.md)
