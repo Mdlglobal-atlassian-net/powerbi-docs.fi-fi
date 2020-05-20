@@ -5,15 +5,15 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/06/2020
+ms.date: 05/13/2020
 ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 65f1246185584b5887d97bb9188b43e016e78e8f
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 40a585c78de4a95981ff157413e857b48fd35c14
+ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279246"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83407576"
 ---
 # <a name="connect-to-the-hospital-emergency-response-decision-support-dashboard"></a>Yhdistäminen Hospital Emergency Response Decision Support Dashboard -sovellukseen
 Hospital Emergency Response Decision Support Dashboard -mallisovellus on [Microsoft Power Platform -ratkaisun terveydenhuollon hätävasteen ](https://powerapps.microsoft.com/blog/emergency-response-solution-a-microsoft-power-platform-solution-for-healthcare-emergency-response/) raportointiosa. Koontinäytössä näytetään valmiuspäälliköille koostettuja tietoja heidän terveysjärjestelmästään, jotta he voivat tehdä oikeita päätöksiä oikeaan aikaan.
@@ -32,11 +32,11 @@ Kun asennat Hospital Emergency Response Power Platform -ratkaisun, kirjoita muis
 
 ## <a name="install-the-app"></a>Sovelluksen asentaminen
 
-1. Siirry sovellukseen napsauttamalla seuraavaa linkkiä: [Hospital Emergency Response Decision Support Dashboard -mallisovellus](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare)
+1. Siirry sovellukseen napsauttamalla seuraavaa linkkiä: [Hospital Emergency Response Decision Support Dashboard -mallisovellus](https://aka.ms/AppSource_Hospital_offer)
 
-1. Valitse sovelluksen AppSource-sivulla [**HANKI SE NYT**](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare).
+1. Valitse sovelluksen AppSource-sivulla [**HANKI SE NYT**](https://aka.ms/AppSource_Hospital_offer).
 
-    [![Hospital Emergency Response Decision Support Dashboard -sovellus AppSourcessa](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-appsource-get-it-now.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare)
+    [![Hospital Emergency Response Decision Support Dashboard -sovellus AppSourcessa](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-appsource-get-it-now.png)](https://aka.ms/AppSource_Hospital_offer)
 
 1. Lue tiedot kohdassa **Vielä yksi asia** ja valitse **Jatka**.
 

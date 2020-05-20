@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/22/2020
 ms.author: rien
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 036343df0a9af678b5a88c261a60ce603483a1cc
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 34d539af94f2bcbe03a2c9d6b870887e371a1a6e
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83277176"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563911"
 ---
 # <a name="create-and-use-combo-charts-in-power-bi"></a>Yhdistelmäkaavioiden luominen ja käyttäminen Power BI:ssa
 
@@ -123,7 +123,7 @@ Seuraavat toiminnot:
 
 * [Yhdistelmäkaavion lisääminen koontinäytön ruutuna](../create-reports/service-dashboard-tiles.md)
 * [Tallenna raportti](../create-reports/service-report-save.md).
-* [Tee raportista helpommin käytettävä toimintarajoitteisille ihmisille](../desktop-accessibility.md).
+* [Tee raportista helpommin käytettävä toimintarajoitteisille ihmisille](../create-reports/desktop-accessibility-overview.md).
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Ristiinkorostaminen ja ristiinsuodatus
 
@@ -134,6 +134,3 @@ Sarakkeen tai rivin korostaminen yhdistelmäkaaviossa ristiinkorostaa ja ristiin
 [Rengaskaaviot Power BI:ssä](power-bi-visualization-doughnut-charts.md)
 
 [Visualisointityypit Power BI:ssä](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-
-

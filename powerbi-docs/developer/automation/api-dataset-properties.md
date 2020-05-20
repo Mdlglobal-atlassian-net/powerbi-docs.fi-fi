@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: e74e390a5d228cb4a158d422cf0adab48b573cce
-ms.sourcegitcommit: 7aa0136f93f88516f97ddd8031ccac5d07863b92
+ms.openlocfilehash: 7dad7071fbf887c36443cacdb9be83d83e0b89be
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "79079665"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561497"
 ---
 # <a name="dataset-properties"></a>Tietojoukon ominaisuudet
 
@@ -46,8 +46,8 @@ isHidden     | Boolean        | Jos arvo on tosi, taulukko on piilotettu asiakas
 Nimi  |Tyyppi.  |Description  |Vain luku  |Pakollinen
 ---------|---------|---------|---------|---------
 nimi     |  Merkkijono        | Käyttäjän määrittämä sarakkeen nimi.        |  Epätosi       | True       
-dataType     |  Merkkijono       |  Tuetut [EDM-tietotyypit](https://msdn.microsoft.com/library/ee382832.aspx) ja rajoitukset. Katso [Tietotyypin rajoitukset](#data-type-restrictions).      |  Epätosi       | True        
-formatString     | Merkkijono        | Merkkijono, joka kuvaa, miten arvoa olisi muotoiltava, kun se näytetään. Lisätietoja merkkijonon muotoilemisesta on artikkelissa [Merkkijonon sisällön muotoileminen](https://msdn.microsoft.com/library/ms146084.aspx).      | Epätosi        | Epätosi        
+dataType     |  Merkkijono       |  Tuetut [EDM-tietotyypit](/dotnet/framework/data/adonet/entity-data-model-primitive-data-types) ja rajoitukset. Katso [Tietotyypin rajoitukset](#data-type-restrictions).      |  Epätosi       | True        
+formatString     | Merkkijono        | Merkkijono, joka kuvaa, miten arvoa olisi muotoiltava, kun se näytetään. Lisätietoja merkkijonon muotoilemisesta on artikkelissa [Merkkijonon sisällön muotoileminen](/analysis-services/multidimensional-models/mdx/mdx-cell-properties-format-string-contents).      | Epätosi        | Epätosi        
 sortByColumn    | Merkkijono        |   Sarakkeen merkkijonon nimi samassa taulukossa, jota käytetään nykyisen sarakkeen järjestämiseen.     | Epätosi        | Epätosi       
 dataCategory     | Merkkijono        |  Merkkijonon arvo, jota käytetään tietoluokalle, joka kuvaa tässä sarakkeessa olevia tietoja. Joitakin yleisiä arvoja ovat: Address, City, Continent, Country, Image, ImageUrl, Latitude, Longitude, Organization, Place, PostalCode, StateOrProvince, WebUrl       |  Epätosi       | Epätosi        
 isHidden    |  Boolean       |  Ominaisuus, joka ilmaisee, onko sarake piilotettu näkyvistä. Oletusarvona on epätosi.       | Epätosi        | Epätosi        
@@ -59,7 +59,7 @@ Nimi  |Tyyppi.  |Description  |Vain luku  |Pakollinen
 ---------|---------|---------|---------|---------
 nimi     | Merkkijono        |  Käyttäjän määrittämä mittarin nimi.       |  Epätosi       | True        
 lauseke     | Merkkijono        | Kelvollinen DAX-lauseke.        | Epätosi        |  True       
-formatString     | Merkkijono        |  Merkkijono, joka kuvaa, miten arvoa olisi muotoiltava, kun se näytetään. Lisätietoja merkkijonon muotoilemisesta on artikkelissa [Merkkijonon sisällön muotoileminen](https://msdn.microsoft.com/library/ms146084.aspx).       | Epätosi        | Epätosi        
+formatString     | Merkkijono        |  Merkkijono, joka kuvaa, miten arvoa olisi muotoiltava, kun se näytetään. Lisätietoja merkkijonon muotoilemisesta on artikkelissa [Merkkijonon sisällön muotoileminen](/analysis-services/multidimensional-models/mdx/mdx-cell-properties-format-string-contents).       | Epätosi        | Epätosi        
 isHidden     | Merkkijono        |  Jos arvo on tosi, taulukko on piilotettu asiakastyökaluilta.       |  Epätosi       | Epätosi       
 
 ## <a name="relationship"></a>Yhteydet

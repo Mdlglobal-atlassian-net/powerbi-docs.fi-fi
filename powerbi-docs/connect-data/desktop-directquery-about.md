@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/09/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cf937ea36727ec036e3799cb0ac48dfbb5740325
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: dfd44b7130c1c7e4e1d2d7a9c9f15208cb0d9b0c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83292911"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83563283"
 ---
 # <a name="about-using-directquery-in-power-bi"></a>Tietoja DirectQueryn käytöstä Power BI:ssä
 
@@ -371,7 +371,7 @@ Siirry tämän kansion yläkansioon. Näet siellä *AnalysisServicesWorkspaces*-
 
 Kansion sisällä on *\\Data*-kansio. Se sisältää nykyisen Power BI -istunnon jäljitystiedoston *FlightRecorderCurrent.trc*. Power BI Desktop -istuntoa vastaava työtilakansio poistetaan, kun istunto lopetetaan.
 
-Jäljitystiedostoja voi lukea käyttämällä *SQL Serverin profilointi* -työkalua. Saat se osana maksutonta [SQL Server Management Studio](https://msdn.microsoft.com/library/mt238290.aspx) -lataustiedostoa.
+Jäljitystiedostoja voi lukea käyttämällä *SQL Serverin profilointi* -työkalua. Saat se osana maksutonta [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) -lataustiedostoa.
 
 Kun olet ladannut ja asentanut SQL Server Management Studion, suorita SQL Serverin profilointi.
 

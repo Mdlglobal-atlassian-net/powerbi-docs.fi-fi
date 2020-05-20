@@ -9,12 +9,12 @@ ms.topic: reference
 ms.date: 05/06/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 27509d42b09b9524b204da5ab0ce76f3d180a057
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 06033a65acd090f0297a53bfbf0f0a004b68649a
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83293164"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561566"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Tietotyypit Power BI Desktopissa
 Tässä artikkelissa kuvataan tietotyypit, joita Power BI Desktop ja Data Analysis Expressions (DAX) tukevat. 
@@ -72,7 +72,7 @@ Power BI Desktop tukee viittä päivämäärä/aika-tietotyyppiä kyselynäkymä
 **Tosi/epätosi** – totuusarvo tosi tai epätosi.
 
 ### <a name="blanksnulls-type"></a>Tyhjät/nolla-arvot-tyyppi
-**Tyhjä** – DAX-kaavan tietotyyppi, joka vastaa SQL-kielen tyhjäarvoja ja korvaa ne. Voit luoda tyhjän käyttämällä [TYHJÄ](https://msdn.microsoft.com/library/ee634820.aspx)-funktiota ja testata tyhjät käyttämällä loogista funktiota [ONTYHJÄ](https://msdn.microsoft.com/library/ee634204.aspx).
+**Tyhjä** – DAX-kaavan tietotyyppi, joka vastaa SQL-kielen tyhjäarvoja ja korvaa ne. Voit luoda tyhjän käyttämällä [TYHJÄ](/dax/blank-function-dax)-funktiota ja testata tyhjät käyttämällä loogista funktiota [ONTYHJÄ](/dax/isblank-function-dax).
 
 ### <a name="binary-data-type"></a>Binaarinen tietotyyppi
 
@@ -86,7 +86,7 @@ Binaaritietotyyppiä voidaan käyttää edustamaan muita binaarimuotoisia tietoj
 > 
 
 ### <a name="table-data-type"></a>Taulukko-tietotyyppi
-DAX käyttää taulukko-tietotyyppiä monissa funktioissa, kuten koostamisissa ja aikatietojen laskutoimituksissa. Jotkin funktiot edellyttävät viittausta taulukkoon. Muut funktiot palauttavat taulukon, jota voidaan käyttää syötteenä muihin funktioihin. Joissakin funktioissa, jotka edellyttävät taulukkoa syötteeksi, voit määrittää lausekkeen, joka antaa taulukkoon arvon. Osa funktioista edellyttää viittausta perustaulukkoon. Lisätietoja tiettyjen funktioiden vaatimuksista saat [DAX Function Reference](https://msdn.microsoft.com/library/ee634396.aspx) -artikkelista.
+DAX käyttää taulukko-tietotyyppiä monissa funktioissa, kuten koostamisissa ja aikatietojen laskutoimituksissa. Jotkin funktiot edellyttävät viittausta taulukkoon. Muut funktiot palauttavat taulukon, jota voidaan käyttää syötteenä muihin funktioihin. Joissakin funktioissa, jotka edellyttävät taulukkoa syötteeksi, voit määrittää lausekkeen, joka antaa taulukkoon arvon. Osa funktioista edellyttää viittausta perustaulukkoon. Lisätietoja tiettyjen funktioiden vaatimuksista saat [DAX Function Reference](/dax/dax-function-reference) -artikkelista.
 
 ## <a name="implicit-and-explicit-data-type-conversion-in-dax-formulas"></a>Implisiittisen ja eksplisiittisen tietotyypin muuntaminen DAX-kaavoissa
 Jokaisella DAX-funktiolla on eritysvaatimuksia, jotka koskevat syötteinä ja tulosteina käytettäviä tietotyyppejä. Osa funktioista vaatii esimerkiksi kokonaislukuja tiettyihin argumentteihin ja päivämääriä toisiin. Osa funktioista taas edellyttää tekstiä tai taulukoita.
@@ -197,4 +197,3 @@ Tyhjien käsittelytapa toiminnoissa, kuten yhteenlaskussa ja ketjutuksessa, vaih
 | TOSI JA TYHJÄ |EPÄTOSI |TOSI |
 | TYHJÄ TAI TYHJÄ |TYHJÄ |Virhe |
 | TYHJÄ JA TYHJÄ |TYHJÄ |Virhe |
-

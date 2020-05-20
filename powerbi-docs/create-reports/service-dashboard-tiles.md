@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/17/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0b0bf61672d383900dad50e5fe7404f7f4a7f0bc
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 96a780d7d7b100acb283623107d4ec841666bb8f
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83348915"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83561658"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Johdatus raporttinäkymien ruutuihin Power BI -suunnittelijoille
 
@@ -23,7 +23,7 @@ Ruutu on tietojen tilannevedos, joka on kiinnitetty koontinäyttöön. Ruutu voi
 
 ![Power BI -koontinäyttö](media/service-dashboard-tiles/power-bi-dashboard.png)
 
-Koontinäytöt ja koontinäyttöruudut ovat Power BI -palvelun ominaisuus eivätkä Power BI Desktopin. Raporttinäkymiä ei voi luoda mobiililaitteilla, mutta niitä voi [tarkastella ja jakaa]../consumer/mobile/mobile-apps-view-dashboard.md) siitä.
+Koontinäytöt ja koontinäyttöruudut ovat Power BI -palvelun ominaisuus eivätkä Power BI Desktopin. Raporttinäkymiä ei voi luoda mobiililaitteilla, mutta niitä voi [tarkastella ja jakaa](../consumer/mobile/mobile-apps-view-dashboard.md) niillä.
 
 Ruutujen kiinnittämisen lisäksi yksittäisiä ruutuja voidaan luoda suoraan koontinäyttöön [Lisää ruutu](service-dashboard-add-widget.md) -toiminnon avulla. Yksittäisiä ruutuja ovat tekstiruudut, kuvat, videot, suoratoistotiedot ja verkkosisältö.
 
@@ -98,6 +98,6 @@ Kun valitset ruudun, seuraavaksi tapahtuva asia riippuu siitä, miten ruutu on l
 - [Tietojen päivittäminen Power BI:ssä](../connect-data/refresh-data.md)
 - [Power BI -palvelun peruskäsitteitä suunnittelijoille](../fundamentals/service-basic-concepts.md)
 - [Power BI -ruutujen integrointi Office-tiedostoihin](https://powerbi.microsoft.com/blog/integrating-power-bi-tiles-into-office-documents/)
-- [Reporting Services -kohteiden kiinnittäminen Power BI -koontinäyttöihin](https://msdn.microsoft.com/library/mt604784.aspx)
+- [Reporting Services -kohteiden kiinnittäminen Power BI -koontinäyttöihin](/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/).
