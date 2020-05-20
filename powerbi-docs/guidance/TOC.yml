@@ -110,6 +110,8 @@
               href: monitor-report-performance.md
             - name: Raportin suorituskyvyn vianmääritys
               href: report-performance-troubleshoot.md
+            - name: Käyttöönottojaksojen parhaat käytännöt
+              href: ../create-reports/deployment-pipelines-best-practices.md
     - name: Raportit
       items:
         - name: Raporttien yleiskatsaus
