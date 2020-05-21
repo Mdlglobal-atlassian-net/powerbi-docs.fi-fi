@@ -6,22 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/28/2019
+ms.date: 05/19/2020
 ms.author: maggies
-ms.openlocfilehash: 8b103902f7a151dcbfee9fa6ff54830129a65c14
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 98b5323efa8b6c6c0e1d6f1dbab640fe5f4cae4c
+ms.sourcegitcommit: 250242fd6346b60b0eda7a314944363c0bacaca8
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279062"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83693961"
 ---
 # <a name="whitepapers-for-power-bi"></a>Power BI:n tekniset raportit
 
 Teknisten raporttien avulla voit tutustua Power BI:n aiheisiin syvällisemmin. Täältä löydät luettelon Power BI:n käytettävissä olevista teknisistä raporteista.
 
-| Tekninen raportti | Description | Päivämäärä |
+| Tekninen raportti | Kuvaus | Päivämäärä |
 | --- | --- | --- |
-| [Power BI:n yrityskäyttöönoton suunnitteleminen](https://go.microsoft.com/fwlink/?linkid=2057861) |Tässä teknisessä raportissa käydään läpi huomioitavat seikat, kun halutaan toteuttaa hyvin toimiva ja turvallinen Power BI -käyttöönotto organisaatiossa. | Heinäkuu 2018 |
+| [Power BI:n yrityskäyttöönoton suunnitteleminen](https://aka.ms/PBIEnterpriseDeploymentWP) |Tämä päivitetty tekninen raportti esittelee huomioitavia seikkoja ja parhaita käytäntöjä, jotka koskevat hyvin suoriutuneen ja turvallisen organisaation Power BI käyttöönottoa. | Toukokuu 2020 |
 | [Power BI ja tietovuot](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Tässä julkaisussa kerrotaan tietovoiden tekniset tiedot ja kuvataan tietovuon toimintojen taustalla olevat ominaisuudet ja aloitteet. | Marraskuu 2018 |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Tässä artikkelissa kuvataan Power BI Premium. Kuvaus kattaa version julkaisuhetkellä ja myös työkalun kehittymisen. | Lokakuu 2017 |
 | [Power BI Premiumin suunnittelu ja käyttöönotto](whitepaper-powerbi-premium-deployment.md)| Tämä raportti sisältää ohjeita ja parhaita käytäntöjä Premium-kapasiteetin suunnitteluun ja käyttöönottoon tarkasti määritellyille kuormituksille.| Maaliskuu 2019 |
@@ -38,4 +38,4 @@ Teknisten raporttien avulla voit tutustua Power BI:n aiheisiin syvällisemmin. T
 
 [!INCLUDE [GDPR-related guidance](../includes/gdpr-hybrid-note.md)]
 
-Muita kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)

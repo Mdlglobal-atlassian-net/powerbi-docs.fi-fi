@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 955a14b37d59f554fb12b302c16472387c896e54
-ms.sourcegitcommit: 220910f0b68cb1e265ccd5ac0cee4ee9c6080b26
+ms.openlocfilehash: 7ab103c5d7b568e7315f67193da4d8da25b77a6c
+ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82843637"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83565433"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Power BI -sisällön jakaminen ulkoisille vieraskäyttäjille Azure Active Directory B2B:n avulla
 
@@ -27,7 +27,7 @@ ms.locfileid: "82843637"
 > [!NOTE]
 > Voit tallentaa tai tulostaa tämän raportti valitsemalla **Tulosta** selaimesta ja valitsemalla sitten **Tallenna PDF-** tiedostona.
 
-## <a name="introduction"></a>Johdanto
+## <a name="introduction"></a>Esittely
 
 Power BI tarjoaa organisaatioille 360 asteen näkymän liiketoimintaansa ja antaa organisaatioiden kaikille jäsenille mahdollisuuden tehdä tietoihin perustuvia älykkäitä päätöksiä. Monilla näistä organisaatioista on vahva ja luottamuksellinen suhde ulkoisiin kumppaneihin, asiakkaisiin ja alihankkijoihin. Organisaatioiden on tarjottava ulkoisten kumppanien käyttäjille suojattu yhteys Power BI -koontinäyttöihin ja -raportteihin.
 
@@ -415,7 +415,7 @@ Nyt kun tämä käyttäjä avaa sovelluksen, joka jaettiin heidän kanssaan, hä
 
 Toinen kiinnostavia asia on nähdä, miten dynaaminen rivitason suojaus (RLS) toimii Azure AD B2B:n kanssa.
 
-Lyhyesti sanottuna dynaaminen rivitason suojaus toimii suodattamalla mallin tietoja Power BI:hin yhdistäneen henkilön käyttäjänimen perusteella. Sen sijaan, että lisäisit käyttäjäryhmille useita rooleja, määrität mallin käyttäjät. Emme kuvaa tätä tarkasti. Kasper de Jong on kirjoittanut yksityiskohtaisesti kaikista rivitason suojauksen ominaisuuksista artikkelissa [Power BI Desktop Dynamic security cheat sheet](https://www.kasperonbi.com/power-bi-desktop-dynamic-security-cheat-sheet/) sekä [tässä raportissa](https://msdn.microsoft.com/library/jj127437.aspx) .
+Lyhyesti sanottuna dynaaminen rivitason suojaus toimii suodattamalla mallin tietoja Power BI:hin yhdistäneen henkilön käyttäjänimen perusteella. Sen sijaan, että lisäisit käyttäjäryhmille useita rooleja, määrität mallin käyttäjät. Emme kuvaa tätä tarkasti. Kasper de Jong on kirjoittanut yksityiskohtaisesti kaikista rivitason suojauksen ominaisuuksista artikkelissa [Power BI Desktop Dynamic security cheat sheet](https://www.kasperonbi.com/power-bi-desktop-dynamic-security-cheat-sheet/) sekä [tässä raportissa](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) .
 
 Tarkastellaan pientä esimerkkiä – Contosolla on yksinkertainen raportti myynnistä ryhmittäin:
 
@@ -504,7 +504,7 @@ Eräät käyttökokemukset eivät ole niiden käyttäjien saatavilla, joiden kä
 
 - Suorajulkaisu Power BI Desktopista Power BI -palveluun
 - Vieraskäyttäjät eivät voi käyttää Power BI Desktopia yhteyden muodostamiseksi Power BI -palvelussa sijaitseviin palvelutietojoukkoihin
-- Perinteiset työtilat, jotka on sidottu Office 365-ryhmään: vieras käyttäjä ei voi luoda tai olla näiden työtilojen järjestelmänvalvojia. He voivat olla jäseniä.
+- Microsoft 365 ryhmistä on sidottu klassisia työtiloja: vieras käyttäjä ei voi luoda tai olla näiden työtilojen järjestelmänvalvojia. He voivat olla jäseniä.
 - Ad hoc -kutsujen lähettämistä ei tueta työtilojen käyttöoikeusluetteloilla
 - Power BI Publisher for Exceliä ei tueta vieraskäyttäjillä
 - Vieraskäyttäjät eivät voi asentaa Power BI Gatewaytä ja yhdistää sitä organisaatioosi
