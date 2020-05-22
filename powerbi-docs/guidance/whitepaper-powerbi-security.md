@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/14/2020
 LocalizationGroup: Conceptual
-ms.openlocfilehash: f4211b177c60c9bb990c6dc2c8aa8094ab9e69f0
-ms.sourcegitcommit: a72567f26c1653c25f7730fab6210cd011343707
+ms.openlocfilehash: a80870963cf045730fff18413884d9871354b169
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: MT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83565273"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83792922"
 ---
 # <a name="power-bi-security-whitepaper"></a>Power BI:n suojausraportti
 
@@ -91,11 +91,11 @@ Käyttäjän Power BI -tilaukseen liittyvät metatiedot, kuten koontinäytöt, r
 
 ## <a name="tenant-creation"></a>Vuokraajan luominen
 
-Vuokraaja on Azure AD -palvelun erillinen esiintymä, jonka organisaatio vastaanottaa ja saa omistukseensa, kun se rekisteröityy Microsoftin pilvipalveluun, kuten Azureen, Microsoft Intuneen, Power BI:hin tai Office 365:een. Kukin Azure AD -vuokraaja on yksilöllinen ja erillinen muista Azure AD -vuokraajista.
+Vuokraaja on Azure AD-palvelun erillinen esiintymä, jonka organisaatio vastaanottaa ja omistaa, kun se rekisteröityy Microsoftin pilvi palveluun, kuten Azuren, Microsoft Intune, Power BI tai Microsoft 365. Kukin Azure AD -vuokraaja on yksilöllinen ja erillinen muista Azure AD -vuokraajista.
 
 Vuokraaja säilyttää yrityksen käyttäjät ja niihin liittyvät tiedot – salasanat, käyttäjäprofiilitiedot, käyttöoikeudet ja niin edelleen. Lisäksi vuokraaja sisältää ryhmiä, sovelluksia ja muita tietoja, jotka liittyvät organisaatioon ja sen suojaukseen. Jos haluat lisätietoja, katso [Mikä on Azure AD -vuokraaja?](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
-Power BI -vuokraaja luodaan siinä tietokeskuksessa, jonka katsotaan olevan lähimpänä niitä maa- (tai alue-) ja osavaltiotietoja, jotka vuokraajalle määritettiin Azure Active Directoryssa, kun Office 365- tai Power BI -palvelu alunperin valmisteltiin. Power BI -vuokraaja ei nykyään siirry kyseisestä tietokeskuksen sijainnista.
+Power BI vuokraaja luodaan palvelin keskukseen, joka on lähimpänä maan (tai alueen) ja Azure Active Directory vuokraajaan annettuja tila tietoja, jotka annettiin, kun Microsoft 365 tai Power BI-palvelu oli alun perin valmisteltu. Power BI -vuokraaja ei nykyään siirry kyseisestä tietokeskuksen sijainnista.
 
 ### <a name="multiple-geographies-multi-geo"></a>Useita alueita (Multi-Geo)
 
@@ -129,7 +129,7 @@ Lisätietoja siitä, mihin tietosi tallennetaan ja miten niitä käytetään, l�
 
 ## <a name="user-authentication"></a>Käyttäjän todennus
 
-Käyttäjän todennus Power BI -palveluun koostuu sarjasta pyyntöjä, vastauksia ja uudelleenohjauksia käyttäjän selaimen sekä Power BI -palvelun tai Power BI:n käyttämien Azure-palveluiden välillä. Kyseinen pyyntösarja kuvaa käyttäjän todentamisprosessia Power BI:ssä. Katso lisätietoja organisaation käyttäjien todentamismallien (sisäänkirjautumisen mallien) vaihtoehdoista artikkelista [Office 365 -sisäänkirjautumismallin valitseminen](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/).
+Käyttäjän todennus Power BI -palveluun koostuu sarjasta pyyntöjä, vastauksia ja uudelleenohjauksia käyttäjän selaimen sekä Power BI -palvelun tai Power BI:n käyttämien Azure-palveluiden välillä. Kyseinen pyyntösarja kuvaa käyttäjän todentamisprosessia Power BI:ssä. Lisä tietoja organisaation käyttäjän todentamis mallien asetuksista (kirjautumismallit) on kohdassa [sisäänkirjautumismallin valitseminen Microsoft 365 varten](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/).
 
 ### <a name="authentication-sequence"></a>Todentamisjakso
 
@@ -245,9 +245,9 @@ Power BI toteuttaa tietojen eheyden valvonnan seuraavilla tavoilla:
 
 1. Metatiedot (raportin määritys)
 
-   a. Raportit voivat olla joko Office 365:n Excel-raportteja tai Power BI -raportteja. Raportin lajin mukaan metatietoihin pätevät seuraavat asiat:
+   a. Raportit voivat olla joko Excel for Microsoft 365-raportteja tai Power BI raportteja. Raportin lajin mukaan metatietoihin pätevät seuraavat asiat:
         
-    &ensp;&ensp;a. Excel-raportin metatiedot tallennetaan salattuina SQL Azureen. Metatiedot tallennetaan myös Officeen 365.
+    &ensp;&ensp;a. Excel-raportin metatiedot tallennetaan salattuina SQL Azureen. Metatiedot tallennetaan myös Microsoft 365.
 
     &ensp;&ensp;b. Power BI raportit tallennetaan salattuina Azure SQL-tieto kantaan.
 
@@ -255,13 +255,13 @@ Power BI toteuttaa tietojen eheyden valvonnan seuraavilla tavoilla:
 
    Staattiset tiedot sisältävät artefakteja, kuten tausta kuvia ja Power BI visualisointeja.
 
-    &ensp;&ensp;a. Jos raportti on luotu Office 365:n Excelillä, mitään ei tallenneta.
+    &ensp;&ensp;a. Microsoft 365 Excelissä luoduille raporteille ei tallenneta mitään.
 
     &ensp;&ensp;b. Jos kyseessä on Power BI -raportti, staattiset tiedot tallennetaan Azure Blob -säilöön ja salataan.
 
 3. Väli muisteja
 
-    &ensp;&ensp;a. Jos raportti on luotu Office 365:n Excelillä, mitään ei tallenneta välimuistiin.
+    &ensp;&ensp;a. Microsoft 365 Excelissä luoduille raporteille mitään ei tallenneta väli muistiin.
 
     &ensp;&ensp;b. Power BI raportteja varten näytettävien raporttien visualisointien tiedot tallennetaan väli muistiin ja tallennetaan seuraavassa osiossa kuvattuun visuaalisen tietojen väli muistiin.
  
