@@ -43,7 +43,7 @@
               href: ../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md
             - name: Yhteistyö perinteisessä työtilassa
               href: service-collaborate-power-bi-workspace.md
-            - name: 'Ryhmän hallinta Power BI:ssä ja Office 365:ssä'
+            - name: 'Ryhmän hallinta Power BI:ssä ja Microsoft 365:ssä'
               href: service-manage-app-workspace-in-power-bi-and-office-365.md
         - name: Töiden julkaiseminen ja jakaminen
           items:
@@ -71,9 +71,11 @@
           items:
             - name: Analysoi Excelissä
               href: service-analyze-in-excel.md
+            - name: 'Power BI:n esitellyt taulukot Excelissä'
+              href: service-excel-featured-tables.md
             - name: Analysoi Excelissä -toiminnon vianmääritys
               href: desktop-troubleshooting-analyze-in-excel.md
-            - name: 'Virhe: Excel-työkirjasta ei löydy mitään tietoja'
+            - name: 'Virhe: Excel-työkirjasta ei löydy tietoja'
               href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
             - name: Power Automate ja Power BI
               href: service-flow-integration.md
