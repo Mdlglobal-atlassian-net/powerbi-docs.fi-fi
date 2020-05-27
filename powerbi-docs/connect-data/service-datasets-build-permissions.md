@@ -1,22 +1,22 @@
 ---
-title: Jaettujen tietojoukkojen muodostamisoikeus (esiversio)
+title: Jaettujen tietojoukkojen muodostamisoikeus
 description: Lue ohjeet siihen, miten voit hallita tietojen käyttöä muodostamisoikeuden avulla.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 04/30/2020
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: af2e4c865609846d8fcfc792eee4f483afef2160
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: 84f6a9d152151c6d6f44bcbad9e0a4d54fc0c293
+ms.sourcegitcommit: 5e5a7e15cdd55f71b0806016ff91256a398704c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83285344"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "83793004"
 ---
-# <a name="build-permission-for-shared-datasets-preview"></a>Jaettujen tietojoukkojen muodostamisoikeus (esiversio)
+# <a name="build-permission-for-shared-datasets"></a>Jaettujen tietojoukkojen muodostamisoikeus
 
 Kun luot raportin Power BI Desktopissa, raportin tiedot tallennetaan *tietomalliin*. Kun julkaiset raporttisi Power BI -palvelussa, julkaiset tiedot myös *tietojoukkona*. Voit antaa muille *muodostamisoikeuden* kyseiseen raporttiin, jotta he voivat löytää jakamasi tietojoukon ja käyttää sen uudelleen. Tässä artikkelissa on ohjeet siihen, miten voit hallita tietojen käyttöä muodostamisoikeuden avulla.
 
@@ -107,5 +107,5 @@ Voit poistaa muodostamisoikeuden. Jos poistat oikeuksia, käyttäjät, joiden oi
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
-- [Tietojoukkojen käyttö eri työtiloissa (esikatselu)](service-datasets-across-workspaces.md)
-- Onko sinulla kysymyksiä? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
+- [Tietojoukkojen käyttö kaikissa työtiloissa](service-datasets-across-workspaces.md)
+- Onko sinulla kysyttävää? [Voit esittää kysymyksiä Power BI -yhteisössä](https://community.powerbi.com/)
