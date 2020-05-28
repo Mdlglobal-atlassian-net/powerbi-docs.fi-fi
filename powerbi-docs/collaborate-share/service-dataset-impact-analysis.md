@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 04/13/2020
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: edb34fc5592a6b851ae2c48690a772d75049fb48
-ms.sourcegitcommit: 0e9e211082eca7fd939803e0cd9c6b114af2f90a
+ms.openlocfilehash: dd7387bcb008d10ec8887ac777431b5423d43f4c
+ms.sourcegitcommit: a7b142685738a2f26ae0a5fa08f894f9ff03557b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83274853"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84120335"
 ---
 # <a name="dataset-impact-analysis"></a>Tietojoukkojen vaikutusanalyysi
 
@@ -54,7 +54,7 @@ Käyttötiedot ovat tietoja edelliseltä 30 päivältä (nykyinen päivä pois l
 
 ## <a name="notify-contacts"></a>Ilmoita yhteyshenkilöille
 
-Jos olet tehnyt tietojoukkoon muutoksen tai harkitset sitä, sinun kannattaa ehkä ilmoittaa siitä tarvittaville käyttäjille. Kun ilmoitat yhteyshenkilöille, järjestelmä lähettää sähköpostin niiden työtilojen [yhteystietoluettelossa](../collaborate-share/service-create-the-new-workspaces.md#workspace-contact-list) oleville, joihin muutos vaikuttaa. Nimesi näytetään sähköpostissa, joten yhteyshenkilöt voivat ottaa sinuun yhteyttä sähköpostitse. 
+Jos olet tehnyt tietojoukkoon muutoksen tai harkitset sitä, sinun kannattaa ehkä ilmoittaa siitä tarvittaville käyttäjille. Kun ilmoitat yhteyshenkilöille, järjestelmä lähettää sähköpostin niiden työtilojen [yhteystietoluettelossa](../collaborate-share/service-create-the-new-workspaces.md#create-a-contact-list) oleville, joihin muutos vaikuttaa. Nimesi näytetään sähköpostissa, joten yhteyshenkilöt voivat ottaa sinuun yhteyttä sähköpostitse. 
 
 1. Napsauta vaikutusanalyysin sivupaneelissa **Ilmoita yhteyshenkilöille**. Yhteyshenkilöille ilmoittamisen valintaikkuna avautuu.
 
