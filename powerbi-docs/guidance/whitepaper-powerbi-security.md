@@ -449,14 +449,14 @@ Seuraavat kysymykset ovat yleisiä Power BI:n suojaukseen liittyviä kysymyksiä
 
 **Power BI visualisointien osalta, onko Microsoft suorittanut mukautetun visuaalisen koodin suojaus-tai yksityisyys arvioinnin ennen kohteiden julkaisemista valikoimaan?**
 
-* Ei. On asiakkaan vastuulla tarkistaa mukautettu visualisointikoodi ja päättää, voiko siihen luottaa. Kaikkia mukautettuja visualisointikoodeja käytetään sandbox-ympäristössä, joten mukautetun visualisoinnin virheelliset koodit eivät vaikuta haitallisesti muuhun Power BI -palveluun.
+* Et. On asiakkaan vastuulla tarkistaa mukautettu visualisointikoodi ja päättää, voiko siihen luottaa. Kaikkia mukautettuja visualisointikoodeja käytetään sandbox-ympäristössä, joten mukautetun visualisoinnin virheelliset koodit eivät vaikuta haitallisesti muuhun Power BI -palveluun.
 
 **Lähettävätkö muut Power BI -visualisoinnit tietoja asiakkaan verkon ulkopuolelle?**
 
 * Kyllä. Bing Maps- ja ESRI-visualisoinnit siirtävät tietoja Power BI -palvelun ulkopuolelle kyseisiä palveluita käyttäville visualisoinneille.
 
 **Onko Microsoft tehnyt malli sovelluksille tieto turva-tai tieto suoja-arvioinnin malli sovelluksesta ennen kohteiden julkaisemista valikoimaan?**
-* Ei. Sovelluksen julkaisija on vastuussa sisällöstä, kun asiakkaan vastuulla on tarkastella ja tarkistaa, luotatko malliin sovelluksen julkaisijaan. 
+* Et. Sovelluksen julkaisija on vastuussa sisällöstä, kun asiakkaan vastuulla on tarkastella ja tarkistaa, luotatko malliin sovelluksen julkaisijaan. 
 
 **Onko olemassa malli sovelluksia, jotka voivat lähettää tietoja asiakas verkon ulkopuolella?**
 * Kyllä. Asiakkaan vastuulla on tarkistaa julkaisijan tieto suoja käytäntö ja päättää, asennetaanko malli sovellus vuokraajaan. Lisäksi julkaisijan vastuulla on ilmoittaa sovelluksen toiminnasta ja toiminnoista.
