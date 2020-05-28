@@ -4,17 +4,17 @@ description: Tutustu Power BI -raporttipalvelimeen ja sen käyttöön SQL Server
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 04/29/2020
+ms.date: 05/14/2020
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.openlocfilehash: 39ccb9120b7dd61d7f160c296d2de799b7f3fe23
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: 55a3614c5da2ea8b5ea1a8cbb6ee87b20c542df4
+ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83141101"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83438288"
 ---
 # <a name="what-is-power-bi-report-server"></a>Mikä on Power BI -raporttipalvelin?
 
@@ -26,7 +26,7 @@ Power BI -raporttipalvelin on verkkoportaalilla varustettu paikallinen raporttip
 Power BI -raporttipalvelin on vastaava kuin SQL Server Reporting Services ja Power BI -verkkopalvelu, mutta se toimii eri tavoilla. Power BI -palvelun tavoin Power BI -raporttipalvelin isännöi Power BI -raportteja (.pbix), Excel-tiedostoja ja sivutettuja raportteja (.rdl). Reporting Servicesin tavoin Power BI -raporttipalvelin on paikallinen palvelin. Power BI -raporttipalvelimen ominaisuudet ovat Reporting Servicesin yläjoukko: kaikki Reporting Servicesissä tehtävät toiminnot voidaan tehdä myös Power BI -raporttipalvelimessa Power BI -raporttien tuen ansiosta. Katso lisätietoja kohdasta [Power BI -raporttipalvelimen ja Power BI -palvelun vertailu](compare-report-server-service.md).
 
 ## <a name="licensing-power-bi-report-server"></a>Power BI -raporttipalvelimen käyttöoikeus
-Power BI -raporttipalvelin on saatavana kahdella eri käyttöoikeudella: [Power BI Premium](../admin/service-premium-what-is.md) ja [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions), jossa on SA-ylläpito. Power BI Premium -käyttöoikeudella voit luoda hybridiratkaisun, jossa yhdistyvät pilvi- ja paikallispalvelut.  
+Power BI -raporttipalvelin on saatavana kahdella eri käyttöoikeudella: [Power BI Premium](../admin/service-premium-what-is.md) ja SQL Server Enterprise Edition, jossa on SA-ylläpito. Lisätietoja on artikkelissa [Microsoftin volyymikäyttöoikeudet](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=1&ShowArchived=True). Power BI Premium -käyttöoikeudella voit luoda hybridiratkaisun, jossa yhdistyvät pilvi- ja paikallispalvelut.  
 
 > [!NOTE]
 > Power BI Premiumin osalta Power BI -raporttipalvelin sisältyy vain P-varastointiyksiköihin. Se ei sisälly EM-varastointiyksiköihin.

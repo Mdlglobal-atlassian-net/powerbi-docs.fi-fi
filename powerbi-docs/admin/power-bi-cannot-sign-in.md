@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/12/2019
-ms.openlocfilehash: b65cf23e37773861d41b037b0f45c430224f1930
-ms.sourcegitcommit: bfc2baf862aade6873501566f13c744efdd146f3
+ms.openlocfilehash: ec9848f71aa8ba69089de5222dfa9f63703f43c5
+ms.sourcegitcommit: 6ba7cc9afaf91229f717374bc0c12f0b8201d15e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83129972"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "83438012"
 ---
 # <a name="troubleshooting-sign-in-issues-for-power-bi"></a>Power BI -kirjautumisongelmien vianmääritys
 
@@ -26,7 +26,7 @@ Jos olet organisaatiossasi **vuokraajan järjestelmänvalvoja**, etkä kuitenkaa
 
 Yritä ensin luoda tukipalvelupyyntö [Power BI -tukisivulla](https://powerbi.microsoft.com/support/).
 
-Jos et pääse Power BI -tukisivulle, koeta luoda tukipalvelupyyntö [Office 365 -tukisivulla](https://support.office.com/home/contact).
+Jos et pääse Power BI -tukisivulle, koeta luoda tukipalvelupyyntö [Office-tuen](https://support.office.com/home/contact) kautta.
 
 Jos et voi luoda tukipalvelupyyntöä kummallakaan näistä sivuista, yritä ottaa yhteyttä tukeen puhelimitse:
 
@@ -34,7 +34,7 @@ Jos et voi luoda tukipalvelupyyntöä kummallakaan näistä sivuista, yritä ott
 * Asiakkaille Euroopassa, Lähi-idässä ja Aasiassa: +44-844-800-2400
 * Asiakkaille Intiassa: + 1-800-419-5666
 
-Toinen mahdollisuus saada apua Microsoft-tuelta on ostaa [Microsoft Premier -tuki](https://support.microsoft.com/premier). Jos tiedät, että organisaatiosi on hankkinut Microsoft Premier -tuen, etkä edelleenkään voi luoda tukitapausta minkään Power BI- tai Office 365 -kanavan kautta, voit ottaa yhteyttä Premier-tukeen puhelimitse.
+Toinen mahdollisuus saada apua Microsoft-tuelta on ostaa [Microsoft Premier -tuki](https://support.microsoft.com/premier). Jos tiedät, että organisaatiosi on hankkinut Microsoft Premier -tuen, etkä edelleenkään voi luoda tukitapausta minkään Power BI ‑kanavan etkä Office-tuen kautta, voit ottaa yhteyttä Premier-tukeen puhelimitse:
 
 * Asiakkaille Pohjois-Amerikassa ja muualla Amerikan mantereilla: +1-800-936-3100
 * Asiakkaille Euroopassa, Lähi-idässä ja Aasiassa: +44-844-800-8338

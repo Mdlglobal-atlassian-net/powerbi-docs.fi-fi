@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/09/2020
+ms.date: 05/09/2020
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: abc936c6ea4b61e4837e05fbde110e5159296815
-ms.sourcegitcommit: a199dda2ab50184ce25f7c9a01e7ada382a88d2c
+ms.openlocfilehash: ab232d4e5b6d17e7f20ed8a41875ca47693eb285
+ms.sourcegitcommit: 21b06e49056c2f69a363d3a19337374baa84c83f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82867112"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83407600"
 ---
 # <a name="let-users-personalize-visuals-in-a-report"></a>Visualisointien mukauttamisen salliminen raportin käyttäjille
 
@@ -26,7 +26,7 @@ Kun jaat raportin laajalle yleisölle, osa käyttäjistä haluaa ehkä tarkastel
  
 ## <a name="what-report-consumers-can-change"></a>Mitä raportin kuluttajat voivat muuttaa
 
-Tämän ominaisuuden avulla kuluttajat voivat saada merkityksellisiä tietoja Power BI -raportin visualisointien tapauskohtaisen tutkimisen kautta. Ominaisuus sopii erinomaisesti raportin tekijöille, jotka haluavat tarjota raportin lukijoille perustutkimustilanteita. Tässä ovat muokkaukset, joita raportin lukijat voivat tehdä:
+Tämän ominaisuuden avulla kuluttajat voivat saada merkityksellisiä tietoja Power BI -raportin visualisointien tapauskohtaisen tutkimisen kautta. Jos haluat oppia käyttämään tätä ominaisuutta kuluttajana, katso [Mukauta visualisointeja raporteissasi](../consumer/end-user-personalize-visuals.md). Ominaisuus sopii erinomaisesti raportin tekijöille, jotka haluavat tarjota raportin lukijoille perustutkimustilanteita. Tässä ovat muokkaukset, joita raportin lukijat voivat tehdä:
 
 - Visualisointityypin muuttaminen
 - Mittayksikön tai dimension vaihtaminen
@@ -84,69 +84,6 @@ Valitse **Mukauta visualisointia** -liukusäätimen arvoksi  >  **Käytössä** 
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="Mukauta visualisointia -liukusäädintä käytössä tai ei käytössä":::
 
-## <a name="personalize-visuals-in-the-power-bi-service"></a>Visualisointien mukauttaminen Power BI -palvelussa
-
-Mukauttamalla visualisointia käyttäjät voivat tutkia tietoja monella tavalla poistumatta raportin lukunäkymästä. Seuraavissa esimerkeissä näytetään eri tapoja, joilla käyttäjät voivat muokata visualisointia vastaamaan omia tarpeitaan. 
-
-1. Avaa raportti lukunäkymässä Power BI -palvelussa.
-
-2. Valitse visualisoinnin oikeasta yläkulmasta **Mukauta tätä visualisointia** ![Mukauta tätä visualisointia -kuvake](media/power-bi-personalize-visuals/power-bi-personalize-visual-icon.png) -kuvake. 
-
-### <a name="change-the-visualization-type"></a>Visualisointityypin muuttaminen
-
-Voit tarkastella visualisointia eri esityksessä vaihtamalla **visualisointityyppi**.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-change-visual-type.png" alt-text="Visualisointityypin vaihtaminen":::
- 
-### <a name="swap-out-a-measure-or-dimension"></a>Mittayksikön tai dimension vaihtaminen
-Voit korvata X-akselin mittarin tai dimension valitsemalla ensin korvattavan kentän ja sitten toisen mittarin tai dimension.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-change-axis.png" alt-text="Akselin muuttaminen":::
- 
-### <a name="add-or-remove-a-legend"></a>Selitteen lisääminen tai poistaminen
-Lisäämällä selitteen voit värikoodata visualisoinnin luokan mukaan. Voit poistaa luokan värikoodauksen tyhjentämällä **Selite**-ruudun **Mukauta**-ruudussa. 
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-change-legend.png" alt-text="Selitteen lisääminen tai poistaminen":::
-
-### <a name="compare-two-or-more-different-measures"></a>Kahden tai useamman eri mittarin vertaileminen
-Voit verrata eri mittareiden arvoja lisäämällä visualisointiin useita mittareita käyttämällä +-kuvaketta.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-compare-measures.png" alt-text="Mittareiden vertaaminen":::
-
-### <a name="change-aggregations"></a>Koosteiden muuttaminen
-Voit muuttaa mittareiden laskemistapaa muuttamalla koostetta **Mukauta**-ruudussa.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-change-aggregation.png" alt-text="Koosteiden muuttaminen":::
-
-### <a name="capture-changes"></a>Muutosten sieppaaminen 
-Voit siepata tekemäsi muutokset ja palata mukautettuun näkymään käyttämällä kirjanmerkkejä. 
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-bookmark.png" alt-text="Kirjanmerkin luominen":::
- 
-Voit myös tehdä kirjanmerkistä oletusnäkymän.
-
-### <a name="share-changes"></a>Muutosten jakaminen 
-Jos sinulla on luku- ja uudelleenjako-oikeudet, voit raporttia jakaessasi päättää, sisältääkö jako tekemäsi muutokset.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-share-changes.png" alt-text="Muutosten jakaminen":::
- 
-### <a name="reset-all-your-changes-to-a-report"></a>Kaikkien raporttiin tekemiesi muutosten palauttaminen
-
-Valitse **Palauta oletusasetukset**, jos haluat poistaa kaikki raporttiin tekemäsi muutokset ja määrittää sen takaisin tekijän viimeiseen tallennettuun näkymään.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-reset-all.png" alt-text="Kaikkien muutosten palauttaminen":::
- 
-### <a name="reset-all-your-changes-to-a-visual"></a>Kaikkien visualisointiin tekemiesi muutosten palauttaminen
-
-Valitse **Palauta tämä visualisointi**, jos haluat poistaa kaikki tiettyyn visualisointiin tekemäsi muutokset ja määrittää sen takaisin visualisoinnin tekijän viimeiseen tallennettuun näkymään.
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-reset-visual.png" alt-text="Visualisoinnin kaikkien muutosten palauttaminen":::
- 
-### <a name="clear-recent-changes"></a>Viimeaikaisten muutosten tyhjentäminen
-
-Valitse pyyhinkuvake, jos haluat tyhjentää kaikki viimeaikaiset muutokset, jotka olet tehnyt **Mukauta**-ruudun avaamisen jälkeen.  
-
-:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-revert-changes.png" alt-text="Viimeaikaisten muutosten kumoaminen":::
 
 ## <a name="limitations-and-known-issues"></a>Rajoitukset ja tunnetut ongelmat
 
@@ -164,7 +101,8 @@ On myös joitakin tunnettuja ongelmia, joita käsitellään:
 
 ## <a name="next-steps"></a>Seuraavat vaiheet
 
+[Mukauta visualisointeja raporteissasi](../consumer/end-user-personalize-visuals.md).     
+
 Kokeile uutta visualisoinnin mukautuskäyttökokemusta. Anna meille palautetta tästä ominaisuudesta ja siitä, miten voimme jatkaa sen parantamista, [Power BI:n ideat -sivustolla](https://ideas.powerbi.com/forums/265200-power-bi). 
 
 Onko sinulla kysyttävää? [Kokeile Power BI -yhteisöä](https://community.powerbi.com/)
-
